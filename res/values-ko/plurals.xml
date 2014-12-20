@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="account_info_gave_n_years_of_service">
+        <item quantity="other">%2$s님의 %1$d년치 서비스를 선물하였습니다.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_more_than_n_years">
+        <item quantity="other">서비스기간이 %1$d년 이상 남았습니다.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_n_years">
+        <item quantity="other">서비스기간이 %1$d년 남았습니다.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_friend">
+        <item quantity="other">%1$s님이 고객님의 %2$d년치 서비스를 선물하셨습니다.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_unknown">
+        <item quantity="other">친구가 고객님의 서비스 %1$d년치를 선물하였습니다.</item>
+    </plurals>
+    <plurals name="broadcast_n_recipients">
+        <item quantity="other">수신인 %d 명</item>
+    </plurals>
+    <plurals name="broadcast_participants_overflow">
+        <item quantity="other">%1$s &amp;amp; %2$d</item>
+    </plurals>
+    <plurals name="broadcast_to_n_contacts">
+        <item quantity="other">%d명 에게 보내는 단체 메시지</item>
+    </plurals>
+    <plurals name="confirm_sharing_multiple_title">
+        <item quantity="other">%2$s님과 선택된 %1$d개의 파일을 공유할까요?</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d 일</item>
+    </plurals>
+    <plurals name="days_of_service">
+        <item quantity="other">"서비스 기간이 
+%d일
+남았습니다"</item>
+    </plurals>
+    <plurals name="days_of_service_remaining">
+        <item quantity="other">"서비스기간이 
+%d 일 
+남았습니다"</item>
+    </plurals>
+    <plurals name="delete_confirmation_multiple">
+        <item quantity="other">%d개의 메시지 삭제</item>
+    </plurals>
+    <plurals name="error_image_dimensions_too_small">
+        <item quantity="other">너무 작은 사진입니다. 가로 세로 %d 픽셀 이상의 사진을 선택해 주시기 바랍니다.</item>
+    </plurals>
+    <plurals name="group_confirm_sharing_multiple_title">
+        <item quantity="other">“%2$s”그룹과 선택된 %1$d개의 파일을 공유할까요?</item>
+    </plurals>
+    <plurals name="group_participant_demoted_names">
+        <item quantity="other">%s님은 더이상 그룹장이 아닙니다</item>
+    </plurals>
+    <plurals name="group_participant_promoted_names">
+        <item quantity="other">%s 님이 그룹장이 되었습니다.</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d 시간</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%d 시간 전</item>
+    </plurals>
+    <plurals name="location_accuracy">
+        <item quantity="other">%d미터의 오차범위</item>
+    </plurals>
+    <plurals name="messages_copied">
+        <item quantity="other">%d개의 메시지 복사됨</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="other">%d개의 메시지가 삭제됨</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d 분</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">%d분 전</item>
+    </plurals>
+    <plurals name="missed_calls">
+        <item quantity="other">%d 부재중 전화</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d 월</item>
+    </plurals>
+    <plurals name="months_of_service">
+        <item quantity="other">"서비스 기간이 
+%d달
+남았습니다"</item>
+    </plurals>
+    <plurals name="months_of_service_remaining">
+        <item quantity="other">"서비스 만기일까지 
+ %d개월 
+ 남았습니다."</item>
+    </plurals>
+    <plurals name="n_contacts">
+        <item quantity="other">%d개의 연락처</item>
+    </plurals>
+    <plurals name="n_contacts_must_be_selected">
+        <item quantity="other">최소한 %d개 연락처를 선택해야 합니다.</item>
+    </plurals>
+    <plurals name="n_contacts_selected">
+        <item quantity="other">%d 선택됨</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d 선택됨</item>
+    </plurals>
+    <plurals name="network_usage_byte_count_bytes">
+        <item quantity="other">%1$d bytes</item>
+    </plurals>
+    <plurals name="network_usage_message_count">
+        <item quantity="other">메시지 %1$d개</item>
+    </plurals>
+    <plurals name="notification_new_message">
+        <item quantity="other">%d개의 새 메시지</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_1">
+        <item quantity="other">메시지 %d</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_2">
+        <item quantity="other">%2$d명으로부터 %1$s개의 메시지</item>
+    </plurals>
+    <plurals name="participants_remaining">
+        <item quantity="other">확인 하지 않은 인원 %d명</item>
+    </plurals>
+    <plurals name="register_messages_restored">
+        <item quantity="other">%,d 개의 메시지가 복원되었습니다.</item>
+    </plurals>
+    <plurals name="sending_videos_to_contact">
+        <item quantity="other">%1$d 비디오를 %2$s(으)로 전송 중</item>
+    </plurals>
+    <plurals name="sending_videos_to_contacts">
+        <item quantity="other">%d 개의 비디오 전송 중</item>
+    </plurals>
+    <plurals name="service_expire_days">
+        <item quantity="other">WhatsApp 서비스가 %d일 후 만료됩니다. 유료 서비스를 신청하시겠습니까?</item>
+    </plurals>
+    <plurals name="software_about_to_expire">
+        <item quantity="other">%d 일 이내에 사용 중 인 WhatsApp버전을 업데이트 해야 합니다. 최신 버전으로 업데이트 할까요?</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="other">새 메시지 %d</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d 년</item>
+    </plurals>
+    <plurals name="years_of_service">
+        <item quantity="other">"서비스 기간이 
+%d년
+남았습니다"</item>
+    </plurals>
+    <plurals name="years_of_service_remaining">
+        <item quantity="other">"서비스 만기일까지 
+ %d 년 
+ 남았습니다"</item>
+    </plurals>
+    <plurals name="you_created_list">
+        <item quantity="other">%2$d 명의 수신인에게 전달되는 단체메시지 리스트 “%1$s”(을)를 만들었습니다</item>
+    </plurals>
+    <plurals name="you_created_list_unnamed">
+        <item quantity="other">%d명에게 보내는 단체메시지를 시작하였습니다</item>
+    </plurals>
+</resources>

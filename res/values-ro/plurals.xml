@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="account_info_gave_n_years_of_service">
+        <item quantity="other">%1$d de ani de serviciu achiziționați cu %2$s.</item>
+        <item quantity="one">%1$d an de serviciu achiziționat cu %2$s.</item>
+        <item quantity="few">%1$d ani de serviciu achiziționați cu %2$s.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_more_than_n_years">
+        <item quantity="other">Mai aveți mai mult de %1$d de ani de serviciu.</item>
+        <item quantity="one">Mai aveți mai mult de %1$d an de serviciu.</item>
+        <item quantity="few">Mai aveți mai mult de %1$d ani de serviciu.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_n_years">
+        <item quantity="other">Dispuneți de încă %1$d de ani de serviciu.</item>
+        <item quantity="one">Dispuneți de încă %1$d an de serviciu.</item>
+        <item quantity="few">Dispuneți de încă %1$d ani de serviciu.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_friend">
+        <item quantity="other">%1$s a achiziționat %2$d de ani de serviciu pentru dvs.</item>
+        <item quantity="one">%1$s a achiziționat %2$d an de serviciu pentru dvs.</item>
+        <item quantity="few">%1$s a achiziționat %2$d ani de serviciu pentru dvs.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_unknown">
+        <item quantity="other">Un prieten a cumpărat %1$d de ani de serviciu pentru dvs.</item>
+        <item quantity="one">Un prieten a cumpărat %1$d an de serviciu pentru dvs.</item>
+        <item quantity="few">Un prieten a cumpărat %1$d ani de serviciu pentru dvs.</item>
+    </plurals>
+    <plurals name="broadcast_n_recipients">
+        <item quantity="other">%d de destinatari</item>
+        <item quantity="one">%d destinatar</item>
+        <item quantity="few">%d destinatari</item>
+    </plurals>
+    <plurals name="broadcast_participants_overflow">
+        <item quantity="other">%1$s și %2$d și mai mulți</item>
+        <item quantity="one">%1$s și %2$d și mai mulți</item>
+        <item quantity="few">%1$s și %2$d și mai mulți</item>
+    </plurals>
+    <plurals name="broadcast_to_n_contacts">
+        <item quantity="other">Difuzați %d de contacte</item>
+        <item quantity="one">Difuzați către %d contact</item>
+        <item quantity="few">Difuzați către %d contacte</item>
+    </plurals>
+    <plurals name="confirm_sharing_multiple_title">
+        <item quantity="other">Partajați %1$d de elemente cu %2$s?</item>
+        <item quantity="one">Partajați %1$d element cu %2$s?</item>
+        <item quantity="few">Partajați %1$d elemente cu %2$s?</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d de zile</item>
+        <item quantity="one">%d zi</item>
+        <item quantity="few">%d zile</item>
+    </plurals>
+    <plurals name="days_of_service">
+        <item quantity="other">"Bucurați-vă de
+%d de zile
+de serviciu"</item>
+        <item quantity="one">"Bucurați-vă de
+%d zi
+de serviciu"</item>
+        <item quantity="few">"Bucurați-vă de
+%d zile
+de serviciu"</item>
+    </plurals>
+    <plurals name="days_of_service_remaining">
+        <item quantity="other">"Serviciul
+va expira
+în %d de zile"</item>
+        <item quantity="one">"Serviciul
+va expira
+în %d zi"</item>
+        <item quantity="few">"Serviciul
+va expira
+în %d zile"</item>
+    </plurals>
+    <plurals name="delete_confirmation_multiple">
+        <item quantity="other">Ștergeți %d de mesaje</item>
+        <item quantity="one">Ștergeți %d mesaj</item>
+        <item quantity="few">Ștergeți %d mesaje</item>
+    </plurals>
+    <plurals name="error_image_dimensions_too_small">
+        <item quantity="other">Aceste imagini sunt prea mici. Selectați imagini cu o înălțime și lățime de măcar %d de pixeli.</item>
+        <item quantity="one">Această imagine este prea mică. Selectați o imagine cu o înălțime și lățime de măcar %d pixeli.</item>
+        <item quantity="few">Aceste imagini sunt prea mici. Selectați imagini cu o înălțime și lățime de măcar %d pixeli.</item>
+    </plurals>
+    <plurals name="group_confirm_sharing_multiple_title">
+        <item quantity="other">Partajează %1$d de obiecte cu “%2$s”?</item>
+        <item quantity="one">Partajează %1$d obiect cu “%2$s”?</item>
+        <item quantity="few">Partajează %1$d obiecte cu “%2$s”?</item>
+    </plurals>
+    <plurals name="group_participant_demoted_names">
+        <item quantity="other">%s nu mai sunt administratori</item>
+        <item quantity="one">%s nu mai este administrator</item>
+        <item quantity="few">%s nu mai sunt administratori</item>
+    </plurals>
+    <plurals name="group_participant_promoted_names">
+        <item quantity="other">%s sunt acum administratori</item>
+        <item quantity="one">%s este acum administrator</item>
+        <item quantity="few">%s sunt acum administratori</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d de ore</item>
+        <item quantity="one">%d oră</item>
+        <item quantity="few">%d ore</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">Acum %d de ore</item>
+        <item quantity="one">Acum %d oră</item>
+        <item quantity="few">Acum %d ore</item>
+    </plurals>
+    <plurals name="location_accuracy">
+        <item quantity="other">Precizie de %d de metri</item>
+        <item quantity="one">Precizie de %d metru</item>
+        <item quantity="few">Precizie de %d metri</item>
+    </plurals>
+    <plurals name="messages_copied">
+        <item quantity="other">%d de mesaje copiate</item>
+        <item quantity="one">%d mesaj copiat</item>
+        <item quantity="few">%d mesaje copiate</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="other">%d de mesaje șterse</item>
+        <item quantity="one">%d mesaj șters</item>
+        <item quantity="few">%d mesaje șterse</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d de minute</item>
+        <item quantity="one">%d minut</item>
+        <item quantity="few">%d minute</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">Acum %d de minute</item>
+        <item quantity="one">Acum %d minut</item>
+        <item quantity="few">Acum %d minute</item>
+    </plurals>
+    <plurals name="missed_calls">
+        <item quantity="other">%d de apeluri pierdute</item>
+        <item quantity="one">%d apel pierdut</item>
+        <item quantity="few">%d apeluri pierdute</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d de luni</item>
+        <item quantity="one">%d lună</item>
+        <item quantity="few">%d luni</item>
+    </plurals>
+    <plurals name="months_of_service">
+        <item quantity="other">"Bucurați-vă de
+%d de luni
+de serviciu"</item>
+        <item quantity="one">"Bucurați-vă de
+%d lună
+de serviciu"</item>
+        <item quantity="few">"Bucurați-vă de
+%d luni
+de serviciu"</item>
+    </plurals>
+    <plurals name="months_of_service_remaining">
+        <item quantity="other">"%d de luni
+de serviciu
+rămase"</item>
+        <item quantity="one">"%d lună
+de serviciu
+rămas"</item>
+        <item quantity="few">"%d luni
+de serviciu
+rămase"</item>
+    </plurals>
+    <plurals name="n_contacts">
+        <item quantity="other">%d de contacte</item>
+        <item quantity="one">%d contact</item>
+        <item quantity="few">%d contacte</item>
+    </plurals>
+    <plurals name="n_contacts_must_be_selected">
+        <item quantity="other">Trebuie să selectați cel puțin %d de contacte</item>
+        <item quantity="one">Trebuie să selectați cel puțin %d contact</item>
+        <item quantity="few">Trebuie să selectați cel puțin %d contacte</item>
+    </plurals>
+    <plurals name="n_contacts_selected">
+        <item quantity="other">%d selectate</item>
+        <item quantity="one">%d selectat</item>
+        <item quantity="few">%d selectate</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d selectate</item>
+        <item quantity="one">%d selectat</item>
+        <item quantity="few">%d selectate</item>
+    </plurals>
+    <plurals name="network_usage_byte_count_bytes">
+        <item quantity="other">%1$d de bytes</item>
+        <item quantity="one">%1$d byte</item>
+        <item quantity="few">%1$d bytes</item>
+    </plurals>
+    <plurals name="network_usage_message_count">
+        <item quantity="other">%1$d de mesaje</item>
+        <item quantity="one">%1$d mesaj</item>
+        <item quantity="few">%1$d mesaje</item>
+    </plurals>
+    <plurals name="notification_new_message">
+        <item quantity="other">%d de mesaje noi</item>
+        <item quantity="one">%d mesaj nou</item>
+        <item quantity="few">%d mesaje noi</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_1">
+        <item quantity="other">%d de mesaje</item>
+        <item quantity="one">%d mesaj</item>
+        <item quantity="few">%d mesaje</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_2">
+        <item quantity="other">%1$s mesaje de la %2$d de contacte.</item>
+        <item quantity="one">%1$s mesaje de la %2$d contact.</item>
+        <item quantity="few">%1$s mesaje de la %2$d contacte.</item>
+    </plurals>
+    <plurals name="participants_remaining">
+        <item quantity="other">%d de rămase</item>
+        <item quantity="one">%d rămas</item>
+        <item quantity="few">%d rămase</item>
+    </plurals>
+    <plurals name="register_messages_restored">
+        <item quantity="other">Puteți continua. %,d de mesaje au fost recuperate.</item>
+        <item quantity="one">Puteți continua. %,d mesaj a fost recuperat.</item>
+        <item quantity="few">Puteți continua. %,d mesaje au fost recuperate.</item>
+    </plurals>
+    <plurals name="sending_videos_to_contact">
+        <item quantity="other">Se trimit %1$d de fișiere video către %2$s</item>
+        <item quantity="one">Se trimite %1$d fișier video către %2$s</item>
+        <item quantity="few">Se trimit %1$d fișiere video către %2$s</item>
+    </plurals>
+    <plurals name="sending_videos_to_contacts">
+        <item quantity="other">Se trimit %d de fișiere video</item>
+        <item quantity="one">Se trimite %d fișier video</item>
+        <item quantity="few">Se trimit %d fișiere video</item>
+    </plurals>
+    <plurals name="service_expire_days">
+        <item quantity="other">Serviciul dvs. WhatsApp va expira în %d de zile. Doriți să achiziționați extensia acum?</item>
+        <item quantity="one">Serviciul dvs. WhatsApp va expira în %d zi. Doriți să achiziționați extensia acum?</item>
+        <item quantity="few">Serviciul dvs. WhatsApp va expira în %d zile. Doriți să achiziționați extensia acum?</item>
+    </plurals>
+    <plurals name="software_about_to_expire">
+        <item quantity="other">Această versiune WhatsApp va necesita o actualizare peste %d de zile. Actualizați la cea mai recentă versiune?</item>
+        <item quantity="one">Această versiune WhatsApp va necesita o actualizare peste %d zi. Actualizați la cea mai recentă versiune?</item>
+        <item quantity="few">Această versiune WhatsApp va necesita o actualizare peste %d zile. Actualizați la cea mai recentă versiune?</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="other">%d de mesaje necitite</item>
+        <item quantity="one">%d mesaj necitit</item>
+        <item quantity="few">%d mesaje necitite</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d de ani</item>
+        <item quantity="one">%d an</item>
+        <item quantity="few">%d ani</item>
+    </plurals>
+    <plurals name="years_of_service">
+        <item quantity="other">"Bucurați-vă de
+%d de ani
+de servicii"</item>
+        <item quantity="one">"Bucurați-vă de
+%d an
+de servicii"</item>
+        <item quantity="few">"Bucurați-vă de
+%d ani
+de servicii"</item>
+    </plurals>
+    <plurals name="years_of_service_remaining">
+        <item quantity="other">"%d de ani
+de serviciu
+rămași"</item>
+        <item quantity="one">"%d an
+de serviciu
+rămas"</item>
+        <item quantity="few">"%d ani
+de serviciu
+rămași"</item>
+    </plurals>
+    <plurals name="you_created_list">
+        <item quantity="other">Ați creat o lista de difuzări “%1$s” cu %2$d de membri</item>
+        <item quantity="one">Ați creat o lista de difuzări “%1$s” cu %2$d membru</item>
+        <item quantity="few">Ați creat o lista de difuzări “%1$s” cu %2$d membri</item>
+    </plurals>
+    <plurals name="you_created_list_unnamed">
+        <item quantity="other">Ați creat lista de difuzare cu %d de membri</item>
+        <item quantity="one">Ați creat lista de difuzare cu %d membru</item>
+        <item quantity="few">Ați creat lista de difuzare cu %d membri</item>
+    </plurals>
+</resources>

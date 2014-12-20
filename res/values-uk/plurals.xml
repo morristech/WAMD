@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="account_info_gave_n_years_of_service">
+        <item quantity="other">Оплачено %1$d років обслуговування для %2$s.</item>
+        <item quantity="one">Оплачено %1$d рік обслуговування для %2$s.</item>
+        <item quantity="few">Оплачено %1$d роки обслуговування для %2$s.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_more_than_n_years">
+        <item quantity="other">У вас залишається більше %1$d років обслуговування.</item>
+        <item quantity="one">У вас залишається більше %1$d року обслуговування.</item>
+        <item quantity="few">У вас залишається більше %1$d років обслуговування.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_n_years">
+        <item quantity="other">У вас залишається %1$d років обслуговування.</item>
+        <item quantity="one">У вас залишається %1$d рік обслуговування.</item>
+        <item quantity="few">У вас залишається %1$d роки обслуговування.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_friend">
+        <item quantity="other">%1$s оплатив вам %2$d років обслуговування.</item>
+        <item quantity="one">%1$s оплатив вам %2$d рік обслуговування.</item>
+        <item quantity="few">%1$s оплатив вам %2$d роки обслуговування.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_unknown">
+        <item quantity="other">Друг оплатив вам %1$d років обслуговування.</item>
+        <item quantity="one">Друг оплатив вам %1$d рік обслуговування.</item>
+        <item quantity="few">Друг оплатив вам %1$d роки обслуговування.</item>
+    </plurals>
+    <plurals name="broadcast_n_recipients">
+        <item quantity="other">%d отримувачів</item>
+        <item quantity="one">%d отримувач</item>
+        <item quantity="few">%d отримувачі</item>
+    </plurals>
+    <plurals name="broadcast_participants_overflow">
+        <item quantity="other">%1$s i ще %2$d</item>
+        <item quantity="one">%1$s i ще %2$d</item>
+        <item quantity="few">%1$s i ще %2$d</item>
+    </plurals>
+    <plurals name="broadcast_to_n_contacts">
+        <item quantity="other">Розіслати %d контактам</item>
+        <item quantity="one">Розіслати %d контакту</item>
+        <item quantity="few">Розіслати %d контактам</item>
+    </plurals>
+    <plurals name="confirm_sharing_multiple_title">
+        <item quantity="other">Поділитись %1$d-ма з %2$s?</item>
+        <item quantity="one">Поділитись %1$d-м з %2$s?</item>
+        <item quantity="few">Поділитись %1$d-ма з %2$s?</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d днів</item>
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дні</item>
+    </plurals>
+    <plurals name="days_of_service">
+        <item quantity="other">"Вам надано
+%d днів
+обслуговування"</item>
+        <item quantity="one">"Вам надано
+%d день
+обслуговування"</item>
+        <item quantity="few">"Вам надано
+%d дні
+обслуговування"</item>
+    </plurals>
+    <plurals name="days_of_service_remaining">
+        <item quantity="other">"Залишилось
+%d днів
+обслуговування"</item>
+        <item quantity="one">"Залишився
+%d день
+обслуговування"</item>
+        <item quantity="few">"Залишилось
+%d дні
+обслуговування"</item>
+    </plurals>
+    <plurals name="delete_confirmation_multiple">
+        <item quantity="other">Видалити %d повідомлень</item>
+        <item quantity="one">Видалити %d повідомлення</item>
+        <item quantity="few">Видалити %d повідомлення</item>
+    </plurals>
+    <plurals name="error_image_dimensions_too_small">
+        <item quantity="other">Це зображення занадто мале. Будь ласка, виберіть фото з висотою і шириною щонайменше %d пікселів.</item>
+        <item quantity="one">Це зображення занадто мале. Будь ласка, виберіть фото з висотою і шириною щонайменше %d піксель.</item>
+        <item quantity="few">Це зображення занадто мале. Будь ласка, виберіть фото з висотою і шириною щонайменше %d пікселі.</item>
+    </plurals>
+    <plurals name="group_confirm_sharing_multiple_title">
+        <item quantity="other">Поділитись %1$d-ма з “%2$s”?</item>
+        <item quantity="one">Поділитись %1$d-м з “%2$s”?</item>
+        <item quantity="few">Поділитись %1$d-ма з “%2$s”?</item>
+    </plurals>
+    <plurals name="group_participant_demoted_names">
+        <item quantity="other">%s більше не адміністратори</item>
+        <item quantity="one">%s більше не адміністратор</item>
+        <item quantity="few">%s більше не адміністратори</item>
+    </plurals>
+    <plurals name="group_participant_promoted_names">
+        <item quantity="other">%s тепер адміністратори</item>
+        <item quantity="one">%s тепер адміністратор</item>
+        <item quantity="few">%s тепер адміністратори</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d годин</item>
+        <item quantity="one">%d годину</item>
+        <item quantity="few">%d години</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%d годин тому</item>
+        <item quantity="one">%d годину тому</item>
+        <item quantity="few">%d години тому</item>
+    </plurals>
+    <plurals name="location_accuracy">
+        <item quantity="other">З точністю до %d метрів</item>
+        <item quantity="one">З точністю до %d метра</item>
+        <item quantity="few">З точністю до %d метрів</item>
+    </plurals>
+    <plurals name="messages_copied">
+        <item quantity="other">Скопійовано %d повідомлень</item>
+        <item quantity="one">Скопійовано %d повідомлення</item>
+        <item quantity="few">Скопійовано %d повідомлення</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="other">Видалено %d повідомлень</item>
+        <item quantity="one">Видалено %d повідомлення</item>
+        <item quantity="few">Видалено %d повідомлення</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d хвилин</item>
+        <item quantity="one">%d хвилина</item>
+        <item quantity="few">%d хвилини</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">%d хвилин тому</item>
+        <item quantity="one">%d хвилину тому</item>
+        <item quantity="few">%d хвилини тому</item>
+    </plurals>
+    <plurals name="missed_calls">
+        <item quantity="other">%d пропущених викликів</item>
+        <item quantity="one">%d пропущений виклик</item>
+        <item quantity="few">%d пропущені виклики</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d місяців</item>
+        <item quantity="one">%d місяць</item>
+        <item quantity="few">%d місяці</item>
+    </plurals>
+    <plurals name="months_of_service">
+        <item quantity="other">"Вам надано
+%d місяців
+обслуговування"</item>
+        <item quantity="one">"Вам надано
+%d місяць
+обслуговування"</item>
+        <item quantity="few">"Вам надано
+%d місяці
+обслуговування"</item>
+    </plurals>
+    <plurals name="months_of_service_remaining">
+        <item quantity="other">"Залишилось
+%d місяців
+обслуговування"</item>
+        <item quantity="one">"Залишився
+%d місяць
+обслуговування"</item>
+        <item quantity="few">"Залишилось
+%d місяці
+обслуговування"</item>
+    </plurals>
+    <plurals name="n_contacts">
+        <item quantity="other">%d контактів</item>
+        <item quantity="one">%d контакт</item>
+        <item quantity="few">%d контакти</item>
+    </plurals>
+    <plurals name="n_contacts_must_be_selected">
+        <item quantity="other">Необхідно вибрати принаймні %d контаків</item>
+        <item quantity="one">Необхідно вибрати принаймні %d контакт</item>
+        <item quantity="few">Необхідно вибрати принаймні %d контакти</item>
+    </plurals>
+    <plurals name="n_contacts_selected">
+        <item quantity="other">Вибрано %d</item>
+        <item quantity="one">Вибрано %d</item>
+        <item quantity="few">Вибрано %d</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">Вибрано %d</item>
+        <item quantity="one">Вибрано %d</item>
+        <item quantity="few">Вибрано %d</item>
+    </plurals>
+    <plurals name="network_usage_byte_count_bytes">
+        <item quantity="other">%1$d байтів</item>
+        <item quantity="one">%1$d байт</item>
+        <item quantity="few">%1$d байта</item>
+    </plurals>
+    <plurals name="network_usage_message_count">
+        <item quantity="other">%1$d повідомлень</item>
+        <item quantity="one">%1$d повідомлення</item>
+        <item quantity="few">%1$d повідомлення</item>
+    </plurals>
+    <plurals name="notification_new_message">
+        <item quantity="other">%d нових повідомлень</item>
+        <item quantity="one">%d нове повідомлення</item>
+        <item quantity="few">%d нові повідомлення</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_1">
+        <item quantity="other">%d повідомлень</item>
+        <item quantity="one">%d повідомлення</item>
+        <item quantity="few">%d повідомлення</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_2">
+        <item quantity="other">%1$s повідомлень з %2$d розмов.</item>
+        <item quantity="one">%1$s повідомлень з %2$d розмови.</item>
+        <item quantity="few">%1$s повідомлень з %2$d розмов.</item>
+    </plurals>
+    <plurals name="participants_remaining">
+        <item quantity="other">Залишається %d</item>
+        <item quantity="one">Залишається %d</item>
+        <item quantity="few">Залишається %d</item>
+    </plurals>
+    <plurals name="register_messages_restored">
+        <item quantity="other">Все готово! Відновлено %,d повідомлень.</item>
+        <item quantity="one">Все готово! Відновлено %,d повідомлення.</item>
+        <item quantity="few">Все готово! Відновлено %,d повідомлення.</item>
+    </plurals>
+    <plurals name="sending_videos_to_contact">
+        <item quantity="other">Надсилання %1$d відео до %2$s</item>
+        <item quantity="one">Надсилання %1$d відео до %2$s</item>
+        <item quantity="few">Надсилання %1$d відео до %2$s</item>
+    </plurals>
+    <plurals name="sending_videos_to_contacts">
+        <item quantity="other">Надсилання %d відео</item>
+        <item quantity="one">Надсилання %d відео</item>
+        <item quantity="few">Надсилання %d відео</item>
+    </plurals>
+    <plurals name="service_expire_days">
+        <item quantity="other">Ваше обслуговування WhatsApp закінчується через %d днів. Придбати продовження зараз?</item>
+        <item quantity="one">Ваше обслуговування WhatsApp закінчується через %d день. Придбати продовження зараз?</item>
+        <item quantity="few">Ваше обслуговування WhatsApp закінчується через %d дні. Придбати продовження зараз?</item>
+    </plurals>
+    <plurals name="software_about_to_expire">
+        <item quantity="other">Ця версія WhatsApp потребуватиме оновлення через %d днів. Оновити до найновішої версії?</item>
+        <item quantity="one">Ця версія WhatsApp потребуватиме оновлення через %d день. Оновити до найновішої версії?</item>
+        <item quantity="few">Ця версія WhatsApp потребуватиме оновлення через %d дні. Оновити до найновішої версії?</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="other">%d непрочитаних повідомлень</item>
+        <item quantity="one">%d непрочитане повідомлення</item>
+        <item quantity="few">%d непрочитані повідомлення</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d років</item>
+        <item quantity="one">%d рік</item>
+        <item quantity="few">%d роки</item>
+    </plurals>
+    <plurals name="years_of_service">
+        <item quantity="other">"Вам надано
+%d років
+обслуговування"</item>
+        <item quantity="one">"Вам надано
+%d рік
+обслуговування"</item>
+        <item quantity="few">"Вам надано
+%d роки
+обслуговування"</item>
+    </plurals>
+    <plurals name="years_of_service_remaining">
+        <item quantity="other">"Залишилось
+%d років
+обслуговування"</item>
+        <item quantity="one">"Залишився
+%d рік
+обслуговування"</item>
+        <item quantity="few">"Залишилось
+%d роки
+обслуговування"</item>
+    </plurals>
+    <plurals name="you_created_list">
+        <item quantity="other">Ви створили список розсилання “%1$s” з %2$d отримувачами</item>
+        <item quantity="one">Ви створили список розсилання “%1$s” з %2$d отримувачем</item>
+        <item quantity="few">Ви створили список розсилання “%1$s” з %2$d отримувачами</item>
+    </plurals>
+    <plurals name="you_created_list_unnamed">
+        <item quantity="other">Ви створили список розсилання з %d отримувачами</item>
+        <item quantity="one">Ви створили список розсилання з %d отримувачем</item>
+        <item quantity="few">Ви створили список розсилання з %d отримувачами</item>
+    </plurals>
+</resources>

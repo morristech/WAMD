@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="UndoBar" parent="@style/UndoBarClassic">
+        <item name="android:background">@drawable/toast_frame_holo</item>
+        <item name="android:padding">0.0dip</item>
+    </style>
+    <style name="UndoBarButton" parent="@style/UndoBarButtonClassic">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/toast_frame_holo_button</item>
+        <item name="android:paddingRight">25.0dip</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+    <style name="UndoBarMessage" parent="@style/UndoBarMessageClassic">
+        <item name="android:layout_gravity">start|center</item>
+        <item name="android:layout_marginLeft">25.0dip</item>
+        <item name="android:shadowColor">#bb000000</item>
+        <item name="android:shadowRadius">2.75</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="account_info_gave_n_years_of_service">
+        <item quantity="other">您已購買 %1$d 年的服務給 %2$s。</item>
+    </plurals>
+    <plurals name="account_info_inform_have_more_than_n_years">
+        <item quantity="other">您還剩下多於 %1$d 年的 WhatsApp 服務時間。</item>
+    </plurals>
+    <plurals name="account_info_inform_have_n_years">
+        <item quantity="other">您的服務時間剩餘 %1$d 年。</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_friend">
+        <item quantity="other">%1$s 已購買了 %2$d 年的服務給您。</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_unknown">
+        <item quantity="other">一位朋友購買了 %1$d 年服務給您。</item>
+    </plurals>
+    <plurals name="broadcast_n_recipients">
+        <item quantity="other">%d 個收件者</item>
+    </plurals>
+    <plurals name="broadcast_participants_overflow">
+        <item quantity="other">%1$s，與另外%2$d人</item>
+    </plurals>
+    <plurals name="broadcast_to_n_contacts">
+        <item quantity="other">廣播至 %d 個聯絡人</item>
+    </plurals>
+    <plurals name="confirm_sharing_multiple_title">
+        <item quantity="other">是否與%2$s分享%1$d個項目？</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d 天</item>
+    </plurals>
+    <plurals name="days_of_service">
+        <item quantity="other">"敬請享用您爲期
+%d天
+的服務"</item>
+    </plurals>
+    <plurals name="days_of_service_remaining">
+        <item quantity="other">"服務
+尚餘
+%d天"</item>
+    </plurals>
+    <plurals name="delete_confirmation_multiple">
+        <item quantity="other">刪除 %d 條訊息</item>
+    </plurals>
+    <plurals name="error_image_dimensions_too_small">
+        <item quantity="other">此圖片過小。請選擇長寬至少 %d 像素以上之圖片。</item>
+    </plurals>
+    <plurals name="group_confirm_sharing_multiple_title">
+        <item quantity="other">是否與“%2$s”分享%1$d個項目？</item>
+    </plurals>
+    <plurals name="group_participant_demoted_names">
+        <item quantity="other">%s 已不是本群組管理員</item>
+    </plurals>
+    <plurals name="group_participant_promoted_names">
+        <item quantity="other">%s 已成為群組管理員</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d 小時</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%d 小時前</item>
+    </plurals>
+    <plurals name="location_accuracy">
+        <item quantity="other">精確到%d米</item>
+    </plurals>
+    <plurals name="messages_copied">
+        <item quantity="other">已複製 %d 個訊息</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="other">已刪除 %d 條訊息</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d 分鐘</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">%d 分鐘前</item>
+    </plurals>
+    <plurals name="missed_calls">
+        <item quantity="other">%d 個未接來電</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d 個月</item>
+    </plurals>
+    <plurals name="months_of_service">
+        <item quantity="other">"敬請享用您爲期
+%d月
+的服務"</item>
+    </plurals>
+    <plurals name="months_of_service_remaining">
+        <item quantity="other">"服務
+尚餘
+%d個月"</item>
+    </plurals>
+    <plurals name="n_contacts">
+        <item quantity="other">%d 位聯絡人</item>
+    </plurals>
+    <plurals name="n_contacts_must_be_selected">
+        <item quantity="other">至少需要選定%d個聯絡人</item>
+    </plurals>
+    <plurals name="n_contacts_selected">
+        <item quantity="other">%d 已選擇</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">已選%d個</item>
+    </plurals>
+    <plurals name="network_usage_byte_count_bytes">
+        <item quantity="other">%1$d bytes</item>
+    </plurals>
+    <plurals name="network_usage_message_count">
+        <item quantity="other">%1$d個訊息</item>
+    </plurals>
+    <plurals name="notification_new_message">
+        <item quantity="other">%d 個新訊息</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_1">
+        <item quantity="other">%d 個訊息</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_2">
+        <item quantity="other">來自%2$d個對話的%1$s。</item>
+    </plurals>
+    <plurals name="participants_remaining">
+        <item quantity="other">還剩 %d 位</item>
+    </plurals>
+    <plurals name="register_messages_restored">
+        <item quantity="other">完成了。我們還原了%,d則訊息。</item>
+    </plurals>
+    <plurals name="sending_videos_to_contact">
+        <item quantity="other">正在傳送 %1$d 個影片給 %2$s</item>
+    </plurals>
+    <plurals name="sending_videos_to_contacts">
+        <item quantity="other">傳送 %d 個影片中</item>
+    </plurals>
+    <plurals name="service_expire_days">
+        <item quantity="other">您的WhatsApp服務將會在 %d 天內過期. 需要購買延期嗎?</item>
+    </plurals>
+    <plurals name="software_about_to_expire">
+        <item quantity="other">此版本的 WhatsApp 必須於 %d 日內進行更新。現在更新至最新版本？</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="other">%d 條未讀訊息</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d 年</item>
+    </plurals>
+    <plurals name="years_of_service">
+        <item quantity="other">"敬請享用您爲其
+%d年
+的服務"</item>
+    </plurals>
+    <plurals name="years_of_service_remaining">
+        <item quantity="other">"尚有
+%d 年
+之服務"</item>
+    </plurals>
+    <plurals name="you_created_list">
+        <item quantity="other">您創建了%2$d位收件人的廣播列表，名為 “%1$s”</item>
+    </plurals>
+    <plurals name="you_created_list_unnamed">
+        <item quantity="other">你創建了 %d 位收件者的廣播列表。</item>
+    </plurals>
+</resources>

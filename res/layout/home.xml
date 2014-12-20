@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto">
+    <com.whatsapp.PagerSlidingTabStrip android:id="@id/tabs" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="48.0dip" whatsapp:pstsIndicatorColor="@color/tab_indicator" whatsapp:pstsIndicatorHeight="5.0dip" whatsapp:pstsUnderlineHeight="0.5dip" whatsapp:pstsTabPaddingLeftRight="12.0dip" whatsapp:pstsShouldExpand="true" />
+    <view android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tabs" class="com.whatsapp.HomeActivity$TabsPager" />
+</RelativeLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="account_info_gave_n_years_of_service">
+        <item quantity="other">%1$d лет обслуживания куплены для %2$s.</item>
+        <item quantity="one">%1$d год обслуживания куплен для %2$s.</item>
+        <item quantity="few">%1$d года обслуживания куплены для %2$s.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_more_than_n_years">
+        <item quantity="other">До окончания обслуживания осталось больше %1$d лет.</item>
+        <item quantity="one">До окончания обслуживания осталось больше %1$d года.</item>
+        <item quantity="few">До окончания обслуживания осталось больше %1$d лет.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_n_years">
+        <item quantity="other">У вас осталось %1$d лет обслуживания.</item>
+        <item quantity="one">У вас остался %1$d год обслуживания.</item>
+        <item quantity="few">У вас осталось %1$d года обслуживания.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_friend">
+        <item quantity="other">%1$s купил(-а) %2$d лет обслуживания для вас.</item>
+        <item quantity="one">%1$s купил(-а) %2$d год обслуживания для вас.</item>
+        <item quantity="few">%1$s купил(-а) %2$d года обслуживания для вас.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_unknown">
+        <item quantity="other">Друг купил %1$d лет подписки для вас.</item>
+        <item quantity="one">Друг купил %1$d год подписки для вас.</item>
+        <item quantity="few">Друг купил %1$d года подписки для вас.</item>
+    </plurals>
+    <plurals name="broadcast_n_recipients">
+        <item quantity="other">%d получателей</item>
+        <item quantity="one">%d получатель</item>
+        <item quantity="few">%d получателя</item>
+    </plurals>
+    <plurals name="broadcast_participants_overflow">
+        <item quantity="other">%1$s, и еще %2$d</item>
+        <item quantity="one">%1$s, и еще %2$d</item>
+        <item quantity="few">%1$s, и еще %2$d</item>
+    </plurals>
+    <plurals name="broadcast_to_n_contacts">
+        <item quantity="other">Рассылка %d контактам</item>
+        <item quantity="one">Рассылка %d контакту</item>
+        <item quantity="few">Рассылка %d контактам</item>
+    </plurals>
+    <plurals name="confirm_sharing_multiple_title">
+        <item quantity="other">Поделиться %1$d файлами с %2$s?</item>
+        <item quantity="one">Поделиться %1$d файлом с %2$s?</item>
+        <item quantity="few">Поделиться %1$d файлами с %2$s?</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d дней</item>
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+    </plurals>
+    <plurals name="days_of_service">
+        <item quantity="other">"Наслаждайтесь
+%d днями
+обслуживания"</item>
+        <item quantity="one">"Наслаждайтесь
+%d днем
+обслуживания"</item>
+        <item quantity="few">"Наслаждайтесь
+%d днями
+обслуживания"</item>
+    </plurals>
+    <plurals name="days_of_service_remaining">
+        <item quantity="other">"У вас осталось
+%d дней
+сервиса"</item>
+        <item quantity="one">"У вас остался
+%d день
+сервиса"</item>
+        <item quantity="few">"У вас осталось
+%d дня
+сервиса"</item>
+    </plurals>
+    <plurals name="delete_confirmation_multiple">
+        <item quantity="other">Удалить %d сообщений</item>
+        <item quantity="one">Удалить %d сообщение</item>
+        <item quantity="few">Удалить %d сообщения</item>
+    </plurals>
+    <plurals name="error_image_dimensions_too_small">
+        <item quantity="other">Данные изображения слишком маленькие. Пожалуйста, выберите изображения размером не менее %d пикселей в высоту и ширину.</item>
+        <item quantity="one">Данное изображение слишком маленькое. Пожалуйста, выберите изображение размером не менее %d пикселей в высоту и ширину.</item>
+        <item quantity="few">Данные изображения слишком маленькие. Пожалуйста, выберите изображения размером не менее %d пикселей в высоту и ширину.</item>
+    </plurals>
+    <plurals name="group_confirm_sharing_multiple_title">
+        <item quantity="other">Поделиться %1$d файлами с “%2$s”?</item>
+        <item quantity="one">Поделиться %1$d файлом с “%2$s”?</item>
+        <item quantity="few">Поделиться %1$d файлами с “%2$s”?</item>
+    </plurals>
+    <plurals name="group_participant_demoted_names">
+        <item quantity="other">%s больше не являются админами</item>
+        <item quantity="one">%s больше не является админом</item>
+        <item quantity="few">%s больше не являются админами</item>
+    </plurals>
+    <plurals name="group_participant_promoted_names">
+        <item quantity="other">%s теперь админы</item>
+        <item quantity="one">%s теперь админ</item>
+        <item quantity="few">%s теперь админы</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d часов</item>
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%d ч. назад</item>
+        <item quantity="one">%d ч. назад</item>
+        <item quantity="few">%d ч. назад</item>
+    </plurals>
+    <plurals name="location_accuracy">
+        <item quantity="other">Точность: %d метров</item>
+        <item quantity="one">Точность: %d метр</item>
+        <item quantity="few">Точность: %d метра</item>
+    </plurals>
+    <plurals name="messages_copied">
+        <item quantity="other">скопировано %d сообщений</item>
+        <item quantity="one">скопировано %d сообщение</item>
+        <item quantity="few">скопировано %d сообщения</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="other">Удалено %d сообщений</item>
+        <item quantity="one">Удалено %d сообщение</item>
+        <item quantity="few">Удалено %d сообщения</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d минут</item>
+        <item quantity="one">%d мин.</item>
+        <item quantity="few">%d минуты</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">%d м. назад</item>
+        <item quantity="one">%d м. назад</item>
+        <item quantity="few">%d м. назад</item>
+    </plurals>
+    <plurals name="missed_calls">
+        <item quantity="other">%d пропущенных вызовов</item>
+        <item quantity="one">%d пропущенный вызов</item>
+        <item quantity="few">%d пропущенных вызова</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d месяцев</item>
+        <item quantity="one">%d месяц</item>
+        <item quantity="few">%d месяца</item>
+    </plurals>
+    <plurals name="months_of_service">
+        <item quantity="other">"Наслаждайтесь
+%d месяцами
+обслуживания"</item>
+        <item quantity="one">"Наслаждайтесь
+%d месяцем
+обслуживания"</item>
+        <item quantity="few">"Наслаждайтесь
+%d месяцами
+обслуживания"</item>
+    </plurals>
+    <plurals name="months_of_service_remaining">
+        <item quantity="other">"У вас осталось
+%d месяцев
+сервиса"</item>
+        <item quantity="one">"У вас остался
+%d месяц
+сервиса"</item>
+        <item quantity="few">"У вас осталось
+%d месяца
+сервиса"</item>
+    </plurals>
+    <plurals name="n_contacts">
+        <item quantity="other">%d контактов</item>
+        <item quantity="one">%d контакт</item>
+        <item quantity="few">%d контакта</item>
+    </plurals>
+    <plurals name="n_contacts_must_be_selected">
+        <item quantity="other">Должны быть выбраны по крайней мере %d контактов</item>
+        <item quantity="one">Должен быть выбран по крайней мере %d контакт</item>
+        <item quantity="few">Должны быть выбраны по крайней мере %d контакта</item>
+    </plurals>
+    <plurals name="n_contacts_selected">
+        <item quantity="other">%d выбрано</item>
+        <item quantity="one">%d выбран</item>
+        <item quantity="few">%d выбрано</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d выбрано</item>
+        <item quantity="one">%d выбрано</item>
+        <item quantity="few">%d выбрано</item>
+    </plurals>
+    <plurals name="network_usage_byte_count_bytes">
+        <item quantity="other">%1$d байт</item>
+        <item quantity="one">%1$d байт</item>
+        <item quantity="few">%1$d байтa</item>
+    </plurals>
+    <plurals name="network_usage_message_count">
+        <item quantity="other">%1$d сообщений</item>
+        <item quantity="one">%1$d сообщение</item>
+        <item quantity="few">%1$d сообщения</item>
+    </plurals>
+    <plurals name="notification_new_message">
+        <item quantity="other">%d новых сообщений</item>
+        <item quantity="one">%d новое сообщение</item>
+        <item quantity="few">%d новых сообщения</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_1">
+        <item quantity="other">%d сообщений</item>
+        <item quantity="one">%d сообщение</item>
+        <item quantity="few">%d сообщения</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_2">
+        <item quantity="other">%1$s сообщений от %2$d контактов</item>
+        <item quantity="one">%1$s сообщение от %2$d контакта</item>
+        <item quantity="few">%1$s сообщения от %2$d контактов</item>
+    </plurals>
+    <plurals name="participants_remaining">
+        <item quantity="other">осталось %d сообщений</item>
+        <item quantity="one">осталось %d сообщение</item>
+        <item quantity="few">осталось %d сообщения</item>
+    </plurals>
+    <plurals name="register_messages_restored">
+        <item quantity="other">Восстановлено %,d сообщений.</item>
+        <item quantity="one">Восстановлено %,d сообщение.</item>
+        <item quantity="few">Восстановлено %,d сообщения.</item>
+    </plurals>
+    <plurals name="sending_videos_to_contact">
+        <item quantity="other">Отправка %1$d видео %2$s</item>
+        <item quantity="one">Отправка %1$d видео %2$s</item>
+        <item quantity="few">Отправка %1$d видео %2$s</item>
+    </plurals>
+    <plurals name="sending_videos_to_contacts">
+        <item quantity="other">Отправка %d видео</item>
+        <item quantity="one">Отправка %d видео</item>
+        <item quantity="few">Отправка %d видео</item>
+    </plurals>
+    <plurals name="service_expire_days">
+        <item quantity="other">Ваша подписка на WhatsApp истечет через %d дней. Хотите продлить сейчас?</item>
+        <item quantity="one">Ваша подписка на WhatsApp истечет через %d день. Хотите продлить сейчас?</item>
+        <item quantity="few">Ваша подписка на WhatsApp истечет через %d дня. Хотите продлить сейчас?</item>
+    </plurals>
+    <plurals name="software_about_to_expire">
+        <item quantity="other">Данная версия WhatsApp должна быть обновлена через %d дней. Установить последнюю версию?</item>
+        <item quantity="one">Данная версия WhatsApp должна быть обновлена через %d день. Установить последнюю версию?</item>
+        <item quantity="few">Данная версия WhatsApp должна быть обновлена через %d дня. Установить последнюю версию?</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="other">%d непрочитанных сообщений</item>
+        <item quantity="one">%d непрочитанное сообщение</item>
+        <item quantity="few">%d непрочитанных сообщения</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d лет</item>
+        <item quantity="one">%d год</item>
+        <item quantity="few">%d года</item>
+    </plurals>
+    <plurals name="years_of_service">
+        <item quantity="other">"Наслаждайтесь
+%d годами
+обслуживания"</item>
+        <item quantity="one">"Наслаждайтесь
+%d годом
+обслуживания"</item>
+        <item quantity="few">"Наслаждайтесь
+%d годами
+обслуживания"</item>
+    </plurals>
+    <plurals name="years_of_service_remaining">
+        <item quantity="other">"У вас осталось
+%d лет
+сервиса"</item>
+        <item quantity="one">"У вас остался
+%d год
+сервиса"</item>
+        <item quantity="few">"У вас осталось
+%d года
+сервиса"</item>
+    </plurals>
+    <plurals name="you_created_list">
+        <item quantity="other">Вы создали список рассылки “%1$s” с %2$d получателями</item>
+        <item quantity="one">Вы создали список рассылки “%1$s” с %2$d получателем</item>
+        <item quantity="few">Вы создали список рассылки “%1$s” с %2$d получателями</item>
+    </plurals>
+    <plurals name="you_created_list_unnamed">
+        <item quantity="other">Вы создали список рассылки с %d получателями</item>
+        <item quantity="one">Вы создали список рассылки с %d получателем</item>
+        <item quantity="few">Вы создали список рассылки с %d получателями</item>
+    </plurals>
+</resources>

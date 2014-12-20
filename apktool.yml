@@ -1,0 +1,21 @@
+version: 2.0.0-RC3
+apkFileName: WhatsApp.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '7'
+  targetSdkVersion: '21'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '450206'
+  versionName: 2.11.473
+compressionType: false
+unknownFiles:
+  names.properties: '8'
+  NOTICE.txt: '8'
+  LICENSE.txt: '8'
+  isoparser-default.properties: '8'
+  version.txt: '8'

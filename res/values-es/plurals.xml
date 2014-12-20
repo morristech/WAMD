@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="account_info_gave_n_years_of_service">
+        <item quantity="other">%1$d años de servicio comprados para %2$s.</item>
+        <item quantity="one">%1$d año de servicio comprado para %2$s.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_more_than_n_years">
+        <item quantity="other">Te quedan más de %1$d año de servicio.</item>
+        <item quantity="one">Te queda más de %1$d año de servicio.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_n_years">
+        <item quantity="other">Te quedan %1$d año de servicio.</item>
+        <item quantity="one">Te queda %1$d año de servicio.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_friend">
+        <item quantity="other">%1$s ha comprado %2$d años de servicio para ti.</item>
+        <item quantity="one">%1$s ha comprado %2$d año de servicio para ti.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_unknown">
+        <item quantity="other">Un amigo ha comprado %1$d años de servicio para ti.</item>
+        <item quantity="one">Un amigo ha comprado %1$d año de servicio para ti.</item>
+    </plurals>
+    <plurals name="broadcast_n_recipients">
+        <item quantity="other">%d destinatarios</item>
+        <item quantity="one">%d destinatario</item>
+    </plurals>
+    <plurals name="broadcast_participants_overflow">
+        <item quantity="other">%1$s, y %2$d más</item>
+        <item quantity="one">%1$s, y %2$d más</item>
+    </plurals>
+    <plurals name="broadcast_to_n_contacts">
+        <item quantity="other">Difundir a %d contactos</item>
+        <item quantity="one">Difundir a %d contacto</item>
+    </plurals>
+    <plurals name="confirm_sharing_multiple_title">
+        <item quantity="other">¿Compartir %1$d artículos con %2$s?</item>
+        <item quantity="one">¿Compartir %1$d artículo con %2$s?</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d días</item>
+        <item quantity="one">%d día</item>
+    </plurals>
+    <plurals name="days_of_service">
+        <item quantity="other">"Disfruta tus
+%d días
+de servicio"</item>
+        <item quantity="one">"Disfruta tu
+%d día
+de servicio"</item>
+    </plurals>
+    <plurals name="days_of_service_remaining">
+        <item quantity="other">"Quedan
+%d días
+de servicio"</item>
+        <item quantity="one">"Queda
+%d día
+de servicio"</item>
+    </plurals>
+    <plurals name="delete_confirmation_multiple">
+        <item quantity="other">Borrar %d mensajes</item>
+        <item quantity="one">Borrar %d mensaje</item>
+    </plurals>
+    <plurals name="error_image_dimensions_too_small">
+        <item quantity="other">Esta imagen es demasiado pequeña. Elige una foto con una altura y anchura de al menos %d píxeles.</item>
+        <item quantity="one">Esta imagen es demasiado pequeña. Elige una foto con una altura y anchura de al menos %d píxel.</item>
+    </plurals>
+    <plurals name="group_confirm_sharing_multiple_title">
+        <item quantity="other">¿Compartir %1$d artículos con “%2$s”?</item>
+        <item quantity="one">¿Compartir %1$d artículo con “%2$s”?</item>
+    </plurals>
+    <plurals name="group_participant_demoted_names">
+        <item quantity="other">%s ya no son administradores</item>
+        <item quantity="one">%s ya no es un administrador</item>
+    </plurals>
+    <plurals name="group_participant_promoted_names">
+        <item quantity="other">%s son ahora administradores</item>
+        <item quantity="one">%s es ahora un administrador</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d horas</item>
+        <item quantity="one">%d hora</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">Hace %d horas</item>
+        <item quantity="one">Hace %d hora</item>
+    </plurals>
+    <plurals name="location_accuracy">
+        <item quantity="other">Exacto a %d metros</item>
+        <item quantity="one">Exacto a %d metro</item>
+    </plurals>
+    <plurals name="messages_copied">
+        <item quantity="other">%d mensajes copiados</item>
+        <item quantity="one">%d mensaje copiado</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="other">%d mensajes borrados</item>
+        <item quantity="one">%d mensaje borrado</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d minutos</item>
+        <item quantity="one">%d minuto</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">Hace %d minutos</item>
+        <item quantity="one">Hace %d minuto</item>
+    </plurals>
+    <plurals name="missed_calls">
+        <item quantity="other">%d llamadas perdidas</item>
+        <item quantity="one">%d llamada perdida</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d meses</item>
+        <item quantity="one">%d mes</item>
+    </plurals>
+    <plurals name="months_of_service">
+        <item quantity="other">"Disfruta tus
+%d meses
+de servicio"</item>
+        <item quantity="one">"Disfruta tu
+%d mes
+de servicio"</item>
+    </plurals>
+    <plurals name="months_of_service_remaining">
+        <item quantity="other">"quedan
+%d meses
+de servicio"</item>
+        <item quantity="one">"queda
+%d mes
+de servicio"</item>
+    </plurals>
+    <plurals name="n_contacts">
+        <item quantity="other">%d contactos</item>
+        <item quantity="one">%d contacto</item>
+    </plurals>
+    <plurals name="n_contacts_must_be_selected">
+        <item quantity="other">Por lo menos %d contactos deben ser seleccionados</item>
+        <item quantity="one">Por lo menos %d contacto debe ser seleccionado</item>
+    </plurals>
+    <plurals name="n_contacts_selected">
+        <item quantity="other">%d seleccionados</item>
+        <item quantity="one">%d seleccionado</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d seleccionados</item>
+        <item quantity="one">%d seleccionado</item>
+    </plurals>
+    <plurals name="network_usage_byte_count_bytes">
+        <item quantity="other">%1$d bytes</item>
+        <item quantity="one">%1$d byte</item>
+    </plurals>
+    <plurals name="network_usage_message_count">
+        <item quantity="other">%1$d mensajes</item>
+        <item quantity="one">%1$d mensaje</item>
+    </plurals>
+    <plurals name="notification_new_message">
+        <item quantity="other">%d mensajes nuevos</item>
+        <item quantity="one">%d mensaje nuevo</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_1">
+        <item quantity="other">%d mensajes</item>
+        <item quantity="one">%d mensaje</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_2">
+        <item quantity="other">%1$s de %2$d conversaciones.</item>
+        <item quantity="one">%1$s de %2$d conversación.</item>
+    </plurals>
+    <plurals name="participants_remaining">
+        <item quantity="other">%d restantes</item>
+        <item quantity="one">%d restante</item>
+    </plurals>
+    <plurals name="register_messages_restored">
+        <item quantity="other">Listo para continuar. Hemos restaurado %,d mensajes.</item>
+        <item quantity="one">Listo para continuar. Hemos restaurado %,d mensaje.</item>
+    </plurals>
+    <plurals name="sending_videos_to_contact">
+        <item quantity="other">Enviando %1$d vídeos a %2$s</item>
+        <item quantity="one">Enviando %1$d vídeo a %2$s</item>
+    </plurals>
+    <plurals name="sending_videos_to_contacts">
+        <item quantity="other">Enviando %d vídeos</item>
+        <item quantity="one">Enviando %d vídeo</item>
+    </plurals>
+    <plurals name="service_expire_days">
+        <item quantity="other">Tu servicio de WhatsApp expirará en %d días. ¿Comprar la extensión ahora?</item>
+        <item quantity="one">Tu servicio de WhatsApp expirará en %d día. ¿Comprar la extensión ahora?</item>
+    </plurals>
+    <plurals name="software_about_to_expire">
+        <item quantity="other">Esta versión de WhatsApp necesitará actualizarse en %d días. ¿Actualizar a la versión mas reciente?</item>
+        <item quantity="one">Esta versión de WhatsApp necesitará actualizarse en %d día. ¿Actualizar a la versión mas reciente?</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="other">%d mensajes no leídos</item>
+        <item quantity="one">%d mensaje no leído</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d años</item>
+        <item quantity="one">%d año</item>
+    </plurals>
+    <plurals name="years_of_service">
+        <item quantity="other">"Disfruta tus
+%d años
+de servicio"</item>
+        <item quantity="one">"Disfruta tu
+%d año
+de servicio"</item>
+    </plurals>
+    <plurals name="years_of_service_remaining">
+        <item quantity="other">"quedan
+%d años
+de servicio"</item>
+        <item quantity="one">"queda
+%d año
+de servicio"</item>
+    </plurals>
+    <plurals name="you_created_list">
+        <item quantity="other">Creaste la lista de difusión “%1$s” con %2$d destinatarios</item>
+        <item quantity="one">Creaste la lista de difusión “%1$s” con %2$d destinatario</item>
+    </plurals>
+    <plurals name="you_created_list_unnamed">
+        <item quantity="other">Creaste una lista de difusión con %d destinatarios</item>
+        <item quantity="one">Creaste una lista de difusión con %d destinatario</item>
+    </plurals>
+</resources>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="account_info_gave_n_years_of_service">
+        <item quantity="other">%2$s üçün %1$d illik xidmət satın alındı.</item>
+        <item quantity="one">%2$s üçün %1$d illik xidmət satın alındı.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_more_than_n_years">
+        <item quantity="other">%1$d ildən çox xidmət müddətiniz qalıb.</item>
+        <item quantity="one">%1$d ildən çox xidmət müddətiniz qalıb.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_n_years">
+        <item quantity="other">Hələ %1$d il istifadə xidmət müddətiniz var.</item>
+        <item quantity="one">Hələ %1$d il istifadə xidmət müddətiniz var.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_friend">
+        <item quantity="other">%1$s sizin üçün %2$d illik xidməti satın aldı.</item>
+        <item quantity="one">%1$s sizin üçün %2$d illik xidməti satın aldı.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_unknown">
+        <item quantity="other">Dostunuz sizin üçün %1$d illik xidmət satın aldı.</item>
+        <item quantity="one">Dostunuz sizin üçün %1$d illik xidmət satın aldı.</item>
+    </plurals>
+    <plurals name="broadcast_n_recipients">
+        <item quantity="other">%d alıcı</item>
+        <item quantity="one">%d alıcı</item>
+    </plurals>
+    <plurals name="broadcast_participants_overflow">
+        <item quantity="other">%1$s, %2$d və digərləri</item>
+        <item quantity="one">%1$s, %2$d və digərləri</item>
+    </plurals>
+    <plurals name="broadcast_to_n_contacts">
+        <item quantity="other">%d şəxsinə yayımla</item>
+        <item quantity="one">%d şəxsinə yayımla</item>
+    </plurals>
+    <plurals name="confirm_sharing_multiple_title">
+        <item quantity="other">%1$d elementini %2$s vasitəsilə paylaş?</item>
+        <item quantity="one">%1$d elementini %2$s vasitəsilə paylaş?</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d gün</item>
+        <item quantity="one">%d gün</item>
+    </plurals>
+    <plurals name="days_of_service">
+        <item quantity="other">"
+%d günlük
+xidmətimizdən zövq alın."</item>
+        <item quantity="one">"
+%d günlük
+xidmətimizdən zövq alın."</item>
+    </plurals>
+    <plurals name="days_of_service_remaining">
+        <item quantity="other">"%d gün
+xidmət müddəti
+qalıb"</item>
+        <item quantity="one">"%d gün
+xidmət müddəti
+qalıb"</item>
+    </plurals>
+    <plurals name="delete_confirmation_multiple">
+        <item quantity="other">%d ədəd ismarıcı sil</item>
+        <item quantity="one">%d ədəd ismarıcı sil</item>
+    </plurals>
+    <plurals name="error_image_dimensions_too_small">
+        <item quantity="other">Bu şəkil çox kiçidir. Zəhmət olmasa şəkili seçən zaman minimum hündürlük və en %d piksel olsun.</item>
+        <item quantity="one">Bu şəkil çox kiçidir. Zəhmət olmasa şəkili seçən zaman minimum hündürlük və en %d piksel olsun.</item>
+    </plurals>
+    <plurals name="group_confirm_sharing_multiple_title">
+        <item quantity="other">%1$d elementini “%2$s” vasitəsilə paylaş?</item>
+        <item quantity="one">%1$d elementini “%2$s” vasitəsilə paylaş?</item>
+    </plurals>
+    <plurals name="group_participant_demoted_names">
+        <item quantity="other">%s artıq inzibatçı deyil</item>
+        <item quantity="one">%s artıq inzibatçı deyil</item>
+    </plurals>
+    <plurals name="group_participant_promoted_names">
+        <item quantity="other">%s inzibatçı oldu</item>
+        <item quantity="one">%s inzibatçı oldu</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d saat</item>
+        <item quantity="one">%d saat</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%d saat əvvəl</item>
+        <item quantity="one">%d saat əvvəl</item>
+    </plurals>
+    <plurals name="location_accuracy">
+        <item quantity="other">Dəqiqlik %d m-ə qədər</item>
+        <item quantity="one">Dəqiqlik %d m-ə qədər</item>
+    </plurals>
+    <plurals name="messages_copied">
+        <item quantity="other">%d ismarıc kopyalandı</item>
+        <item quantity="one">%d ismarıc kopyalandı</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="other">%d ədəd ismarıc silindi</item>
+        <item quantity="one">%d ədəd ismarıc silindi</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d dəqiqə</item>
+        <item quantity="one">%d dəqiqə</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">%d dəqiqə əvvəl</item>
+        <item quantity="one">%d dəqiqə əvvəl</item>
+    </plurals>
+    <plurals name="missed_calls">
+        <item quantity="other">%d buraxılmış zəng</item>
+        <item quantity="one">%d buraxılmış zəng</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d ay</item>
+        <item quantity="one">%d ay</item>
+    </plurals>
+    <plurals name="months_of_service">
+        <item quantity="other">"
+%d aylıq
+xidmətimizdən zövq alın"</item>
+        <item quantity="one">"
+%d aylıq
+xidmətimizdən zövq alın"</item>
+    </plurals>
+    <plurals name="months_of_service_remaining">
+        <item quantity="other">"%d ay
+xidmət müddəti
+qalıb"</item>
+        <item quantity="one">"%d ay
+xidmət müddəti
+qalıb"</item>
+    </plurals>
+    <plurals name="n_contacts">
+        <item quantity="other">%d şəxs</item>
+        <item quantity="one">%d şəxs</item>
+    </plurals>
+    <plurals name="n_contacts_must_be_selected">
+        <item quantity="other">Ən az %d şəxs seçilməlidir</item>
+        <item quantity="one">Ən az %d şəxs seçilməlidir</item>
+    </plurals>
+    <plurals name="n_contacts_selected">
+        <item quantity="other">%d seçildi</item>
+        <item quantity="one">%d seçildi</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d ədəd seçilib</item>
+        <item quantity="one">%d ədəd seçilib</item>
+    </plurals>
+    <plurals name="network_usage_byte_count_bytes">
+        <item quantity="other">%1$d bayt</item>
+        <item quantity="one">%1$d bayt</item>
+    </plurals>
+    <plurals name="network_usage_message_count">
+        <item quantity="other">%1$d ismarıc</item>
+        <item quantity="one">%1$d ismarıc</item>
+    </plurals>
+    <plurals name="notification_new_message">
+        <item quantity="other">%d yeni ismarıc</item>
+        <item quantity="one">%d yeni ismarıc</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_1">
+        <item quantity="other">%d ismarıc</item>
+        <item quantity="one">%d ismarıc</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_2">
+        <item quantity="other">%2$d danışıqdan %1$s ismarıc</item>
+        <item quantity="one">%2$d danışıqdan %1$s ismarıc</item>
+    </plurals>
+    <plurals name="participants_remaining">
+        <item quantity="other">%d ədəd qalıb</item>
+        <item quantity="one">%d ədəd qalıb</item>
+    </plurals>
+    <plurals name="register_messages_restored">
+        <item quantity="other">Hazır. Biz %,d ədəd ismarıcı bərpa etdik.</item>
+        <item quantity="one">Hazır. Biz %,d ədəd ismarıcı bərpa etdik.</item>
+    </plurals>
+    <plurals name="sending_videos_to_contact">
+        <item quantity="other">%1$d video %2$s hesabına göndərilir</item>
+        <item quantity="one">%1$d video %2$s hesabına göndərilir</item>
+    </plurals>
+    <plurals name="sending_videos_to_contacts">
+        <item quantity="other">%d videosu göndərilir</item>
+        <item quantity="one">%d videosu göndərilir</item>
+    </plurals>
+    <plurals name="service_expire_days">
+        <item quantity="other">WhatsApp xidmətinizin müddəti %d gün sonra bitir. Xidmət müddətini uzatmaq üçün ödəmə etmək istəyirsiniz?</item>
+        <item quantity="one">WhatsApp xidmətinizin müddəti %d gün sonra bitir. Xidmət müddətini uzatmaq üçün ödəmə etmək istəyirsiniz?</item>
+    </plurals>
+    <plurals name="software_about_to_expire">
+        <item quantity="other">"WhatsApp'ın bu versiyası %d gün içində yenilənməlidir. Ən son versiya yenilənsin?"</item>
+        <item quantity="one">"WhatsApp'ın bu versiyası %d gün içində yenilənməlidir. Ən son versiya yenilənsin?"</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="other">%d ədəd oxunmamış ismarıc</item>
+        <item quantity="one">%d ədəd oxunmamış ismarıc</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d il</item>
+        <item quantity="one">%d il</item>
+    </plurals>
+    <plurals name="years_of_service">
+        <item quantity="other">"
+%d illik
+xidmətimizdən zövq alın"</item>
+        <item quantity="one">"
+%d illik
+xidmətimizdən zövq alın"</item>
+    </plurals>
+    <plurals name="years_of_service_remaining">
+        <item quantity="other">"%d il
+xidmət müddəti
+qalıb"</item>
+        <item quantity="one">"%d il
+xidmət müddəti
+qalıb"</item>
+    </plurals>
+    <plurals name="you_created_list">
+        <item quantity="other">%2$d alıcısı ilə birgə “%1$s” yayım siyahısı yaratdınız</item>
+        <item quantity="one">%2$d alıcısı ilə birgə “%1$s” yayım siyahısı yaratdınız</item>
+    </plurals>
+    <plurals name="you_created_list_unnamed">
+        <item quantity="other">%d alıcısı ilə birlikdə yayım siyahısı yaratdınız</item>
+        <item quantity="one">%d alıcısı ilə birlikdə yayım siyahısı yaratdınız</item>
+    </plurals>
+</resources>

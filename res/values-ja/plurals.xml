@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="account_info_gave_n_years_of_service">
+        <item quantity="other">%2$sに%1$d年分のサービスを購入しました。</item>
+    </plurals>
+    <plurals name="account_info_inform_have_more_than_n_years">
+        <item quantity="other">サービス有効期限は残り%1$d年以上です。</item>
+    </plurals>
+    <plurals name="account_info_inform_have_n_years">
+        <item quantity="other">サービス有効期限は残り%1$d年です。</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_friend">
+        <item quantity="other">%1$sが%2$d年分のサービスをプレゼントしてくれました。</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_unknown">
+        <item quantity="other">ご友人が%1$d年分のサービスをプレゼントしてくれました。</item>
+    </plurals>
+    <plurals name="broadcast_n_recipients">
+        <item quantity="other">宛先 %d人</item>
+    </plurals>
+    <plurals name="broadcast_participants_overflow">
+        <item quantity="other">%1$sとその他%2$d人</item>
+    </plurals>
+    <plurals name="broadcast_to_n_contacts">
+        <item quantity="other">%d人に一斉送信</item>
+    </plurals>
+    <plurals name="confirm_sharing_multiple_title">
+        <item quantity="other">%2$sに%1$d項目を共有しますか?</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d日</item>
+    </plurals>
+    <plurals name="days_of_service">
+        <item quantity="other">"WhatsAppのサービスを
+%d日間
+ご利用いただけます"</item>
+    </plurals>
+    <plurals name="days_of_service_remaining">
+        <item quantity="other">"サービス有効期限まで
+残り%d日
+"</item>
+    </plurals>
+    <plurals name="delete_confirmation_multiple">
+        <item quantity="other">%d件のメッセージを削除</item>
+    </plurals>
+    <plurals name="error_image_dimensions_too_small">
+        <item quantity="other">画像が小さすぎます。高さと幅が最低 %d ピクセルのものをご使用下さい。</item>
+    </plurals>
+    <plurals name="group_confirm_sharing_multiple_title">
+        <item quantity="other">「%2$s」に%1$d項目を共有しますか?</item>
+    </plurals>
+    <plurals name="group_participant_demoted_names">
+        <item quantity="other">%sは管理者ではなくなりました</item>
+    </plurals>
+    <plurals name="group_participant_promoted_names">
+        <item quantity="other">%sが管理者になりました</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d時間</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%d 時間前</item>
+    </plurals>
+    <plurals name="location_accuracy">
+        <item quantity="other">位置精度 誤差%d m以内</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="other">%d件のメッセージを削除しました</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d分</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">%d 分前</item>
+    </plurals>
+    <plurals name="missed_calls">
+        <item quantity="other">%d 件の不在着信</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%dか月</item>
+    </plurals>
+    <plurals name="months_of_service">
+        <item quantity="other">"WhatsAppのサービスを
+%dか月間
+ご利用いただけます"</item>
+    </plurals>
+    <plurals name="months_of_service_remaining">
+        <item quantity="other">"サービス有効期限まで
+残り%dか月
+"</item>
+    </plurals>
+    <plurals name="n_contacts">
+        <item quantity="other">%d件の連絡先</item>
+    </plurals>
+    <plurals name="n_contacts_must_be_selected">
+        <item quantity="other">最低%d件の連絡先を選択してください</item>
+    </plurals>
+    <plurals name="n_contacts_selected">
+        <item quantity="other">%d人選択済み</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d 選択済み</item>
+    </plurals>
+    <plurals name="network_usage_byte_count_bytes">
+        <item quantity="other">%1$d バイト</item>
+    </plurals>
+    <plurals name="network_usage_message_count">
+        <item quantity="other">%1$d 通のメッセージ</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_1">
+        <item quantity="other">メッセージ %d件</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_2">
+        <item quantity="other">%2$d件のチャット会話に新着メッセージ%1$s件</item>
+    </plurals>
+    <plurals name="register_messages_restored">
+        <item quantity="other">これで完了です。%,d通のメッセージを復元しました。</item>
+    </plurals>
+    <plurals name="sending_videos_to_contact">
+        <item quantity="other">%2$sに%1$d本の動画を送信中</item>
+    </plurals>
+    <plurals name="sending_videos_to_contacts">
+        <item quantity="other">%d本のビデオを送信中</item>
+    </plurals>
+    <plurals name="service_expire_days">
+        <item quantity="other">%d日後にWhatsAppサービスの有効期限が切れます。今すぐサービスの延長を購入しますか?</item>
+    </plurals>
+    <plurals name="software_about_to_expire">
+        <item quantity="other">現在お使いのバージョンのWhatsAppは%d日以内にアップデートする必要があります。今すぐアップデートしますか?</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="other">未読メッセージ %d件</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d年</item>
+    </plurals>
+    <plurals name="years_of_service">
+        <item quantity="other">"WhatsAppのサービスを
+%d年間
+ご利用いただけます"</item>
+    </plurals>
+    <plurals name="years_of_service_remaining">
+        <item quantity="other">"サービス有効期限まで
+残り%d年
+"</item>
+    </plurals>
+    <plurals name="you_created_list">
+        <item quantity="other">宛先%2$d人の一斉送信リスト「%1$s」を作成しました</item>
+    </plurals>
+    <plurals name="you_created_list_unnamed">
+        <item quantity="other">宛先%d人の一斉送信リストを作成しました</item>
+    </plurals>
+</resources>

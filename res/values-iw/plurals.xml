@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="account_info_gave_n_years_of_service">
+        <item quantity="other">%1$d שנים של שירות נרכשו עבור %2$s.</item>
+        <item quantity="one">%1$d שנה של שירות נרכשה עבור %2$s.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_more_than_n_years">
+        <item quantity="other">נותרו לך יותר מ-%1$d שנים של שירות.</item>
+        <item quantity="one">נותר לך יותר מ-%1$d שנה של שירות.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_n_years">
+        <item quantity="other">נותרו לך %1$d שנים של שירות.</item>
+        <item quantity="one">נותרה לך %1$d שנה של שירות.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_friend">
+        <item quantity="other">%1$s רכש עבורך %2$d שנות שירות.</item>
+        <item quantity="one">%1$s רכש עבורך %2$d שנת שירות.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_unknown">
+        <item quantity="other">חבר רכש %1$d שנים של שירות עבורך.</item>
+        <item quantity="one">חבר רכש %1$d שנה של שירות עבורך.</item>
+    </plurals>
+    <plurals name="broadcast_n_recipients">
+        <item quantity="other">%d נמענים</item>
+        <item quantity="one">%d נמען</item>
+    </plurals>
+    <plurals name="broadcast_participants_overflow">
+        <item quantity="other">%1$s, ועוד %2$d</item>
+        <item quantity="one">%1$s, ועוד %2$d</item>
+    </plurals>
+    <plurals name="broadcast_to_n_contacts">
+        <item quantity="other">הפץ אל %d אנשי קשר.</item>
+        <item quantity="one">הפץ אל %d איש קשר.</item>
+    </plurals>
+    <plurals name="confirm_sharing_multiple_title">
+        <item quantity="other">שתף %1$d פריטים עם %2$s?</item>
+        <item quantity="one">שתף פריט %1$d עם %2$s?</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d ימים</item>
+        <item quantity="one">יום %d</item>
+    </plurals>
+    <plurals name="days_of_service">
+        <item quantity="other">"תהנה/י מ
+%d ימים
+ של שירות"</item>
+        <item quantity="one">"תהנה/י מ
+יום %d
+של שירות"</item>
+    </plurals>
+    <plurals name="days_of_service_remaining">
+        <item quantity="other">"%d ימים
+של שירות
+נשארו"</item>
+        <item quantity="one">"יום %d
+של שירות
+נשאר"</item>
+    </plurals>
+    <plurals name="delete_confirmation_multiple">
+        <item quantity="other">מחק %d הודעות</item>
+        <item quantity="one">מחק הודעה %d</item>
+    </plurals>
+    <plurals name="error_image_dimensions_too_small">
+        <item quantity="other">תמונה זו קטנה מידי. אנא בחר/י תמונה בגובה ורוחב של לפחות %d פיקסלים.</item>
+        <item quantity="one">תמונה זו קטנה מידי. אנא בחר/י תמונה בגובה ורוחב של לפחות %d פיקסלים.</item>
+    </plurals>
+    <plurals name="group_confirm_sharing_multiple_title">
+        <item quantity="other">שתף %1$d פריטים עם “%2$s”?</item>
+        <item quantity="one">שתף פריט %1$d עם “%2$s”?</item>
+    </plurals>
+    <plurals name="group_participant_demoted_names">
+        <item quantity="other">%s כבר לא מנהלים</item>
+        <item quantity="one">%s כבר לא מנהל</item>
+    </plurals>
+    <plurals name="group_participant_promoted_names">
+        <item quantity="other">%s עכשיו מנהלים</item>
+        <item quantity="one">%s עכשיו מנהל</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d שעות</item>
+        <item quantity="one">שעה %d</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">לפני %d שעות</item>
+        <item quantity="one">לפני %d שעה</item>
+    </plurals>
+    <plurals name="location_accuracy">
+        <item quantity="other">מדוייק ב-%d מטרים</item>
+        <item quantity="one">מדוייק במטר %d</item>
+    </plurals>
+    <plurals name="messages_copied">
+        <item quantity="other">%d הודעות הועתקו</item>
+        <item quantity="one">%d הודעה הועתקה</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="other">%d הודעות נמחקו</item>
+        <item quantity="one">%d הודעה נמחקה</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d דקות</item>
+        <item quantity="one">דקה %d</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">לפני %d דקות</item>
+        <item quantity="one">לפני %d דקה</item>
+    </plurals>
+    <plurals name="missed_calls">
+        <item quantity="other">%d שיחות שלא נענו</item>
+        <item quantity="one">%d שיחה שלא נענתה</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d חודשים</item>
+        <item quantity="one">חודש %d</item>
+    </plurals>
+    <plurals name="months_of_service">
+        <item quantity="other">"תהנה/י מ
+%d חודשים
+ של שירות"</item>
+        <item quantity="one">"תהנה/י מ
+חודש %d
+של שירות"</item>
+    </plurals>
+    <plurals name="months_of_service_remaining">
+        <item quantity="other">"%d חודשים
+של שירות
+נשארו"</item>
+        <item quantity="one">"חודש %d
+של שירות
+נשאר"</item>
+    </plurals>
+    <plurals name="n_contacts">
+        <item quantity="other">%d אנשי קשר</item>
+        <item quantity="one">%d איש קשר</item>
+    </plurals>
+    <plurals name="n_contacts_must_be_selected">
+        <item quantity="other">לפחות %d אנשי קשר חייבים להבחר</item>
+        <item quantity="one">לפחות איש קשר %d חייב להבחר</item>
+    </plurals>
+    <plurals name="n_contacts_selected">
+        <item quantity="other">%d נבחרו</item>
+        <item quantity="one">%d נבחר</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d נבחרו</item>
+        <item quantity="one">%d נבחר</item>
+    </plurals>
+    <plurals name="network_usage_byte_count_bytes">
+        <item quantity="other">%1$d בייטים</item>
+        <item quantity="one">%1$d בייט</item>
+    </plurals>
+    <plurals name="network_usage_message_count">
+        <item quantity="other">%1$d הודעות</item>
+        <item quantity="one">הודעה %1$d</item>
+    </plurals>
+    <plurals name="notification_new_message">
+        <item quantity="other">%d הודעות חדשות</item>
+        <item quantity="one">%d הודעה חדשה</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_1">
+        <item quantity="other">%d הודעות</item>
+        <item quantity="one">הודעה %d</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_2">
+        <item quantity="other">%1$s מ-%2$d שיחות.</item>
+        <item quantity="one">%1$s משיחה %2$d.</item>
+    </plurals>
+    <plurals name="participants_remaining">
+        <item quantity="other">%d נותרו</item>
+        <item quantity="one">%d נותר</item>
+    </plurals>
+    <plurals name="register_messages_restored">
+        <item quantity="other">את/ה יכול/ה להמשיך הלאה. שיחזרנו %,d הודעות.</item>
+        <item quantity="one">את/ה יכול/ה להמשיך הלאה. שיחזרנו הודעה %,d.</item>
+    </plurals>
+    <plurals name="sending_videos_to_contact">
+        <item quantity="other">שולח %1$d וידאו אל %2$s</item>
+        <item quantity="one">שולח %1$d וידאו אל %2$s</item>
+    </plurals>
+    <plurals name="sending_videos_to_contacts">
+        <item quantity="other">שולח %d וידאו</item>
+        <item quantity="one">שולח %d וידאו</item>
+    </plurals>
+    <plurals name="service_expire_days">
+        <item quantity="other">שירות הWhatsApp שלך יפוג תוך %d ימים. לרכוש הארכה עכשיו?</item>
+        <item quantity="one">שירות הWhatsApp שלך יפוג תוך יום %d. לרכוש הארכה עכשיו?</item>
+    </plurals>
+    <plurals name="software_about_to_expire">
+        <item quantity="other">גירסה זו של WhatsApp תדרוש עדכון בעוד %d ימים. האם לעדכן לגירסה המאוחרת ביותר?</item>
+        <item quantity="one">גירסה זו של WhatsApp תדרוש עדכון בעוד %d יום. האם לעדכן לגירסה המאוחרת ביותר?</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="other">%d הודעות לא נקראו</item>
+        <item quantity="one">הודעה %d לא נקראה</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d שנים</item>
+        <item quantity="one">שנה %d</item>
+    </plurals>
+    <plurals name="years_of_service">
+        <item quantity="other">"תהנה/י מ
+%d שנים
+ של שירות"</item>
+        <item quantity="one">"תהנה/י מ
+שנה %d
+של שירות"</item>
+    </plurals>
+    <plurals name="years_of_service_remaining">
+        <item quantity="other">"%d שנים
+של שירות
+נשארו"</item>
+        <item quantity="one">"שנה %d
+של שירות
+נשארה"</item>
+    </plurals>
+    <plurals name="you_created_list">
+        <item quantity="other">יצרת את רשימת השידור \"%1$s\" עם %2$d נמענים.</item>
+        <item quantity="one">יצרת את רשימת השידור \"%1$s\" עם %2$d נמען.</item>
+    </plurals>
+    <plurals name="you_created_list_unnamed">
+        <item quantity="other">יצרת רשימת תפוצה המונה %d משתתפים.</item>
+        <item quantity="one">יצרת רשימת תפוצה המונה %d משתתפים.</item>
+    </plurals>
+</resources>

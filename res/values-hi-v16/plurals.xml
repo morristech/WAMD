@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="account_info_gave_n_years_of_service">
+        <item quantity="other">%2$s हेतु %1$d वर्ष की सेवा खरीदी हैंl</item>
+        <item quantity="one">%2$s हेतु %1$d वर्ष की सेवा खरीदी हैंl</item>
+    </plurals>
+    <plurals name="account_info_inform_have_more_than_n_years">
+        <item quantity="other">आपकी %1$d वर्षों से भी ज्यदा की सेवा बची हुई है.</item>
+        <item quantity="one">आपकी %1$d वर्ष से भी ज्यदा की सेवा बची हुई है.</item>
+    </plurals>
+    <plurals name="account_info_inform_have_n_years">
+        <item quantity="other">आपकी %1$d वर्षों की सेवा बची हुई है.</item>
+        <item quantity="one">आपकी %1$d वर्ष की सेवा बची हुई है.</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_friend">
+        <item quantity="other">%1$s ने आपके हेतु %2$d वर्ष की सेवा खरीदी हैl</item>
+        <item quantity="one">%1$s ने आपके हेतु %2$d वर्ष की सेवा खरीदी हैl</item>
+    </plurals>
+    <plurals name="account_info_received_n_years_of_service_from_unknown">
+        <item quantity="other">एक मित्र ने आपके लिए %1$d वर्ष की सेवा खरीदी हैl</item>
+        <item quantity="one">एक मित्र ने आपके लिए %1$d वर्ष की सेवा खरीदी हैl</item>
+    </plurals>
+    <plurals name="broadcast_n_recipients">
+        <item quantity="other">%d प्राप्तकर्ताओं</item>
+        <item quantity="one">%d प्राप्तकर्ता</item>
+    </plurals>
+    <plurals name="broadcast_participants_overflow">
+        <item quantity="other">%1$s, और %2$d अधिक</item>
+        <item quantity="one">%1$s, और %2$d अधिक</item>
+    </plurals>
+    <plurals name="broadcast_to_n_contacts">
+        <item quantity="other">%d संपर्कों को प्रसारित करेंl</item>
+        <item quantity="one">%d संपर्क को प्रसारित करेंl</item>
+    </plurals>
+    <plurals name="confirm_sharing_multiple_title">
+        <item quantity="other">%1$d को %2$s के साथ शेयर करें?</item>
+        <item quantity="one">%1$d को %2$s के साथ शेयर करें?</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d दिनों</item>
+        <item quantity="one">%d दिन</item>
+    </plurals>
+    <plurals name="days_of_service">
+        <item quantity="other">"अपनी सेवा का
+%d दिनो
+तक आनंद लेंl"</item>
+        <item quantity="one">"अपनी सेवा का
+%d दिन
+तक आनंद लेंl"</item>
+    </plurals>
+    <plurals name="days_of_service_remaining">
+        <item quantity="other">"%d दिन
+की सेवा
+शेष"</item>
+        <item quantity="one">"%d दिन
+की सेवा
+शेष"</item>
+    </plurals>
+    <plurals name="delete_confirmation_multiple">
+        <item quantity="other">%d संदेश हटाएँl</item>
+        <item quantity="one">%d संदेश हटाएँl</item>
+    </plurals>
+    <plurals name="error_image_dimensions_too_small">
+        <item quantity="other">यह तस्वीरें बहुत छोटी हैl कृपया कम से कम %d पिक्सेल की ऊंचाई और चौड़ाई के साथ तस्वीरों का चयन करेंl</item>
+        <item quantity="one">यह चित्र बहुत छोटा हैl कृपया कम से कम %d पिक्सेल की ऊंचाई और चौड़ाई के साथ एक तस्वीर का चयन करेंl</item>
+    </plurals>
+    <plurals name="group_confirm_sharing_multiple_title">
+        <item quantity="other">%1$d को “%2$s” के साथ बांटें</item>
+        <item quantity="one">%1$d को “%2$s” के साथ बांटें</item>
+    </plurals>
+    <plurals name="group_participant_demoted_names">
+        <item quantity="other">%s अब एक व्यवस्थापक नही रहे है</item>
+        <item quantity="one">%s अब एक व्यवस्थापक नही है</item>
+    </plurals>
+    <plurals name="group_participant_promoted_names">
+        <item quantity="other">%s अब व्यवस्थापक है</item>
+        <item quantity="one">%s अब एक व्यवस्थापक है</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d घंटे</item>
+        <item quantity="one">%d घंटा</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%d घंटे पूर्व</item>
+        <item quantity="one">%d घंटे पूर्व</item>
+    </plurals>
+    <plurals name="location_accuracy">
+        <item quantity="other">%d मीटर तक सटीक</item>
+        <item quantity="one">%d मीटर तक सटीक</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="other">%d संदेश हटा दिए गया हैंl</item>
+        <item quantity="one">%d संदेश हटा दिया गया हैंl</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d मिनट</item>
+        <item quantity="one">%d मिनट</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">%d मिनटों पूर्व</item>
+        <item quantity="one">%d मिनट पूर्व</item>
+    </plurals>
+    <plurals name="missed_calls">
+        <item quantity="other">%d छूटी हुईं कॉल.</item>
+        <item quantity="one">%d छूटी हुई कॉल.</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d महीने</item>
+        <item quantity="one">%d महीना</item>
+    </plurals>
+    <plurals name="months_of_service">
+        <item quantity="other">"अपनी सेवा का
+%d महीनो
+तक आनंद लेंl"</item>
+        <item quantity="one">"अपनी सेवा का
+%d महीने
+तक आनंद लेंl"</item>
+    </plurals>
+    <plurals name="months_of_service_remaining">
+        <item quantity="other">"%d महीने 
+की सेवा
+शेष"</item>
+        <item quantity="one">"%d मास 
+की सेवा
+शेष"</item>
+    </plurals>
+    <plurals name="n_contacts">
+        <item quantity="other">%d संपर्क</item>
+        <item quantity="one">%d संपर्क</item>
+    </plurals>
+    <plurals name="n_contacts_must_be_selected">
+        <item quantity="other">कम से कम %d संपर्कों का चयन किया जाना चाहिएl</item>
+        <item quantity="one">कम से कम %d से संपर्क का चयन किया जाना चाहिएl</item>
+    </plurals>
+    <plurals name="n_contacts_selected">
+        <item quantity="other">%d चयनित</item>
+        <item quantity="one">%d चयनित</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d चुने गए हैl</item>
+        <item quantity="one">%d को चुना गया हैl</item>
+    </plurals>
+    <plurals name="network_usage_byte_count_bytes">
+        <item quantity="other">%1$d बाईटस</item>
+        <item quantity="one">%1$d बाईट</item>
+    </plurals>
+    <plurals name="network_usage_message_count">
+        <item quantity="other">%1$d संदेश</item>
+        <item quantity="one">%1$d संदेश</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_1">
+        <item quantity="other">%d संदेश</item>
+        <item quantity="one">%d संदेश</item>
+    </plurals>
+    <plurals name="notification_new_message_from_multiple_contacts_2">
+        <item quantity="other">%2$d मित्रों से %1$s सन्देश</item>
+        <item quantity="one">%2$d मित्र से %1$s सन्देश</item>
+    </plurals>
+    <plurals name="register_messages_restored">
+        <item quantity="other">आप तैयार हैं। हमने %,d संदेशों को पुन: प्रतिस्थापित कर दिया है।</item>
+        <item quantity="one">आप तैयार हैं। हमने %,d संदेश को पुन: प्रतिस्थापित कर दिया है।</item>
+    </plurals>
+    <plurals name="sending_videos_to_contact">
+        <item quantity="other">%2$s को %1$d विडियो भेजे जा रहे हैं</item>
+        <item quantity="one">%2$s को %1$d विडियो भेजा जा रहा है</item>
+    </plurals>
+    <plurals name="sending_videos_to_contacts">
+        <item quantity="other">%d वीडियो भेजे जा रहे हैं</item>
+        <item quantity="one">%d वीडियो भेजा जा रहा है</item>
+    </plurals>
+    <plurals name="service_expire_days">
+        <item quantity="other">आपकी WhatsApp सेवा d दिन %d में समाप्त हो जाएगी। विस्तार अब खरीदें?</item>
+        <item quantity="one">आपकी WhatsApp सेवा d दिन %d में समाप्त हो जाएगी। विस्तार अब खरीदें?</item>
+    </plurals>
+    <plurals name="software_about_to_expire">
+        <item quantity="other">WhatsApp के इस संस्करण को %d दिन में नवीनीकरण की आवश्यकता हैंl संस्करण का नवीनीकरण करें?</item>
+        <item quantity="one">WhatsApp के इस संस्करण को %d दिन में नवीनीकरण की आवश्यकता हैंl संस्करण का नवीनीकरण करें?</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="other">%d अपठित सन्देश</item>
+        <item quantity="one">%d अपठित सन्देश</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d साल</item>
+        <item quantity="one">%d साल</item>
+    </plurals>
+    <plurals name="years_of_service">
+        <item quantity="other">"अपनी सेवा का
+%d साल
+तक आनंद लेंl"</item>
+        <item quantity="one">"अपनी सेवा का
+%d साल
+तक आनंद लेंl"</item>
+    </plurals>
+    <plurals name="years_of_service_remaining">
+        <item quantity="other">"%d वर्ष
+की सेवा
+शेष हैंl"</item>
+        <item quantity="one">"%d वर्ष
+की सेवा
+शेष हैंl"</item>
+    </plurals>
+    <plurals name="you_created_list">
+        <item quantity="other">आपने %2$d प्राप्तकर्ताओं की “%1$s” प्रसारण सूची बनाई है</item>
+        <item quantity="one">आपने %2$d प्राप्तकर्ता की “%1$s” प्रसारण सूची बनाई है</item>
+    </plurals>
+    <plurals name="you_created_list_unnamed">
+        <item quantity="other">आपने %d प्राप्तकर्ताओं की एक प्रसारण सूची बनाई</item>
+        <item quantity="one">आपने %d प्राप्तकर्ता की एक प्रसारण सूची बनाई</item>
+    </plurals>
+</resources>
