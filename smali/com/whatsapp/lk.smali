@@ -1,147 +1,125 @@
 .class Lcom/whatsapp/lk;
-.super Ljava/lang/Object;
+.super Landroid/os/AsyncTask;
 .source "lk.java"
-
-# interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
-
-
-# static fields
-.field private static final z:Ljava/lang/String;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/DialogToastListActivity;
+.field final a:Lcom/whatsapp/b1;
+
+.field final b:Lcom/whatsapp/protocol/c9;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    const-string v0, ":h\u0016\r\'9.\u001b\u000e/7oZ\u0007)7m\u0012\u0005g,d\u0005\u0004/7r\u0003\u0004:"
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    move v3, v2
-
-    move v2, v1
-
-    move-object v1, v0
-
-    :goto_0
-    if-gt v2, v3, :cond_0
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/lk;->z:Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v4, v1, v3
-
-    rem-int/lit8 v0, v3, 0x5
-
-    packed-switch v0, :pswitch_data_0
-
-    const/16 v0, 0x48
-
-    :goto_1
-    xor-int/2addr v0, v4
-
-    int-to-char v0, v0
-
-    aput-char v0, v1, v3
-
-    add-int/lit8 v0, v3, 0x1
-
-    move v3, v0
-
-    goto :goto_0
-
-    :pswitch_0
-    const/16 v0, 0x5e
-
-    goto :goto_1
-
-    :pswitch_1
-    const/4 v0, 0x1
-
-    goto :goto_1
-
-    :pswitch_2
-    const/16 v0, 0x77
-
-    goto :goto_1
-
-    :pswitch_3
-    const/16 v0, 0x61
-
-    goto :goto_1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-.end method
-
-.method constructor <init>(Lcom/whatsapp/DialogToastListActivity;)V
+.method constructor <init>(Lcom/whatsapp/b1;Lcom/whatsapp/protocol/c9;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/lk;->a:Lcom/whatsapp/DialogToastListActivity;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/lk;->a:Lcom/whatsapp/b1;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lcom/whatsapp/lk;->b:Lcom/whatsapp/protocol/c9;
+
+    invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+.method protected a([B)V
+    .locals 5
 
     .prologue
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    .line 10
+    iget-object v0, p0, Lcom/whatsapp/lk;->b:Lcom/whatsapp/protocol/c9;
+
+    iget-object v0, v0, Lcom/whatsapp/protocol/c9;->i:Ljava/lang/Object;
+
+    check-cast v0, Lcom/whatsapp/MediaData;
+
+    .line 3
+    iput-boolean v2, v0, Lcom/whatsapp/MediaData;->transferring:Z
+
     .line 2
-    sget-object v0, Lcom/whatsapp/lk;->z:Ljava/lang/String;
+    iget-object v0, p0, Lcom/whatsapp/lk;->b:Lcom/whatsapp/protocol/c9;
 
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+    iput v1, v0, Lcom/whatsapp/protocol/c9;->q:I
 
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/lk;->a:Lcom/whatsapp/DialogToastListActivity;
+    .line 8
+    iget-object v0, p0, Lcom/whatsapp/lk;->b:Lcom/whatsapp/protocol/c9;
 
-    const/16 v1, 0x6e
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/DialogToastListActivity;->removeDialog(I)V
-
-    .line 6
-    iget-object v0, p0, Lcom/whatsapp/lk;->a:Lcom/whatsapp/DialogToastListActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/OverlayAlert;->a(Landroid/app/Activity;)V
-
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/lk;->a:Lcom/whatsapp/DialogToastListActivity;
-
-    invoke-virtual {v0}, Lcom/whatsapp/DialogToastListActivity;->finish()V
+    invoke-virtual {v0, p1}, Lcom/whatsapp/protocol/c9;->b([B)V
 
     .line 1
+    sget-object v3, Lcom/whatsapp/App;->au:Lcom/whatsapp/amo;
+
+    iget-object v4, p0, Lcom/whatsapp/lk;->b:Lcom/whatsapp/protocol/c9;
+
+    if-eqz p1, :cond_0
+
+    move v0, v1
+
+    :goto_0
+    const/4 v1, -0x1
+
+    invoke-virtual {v3, v4, v0, v1}, Lcom/whatsapp/amo;->a(Lcom/whatsapp/protocol/c9;ZI)V
+
+    .line 5
+    return-void
+
+    :cond_0
+    move v0, v2
+
+    .line 1
+    goto :goto_0
+.end method
+
+.method protected a([Ljava/lang/Void;)[B
+    .locals 4
+
+    .prologue
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/lk;->b:Lcom/whatsapp/protocol/c9;
+
+    iget-wide v0, v0, Lcom/whatsapp/protocol/c9;->B:D
+
+    iget-object v2, p0, Lcom/whatsapp/lk;->b:Lcom/whatsapp/protocol/c9;
+
+    iget-wide v2, v2, Lcom/whatsapp/protocol/c9;->w:D
+
+    invoke-static {v0, v1, v2, v3}, Lcom/whatsapp/apg;->a(DD)[B
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 7
+    check-cast p1, [Ljava/lang/Void;
+
+    invoke-virtual {p0, p1}, Lcom/whatsapp/lk;->a([Ljava/lang/Void;)[B
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected onPostExecute(Ljava/lang/Object;)V
+    .locals 0
+
+    .prologue
+    .line 9
+    check-cast p1, [B
+
+    invoke-virtual {p0, p1}, Lcom/whatsapp/lk;->a([B)V
+
     return-void
 .end method

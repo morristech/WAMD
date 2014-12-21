@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 1
     invoke-direct {p0}, Lcom/whatsapp/notification/PopupNotification;-><init>()V
 
     return-void
@@ -20,7 +20,7 @@
     .locals 3
 
     .prologue
-    .line 1
+    .line 3
     invoke-super {p0, p1}, Lcom/whatsapp/notification/PopupNotification;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
@@ -36,6 +36,6 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 3
+    .line 4
     return-void
 .end method

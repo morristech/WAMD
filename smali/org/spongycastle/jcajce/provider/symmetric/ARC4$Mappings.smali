@@ -14,13 +14,13 @@
     .locals 12
 
     .prologue
-    const/16 v3, 0x27
+    const/16 v1, 0x51
 
-    const/16 v2, 0x1e
+    const/16 v2, 0x39
 
-    const/16 v1, 0x11
+    const/16 v3, 0x17
 
-    const/16 v4, 0xb
+    const/16 v4, 0x8
 
     const/4 v6, 0x0
 
@@ -28,7 +28,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "Pj]\u0013"
+    const-string v0, "u6\\nO4\u0013"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -57,7 +57,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "PTy\tJ}Q\u007fT%Z]g`n\u007f]lF\u007f~J0uH%"
+    const-string v0, "\u0010/z#"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -86,7 +86,7 @@
 
     const/4 v10, 0x2
 
-    const-string v0, "5z\u007fTn"
+    const-string v0, "u?Xdm"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -115,7 +115,7 @@
 
     const/4 v10, 0x3
 
-    const-string v0, "RQnOnc\u0016_uH%"
+    const-string v0, "\u0010\u0011^9I=\u0014Xd&\u0012\u0014I\u007fm#SxEK\u00172lE"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -144,7 +144,7 @@
 
     const/4 v10, 0x4
 
-    const-string v0, "PTy\tJ}Q\u007fT%RQnOnc\u0016Ld?"
+    const-string v0, "\u0010/z#"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -173,7 +173,7 @@
 
     const/4 v10, 0x5
 
-    const-string v0, "Z]g`n\u007f]lF\u007f~J0fYR\u000c"
+    const-string v0, "\u001a\u0018@Pm?\u0018Kv|>\u000f\u0017VZ\u0012I"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -202,7 +202,7 @@
 
     const/4 v10, 0x6
 
-    const-string v0, "Pj]\u0013"
+    const-string v0, "\u0010/z#"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -231,7 +231,7 @@
 
     const/4 v10, 0x7
 
-    const-string v0, "PTy\tJ}Q\u007fT%RQnOnc\u0016_uHWwKu"
+    const-string v0, "\u0010\u0011^9I=\u0014Xd&\u001a\u0018@Pm?\u0018Kv|>\u000f\u0017EKe"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -258,9 +258,7 @@
 
     aput-object v0, v9, v10
 
-    const/16 v10, 0x8
-
-    const-string v0, "Pj]\u0013"
+    const-string v0, "\u0012\u0014I\u007fm#SxEKe"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -285,11 +283,11 @@
 
     move-result-object v0
 
-    aput-object v0, v9, v10
+    aput-object v0, v9, v4
 
     const/16 v8, 0x9
 
-    const-string v0, "5s{^LtV"
+    const-string v0, "\u0010\u0011^9I=\u0014Xd&\u0012\u0014I\u007fm#SkT<"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -318,7 +316,7 @@
 
     sput-object v9, Lorg/spongycastle/jcajce/provider/symmetric/ARC4$Mappings;->z:[Ljava/lang/String;
 
-    .line 2
+    .line 6
     const-class v0, Lorg/spongycastle/jcajce/provider/symmetric/ARC4;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -358,7 +356,7 @@
     goto :goto_a
 
     :pswitch_1
-    const/16 v0, 0x38
+    const/16 v0, 0x7d
 
     goto :goto_a
 
@@ -400,7 +398,7 @@
     goto :goto_b
 
     :pswitch_5
-    const/16 v0, 0x38
+    const/16 v0, 0x7d
 
     goto :goto_b
 
@@ -442,7 +440,7 @@
     goto :goto_c
 
     :pswitch_9
-    const/16 v0, 0x38
+    const/16 v0, 0x7d
 
     goto :goto_c
 
@@ -484,7 +482,7 @@
     goto :goto_d
 
     :pswitch_d
-    const/16 v0, 0x38
+    const/16 v0, 0x7d
 
     goto :goto_d
 
@@ -526,7 +524,7 @@
     goto :goto_e
 
     :pswitch_11
-    const/16 v0, 0x38
+    const/16 v0, 0x7d
 
     goto :goto_e
 
@@ -568,7 +566,7 @@
     goto :goto_f
 
     :pswitch_15
-    const/16 v0, 0x38
+    const/16 v0, 0x7d
 
     goto :goto_f
 
@@ -610,7 +608,7 @@
     goto :goto_10
 
     :pswitch_19
-    const/16 v0, 0x38
+    const/16 v0, 0x7d
 
     goto :goto_10
 
@@ -652,7 +650,7 @@
     goto :goto_11
 
     :pswitch_1d
-    const/16 v0, 0x38
+    const/16 v0, 0x7d
 
     goto :goto_11
 
@@ -667,7 +665,7 @@
     goto :goto_11
 
     :cond_8
-    aget-char v11, v5, v8
+    aget-char v10, v5, v8
 
     rem-int/lit8 v0, v8, 0x5
 
@@ -676,7 +674,7 @@
     move v0, v4
 
     :goto_12
-    xor-int/2addr v0, v11
+    xor-int/2addr v0, v10
 
     int-to-char v0, v0
 
@@ -694,7 +692,7 @@
     goto :goto_12
 
     :pswitch_21
-    const/16 v0, 0x38
+    const/16 v0, 0x7d
 
     goto :goto_12
 
@@ -736,7 +734,7 @@
     goto :goto_13
 
     :pswitch_25
-    const/16 v0, 0x38
+    const/16 v0, 0x7d
 
     goto :goto_13
 
@@ -837,10 +835,10 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 7
     invoke-direct {p0}, Lorg/spongycastle/jcajce/provider/util/AlgorithmProvider;-><init>()V
 
-    .line 3
+    .line 1
     return-void
 .end method
 
@@ -856,10 +854,10 @@
 
     sget-boolean v2, Lorg/spongycastle/jcajce/provider/symmetric/AES;->a:Z
 
-    .line 5
+    .line 4
     sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/ARC4$Mappings;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x3
+    const/16 v4, 0x8
 
     aget-object v3, v3, v4
 
@@ -889,35 +887,37 @@
 
     invoke-interface {p1, v3, v4}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
+    .line 8
     sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/ARC4$Mappings;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x7
+    const/4 v4, 0x3
 
     aget-object v3, v3, v4
 
     sget-object v4, Lorg/spongycastle/jcajce/provider/symmetric/ARC4$Mappings;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x8
+    const/4 v5, 0x6
 
     aget-object v4, v4, v5
 
     invoke-interface {p1, v3, v4}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7
+    .line 2
     sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/ARC4$Mappings;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x4
+    const/16 v4, 0x9
 
     aget-object v3, v3, v4
 
     sget-object v4, Lorg/spongycastle/jcajce/provider/symmetric/ARC4$Mappings;->z:[Ljava/lang/String;
 
-    aget-object v4, v4, v0
+    const/4 v5, 0x4
+
+    aget-object v4, v4, v5
 
     invoke-interface {p1, v3, v4}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
+    .line 3
     sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/ARC4$Mappings;->z:[Ljava/lang/String;
 
     const/4 v4, 0x5
@@ -936,9 +936,7 @@
 
     sget-object v5, Lorg/spongycastle/jcajce/provider/symmetric/ARC4$Mappings;->z:[Ljava/lang/String;
 
-    const/16 v6, 0x9
-
-    aget-object v5, v5, v6
+    aget-object v5, v5, v0
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -950,21 +948,21 @@
 
     invoke-interface {p1, v3, v4}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1
+    .line 5
     sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/ARC4$Mappings;->z:[Ljava/lang/String;
 
-    aget-object v3, v3, v1
+    const/4 v4, 0x7
+
+    aget-object v3, v3, v4
 
     sget-object v4, Lorg/spongycastle/jcajce/provider/symmetric/ARC4$Mappings;->z:[Ljava/lang/String;
 
-    const/4 v5, 0x6
-
-    aget-object v4, v4, v5
+    aget-object v4, v4, v1
 
     invoke-interface {p1, v3, v4}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 8
-    sget-boolean v3, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
+    .line 9
+    sget v3, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
 
     if-eqz v3, :cond_0
 

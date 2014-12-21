@@ -29,11 +29,11 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 2
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView$6;->this$0:Lcom/actionbarsherlock/widget/SearchView;
 
     invoke-static {v0}, Lcom/actionbarsherlock/widget/SearchView;->access$400(Lcom/actionbarsherlock/widget/SearchView;)V
 
-    .line 2
+    .line 3
     return-void
 .end method

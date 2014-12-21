@@ -11,14 +11,14 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 5
     new-instance v0, Lorg/spongycastle/crypto/digests/SHA512tDigest;
 
     invoke-direct {v0, p1}, Lorg/spongycastle/crypto/digests/SHA512tDigest;-><init>(I)V
 
     invoke-direct {p0, v0}, Lorg/spongycastle/jcajce/provider/digest/BCMessageDigest;-><init>(Lorg/spongycastle/crypto/Digest;)V
 
-    .line 5
+    .line 2
     return-void
 .end method
 
@@ -28,14 +28,14 @@
     .locals 3
 
     .prologue
-    .line 3
+    .line 4
     invoke-super {p0}, Lorg/spongycastle/jcajce/provider/digest/BCMessageDigest;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lorg/spongycastle/jcajce/provider/digest/SHA512$DigestT;
 
-    .line 4
+    .line 1
     new-instance v2, Lorg/spongycastle/crypto/digests/SHA512tDigest;
 
     iget-object v1, p0, Lorg/spongycastle/jcajce/provider/digest/SHA512$DigestT;->digest:Lorg/spongycastle/crypto/Digest;
@@ -46,6 +46,6 @@
 
     iput-object v2, v0, Lorg/spongycastle/jcajce/provider/digest/SHA512$DigestT;->digest:Lorg/spongycastle/crypto/Digest;
 
-    .line 1
+    .line 3
     return-object v0
 .end method

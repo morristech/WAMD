@@ -13,7 +13,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "Q\u0003\r4\u001f3y"
+    const-string v0, "8@Co9Z:"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -51,7 +51,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x2a
+    const/16 v0, 0xc
 
     :goto_1
     xor-int/2addr v0, v4
@@ -67,22 +67,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/4 v0, 0x2
+    const/16 v0, 0x6b
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x4b
+    const/16 v0, 0x8
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x4c
+    const/4 v0, 0x2
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x19
+    const/16 v0, 0x42
 
     goto :goto_1
 
@@ -101,10 +101,10 @@
     .locals 0
 
     .prologue
-    .line 8
+    .line 35
     invoke-direct {p0}, Lorg/spongycastle/crypto/digests/LongDigest;-><init>()V
 
-    .line 24
+    .line 17
     return-void
 .end method
 
@@ -112,10 +112,10 @@
     .locals 0
 
     .prologue
-    .line 27
+    .line 5
     invoke-direct {p0, p1}, Lorg/spongycastle/crypto/digests/LongDigest;-><init>(Lorg/spongycastle/crypto/digests/LongDigest;)V
 
-    .line 13
+    .line 25
     return-void
 .end method
 
@@ -123,13 +123,13 @@
     .locals 0
 
     .prologue
-    .line 31
+    .line 30
     invoke-direct {p0}, Lorg/spongycastle/crypto/digests/LongDigest;-><init>()V
 
-    .line 21
+    .line 31
     invoke-virtual {p0, p1}, Lorg/spongycastle/crypto/digests/SHA512Digest;->restoreState([B)V
 
-    .line 5
+    .line 18
     return-void
 .end method
 
@@ -139,7 +139,7 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 13
     new-instance v0, Lorg/spongycastle/crypto/digests/SHA512Digest;
 
     invoke-direct {v0, p0}, Lorg/spongycastle/crypto/digests/SHA512Digest;-><init>(Lorg/spongycastle/crypto/digests/SHA512Digest;)V
@@ -151,67 +151,67 @@
     .locals 3
 
     .prologue
-    .line 34
+    .line 28
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/SHA512Digest;->finish()V
 
-    .line 7
+    .line 16
     iget-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H1:J
 
     invoke-static {v0, v1, p1, p2}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 29
+    .line 22
     iget-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H2:J
 
     add-int/lit8 v2, p2, 0x8
 
     invoke-static {v0, v1, p1, v2}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 18
+    .line 1
     iget-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H3:J
 
     add-int/lit8 v2, p2, 0x10
 
     invoke-static {v0, v1, p1, v2}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 37
+    .line 10
     iget-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H4:J
 
     add-int/lit8 v2, p2, 0x18
 
     invoke-static {v0, v1, p1, v2}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 25
+    .line 20
     iget-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H5:J
 
     add-int/lit8 v2, p2, 0x20
 
     invoke-static {v0, v1, p1, v2}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 17
+    .line 6
     iget-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H6:J
 
     add-int/lit8 v2, p2, 0x28
 
     invoke-static {v0, v1, p1, v2}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 11
+    .line 34
     iget-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H7:J
 
     add-int/lit8 v2, p2, 0x30
 
     invoke-static {v0, v1, p1, v2}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 1
+    .line 14
     iget-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H8:J
 
     add-int/lit8 v2, p2, 0x38
 
     invoke-static {v0, v1, p1, v2}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 33
+    .line 9
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/SHA512Digest;->reset()V
 
-    .line 6
+    .line 24
     const/16 v0, 0x40
 
     return v0
@@ -221,7 +221,7 @@
     .locals 1
 
     .prologue
-    .line 35
+    .line 36
     sget-object v0, Lorg/spongycastle/crypto/digests/SHA512Digest;->z:Ljava/lang/String;
 
     return-object v0
@@ -231,7 +231,7 @@
     .locals 1
 
     .prologue
-    .line 19
+    .line 32
     const/16 v0, 0x40
 
     return v0
@@ -241,17 +241,17 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 19
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/SHA512Digest;->getEncodedStateSize()I
 
     move-result v0
 
     new-array v0, v0, [B
 
-    .line 4
+    .line 8
     invoke-super {p0, v0}, Lorg/spongycastle/crypto/digests/LongDigest;->populateState([B)V
 
-    .line 22
+    .line 12
     return-object v0
 .end method
 
@@ -259,50 +259,50 @@
     .locals 2
 
     .prologue
-    .line 28
+    .line 37
     invoke-super {p0}, Lorg/spongycastle/crypto/digests/LongDigest;->reset()V
 
-    .line 9
+    .line 26
     const-wide v0, 0x6a09e667f3bcc908L
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H1:J
 
-    .line 15
+    .line 29
     const-wide v0, -0x4498517a7b3558c5L
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H2:J
 
-    .line 10
+    .line 23
     const-wide v0, 0x3c6ef372fe94f82bL
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H3:J
 
-    .line 16
+    .line 15
     const-wide v0, -0x5ab00ac5a0e2c90fL
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H4:J
 
-    .line 20
+    .line 3
     const-wide v0, 0x510e527fade682d1L
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H5:J
 
-    .line 32
+    .line 27
     const-wide v0, -0x64fa9773d4c193e1L
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H6:J
 
-    .line 36
+    .line 2
     const-wide v0, 0x1f83d9abfb41bd6bL
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H7:J
 
-    .line 30
+    .line 21
     const-wide v0, 0x5be0cd19137e2179L
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/SHA512Digest;->H8:J
 
-    .line 3
+    .line 4
     return-void
 .end method
 
@@ -310,12 +310,12 @@
     .locals 0
 
     .prologue
-    .line 23
+    .line 33
     check-cast p1, Lorg/spongycastle/crypto/digests/SHA512Digest;
 
-    .line 2
+    .line 7
     invoke-virtual {p0, p1}, Lorg/spongycastle/crypto/digests/SHA512Digest;->copyIn(Lorg/spongycastle/crypto/digests/LongDigest;)V
 
-    .line 26
+    .line 11
     return-void
 .end method

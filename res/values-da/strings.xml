@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Hold for at optage, slip for at sende</string>
     <string name="audio_note_tip_2">Venligst optag en længere besked</string>
     <string name="audio_note_top_mic_tip">Snak venligst ind i mikrofonen foroven på din telefon</string>
-    <string name="auth_client_needs_enabling_title">En applikation kræver, at Google Play er aktiveret.</string>
-    <string name="auth_client_needs_installation_title">En applikation kræver, at Google Play er installeret.</string>
-    <string name="auth_client_needs_update_title">En applikation kræver en opdatering af Google Play.</string>
-    <string name="auth_client_play_services_err_notification_msg">Fejl i Google Play-tjenester</string>
-    <string name="auth_client_requested_by_msg">Anmodning fra %1$s</string>
-    <string name="auth_client_using_bad_version_title">En applikation forsøgte at bruge en defekt version af Google Play.</string>
-    <string name="barcode_scanner_dialog_body">Dette program har brug for en barcode scanner. Vil du installere en?</string>
-    <string name="barcode_scanner_dialog_title">Installer barcode scanner?</string>
     <string name="block">Bloker</string>
     <string name="block_ask">Er du sikker på, at du vil blokere denne kontakt?</string>
     <string name="block_list_desc_1">"Tryk på ikonet i øverste højre hjørne for at vælge en kontakt der skal blokeres.
@@ -113,6 +105,8 @@ Det er kun kontakter med %s i deres adressebog, der vil modtage dine udsendelses
     <string name="camera_shortcut">WhatsApp kamera</string>
     <string name="camera_title">Send WhatsApp foto eller video</string>
     <string name="camera_video_preview_title">Send WhatsApp video</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">Deaktiver flytilstand, for at foretage et WhatsApp opkald.</string>
+    <string name="can_not_start_voip_call_in_phone_call">Du kan ikke foretage et WhatsApp opkald, hvis du allerede er i et telefon opkald.</string>
     <string name="cancel">Annuller</string>
     <string name="cannot_send_not_a_group_participant">Du kan ikke sende beskeder til denne gruppe, fordi du ikke længere er deltager.</string>
     <string name="cannot_send_selected_file">Kan ikke sende denne mediefil. Enten har du valgt den forkerte fil, eller formatet understøttes ikke.</string>
@@ -161,23 +155,32 @@ Hvis du både har ny telefon og et nyt nummer, skift da nummer på din gamle tel
     <string name="color_red">Rød</string>
     <string name="color_white">Hvid</string>
     <string name="color_yellow">Gul</string>
+    <string name="common_android_wear_notification_needs_update_text">En applikation kræver en opdatering af appen Android Wear.</string>
+    <string name="common_android_wear_update_text">Denne app kan ikke køre, medmindre du opdaterer appen Android Wear.</string>
+    <string name="common_android_wear_update_title">Opdater Android Wear</string>
     <string name="common_google_play_services_enable_button">Aktivér Google Play-tjenester</string>
     <string name="common_google_play_services_enable_text">Denne app virker ikke, medmindre du aktiverer Google Play-tjenester.</string>
     <string name="common_google_play_services_enable_title">Aktivér Google Play-tjenester</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Anmodning fra %1$s</string>
     <string name="common_google_play_services_install_button">Hent Google Play-tjenester</string>
     <string name="common_google_play_services_install_text_phone">Denne app kan ikke køre uden Google Play-tjenester, som mangler på din telefon.</string>
     <string name="common_google_play_services_install_text_tablet">Denne app kan ikke køre uden Google Play-tjenester, som mangler på din tablet.</string>
     <string name="common_google_play_services_install_title">Hent Google Play-tjenester</string>
     <string name="common_google_play_services_invalid_account_text">Den angivne konto findes ikke på denne enhed. Vælg en anden konto.</string>
     <string name="common_google_play_services_invalid_account_title">Ugyldig konto</string>
+    <string name="common_google_play_services_needs_enabling_title">En applikation kræver, at Google Play-tjenester aktiveres.</string>
     <string name="common_google_play_services_network_error_text">Der kræves en dataforbindelse for at oprette forbindelse til Google Play-tjenester.</string>
     <string name="common_google_play_services_network_error_title">Netværksfejl</string>
+    <string name="common_google_play_services_notification_needs_installation_title">En applikation kræver, at Google Play-tjenester installeres.</string>
+    <string name="common_google_play_services_notification_needs_update_title">En applikation kræver, at Google Play-tjenester opdateres.</string>
+    <string name="common_google_play_services_notification_ticker">Fejl i Google Play-tjenester</string>
     <string name="common_google_play_services_unknown_issue">Ukendt problem med Google Play-tjenester.</string>
     <string name="common_google_play_services_unsupported_text">Google Play-tjenester, som nogle af dine applikationer er afhængige af, understøttes ikke af din enhed. Kontakt producenten for at få hjælp.</string>
     <string name="common_google_play_services_unsupported_title">Google Play-tjenester</string>
     <string name="common_google_play_services_update_button">Opdater</string>
     <string name="common_google_play_services_update_text">Denne app kan ikke køre, medmindre du opdaterer Google Play-tjenester.</string>
     <string name="common_google_play_services_update_title">Opdater Google Play-tjenester</string>
+    <string name="common_open_on_phone">Åbn på telefonen</string>
     <string name="common_signin_button_text">Log ind</string>
     <string name="common_signin_button_text_long">Log ind med Google</string>
     <string name="confirm_forward_msg">Videresend til %s?</string>
@@ -354,7 +357,7 @@ Tilgængeligt: %1$s"</string>
     <string name="eula_description">Mobilbeskeder til venner overalt i verden på tværs af platforme</string>
     <string name="eula_tablets_not_supported">Bemærk: Tablets understøttes ikke i øjeblikket..</string>
     <string name="eula_terms_of_service">Vilkår for tjenesten</string>
-    <string name="eula_title">Velkommen til WhatsApp!</string>
+    <string name="eula_title">Velkommen til WhatsApp</string>
     <string name="existing_contact">Eksisterende</string>
     <string name="exit">Forlad</string>
     <string name="exit_group">Forlad gruppe</string>
@@ -529,7 +532,6 @@ Dit abonnement udløber nu den %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Kan ikke hente, fordi der ikke er nok ledig plads, i dit interne delte lager. Fjern venligst nogle filer fra dit interne lager og prøv igen.</string>
     <string name="invalid_media_message_download">Kan ikke hente mediefil fra ugyldig besked. Prøv venligst at sende beskeden igen.</string>
     <string name="invalid_message_forward">Besked kan ikke videresendes til en ugyldig kontakt.</string>
-    <string name="invalid_qr_code">Ugyldig QR kode</string>
     <string name="invalid_url_for_download">Kan ikke hente. Spørg venligst om at få den gensendt.</string>
     <string name="invite">Inviter</string>
     <string name="invite_friends">Inviter dine venner</string>
@@ -575,7 +577,6 @@ WhatsApp kan kun installeres på en enhed per telefonnummer."</string>
     <string name="menuitem_add">Tilføj</string>
     <string name="menuitem_contacts">Kontakter</string>
     <string name="menuitem_debug">Fejlfinding</string>
-    <string name="menuitem_delete_qr">Slet QR kode</string>
     <string name="menuitem_groupchat">Ny gruppe</string>
     <string name="menuitem_list">Ny udsendelse</string>
     <string name="menuitem_mute">Lydløs</string>
@@ -616,14 +617,15 @@ WhatsApp kan kun installeres på en enhed per telefonnummer."</string>
     <string name="msg_store_backup_failed">Kunne ikke sikkerhedskopiere beskeder</string>
     <string name="msg_store_backup_failed_try_again_later">Kunne ikke sikkerhedskopiere beskeder. Prøv venligst igen senere.</string>
     <string name="msg_store_backup_found">Sikkerhedskopi fundet</string>
-    <string name="msg_store_backup_found_registration">Sikkerhedskopi af beskeder fundet!</string>
+    <string name="msg_store_backup_found_registration">Chat sikkerhedskopi fundet</string>
+    <string name="msg_store_backup_found_title">Gendan chathistorik</string>
     <string name="msg_store_backup_skipped">Sikkerhedskopiering sprunget over</string>
     <string name="msg_store_backup_skipped_no_media">Sikkerhedskopiering af beskeder sprunget over: Hukommelseskort ikke fundet.</string>
     <string name="msg_store_backup_skipped_read_only_media">Sikkerhedskopiering af beskeder sprunget over. Skrivebeskyttet hukommelseskort blev fundet.</string>
     <string name="msg_store_confirm">Bekræft</string>
-    <string name="msg_store_creation_backup_message">Vil du gendanne din beskedhistorik fra sikkerhedskopi?</string>
-    <string name="msg_store_do_not_restore">Gendan ikke</string>
-    <string name="msg_store_do_not_restore_no_thanks">Nej tak</string>
+    <string name="msg_store_creation_backup_message">Gendan din chathistorik fra en sikkerhedskopi. Hvis du ikke gendanner nu, vil du ikke kunne gendanne senere.</string>
+    <string name="msg_store_do_not_restore">Spring gendan over</string>
+    <string name="msg_store_do_not_restore_no_thanks">Spring gendan over</string>
     <string name="msg_store_error_found">Der opstod en fejl. Stop og genstart venligst WhatsApp.</string>
     <string name="msg_store_error_not_restored">Beklager, vi kan ikke gendanne nogen sikkerhedskopier af din beskedhistorik.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Beskeder vil gå tabt. Er du sikker på, at du ikke vil gendanne din beskedhistorik fra sikkerhedskopi?</string>
@@ -650,9 +652,6 @@ WhatsApp kan kun installeres på en enhed per telefonnummer."</string>
     <string name="need_sd_card_shared_storage">Slå venligst USB lagring fra og prøv igen.</string>
     <string name="network_required">Du har ikke netværksadgang nu.</string>
     <string name="network_usage_ask_reset_message">Er du sikker på, at du vil nulstille statistikken?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Senest udført: %1$s</string>
     <string name="network_usage_media_bytes_received">Mediefil bytes modtaget:</string>
     <string name="network_usage_media_bytes_sent">Mediefil bytes afsendt:</string>
@@ -896,6 +895,7 @@ Prøv igen efter %1$s."</string>
     <string name="send_location">Send placering</string>
     <string name="send_payment_button">Send betalings URL</string>
     <string name="send_payment_url_via">Send betalings URL via...</string>
+    <string name="send_this_location">Send denne placering</string>
     <string name="send_your_current_location">Send din nuværende placering</string>
     <string name="sending_video_to_contact">Sender video til %s</string>
     <string name="sent_to_group">Send til “%s”</string>
@@ -1009,17 +1009,17 @@ Sendt med WhatsApp"</string>
     <string name="software_expired_get_from_play_with_date">Denne version af WhatsApp blev forældet den &lt;b>%1$s&lt;/b>. Gå venligst til Google Play for at hente den seneste version.&lt;br>&lt;br>Din enheds dato er &lt;b>%2$s&lt;/b>.Hvis dette er forkert, ret venligst enhedens dato indstillinger og genstart derefter WhatsApp.</string>
     <string name="software_expired_with_date">Denne version af WhatsApp blev forældet den &lt;b>%1$s&lt;/b>. Tryk “Hent” for at hente den seneste version.&lt;br>&lt;br>Din enheds dato er &lt;b>%2$s&lt;/b>.Hvis dette er forkert, ret venligst enhedens dato indstillinger og genstart derefter WhatsApp.</string>
     <string name="spam_generic">"Du er midlertidigt udelukket fra WhatsApp, fordi du kan have overtrådt vores vilkår for tjenesten.
+
 Du kan bruge WhatsApp igen om:"</string>
     <string name="spam_generic_data_connection_missing">Vær sikker på, at din telefon har en aktiv data forbindelse.</string>
     <string name="spam_generic_unknown_time_left">Du er midlertidigt udelukket fra WhatsApp, fordi du kan have overtrådt, vores vilkår for tjenesten. Du vil snart kunne bruge WhatsApp igen.</string>
     <string name="spam_learn_more">Lær mere</string>
     <string name="spam_title">Midlertidig udelukket</string>
-    <string name="spam_too_many_blocks">Du er midlertidigt udelukket fra WhatsApp, fordi for mange personer har blokeret dig.</string>
     <string name="spam_too_many_groups">"Du er midlertidigt udelukket fra WhatsApp, fordi du har oprettet for mange grupper, med personer der ikke har dig i deres adressebog.
+
 Du kan bruge WhatsApp igen om:"</string>
     <string name="spam_too_many_messages">"Du er midlertidigt udelukket fra WhatsApp, fordi du har sendt for mange beskeder, til personer der ikke har dig i deres adressebog.
-Du kan bruge WhatsApp igen om:"</string>
-    <string name="spam_too_many_people">"Du er midlertidigt udelukket fra WhatsApp, fordi du har sendt den samme besked, til for mange personer.
+
 Du kan bruge WhatsApp igen om:"</string>
     <string name="status">Status</string>
     <string name="status_default_at_gym">Jeg er i fitnesscenter</string>
@@ -1188,7 +1188,9 @@ Prøv venligst stemmegodkendelse."</string>
     <string name="view_list_media">Udsend mediefil liste</string>
     <string name="view_website">Vis hjemmeside</string>
     <string name="voip_activity_label">Opkald</string>
+    <string name="voip_call_bluetooth_toggle_description">Skift bluetooth</string>
     <string name="voip_call_end_button_description">Afslut opkald</string>
+    <string name="voip_call_failed_no_network">Kunne ikke foretage opkald. Vær sikker på, at din telefon har en internetforbindelse og prøv igen.</string>
     <string name="voip_call_goto_chat_description">Vis chat</string>
     <string name="voip_call_incoming">Indgående</string>
     <string name="voip_call_label">WhatsApp opkald</string>
@@ -1241,5 +1243,4 @@ Glem venligst \"%1$s\" eller deaktiver Wi-Fi for at gendanne netværks tilslutni
     <string name="yesterday">I går</string>
     <string name="yesterday_at">I går kl. %s</string>
     <string name="you">Dig</string>
-    <string name="voip_call_bluetooth_toggle_description">Skift bluetooth</string>
 </resources>

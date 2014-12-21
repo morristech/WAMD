@@ -4,63 +4,63 @@
 
 
 # static fields
-.field private static a:I
+.field static g:Landroid/graphics/Paint;
 
-.field private static final g:Landroid/graphics/drawable/Drawable;
+.field private static final k:Landroid/graphics/drawable/Drawable;
 
-.field private static final l:Landroid/graphics/drawable/Drawable;
+.field private static l:I
 
 .field private static final m:Landroid/graphics/drawable/Drawable;
 
-.field static o:Landroid/graphics/Paint;
+.field private static final n:Landroid/graphics/drawable/Drawable;
 
 .field private static final p:Landroid/graphics/drawable/Drawable;
 
-.field private static final q:Landroid/graphics/drawable/Drawable;
+.field private static final r:Landroid/graphics/drawable/Drawable;
 
 .field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field b:Z
+.field a:I
+
+.field b:Lcom/whatsapp/protocol/c9;
 
 .field c:I
 
-.field d:Z
+.field d:Landroid/graphics/Rect;
 
 .field e:I
 
-.field f:I
+.field f:Z
 
-.field h:I
+.field h:Z
 
-.field public i:I
+.field i:Z
 
-.field j:Landroid/graphics/Rect;
+.field j:I
 
-.field k:Lcom/whatsapp/protocol/ae;
+.field public o:I
 
-.field n:Z
-
-.field r:I
+.field q:I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 12
+    .locals 13
 
     .prologue
+    const/4 v8, 0x3
+
     const/4 v3, 0x1
 
     const/4 v1, -0x1
 
     const/4 v2, 0x0
 
-    const/4 v0, 0x3
+    new-array v4, v8, [Ljava/lang/String;
 
-    new-array v4, v0, [Ljava/lang/String;
-
-    const-string v0, "MmK\"vJG[\u001fvNaF5n\u0000\u007f[%\u007fAGK5xMtLo"
+    const-string v0, "\u000bkoap\u000cA\u007f\\p\u0008gbvhFy\u007fbe6|xa~\u0005{"
 
     move v5, v2
 
@@ -77,20 +77,20 @@
 
     move-result-object v4
 
-    array-length v8, v4
+    array-length v9, v4
 
-    move v9, v8
+    move v10, v9
 
-    move v10, v2
+    move v11, v2
 
-    move-object v8, v4
+    move-object v9, v4
 
     :goto_1
-    if-gt v9, v10, :cond_0
+    if-gt v10, v11, :cond_0
 
     new-instance v4, Ljava/lang/String;
 
-    invoke-direct {v4, v8}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v4, v9}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v4}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -100,7 +100,7 @@
 
     aput-object v4, v6, v5
 
-    const-string v0, "MmK\"vJ7[%y[8G/n\u000fqG)nFy]%~\u000faL44\u0015"
+    const-string v0, "\u000bkoap\u000c1\u007ff\u007f\u001d>clhIwcjh\u0000\u007fyfxIghw2S"
 
     move-object v4, v0
 
@@ -117,7 +117,7 @@
 
     const/4 v4, 0x2
 
-    const-string v0, "MmK\"vJG[\u001fvNaF5n\u0000\u007f[!cpz\\\"xC}"
+    const-string v0, "\u000bkoap\u000cA\u007f\\p\u0008gbvhFy\u007ffy\u0007Aov~\u000brh,"
 
     move v5, v4
 
@@ -134,11 +134,11 @@
 
     sput-object v7, Lcom/whatsapp/BubbleRelativeLayout;->z:[Ljava/lang/String;
 
-    .line 18
-    sput v1, Lcom/whatsapp/BubbleRelativeLayout;->a:I
+    .line 85
+    sput v1, Lcom/whatsapp/BubbleRelativeLayout;->l:I
 
-    .line 44
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 122
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     invoke-virtual {v0}, Lcom/whatsapp/App;->getApplicationContext()Landroid/content/Context;
 
@@ -148,7 +148,45 @@
 
     move-result-object v0
 
-    const v1, 0x7f0200ac
+    const v1, 0x7f0200af
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/whatsapp/BubbleRelativeLayout;->r:Landroid/graphics/drawable/Drawable;
+
+    .line 36
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    invoke-virtual {v0}, Lcom/whatsapp/App;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f0200aa
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/whatsapp/BubbleRelativeLayout;->n:Landroid/graphics/drawable/Drawable;
+
+    .line 127
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    invoke-virtual {v0}, Lcom/whatsapp/App;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f0200a6
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -156,8 +194,27 @@
 
     sput-object v0, Lcom/whatsapp/BubbleRelativeLayout;->p:Landroid/graphics/drawable/Drawable;
 
-    .line 90
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 100
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    invoke-virtual {v0}, Lcom/whatsapp/App;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f02009e
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/whatsapp/BubbleRelativeLayout;->m:Landroid/graphics/drawable/Drawable;
+
+    .line 139
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     invoke-virtual {v0}, Lcom/whatsapp/App;->getApplicationContext()Landroid/content/Context;
 
@@ -173,109 +230,54 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/whatsapp/BubbleRelativeLayout;->l:Landroid/graphics/drawable/Drawable;
-
-    .line 95
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    invoke-virtual {v0}, Lcom/whatsapp/App;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x7f0200a3
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/BubbleRelativeLayout;->g:Landroid/graphics/drawable/Drawable;
-
-    .line 80
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    invoke-virtual {v0}, Lcom/whatsapp/App;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x7f02009b
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/BubbleRelativeLayout;->m:Landroid/graphics/drawable/Drawable;
-
-    .line 20
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    invoke-virtual {v0}, Lcom/whatsapp/App;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x7f0200a4
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/BubbleRelativeLayout;->q:Landroid/graphics/drawable/Drawable;
+    sput-object v0, Lcom/whatsapp/BubbleRelativeLayout;->k:Landroid/graphics/drawable/Drawable;
 
     return-void
 
     .line 4294967295
     :cond_0
-    aget-char v11, v8, v10
+    aget-char v12, v9, v11
 
-    rem-int/lit8 v4, v10, 0x5
+    rem-int/lit8 v4, v11, 0x5
 
     packed-switch v4, :pswitch_data_1
 
-    const/16 v4, 0x1a
+    const/16 v4, 0x1c
 
     :goto_2
-    xor-int/2addr v4, v11
+    xor-int/2addr v4, v12
 
     int-to-char v4, v4
 
-    aput-char v4, v8, v10
+    aput-char v4, v9, v11
 
-    add-int/lit8 v4, v10, 0x1
+    add-int/lit8 v4, v11, 0x1
 
-    move v10, v4
+    move v11, v4
 
     goto/16 :goto_1
 
     :pswitch_2
-    const/16 v4, 0x2f
+    const/16 v4, 0x69
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v4, 0x18
+    const/16 v4, 0x1e
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v4, 0x29
+    const/16 v4, 0xd
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v4, 0x40
+    move v4, v8
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -292,70 +294,70 @@
     .end packed-switch
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lcom/whatsapp/protocol/ae;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/whatsapp/protocol/c9;)V
     .locals 3
 
     .prologue
     const/4 v2, -0x1
 
-    .line 47
+    .line 60
     invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
-    .line 74
+    .line 155
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->d:Z
+    iput-boolean v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->f:Z
 
-    .line 109
+    .line 95
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->d:Landroid/graphics/Rect;
 
-    .line 38
-    iput v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->i:I
+    .line 133
+    iput v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->o:I
 
-    .line 22
-    iput-object p2, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    .line 169
+    iput-object p2, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    .line 85
-    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->o:Landroid/graphics/Paint;
+    .line 79
+    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->g:Landroid/graphics/Paint;
 
     if-nez v0, :cond_0
 
-    .line 145
+    .line 86
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    sput-object v0, Lcom/whatsapp/BubbleRelativeLayout;->o:Landroid/graphics/Paint;
+    sput-object v0, Lcom/whatsapp/BubbleRelativeLayout;->g:Landroid/graphics/Paint;
 
-    .line 106
-    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->o:Landroid/graphics/Paint;
+    .line 14
+    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->g:Landroid/graphics/Paint;
 
     const/high16 v1, 0x11000000
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 166
-    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->o:Landroid/graphics/Paint;
+    .line 46
+    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->g:Landroid/graphics/Paint;
 
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
     move-result-object v1
 
-    iget v1, v1, Lcom/whatsapp/se;->h:F
+    iget v1, v1, Lcom/whatsapp/art;->E:F
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 158
+    .line 51
     :cond_0
-    sget v0, Lcom/whatsapp/BubbleRelativeLayout;->a:I
+    sget v0, Lcom/whatsapp/BubbleRelativeLayout;->l:I
 
     if-ne v0, v2, :cond_1
 
-    .line 124
+    .line 168
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -368,9 +370,9 @@
 
     float-to-int v0, v0
 
-    sput v0, Lcom/whatsapp/BubbleRelativeLayout;->a:I
+    sput v0, Lcom/whatsapp/BubbleRelativeLayout;->l:I
 
-    .line 150
+    .line 151
     :cond_1
     return-void
 .end method
@@ -383,15 +385,15 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 140
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    .line 32
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
     move-result-object v1
 
-    .line 28
-    iput v3, p0, Lcom/whatsapp/BubbleRelativeLayout;->h:I
+    .line 126
+    iput v3, p0, Lcom/whatsapp/BubbleRelativeLayout;->a:I
 
-    .line 54
+    .line 35
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/BubbleRelativeLayout;->getChildAt(I)Landroid/view/View;
@@ -400,67 +402,67 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    .line 92
+    .line 69
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getTop()I
 
     move-result v2
 
-    iput v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->r:I
+    iput v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:I
 
-    .line 14
+    .line 72
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getBottom()I
 
     move-result v2
 
-    iput v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->f:I
+    iput v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->q:I
 
-    .line 154
-    iget-object v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    .line 172
+    iget-object v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget-object v2, v2, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v2, v2, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-object v2, v2, Lcom/whatsapp/protocol/au;->a:Ljava/lang/String;
+    iget-object v2, v2, Lcom/whatsapp/protocol/bb;->b:Ljava/lang/String;
 
-    invoke-static {v2}, Lcom/whatsapp/ba;->d(Ljava/lang/String;)Z
+    invoke-static {v2}, Lcom/whatsapp/rb;->h(Ljava/lang/String;)Z
 
     move-result v2
 
-    iput-boolean v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Z
+    iput-boolean v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->h:Z
 
-    .line 96
-    iget-boolean v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Z
+    .line 145
+    iget-boolean v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->h:Z
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    iget-object v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget-object v2, v2, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v2, v2, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-boolean v2, v2, Lcom/whatsapp/protocol/au;->c:Z
+    iget-boolean v2, v2, Lcom/whatsapp/protocol/bb;->c:Z
 
     if-nez v2, :cond_0
 
-    .line 4
+    .line 97
     invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
-    .line 114
+    .line 141
     invoke-virtual {v2}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v3
 
-    iput v3, p0, Lcom/whatsapp/BubbleRelativeLayout;->c:I
+    iput v3, p0, Lcom/whatsapp/BubbleRelativeLayout;->e:I
 
-    .line 152
+    .line 57
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getId()I
 
     move-result v3
 
     packed-switch v3, :pswitch_data_0
 
-    .line 56
-    iget v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->h:I
+    .line 89
+    iget v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->a:I
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getMeasuredWidth()I
 
@@ -468,76 +470,75 @@
 
     add-int/2addr v0, v2
 
-    iput v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->h:I
+    iput v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->a:I
 
-    .line 69
-    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->h:I
+    .line 114
+    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->a:I
 
     int-to-float v0, v0
 
-    iget v2, v1, Lcom/whatsapp/se;->z:F
+    iget v2, v1, Lcom/whatsapp/art;->w:F
 
     add-float/2addr v0, v2
 
-    iget v1, v1, Lcom/whatsapp/se;->n:F
+    iget v1, v1, Lcom/whatsapp/art;->o:F
 
     add-float/2addr v0, v1
 
-    .line 163
     :goto_0
     return v0
 
-    .line 64
+    .line 123
     :pswitch_0
     invoke-virtual {v2}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v2
 
-    iput v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->e:I
+    iput v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->c:I
 
-    .line 163
+    .line 101
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getMeasuredWidth()I
 
     move-result v0
 
     int-to-float v0, v0
 
-    iget v2, v1, Lcom/whatsapp/se;->z:F
+    iget v2, v1, Lcom/whatsapp/art;->w:F
 
     add-float/2addr v0, v2
 
-    iget v1, v1, Lcom/whatsapp/se;->n:F
+    iget v1, v1, Lcom/whatsapp/art;->o:F
 
     add-float/2addr v0, v1
 
     goto :goto_0
 
-    .line 10
+    .line 37
     :cond_0
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getMeasuredWidth()I
 
     move-result v0
 
-    iput v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->h:I
+    iput v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->a:I
 
-    .line 149
-    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->h:I
+    .line 88
+    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->a:I
 
     int-to-float v0, v0
 
-    iget v2, v1, Lcom/whatsapp/se;->z:F
+    iget v2, v1, Lcom/whatsapp/art;->w:F
 
     add-float/2addr v0, v2
 
-    iget v1, v1, Lcom/whatsapp/se;->n:F
+    iget v1, v1, Lcom/whatsapp/art;->o:F
 
     add-float/2addr v0, v1
 
     goto :goto_0
 
-    .line 152
+    .line 57
     :pswitch_data_0
-    .packed-switch 0x7f0b0183
+    .packed-switch 0x7f0b0185
         :pswitch_0
     .end packed-switch
 .end method
@@ -546,12 +547,12 @@
     .locals 11
 
     .prologue
-    sget-boolean v5, Lcom/whatsapp/App;->aL:Z
+    sget v5, Lcom/whatsapp/App;->h:I
 
-    .line 70
+    .line 26
     const/4 v1, 0x0
 
-    .line 32
+    .line 68
     :try_start_0
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->isSelected()Z
 
@@ -581,25 +582,25 @@
 
     move v2, v0
 
-    .line 167
+    .line 171
     :goto_0
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
     move-result-object v6
 
-    .line 131
+    .line 166
     :try_start_2
-    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget v0, v0, Lcom/whatsapp/protocol/ae;->E:I
+    iget v0, v0, Lcom/whatsapp/protocol/c9;->f:I
 
     const/4 v3, -0x1
 
     if-eq v0, v3, :cond_8
 
-    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget v0, v0, Lcom/whatsapp/protocol/ae;->E:I
+    iget v0, v0, Lcom/whatsapp/protocol/c9;->f:I
     :try_end_2
     .catch Ljava/lang/OutOfMemoryError; {:try_start_2 .. :try_end_2} :catch_3
 
@@ -608,9 +609,9 @@
     if-ne v0, v3, :cond_1
 
     :try_start_3
-    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget-byte v0, v0, Lcom/whatsapp/protocol/ae;->t:B
+    iget-byte v0, v0, Lcom/whatsapp/protocol/c9;->b:B
     :try_end_3
     .catch Ljava/lang/OutOfMemoryError; {:try_start_3 .. :try_end_3} :catch_4
 
@@ -618,7 +619,7 @@
 
     if-ne v0, v3, :cond_8
 
-    .line 76
+    .line 4
     :cond_1
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->a()F
 
@@ -626,70 +627,70 @@
 
     float-to-int v1, v0
 
-    .line 7
+    .line 116
     :try_start_4
-    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget-object v0, v0, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v0, v0, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-boolean v0, v0, Lcom/whatsapp/protocol/au;->c:Z
+    iget-boolean v0, v0, Lcom/whatsapp/protocol/bb;->c:Z
 
     if-eqz v0, :cond_f
 
-    .line 117
-    iget-boolean v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->n:Z
+    .line 83
+    iget-boolean v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->i:Z
     :try_end_4
     .catch Ljava/lang/OutOfMemoryError; {:try_start_4 .. :try_end_4} :catch_5
 
     if-eqz v0, :cond_2
 
-    .line 35
+    .line 64
     :try_start_5
-    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->d:Landroid/graphics/Rect;
 
     const/4 v3, 0x0
 
-    iget v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->r:I
+    iget v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:I
 
-    iget v7, v6, Lcom/whatsapp/se;->e:I
+    iget v7, v6, Lcom/whatsapp/art;->i:I
 
     sub-int/2addr v4, v7
 
-    .line 88
+    .line 75
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getWidth()I
 
     move-result v7
 
-    iget v8, p0, Lcom/whatsapp/BubbleRelativeLayout;->f:I
+    iget v8, p0, Lcom/whatsapp/BubbleRelativeLayout;->q:I
 
-    iget v9, v6, Lcom/whatsapp/se;->k:I
+    iget v9, v6, Lcom/whatsapp/art;->v:I
 
     add-int/2addr v8, v9
 
-    .line 126
+    .line 120
     invoke-virtual {v0, v3, v4, v7, v8}, Landroid/graphics/Rect;->set(IIII)V
     :try_end_5
     .catch Ljava/lang/OutOfMemoryError; {:try_start_5 .. :try_end_5} :catch_6
 
     if-eqz v5, :cond_4
 
-    .line 15
+    .line 63
     :cond_2
     :try_start_6
-    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget-byte v0, v0, Lcom/whatsapp/protocol/ae;->t:B
+    iget-byte v0, v0, Lcom/whatsapp/protocol/c9;->b:B
     :try_end_6
     .catch Ljava/lang/OutOfMemoryError; {:try_start_6 .. :try_end_6} :catch_7
 
     if-eqz v0, :cond_3
 
-    .line 16
+    .line 43
     :try_start_7
-    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->d:Landroid/graphics/Rect;
 
-    .line 17
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 117
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
     :try_end_7
     .catch Ljava/lang/OutOfMemoryError; {:try_start_7 .. :try_end_7} :catch_8
 
@@ -697,7 +698,7 @@
 
     if-eqz v0, :cond_b
 
-    .line 147
+    .line 108
     :try_start_8
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getWidth()I
 
@@ -705,7 +706,7 @@
 
     sub-int/2addr v0, v1
 
-    iget v3, v6, Lcom/whatsapp/se;->A:I
+    iget v3, v6, Lcom/whatsapp/art;->C:I
     :try_end_8
     .catch Ljava/lang/OutOfMemoryError; {:try_start_8 .. :try_end_8} :catch_9
 
@@ -715,14 +716,14 @@
 
     :goto_1
     :try_start_9
-    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->r:I
+    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:I
 
-    iget v7, v6, Lcom/whatsapp/se;->e:I
+    iget v7, v6, Lcom/whatsapp/art;->i:I
 
     sub-int v7, v0, v7
 
-    .line 148
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 33
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
 
     move-result v0
 
@@ -736,23 +737,23 @@
 
     :goto_2
     :try_start_a
-    iget v8, p0, Lcom/whatsapp/BubbleRelativeLayout;->f:I
+    iget v8, p0, Lcom/whatsapp/BubbleRelativeLayout;->q:I
 
-    iget v9, v6, Lcom/whatsapp/se;->k:I
+    iget v9, v6, Lcom/whatsapp/art;->v:I
 
     add-int/2addr v8, v9
 
-    .line 82
+    .line 23
     invoke-virtual {v4, v3, v7, v0, v8}, Landroid/graphics/Rect;->set(IIII)V
 
     if-eqz v5, :cond_4
 
-    .line 73
+    .line 49
     :cond_3
-    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->d:Landroid/graphics/Rect;
 
-    .line 13
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 125
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
     :try_end_a
     .catch Ljava/lang/OutOfMemoryError; {:try_start_a .. :try_end_a} :catch_b
 
@@ -773,14 +774,14 @@
 
     :goto_3
     :try_start_c
-    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->r:I
+    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:I
 
-    iget v7, v6, Lcom/whatsapp/se;->p:I
+    iget v7, v6, Lcom/whatsapp/art;->s:I
 
     sub-int v7, v0, v7
 
-    .line 33
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 109
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
 
     move-result v0
 
@@ -792,28 +793,28 @@
 
     move-result v0
 
-    .line 67
+    .line 41
     :goto_4
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getHeight()I
 
     move-result v8
 
-    iget v9, v6, Lcom/whatsapp/se;->p:I
+    iget v9, v6, Lcom/whatsapp/art;->s:I
 
     sub-int/2addr v8, v9
 
-    .line 63
+    .line 47
     invoke-virtual {v4, v3, v7, v0, v8}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 77
+    .line 153
     :cond_4
     :try_start_d
-    iget-boolean v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->n:Z
+    iget-boolean v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->i:Z
 
     if-eqz v0, :cond_5
 
-    .line 21
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 71
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     invoke-virtual {v0}, Lcom/whatsapp/App;->getApplicationContext()Landroid/content/Context;
 
@@ -827,7 +828,7 @@
 
     if-eqz v2, :cond_1e
 
-    const v0, 0x7f02009a
+    const v0, 0x7f02009d
 
     :goto_5
     :try_start_e
@@ -837,12 +838,12 @@
 
     if-eqz v5, :cond_7
 
-    .line 143
+    .line 12
     :cond_5
     if-eqz v2, :cond_6
 
-    .line 42
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 150
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     invoke-virtual {v0}, Lcom/whatsapp/App;->getApplicationContext()Landroid/content/Context;
 
@@ -852,7 +853,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f0200a8
+    const v3, 0x7f0200ab
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -860,44 +861,44 @@
 
     if-eqz v5, :cond_7
 
-    .line 136
+    .line 62
     :cond_6
-    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->p:Landroid/graphics/drawable/Drawable;
+    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->r:Landroid/graphics/drawable/Drawable;
 
-    .line 94
+    .line 174
     :cond_7
     if-eqz v0, :cond_8
 
-    .line 142
-    new-instance v3, Lcom/whatsapp/util/bd;
+    .line 96
+    new-instance v3, Lcom/whatsapp/util/w;
 
-    invoke-direct {v3, v0}, Lcom/whatsapp/util/bd;-><init>(Landroid/graphics/drawable/Drawable;)V
+    invoke-direct {v3, v0}, Lcom/whatsapp/util/w;-><init>(Landroid/graphics/drawable/Drawable;)V
 
-    .line 9
+    .line 104
     const/4 v0, 0x1
 
     invoke-virtual {v3, v0}, Landroid/graphics/drawable/Drawable;->setDither(Z)V
 
-    .line 103
-    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:Landroid/graphics/Rect;
+    .line 59
+    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->d:Landroid/graphics/Rect;
 
     invoke-virtual {v3, v0}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
-    .line 97
+    .line 54
     invoke-virtual {v3, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
     :try_end_e
     .catch Ljava/lang/OutOfMemoryError; {:try_start_e .. :try_end_e} :catch_10
 
-    .line 120
+    .line 106
     :cond_8
     :goto_6
     :try_start_f
     invoke-super {p0, p1}, Landroid/widget/RelativeLayout;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 57
-    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    .line 38
+    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget v0, v0, Lcom/whatsapp/protocol/ae;->E:I
+    iget v0, v0, Lcom/whatsapp/protocol/c9;->f:I
     :try_end_f
     .catch Ljava/lang/OutOfMemoryError; {:try_start_f .. :try_end_f} :catch_32
 
@@ -906,21 +907,21 @@
     if-eq v0, v2, :cond_9
 
     :try_start_10
-    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget-object v0, v0, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v0, v0, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-boolean v0, v0, Lcom/whatsapp/protocol/au;->c:Z
+    iget-boolean v0, v0, Lcom/whatsapp/protocol/bb;->c:Z
 
     if-nez v0, :cond_9
 
-    iget-boolean v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Z
+    iget-boolean v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->h:Z
     :try_end_10
     .catch Ljava/lang/OutOfMemoryError; {:try_start_10 .. :try_end_10} :catch_33
 
     if-eqz v0, :cond_9
 
-    .line 83
+    .line 156
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -933,28 +934,28 @@
 
     move-result-object v0
 
-    .line 107
+    .line 30
     iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    .line 125
+    .line 61
     :try_start_11
-    iget-object v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    iget-object v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget-byte v2, v2, Lcom/whatsapp/protocol/ae;->t:B
+    iget-byte v2, v2, Lcom/whatsapp/protocol/c9;->b:B
     :try_end_11
     .catch Ljava/lang/OutOfMemoryError; {:try_start_11 .. :try_end_11} :catch_34
 
     if-nez v2, :cond_9
 
-    .line 66
+    .line 173
     :try_start_12
-    iget v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->i:I
+    iget v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->o:I
 
     const/4 v3, -0x1
 
     if-eq v2, v3, :cond_9
 
-    iget v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->i:I
+    iget v2, p0, Lcom/whatsapp/BubbleRelativeLayout;->o:I
     :try_end_12
     .catch Ljava/lang/OutOfMemoryError; {:try_start_12 .. :try_end_12} :catch_35
 
@@ -962,37 +963,37 @@
 
     if-eq v2, v3, :cond_9
 
-    .line 128
+    .line 138
     int-to-float v1, v1
 
     const/high16 v2, 0x3e800000
 
     mul-float v3, v1, v2
 
-    .line 151
+    .line 98
     :try_start_13
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
 
     move-result v1
 
     if-eqz v1, :cond_2f
 
-    iget v1, v6, Lcom/whatsapp/se;->l:F
+    iget v1, v6, Lcom/whatsapp/art;->n:F
     :try_end_13
     .catch Ljava/lang/OutOfMemoryError; {:try_start_13 .. :try_end_13} :catch_36
 
     :goto_7
     const/high16 v2, 0x3f800000
 
-    .line 165
+    .line 113
     :try_start_14
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
 
     move-result v4
 
     if-eqz v4, :cond_30
 
-    iget v0, v6, Lcom/whatsapp/se;->l:F
+    iget v0, v6, Lcom/whatsapp/art;->n:F
     :try_end_14
     .catch Ljava/lang/OutOfMemoryError; {:try_start_14 .. :try_end_14} :catch_37
 
@@ -1001,18 +1002,18 @@
     :goto_8
     const/high16 v4, 0x3f800000
 
-    sget-object v5, Lcom/whatsapp/BubbleRelativeLayout;->o:Landroid/graphics/Paint;
+    sget-object v5, Lcom/whatsapp/BubbleRelativeLayout;->g:Landroid/graphics/Paint;
 
     move-object v0, p1
 
-    .line 155
+    .line 84
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 91
+    .line 50
     :cond_9
     return-void
 
-    .line 32
+    .line 68
     :catch_0
     move-exception v0
 
@@ -1041,7 +1042,7 @@
 
     goto/16 :goto_0
 
-    .line 131
+    .line 166
     :catch_3
     move-exception v0
 
@@ -1055,7 +1056,7 @@
 
     throw v0
 
-    .line 117
+    .line 83
     :catch_5
     move-exception v0
 
@@ -1064,7 +1065,7 @@
     :try_end_18
     .catch Ljava/lang/OutOfMemoryError; {:try_start_18 .. :try_end_18} :catch_6
 
-    .line 126
+    .line 120
     :catch_6
     move-exception v0
 
@@ -1073,7 +1074,7 @@
     :try_end_19
     .catch Ljava/lang/OutOfMemoryError; {:try_start_19 .. :try_end_19} :catch_7
 
-    .line 15
+    .line 63
     :catch_7
     move-exception v0
 
@@ -1082,7 +1083,7 @@
     :try_end_1a
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1a .. :try_end_1a} :catch_8
 
-    .line 17
+    .line 117
     :catch_8
     move-exception v0
 
@@ -1091,7 +1092,7 @@
     :try_end_1b
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1b .. :try_end_1b} :catch_9
 
-    .line 147
+    .line 108
     :catch_9
     move-exception v0
 
@@ -1104,20 +1105,20 @@
 
     goto/16 :goto_1
 
-    .line 148
+    .line 33
     :catch_a
     move-exception v0
 
     throw v0
 
     :cond_c
-    iget v0, v6, Lcom/whatsapp/se;->A:I
+    iget v0, v6, Lcom/whatsapp/art;->C:I
 
     add-int/2addr v0, v1
 
     goto/16 :goto_2
 
-    .line 13
+    .line 125
     :catch_b
     move-exception v0
 
@@ -1138,7 +1139,7 @@
 
     goto/16 :goto_3
 
-    .line 33
+    .line 109
     :catch_d
     move-exception v0
 
@@ -1149,7 +1150,7 @@
 
     goto/16 :goto_4
 
-    .line 21
+    .line 71
     :catch_e
     move-exception v0
 
@@ -1166,11 +1167,11 @@
     :try_end_1e
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1e .. :try_end_1e} :catch_10
 
-    .line 139
+    .line 9
     :catch_10
     move-exception v0
 
-    .line 2
+    .line 135
     :try_start_1f
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1178,7 +1179,7 @@
 
     sget-object v4, Lcom/whatsapp/BubbleRelativeLayout;->z:[Ljava/lang/String;
 
-    const/4 v7, 0x0
+    const/4 v7, 0x2
 
     aget-object v4, v4, v7
 
@@ -1196,15 +1197,15 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 133
-    invoke-static {}, Lcom/whatsapp/util/bo;->a()V
+    .line 142
+    invoke-static {}, Lcom/whatsapp/util/ac;->b()V
 
     .line 40
     if-eqz v5, :cond_8
 
-    .line 81
+    .line 28
     :cond_f
-    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->i:I
+    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->o:I
     :try_end_1f
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1f .. :try_end_1f} :catch_11
 
@@ -1212,13 +1213,13 @@
 
     if-eq v0, v3, :cond_1a
 
-    .line 119
+    .line 92
     :try_start_20
-    sget-object v0, Lcom/whatsapp/Conversation;->a7:Ljava/util/HashMap;
+    sget-object v0, Lcom/whatsapp/Conversation;->aM:Ljava/util/HashMap;
 
-    iget-object v3, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    iget-object v3, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget-object v3, v3, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v3, v3, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
     invoke-virtual {v0, v3}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
     :try_end_20
@@ -1228,46 +1229,46 @@
 
     if-eqz v0, :cond_19
 
-    .line 50
-    sget-object v0, Lcom/whatsapp/Conversation;->N:Landroid/view/Display;
+    .line 55
+    sget-object v0, Lcom/whatsapp/Conversation;->B:Landroid/view/Display;
 
     invoke-virtual {v0}, Landroid/view/Display;->getWidth()I
 
     move-result v0
 
-    sget v3, Lcom/whatsapp/BubbleRelativeLayout;->a:I
+    sget v3, Lcom/whatsapp/BubbleRelativeLayout;->l:I
 
     sub-int v3, v0, v3
 
-    .line 58
-    sget-object v0, Lcom/whatsapp/Conversation;->a7:Ljava/util/HashMap;
+    .line 16
+    sget-object v0, Lcom/whatsapp/Conversation;->aM:Ljava/util/HashMap;
 
-    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget-object v4, v4, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v4, v4, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
     invoke-virtual {v0, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/whatsapp/agr;
+    check-cast v0, Lcom/whatsapp/sn;
 
-    .line 108
-    invoke-static {v0}, Lcom/whatsapp/agr;->a(Lcom/whatsapp/agr;)I
+    .line 7
+    invoke-static {v0}, Lcom/whatsapp/sn;->a(Lcom/whatsapp/sn;)I
 
     move-result v4
 
     if-le v4, v3, :cond_10
 
-    .line 99
+    .line 140
     if-eqz v5, :cond_31
 
     move v1, v3
 
-    .line 71
+    .line 170
     :cond_10
     :try_start_21
-    invoke-static {v0}, Lcom/whatsapp/agr;->a(Lcom/whatsapp/agr;)I
+    invoke-static {v0}, Lcom/whatsapp/sn;->a(Lcom/whatsapp/sn;)I
     :try_end_21
     .catch Ljava/lang/OutOfMemoryError; {:try_start_21 .. :try_end_21} :catch_13
 
@@ -1275,28 +1276,28 @@
 
     if-ge v3, v1, :cond_18
 
-    .line 84
+    .line 70
     const/4 v3, 0x0
 
-    .line 25
-    invoke-static {v0}, Lcom/whatsapp/agr;->a(Lcom/whatsapp/agr;)I
+    .line 121
+    invoke-static {v0}, Lcom/whatsapp/sn;->a(Lcom/whatsapp/sn;)I
 
     move-result v4
 
     if-lt v4, v1, :cond_11
 
-    .line 29
-    invoke-static {v0}, Lcom/whatsapp/agr;->a(Lcom/whatsapp/agr;)I
+    .line 107
+    invoke-static {v0}, Lcom/whatsapp/sn;->a(Lcom/whatsapp/sn;)I
 
     move-result v1
 
     if-eqz v5, :cond_32
 
-    .line 43
+    .line 5
     :cond_11
-    invoke-virtual {v0, v1}, Lcom/whatsapp/agr;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/sn;->a(I)V
 
-    .line 161
+    .line 29
     const/4 v3, 0x1
 
     move v10, v3
@@ -1305,14 +1306,14 @@
 
     move v1, v10
 
-    .line 65
+    .line 24
     :goto_9
     if-eqz v1, :cond_17
 
-    .line 156
-    iget-object v4, v0, Lcom/whatsapp/agr;->a:Lcom/whatsapp/agr;
+    .line 124
+    iget-object v4, v0, Lcom/whatsapp/sn;->a:Lcom/whatsapp/sn;
 
-    .line 164
+    .line 110
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -1321,124 +1322,124 @@
 
     if-eqz v1, :cond_17
 
-    .line 173
+    .line 164
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
     check-cast v1, Lcom/whatsapp/Conversation;
 
-    .line 153
+    .line 45
     :try_start_22
-    iget-object v7, v1, Lcom/whatsapp/Conversation;->q:Landroid/widget/ListView;
+    iget-object v7, v1, Lcom/whatsapp/Conversation;->M:Landroid/widget/ListView;
     :try_end_22
     .catch Ljava/lang/OutOfMemoryError; {:try_start_22 .. :try_end_22} :catch_14
 
     if-eqz v7, :cond_17
 
-    .line 116
+    .line 115
     :cond_12
     if-eqz v4, :cond_14
 
-    .line 130
-    invoke-virtual {v4, v3}, Lcom/whatsapp/agr;->a(I)V
+    .line 167
+    invoke-virtual {v4, v3}, Lcom/whatsapp/sn;->a(I)V
 
-    .line 62
-    iget-object v7, v1, Lcom/whatsapp/Conversation;->q:Landroid/widget/ListView;
+    .line 27
+    iget-object v7, v1, Lcom/whatsapp/Conversation;->M:Landroid/widget/ListView;
 
-    iget-object v8, v4, Lcom/whatsapp/agr;->b:Lcom/whatsapp/protocol/ae;
+    iget-object v8, v4, Lcom/whatsapp/sn;->f:Lcom/whatsapp/protocol/c9;
 
     invoke-virtual {v7, v8}, Landroid/widget/ListView;->findViewWithTag(Ljava/lang/Object;)Landroid/view/View;
 
     move-result-object v7
 
-    .line 55
+    .line 44
     if-eqz v7, :cond_13
 
-    .line 132
+    .line 77
     :try_start_23
     invoke-virtual {v7}, Landroid/view/View;->invalidate()V
     :try_end_23
     .catch Ljava/lang/OutOfMemoryError; {:try_start_23 .. :try_end_23} :catch_15
 
-    .line 105
+    .line 165
     :cond_13
-    iget-object v4, v4, Lcom/whatsapp/agr;->a:Lcom/whatsapp/agr;
+    iget-object v4, v4, Lcom/whatsapp/sn;->a:Lcom/whatsapp/sn;
 
-    .line 146
+    .line 111
     if-eqz v5, :cond_12
 
-    .line 159
+    .line 143
     :cond_14
-    iget-object v4, v0, Lcom/whatsapp/agr;->d:Lcom/whatsapp/agr;
+    iget-object v4, v0, Lcom/whatsapp/sn;->d:Lcom/whatsapp/sn;
 
-    .line 127
+    .line 154
     :cond_15
     if-eqz v4, :cond_17
 
-    .line 27
-    invoke-virtual {v4, v3}, Lcom/whatsapp/agr;->a(I)V
+    .line 90
+    invoke-virtual {v4, v3}, Lcom/whatsapp/sn;->a(I)V
 
-    .line 86
-    iget-object v7, v1, Lcom/whatsapp/Conversation;->q:Landroid/widget/ListView;
+    .line 53
+    iget-object v7, v1, Lcom/whatsapp/Conversation;->M:Landroid/widget/ListView;
 
-    iget-object v8, v4, Lcom/whatsapp/agr;->b:Lcom/whatsapp/protocol/ae;
+    iget-object v8, v4, Lcom/whatsapp/sn;->f:Lcom/whatsapp/protocol/c9;
 
     invoke-virtual {v7, v8}, Landroid/widget/ListView;->findViewWithTag(Ljava/lang/Object;)Landroid/view/View;
 
     move-result-object v7
 
-    .line 169
+    .line 119
     if-eqz v7, :cond_16
 
-    .line 98
+    .line 48
     :try_start_24
     invoke-virtual {v7}, Landroid/view/View;->invalidate()V
     :try_end_24
     .catch Ljava/lang/OutOfMemoryError; {:try_start_24 .. :try_end_24} :catch_16
 
-    .line 102
+    .line 148
     :cond_16
-    iget-object v4, v4, Lcom/whatsapp/agr;->d:Lcom/whatsapp/agr;
+    iget-object v4, v4, Lcom/whatsapp/sn;->d:Lcom/whatsapp/sn;
 
-    .line 34
+    .line 73
     if-eqz v5, :cond_15
 
-    .line 60
+    .line 158
     :cond_17
     if-eqz v5, :cond_31
 
-    .line 160
+    .line 87
     :cond_18
-    invoke-static {v0}, Lcom/whatsapp/agr;->a(Lcom/whatsapp/agr;)I
+    invoke-static {v0}, Lcom/whatsapp/sn;->a(Lcom/whatsapp/sn;)I
 
     move-result v1
 
-    .line 115
+    .line 19
     :goto_a
     if-eqz v5, :cond_1a
 
-    .line 134
+    .line 105
     :cond_19
     const/4 v0, -0x1
 
     :try_start_25
-    iput v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->i:I
+    iput v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->o:I
     :try_end_25
     .catch Ljava/lang/OutOfMemoryError; {:try_start_25 .. :try_end_25} :catch_17
 
-    .line 137
+    .line 157
     :cond_1a
     :try_start_26
-    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget-byte v0, v0, Lcom/whatsapp/protocol/ae;->t:B
+    iget-byte v0, v0, Lcom/whatsapp/protocol/c9;->b:B
 
     if-eqz v0, :cond_1b
 
-    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->k:Lcom/whatsapp/protocol/ae;
+    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->b:Lcom/whatsapp/protocol/c9;
 
-    iget-byte v0, v0, Lcom/whatsapp/protocol/ae;->t:B
+    iget-byte v0, v0, Lcom/whatsapp/protocol/c9;->b:B
     :try_end_26
     .catch Ljava/lang/OutOfMemoryError; {:try_start_26 .. :try_end_26} :catch_18
 
@@ -1446,12 +1447,12 @@
 
     if-eq v0, v3, :cond_1b
 
-    .line 31
+    .line 76
     :try_start_27
-    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->d:Landroid/graphics/Rect;
 
-    .line 129
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 17
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
     :try_end_27
     .catch Ljava/lang/OutOfMemoryError; {:try_start_27 .. :try_end_27} :catch_19
 
@@ -1463,45 +1464,45 @@
 
     move v3, v0
 
-    .line 141
+    .line 161
     :goto_b
     :try_start_28
-    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->r:I
+    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:I
 
-    iget v7, v6, Lcom/whatsapp/se;->e:I
+    iget v7, v6, Lcom/whatsapp/art;->i:I
 
     sub-int v7, v0, v7
 
-    .line 112
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 82
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
 
     move-result v0
 
     if-eqz v0, :cond_20
 
-    iget v0, v6, Lcom/whatsapp/se;->A:I
+    iget v0, v6, Lcom/whatsapp/art;->C:I
     :try_end_28
     .catch Ljava/lang/OutOfMemoryError; {:try_start_28 .. :try_end_28} :catch_1b
 
     sub-int v0, v1, v0
 
-    .line 78
+    .line 136
     :goto_c
     :try_start_29
-    iget v8, p0, Lcom/whatsapp/BubbleRelativeLayout;->f:I
+    iget v8, p0, Lcom/whatsapp/BubbleRelativeLayout;->q:I
 
-    iget v9, v6, Lcom/whatsapp/se;->k:I
+    iget v9, v6, Lcom/whatsapp/art;->v:I
 
     add-int/2addr v8, v9
 
-    .line 48
+    .line 137
     invoke-virtual {v4, v3, v7, v0, v8}, Landroid/graphics/Rect;->set(IIII)V
 
     if-eqz v5, :cond_1d
 
-    .line 26
+    .line 93
     :cond_1b
-    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->i:I
+    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->o:I
     :try_end_29
     .catch Ljava/lang/OutOfMemoryError; {:try_start_29 .. :try_end_29} :catch_1c
 
@@ -1509,12 +1510,12 @@
 
     if-ne v0, v3, :cond_1c
 
-    .line 68
+    .line 78
     :try_start_2a
-    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->d:Landroid/graphics/Rect;
 
-    .line 172
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 2
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
     :try_end_2a
     .catch Ljava/lang/OutOfMemoryError; {:try_start_2a .. :try_end_2a} :catch_1d
 
@@ -1528,14 +1529,14 @@
 
     :goto_d
     :try_start_2b
-    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->r:I
+    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:I
 
-    iget v7, v6, Lcom/whatsapp/se;->p:I
+    iget v7, v6, Lcom/whatsapp/art;->s:I
 
     sub-int v7, v0, v7
 
-    .line 87
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 22
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
     :try_end_2b
     .catch Ljava/lang/OutOfMemoryError; {:try_start_2b .. :try_end_2b} :catch_1f
 
@@ -1545,37 +1546,37 @@
 
     move v0, v1
 
-    .line 162
+    .line 58
     :goto_e
     :try_start_2c
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getHeight()I
 
     move-result v8
 
-    iget v9, v6, Lcom/whatsapp/se;->p:I
+    iget v9, v6, Lcom/whatsapp/art;->s:I
 
     sub-int/2addr v8, v9
 
-    .line 6
+    .line 118
     invoke-virtual {v4, v3, v7, v0, v8}, Landroid/graphics/Rect;->set(IIII)V
 
     if-eqz v5, :cond_1d
 
-    .line 100
+    .line 11
     :cond_1c
-    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->i:I
+    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->o:I
     :try_end_2c
     .catch Ljava/lang/OutOfMemoryError; {:try_start_2c .. :try_end_2c} :catch_20
 
     packed-switch v0, :pswitch_data_0
 
-    .line 12
+    .line 6
     :goto_f
     :try_start_2d
-    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->d:Landroid/graphics/Rect;
 
-    .line 93
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 162
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
     :try_end_2d
     .catch Ljava/lang/OutOfMemoryError; {:try_start_2d .. :try_end_2d} :catch_2a
 
@@ -1589,14 +1590,14 @@
 
     :goto_10
     :try_start_2e
-    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->r:I
+    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:I
 
-    iget v5, v6, Lcom/whatsapp/se;->p:I
+    iget v5, v6, Lcom/whatsapp/art;->s:I
 
     sub-int v5, v0, v5
 
-    .line 37
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 99
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
     :try_end_2e
     .catch Ljava/lang/OutOfMemoryError; {:try_start_2e .. :try_end_2e} :catch_2c
 
@@ -1606,20 +1607,20 @@
 
     move v0, v1
 
-    .line 138
+    .line 130
     :goto_11
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getHeight()I
 
     move-result v7
 
-    iget v8, v6, Lcom/whatsapp/se;->p:I
+    iget v8, v6, Lcom/whatsapp/art;->s:I
 
     sub-int/2addr v7, v8
 
-    .line 89
+    .line 18
     invoke-virtual {v4, v3, v5, v0, v7}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 23
+    .line 94
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1634,7 +1635,7 @@
 
     move-result-object v0
 
-    iget v3, p0, Lcom/whatsapp/BubbleRelativeLayout;->i:I
+    iget v3, p0, Lcom/whatsapp/BubbleRelativeLayout;->o:I
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1646,22 +1647,22 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 53
+    .line 81
     :cond_1d
     const/4 v3, 0x0
 
-    .line 170
+    .line 67
     :try_start_2f
-    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->i:I
+    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->o:I
     :try_end_2f
     .catch Ljava/lang/OutOfMemoryError; {:try_start_2f .. :try_end_2f} :catch_2d
 
     packed-switch v0, :pswitch_data_1
 
-    .line 157
+    .line 25
     if-eqz v2, :cond_2e
 
-    .line 121
+    .line 3
     :try_start_30
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getContext()Landroid/content/Context;
 
@@ -1671,7 +1672,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f02009c
+    const v2, 0x7f02009f
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
     :try_end_30
@@ -1679,37 +1680,37 @@
 
     move-result-object v0
 
-    .line 72
+    .line 91
     :goto_12
     if-eqz v0, :cond_8
 
-    .line 1
-    new-instance v2, Lcom/whatsapp/util/bd;
+    .line 146
+    new-instance v2, Lcom/whatsapp/util/w;
 
-    invoke-direct {v2, v0}, Lcom/whatsapp/util/bd;-><init>(Landroid/graphics/drawable/Drawable;)V
+    invoke-direct {v2, v0}, Lcom/whatsapp/util/w;-><init>(Landroid/graphics/drawable/Drawable;)V
 
-    .line 24
-    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:Landroid/graphics/Rect;
+    .line 163
+    iget-object v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->d:Landroid/graphics/Rect;
 
     invoke-virtual {v2, v0}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
-    .line 19
+    .line 10
     const/4 v0, 0x1
 
     invoke-virtual {v2, v0}, Landroid/graphics/drawable/Drawable;->setDither(Z)V
 
-    .line 118
+    .line 66
     invoke-virtual {v2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     goto/16 :goto_6
 
-    .line 21
+    .line 71
     :cond_1e
-    const v0, 0x7f020099
+    const v0, 0x7f02009c
 
     goto/16 :goto_5
 
-    .line 81
+    .line 28
     :catch_11
     move-exception v0
 
@@ -1718,43 +1719,43 @@
     :try_end_31
     .catch Ljava/lang/OutOfMemoryError; {:try_start_31 .. :try_end_31} :catch_12
 
-    .line 119
+    .line 92
     :catch_12
     move-exception v0
 
     throw v0
 
-    .line 71
+    .line 170
     :catch_13
     move-exception v0
 
     throw v0
 
-    .line 116
+    .line 115
     :catch_14
     move-exception v0
 
     throw v0
 
-    .line 132
+    .line 77
     :catch_15
     move-exception v0
 
     throw v0
 
-    .line 98
+    .line 48
     :catch_16
     move-exception v0
 
     throw v0
 
-    .line 134
+    .line 105
     :catch_17
     move-exception v0
 
     throw v0
 
-    .line 137
+    .line 157
     :catch_18
     move-exception v0
 
@@ -1763,7 +1764,7 @@
     :try_end_32
     .catch Ljava/lang/OutOfMemoryError; {:try_start_32 .. :try_end_32} :catch_19
 
-    .line 129
+    .line 17
     :catch_19
     move-exception v0
 
@@ -1777,7 +1778,7 @@
 
     throw v0
 
-    .line 141
+    .line 161
     :cond_1f
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getWidth()I
 
@@ -1785,7 +1786,7 @@
 
     sub-int/2addr v0, v1
 
-    iget v3, v6, Lcom/whatsapp/se;->A:I
+    iget v3, v6, Lcom/whatsapp/art;->C:I
 
     add-int/2addr v0, v3
 
@@ -1793,13 +1794,13 @@
 
     goto/16 :goto_b
 
-    .line 112
+    .line 82
     :catch_1b
     move-exception v0
 
     throw v0
 
-    .line 78
+    .line 136
     :cond_20
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getWidth()I
 
@@ -1807,7 +1808,7 @@
 
     goto/16 :goto_c
 
-    .line 26
+    .line 93
     :catch_1c
     move-exception v0
 
@@ -1816,7 +1817,7 @@
     :try_end_34
     .catch Ljava/lang/OutOfMemoryError; {:try_start_34 .. :try_end_34} :catch_1d
 
-    .line 172
+    .line 2
     :catch_1d
     move-exception v0
 
@@ -1841,7 +1842,7 @@
 
     goto/16 :goto_d
 
-    .line 87
+    .line 22
     :catch_1f
     move-exception v0
 
@@ -1854,7 +1855,7 @@
 
     goto/16 :goto_e
 
-    .line 100
+    .line 11
     :catch_20
     move-exception v0
 
@@ -1863,7 +1864,7 @@
     :try_end_36
     .catch Ljava/lang/OutOfMemoryError; {:try_start_36 .. :try_end_36} :catch_21
 
-    .line 122
+    .line 132
     :catch_21
     move-exception v0
 
@@ -1877,13 +1878,13 @@
 
     throw v0
 
-    .line 104
+    .line 80
     :pswitch_0
     :try_start_38
-    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->d:Landroid/graphics/Rect;
 
-    .line 122
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 132
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
     :try_end_38
     .catch Ljava/lang/OutOfMemoryError; {:try_start_38 .. :try_end_38} :catch_21
 
@@ -1897,14 +1898,14 @@
 
     :goto_13
     :try_start_39
-    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->r:I
+    iget v0, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:I
 
-    iget v7, v6, Lcom/whatsapp/se;->p:I
+    iget v7, v6, Lcom/whatsapp/art;->s:I
 
     sub-int v7, v0, v7
 
-    .line 101
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 144
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
     :try_end_39
     .catch Ljava/lang/OutOfMemoryError; {:try_start_39 .. :try_end_39} :catch_23
 
@@ -1914,7 +1915,7 @@
 
     move v0, v1
 
-    .line 171
+    .line 129
     :goto_14
     :try_start_3a
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getHeight()I
@@ -1923,18 +1924,18 @@
 
     add-int/lit8 v8, v8, 0x1
 
-    .line 75
+    .line 159
     invoke-virtual {v4, v3, v7, v0, v8}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 36
+    .line 52
     if-eqz v5, :cond_1d
 
-    .line 46
+    .line 34
     :pswitch_1
-    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->d:Landroid/graphics/Rect;
 
-    .line 45
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 112
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
     :try_end_3a
     .catch Ljava/lang/OutOfMemoryError; {:try_start_3a .. :try_end_3a} :catch_24
 
@@ -1949,9 +1950,9 @@
     :goto_15
     const/4 v7, -0x1
 
-    .line 123
+    .line 65
     :try_start_3b
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
     :try_end_3b
     .catch Ljava/lang/OutOfMemoryError; {:try_start_3b .. :try_end_3b} :catch_26
 
@@ -1961,7 +1962,7 @@
 
     move v0, v1
 
-    .line 52
+    .line 152
     :goto_16
     :try_start_3c
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getHeight()I
@@ -1970,18 +1971,18 @@
 
     add-int/lit8 v8, v8, 0x1
 
-    .line 168
+    .line 102
     invoke-virtual {v4, v3, v7, v0, v8}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 113
+    .line 147
     if-eqz v5, :cond_1d
 
-    .line 111
+    .line 15
     :pswitch_2
-    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->j:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/whatsapp/BubbleRelativeLayout;->d:Landroid/graphics/Rect;
 
-    .line 11
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 56
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
     :try_end_3c
     .catch Ljava/lang/OutOfMemoryError; {:try_start_3c .. :try_end_3c} :catch_27
 
@@ -1996,9 +1997,9 @@
     :goto_17
     const/4 v7, -0x1
 
-    .line 49
+    .line 128
     :try_start_3d
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
     :try_end_3d
     .catch Ljava/lang/OutOfMemoryError; {:try_start_3d .. :try_end_3d} :catch_29
 
@@ -2014,21 +2015,21 @@
 
     move-result v8
 
-    iget v9, v6, Lcom/whatsapp/se;->p:I
+    iget v9, v6, Lcom/whatsapp/art;->s:I
 
     sub-int/2addr v8, v9
 
-    .line 39
+    .line 74
     invoke-virtual {v4, v3, v7, v0, v8}, Landroid/graphics/Rect;->set(IIII)V
     :try_end_3e
     .catch Ljava/lang/OutOfMemoryError; {:try_start_3e .. :try_end_3e} :catch_2a
 
-    .line 8
+    .line 31
     if-eqz v5, :cond_1d
 
     goto/16 :goto_f
 
-    .line 122
+    .line 132
     :cond_23
     invoke-virtual {p0}, Lcom/whatsapp/BubbleRelativeLayout;->getWidth()I
 
@@ -2040,7 +2041,7 @@
 
     goto :goto_13
 
-    .line 101
+    .line 144
     :catch_23
     move-exception v0
 
@@ -2053,7 +2054,7 @@
 
     goto :goto_14
 
-    .line 45
+    .line 112
     :catch_24
     move-exception v0
 
@@ -2078,7 +2079,7 @@
 
     goto :goto_15
 
-    .line 123
+    .line 65
     :catch_26
     move-exception v0
 
@@ -2091,7 +2092,7 @@
 
     goto :goto_16
 
-    .line 11
+    .line 56
     :catch_27
     move-exception v0
 
@@ -2116,7 +2117,7 @@
 
     goto :goto_17
 
-    .line 49
+    .line 128
     :catch_29
     move-exception v0
 
@@ -2129,7 +2130,7 @@
 
     goto :goto_18
 
-    .line 93
+    .line 162
     :catch_2a
     move-exception v0
 
@@ -2154,7 +2155,7 @@
 
     goto/16 :goto_10
 
-    .line 37
+    .line 99
     :catch_2c
     move-exception v0
 
@@ -2167,7 +2168,7 @@
 
     goto/16 :goto_11
 
-    .line 59
+    .line 13
     :pswitch_3
     if-eqz v2, :cond_2b
 
@@ -2180,7 +2181,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f02009f
+    const v2, 0x7f0200a2
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2201,11 +2202,11 @@
     throw v0
 
     :cond_2b
-    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->l:Landroid/graphics/drawable/Drawable;
+    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->n:Landroid/graphics/drawable/Drawable;
 
     goto/16 :goto_12
 
-    .line 79
+    .line 160
     :pswitch_4
     if-eqz v2, :cond_2c
 
@@ -2218,7 +2219,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f02009e
+    const v2, 0x7f0200a1
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
     :try_end_43
@@ -2234,11 +2235,11 @@
     throw v0
 
     :cond_2c
-    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->g:Landroid/graphics/drawable/Drawable;
+    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->p:Landroid/graphics/drawable/Drawable;
 
     goto/16 :goto_12
 
-    .line 61
+    .line 42
     :pswitch_5
     if-eqz v2, :cond_2d
 
@@ -2251,7 +2252,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f02009d
+    const v2, 0x7f0200a0
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
     :try_end_44
@@ -2271,27 +2272,27 @@
 
     goto/16 :goto_12
 
-    .line 144
+    .line 39
     :cond_2e
     :try_start_45
-    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->q:Landroid/graphics/drawable/Drawable;
+    sget-object v0, Lcom/whatsapp/BubbleRelativeLayout;->k:Landroid/graphics/drawable/Drawable;
     :try_end_45
     .catch Ljava/lang/OutOfMemoryError; {:try_start_45 .. :try_end_45} :catch_31
 
     goto/16 :goto_12
 
-    .line 51
+    .line 131
     :catch_31
     move-exception v0
 
-    .line 174
+    .line 8
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v4, Lcom/whatsapp/BubbleRelativeLayout;->z:[Ljava/lang/String;
 
-    const/4 v5, 0x2
+    const/4 v5, 0x0
 
     aget-object v4, v4, v5
 
@@ -2311,12 +2312,12 @@
 
     move-object v0, v3
 
-    .line 110
-    invoke-static {}, Lcom/whatsapp/util/bo;->a()V
+    .line 20
+    invoke-static {}, Lcom/whatsapp/util/ac;->b()V
 
     goto/16 :goto_12
 
-    .line 57
+    .line 38
     :catch_32
     move-exception v0
 
@@ -2330,7 +2331,7 @@
 
     throw v0
 
-    .line 66
+    .line 173
     :catch_34
     move-exception v0
 
@@ -2344,7 +2345,7 @@
 
     throw v0
 
-    .line 151
+    .line 98
     :catch_36
     move-exception v0
 
@@ -2353,7 +2354,7 @@
     :cond_2f
     int-to-float v1, v0
 
-    iget v2, v6, Lcom/whatsapp/se;->l:F
+    iget v2, v6, Lcom/whatsapp/art;->n:F
 
     sub-float/2addr v1, v2
 
@@ -2361,7 +2362,7 @@
 
     goto/16 :goto_7
 
-    .line 165
+    .line 113
     :catch_37
     move-exception v0
 
@@ -2370,7 +2371,7 @@
     :cond_30
     int-to-float v0, v0
 
-    iget v3, v6, Lcom/whatsapp/se;->l:F
+    iget v3, v6, Lcom/whatsapp/art;->n:F
 
     sub-float v3, v0, v3
 
@@ -2390,7 +2391,7 @@
 
     goto/16 :goto_9
 
-    .line 100
+    .line 11
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -2398,7 +2399,7 @@
         :pswitch_2
     .end packed-switch
 
-    .line 170
+    .line 67
     :pswitch_data_1
     .packed-switch 0x1
         :pswitch_3

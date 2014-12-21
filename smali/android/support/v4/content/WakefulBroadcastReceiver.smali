@@ -21,7 +21,7 @@
 
     sput-object v0, Landroid/support/v4/content/WakefulBroadcastReceiver;->mActiveWakeLocks:Landroid/util/SparseArray;
 
-    .line 2
+    .line 1
     const/4 v0, 0x1
 
     sput v0, Landroid/support/v4/content/WakefulBroadcastReceiver;->mNextId:I
@@ -33,7 +33,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 2
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void

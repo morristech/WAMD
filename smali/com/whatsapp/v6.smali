@@ -3,24 +3,20 @@
 .source "v6.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnKeyListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/App;
-
-.field final b:Lcom/whatsapp/contact/i;
+.field final a:Lcom/whatsapp/Conversation;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/App;Lcom/whatsapp/contact/i;)V
+.method constructor <init>(Lcom/whatsapp/Conversation;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/v6;->a:Lcom/whatsapp/App;
-
-    iput-object p2, p0, Lcom/whatsapp/v6;->b:Lcom/whatsapp/contact/i;
+    .line 6
+    iput-object p1, p0, Lcom/whatsapp/v6;->a:Lcom/whatsapp/Conversation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,17 +25,46 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
+    .locals 3
 
     .prologue
+    const/4 v0, 0x1
+
+    .line 4
+    sget-boolean v1, Lcom/whatsapp/Conversation;->aG:Z
+
+    if-eqz v1, :cond_0
+
+    if-eqz p3, :cond_0
+
+    invoke-virtual {p3}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v1
+
+    const/16 v2, 0x42
+
+    if-ne v1, v2, :cond_0
+
     .line 2
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
 
-    iget-object v1, p0, Lcom/whatsapp/v6;->b:Lcom/whatsapp/contact/i;
+    move-result v1
 
-    invoke-static {v0, v1}, Lcom/whatsapp/contact/b;->a(Landroid/content/Context;Lcom/whatsapp/contact/i;)Lcom/whatsapp/contact/n;
+    if-ne v1, v0, :cond_0
 
     .line 3
-    return-void
+    iget-object v1, p0, Lcom/whatsapp/v6;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v1}, Lcom/whatsapp/Conversation;->a(Lcom/whatsapp/Conversation;)V
+
+    .line 5
+    :goto_0
+    return v0
+
+    .line 1
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

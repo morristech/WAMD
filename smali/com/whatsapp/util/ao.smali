@@ -1,54 +1,11 @@
-.class final Lcom/whatsapp/util/ao;
+.class public interface abstract Lcom/whatsapp/util/ao;
 .super Ljava/lang/Object;
 .source "ao.java"
 
-# interfaces
-.implements Landroid/view/ViewTreeObserver$OnPreDrawListener;
-
-
-# instance fields
-.field final a:Landroid/view/View;
-
-.field final b:Ljava/lang/Runnable;
-
-
-# direct methods
-.method constructor <init>(Landroid/view/View;Ljava/lang/Runnable;)V
-    .locals 0
-
-    .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/util/ao;->a:Landroid/view/View;
-
-    iput-object p2, p0, Lcom/whatsapp/util/ao;->b:Ljava/lang/Runnable;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
 
 # virtual methods
-.method public onPreDraw()Z
-    .locals 1
+.method public abstract a()I
+.end method
 
-    .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/util/ao;->a:Landroid/view/View;
-
-    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
-
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/util/ao;->b:Ljava/lang/Runnable;
-
-    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
-
-    .line 4
-    const/4 v0, 0x1
-
-    return v0
+.method public abstract a(Landroid/widget/ImageView;Landroid/graphics/Bitmap;Lcom/whatsapp/protocol/c9;)V
 .end method

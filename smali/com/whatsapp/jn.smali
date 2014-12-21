@@ -1,23 +1,17 @@
-.class Lcom/whatsapp/jn;
+.class final Lcom/whatsapp/jn;
 .super Ljava/lang/Object;
 .source "jn.java"
 
 # interfaces
-.implements Landroid/preference/Preference$OnPreferenceClickListener;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/SettingsAccount;
+.implements Ljava/util/Comparator;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/SettingsAccount;)V
+.method constructor <init>()V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/jn;->a:Lcom/whatsapp/SettingsAccount;
-
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,25 +19,46 @@
 
 
 # virtual methods
-.method public onPreferenceClick(Landroid/preference/Preference;)Z
+.method public a(Ljava/io/File;Ljava/io/File;)I
     .locals 4
 
     .prologue
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/jn;->a:Lcom/whatsapp/SettingsAccount;
+    invoke-virtual {p1}, Ljava/io/File;->lastModified()J
 
-    new-instance v1, Landroid/content/Intent;
+    move-result-wide v0
 
-    iget-object v2, p0, Lcom/whatsapp/jn;->a:Lcom/whatsapp/SettingsAccount;
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    const-class v3, Lcom/whatsapp/ChangeNumberOverview;
+    move-result-object v0
 
-    invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-virtual {p2}, Ljava/io/File;->lastModified()J
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/SettingsAccount;->startActivity(Landroid/content/Intent;)V
+    move-result-wide v2
 
-    .line 3
-    const/4 v0, 0x1
+    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/Long;->compareTo(Ljava/lang/Long;)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 1
+
+    .prologue
+    .line 1
+    check-cast p1, Ljava/io/File;
+
+    check-cast p2, Ljava/io/File;
+
+    invoke-virtual {p0, p1, p2}, Lcom/whatsapp/jn;->a(Ljava/io/File;Ljava/io/File;)I
+
+    move-result v0
 
     return v0
 .end method

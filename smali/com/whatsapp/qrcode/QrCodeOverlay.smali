@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/whatsapp/qrcode/a;
+.field private a:Lcom/whatsapp/qrcode/e;
 
 .field b:F
 
@@ -18,68 +18,8 @@
     .locals 2
 
     .prologue
-    .line 60
+    .line 8
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
-
-    .line 10
-    new-instance v0, Landroid/graphics/Paint;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
-
-    iput-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->d:Landroid/graphics/Paint;
-
-    .line 40
-    const/4 v0, 0x0
-
-    iput v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->c:F
-
-    .line 5
-    const v0, 0x3c23d70a
-
-    iput v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->b:F
-
-    .line 54
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 2
-
-    .prologue
-    .line 41
-    invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-
-    .line 59
-    new-instance v0, Landroid/graphics/Paint;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
-
-    iput-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->d:Landroid/graphics/Paint;
-
-    .line 55
-    const/4 v0, 0x0
-
-    iput v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->c:F
-
-    .line 38
-    const v0, 0x3c23d70a
-
-    iput v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->b:F
-
-    .line 7
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 2
-
-    .prologue
-    .line 26
-    invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 35
     new-instance v0, Landroid/graphics/Paint;
@@ -90,17 +30,77 @@
 
     iput-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->d:Landroid/graphics/Paint;
 
-    .line 24
+    .line 1
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->c:F
 
-    .line 51
+    .line 5
     const v0, 0x3c23d70a
 
     iput v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->b:F
 
-    .line 36
+    .line 16
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 2
+
+    .prologue
+    .line 6
+    invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    .line 18
+    new-instance v0, Landroid/graphics/Paint;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
+
+    iput-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->d:Landroid/graphics/Paint;
+
+    .line 62
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->c:F
+
+    .line 32
+    const v0, 0x3c23d70a
+
+    iput v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->b:F
+
+    .line 30
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 2
+
+    .prologue
+    .line 31
+    invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    .line 10
+    new-instance v0, Landroid/graphics/Paint;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
+
+    iput-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->d:Landroid/graphics/Paint;
+
+    .line 15
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->c:F
+
+    .line 46
+    const v0, 0x3c23d70a
+
+    iput v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->b:F
+
+    .line 28
     return-void
 .end method
 
@@ -110,45 +110,45 @@
     .locals 4
 
     .prologue
-    .line 48
+    .line 13
     invoke-super {p0}, Landroid/view/View;->onAttachedToWindow()V
 
-    .line 47
-    new-instance v0, Lcom/whatsapp/qrcode/a;
+    .line 4
+    new-instance v0, Lcom/whatsapp/qrcode/e;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/whatsapp/qrcode/a;-><init>(Lcom/whatsapp/qrcode/QrCodeOverlay;Lcom/whatsapp/qrcode/e;)V
+    invoke-direct {v0, p0, v1}, Lcom/whatsapp/qrcode/e;-><init>(Lcom/whatsapp/qrcode/QrCodeOverlay;Lcom/whatsapp/qrcode/j;)V
 
-    iput-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/a;
+    iput-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/e;
 
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/a;
+    .line 41
+    iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/e;
 
     const-wide/16 v2, 0x7d0
 
-    invoke-virtual {v0, v2, v3}, Lcom/whatsapp/qrcode/a;->setDuration(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/whatsapp/qrcode/e;->setDuration(J)V
 
-    .line 43
-    iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/a;
+    .line 38
+    iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/e;
 
     const/4 v1, -0x1
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/qrcode/a;->setRepeatCount(I)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/qrcode/e;->setRepeatCount(I)V
 
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/a;
+    .line 37
+    iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/e;
 
     const/4 v1, 0x2
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/qrcode/a;->setRepeatMode(I)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/qrcode/e;->setRepeatMode(I)V
 
-    .line 50
-    iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/a;
+    .line 55
+    iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/e;
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/qrcode/QrCodeOverlay;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 62
+    .line 39
     return-void
 .end method
 
@@ -156,10 +156,10 @@
     .locals 0
 
     .prologue
-    .line 39
+    .line 57
     invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
-    .line 20
+    .line 44
     invoke-virtual {p0}, Lcom/whatsapp/qrcode/QrCodeOverlay;->clearAnimation()V
 
     .line 17
@@ -170,19 +170,19 @@
     .locals 14
 
     .prologue
-    sget-boolean v6, Lcom/whatsapp/qrcode/QrCodeView;->b:Z
+    sget-boolean v6, Lcom/whatsapp/qrcode/QrCodeActivity;->o:Z
 
-    .line 13
+    .line 51
     invoke-virtual {p0}, Lcom/whatsapp/qrcode/QrCodeOverlay;->getWidth()I
 
     move-result v7
 
-    .line 18
+    .line 52
     invoke-virtual {p0}, Lcom/whatsapp/qrcode/QrCodeOverlay;->getHeight()I
 
     move-result v8
 
-    .line 8
+    .line 59
     invoke-static {v7, v8}, Ljava/lang/Math;->min(II)I
 
     move-result v0
@@ -191,23 +191,23 @@
 
     div-int/lit8 v9, v0, 0x4
 
-    .line 52
+    .line 21
     sub-int v0, v7, v9
 
     div-int/lit8 v10, v0, 0x2
 
-    .line 12
+    .line 49
     sub-int v0, v8, v9
 
     div-int/lit8 v11, v0, 0x2
 
-    .line 53
+    .line 34
     add-int v12, v10, v9
 
-    .line 19
+    .line 20
     add-int v13, v11, v9
 
-    .line 34
+    .line 11
     iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->d:Landroid/graphics/Paint;
 
     const/16 v1, 0x7d
@@ -220,14 +220,14 @@
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/Paint;->setARGB(IIII)V
 
-    .line 31
+    .line 54
     iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->d:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 58
+    .line 40
     const/4 v1, 0x0
 
     const/4 v2, 0x0
@@ -242,7 +242,7 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 49
+    .line 33
     const/4 v1, 0x0
 
     int-to-float v2, v11
@@ -257,7 +257,7 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 46
+    .line 61
     int-to-float v1, v12
 
     int-to-float v2, v11
@@ -272,7 +272,7 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 61
+    .line 12
     const/4 v1, 0x0
 
     int-to-float v2, v13
@@ -287,7 +287,7 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 4
+    .line 50
     invoke-virtual {p0}, Lcom/whatsapp/qrcode/QrCodeOverlay;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -302,26 +302,26 @@
 
     move-result v7
 
-    .line 27
+    .line 36
     iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->d:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v7}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 30
+    .line 25
     iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->d:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 1
+    .line 53
     iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->d:Landroid/graphics/Paint;
 
     const v1, 0x33ffffff
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 23
+    .line 29
     int-to-float v1, v10
 
     int-to-float v2, v11
@@ -336,7 +336,7 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 56
+    .line 58
     add-int v0, v10, v12
 
     div-int/lit8 v0, v0, 0x2
@@ -367,7 +367,7 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 33
+    .line 47
     add-int v0, v10, v12
 
     div-int/lit8 v0, v0, 0x2
@@ -398,7 +398,7 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 9
+    .line 27
     div-int/lit8 v0, v9, 0xc
 
     sub-int v0, v10, v0
@@ -429,7 +429,7 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 11
+    .line 19
     div-int/lit8 v0, v9, 0xc
 
     sub-int v0, v12, v0
@@ -460,21 +460,21 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 16
+    .line 24
     iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->d:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 6
+    .line 45
     iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->d:Landroid/graphics/Paint;
 
     const v1, -0x7fff0100
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 32
+    .line 42
     iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->d:Landroid/graphics/Paint;
 
     const/high16 v1, 0x40000000
@@ -483,7 +483,7 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 29
+    .line 7
     int-to-float v0, v11
 
     const/high16 v1, 0x40000000
@@ -494,7 +494,7 @@
 
     float-to-int v0, v0
 
-    .line 57
+    .line 2
     int-to-float v1, v13
 
     const/high16 v2, 0x40000000
@@ -505,7 +505,7 @@
 
     float-to-int v4, v1
 
-    .line 14
+    .line 26
     iget v1, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->c:F
 
     const/high16 v2, 0x3f800000
@@ -522,7 +522,7 @@
 
     if-gez v1, :cond_1
 
-    .line 28
+    .line 9
     :cond_0
     iget v1, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->b:F
 
@@ -530,7 +530,7 @@
 
     iput v1, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->b:F
 
-    .line 22
+    .line 56
     :cond_1
     iget v1, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->c:F
 
@@ -540,7 +540,7 @@
 
     iput v1, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->c:F
 
-    .line 21
+    .line 23
     int-to-float v1, v10
 
     int-to-float v2, v0
@@ -575,14 +575,14 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 44
+    .line 22
     if-eqz v6, :cond_2
 
-    sget v0, Lcom/whatsapp/DialogToastActivity;->i:I
+    sget v0, Lcom/whatsapp/DialogToastActivity;->d:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lcom/whatsapp/DialogToastActivity;->i:I
+    sput v0, Lcom/whatsapp/DialogToastActivity;->d:I
 
     :cond_2
     return-void
@@ -592,38 +592,38 @@
     .locals 1
 
     .prologue
-    .line 15
+    .line 60
     invoke-virtual {p0}, Lcom/whatsapp/qrcode/QrCodeOverlay;->getVisibility()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 37
+    .line 3
     invoke-virtual {p0}, Lcom/whatsapp/qrcode/QrCodeOverlay;->getAnimation()Landroid/view/animation/Animation;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/a;
+    iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/e;
 
     if-eqz v0, :cond_1
 
-    .line 45
-    iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/a;
+    .line 48
+    iget-object v0, p0, Lcom/whatsapp/qrcode/QrCodeOverlay;->a:Lcom/whatsapp/qrcode/e;
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/qrcode/QrCodeOverlay;->startAnimation(Landroid/view/animation/Animation;)V
 
-    sget-boolean v0, Lcom/whatsapp/qrcode/QrCodeView;->b:Z
+    sget-boolean v0, Lcom/whatsapp/qrcode/QrCodeActivity;->o:Z
 
     if-eqz v0, :cond_1
 
-    .line 42
+    .line 43
     :cond_0
     invoke-virtual {p0}, Lcom/whatsapp/qrcode/QrCodeOverlay;->clearAnimation()V
 
-    .line 25
+    .line 14
     :cond_1
     return-void
 .end method

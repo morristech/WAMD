@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static a:I
+.field public static a:Z
 
 
 # instance fields
@@ -21,7 +21,7 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,14 +43,14 @@
 
     const/4 v3, 0x1
 
-    sget v5, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->a:I
+    sget-boolean v5, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->a:Z
 
-    .line 39
+    .line 41
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->M:[[[I
 
     if-nez v0, :cond_0
 
-    .line 32
+    .line 1
     const/16 v0, 0x20
 
     filled-new-array {v0, v10, v4}, [I
@@ -69,7 +69,7 @@
 
     if-eqz v5, :cond_2
 
-    .line 21
+    .line 13
     :cond_0
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->H:[B
 
@@ -79,11 +79,11 @@
 
     if-eqz v0, :cond_2
 
-    .line 29
+    .line 38
     :cond_1
     return-void
 
-    .line 36
+    .line 33
     :cond_2
     invoke-static {p1}, Lorg/spongycastle/util/Arrays;->clone([B)[B
 
@@ -91,7 +91,7 @@
 
     iput-object v0, p0, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->H:[B
 
-    .line 8
+    .line 2
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->M:[[[I
 
     aget-object v0, v0, v3
@@ -102,11 +102,11 @@
 
     move v0, v4
 
-    .line 2
+    .line 35
     :cond_3
     if-lt v0, v3, :cond_4
 
-    .line 28
+    .line 8
     iget-object v6, p0, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->M:[[[I
 
     aget-object v6, v6, v3
@@ -123,12 +123,12 @@
 
     invoke-static {v6, v7}, Lorg/spongycastle/crypto/modes/gcm/GCMUtil;->multiplyP([I[I)V
 
-    .line 31
+    .line 3
     shr-int/lit8 v0, v0, 0x1
 
     if-eqz v5, :cond_3
 
-    .line 12
+    .line 4
     :cond_4
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->M:[[[I
 
@@ -146,11 +146,11 @@
 
     move v0, v4
 
-    .line 19
+    .line 17
     :cond_5
     if-lt v0, v3, :cond_6
 
-    .line 22
+    .line 21
     iget-object v4, p0, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->M:[[[I
 
     aget-object v4, v4, v1
@@ -167,7 +167,7 @@
 
     invoke-static {v4, v6}, Lorg/spongycastle/crypto/modes/gcm/GCMUtil;->multiplyP([I[I)V
 
-    .line 25
+    .line 10
     shr-int/lit8 v0, v0, 0x1
 
     if-eqz v5, :cond_5
@@ -175,7 +175,7 @@
     :cond_6
     move v0, v1
 
-    .line 13
+    .line 9
     :cond_7
     :goto_0
     const/4 v1, 0x2
@@ -187,11 +187,11 @@
 
     move v1, v3
 
-    .line 17
+    .line 12
     :cond_8
     if-ge v1, v4, :cond_9
 
-    .line 37
+    .line 25
     iget-object v6, p0, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->M:[[[I
 
     aget-object v6, v6, v0
@@ -214,18 +214,18 @@
 
     invoke-static {v6, v7, v8}, Lorg/spongycastle/crypto/modes/gcm/GCMUtil;->xor([I[I[I)V
 
-    .line 26
+    .line 20
     add-int/lit8 v1, v1, 0x1
 
     if-eqz v5, :cond_8
 
-    .line 6
+    .line 19
     :cond_9
     add-int v1, v4, v4
 
     if-eqz v5, :cond_c
 
-    .line 4
+    .line 39
     :cond_a
     add-int/lit8 v0, v0, 0x1
 
@@ -233,16 +233,16 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 11
+    .line 5
     if-le v0, v3, :cond_7
 
     move v1, v2
 
-    .line 41
+    .line 27
     :cond_b
     if-lez v1, :cond_7
 
-    .line 35
+    .line 18
     iget-object v4, p0, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->M:[[[I
 
     add-int/lit8 v6, v0, -0x2
@@ -259,7 +259,7 @@
 
     invoke-static {v4, v6}, Lorg/spongycastle/crypto/modes/gcm/GCMUtil;->multiplyP8([I[I)V
 
-    .line 16
+    .line 7
     shr-int/lit8 v1, v1, 0x1
 
     if-eqz v5, :cond_b
@@ -284,20 +284,20 @@
 
     const/4 v6, 0x0
 
-    sget v1, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->a:I
+    sget-boolean v1, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->a:Z
 
-    .line 10
+    .line 22
     const/4 v0, 0x4
 
     new-array v2, v0, [I
 
-    .line 9
+    .line 28
     const/16 v0, 0xf
 
     :cond_0
     if-ltz v0, :cond_1
 
-    .line 14
+    .line 36
     iget-object v3, p0, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->M:[[[I
 
     add-int v4, v0, v0
@@ -310,7 +310,7 @@
 
     aget-object v3, v3, v4
 
-    .line 27
+    .line 6
     aget v4, v2, v6
 
     aget v5, v3, v6
@@ -328,7 +328,7 @@
 
     aput v4, v2, v7
 
-    .line 34
+    .line 30
     aget v4, v2, v8
 
     aget v5, v3, v8
@@ -337,7 +337,7 @@
 
     aput v4, v2, v8
 
-    .line 23
+    .line 16
     aget v4, v2, v9
 
     aget v3, v3, v9
@@ -346,7 +346,7 @@
 
     aput v3, v2, v9
 
-    .line 1
+    .line 14
     iget-object v3, p0, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->M:[[[I
 
     add-int v4, v0, v0
@@ -363,7 +363,7 @@
 
     aget-object v3, v3, v4
 
-    .line 33
+    .line 34
     aget v4, v2, v6
 
     aget v5, v3, v6
@@ -372,7 +372,7 @@
 
     aput v4, v2, v6
 
-    .line 7
+    .line 11
     aget v4, v2, v7
 
     aget v5, v3, v7
@@ -381,7 +381,7 @@
 
     aput v4, v2, v7
 
-    .line 20
+    .line 37
     aget v4, v2, v8
 
     aget v5, v3, v8
@@ -390,7 +390,7 @@
 
     aput v4, v2, v8
 
-    .line 38
+    .line 32
     aget v4, v2, v9
 
     aget v3, v3, v9
@@ -399,15 +399,15 @@
 
     aput v3, v2, v9
 
-    .line 30
+    .line 31
     add-int/lit8 v0, v0, -0x1
 
     if-eqz v1, :cond_0
 
-    .line 15
+    .line 29
     :cond_1
     invoke-static {v2, p1, v6}, Lorg/spongycastle/util/Pack;->intToBigEndian([I[BI)V
 
-    .line 40
+    .line 15
     return-void
 .end method

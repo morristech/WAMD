@@ -1,52 +1,77 @@
-.class Lcom/whatsapp/protocol/c5;
-.super Lcom/whatsapp/protocol/ab;
+.class public interface abstract Lcom/whatsapp/protocol/c5;
+.super Ljava/lang/Object;
 .source "c5.java"
 
 
-# instance fields
-.field final a:Ljava/lang/String;
-
-.field final b:Lcom/whatsapp/protocol/a9;
-
-.field final c:Ljava/lang/String;
-
-
-# direct methods
-.method constructor <init>(Lcom/whatsapp/protocol/a9;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/protocol/c5;->b:Lcom/whatsapp/protocol/a9;
-
-    iput-object p2, p0, Lcom/whatsapp/protocol/c5;->c:Ljava/lang/String;
-
-    iput-object p3, p0, Lcom/whatsapp/protocol/c5;->a:Ljava/lang/String;
-
-    invoke-direct {p0}, Lcom/whatsapp/protocol/ab;-><init>()V
-
-    return-void
+# virtual methods
+.method public abstract a(I)V
 .end method
 
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;J)V
+.end method
 
-# virtual methods
-.method public a(Lcom/whatsapp/protocol/ax;Ljava/lang/String;)V
-    .locals 3
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;JI[Ljava/lang/String;[I[[B[I[[B[[B[B[BLcom/whatsapp/protocol/VoipOptions;)V
+.end method
 
-    .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/protocol/c5;->b:Lcom/whatsapp/protocol/a9;
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;JLjava/lang/String;)V
+.end method
 
-    invoke-static {v0}, Lcom/whatsapp/protocol/a9;->c(Lcom/whatsapp/protocol/a9;)Lcom/whatsapp/protocol/u;
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;JLjava/lang/String;I[[B[I[B[B[BI)V
+.end method
 
-    move-result-object v0
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;JZ)V
+.end method
 
-    iget-object v1, p0, Lcom/whatsapp/protocol/c5;->c:Ljava/lang/String;
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;J[BI)V
+.end method
 
-    iget-object v2, p0, Lcom/whatsapp/protocol/c5;->a:Ljava/lang/String;
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;J[[B[I)V
+.end method
 
-    invoke-interface {v0, v1, v2}, Lcom/whatsapp/protocol/u;->k(Ljava/lang/String;Ljava/lang/String;)V
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;Ljava/lang/String;)V
+.end method
 
-    .line 3
-    return-void
+.method public abstract a(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I[[B[[B[ILcom/whatsapp/protocol/VoipOptions;)V
+.end method
+
+.method public abstract a([Ljava/lang/String;[Ljava/lang/String;)V
+.end method
+
+.method public abstract b(Lcom/whatsapp/protocol/c8;Ljava/lang/String;JZ)V
+.end method
+
+.method public abstract b(Lcom/whatsapp/protocol/c8;Ljava/lang/String;J[[B[I)V
+.end method
+
+.method public abstract b(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract c(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract d(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract e(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract f(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract g(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract h(Ljava/lang/String;Ljava/lang/String;)V
 .end method

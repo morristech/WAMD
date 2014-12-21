@@ -174,11 +174,6 @@ ostávajú"</item>
         <item quantity="one">%1$s z %2$d konverzácie.</item>
         <item quantity="few">%1$s z %2$d konverzácií.</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Môžeš pokračovať. Práve sme obnovili %,d správ.</item>
-        <item quantity="one">Môžeš pokračovať. Práve sme obnovili %,d správu.</item>
-        <item quantity="few">Môžeš pokračovať. Práve sme obnovili %,d správy.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Posielanie %1$d videí %2$s</item>
         <item quantity="one">Posielanie %1$d video %2$s</item>

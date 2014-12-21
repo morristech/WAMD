@@ -1,108 +1,41 @@
 .class Lcom/whatsapp/y1;
-.super Landroid/graphics/drawable/Drawable;
+.super Ljava/lang/Object;
 .source "y1.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Landroid/graphics/drawable/Drawable;
-
-.field final b:Landroid/view/View;
-
-.field final c:Lcom/whatsapp/BroadcastDetails;
+.field final a:Lcom/whatsapp/Conversation;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/BroadcastDetails;Landroid/graphics/drawable/Drawable;Landroid/view/View;)V
+.method constructor <init>(Lcom/whatsapp/Conversation;)V
     .locals 0
 
     .prologue
-    .line 9
-    iput-object p1, p0, Lcom/whatsapp/y1;->c:Lcom/whatsapp/BroadcastDetails;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/y1;->a:Lcom/whatsapp/Conversation;
 
-    iput-object p2, p0, Lcom/whatsapp/y1;->a:Landroid/graphics/drawable/Drawable;
-
-    iput-object p3, p0, Lcom/whatsapp/y1;->b:Landroid/view/View;
-
-    invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public draw(Landroid/graphics/Canvas;)V
-    .locals 5
+.method public run()V
+    .locals 2
 
     .prologue
-    const/4 v4, 0x0
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/y1;->a:Lcom/whatsapp/Conversation;
 
-    .line 11
-    iget-object v0, p0, Lcom/whatsapp/y1;->a:Landroid/graphics/drawable/Drawable;
+    const/4 v1, 0x0
 
-    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
-
-    move-result v0
+    invoke-static {v0, v1}, Lcom/whatsapp/Conversation;->b(Lcom/whatsapp/Conversation;Ljava/lang/String;)V
 
     .line 1
-    iget-object v1, p0, Lcom/whatsapp/y1;->a:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
-
-    move-result v1
-
-    .line 2
-    iget-object v2, p0, Lcom/whatsapp/y1;->b:Landroid/view/View;
-
-    invoke-virtual {v2}, Landroid/view/View;->getWidth()I
-
-    move-result v2
-
-    .line 7
-    iget-object v3, p0, Lcom/whatsapp/y1;->b:Landroid/view/View;
-
-    invoke-virtual {v3}, Landroid/view/View;->getWidth()I
-
-    .line 12
-    mul-int/2addr v0, v2
-
-    div-int/2addr v0, v1
-
-    .line 4
-    iget-object v1, p0, Lcom/whatsapp/y1;->a:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v1, v4, v4, v2, v0}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/y1;->a:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 10
-    return-void
-.end method
-
-.method public getOpacity()I
-    .locals 1
-
-    .prologue
-    .line 3
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public setAlpha(I)V
-    .locals 0
-
-    .prologue
-    .line 6
-    return-void
-.end method
-
-.method public setColorFilter(Landroid/graphics/ColorFilter;)V
-    .locals 0
-
-    .prologue
-    .line 8
     return-void
 .end method

@@ -1,61 +1,57 @@
 .class Lcom/whatsapp/qd;
-.super Landroid/os/Handler;
+.super Ljava/lang/Object;
 .source "qd.java"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/TouchImageView;
+.field final a:Lcom/whatsapp/Conversation;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/TouchImageView;)V
+.method constructor <init>(Lcom/whatsapp/Conversation;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/qd;->a:Lcom/whatsapp/TouchImageView;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/qd;->a:Lcom/whatsapp/Conversation;
 
-    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public handleMessage(Landroid/os/Message;)V
-    .locals 4
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 3
 
     .prologue
+    const/4 v2, 0x0
+
     .line 2
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    iget-object v0, p0, Lcom/whatsapp/qd;->a:Lcom/whatsapp/Conversation;
 
-    move-result-wide v0
-
-    const-wide/16 v2, 0x2d
-
-    sub-long/2addr v0, v2
-
-    iget-object v2, p0, Lcom/whatsapp/qd;->a:Lcom/whatsapp/TouchImageView;
-
-    invoke-static {v2}, Lcom/whatsapp/TouchImageView;->a(Lcom/whatsapp/TouchImageView;)J
-
-    move-result-wide v2
-
-    cmp-long v0, v0, v2
-
-    if-ltz v0, :cond_0
+    invoke-static {v0, v2}, Lcom/whatsapp/Conversation;->c(Lcom/whatsapp/Conversation;I)I
 
     .line 5
-    const/4 v0, 0x2
+    sget-object v0, Lcom/whatsapp/App;->au:Lcom/whatsapp/amo;
 
-    sput v0, Lcom/whatsapp/TouchImageView;->p:I
+    iget-object v1, p0, Lcom/whatsapp/qd;->a:Lcom/whatsapp/Conversation;
 
-    .line 4
-    const/high16 v0, -0x40800000
+    iget-object v1, v1, Lcom/whatsapp/Conversation;->N:Lcom/whatsapp/tc;
 
-    sput v0, Lcom/whatsapp/TouchImageView;->z:F
+    iget-object v1, v1, Lcom/whatsapp/tc;->b:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/amo;->s(Ljava/lang/String;)V
+
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/qd;->a:Lcom/whatsapp/Conversation;
+
+    invoke-virtual {v0, v2}, Lcom/whatsapp/Conversation;->removeDialog(I)V
 
     .line 1
-    :cond_0
     return-void
 .end method

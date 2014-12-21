@@ -8,7 +8,7 @@
     .locals 3
 
     .prologue
-    .line 2
+    .line 1
     new-instance v0, Lorg/spongycastle/crypto/macs/HMac;
 
     new-instance v1, Lorg/spongycastle/crypto/digests/SHA512tDigest;
@@ -21,6 +21,6 @@
 
     invoke-direct {p0, v0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;-><init>(Lorg/spongycastle/crypto/Mac;)V
 
-    .line 1
+    .line 2
     return-void
 .end method

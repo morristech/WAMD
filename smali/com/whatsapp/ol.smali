@@ -1,97 +1,360 @@
 .class Lcom/whatsapp/ol;
-.super Landroid/os/CountDownTimer;
+.super Landroid/os/Handler;
 .source "ol.java"
 
 
 # instance fields
-.field final a:J
+.field final a:Lcom/whatsapp/RecordAudio;
 
-.field final b:Lcom/whatsapp/VerifySms;
-
-.field final c:Landroid/view/View;
-
-.field final d:Landroid/widget/ProgressBar;
+.field b:I
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/VerifySms;JJLandroid/widget/ProgressBar;JLandroid/view/View;)V
-    .locals 0
+.method constructor <init>(Lcom/whatsapp/RecordAudio;)V
+    .locals 1
 
     .prologue
-    .line 6
-    iput-object p1, p0, Lcom/whatsapp/ol;->b:Lcom/whatsapp/VerifySms;
+    .line 16
+    iput-object p1, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
 
-    iput-object p6, p0, Lcom/whatsapp/ol;->d:Landroid/widget/ProgressBar;
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    iput-wide p7, p0, Lcom/whatsapp/ol;->a:J
+    .line 30
+    const/4 v0, 0x0
 
-    iput-object p9, p0, Lcom/whatsapp/ol;->c:Landroid/view/View;
-
-    invoke-direct {p0, p2, p3, p4, p5}, Landroid/os/CountDownTimer;-><init>(JJ)V
+    iput v0, p0, Lcom/whatsapp/ol;->b:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onFinish()V
-    .locals 3
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 14
 
     .prologue
-    const/16 v2, 0x8
+    const/4 v13, 0x4
 
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/ol;->b:Lcom/whatsapp/VerifySms;
+    const/4 v12, 0x3
 
-    invoke-static {v0}, Lcom/whatsapp/VerifySms;->h(Lcom/whatsapp/VerifySms;)Landroid/widget/EditText;
-
-    move-result-object v0
+    const/4 v2, 0x0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setEnabled(Z)V
+    sget v3, Lcom/whatsapp/App;->h:I
+
+    .line 14
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v0}, Lcom/whatsapp/RecordAudio;->l(Lcom/whatsapp/RecordAudio;)I
+
+    move-result v0
+
+    if-ne v0, v12, :cond_1
+
+    .line 10
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v0}, Lcom/whatsapp/RecordAudio;->n(Lcom/whatsapp/RecordAudio;)Lcom/whatsapp/util/bc;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/whatsapp/util/bc;->i()I
+
+    move-result v0
+
+    .line 8
+    div-int/lit16 v4, v0, 0x3e8
+
+    iget v5, p0, Lcom/whatsapp/ol;->b:I
+
+    if-eq v4, v5, :cond_0
 
     .line 4
-    iget-object v0, p0, Lcom/whatsapp/ol;->c:Landroid/view/View;
+    iget-object v4, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-static {v4}, Lcom/whatsapp/RecordAudio;->d(Lcom/whatsapp/RecordAudio;)Landroid/widget/TextView;
+
+    move-result-object v4
+
+    div-int/lit16 v5, v0, 0x3e8
+
+    int-to-long v6, v5
+
+    invoke-static {v6, v7}, Landroid/text/format/DateUtils;->formatElapsedTime(J)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 31
+    div-int/lit16 v4, v0, 0x3e8
+
+    iput v4, p0, Lcom/whatsapp/ol;->b:I
+
+    .line 13
+    :cond_0
+    iget-object v4, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v4}, Lcom/whatsapp/RecordAudio;->c(Lcom/whatsapp/RecordAudio;)Landroid/widget/ProgressBar;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v0}, Landroid/widget/ProgressBar;->setProgress(I)V
+
+    .line 25
+    iget-object v4, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v4}, Lcom/whatsapp/RecordAudio;->f(Lcom/whatsapp/RecordAudio;)Landroid/widget/SeekBar;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v0}, Landroid/widget/SeekBar;->setProgress(I)V
 
     .line 7
-    iget-object v0, p0, Lcom/whatsapp/ol;->d:Landroid/widget/ProgressBar;
+    if-eqz v3, :cond_a
 
-    invoke-virtual {v0, v2}, Landroid/widget/ProgressBar;->setVisibility(I)V
+    .line 11
+    :cond_1
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
 
-    .line 2
-    return-void
-.end method
+    invoke-static {v0}, Lcom/whatsapp/RecordAudio;->l(Lcom/whatsapp/RecordAudio;)I
 
-.method public onTick(J)V
-    .locals 7
+    move-result v0
 
-    .prologue
+    if-ne v0, v1, :cond_a
+
+    .line 15
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v4
+
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v0}, Lcom/whatsapp/RecordAudio;->b(Lcom/whatsapp/RecordAudio;)J
+
+    move-result-wide v6
+
+    sub-long/2addr v4, v6
+
+    .line 27
+    const-wide/32 v6, 0x1d4c0
+
+    cmp-long v0, v4, v6
+
+    if-lez v0, :cond_9
+
+    .line 24
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v0}, Lcom/whatsapp/RecordAudio;->k(Lcom/whatsapp/RecordAudio;)V
+
+    .line 28
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v0, v13}, Lcom/whatsapp/RecordAudio;->c(Lcom/whatsapp/RecordAudio;I)I
+
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    iget-object v6, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v6}, Lcom/whatsapp/RecordAudio;->l(Lcom/whatsapp/RecordAudio;)I
+
+    move-result v6
+
+    invoke-static {v0, v6}, Lcom/whatsapp/RecordAudio;->b(Lcom/whatsapp/RecordAudio;I)V
+
+    if-eqz v3, :cond_8
+
+    move v0, v1
+
+    .line 21
+    :goto_0
+    const-wide/16 v6, 0x3e8
+
+    div-long v6, v4, v6
+
+    .line 20
+    iget-object v8, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v8}, Lcom/whatsapp/RecordAudio;->d(Lcom/whatsapp/RecordAudio;)Landroid/widget/TextView;
+
+    move-result-object v8
+
+    const-wide/16 v10, 0x78
+
+    sub-long/2addr v10, v6
+
+    invoke-static {v10, v11}, Landroid/text/format/DateUtils;->formatElapsedTime(J)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {v8, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
     .line 3
-    iget-object v0, p0, Lcom/whatsapp/ol;->d:Landroid/widget/ProgressBar;
+    iget-object v8, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
 
-    iget-wide v2, p0, Lcom/whatsapp/ol;->a:J
+    invoke-static {v8}, Lcom/whatsapp/RecordAudio;->e(Lcom/whatsapp/RecordAudio;)Landroid/widget/TextView;
 
-    sub-long/2addr v2, p1
+    move-result-object v8
 
-    long-to-double v2, v2
+    invoke-static {v6, v7}, Landroid/text/format/DateUtils;->formatElapsedTime(J)Ljava/lang/String;
 
-    const-wide/high16 v4, 0x4059000000000000L
+    move-result-object v6
 
-    mul-double/2addr v2, v4
+    invoke-virtual {v8, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    iget-wide v4, p0, Lcom/whatsapp/ol;->a:J
+    .line 29
+    iget-object v6, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
 
-    long-to-double v4, v4
+    invoke-static {v6}, Lcom/whatsapp/RecordAudio;->c(Lcom/whatsapp/RecordAudio;)Landroid/widget/ProgressBar;
 
-    div-double/2addr v2, v4
+    move-result-object v6
 
-    double-to-int v1, v2
+    long-to-int v4, v4
+
+    invoke-virtual {v6, v4}, Landroid/widget/ProgressBar;->setProgress(I)V
+
+    .line 18
+    :goto_1
+    if-nez v0, :cond_4
+
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-virtual {v0}, Lcom/whatsapp/RecordAudio;->isFinishing()Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    .line 9
+    invoke-static {v0}, Lcom/whatsapp/RecordAudio;->l(Lcom/whatsapp/RecordAudio;)I
+
+    move-result v0
+
+    if-ne v0, v12, :cond_2
+
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v0}, Lcom/whatsapp/RecordAudio;->n(Lcom/whatsapp/RecordAudio;)Lcom/whatsapp/util/bc;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/whatsapp/util/bc;->g()Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    :cond_2
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v0}, Lcom/whatsapp/RecordAudio;->l(Lcom/whatsapp/RecordAudio;)I
+
+    move-result v0
+
+    if-ne v0, v1, :cond_4
+
+    .line 6
+    :cond_3
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v0}, Lcom/whatsapp/RecordAudio;->h(Lcom/whatsapp/RecordAudio;)Landroid/os/Handler;
+
+    move-result-object v0
+
+    const-wide/16 v4, 0x32
+
+    invoke-virtual {v0, v2, v4, v5}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+
+    if-eqz v3, :cond_7
+
+    .line 17
+    :cond_4
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v0}, Lcom/whatsapp/RecordAudio;->l(Lcom/whatsapp/RecordAudio;)I
+
+    move-result v0
+
+    if-ne v0, v12, :cond_5
+
+    .line 23
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v0}, Lcom/whatsapp/RecordAudio;->f(Lcom/whatsapp/RecordAudio;)Landroid/widget/SeekBar;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Landroid/widget/SeekBar;->setProgress(I)V
+
+    if-eqz v3, :cond_6
+
+    .line 5
+    :cond_5
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v0}, Lcom/whatsapp/RecordAudio;->l(Lcom/whatsapp/RecordAudio;)I
+
+    move-result v0
+
+    if-ne v0, v1, :cond_6
+
+    .line 32
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v0}, Lcom/whatsapp/RecordAudio;->c(Lcom/whatsapp/RecordAudio;)Landroid/widget/ProgressBar;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v1}, Lcom/whatsapp/RecordAudio;->c(Lcom/whatsapp/RecordAudio;)Landroid/widget/ProgressBar;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/widget/ProgressBar;->getMax()I
+
+    move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setProgress(I)V
 
-    .line 1
+    .line 19
+    :cond_6
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v0, v13}, Lcom/whatsapp/RecordAudio;->c(Lcom/whatsapp/RecordAudio;I)I
+
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    iget-object v1, p0, Lcom/whatsapp/ol;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-static {v1}, Lcom/whatsapp/RecordAudio;->l(Lcom/whatsapp/RecordAudio;)I
+
+    move-result v1
+
+    invoke-static {v0, v1}, Lcom/whatsapp/RecordAudio;->b(Lcom/whatsapp/RecordAudio;I)V
+
+    .line 26
+    :cond_7
     return-void
+
+    :cond_8
+    move v0, v1
+
+    goto :goto_1
+
+    :cond_9
+    move v0, v2
+
+    goto/16 :goto_0
+
+    :cond_a
+    move v0, v2
+
+    goto :goto_1
 .end method

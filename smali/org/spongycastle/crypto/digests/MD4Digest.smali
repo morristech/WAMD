@@ -51,7 +51,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "\u0011iT"
+    const-string v0, "I\u0015T"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -89,7 +89,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x7c
+    const/16 v0, 0x1a
 
     :goto_1
     xor-int/2addr v0, v4
@@ -105,12 +105,12 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x5c
+    const/4 v0, 0x4
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x2d
+    const/16 v0, 0x51
 
     goto :goto_1
 
@@ -120,9 +120,11 @@
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x12
+    const/16 v0, 0x44
 
     goto :goto_1
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -137,20 +139,20 @@
     .locals 1
 
     .prologue
-    .line 102
+    .line 35
     invoke-direct {p0}, Lorg/spongycastle/crypto/digests/GeneralDigest;-><init>()V
 
-    .line 58
+    .line 52
     const/16 v0, 0x10
 
     new-array v0, v0, [I
 
     iput-object v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
 
-    .line 80
+    .line 82
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/MD4Digest;->reset()V
 
-    .line 92
+    .line 38
     return-void
 .end method
 
@@ -158,20 +160,20 @@
     .locals 1
 
     .prologue
-    .line 49
+    .line 60
     invoke-direct {p0, p1}, Lorg/spongycastle/crypto/digests/GeneralDigest;-><init>(Lorg/spongycastle/crypto/digests/GeneralDigest;)V
 
-    .line 118
+    .line 7
     const/16 v0, 0x10
 
     new-array v0, v0, [I
 
     iput-object v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
 
-    .line 100
+    .line 30
     invoke-direct {p0, p1}, Lorg/spongycastle/crypto/digests/MD4Digest;->copyIn(Lorg/spongycastle/crypto/digests/MD4Digest;)V
 
-    .line 50
+    .line 62
     return-void
 .end method
 
@@ -179,7 +181,7 @@
     .locals 2
 
     .prologue
-    .line 99
+    .line 1
     and-int v0, p1, p2
 
     xor-int/lit8 v1, p1, -0x1
@@ -195,7 +197,7 @@
     .locals 2
 
     .prologue
-    .line 25
+    .line 28
     and-int v0, p1, p2
 
     and-int v1, p1, p3
@@ -213,7 +215,7 @@
     .locals 1
 
     .prologue
-    .line 114
+    .line 10
     xor-int v0, p1, p2
 
     xor-int/2addr v0, p3
@@ -227,30 +229,30 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 5
+    .line 87
     invoke-super {p0, p1}, Lorg/spongycastle/crypto/digests/GeneralDigest;->copyIn(Lorg/spongycastle/crypto/digests/GeneralDigest;)V
 
-    .line 20
+    .line 80
     iget v0, p1, Lorg/spongycastle/crypto/digests/MD4Digest;->H1:I
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H1:I
 
-    .line 82
+    .line 68
     iget v0, p1, Lorg/spongycastle/crypto/digests/MD4Digest;->H2:I
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H2:I
 
-    .line 75
+    .line 106
     iget v0, p1, Lorg/spongycastle/crypto/digests/MD4Digest;->H3:I
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H3:I
 
-    .line 37
+    .line 113
     iget v0, p1, Lorg/spongycastle/crypto/digests/MD4Digest;->H4:I
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H4:I
 
-    .line 103
+    .line 84
     iget-object v0, p1, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
 
     iget-object v1, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
@@ -261,12 +263,12 @@
 
     invoke-static {v0, v3, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 2
+    .line 78
     iget v0, p1, Lorg/spongycastle/crypto/digests/MD4Digest;->xOff:I
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->xOff:I
 
-    .line 62
+    .line 117
     return-void
 .end method
 
@@ -274,7 +276,7 @@
     .locals 2
 
     .prologue
-    .line 17
+    .line 74
     shl-int v0, p1, p2
 
     rsub-int/lit8 v1, p2, 0x20
@@ -290,12 +292,12 @@
     .locals 2
 
     .prologue
-    .line 40
+    .line 104
     int-to-byte v0, p1
 
     aput-byte v0, p2, p3
 
-    .line 31
+    .line 50
     add-int/lit8 v0, p3, 0x1
 
     ushr-int/lit8 v1, p1, 0x8
@@ -304,7 +306,7 @@
 
     aput-byte v1, p2, v0
 
-    .line 27
+    .line 29
     add-int/lit8 v0, p3, 0x2
 
     ushr-int/lit8 v1, p1, 0x10
@@ -313,7 +315,7 @@
 
     aput-byte v1, p2, v0
 
-    .line 69
+    .line 96
     add-int/lit8 v0, p3, 0x3
 
     ushr-int/lit8 v1, p1, 0x18
@@ -322,7 +324,7 @@
 
     aput-byte v1, p2, v0
 
-    .line 42
+    .line 11
     return-void
 .end method
 
@@ -332,7 +334,7 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 55
     new-instance v0, Lorg/spongycastle/crypto/digests/MD4Digest;
 
     invoke-direct {v0, p0}, Lorg/spongycastle/crypto/digests/MD4Digest;-><init>(Lorg/spongycastle/crypto/digests/MD4Digest;)V
@@ -344,39 +346,39 @@
     .locals 2
 
     .prologue
-    .line 112
+    .line 77
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/MD4Digest;->finish()V
 
-    .line 111
+    .line 101
     iget v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H1:I
 
     invoke-direct {p0, v0, p1, p2}, Lorg/spongycastle/crypto/digests/MD4Digest;->unpackWord(I[BI)V
 
-    .line 41
+    .line 47
     iget v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H2:I
 
     add-int/lit8 v1, p2, 0x4
 
     invoke-direct {p0, v0, p1, v1}, Lorg/spongycastle/crypto/digests/MD4Digest;->unpackWord(I[BI)V
 
-    .line 52
+    .line 27
     iget v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H3:I
 
     add-int/lit8 v1, p2, 0x8
 
     invoke-direct {p0, v0, p1, v1}, Lorg/spongycastle/crypto/digests/MD4Digest;->unpackWord(I[BI)V
 
-    .line 110
+    .line 14
     iget v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H4:I
 
     add-int/lit8 v1, p2, 0xc
 
     invoke-direct {p0, v0, p1, v1}, Lorg/spongycastle/crypto/digests/MD4Digest;->unpackWord(I[BI)V
 
-    .line 13
+    .line 42
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/MD4Digest;->reset()V
 
-    .line 115
+    .line 100
     const/16 v0, 0x10
 
     return v0
@@ -386,7 +388,7 @@
     .locals 1
 
     .prologue
-    .line 87
+    .line 54
     sget-object v0, Lorg/spongycastle/crypto/digests/MD4Digest;->z:Ljava/lang/String;
 
     return-object v0
@@ -396,7 +398,7 @@
     .locals 1
 
     .prologue
-    .line 89
+    .line 43
     const/16 v0, 0x10
 
     return v0
@@ -418,19 +420,19 @@
 
     sget v1, Lorg/spongycastle/crypto/digests/GeneralDigest;->a:I
 
-    .line 97
+    .line 40
     iget v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H1:I
 
-    .line 74
+    .line 37
     iget v2, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H2:I
 
-    .line 10
+    .line 34
     iget v3, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H3:I
 
-    .line 108
+    .line 18
     iget v4, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H4:I
 
-    .line 98
+    .line 4
     invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
 
     move-result v5
@@ -449,7 +451,7 @@
 
     move-result v0
 
-    .line 104
+    .line 59
     invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
 
     move-result v5
@@ -470,7 +472,7 @@
 
     move-result v4
 
-    .line 36
+    .line 69
     invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
 
     move-result v5
@@ -489,7 +491,7 @@
 
     move-result v3
 
-    .line 7
+    .line 91
     invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
 
     move-result v5
@@ -508,7 +510,7 @@
 
     move-result v2
 
-    .line 47
+    .line 49
     invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
 
     move-result v5
@@ -527,7 +529,7 @@
 
     move-result v0
 
-    .line 85
+    .line 97
     invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
 
     move-result v5
@@ -548,7 +550,7 @@
 
     move-result v4
 
-    .line 79
+    .line 9
     invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
 
     move-result v5
@@ -558,84 +560,6 @@
     iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
 
     const/4 v6, 0x6
-
-    aget v5, v5, v6
-
-    add-int/2addr v3, v5
-
-    invoke-direct {p0, v3, v11}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v3
-
-    .line 32
-    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
-
-    move-result v5
-
-    add-int/2addr v2, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/4 v6, 0x7
-
-    aget v5, v5, v6
-
-    add-int/2addr v2, v5
-
-    const/16 v5, 0x13
-
-    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v2
-
-    .line 73
-    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
-
-    move-result v5
-
-    add-int/2addr v0, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/16 v6, 0x8
-
-    aget v5, v5, v6
-
-    add-int/2addr v0, v5
-
-    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v0
-
-    .line 96
-    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
-
-    move-result v5
-
-    add-int/2addr v4, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    aget v5, v5, v10
-
-    add-int/2addr v4, v5
-
-    const/4 v5, 0x7
-
-    invoke-direct {p0, v4, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v4
-
-    .line 8
-    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
-
-    move-result v5
-
-    add-int/2addr v3, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/16 v6, 0xa
 
     aget v5, v5, v6
 
@@ -654,6 +578,84 @@
 
     iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
 
+    const/4 v6, 0x7
+
+    aget v5, v5, v6
+
+    add-int/2addr v2, v5
+
+    const/16 v5, 0x13
+
+    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v2
+
+    .line 17
+    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
+
+    move-result v5
+
+    add-int/2addr v0, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/16 v6, 0x8
+
+    aget v5, v5, v6
+
+    add-int/2addr v0, v5
+
+    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v0
+
+    .line 79
+    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
+
+    move-result v5
+
+    add-int/2addr v4, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    aget v5, v5, v10
+
+    add-int/2addr v4, v5
+
+    const/4 v5, 0x7
+
+    invoke-direct {p0, v4, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v4
+
+    .line 116
+    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
+
+    move-result v5
+
+    add-int/2addr v3, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/16 v6, 0xa
+
+    aget v5, v5, v6
+
+    add-int/2addr v3, v5
+
+    invoke-direct {p0, v3, v11}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v3
+
+    .line 109
+    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
+
+    move-result v5
+
+    add-int/2addr v2, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
     aget v5, v5, v11
 
     add-int/2addr v2, v5
@@ -664,7 +666,7 @@
 
     move-result v2
 
-    .line 63
+    .line 112
     invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
 
     move-result v5
@@ -683,7 +685,7 @@
 
     move-result v0
 
-    .line 44
+    .line 19
     invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
 
     move-result v5
@@ -704,7 +706,7 @@
 
     move-result v4
 
-    .line 117
+    .line 110
     invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
 
     move-result v5
@@ -723,7 +725,7 @@
 
     move-result v3
 
-    .line 66
+    .line 92
     invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->F(III)I
 
     move-result v5
@@ -744,7 +746,7 @@
 
     move-result v2
 
-    .line 116
+    .line 75
     invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
 
     move-result v5
@@ -760,530 +762,530 @@
     add-int/2addr v0, v5
 
     add-int/2addr v0, v7
-
-    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v0
-
-    .line 91
-    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v4, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/4 v6, 0x4
-
-    aget v5, v5, v6
-
-    add-int/2addr v4, v5
-
-    add-int/2addr v4, v7
-
-    const/4 v5, 0x5
-
-    invoke-direct {p0, v4, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v4
-
-    .line 107
-    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v3, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/16 v6, 0x8
-
-    aget v5, v5, v6
-
-    add-int/2addr v3, v5
-
-    add-int/2addr v3, v7
-
-    invoke-direct {p0, v3, v10}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v3
-
-    .line 46
-    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v2, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/16 v6, 0xc
-
-    aget v5, v5, v6
-
-    add-int/2addr v2, v5
-
-    add-int/2addr v2, v7
-
-    const/16 v5, 0xd
-
-    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v2
-
-    .line 113
-    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v0, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/4 v6, 0x1
-
-    aget v5, v5, v6
-
-    add-int/2addr v0, v5
-
-    add-int/2addr v0, v7
-
-    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v0
-
-    .line 18
-    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v4, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/4 v6, 0x5
-
-    aget v5, v5, v6
-
-    add-int/2addr v4, v5
-
-    add-int/2addr v4, v7
-
-    const/4 v5, 0x5
-
-    invoke-direct {p0, v4, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v4
-
-    .line 83
-    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v3, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    aget v5, v5, v10
-
-    add-int/2addr v3, v5
-
-    add-int/2addr v3, v7
-
-    invoke-direct {p0, v3, v10}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v3
-
-    .line 67
-    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v2, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/16 v6, 0xd
-
-    aget v5, v5, v6
-
-    add-int/2addr v2, v5
-
-    add-int/2addr v2, v7
-
-    const/16 v5, 0xd
-
-    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v2
-
-    .line 29
-    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v0, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/4 v6, 0x2
-
-    aget v5, v5, v6
-
-    add-int/2addr v0, v5
-
-    add-int/2addr v0, v7
-
-    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v0
-
-    .line 76
-    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v4, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/4 v6, 0x6
-
-    aget v5, v5, v6
-
-    add-int/2addr v4, v5
-
-    add-int/2addr v4, v7
-
-    const/4 v5, 0x5
-
-    invoke-direct {p0, v4, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v4
-
-    .line 19
-    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v3, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/16 v6, 0xa
-
-    aget v5, v5, v6
-
-    add-int/2addr v3, v5
-
-    add-int/2addr v3, v7
-
-    invoke-direct {p0, v3, v10}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v3
-
-    .line 16
-    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v2, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/16 v6, 0xe
-
-    aget v5, v5, v6
-
-    add-int/2addr v2, v5
-
-    add-int/2addr v2, v7
-
-    const/16 v5, 0xd
-
-    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v2
-
-    .line 55
-    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v0, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    aget v5, v5, v9
-
-    add-int/2addr v0, v5
-
-    add-int/2addr v0, v7
-
-    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v0
-
-    .line 71
-    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v4, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/4 v6, 0x7
-
-    aget v5, v5, v6
-
-    add-int/2addr v4, v5
-
-    add-int/2addr v4, v7
-
-    const/4 v5, 0x5
-
-    invoke-direct {p0, v4, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v4
-
-    .line 93
-    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v3, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    aget v5, v5, v11
-
-    add-int/2addr v3, v5
-
-    add-int/2addr v3, v7
-
-    invoke-direct {p0, v3, v10}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v3
-
-    .line 95
-    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
-
-    move-result v5
-
-    add-int/2addr v2, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/16 v6, 0xf
-
-    aget v5, v5, v6
-
-    add-int/2addr v2, v5
-
-    add-int/2addr v2, v7
-
-    const/16 v5, 0xd
-
-    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v2
-
-    .line 45
-    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
-
-    move-result v5
-
-    add-int/2addr v0, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/4 v6, 0x0
-
-    aget v5, v5, v6
-
-    add-int/2addr v0, v5
-
-    add-int/2addr v0, v8
-
-    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v0
-
-    .line 9
-    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
-
-    move-result v5
-
-    add-int/2addr v4, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/16 v6, 0x8
-
-    aget v5, v5, v6
-
-    add-int/2addr v4, v5
-
-    add-int/2addr v4, v8
-
-    invoke-direct {p0, v4, v10}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v4
-
-    .line 109
-    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
-
-    move-result v5
-
-    add-int/2addr v3, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/4 v6, 0x4
-
-    aget v5, v5, v6
-
-    add-int/2addr v3, v5
-
-    add-int/2addr v3, v8
-
-    invoke-direct {p0, v3, v11}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v3
-
-    .line 1
-    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
-
-    move-result v5
-
-    add-int/2addr v2, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/16 v6, 0xc
-
-    aget v5, v5, v6
-
-    add-int/2addr v2, v5
-
-    add-int/2addr v2, v8
-
-    const/16 v5, 0xf
-
-    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v2
-
-    .line 53
-    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
-
-    move-result v5
-
-    add-int/2addr v0, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/4 v6, 0x2
-
-    aget v5, v5, v6
-
-    add-int/2addr v0, v5
-
-    add-int/2addr v0, v8
-
-    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v0
-
-    .line 88
-    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
-
-    move-result v5
-
-    add-int/2addr v4, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/16 v6, 0xa
-
-    aget v5, v5, v6
-
-    add-int/2addr v4, v5
-
-    add-int/2addr v4, v8
-
-    invoke-direct {p0, v4, v10}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v4
-
-    .line 106
-    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
-
-    move-result v5
-
-    add-int/2addr v3, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/4 v6, 0x6
-
-    aget v5, v5, v6
-
-    add-int/2addr v3, v5
-
-    add-int/2addr v3, v8
-
-    invoke-direct {p0, v3, v11}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v3
-
-    .line 60
-    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
-
-    move-result v5
-
-    add-int/2addr v2, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/16 v6, 0xe
-
-    aget v5, v5, v6
-
-    add-int/2addr v2, v5
-
-    add-int/2addr v2, v8
-
-    const/16 v5, 0xf
-
-    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
-
-    move-result v2
-
-    .line 14
-    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
-
-    move-result v5
-
-    add-int/2addr v0, v5
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
-
-    const/4 v6, 0x1
-
-    aget v5, v5, v6
-
-    add-int/2addr v0, v5
-
-    add-int/2addr v0, v8
 
     invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
 
     move-result v0
 
     .line 15
+    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v4, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/4 v6, 0x4
+
+    aget v5, v5, v6
+
+    add-int/2addr v4, v5
+
+    add-int/2addr v4, v7
+
+    const/4 v5, 0x5
+
+    invoke-direct {p0, v4, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v4
+
+    .line 71
+    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v3, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/16 v6, 0x8
+
+    aget v5, v5, v6
+
+    add-int/2addr v3, v5
+
+    add-int/2addr v3, v7
+
+    invoke-direct {p0, v3, v10}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v3
+
+    .line 56
+    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v2, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/16 v6, 0xc
+
+    aget v5, v5, v6
+
+    add-int/2addr v2, v5
+
+    add-int/2addr v2, v7
+
+    const/16 v5, 0xd
+
+    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v2
+
+    .line 46
+    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v0, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/4 v6, 0x1
+
+    aget v5, v5, v6
+
+    add-int/2addr v0, v5
+
+    add-int/2addr v0, v7
+
+    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v0
+
+    .line 61
+    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v4, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/4 v6, 0x5
+
+    aget v5, v5, v6
+
+    add-int/2addr v4, v5
+
+    add-int/2addr v4, v7
+
+    const/4 v5, 0x5
+
+    invoke-direct {p0, v4, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v4
+
+    .line 99
+    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v3, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    aget v5, v5, v10
+
+    add-int/2addr v3, v5
+
+    add-int/2addr v3, v7
+
+    invoke-direct {p0, v3, v10}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v3
+
+    .line 3
+    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v2, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/16 v6, 0xd
+
+    aget v5, v5, v6
+
+    add-int/2addr v2, v5
+
+    add-int/2addr v2, v7
+
+    const/16 v5, 0xd
+
+    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v2
+
+    .line 5
+    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v0, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/4 v6, 0x2
+
+    aget v5, v5, v6
+
+    add-int/2addr v0, v5
+
+    add-int/2addr v0, v7
+
+    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v0
+
+    .line 8
+    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v4, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/4 v6, 0x6
+
+    aget v5, v5, v6
+
+    add-int/2addr v4, v5
+
+    add-int/2addr v4, v7
+
+    const/4 v5, 0x5
+
+    invoke-direct {p0, v4, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v4
+
+    .line 90
+    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v3, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/16 v6, 0xa
+
+    aget v5, v5, v6
+
+    add-int/2addr v3, v5
+
+    add-int/2addr v3, v7
+
+    invoke-direct {p0, v3, v10}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v3
+
+    .line 103
+    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v2, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/16 v6, 0xe
+
+    aget v5, v5, v6
+
+    add-int/2addr v2, v5
+
+    add-int/2addr v2, v7
+
+    const/16 v5, 0xd
+
+    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v2
+
+    .line 107
+    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v0, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    aget v5, v5, v9
+
+    add-int/2addr v0, v5
+
+    add-int/2addr v0, v7
+
+    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v0
+
+    .line 65
+    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v4, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/4 v6, 0x7
+
+    aget v5, v5, v6
+
+    add-int/2addr v4, v5
+
+    add-int/2addr v4, v7
+
+    const/4 v5, 0x5
+
+    invoke-direct {p0, v4, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v4
+
+    .line 57
+    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v3, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    aget v5, v5, v11
+
+    add-int/2addr v3, v5
+
+    add-int/2addr v3, v7
+
+    invoke-direct {p0, v3, v10}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v3
+
+    .line 64
+    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->G(III)I
+
+    move-result v5
+
+    add-int/2addr v2, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/16 v6, 0xf
+
+    aget v5, v5, v6
+
+    add-int/2addr v2, v5
+
+    add-int/2addr v2, v7
+
+    const/16 v5, 0xd
+
+    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v2
+
+    .line 63
+    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
+
+    move-result v5
+
+    add-int/2addr v0, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/4 v6, 0x0
+
+    aget v5, v5, v6
+
+    add-int/2addr v0, v5
+
+    add-int/2addr v0, v8
+
+    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v0
+
+    .line 48
+    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
+
+    move-result v5
+
+    add-int/2addr v4, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/16 v6, 0x8
+
+    aget v5, v5, v6
+
+    add-int/2addr v4, v5
+
+    add-int/2addr v4, v8
+
+    invoke-direct {p0, v4, v10}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v4
+
+    .line 51
+    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
+
+    move-result v5
+
+    add-int/2addr v3, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/4 v6, 0x4
+
+    aget v5, v5, v6
+
+    add-int/2addr v3, v5
+
+    add-int/2addr v3, v8
+
+    invoke-direct {p0, v3, v11}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v3
+
+    .line 85
+    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
+
+    move-result v5
+
+    add-int/2addr v2, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/16 v6, 0xc
+
+    aget v5, v5, v6
+
+    add-int/2addr v2, v5
+
+    add-int/2addr v2, v8
+
+    const/16 v5, 0xf
+
+    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v2
+
+    .line 102
+    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
+
+    move-result v5
+
+    add-int/2addr v0, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/4 v6, 0x2
+
+    aget v5, v5, v6
+
+    add-int/2addr v0, v5
+
+    add-int/2addr v0, v8
+
+    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v0
+
+    .line 86
+    invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
+
+    move-result v5
+
+    add-int/2addr v4, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/16 v6, 0xa
+
+    aget v5, v5, v6
+
+    add-int/2addr v4, v5
+
+    add-int/2addr v4, v8
+
+    invoke-direct {p0, v4, v10}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v4
+
+    .line 23
+    invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
+
+    move-result v5
+
+    add-int/2addr v3, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/4 v6, 0x6
+
+    aget v5, v5, v6
+
+    add-int/2addr v3, v5
+
+    add-int/2addr v3, v8
+
+    invoke-direct {p0, v3, v11}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v3
+
+    .line 58
+    invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
+
+    move-result v5
+
+    add-int/2addr v2, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/16 v6, 0xe
+
+    aget v5, v5, v6
+
+    add-int/2addr v2, v5
+
+    add-int/2addr v2, v8
+
+    const/16 v5, 0xf
+
+    invoke-direct {p0, v2, v5}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v2
+
+    .line 25
+    invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
+
+    move-result v5
+
+    add-int/2addr v0, v5
+
+    iget-object v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
+
+    const/4 v6, 0x1
+
+    aget v5, v5, v6
+
+    add-int/2addr v0, v5
+
+    add-int/2addr v0, v8
+
+    invoke-direct {p0, v0, v9}, Lorg/spongycastle/crypto/digests/MD4Digest;->rotateLeft(II)I
+
+    move-result v0
+
+    .line 53
     invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
 
     move-result v5
@@ -1302,7 +1304,7 @@
 
     move-result v4
 
-    .line 86
+    .line 98
     invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
 
     move-result v5
@@ -1323,7 +1325,7 @@
 
     move-result v3
 
-    .line 94
+    .line 108
     invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
 
     move-result v5
@@ -1346,7 +1348,7 @@
 
     move-result v2
 
-    .line 57
+    .line 105
     invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
 
     move-result v5
@@ -1365,7 +1367,7 @@
 
     move-result v0
 
-    .line 30
+    .line 33
     invoke-direct {p0, v0, v2, v3}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
 
     move-result v5
@@ -1384,7 +1386,7 @@
 
     move-result v4
 
-    .line 6
+    .line 12
     invoke-direct {p0, v4, v0, v2}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
 
     move-result v5
@@ -1405,7 +1407,7 @@
 
     move-result v3
 
-    .line 26
+    .line 39
     invoke-direct {p0, v3, v4, v0}, Lorg/spongycastle/crypto/digests/MD4Digest;->H(III)I
 
     move-result v5
@@ -1428,40 +1430,40 @@
 
     move-result v2
 
-    .line 61
+    .line 93
     iget v5, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H1:I
 
     add-int/2addr v0, v5
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H1:I
 
-    .line 23
+    .line 81
     iget v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H2:I
 
     add-int/2addr v0, v2
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H2:I
 
-    .line 35
+    .line 73
     iget v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H3:I
 
     add-int/2addr v0, v3
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H3:I
 
-    .line 77
+    .line 31
     iget v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H4:I
 
     add-int/2addr v0, v4
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H4:I
 
-    .line 78
+    .line 13
     const/4 v0, 0x0
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->xOff:I
 
-    .line 84
+    .line 67
     const/4 v0, 0x0
 
     :cond_0
@@ -1471,21 +1473,21 @@
 
     if-eq v0, v2, :cond_1
 
-    .line 28
+    .line 44
     iget-object v2, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
 
     const/4 v3, 0x0
 
     aput v3, v2, v0
 
-    .line 65
+    .line 16
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 11
+    .line 111
     :cond_1
-    sget-boolean v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
+    sget v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
 
     if-eqz v0, :cond_2
 
@@ -1503,15 +1505,15 @@
     .prologue
     const/16 v4, 0xe
 
-    .line 105
+    .line 2
     iget v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->xOff:I
 
     if-le v0, v4, :cond_0
 
-    .line 12
+    .line 36
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/MD4Digest;->processBlock()V
 
-    .line 43
+    .line 115
     :cond_0
     iget-object v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
 
@@ -1523,7 +1525,7 @@
 
     aput v1, v0, v4
 
-    .line 68
+    .line 24
     iget-object v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
 
     const/16 v1, 0xf
@@ -1536,7 +1538,7 @@
 
     aput v2, v0, v1
 
-    .line 72
+    .line 95
     return-void
 .end method
 
@@ -1544,7 +1546,7 @@
     .locals 4
 
     .prologue
-    .line 81
+    .line 22
     iget-object v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
 
     iget v1, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->xOff:I
@@ -1589,17 +1591,17 @@
 
     aput v2, v0, v1
 
-    .line 4
+    .line 89
     iget v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->xOff:I
 
     const/16 v1, 0x10
 
     if-ne v0, v1, :cond_0
 
-    .line 48
+    .line 26
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/MD4Digest;->processBlock()V
 
-    .line 54
+    .line 21
     :cond_0
     return-void
 .end method
@@ -1612,35 +1614,35 @@
 
     sget v2, Lorg/spongycastle/crypto/digests/GeneralDigest;->a:I
 
-    .line 3
+    .line 32
     invoke-super {p0}, Lorg/spongycastle/crypto/digests/GeneralDigest;->reset()V
 
-    .line 101
+    .line 45
     const v0, 0x67452301
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H1:I
 
-    .line 24
+    .line 20
     const v0, -0x10325477
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H2:I
 
-    .line 21
+    .line 83
     const v0, -0x67452302
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H3:I
 
-    .line 51
+    .line 94
     const v0, 0x10325476
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->H4:I
 
-    .line 39
+    .line 88
     iput v1, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->xOff:I
 
     move v0, v1
 
-    .line 34
+    .line 118
     :cond_0
     iget-object v3, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
 
@@ -1648,17 +1650,17 @@
 
     if-eq v0, v3, :cond_1
 
-    .line 90
+    .line 76
     iget-object v3, p0, Lorg/spongycastle/crypto/digests/MD4Digest;->X:[I
 
     aput v1, v3, v0
 
-    .line 33
+    .line 72
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v2, :cond_0
 
-    .line 59
+    .line 41
     :cond_1
     return-void
 .end method
@@ -1667,12 +1669,12 @@
     .locals 0
 
     .prologue
-    .line 22
+    .line 66
     check-cast p1, Lorg/spongycastle/crypto/digests/MD4Digest;
 
-    .line 56
+    .line 6
     invoke-direct {p0, p1}, Lorg/spongycastle/crypto/digests/MD4Digest;->copyIn(Lorg/spongycastle/crypto/digests/MD4Digest;)V
 
-    .line 64
+    .line 114
     return-void
 .end method

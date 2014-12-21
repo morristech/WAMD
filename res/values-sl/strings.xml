@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Za snemanje držite, spustite ko želite poslati.</string>
     <string name="audio_note_tip_2">Prosimo posnemite daljše sporočilo</string>
     <string name="audio_note_top_mic_tip">Prosimo govorite v mikrofon na vrhu vašega telefona</string>
-    <string name="auth_client_needs_enabling_title">Za delovanje aplikacije morate omogočiti Storitve Google Play.</string>
-    <string name="auth_client_needs_installation_title">Za delovanje aplikacije morate namestiti Storitve Google Play.</string>
-    <string name="auth_client_needs_update_title">Za delovanje aplikacije morate posodobiti Storitve Google Play.</string>
-    <string name="auth_client_play_services_err_notification_msg">Napaka storitev Google Play</string>
-    <string name="auth_client_requested_by_msg">Zahtevala aplikacija %1$s</string>
-    <string name="auth_client_using_bad_version_title">Aplikacija je poskusila uporabiti napačno različico Storitev Google Play.</string>
-    <string name="barcode_scanner_dialog_body">Ta aplikacija potrebuje čitalec črtnih kod. Bi ga želeli namestiti?</string>
-    <string name="barcode_scanner_dialog_title">Namestim čitalec črtnih kod?</string>
     <string name="block">Blokiraj</string>
     <string name="block_ask">Ste prepričani, da želite blokirati ta stik?</string>
     <string name="block_list_desc_1">"Pritisni ikono desno zgoraj za blokiranje stika.
@@ -161,23 +153,32 @@ Zgolj stiki z %s v njihovem imeniku bodo prejeli vaše oddajanje."</string>
     <string name="color_red">Rdeča</string>
     <string name="color_white">Bela</string>
     <string name="color_yellow">Rumena</string>
+    <string name="common_android_wear_notification_needs_update_text">Aplikacija zahteva posodobitev aplikacije Android Wear.</string>
+    <string name="common_android_wear_update_text">Ta aplikacije ne deluje, če ne posodobite aplikacije Android Wear.</string>
+    <string name="common_android_wear_update_title">Posodobitev aplikacije Android Wear</string>
     <string name="common_google_play_services_enable_button">Omogočite storitve Google Play</string>
     <string name="common_google_play_services_enable_text">Aplikacija ne bo delovala, če ne omogočite storitev Google Play.</string>
     <string name="common_google_play_services_enable_title">Omogočite storitve Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Zahteva aplikacije %1$s</string>
     <string name="common_google_play_services_install_button">Namestite storitve Google Play</string>
     <string name="common_google_play_services_install_text_phone">Ta aplikacija ne deluje brez storitev Google Play, ki jih ni v telefonu.</string>
     <string name="common_google_play_services_install_text_tablet">Ta aplikacija ne deluje brez storitev Google Play, ki jih ni v tabličnem računalniku.</string>
     <string name="common_google_play_services_install_title">Namestite storitve Google Play</string>
     <string name="common_google_play_services_invalid_account_text">V tej napravi ne obstaja navedeni račun. Izberite drugega.</string>
     <string name="common_google_play_services_invalid_account_title">Neveljaven račun</string>
+    <string name="common_google_play_services_needs_enabling_title">Za delovanje aplikacije morate omogočiti storitve Google Play.</string>
     <string name="common_google_play_services_network_error_text">Za povezavo s storitvami Google Play potrebujete internetno povezavo.</string>
     <string name="common_google_play_services_network_error_title">Omrežna napaka</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Za delovanje aplikacije morate namestiti storitve Google Play.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Za delovanje aplikacije morate posodobiti storitve Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Napaka storitev Google Play</string>
     <string name="common_google_play_services_unknown_issue">Neznana težava s storitvami Google Play.</string>
     <string name="common_google_play_services_unsupported_text">Vaša naprava na podpira storitev Google Play, ki jih potrebujejo nekatere od vaših aplikacij. Za pomoč se obrnite na izdelovalca.</string>
     <string name="common_google_play_services_unsupported_title">Storitve Google Play</string>
     <string name="common_google_play_services_update_button">Posodobi</string>
     <string name="common_google_play_services_update_text">Ta aplikacija ne deluje, če ne posodobite storitev Google Play.</string>
     <string name="common_google_play_services_update_title">Posodobite storitve Google Play</string>
+    <string name="common_open_on_phone">Odpiranje v telefonu</string>
     <string name="common_signin_button_text">Prijava</string>
     <string name="common_signin_button_text_long">Prijavite se v Google</string>
     <string name="confirm_forward_msg">Posreduj k %s?</string>
@@ -354,7 +355,7 @@ Prosto: %1$s"</string>
     <string name="eula_description">Mobilno sporočanje s prijatelji po celem svetu</string>
     <string name="eula_tablets_not_supported">Opozorilo: tablični računalniki trenutno niso podprti</string>
     <string name="eula_terms_of_service">Pogoji storitve</string>
-    <string name="eula_title">Dobrodošli v WhatsApp!</string>
+    <string name="eula_title">Dobrodošli pri WhatsAppu</string>
     <string name="existing_contact">Obstoječ</string>
     <string name="exit">Izhod</string>
     <string name="exit_group">Zapusti skupino</string>
@@ -529,7 +530,6 @@ Na vašem računu je prišlo do sprememb
     <string name="insufficient_space_for_download_shared_storage">Ne morem naložiti, ker ni dovolj prostora v pomnilniku naprave. Prosim odstrani datoteke in poskusi znova.</string>
     <string name="invalid_media_message_download">Ne morem naložiti podatkov iz okvarjenega sporočila. Prosim poskusi poslati sporočilo znova.</string>
     <string name="invalid_message_forward">Sporočila ne morejo biti posredovana neveljavnemu stiku.</string>
-    <string name="invalid_qr_code">Neveljavna QR koda</string>
     <string name="invalid_url_for_download">Ne morem prenesti. Prosim zahtevajte ponovno pošiljanje.</string>
     <string name="invite">Povabi</string>
     <string name="invite_friends">Povabi prijatelje</string>
@@ -575,7 +575,6 @@ WhatsApp je lahko nameščen na eni napravi z eno telefonsko številko."</string
     <string name="menuitem_add">Dodaj</string>
     <string name="menuitem_contacts">Stiki</string>
     <string name="menuitem_debug">Razhroščevanje</string>
-    <string name="menuitem_delete_qr">Izbriši QR kodo</string>
     <string name="menuitem_groupchat">Nova skupina</string>
     <string name="menuitem_list">Novo oddajanje</string>
     <string name="menuitem_mute">Utišaj</string>
@@ -616,14 +615,11 @@ WhatsApp je lahko nameščen na eni napravi z eno telefonsko številko."</string
     <string name="msg_store_backup_failed">Ustvarjanje varnostne kopije sporočil ni uspelo</string>
     <string name="msg_store_backup_failed_try_again_later">Ustvarjanje varnostne kopije sporočil ni uspelo. Prosimo poskusite ponovno kasneje.</string>
     <string name="msg_store_backup_found">Varnostna kopija najdena</string>
-    <string name="msg_store_backup_found_registration">Najdena kopija sporočila!</string>
+    <string name="msg_store_backup_found_registration">Varnostna kopija klepeta najdena</string>
     <string name="msg_store_backup_skipped">Varnostno kopiranje preskočeno</string>
     <string name="msg_store_backup_skipped_no_media">Varnostno kopiranje sporočil preskočeno: Spominska kartica ni na voljo.</string>
     <string name="msg_store_backup_skipped_read_only_media">Varnostna kopija sporočil preskočena: Najdena spominska kartica samo za branje.</string>
     <string name="msg_store_confirm">Potrdi</string>
-    <string name="msg_store_creation_backup_message">Želite obnoviti zgodovino sporočil iz varnostne kopije?</string>
-    <string name="msg_store_do_not_restore">Ne obnovi</string>
-    <string name="msg_store_do_not_restore_no_thanks">Ne hvala</string>
     <string name="msg_store_error_found">Prišlo je do napake. Prosim, zaustavi ter ponovno zaženi WhatsApp</string>
     <string name="msg_store_error_not_restored">Oprostite, obnovitev vaše varnostne kopije sporočil ni uspela.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Sporočila bodo izgubljena. Ali ste prepričani, da ne želite obnoviti zgodovine sporočil iz varnostne kopije?</string>
@@ -650,9 +646,6 @@ WhatsApp je lahko nameščen na eni napravi z eno telefonsko številko."</string
     <string name="need_sd_card_shared_storage">Prosim izključite USB pomnilnik in poskusite ponovno.</string>
     <string name="network_required">Trenutno nimate dostopa do interneta.</string>
     <string name="network_usage_ask_reset_message">Ste prepričani, da želite ponastaviti statistiko?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Zadnja ponastavitev: %1$s</string>
     <string name="network_usage_media_bytes_received">Prejeto medijskih bajtov:</string>
     <string name="network_usage_media_bytes_sent">Poslano medijskih bajtov:</string>
@@ -976,6 +969,7 @@ poteče danes!"</string>
     <string name="settings_privacy_message">Če ne delite vašega Nazadnje tu, tudi ne boste mogli videti Nazadnje tu drugih</string>
     <string name="settings_privacy_profile_photo">Prikazna slika</string>
     <string name="settings_privacy_read_receipts">Potrdila o prebranosti</string>
+    <string name="settings_privacy_read_receipts_message">Če izklopite potrdila o prebranosti, ne boste videli potrdil o prebranosti pri drugih. Potrdila o prebranosti so v skupinskih pogovorih vedno poslana.</string>
     <string name="settings_privacy_status">Status</string>
     <string name="settings_profile_info">Profil</string>
     <string name="settings_push_name_summary">To ni vaše uporabniško ime ali PIN. Ime bo vidno vašim WhatsApp stikom.</string>
@@ -1009,18 +1003,18 @@ poslano iz WhatsApp"</string>
     <string name="software_expired_get_from_play">Ta verzija WhatsApp ni več podprta. Prosimo, da obiščete Google Play za nadgradnjo na zadnjo verzijo.</string>
     <string name="software_expired_get_from_play_with_date">Ta verzija WhatsApp-a je postala zastarela &lt;b>%1$s&lt;/b>. Prosimo pojdite na Google Play in namestite najnovejšo verzijo.&lt;br>&lt;br> Datum vaše naprave je &lt;b>%2$s&lt;/b>. Če to ne drži, prosimo popravite nastavitve za datum vaše naprave in ponovno zaženite WhatsApp.</string>
     <string name="software_expired_with_date">Ta verzija WhatsApp-a je zastarela &lt;b>%1$s&lt;/b>. Izberite “Prenesi” da boste dobili najnovejšo verzijo.&lt;br>&lt;br> Datum vaše naprave je &lt;b>%2$s&lt;/b>. Če to ni pravilno prosimo, da popravite nastavitve datuma vaše naprave in nato ponovno zaženete WhatsApp.</string>
-    <string name="spam_generic">"Ker ste morda kršili naše pogoje storitve, vam je začasno onemogočen dostop do WhatsApp.
+    <string name="spam_generic">"Vaš dostop do WhatsApp je začasno onemogočen, ker ste morda kršili naše pogoje uporabe storitev.
+
  WhatsApp boste lahko ponovno uporabljali čez:"</string>
     <string name="spam_generic_data_connection_missing">Preverite ali ima vaš telefon aktivno podatkovno povezavo.</string>
     <string name="spam_generic_unknown_time_left">Začasno vam je onemogočen dostop do WhatsApp, ker ste morda kršili naše pogoje storitve. WhatsApp boste lahko kmalu spet uporabljali.</string>
     <string name="spam_learn_more">Več informacij</string>
     <string name="spam_title">Začasno onemogočen</string>
-    <string name="spam_too_many_blocks">Ker vas je preveč ljudi blokiralo, vam je začasno onemogočena uporaba WhatsApp.</string>
-    <string name="spam_too_many_groups">"Ker ste ustvarili preveč skupin z ljudmi, ki vas nimajo v imeniku, vam je začasno onemogočen dostop do WhatsApp.
+    <string name="spam_too_many_groups">"Ker ste ustvarili preveč skupin z ljudmi, ki vas nimajo v imeniku, vam je začasno onemogočena uporaba WhatsApp.
+
 WhatsApp boste lahko ponovno uporabljali čez:"</string>
-    <string name="spam_too_many_messages">"Ker ste poslali preveč sporočil ljudem, ki vas nimajo v imeniku, vam je onemogočen dostop do WhatsApp.
-WhatsApp boste lahko ponovno uporabljali čez:"</string>
-    <string name="spam_too_many_people">"Ker ste preveč ljudem poslali isto sporočilo, vam je začasno onemogočen dostop do WhatsApp.
+    <string name="spam_too_many_messages">"Ker ste poslali preveč sporočil ljudem, ki vas nimajo v imeniku, vam je začasno onemogočena uporaba WhatsApp.
+
 WhatsApp boste lahko ponovno uporabljali čez:"</string>
     <string name="status">Status</string>
     <string name="status_default_at_gym">Na telovadbi</string>
@@ -1189,6 +1183,7 @@ Prosimo poiskusite verifikacijo s klicem."</string>
     <string name="view_list_media">Večpredstavnostne datoteke seznama oddajanja</string>
     <string name="view_website">Poglej spletno stran</string>
     <string name="voip_activity_label">Glasovni klic</string>
+    <string name="voip_call_bluetooth_toggle_description">Vklopi/izklopi Bluetooth</string>
     <string name="voip_call_end_button_description">Končaj klic</string>
     <string name="voip_call_goto_chat_description">Odpri pogovor</string>
     <string name="voip_call_incoming">DOHODNI</string>

@@ -1,369 +1,244 @@
-.class public Lcom/whatsapp/protocol/ak;
-.super Ljava/io/OutputStream;
+.class Lcom/whatsapp/protocol/ak;
+.super Lcom/whatsapp/protocol/k;
 .source "ak.java"
 
 
+# static fields
+.field private static final z:[Ljava/lang/String;
+
+
 # instance fields
-.field a:Lcom/whatsapp/protocol/cy;
+.field final a:Lcom/whatsapp/protocol/bx;
 
-.field b:Lcom/whatsapp/protocol/i;
+.field final b:Ljava/lang/Runnable;
 
-.field c:Ljava/io/OutputStream;
+.field final c:Lcom/whatsapp/protocol/bo;
 
 
 # direct methods
-.method public constructor <init>(Lcom/whatsapp/protocol/cy;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 10
+
+    const/4 v1, 0x0
+
+    const/4 v0, 0x2
+
+    new-array v3, v0, [Ljava/lang/String;
+
+    const-string v2, "\u0007\r\u001chq\u0006"
+
+    const/4 v0, -0x1
+
+    move-object v4, v3
+
+    move-object v5, v3
+
+    move v3, v1
+
+    :goto_0
+    invoke-virtual {v2}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v2
+
+    array-length v6, v2
+
+    move v7, v6
+
+    move v8, v1
+
+    move-object v6, v2
+
+    :goto_1
+    if-gt v7, v8, :cond_0
+
+    new-instance v2, Ljava/lang/String;
+
+    invoke-direct {v2, v6}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v2}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v2
+
+    packed-switch v0, :pswitch_data_0
+
+    aput-object v2, v4, v3
+
+    const/4 v2, 0x1
+
+    const-string v0, "\u0007\r\u001chq\u0006"
+
+    move v3, v2
+
+    move-object v4, v5
+
+    move-object v2, v0
+
+    move v0, v1
+
+    goto :goto_0
+
+    :pswitch_0
+    aput-object v2, v4, v3
+
+    sput-object v5, Lcom/whatsapp/protocol/ak;->z:[Ljava/lang/String;
+
+    return-void
+
+    :cond_0
+    aget-char v9, v6, v8
+
+    rem-int/lit8 v2, v8, 0x5
+
+    packed-switch v2, :pswitch_data_1
+
+    const/4 v2, 0x5
+
+    :goto_2
+    xor-int/2addr v2, v9
+
+    int-to-char v2, v2
+
+    aput-char v2, v6, v8
+
+    add-int/lit8 v2, v8, 0x1
+
+    move v8, v2
+
+    goto :goto_1
+
+    :pswitch_1
+    const/16 v2, 0x63
+
+    goto :goto_2
+
+    :pswitch_2
+    const/16 v2, 0x68
+
+    goto :goto_2
+
+    :pswitch_3
+    const/16 v2, 0x70
+
+    goto :goto_2
+
+    :pswitch_4
+    const/16 v2, 0xd
+
+    goto :goto_2
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+    .end packed-switch
+.end method
+
+.method constructor <init>(Lcom/whatsapp/protocol/bo;Ljava/lang/Runnable;Lcom/whatsapp/protocol/bx;)V
+    .locals 0
 
     .prologue
-    .line 17
-    invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
+    .line 10
+    iput-object p1, p0, Lcom/whatsapp/protocol/ak;->c:Lcom/whatsapp/protocol/bo;
 
-    .line 38
-    new-instance v0, Lcom/whatsapp/protocol/j;
+    iput-object p2, p0, Lcom/whatsapp/protocol/ak;->b:Ljava/lang/Runnable;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/protocol/j;-><init>(Lcom/whatsapp/protocol/ak;)V
+    iput-object p3, p0, Lcom/whatsapp/protocol/ak;->a:Lcom/whatsapp/protocol/bx;
 
-    iput-object v0, p0, Lcom/whatsapp/protocol/ak;->b:Lcom/whatsapp/protocol/i;
+    invoke-direct {p0}, Lcom/whatsapp/protocol/k;-><init>()V
 
-    .line 21
-    iput-object p1, p0, Lcom/whatsapp/protocol/ak;->a:Lcom/whatsapp/protocol/cy;
-
-    .line 28
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/io/InputStream;I)I
-    .locals 4
-
-    .prologue
-    const/4 v3, 0x0
-
-    .line 26
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    if-eqz v0, :cond_1
-
-    .line 25
-    new-array v1, p2, [B
-
-    .line 9
-    invoke-virtual {p1, v1, v3, p2}, Ljava/io/InputStream;->read([BII)I
-
-    move-result v0
-
-    .line 7
-    if-lez v0, :cond_0
-
-    .line 49
-    iget-object v2, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    invoke-virtual {v2, v1, v3, v0}, Ljava/io/OutputStream;->write([BII)V
-
-    .line 48
-    :cond_0
-    :goto_0
-    return v0
-
-    .line 30
-    :cond_1
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->b:Lcom/whatsapp/protocol/i;
-
-    invoke-virtual {v0, p1, p2}, Lcom/whatsapp/protocol/i;->a(Ljava/io/InputStream;I)I
-
-    move-result v0
-
-    goto :goto_0
-.end method
-
-.method public a()V
-    .locals 2
-
-    .prologue
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    if-eqz v0, :cond_0
-
-    .line 36
-    :goto_0
-    return-void
-
-    .line 4
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->a:Lcom/whatsapp/protocol/cy;
-
-    iget-object v1, p0, Lcom/whatsapp/protocol/ak;->b:Lcom/whatsapp/protocol/i;
-
-    invoke-interface {v0, v1}, Lcom/whatsapp/protocol/cy;->a(Ljava/io/OutputStream;)Ljava/io/OutputStream;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    goto :goto_0
-.end method
-
-.method public a(Lcom/whatsapp/protocol/cy;)V
-    .locals 0
-
-    .prologue
-    .line 23
-    iput-object p1, p0, Lcom/whatsapp/protocol/ak;->a:Lcom/whatsapp/protocol/cy;
-
-    .line 41
-    return-void
-.end method
-
-.method public b()V
-    .locals 1
-
-    .prologue
-    .line 19
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    if-nez v0, :cond_0
-
-    .line 37
-    :goto_0
-    return-void
-
-    .line 32
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
-
-    .line 29
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    goto :goto_0
-.end method
-
-.method public c()Z
-    .locals 1
-
-    .prologue
-    .line 11
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method public close()V
-    .locals 1
-
-    .prologue
-    .line 33
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    if-eqz v0, :cond_0
-
-    .line 46
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
-
-    sget v0, Lcom/whatsapp/protocol/ae;->s:I
-
-    if-eqz v0, :cond_1
-
-    .line 13
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->b:Lcom/whatsapp/protocol/i;
-
-    invoke-virtual {v0}, Lcom/whatsapp/protocol/i;->close()V
-
-    .line 6
-    :cond_1
-    return-void
-.end method
-
-.method public d()I
+.method public a(I)V
     .locals 1
 
     .prologue
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->b:Lcom/whatsapp/protocol/i;
+    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->a:Lcom/whatsapp/protocol/bx;
 
-    invoke-virtual {v0}, Lcom/whatsapp/protocol/i;->b()I
+    if-eqz v0, :cond_0
 
-    move-result v0
+    .line 11
+    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->a:Lcom/whatsapp/protocol/bx;
 
-    return v0
-.end method
+    invoke-interface {v0, p1}, Lcom/whatsapp/protocol/bx;->a(I)V
 
-.method public e()V
-    .locals 1
-
-    .prologue
-    .line 3
-    :try_start_0
-    invoke-virtual {p0}, Lcom/whatsapp/protocol/ak;->b()V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 47
-    :goto_0
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    .line 20
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->b:Lcom/whatsapp/protocol/i;
-
-    invoke-virtual {v0}, Lcom/whatsapp/protocol/i;->reset()V
-
-    .line 12
+    .line 6
+    :cond_0
     return-void
-
-    .line 31
-    :catch_0
-    move-exception v0
-
-    goto :goto_0
 .end method
 
-.method public f()[B
-    .locals 1
+.method public a(Lcom/whatsapp/protocol/ct;Ljava/lang/String;)V
+    .locals 5
 
     .prologue
-    .line 22
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->b:Lcom/whatsapp/protocol/i;
+    .line 5
+    sget-object v0, Lcom/whatsapp/protocol/ak;->z:[Ljava/lang/String;
 
-    invoke-virtual {v0}, Lcom/whatsapp/protocol/i;->a()[B
+    const/4 v1, 0x0
+
+    aget-object v0, v0, v1
+
+    invoke-virtual {p1, v0}, Lcom/whatsapp/protocol/ct;->f(Ljava/lang/String;)Lcom/whatsapp/protocol/ct;
 
     move-result-object v0
 
-    return-object v0
-.end method
-
-.method public flush()V
-    .locals 1
-
-    .prologue
-    .line 43
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
+    .line 9
     if-eqz v0, :cond_0
 
-    .line 39
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
+    .line 3
+    new-instance v0, Ljava/util/Vector;
 
-    invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
+    invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    sget v0, Lcom/whatsapp/protocol/ae;->s:I
+    .line 13
+    new-instance v1, Ljava/util/Hashtable;
+
+    invoke-direct {v1}, Ljava/util/Hashtable;-><init>()V
+
+    .line 4
+    iget-object v2, p0, Lcom/whatsapp/protocol/ak;->c:Lcom/whatsapp/protocol/bo;
+
+    sget-object v3, Lcom/whatsapp/protocol/ak;->z:[Ljava/lang/String;
+
+    const/4 v4, 0x1
+
+    aget-object v3, v3, v4
+
+    invoke-static {v2, p1, v0, v1, v3}, Lcom/whatsapp/protocol/bo;->a(Lcom/whatsapp/protocol/bo;Lcom/whatsapp/protocol/ct;Ljava/util/Vector;Ljava/util/Hashtable;Ljava/lang/String;)V
+
+    .line 12
+    iget-object v2, p0, Lcom/whatsapp/protocol/ak;->c:Lcom/whatsapp/protocol/bo;
+
+    invoke-static {v2}, Lcom/whatsapp/protocol/bo;->a(Lcom/whatsapp/protocol/bo;)Lcom/whatsapp/protocol/bv;
+
+    move-result-object v2
+
+    invoke-interface {v2, v0, v1}, Lcom/whatsapp/protocol/bv;->a(Ljava/util/Vector;Ljava/util/Hashtable;)V
+
+    .line 7
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->b:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_1
-
-    .line 44
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->b:Lcom/whatsapp/protocol/i;
-
-    invoke-virtual {v0}, Lcom/whatsapp/protocol/i;->flush()V
-
-    .line 14
-    :cond_1
-    return-void
-.end method
-
-.method public write(I)V
-    .locals 1
-
-    .prologue
-    .line 16
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    if-eqz v0, :cond_0
-
-    .line 24
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
-
-    sget v0, Lcom/whatsapp/protocol/ae;->s:I
-
-    if-eqz v0, :cond_1
-
-    .line 15
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->b:Lcom/whatsapp/protocol/i;
-
-    invoke-virtual {v0, p1}, Lcom/whatsapp/protocol/i;->write(I)V
-
-    .line 10
-    :cond_1
-    return-void
-.end method
-
-.method public write([B)V
-    .locals 1
-
-    .prologue
-    .line 27
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    if-eqz v0, :cond_0
-
-    .line 34
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write([B)V
-
-    sget v0, Lcom/whatsapp/protocol/ae;->s:I
-
-    if-eqz v0, :cond_1
-
-    .line 40
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->b:Lcom/whatsapp/protocol/i;
-
-    invoke-virtual {v0, p1}, Lcom/whatsapp/protocol/i;->write([B)V
 
     .line 8
-    :cond_1
-    return-void
-.end method
+    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->b:Ljava/lang/Runnable;
 
-.method public write([BII)V
-    .locals 1
-
-    .prologue
-    .line 45
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    if-eqz v0, :cond_0
-
-    .line 18
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->c:Ljava/io/OutputStream;
-
-    invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
-
-    sget v0, Lcom/whatsapp/protocol/ae;->s:I
-
-    if-eqz v0, :cond_1
+    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
     .line 1
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/protocol/ak;->b:Lcom/whatsapp/protocol/i;
-
-    invoke-virtual {v0, p1, p2, p3}, Lcom/whatsapp/protocol/i;->write([BII)V
-
-    .line 35
     :cond_1
     return-void
 .end method

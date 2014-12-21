@@ -4,19 +4,19 @@
 
 
 # static fields
-.field private static h:Ljava/lang/Runnable;
+.field private static h:Landroid/os/Handler;
 
-.field private static i:Landroid/os/Handler;
+.field private static i:Ljava/util/HashMap;
 
-.field private static k:Ljava/util/HashMap;
+.field private static j:Lcom/whatsapp/SettingsPrivacy;
 
-.field private static l:Lcom/whatsapp/SettingsPrivacy;
+.field private static k:Ljava/lang/Runnable;
 
 .field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field private j:Landroid/preference/Preference$OnPreferenceChangeListener;
+.field private l:Landroid/preference/Preference$OnPreferenceChangeListener;
 
 
 # direct methods
@@ -24,13 +24,13 @@
     .locals 14
 
     .prologue
+    const/4 v5, 0x4
+
+    const/4 v4, 0x3
+
     const/4 v3, 0x2
 
     const/4 v2, 0x1
-
-    const/16 v5, 0x20
-
-    const/16 v4, 0x9
 
     const/4 v1, 0x0
 
@@ -38,7 +38,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "3f\niW8h\u00134A y87R5o\u00025E>j\u00024"
+    const-string v6, "\u0000<M\u000e9=<K\u001e&"
 
     const/4 v0, -0x1
 
@@ -76,7 +76,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, " {\u000e1A3p84T1}\u00124"
+    const-string v0, "\u000c?L\u0008"
 
     move-object v6, v0
 
@@ -91,7 +91,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, " {\u000e1A3p8+A#}84E5g"
+    const-string v0, "\u0001?L\u00193\u0001$Q"
 
     move-object v6, v0
 
@@ -106,15 +106,13 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const/4 v6, 0x3
-
-    const-string v0, "#}\u00063U#"
-
-    move v7, v6
-
-    move-object v8, v9
+    const-string v0, "\u0003<N"
 
     move-object v6, v0
+
+    move v7, v4
+
+    move-object v8, v9
 
     move v0, v3
 
@@ -123,26 +121,32 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const/4 v7, 0x4
+    const-string v0, "\u00115V\u0019;\u000c7Q\u001d \u000b&C\u000e+M4G\u001e&\u0010?["
 
-    const-string v6, " {\u000e1A3p8+A#}84E5g"
+    move-object v6, v0
 
-    const/4 v0, 0x3
+    move v7, v5
 
     move-object v8, v9
+
+    move v0, v4
 
     goto :goto_0
 
     :pswitch_3
     aput-object v6, v8, v7
 
-    const/4 v7, 0x5
+    const/4 v6, 0x5
 
-    const-string v6, " {\u000e1A3p87R?o\u000e+E\u000fy\u000f(T?"
+    const-string v0, "\u0001?L\u00193\u0001$Q"
 
-    const/4 v0, 0x4
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v5
 
     goto :goto_0
 
@@ -151,7 +155,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, " {\u000e1A3p84T1}\u00124"
+    const-string v6, "\u0003<N"
 
     const/4 v0, 0x5
 
@@ -164,7 +168,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, " {\u0008!I<l"
+    const-string v6, "\u0003<N"
 
     const/4 v0, 0x6
 
@@ -177,7 +181,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, " {\u000e1A3p87R?o\u000e+E\u000fy\u000f(T?"
+    const-string v6, "\u000c?L\u0008"
 
     const/4 v0, 0x7
 
@@ -188,11 +192,11 @@
     :pswitch_7
     aput-object v6, v8, v7
 
-    const-string v6, "<h\u00143"
+    const/16 v7, 0x9
+
+    const-string v6, "\u0000<M\u000e9=<K\u001e&"
 
     const/16 v0, 0x8
-
-    move v7, v4
 
     move-object v8, v9
 
@@ -201,17 +205,13 @@
     :pswitch_8
     aput-object v6, v8, v7
 
-    const/16 v6, 0xa
+    const/16 v7, 0xa
 
-    const-string v0, " {\u000e1A3p8+A#}84E5g"
+    const-string v6, "\u00115V\u0019;\u000c7Q\u001d \u000b&C\u000e+M3P\u00083\u00165"
 
-    move v7, v6
+    const/16 v0, 0x9
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v4
 
     goto :goto_0
 
@@ -220,7 +220,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, "2e\u0008$K\u000fe\u000e4T"
+    const-string v6, "\u0012\"K\u001b3\u0001)}\u001d \r6K\u00017= J\u0002&\r"
 
     const/16 v0, 0xa
 
@@ -233,7 +233,7 @@
 
     const/16 v7, 0xc
 
-    const-string v6, " {\u000e1A3p87R?o\u000e+E\u000fy\u000f(T?"
+    const-string v6, "\u0012\"K\u001b3\u0001)}\u00013\u0011$}\u001e7\u0007>"
 
     const/16 v0, 0xb
 
@@ -246,7 +246,7 @@
 
     const/16 v7, 0xd
 
-    const-string v6, "\"l\u0006#\u007f\"l\u0004\"I }\u0014\u0018E>h\u0005+E4"
+    const-string v6, "\u0012\"K\u001b3\u0001)}\u001e&\u0003$W\u001e"
 
     const/16 v0, 0xc
 
@@ -259,7 +259,7 @@
 
     const/16 v7, 0xe
 
-    const-string v6, " {\u000e1A3p84T1}\u00124"
+    const-string v6, "\u00105C\t\r\u00105A\u0008;\u0012$Q27\u000c1@\u00017\u0006"
 
     const/16 v0, 0xd
 
@@ -272,7 +272,7 @@
 
     const/16 v7, 0xf
 
-    const-string v6, "#l\u00133I>n\u00147R9\u007f\u0006$Y\u007fj\u0015\"A$l"
+    const-string v6, "\u0012\"K\u001b3\u0001)}\u00013\u0011$}\u001e7\u0007>"
 
     const/16 v0, 0xe
 
@@ -285,7 +285,7 @@
 
     const/16 v7, 0x10
 
-    const-string v6, ">f\t\""
+    const-string v6, "\u0012\"K\u001b3\u0001)}\u001d \r6K\u00017= J\u0002&\r"
 
     const/16 v0, 0xf
 
@@ -298,7 +298,7 @@
 
     const/16 v7, 0x11
 
-    const-string v6, "1e\u000b"
+    const-string v6, "\u000e1Q\u0019"
 
     const/16 v0, 0x10
 
@@ -311,7 +311,7 @@
 
     const/16 v7, 0x12
 
-    const-string v6, "3f\t3A3}\u0014"
+    const-string v6, "\u0011$C\u0019\'\u0011"
 
     const/16 v0, 0x11
 
@@ -324,7 +324,7 @@
 
     const/16 v7, 0x13
 
-    const-string v6, "2e\u0008$K\u000fe\u000e4T"
+    const-string v6, "\u0012\"M\u000b;\u000e5"
 
     const/16 v0, 0x12
 
@@ -337,7 +337,7 @@
 
     const/16 v7, 0x14
 
-    const-string v6, "1e\u000b"
+    const-string v6, "\u00115V\u0019;\u000c7Q\u001d \u000b&C\u000e+M\"G\u000e7\u000b&G\tr"
 
     const/16 v0, 0x13
 
@@ -350,7 +350,7 @@
 
     const/16 v7, 0x15
 
-    const-string v6, "1e\u000b"
+    const-string v6, "\u0012\"K\u001b3\u0001)}\u001e&\u0003$W\u001e"
 
     const/16 v0, 0x14
 
@@ -363,7 +363,7 @@
 
     const/16 v7, 0x16
 
-    const-string v6, "3f\t3A3}\u0014"
+    const-string v6, "\u0012\"K\u001b3\u0001)}\u00013\u0011$}\u001e7\u0007>"
 
     const/16 v0, 0x15
 
@@ -376,7 +376,7 @@
 
     const/16 v7, 0x17
 
-    const-string v6, ">f\t\""
+    const-string v6, "\u0001?OC%\n1V\u001e3\u0012 }\u001d \u00076G\u001f7\u000c3G\u001e"
 
     const/16 v0, 0x16
 
@@ -389,7 +389,7 @@
 
     const/16 v7, 0x18
 
-    const-string v6, "#l\u00133I>n\u00147R9\u007f\u0006$Y\u007fm\u00024T\"f\u001e"
+    const-string v6, "\u0001?OC%\n1V\u001e3\u0012 }\u001d \u00076G\u001f7\u000c3G\u001e"
 
     const/16 v0, 0x17
 
@@ -402,7 +402,7 @@
 
     const/16 v7, 0x19
 
-    const-string v6, "#l\u00133I>n\u00147R9\u007f\u0006$Y\u007f{\u0002$E9\u007f\u0002#\u0000"
+    const-string v6, "\u0012\"K\u001b3\u0001)}\u00013\u0011$}\u001e7\u0007>"
 
     const/16 v0, 0x18
 
@@ -415,7 +415,7 @@
 
     const/16 v7, 0x1a
 
-    const-string v6, "#}\u00063U#"
+    const-string v6, "\u0011$C\u0019\'\u0011"
 
     const/16 v0, 0x19
 
@@ -428,7 +428,7 @@
 
     const/16 v7, 0x1b
 
-    const-string v6, " {\u000e1A3p84T1}\u00124"
+    const-string v6, "\u0012\"K\u001b3\u0001)}\u001e&\u0003$W\u001e"
 
     const/16 v0, 0x1a
 
@@ -441,7 +441,7 @@
 
     const/16 v7, 0x1c
 
-    const-string v6, "<h\u00143"
+    const-string v6, "\u0012\"M\u000b;\u000e5"
 
     const/16 v0, 0x1b
 
@@ -454,7 +454,7 @@
 
     const/16 v7, 0x1d
 
-    const-string v6, " {\u000e1A3p8+A#}84E5g"
+    const-string v6, "\u0012\"K\u001b3\u0001)}\u001e&\u0003$W\u001e"
 
     const/16 v0, 0x1c
 
@@ -467,7 +467,7 @@
 
     const/16 v7, 0x1e
 
-    const-string v6, " {\u000e1A3p87R?o\u000e+E\u000fy\u000f(T?"
+    const-string v6, "\u0012\"K\u001b3\u0001)}\u00013\u0011$}\u001e7\u0007>"
 
     const/16 v0, 0x1d
 
@@ -480,7 +480,7 @@
 
     const/16 v7, 0x1f
 
-    const-string v6, "3f\niW8h\u00134A y87R5o\u00025E>j\u00024"
+    const-string v6, "\u0012\"K\u001b3\u0001)}\u001d \r6K\u00017= J\u0002&\r"
 
     const/16 v0, 0x1e
 
@@ -491,11 +491,11 @@
     :pswitch_1e
     aput-object v6, v8, v7
 
-    const-string v6, " {\u000e1A3p8+A#}84E5g"
+    const/16 v7, 0x20
+
+    const-string v6, "\u000e1Q\u0019"
 
     const/16 v0, 0x1f
-
-    move v7, v5
 
     move-object v8, v9
 
@@ -504,17 +504,13 @@
     :pswitch_1f
     aput-object v6, v8, v7
 
-    const/16 v6, 0x21
+    const/16 v7, 0x21
 
-    const-string v0, " {\u0008!I<l"
+    const-string v6, "\u0012\"K\u001b3\u0001)}\u001d \r6K\u00017= J\u0002&\r"
 
-    move v7, v6
+    const/16 v0, 0x20
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v5
 
     goto/16 :goto_0
 
@@ -523,26 +519,26 @@
 
     sput-object v9, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    .line 51
+    .line 105
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/whatsapp/SettingsPrivacy;->k:Ljava/util/HashMap;
+    sput-object v0, Lcom/whatsapp/SettingsPrivacy;->i:Ljava/util/HashMap;
 
-    .line 43
+    .line 91
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    sput-object v0, Lcom/whatsapp/SettingsPrivacy;->i:Landroid/os/Handler;
+    sput-object v0, Lcom/whatsapp/SettingsPrivacy;->h:Landroid/os/Handler;
 
-    .line 40
-    new-instance v0, Lcom/whatsapp/s4;
+    .line 100
+    new-instance v0, Lcom/whatsapp/bi;
 
-    invoke-direct {v0}, Lcom/whatsapp/s4;-><init>()V
+    invoke-direct {v0}, Lcom/whatsapp/bi;-><init>()V
 
-    sput-object v0, Lcom/whatsapp/SettingsPrivacy;->h:Ljava/lang/Runnable;
+    sput-object v0, Lcom/whatsapp/SettingsPrivacy;->k:Ljava/lang/Runnable;
 
     return-void
 
@@ -554,7 +550,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    move v6, v5
+    const/16 v6, 0x52
 
     :goto_2
     xor-int/2addr v6, v13
@@ -570,22 +566,22 @@
     goto/16 :goto_1
 
     :pswitch_21
-    const/16 v6, 0x50
+    const/16 v6, 0x62
 
     goto :goto_2
 
     :pswitch_22
-    move v6, v4
+    const/16 v6, 0x50
 
     goto :goto_2
 
     :pswitch_23
-    const/16 v6, 0x67
+    const/16 v6, 0x22
 
     goto :goto_2
 
     :pswitch_24
-    const/16 v6, 0x47
+    const/16 v6, 0x6d
 
     goto :goto_2
 
@@ -639,68 +635,64 @@
     .locals 1
 
     .prologue
-    .line 92
+    .line 13
     invoke-direct {p0}, Lcom/whatsapp/DialogToastPreferenceActivity;-><init>()V
 
-    .line 17
-    new-instance v0, Lcom/whatsapp/ci;
+    .line 83
+    new-instance v0, Lcom/whatsapp/wt;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/ci;-><init>(Lcom/whatsapp/SettingsPrivacy;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/wt;-><init>(Lcom/whatsapp/SettingsPrivacy;)V
 
-    iput-object v0, p0, Lcom/whatsapp/SettingsPrivacy;->j:Landroid/preference/Preference$OnPreferenceChangeListener;
+    iput-object v0, p0, Lcom/whatsapp/SettingsPrivacy;->l:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     return-void
 .end method
 
 .method private static a(Ljava/lang/String;)I
-    .locals 2
+    .locals 4
 
     .prologue
-    .line 24
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+    const/4 v1, 0x2
 
-    const/16 v1, 0x11
+    const/4 v0, 0x1
 
-    aget-object v0, v0, v1
+    .line 62
+    sget-object v2, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    const/4 v3, 0x3
 
-    move-result v0
+    aget-object v2, v2, v3
 
-    if-eqz v0, :cond_0
+    invoke-virtual {v2, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 112
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 76
     const/4 v0, 0x0
 
+    .line 112
+    :cond_0
     :goto_0
     return v0
 
-    .line 25
-    :cond_0
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    const/16 v1, 0x12
-
-    aget-object v0, v0, v1
-
-    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 96
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    .line 103
+    .line 90
     :cond_1
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+    sget-object v2, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x10
+    aget-object v2, v2, v1
 
-    aget-object v0, v0, v1
+    invoke-virtual {v2, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 98
+    sget-object v2, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    aget-object v0, v2, v0
 
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -708,12 +700,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 69
-    const/4 v0, 0x2
+    move v0, v1
 
+    .line 112
     goto :goto_0
 
-    .line 75
+    .line 69
     :cond_2
     const/4 v0, -0x1
 
@@ -724,53 +716,51 @@
     .locals 2
 
     .prologue
-    .line 113
+    .line 4
     packed-switch p0, :pswitch_data_0
 
-    .line 45
+    .line 26
     sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x15
+    const/4 v1, 0x6
 
     aget-object v0, v0, v1
 
-    .line 89
+    .line 68
     :goto_0
     return-object v0
 
-    .line 76
+    .line 60
     :pswitch_0
     sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x14
+    const/4 v1, 0x7
 
     aget-object v0, v0, v1
 
     goto :goto_0
 
-    .line 29
+    .line 11
     :pswitch_1
     sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x16
+    const/4 v1, 0x5
 
     aget-object v0, v0, v1
 
     goto :goto_0
 
-    .line 89
+    .line 68
     :pswitch_2
     sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x17
+    const/16 v1, 0x8
 
     aget-object v0, v0, v1
 
     goto :goto_0
 
-    .line 113
-    nop
-
+    .line 4
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -779,22 +769,329 @@
     .end packed-switch
 .end method
 
-.method static a()Ljava/util/HashMap;
-    .locals 1
+.method private a()V
+    .locals 8
 
     .prologue
-    .line 37
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->k:Ljava/util/HashMap;
+    const/4 v3, 0x1
 
-    return-object v0
+    const/4 v4, 0x0
+
+    .line 92
+    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    const/16 v1, 0x18
+
+    aget-object v0, v0, v1
+
+    invoke-virtual {p0, v0, v4}, Lcom/whatsapp/SettingsPrivacy;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v5
+
+    .line 40
+    invoke-virtual {p0}, Lcom/whatsapp/SettingsPrivacy;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f070011
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 70
+    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    const/16 v1, 0x1e
+
+    aget-object v0, v0, v1
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/whatsapp/preference/WaPrivacyPreference;
+
+    .line 80
+    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->i:Ljava/util/HashMap;
+
+    sget-object v2, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    const/16 v7, 0x20
+
+    aget-object v2, v2, v7
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/whatsapp/a_8;
+
+    .line 6
+    if-nez v1, :cond_0
+
+    move v2, v3
+
+    :goto_0
+    invoke-virtual {v0, v2}, Lcom/whatsapp/preference/WaPrivacyPreference;->setEnabled(Z)V
+
+    .line 56
+    if-eqz v1, :cond_1
+
+    move v2, v3
+
+    :goto_1
+    invoke-virtual {v0, v2}, Lcom/whatsapp/preference/WaPrivacyPreference;->a(Z)V
+
+    .line 96
+    if-nez v1, :cond_2
+
+    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    const/16 v2, 0x19
+
+    aget-object v1, v1, v2
+
+    .line 54
+    invoke-interface {v5, v1, v4}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v1
+
+    .line 89
+    :goto_2
+    invoke-static {v4, v1}, Ljava/lang/Math;->max(II)I
+
+    move-result v1
+
+    .line 30
+    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setValueIndex(I)V
+
+    .line 63
+    aget-object v1, v6, v1
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    .line 87
+    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    const/16 v1, 0x1f
+
+    aget-object v0, v0, v1
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/whatsapp/preference/WaPrivacyPreference;
+
+    .line 71
+    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->i:Ljava/util/HashMap;
+
+    sget-object v2, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    const/16 v7, 0x1c
+
+    aget-object v2, v2, v7
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/whatsapp/a_8;
+
+    .line 66
+    if-nez v1, :cond_3
+
+    move v2, v3
+
+    :goto_3
+    invoke-virtual {v0, v2}, Lcom/whatsapp/preference/WaPrivacyPreference;->setEnabled(Z)V
+
+    .line 114
+    if-eqz v1, :cond_4
+
+    move v2, v3
+
+    :goto_4
+    invoke-virtual {v0, v2}, Lcom/whatsapp/preference/WaPrivacyPreference;->a(Z)V
+
+    .line 23
+    if-nez v1, :cond_5
+
+    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    const/16 v2, 0x21
+
+    aget-object v1, v1, v2
+
+    .line 19
+    invoke-interface {v5, v1, v4}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v1
+
+    .line 17
+    :goto_5
+    invoke-static {v4, v1}, Ljava/lang/Math;->max(II)I
+
+    move-result v1
+
+    .line 29
+    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setValueIndex(I)V
+
+    .line 65
+    aget-object v1, v6, v1
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    .line 31
+    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    const/16 v1, 0x1b
+
+    aget-object v0, v0, v1
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/whatsapp/preference/WaPrivacyPreference;
+
+    .line 27
+    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->i:Ljava/util/HashMap;
+
+    sget-object v2, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    const/16 v7, 0x1a
+
+    aget-object v2, v2, v7
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/whatsapp/a_8;
+
+    .line 110
+    if-nez v1, :cond_6
+
+    move v2, v3
+
+    :goto_6
+    invoke-virtual {v0, v2}, Lcom/whatsapp/preference/WaPrivacyPreference;->setEnabled(Z)V
+
+    .line 36
+    if-eqz v1, :cond_7
+
+    :goto_7
+    invoke-virtual {v0, v3}, Lcom/whatsapp/preference/WaPrivacyPreference;->a(Z)V
+
+    .line 109
+    if-nez v1, :cond_8
+
+    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    const/16 v2, 0x1d
+
+    aget-object v1, v1, v2
+
+    .line 97
+    invoke-interface {v5, v1, v4}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v1
+
+    .line 3
+    :goto_8
+    invoke-static {v4, v1}, Ljava/lang/Math;->max(II)I
+
+    move-result v1
+
+    .line 79
+    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setValueIndex(I)V
+
+    .line 48
+    aget-object v1, v6, v1
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    .line 61
+    return-void
+
+    :cond_0
+    move v2, v4
+
+    .line 6
+    goto/16 :goto_0
+
+    :cond_1
+    move v2, v4
+
+    .line 56
+    goto/16 :goto_1
+
+    .line 54
+    :cond_2
+    iget-object v1, v1, Lcom/whatsapp/a_8;->c:Ljava/lang/String;
+
+    .line 59
+    invoke-static {v1}, Lcom/whatsapp/SettingsPrivacy;->a(Ljava/lang/String;)I
+
+    move-result v1
+
+    goto/16 :goto_2
+
+    :cond_3
+    move v2, v4
+
+    .line 66
+    goto :goto_3
+
+    :cond_4
+    move v2, v4
+
+    .line 114
+    goto :goto_4
+
+    .line 19
+    :cond_5
+    iget-object v1, v1, Lcom/whatsapp/a_8;->c:Ljava/lang/String;
+
+    .line 78
+    invoke-static {v1}, Lcom/whatsapp/SettingsPrivacy;->a(Ljava/lang/String;)I
+
+    move-result v1
+
+    goto :goto_5
+
+    :cond_6
+    move v2, v4
+
+    .line 110
+    goto :goto_6
+
+    :cond_7
+    move v3, v4
+
+    .line 36
+    goto :goto_7
+
+    .line 97
+    :cond_8
+    iget-object v1, v1, Lcom/whatsapp/a_8;->c:Ljava/lang/String;
+
+    .line 82
+    invoke-static {v1}, Lcom/whatsapp/SettingsPrivacy;->a(Ljava/lang/String;)I
+
+    move-result v1
+
+    goto :goto_8
 .end method
 
 .method static a(Lcom/whatsapp/SettingsPrivacy;)V
     .locals 0
 
     .prologue
-    .line 28
-    invoke-direct {p0}, Lcom/whatsapp/SettingsPrivacy;->e()V
+    .line 16
+    invoke-direct {p0}, Lcom/whatsapp/SettingsPrivacy;->a()V
 
     return-void
 .end method
@@ -807,14 +1104,14 @@
 
     const/4 v3, 0x0
 
-    sget-boolean v6, Lcom/whatsapp/App;->aL:Z
+    sget v6, Lcom/whatsapp/App;->h:I
 
-    .line 22
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 42
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     sget-object v1, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x1f
+    const/16 v2, 0x17
 
     aget-object v1, v1, v2
 
@@ -822,19 +1119,19 @@
 
     move-result-object v7
 
-    .line 47
+    .line 88
     invoke-interface {v7}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v8
 
-    .line 88
+    .line 113
     invoke-virtual {p0}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
 
     move-result-object v9
 
     move v2, v3
 
-    .line 13
+    .line 38
     :goto_0
     invoke-interface {v9}, Ljava/util/Enumeration;->hasMoreElements()Z
 
@@ -842,28 +1139,28 @@
 
     if-eqz v0, :cond_a
 
-    .line 74
+    .line 25
     invoke-interface {v9}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
-    .line 72
+    .line 86
     invoke-virtual {p0, v0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/String;
 
-    .line 39
+    .line 21
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v10, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v11, 0x19
+    const/16 v11, 0x14
 
     aget-object v10, v10, v11
 
@@ -891,33 +1188,33 @@
 
     invoke-static {v4}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 80
+    .line 84
     invoke-static {v1}, Lcom/whatsapp/SettingsPrivacy;->a(Ljava/lang/String;)I
 
     move-result v10
 
-    .line 87
+    .line 49
     if-gez v10, :cond_9
 
-    .line 65
+    .line 35
     if-eqz v6, :cond_8
 
     move v4, v5
 
-    .line 7
+    .line 8
     :goto_1
-    sget-object v2, Lcom/whatsapp/SettingsPrivacy;->k:Ljava/util/HashMap;
+    sget-object v2, Lcom/whatsapp/SettingsPrivacy;->i:Ljava/util/HashMap;
 
     invoke-virtual {v2, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lcom/whatsapp/fe;
+    check-cast v2, Lcom/whatsapp/a_8;
 
-    .line 83
+    .line 43
     if-eqz v2, :cond_0
 
-    iget-object v2, v2, Lcom/whatsapp/fe;->a:Ljava/lang/String;
+    iget-object v2, v2, Lcom/whatsapp/a_8;->c:Ljava/lang/String;
 
     invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -925,16 +1222,16 @@
 
     if-eqz v1, :cond_4
 
-    .line 93
+    .line 14
     :cond_0
-    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->k:Ljava/util/HashMap;
+    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->i:Ljava/util/HashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 46
+    .line 53
     sget-object v1, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x1c
+    const/16 v2, 0x11
 
     aget-object v1, v1, v2
 
@@ -944,10 +1241,10 @@
 
     if-eqz v1, :cond_2
 
-    .line 60
+    .line 20
     sget-object v1, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x20
+    const/16 v2, 0x16
 
     aget-object v1, v1, v2
 
@@ -955,32 +1252,32 @@
 
     move-result v1
 
-    .line 99
+    .line 15
     sget-object v2, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v11, 0x1d
+    const/16 v11, 0xf
 
     aget-object v2, v2, v11
 
     invoke-interface {v8, v2, v10}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
-    .line 23
+    .line 104
     if-eq v1, v10, :cond_1
 
-    .line 59
-    sget-object v1, Lcom/whatsapp/App;->a5:Lcom/whatsapp/zj;
+    .line 106
+    sget-object v1, Lcom/whatsapp/App;->j:Lcom/whatsapp/a_q;
 
-    invoke-virtual {v1}, Lcom/whatsapp/zj;->a()V
+    invoke-virtual {v1}, Lcom/whatsapp/a_q;->a()V
 
-    .line 35
+    .line 94
     :cond_1
     if-eqz v6, :cond_4
 
-    .line 68
+    .line 57
     :cond_2
     sget-object v1, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x21
+    const/16 v2, 0x13
 
     aget-object v1, v1, v2
 
@@ -990,10 +1287,10 @@
 
     if-eqz v1, :cond_3
 
-    .line 32
+    .line 7
     sget-object v1, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x1e
+    const/16 v2, 0x10
 
     aget-object v1, v1, v2
 
@@ -1001,11 +1298,11 @@
 
     if-eqz v6, :cond_4
 
-    .line 36
+    .line 10
     :cond_3
     sget-object v1, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x1a
+    const/16 v2, 0x12
 
     aget-object v1, v1, v2
 
@@ -1015,10 +1312,10 @@
 
     if-eqz v0, :cond_4
 
-    .line 64
+    .line 77
     sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x1b
+    const/16 v1, 0x15
 
     aget-object v0, v0, v1
 
@@ -1027,40 +1324,40 @@
     :cond_4
     move v0, v4
 
-    .line 3
+    .line 5
     :goto_2
     if-eqz v6, :cond_7
 
-    .line 101
+    .line 95
     :goto_3
     invoke-interface {v8}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    .line 110
+    .line 111
     if-eqz v0, :cond_5
 
-    .line 31
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 108
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     invoke-virtual {v0}, Lcom/whatsapp/App;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    const v1, 0x7f0e017e
+    const v1, 0x7f0e0184
 
-    invoke-static {v0, v1, v5}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
+    invoke-static {v0, v1, v5}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
 
-    .line 81
+    .line 93
     :cond_5
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->l:Lcom/whatsapp/SettingsPrivacy;
+    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->j:Lcom/whatsapp/SettingsPrivacy;
 
     if-eqz v0, :cond_6
 
-    .line 14
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->l:Lcom/whatsapp/SettingsPrivacy;
+    .line 102
+    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->j:Lcom/whatsapp/SettingsPrivacy;
 
-    invoke-direct {v0}, Lcom/whatsapp/SettingsPrivacy;->e()V
+    invoke-direct {v0}, Lcom/whatsapp/SettingsPrivacy;->a()V
 
-    .line 52
+    .line 51
     :cond_6
     return-void
 
@@ -1089,343 +1386,40 @@
     .locals 1
 
     .prologue
-    .line 2
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->h:Ljava/lang/Runnable;
+    .line 47
+    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->k:Ljava/lang/Runnable;
 
     return-object v0
 .end method
 
-.method static c()Landroid/os/Handler;
+.method static c()Lcom/whatsapp/SettingsPrivacy;
     .locals 1
 
     .prologue
-    .line 63
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->i:Landroid/os/Handler;
-
-    return-object v0
-.end method
-
-.method static d()Lcom/whatsapp/SettingsPrivacy;
-    .locals 1
-
-    .prologue
-    .line 104
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->l:Lcom/whatsapp/SettingsPrivacy;
-
-    return-object v0
-.end method
-
-.method private e()V
-    .locals 8
-
-    .prologue
-    const/4 v3, 0x1
-
-    const/4 v4, 0x0
-
-    .line 114
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    aget-object v0, v0, v4
-
-    invoke-virtual {p0, v0, v4}, Lcom/whatsapp/SettingsPrivacy;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    move-result-object v5
-
-    .line 44
-    invoke-virtual {p0}, Lcom/whatsapp/SettingsPrivacy;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x7f070011
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 107
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    const/4 v1, 0x4
-
-    aget-object v0, v0, v1
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/whatsapp/preference/WaPrivacyPreference;
-
-    .line 111
-    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->k:Ljava/util/HashMap;
-
-    sget-object v2, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    const/16 v7, 0x9
-
-    aget-object v2, v2, v7
-
-    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/whatsapp/fe;
-
-    .line 8
-    if-nez v1, :cond_0
-
-    move v2, v3
-
-    :goto_0
-    invoke-virtual {v0, v2}, Lcom/whatsapp/preference/WaPrivacyPreference;->setEnabled(Z)V
-
-    .line 16
-    if-eqz v1, :cond_1
-
-    move v2, v3
-
-    :goto_1
-    invoke-virtual {v0, v2}, Lcom/whatsapp/preference/WaPrivacyPreference;->a(Z)V
-
-    .line 10
-    if-nez v1, :cond_2
-
-    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x2
-
-    aget-object v1, v1, v2
-
-    .line 78
-    invoke-interface {v5, v1, v4}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
-
-    move-result v1
-
-    .line 61
-    :goto_2
-    invoke-static {v4, v1}, Ljava/lang/Math;->max(II)I
-
-    move-result v1
-
-    .line 53
-    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setValueIndex(I)V
-
-    .line 98
-    aget-object v1, v6, v1
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setSummary(Ljava/lang/CharSequence;)V
-
-    .line 26
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    const/4 v1, 0x5
-
-    aget-object v0, v0, v1
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/whatsapp/preference/WaPrivacyPreference;
-
-    .line 105
-    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->k:Ljava/util/HashMap;
-
-    sget-object v2, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    const/4 v7, 0x7
-
-    aget-object v2, v2, v7
-
-    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/whatsapp/fe;
-
-    .line 94
-    if-nez v1, :cond_3
-
-    move v2, v3
-
-    :goto_3
-    invoke-virtual {v0, v2}, Lcom/whatsapp/preference/WaPrivacyPreference;->setEnabled(Z)V
-
-    .line 50
-    if-eqz v1, :cond_4
-
-    move v2, v3
-
-    :goto_4
-    invoke-virtual {v0, v2}, Lcom/whatsapp/preference/WaPrivacyPreference;->a(Z)V
-
-    .line 84
-    if-nez v1, :cond_5
-
-    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    const/16 v2, 0x8
-
-    aget-object v1, v1, v2
-
-    .line 12
-    invoke-interface {v5, v1, v4}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
-
-    move-result v1
-
-    .line 6
-    :goto_5
-    invoke-static {v4, v1}, Ljava/lang/Math;->max(II)I
-
-    move-result v1
-
-    .line 34
-    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setValueIndex(I)V
-
-    .line 57
-    aget-object v1, v6, v1
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setSummary(Ljava/lang/CharSequence;)V
-
-    .line 102
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    aget-object v0, v0, v3
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/whatsapp/preference/WaPrivacyPreference;
-
-    .line 5
-    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->k:Ljava/util/HashMap;
-
-    sget-object v2, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    const/4 v7, 0x3
-
-    aget-object v2, v2, v7
-
-    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/whatsapp/fe;
-
-    .line 54
-    if-nez v1, :cond_6
-
-    move v2, v3
-
-    :goto_6
-    invoke-virtual {v0, v2}, Lcom/whatsapp/preference/WaPrivacyPreference;->setEnabled(Z)V
-
-    .line 11
-    if-eqz v1, :cond_7
-
-    :goto_7
-    invoke-virtual {v0, v3}, Lcom/whatsapp/preference/WaPrivacyPreference;->a(Z)V
-
-    .line 1
-    if-nez v1, :cond_8
-
-    sget-object v1, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x6
-
-    aget-object v1, v1, v2
-
-    .line 18
-    invoke-interface {v5, v1, v4}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
-
-    move-result v1
-
-    .line 20
-    :goto_8
-    invoke-static {v4, v1}, Ljava/lang/Math;->max(II)I
-
-    move-result v1
-
-    .line 67
-    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setValueIndex(I)V
-
-    .line 62
-    aget-object v1, v6, v1
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setSummary(Ljava/lang/CharSequence;)V
-
-    .line 90
-    return-void
-
-    :cond_0
-    move v2, v4
-
-    .line 8
-    goto/16 :goto_0
-
-    :cond_1
-    move v2, v4
-
-    .line 16
-    goto/16 :goto_1
-
-    .line 78
-    :cond_2
-    iget-object v1, v1, Lcom/whatsapp/fe;->a:Ljava/lang/String;
-
-    .line 55
-    invoke-static {v1}, Lcom/whatsapp/SettingsPrivacy;->a(Ljava/lang/String;)I
-
-    move-result v1
-
-    goto/16 :goto_2
-
-    :cond_3
-    move v2, v4
-
-    .line 94
-    goto :goto_3
-
-    :cond_4
-    move v2, v4
-
-    .line 50
-    goto :goto_4
-
-    .line 12
-    :cond_5
-    iget-object v1, v1, Lcom/whatsapp/fe;->a:Ljava/lang/String;
-
     .line 73
-    invoke-static {v1}, Lcom/whatsapp/SettingsPrivacy;->a(Ljava/lang/String;)I
+    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->j:Lcom/whatsapp/SettingsPrivacy;
 
-    move-result v1
+    return-object v0
+.end method
 
-    goto :goto_5
+.method static d()Ljava/util/HashMap;
+    .locals 1
 
-    :cond_6
-    move v2, v4
+    .prologue
+    .line 55
+    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->i:Ljava/util/HashMap;
 
-    .line 54
-    goto :goto_6
+    return-object v0
+.end method
 
-    :cond_7
-    move v3, v4
+.method static e()Landroid/os/Handler;
+    .locals 1
 
-    .line 11
-    goto :goto_7
+    .prologue
+    .line 101
+    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->h:Landroid/os/Handler;
 
-    .line 18
-    :cond_8
-    iget-object v1, v1, Lcom/whatsapp/fe;->a:Ljava/lang/String;
-
-    .line 86
-    invoke-static {v1}, Lcom/whatsapp/SettingsPrivacy;->a(Ljava/lang/String;)I
-
-    move-result v1
-
-    goto :goto_8
+    return-object v0
 .end method
 
 
@@ -1434,45 +1428,27 @@
     .locals 2
 
     .prologue
-    .line 4
+    .line 2
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastPreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 70
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    const/16 v1, 0xf
-
-    aget-object v0, v0, v1
-
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-
-    .line 66
-    sput-object p0, Lcom/whatsapp/SettingsPrivacy;->l:Lcom/whatsapp/SettingsPrivacy;
-
-    .line 21
-    const v0, 0x7f05000c
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->addPreferencesFromResource(I)V
-
-    .line 109
+    .line 67
     sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
     const/16 v1, 0xa
 
     aget-object v0, v0, v1
 
-    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    move-result-object v0
+    .line 28
+    sput-object p0, Lcom/whatsapp/SettingsPrivacy;->j:Lcom/whatsapp/SettingsPrivacy;
 
-    check-cast v0, Lcom/whatsapp/preference/WaPrivacyPreference;
+    .line 46
+    const v0, 0x7f05000c
 
-    .line 42
-    iget-object v1, p0, Lcom/whatsapp/SettingsPrivacy;->j:Landroid/preference/Preference$OnPreferenceChangeListener;
+    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->addPreferencesFromResource(I)V
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
-
-    .line 56
+    .line 9
     sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
     const/16 v1, 0xc
@@ -1485,47 +1461,12 @@
 
     check-cast v0, Lcom/whatsapp/preference/WaPrivacyPreference;
 
-    .line 30
-    iget-object v1, p0, Lcom/whatsapp/SettingsPrivacy;->j:Landroid/preference/Preference$OnPreferenceChangeListener;
+    .line 33
+    iget-object v1, p0, Lcom/whatsapp/SettingsPrivacy;->l:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 48
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    const/16 v1, 0xe
-
-    aget-object v0, v0, v1
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/whatsapp/preference/WaPrivacyPreference;
-
-    .line 79
-    iget-object v1, p0, Lcom/whatsapp/SettingsPrivacy;->j:Landroid/preference/Preference$OnPreferenceChangeListener;
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
-
-    .line 97
-    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
-
-    const/16 v1, 0xd
-
-    aget-object v0, v0, v1
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v0
-
-    new-instance v1, Lcom/whatsapp/sv;
-
-    invoke-direct {v1, p0}, Lcom/whatsapp/sv;-><init>(Lcom/whatsapp/SettingsPrivacy;)V
-
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
-
-    .line 100
+    .line 64
     sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
     const/16 v1, 0xb
@@ -1536,20 +1477,73 @@
 
     move-result-object v0
 
-    .line 38
-    new-instance v1, Lcom/whatsapp/azb;
+    check-cast v0, Lcom/whatsapp/preference/WaPrivacyPreference;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/azb;-><init>(Lcom/whatsapp/SettingsPrivacy;)V
+    .line 34
+    iget-object v1, p0, Lcom/whatsapp/SettingsPrivacy;->l:Landroid/preference/Preference$OnPreferenceChangeListener;
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+
+    .line 18
+    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    const/16 v1, 0xd
+
+    aget-object v0, v0, v1
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/whatsapp/preference/WaPrivacyPreference;
+
+    .line 99
+    iget-object v1, p0, Lcom/whatsapp/SettingsPrivacy;->l:Landroid/preference/Preference$OnPreferenceChangeListener;
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaPrivacyPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+
+    .line 39
+    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    const/16 v1, 0xe
+
+    aget-object v0, v0, v1
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/whatsapp/g1;
+
+    invoke-direct {v1, p0}, Lcom/whatsapp/g1;-><init>(Lcom/whatsapp/SettingsPrivacy;)V
+
+    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+
+    .line 85
+    sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
+
+    const/16 v1, 0x9
+
+    aget-object v0, v0, v1
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v0
+
+    .line 50
+    new-instance v1, Lcom/whatsapp/a7a;
+
+    invoke-direct {v1, p0}, Lcom/whatsapp/a7a;-><init>(Lcom/whatsapp/SettingsPrivacy;)V
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
-    .line 49
-    invoke-direct {p0}, Lcom/whatsapp/SettingsPrivacy;->e()V
-
-    .line 108
-    invoke-static {}, Lcom/whatsapp/App;->aN()V
+    .line 81
+    invoke-direct {p0}, Lcom/whatsapp/SettingsPrivacy;->a()V
 
     .line 58
+    invoke-static {}, Lcom/whatsapp/App;->Q()V
+
+    .line 75
     return-void
 .end method
 
@@ -1557,24 +1551,24 @@
     .locals 2
 
     .prologue
-    .line 33
+    .line 1
     sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x18
+    const/4 v1, 0x4
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 27
+    .line 103
     invoke-super {p0}, Lcom/whatsapp/DialogToastPreferenceActivity;->onDestroy()V
 
-    .line 41
+    .line 52
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/whatsapp/SettingsPrivacy;->l:Lcom/whatsapp/SettingsPrivacy;
+    sput-object v0, Lcom/whatsapp/SettingsPrivacy;->j:Lcom/whatsapp/SettingsPrivacy;
 
-    .line 71
+    .line 45
     return-void
 .end method
 
@@ -1582,37 +1576,35 @@
     .locals 6
 
     .prologue
-    const v5, 0x7f0e0384
+    const v5, 0x7f0e0393
 
     const/4 v4, 0x1
 
     const/4 v3, 0x0
 
-    .line 77
+    .line 72
     invoke-super {p0}, Lcom/whatsapp/DialogToastPreferenceActivity;->onResume()V
 
-    .line 9
+    .line 44
     sget-object v0, Lcom/whatsapp/SettingsPrivacy;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x13
-
-    aget-object v0, v0, v1
+    aget-object v0, v0, v3
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsPrivacy;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
-    .line 15
-    sget-object v0, Lcom/whatsapp/App;->aN:Ljava/util/Hashtable;
+    .line 32
+    sget-object v0, Lcom/whatsapp/App;->aT:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->size()I
 
     move-result v0
 
-    .line 82
+    .line 74
     if-lez v0, :cond_0
 
-    .line 19
+    .line 12
     new-array v2, v4, [Ljava/lang/Object;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1625,15 +1617,15 @@
 
     move-result-object v0
 
-    sget-boolean v2, Lcom/whatsapp/App;->aL:Z
+    sget v2, Lcom/whatsapp/App;->h:I
 
     if-eqz v2, :cond_1
 
-    .line 91
+    .line 107
     :cond_0
     new-array v0, v4, [Ljava/lang/Object;
 
-    const v2, 0x7f0e0385
+    const v2, 0x7f0e0394
 
     invoke-virtual {p0, v2}, Lcom/whatsapp/SettingsPrivacy;->getString(I)Ljava/lang/String;
 
@@ -1645,10 +1637,10 @@
 
     move-result-object v0
 
-    .line 106
+    .line 37
     :cond_1
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 95
+    .line 24
     return-void
 .end method

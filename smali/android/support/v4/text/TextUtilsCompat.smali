@@ -18,7 +18,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 3
+    .line 12
     new-instance v0, Ljava/util/Locale;
 
     const-string v2, ""
@@ -29,8 +29,8 @@
 
     sput-object v0, Landroid/support/v4/text/TextUtilsCompat;->ROOT:Ljava/util/Locale;
 
-    .line 11
-    const-string v2, "D8\u0017q"
+    .line 6
+    const-string v2, "SF\u00055"
 
     const/4 v0, -0x1
 
@@ -61,11 +61,11 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 11
+    .line 6
     sput-object v2, Landroid/support/v4/text/TextUtilsCompat;->ARAB_SCRIPT_SUBTAG:Ljava/lang/String;
 
-    .line 4
-    const-string v0, "M/\u0014a"
+    .line 8
+    const-string v0, "ZQ\u0006%"
 
     move-object v2, v0
 
@@ -81,7 +81,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0x22
+    const/16 v2, 0xa
 
     :goto_2
     xor-int/2addr v2, v6
@@ -97,34 +97,32 @@
     goto :goto_1
 
     :pswitch_0
-    const/4 v2, 0x5
+    const/16 v2, 0x12
 
     goto :goto_2
 
     :pswitch_1
-    const/16 v2, 0x4a
+    const/16 v2, 0x34
 
     goto :goto_2
 
     :pswitch_2
-    const/16 v2, 0x76
+    const/16 v2, 0x64
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v2, 0x13
+    const/16 v2, 0x57
 
     goto :goto_2
 
-    .line 4
+    .line 8
     :pswitch_4
     sput-object v2, Landroid/support/v4/text/TextUtilsCompat;->HEBR_SCRIPT_SUBTAG:Ljava/lang/String;
 
     return-void
 
     .line 4294967295
-    nop
-
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_4
@@ -145,7 +143,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 12
+    .line 4
     invoke-virtual {p0, p0}, Ljava/util/Locale;->getDisplayName(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object v1
@@ -160,16 +158,17 @@
 
     packed-switch v1, :pswitch_data_0
 
-    .line 10
+    .line 11
     :goto_0
     return v0
 
+    .line 2
     :pswitch_0
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 12
+    .line 4
     nop
 
     :pswitch_data_0
@@ -187,7 +186,7 @@
     .end param
 
     .prologue
-    .line 5
+    .line 9
     if-eqz p0, :cond_2
 
     sget-object v0, Landroid/support/v4/text/TextUtilsCompat;->ROOT:Ljava/util/Locale;
@@ -198,7 +197,7 @@
 
     if-nez v0, :cond_2
 
-    .line 1
+    .line 7
     invoke-virtual {p0}, Ljava/util/Locale;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -211,17 +210,18 @@
 
     move-result-object v0
 
-    .line 9
+    .line 5
     if-nez v0, :cond_0
 
     invoke-static {p0}, Landroid/support/v4/text/TextUtilsCompat;->getLayoutDirectionFromFirstChar(Ljava/util/Locale;)I
 
     move-result v0
 
+    .line 10
     :goto_0
     return v0
 
-    .line 6
+    .line 1
     :cond_0
     sget-object v1, Landroid/support/v4/text/TextUtilsCompat;->ARAB_SCRIPT_SUBTAG:Ljava/lang/String;
 
@@ -239,13 +239,13 @@
 
     if-eqz v0, :cond_2
 
-    .line 8
+    .line 10
     :cond_1
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 2
+    .line 3
     :cond_2
     const/4 v0, 0x0
 

@@ -23,7 +23,7 @@
 
     new-array v6, v0, [Ljava/lang/String;
 
-    const-string v5, "\u000e\u000b\u000f\u0010o\u0008<\u0000\u000be\u000f\u0006\u001c"
+    const-string v5, "Og*\u000c\u0006\\l"
 
     const/4 v0, -0x1
 
@@ -61,7 +61,7 @@
 
     aput-object v5, v7, v6
 
-    const-string v0, "\t\u0006\u0002\u001b|\u0008<\u000f\u001dk\u0002\u0016\u0000\n"
+    const-string v0, "[p/\u001f\u0013ZJ\"\u0019\u0004P`-\u000e"
 
     move-object v5, v0
 
@@ -76,7 +76,7 @@
     :pswitch_0
     aput-object v5, v7, v6
 
-    const-string v0, "\u001d\u0011\u0007\u0008i\u000e\u001a"
+    const-string v0, "\\}\"\u0014\u0000ZJ-\u000f\n]p1"
 
     move-object v5, v0
 
@@ -91,7 +91,7 @@
     :pswitch_1
     aput-object v5, v7, v6
 
-    const-string v0, "\u000c\u0000\r\u0011}\u0003\u00171\u0017f\u000b\u000c"
+    const-string v0, "Qp7\r\u0008M~\u001c\u000f\u0014^r&"
 
     move-object v5, v0
 
@@ -108,7 +108,7 @@
 
     const/4 v5, 0x4
 
-    const-string v0, "\u0003\u0006\u001a\tg\u001f\u00081\u000b{\u000c\u0004\u000b"
+    const-string v0, "^v \u0015\u0012Qa\u001c\u0013\tYz"
 
     move v6, v5
 
@@ -134,7 +134,7 @@
 
     packed-switch v5, :pswitch_data_1
 
-    const/16 v5, 0x8
+    const/16 v5, 0x67
 
     :goto_2
     xor-int/2addr v5, v12
@@ -150,22 +150,22 @@
     goto :goto_1
 
     :pswitch_4
-    const/16 v5, 0x6d
+    const/16 v5, 0x3f
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v5, 0x63
+    const/16 v5, 0x15
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v5, 0x6e
+    const/16 v5, 0x43
 
     goto :goto_2
 
     :pswitch_7
-    const/16 v5, 0x7e
+    const/16 v5, 0x7a
 
     goto :goto_2
 
@@ -190,7 +190,7 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 4
     invoke-direct {p0}, Lcom/whatsapp/DialogToastPreferenceActivity;-><init>()V
 
     return-void
@@ -202,37 +202,20 @@
     .locals 2
 
     .prologue
-    .line 10
+    .line 3
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastPreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 7
-    sget-object v0, Lcom/whatsapp/adr;->ACCOUNT:Lcom/whatsapp/adr;
+    .line 10
+    sget-object v0, Lcom/whatsapp/fieldstats/bp;->ACCOUNT:Lcom/whatsapp/fieldstats/bp;
 
-    invoke-static {v0}, Lcom/whatsapp/a1s;->a(Lcom/whatsapp/adr;)V
+    invoke-static {v0}, Lcom/whatsapp/f3;->a(Lcom/whatsapp/fieldstats/bp;)V
 
-    .line 8
+    .line 6
     const v0, 0x7f050005
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsAccount;->addPreferencesFromResource(I)V
 
-    .line 4
-    sget-object v0, Lcom/whatsapp/SettingsAccount;->z:[Ljava/lang/String;
-
-    const/4 v1, 0x3
-
-    aget-object v0, v0, v1
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsAccount;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v0
-
-    new-instance v1, Lcom/whatsapp/x_;
-
-    invoke-direct {v1, p0}, Lcom/whatsapp/x_;-><init>(Lcom/whatsapp/SettingsAccount;)V
-
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
-
-    .line 6
+    .line 2
     sget-object v0, Lcom/whatsapp/SettingsAccount;->z:[Ljava/lang/String;
 
     const/4 v1, 0x4
@@ -243,16 +226,16 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/rj;
+    new-instance v1, Lcom/whatsapp/_b;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/rj;-><init>(Lcom/whatsapp/SettingsAccount;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/_b;-><init>(Lcom/whatsapp/SettingsAccount;)V
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
-    .line 3
+    .line 7
     sget-object v0, Lcom/whatsapp/SettingsAccount;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x3
 
     aget-object v0, v0, v1
 
@@ -260,26 +243,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/jn;
+    new-instance v1, Lcom/whatsapp/a5z;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/jn;-><init>(Lcom/whatsapp/SettingsAccount;)V
-
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
-
-    .line 2
-    sget-object v0, Lcom/whatsapp/SettingsAccount;->z:[Ljava/lang/String;
-
-    const/4 v1, 0x1
-
-    aget-object v0, v0, v1
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsAccount;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v0
-
-    new-instance v1, Lcom/whatsapp/ad0;
-
-    invoke-direct {v1, p0}, Lcom/whatsapp/ad0;-><init>(Lcom/whatsapp/SettingsAccount;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/a5z;-><init>(Lcom/whatsapp/SettingsAccount;)V
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -294,12 +260,46 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/e5;
+    new-instance v1, Lcom/whatsapp/ks;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/e5;-><init>(Lcom/whatsapp/SettingsAccount;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/ks;-><init>(Lcom/whatsapp/SettingsAccount;)V
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 1
+    sget-object v0, Lcom/whatsapp/SettingsAccount;->z:[Ljava/lang/String;
+
+    const/4 v1, 0x1
+
+    aget-object v0, v0, v1
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsAccount;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/whatsapp/j1;
+
+    invoke-direct {v1, p0}, Lcom/whatsapp/j1;-><init>(Lcom/whatsapp/SettingsAccount;)V
+
+    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+
+    .line 5
+    sget-object v0, Lcom/whatsapp/SettingsAccount;->z:[Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    aget-object v0, v0, v1
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsAccount;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/whatsapp/q0;
+
+    invoke-direct {v1, p0}, Lcom/whatsapp/q0;-><init>(Lcom/whatsapp/SettingsAccount;)V
+
+    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+
+    .line 8
     return-void
 .end method

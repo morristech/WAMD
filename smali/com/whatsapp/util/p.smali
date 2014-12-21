@@ -1,105 +1,55 @@
-.class Lcom/whatsapp/util/p;
-.super Ljava/lang/Object;
+.class public Lcom/whatsapp/util/p;
+.super Landroid/graphics/drawable/InsetDrawable;
 .source "p.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/util/FloatingChildLayout;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/util/FloatingChildLayout;)V
-    .locals 0
+.method public constructor <init>(Landroid/graphics/drawable/Drawable;)V
+    .locals 1
 
     .prologue
-    .line 5
-    iput-object p1, p0, Lcom/whatsapp/util/p;->a:Lcom/whatsapp/util/FloatingChildLayout;
+    .line 1
+    const/4 v0, 0x0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, v0}, Landroid/graphics/drawable/InsetDrawable;-><init>(Landroid/graphics/drawable/Drawable;I)V
 
+    .line 3
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
+.method public draw(Landroid/graphics/Canvas;)V
     .locals 4
 
     .prologue
-    .line 1
-    invoke-static {}, Lcom/whatsapp/util/FloatingChildLayout;->f()Z
+    .line 5
+    invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 8
-    iget-object v0, p0, Lcom/whatsapp/util/p;->a:Lcom/whatsapp/util/FloatingChildLayout;
-
-    invoke-static {v0}, Lcom/whatsapp/util/FloatingChildLayout;->a(Lcom/whatsapp/util/FloatingChildLayout;)Landroid/animation/ValueAnimator;
+    .line 6
+    invoke-virtual {p0}, Lcom/whatsapp/util/p;->getBounds()Landroid/graphics/Rect;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/util/p;->a:Lcom/whatsapp/util/FloatingChildLayout;
-
-    invoke-static {v1}, Lcom/whatsapp/util/FloatingChildLayout;->b(Lcom/whatsapp/util/FloatingChildLayout;)I
-
-    move-result v1
-
-    int-to-long v2, v1
-
-    invoke-virtual {v0, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
-
-    sget v0, Lcom/whatsapp/util/Log;->c:I
-
-    if-eqz v0, :cond_1
-
-    .line 7
-    :cond_0
-    new-instance v0, Landroid/view/animation/AlphaAnimation;
-
-    const/4 v1, 0x0
+    .line 4
+    const/high16 v1, -0x40800000
 
     const/high16 v2, 0x3f800000
 
-    invoke-direct {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
+    invoke-virtual {v0}, Landroid/graphics/Rect;->exactCenterX()F
 
-    .line 6
-    iget-object v1, p0, Lcom/whatsapp/util/p;->a:Lcom/whatsapp/util/FloatingChildLayout;
+    move-result v0
 
-    invoke-static {v1}, Lcom/whatsapp/util/FloatingChildLayout;->b(Lcom/whatsapp/util/FloatingChildLayout;)I
+    const/4 v3, 0x0
 
-    move-result v1
+    invoke-virtual {p1, v1, v2, v0, v3}, Landroid/graphics/Canvas;->scale(FFFF)V
 
-    int-to-long v2, v1
-
-    invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
-
-    .line 9
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setFillAfter(Z)V
-
-    .line 3
-    iget-object v1, p0, Lcom/whatsapp/util/p;->a:Lcom/whatsapp/util/FloatingChildLayout;
-
-    const/high16 v2, 0x7f000000
-
-    invoke-virtual {v1, v2}, Lcom/whatsapp/util/FloatingChildLayout;->setBackgroundColor(I)V
-
-    .line 4
-    iget-object v1, p0, Lcom/whatsapp/util/p;->a:Lcom/whatsapp/util/FloatingChildLayout;
-
-    invoke-virtual {v1, v0}, Lcom/whatsapp/util/FloatingChildLayout;->startAnimation(Landroid/view/animation/Animation;)V
+    .line 8
+    invoke-super {p0, p1}, Landroid/graphics/drawable/InsetDrawable;->draw(Landroid/graphics/Canvas;)V
 
     .line 2
-    :cond_1
+    invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
+
+    .line 7
     return-void
 .end method

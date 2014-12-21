@@ -21,7 +21,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "\u000fe|\u0010\u0017\re7\u0017\u0016\u000eny\nX\u0008nt\u001b\u0011\u000cns^\u0011\u0014+t\u0011\u0016\u0014nt\n\u0011\u000cbc\u0007X\u0008nt\u001b\u0011\u000cne^"
+    const-string v2, "\u0017HNiK\u0015H\u0005nJ\u0016CKs\u0004\u0010CFbM\u0014CA\'M\u000c\u0006FhJ\u000cCFsM\u0014OQ~\u0004\u0010CFbM\u0014CW\'"
 
     const/4 v0, -0x1
 
@@ -61,7 +61,7 @@
 
     const/4 v2, 0x1
 
-    const-string v0, "\u001bes\u000c\u0017\u0013o9\u0010\u001d\u000e%t\u0011\u0016\u0014%T164NT*1,BC\'\'9CV0??"
+    const-string v0, "\u0003HAuK\u000bB\u000biA\u0016\u0008FhJ\u000c\u0008fHj,cfSm4oq^{!ndIc\'"
 
     move v3, v2
 
@@ -87,7 +87,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0x78
+    const/16 v2, 0x24
 
     :goto_2
     xor-int/2addr v2, v9
@@ -103,24 +103,26 @@
     goto :goto_1
 
     :pswitch_1
-    const/16 v2, 0x7a
+    const/16 v2, 0x62
 
     goto :goto_2
 
     :pswitch_2
-    const/16 v2, 0xb
+    const/16 v2, 0x26
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v2, 0x17
+    const/16 v2, 0x25
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v2, 0x7e
+    const/4 v2, 0x7
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -140,7 +142,7 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 2
     iput-object p1, p0, Lcom/whatsapp/VerifySms$4;->a:Lcom/whatsapp/VerifySms;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -154,7 +156,7 @@
     .locals 3
 
     .prologue
-    .line 2
+    .line 1
     sget-object v0, Lcom/whatsapp/VerifySms$4;->z:[Ljava/lang/String;
 
     const/4 v1, 0x1
@@ -174,13 +176,13 @@
     .line 4
     iget-object v0, p0, Lcom/whatsapp/VerifySms$4;->a:Lcom/whatsapp/VerifySms;
 
-    invoke-static {v0}, Lcom/whatsapp/VerifySms;->b(Lcom/whatsapp/VerifySms;)V
+    invoke-static {v0}, Lcom/whatsapp/VerifySms;->g(Lcom/whatsapp/VerifySms;)V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 1
+    .line 3
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -206,7 +208,7 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
 
-    .line 3
+    .line 5
     :cond_1
     return-void
 .end method

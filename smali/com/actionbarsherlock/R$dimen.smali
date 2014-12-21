@@ -36,4 +36,4 @@
 
 .field public static final abs__search_view_text_min_width:I = 0x7f0a000f
 
-.field public static final action_button_min_width:I = 0x7f0a0060
+.field public static final action_button_min_width:I = 0x7f0a0062

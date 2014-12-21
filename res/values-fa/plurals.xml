@@ -122,9 +122,6 @@
     <plurals name="participants_remaining">
         <item quantity="other">%d باقی مانده</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">همه چیز آماده است. ما %,d پیام را بازیابی کردیم.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">در حال ارسال ویدئوی %1$d به %2$s</item>
     </plurals>

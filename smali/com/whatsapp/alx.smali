@@ -1,69 +1,56 @@
-.class synthetic Lcom/whatsapp/alx;
+.class Lcom/whatsapp/alx;
 .super Ljava/lang/Object;
 .source "alx.java"
 
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
 
-# static fields
-.field static final a:[I
+
+# instance fields
+.field final a:Lcom/whatsapp/a_y;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method constructor <init>(Lcom/whatsapp/a_y;)V
+    .locals 0
 
     .prologue
     .line 1
-    invoke-static {}, Lcom/whatsapp/dt;->values()[Lcom/whatsapp/dt;
+    iput-object p1, p0, Lcom/whatsapp/alx;->a:Lcom/whatsapp/a_y;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 2
+
+    .prologue
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/alx;->a:Lcom/whatsapp/a_y;
+
+    invoke-static {v0}, Lcom/whatsapp/a_y;->a(Lcom/whatsapp/a_y;)Landroid/app/Activity;
 
     move-result-object v0
 
-    array-length v0, v0
+    const/16 v1, 0x69
 
-    new-array v0, v0, [I
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->removeDialog(I)V
 
-    sput-object v0, Lcom/whatsapp/alx;->a:[I
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/alx;->a:Lcom/whatsapp/a_y;
 
-    :try_start_0
-    sget-object v0, Lcom/whatsapp/alx;->a:[I
+    invoke-static {v0}, Lcom/whatsapp/a_y;->a(Lcom/whatsapp/a_y;)Landroid/app/Activity;
 
-    sget-object v1, Lcom/whatsapp/dt;->AGREE_1:Lcom/whatsapp/dt;
+    move-result-object v0
 
-    invoke-virtual {v1}, Lcom/whatsapp/dt;->ordinal()I
+    const/16 v1, 0x6a
 
-    move-result v1
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->showDialog(I)V
 
-    const/4 v2, 0x1
-
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_1
-
-    :goto_0
-    :try_start_1
-    sget-object v0, Lcom/whatsapp/alx;->a:[I
-
-    sget-object v1, Lcom/whatsapp/dt;->AGREE_2:Lcom/whatsapp/dt;
-
-    invoke-virtual {v1}, Lcom/whatsapp/dt;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_0
-
-    :goto_1
+    .line 3
     return-void
-
-    :catch_0
-    move-exception v0
-
-    goto :goto_1
-
-    :catch_1
-    move-exception v0
-
-    goto :goto_0
 .end method

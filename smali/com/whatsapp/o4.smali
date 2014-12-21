@@ -1,40 +1,31 @@
 .class Lcom/whatsapp/o4;
-.super Lcom/whatsapp/util/at;
+.super Ljava/lang/Object;
 .source "o4.java"
 
 
 # instance fields
-.field final b:Lcom/whatsapp/ConversationRowMedia;
+.field a:J
+
+.field b:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ConversationRowMedia;)V
+.method private constructor <init>()V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/o4;->b:Lcom/whatsapp/ConversationRowMedia;
-
-    invoke-direct {p0}, Lcom/whatsapp/util/at;-><init>()V
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public a(Landroid/view/View;)V
-    .locals 2
+.method constructor <init>(Lcom/whatsapp/ky;)V
+    .locals 0
 
     .prologue
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/o4;->b:Lcom/whatsapp/ConversationRowMedia;
+    .line 2
+    invoke-direct {p0}, Lcom/whatsapp/o4;-><init>()V
 
-    iget-object v1, p0, Lcom/whatsapp/o4;->b:Lcom/whatsapp/ConversationRowMedia;
-
-    iget-object v1, v1, Lcom/whatsapp/ConversationRowMedia;->C:Lcom/whatsapp/protocol/ae;
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/ConversationRowMedia;->b(Lcom/whatsapp/protocol/ae;)V
-
-    .line 1
     return-void
 .end method

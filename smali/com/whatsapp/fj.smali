@@ -1,9 +1,6 @@
 .class Lcom/whatsapp/fj;
-.super Ljava/lang/Object;
+.super Landroid/os/CountDownTimer;
 .source "fj.java"
-
-# interfaces
-.implements Landroid/view/View$OnClickListener;
 
 
 # static fields
@@ -11,151 +8,134 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/Advanced;
+.field final a:Lcom/whatsapp/VerifySms;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 12
-
-    const/4 v3, 0x2
+    .locals 11
 
     const/4 v2, 0x1
 
     const/4 v1, 0x0
 
-    const/4 v0, 0x4
+    const/4 v0, 0x3
 
-    new-array v5, v0, [Ljava/lang/String;
+    new-array v4, v0, [Ljava/lang/String;
 
-    const-string v4, "\u001ek\u0012x\u0010\u000c*\u0015q\u0016"
+    const-string v3, "ND9 BND;\"BIH8#\u0000HU"
 
     const/4 v0, -0x1
 
-    move-object v6, v5
+    move-object v5, v4
 
-    move-object v7, v5
+    move-object v6, v4
 
-    move v5, v1
+    move v4, v1
 
     :goto_0
-    invoke-virtual {v4}, Ljava/lang/String;->toCharArray()[C
+    invoke-virtual {v3}, Ljava/lang/String;->toCharArray()[C
 
-    move-result-object v4
+    move-result-object v3
 
-    array-length v8, v4
+    array-length v7, v3
 
-    move v9, v8
+    move v8, v7
 
-    move v10, v1
+    move v9, v1
 
-    move-object v8, v4
+    move-object v7, v3
 
     :goto_1
-    if-gt v9, v10, :cond_0
+    if-gt v8, v9, :cond_0
 
-    new-instance v4, Ljava/lang/String;
+    new-instance v3, Ljava/lang/String;
 
-    invoke-direct {v4, v8}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v3, v7}, Ljava/lang/String;-><init>([C)V
 
-    invoke-virtual {v4}, Ljava/lang/String;->intern()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/String;->intern()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v3
 
     packed-switch v0, :pswitch_data_0
 
-    aput-object v4, v6, v5
+    aput-object v3, v5, v4
 
-    const-string v0, "8k\u0005r\u0007\u001dy\u0014`"
+    const-string v0, "KD\'/\tDR85@IH8#\u0000HUx \u0006S@9"
 
-    move-object v4, v0
+    move-object v3, v0
 
-    move v5, v2
+    move v4, v2
 
-    move-object v6, v7
+    move-object v5, v6
 
     move v0, v1
 
     goto :goto_0
 
     :pswitch_0
-    aput-object v4, v6, v5
+    aput-object v3, v5, v4
 
-    const-string v0, "\u000bk_w\u0007"
+    const/4 v3, 0x2
 
-    move-object v4, v0
+    const-string v0, "KD\'/\tDR85@IH8#\u0000HUu"
 
-    move v5, v3
+    move v4, v3
 
-    move-object v6, v7
+    move-object v5, v6
+
+    move-object v3, v0
 
     move v0, v2
 
     goto :goto_0
 
     :pswitch_1
-    aput-object v4, v6, v5
+    aput-object v3, v5, v4
 
-    const/4 v4, 0x3
-
-    const-string v0, "\u000ck\u0005{"
-
-    move v5, v4
-
-    move-object v6, v7
-
-    move-object v4, v0
-
-    move v0, v3
-
-    goto :goto_0
-
-    :pswitch_2
-    aput-object v4, v6, v5
-
-    sput-object v7, Lcom/whatsapp/fj;->z:[Ljava/lang/String;
+    sput-object v6, Lcom/whatsapp/fj;->z:[Ljava/lang/String;
 
     return-void
 
     :cond_0
-    aget-char v11, v8, v10
+    aget-char v10, v7, v9
 
-    rem-int/lit8 v4, v10, 0x5
+    rem-int/lit8 v3, v9, 0x5
 
-    packed-switch v4, :pswitch_data_1
+    packed-switch v3, :pswitch_data_1
 
-    const/16 v4, 0x65
+    const/16 v3, 0x6f
 
     :goto_2
-    xor-int/2addr v4, v11
+    xor-int/2addr v3, v10
 
-    int-to-char v4, v4
+    int-to-char v3, v3
 
-    aput-char v4, v8, v10
+    aput-char v3, v7, v9
 
-    add-int/lit8 v4, v10, 0x1
+    add-int/lit8 v3, v9, 0x1
 
-    move v10, v4
+    move v9, v3
 
     goto :goto_1
 
+    :pswitch_2
+    const/16 v3, 0x3d
+
+    goto :goto_2
+
     :pswitch_3
-    const/16 v4, 0x7c
+    const/16 v3, 0x21
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v4, 0xa
+    const/16 v3, 0x55
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v4, 0x71
-
-    goto :goto_2
-
-    :pswitch_6
-    const/16 v4, 0x13
+    const/16 v3, 0x46
 
     goto :goto_2
 
@@ -163,120 +143,235 @@
     .packed-switch 0x0
         :pswitch_0
         :pswitch_1
-        :pswitch_2
     .end packed-switch
 
     :pswitch_data_1
     .packed-switch 0x0
+        :pswitch_2
         :pswitch_3
         :pswitch_4
         :pswitch_5
-        :pswitch_6
     .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/whatsapp/Advanced;)V
+.method constructor <init>(Lcom/whatsapp/VerifySms;JJ)V
     .locals 0
 
     .prologue
-    .line 8
-    iput-object p1, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/Advanced;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2, p3, p4, p5}, Landroid/os/CountDownTimer;-><init>(JJ)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 7
+.method public onFinish()V
+    .locals 4
 
     .prologue
-    const/4 v1, 0x0
+    const/4 v3, 0x1
 
-    .line 7
-    sget-object v0, Lcom/whatsapp/fj;->z:[Ljava/lang/String;
+    .line 9
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    aget-object v0, v0, v1
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {v0}, Lcom/whatsapp/App;->x(Ljava/lang/String;)V
-
-    .line 1
-    :try_start_0
-    sget-object v0, Lcom/whatsapp/App;->l:Lcom/whatsapp/a2v;
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/whatsapp/a2v;->a(ZZZ)Ljava/lang/Boolean;
-
-    .line 6
-    invoke-static {}, Lcom/whatsapp/Conversation;->q()V
-
-    .line 4
-    new-instance v0, Landroid/content/ContentValues;
-
-    invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
-
-    .line 10
     sget-object v1, Lcom/whatsapp/fj;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x3
+    const/4 v2, 0x2
 
     aget-object v1, v1, v2
 
-    new-instance v2, Ljava/io/File;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    new-instance v3, Ljava/io/File;
+    move-result-object v0
 
-    sget-object v4, Lcom/whatsapp/App;->I:Ljava/io/File;
+    invoke-static {}, Lcom/whatsapp/VerifySms;->n()I
 
-    sget-object v5, Lcom/whatsapp/fj;->z:[Ljava/lang/String;
+    move-result v1
 
-    const/4 v6, 0x1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    aget-object v5, v5, v6
+    move-result-object v0
 
-    invoke-direct {v3, v4, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    sget-object v4, Lcom/whatsapp/fj;->z:[Ljava/lang/String;
+    move-result-object v0
 
-    const/4 v5, 0x2
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    aget-object v4, v4, v5
+    .line 3
+    invoke-static {}, Lcom/whatsapp/VerifySms;->n()I
 
-    invoke-direct {v2, v3, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    move-result v0
 
-    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    if-ne v0, v3, :cond_1
 
-    move-result-object v2
+    .line 7
+    const-string v0, ""
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    sget-object v1, Lcom/whatsapp/VerifyNumber;->p:Ljava/lang/String;
 
-    .line 9
-    iget-object v1, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/Advanced;
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {v1}, Lcom/whatsapp/Advanced;->getContentResolver()Landroid/content/ContentResolver;
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    sget-object v1, Lcom/whatsapp/fj;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/VerifySms;->g(Ljava/lang/String;)V
+
+    .line 17
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    invoke-static {v0}, Lcom/whatsapp/VerifySms;->o(Lcom/whatsapp/VerifySms;)V
+
+    sget v0, Lcom/whatsapp/App;->h:I
+
+    if-eqz v0, :cond_3
+
+    .line 15
+    :cond_1
+    iget-object v0, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    invoke-static {v0}, Lcom/whatsapp/VerifySms;->x(Lcom/whatsapp/VerifySms;)V
+
+    .line 2
+    sget-object v0, Lcom/whatsapp/fj;->z:[Ljava/lang/String;
+
+    aget-object v0, v0, v3
+
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    .line 14
+    iget-object v0, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    iget-boolean v0, v0, Lcom/whatsapp/VerifySms;->l:Z
+
+    if-nez v0, :cond_2
+
+    iget-object v0, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    invoke-virtual {v0}, Lcom/whatsapp/VerifySms;->isFinishing()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    .line 8
+    :cond_2
+    iget-object v0, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    invoke-virtual {v0}, Lcom/whatsapp/VerifySms;->h()V
+
+    .line 13
+    :cond_3
+    return-void
+.end method
+
+.method public onTick(J)V
+    .locals 7
+
+    .prologue
+    .line 16
+    iget-object v0, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    iget-object v1, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    invoke-static {v1}, Lcom/whatsapp/VerifySms;->b(Lcom/whatsapp/VerifySms;)J
+
+    move-result-wide v2
+
+    invoke-static {}, Lcom/whatsapp/VerifySms;->E()J
+
+    move-result-wide v4
+
+    add-long/2addr v2, v4
+
+    sub-long/2addr v2, p1
+
+    invoke-static {v0, v2, v3}, Lcom/whatsapp/VerifySms;->d(Lcom/whatsapp/VerifySms;J)J
+
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    invoke-static {v0}, Lcom/whatsapp/VerifySms;->d(Lcom/whatsapp/VerifySms;)Landroid/widget/ProgressBar;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    invoke-static {v1}, Lcom/whatsapp/VerifySms;->t(Lcom/whatsapp/VerifySms;)J
+
+    move-result-wide v2
+
+    long-to-double v2, v2
+
+    const-wide/high16 v4, 0x4059000000000000L
+
+    mul-double/2addr v2, v4
+
+    iget-object v1, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    invoke-static {v1}, Lcom/whatsapp/VerifySms;->a(Lcom/whatsapp/VerifySms;)J
+
+    move-result-wide v4
+
+    long-to-double v4, v4
+
+    div-double/2addr v2, v4
+
+    double-to-int v1, v2
+
+    invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setProgress(I)V
+
+    .line 10
+    invoke-static {p1, p2}, Lcom/whatsapp/VerifySms;->a(J)J
+
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    invoke-static {v0}, Lcom/whatsapp/VerifySms;->a(Lcom/whatsapp/VerifySms;)J
+
+    move-result-wide v0
+
+    iget-object v2, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    invoke-static {v2}, Lcom/whatsapp/VerifySms;->t(Lcom/whatsapp/VerifySms;)J
+
+    move-result-wide v2
+
+    sub-long/2addr v0, v2
+
+    const-wide/16 v2, 0x3e8
+
+    div-long/2addr v0, v2
+
+    invoke-static {v0, v1}, Landroid/text/format/DateUtils;->formatElapsedTime(J)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 12
+    iget-object v1, p0, Lcom/whatsapp/fj;->a:Lcom/whatsapp/VerifySms;
+
+    invoke-static {v1}, Lcom/whatsapp/VerifySms;->u(Lcom/whatsapp/VerifySms;)Landroid/widget/TextView;
 
     move-result-object v1
 
-    sget-object v2, Lcom/whatsapp/contact/ContactProvider;->a:Landroid/net/Uri;
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 2
-    :goto_0
+    .line 11
     return-void
-
-    .line 3
-    :catch_0
-    move-exception v0
-
-    goto :goto_0
 .end method

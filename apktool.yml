@@ -10,8 +10,8 @@ sdkInfo:
 packageInfo:
   forced-package-id: '127'
 versionInfo:
-  versionCode: '450206'
-  versionName: 2.11.473
+  versionCode: '450217'
+  versionName: 2.11.481
 compressionType: false
 unknownFiles:
   names.properties: '8'

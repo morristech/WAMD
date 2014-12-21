@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static a:I
+.field public static a:Z
 
 
 # direct methods
@@ -12,7 +12,7 @@
     .locals 2
 
     .prologue
-    .line 1
+    .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xd
@@ -22,7 +22,7 @@
     .line 2
     invoke-static {p0}, Landroid/support/v4/os/ParcelableCompatCreatorHoneycombMR2Stub;->instantiate(Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;)Landroid/os/Parcelable$Creator;
 
-    .line 3
+    .line 1
     :cond_0
     new-instance v0, Landroid/support/v4/os/ParcelableCompat$CompatCreator;
 

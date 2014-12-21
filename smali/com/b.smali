@@ -1,22 +1,14 @@
 .class public final Lcom/b;
-.super Ljava/security/SecureRandomSpi;
+.super Ljava/lang/Object;
 .source "b.java"
 
 
 # static fields
-.field private static final a:Ljava/lang/Object;
+.field public static a:Z
 
-.field private static c:Ljava/io/DataInputStream;
-
-.field private static d:Ljava/io/OutputStream;
-
-.field private static final e:Ljava/io/File;
+.field private static final b:[B
 
 .field private static final z:[Ljava/lang/String;
-
-
-# instance fields
-.field private b:Z
 
 
 # direct methods
@@ -24,21 +16,21 @@
     .locals 14
 
     .prologue
-    const/4 v5, 0x4
-
     const/4 v4, 0x3
 
     const/4 v3, 0x2
 
     const/4 v2, 0x1
 
+    const/16 v5, 0x9
+
     const/4 v1, 0x0
 
-    const/4 v0, 0x7
+    const/16 v0, 0x10
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "x\u007f/\u0016}Z>2\u00158L{\'\u001e8Xl)\u00178"
+    const-string v6, "n\u0003T\tlLBI\n)O\u0007S\u0000{I\u0016XEzM\u0007Y"
 
     const/4 v0, -0x1
 
@@ -76,7 +68,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "\u001ex)\u00088L{\'\u001eqPy"
+    const-string v0, "\u0007\u0006X\u0013&]\u0010\\\u000bmG\u000f"
 
     move-object v6, v0
 
@@ -91,7 +83,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "x\u007f/\u0016}Z>2\u00158Qn#\u00148"
+    const-string v0, "G\u0010ZKhX\u0003^\rl\u0006\n\\\u0017dG\u000cDKqF\u0007IKyZ\rK\u000cmM\u0010\u0013\u000fz[\u0007\u0013+h\\\u000bK\u0000JZ\u001bM\u0011f"
 
     move-object v6, v0
 
@@ -106,7 +98,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "Z{0\u0013{[>/\t8S\u007f(\u000f~_}2\u000fj[zf\u0018a\u001eM\'\u0017kKp!A8Kp\'\u0018t[>2\u00158M{#\u001e8nL\u0008=8Xw*\u001f8"
+    const-string v0, "}\u000cX\u001dyM\u0001I\u0000m\u0008\u000cH\u0008kM\u0010\u001d\no\u0008\u0000D\u0011l[BO\u0000hLB[\u0017fEBq\u000cg]\u001a\u001d5[f%\u0007E"
 
     move-object v6, v0
 
@@ -121,13 +113,15 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "M\u007f+\tmPy"
+    const/4 v6, 0x4
 
-    move-object v6, v0
+    const-string v0, "G\u0010ZKhX\u0003^\rl\u0006\n\\\u0017dG\u000cDKqF\u0007IKyZ\rK\u000cmM\u0010\u0013\u000fz[\u0007\u0013+h\\\u000bK\u0000JZ\u001bM\u0011f"
 
-    move v7, v5
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
 
     move v0, v4
 
@@ -136,9 +130,74 @@
     :pswitch_3
     aput-object v6, v8, v7
 
-    const/4 v6, 0x5
+    const/4 v7, 0x5
 
-    const-string v0, "Kp\'\u0018t[>2\u00158M{#\u001e8nL\u0008="
+    const-string v6, "z#s!V[\u0007X\u0001"
+
+    const/4 v0, 0x4
+
+    move-object v8, v9
+
+    goto :goto_0
+
+    :pswitch_4
+    aput-object v6, v8, v7
+
+    const/4 v7, 0x6
+
+    const-string v6, "z#s!VD\r\\\u0001VN\u000bQ\u0000"
+
+    const/4 v0, 0x5
+
+    move-object v8, v9
+
+    goto :goto_0
+
+    :pswitch_5
+    aput-object v6, v8, v7
+
+    const/4 v7, 0x7
+
+    const-string v6, "n\u0003T\tlLBI\n)[\u0007X\u0001)g\u0012X\u000bZ{.\u001d5[f%"
+
+    const/4 v0, 0x6
+
+    move-object v8, v9
+
+    goto :goto_0
+
+    :pswitch_6
+    aput-object v6, v8, v7
+
+    const/16 v7, 0x8
+
+    const-string v6, "}6{H1\u0008\u0007S\u0006fL\u000bS\u0002)F\rIEz]\u0012M\n{\\\u0007Y"
+
+    const/4 v0, 0x7
+
+    move-object v8, v9
+
+    goto :goto_0
+
+    :pswitch_7
+    aput-object v6, v8, v7
+
+    const-string v6, "}6{H1"
+
+    const/16 v0, 0x8
+
+    move v7, v5
+
+    move-object v8, v9
+
+    goto :goto_0
+
+    :pswitch_8
+    aput-object v6, v8, v7
+
+    const/16 v6, 0xa
+
+    const-string v0, "{\'o,Hd"
 
     move v7, v6
 
@@ -150,43 +209,82 @@
 
     goto :goto_0
 
-    :pswitch_4
+    :pswitch_9
     aput-object v6, v8, v7
 
-    const/4 v7, 0x6
+    const/16 v7, 0xb
 
-    const-string v6, "\u0011z#\u000c7Kl\'\u0014|Qs"
+    const-string v6, "{*|TYz,z"
 
-    const/4 v0, 0x5
+    const/16 v0, 0xa
 
     move-object v8, v9
 
     goto :goto_0
 
-    :pswitch_5
+    :pswitch_a
+    aput-object v6, v8, v7
+
+    const/16 v7, 0xc
+
+    const-string v6, "{*|TYz,zEgG\u0016\u001d\u0004\u007fI\u000bQ\u0004kD\u0007"
+
+    const/16 v0, 0xb
+
+    move-object v8, v9
+
+    goto/16 :goto_0
+
+    :pswitch_b
+    aput-object v6, v8, v7
+
+    const/16 v7, 0xd
+
+    const-string v6, "{\u0007^\u0010{M0\\\u000bmG\u000f\u0013\u0002l\\+S\u0016}I\u000c^\u0000!\n1u$8x0s\"+\u0001B_\u0004jC\u0007YEkQBJ\u0017fF\u0005\u001d5{G\u0014T\u0001lZX\u001d"
+
+    const/16 v0, 0xc
+
+    move-object v8, v9
+
+    goto/16 :goto_0
+
+    :pswitch_c
+    aput-object v6, v8, v7
+
+    const/16 v7, 0xe
+
+    const-string v6, "{\u0007^\u0010{M0\\\u000bmG\u000f\u00136AiSm7Go"
+
+    const/16 v0, 0xd
+
+    move-object v8, v9
+
+    goto/16 :goto_0
+
+    :pswitch_d
+    aput-object v6, v8, v7
+
+    const/16 v7, 0xf
+
+    const-string v6, "F\u0007JEZM\u0001H\u0017lz\u0003S\u0001fEJ\u0014EkI\u0001V\u0000m\u0008\u0000DE~Z\rS\u0002)x\u0010R\u0013`L\u0007O_)"
+
+    const/16 v0, 0xe
+
+    move-object v8, v9
+
+    goto/16 :goto_0
+
+    :pswitch_e
     aput-object v6, v8, v7
 
     sput-object v9, Lcom/b;->z:[Ljava/lang/String;
 
-    .line 32
-    new-instance v0, Ljava/io/File;
+    .line 44
+    invoke-static {}, Lcom/b;->c()[B
 
-    sget-object v1, Lcom/b;->z:[Ljava/lang/String;
+    move-result-object v0
 
-    const/4 v2, 0x6
-
-    aget-object v1, v1, v2
-
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lcom/b;->e:Ljava/io/File;
-
-    .line 31
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    sput-object v0, Lcom/b;->a:Ljava/lang/Object;
+    sput-object v0, Lcom/b;->b:[B
 
     return-void
 
@@ -198,7 +296,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x18
+    move v6, v5
 
     :goto_2
     xor-int/2addr v6, v13
@@ -211,29 +309,27 @@
 
     move v12, v6
 
-    goto :goto_1
+    goto/16 :goto_1
 
-    :pswitch_6
-    const/16 v6, 0x3e
-
-    goto :goto_2
-
-    :pswitch_7
-    const/16 v6, 0x1e
+    :pswitch_f
+    const/16 v6, 0x28
 
     goto :goto_2
 
-    :pswitch_8
-    const/16 v6, 0x46
+    :pswitch_10
+    const/16 v6, 0x62
 
     goto :goto_2
 
-    :pswitch_9
-    const/16 v6, 0x7a
+    :pswitch_11
+    const/16 v6, 0x3d
 
     goto :goto_2
 
-    nop
+    :pswitch_12
+    const/16 v6, 0x65
+
+    goto :goto_2
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -243,278 +339,209 @@
         :pswitch_3
         :pswitch_4
         :pswitch_5
-    .end packed-switch
-
-    :pswitch_data_1
-    .packed-switch 0x0
         :pswitch_6
         :pswitch_7
         :pswitch_8
         :pswitch_9
+        :pswitch_a
+        :pswitch_b
+        :pswitch_c
+        :pswitch_d
+        :pswitch_e
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_f
+        :pswitch_10
+        :pswitch_11
+        :pswitch_12
     .end packed-switch
 .end method
 
-.method public constructor <init>()V
-    .locals 0
+.method private static a()[B
+    .locals 4
 
     .prologue
-    .line 12
-    invoke-direct {p0}, Ljava/security/SecureRandomSpi;-><init>()V
+    .line 15
+    :try_start_0
+    new-instance v0, Ljava/io/ByteArrayOutputStream;
 
-    return-void
-.end method
-
-.method private a()Ljava/io/OutputStream;
-    .locals 3
-
-    .prologue
-    .line 9
-    sget-object v1, Lcom/b;->a:Ljava/lang/Object;
-
-    monitor-enter v1
+    invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
     .line 16
-    :try_start_0
-    sget-object v0, Lcom/b;->d:Ljava/io/OutputStream;
+    new-instance v1, Ljava/io/DataOutputStream;
 
-    if-nez v0, :cond_0
+    invoke-direct {v1, v0}, Ljava/io/DataOutputStream;-><init>(Ljava/io/OutputStream;)V
 
-    .line 41
-    new-instance v0, Ljava/io/FileOutputStream;
+    .line 36
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    sget-object v2, Lcom/b;->e:Ljava/io/File;
+    move-result-wide v2
 
-    invoke-direct {v0, v2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+    invoke-virtual {v1, v2, v3}, Ljava/io/DataOutputStream;->writeLong(J)V
 
-    sput-object v0, Lcom/b;->d:Ljava/io/OutputStream;
+    .line 26
+    invoke-static {}, Ljava/lang/System;->nanoTime()J
 
-    .line 27
-    :cond_0
-    sget-object v0, Lcom/b;->d:Ljava/io/OutputStream;
+    move-result-wide v2
 
-    monitor-exit v1
+    invoke-virtual {v1, v2, v3}, Ljava/io/DataOutputStream;->writeLong(J)V
 
-    return-object v0
+    .line 48
+    invoke-static {}, Landroid/os/Process;->myPid()I
 
-    .line 18
-    :catchall_0
-    move-exception v0
+    move-result v2
 
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {v1, v2}, Ljava/io/DataOutputStream;->writeInt(I)V
 
-    throw v0
-.end method
+    .line 43
+    invoke-static {}, Landroid/os/Process;->myUid()I
 
-.method private b()Ljava/io/DataInputStream;
-    .locals 6
+    move-result v2
 
-    .prologue
-    .line 2
-    sget-object v1, Lcom/b;->a:Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/io/DataOutputStream;->writeInt(I)V
 
-    monitor-enter v1
+    .line 52
+    sget-object v2, Lcom/b;->b:[B
 
-    .line 19
-    :try_start_0
-    sget-object v0, Lcom/b;->c:Ljava/io/DataInputStream;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {v1, v2}, Ljava/io/DataOutputStream;->write([B)V
 
-    if-nez v0, :cond_0
+    .line 50
+    invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
 
-    .line 30
-    :try_start_1
-    new-instance v0, Ljava/io/DataInputStream;
-
-    new-instance v2, Ljava/io/FileInputStream;
-
-    sget-object v3, Lcom/b;->e:Ljava/io/File;
-
-    invoke-direct {v2, v3}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
-
-    invoke-direct {v0, v2}, Ljava/io/DataInputStream;-><init>(Ljava/io/InputStream;)V
-
-    sput-object v0, Lcom/b;->c:Ljava/io/DataInputStream;
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 44
-    :cond_0
-    :try_start_2
-    sget-object v0, Lcom/b;->c:Ljava/io/DataInputStream;
-
-    monitor-exit v1
-
-    return-object v0
-
-    .line 1
-    :catch_0
-    move-exception v0
-
-    .line 5
-    new-instance v2, Ljava/lang/SecurityException;
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v4, Lcom/b;->z:[Ljava/lang/String;
-
-    const/4 v5, 0x2
-
-    aget-object v4, v4, v5
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    sget-object v4, Lcom/b;->e:Ljava/io/File;
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    sget-object v4, Lcom/b;->z:[Ljava/lang/String;
-
-    const/4 v5, 0x1
-
-    aget-object v4, v4, v5
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-direct {v2, v3, v0}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v2
-
-    .line 23
-    :catchall_0
-    move-exception v0
-
-    monitor-exit v1
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    throw v0
-.end method
-
-
-# virtual methods
-.method protected engineGenerateSeed(I)[B
-    .locals 1
-
-    .prologue
-    .line 20
-    new-array v0, p1, [B
-
-    .line 40
-    invoke-virtual {p0, v0}, Lcom/b;->engineNextBytes([B)V
-
-    .line 28
-    return-object v0
-.end method
-
-.method protected engineNextBytes([B)V
-    .locals 5
-
-    .prologue
-    sget v0, Lcom/c;->b:I
-
-    .line 14
-    :try_start_0
-    iget-boolean v1, p0, Lcom/b;->b:Z
-
-    if-nez v1, :cond_0
-
-    .line 35
-    invoke-static {}, Lcom/c;->g()[B
-
-    move-result-object v1
-
-    invoke-virtual {p0, v1}, Lcom/b;->engineSetSeed([B)V
+    .line 56
+    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 3
+    move-result-object v0
+
+    return-object v0
+
+    .line 58
+    :catch_0
+    move-exception v0
+
+    .line 7
+    new-instance v1, Ljava/lang/SecurityException;
+
+    sget-object v2, Lcom/b;->z:[Ljava/lang/String;
+
+    const/4 v3, 0x0
+
+    aget-object v2, v2, v3
+
+    invoke-direct {v1, v2, v0}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v1
+.end method
+
+.method private static b()V
+    .locals 5
+
+    .prologue
+    const/4 v2, 0x1
+
+    .line 13
+    :try_start_0
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    :try_end_0
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
+
+    const/16 v1, 0x12
+
+    if-le v0, v1, :cond_1
+
+    .line 47
     :cond_0
-    :try_start_1
-    sget-object v1, Lcom/b;->a:Ljava/lang/Object;
-
-    monitor-enter v1
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 10
-    :try_start_2
-    invoke-direct {p0}, Lcom/b;->b()Ljava/io/DataInputStream;
-
-    move-result-object v2
-
-    .line 8
-    monitor-exit v1
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 33
-    :try_start_3
-    monitor-enter v2
-    :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
-
-    .line 39
-    :try_start_4
-    invoke-virtual {v2, p1}, Ljava/io/DataInputStream;->readFully([B)V
-
-    .line 21
-    monitor-exit v2
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_1
-
-    .line 38
-    if-eqz v0, :cond_1
-
-    sget v0, Lcom/whatsapp/DialogToastActivity;->i:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    sput v0, Lcom/whatsapp/DialogToastActivity;->i:I
-
-    :cond_1
     return-void
 
-    .line 35
     :catch_0
     move-exception v0
 
     throw v0
 
+    .line 28
+    :cond_1
+    sget-object v0, Lcom/b;->z:[Ljava/lang/String;
+
+    const/16 v1, 0xe
+
+    aget-object v0, v0, v1
+
+    invoke-static {v0}, Ljava/security/Security;->getProviders(Ljava/lang/String;)[Ljava/security/Provider;
+
+    move-result-object v0
+
+    .line 32
+    if-eqz v0, :cond_2
+
+    :try_start_1
+    array-length v1, v0
+    :try_end_1
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_1 .. :try_end_1} :catch_2
+
+    if-lt v1, v2, :cond_2
+
+    :try_start_2
+    const-class v1, Lcom/c;
+
+    const/4 v2, 0x0
+
+    aget-object v0, v0, v2
+
     .line 8
-    :catchall_0
-    move-exception v0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    :try_start_5
-    monitor-exit v1
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+    move-result-object v0
 
-    :try_start_6
-    throw v0
-    :try_end_6
-    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_1
+    invoke-virtual {v1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    :try_end_2
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_2 .. :try_end_2} :catch_3
 
-    .line 17
-    :catch_1
-    move-exception v0
+    move-result v0
 
-    .line 4
+    if-nez v0, :cond_3
+
+    .line 9
+    :cond_2
+    :try_start_3
+    new-instance v0, Lcom/c;
+
+    invoke-direct {v0}, Lcom/c;-><init>()V
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Ljava/security/Security;->insertProviderAt(Ljava/security/Provider;I)I
+    :try_end_3
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_3 .. :try_end_3} :catch_4
+
+    .line 3
+    :cond_3
+    new-instance v0, Ljava/security/SecureRandom;
+
+    invoke-direct {v0}, Ljava/security/SecureRandom;-><init>()V
+
+    .line 41
+    :try_start_4
+    const-class v1, Lcom/c;
+
+    invoke-virtual {v0}, Ljava/security/SecureRandom;->getProvider()Ljava/security/Provider;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_4
+
+    .line 12
     new-instance v1, Ljava/lang/SecurityException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -523,7 +550,7 @@
 
     sget-object v3, Lcom/b;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x0
+    const/16 v4, 0xf
 
     aget-object v3, v3, v4
 
@@ -531,73 +558,15 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/b;->e:Ljava/io/File;
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2, v0}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v1
-
-    .line 21
-    :catchall_1
-    move-exception v0
-
-    :try_start_7
-    monitor-exit v2
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_1
-
-    :try_start_8
-    throw v0
-    :try_end_8
-    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_1
-.end method
-
-.method protected engineSetSeed([B)V
-    .locals 3
-
-    .prologue
-    .line 6
-    :try_start_0
-    sget-object v0, Lcom/b;->z:[Ljava/lang/String;
-
-    const/4 v1, 0x4
-
-    aget-object v0, v0, v1
-
-    sget-object v1, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 26
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v1, Lcom/b;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x3
-
-    aget-object v1, v1, v2
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/security/SecureRandom;->getProvider()Ljava/security/Provider;
 
     move-result-object v0
 
-    sget-object v1, Lcom/b;->e:Ljava/io/File;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -605,86 +574,520 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
 
-    .line 7
-    const/4 v0, 0x1
+    throw v1
+    :try_end_4
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_4 .. :try_end_4} :catch_1
 
-    iput-boolean v0, p0, Lcom/b;->b:Z
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    :catch_1
+    move-exception v0
+
+    throw v0
+
+    .line 32
+    :catch_2
+    move-exception v0
+
+    :try_start_5
+    throw v0
+    :try_end_5
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_5 .. :try_end_5} :catch_3
+
+    .line 8
+    :catch_3
+    move-exception v0
+
+    :try_start_6
+    throw v0
+    :try_end_6
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_6 .. :try_end_6} :catch_4
+
+    .line 9
+    :catch_4
+    move-exception v0
+
+    throw v0
+
+    .line 19
+    :cond_4
+    :try_start_7
+    sget-object v0, Lcom/b;->z:[Ljava/lang/String;
+
+    const/16 v1, 0xb
+
+    aget-object v0, v0, v1
+
+    invoke-static {v0}, Ljava/security/SecureRandom;->getInstance(Ljava/lang/String;)Ljava/security/SecureRandom;
+    :try_end_7
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_7 .. :try_end_7} :catch_6
+
+    move-result-object v0
+
+    .line 30
+    :try_start_8
+    const-class v1, Lcom/c;
+
+    invoke-virtual {v0}, Ljava/security/SecureRandom;->getProvider()Ljava/security/Provider;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 51
+    new-instance v1, Ljava/lang/SecurityException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v3, Lcom/b;->z:[Ljava/lang/String;
+
+    const/16 v4, 0xd
+
+    aget-object v3, v3, v4
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v0}, Ljava/security/SecureRandom;->getProvider()Ljava/security/Provider;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v1, v0}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+    :try_end_8
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_8 .. :try_end_8} :catch_5
+
+    :catch_5
+    move-exception v0
+
+    throw v0
+
+    .line 10
+    :catch_6
+    move-exception v0
+
+    .line 24
+    new-instance v1, Ljava/lang/SecurityException;
+
+    sget-object v2, Lcom/b;->z:[Ljava/lang/String;
+
+    const/16 v3, 0xc
+
+    aget-object v2, v2, v3
+
+    invoke-direct {v1, v2, v0}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v1
+.end method
+
+.method private static c()[B
+    .locals 3
+
+    .prologue
+    .line 23
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 39
+    sget-object v1, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
 
     .line 42
-    :goto_0
-    return-void
+    if-eqz v1, :cond_0
 
+    .line 5
+    :try_start_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :try_end_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 53
+    :cond_0
+    invoke-static {}, Lcom/b;->e()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 11
+    if-eqz v1, :cond_1
+
+    .line 54
+    :try_start_1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :try_end_1
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 57
+    :cond_1
+    :try_start_2
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/b;->z:[Ljava/lang/String;
+
+    const/16 v2, 0x9
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
+    :try_end_2
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_2 .. :try_end_2} :catch_2
+
+    move-result-object v0
+
+    return-object v0
+
+    .line 5
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 29
-    :cond_0
-    :try_start_1
-    sget-object v1, Lcom/b;->a:Ljava/lang/Object;
-
-    monitor-enter v1
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 25
-    :try_start_2
-    invoke-direct {p0}, Lcom/b;->a()Ljava/io/OutputStream;
-
-    move-result-object v0
-
-    .line 11
-    monitor-exit v1
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 24
-    :try_start_3
-    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write([B)V
-
-    .line 13
-    invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
-
-    .line 22
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/b;->b:Z
-    :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
-
-    goto :goto_0
-
-    .line 45
+    .line 54
     :catch_1
     move-exception v0
 
-    .line 37
+    throw v0
+
+    .line 1
+    :catch_2
+    move-exception v0
+
+    .line 55
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    sget-object v1, Lcom/b;->z:[Ljava/lang/String;
+
+    const/16 v2, 0x8
+
+    aget-object v1, v1, v2
+
+    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method private static d()V
+    .locals 7
+
+    .prologue
+    const/16 v6, 0x400
+
+    .line 31
+    :try_start_0
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x10
+
+    if-lt v0, v1, :cond_0
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    const/16 v1, 0x12
+
+    if-le v0, v1, :cond_1
+
+    .line 34
+    :cond_0
+    return-void
+
+    .line 31
+    :catch_0
+    move-exception v0
+
+    :try_start_1
+    throw v0
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 34
+    :catch_1
+    move-exception v0
+
+    throw v0
+
+    .line 21
+    :cond_1
+    :try_start_2
+    sget-object v0, Lcom/b;->z:[Ljava/lang/String;
+
+    const/4 v1, 0x2
+
+    aget-object v0, v0, v1
+
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v0
+
     sget-object v1, Lcom/b;->z:[Ljava/lang/String;
 
     const/4 v2, 0x5
 
     aget-object v1, v1, v2
 
-    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    const/4 v2, 0x1
 
-    goto :goto_0
+    new-array v2, v2, [Ljava/lang/Class;
 
-    .line 11
-    :catchall_0
+    const/4 v3, 0x0
+
+    const-class v4, [B
+
+    aput-object v4, v2, v3
+
+    .line 27
+    invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    .line 17
+    invoke-static {}, Lcom/b;->a()[B
+
+    move-result-object v4
+
+    aput-object v4, v2, v3
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 37
+    sget-object v0, Lcom/b;->z:[Ljava/lang/String;
+
+    const/4 v1, 0x4
+
+    aget-object v0, v0, v1
+
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/b;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x6
+
+    aget-object v1, v1, v2
+
+    const/4 v2, 0x2
+
+    new-array v2, v2, [Ljava/lang/Class;
+
+    const/4 v3, 0x0
+
+    const-class v4, Ljava/lang/String;
+
+    aput-object v4, v2, v3
+
+    const/4 v3, 0x1
+
+    sget-object v4, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
+
+    aput-object v4, v2, v3
+
+    .line 46
+    invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x2
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    sget-object v4, Lcom/b;->z:[Ljava/lang/String;
+
+    const/4 v5, 0x1
+
+    aget-object v4, v4, v5
+
+    aput-object v4, v2, v3
+
+    const/4 v3, 0x1
+
+    const/16 v4, 0x400
+
+    .line 59
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    aput-object v4, v2, v3
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Integer;
+
+    .line 14
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
+
+    move-result v0
+
+    .line 45
+    if-eq v0, v6, :cond_0
+
+    .line 22
+    :try_start_3
+    new-instance v1, Ljava/io/IOException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v3, Lcom/b;->z:[Ljava/lang/String;
+
+    const/4 v4, 0x3
+
+    aget-object v3, v3, v4
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
+
+    :catch_2
     move-exception v0
 
     :try_start_4
-    monitor-exit v1
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
-    :try_start_5
     throw v0
-    :try_end_5
-    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_1
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
+
+    .line 2
+    :catch_3
+    move-exception v0
+
+    .line 29
+    new-instance v1, Ljava/lang/SecurityException;
+
+    sget-object v2, Lcom/b;->z:[Ljava/lang/String;
+
+    const/4 v3, 0x7
+
+    aget-object v2, v2, v3
+
+    invoke-direct {v1, v2, v0}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v1
+.end method
+
+.method private static e()Ljava/lang/String;
+    .locals 4
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 20
+    :try_start_0
+    const-class v0, Landroid/os/Build;
+
+    sget-object v2, Lcom/b;->z:[Ljava/lang/String;
+
+    const/16 v3, 0xa
+
+    aget-object v2, v2, v3
+
+    invoke-virtual {v0, v2}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v0
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 25
+    :goto_0
+    return-object v0
+
+    .line 60
+    :catch_0
+    move-exception v0
+
+    move-object v0, v1
+
+    .line 25
+    goto :goto_0
+.end method
+
+.method static f()[B
+    .locals 1
+
+    .prologue
+    .line 49
+    invoke-static {}, Lcom/b;->a()[B
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static g()V
+    .locals 0
+
+    .prologue
+    .line 33
+    invoke-static {}, Lcom/b;->d()V
+
+    .line 18
+    invoke-static {}, Lcom/b;->b()V
+
+    .line 38
+    return-void
 .end method

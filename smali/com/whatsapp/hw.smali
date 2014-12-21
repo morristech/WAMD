@@ -7,20 +7,16 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;
-
-.field final b:Lcom/whatsapp/acz;
+.field final a:Lcom/whatsapp/nx;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/acz;Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;)V
+.method constructor <init>(Lcom/whatsapp/nx;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/hw;->b:Lcom/whatsapp/acz;
-
-    iput-object p2, p0, Lcom/whatsapp/hw;->a:Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;
+    .line 8
+    iput-object p1, p0, Lcom/whatsapp/hw;->a:Lcom/whatsapp/nx;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,33 +26,93 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 4
 
     .prologue
+    const/16 v3, 0x8
+
+    const/4 v2, 0x0
+
     .line 4
-    iget-object v0, p0, Lcom/whatsapp/hw;->b:Lcom/whatsapp/acz;
+    iget-object v0, p0, Lcom/whatsapp/hw;->a:Lcom/whatsapp/nx;
 
-    iget-object v0, v0, Lcom/whatsapp/acz;->a:Lcom/whatsapp/ConversationsFragment$DeleteAllMessagesDialogFragment;
+    iget-object v0, v0, Lcom/whatsapp/nx;->a:Lcom/whatsapp/WebSessionsActivity;
 
-    invoke-virtual {v0}, Lcom/whatsapp/ConversationsFragment$DeleteAllMessagesDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/whatsapp/App;->a(Landroid/app/Activity;)V
-
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/hw;->a:Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;
-
-    invoke-virtual {v0}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    invoke-static {v0}, Lcom/whatsapp/WebSessionsActivity;->d(Lcom/whatsapp/WebSessionsActivity;)Lcom/whatsapp/w2;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/aak;
+    invoke-static {}, Lcom/whatsapp/ow;->c()Ljava/util/List;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/aak;-><init>(Lcom/whatsapp/hw;)V
+    move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/support/v4/app/FragmentActivity;->runOnUiThread(Ljava/lang/Runnable;)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/w2;->a(Ljava/util/List;)V
+
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/hw;->a:Lcom/whatsapp/nx;
+
+    iget-object v0, v0, Lcom/whatsapp/nx;->a:Lcom/whatsapp/WebSessionsActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/WebSessionsActivity;->d(Lcom/whatsapp/WebSessionsActivity;)Lcom/whatsapp/w2;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/whatsapp/w2;->getCount()I
+
+    move-result v0
+
+    if-lez v0, :cond_0
+
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/hw;->a:Lcom/whatsapp/nx;
+
+    iget-object v0, v0, Lcom/whatsapp/nx;->a:Lcom/whatsapp/WebSessionsActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/WebSessionsActivity;->b(Lcom/whatsapp/WebSessionsActivity;)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 2
+    iget-object v0, p0, Lcom/whatsapp/hw;->a:Lcom/whatsapp/nx;
+
+    iget-object v0, v0, Lcom/whatsapp/nx;->a:Lcom/whatsapp/WebSessionsActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/WebSessionsActivity;->a(Lcom/whatsapp/WebSessionsActivity;)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    sget v0, Lcom/whatsapp/App;->h:I
+
+    if-eqz v0, :cond_1
+
+    .line 3
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/hw;->a:Lcom/whatsapp/nx;
+
+    iget-object v0, v0, Lcom/whatsapp/nx;->a:Lcom/whatsapp/WebSessionsActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/WebSessionsActivity;->b(Lcom/whatsapp/WebSessionsActivity;)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/hw;->a:Lcom/whatsapp/nx;
+
+    iget-object v0, v0, Lcom/whatsapp/nx;->a:Lcom/whatsapp/WebSessionsActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/WebSessionsActivity;->a(Lcom/whatsapp/WebSessionsActivity;)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+
+    .line 7
+    :cond_1
     return-void
 .end method

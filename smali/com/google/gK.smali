@@ -1,225 +1,251 @@
-.class public Lcom/google/gK;
+.class public final Lcom/google/gK;
 .super Ljava/lang/Object;
 .source "gK.java"
 
 
 # instance fields
-.field private final a:Z
+.field private final a:J
 
-.field final b:Lcom/google/aJ;
+.field private b:[Lcom/google/fE;
 
-.field private final c:Ljava/util/Iterator;
+.field private final c:Lcom/google/cs;
 
-.field private d:Ljava/util/Map$Entry;
+.field private d:Ljava/util/Map;
+
+.field private final e:Ljava/lang/String;
+
+.field private final f:[B
 
 
 # direct methods
-.method private constructor <init>(Lcom/google/aJ;Z)V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;[B[Lcom/google/fE;Lcom/google/cs;)V
+    .locals 8
 
     .prologue
-    .line 16
-    iput-object p1, p0, Lcom/google/gK;->b:Lcom/google/aJ;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 8
-    iget-object v0, p0, Lcom/google/gK;->b:Lcom/google/aJ;
-
-    invoke-static {v0}, Lcom/google/aJ;->a(Lcom/google/aJ;)Lcom/google/br;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/google/br;->h()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/google/gK;->c:Ljava/util/Iterator;
-
-    .line 3
-    iget-object v0, p0, Lcom/google/gK;->c:Ljava/util/Iterator;
-
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
     .line 1
-    iget-object v0, p0, Lcom/google/gK;->c:Ljava/util/Iterator;
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-wide v6
 
-    move-result-object v0
+    move-object v1, p0
 
-    check-cast v0, Ljava/util/Map$Entry;
+    move-object v2, p1
 
-    iput-object v0, p0, Lcom/google/gK;->d:Ljava/util/Map$Entry;
+    move-object v3, p2
 
-    .line 18
-    :cond_0
-    iput-boolean p2, p0, Lcom/google/gK;->a:Z
+    move-object v4, p3
 
-    .line 6
+    move-object v5, p4
+
+    invoke-direct/range {v1 .. v7}, Lcom/google/gK;-><init>(Ljava/lang/String;[B[Lcom/google/fE;Lcom/google/cs;J)V
+
+    .line 16
     return-void
 .end method
 
-.method constructor <init>(Lcom/google/aJ;ZLcom/google/gZ;)V
-    .locals 0
+.method public constructor <init>(Ljava/lang/String;[B[Lcom/google/fE;Lcom/google/cs;J)V
+    .locals 1
 
     .prologue
-    .line 10
-    invoke-direct {p0, p1, p2}, Lcom/google/gK;-><init>(Lcom/google/aJ;Z)V
+    .line 31
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 10
+    iput-object p1, p0, Lcom/google/gK;->e:Ljava/lang/String;
+
+    .line 21
+    iput-object p2, p0, Lcom/google/gK;->f:[B
+
+    .line 14
+    iput-object p3, p0, Lcom/google/gK;->b:[Lcom/google/fE;
+
+    .line 3
+    iput-object p4, p0, Lcom/google/gK;->c:Lcom/google/cs;
+
+    .line 13
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/google/gK;->d:Ljava/util/Map;
+
+    .line 5
+    iput-wide p5, p0, Lcom/google/gK;->a:J
+
+    .line 27
     return-void
 .end method
 
 
 # virtual methods
-.method public a(ILcom/google/e_;)V
+.method public a(Lcom/google/fk;Ljava/lang/Object;)V
+    .locals 2
+
+    .prologue
+    .line 9
+    iget-object v0, p0, Lcom/google/gK;->d:Ljava/util/Map;
+
+    if-nez v0, :cond_0
+
+    .line 32
+    new-instance v0, Ljava/util/EnumMap;
+
+    const-class v1, Lcom/google/fk;
+
+    invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
+
+    iput-object v0, p0, Lcom/google/gK;->d:Ljava/util/Map;
+
+    .line 4
+    :cond_0
+    iget-object v0, p0, Lcom/google/gK;->d:Ljava/util/Map;
+
+    invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 34
+    return-void
+.end method
+
+.method public a(Ljava/util/Map;)V
+    .locals 1
+
+    .prologue
+    .line 30
+    if-eqz p1, :cond_1
+
+    .line 28
+    iget-object v0, p0, Lcom/google/gK;->d:Ljava/util/Map;
+
+    if-nez v0, :cond_0
+
+    .line 8
+    iput-object p1, p0, Lcom/google/gK;->d:Ljava/util/Map;
+
+    sget v0, Lcom/google/fE;->c:I
+
+    if-eqz v0, :cond_1
+
+    .line 24
+    :cond_0
+    iget-object v0, p0, Lcom/google/gK;->d:Ljava/util/Map;
+
+    invoke-interface {v0, p1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
+
+    .line 22
+    :cond_1
+    return-void
+.end method
+
+.method public a([Lcom/google/fE;)V
     .locals 4
 
     .prologue
-    sget v2, Lcom/google/a8;->b:I
+    const/4 v3, 0x0
 
-    .line 13
-    :cond_0
-    iget-object v0, p0, Lcom/google/gK;->d:Ljava/util/Map$Entry;
+    .line 29
+    iget-object v0, p0, Lcom/google/gK;->b:[Lcom/google/fE;
 
-    if-eqz v0, :cond_6
+    .line 20
+    if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/gK;->d:Ljava/util/Map$Entry;
+    .line 7
+    iput-object p1, p0, Lcom/google/gK;->b:[Lcom/google/fE;
 
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/google/e9;
-
-    invoke-virtual {v0}, Lcom/google/e9;->a()I
-
-    move-result v0
-
-    if-ge v0, p1, :cond_6
-
-    .line 15
-    iget-object v0, p0, Lcom/google/gK;->d:Ljava/util/Map$Entry;
-
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/google/e9;
-
-    .line 12
-    iget-boolean v1, p0, Lcom/google/gK;->a:Z
-
-    if-eqz v1, :cond_2
-
-    invoke-virtual {v0}, Lcom/google/e9;->e()Lcom/google/z;
-
-    move-result-object v1
-
-    sget-object v3, Lcom/google/z;->MESSAGE:Lcom/google/z;
-
-    if-ne v1, v3, :cond_2
-
-    invoke-virtual {v0}, Lcom/google/e9;->d()Z
-
-    move-result v1
-
-    if-nez v1, :cond_2
-
-    .line 17
-    iget-object v1, p0, Lcom/google/gK;->d:Ljava/util/Map$Entry;
-
-    instance-of v1, v1, Lcom/google/aN;
+    sget v1, Lcom/google/fE;->c:I
 
     if-eqz v1, :cond_1
 
-    .line 5
-    invoke-virtual {v0}, Lcom/google/e9;->a()I
+    .line 26
+    :cond_0
+    if-eqz p1, :cond_1
 
-    move-result v3
+    array-length v1, p1
 
-    iget-object v1, p0, Lcom/google/gK;->d:Ljava/util/Map$Entry;
-
-    check-cast v1, Lcom/google/aN;
-
-    invoke-virtual {v1}, Lcom/google/aN;->a()Lcom/google/eU;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/google/eU;->a()Lcom/google/bO;
-
-    move-result-object v1
-
-    invoke-virtual {p2, v3, v1}, Lcom/google/e_;->d(ILcom/google/bO;)V
-
-    if-eqz v2, :cond_3
-
-    .line 7
-    :cond_1
-    invoke-virtual {v0}, Lcom/google/e9;->a()I
-
-    move-result v3
-
-    iget-object v1, p0, Lcom/google/gK;->d:Ljava/util/Map$Entry;
-
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/google/aO;
-
-    invoke-virtual {p2, v3, v1}, Lcom/google/e_;->d(ILcom/google/eE;)V
-
-    if-eqz v2, :cond_3
-
-    .line 9
-    :cond_2
-    iget-object v1, p0, Lcom/google/gK;->d:Ljava/util/Map$Entry;
-
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    invoke-static {v0, v1, p2}, Lcom/google/br;->a(Lcom/google/g1;Ljava/lang/Object;Lcom/google/e_;)V
-
-    .line 4
-    :cond_3
-    iget-object v0, p0, Lcom/google/gK;->c:Ljava/util/Iterator;
-
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    .line 19
-    iget-object v0, p0, Lcom/google/gK;->c:Ljava/util/Iterator;
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Map$Entry;
-
-    iput-object v0, p0, Lcom/google/gK;->d:Ljava/util/Map$Entry;
-
-    if-eqz v2, :cond_5
+    if-lez v1, :cond_1
 
     .line 11
-    :cond_4
-    const/4 v0, 0x0
+    array-length v1, v0
 
-    iput-object v0, p0, Lcom/google/gK;->d:Ljava/util/Map$Entry;
+    array-length v2, p1
 
-    .line 2
-    :cond_5
-    if-eqz v2, :cond_0
+    add-int/2addr v1, v2
 
-    .line 14
-    :cond_6
+    new-array v1, v1, [Lcom/google/fE;
+
+    .line 33
+    array-length v2, v0
+
+    invoke-static {v0, v3, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 19
+    array-length v0, v0
+
+    array-length v2, p1
+
+    invoke-static {p1, v3, v1, v0, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 15
+    iput-object v1, p0, Lcom/google/gK;->b:[Lcom/google/fE;
+
+    .line 23
+    :cond_1
     return-void
+.end method
+
+.method public a()[Lcom/google/fE;
+    .locals 1
+
+    .prologue
+    .line 2
+    iget-object v0, p0, Lcom/google/gK;->b:[Lcom/google/fE;
+
+    return-object v0
+.end method
+
+.method public b()[B
+    .locals 1
+
+    .prologue
+    .line 18
+    iget-object v0, p0, Lcom/google/gK;->f:[B
+
+    return-object v0
+.end method
+
+.method public c()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 12
+    iget-object v0, p0, Lcom/google/gK;->e:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public d()Ljava/util/Map;
+    .locals 1
+
+    .prologue
+    .line 17
+    iget-object v0, p0, Lcom/google/gK;->d:Ljava/util/Map;
+
+    return-object v0
+.end method
+
+.method public e()Lcom/google/cs;
+    .locals 1
+
+    .prologue
+    .line 25
+    iget-object v0, p0, Lcom/google/gK;->c:Lcom/google/cs;
+
+    return-object v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 6
+    iget-object v0, p0, Lcom/google/gK;->e:Ljava/lang/String;
+
+    return-object v0
 .end method

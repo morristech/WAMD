@@ -214,11 +214,6 @@ atlicis"</item>
         <item quantity="zero">%d atlikušas</item>
         <item quantity="one">%d atlikusi</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Varat turpināt. Mēs tikko atjaunojām %,d ziņas.</item>
-        <item quantity="zero">Varat turpināt. Mēs tikko atjaunojām %,d ziņas.</item>
-        <item quantity="one">Varat turpināt. Mēs tikko atjaunojām %,d ziņu.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Sūta %1$d video %2$s</item>
         <item quantity="zero">Sūta %1$d video %2$s</item>

@@ -19,7 +19,7 @@
 
     new-array v4, v0, [Ljava/lang/String;
 
-    const-string v3, "$%@w\r=>Hk\u000f==Lc\u00021>@q\n&3\u0006c\u0006!>[h\u001a"
+    const-string v3, "Hb\u001a"
 
     const/4 v0, -0x1
 
@@ -57,7 +57,7 @@
 
     aput-object v3, v5, v4
 
-    const-string v0, "8#M"
+    const-string v0, "Td\u0017V\\M\u007f\u001fJ^M|\u001bBSA\u007f\u0017P[VrQE@Gj\nC"
 
     move-object v3, v0
 
@@ -74,7 +74,7 @@
 
     const/4 v3, 0x2
 
-    const-string v0, "$%@w\r=>Hk\u000f==Lc\u00021>@q\n&3\u0006d\u00117+]b"
+    const-string v0, "Td\u0017V\\M\u007f\u001fJ^M|\u001bBSA\u007f\u0017P[VrQBWQ\u007f\u000cIK"
 
     move v4, v3
 
@@ -100,7 +100,7 @@
 
     packed-switch v3, :pswitch_data_1
 
-    const/16 v3, 0x63
+    const/16 v3, 0x32
 
     :goto_2
     xor-int/2addr v3, v10
@@ -116,26 +116,24 @@
     goto :goto_1
 
     :pswitch_2
-    const/16 v3, 0x52
+    const/16 v3, 0x22
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v3, 0x4a
+    const/16 v3, 0xb
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v3, 0x29
+    const/16 v3, 0x7e
 
     goto :goto_2
 
     :pswitch_5
-    const/4 v3, 0x7
+    const/16 v3, 0x26
 
     goto :goto_2
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -156,10 +154,10 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 4
     invoke-direct {p0}, Lcom/whatsapp/DialogToastFragmentActivity;-><init>()V
 
-    .line 2
+    .line 3
     return-void
 .end method
 
@@ -169,26 +167,26 @@
     .locals 3
 
     .prologue
-    .line 6
+    .line 1
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastFragmentActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 8
+    .line 9
     sget-object v0, Lcom/whatsapp/VoipNotAllowedActivity;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x2
+    const/4 v1, 0x1
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 4
+    .line 7
     invoke-virtual {p0}, Lcom/whatsapp/VoipNotAllowedActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
     sget-object v1, Lcom/whatsapp/VoipNotAllowedActivity;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     aget-object v1, v1, v2
 
@@ -208,7 +206,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/support/v4/app/DialogFragment;->show(Landroid/support/v4/app/FragmentManager;Ljava/lang/String;)V
 
-    .line 3
+    .line 5
     return-void
 .end method
 
@@ -216,18 +214,18 @@
     .locals 2
 
     .prologue
-    .line 7
+    .line 2
     invoke-super {p0}, Lcom/whatsapp/DialogToastFragmentActivity;->onDestroy()V
 
-    .line 9
+    .line 8
     sget-object v0, Lcom/whatsapp/VoipNotAllowedActivity;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x2
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 1
+    .line 6
     return-void
 .end method

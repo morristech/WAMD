@@ -1,34 +1,22 @@
-.class final Lcom/whatsapp/al0;
+.class Lcom/whatsapp/al0;
 .super Ljava/lang/Object;
 .source "al0.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Ljava/util/Comparator;
 
 
 # instance fields
-.field final a:Z
-
-.field final b:Ljava/lang/String;
-
-.field final c:Z
-
-.field final d:Z
+.field final a:Lcom/whatsapp/at9;
 
 
 # direct methods
-.method constructor <init>(ZLjava/lang/String;ZZ)V
+.method constructor <init>(Lcom/whatsapp/at9;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-boolean p1, p0, Lcom/whatsapp/al0;->c:Z
-
-    iput-object p2, p0, Lcom/whatsapp/al0;->b:Ljava/lang/String;
-
-    iput-boolean p3, p0, Lcom/whatsapp/al0;->d:Z
-
-    iput-boolean p4, p0, Lcom/whatsapp/al0;->a:Z
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/al0;->a:Lcom/whatsapp/at9;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,63 +25,42 @@
 
 
 # virtual methods
-.method public run()V
+.method public a(Lcom/whatsapp/PlaceInfo;Lcom/whatsapp/PlaceInfo;)I
     .locals 4
 
     .prologue
-    .line 3
-    iget-boolean v0, p0, Lcom/whatsapp/al0;->c:Z
-
-    if-eqz v0, :cond_0
-
-    .line 6
-    invoke-static {}, Lcom/whatsapp/App;->aC()Ljava/lang/Object;
-
-    move-result-object v1
-
-    monitor-enter v1
-
     .line 2
-    :try_start_0
-    iget-object v0, p0, Lcom/whatsapp/al0;->b:Ljava/lang/String;
+    iget-wide v0, p1, Lcom/whatsapp/PlaceInfo;->dist:D
 
-    iget-boolean v2, p0, Lcom/whatsapp/al0;->d:Z
+    iget-wide v2, p2, Lcom/whatsapp/PlaceInfo;->dist:D
 
-    iget-boolean v3, p0, Lcom/whatsapp/al0;->a:Z
+    cmpg-double v0, v0, v2
 
-    invoke-static {v0, v2, v3}, Lcom/whatsapp/App;->a(Ljava/lang/String;ZZ)V
+    if-gez v0, :cond_0
 
-    .line 5
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    const/4 v0, -0x1
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    :goto_0
+    return v0
 
-    if-eqz v0, :cond_1
-
-    .line 7
     :cond_0
-    iget-object v0, p0, Lcom/whatsapp/al0;->b:Ljava/lang/String;
+    const/4 v0, 0x1
 
-    iget-boolean v1, p0, Lcom/whatsapp/al0;->d:Z
+    goto :goto_0
+.end method
 
-    iget-boolean v2, p0, Lcom/whatsapp/al0;->a:Z
+.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 1
 
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/App;->a(Ljava/lang/String;ZZ)V
+    .prologue
+    .line 1
+    check-cast p1, Lcom/whatsapp/PlaceInfo;
 
-    .line 4
-    :cond_1
-    return-void
+    check-cast p2, Lcom/whatsapp/PlaceInfo;
 
-    .line 5
-    :catchall_0
-    move-exception v0
+    invoke-virtual {p0, p1, p2}, Lcom/whatsapp/al0;->a(Lcom/whatsapp/PlaceInfo;Lcom/whatsapp/PlaceInfo;)I
 
-    :try_start_1
-    monitor-exit v1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    move-result v0
 
-    throw v0
+    return v0
 .end method

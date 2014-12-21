@@ -3,20 +3,24 @@
 .source "th.java"
 
 # interfaces
-.implements Landroid/support/v4/view/ViewPager$OnPageChangeListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/atl;
+.field final a:I
+
+.field final b:Lcom/whatsapp/Conversation;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/atl;)V
+.method constructor <init>(Lcom/whatsapp/Conversation;I)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/th;->a:Lcom/whatsapp/atl;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/th;->b:Lcom/whatsapp/Conversation;
+
+    iput p2, p0, Lcom/whatsapp/th;->a:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,66 +29,60 @@
 
 
 # virtual methods
-.method public onPageScrollStateChanged(I)V
-    .locals 0
+.method public run()V
+    .locals 4
 
     .prologue
-    .line 8
-    return-void
-.end method
+    const/4 v3, 0x0
 
-.method public onPageScrolled(IFI)V
-    .locals 0
+    .line 9
+    iget-object v0, p0, Lcom/whatsapp/th;->b:Lcom/whatsapp/Conversation;
 
-    .prologue
-    .line 3
-    return-void
-.end method
+    iget-object v0, v0, Lcom/whatsapp/Conversation;->M:Landroid/widget/ListView;
 
-.method public onPageSelected(I)V
-    .locals 2
+    invoke-virtual {v0, v3}, Landroid/widget/ListView;->setTranscriptMode(I)V
 
-    .prologue
-    .line 4
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 7
+    iget-object v0, p0, Lcom/whatsapp/th;->b:Lcom/whatsapp/Conversation;
+
+    iget-object v0, v0, Lcom/whatsapp/Conversation;->aB:Lcom/whatsapp/i5;
+
+    invoke-static {v0}, Lcom/whatsapp/i5;->a(Lcom/whatsapp/i5;)I
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    .line 5
+    iget-object v1, p0, Lcom/whatsapp/th;->b:Lcom/whatsapp/Conversation;
+
+    invoke-static {v1}, Lcom/whatsapp/Conversation;->q(Lcom/whatsapp/Conversation;)Landroid/view/View;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
 
     .line 6
-    invoke-static {p1}, Lcom/whatsapp/atl;->c(I)I
+    add-int/lit8 v0, v0, 0x1
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
-
-    if-eqz v0, :cond_1
-
-    .line 7
+    .line 8
     :cond_0
-    iget-object v0, p0, Lcom/whatsapp/th;->a:Lcom/whatsapp/atl;
+    iget-object v1, p0, Lcom/whatsapp/th;->b:Lcom/whatsapp/Conversation;
 
-    invoke-static {v0}, Lcom/whatsapp/atl;->e(Lcom/whatsapp/atl;)[Lcom/whatsapp/c3;
+    iget-object v1, v1, Lcom/whatsapp/Conversation;->M:Landroid/widget/ListView;
 
-    move-result-object v0
+    iget v2, p0, Lcom/whatsapp/th;->a:I
 
-    array-length v0, v0
+    invoke-virtual {v1, v0, v2}, Landroid/widget/ListView;->setSelectionFromTop(II)V
 
-    add-int/lit8 v0, v0, -0x1
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/th;->b:Lcom/whatsapp/Conversation;
 
-    sub-int/2addr v0, p1
-
-    invoke-static {v0}, Lcom/whatsapp/atl;->c(I)I
+    invoke-static {v0, v3}, Lcom/whatsapp/Conversation;->l(Lcom/whatsapp/Conversation;Z)Z
 
     .line 2
-    :cond_1
-    iget-object v0, p0, Lcom/whatsapp/th;->a:Lcom/whatsapp/atl;
+    iget-object v0, p0, Lcom/whatsapp/th;->b:Lcom/whatsapp/Conversation;
 
-    invoke-static {}, Lcom/whatsapp/atl;->e()I
+    invoke-static {v0, v3}, Lcom/whatsapp/Conversation;->b(Lcom/whatsapp/Conversation;Z)Z
 
-    move-result v1
-
-    invoke-static {v0, v1}, Lcom/whatsapp/atl;->a(Lcom/whatsapp/atl;I)V
-
-    .line 5
+    .line 4
     return-void
 .end method

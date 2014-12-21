@@ -1,274 +1,260 @@
-.class Lcom/whatsapp/_o;
+.class public Lcom/whatsapp/_o;
 .super Ljava/lang/Object;
 .source "_o.java"
 
-# interfaces
-.implements Landroid/view/ViewTreeObserver$OnPreDrawListener;
+
+# static fields
+.field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/MediaView;
+.field public a:I
 
-.field final b:I
+.field public b:[B
 
-.field final c:Landroid/view/View;
-
-.field final d:I
-
-.field final e:I
-
-.field final f:I
+.field public c:[B
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/MediaView;Landroid/view/View;IIII)V
+.method static constructor <clinit>()V
+    .locals 11
+
+    const/4 v2, 0x1
+
+    const/4 v1, 0x0
+
+    const/4 v0, 0x3
+
+    new-array v4, v0, [Ljava/lang/String;
+
+    const-string v3, "9$F/\u0001\u000e)W\u001e#\u001b8`\t\u001b\u000b-FL3\u001d.V\tU"
+
+    const/4 v0, -0x1
+
+    move-object v5, v4
+
+    move-object v6, v4
+
+    move v4, v1
+
+    :goto_0
+    invoke-virtual {v3}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v3
+
+    array-length v7, v3
+
+    move v8, v7
+
+    move v9, v1
+
+    move-object v7, v3
+
+    :goto_1
+    if-gt v8, v9, :cond_0
+
+    new-instance v3, Ljava/lang/String;
+
+    invoke-direct {v3, v7}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v3}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v3
+
+    packed-switch v0, :pswitch_data_0
+
+    aput-object v3, v5, v4
+
+    const-string v0, "RaY\t\u0011C"
+
+    move-object v3, v0
+
+    move v4, v2
+
+    move-object v5, v6
+
+    move v0, v1
+
+    goto :goto_0
+
+    :pswitch_0
+    aput-object v3, v5, v4
+
+    const/4 v3, 0x2
+
+    const-string v0, "RaS\u000f\u000b\u00114\\\u0018 \u001f2ZQ"
+
+    move v4, v3
+
+    move-object v5, v6
+
+    move-object v3, v0
+
+    move v0, v2
+
+    goto :goto_0
+
+    :pswitch_1
+    aput-object v3, v5, v4
+
+    sput-object v6, Lcom/whatsapp/_o;->z:[Ljava/lang/String;
+
+    return-void
+
+    :cond_0
+    aget-char v10, v7, v9
+
+    rem-int/lit8 v3, v9, 0x5
+
+    packed-switch v3, :pswitch_data_1
+
+    const/16 v3, 0x68
+
+    :goto_2
+    xor-int/2addr v3, v10
+
+    int-to-char v3, v3
+
+    aput-char v3, v7, v9
+
+    add-int/lit8 v3, v9, 0x1
+
+    move v9, v3
+
+    goto :goto_1
+
+    :pswitch_2
+    const/16 v3, 0x7e
+
+    goto :goto_2
+
+    :pswitch_3
+    const/16 v3, 0x41
+
+    goto :goto_2
+
+    :pswitch_4
+    const/16 v3, 0x32
+
+    goto :goto_2
+
+    :pswitch_5
+    const/16 v3, 0x6c
+
+    goto :goto_2
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+        :pswitch_5
+    .end packed-switch
+.end method
+
+.method public constructor <init>(I[B[B)V
     .locals 0
 
     .prologue
-    .line 9
-    iput-object p1, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    iput-object p2, p0, Lcom/whatsapp/_o;->c:Landroid/view/View;
-
-    iput p3, p0, Lcom/whatsapp/_o;->e:I
-
-    iput p4, p0, Lcom/whatsapp/_o;->b:I
-
-    iput p5, p0, Lcom/whatsapp/_o;->f:I
-
-    iput p6, p0, Lcom/whatsapp/_o;->d:I
-
+    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
+    iput p1, p0, Lcom/whatsapp/_o;->a:I
+
+    .line 7
+    iput-object p2, p0, Lcom/whatsapp/_o;->b:[B
+
+    .line 4
+    iput-object p3, p0, Lcom/whatsapp/_o;->c:[B
+
+    .line 1
     return-void
 .end method
 
 
 # virtual methods
-.method public onPreDraw()Z
-    .locals 6
+.method public toString()Ljava/lang/String;
+    .locals 3
 
     .prologue
-    const/4 v5, 0x1
+    .line 5
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    const/high16 v4, 0x40000000
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/_o;->c:Landroid/view/View;
+    sget-object v1, Lcom/whatsapp/_o;->z:[Ljava/lang/String;
 
-    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    const/4 v2, 0x0
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+    iget v1, p0, Lcom/whatsapp/_o;->a:I
 
-    .line 12
-    const/4 v0, 0x2
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    new-array v0, v0, [I
+    move-result-object v0
 
-    .line 1
-    iget-object v1, p0, Lcom/whatsapp/_o;->c:Landroid/view/View;
+    sget-object v1, Lcom/whatsapp/_o;->z:[Ljava/lang/String;
 
-    invoke-virtual {v1, v0}, Landroid/view/View;->getLocationOnScreen([I)V
+    const/4 v2, 0x1
 
-    .line 14
-    iget-object v1, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
+    aget-object v1, v1, v2
 
-    iget v2, p0, Lcom/whatsapp/_o;->e:I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v3, 0x0
+    move-result-object v0
 
-    aget v3, v0, v3
+    iget-object v1, p0, Lcom/whatsapp/_o;->b:[B
 
-    sub-int/2addr v2, v3
+    invoke-static {v1}, Ljava/util/Arrays;->toString([B)Ljava/lang/String;
 
-    invoke-static {v1, v2}, Lcom/whatsapp/MediaView;->i(Lcom/whatsapp/MediaView;I)I
+    move-result-object v1
 
-    .line 10
-    iget-object v1, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lcom/whatsapp/_o;->b:I
+    move-result-object v0
 
-    aget v0, v0, v5
+    sget-object v1, Lcom/whatsapp/_o;->z:[Ljava/lang/String;
 
-    sub-int v0, v2, v0
+    const/4 v2, 0x2
 
-    invoke-static {v1, v0}, Lcom/whatsapp/MediaView;->f(Lcom/whatsapp/MediaView;I)I
+    aget-object v1, v1, v2
 
-    .line 16
-    iget-object v0, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/whatsapp/_o;->f:I
+    move-result-object v0
 
-    int-to-float v1, v1
+    iget-object v1, p0, Lcom/whatsapp/_o;->c:[B
 
-    iget-object v2, p0, Lcom/whatsapp/_o;->c:Landroid/view/View;
+    .line 2
+    invoke-static {v1}, Ljava/util/Arrays;->toString([B)Ljava/lang/String;
 
-    invoke-virtual {v2}, Landroid/view/View;->getWidth()I
+    move-result-object v1
 
-    move-result v2
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    int-to-float v2, v2
+    move-result-object v0
 
-    div-float/2addr v1, v2
+    const-string v1, "]"
 
-    invoke-static {v0, v1}, Lcom/whatsapp/MediaView;->a(Lcom/whatsapp/MediaView;F)F
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 15
-    iget-object v0, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
+    move-result-object v0
 
-    iget v1, p0, Lcom/whatsapp/_o;->d:I
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    int-to-float v1, v1
+    move-result-object v0
 
-    iget-object v2, p0, Lcom/whatsapp/_o;->c:Landroid/view/View;
-
-    invoke-virtual {v2}, Landroid/view/View;->getHeight()I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    div-float/2addr v1, v2
-
-    invoke-static {v0, v1}, Lcom/whatsapp/MediaView;->b(Lcom/whatsapp/MediaView;F)F
-
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    invoke-static {v0}, Lcom/whatsapp/MediaView;->j(Lcom/whatsapp/MediaView;)F
-
-    move-result v0
-
-    iget-object v1, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    invoke-static {v1}, Lcom/whatsapp/MediaView;->u(Lcom/whatsapp/MediaView;)F
-
-    move-result v1
-
-    cmpg-float v0, v0, v1
-
-    if-gez v0, :cond_0
-
-    .line 13
-    iget-object v0, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    iget-object v1, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    invoke-static {v1}, Lcom/whatsapp/MediaView;->u(Lcom/whatsapp/MediaView;)F
-
-    move-result v1
-
-    invoke-static {v0, v1}, Lcom/whatsapp/MediaView;->a(Lcom/whatsapp/MediaView;F)F
-
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/_o;->c:Landroid/view/View;
-
-    invoke-virtual {v0}, Landroid/view/View;->getWidth()I
-
-    move-result v0
-
-    int-to-float v0, v0
-
-    iget-object v1, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    invoke-static {v1}, Lcom/whatsapp/MediaView;->j(Lcom/whatsapp/MediaView;)F
-
-    move-result v1
-
-    mul-float/2addr v0, v1
-
-    .line 6
-    iget-object v1, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    iget-object v2, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    invoke-static {v2}, Lcom/whatsapp/MediaView;->f(Lcom/whatsapp/MediaView;)I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    iget v3, p0, Lcom/whatsapp/_o;->f:I
-
-    int-to-float v3, v3
-
-    sub-float/2addr v0, v3
-
-    div-float/2addr v0, v4
-
-    sub-float v0, v2, v0
-
-    float-to-int v0, v0
-
-    invoke-static {v1, v0}, Lcom/whatsapp/MediaView;->i(Lcom/whatsapp/MediaView;I)I
-
-    .line 8
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
-
-    if-eqz v0, :cond_1
-
-    .line 18
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    iget-object v1, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    invoke-static {v1}, Lcom/whatsapp/MediaView;->j(Lcom/whatsapp/MediaView;)F
-
-    move-result v1
-
-    invoke-static {v0, v1}, Lcom/whatsapp/MediaView;->b(Lcom/whatsapp/MediaView;F)F
-
-    .line 17
-    iget-object v0, p0, Lcom/whatsapp/_o;->c:Landroid/view/View;
-
-    invoke-virtual {v0}, Landroid/view/View;->getHeight()I
-
-    move-result v0
-
-    int-to-float v0, v0
-
-    iget-object v1, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    invoke-static {v1}, Lcom/whatsapp/MediaView;->u(Lcom/whatsapp/MediaView;)F
-
-    move-result v1
-
-    mul-float/2addr v0, v1
-
-    .line 11
-    iget-object v1, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    iget-object v2, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    invoke-static {v2}, Lcom/whatsapp/MediaView;->s(Lcom/whatsapp/MediaView;)I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    iget v3, p0, Lcom/whatsapp/_o;->d:I
-
-    int-to-float v3, v3
-
-    sub-float/2addr v0, v3
-
-    div-float/2addr v0, v4
-
-    sub-float v0, v2, v0
-
-    float-to-int v0, v0
-
-    invoke-static {v1, v0}, Lcom/whatsapp/MediaView;->f(Lcom/whatsapp/MediaView;I)I
-
-    .line 4
-    :cond_1
-    iget-object v0, p0, Lcom/whatsapp/_o;->a:Lcom/whatsapp/MediaView;
-
-    invoke-static {v0}, Lcom/whatsapp/MediaView;->n(Lcom/whatsapp/MediaView;)V
-
-    .line 3
-    return v5
+    return-object v0
 .end method

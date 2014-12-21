@@ -30,12 +30,12 @@
     .prologue
     const/4 v3, 0x2
 
-    .line 1
+    .line 17
     sget-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->FIRSTSTRONG_LTR:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     sput-object v0, Landroid/support/v4/text/BidiFormatter;->DEFAULT_TEXT_DIRECTION_HEURISTIC:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
-    .line 16
+    .line 13
     const/16 v0, 0x200e
 
     invoke-static {v0}, Ljava/lang/Character;->toString(C)Ljava/lang/String;
@@ -44,7 +44,7 @@
 
     sput-object v0, Landroid/support/v4/text/BidiFormatter;->LRM_STRING:Ljava/lang/String;
 
-    .line 6
+    .line 10
     const/16 v0, 0x200f
 
     invoke-static {v0}, Ljava/lang/Character;->toString(C)Ljava/lang/String;
@@ -53,7 +53,7 @@
 
     sput-object v0, Landroid/support/v4/text/BidiFormatter;->RLM_STRING:Ljava/lang/String;
 
-    .line 4
+    .line 11
     new-instance v0, Landroid/support/v4/text/BidiFormatter;
 
     const/4 v1, 0x0
@@ -64,7 +64,7 @@
 
     sput-object v0, Landroid/support/v4/text/BidiFormatter;->DEFAULT_LTR_INSTANCE:Landroid/support/v4/text/BidiFormatter;
 
-    .line 7
+    .line 5
     new-instance v0, Landroid/support/v4/text/BidiFormatter;
 
     const/4 v1, 0x1
@@ -82,19 +82,19 @@
     .locals 0
 
     .prologue
-    .line 18
+    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
+    .line 2
     iput-boolean p1, p0, Landroid/support/v4/text/BidiFormatter;->mIsRtlContext:Z
 
-    .line 15
+    .line 6
     iput p2, p0, Landroid/support/v4/text/BidiFormatter;->mFlags:I
 
-    .line 8
+    .line 3
     iput-object p3, p0, Landroid/support/v4/text/BidiFormatter;->mDefaultTextDirectionHeuristicCompat:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
-    .line 3
+    .line 1
     return-void
 .end method
 
@@ -102,7 +102,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 12
     invoke-direct {p0, p1, p2, p3}, Landroid/support/v4/text/BidiFormatter;-><init>(ZILandroid/support/v4/text/TextDirectionHeuristicCompat;)V
 
     return-void
@@ -112,7 +112,7 @@
     .locals 1
 
     .prologue
-    .line 13
+    .line 4
     invoke-static {p0}, Landroid/support/v4/text/BidiFormatter;->isRtlLocale(Ljava/util/Locale;)Z
 
     move-result v0
@@ -124,7 +124,7 @@
     .locals 1
 
     .prologue
-    .line 9
+    .line 15
     sget-object v0, Landroid/support/v4/text/BidiFormatter;->DEFAULT_TEXT_DIRECTION_HEURISTIC:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     return-object v0
@@ -134,7 +134,7 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 14
     sget-object v0, Landroid/support/v4/text/BidiFormatter;->DEFAULT_RTL_INSTANCE:Landroid/support/v4/text/BidiFormatter;
 
     return-object v0
@@ -144,7 +144,7 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 18
     sget-object v0, Landroid/support/v4/text/BidiFormatter;->DEFAULT_LTR_INSTANCE:Landroid/support/v4/text/BidiFormatter;
 
     return-object v0
@@ -154,7 +154,7 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 16
     new-instance v0, Landroid/support/v4/text/BidiFormatter$Builder;
 
     invoke-direct {v0}, Landroid/support/v4/text/BidiFormatter$Builder;-><init>()V
@@ -172,7 +172,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 12
+    .line 9
     invoke-static {p0}, Landroid/support/v4/text/TextUtilsCompat;->getLayoutDirectionFromLocale(Ljava/util/Locale;)I
 
     move-result v1
@@ -194,7 +194,7 @@
     .locals 3
 
     .prologue
-    .line 5
+    .line 8
     iget-object v0, p0, Landroid/support/v4/text/BidiFormatter;->mDefaultTextDirectionHeuristicCompat:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     const/4 v1, 0x0

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="account_expired_alert">Shërbimi juaj nga WhatsApp për %1$s ka skaduar më %2$s. Doni ta bleni përsëri?</string>
+    <string name="account_expired_alert">Shëbimi yt WhatsApp për %1$s mbaroi më %2$s. Dëshiron ta blesh përsëri?</string>
     <string name="account_info_account_num">Numri telefonit</string>
     <string name="account_info_check_eligibility">Duke kontrolluar kriteret...</string>
     <string name="account_info_confirm_continue_with_purchase">Doni ende të blini shërbimin?</string>
@@ -19,8 +19,8 @@
     <string name="account_sync_add">Ju lutemi, prisni ndërsa shtojmë llogarinë tuaj</string>
     <string name="account_sync_authenticating">Duke verifikuar</string>
     <string name="account_sync_summary_column">WhatsApp</string>
-    <string name="activity_not_found">Ju ndoshta nuk keni një program të duhur për të shikuar këtë përmbajtje</string>
-    <string name="add_anonymous_contact_with_no_displayname">Ju sapo keni shtuar një kontakt pa e emëruar atë</string>
+    <string name="activity_not_found">Ndoshta nuk ke programin e duhur për të parë këtë përmbajtje</string>
+    <string name="add_anonymous_contact_with_no_displayname">Ti sapo shtove një kontakt pa e emëruar</string>
     <string name="add_broadcast_recipient">Shto marrës...</string>
     <string name="add_caption">Shto përshkrim</string>
     <string name="add_contact">Shto tek kontaktet</string>
@@ -52,6 +52,7 @@
     <string name="android_wear_see_you_soon">Shihemi së shpejti</string>
     <string name="android_wear_thanks">Faleminderit</string>
     <string name="android_wear_yes">Po</string>
+    <string name="answer_the_call">Përgjigju</string>
     <string name="archive_all_chats">Ruaj të gjitha bisedat</string>
     <string name="archive_all_chats_ask">Jeni i sigurt që doni të ruani TË GJITHA bisedat?</string>
     <string name="archive_broadcast">Ruaj listën e transmetimit</string>
@@ -59,7 +60,7 @@
     <string name="archived_chats">Bisedat e ruajtura</string>
     <string name="archived_chats_count">Bisedat e ruajtura (%d)</string>
     <string name="assign_to_contact">Caktoja kontaktit</string>
-    <string name="attach">Shto</string>
+    <string name="attach">Bashkëngjit</string>
     <string name="attach_audio">Audio</string>
     <string name="attach_contact">Kontakt</string>
     <string name="attach_location">Vendndodhja</string>
@@ -71,8 +72,6 @@
     <string name="audio_note_tip">Mbajeni shtypur për të regjistruar, lëshoni për dërgim</string>
     <string name="audio_note_tip_2">Ju lutemi, regjistroni një mesazh më të gjatë</string>
     <string name="audio_note_top_mic_tip">Ju lutemi, flisni mbi mikrofonin sipër telefonit tuaj</string>
-    <string name="barcode_scanner_dialog_body">Ky aplikacion kërkon një skaner barkodi. Dëshironi të instaloni një?</string>
-    <string name="barcode_scanner_dialog_title">Të instalohet Skaneri i Barkodit?</string>
     <string name="block">Blloko</string>
     <string name="block_ask">Jeni i sigurt që doni të bllokoni këtë kontakt?</string>
     <string name="block_list_desc_1">"Shtypni ikonën në cepin e djathtë sipër për të përzgjedhur një kontakt për të bllokuar.
@@ -106,9 +105,11 @@ Vetëm kontaktet me %s në bllokun e tyre të adresave, do të marrin mesazhet t
     <string name="camera_shortcut">Kamera e WhatsApp</string>
     <string name="camera_title">Dërgo video ose foto WhatsApp</string>
     <string name="camera_video_preview_title">Dërgo video WhatsApp</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">Për të kryer telefonatë në WhatsApp, fik fillimisht modalitetin aeroplan.</string>
+    <string name="can_not_start_voip_call_in_phone_call">Nuk mund të kryesh telefonatë në WhatsApp nëse je duke folur.</string>
     <string name="cancel">Anulo</string>
     <string name="cannot_send_not_a_group_participant">"Nuk mund t'i dërgoni mesazhe këtij grupi, sepse nuk jeni më anëtar."</string>
-    <string name="cannot_send_selected_file">Nuk mund të dërgohet materiali. Zgjodhët materialin e gabuar ose formati nuk përballohet.</string>
+    <string name="cannot_send_selected_file">Nuk mund të dërgohet materiali. Zgjodhe materialin e gabuar ose formati nuk përballohet.</string>
     <string name="cannot_send_to_blocked_contact_1">"Nuk mund t'i dërgohet mesazh kontaktit të bllokuar %s."</string>
     <string name="cannot_send_to_group_not_member">"GABIM: nuk mund t'i dërgoni këtij grupi, nuk jeni anëtar"</string>
     <string name="cannot_share_selected_file">Ky material nuk mund të shpërndahet.</string>
@@ -117,11 +118,11 @@ Vetëm kontaktet me %s në bllokun e tyre të adresave, do të marrin mesazhet t
     <string name="change_number_new_country_code_suggestion">Meqënëse po ndryshoni shtetin, ndryshoni ndonjë numër telefoni vendas në bllokun tuaj të adresave, që të ketë format ndërkombëtar lidhur me prefiksin shtetëror.</string>
     <string name="change_number_new_number">Ju lutemi, shkruani prefiksin tuaj të ri të shtetit dhe numrin e telefonit:</string>
     <string name="change_number_old_number">Ju lutemi, shkruani prefiksin e vjetër të shtetit tuaj dhe numrin e telefonit:</string>
-    <string name="change_number_overview">"Ndryshimi i numrit tuaj të telefonit tuaj do të transferojë të dhënat e llogarisë suaj, grupet dhe përcaktimet. 
+    <string name="change_number_overview">"Ndryshimi i numrit tënd të telefonit do të transferojë të dhënat e llogarisë sate, grupet dhe përcaktimet. 
 
- Përpara se të vazhdoni, ju lutemi, konfirmoni që mund të merrni SMS ose telefonata në numrin tuaj të ri. 
+ Përpara se të vazhdosh, të lutemi, konfirmo që mund të marrësh SMS ose telefonata në numrin tënd të ri. 
 
-Nëse keni edhe numër edhe telefon të ri, fillimisht ndryshoni numrin tuaj në telefonin tuaj të vjetër."</string>
+Nëse ke edhe numër është telefon të ri, fillimisht ndrysho numrin në telefonin tënd të vjetër."</string>
     <string name="change_number_same_number">Numri yt i vjetër dhe i ri janë njësoj.</string>
     <string name="change_number_success">Numri yt i telefonit ndryshoi me sukses nga %1$s në %2$s.</string>
     <string name="change_number_title">Ndryshoni numrin</string>
@@ -132,11 +133,12 @@ Nëse keni edhe numër edhe telefon të ri, fillimisht ndryshoni numrin tuaj në
     <string name="check_system_status">Kontrolloni gjendjen</string>
     <string name="choose_action">Përzgjidh një veprim</string>
     <string name="clear_all_chats">Të fshihen të gjitha bisedat</string>
-    <string name="clear_all_chats_ask">A jeni i sigurt që doni të fshini mesazhet në TË GJITHA bisedat?</string>
+    <string name="clear_all_chats_ask">A je i sigurt që do të fshish TË GJITHA bisedat?</string>
     <string name="clear_call_log">Fshi listën e thirrjeve</string>
     <string name="clear_call_log_ask">A dëshironi ta fshini të gjithë regjistrin e thirrjeve?</string>
-    <string name="clock_wrong">Data në telefonin tuaj është e pasaktë! Rregulloni orën dhe provoni përsëri.</string>
-    <string name="clock_wrong_report_current_date_time">"Data dhe ora e telefonit tuaj është: 
+    <string name="clear_single_log">Hiq nga lista e thirrjeve.</string>
+    <string name="clock_wrong">Data në telefonin tënd është e pasaktë! Rregullo orën dhe provo përsëri.</string>
+    <string name="clock_wrong_report_current_date_time">"Data dhe ora e telefonit tënd është: 
 %1$s
 (%2$s)"</string>
     <string name="close">Mbylle</string>
@@ -157,8 +159,8 @@ Nëse keni edhe numër edhe telefon të ri, fillimisht ndryshoni numrin tuaj në
     <string name="confirm_sharing_title">Shperndaje me %s?</string>
     <string name="connectivity_self_help_instructions">Ju lutemi, fikeni dhe ndizeni telefonin nëse problemi me lidhjen vazhdon.</string>
     <string name="contact">Kontakti</string>
-    <string name="contact1">Na kontaktoni</string>
-    <string name="contact2">Pyetje? Ju duhet ndihmë?</string>
+    <string name="contact1">Na kontakto</string>
+    <string name="contact2">Pyetje? Të duhet ndihmë?</string>
     <string name="contact_added">%1$s iu shtua kontakteve tuaja.</string>
     <string name="contact_added_already">%1$s është tashmë një kontakt.</string>
     <string name="contact_avatar_image">Kontaktoni Imazhin e Personazhit</string>
@@ -166,7 +168,7 @@ Nëse keni edhe numër edhe telefon të ri, fillimisht ndryshoni numrin tuaj në
     <string name="contact_name">emri i kontaktit...</string>
     <string name="contact_other_phones">Telefona të tjerë</string>
     <string name="contact_phone">Telefon</string>
-    <string name="contact_picker_choose_chat">Zgjidhni bisedën</string>
+    <string name="contact_picker_choose_chat">Zgjidh bisedën</string>
     <string name="contact_picker_choose_group">Përzgjidh grupin</string>
     <string name="contact_picker_no_wa_contacts">Asnjë kontakt WhatsApp</string>
     <string name="contact_picker_no_wa_groups">Asnjë grup i WhatsApp</string>
@@ -179,13 +181,13 @@ Nëse keni edhe numër edhe telefon të ri, fillimisht ndryshoni numrin tuaj në
     <string name="contacts_help_bullet">•</string>
     <string name="contacts_help_contacts_updated">Kontaktet janë përditësuar.</string>
     <string name="contacts_help_diagnostics_button_name">Shfaq kontaktet e padukshme</string>
-    <string name="contacts_help_diagnostics_description">Shtypni “Shfaq kontaktet e padukshme” për të parë cilët kontakte janë të padukshëm.</string>
+    <string name="contacts_help_diagnostics_description">Shtyp “Shfaq kontaktet e padukshme” për të parë cilët kontakte janë të padukshëm.</string>
     <string name="contacts_help_diagnostics_error">E pamundur të kërkohet për kontaktet tuaja të padukshme. Ju lutemi, provoni përsëri më vonë. Nëse ky problem vazhdon, rindizni telefonin tuaj dhe provoni përsëri.</string>
     <string name="contacts_help_diagnostics_result_count">Kontakte të padukshme: %d</string>
-    <string name="contacts_help_instructions">"Në qoftë se disa nga miqtë nuk iu shfaqen në listën tuaj të kontakteve, ju këshillojmë t'i ndiqni hapat në vazhdim"</string>
+    <string name="contacts_help_instructions">Nëse disa nga miqtë e tu nuk shfaqen në listën e kontakteve, të këshillojmë të ndjekësh këto hapa:</string>
     <string name="contacts_help_no_invisible_contacts">Nuk ka kontakte të fshehura</string>
     <string name="contacts_help_step_1">Sigurohuni që numri i telefonit të mikut tuaj të jetë në bllokun të adresave.</string>
-    <string name="contacts_help_step_2">Sigurohuni që miku juaj po përdor WhatsApp Messenger</string>
+    <string name="contacts_help_step_2">Sigurohu që miku yt po përdor WhatsApp Messenger</string>
     <string name="contacts_help_step_3">Në bllokun tuaj të adresave Android, sigurohuni që llogaritë e kontakteve (p.sh. SIM, Google, Telefon) të jenë “të dukshme” ose “të shikueshme”</string>
     <string name="contacts_help_step_4">Në bllokun tuaj të adresave Android, sigurohuni që të gjitha grupet e kontaktit (p.sh. Miq, Familja) të jenë “të dukshme” ose “të shikueshme ”</string>
     <string name="contacts_help_step_5">"Ju këshillojmë t'i bëni kontaktet tuaja “të padukshme” dhe pastaj “të dukshme” për të detyruar rifreskimin. Pasi të bëni këtë, nisni WhatsApp > butonin menu > E Re > butonin menu > Rifresko."</string>
@@ -199,11 +201,11 @@ Nëse keni edhe numër edhe telefon të ri, fillimisht ndryshoni numrin tuaj në
     <string name="conversation_contact_online">në linjë</string>
     <string name="conversation_download_audio">Shkarko audion</string>
     <string name="conversation_is_composing">duke shkruar...</string>
-    <string name="conversation_is_recording">duke incizuar audio...</string>
+    <string name="conversation_is_recording">duke incizuar...</string>
     <string name="conversation_last_seen">parë së fundmi</string>
     <string name="conversation_menu_forward">Përcill</string>
     <string name="conversation_name_is_composing">%s po shkruan...</string>
-    <string name="conversation_name_is_recording">%s po incizon audio...</string>
+    <string name="conversation_name_is_recording">%s po incizon</string>
     <string name="conversations_most_recent_audio">Audio</string>
     <string name="conversations_most_recent_call">Thirr</string>
     <string name="conversations_most_recent_call_incoming_length">Thirrje Hyrëse (%s)</string>
@@ -212,7 +214,7 @@ Nëse keni edhe numër edhe telefon të ri, fillimisht ndryshoni numrin tuaj në
     <string name="conversations_most_recent_contact">Kontakti</string>
     <string name="conversations_most_recent_image">Imazh</string>
     <string name="conversations_most_recent_location">vendi</string>
-    <string name="conversations_most_recent_unknown">Lloj i panjohur i mesazhit</string>
+    <string name="conversations_most_recent_unknown">Lloj mesazhi i panjohur</string>
     <string name="conversations_most_recent_video">Video</string>
     <string name="conversations_most_recent_voice">Shënim zanor</string>
     <string name="copy">Kopjo</string>
@@ -220,27 +222,27 @@ Nëse keni edhe numër edhe telefon të ri, fillimisht ndryshoni numrin tuaj në
     <string name="corrupt_installation_description">WhatsApp ka një problem dhe duhet të instalohet sërish. Prek butonin më poshtë për të shkuar në Play Store, çinstalo WhatsApp dhe instaloje sërish.</string>
     <string name="corrupt_installation_description_website_distribution">WhatsApp ka një problem dhe duhet instaluar sërish. Prekni butonin më poshtë për të çinstaluar WhatsApp. Pastaj, vizitoni &lt;a href=\"%s\">whatsapp.com&lt;/a> për të shkarkuar dhe instaluar WhatsApp sërish.</string>
     <string name="create">Krijo</string>
-    <string name="crop">Priteni</string>
+    <string name="crop">Prit</string>
     <string name="current_status">Gjendja juaj e tanishme</string>
-    <string name="custom_rom_detected">Ju keni të instaluar një ROM të personalizuar. ROM-et e personalizuara mund të shkaktojnë probleme nga WhatsApp Messenger dhe janë të papërballlueshme nga skuadra jonë e shërbimit ndaj klientit.</string>
+    <string name="custom_rom_detected">Ke të instaluar një ROM të personalizuar. ROM-et e personalizuara mund të shkaktojnë probleme nga WhatsApp Messenger dhe janë të papërballlueshme nga skuadra jonë e shërbimit ndaj klientit.</string>
     <string name="custom_rom_info">Dihet se disa ROM-e të personalizuara shkaktojnë probleme në mënyrën e futjes së të dhënave në tastierë, njoftimet Cloud ne pajisje (C2DM), si dhe në dërgimin në kohë dhe me saktësi të mesazheve. Gjithashtu, shumë ROM-e të personalizuara janë të pajisur me aftësi procesvrasëse, të cilët shkaktojnë të njëjtat probleme si procesvrasësit e palëve të treta. Ju lutemi, kuptoni se ROM-et e personalizuara nuk përballohen nga WhatsApp dhe se ju i përdorni ato duke marrë përsipër rreziqet që paraqesin.</string>
     <string name="default_wallpaper">Standard</string>
-    <string name="delete">Fshij</string>
+    <string name="delete">Fshi</string>
     <string name="delete_account_change_number_question">Doni të ndryshoni numër më mirë?</string>
     <string name="delete_account_done">Llogaria juaj WhatsApp është fshirë.</string>
-    <string name="delete_account_failed">E pamundur të fshihet llogaria juaj. Ju lutemi, provoni përsëri më vonë.</string>
+    <string name="delete_account_failed">E pamundur të fshihet llogaria jote. Të lutem, provo përsëri më vonë.</string>
     <string name="delete_account_header">Nëse fshini llogarinë tuaj do të:</string>
     <string name="delete_account_instructions">Për të fshirë llogarinë tuaj,konfirmoni prefiksin e vendit tuaj dhe shkruani numrin tuaj të telefonit.</string>
     <string name="delete_account_item_1">Fshini llogarinë tuaj nga WhatsApp</string>
-    <string name="delete_account_item_2">Fshini historinë tuaj të mesazheve</string>
-    <string name="delete_account_item_3">Hiqni veten nga të gjitha grupet tuaja WhatsApp</string>
+    <string name="delete_account_item_2">Fshi historikun tënd të mesazheve</string>
+    <string name="delete_account_item_3">Hiq veten nga të gjitha grupet e tua WhatsApp</string>
     <string name="delete_account_mismatch">Numri i telefonit që ke dhënë, nuk përputhet me llogarinë tënde.</string>
     <string name="delete_account_paid">Fshi informacionin e shërbimit të pagesës WhatsApp</string>
     <string name="delete_account_processing">Duke fshirë...</string>
-    <string name="delete_account_warning">Të vijohet me fshirjen e llogarisë suaj? Është e pamundur të zhbëhet ky veprim! Nëse riaktivizoni llogarinë tuaj WhatsApp në të ardhmen, të dhënat tuaja nuk do të shpëtohen.</string>
-    <string name="delete_all">Fshij të gjitha</string>
+    <string name="delete_account_warning">Të vijohet me fshirjen e llogarisë tënde? Është e pamundur të zhbëhet ky veprim! Nëse riaktivizon llogarinë tënde WhatsApp në të ardhmen, të dhënat e tua do të shpëtohen.</string>
+    <string name="delete_all">Fshi të gjitha</string>
     <string name="delete_all_chats">Fshi të gjitha bisedat</string>
-    <string name="delete_all_chats_ask">Jeni të sigurt që doni të fshini të GJITHA bisedat dhe mesazhet e tyre?</string>
+    <string name="delete_all_chats_ask">Je i sigurt që do të fshish të GJITHA bisedat dhe mesazhet e tyre?</string>
     <string name="delete_all_confirm">Jeni i sigurt se doni t´i fshini të gjitha gjendjet tuaja?</string>
     <string name="delete_all_messages">Fshi bisedën</string>
     <string name="delete_all_messages_ask">Jeni i sigurt që doni të fshini TË GJITHA mesazhet në këtë bisedë?</string>
@@ -249,11 +251,11 @@ Nëse keni edhe numër edhe telefon të ri, fillimisht ndryshoni numrin tuaj në
     <string name="delete_chat_tip">Prek dhe mbaj shtypur në një bisedë për më shumë mundësi</string>
     <string name="delete_confirmation">Të fshihen mesazhet nga %s?</string>
     <string name="delete_confirmation_self">Të fshihet mesazhi?</string>
-    <string name="delete_contact_dialog_title">Fshije bisedën me “%s”?</string>
+    <string name="delete_contact_dialog_title">Të fshihet biseda me “%s”?</string>
     <string name="delete_group">Fshini grupin</string>
     <string name="delete_group_dialog_title">Të fshihet grupi “%s”?</string>
     <string name="delete_list">Fshini listën e transmetimeve</string>
-    <string name="delete_list_dialog_title">Doni të fshini listën e transmetimeve “%s”?</string>
+    <string name="delete_list_dialog_title">Do të fshish listën e transmetimeve “%s”?</string>
     <string name="delete_list_unnamed_dialog_title">Të fshihet lista e transmetimeve?</string>
     <string name="delete_media">Fshi galerinë nga celulari</string>
     <string name="delete_status">Të fshihet gjendja</string>
@@ -271,18 +273,17 @@ Nëse keni edhe numër edhe telefon të ri, fillimisht ndryshoni numrin tuaj në
     <string name="does_not_match_button">Kjo nuk i përgjigjet pyetjes sime.</string>
     <string name="done">U krye</string>
     <string name="download_failed">Shkarkimi dështoi</string>
-    <string name="download_from_market">Doni të donit të shkarkonit paketën e Sfondit të WhatsApp?</string>
+    <string name="download_from_market">Do të doje të shkarkoje paketën e Sfondit të WhatsApp?</string>
     <string name="edit_group_subject_dialog_title">Shkruani titullin e ri</string>
     <string name="edit_list_name_dialog_title">Transmeto emrin e listës</string>
-    <string name="edit_photo">Edito</string>
     <string name="eligibility_check_error">Nuk mund të kontrollohen kriteret. Ju lutemi, provoni përsëri më vonë.</string>
-    <string name="eligibility_check_ineligible">%s nuk mund të blejë zgjatje shërbimi për ju, por faleminderit që provuat të ndihmonit mikun tuaj!</string>
+    <string name="eligibility_check_ineligible">%s nuk mund të blejë zgjatje shërbimi për ty, por faleminderit që provove ndihmoje mikun tënd!</string>
     <string name="email">Email</string>
     <string name="email_attachment">Dërgo bisedën me email</string>
     <string name="email_changed_icon">Ndryshoi ikonën e grupit</string>
     <string name="email_conversation_ask_about_media">Bashkëngjitja e medias do të rrisë ngarkesën e emailit.</string>
     <string name="email_conversation_body">Historiku i bisedës i është bashkëngjitur këtij emaili si dokument “%s”.</string>
-    <string name="email_conversation_failed">Dërgimi i bisedës tuaj në e-mail është i pamundur.</string>
+    <string name="email_conversation_failed">Dërgimi i bisedës tënde në email është i pamundur.</string>
     <string name="email_conversation_subject">WhatsApp - Biseda me %s</string>
     <string name="email_file_attached">%s (dok. i bashkëngjitur)</string>
     <string name="email_location_message">Vendndodhja: %s</string>
@@ -292,9 +293,10 @@ Nëse keni edhe numër edhe telefon të ri, fillimisht ndryshoni numrin tuaj në
     <string name="end_group">Mbyll grupin</string>
     <string name="end_group_dialog_title">"Nëse e mbyll këtë grup, çdokush në të, duke të përfshirë ty, do të largoheni përgjithmonë dhe nuk do të mund t'i dërgoni mesazhe grupit. Të mbyllet grupi “%s”?"</string>
     <string name="error_adding_admin">%s nuk mund të bëhej administrator. Ju lutemi, provoni sërish.</string>
-    <string name="error_adding_participant">%s nuk mund të shtohej. Ju lutemi, provoni sërish.</string>
+    <string name="error_adding_participant">%s nuk mund të shtohej. Të lutem, provoni sërish.</string>
     <string name="error_adding_participant_401">%s nuk mund të shtohej.</string>
-    <string name="error_adding_participant_500">Nuk mund të shtoni %s sepse ky grup është plot.</string>
+    <string name="error_adding_participant_500">Nuk mund të shtosh %s, sepse ky grup është plot.</string>
+    <string name="error_audio_messages_disabled_during_call">Nuk mund të regjistrosh audio gjatë një telefonate WhatsApp.</string>
     <string name="error_bad_media">Ky dokument nuk mund të përdoret. Materiali është i pasaktë dhe i papërballueshëm.</string>
     <string name="error_call_disabled_during_call">Nuk mund të kryhet një thirrje e re ndërkohë që jeni në një telefonatë.</string>
     <string name="error_db_diskio">E pamundur të hyhet në databazë.</string>
@@ -302,9 +304,9 @@ Nëse keni edhe numër edhe telefon të ri, fillimisht ndryshoni numrin tuaj në
     <string name="error_load_image">Dështim në ngarkimin e të dhënave të imazhit, ju lutemi, provoni përsëri më vonë.</string>
     <string name="error_load_preview_audio">Na falni, audioja nuk mund të ngarkohet tani, ju lutemi, provoni përsëri më vonë ose prekni dërgo pa e parë.</string>
     <string name="error_load_wallpaper">Dështim në ngarkimin e imazhit të sfondit, ju lutemi, provoni përsëri më vonë.</string>
-    <string name="error_low_on_memory">Telefoni juaj nuk ka kujtesë të mjaftueshme, ju lutemi, provojeni përsëri. Nëse e shihni ende këtë mesazh, ju lutemi, rihapni telefonin tuaj.</string>
+    <string name="error_low_on_memory">Telefoni yt nuk ka kujtesë të mjaftueshme, të lutem, provo përsëri. Nëse e sheh ende këtë mesazh, të lutem, rihap telefonin tuaj.</string>
     <string name="error_msgstore_db_diskio">E pamundur të hapet historiku i mesazheve.</string>
-    <string name="error_no_disc_space">Ju nuk keni hapësirë të mjaftueshme në disk.</string>
+    <string name="error_no_disc_space">Ti nuk ke hapësirë të mjaftueshme në disk.</string>
     <string name="error_no_email_client">Na falni, ju mund të mos keni një klient emaili në këtë telefon.</string>
     <string name="error_notification_headline">Gabim i WhatsApp</string>
     <string name="error_notification_title">Gabim i WhatsApp</string>
@@ -318,13 +320,15 @@ E disponueshme: %1$s"</string>
     <string name="error_unable_to_open_msgstoredb">E pamundur të hapet historiku i mesazheve.</string>
     <string name="error_unable_to_update_readonly_msgstoredb">E pamundur të përditësohet historiku i mesazheve.</string>
     <string name="error_unexpected">Ndodhi një gabim i papritur</string>
+    <string name="error_video_messages_disabled_during_call">Nuk mund të regjistrosh video gjatë telefonatës WhatsApp.</string>
+    <string name="error_voice_messages_disabled_during_call">Nuk mund të regjistrosh mesazh zanor gjatë një telefonte WhatsApp.</string>
     <string name="error_wallpaper_invalid_file">Ju lutemi, zgjidhni një imazh tjetër.</string>
     <string name="error_zero_audio_length">Audioja nuk mund të luhet, gjatësia është zero.</string>
     <string name="eula_agree">Pranoni dhe vazhdoni</string>
     <string name="eula_description">Mesazhe celulare ndër-platformë me miq nga e gjithë bota.</string>
     <string name="eula_tablets_not_supported">Shënim: tabletat aktualisht nuk përballohen</string>
     <string name="eula_terms_of_service">Kushtet e Shërbimit</string>
-    <string name="eula_title">Mirësevini në WhatsApp!</string>
+    <string name="eula_title">Mirëseerdhe në WhatsApp</string>
     <string name="existing_contact">Ekzistues</string>
     <string name="exit">Dil</string>
     <string name="exit_group">Dil nga grupi</string>
@@ -338,7 +342,7 @@ Ju lutemi, merrni parasysh pagesën për llogarinë tuaj WhatsApp."</string>
 Për mirësjellje, kemi zgjatur shërbimin tuaj deri më %s.
 
  Ju lutemi, konsideroni pagesën për llogarinë tuaj WhatsApp."</string>
-    <string name="extension_lifetime">"Për mirënjohje, ju kemi siguruar shërbim të përhershëm në llogarinë tuaj.
+    <string name="extension_lifetime">"Për mirënjohje, të kemi dërguar shërbim të përhershëm në llogarinë tënde.
 
 Faleminderit!"</string>
     <string name="extension_payment">"Faleminderit!
@@ -346,11 +350,11 @@ Faleminderit!"</string>
 Blerja juaj qe e suksesshme.
 
 Shërbimi juaj tani skadon më %s."</string>
-    <string name="extension_rollback">"Na falni!
+    <string name="extension_rollback">"Na fal! 
 
-I kemi bërë një rregullim llogarisë suaj.
+I kemi bërë një rregullim llogarisë sate.
 
-Shërbimi juaj tani skadon më %s."</string>
+Shërbimi yt tani skadon më %s."</string>
     <string name="failed_launch">Pati një problem me nisjen e blerjes suaj në Google Play. Ju lutemi, kontrolloni më vonë.</string>
     <string name="failed_redeem">Pati një problem në kryerjen e blerjes suaj. Ju lutemi, kontrolloni përsëri më vonë.</string>
     <string name="failed_to_add_participant">Dështim në shtimin e anëtarit, ju lutemi, provoni përsëri më vonë.</string>
@@ -365,11 +369,11 @@ Shërbimi juaj tani skadon më %s."</string>
     <string name="failed_update_photo_not_authorized">E pamundur të përditësohet ikona e grupit, sepse ju nuk jeni anëtar.</string>
     <string name="failed_update_profile_photo">Dështim në përditësimin e fotos së profilit. Ju lutemi, provoni përsëri më vonë.</string>
     <string name="failed_update_profile_photo_for_expired_user">Përditësimi i fotos suaj të profilit është i pamundur, sepse shërbimi juaj ka skaduar.</string>
-    <string name="faq">E keni lexuar FAQ?</string>
+    <string name="faq">E ke lexuar FAQ?</string>
     <string name="file">material</string>
     <string name="file_too_large">Materiali që keni zgjedhur është më i madh se %dMB. E pamundur të dërgohet.</string>
-    <string name="file_uploaded">Nuk mund të anulohet, mesazhi është dërguar tanimë</string>
-    <string name="finish_registration_first">Ju lutemi, përfundoni fillimisht regjistrimin.</string>
+    <string name="file_uploaded">Nuk mund të anulohet, mesazhi është dërguar tashmë</string>
+    <string name="finish_registration_first">Të lutem, përfundo fillimisht regjistrimin.</string>
     <string name="font_large">E madhe</string>
     <string name="font_medium">Mesatare</string>
     <string name="font_small">E vogël</string>
@@ -379,13 +383,13 @@ Shërbimi juaj tani skadon më %s."</string>
     <string name="gallery_camera_bucket_name">Fotot e kameras</string>
     <string name="gallery_camera_media_bucket_name">Media e kamerës</string>
     <string name="gallery_camera_videos_bucket_name">Videot e kamerës</string>
-    <string name="gallery_contact_with_no_media">Ju nuk keni shkëmbyer asnjë video apo audio me këtë kontakt</string>
+    <string name="gallery_contact_with_no_media">Ti nuk ke shkëmbyer asnjë material me këtë kontakt</string>
     <string name="gallery_image_notready_warning">Imazhi nuk është shkarkuar.</string>
     <string name="gallery_label">Galeria</string>
     <string name="gallery_media_not_exist">Na falni, ky material nuk ekziston në skedën tuaj SD.</string>
     <string name="gallery_media_not_exist_shared_storage">Na falni, ky material nuk ekziston në hapësirën tuaj ruajtëse të brendshme të ndarë.</string>
     <string name="gallery_no_media">Nuk keni dërguar ose marrë asnjë material në këtë grup.</string>
-    <string name="gallery_notready_warning">Ju lutemi, shkarkoni fillimisht dokumentin.</string>
+    <string name="gallery_notready_warning">Të lutemi, sharko fillimisht dokumentin.</string>
     <string name="gallery_picker_label">Galeria</string>
     <string name="gallery_video_notready_warning">Video nuk është shkarkuar</string>
     <string name="google_maps_not_available">Na falni, hartat Google nuk janë të disponueshme në pajisjen tuaj</string>
@@ -425,36 +429,35 @@ Shërbimi juaj tani skadon më %s."</string>
     <string name="group_error_add_participants_not_in_group">Nuk mund të shtoni anëtarë, sepse nuk jeni vetë anëtar.</string>
     <string name="group_error_change_admins">Nuk mund të ndryshoheshin administratorët. Ju lutemi, provoni sërish.</string>
     <string name="group_error_change_admins_no_such_group">Nuk mund të ndryshoni administratorët, sepse grupi është mbyllur.</string>
-    <string name="group_error_change_admins_not_authorized">Nuk mund të ndryshoni administratorë, sepse ju nuk jeni administrator.</string>
+    <string name="group_error_change_admins_not_authorized">Nuk mund të ndryshosh drejtues, sepse ju nuk jeni drejtues.</string>
     <string name="group_error_change_admins_not_in_group">Nuk mund të ndryshoni administruesin, sepse nuk jeni anëtar.</string>
     <string name="group_error_create">Grupi %s nuk mund të krijohej. Ju lutemi, provoni përsëri.</string>
     <string name="group_error_create_subject_too_long">Titulli %s është shumë e gjatë. Ju lutemi, shkruani një titull më të shkurtër.</string>
     <string name="group_error_create_too_many_groups">Nuk mund të krijoni grupin %s, sepse keni krijuar shumë grupe</string>
-    <string name="group_error_end">Grupi nuk u mund të mbyllej. Ju lutemi provoni përsëri.</string>
+    <string name="group_error_end">Grupi nuk mund të mbyllej. Të lutem, provo përsëri.</string>
     <string name="group_error_leave">Nuk mund të dilej nga grupi. Ju lutemi, provoni sërish.</string>
     <string name="group_error_leave_no_such_group">Nuk mund të largoheni nga grupi, sepse ai është mbyllur.</string>
     <string name="group_error_leave_not_in_group">Nuk jeni më anëtar.</string>
     <string name="group_error_remove_participants">Anëtari nuk mund të hiqej. Ju lutemi, provoni sërish.</string>
-    <string name="group_error_remove_participants_no_such_group">Nuk mund të hiqni anëtarë, sepse grupi është mbyllur.</string>
-    <string name="group_error_remove_participants_not_authorized">Nuk mund të hiqni anëtarë, sepse nuk jeni administrues.</string>
-    <string name="group_error_remove_participants_not_in_group">Nuk mund të hiqni anëtarë, sepse nuk jeni anëtar.</string>
+    <string name="group_error_remove_participants_no_such_group">Nuk mund të heqësh anëtarë, sepse grupi është mbyllur.</string>
+    <string name="group_error_remove_participants_not_authorized">Nuk mund të heqësh anëtarë, sepse nuk je drejtues.</string>
+    <string name="group_error_remove_participants_not_in_group">Nuk mund të heqësh anëtarë, sepse nuk je anëtar.</string>
     <string name="group_error_subject">Nuk mund të ndryshohej titulli. Ju lutemi, provoni sërish.</string>
     <string name="group_error_subject_no_such_group">Nuk mund të ndryshoni titullin, sepse ky grup ka mbaruar.</string>
     <string name="group_error_subject_not_authorized">Nuk mund të ndryshoni titullin, sepse nuk jeni administrator.</string>
-    <string name="group_error_subject_not_in_group">Nuk mund të ndryshoni titullin, sepse nuk jeni anëtar.</string>
+    <string name="group_error_subject_not_in_group">Nuk mund të ndryshosh titullim, sepse nuk je anëtar.</string>
     <string name="group_error_subject_too_long">Titulli %s është shumë i gjatë. Ju lutemi, shkruani një titull më të shkurtër.</string>
     <string name="group_icon_updated">Ikona e grupit u përditësua</string>
     <string name="group_info">Info mbi grupin</string>
     <string name="group_locations">Vendndodhjet e fundit</string>
-    <string name="group_name_hint">Shkruani titullin e grupit këtu...</string>
-    <string name="group_name_shortcut_was_removed">"Ju nuk jeni më anëtar i grupit '%s'"</string>
+    <string name="group_name_shortcut_was_removed">"Ti nuk je më anëtar i grupit '%s'"</string>
     <string name="group_participant_added_name">%s u shtua</string>
     <string name="group_participant_added_you">Ju kanë shtuar</string>
     <string name="group_participant_changed_number">%1$s ndryshoi nga %2$s në %3$s</string>
     <string name="group_participant_changed_number_unknown_name">%1$s u ndryshua në %2$s</string>
     <string name="group_participant_demoted_you">Nuk jeni më një administrues</string>
     <string name="group_participant_left_name">%s u largua</string>
-    <string name="group_participant_left_you">U larguat</string>
+    <string name="group_participant_left_you">U largove</string>
     <string name="group_participant_promoted_you">Tani jeni administrues</string>
     <string name="group_participant_removed_name">%s u hoq</string>
     <string name="group_participant_removed_you">Ju kanë larguar</string>
@@ -462,7 +465,7 @@ Shërbimi juaj tani skadon më %s."</string>
     <string name="group_participants_name_added_you">%s ju shtoi</string>
     <string name="group_participants_name_removed_names">%1$s hoqi %2$s</string>
     <string name="group_participants_name_removed_you">%s ju hoqi</string>
-    <string name="group_participants_you_added_names">Ju keni shtuar %s</string>
+    <string name="group_participants_you_added_names">Ti ke shtuar %s</string>
     <string name="group_participants_you_removed_names">Keni hequr %s</string>
     <string name="group_photo">Ikona e grupit</string>
     <string name="group_subject_changed_by_name">%1$s ndryshoi titullin në “%2$s”</string>
@@ -495,11 +498,10 @@ Shërbimi juaj tani skadon më %s."</string>
     <string name="install_app_shortcut">Përfshi shkurtesën e WhatsApp në kryefaqe</string>
     <string name="insufficient_internal_storage_space_description">Telefoni juaj nuk ka kujtesë të mjaftueshme për të ndezur WhatsApp. Ju lutemi, lironi %s hapësirë.</string>
     <string name="insufficient_internal_storage_space_title">KUJTESA E BRENDSHME E PLOTË</string>
-    <string name="insufficient_space_for_download">Nuk mund të shkarkohet, sepse nuk ka hapësirë të mjaftueshme bosh në skedën SD. Ju lutemi, hiqni skedën SD dhe provoni përsëri.</string>
-    <string name="insufficient_space_for_download_shared_storage">Nuk mund të shkarkohet, sepse nuk ka hapësirë të mjaftueshme bosh në kujtesën tuaj të brendshme të ndarë. Ju lutemi, hiqni materialet nga kujtesa e brendshme e ndarë dhe provoni përsëri.</string>
+    <string name="insufficient_space_for_download">Nuk mund të shkarkohet, sepse nuk ka hapësirë të mjaftueshme bosh në skedën tënde SD. Të lutem, hiq dokumentet nga skeda jote SD dhe provo përsëri.</string>
+    <string name="insufficient_space_for_download_shared_storage">Nuk mund të shkarkohet, sepse nuk ka hapësirë të mjaftueshme bosh në kujtesën tuaj të brendshme të ndarë. Të lutem, hiq dokumentet nga kujtesa e brendshme e përbashkët dhe provo përsëri.</string>
     <string name="invalid_media_message_download">Nuk mund të shkarkohet materiali nga mesazhi i pavlefshëm. Ju lutemi, përpiquni të dërgoni mesazhin përsëri.</string>
     <string name="invalid_message_forward">"Mesazhi nuk mund t'i përcillet një kontakti të pavlefshëm."</string>
-    <string name="invalid_qr_code">Prefiks QR i pavlefshëm</string>
     <string name="invalid_url_for_download">"Nuk mund të shkarkohet. Ju lutemi, kërkoni që t'ju ridërgohet."</string>
     <string name="invite">Fto</string>
     <string name="invite_friends">Ftoni miqtë tuaj</string>
@@ -528,7 +530,7 @@ nga
     <string name="location_sharing_on">NDIZ</string>
     <string name="location_speed_kmh">%s km/h</string>
     <string name="location_speed_mph">%s mph</string>
-    <string name="login_failure_expired">Shërbimi juaj WhatsApp ka mbaruar. Dëshironi ta ribleni?</string>
+    <string name="login_failure_expired">Shërbimi yt WhatsApp ka mbaruar. Dëshiron ta blesh?</string>
     <string name="login_failure_password">"Lidhja dështoi! Ju lutemi, riverifikoni numrin tuaj.
 
 WhatsApp mund të instalohet vetëm një apraturë për një numër telefoni."</string>
@@ -545,7 +547,6 @@ WhatsApp mund të instalohet vetëm një apraturë për një numër telefoni."</
     <string name="menuitem_add">Shto</string>
     <string name="menuitem_contacts">Kontakte</string>
     <string name="menuitem_debug">Zhblloko</string>
-    <string name="menuitem_delete_qr">Fshini kodin QR</string>
     <string name="menuitem_groupchat">Grup i ri</string>
     <string name="menuitem_list">Transmetim i ri</string>
     <string name="menuitem_mute">Pa zë</string>
@@ -586,20 +587,21 @@ WhatsApp mund të instalohet vetëm një apraturë për një numër telefoni."</
     <string name="msg_store_backup_failed">Ruajtja e mesazheve e pamundur</string>
     <string name="msg_store_backup_failed_try_again_later">E pamundur të ruhen mesazhet. Ju lutemi, provoni përsëri më vonë.</string>
     <string name="msg_store_backup_found">Kopjet e mesazhve u gjetën</string>
-    <string name="msg_store_backup_found_registration">Ruajtja e mesazheve u gjet!</string>
+    <string name="msg_store_backup_found_registration">Kopja e bisedave u gjet</string>
+    <string name="msg_store_backup_found_title">Rikthe historikun e bisedave</string>
     <string name="msg_store_backup_skipped">Ruajtja e kopjes u tejkalua.</string>
     <string name="msg_store_backup_skipped_no_media">Krijimi i kopjes së mesazheve u tejkalua: Nuk u gjet skedë media.</string>
     <string name="msg_store_backup_skipped_read_only_media">Ruajtja e mesazhave u tejkalua: U gjet vetëm skeda e pamodifikueshme.</string>
     <string name="msg_store_confirm">Konfirmo</string>
-    <string name="msg_store_creation_backup_message">Doni të riktheni historikun e mesazhit nga ruajtja?</string>
-    <string name="msg_store_do_not_restore">Mos rikthe</string>
-    <string name="msg_store_do_not_restore_no_thanks">Jo, faleminderit</string>
-    <string name="msg_store_error_found">Ndodhi një gabim. Ju lutemi, ndaloni dhe rihapni WhatsApp.</string>
+    <string name="msg_store_creation_backup_message">Rikthe historikun e bisedave nga kopja. Nëse nuk e rikthen tani, nuk do të mund ta bësh as më vonë.</string>
+    <string name="msg_store_do_not_restore">Kapërce rikthimin</string>
+    <string name="msg_store_do_not_restore_no_thanks">Kapërce rikthimin</string>
+    <string name="msg_store_error_found">Ndodhi një gabim. Të lutemi, ndalo dhe rihap WhatsApp.</string>
     <string name="msg_store_error_not_restored">Na vjen keq, nuk mundëm të riruanim ndonjë nga ruajtjet tuaja të historikut të mesazheve.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Mesazhet do të humbasin. Jeni i sigurt që nuk doni të riktheni historikun e mesazheve nga kopja e të dhënave?</string>
     <string name="msg_store_lost_due_to_previous_error">Historiku juaj i mesazheve është dëmtuar.</string>
     <string name="msg_store_media_card_not_found_ask_retry">Nëse keni historik të bisedave të kaluara për të rikthyer, fusni skedën SD ose fikni memorien USB dhe shtypni “Riprovo”. Shtypni “Kalo” për të vazhduar.</string>
-    <string name="msg_store_media_card_not_found_ask_retry_shared_storage">Nëse keni historik të mëparshëm të mesazheve për të rimarrë, shkëpusni flash-USB dhe shtypni “Riprovo.” Shtypni “Kapërce” për të vazhduar.</string>
+    <string name="msg_store_media_card_not_found_ask_retry_shared_storage">Nëse ke historik të mëparshëm për të riktheyer, fik USB dhe shtyp “Riprovo.” Shtyp “Kapërce” për të vazhduar.</string>
     <string name="msg_store_migrate_message">Ju lutemi, prisni një çast...</string>
     <string name="msg_store_migrate_title">Duke përgatitur mesazhet</string>
     <string name="msg_store_previous_error_occurred">Gabim</string>
@@ -608,7 +610,7 @@ WhatsApp mund të instalohet vetëm një apraturë për një numër telefoni."</
     <string name="msg_store_restoring_progress_title">Duke riruajtur...</string>
     <string name="msg_store_unable_to_start_restore_no_connectivity">E pamundur të niset riruajtja e kopjes së kronologjisë suaj të mesazheve. Ju lutemi, kontrolloni nëse jeni të lidhur me internetin dhe provoni përsëri.</string>
     <string name="msg_store_unable_to_start_restore_process">E pamundur të niset riruajtja e kopjes së historikut tuaj të mesazheve. Ju lutemi, provoni përsëri më vonë.</string>
-    <string name="multiple_select_reach_limit">Keni arritur në kufi, nuk mund të përzgjidhen më shumë.</string>
+    <string name="multiple_select_reach_limit">Ke arritur në kufi, nuk mund të përzgjidhen më shumë.</string>
     <string name="must_have_displayname">Kontakti i shpërndarë nuk ka një emër të shfaqur</string>
     <string name="mute_1week">1 Javë</string>
     <string name="mute_1year">1 Vit</string>
@@ -616,13 +618,10 @@ WhatsApp mund të instalohet vetëm një apraturë për një numër telefoni."</
     <string name="mute_show_notifications">Shfaq njoftimet</string>
     <string name="mute_time">Bëje grupin pa zë për...</string>
     <string name="my_location">VENDNDODHJA IME</string>
-    <string name="need_sd_card">Ju lutemi, hiqni fishën USB ose fusni skedën tuaj SD dhe provoni përsëri.</string>
-    <string name="need_sd_card_shared_storage">Ju lutemi çaktivizoni lidhjen me USb dhe provoni perseri</string>
+    <string name="need_sd_card">Të lutem, hiq fishën USB ose fut skedën tuaj SD dhe provo përsëri.</string>
+    <string name="need_sd_card_shared_storage">Të lutem, fik USBnë dhe provo përsëri.</string>
     <string name="network_required">Nuk keni hyrje në asnjë rrjet tani.</string>
-    <string name="network_usage_ask_reset_message">Jeni i sigurt se doni të ripërcaktoni statistikat?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
+    <string name="network_usage_ask_reset_message">Je i sigurt se do të ripërcaktosh statistikat?</string>
     <string name="network_usage_last_reset_time">Koha e përcaktuar së fundmi: %1$s</string>
     <string name="network_usage_media_bytes_received">Byte të materialeve të marra:</string>
     <string name="network_usage_media_bytes_sent">Byte materialesh të dërguara:</string>
@@ -654,15 +653,16 @@ WhatsApp mund të instalohet vetëm një apraturë për një numër telefoni."</
     <string name="no_places_found">Nuk u gjet asnjë vend</string>
     <string name="no_profile_photo">Pa foto profili</string>
     <string name="no_recent_emoji">"S'ka figura të fundit"</string>
-    <string name="no_statuses_to_delete">Nuk keni asnjë gjendje për të fshirë.</string>
+    <string name="no_statuses_to_delete">Nuk ke asnjë gjendje për të fshirë.</string>
     <string name="no_unread_messages">"S'ka mesazhe të palexuara"</string>
     <string name="no_valid_participant">Asnjë nga emrat e anëtarëve nuk është i vlefshëm.</string>
     <string name="no_wallpaper">Pa sfond</string>
-    <string name="not_a_group_participant">Ju nuk jeni më anëtar i këtij grupi</string>
+    <string name="not_a_group_participant">Ti nuk je më anëtar i këtij grupi</string>
     <string name="not_found">Nuk është gjetur</string>
     <string name="notes">Ndryshimet</string>
     <string name="notification_ticker_header">Mesazh nga %s</string>
     <string name="ok">OK</string>
+    <string name="ongoing_call">Telefonatë në dërgim</string>
     <string name="outgoing_call">Telefonatë dalëse</string>
     <string name="overlay_reregister">Riverifiko</string>
     <string name="participant_adding">Duke shtuar...</string>
@@ -671,7 +671,7 @@ WhatsApp mund të instalohet vetëm një apraturë për një numër telefoni."</
     <string name="participants_count">%1$d prej %2$d</string>
     <string name="participants_title">Anëtarë</string>
     <string name="pay_for_a_friend">Paguani për një mik</string>
-    <string name="pay_for_a_friend_choose_contact">Zgjidhni një kontakt</string>
+    <string name="pay_for_a_friend_choose_contact">Zgjidh një kontakt</string>
     <string name="pay_for_a_friend_choose_contact_first">Ju lutemi, fillimisht shtypni ‘%s’.</string>
     <string name="pay_for_a_friend_notification_ticker">Paguat për një mik!</string>
     <string name="pay_for_a_friend_send_addr_body">Adresa e pagesës së WhatsApp Messenger të %s është:</string>
@@ -686,7 +686,7 @@ WhatsApp mund të instalohet vetëm një apraturë për një numër telefoni."</
     <string name="payment_wifi_enabled">Faturimi i mbartësit nuk funksionon me Wi-Fi të aktivizuar. Doni të çaktivizoni Wi-Fi?</string>
     <string name="peer_in_another_call">i zënë</string>
     <string name="personal_info_visibility">Kush mund të shohë të dhënat e mia personale</string>
-    <string name="photo_changed_by">%s ndryshoi ikonen e grupit</string>
+    <string name="photo_changed_by">%s ndryshoi ikonën e grupit</string>
     <string name="photo_changed_by_1">...ndryshoi ikonën e grupit</string>
     <string name="photo_changed_by_you">Keni ndryshuar ikonën e grupit</string>
     <string name="photo_changed_by_you_1">...ndryshoi ikonën e grupit</string>
@@ -700,10 +700,10 @@ WhatsApp mund të instalohet vetëm një apraturë për një numër telefoni."</
     <string name="photo_removed_by_you_1">...hoqi ikonën e grupit</string>
     <string name="photo_saved_to_gallery">U ruajt tek materialet</string>
     <string name="photo_search_failed">Kërkimi dështoi. Ju lutemi, provoni përsëri më vonë.</string>
-    <string name="pick_a_country">Zgjidhni një shtet</string>
+    <string name="pick_a_country">Zgjidh një shtet</string>
     <string name="pick_participant_dialog_title">Të shtohet %1$s tek grupi “%2$s”?</string>
     <string name="pick_photos_gallery_title">Zgjidhni foton</string>
-    <string name="pick_videos_gallery_title">Zgjidhni videon</string>
+    <string name="pick_videos_gallery_title">Zgjidh videon</string>
     <string name="pick_wallpaper_title">Sfondi</string>
     <string name="pictures">Foto</string>
     <string name="place_list_title">Ose përzgjidhni nga vendet e afërta</string>
@@ -726,7 +726,7 @@ WhatsApp mund të instalohet vetëm një apraturë për një numër telefoni."</
     <string name="profile_photo">Foto profili</string>
     <string name="profile_photo_reminder">Kujtesë: ju nuk keni vendosur ende foton e profilit. Ju lutemi, vendosni foton tuaj të profilit.</string>
     <string name="profile_photo_updated">Fotoja e profilit u përditësua.</string>
-    <string name="purchase">Blini</string>
+    <string name="purchase">Bli</string>
     <string name="read_only_media_message">Skeda e pamodifikueshme SD u gjet.</string>
     <string name="read_only_media_message_shared_storage">U gjet kujtesa e brendshme e ndarë e pamodifikueshme.</string>
     <string name="received_lifetime_service">Llogarisë suaj i është shtuar shërbimi i përjetshëm.</string>
@@ -737,8 +737,8 @@ WhatsApp mund të instalohet vetëm një apraturë për një numër telefoni."</
     <string name="record_audio_record">Incizo</string>
     <string name="record_audio_send">Dërgo</string>
     <string name="record_audio_stop">Ndal</string>
-    <string name="record_need_sd_card_message">Ju lutemi, hiqni fishën USB ose fusni skedën tuaj SD dhe provoni përsëri.</string>
-    <string name="record_need_sd_card_message_shared_storage">Ju lutemi, hiqni fishën USB dhe provoni përsëri.</string>
+    <string name="record_need_sd_card_message">Të lutem, hiq fishën USB ose fut skedën tuaj SD dhe provo përsëri.</string>
+    <string name="record_need_sd_card_message_shared_storage">Të lutem, hiq fishën USB dhe provo përsëri.</string>
     <string name="record_need_sd_card_title">Kërkohet skeda SD</string>
     <string name="record_need_sd_card_title_shared_storage">Kërkohet kujtesa e brendshme e ndarë</string>
     <string name="redeem_wait">Duke kryer blerjen tuaj...</string>
@@ -758,18 +758,18 @@ WhatsApp mund të instalohet vetëm një apraturë për një numër telefoni."</
     <string name="register_connecting">Duke u lidhur...</string>
     <string name="register_contact_support">Kontakto mbështetjen</string>
     <string name="register_edit_button">Edito</string>
-    <string name="register_empty_phone">Ju lutemi shkruani numrin tuaj.</string>
+    <string name="register_empty_phone">Të lutemi, shkruaj numrin tënd.</string>
     <string name="register_failure_noname">Duhet të shkruani emrin tuaj përpara se të vazhdoni.</string>
     <string name="register_first">Ju lutemi, fillimisht përfundoni regjistrimin përpara se të provoni sinkronizimin e llogarisë suaj.</string>
     <string name="register_invalid_cc">prefiksi i shtetit i pavlefshëm</string>
     <string name="register_learn_more">Mësoni më shumë</string>
-    <string name="register_name_hint">Shkruani emrin tuaj këtu</string>
+    <string name="register_name_hint">Shkruaj emrin tënd këtu</string>
     <string name="register_name_info">Ju lutemi, jepni emrin tuaj dhe foto profili (jo e detyrueshme)</string>
     <string name="register_name_profile">Të dhënat e profilit</string>
     <string name="register_no_internet_connectivity">WhatsApp kërkon një lidhje aktive të dhënash të internetit. %s</string>
-    <string name="register_phone_country">shteti juaj</string>
+    <string name="register_phone_country">shteti yt</string>
     <string name="register_phone_country_code">prefiksi i shtetit tënd dhe numri i telefonit</string>
-    <string name="register_phone_header">Verifikoni numrin tuaj</string>
+    <string name="register_phone_header">Verifiko numrin tënd</string>
     <string name="register_phone_number_code_confirm">Ju lutemi, konfirmoni prefiksin e shtetit tuaj dhe më pas shkruani numrin tuaj të telefonit.</string>
     <string name="register_phone_phone_number_confirmation_message">"Do të verifikojmë numrin tuaj të telefonit:
 
@@ -778,12 +778,12 @@ WhatsApp mund të instalohet vetëm një apraturë për një numër telefoni."</
 Jeni dakord apo do të donit të ndryshonit numrin?"</string>
     <string name="register_phone_your_number">numri i telefonit</string>
     <string name="register_preparing">Duke përgatitur...</string>
-    <string name="register_server_voice_too_many_tries">Ju dështuat shumë herë në verifikimin zanor. Ju lutemi, kontaktoni mbështetjen për ndihmë.</string>
+    <string name="register_server_voice_too_many_tries">Dështove shumë herë në verifikimin zanor. Të lutem, kontakto mbështetjen për ndihmë.</string>
     <string name="register_should_upgrade_amazon_app_store">Ju lutemi, shkarkoni versionin më të fundit nga Amazon Appstore.</string>
     <string name="register_should_upgrade_market">Ju lutemi, shkarkoni versionin më të fundit nga Google Play.</string>
-    <string name="register_should_upgrade_website">Ju lutemi, shkarkoni versionin më të fundit nga faqja jonë: %s.</string>
-    <string name="register_sms_one_time">"WhatsApp Messenger do t'ju dërgojë vetëm një herë një mesazh SMS për të verifikuar numrin tuaj të telefonit. Mund të zbatohen pagesa ndaj mbartësit të SMSve."</string>
-    <string name="register_sms_provider_timeout">E pamundur të dërgohet SMS. Ju lutemi, prisni %s përpara se të provoni përsëri.</string>
+    <string name="register_should_upgrade_website">Të lutemi, shkarko versionin më të fundit nga faqja jonë: %s.</string>
+    <string name="register_sms_one_time">WhatsApp Messenger do të të dërgojë një SMS të vetme për të verifikuar numrin tënd të telefonit. Mund të zbatohen tarifa ndaj mbartësit të SMSve.</string>
+    <string name="register_sms_provider_timeout">E pamundur të dërgohet SMS. Të lutemi, prit %s përpara se ta provosh përsëri.</string>
     <string name="register_sms_provider_timeout_unspecified">Nuk mund të dërgohet SMS. Ju lutemi, prisni pak minuta përpara se të provoni përsëri.</string>
     <string name="register_sms_provider_unroutable">"Nuk mund t'i dërgonim mesazh numrit tuaj. Ju lutemi, kontrolloni numrin tuaj të telefonit dhe provoni përsëri në %s"</string>
     <string name="register_sms_provider_unroutable_unspecified">Nuk mundëm të dërgonin një mesazh në numrin tuaj. Ju lutemi, kontrolloni numrin tuaj dhe provoni përsëri më vonë</string>
@@ -794,7 +794,7 @@ Ju lutemi, provoni përsëri, kur të keni aktivizuar telefonin tuaj."</string>
     <string name="register_tapped_link_no_phone_number">Përpara se të shtypni linkun e verifikimit në SMSnë tuaj, shkruani prefiksin e shtetit tuaj dhe numrin e telefonit dhe shtypni “%s”.</string>
     <string name="register_temporarily_unavailable">WhatsApp është përkohësisht i padisponueshëm. Ju lutemi, provoni përsëri.</string>
     <string name="register_temporarily_unavailable_with_time">WhatsApp është përkohësisht i padisponueshëm. Ju lutemi, provoni përsëri pas %s.</string>
-    <string name="register_too_many_guesses">Na falni, nuk lejoheni të provoni më kodin.</string>
+    <string name="register_too_many_guesses">Na falni, nuk lejoheni të provosh më kodin.</string>
     <string name="register_try_again_later">E pamundur të lidhet. Ju lutemi, provoni përsëri më vonë.</string>
     <string name="register_try_is_too_recent">Ju sapo u lidhët. Ju lutemi, prisni %s para se të provoni përsëri.</string>
     <string name="register_try_is_too_recent_unspecified">Ju u lidhët së fundmi. Ju lutemi, provoni përsëri më vonë.</string>
@@ -804,16 +804,16 @@ Ju lutemi, provoni përsëri, kur të keni aktivizuar telefonin tuaj."</string>
     <string name="register_user_is_banned_top">Numri yt i telefonit</string>
     <string name="register_verify_again">Na falni, ka ndodhur një gabim. Ju lutemi, riverifikoni numrin tuaj.</string>
     <string name="register_voice_input_error_length_error">Kodi juaj duhet të ketë %d shifra.</string>
-    <string name="register_voice_input_error_maximum">"Jeni përpjekur shumë herë të gjeni kodin.
+    <string name="register_voice_input_error_maximum">"Je përpjekur shumë herë të gjesh kodin.
 
-Ju lutemi, kontaktoni mbështejtjen për mbështetje."</string>
-    <string name="register_voice_input_error_maximum_with_time">"Ju keni provuar shumë herë.
+Të lutemi, kontakto mbështejtjen për ndihmë."</string>
+    <string name="register_voice_input_error_maximum_with_time">"Ke provuar shumë shpesh.
 
-Ju lutemi kontrolloni sherbimin nga operatori juaj nese mund të merrni SMS dhe telefonata.
+Të lutem, kontrollo me operatorin tënd telefonik nëse mund të marrësh SMS dhe telefonata.
 
-Ju lutemi, prisni dërgimin e një kodi të ri.
+Të lutem, prit të të dërgohet një kod i ri.
 
-Provoni përsëri pas %1$s."</string>
+Provo përsëri pas %1$s."</string>
     <string name="register_voice_input_error_message">Prefiksi që shkruat është i gabuar. Ju lutemi, provoni përsëri. (%d prova të mbetura)</string>
     <string name="register_voice_input_error_message_with_time">Prefiksi që shkruat është i gabuar. Ju lutemi, provoni përsëri në %1$s. (%2$d prova të mbetura)</string>
     <string name="register_voice_input_message">Ju lutemi, shtoni kodin %d-shifror</string>
@@ -831,16 +831,17 @@ Ju lutemi, fusni kodin që ju dërguam.
 Provoni përsëri pas %1$s."</string>
     <string name="register_voice_request_message">Duke kërkuar një telefonatë</string>
     <string name="register_voice_verifying">Duke verifikuar...</string>
-    <string name="register_wait_message">Ju lutemi, prisni një çast...</string>
+    <string name="register_wait_message">Të lutemi, prisni një çast...</string>
     <string name="register_xmpp_title">Duke filluar...</string>
     <string name="registration_cellular_network_required">Për të aktivizuar WhatsApp Messenger nevojitet një rrjet celular i të dhënave.</string>
-    <string name="remove">Hiq</string>
-    <string name="remove_contact_name_from_group">Hiq %1$s nga grupi</string>
-    <string name="remove_contact_name_from_list">Hiq %1$s nga lista e transmetimeve</string>
-    <string name="remove_contact_name_group_admin">Hiqni %1$s nga drejtuesit e këtij grupi</string>
-    <string name="remove_participant_dialog_title">Hiq %1$s nga grupi “%2$s”?</string>
-    <string name="remove_photo">Hiq ikonën</string>
-    <string name="remove_profile_photo">Hiq foton</string>
+    <string name="reject_the_call">Injoro</string>
+    <string name="remove">Hiqni</string>
+    <string name="remove_contact_name_from_group">Hiqni %1$s nga grupi</string>
+    <string name="remove_contact_name_from_list">Hiqni %1$s nga lista e transmetimeve</string>
+    <string name="remove_contact_name_group_admin">Hiq %1$s nga drejtuesit e grupit</string>
+    <string name="remove_participant_dialog_title">Hiqni %1$s nga grupi “%2$s”?</string>
+    <string name="remove_photo">Hiqni ikonën</string>
+    <string name="remove_profile_photo">Hiqni foton</string>
     <string name="remove_recipient_dialog_title">Të hiqet %1$s nga lista e transmetimeve?</string>
     <string name="reply_to_label">kthejini përgjigje %s</string>
     <string name="reset">Përcakto</string>
@@ -852,14 +853,14 @@ Provoni përsëri pas %1$s."</string>
     <string name="search_earlier">MË HERËT</string>
     <string name="search_faq">Kërko tek PYETJET</string>
     <string name="search_hint">Kërko...</string>
-    <string name="search_in_contacts">Kërkoni në kontaktet e WhatsApp</string>
+    <string name="search_in_contacts">Kërko në kontaktet e WhatsApp</string>
     <string name="search_later">MË VONË</string>
     <string name="search_no_chats">Nuk u gjet asnjë bisedë</string>
     <string name="search_no_matches">Nuk u gjet asnjë përputhje</string>
     <string name="search_web">Kërko në internet</string>
     <string name="searching">Duke kërkuar...</string>
     <string name="select_hint">mbaj shtypur për shumë zgjedhje</string>
-    <string name="select_status">Zgjidhni gjendjen tuaj të re</string>
+    <string name="select_status">Zgjidh gjendjen tënde të re</string>
     <string name="send">Dërgo</string>
     <string name="send_button">Dërgoni</string>
     <string name="send_contact">Dërgoni kontaktin</string>
@@ -867,6 +868,7 @@ Provoni përsëri pas %1$s."</string>
     <string name="send_location">Dërgo vendndodhjen</string>
     <string name="send_payment_button">Dërgoni URL e pagesës</string>
     <string name="send_payment_url_via">Dërgoni URL e pagesës përmes...</string>
+    <string name="send_this_location">Dërgo këtë vendndodhje</string>
     <string name="send_your_current_location">Dërgoni vendndodhjen tuaj të tanishme</string>
     <string name="sending_video_to_contact">Duke ia dërguar videon %s</string>
     <string name="sent_to_group">Dërgoja “%s”</string>
@@ -900,7 +902,7 @@ skaduar!"</string>
     <string name="settings_backup_db_now_message_shared_storage">Po kryhet ruajtja e të dhënave në kujtesën e brendshme të ndarë. Ruajtjet e përditshme ndodhin në %1$s.</string>
     <string name="settings_block_list">Kontaktet e bllokuara: %s</string>
     <string name="settings_block_list_none">Asnjë</string>
-    <string name="settings_block_list_summary">Lista e kontakteve që ju keni bllokuar</string>
+    <string name="settings_block_list_summary">Lista e kontakteve që ke bllokuar.</string>
     <string name="settings_change_number">Ndrysho numër</string>
     <string name="settings_chat">Parametrat e bisedës</string>
     <string name="settings_chat_sound">Tingujt e bisedës</string>
@@ -923,7 +925,7 @@ skaduar!"</string>
     <string name="settings_msg_store_backup_now">Ruaj një kopje të bisedave</string>
     <string name="settings_msg_store_last_backup">Ruajtja e fundit: %1$s</string>
     <string name="settings_network_service_is_normal">Shërbimi WhatsApp po punon normalisht.</string>
-    <string name="settings_network_service_unknown">E pamundur të kontrollohet gjendja. Do të donit të kontrollonit gjendjen e sistemit në internet?</string>
+    <string name="settings_network_service_unknown">E pamundur të kontrollohet gjendja. Do të doje të kontrolloje gjendjen e sistemit në internet?</string>
     <string name="settings_network_system_status">Gjendja e sistemit</string>
     <string name="settings_network_usage">Përdorimi i rrjetit</string>
     <string name="settings_notification">Njoftimet e mesazheve</string>
@@ -944,9 +946,10 @@ skaduar!"</string>
     <string name="settings_privacy_message">Nëse nuk e shpërndani rubriken tuaj Parë së Fundmi, nuk do të mund të shihni atë të të tjerëve.</string>
     <string name="settings_privacy_profile_photo">Foto profili</string>
     <string name="settings_privacy_read_receipts">Lexoni faturat</string>
+    <string name="settings_privacy_read_receipts_message">Nëse fik faturat e lexuara, nuk do të mund të shohësh faturat e lexuara nga të tjerët. Faturat e lexuara dërgohen gjithmonë në biseda grupi.</string>
     <string name="settings_privacy_status">Gjendja</string>
     <string name="settings_profile_info">Profil</string>
-    <string name="settings_push_name_summary">Ky nuk është emri juaj ose pin-i. Ky emër do të shfaqet në listën e kontakteve të WhatsApp.</string>
+    <string name="settings_push_name_summary">Ky nuk është emri ose pin-i yt. Ky emër do të shfaqet në listën e kontakteve të tua WhatsApp.</string>
     <string name="settings_use_all_contacts">Shfaq të gjitha kontaktet</string>
     <string name="settings_use_all_contacts_summary">Aktivizo për të përdorur edhe kontaktet e fshehura</string>
     <string name="share">Shpërnda</string>
@@ -961,7 +964,7 @@ Dërguar nga WhatsApp"</string>
     <string name="slide_to_answer">"rrëshqit për t'u përgjigjur"</string>
     <string name="slide_to_reject">rrëshqit për të refuzuar</string>
     <string name="small_case_subject">titulli...</string>
-    <string name="sms_invite">Ftoni</string>
+    <string name="sms_invite">Fto</string>
     <string name="sms_notification_headline_unverified">WhatsApp - Numri i telefonit nuk është verifikuar!</string>
     <string name="sms_notification_headline_verified">WhatsApp - Numri i telefonit u verifikua!</string>
     <string name="sms_notification_message_unverified">Shtyp për të verifikuar numrin tuaj të telefonit</string>
@@ -970,26 +973,26 @@ Dërguar nga WhatsApp"</string>
     <string name="sms_notification_title_verified">Urime!</string>
     <string name="sms_reset">Rivendos</string>
     <string name="sms_sms">SMS</string>
-    <string name="software_about_to_expire_title">Softueri kërkon përditësim</string>
+    <string name="software_about_to_expire_title">Programi kërkon përditësim</string>
     <string name="software_expired">Ky version i WhatsApp është shumë i vjetër dhe nuk është më funksional. Shtyp “Download” për të shkarkuar versionin më të fundit.</string>
     <string name="software_expired_get_from_amazon_app_store">Ky version i WhatsApp është shumë i vjetër dhe nuk funksionon më. Ju lutemi, shkoni tek Amazon Appstore për të shkarkuar versionin më të fundit.</string>
     <string name="software_expired_get_from_amazon_app_store_with_date">Ky version i WhatsApp ngriu më &lt;b>%1$s&lt;/b>. Ju lutemi, vizitoni Amazon Appstore për të shkarkuar versionin më të fundit.&lt;br>&lt;br>Data e pajisjes suaj është &lt;b>%2$s&lt;/b>. Nëse kjo është e gabuar, ju lutemi korigjoni përcaktimet e datës së pajisjes suaj dhe rihapni WhatsApp.</string>
     <string name="software_expired_get_from_play">Ky version i WhatsApp është shumë i vjetër dhe jo më funksional. Ju lutemi, vizitoni Google Play që të shkarkoni versionin më të fundit.</string>
     <string name="software_expired_get_from_play_with_date">Ky version i WhatsApp skadoi më &lt;b>%1$s&lt;/b>. Ju lutemi, vizitoni Google Play për të shkarkuar versionin më të ri..&lt;br>&lt;br> Data e pajisjes suaj është &lt;b>%2$s&lt;/b>. Nëse kjo nuk është e saktë, ju lutemi, korigjoni parametrat e datës së pajisjes dhe pastaj rihapni WhatsApp.</string>
     <string name="software_expired_with_date">Ky version i WhatsApp skadoi me datë &lt;b>%1$s&lt;/b>. Kliko “Download” për të marrë versionin e fundit.&lt;br>&lt;br> Data e pajisjes suaj është &lt;b>%2$s&lt;/b>. Në qoftëse kjo nuk është e saktë, ju lutemi, përmirësojeni dhe pastaj rihapni WhatsApp.</string>
-    <string name="spam_generic">"Jeni përjashtuar përkohësisht nga WhatsApp, sepse mund të keni shkelur kushtet tona të shërbimit.
-Do të mund të përdorni WhatsApp sërish në:"</string>
+    <string name="spam_generic">"Je përjashtuar përkohësisht nga WhatsApp, sepse ke thyer kushtet tona të shërbimit.
+
+Do të mund të përdorësh WhatsApp sërish në:"</string>
     <string name="spam_generic_data_connection_missing">Sigurohuni që celulari juaj të jetë i lidhur në rrjet funksional.</string>
-    <string name="spam_generic_unknown_time_left">Jeni përjashtuar përkohësisht nga WhatsApp, sepse mund të keni shkelur kushtet tona të shërbimit. Do të mund të përdorni WhatsApp së shpejti.</string>
+    <string name="spam_generic_unknown_time_left">Je përjashtuar përkohësisht nga WhatsApp, sepse mund të kesh shkelur kushtet tona të shëbimit. Do të mund të përdorësh WhatsApp së shpejti.</string>
     <string name="spam_learn_more">Mëso më shumë</string>
     <string name="spam_title">Përjashtuar përkohësisht</string>
-    <string name="spam_too_many_blocks">Je përjashtuar përkohësisht nga WhatsApp, sepse shumë njerëz të kanë bllokuar</string>
-    <string name="spam_too_many_groups">"Jeni pezulluar përkohësisht nga WhatsApp, sepse keni krijuar shumë grupe me njerëz, që nuk ju kanë në bllokun e tyre të adresave.
-Do të mund të përdorni WhatsApp sërish në:"</string>
-    <string name="spam_too_many_messages">"Jeni përjashtuar përkohësisht nga WhatsApp, sepse keni u keni dërguar shumë mesazhe njerëzve që nuk ju kanë në librin e tyre të adresave.
-Do të mund të përdorni WhatsApp sërish në:"</string>
-    <string name="spam_too_many_people">"Jeni përjashtuar përkohësisht nga WhatsApp, sepse keni u keni dërguar të njëjtin mesazh shumë njerëzve.
-Do të mund të përdorni WhatsApp sërish në:"</string>
+    <string name="spam_too_many_groups">"Je përjashtuar përkohësisht nga WhatsApp, sepse krijove shumë grupe me njerëz që nuk të kanë në librat e tyre të adresave.
+
+Do të mund të përdorësh WhatsApp sërish në:"</string>
+    <string name="spam_too_many_messages">"Je përjashtuar përkohësisht nga WhatsApp, sepse u dërgove shumë mesazhe njerëzve që nuk të kanë në librat e tyre të adresave.
+
+Do të mund të përdorësh WhatsApp sërish në:"</string>
     <string name="status">Gjendje</string>
     <string name="status_default_at_gym">Në palestër</string>
     <string name="status_default_at_movies">Në kinema</string>
@@ -1032,8 +1035,8 @@ Do të mund të përdorni WhatsApp sërish në:"</string>
     <string name="system_status_multimedia_feature">Duke dërguar dhe marrë media (foto, video, audio dhe mesazhe zanore)</string>
     <string name="system_status_multiple_down_prefix">Po hasim probleme me këto:</string>
     <string name="system_status_multiple_down_prefix_recently">Hasëm probleme me këto:</string>
-    <string name="system_status_multiple_down_suffix">Na falni për shqetësimin. Po punojmë për zgjidhjen e këtyre problemeve sa më shpejt,ndaj, ju lutemi, kontrolloni përsëri më vonë.</string>
-    <string name="system_status_multiple_down_suffix_recently">Nëse keni ende probleme me këto elementë, ju lutemi, na dërgoni email dhe përshkruani problemin specifik që keni.</string>
+    <string name="system_status_multiple_down_suffix">Na fal për shqetësimin. Po punojmë për zgjidhjen e këtyre problemeve sa më shpejt,ndaj, të lutemi, kontrollo përsëri më vonë.</string>
+    <string name="system_status_multiple_down_suffix_recently">Nëse ke probleme me këto elementë, të lutemi, na dërgo email dhe përshkruaj problemin specifik që ke.</string>
     <string name="system_status_online_description">Po hasim probleme me elementin tonë “në linjë”.</string>
     <string name="system_status_online_description_recently">Hasëm një problem me elementin tonë “në linjë”.</string>
     <string name="system_status_online_feature">“Në linjë”</string>
@@ -1099,13 +1102,13 @@ Merre tani nga %s dhe thuaji mirupafshim SMSve!"</string>
     <string name="try_these_faq">Kjo është pyetja juaj?</string>
     <string name="unable_to_finish_download">Shkarkimi nuk u përmbush. Ju lutemi, provoni përsëri më vonë.</string>
     <string name="unable_to_share_contact">E pamundur të shpërndahet ky kontakt</string>
-    <string name="unable_to_view_contact">E pamundur të shikoni këtë kontakt</string>
+    <string name="unable_to_view_contact">E pamundur të shihet ky kontakt</string>
     <string name="unarchive_all_chats">Të çarkivohen të gjitha bisedat</string>
     <string name="unarchive_all_chats_ask">Jeni i sigurt që doni të çarkivoni TË GJITHA bisedat?</string>
     <string name="unarchive_broadcast">Mos e ruaj listën e transmetimit</string>
     <string name="unarchive_conversation">Nxirr bisedën</string>
     <string name="unblock">Zhblloko</string>
-    <string name="unblock_before_messaging">Zhbllokoni kontaktin përpara se të shkëmbeni mesazhe.</string>
+    <string name="unblock_before_messaging">Zhblloko kontaktin përpara se të shkëmbesh mesazhe.</string>
     <string name="unblock_timeout">Zhbllokimi i kontaktit dështoi tani, Ju lutemi provoni përsëri më vonë!</string>
     <string name="undo">Çbëj</string>
     <string name="unimplemented">të pazbatuara</string>
@@ -1113,7 +1116,7 @@ Merre tani nga %s dhe thuaji mirupafshim SMSve!"</string>
     <string name="updating_group_icon_dialog_title">Duke përditësuar ikonën e grupit...</string>
     <string name="updating_profile_photo_dialog_title">Duke përditësuar foton e profilit...</string>
     <string name="upgrade">Përditëso</string>
-    <string name="upgrade_message">Një version i ri WhatsApp është gati për instalim. Doni ta instaloni tani?</string>
+    <string name="upgrade_message">Një version i ri WhatsApp është gati për instalim. Do ta instalosh tani?</string>
     <string name="upgrade_question">Përditësim?</string>
     <string name="use_as_wallpaper">Përdoreni si sfond</string>
     <string name="vcard_format_unsupport">Formati i kësaj vcard nuk mbështetet</string>
@@ -1132,7 +1135,7 @@ Ju lutemi, provoni verifikimin zanor."</string>
     <string name="verify_voice_call_button">Më telefono</string>
     <string name="verify_voice_call_button_disabled">Më telefono %s</string>
     <string name="verify_voice_description_bottom">Prekni ʻ%1$sʼ dhe shkruani %2$d kodin dixhital që dëgjoni.</string>
-    <string name="verify_voice_description_top">WhatsApp gjithashtu mund të ju thërrasë në</string>
+    <string name="verify_voice_description_top">WhatsApp mund të të thërrasë edhe në</string>
     <string name="verify_voice_enter_code">Shkruaj kodin</string>
     <string name="verify_voice_header">Verifikimi zanor</string>
     <string name="verify_voice_tap_call_first">Ju lutemi, shtypni fillimisht ‘%s’.</string>
@@ -1157,7 +1160,9 @@ Ju lutemi, provoni verifikimin zanor."</string>
     <string name="view_list_media">Lista e medias së transmetimeve</string>
     <string name="view_website">Shiko faqen web</string>
     <string name="voip_activity_label">Thirrje Zanore</string>
+    <string name="voip_call_bluetooth_toggle_description">Çelës Bluetooth</string>
     <string name="voip_call_end_button_description">Përfundo thirrjen zanore</string>
+    <string name="voip_call_failed_no_network">Telefonata nuk mund të kryhej. Sigurohu që telefoni yt të ketë lidhje Interneti dhe provo përsëri.</string>
     <string name="voip_call_goto_chat_description">Shiko Bisedën</string>
     <string name="voip_call_incoming">HYRËSE</string>
     <string name="voip_call_label">THIRRJE WHATSAPP</string>
@@ -1168,7 +1173,7 @@ Ju lutemi, provoni verifikimin zanor."</string>
     <string name="voip_call_recording_started">Regjistrimi i telefonatës VoIP filloi</string>
     <string name="voip_call_speakerphone_toggle_description">Ndiz altoparlantin</string>
     <string name="voip_call_start_button_description">Fillo thirrjen zanore</string>
-    <string name="voip_debug_remove_all_recordings">Hiq Çdo Regjistrim</string>
+    <string name="voip_debug_remove_all_recordings">Hiqni Çdo Regjistrim</string>
     <string name="voip_debug_removed_all_recordings">Të gjitha regjistrimet janë hequr.</string>
     <string name="voip_debug_report_bad_quality">Raporto Cilësi të Keqe Audio</string>
     <string name="voip_debug_reported_bad_quality">Krijo një komandë për cilësinë e keqe audio.</string>

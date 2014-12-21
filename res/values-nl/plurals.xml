@@ -169,8 +169,8 @@ resterend"</item>
         <item quantity="one">%d resterend</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">U kunt weer verder. We hebben %,d berichten hersteld.</item>
-        <item quantity="one">U kunt weer verder. We hebben %,d bericht hersteld.</item>
+        <item quantity="other">%,d berichten hersteld. U kunt weer verder.</item>
+        <item quantity="one">%,d bericht hersteld. U kunt weer verder.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">"%1$d video's verzenden naar %2$s"</item>

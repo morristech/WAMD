@@ -14,22 +14,22 @@
     .locals 2
 
     .prologue
-    .line 9
+    .line 6
     const/4 v0, 0x0
 
     sget v1, Lcom/actionbarsherlock/R$attr;->dropDownListViewStyle:I
 
     invoke-direct {p0, p1, v0, v1}, Landroid/widget/ListView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 3
+    .line 2
     iput-boolean p2, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$DropDownListView;->mHijackFocus:Z
 
-    .line 1
+    .line 8
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$DropDownListView;->setCacheColorHint(I)V
 
-    .line 4
+    .line 7
     return-void
 .end method
 
@@ -37,7 +37,7 @@
     .locals 0
 
     .prologue
-    .line 8
+    .line 3
     iput-boolean p1, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$DropDownListView;->mListSelectionHidden:Z
 
     return p1
@@ -49,7 +49,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 1
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$DropDownListView;->mHijackFocus:Z
 
     if-nez v0, :cond_0
@@ -76,7 +76,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 5
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$DropDownListView;->mHijackFocus:Z
 
     if-nez v0, :cond_0
@@ -103,7 +103,7 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 9
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$DropDownListView;->mHijackFocus:Z
 
     if-nez v0, :cond_0
@@ -130,7 +130,7 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 4
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$DropDownListView;->mHijackFocus:Z
 
     if-eqz v0, :cond_0

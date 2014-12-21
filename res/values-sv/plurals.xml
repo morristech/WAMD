@@ -168,10 +168,6 @@ av tjänsten"</item>
         <item quantity="other">%d kvar</item>
         <item quantity="one">%d kvar</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Tillbaka på banan! Vi har återställt %,d meddelanden.</item>
-        <item quantity="one">Tillbaka på banan! Vi har återställt %,d meddelande.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Skickar %1$d videor till %2$s</item>
         <item quantity="one">Skickar %1$d video till %2$s</item>

@@ -3,20 +3,109 @@
 .source "oc.java"
 
 # interfaces
-.implements Landroid/view/SurfaceHolder$Callback;
+.implements Landroid/view/View$OnClickListener;
+
+
+# static fields
+.field private static final z:Ljava/lang/String;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/VideoView;
+.field final a:Lcom/whatsapp/s2;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/VideoView;)V
+.method static constructor <clinit>()V
+    .locals 5
+
+    const-string v0, "6LC"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    move v2, v1
+
+    move-object v1, v0
+
+    :goto_0
+    if-gt v2, v3, :cond_0
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/whatsapp/oc;->z:Ljava/lang/String;
+
+    return-void
+
+    :cond_0
+    aget-char v4, v1, v3
+
+    rem-int/lit8 v0, v3, 0x5
+
+    packed-switch v0, :pswitch_data_0
+
+    const/16 v0, 0x70
+
+    :goto_1
+    xor-int/2addr v0, v4
+
+    int-to-char v0, v0
+
+    aput-char v0, v1, v3
+
+    add-int/lit8 v0, v3, 0x1
+
+    move v3, v0
+
+    goto :goto_0
+
+    :pswitch_0
+    const/16 v0, 0x54
+
+    goto :goto_1
+
+    :pswitch_1
+    const/16 v0, 0x39
+
+    goto :goto_1
+
+    :pswitch_2
+    const/16 v0, 0x3a
+
+    goto :goto_1
+
+    :pswitch_3
+    const/16 v0, 0x48
+
+    goto :goto_1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+    .end packed-switch
+.end method
+
+.method constructor <init>(Lcom/whatsapp/s2;)V
     .locals 0
 
     .prologue
-    .line 4
-    iput-object p1, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
+    .line 5
+    iput-object p1, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/s2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,148 +114,56 @@
 
 
 # virtual methods
-.method public surfaceChanged(Landroid/view/SurfaceHolder;III)V
-    .locals 4
+.method public onClick(Landroid/view/View;)V
+    .locals 3
 
     .prologue
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    .line 9
-    iget-object v0, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
-
-    invoke-static {v0, p3}, Lcom/whatsapp/VideoView;->e(Lcom/whatsapp/VideoView;I)I
-
-    .line 14
-    iget-object v0, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
-
-    invoke-static {v0, p4}, Lcom/whatsapp/VideoView;->g(Lcom/whatsapp/VideoView;I)I
-
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
-
-    invoke-static {v0}, Lcom/whatsapp/VideoView;->b(Lcom/whatsapp/VideoView;)I
-
-    move-result v0
-
-    const/4 v3, 0x3
-
-    if-ne v0, v3, :cond_2
-
-    move v0, v1
-
-    .line 5
-    :goto_0
-    iget-object v3, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
-
-    invoke-static {v3}, Lcom/whatsapp/VideoView;->i(Lcom/whatsapp/VideoView;)I
-
-    move-result v3
-
-    if-ne v3, p3, :cond_3
-
-    iget-object v3, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
-
-    invoke-static {v3}, Lcom/whatsapp/VideoView;->g(Lcom/whatsapp/VideoView;)I
-
-    move-result v3
-
-    if-ne v3, p4, :cond_3
-
-    .line 15
-    :goto_1
-    iget-object v2, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
-
-    invoke-static {v2}, Lcom/whatsapp/VideoView;->a(Lcom/whatsapp/VideoView;)Landroid/media/MediaPlayer;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_1
-
-    if-eqz v0, :cond_1
-
-    if-eqz v1, :cond_1
-
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
-
-    invoke-static {v0}, Lcom/whatsapp/VideoView;->j(Lcom/whatsapp/VideoView;)I
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 11
-    iget-object v0, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
-
-    iget-object v1, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
-
-    invoke-static {v1}, Lcom/whatsapp/VideoView;->j(Lcom/whatsapp/VideoView;)I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/VideoView;->seekTo(I)V
-
     .line 6
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
+    new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {v0}, Lcom/whatsapp/VideoView;->start()V
+    iget-object v1, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/s2;
 
-    .line 16
-    :cond_1
-    return-void
+    iget-object v1, v1, Lcom/whatsapp/s2;->e:Lcom/whatsapp/RegisterName;
 
-    :cond_2
-    move v0, v2
+    const-class v2, Lcom/whatsapp/AccountInfoActivity;
 
-    .line 2
-    goto :goto_0
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    :cond_3
-    move v1, v2
-
-    .line 5
-    goto :goto_1
-.end method
-
-.method public surfaceCreated(Landroid/view/SurfaceHolder;)V
-    .locals 1
-
-    .prologue
     .line 7
-    iget-object v0, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
+    sget-object v1, Lcom/whatsapp/oc;->z:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lcom/whatsapp/VideoView;->a(Lcom/whatsapp/VideoView;Landroid/view/SurfaceHolder;)Landroid/view/SurfaceHolder;
+    const/4 v2, 0x1
 
-    .line 13
-    iget-object v0, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    invoke-static {v0}, Lcom/whatsapp/VideoView;->c(Lcom/whatsapp/VideoView;)V
+    .line 4
+    iget-object v1, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/s2;
+
+    iget-object v1, v1, Lcom/whatsapp/s2;->e:Lcom/whatsapp/RegisterName;
+
+    invoke-virtual {v1, v0}, Lcom/whatsapp/RegisterName;->startActivity(Landroid/content/Intent;)V
 
     .line 1
-    return-void
-.end method
+    iget-object v0, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/s2;
 
-.method public surfaceDestroyed(Landroid/view/SurfaceHolder;)V
-    .locals 2
+    iget-object v0, v0, Lcom/whatsapp/s2;->e:Lcom/whatsapp/RegisterName;
 
-    .prologue
-    .line 12
-    iget-object v0, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
+    invoke-virtual {v0}, Lcom/whatsapp/RegisterName;->finish()V
+
+    .line 3
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Lcom/whatsapp/RegisterName;->a(Lcom/whatsapp/i0;)Lcom/whatsapp/i0;
+
+    .line 8
+    iget-object v0, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/s2;
+
+    iget-object v0, v0, Lcom/whatsapp/s2;->e:Lcom/whatsapp/RegisterName;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/whatsapp/VideoView;->a(Lcom/whatsapp/VideoView;Landroid/view/SurfaceHolder;)Landroid/view/SurfaceHolder;
+    invoke-virtual {v0, v1}, Lcom/whatsapp/RegisterName;->removeDialog(I)V
 
-    .line 8
-    iget-object v0, p0, Lcom/whatsapp/oc;->a:Lcom/whatsapp/VideoView;
-
-    const/4 v1, 0x1
-
-    invoke-static {v0, v1}, Lcom/whatsapp/VideoView;->c(Lcom/whatsapp/VideoView;Z)V
-
-    .line 10
+    .line 2
     return-void
 .end method

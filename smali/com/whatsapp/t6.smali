@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ListChatInfo;
+.field final a:Lcom/whatsapp/EULA;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ListChatInfo;)V
+.method constructor <init>(Lcom/whatsapp/EULA;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/t6;->a:Lcom/whatsapp/ListChatInfo;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/t6;->a:Lcom/whatsapp/EULA;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,24 +29,13 @@
     .locals 2
 
     .prologue
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/t6;->a:Lcom/whatsapp/ListChatInfo;
-
-    const/4 v1, 0x6
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/ListChatInfo;->removeDialog(I)V
-
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/t6;->a:Lcom/whatsapp/ListChatInfo;
-
-    iget-object v1, p0, Lcom/whatsapp/t6;->a:Lcom/whatsapp/ListChatInfo;
-
-    invoke-static {v1}, Lcom/whatsapp/ListChatInfo;->a(Lcom/whatsapp/ListChatInfo;)Lcom/whatsapp/adg;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lcom/whatsapp/ListChatInfo;->a(Lcom/whatsapp/ListChatInfo;Lcom/whatsapp/adg;)V
-
     .line 2
+    iget-object v0, p0, Lcom/whatsapp/t6;->a:Lcom/whatsapp/EULA;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/EULA;->removeDialog(I)V
+
+    .line 1
     return-void
 .end method

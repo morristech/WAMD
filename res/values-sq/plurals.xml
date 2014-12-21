@@ -40,14 +40,6 @@
         <item quantity="other">%d ditë</item>
         <item quantity="one">%d ditë</item>
     </plurals>
-    <plurals name="days_of_service">
-        <item quantity="other">"Shijoni
-%d ditët
-e shërbimit"</item>
-        <item quantity="one">"Shijoni
-%d ditën
-e shërbimit"</item>
-    </plurals>
     <plurals name="days_of_service_remaining">
         <item quantity="other">"%d ditë
 shërbimi
@@ -69,12 +61,12 @@ e mbetur"</item>
         <item quantity="one">Të shpërndahet artikulli %1$d me “%2$s”?</item>
     </plurals>
     <plurals name="group_participant_demoted_names">
-        <item quantity="other">%s nuk janë më administruesa</item>
-        <item quantity="one">%s nuk është më administrues</item>
+        <item quantity="other">%s nuk janë më drejtuesa</item>
+        <item quantity="one">%s nuk është më drejtues</item>
     </plurals>
     <plurals name="group_participant_promoted_names">
-        <item quantity="other">%s janë administruesa tashmë</item>
-        <item quantity="one">%s është administrues tashmë</item>
+        <item quantity="other">%s janë drejtuesa tashmë</item>
+        <item quantity="one">%s është drejtues tashmë</item>
     </plurals>
     <plurals name="hours">
         <item quantity="other">%d orë</item>
@@ -169,8 +161,8 @@ të mbetur"</item>
         <item quantity="one">edhe %d</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Gati! Sapo riruajtëm %,d mesazhe.</item>
-        <item quantity="one">Gati! Sapo riruajtëm %,d mesazh.</item>
+        <item quantity="other">%,d mesazhe të ruajtura. Gati!</item>
+        <item quantity="one">%,d mesazh i ruajtur. Gati!</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Duke dërguar videot %1$d tek %2$s</item>
@@ -197,10 +189,10 @@ të mbetur"</item>
         <item quantity="one">%d vit</item>
     </plurals>
     <plurals name="years_of_service">
-        <item quantity="other">"Shijoni
+        <item quantity="other">"Shijo
 %d vitet
 e shërbimit"</item>
-        <item quantity="one">"Shijoni
+        <item quantity="one">"Shijo
 %d vitin
 e shërbimit"</item>
     </plurals>

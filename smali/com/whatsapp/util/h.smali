@@ -1,52 +1,106 @@
-.class final Lcom/whatsapp/util/h;
+.class public Lcom/whatsapp/util/h;
 .super Ljava/lang/Object;
 .source "h.java"
 
-# interfaces
-.implements Landroid/view/ViewTreeObserver$OnDrawListener;
-
-
-# instance fields
-.field final a:Landroid/view/View;
-
-.field final b:Ljava/lang/Runnable;
-
 
 # direct methods
-.method constructor <init>(Landroid/view/View;Ljava/lang/Runnable;)V
-    .locals 0
+.method public static a(Ljava/lang/CharSequence;Landroid/view/View;Landroid/widget/TextView;Landroid/view/Display;)V
+    .locals 5
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/util/h;->a:Landroid/view/View;
+    const/4 v4, 0x0
 
-    iput-object p2, p0, Lcom/whatsapp/util/h;->b:Ljava/lang/Runnable;
+    .line 2
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/16 v1, 0x8
 
+    if-ge v0, v1, :cond_0
+
+    .line 6
+    :goto_0
     return-void
-.end method
 
+    .line 11
+    :cond_0
+    invoke-virtual {p3}, Landroid/view/Display;->getWidth()I
 
-# virtual methods
-.method public onDraw()V
-    .locals 1
+    move-result v0
 
-    .prologue
+    invoke-virtual {p3}, Landroid/view/Display;->getHeight()I
+
+    move-result v1
+
+    invoke-virtual {p1, v0, v1}, Landroid/view/View;->measure(II)V
+
+    .line 12
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v0
+
+    .line 9
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v1
+
+    .line 8
+    invoke-virtual {p2}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/text/TextPaint;->getFontSpacing()F
+
+    move-result v2
+
+    .line 15
+    int-to-float v0, v0
+
+    div-float/2addr v0, v2
+
+    invoke-static {v0}, Ljava/lang/Math;->round(F)I
+
+    move-result v0
+
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/util/h;->a:Landroid/view/View;
+    new-instance v2, Landroid/text/SpannableString;
 
-    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-direct {v2, p0}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
+
+    .line 7
+    new-instance v3, Lcom/whatsapp/util/z;
+
+    invoke-direct {v3, v0, v1, p1}, Lcom/whatsapp/util/z;-><init>(IILandroid/view/View;)V
+
+    invoke-virtual {v2}, Landroid/text/SpannableString;->length()I
+
+    move-result v0
+
+    const/16 v1, 0x21
+
+    invoke-virtual {v2, v3, v4, v0, v1}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
+
+    .line 3
+    invoke-virtual {p2, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 14
+    invoke-virtual {p2}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnDrawListener(Landroid/view/ViewTreeObserver$OnDrawListener;)V
+    check-cast v0, Landroid/widget/RelativeLayout$LayoutParams;
 
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/util/h;->b:Ljava/lang/Runnable;
+    .line 5
+    invoke-virtual {v0}, Landroid/widget/RelativeLayout$LayoutParams;->getRules()[I
 
-    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
+    move-result-object v0
 
-    .line 2
-    return-void
+    .line 13
+    const/4 v1, 0x1
+
+    aput v4, v0, v1
+
+    .line 10
+    aput v4, v0, v4
+
+    goto :goto_0
 .end method

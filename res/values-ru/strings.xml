@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="account_expired_alert">Ваш сервис WhatsApp для %1$s истек %2$s. Оплатить услугу?</string>
-    <string name="account_info_account_num">Номер телефона</string>
+    <string name="account_info_account_num">Тел. номер</string>
     <string name="account_info_check_eligibility">Проверка правомерности...</string>
     <string name="account_info_confirm_continue_with_purchase">Вы по-прежнему хотите купить услугу?</string>
     <string name="account_info_desc">Подписка привязана к номеру телефона, указанному выше. Вы можете свободно менять модель телефона, переустанавливать или обновлять программу, при условии, что номер не изменится. Мы надеемся, что вы довольны нашим сервисом.</string>
@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Удерживать для записи, отпустить для отправки</string>
     <string name="audio_note_tip_2">Пожалуйста, введите более длинное сообщение</string>
     <string name="audio_note_top_mic_tip">Говорите в микрофон в верхней части телефона</string>
-    <string name="auth_client_needs_enabling_title">Для работы приложения требуется включить сервисы Google Play</string>
-    <string name="auth_client_needs_installation_title">Для работы приложения требуется установить сервисы Google Play</string>
-    <string name="auth_client_needs_update_title">Для работы приложения требуется обновить сервисы Google Play</string>
-    <string name="auth_client_play_services_err_notification_msg">Ошибка сервисов Google Play</string>
-    <string name="auth_client_requested_by_msg">Запрос от приложения \"%1$s\"</string>
-    <string name="auth_client_using_bad_version_title">Версия сервисов Google Play неисправна</string>
-    <string name="barcode_scanner_dialog_body">Данное приложение требует установления сканера штрихкода. Желаете установить сканер?</string>
-    <string name="barcode_scanner_dialog_title">Установить сканер штрихкода?</string>
     <string name="block">Заблокировать</string>
     <string name="block_ask">Вы уверены, что хотите заблокировать этот контакт?</string>
     <string name="block_list_desc_1">"Нажмите на кнопку в правом верхнем углу, чтобы выбрать контакт для блокировки.
@@ -113,6 +105,8 @@
     <string name="camera_shortcut">Камера WhatsApp</string>
     <string name="camera_title">Отправить фото или видео через WhatsApp</string>
     <string name="camera_video_preview_title">Отправить видео в WhatsApp</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">Чтобы совершить звонок в WhatsApp, сначала отключите Режим полета.</string>
+    <string name="can_not_start_voip_call_in_phone_call">Вы не можете совершить звонок в WhatsApp, если уже звоните по телефону.</string>
     <string name="cancel">Отмена</string>
     <string name="cannot_send_not_a_group_participant">Вы не можете отправлять сообщения в эту группу, поскольку вы больше не являетесь ее участником.</string>
     <string name="cannot_send_selected_file">Невозможно отправить этот файл. Либо вы выбрали неправильный файл, либо этот формат не поддерживается.</string>
@@ -161,23 +155,32 @@
     <string name="color_red">Красный</string>
     <string name="color_white">Белый</string>
     <string name="color_yellow">Желтый</string>
+    <string name="common_android_wear_notification_needs_update_text">Требуется обновить приложение Android Wear.</string>
+    <string name="common_android_wear_update_text">Для работы этого приложения требуется обновить Android Wear.</string>
+    <string name="common_android_wear_update_title">Обновить Android Wear</string>
     <string name="common_google_play_services_enable_button">Включить</string>
     <string name="common_google_play_services_enable_text">Для работы этого приложения требуется включить Сервисы Google Play.</string>
     <string name="common_google_play_services_enable_title">Включите Сервисы Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Источник запроса: %1$s</string>
     <string name="common_google_play_services_install_button">Установить</string>
     <string name="common_google_play_services_install_text_phone">Для работы этого приложения требуется установить Сервисы Google Play.</string>
     <string name="common_google_play_services_install_text_tablet">Для работы этого приложения требуется установить Сервисы Google Play.</string>
     <string name="common_google_play_services_install_title">Установите Сервисы Google Play</string>
     <string name="common_google_play_services_invalid_account_text">Этого аккаунта нет на устройстве. Выберите другой.</string>
     <string name="common_google_play_services_invalid_account_title">Недействительный аккаунт</string>
+    <string name="common_google_play_services_needs_enabling_title">Для работы приложения требуется включить сервисы Google Play</string>
     <string name="common_google_play_services_network_error_text">Для работы с Google Play требуется подключение к сети.</string>
     <string name="common_google_play_services_network_error_title">Ошибка сети</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Для работы приложения требуется установить сервисы Google Play</string>
+    <string name="common_google_play_services_notification_needs_update_title">Для работы приложения требуется обновить сервисы Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Ошибка сервисов Google Play</string>
     <string name="common_google_play_services_unknown_issue">Неизвестная ошибка с Сервисами Google Play.</string>
     <string name="common_google_play_services_unsupported_text">Сервисы Google Play, необходимые для работы некоторых приложений, не поддерживаются на вашем устройстве. Обратитесь к производителю.</string>
     <string name="common_google_play_services_unsupported_title">Сервисы Google Play</string>
     <string name="common_google_play_services_update_button">Обновить</string>
     <string name="common_google_play_services_update_text">Для работы этого приложения требуется обновить Сервисы Google Play.</string>
     <string name="common_google_play_services_update_title">Обновите Сервисы Google Play</string>
+    <string name="common_open_on_phone">Открыть на телефоне</string>
     <string name="common_signin_button_text">Войти</string>
     <string name="common_signin_button_text_long">Войти в аккаунт Google</string>
     <string name="confirm_forward_msg">Переслать контакту %s?</string>
@@ -354,7 +357,7 @@
     <string name="eula_description">Кросс-платформенная мобильная система обмена сообщениями с друзьями по всему миру</string>
     <string name="eula_tablets_not_supported">Внимание: планшеты на данный момент не поддерживаются.</string>
     <string name="eula_terms_of_service">Условия предоставления услуг</string>
-    <string name="eula_title">Добро пожаловать в WhatsApp!</string>
+    <string name="eula_title">Добро пожаловать в WhatsApp</string>
     <string name="existing_contact">Существующий</string>
     <string name="exit">Выйти</string>
     <string name="exit_group">Выйти из группы</string>
@@ -527,7 +530,6 @@
     <string name="insufficient_space_for_download_shared_storage">Невозможно загрузить, так как внутренняя память переполнена. Пожалуйста, удалите ненужные файлы и повторите попытку.</string>
     <string name="invalid_media_message_download">Нельзя загрузить медиа из некорректного сообщения. Пожалуйста, повторите отправку сообщения.</string>
     <string name="invalid_message_forward">Невозможно переслать сообщение ошибочному контакту.</string>
-    <string name="invalid_qr_code">Неверный QR-код</string>
     <string name="invalid_url_for_download">Невозможно загрузить. Пожалуйста, попросите переслать.</string>
     <string name="invite">Пригласить</string>
     <string name="invite_friends">Пригласить друзей</string>
@@ -573,7 +575,6 @@
     <string name="menuitem_add">Добавить</string>
     <string name="menuitem_contacts">Контакты</string>
     <string name="menuitem_debug">Отладка</string>
-    <string name="menuitem_delete_qr">Удалить QR-код</string>
     <string name="menuitem_groupchat">Новая группа</string>
     <string name="menuitem_list">Новая рассылка</string>
     <string name="menuitem_mute">Не беспокоить</string>
@@ -614,14 +615,15 @@
     <string name="msg_store_backup_failed">Не удалось скопировать сообщения</string>
     <string name="msg_store_backup_failed_try_again_later">Невозможно сделать резервную копию сообщений. Повторите попытку позже.</string>
     <string name="msg_store_backup_found">Обнаружена резервная копия</string>
-    <string name="msg_store_backup_found_registration">Найден архив сообщений!</string>
+    <string name="msg_store_backup_found_registration">Найдена резервная копия чата</string>
+    <string name="msg_store_backup_found_title">Восстановить историю чатов</string>
     <string name="msg_store_backup_skipped">Бэкап сообщений пропущен</string>
     <string name="msg_store_backup_skipped_no_media">Резервное копирование сообщений пропущено: не найдена карта памяти.</string>
     <string name="msg_store_backup_skipped_read_only_media">Копирование сообщений пропущено: карта памяти доступна только для чтения.</string>
     <string name="msg_store_confirm">Подтвердить</string>
-    <string name="msg_store_creation_backup_message">Хотите ли вы восстановить ваши сообщения из архива?</string>
+    <string name="msg_store_creation_backup_message">Восстановите историю своих чатов из резервной копии. Если вы не восстановите историю сейчас, то не сможете сделать этого позже.</string>
     <string name="msg_store_do_not_restore">Не восстанавливать</string>
-    <string name="msg_store_do_not_restore_no_thanks">Нет, спасибо</string>
+    <string name="msg_store_do_not_restore_no_thanks">Не восстанавливать</string>
     <string name="msg_store_error_found">Произошла ошибка. Пожалуйста, перезапустите WhatsApp.</string>
     <string name="msg_store_error_not_restored">К сожалению, восстановление резервных копий истории ваших чатов невозможно.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Ваши сообщения пропадут. Уверены ли вы, что не хотите восстанавливать сообщения из архива?</string>
@@ -648,9 +650,6 @@
     <string name="need_sd_card_shared_storage">Пожалуйста, выключите USB-накопитель и повторите попытку.</string>
     <string name="network_required">Нет доступа к сети.</string>
     <string name="network_usage_ask_reset_message">Вы уверены, что хотите сбросить статистику?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f ГБ</string>
-    <string name="network_usage_byte_count_kb">%1$.1f КБ</string>
-    <string name="network_usage_byte_count_mb">%1$.1f МБ</string>
     <string name="network_usage_last_reset_time">Последний сброс: %1$s</string>
     <string name="network_usage_media_bytes_received">Получено байт медиа:</string>
     <string name="network_usage_media_bytes_sent">Отправлено байт медиа:</string>
@@ -666,7 +665,7 @@
     <string name="new_contact">Новый</string>
     <string name="new_group">Новая группа</string>
     <string name="new_group_info_prompt">Введите тему группы и при желании установите картинку группы</string>
-    <string name="new_list">Новая рассылка</string>
+    <string name="new_list">Рассылка</string>
     <string name="next">След.</string>
     <string name="no">Нет</string>
     <string name="no_access_permission">У WhatsApp нет прав доступа к этому файлу.</string>
@@ -793,7 +792,7 @@
     <string name="register_invalid_cc">неверный код страны</string>
     <string name="register_learn_more">Подробнее</string>
     <string name="register_name_hint">Введите свое имя сюда</string>
-    <string name="register_name_info">Введите свое имя и при желании фото профиля</string>
+    <string name="register_name_info">Введите свое имя и при желании установите фото профиля</string>
     <string name="register_name_profile">Профиль</string>
     <string name="register_no_internet_connectivity">WhatsApp требуется активное Интернет-подключение. %s</string>
     <string name="register_phone_country">ваша страна</string>
@@ -897,6 +896,7 @@
     <string name="send_location">Отправить местоположение</string>
     <string name="send_payment_button">Отправить ссылку для оплаты</string>
     <string name="send_payment_url_via">Отправить ссылку для платежа через...</string>
+    <string name="send_this_location">Отправить данное местоположение</string>
     <string name="send_your_current_location">Отправить местоположение</string>
     <string name="sending_video_to_contact">Отправка видео %s</string>
     <string name="sent_to_group">Отправить “%s”</string>
@@ -971,7 +971,7 @@
     <string name="settings_payment_info">Информация об оплате</string>
     <string name="settings_privacy">Приватность</string>
     <string name="settings_privacy_last_seen">Последнее посещение</string>
-    <string name="settings_privacy_message">Если вы скроете время своего последнего посещения, вы не сможете видеть время последнего посещения других пользователей.</string>
+    <string name="settings_privacy_message">Если вы скроете время своего последнего посещения, то не сможете видеть время последнего посещения других пользователей.</string>
     <string name="settings_privacy_profile_photo">Фото профиля</string>
     <string name="settings_privacy_read_receipts">Отчеты о прочтении</string>
     <string name="settings_privacy_read_receipts_message">Если вы отключите отчеты о прочтении, то не сможете видеть отчеты о прочтении других пользователей. Данные уведомления нельзя отключить для групповых чатов.</string>
@@ -1009,18 +1009,18 @@
     <string name="software_expired_get_from_play_with_date">Эта версия WhatsApp устарела &lt;b>%1$s&lt;/b>. Посетите Google Play, чтобы скачать последнюю версию.&lt;br>&lt;br>Дата на вашем устройстве: &lt;b>%2$s&lt;/b>. Если она неверна, пожалуйста, исправьте дату в настройках, затем перезапустите WhatsApp.</string>
     <string name="software_expired_with_date">Эта версия WhatsApp устарела &lt;b>%1$s&lt;/b>. Нажмите “Скачать”, чтобы установить последнюю версию.&lt;br>&lt;br>Дата на вашем устройстве: &lt;b>%2$s&lt;/b>. Если она неверна, пожалуйста, исправьте дату в настройках, затем перезапустите WhatsApp.</string>
     <string name="spam_generic">"Ваш номер в WhatsApp временно заблокирован из-за возможного нарушения вами наших Условий предоставления услуг.
-Вы сможете использовать WhatsApp снова через:"</string>
+
+Вы сможете снова использовать WhatsApp через:"</string>
     <string name="spam_generic_data_connection_missing">Убедитесь, что ваш телефон подключен к Интернету.</string>
     <string name="spam_generic_unknown_time_left">Ваш номер в WhatsApp временно заблокирован из-за возможного нарушения вами наших условий предоставления услуг. Вскоре вы сможете использовать WhatsApp снова.</string>
     <string name="spam_learn_more">Подробнее</string>
     <string name="spam_title">Номер временно заблокирован</string>
-    <string name="spam_too_many_blocks">Ваш номер в WhatsApp временно заблокирован из-за большого числа пользователей, заблокировавших вас.</string>
-    <string name="spam_too_many_groups">"Ваш номер в WhatsApp временно заблокирован, так как вы создали слишком много групп с контактами, у которых нет вашего номера телефона в их адресных книгах.
-Вы сможете использовать WhatsApp снова через:"</string>
-    <string name="spam_too_many_messages">"Ваш номер в WhatsApp временно заблокирован, так как вы отправили слишком много сообщений контактам, у которых нет вашего номера телефона в их адресных книгах.
-Вы сможете использовать WhatsApp снова через:"</string>
-    <string name="spam_too_many_people">"Ваш номер в WhatsApp временно заблокирован, так как вы отправили идентичное сообщение слишком большому количеству пользователей.
-Вы сможете использовать WhatsApp снова через:"</string>
+    <string name="spam_too_many_groups">"Ваш номер в WhatsApp временно заблокирован, так как вы создали слишком много групп с контактами, у которых нет вашего номера в их адресных книгах.
+
+Вы сможете снова использовать WhatsApp через:"</string>
+    <string name="spam_too_many_messages">"Ваш номер в WhatsApp временно заблокирован, так как вы отправили слишком много сообщений контактам, у которых нет вашего номера в их адресных книгах.
+
+Вы сможете снова использовать WhatsApp через:"</string>
     <string name="status">Статус</string>
     <string name="status_default_at_gym">В спортзале</string>
     <string name="status_default_at_movies">В кино</string>
@@ -1188,7 +1188,9 @@ Task killers могут ПОСТОЯННО закрывать WhatsApp на да
     <string name="view_list_media">Медиа рассылки</string>
     <string name="view_website">Открыть вебсайт</string>
     <string name="voip_activity_label">Вызов</string>
+    <string name="voip_call_bluetooth_toggle_description">Переключить Bluetooth</string>
     <string name="voip_call_end_button_description">Завершить вызов</string>
+    <string name="voip_call_failed_no_network">Невозможно совершить звонок. Убедитесь, что ваш телефон подключен к Интернету, и далее повторите попытку.</string>
     <string name="voip_call_goto_chat_description">Просмотр чата</string>
     <string name="voip_call_incoming">ВХОДЯЩИЙ</string>
     <string name="voip_call_label">WhatsApp-вызов</string>
@@ -1241,5 +1243,4 @@ Task killers могут ПОСТОЯННО закрывать WhatsApp на да
     <string name="yesterday">Вчера</string>
     <string name="yesterday_at">вчера в %s</string>
     <string name="you">Вы</string>
-    <string name="voip_call_bluetooth_toggle_description">Переключить Bluetooth</string>
 </resources>

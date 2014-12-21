@@ -145,8 +145,8 @@ verbleibend"</item>
         <item quantity="one">%d ausgewählt</item>
     </plurals>
     <plurals name="network_usage_byte_count_bytes">
-        <item quantity="other">%1$d bytes</item>
-        <item quantity="one">%1$d byte</item>
+        <item quantity="other">%1$d Bytes</item>
+        <item quantity="one">%1$d Byte</item>
     </plurals>
     <plurals name="network_usage_message_count">
         <item quantity="other">%1$d Nachrichten</item>
@@ -169,8 +169,8 @@ verbleibend"</item>
         <item quantity="one">%d verbleibend</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Es kann losgehen. Wir haben %,d Nachrichten wiederhergestellt.</item>
-        <item quantity="one">Es kann losgehen. Wir haben %,d Nachricht wiederhergestellt.</item>
+        <item quantity="other">%,d Nachrichten wieder hergestellt. Du kannst loslegen.</item>
+        <item quantity="one">%,d Nachricht wieder hergestellt. Du kannst loslegen.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Sende %1$d Videos an %2$s</item>

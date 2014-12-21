@@ -11,7 +11,7 @@
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
 
-    const-string v0, "com.google.android.gms.maps.internal.IOnInfoWindowClickListener"
+    const-string v0, "com.google.android.gms.maps.internal.IOnCameraChangeListener"
 
     invoke-virtual {p0, p0, v0}, Lcom/google/android/gms/maps/internal/f$a;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
@@ -27,9 +27,9 @@
 .end method
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 2
+    .locals 3
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
     sparse-switch p1, :sswitch_data_0
 
@@ -41,32 +41,46 @@
     return v0
 
     :sswitch_0
-    const-string v1, "com.google.android.gms.maps.internal.IOnInfoWindowClickListener"
+    const-string v0, "com.google.android.gms.maps.internal.IOnCameraChangeListener"
 
-    invoke-virtual {p3, v1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+    invoke-virtual {p3, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    move v0, v1
 
     goto :goto_0
 
     :sswitch_1
-    const-string v1, "com.google.android.gms.maps.internal.IOnInfoWindowClickListener"
+    const-string v0, "com.google.android.gms.maps.internal.IOnCameraChangeListener"
 
-    invoke-virtual {p2, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+    invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
+    invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
-    move-result-object v1
+    move-result v0
 
-    invoke-static {v1}, Lcom/google/android/gms/maps/model/internal/d$a;->Q(Landroid/os/IBinder;)Lcom/google/android/gms/maps/model/internal/d;
+    if-eqz v0, :cond_0
 
-    move-result-object v1
+    sget-object v0, Lcom/google/android/gms/maps/model/CameraPosition;->CREATOR:Lcom/google/android/gms/maps/model/a;
 
-    invoke-virtual {p0, v1}, Lcom/google/android/gms/maps/internal/f$a;->e(Lcom/google/android/gms/maps/model/internal/d;)V
+    invoke-virtual {v0, p2}, Lcom/google/android/gms/maps/model/a;->da(Landroid/os/Parcel;)Lcom/google/android/gms/maps/model/CameraPosition;
+
+    move-result-object v0
+
+    sget v2, Lcom/google/android/gms/maps/internal/m$a;->a:I
+
+    if-eqz v2, :cond_1
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :cond_1
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/maps/internal/f$a;->onCameraChange(Lcom/google/android/gms/maps/model/CameraPosition;)V
 
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    goto :goto_0
+    move v0, v1
 
-    nop
+    goto :goto_0
 
     :sswitch_data_0
     .sparse-switch

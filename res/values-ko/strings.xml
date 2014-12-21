@@ -71,14 +71,6 @@
     <string name="audio_note_tip">길게 탭하여 녹음한 후 손을 놓아 전송합니다</string>
     <string name="audio_note_tip_2">더 긴 메시지를 녹음해 주세요.</string>
     <string name="audio_note_top_mic_tip">전화기에 위치한 마이크에 대고 말하세요</string>
-    <string name="auth_client_needs_enabling_title">Google Play 서비스를 사용하도록 설정해야 하는 애플리케이션입니다.</string>
-    <string name="auth_client_needs_installation_title">Google Play 서비스를 설치해야 하는 애플리케이션입니다.</string>
-    <string name="auth_client_needs_update_title">Google Play 서비스를 업데이트해야 하는 애플리케이션입니다.</string>
-    <string name="auth_client_play_services_err_notification_msg">Google Play 서비스 오류</string>
-    <string name="auth_client_requested_by_msg">%1$s에서 요청</string>
-    <string name="auth_client_using_bad_version_title">애플리케이션에서 잘못된 버전의 Google Play 서비스를 사용하려고 했습니다.</string>
-    <string name="barcode_scanner_dialog_body">애플리캐이션이 바코드를 필요로 합니다. 설치할까요?</string>
-    <string name="barcode_scanner_dialog_title">바코드 스캐너를 설치할까요?</string>
     <string name="block">차단</string>
     <string name="block_ask">연락처를 차단할까요?</string>
     <string name="block_list_desc_1">"연락처를 숨기려면 오른쪽 위의 아이콘을 탭하세요.
@@ -159,23 +151,32 @@
     <string name="color_red">빨간색</string>
     <string name="color_white">하얀색</string>
     <string name="color_yellow">노란색</string>
+    <string name="common_android_wear_notification_needs_update_text">Android Wear 앱에 대한 업데이트가 필요한 애플리케이션이 있습니다.</string>
+    <string name="common_android_wear_update_text">Android Wear 앱을 업데이트해야만 이 앱이 실행됩니다.</string>
+    <string name="common_android_wear_update_title">Android Wear 업데이트</string>
     <string name="common_google_play_services_enable_button">Google Play 서비스 사용</string>
     <string name="common_google_play_services_enable_text">Google Play 서비스를 사용하도록 설정해야 이 앱이 작동합니다.</string>
     <string name="common_google_play_services_enable_title">Google Play 서비스 사용</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s에서 요청</string>
     <string name="common_google_play_services_install_button">Google Play 서비스 설치</string>
     <string name="common_google_play_services_install_text_phone">휴대전화에 Google Play 서비스가 설치되어 있어야 이 앱이 실행됩니다.</string>
     <string name="common_google_play_services_install_text_tablet">태블릿에 Google Play 서비스가 설치되어 있어야 이 앱이 실행됩니다.</string>
     <string name="common_google_play_services_install_title">Google Play 서비스 설치</string>
     <string name="common_google_play_services_invalid_account_text">지정한 계정이 이 기기에 존재하지 않습니다. 다른 계정을 선택하세요.</string>
     <string name="common_google_play_services_invalid_account_title">올바르지 않은 계정</string>
+    <string name="common_google_play_services_needs_enabling_title">Google Play 서비스를 사용 설정해야 하는 애플리케이션입니다.</string>
     <string name="common_google_play_services_network_error_text">Google Play 서비스에 연결하려면 데이터 연결이 필요합니다.</string>
     <string name="common_google_play_services_network_error_title">네트워크 오류</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Google Play 서비스를 설치해야 하는 애플리케이션입니다.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Google Play 서비스를 업데이트해야 하는 애플리케이션입니다.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play 서비스 오류</string>
     <string name="common_google_play_services_unknown_issue">Google Play 서비스에 알 수 없는 문제가 발생했습니다.</string>
     <string name="common_google_play_services_unsupported_text">일부 사용자 애플리케이션에 필요한 Google Play 서비스가 사용자 기기에서 지원되지 않습니다. 기기 제조업체에 문의하시기 바랍니다.</string>
     <string name="common_google_play_services_unsupported_title">Google Play 서비스</string>
     <string name="common_google_play_services_update_button">업데이트</string>
     <string name="common_google_play_services_update_text">Google Play 서비스를 업데이트해야만 이 앱이 실행됩니다.</string>
     <string name="common_google_play_services_update_title">Google Play 서비스 업데이트</string>
+    <string name="common_open_on_phone">휴대전화에서 열기</string>
     <string name="common_signin_button_text">로그인</string>
     <string name="common_signin_button_text_long">Google 계정으로 로그인</string>
     <string name="confirm_forward_msg">%s님께 전달할까요?</string>
@@ -352,7 +353,6 @@
     <string name="eula_description">전세계 친구들과 즐기는 멀티 플랫폼 모바일 메신저</string>
     <string name="eula_tablets_not_supported">태블릿은 현재 지원하고 있지 않습니다.</string>
     <string name="eula_terms_of_service">서비스 약관</string>
-    <string name="eula_title">환영합니다!</string>
     <string name="existing_contact">기존 연락처</string>
     <string name="exit">퇴장</string>
     <string name="exit_group">그룹 퇴장</string>
@@ -527,7 +527,6 @@
     <string name="insufficient_space_for_download_shared_storage">휴대전화 저장 공간 부족으로 내려받기를 진행할 수 없습니다. 여유 공간을 만드신 후 다시 시도해 주세요.</string>
     <string name="invalid_media_message_download">올바르지 않은 메시지에 첨부된 미디어 파일은 저장할 수 없습니다. 다시 시도 해 주세요.</string>
     <string name="invalid_message_forward">연락처가 확실하지 않아 메시지를 전달할 수 없습니다.</string>
-    <string name="invalid_qr_code">QR코드를 인식할 수 없습니다</string>
     <string name="invalid_url_for_download">내려받기 실패. 다시 시도해 주세요.</string>
     <string name="invite">초대</string>
     <string name="invite_friends">친구 초대하기</string>
@@ -573,7 +572,6 @@
     <string name="menuitem_add">추가</string>
     <string name="menuitem_contacts">연락처</string>
     <string name="menuitem_debug">디버그</string>
-    <string name="menuitem_delete_qr">QR 코드 삭제</string>
     <string name="menuitem_groupchat">새 그룹</string>
     <string name="menuitem_list">새 단체 메시지</string>
     <string name="menuitem_mute">음소거</string>
@@ -614,14 +612,10 @@
     <string name="msg_store_backup_failed">대화 기록을 백업할 수 없습니다</string>
     <string name="msg_store_backup_failed_try_again_later">메시지를 백업할 수 없습니다. 다시 시도해주세요.</string>
     <string name="msg_store_backup_found">백업본 인식</string>
-    <string name="msg_store_backup_found_registration">백업 메시지를 찾았습니다!</string>
     <string name="msg_store_backup_skipped">백업 생략</string>
     <string name="msg_store_backup_skipped_no_media">대화 내용 백업 생략: 메모리 카드 인식 실패.</string>
     <string name="msg_store_backup_skipped_read_only_media">대화 기록을 백업할 수 없습니다: 미디어가 읽기 전용입니다.</string>
     <string name="msg_store_confirm">승인</string>
-    <string name="msg_store_creation_backup_message">백업파일에서 대화 내용을 복원할까요?</string>
-    <string name="msg_store_do_not_restore">복원하지 않음</string>
-    <string name="msg_store_do_not_restore_no_thanks">아니요</string>
     <string name="msg_store_error_found">문제가 발생했습니다. WhatsApp 메신저를 종료한 후 다시 시작 해 주세요.</string>
     <string name="msg_store_error_not_restored">죄송합니다, 메시지 백업본에서 아무런 내용을 복원할 수 없습니다.</string>
     <string name="msg_store_last_confirmation_not_to_restore">메시지가 유실됩니다. 정말 대화 내용을 백업에서 복원하지 않으시겠습니까?</string>
@@ -648,9 +642,6 @@
     <string name="need_sd_card_shared_storage">USB 저장소 연결을 해제한 후 다시 시도해 주세요.</string>
     <string name="network_required">네트워크 연결이 끊겨 있습니다.</string>
     <string name="network_usage_ask_reset_message">사용 내역을 초기화 할까요?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">마지막 초기화: %1$s</string>
     <string name="network_usage_media_bytes_received">받은 미디어 파일 수신량:</string>
     <string name="network_usage_media_bytes_sent">보낸 미디어 파일 전송량:</string>
@@ -1005,19 +996,10 @@ WhatsApp에서 보냄"</string>
     <string name="software_expired_get_from_play">새로운 버전의 WhatsApp을 내려받으실 수 있습니다. WhatsApp 홈페이지를 방문하여 최신 버전을 설치해 주세요.</string>
     <string name="software_expired_get_from_play_with_date">사용 중 인 WhatsApp은 &lt;b>%1$s&lt;/b> 이후 사용할 수 없습니다. Google Play에서 최신 버전 &lt;br>&lt;br> 으로 업데이트해 주세요. 사용 중 인 휴대전화의 날짜는 &lt;b>%2$s&lt;/b> 입니다. 날짜가 올바르게 선택되어 있지 않았다면 휴대전화의 설정에서 날짜설정을 변경한 후 기기를 다시 시작 하세요.</string>
     <string name="software_expired_with_date">사용 중 인 WhatsApp은 &lt;b>%1$s&lt;/b> 이후 사용할 수 없습니다. “내려받기” 선택 후 최신 버전 &lt;br>&lt;br> 으로 업데이트해 주세요. 사용 중 인 휴대전화의 날짜는 &lt;b>%2$s&lt;/b> 입니다. 날짜가 올바르게 선택되어 있지 않았다면 휴대전화의 설정에서 날짜설정을 변경한 후 기기를 다시 시작 하세요.</string>
-    <string name="spam_generic">"이용 약관규정을 어겼기 때문에 일시적으로 WhatsApp 사용이 정지되었습니다.
-다시 WhatsApp을 사용할 수 있을때 까지 남은 시간:"</string>
     <string name="spam_generic_data_connection_missing">휴대전화가 인터넷 데이터에 연결되어 있는지 확인해 주세요.</string>
     <string name="spam_generic_unknown_time_left">이용 약관에 위배될 지도 모르는 기록이 발견되어 일시적으로 WhatsApp을 사용할 수 없습니다. 곧 WhatsApp을 이용할 수 있게 됩니다.</string>
     <string name="spam_learn_more">자세히 보기</string>
     <string name="spam_title">일시 사용 정지</string>
-    <string name="spam_too_many_blocks">너무 많은 사람에게 차단되었기 때문에 일시적으로 WhatsApp 사용이 정지되었습니다.</string>
-    <string name="spam_too_many_groups">"고객님의 전화번호를 저장하지 않은 연락처를 포함한 그룹이 너무 많기 때문에 WhatsApp에서 일시적으로 차단되었습니다. 
- WhatsApp차단 해지까지 시간:"</string>
-    <string name="spam_too_many_messages">"고객님의 연락처를 저장하지 않은 사람에게 너무 많은 메시지를 보냈기 때문에 일시적으로 WhatsApp 사용이 정지되었습니다. 
-다시 WhatsApp을 사용할 수 있을때 까지 남은 시간:"</string>
-    <string name="spam_too_many_people">"같은 메시지를 많은사람들에게 반복적으로 전송하였기 때문에 WhatsApp에서 일시적으로 차단되었습니다. 
- WhatsApp차단 해지까지 시간:"</string>
     <string name="status">상태 메시지</string>
     <string name="status_default_at_gym">운동 중</string>
     <string name="status_default_at_movies">영화 관람 중</string>

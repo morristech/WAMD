@@ -1,139 +1,239 @@
-.class public Lcom/whatsapp/ap3;
+.class Lcom/whatsapp/ap3;
 .super Ljava/lang/Object;
 .source "ap3.java"
 
 # interfaces
-.implements Landroid/os/Parcelable;
+.implements Ljava/lang/Runnable;
 
 
 # static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+.field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field a:Lcom/whatsapp/protocol/au;
+.field final a:Lcom/whatsapp/amo;
+
+.field final b:Z
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 11
 
-    .prologue
-    .line 10
-    new-instance v0, Lcom/whatsapp/wr;
+    const/16 v6, 0x38
 
-    invoke-direct {v0}, Lcom/whatsapp/wr;-><init>()V
+    const/4 v1, 0x0
 
-    sput-object v0, Lcom/whatsapp/ap3;->CREATOR:Landroid/os/Parcelable$Creator;
+    const/4 v0, 0x2
 
-    return-void
-.end method
+    new-array v3, v0, [Ljava/lang/String;
 
-.method public constructor <init>(Landroid/os/Parcel;)V
-    .locals 4
+    const-string v2, "[W.LZTV<L"
 
-    .prologue
-    const/4 v0, 0x1
+    const/4 v0, -0x1
 
-    .line 11
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-object v4, v3
 
-    .line 12
-    new-instance v1, Lcom/whatsapp/protocol/au;
+    move-object v5, v3
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    move v3, v1
+
+    :goto_0
+    invoke-virtual {v2}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v2
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
+    array-length v7, v2
 
-    move-result v3
+    move v8, v7
 
-    if-ne v3, v0, :cond_0
+    move v9, v1
 
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    move-object v7, v2
 
-    move-result-object v3
+    :goto_1
+    if-gt v8, v9, :cond_0
 
-    invoke-direct {v1, v2, v0, v3}, Lcom/whatsapp/protocol/au;-><init>(Ljava/lang/String;ZLjava/lang/String;)V
+    new-instance v2, Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/whatsapp/ap3;->a:Lcom/whatsapp/protocol/au;
+    invoke-direct {v2, v7}, Ljava/lang/String;-><init>([C)V
 
-    .line 6
-    return-void
+    invoke-virtual {v2}, Ljava/lang/String;->intern()Ljava/lang/String;
 
-    .line 12
-    :cond_0
-    const/4 v0, 0x0
+    move-result-object v2
+
+    packed-switch v0, :pswitch_data_0
+
+    aput-object v2, v4, v3
+
+    const/4 v2, 0x1
+
+    const-string v0, "YM,PlNZ+"
+
+    move v3, v2
+
+    move-object v4, v5
+
+    move-object v2, v0
+
+    move v0, v1
 
     goto :goto_0
+
+    :pswitch_0
+    aput-object v2, v4, v3
+
+    sput-object v5, Lcom/whatsapp/ap3;->z:[Ljava/lang/String;
+
+    return-void
+
+    :cond_0
+    aget-char v10, v7, v9
+
+    rem-int/lit8 v2, v9, 0x5
+
+    packed-switch v2, :pswitch_data_1
+
+    const/4 v2, 0x5
+
+    :goto_2
+    xor-int/2addr v2, v10
+
+    int-to-char v2, v2
+
+    aput-char v2, v7, v9
+
+    add-int/lit8 v2, v9, 0x1
+
+    move v9, v2
+
+    goto :goto_1
+
+    :pswitch_1
+    move v2, v6
+
+    goto :goto_2
+
+    :pswitch_2
+    const/16 v2, 0x3f
+
+    goto :goto_2
+
+    :pswitch_3
+    const/16 v2, 0x4f
+
+    goto :goto_2
+
+    :pswitch_4
+    move v2, v6
+
+    goto :goto_2
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+    .end packed-switch
 .end method
 
-.method public constructor <init>(Lcom/whatsapp/protocol/au;)V
+.method constructor <init>(Lcom/whatsapp/amo;Z)V
     .locals 0
 
     .prologue
-    .line 1
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/ap3;->a:Lcom/whatsapp/amo;
+
+    iput-boolean p2, p0, Lcom/whatsapp/ap3;->b:Z
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7
-    iput-object p1, p0, Lcom/whatsapp/ap3;->a:Lcom/whatsapp/protocol/au;
-
-    .line 4
     return-void
 .end method
 
 
 # virtual methods
-.method public describeContents()I
-    .locals 1
-
-    .prologue
-    .line 5
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 1
+.method public run()V
+    .locals 6
 
     .prologue
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/ap3;->a:Lcom/whatsapp/protocol/au;
+    iget-object v0, p0, Lcom/whatsapp/ap3;->a:Lcom/whatsapp/amo;
 
-    iget-object v0, v0, Lcom/whatsapp/protocol/au;->a:Ljava/lang/String;
+    invoke-static {v0}, Lcom/whatsapp/amo;->i(Lcom/whatsapp/amo;)Lcom/whatsapp/m1;
 
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+    move-result-object v1
 
-    .line 9
-    iget-object v0, p0, Lcom/whatsapp/ap3;->a:Lcom/whatsapp/protocol/au;
+    monitor-enter v1
 
-    iget-boolean v0, v0, Lcom/whatsapp/protocol/au;->c:Z
+    .line 6
+    :try_start_0
+    iget-object v0, p0, Lcom/whatsapp/ap3;->a:Lcom/whatsapp/amo;
 
-    if-eqz v0, :cond_0
+    invoke-static {v0}, Lcom/whatsapp/amo;->i(Lcom/whatsapp/amo;)Lcom/whatsapp/m1;
 
-    const/4 v0, 0x1
+    move-result-object v0
 
-    :goto_0
-    int-to-byte v0, v0
+    invoke-virtual {v0}, Lcom/whatsapp/m1;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeByte(B)V
+    move-result-object v0
+
+    .line 1
+    new-instance v2, Landroid/content/ContentValues;
+
+    const/4 v3, 0x1
+
+    invoke-direct {v2, v3}, Landroid/content/ContentValues;-><init>(I)V
+
+    .line 5
+    sget-object v3, Lcom/whatsapp/ap3;->z:[Ljava/lang/String;
+
+    const/4 v4, 0x1
+
+    aget-object v3, v3, v4
+
+    iget-boolean v4, p0, Lcom/whatsapp/ap3;->b:Z
+
+    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v3, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Boolean;)V
 
     .line 3
-    iget-object v0, p0, Lcom/whatsapp/ap3;->a:Lcom/whatsapp/protocol/au;
+    sget-object v3, Lcom/whatsapp/ap3;->z:[Ljava/lang/String;
 
-    iget-object v0, v0, Lcom/whatsapp/protocol/au;->b:Ljava/lang/String;
+    const/4 v4, 0x0
 
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+    aget-object v3, v3, v4
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    invoke-virtual {v0, v3, v2, v4, v5}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+
+    .line 7
+    monitor-exit v1
 
     .line 8
     return-void
 
-    .line 9
-    :cond_0
-    const/4 v0, 0x0
+    .line 7
+    :catchall_0
+    move-exception v0
 
-    goto :goto_0
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
 .end method

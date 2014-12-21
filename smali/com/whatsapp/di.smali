@@ -2,73 +2,76 @@
 .super Ljava/lang/Object;
 .source "di.java"
 
-# interfaces
-.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
-
 
 # instance fields
-.field final a:Lcom/whatsapp/MessageDetailsActivity;
+.field a:Ljava/lang/String;
+
+.field b:Lcom/whatsapp/wo;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/MessageDetailsActivity;)V
+.method public constructor <init>(Lcom/whatsapp/wo;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/di;->a:Lcom/whatsapp/MessageDetailsActivity;
-
+    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/di;->b:Lcom/whatsapp/wo;
+
+    .line 4
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/whatsapp/wo;Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 5
+    invoke-direct {p0, p1}, Lcom/whatsapp/di;-><init>(Lcom/whatsapp/wo;)V
+
+    .line 8
+    iput-object p2, p0, Lcom/whatsapp/di;->a:Ljava/lang/String;
+
+    .line 1
     return-void
 .end method
 
 
 # virtual methods
-.method public onGlobalLayout()V
-    .locals 4
+.method public a()Z
+    .locals 2
 
     .prologue
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/di;->a:Lcom/whatsapp/MessageDetailsActivity;
+    iget-object v0, p0, Lcom/whatsapp/di;->b:Lcom/whatsapp/wo;
 
-    invoke-static {v0}, Lcom/whatsapp/MessageDetailsActivity;->f(Lcom/whatsapp/MessageDetailsActivity;)Landroid/widget/ListView;
+    sget-object v1, Lcom/whatsapp/wo;->SUCCESS:Lcom/whatsapp/wo;
 
-    move-result-object v0
+    if-ne v0, v1, :cond_0
 
-    invoke-virtual {v0}, Landroid/widget/ListView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    const/4 v0, 0x1
 
-    move-result-object v0
+    :goto_0
+    return v0
 
-    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeGlobalOnLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+    :cond_0
+    const/4 v0, 0x0
 
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/di;->a:Lcom/whatsapp/MessageDetailsActivity;
+    goto :goto_0
+.end method
 
-    invoke-static {v0}, Lcom/whatsapp/MessageDetailsActivity;->f(Lcom/whatsapp/MessageDetailsActivity;)Landroid/widget/ListView;
+.method public toString()Ljava/lang/String;
+    .locals 1
 
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    iget-object v2, p0, Lcom/whatsapp/di;->a:Lcom/whatsapp/MessageDetailsActivity;
-
-    .line 5
-    invoke-virtual {v2}, Lcom/whatsapp/MessageDetailsActivity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    const/high16 v3, 0x7f0a0000
-
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v2
-
-    mul-int/lit8 v2, v2, 0x3
-
-    .line 4
-    invoke-virtual {v0, v1, v2}, Landroid/widget/ListView;->setSelectionFromTop(II)V
-
+    .prologue
     .line 6
-    return-void
+    iget-object v0, p0, Lcom/whatsapp/di;->b:Lcom/whatsapp/wo;
+
+    invoke-virtual {v0}, Lcom/whatsapp/wo;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

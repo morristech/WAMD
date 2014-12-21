@@ -16,20 +16,20 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 11
     iput-object p1, p0, Lcom/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper;->this$0:Lcom/actionbarsherlock/internal/ActionBarSherlockNative;
 
     invoke-direct {p0}, Lcom/actionbarsherlock/view/ActionMode;-><init>()V
 
-    .line 2
+    .line 10
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuWrapper;
 
-    .line 5
+    .line 1
     iput-object p2, p0, Lcom/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper;->mActionMode:Landroid/view/ActionMode;
 
-    .line 7
+    .line 9
     return-void
 .end method
 
@@ -39,12 +39,12 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 15
     iget-object v0, p0, Lcom/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper;->mActionMode:Landroid/view/ActionMode;
 
     invoke-virtual {v0}, Landroid/view/ActionMode;->finish()V
 
-    .line 14
+    .line 8
     return-void
 .end method
 
@@ -52,12 +52,12 @@
     .locals 2
 
     .prologue
-    .line 15
+    .line 5
     iget-object v0, p0, Lcom/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuWrapper;
 
     if-nez v0, :cond_0
 
-    .line 1
+    .line 12
     new-instance v0, Lcom/actionbarsherlock/internal/view/menu/MenuWrapper;
 
     iget-object v1, p0, Lcom/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper;->mActionMode:Landroid/view/ActionMode;
@@ -70,7 +70,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuWrapper;
 
-    .line 10
+    .line 13
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuWrapper;
 
@@ -81,7 +81,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 7
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper;->getMenu()Lcom/actionbarsherlock/internal/view/menu/MenuWrapper;
 
     move-result-object v0
@@ -93,12 +93,12 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 2
     iget-object v0, p0, Lcom/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper;->mActionMode:Landroid/view/ActionMode;
 
     invoke-virtual {v0}, Landroid/view/ActionMode;->invalidate()V
 
-    .line 13
+    .line 16
     return-void
 .end method
 
@@ -106,12 +106,12 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 6
     iget-object v0, p0, Lcom/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper;->mActionMode:Landroid/view/ActionMode;
 
     invoke-virtual {v0, p1}, Landroid/view/ActionMode;->setCustomView(Landroid/view/View;)V
 
-    .line 16
+    .line 14
     return-void
 .end method
 
@@ -119,11 +119,11 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 3
     iget-object v0, p0, Lcom/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper;->mActionMode:Landroid/view/ActionMode;
 
     invoke-virtual {v0, p1}, Landroid/view/ActionMode;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 9
+    .line 4
     return-void
 .end method

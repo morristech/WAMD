@@ -31,7 +31,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "\u000b\u0005Yx/&MX49-\u0019Cx=-JAq%=JE`.%JCz\u0008$\u0003O\u007fk \u000bBp\'-\u0018\u000c"
+    const-string v2, "F\u0000\n\u000eK\n\u0008\u0017]\u0008"
 
     const/4 v0, -0x1
 
@@ -69,7 +69,7 @@
 
     aput-object v2, v5, v3
 
-    const-string v0, "h\u0003B4($\u000b_gk"
+    const-string v0, "%\u0006\u0011BL\u0008N\u0010\u000eZ\u0003\u001a\u000bB^\u0003I\tKF\u0013I\rZM\u000bI\u000b@k\n\u0000\u0007E\u0008\u000e\u0008\nJD\u0003\u001bD"
 
     move-object v2, v0
 
@@ -86,7 +86,7 @@
 
     sput-object v6, Lcom/actionbarsherlock/view/MenuInflater$InflatedOnMenuItemClickListener;->z:[Ljava/lang/String;
 
-    .line 14
+    .line 6
     new-array v0, v4, [Ljava/lang/Class;
 
     const-class v2, Lcom/actionbarsherlock/view/MenuItem;
@@ -105,7 +105,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0x4b
+    const/16 v2, 0x28
 
     :goto_2
     xor-int/2addr v2, v10
@@ -121,22 +121,22 @@
     goto :goto_1
 
     :pswitch_1
-    const/16 v2, 0x48
+    const/16 v2, 0x66
 
     goto :goto_2
 
     :pswitch_2
-    const/16 v2, 0x6a
+    const/16 v2, 0x69
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v2, 0x2c
+    const/16 v2, 0x64
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v2, 0x14
+    const/16 v2, 0x2e
 
     goto :goto_2
 
@@ -158,18 +158,18 @@
     .locals 6
 
     .prologue
-    .line 15
+    .line 10
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7
+    .line 15
     iput-object p1, p0, Lcom/actionbarsherlock/view/MenuInflater$InflatedOnMenuItemClickListener;->mRealOwner:Ljava/lang/Object;
 
-    .line 6
+    .line 13
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 
-    .line 2
+    .line 5
     :try_start_0
     sget-object v0, Lcom/actionbarsherlock/view/MenuInflater$InflatedOnMenuItemClickListener;->PARAM_TYPES:[Ljava/lang/Class;
 
@@ -181,14 +181,14 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 16
+    .line 8
     return-void
 
     .line 17
     :catch_0
     move-exception v0
 
-    .line 10
+    .line 16
     new-instance v2, Landroid/view/InflateException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -197,7 +197,7 @@
 
     sget-object v4, Lcom/actionbarsherlock/view/MenuInflater$InflatedOnMenuItemClickListener;->z:[Ljava/lang/String;
 
-    const/4 v5, 0x0
+    const/4 v5, 0x1
 
     aget-object v4, v4, v5
 
@@ -211,7 +211,7 @@
 
     sget-object v4, Lcom/actionbarsherlock/view/MenuInflater$InflatedOnMenuItemClickListener;->z:[Ljava/lang/String;
 
-    const/4 v5, 0x1
+    const/4 v5, 0x0
 
     aget-object v4, v4, v5
 
@@ -219,7 +219,7 @@
 
     move-result-object v3
 
-    .line 9
+    .line 18
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1
@@ -234,10 +234,10 @@
 
     invoke-direct {v2, v1}, Landroid/view/InflateException;-><init>(Ljava/lang/String;)V
 
-    .line 3
+    .line 12
     invoke-virtual {v2, v0}, Landroid/view/InflateException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
-    .line 13
+    .line 7
     throw v2
 .end method
 
@@ -249,7 +249,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 5
+    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/actionbarsherlock/view/MenuInflater$InflatedOnMenuItemClickListener;->mMethod:Ljava/lang/reflect/Method;
 
@@ -287,7 +287,7 @@
     :goto_0
     return v0
 
-    .line 1
+    .line 3
     :cond_0
     iget-object v1, p0, Lcom/actionbarsherlock/view/MenuInflater$InflatedOnMenuItemClickListener;->mMethod:Ljava/lang/reflect/Method;
 
@@ -307,11 +307,11 @@
 
     goto :goto_0
 
-    .line 18
+    .line 4
     :catch_0
     move-exception v0
 
-    .line 8
+    .line 1
     new-instance v1, Ljava/lang/RuntimeException;
 
     invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V

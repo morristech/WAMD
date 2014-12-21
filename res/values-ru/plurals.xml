@@ -215,9 +215,9 @@
         <item quantity="few">осталось %d сообщения</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Восстановлено %,d сообщений.</item>
-        <item quantity="one">Восстановлено %,d сообщение.</item>
-        <item quantity="few">Восстановлено %,d сообщения.</item>
+        <item quantity="other">Восстановлено %,d сообщений. Готово!</item>
+        <item quantity="one">Восстановлено %,d сообщение. Готово!</item>
+        <item quantity="few">Восстановлено %,d сообщения. Готово!</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Отправка %1$d видео %2$s</item>

@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static a:Z
+.field public static a:I
 
 .field private static final z:[Ljava/lang/String;
 
@@ -106,7 +106,7 @@
 
     const/4 v2, 0x1
 
-    const/16 v5, 0x18
+    const/16 v5, 0x28
 
     const/4 v1, 0x0
 
@@ -114,7 +114,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "\u0016\u0001w~X\u0017\u001cb}T\u0006-^yB\u0015\u000bR"
+    const-string v6, "\u001a\u0008\t"
 
     const/4 v0, -0x1
 
@@ -152,7 +152,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "\u0016\u0001t}J\u001d\u001cSLI\n\u001aupM\u001c\tS|"
+    const-string v0, "YIE\u001b_TOv\u0007WYCH\u0010S"
 
     move-object v6, v0
 
@@ -167,7 +167,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "\u0013\u0000RjC\u001b\n\u0018k\\\u0017\u000bUp\u0002\u0013\rBqC\u001c@a]n-=sY~1&"
+    const-string v0, "iMH\u0005UR~@\u0012A"
 
     move-object v6, v0
 
@@ -182,7 +182,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "\u0013\u0000RjC\u001b\n\u0018k\\\u0017\u000bUp\u0002\u0013\rBqC\u001c@d]o=)xQv71eHi7-~"
+    const-string v0, "yG\\\u001bR\u001aFF\u0003\u0016\\AG\u0013\u0016LG@\u0014S\u001a[L\u0016DY@\t\u0016UNA_\u001eBC"
 
     move-object v6, v0
 
@@ -199,7 +199,7 @@
 
     const/4 v6, 0x4
 
-    const-string v0, "\u001e\u000fOwY\u00061_vJ\u001e\u000fB}^"
+    const-string v0, "^Gh\u0011B_Z}\u0012NNkA\u0016X]MM"
 
     move v7, v6
 
@@ -216,7 +216,7 @@
 
     const/4 v7, 0x5
 
-    const-string v6, "\u0013\u0000RjC\u001b\n\u0018k\\\u0017\u000bUp\u0002\u0017\u0016BjM\\\"wVk\'/q]s?!r]`"
+    const-string v6, "^Gk\u0012PUZL#SB\\j\u001fWTOL\u0013"
 
     const/4 v0, 0x4
 
@@ -229,7 +229,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "\u0005\u000bTG_\u0017\u000fD{D"
+    const-string v6, "\\ZL\u0012i\\G[\u001a"
 
     const/4 v0, 0x5
 
@@ -242,7 +242,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "RN\u0016"
+    const-string v6, "[FM\u0005YSL\u0007\u0004F_MJ\u001f\u0018_P]\u0005W\u0014x{8{j|"
 
     const/4 v0, 0x6
 
@@ -255,7 +255,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "\u0013\u0000RjC\u001b\n\u0018qB\u0006\u000bXl\u0002\u0013\rBqC\u001c@e]m -~"
+    const-string v6, "[FM\u0005YSL\u0007\u0004F_MJ\u001f\u0018_P]\u0005W\u0014dh9qoin2iwgm2z"
 
     const/4 v0, 0x7
 
@@ -268,7 +268,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "\u0013\u0000RjC\u001b\n\u0018k\\\u0017\u000bUp\u0002\u0017\u0016BjM\\#w@s +eM`&="
+    const-string v6, "[FM\u0005YSL\u0007\u0004F_MJ\u001f\u0018_P]\u0005W\u0014eh/ihmz\"zn{"
 
     const/16 v0, 0x8
 
@@ -281,7 +281,7 @@
 
     const/16 v7, 0xa
 
-    const-string v6, "\u0011\u000fZtE\u001c\tihM\u0011\u0005W\u007fI"
+    const-string v6, "YIE\u001b_TOv\u0007WYCH\u0010S"
 
     const/16 v0, 0x9
 
@@ -294,7 +294,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, "\u0013\u0000RjC\u001b\n\u0018k\\\u0017\u000bUp\u0002\u0017\u0016BjM\\<sKy>:eG|7 rQb5\'xLi<:"
+    const-string v6, "[FM\u0005YSL\u0007\u0004F_MJ\u001f\u0018_P]\u0005W\u0014zl$cv|z(f\u007ffm>x}ag#st|v5ctle2"
 
     const/16 v0, 0xa
 
@@ -307,7 +307,7 @@
 
     const/16 v7, 0xc
 
-    const-string v6, "\u0013\u0000RjC\u001b\n\u0018k\\\u0017\u000bUp\u0002\u0017\u0016BjM\\<sKy>:eG|7 rQb5\'xLi<:iZy<*z]"
+    const-string v6, "[FM\u0005YSL\u0007\u0004F_MJ\u001f\u0018_P]\u0005W\u0014zl$cv|z(f\u007ffm>x}ag#st|"
 
     const/16 v0, 0xb
 
@@ -320,7 +320,7 @@
 
     const/16 v7, 0xd
 
-    const-string v6, "\u0013\u0000RjC\u001b\n\u0018k\\\u0017\u000bUp\u0002\u0017\u0016BjM\\\"wVk\'/q]s?!r]`"
+    const-string v6, "[FM\u0005YSL\u0007\u001eXNMG\u0003\u0018[K]\u001eYT\u0006z2whka"
 
     const/16 v0, 0xc
 
@@ -333,7 +333,7 @@
 
     const/16 v7, 0xe
 
-    const-string v6, "\u0013\u0000RjC\u001b\n\u0018qB\u0006\u000bXl\u0002\u0013\rBqC\u001c@e]m -~"
+    const-string v6, "[FM\u0005YSL\u0007\u0004F_MJ\u001f\u0018_P]\u0005W\u0014dh9qoin2"
 
     const/16 v0, 0xd
 
@@ -346,7 +346,7 @@
 
     const/16 v7, 0xf
 
-    const-string v6, "\u0013\u0000RjC\u001b\n\u0018k\\\u0017\u000bUp\u0002\u0017\u0016BjM\\\"wVk\'/q]"
+    const-string v6, "IM]#SB\\"
 
     const/16 v0, 0xe
 
@@ -359,7 +359,7 @@
 
     const/16 v7, 0x10
 
-    const-string v6, "\u0013\u0000RjC\u001b\n\u0018k\\\u0017\u000bUp\u0002\u0017\u0016BjM\\>dWa\":"
+    const-string v6, "SF]\u0012XNwL\u000fBHIv\u0013WNIv\u001cSC"
 
     const/16 v0, 0xf
 
@@ -372,7 +372,7 @@
 
     const/16 v7, 0x11
 
-    const-string v6, "\u0014\u001cS}s\u0014\u0001Du"
+    const-string v6, "[K]\u001eYTwD\u0004Q"
 
     const/16 v0, 0x10
 
@@ -385,7 +385,7 @@
 
     const/16 v7, 0x12
 
-    const-string v6, "\u001b\u0000FmX-\u0003SlD\u001d\n"
+    const-string v6, "K]L\u0005O"
 
     const/16 v0, 0x11
 
@@ -398,7 +398,7 @@
 
     const/16 v7, 0x13
 
-    const-string v6, "4\u000f_tI\u0016NZyY\u001c\r^8M\u0011\u001a_nE\u0006\u0017\u000c8"
+    const-string v6, "[K]\u001eYTwB\u0012O"
 
     const/16 v0, 0x12
 
@@ -411,7 +411,7 @@
 
     const/16 v7, 0x14
 
-    const-string v6, "!\u000bWjO\u001a8_}["
+    const-string v6, "O[L\u0005iK]L\u0005O"
 
     const/16 v0, 0x13
 
@@ -424,7 +424,7 @@
 
     const/16 v7, 0x15
 
-    const-string v6, "\u0011\u000fZtE\u001c\tihM\u0011\u0005W\u007fI"
+    const-string v6, "[XY(R[\\H"
 
     const/16 v0, 0x14
 
@@ -437,7 +437,7 @@
 
     const/16 v7, 0x16
 
-    const-string v6, "!\u000bWjO\u001a8_}["
+    const-string v6, "I@F\u0000eUN]>XJ]]\"XY@L\u0014]_L"
 
     const/16 v0, 0x15
 
@@ -450,7 +450,7 @@
 
     const/16 v7, 0x17
 
-    const-string v6, "1\u0001CtHR\u0000Yl\u000c\u0014\u0007X|\u000c\u0004\u0001_{IR\u001dSy^\u0011\u0006\u0016yO\u0006\u0007@qX\u000b"
+    const-string v6, "SFY\u0002BeEL\u0003^UL"
 
     const/16 v0, 0x16
 
@@ -461,11 +461,11 @@
     :pswitch_16
     aput-object v6, v8, v7
 
-    const-string v6, "\u0001\u001bQ\u007fI\u0001\u001aiqB\u0006\u000bXls\u0013\rBqC\u001c"
+    const/16 v7, 0x18
+
+    const-string v6, "MMK(E_I[\u0014^"
 
     const/16 v0, 0x17
-
-    move v7, v5
 
     move-object v8, v9
 
@@ -474,17 +474,13 @@
     :pswitch_17
     aput-object v6, v8, v7
 
-    const/16 v6, 0x19
+    const/16 v7, 0x19
 
-    const-string v0, "\u0001\u001bQ\u007fI\u0001\u001aiqB\u0006\u000bXls\u0016\u000fBy"
+    const-string v6, "[FM\u0005YSL\u0007\u0004F_MJ\u001f\u0018[K]\u001eYT\u0006~2te{l6dy`"
 
-    move v7, v6
+    const/16 v0, 0x18
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v5
 
     goto/16 :goto_0
 
@@ -493,7 +489,7 @@
 
     const/16 v7, 0x1a
 
-    const-string v6, "R\u001cSlY\u0000\u0000S|\u000c\u0017\u0016U}\\\u0006\u0007Yv\u0002"
+    const-string v6, "VIP\u0018CNw@\u0019PVI]\u0012D"
 
     const/16 v0, 0x19
 
@@ -506,7 +502,7 @@
 
     const/16 v7, 0x1b
 
-    const-string v6, "\u0001\u001bQ\u007fI\u0001\u001aiqB\u0006\u000bXls\u0017\u0016BjM-\nWlM"
+    const-string v6, "[FM\u0005YSL\u0007\u0004F_MJ\u001f\u0018_P]\u0005W\u0014dh9qoin2iwgm2z"
 
     const/16 v0, 0x1a
 
@@ -519,7 +515,7 @@
 
     const/16 v7, 0x1c
 
-    const-string v6, "\u0013\u0000RjC\u001b\n\u0018qB\u0006\u000bXl\u0002\u0013\rBqC\u001c@e]m -~"
+    const-string v6, "[FM\u0005YSL\u0007\u0004F_MJ\u001f\u0018[K]\u001eYT\u0006{2uuog>l\u007fwz\'s\u007fka"
 
     const/16 v0, 0x1b
 
@@ -532,7 +528,7 @@
 
     const/16 v7, 0x1d
 
-    const-string v6, "\u0001\u001bQ\u007fI\u0001\u001aiqB\u0006\u000bXls\u0003\u001bSjU"
+    const-string v6, "[FM\u0005YSL\u0007\u001eXNMG\u0003\u0018[K]\u001eYT\u0006z2whka"
 
     const/16 v0, 0x1c
 
@@ -545,7 +541,7 @@
 
     const/16 v7, 0x1e
 
-    const-string v6, "!\u000bWjO\u001a8_}["
+    const-string v6, "iMH\u0005UR~@\u0012A"
 
     const/16 v0, 0x1d
 
@@ -558,7 +554,7 @@
 
     const/16 v7, 0x1f
 
-    const-string v6, "\u0001\u001bQ\u007fI\u0001\u001aiqB\u0006\u000bXls\u0016\u000fBys\u001b\n"
+    const-string v6, "|I@\u001bS^\u0008E\u0016CTKAWWY\\@\u0001_NQ\u0013W"
 
     const/16 v0, 0x1e
 
@@ -571,7 +567,7 @@
 
     const/16 v7, 0x20
 
-    const-string v6, "!\u000bWjO\u001aNEmK\u0015\u000bElE\u001d\u0000E8O\u0007\u001cEw^R\u000fB8^\u001d\u0019\u0016"
+    const-string v6, "I]N\u0010SI\\v\u001eXNMG\u0003i_P]\u0005WeLH\u0003W"
 
     const/16 v0, 0x1f
 
@@ -584,7 +580,7 @@
 
     const/16 v7, 0x21
 
-    const-string v6, "\u0001\u000bBLI\n\u001a"
+    const-string v6, "I]N\u0010SI\\v\u001eXNMG\u0003i^I]\u0016"
 
     const/16 v0, 0x20
 
@@ -597,7 +593,7 @@
 
     const/16 v7, 0x22
 
-    const-string v6, "\u001b\u0000B}B\u00061S`X\u0000\u000fi|M\u0006\u000fisI\u000b"
+    const-string v6, "[FM\u0005YSL\u0007\u001eXNMG\u0003\u0018[K]\u001eYT\u0006z2whka"
 
     const/16 v0, 0x21
 
@@ -610,7 +606,7 @@
 
     const/16 v7, 0x23
 
-    const-string v6, "\u0007\u001dSjs\u0003\u001bSjU"
+    const-string v6, "I]N\u0010SI\\v\u001eXNMG\u0003i[K]\u001eYT"
 
     const/16 v0, 0x22
 
@@ -623,7 +619,7 @@
 
     const/16 v7, 0x24
 
-    const-string v6, "\u0013\rBqC\u001c1]}U"
+    const-string v6, "I]N\u0010SI\\v\u001eXNMG\u0003iK]L\u0005O"
 
     const/16 v0, 0x23
 
@@ -636,7 +632,7 @@
 
     const/16 v7, 0x25
 
-    const-string v6, "\u0013\rBqC\u001c1[kK"
+    const-string v6, "I]N\u0010SI\\v\u001eXNMG\u0003i^I]\u0016iSL"
 
     const/16 v0, 0x24
 
@@ -649,7 +645,7 @@
 
     const/16 v7, 0x26
 
-    const-string v6, "\u0013\u001eFGH\u0013\u001aW"
+    const-string v6, "\u001aZL\u0003CHFL\u0013\u0016_PJ\u0012FNAF\u0019\u0018"
 
     const/16 v0, 0x25
 
@@ -662,7 +658,7 @@
 
     const/16 v7, 0x27
 
-    const-string v6, "\u0003\u001bSjU"
+    const-string v6, "iMH\u0005UR\u0008Z\u0002Q]MZ\u0003_UFZWUOZZ\u0018D\u001aI]WDU_\t"
 
     const/16 v0, 0x26
 
@@ -673,11 +669,11 @@
     :pswitch_26
     aput-object v6, v8, v7
 
-    const/16 v7, 0x28
-
-    const-string v6, "\u0017\u0000Em^\u0017\'[}z\u001b\u001d_z@\u0017"
+    const-string v6, "iMH\u0005UR~@\u0012A"
 
     const/16 v0, 0x27
+
+    move v7, v5
 
     move-object v8, v9
 
@@ -686,13 +682,17 @@
     :pswitch_27
     aput-object v6, v8, v7
 
-    const/16 v7, 0x29
+    const/16 v6, 0x29
 
-    const-string v6, "\u0001\u0006Yo\u007f\u001d\u0008BQB\u0002\u001bBMB\u0011\u0006S{G\u0017\n"
+    const-string v0, "_FZ\u0002D_aD\u0012`S[@\u0015Z_"
 
-    const/16 v0, 0x28
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v5
 
     goto/16 :goto_0
 
@@ -710,7 +710,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x2c
+    const/16 v6, 0x36
 
     :goto_2
     xor-int/2addr v6, v13
@@ -726,22 +726,22 @@
     goto/16 :goto_1
 
     :pswitch_29
-    const/16 v6, 0x72
+    const/16 v6, 0x3a
 
     goto :goto_2
 
     :pswitch_2a
-    const/16 v6, 0x6e
+    move v6, v5
 
     goto :goto_2
 
     :pswitch_2b
-    const/16 v6, 0x36
+    const/16 v6, 0x29
 
     goto :goto_2
 
     :pswitch_2c
-    move v6, v5
+    const/16 v6, 0x77
 
     goto :goto_2
 
@@ -803,12 +803,12 @@
     .locals 1
 
     .prologue
-    .line 231
+    .line 224
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/actionbarsherlock/widget/SearchView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 32
+    .line 14
     return-void
 .end method
 
@@ -816,115 +816,115 @@
     .locals 7
 
     .prologue
-    const/4 v2, 0x1
+    const/4 v6, 0x1
 
-    const/4 v1, 0x0
+    const/4 v5, 0x0
 
-    const/4 v6, -0x1
+    const/4 v4, -0x1
 
-    sget-boolean v3, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    sget v1, Lcom/actionbarsherlock/widget/SearchView;->a:I
 
-    .line 68
+    .line 74
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 412
+    .line 352
     new-instance v0, Lcom/actionbarsherlock/widget/SearchView$1;
 
     invoke-direct {v0, p0}, Lcom/actionbarsherlock/widget/SearchView$1;-><init>(Lcom/actionbarsherlock/widget/SearchView;)V
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mShowImeRunnable:Ljava/lang/Runnable;
 
-    .line 434
+    .line 491
     new-instance v0, Lcom/actionbarsherlock/widget/SearchView$2;
 
     invoke-direct {v0, p0}, Lcom/actionbarsherlock/widget/SearchView$2;-><init>(Lcom/actionbarsherlock/widget/SearchView;)V
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mUpdateDrawableStateRunnable:Ljava/lang/Runnable;
 
-    .line 272
+    .line 245
     new-instance v0, Lcom/actionbarsherlock/widget/SearchView$3;
 
     invoke-direct {v0, p0}, Lcom/actionbarsherlock/widget/SearchView$3;-><init>(Lcom/actionbarsherlock/widget/SearchView;)V
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mReleaseCursorRunnable:Ljava/lang/Runnable;
 
-    .line 382
+    .line 473
     new-instance v0, Ljava/util/WeakHashMap;
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOutsideDrawablesCache:Ljava/util/WeakHashMap;
 
-    .line 428
+    .line 373
     new-instance v0, Lcom/actionbarsherlock/widget/SearchView$7;
 
     invoke-direct {v0, p0}, Lcom/actionbarsherlock/widget/SearchView$7;-><init>(Lcom/actionbarsherlock/widget/SearchView;)V
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    .line 326
+    .line 496
     new-instance v0, Lcom/actionbarsherlock/widget/SearchView$8;
 
     invoke-direct {v0, p0}, Lcom/actionbarsherlock/widget/SearchView$8;-><init>(Lcom/actionbarsherlock/widget/SearchView;)V
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mTextKeyListener:Landroid/view/View$OnKeyListener;
 
-    .line 100
+    .line 310
     new-instance v0, Lcom/actionbarsherlock/widget/SearchView$9;
 
     invoke-direct {v0, p0}, Lcom/actionbarsherlock/widget/SearchView$9;-><init>(Lcom/actionbarsherlock/widget/SearchView;)V
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnEditorActionListener:Landroid/widget/TextView$OnEditorActionListener;
 
-    .line 357
+    .line 155
     new-instance v0, Lcom/actionbarsherlock/widget/SearchView$10;
 
     invoke-direct {v0, p0}, Lcom/actionbarsherlock/widget/SearchView$10;-><init>(Lcom/actionbarsherlock/widget/SearchView;)V
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
 
-    .line 1
+    .line 378
     new-instance v0, Lcom/actionbarsherlock/widget/SearchView$11;
 
     invoke-direct {v0, p0}, Lcom/actionbarsherlock/widget/SearchView$11;-><init>(Lcom/actionbarsherlock/widget/SearchView;)V
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnItemSelectedListener:Landroid/widget/AdapterView$OnItemSelectedListener;
 
-    .line 41
+    .line 331
     new-instance v0, Lcom/actionbarsherlock/widget/SearchView$12;
 
     invoke-direct {v0, p0}, Lcom/actionbarsherlock/widget/SearchView$12;-><init>(Lcom/actionbarsherlock/widget/SearchView;)V
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mTextWatcher:Landroid/text/TextWatcher;
 
-    .line 441
+    .line 66
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v4, 0x8
+    const/16 v2, 0x8
 
-    if-ge v0, v4, :cond_0
+    if-ge v0, v2, :cond_0
 
-    .line 146
+    .line 379
     :cond_0
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x4
+    const/16 v2, 0x1a
 
-    aget-object v0, v0, v4
+    aget-object v0, v0, v2
 
-    .line 3
+    .line 495
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    .line 219
-    sget v4, Lcom/actionbarsherlock/R$layout;->abs__search_view:I
+    .line 424
+    sget v2, Lcom/actionbarsherlock/R$layout;->abs__search_view:I
 
-    invoke-virtual {v0, v4, p0, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-virtual {v0, v2, p0, v6}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    .line 284
+    .line 230
     sget v0, Lcom/actionbarsherlock/R$id;->abs__search_button:I
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->findViewById(I)Landroid/view/View;
@@ -933,7 +933,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchButton:Landroid/view/View;
 
-    .line 425
+    .line 294
     sget v0, Lcom/actionbarsherlock/R$id;->abs__search_src_text:I
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->findViewById(I)Landroid/view/View;
@@ -944,12 +944,12 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
-    .line 451
+    .line 408
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0, p0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setSearchView(Lcom/actionbarsherlock/widget/SearchView;)V
 
-    .line 408
+    .line 266
     sget v0, Lcom/actionbarsherlock/R$id;->abs__search_edit_frame:I
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->findViewById(I)Landroid/view/View;
@@ -958,7 +958,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchEditFrame:Landroid/view/View;
 
-    .line 417
+    .line 431
     sget v0, Lcom/actionbarsherlock/R$id;->abs__search_plate:I
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->findViewById(I)Landroid/view/View;
@@ -967,7 +967,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchPlate:Landroid/view/View;
 
-    .line 369
+    .line 329
     sget v0, Lcom/actionbarsherlock/R$id;->abs__submit_area:I
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->findViewById(I)Landroid/view/View;
@@ -976,7 +976,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSubmitArea:Landroid/view/View;
 
-    .line 319
+    .line 23
     sget v0, Lcom/actionbarsherlock/R$id;->abs__search_go_btn:I
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->findViewById(I)Landroid/view/View;
@@ -985,7 +985,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSubmitButton:Landroid/view/View;
 
-    .line 91
+    .line 287
     sget v0, Lcom/actionbarsherlock/R$id;->abs__search_close_btn:I
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->findViewById(I)Landroid/view/View;
@@ -996,7 +996,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mCloseButton:Landroid/widget/ImageView;
 
-    .line 159
+    .line 231
     sget v0, Lcom/actionbarsherlock/R$id;->abs__search_voice_btn:I
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->findViewById(I)Landroid/view/View;
@@ -1005,7 +1005,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mVoiceButton:Landroid/view/View;
 
-    .line 349
+    .line 367
     sget v0, Lcom/actionbarsherlock/R$id;->abs__search_mag_icon:I
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->findViewById(I)Landroid/view/View;
@@ -1016,255 +1016,255 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchHintIcon:Landroid/widget/ImageView;
 
-    .line 394
+    .line 212
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchButton:Landroid/view/View;
 
-    iget-object v4, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnClickListener:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 466
+    .line 143
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mCloseButton:Landroid/widget/ImageView;
 
-    iget-object v4, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnClickListener:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 31
+    .line 138
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSubmitButton:Landroid/view/View;
 
-    iget-object v4, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnClickListener:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 376
+    .line 442
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mVoiceButton:Landroid/view/View;
 
-    iget-object v4, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnClickListener:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 294
+    .line 440
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
-    iget-object v4, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnClickListener:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v0, v4}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v2}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 356
+    .line 454
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
-    iget-object v4, p0, Lcom/actionbarsherlock/widget/SearchView;->mTextWatcher:Landroid/text/TextWatcher;
+    iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mTextWatcher:Landroid/text/TextWatcher;
 
-    invoke-virtual {v0, v4}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v0, v2}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 79
+    .line 345
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
-    iget-object v4, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnEditorActionListener:Landroid/widget/TextView$OnEditorActionListener;
+    iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnEditorActionListener:Landroid/widget/TextView$OnEditorActionListener;
 
-    invoke-virtual {v0, v4}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
+    invoke-virtual {v0, v2}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
-    .line 437
+    .line 116
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
-    iget-object v4, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
+    iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
 
-    invoke-virtual {v0, v4}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v0, v2}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 377
+    .line 324
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
-    iget-object v4, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnItemSelectedListener:Landroid/widget/AdapterView$OnItemSelectedListener;
+    iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnItemSelectedListener:Landroid/widget/AdapterView$OnItemSelectedListener;
 
-    invoke-virtual {v0, v4}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
+    invoke-virtual {v0, v2}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    .line 75
+    .line 196
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
-    iget-object v4, p0, Lcom/actionbarsherlock/widget/SearchView;->mTextKeyListener:Landroid/view/View$OnKeyListener;
+    iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mTextKeyListener:Landroid/view/View$OnKeyListener;
 
-    invoke-virtual {v0, v4}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
+    invoke-virtual {v0, v2}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    .line 367
+    .line 288
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
-    new-instance v4, Lcom/actionbarsherlock/widget/SearchView$4;
+    new-instance v2, Lcom/actionbarsherlock/widget/SearchView$4;
 
-    invoke-direct {v4, p0}, Lcom/actionbarsherlock/widget/SearchView$4;-><init>(Lcom/actionbarsherlock/widget/SearchView;)V
+    invoke-direct {v2, p0}, Lcom/actionbarsherlock/widget/SearchView$4;-><init>(Lcom/actionbarsherlock/widget/SearchView;)V
 
-    invoke-virtual {v0, v4}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
+    invoke-virtual {v0, v2}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    .line 66
+    .line 64
     sget-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockSearchView:[I
 
-    invoke-virtual {p1, p2, v0, v1, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    invoke-virtual {p1, p2, v0, v5, v5}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
-    .line 363
-    sget v4, Lcom/actionbarsherlock/R$styleable;->SherlockSearchView_iconifiedByDefault:I
+    .line 386
+    sget v2, Lcom/actionbarsherlock/R$styleable;->SherlockSearchView_iconifiedByDefault:I
 
-    invoke-virtual {v0, v4, v2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+    invoke-virtual {v0, v2, v6}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
-    move-result v4
+    move-result v2
 
-    invoke-virtual {p0, v4}, Lcom/actionbarsherlock/widget/SearchView;->setIconifiedByDefault(Z)V
+    invoke-virtual {p0, v2}, Lcom/actionbarsherlock/widget/SearchView;->setIconifiedByDefault(Z)V
 
-    .line 424
-    sget v4, Lcom/actionbarsherlock/R$styleable;->SherlockSearchView_android_maxWidth:I
+    .line 134
+    sget v2, Lcom/actionbarsherlock/R$styleable;->SherlockSearchView_android_maxWidth:I
 
-    invoke-virtual {v0, v4, v6}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
+    invoke-virtual {v0, v2, v4}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
-    move-result v4
+    move-result v2
 
-    .line 80
-    if-eq v4, v6, :cond_1
+    .line 221
+    if-eq v2, v4, :cond_1
 
-    .line 300
+    .line 384
     :try_start_0
-    invoke-virtual {p0, v4}, Lcom/actionbarsherlock/widget/SearchView;->setMaxWidth(I)V
+    invoke-virtual {p0, v2}, Lcom/actionbarsherlock/widget/SearchView;->setMaxWidth(I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 371
+    .line 327
     :cond_1
-    sget v4, Lcom/actionbarsherlock/R$styleable;->SherlockSearchView_queryHint:I
+    sget v2, Lcom/actionbarsherlock/R$styleable;->SherlockSearchView_queryHint:I
 
-    invoke-virtual {v0, v4}, Landroid/content/res/TypedArray;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {v0, v2}, Landroid/content/res/TypedArray;->getText(I)Ljava/lang/CharSequence;
 
-    move-result-object v4
+    move-result-object v2
 
-    .line 130
+    .line 279
     :try_start_1
-    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v5
+    move-result v3
 
-    if-nez v5, :cond_2
+    if-nez v3, :cond_2
 
-    .line 291
-    invoke-virtual {p0, v4}, Lcom/actionbarsherlock/widget/SearchView;->setQueryHint(Ljava/lang/CharSequence;)V
+    .line 396
+    invoke-virtual {p0, v2}, Lcom/actionbarsherlock/widget/SearchView;->setQueryHint(Ljava/lang/CharSequence;)V
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 266
+    .line 203
     :cond_2
-    sget v4, Lcom/actionbarsherlock/R$styleable;->SherlockSearchView_android_imeOptions:I
+    sget v2, Lcom/actionbarsherlock/R$styleable;->SherlockSearchView_android_imeOptions:I
 
-    invoke-virtual {v0, v4, v6}, Landroid/content/res/TypedArray;->getInt(II)I
+    invoke-virtual {v0, v2, v4}, Landroid/content/res/TypedArray;->getInt(II)I
 
-    move-result v4
+    move-result v2
 
-    .line 495
-    if-eq v4, v6, :cond_3
+    .line 390
+    if-eq v2, v4, :cond_3
 
-    .line 11
+    .line 111
     :try_start_2
-    invoke-virtual {p0, v4}, Lcom/actionbarsherlock/widget/SearchView;->setImeOptions(I)V
+    invoke-virtual {p0, v2}, Lcom/actionbarsherlock/widget/SearchView;->setImeOptions(I)V
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 463
+    .line 76
     :cond_3
-    sget v4, Lcom/actionbarsherlock/R$styleable;->SherlockSearchView_android_inputType:I
+    sget v2, Lcom/actionbarsherlock/R$styleable;->SherlockSearchView_android_inputType:I
 
-    invoke-virtual {v0, v4, v6}, Landroid/content/res/TypedArray;->getInt(II)I
+    invoke-virtual {v0, v2, v4}, Landroid/content/res/TypedArray;->getInt(II)I
 
-    move-result v4
+    move-result v2
 
-    .line 250
-    if-eq v4, v6, :cond_4
+    .line 172
+    if-eq v2, v4, :cond_4
 
-    .line 155
+    .line 325
     :try_start_3
-    invoke-virtual {p0, v4}, Lcom/actionbarsherlock/widget/SearchView;->setInputType(I)V
+    invoke-virtual {p0, v2}, Lcom/actionbarsherlock/widget/SearchView;->setInputType(I)V
     :try_end_3
     .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 450
+    .line 223
     :cond_4
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 52
+    .line 409
     sget-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockView:[I
 
-    invoke-virtual {p1, p2, v0, v1, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    invoke-virtual {p1, p2, v0, v5, v5}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
-    .line 245
-    sget v4, Lcom/actionbarsherlock/R$styleable;->SherlockView_android_focusable:I
+    .line 202
+    sget v2, Lcom/actionbarsherlock/R$styleable;->SherlockView_android_focusable:I
 
-    invoke-virtual {v0, v4, v2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+    invoke-virtual {v0, v2, v6}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
-    move-result v4
+    move-result v2
 
-    .line 215
+    .line 187
     :try_start_4
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 279
-    invoke-virtual {p0, v4}, Lcom/actionbarsherlock/widget/SearchView;->setFocusable(Z)V
+    .line 357
+    invoke-virtual {p0, v2}, Lcom/actionbarsherlock/widget/SearchView;->setFocusable(Z)V
 
-    .line 2
+    .line 233
     new-instance v0, Landroid/content/Intent;
 
-    sget-object v4, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
+    sget-object v2, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/4 v5, 0x2
+    const/16 v3, 0x19
 
-    aget-object v4, v4, v5
+    aget-object v2, v2, v3
 
-    invoke-direct {v0, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mVoiceWebSearchIntent:Landroid/content/Intent;
 
-    .line 262
+    .line 226
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mVoiceWebSearchIntent:Landroid/content/Intent;
 
-    const/high16 v4, 0x10000000
+    const/high16 v2, 0x10000000
 
-    invoke-virtual {v0, v4}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    invoke-virtual {v0, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 165
+    .line 263
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mVoiceWebSearchIntent:Landroid/content/Intent;
 
-    sget-object v4, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
+    sget-object v2, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/4 v5, 0x5
+    const/16 v3, 0x1b
 
-    aget-object v4, v4, v5
+    aget-object v2, v2, v3
 
-    sget-object v5, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
+    sget-object v3, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/4 v6, 0x6
+    const/16 v4, 0x18
 
-    aget-object v5, v5, v6
+    aget-object v3, v3, v4
 
-    invoke-virtual {v0, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 76
+    .line 130
     new-instance v0, Landroid/content/Intent;
 
-    sget-object v4, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
+    sget-object v2, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/4 v5, 0x3
+    const/16 v3, 0x1c
 
-    aget-object v4, v4, v5
+    aget-object v2, v2, v3
 
-    invoke-direct {v0, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mVoiceAppSearchIntent:Landroid/content/Intent;
 
-    .line 405
+    .line 468
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mVoiceAppSearchIntent:Landroid/content/Intent;
 
-    const/high16 v4, 0x10000000
+    const/high16 v2, 0x10000000
 
-    invoke-virtual {v0, v4}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    invoke-virtual {v0, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 46
+    .line 144
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->getDropDownAnchor()I
@@ -1277,50 +1277,41 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mDropDownAnchor:Landroid/view/View;
 
-    .line 483
+    .line 103
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mDropDownAnchor:Landroid/view/View;
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_4
 
     if-eqz v0, :cond_6
 
-    .line 212
+    .line 96
     :try_start_5
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0xb
+
+    if-lt v0, v2, :cond_5
+
+    .line 121
+    iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mDropDownAnchor:Landroid/view/View;
+
+    new-instance v2, Lcom/actionbarsherlock/widget/SearchView$5;
+
+    invoke-direct {v2, p0}, Lcom/actionbarsherlock/widget/SearchView$5;-><init>(Lcom/actionbarsherlock/widget/SearchView;)V
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
     :try_end_5
     .catch Landroid/content/ActivityNotFoundException; {:try_start_5 .. :try_end_5} :catch_5
 
-    const/16 v4, 0xb
+    if-eqz v1, :cond_6
 
-    if-lt v0, v4, :cond_5
+    sget v0, Lcom/actionbarsherlock/app/SherlockActivity;->a:I
 
-    .line 458
-    :try_start_6
-    iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mDropDownAnchor:Landroid/view/View;
+    add-int/lit8 v0, v0, 0x1
 
-    new-instance v4, Lcom/actionbarsherlock/widget/SearchView$5;
+    sput v0, Lcom/actionbarsherlock/app/SherlockActivity;->a:I
 
-    invoke-direct {v4, p0}, Lcom/actionbarsherlock/widget/SearchView$5;-><init>(Lcom/actionbarsherlock/widget/SearchView;)V
-
-    invoke-virtual {v0, v4}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
-    :try_end_6
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_6 .. :try_end_6} :catch_6
-
-    if-eqz v3, :cond_6
-
-    :try_start_7
-    sget-boolean v0, Lcom/actionbarsherlock/app/SherlockActivity;->a:Z
-    :try_end_7
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_7 .. :try_end_7} :catch_7
-
-    if-eqz v0, :cond_7
-
-    move v0, v1
-
-    :goto_0
-    sput-boolean v0, Lcom/actionbarsherlock/app/SherlockActivity;->a:Z
-
-    .line 499
+    .line 475
     :cond_5
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mDropDownAnchor:Landroid/view/View;
 
@@ -1334,84 +1325,63 @@
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 414
+    .line 280
     :cond_6
     iget-boolean v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mIconifiedByDefault:Z
 
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->updateViewsVisibility(Z)V
 
-    .line 265
+    .line 102
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->updateQueryHint()V
 
-    .line 196
+    .line 33
     return-void
 
-    .line 300
+    .line 384
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 291
+    .line 396
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 11
+    .line 111
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 155
+    .line 325
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 212
+    .line 96
     :catch_4
     move-exception v0
 
-    :try_start_8
+    :try_start_6
     throw v0
-    :try_end_8
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_8 .. :try_end_8} :catch_5
+    :try_end_6
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_6 .. :try_end_6} :catch_5
 
-    .line 458
+    .line 121
     :catch_5
     move-exception v0
 
-    :try_start_9
     throw v0
-    :try_end_9
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_9 .. :try_end_9} :catch_6
-
-    :catch_6
-    move-exception v0
-
-    :try_start_a
-    throw v0
-    :try_end_a
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_a .. :try_end_a} :catch_7
-
-    :catch_7
-    move-exception v0
-
-    throw v0
-
-    :cond_7
-    move v0, v2
-
-    goto :goto_0
 .end method
 
 .method static access$000(Landroid/view/View;Landroid/view/inputmethod/InputMethodManager;I)V
     .locals 0
 
     .prologue
-    .line 171
+    .line 164
     invoke-static {p0, p1, p2}, Lcom/actionbarsherlock/widget/SearchView;->showSoftInputUnchecked(Landroid/view/View;Landroid/view/inputmethod/InputMethodManager;I)V
 
     return-void
@@ -1421,7 +1391,7 @@
     .locals 0
 
     .prologue
-    .line 420
+    .line 100
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->updateFocusedState()V
 
     return-void
@@ -1431,7 +1401,7 @@
     .locals 0
 
     .prologue
-    .line 15
+    .line 191
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->onSubmitQuery()V
 
     return-void
@@ -1441,7 +1411,7 @@
     .locals 1
 
     .prologue
-    .line 381
+    .line 73
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mVoiceButton:Landroid/view/View;
 
     return-object v0
@@ -1451,7 +1421,7 @@
     .locals 0
 
     .prologue
-    .line 442
+    .line 283
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->onVoiceClicked()V
 
     return-void
@@ -1461,7 +1431,7 @@
     .locals 1
 
     .prologue
-    .line 427
+    .line 29
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     return-object v0
@@ -1471,7 +1441,7 @@
     .locals 0
 
     .prologue
-    .line 178
+    .line 481
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->forceSuggestionQuery()V
 
     return-void
@@ -1481,7 +1451,7 @@
     .locals 1
 
     .prologue
-    .line 230
+    .line 483
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
 
     return-object v0
@@ -1491,7 +1461,7 @@
     .locals 1
 
     .prologue
-    .line 72
+    .line 98
     invoke-direct {p0, p1, p2, p3}, Lcom/actionbarsherlock/widget/SearchView;->onSuggestionsKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
     move-result v0
@@ -1503,7 +1473,7 @@
     .locals 0
 
     .prologue
-    .line 191
+    .line 178
     invoke-direct {p0, p1, p2, p3}, Lcom/actionbarsherlock/widget/SearchView;->launchQuerySearch(ILjava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -1513,7 +1483,7 @@
     .locals 1
 
     .prologue
-    .line 419
+    .line 340
     invoke-direct {p0, p1, p2, p3}, Lcom/actionbarsherlock/widget/SearchView;->onItemClicked(IILjava/lang/String;)Z
 
     move-result v0
@@ -1525,7 +1495,7 @@
     .locals 1
 
     .prologue
-    .line 320
+    .line 375
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSuggestionsAdapter:Landroid/support/v4/widget/CursorAdapter;
 
     return-object v0
@@ -1535,7 +1505,7 @@
     .locals 1
 
     .prologue
-    .line 20
+    .line 293
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/widget/SearchView;->onItemSelected(I)Z
 
     move-result v0
@@ -1547,7 +1517,7 @@
     .locals 0
 
     .prologue
-    .line 220
+    .line 167
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/widget/SearchView;->onTextChanged(Ljava/lang/CharSequence;)V
 
     return-void
@@ -1557,7 +1527,7 @@
     .locals 0
 
     .prologue
-    .line 160
+    .line 466
     invoke-static {p0, p1}, Lcom/actionbarsherlock/widget/SearchView;->ensureImeVisible(Landroid/widget/AutoCompleteTextView;Z)V
 
     return-void
@@ -1567,7 +1537,7 @@
     .locals 0
 
     .prologue
-    .line 267
+    .line 498
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/widget/SearchView;->setImeVisibility(Z)V
 
     return-void
@@ -1577,7 +1547,7 @@
     .locals 1
 
     .prologue
-    .line 440
+    .line 341
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnQueryTextFocusChangeListener:Landroid/view/View$OnFocusChangeListener;
 
     return-object v0
@@ -1587,7 +1557,7 @@
     .locals 0
 
     .prologue
-    .line 6
+    .line 333
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->adjustDropDownSizeAndPosition()V
 
     return-void
@@ -1597,7 +1567,7 @@
     .locals 1
 
     .prologue
-    .line 481
+    .line 206
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchButton:Landroid/view/View;
 
     return-object v0
@@ -1607,7 +1577,7 @@
     .locals 0
 
     .prologue
-    .line 197
+    .line 416
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->onSearchClicked()V
 
     return-void
@@ -1617,7 +1587,7 @@
     .locals 1
 
     .prologue
-    .line 48
+    .line 209
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mCloseButton:Landroid/widget/ImageView;
 
     return-object v0
@@ -1627,7 +1597,7 @@
     .locals 0
 
     .prologue
-    .line 314
+    .line 320
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->onCloseClicked()V
 
     return-void
@@ -1637,7 +1607,7 @@
     .locals 1
 
     .prologue
-    .line 226
+    .line 150
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSubmitButton:Landroid/view/View;
 
     return-object v0
@@ -1647,7 +1617,7 @@
     .locals 6
 
     .prologue
-    .line 426
+    .line 477
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mDropDownAnchor:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getWidth()I
@@ -1658,7 +1628,7 @@
 
     if-le v0, v1, :cond_0
 
-    .line 280
+    .line 177
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1667,19 +1637,19 @@
 
     move-result-object v0
 
-    .line 393
+    .line 444
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchPlate:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v1
 
-    .line 465
+    .line 27
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
-    .line 431
+    .line 387
     :try_start_0
     iget-boolean v3, p0, Lcom/actionbarsherlock/widget/SearchView;->mIconifiedByDefault:Z
 
@@ -1687,14 +1657,14 @@
 
     sget v3, Lcom/actionbarsherlock/R$dimen;->abs__dropdownitem_icon_width:I
 
-    .line 474
+    .line 79
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v3
 
     sget v4, Lcom/actionbarsherlock/R$dimen;->abs__dropdownitem_text_padding_left:I
 
-    .line 205
+    .line 312
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1703,7 +1673,7 @@
 
     add-int/2addr v0, v3
 
-    .line 362
+    .line 81
     :goto_0
     iget-object v3, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
@@ -1713,7 +1683,7 @@
 
     invoke-virtual {v3, v2}, Landroid/graphics/drawable/Drawable;->getPadding(Landroid/graphics/Rect;)Z
 
-    .line 248
+    .line 47
     iget-object v3, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     iget v4, v2, Landroid/graphics/Rect;->left:I
@@ -1726,7 +1696,7 @@
 
     invoke-virtual {v3, v4}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setDropDownHorizontalOffset(I)V
 
-    .line 333
+    .line 158
     iget-object v3, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     iget-object v4, p0, Lcom/actionbarsherlock/widget/SearchView;->mDropDownAnchor:Landroid/view/View;
@@ -1749,11 +1719,11 @@
 
     invoke-virtual {v3, v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setDropDownWidth(I)V
 
-    .line 88
+    .line 438
     :cond_0
     return-void
 
-    .line 205
+    .line 312
     :catch_0
     move-exception v0
 
@@ -1769,31 +1739,31 @@
     .locals 3
 
     .prologue
-    .line 406
+    .line 120
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0, p1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 106
+    .line 486
     const/high16 v1, 0x10000000
 
     :try_start_0
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 435
+    .line 72
     if-eqz p2, :cond_0
 
-    .line 270
+    .line 94
     invoke-virtual {v0, p2}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 83
+    .line 437
     :cond_0
     :try_start_1
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x23
+    const/16 v2, 0x14
 
     aget-object v1, v1, v2
 
@@ -1801,13 +1771,13 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;
 
-    .line 454
+    .line 426
     if-eqz p4, :cond_1
 
-    .line 108
+    .line 69
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x27
+    const/16 v2, 0x12
 
     aget-object v1, v1, v2
 
@@ -1815,15 +1785,15 @@
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 170
+    .line 50
     :cond_1
     if-eqz p3, :cond_2
 
-    .line 63
+    .line 18
     :try_start_2
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x22
+    const/16 v2, 0x10
 
     aget-object v1, v1, v2
 
@@ -1831,17 +1801,17 @@
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 50
+    .line 210
     :cond_2
     :try_start_3
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mAppSearchData:Landroid/os/Bundle;
 
     if-eqz v1, :cond_3
 
-    .line 202
+    .line 332
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x26
+    const/16 v2, 0x15
 
     aget-object v1, v1, v2
 
@@ -1851,24 +1821,24 @@
     :try_end_3
     .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 413
+    .line 347
     :cond_3
     if-eqz p5, :cond_4
 
-    .line 102
+    .line 153
     :try_start_4
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x24
+    const/16 v2, 0x13
 
     aget-object v1, v1, v2
 
     invoke-virtual {v0, v1, p5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 58
+    .line 394
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x25
+    const/16 v2, 0x11
 
     aget-object v1, v1, v2
 
@@ -1876,7 +1846,7 @@
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 392
+    .line 427
     :cond_4
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
 
@@ -1886,34 +1856,34 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    .line 104
+    .line 433
     return-object v0
 
-    .line 270
+    .line 94
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 108
+    .line 69
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 63
+    .line 18
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 202
+    .line 332
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 58
+    .line 394
     :catch_4
     move-exception v0
 
@@ -1926,11 +1896,11 @@
     .prologue
     const/4 v7, 0x0
 
-    .line 167
+    .line 10
     :try_start_0
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x18
+    const/16 v1, 0x23
 
     aget-object v0, v0, v1
 
@@ -1938,32 +1908,32 @@
 
     move-result-object v1
 
-    .line 149
+    .line 476
     if-nez v1, :cond_0
 
-    .line 115
+    .line 217
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
 
     invoke-virtual {v0}, Landroid/app/SearchableInfo;->getSuggestIntentAction()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 143
+    .line 469
     :cond_0
     if-nez v1, :cond_1
 
-    .line 9
+    .line 194
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x1c
+    const/16 v1, 0x22
 
     aget-object v1, v0, v1
 
-    .line 157
+    .line 423
     :cond_1
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x19
+    const/16 v2, 0x21
 
     aget-object v0, v0, v2
 
@@ -1971,24 +1941,24 @@
 
     move-result-object v0
 
-    .line 189
+    .line 500
     if-nez v0, :cond_2
 
-    .line 292
+    .line 189
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
 
     invoke-virtual {v0}, Landroid/app/SearchableInfo;->getSuggestIntentData()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 494
+    .line 497
     :cond_2
     if-eqz v0, :cond_3
 
-    .line 112
+    .line 157
     sget-object v2, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x1f
+    const/16 v3, 0x25
 
     aget-object v2, v2, v3
 
@@ -1996,10 +1966,10 @@
 
     move-result-object v2
 
-    .line 325
+    .line 188
     if-eqz v2, :cond_3
 
-    .line 95
+    .line 487
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -2026,17 +1996,17 @@
 
     move-result-object v0
 
-    .line 73
+    .line 169
     :cond_3
     if-nez v0, :cond_4
 
     move-object v2, v7
 
-    .line 430
+    .line 268
     :goto_0
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x1d
+    const/16 v3, 0x24
 
     aget-object v0, v0, v3
 
@@ -2044,10 +2014,10 @@
 
     move-result-object v4
 
-    .line 8
+    .line 161
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x1b
+    const/16 v3, 0x20
 
     aget-object v0, v0, v3
 
@@ -2061,7 +2031,7 @@
 
     move-object v6, p3
 
-    .line 332
+    .line 439
     invoke-direct/range {v0 .. v6}, Lcom/actionbarsherlock/widget/SearchView;->createIntent(Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
@@ -2069,7 +2039,7 @@
     :goto_1
     return-object v0
 
-    .line 73
+    .line 169
     :cond_4
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
     :try_end_0
@@ -2079,13 +2049,13 @@
 
     goto :goto_0
 
-    .line 374
+    .line 1
     :catch_0
     move-exception v0
 
     move-object v1, v0
 
-    .line 7
+    .line 108
     :try_start_1
     invoke-interface {p1}, Landroid/database/Cursor;->getPosition()I
     :try_end_1
@@ -2093,11 +2063,11 @@
 
     move-result v0
 
-    .line 23
+    .line 297
     :goto_2
     sget-object v2, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x1e
+    const/16 v3, 0x28
 
     aget-object v2, v2, v3
 
@@ -2107,7 +2077,7 @@
 
     sget-object v4, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x20
+    const/16 v5, 0x27
 
     aget-object v4, v4, v5
 
@@ -2121,7 +2091,7 @@
 
     sget-object v3, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x1a
+    const/16 v4, 0x26
 
     aget-object v3, v3, v4
 
@@ -2137,14 +2107,14 @@
 
     move-object v0, v7
 
-    .line 210
+    .line 376
     goto :goto_1
 
-    .line 432
+    .line 131
     :catch_1
     move-exception v0
 
-    .line 169
+    .line 139
     const/4 v0, -0x1
 
     goto :goto_2
@@ -2156,26 +2126,26 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 489
+    .line 282
     invoke-virtual {p2}, Landroid/app/SearchableInfo;->getSearchActivity()Landroid/content/ComponentName;
 
     move-result-object v5
 
-    .line 473
+    .line 398
     new-instance v0, Landroid/content/Intent;
 
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v3, 0xe
+    const/16 v3, 0xd
 
     aget-object v1, v1, v3
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 166
+    .line 348
     invoke-virtual {v0, v5}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    .line 485
+    .line 211
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -2188,39 +2158,39 @@
 
     move-result-object v6
 
-    .line 378
+    .line 127
     new-instance v7, Landroid/os/Bundle;
 
     invoke-direct {v7}, Landroid/os/Bundle;-><init>()V
 
-    .line 232
+    .line 95
     new-instance v8, Landroid/content/Intent;
 
     invoke-direct {v8, p1}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
-    .line 97
+    .line 118
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x11
+    const/4 v1, 0x6
 
     aget-object v0, v0, v1
 
-    .line 287
+    .line 361
     const/4 v4, 0x1
 
-    .line 137
+    .line 334
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    .line 10
+    .line 39
     invoke-virtual {p2}, Landroid/app/SearchableInfo;->getVoiceLanguageModeId()I
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 282
+    .line 166
     invoke-virtual {p2}, Landroid/app/SearchableInfo;->getVoiceLanguageModeId()I
 
     move-result v0
@@ -2229,7 +2199,7 @@
 
     move-result-object v0
 
-    .line 107
+    .line 128
     :cond_0
     invoke-virtual {p2}, Landroid/app/SearchableInfo;->getVoicePromptTextId()I
 
@@ -2237,7 +2207,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 96
+    .line 238
     invoke-virtual {p2}, Landroid/app/SearchableInfo;->getVoicePromptTextId()I
 
     move-result v1
@@ -2246,7 +2216,7 @@
 
     move-result-object v1
 
-    .line 5
+    .line 151
     :goto_0
     invoke-virtual {p2}, Landroid/app/SearchableInfo;->getVoiceLanguageId()I
 
@@ -2254,7 +2224,7 @@
 
     if-eqz v9, :cond_3
 
-    .line 86
+    .line 37
     invoke-virtual {p2}, Landroid/app/SearchableInfo;->getVoiceLanguageId()I
 
     move-result v9
@@ -2263,7 +2233,7 @@
 
     move-result-object v3
 
-    .line 118
+    .line 385
     :goto_1
     invoke-virtual {p2}, Landroid/app/SearchableInfo;->getVoiceMaxResults()I
 
@@ -2271,41 +2241,41 @@
 
     if-eqz v9, :cond_1
 
-    .line 335
+    .line 60
     invoke-virtual {p2}, Landroid/app/SearchableInfo;->getVoiceMaxResults()I
 
     move-result v4
 
-    .line 37
+    .line 55
     :cond_1
     :try_start_0
     sget-object v9, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v10, 0xd
+    const/16 v10, 0x8
 
     aget-object v9, v9, v10
 
     invoke-virtual {v8, v9, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 242
+    .line 184
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x10
+    const/4 v9, 0x7
 
     aget-object v0, v0, v9
 
     invoke-virtual {v8, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 476
+    .line 68
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v1, 0xf
+    const/16 v1, 0xe
 
     aget-object v0, v0, v1
 
     invoke-virtual {v8, v0, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 447
+    .line 338
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
     const/16 v1, 0x9
@@ -2314,7 +2284,7 @@
 
     invoke-virtual {v8, v0, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 418
+    .line 260
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
     const/16 v1, 0xa
@@ -2325,38 +2295,38 @@
 
     if-nez v5, :cond_2
 
-    .line 298
+    .line 110
     :goto_2
     invoke-virtual {v8, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 443
-    sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
-
-    const/16 v1, 0xb
-
-    aget-object v0, v0, v1
-
-    invoke-virtual {v8, v0, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
-
-    .line 36
+    .line 168
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
     const/16 v1, 0xc
 
     aget-object v0, v0, v1
 
+    invoke-virtual {v8, v0, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    .line 44
+    sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
+
+    const/16 v1, 0xb
+
+    aget-object v0, v0, v1
+
     invoke-virtual {v8, v0, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;
 
-    .line 65
+    .line 392
     return-object v8
 
-    .line 418
+    .line 260
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 459
+    .line 377
     :cond_2
     invoke-virtual {v5}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
 
@@ -2379,21 +2349,21 @@
     .locals 4
 
     .prologue
-    .line 478
+    .line 406
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1, p1}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
-    .line 203
+    .line 305
     invoke-virtual {p2}, Landroid/app/SearchableInfo;->getSearchActivity()Landroid/content/ComponentName;
 
     move-result-object v0
 
-    .line 217
+    .line 21
     :try_start_0
     sget-object v2, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x15
+    const/4 v3, 0x1
 
     aget-object v2, v2, v3
     :try_end_0
@@ -2403,20 +2373,20 @@
 
     const/4 v0, 0x0
 
-    .line 355
+    .line 319
     :goto_0
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 460
+    .line 251
     return-object v1
 
-    .line 217
+    .line 21
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 409
+    .line 243
     :cond_0
     invoke-virtual {v0}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
 
@@ -2429,12 +2399,12 @@
     .locals 1
 
     .prologue
-    .line 70
+    .line 85
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->dismissDropDown()V
 
-    .line 240
+    .line 472
     return-void
 .end method
 
@@ -2442,13 +2412,13 @@
     .locals 5
 
     .prologue
-    .line 74
+    .line 276
     :try_start_0
     const-class v0, Landroid/widget/AutoCompleteTextView;
 
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x28
+    const/16 v2, 0x29
 
     aget-object v1, v1, v2
 
@@ -2466,12 +2436,12 @@
 
     move-result-object v0
 
-    .line 125
+    .line 463
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    .line 354
+    .line 101
     const/4 v1, 0x1
 
     new-array v1, v1, [Ljava/lang/Object;
@@ -2488,11 +2458,11 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 18
+    .line 175
     :goto_0
     return-void
 
-    .line 105
+    .line 42
     :catch_0
     move-exception v0
 
@@ -2503,13 +2473,13 @@
     .locals 4
 
     .prologue
-    .line 484
+    .line 92
     :try_start_0
     const-class v0, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x5
 
     aget-object v1, v1, v2
 
@@ -2521,12 +2491,12 @@
 
     move-result-object v0
 
-    .line 158
+    .line 415
     const-class v1, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     sget-object v2, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x0
+    const/4 v3, 0x4
 
     aget-object v2, v2, v3
 
@@ -2538,17 +2508,17 @@
 
     move-result-object v1
 
-    .line 403
+    .line 349
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    .line 455
+    .line 461
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    .line 337
+    .line 99
     iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     const/4 v3, 0x0
@@ -2557,7 +2527,7 @@
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 373
+    .line 316
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     const/4 v2, 0x0
@@ -2568,11 +2538,11 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 276
+    .line 307
     :goto_0
     return-void
 
-    .line 168
+    .line 147
     :catch_0
     move-exception v0
 
@@ -2585,7 +2555,7 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 30
+    .line 71
     :try_start_0
     iget-boolean v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mIconifiedByDefault:Z
     :try_end_0
@@ -2593,32 +2563,30 @@
 
     if-nez v0, :cond_0
 
-    .line 49
+    .line 265
     :goto_0
     return-object p1
 
-    .line 30
+    .line 71
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 223
+    .line 26
     :cond_0
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x7
-
-    aget-object v1, v1, v2
+    aget-object v1, v1, v6
 
     invoke-direct {v0, v1}, Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 22
+    .line 395
     invoke-virtual {v0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 407
+    .line 465
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -2635,7 +2603,7 @@
 
     move-result-object v1
 
-    .line 339
+    .line 2
     iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v2}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->getTextSize()F
@@ -2650,10 +2618,10 @@
 
     double-to-int v2, v2
 
-    .line 457
+    .line 237
     invoke-virtual {v1, v6, v6, v2, v2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 247
+    .line 176
     new-instance v2, Landroid/text/style/ImageSpan;
 
     invoke-direct {v2, v1}, Landroid/text/style/ImageSpan;-><init>(Landroid/graphics/drawable/Drawable;)V
@@ -2668,7 +2636,7 @@
 
     move-object p1, v0
 
-    .line 49
+    .line 265
     goto :goto_0
 .end method
 
@@ -2676,7 +2644,7 @@
     .locals 2
 
     .prologue
-    .line 305
+    .line 54
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -2687,7 +2655,7 @@
 
     sget v1, Lcom/actionbarsherlock/R$dimen;->abs__search_view_preferred_width:I
 
-    .line 153
+    .line 374
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v0
@@ -2699,12 +2667,12 @@
     .locals 4
 
     .prologue
-    .line 24
+    .line 362
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
-    .line 252
+    .line 393
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -2719,7 +2687,7 @@
 
     invoke-virtual {v1, v2, v0, v3}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
-    .line 254
+    .line 148
     iget v0, v0, Landroid/util/TypedValue;->resourceId:I
 
     return v0
@@ -2729,7 +2697,7 @@
     .locals 2
 
     .prologue
-    .line 204
+    .line 248
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -2767,7 +2735,7 @@
     .locals 1
 
     .prologue
-    .line 341
+    .line 425
     :try_start_0
     iget-boolean v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSubmitButtonEnabled:Z
     :try_end_0
@@ -2828,14 +2796,14 @@
     .locals 5
 
     .prologue
-    .line 286
+    .line 419
     if-nez p1, :cond_0
 
-    .line 285
+    .line 494
     :goto_0
     return-void
 
-    .line 148
+    .line 200
     :cond_0
     :try_start_0
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->getContext()Landroid/content/Context;
@@ -2848,14 +2816,14 @@
 
     goto :goto_0
 
-    .line 103
+    .line 112
     :catch_0
     move-exception v0
 
-    .line 309
+    .line 490
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x14
+    const/16 v2, 0x1e
 
     aget-object v1, v1, v2
 
@@ -2865,7 +2833,7 @@
 
     sget-object v3, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x13
+    const/16 v4, 0x1f
 
     aget-object v3, v3, v4
 
@@ -2892,10 +2860,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 141
+    .line 91
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x8
+    const/16 v1, 0x1d
 
     aget-object v1, v0, v1
 
@@ -2909,19 +2877,19 @@
 
     move-object v6, p2
 
-    .line 123
+    .line 351
     invoke-direct/range {v0 .. v6}, Lcom/actionbarsherlock/widget/SearchView;->createIntent(Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 147
+    .line 218
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 439
+    .line 259
     return-void
 .end method
 
@@ -2929,14 +2897,14 @@
     .locals 2
 
     .prologue
-    .line 183
+    .line 232
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSuggestionsAdapter:Landroid/support/v4/widget/CursorAdapter;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/CursorAdapter;->getCursor()Landroid/database/Cursor;
 
     move-result-object v0
 
-    .line 324
+    .line 299
     if-eqz v0, :cond_0
 
     :try_start_0
@@ -2948,28 +2916,27 @@
 
     if-eqz v1, :cond_0
 
-    .line 290
+    .line 404
     invoke-direct {p0, v0, p2, p3}, Lcom/actionbarsherlock/widget/SearchView;->createIntentFromSuggestion(Landroid/database/Cursor;ILjava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 329
+    .line 292
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->launchIntent(Landroid/content/Intent;)V
 
-    .line 21
+    .line 451
     const/4 v0, 0x1
 
-    .line 236
     :goto_0
     return v0
 
-    .line 324
+    .line 299
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 236
+    .line 119
     :cond_0
     const/4 v0, 0x0
 
@@ -2980,14 +2947,14 @@
     .locals 2
 
     .prologue
-    .line 386
+    .line 20
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->getText()Landroid/text/Editable;
 
     move-result-object v0
 
-    .line 464
+    .line 380
     :try_start_0
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
     :try_end_0
@@ -2997,7 +2964,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 301
+    .line 302
     :try_start_1
     iget-boolean v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mIconifiedByDefault:Z
     :try_end_1
@@ -3005,7 +2972,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 397
+    .line 355
     :try_start_2
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnCloseListener:Lcom/actionbarsherlock/widget/SearchView$OnCloseListener;
     :try_end_2
@@ -3024,21 +2991,21 @@
 
     if-nez v0, :cond_2
 
-    .line 322
+    .line 318
     :cond_0
     :try_start_4
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->clearFocus()V
 
-    .line 186
+    .line 5
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->updateViewsVisibility(Z)V
 
-    sget-boolean v0, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    sget v0, Lcom/actionbarsherlock/widget/SearchView;->a:I
 
     if-eqz v0, :cond_2
 
-    .line 475
+    .line 296
     :cond_1
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
@@ -3046,23 +3013,23 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setText(Ljava/lang/CharSequence;)V
 
-    .line 375
+    .line 328
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->requestFocus()Z
 
-    .line 472
+    .line 335
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->setImeVisibility(Z)V
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 361
+    .line 499
     :cond_2
     return-void
 
-    .line 301
+    .line 302
     :catch_0
     move-exception v0
 
@@ -3071,7 +3038,7 @@
     :try_end_5
     .catch Landroid/content/ActivityNotFoundException; {:try_start_5 .. :try_end_5} :catch_1
 
-    .line 397
+    .line 355
     :catch_1
     move-exception v0
 
@@ -3088,7 +3055,7 @@
     :try_end_7
     .catch Landroid/content/ActivityNotFoundException; {:try_start_7 .. :try_end_7} :catch_3
 
-    .line 186
+    .line 5
     :catch_3
     move-exception v0
 
@@ -3097,7 +3064,7 @@
     :try_end_8
     .catch Landroid/content/ActivityNotFoundException; {:try_start_8 .. :try_end_8} :catch_4
 
-    .line 472
+    .line 335
     :catch_4
     move-exception v0
 
@@ -3110,7 +3077,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 487
+    .line 401
     :try_start_0
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnSuggestionListener:Lcom/actionbarsherlock/widget/SearchView$OnSuggestionListener;
     :try_end_0
@@ -3121,14 +3088,14 @@
     :try_start_1
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnSuggestionListener:Lcom/actionbarsherlock/widget/SearchView$OnSuggestionListener;
 
-    .line 124
+    .line 198
     invoke-interface {v1, p1}, Lcom/actionbarsherlock/widget/SearchView$OnSuggestionListener;->onSuggestionClick(I)Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 257
+    .line 222
     :cond_0
     const/4 v0, 0x0
 
@@ -3136,21 +3103,21 @@
 
     invoke-direct {p0, p1, v0, v1}, Lcom/actionbarsherlock/widget/SearchView;->launchSuggestion(IILjava/lang/String;)Z
 
-    .line 129
+    .line 397
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->setImeVisibility(Z)V
 
-    .line 113
+    .line 122
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->dismissSuggestions()V
 
-    .line 433
+    .line 488
     const/4 v0, 0x1
 
     :cond_1
     return v0
 
-    .line 124
+    .line 198
     :catch_0
     move-exception v0
 
@@ -3158,7 +3125,7 @@
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 433
+    .line 488
     :catch_1
     move-exception v0
 
@@ -3169,7 +3136,7 @@
     .locals 1
 
     .prologue
-    .line 261
+    .line 421
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnSuggestionListener:Lcom/actionbarsherlock/widget/SearchView$OnSuggestionListener;
     :try_end_0
@@ -3180,24 +3147,25 @@
     :try_start_1
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnSuggestionListener:Lcom/actionbarsherlock/widget/SearchView$OnSuggestionListener;
 
-    .line 334
+    .line 267
     invoke-interface {v0, p1}, Lcom/actionbarsherlock/widget/SearchView$OnSuggestionListener;->onSuggestionSelect(I)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 453
+    .line 149
     :cond_0
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/widget/SearchView;->rewriteQueryFromSuggestion(I)V
 
-    .line 297
+    .line 9
     const/4 v0, 0x1
 
+    .line 219
     :goto_0
     return v0
 
-    .line 334
+    .line 267
     :catch_0
     move-exception v0
 
@@ -3205,13 +3173,13 @@
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 297
+    .line 9
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 180
+    .line 219
     :cond_1
     const/4 v0, 0x0
 
@@ -3222,39 +3190,39 @@
     .locals 1
 
     .prologue
-    .line 188
+    .line 365
     const/4 v0, 0x0
 
     :try_start_0
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->updateViewsVisibility(Z)V
 
-    .line 400
+    .line 36
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->requestFocus()Z
 
-    .line 120
+    .line 109
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->setImeVisibility(Z)V
 
-    .line 359
+    .line 25
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnSearchClickListener:Landroid/view/View$OnClickListener;
 
     if-eqz v0, :cond_0
 
-    .line 114
+    .line 482
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnSearchClickListener:Landroid/view/View$OnClickListener;
 
     invoke-interface {v0, p0}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 94
+    .line 304
     :cond_0
     return-void
 
-    .line 114
+    .line 482
     :catch_0
     move-exception v0
 
@@ -3265,14 +3233,14 @@
     .locals 3
 
     .prologue
-    .line 310
+    .line 142
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->getText()Landroid/text/Editable;
 
     move-result-object v0
 
-    .line 16
+    .line 63
     if-eqz v0, :cond_2
 
     :try_start_0
@@ -3284,7 +3252,7 @@
 
     if-lez v1, :cond_2
 
-    .line 328
+    .line 62
     :try_start_1
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnQueryChangeListener:Lcom/actionbarsherlock/widget/SearchView$OnQueryTextListener;
     :try_end_1
@@ -3295,7 +3263,7 @@
     :try_start_2
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnQueryChangeListener:Lcom/actionbarsherlock/widget/SearchView$OnQueryTextListener;
 
-    .line 303
+    .line 30
     invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v2
@@ -3308,14 +3276,14 @@
 
     if-nez v1, :cond_2
 
-    .line 12
+    .line 186
     :cond_0
     :try_start_3
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
 
     if-eqz v1, :cond_1
 
-    .line 492
+    .line 478
     const/4 v1, 0x0
 
     const/4 v2, 0x0
@@ -3326,22 +3294,22 @@
 
     invoke-direct {p0, v1, v2, v0}, Lcom/actionbarsherlock/widget/SearchView;->launchQuerySearch(ILjava/lang/String;Ljava/lang/String;)V
 
-    .line 40
+    .line 170
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->setImeVisibility(Z)V
     :try_end_3
     .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 85
+    .line 88
     :cond_1
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->dismissSuggestions()V
 
-    .line 411
+    .line 205
     :cond_2
     return-void
 
-    .line 328
+    .line 62
     :catch_0
     move-exception v0
 
@@ -3350,7 +3318,7 @@
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_1
 
-    .line 303
+    .line 30
     :catch_1
     move-exception v0
 
@@ -3359,7 +3327,7 @@
     :try_end_5
     .catch Landroid/content/ActivityNotFoundException; {:try_start_5 .. :try_end_5} :catch_2
 
-    .line 12
+    .line 186
     :catch_2
     move-exception v0
 
@@ -3368,7 +3336,7 @@
     :try_end_6
     .catch Landroid/content/ActivityNotFoundException; {:try_start_6 .. :try_end_6} :catch_3
 
-    .line 40
+    .line 170
     :catch_3
     move-exception v0
 
@@ -3385,7 +3353,7 @@
 
     const/4 v1, 0x0
 
-    .line 471
+    .line 87
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
     :try_end_0
@@ -3393,18 +3361,18 @@
 
     if-nez v0, :cond_1
 
-    .line 429
+    .line 356
     :cond_0
     :goto_0
     return v1
 
-    .line 57
+    .line 137
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 207
+    .line 445
     :cond_1
     :try_start_1
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSuggestionsAdapter:Landroid/support/v4/widget/CursorAdapter;
@@ -3413,7 +3381,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 216
+    .line 239
     :try_start_2
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
     :try_end_2
@@ -3432,7 +3400,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 350
+    .line 258
     const/16 v0, 0x42
 
     if-eq p2, v0, :cond_2
@@ -3445,7 +3413,7 @@
 
     if-ne p2, v0, :cond_3
 
-    .line 255
+    .line 11
     :cond_2
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
@@ -3453,7 +3421,7 @@
 
     move-result v0
 
-    .line 60
+    .line 115
     const/4 v2, 0x0
 
     invoke-direct {p0, v0, v1, v2}, Lcom/actionbarsherlock/widget/SearchView;->onItemClicked(IILjava/lang/String;)Z
@@ -3462,13 +3430,13 @@
 
     goto :goto_0
 
-    .line 13
+    .line 107
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 216
+    .line 239
     :catch_2
     move-exception v0
 
@@ -3477,7 +3445,7 @@
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 350
+    .line 258
     :catch_3
     move-exception v0
 
@@ -3499,7 +3467,7 @@
 
     throw v0
 
-    .line 39
+    .line 271
     :cond_3
     if-eq p2, v3, :cond_4
 
@@ -3507,50 +3475,50 @@
 
     if-ne p2, v0, :cond_6
 
-    .line 340
+    .line 61
     :cond_4
     if-ne p2, v3, :cond_5
 
     move v0, v1
 
-    .line 152
+    .line 22
     :goto_1
     iget-object v3, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v3, v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setSelection(I)V
 
-    .line 199
+    .line 353
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setListSelection(I)V
 
-    .line 237
+    .line 160
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->clearListSelection()V
 
-    .line 462
+    .line 38
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-static {v0, v2}, Lcom/actionbarsherlock/widget/SearchView;->ensureImeVisible(Landroid/widget/AutoCompleteTextView;Z)V
 
     move v1, v2
 
-    .line 312
+    .line 356
     goto :goto_0
 
-    .line 340
+    .line 61
     :cond_5
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
-    .line 256
+    .line 105
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->length()I
 
     move-result v0
 
     goto :goto_1
 
-    .line 172
+    .line 422
     :cond_6
     const/16 v0, 0x13
 
@@ -3569,7 +3537,7 @@
 
     goto :goto_0
 
-    .line 429
+    .line 298
     :catch_6
     move-exception v0
 
@@ -3584,18 +3552,18 @@
 
     const/4 v2, 0x0
 
-    .line 342
+    .line 234
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->getText()Landroid/text/Editable;
 
     move-result-object v0
 
-    .line 243
+    .line 31
     :try_start_0
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mUserQuery:Ljava/lang/CharSequence;
 
-    .line 479
+    .line 28
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
@@ -3606,27 +3574,27 @@
 
     move v0, v1
 
-    .line 89
+    .line 179
     :goto_0
     :try_start_1
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->updateSubmitButton(Z)V
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 351
+    .line 57
     if-nez v0, :cond_2
 
     :goto_1
     :try_start_2
     invoke-direct {p0, v1}, Lcom/actionbarsherlock/widget/SearchView;->updateVoiceButton(Z)V
 
-    .line 389
+    .line 220
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->updateCloseButton()V
 
-    .line 401
+    .line 412
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->updateSubmitArea()V
 
-    .line 253
+    .line 410
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnQueryChangeListener:Lcom/actionbarsherlock/widget/SearchView$OnQueryTextListener;
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
@@ -3642,7 +3610,7 @@
 
     if-nez v0, :cond_0
 
-    .line 176
+    .line 225
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnQueryChangeListener:Lcom/actionbarsherlock/widget/SearchView$OnQueryTextListener;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -3653,7 +3621,7 @@
     :try_end_3
     .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 43
+    .line 274
     :cond_0
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
@@ -3661,10 +3629,10 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mOldQueryText:Ljava/lang/CharSequence;
 
-    .line 331
+    .line 253
     return-void
 
-    .line 479
+    .line 28
     :catch_0
     move-exception v0
 
@@ -3675,7 +3643,7 @@
 
     goto :goto_0
 
-    .line 351
+    .line 57
     :catch_1
     move-exception v0
 
@@ -3686,7 +3654,7 @@
 
     goto :goto_1
 
-    .line 253
+    .line 410
     :catch_2
     move-exception v0
 
@@ -3695,7 +3663,7 @@
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 176
+    .line 225
     :catch_3
     move-exception v0
 
@@ -3706,7 +3674,7 @@
     .locals 3
 
     .prologue
-    .line 235
+    .line 53
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
     :try_end_0
@@ -3714,7 +3682,7 @@
 
     if-nez v0, :cond_1
 
-    .line 396
+    .line 269
     :cond_0
     :goto_0
     return-void
@@ -3724,11 +3692,11 @@
 
     throw v0
 
-    .line 84
+    .line 146
     :cond_1
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
 
-    .line 364
+    .line 75
     :try_start_1
     invoke-virtual {v0}, Landroid/app/SearchableInfo;->getVoiceSearchLaunchWebSearch()Z
 
@@ -3736,7 +3704,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 404
+    .line 460
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mVoiceWebSearchIntent:Landroid/content/Intent;
 
     invoke-direct {p0, v1, v0}, Lcom/actionbarsherlock/widget/SearchView;->createVoiceWebSearchIntent(Landroid/content/Intent;Landroid/app/SearchableInfo;)Landroid/content/Intent;
@@ -3745,7 +3713,7 @@
 
     move-result-object v1
 
-    .line 263
+    .line 43
     :try_start_2
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->getContext()Landroid/content/Context;
 
@@ -3753,8 +3721,8 @@
 
     invoke-virtual {v2, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 53
-    sget-boolean v1, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    .line 52
+    sget v1, Lcom/actionbarsherlock/widget/SearchView;->a:I
 
     if-eqz v1, :cond_0
 
@@ -3767,7 +3735,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 399
+    .line 32
     :try_start_3
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mVoiceAppSearchIntent:Landroid/content/Intent;
 
@@ -3775,7 +3743,7 @@
 
     move-result-object v0
 
-    .line 296
+    .line 300
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -3786,20 +3754,20 @@
 
     goto :goto_0
 
-    .line 295
+    .line 290
     :catch_1
     move-exception v0
 
-    .line 131
+    .line 429
     sget-object v0, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x16
+    const/4 v1, 0x2
 
     aget-object v0, v0, v1
 
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x17
+    const/4 v2, 0x3
 
     aget-object v1, v1, v2
 
@@ -3807,7 +3775,7 @@
 
     goto :goto_0
 
-    .line 53
+    .line 52
     :catch_2
     move-exception v0
 
@@ -3821,12 +3789,12 @@
     .locals 1
 
     .prologue
-    .line 283
+    .line 309
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mUpdateDrawableStateRunnable:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->post(Ljava/lang/Runnable;)Z
 
-    .line 42
+    .line 46
     return-void
 .end method
 
@@ -3834,31 +3802,31 @@
     .locals 4
 
     .prologue
-    sget-boolean v0, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    sget v0, Lcom/actionbarsherlock/widget/SearchView;->a:I
 
-    .line 33
+    .line 247
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v1}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->getText()Landroid/text/Editable;
 
     move-result-object v1
 
-    .line 360
+    .line 301
     iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mSuggestionsAdapter:Landroid/support/v4/widget/CursorAdapter;
 
     invoke-virtual {v2}, Landroid/support/v4/widget/CursorAdapter;->getCursor()Landroid/database/Cursor;
 
     move-result-object v2
 
-    .line 198
+    .line 291
     if-nez v2, :cond_1
 
-    .line 436
+    .line 417
     :cond_0
     :goto_0
     return-void
 
-    .line 448
+    .line 45
     :cond_1
     invoke-interface {v2, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
@@ -3866,33 +3834,33 @@
 
     if-eqz v3, :cond_4
 
-    .line 134
+    .line 354
     iget-object v3, p0, Lcom/actionbarsherlock/widget/SearchView;->mSuggestionsAdapter:Landroid/support/v4/widget/CursorAdapter;
 
     invoke-virtual {v3, v2}, Landroid/support/v4/widget/CursorAdapter;->convertToString(Landroid/database/Cursor;)Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    .line 498
+    .line 104
     if-eqz v2, :cond_2
 
-    .line 177
+    .line 389
     :try_start_0
     invoke-direct {p0, v2}, Lcom/actionbarsherlock/widget/SearchView;->setQuery(Ljava/lang/CharSequence;)V
 
     if-eqz v0, :cond_3
 
-    .line 446
+    .line 315
     :cond_2
     invoke-direct {p0, v1}, Lcom/actionbarsherlock/widget/SearchView;->setQuery(Ljava/lang/CharSequence;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 213
+    .line 262
     :cond_3
     if-eqz v0, :cond_0
 
-    .line 461
+    .line 77
     :cond_4
     :try_start_1
     invoke-direct {p0, v1}, Lcom/actionbarsherlock/widget/SearchView;->setQuery(Ljava/lang/CharSequence;)V
@@ -3906,7 +3874,7 @@
 
     throw v0
 
-    .line 446
+    .line 315
     :catch_1
     move-exception v0
 
@@ -3917,35 +3885,35 @@
     .locals 3
 
     .prologue
-    .line 299
+    .line 125
     if-eqz p1, :cond_0
 
-    .line 264
+    .line 411
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mShowImeRunnable:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->post(Ljava/lang/Runnable;)Z
 
-    sget-boolean v0, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    sget v0, Lcom/actionbarsherlock/widget/SearchView;->a:I
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-eqz v0, :cond_1
 
-    .line 380
+    .line 314
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mShowImeRunnable:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 90
+    .line 70
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x12
+    const/16 v2, 0x17
 
     aget-object v1, v1, v2
 
@@ -3955,10 +3923,10 @@
 
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
-    .line 358
+    .line 204
     if-eqz v0, :cond_1
 
-    .line 194
+    .line 213
     :try_start_1
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->getWindowToken()Landroid/os/IBinder;
 
@@ -3970,17 +3938,17 @@
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 233
+    .line 78
     :cond_1
     return-void
 
-    .line 264
+    .line 411
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 194
+    .line 213
     :catch_1
     move-exception v0
 
@@ -3991,7 +3959,7 @@
     .locals 2
 
     .prologue
-    .line 317
+    .line 447
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
@@ -3999,7 +3967,7 @@
 
     invoke-static {v0, p1, v1}, Lcom/actionbarsherlock/widget/SearchView;->setText(Landroid/widget/AutoCompleteTextView;Ljava/lang/CharSequence;Z)V
 
-    .line 174
+    .line 249
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -4015,10 +3983,10 @@
     :goto_0
     invoke-virtual {v1, v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setSelection(I)V
 
-    .line 44
+    .line 80
     return-void
 
-    .line 174
+    .line 249
     :catch_0
     move-exception v0
 
@@ -4036,13 +4004,13 @@
     .locals 5
 
     .prologue
-    .line 391
+    .line 163
     :try_start_0
     const-class v0, Landroid/widget/AutoCompleteTextView;
 
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x21
+    const/16 v2, 0xf
 
     aget-object v1, v1, v2
 
@@ -4066,12 +4034,12 @@
 
     move-result-object v0
 
-    .line 179
+    .line 295
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    .line 323
+    .line 432
     const/4 v1, 0x2
 
     new-array v1, v1, [Ljava/lang/Object;
@@ -4092,15 +4060,15 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 200
+    .line 323
     :goto_0
     return-void
 
-    .line 239
+    .line 195
     :catch_0
     move-exception v0
 
-    .line 445
+    .line 321
     invoke-virtual {p0, p1}, Landroid/widget/AutoCompleteTextView;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_0
@@ -4110,7 +4078,7 @@
     .locals 5
 
     .prologue
-    .line 175
+    .line 485
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -4118,7 +4086,7 @@
 
     sget-object v1, Lcom/actionbarsherlock/widget/SearchView;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x29
+    const/16 v2, 0x16
 
     aget-object v1, v1, v2
 
@@ -4142,12 +4110,12 @@
 
     move-result-object v0
 
-    .line 138
+    .line 308
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    .line 327
+    .line 86
     const/4 v1, 0x2
 
     new-array v1, v1, [Ljava/lang/Object;
@@ -4170,15 +4138,15 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 402
+    .line 246
     :goto_0
     return-void
 
-    .line 352
+    .line 124
     :catch_0
     move-exception v0
 
-    .line 47
+    .line 82
     invoke-virtual {p1, p0, p2}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
 
     goto :goto_0
@@ -4192,7 +4160,7 @@
 
     const/4 v2, 0x0
 
-    .line 348
+    .line 12
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
@@ -4210,7 +4178,7 @@
 
     move v0, v1
 
-    .line 55
+    .line 457
     :goto_0
     if-nez v0, :cond_0
 
@@ -4228,7 +4196,7 @@
 
     if-nez v3, :cond_2
 
-    .line 387
+    .line 90
     :cond_0
     :goto_1
     :try_start_3
@@ -4242,7 +4210,7 @@
     :try_start_4
     invoke-virtual {v3, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 370
+    .line 452
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mCloseButton:Landroid/widget/ImageView;
 
     invoke-virtual {v1}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
@@ -4258,10 +4226,10 @@
     :goto_3
     invoke-virtual {v1, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
-    .line 78
+    .line 252
     return-void
 
-    .line 348
+    .line 12
     :catch_0
     move-exception v0
 
@@ -4272,7 +4240,7 @@
 
     goto :goto_0
 
-    .line 55
+    .line 457
     :catch_1
     move-exception v0
 
@@ -4291,7 +4259,7 @@
 
     goto :goto_1
 
-    .line 387
+    .line 90
     :catch_3
     move-exception v0
 
@@ -4302,7 +4270,7 @@
 
     goto :goto_2
 
-    .line 370
+    .line 452
     :catch_4
     move-exception v0
 
@@ -4318,14 +4286,14 @@
     .locals 3
 
     .prologue
-    .line 302
+    .line 434
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->hasFocus()Z
 
     move-result v1
 
-    .line 208
+    .line 180
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchPlate:Landroid/view/View;
 
@@ -4343,7 +4311,7 @@
     :try_start_1
     invoke-virtual {v2, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
-    .line 268
+    .line 336
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSubmitArea:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
@@ -4359,13 +4327,13 @@
     :goto_1
     invoke-virtual {v2, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
-    .line 491
+    .line 275
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->invalidate()V
 
-    .line 206
+    .line 152
     return-void
 
-    .line 208
+    .line 180
     :catch_0
     move-exception v0
 
@@ -4376,7 +4344,7 @@
 
     goto :goto_0
 
-    .line 268
+    .line 336
     :catch_1
     move-exception v0
 
@@ -4392,9 +4360,9 @@
     .locals 3
 
     .prologue
-    sget-boolean v1, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    sget v1, Lcom/actionbarsherlock/widget/SearchView;->a:I
 
-    .line 111
+    .line 470
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryHint:Ljava/lang/CharSequence;
     :try_end_0
@@ -4402,7 +4370,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 184
+    .line 241
     :try_start_1
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
@@ -4416,7 +4384,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 27
+    .line 428
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
     :try_end_1
@@ -4424,20 +4392,20 @@
 
     if-eqz v0, :cond_3
 
-    .line 136
+    .line 359
     const/4 v0, 0x0
 
-    .line 421
+    .line 254
     iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
 
     invoke-virtual {v2}, Landroid/app/SearchableInfo;->getHintId()I
 
     move-result v2
 
-    .line 345
+    .line 135
     if-eqz v2, :cond_1
 
-    .line 126
+    .line 459
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -4446,11 +4414,11 @@
 
     move-result-object v0
 
-    .line 423
+    .line 199
     :cond_1
     if-eqz v0, :cond_2
 
-    .line 28
+    .line 286
     :try_start_2
     iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
@@ -4462,11 +4430,11 @@
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 500
+    .line 250
     :cond_2
     if-eqz v1, :cond_4
 
-    .line 81
+    .line 364
     :cond_3
     :try_start_3
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
@@ -4481,11 +4449,11 @@
     :try_end_3
     .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 164
+    .line 244
     :cond_4
     return-void
 
-    .line 184
+    .line 241
     :catch_0
     move-exception v0
 
@@ -4494,19 +4462,19 @@
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_1
 
-    .line 27
+    .line 428
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 28
+    .line 286
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 81
+    .line 364
     :catch_3
     move-exception v0
 
@@ -4517,10 +4485,10 @@
     .locals 2
 
     .prologue
-    .line 181
+    .line 140
     const/16 v0, 0x8
 
-    .line 486
+    .line 369
     :try_start_0
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->isSubmitAreaEnabled()Z
     :try_end_0
@@ -4533,7 +4501,7 @@
     :try_start_1
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mSubmitButton:Landroid/view/View;
 
-    .line 330
+    .line 453
     invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
 
     move-result v1
@@ -4542,7 +4510,7 @@
 
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mVoiceButton:Landroid/view/View;
 
-    .line 384
+    .line 350
     invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
@@ -4551,20 +4519,20 @@
 
     if-nez v1, :cond_1
 
-    .line 87
+    .line 162
     :cond_0
     const/4 v0, 0x0
 
-    .line 244
+    .line 41
     :cond_1
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mSubmitArea:Landroid/view/View;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 54
+    .line 414
     return-void
 
-    .line 330
+    .line 453
     :catch_0
     move-exception v0
 
@@ -4573,7 +4541,7 @@
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 384
+    .line 350
     :catch_1
     move-exception v0
 
@@ -4584,10 +4552,10 @@
     .locals 2
 
     .prologue
-    .line 293
+    .line 342
     const/16 v0, 0x8
 
-    .line 385
+    .line 449
     :try_start_0
     iget-boolean v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mSubmitButtonEnabled:Z
     :try_end_0
@@ -4622,20 +4590,20 @@
 
     if-nez v1, :cond_1
 
-    .line 19
+    .line 418
     :cond_0
     const/4 v0, 0x0
 
-    .line 133
+    .line 6
     :cond_1
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mSubmitButton:Landroid/view/View;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 452
+    .line 156
     return-void
 
-    .line 385
+    .line 449
     :catch_0
     move-exception v0
 
@@ -4676,18 +4644,18 @@
 
     const/4 v1, 0x0
 
-    .line 109
+    .line 24
     :try_start_0
     iput-boolean p1, p0, Lcom/actionbarsherlock/widget/SearchView;->mIconified:Z
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 269
+    .line 436
     if-eqz p1, :cond_0
 
     move v0, v1
 
-    .line 218
+    .line 154
     :goto_0
     :try_start_1
     iget-object v3, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
@@ -4706,17 +4674,17 @@
 
     move v3, v4
 
-    .line 307
+    .line 58
     :goto_1
     :try_start_2
     iget-object v5, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchButton:Landroid/view/View;
 
     invoke-virtual {v5, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 346
+    .line 430
     invoke-direct {p0, v3}, Lcom/actionbarsherlock/widget/SearchView;->updateSubmitButton(Z)V
 
-    .line 17
+    .line 311
     iget-object v5, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchEditFrame:Landroid/view/View;
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
@@ -4729,7 +4697,7 @@
     :try_start_3
     invoke-virtual {v5, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 234
+    .line 448
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchHintIcon:Landroid/widget/ImageView;
 
     iget-boolean v5, p0, Lcom/actionbarsherlock/widget/SearchView;->mIconifiedByDefault:Z
@@ -4742,24 +4710,24 @@
     :try_start_4
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 61
+    .line 446
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->updateCloseButton()V
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 77
+    .line 493
     if-nez v3, :cond_4
 
     :goto_4
     invoke-direct {p0, v4}, Lcom/actionbarsherlock/widget/SearchView;->updateVoiceButton(Z)V
 
-    .line 34
+    .line 84
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->updateSubmitArea()V
 
-    .line 306
+    .line 372
     return-void
 
-    .line 269
+    .line 436
     :catch_0
     move-exception v0
 
@@ -4770,7 +4738,7 @@
 
     goto :goto_0
 
-    .line 218
+    .line 154
     :catch_1
     move-exception v0
 
@@ -4781,7 +4749,7 @@
 
     goto :goto_1
 
-    .line 17
+    .line 311
     :catch_2
     move-exception v0
 
@@ -4792,7 +4760,7 @@
 
     goto :goto_2
 
-    .line 234
+    .line 448
     :catch_3
     move-exception v0
 
@@ -4803,7 +4771,7 @@
 
     goto :goto_3
 
-    .line 77
+    .line 493
     :catch_4
     move-exception v0
 
@@ -4821,8 +4789,8 @@
     .prologue
     const/16 v1, 0x8
 
-    .line 344
-    .line 258
+    .line 215
+    .line 192
     :try_start_0
     iget-boolean v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mVoiceButtonEnabled:Z
     :try_end_0
@@ -4841,24 +4809,24 @@
 
     if-eqz p1, :cond_0
 
-    .line 379
+    .line 403
     const/4 v0, 0x0
 
-    .line 480
+    .line 455
     iget-object v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mSubmitButton:Landroid/view/View;
 
     invoke-virtual {v2, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 98
+    .line 382
     :goto_0
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mVoiceButton:Landroid/view/View;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 225
+    .line 129
     return-void
 
-    .line 258
+    .line 192
     :catch_0
     move-exception v0
 
@@ -4886,26 +4854,26 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 119
+    .line 405
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mClearingFocus:Z
 
-    .line 35
+    .line 207
     invoke-direct {p0, v1}, Lcom/actionbarsherlock/widget/SearchView;->setImeVisibility(Z)V
 
-    .line 161
+    .line 489
     invoke-super {p0}, Landroid/widget/LinearLayout;->clearFocus()V
 
-    .line 51
+    .line 40
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->clearFocus()V
 
-    .line 69
+    .line 407
     iput-boolean v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mClearingFocus:Z
 
-    .line 383
+    .line 123
     return-void
 .end method
 
@@ -4913,7 +4881,7 @@
     .locals 1
 
     .prologue
-    .line 128
+    .line 145
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->getText()Landroid/text/Editable;
@@ -4927,7 +4895,7 @@
     .locals 1
 
     .prologue
-    .line 62
+    .line 474
     iget-boolean v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mIconified:Z
 
     return v0
@@ -4937,27 +4905,27 @@
     .locals 2
 
     .prologue
-    .line 338
+    .line 141
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->clearFocus()V
 
-    .line 193
+    .line 441
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->updateViewsVisibility(Z)V
 
-    .line 395
+    .line 7
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     iget v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mCollapsedImeOptions:I
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setImeOptions(I)V
 
-    .line 26
+    .line 456
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mExpandedInActionView:Z
 
-    .line 353
+    .line 240
     return-void
 .end method
 
@@ -4965,7 +4933,7 @@
     .locals 3
 
     .prologue
-    .line 151
+    .line 183
     :try_start_0
     iget-boolean v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mExpandedInActionView:Z
     :try_end_0
@@ -4981,13 +4949,13 @@
 
     throw v0
 
-    .line 477
+    .line 330
     :cond_0
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mExpandedInActionView:Z
 
-    .line 308
+    .line 48
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->getImeOptions()I
@@ -4996,7 +4964,7 @@
 
     iput v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mCollapsedImeOptions:I
 
-    .line 185
+    .line 264
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     iget v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mCollapsedImeOptions:I
@@ -5007,14 +4975,14 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setImeOptions(I)V
 
-    .line 259
+    .line 236
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setText(Ljava/lang/CharSequence;)V
 
-    .line 144
+    .line 49
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->setIconified(Z)V
@@ -5026,20 +4994,20 @@
     .locals 1
 
     .prologue
-    .line 190
+    .line 366
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mUpdateDrawableStateRunnable:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 163
+    .line 136
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mReleaseCursorRunnable:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->post(Ljava/lang/Runnable;)Z
 
-    .line 221
+    .line 381
     invoke-super {p0}, Landroid/widget/LinearLayout;->onDetachedFromWindow()V
 
-    .line 273
+    .line 35
     return-void
 .end method
 
@@ -5047,10 +5015,10 @@
     .locals 1
 
     .prologue
-    .line 182
+    .line 16
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
-    .line 496
+    .line 185
     const-class v0, Lcom/actionbarsherlock/widget/SearchView;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -5059,7 +5027,7 @@
 
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityEvent;->setClassName(Ljava/lang/CharSequence;)V
 
-    .line 438
+    .line 462
     return-void
 .end method
 
@@ -5067,10 +5035,10 @@
     .locals 1
 
     .prologue
-    .line 316
+    .line 257
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
-    .line 132
+    .line 303
     const-class v0, Lcom/actionbarsherlock/widget/SearchView;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -5079,7 +5047,7 @@
 
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClassName(Ljava/lang/CharSequence;)V
 
-    .line 187
+    .line 326
     return-void
 .end method
 
@@ -5087,7 +5055,7 @@
     .locals 1
 
     .prologue
-    .line 390
+    .line 317
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
     :try_end_0
@@ -5095,20 +5063,18 @@
 
     if-nez v0, :cond_0
 
-    .line 116
+    .line 15
     const/4 v0, 0x0
 
-    .line 315
     :goto_0
     return v0
 
-    .line 116
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 315
+    .line 8
     :cond_0
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
@@ -5121,9 +5087,9 @@
     .locals 3
 
     .prologue
-    sget-boolean v1, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    sget v1, Lcom/actionbarsherlock/widget/SearchView;->a:I
 
-    .line 29
+    .line 270
     :try_start_0
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->isIconified()Z
 
@@ -5131,12 +5097,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 222
+    .line 484
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 336
+    .line 306
     :goto_0
     return-void
 
@@ -5145,26 +5111,26 @@
 
     throw v0
 
-    .line 416
+    .line 182
     :cond_0
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v2
 
-    .line 93
+    .line 19
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v0
 
-    .line 156
+    .line 256
     sparse-switch v2, :sswitch_data_0
 
-    .line 277
+    .line 413
     :cond_1
     :goto_1
     const/high16 v1, 0x40000000
 
-    .line 274
+    .line 51
     invoke-static {v0, v1}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v0
@@ -5173,7 +5139,7 @@
 
     goto :goto_0
 
-    .line 110
+    .line 216
     :sswitch_0
     :try_start_1
     iget v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mMaxWidth:I
@@ -5182,7 +5148,7 @@
 
     if-lez v2, :cond_2
 
-    .line 415
+    .line 197
     iget v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mMaxWidth:I
 
     invoke-static {v2, v0}, Ljava/lang/Math;->min(II)I
@@ -5191,7 +5157,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 288
+    .line 97
     :cond_2
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->getPreferredWidth()I
 
@@ -5201,10 +5167,10 @@
 
     move-result v0
 
-    .line 64
+    .line 106
     if-eqz v1, :cond_1
 
-    .line 241
+    .line 458
     :sswitch_1
     :try_start_2
     iget v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mMaxWidth:I
@@ -5213,7 +5179,7 @@
 
     if-lez v2, :cond_1
 
-    .line 497
+    .line 159
     iget v2, p0, Lcom/actionbarsherlock/widget/SearchView;->mMaxWidth:I
 
     invoke-static {v2, v0}, Ljava/lang/Math;->min(II)I
@@ -5222,7 +5188,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 467
+    .line 443
     :sswitch_2
     :try_start_3
     iget v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mMaxWidth:I
@@ -5235,19 +5201,19 @@
 
     goto :goto_1
 
-    .line 110
+    .line 216
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 241
+    .line 458
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 467
+    .line 443
     :catch_3
     move-exception v0
 
@@ -5260,7 +5226,7 @@
 
     goto :goto_1
 
-    .line 156
+    .line 256
     nop
 
     :sswitch_data_0
@@ -5275,10 +5241,10 @@
     .locals 0
 
     .prologue
-    .line 278
+    .line 346
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/widget/SearchView;->setQuery(Ljava/lang/CharSequence;)V
 
-    .line 45
+    .line 278
     return-void
 .end method
 
@@ -5286,7 +5252,7 @@
     .locals 1
 
     .prologue
-    .line 468
+    .line 358
     :try_start_0
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->isIconified()Z
 
@@ -5294,10 +5260,10 @@
 
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->updateViewsVisibility(Z)V
 
-    .line 4
+    .line 492
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->postUpdateFocusedState()V
 
-    .line 192
+    .line 201
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->hasFocus()Z
@@ -5306,16 +5272,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 145
+    .line 281
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->forceSuggestionQuery()V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 99
+    .line 313
     :cond_0
     return-void
 
-    .line 145
+    .line 281
     :catch_0
     move-exception v0
 
@@ -5326,13 +5292,13 @@
     .locals 0
 
     .prologue
-    .line 490
+    .line 339
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onWindowFocusChanged(Z)V
 
-    .line 318
+    .line 363
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->postUpdateFocusedState()V
 
-    .line 59
+    .line 480
     return-void
 .end method
 
@@ -5342,7 +5308,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 14
+    .line 4
     :try_start_0
     iget-boolean v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mClearingFocus:Z
     :try_end_0
@@ -5350,18 +5316,18 @@
 
     if-eqz v1, :cond_1
 
-    .line 140
+    .line 399
     :cond_0
     :goto_0
     return v0
 
-    .line 14
+    .line 4
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 38
+    .line 322
     :cond_1
     :try_start_1
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->isFocusable()Z
@@ -5372,24 +5338,24 @@
 
     if-eqz v1, :cond_0
 
-    .line 488
+    .line 435
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->isIconified()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 117
+    .line 383
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0, p1, p2}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->requestFocus(ILandroid/graphics/Rect;)Z
 
     move-result v0
 
-    .line 154
+    .line 114
     if-eqz v0, :cond_0
 
-    .line 92
+    .line 289
     const/4 v1, 0x0
 
     :try_start_2
@@ -5404,13 +5370,13 @@
 
     throw v0
 
-    .line 38
+    .line 322
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 101
+    .line 272
     :cond_2
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->requestFocus(ILandroid/graphics/Rect;)Z
 
@@ -5423,14 +5389,14 @@
     .locals 1
 
     .prologue
-    .line 444
+    .line 229
     if-eqz p1, :cond_0
 
-    .line 214
+    .line 65
     :try_start_0
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->onCloseClicked()V
 
-    sget-boolean v0, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    sget v0, Lcom/actionbarsherlock/widget/SearchView;->a:I
 
     if-eqz v0, :cond_1
 
@@ -5440,7 +5406,7 @@
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 82
+    .line 17
     :cond_1
     return-void
 
@@ -5455,7 +5421,7 @@
     .locals 1
 
     .prologue
-    .line 246
+    .line 388
     :try_start_0
     iget-boolean v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mIconifiedByDefault:Z
     :try_end_0
@@ -5471,14 +5437,14 @@
 
     throw v0
 
-    .line 469
+    .line 273
     :cond_0
     iput-boolean p1, p0, Lcom/actionbarsherlock/widget/SearchView;->mIconifiedByDefault:Z
 
-    .line 281
+    .line 34
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/widget/SearchView;->updateViewsVisibility(Z)V
 
-    .line 343
+    .line 173
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->updateQueryHint()V
 
     goto :goto_0
@@ -5488,12 +5454,12 @@
     .locals 1
 
     .prologue
-    .line 321
+    .line 391
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setImeOptions(I)V
 
-    .line 493
+    .line 360
     return-void
 .end method
 
@@ -5501,12 +5467,12 @@
     .locals 1
 
     .prologue
-    .line 201
+    .line 400
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setInputType(I)V
 
-    .line 271
+    .line 174
     return-void
 .end method
 
@@ -5514,13 +5480,13 @@
     .locals 0
 
     .prologue
-    .line 224
+    .line 13
     iput p1, p0, Lcom/actionbarsherlock/widget/SearchView;->mMaxWidth:I
 
-    .line 139
+    .line 117
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->requestLayout()V
 
-    .line 482
+    .line 371
     return-void
 .end method
 
@@ -5528,10 +5494,10 @@
     .locals 0
 
     .prologue
-    .line 238
+    .line 402
     iput-object p1, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnCloseListener:Lcom/actionbarsherlock/widget/SearchView$OnCloseListener;
 
-    .line 275
+    .line 343
     return-void
 .end method
 
@@ -5539,10 +5505,10 @@
     .locals 0
 
     .prologue
-    .line 195
+    .line 133
     iput-object p1, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnQueryChangeListener:Lcom/actionbarsherlock/widget/SearchView$OnQueryTextListener;
 
-    .line 304
+    .line 285
     return-void
 .end method
 
@@ -5550,10 +5516,10 @@
     .locals 0
 
     .prologue
-    .line 162
+    .line 344
     iput-object p1, p0, Lcom/actionbarsherlock/widget/SearchView;->mOnSearchClickListener:Landroid/view/View$OnClickListener;
 
-    .line 347
+    .line 59
     return-void
 .end method
 
@@ -5561,16 +5527,16 @@
     .locals 2
 
     .prologue
-    .line 122
+    .line 467
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setText(Ljava/lang/CharSequence;)V
 
-    .line 372
+    .line 450
     if-eqz p1, :cond_0
 
-    .line 313
+    .line 420
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
 
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryTextView:Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;
@@ -5581,12 +5547,12 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/widget/SearchView$SearchAutoComplete;->setSelection(I)V
 
-    .line 311
+    .line 261
     iput-object p1, p0, Lcom/actionbarsherlock/widget/SearchView;->mUserQuery:Ljava/lang/CharSequence;
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 211
+    .line 284
     :cond_0
     if-eqz p2, :cond_1
 
@@ -5597,22 +5563,22 @@
 
     if-nez v0, :cond_1
 
-    .line 209
+    .line 171
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->onSubmitQuery()V
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 71
+    .line 93
     :cond_1
     return-void
 
-    .line 311
+    .line 261
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 209
+    .line 171
     :catch_1
     move-exception v0
 
@@ -5623,13 +5589,13 @@
     .locals 0
 
     .prologue
-    .line 422
+    .line 277
     iput-object p1, p0, Lcom/actionbarsherlock/widget/SearchView;->mQueryHint:Ljava/lang/CharSequence;
 
-    .line 470
+    .line 208
     invoke-direct {p0}, Lcom/actionbarsherlock/widget/SearchView;->updateQueryHint()V
 
-    .line 127
+    .line 67
     return-void
 .end method
 
@@ -5637,16 +5603,16 @@
     .locals 1
 
     .prologue
-    .line 227
+    .line 370
     iput-boolean p1, p0, Lcom/actionbarsherlock/widget/SearchView;->mSubmitButtonEnabled:Z
 
-    .line 449
+    .line 227
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SearchView;->isIconified()Z
 
     move-result v0
 
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SearchView;->updateViewsVisibility(Z)V
 
-    .line 365
+    .line 479
     return-void
 .end method

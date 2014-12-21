@@ -1,37 +1,68 @@
-.class public Lcom/whatsapp/messaging/aq;
+.class final Lcom/whatsapp/messaging/aq;
 .super Ljava/lang/Object;
 .source "aq.java"
 
-
-# instance fields
-.field a:Lcom/whatsapp/messaging/al;
-
-.field b:[B
-
-.field c:I
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # direct methods
-.method public constructor <init>(I[BLjava/lang/String;[B[BLjava/lang/Runnable;)V
-    .locals 1
+.method constructor <init>()V
+    .locals 0
 
     .prologue
     .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1
-    iput p1, p0, Lcom/whatsapp/messaging/aq;->c:I
-
-    .line 3
-    iput-object p2, p0, Lcom/whatsapp/messaging/aq;->b:[B
-
-    .line 4
-    new-instance v0, Lcom/whatsapp/messaging/al;
-
-    invoke-direct {v0, p3, p4, p5, p6}, Lcom/whatsapp/messaging/al;-><init>(Ljava/lang/String;[B[BLjava/lang/Runnable;)V
-
-    iput-object v0, p0, Lcom/whatsapp/messaging/aq;->a:Lcom/whatsapp/messaging/al;
-
-    .line 2
     return-void
+.end method
+
+
+# virtual methods
+.method public a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/r;
+    .locals 2
+
+    .prologue
+    .line 2
+    new-instance v0, Lcom/whatsapp/messaging/r;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p1, v1}, Lcom/whatsapp/messaging/r;-><init>(Landroid/os/Parcel;Lcom/whatsapp/messaging/b7;)V
+
+    return-object v0
+.end method
+
+.method public a(I)[Lcom/whatsapp/messaging/r;
+    .locals 1
+
+    .prologue
+    .line 3
+    new-array v0, p1, [Lcom/whatsapp/messaging/r;
+
+    return-object v0
+.end method
+
+.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 4
+    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/aq;->a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/r;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public newArray(I)[Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/aq;->a(I)[Lcom/whatsapp/messaging/r;
+
+    move-result-object v0
+
+    return-object v0
 .end method

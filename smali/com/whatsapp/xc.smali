@@ -3,20 +3,20 @@
 .source "xc.java"
 
 # interfaces
-.implements Landroid/widget/AbsListView$OnScrollListener;
+.implements Lcom/whatsapp/a59;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/GroupChatInfo;
+.field final a:Lcom/whatsapp/ar0;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/GroupChatInfo;)V
+.method constructor <init>(Lcom/whatsapp/ar0;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/xc;->a:Lcom/whatsapp/GroupChatInfo;
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/xc;->a:Lcom/whatsapp/ar0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,23 +25,15 @@
 
 
 # virtual methods
-.method public onScroll(Landroid/widget/AbsListView;III)V
+.method public a()V
     .locals 1
 
     .prologue
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/xc;->a:Lcom/whatsapp/ar0;
+
+    invoke-virtual {v0}, Lcom/whatsapp/ar0;->b()V
+
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/xc;->a:Lcom/whatsapp/GroupChatInfo;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatInfo;->p(Lcom/whatsapp/GroupChatInfo;)V
-
-    .line 2
-    return-void
-.end method
-
-.method public onScrollStateChanged(Landroid/widget/AbsListView;I)V
-    .locals 0
-
-    .prologue
-    .line 4
     return-void
 .end method

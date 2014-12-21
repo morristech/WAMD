@@ -1,29 +1,43 @@
-.class public interface abstract Lcom/whatsapp/messaging/b1;
+.class Lcom/whatsapp/messaging/b1;
 .super Ljava/lang/Object;
 .source "b1.java"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field final a:Lcom/whatsapp/messaging/MessageService$1;
+
+
+# direct methods
+.method constructor <init>(Lcom/whatsapp/messaging/MessageService$1;)V
+    .locals 0
+
+    .prologue
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/messaging/b1;->a:Lcom/whatsapp/messaging/MessageService$1;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
 
 # virtual methods
-.method public abstract a()V
-.end method
+.method public run()V
+    .locals 2
 
-.method public abstract a(Landroid/os/Message;)V
-.end method
+    .prologue
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/messaging/b1;->a:Lcom/whatsapp/messaging/MessageService$1;
 
-.method public abstract a(Lcom/whatsapp/protocol/aa;)V
-.end method
+    iget-object v0, v0, Lcom/whatsapp/messaging/MessageService$1;->a:Lcom/whatsapp/messaging/MessageService;
 
-.method public abstract b()V
-.end method
+    const/4 v1, 0x0
 
-.method public abstract c()V
-.end method
+    invoke-static {v0, v1}, Lcom/whatsapp/messaging/MessageService;->a(Lcom/whatsapp/messaging/MessageService;Z)V
 
-.method public abstract d()V
-.end method
-
-.method public abstract e()V
-.end method
-
-.method public abstract f()V
+    .line 1
+    return-void
 .end method

@@ -6,7 +6,7 @@
 
 
 # direct methods
-.method public static K(Landroid/os/IBinder;)Lcom/google/android/gms/maps/internal/IProjectionDelegate;
+.method public static bp(Landroid/os/IBinder;)Lcom/google/android/gms/maps/internal/IProjectionDelegate;
     .locals 2
 
     if-nez p0, :cond_0

@@ -8,21 +8,21 @@
 
 
 # instance fields
-.field private j:Z
+.field private j:Ljava/lang/String;
 
-.field private final k:Ljava/util/List;
+.field private k:Z
 
 .field private l:Ljava/lang/String;
 
-.field private m:Ljava/lang/String;
+.field private m:I
 
-.field private n:Z
+.field private n:Ljava/util/ArrayList;
 
-.field private o:Ljava/util/ArrayList;
+.field private o:Z
 
-.field private p:I
+.field private p:Z
 
-.field private q:Z
+.field private final q:Ljava/util/List;
 
 
 # direct methods
@@ -33,9 +33,9 @@
 
     const/4 v3, 0x2
 
-    const/4 v2, 0x1
+    const/16 v5, 0x24
 
-    const/4 v5, 0x4
+    const/4 v2, 0x1
 
     const/4 v1, 0x0
 
@@ -43,7 +43,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "N7e-+N"
+    const-string v6, "bK\u0012\u001eGiE\u000bCQqTQcIrP\u001a]cuE\u000bEC@G\u000bYFhP\u0006\u001eUlE\u0016\\"
 
     const/4 v0, -0x1
 
@@ -81,7 +81,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "N:j:"
+    const-string v0, "sA\u0018YCuV\u001eDYnJ"
 
     move-object v6, v0
 
@@ -96,7 +96,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "O&c0-I1e-7R-"
+    const-string v0, "iP\u000b@C;\u000bPGX`P\u000cQ@q\n\u001c_].E\u0011TBnM\u001b"
 
     move-object v6, v0
 
@@ -111,7 +111,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "_1k8:^\"w-"
+    const-string v0, "bK\u0012\u001eGiE\u000bCQqTQcIrP\u001a]cuE\u000bEC@G\u000bYFhP\u0006\u001eFdV\u000cY_o"
 
     move-object v6, v0
 
@@ -126,13 +126,15 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "b%a8*H1a"
+    const/4 v6, 0x4
 
-    move-object v6, v0
+    const-string v0, "sA\u0018YCuV\u001eDYnJ"
 
-    move v7, v5
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
 
     move v0, v4
 
@@ -141,17 +143,13 @@
     :pswitch_3
     aput-object v6, v8, v7
 
-    const/4 v6, 0x5
+    const/4 v7, 0x5
 
-    const-string v0, "O&c0-I1e-7R-"
+    const-string v6, "bK\u0012\u001eGiE\u000bCQqTQcIrP\u001a]cuE\u000bEC@G\u000bYFhP\u0006\u001eDxT\u001a"
 
-    move v7, v6
+    const/4 v0, 0x4
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v5
 
     goto :goto_0
 
@@ -160,7 +158,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "7I"
+    const-string v6, "r]\u000cCD`P\nC\u001fbV\u001aQDd\u000b\u001b_Go\u000b\u000cDBhJ\u0018\u001d^nPRV_tJ\u001b\u0010"
 
     const/4 v0, 0x5
 
@@ -173,7 +171,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "^,iw)U\"p*?M3*\n\'N7a4\rI\"p,-| p0(T7}w*D3a"
+    const-string v6, "r]\u000cDUl{\u000cDQuQ\u000co"
 
     const/4 v0, 0x6
 
@@ -186,7 +184,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "N7v00Z"
+    const-string v6, "bL\u001eD"
 
     const/4 v0, 0x7
 
@@ -199,7 +197,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "N:w**\\7q*q^1a8*X"
+    const-string v6, "!\u0004\u205d\u0010"
 
     const/16 v0, 0x8
 
@@ -212,7 +210,7 @@
 
     const/16 v7, 0xa
 
-    const-string v6, "O&c0-I1e-7R-"
+    const-string v6, "^B\u001aQDtV\u001a"
 
     const/16 v0, 0x9
 
@@ -225,7 +223,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, "N:w-;P\u001cw-?I6w\u0006"
+    const-string v6, "bK\u0012\u001eGiE\u000bCQqTQcIrP\u001a]cuE\u000bEC@G\u000bYFhP\u0006\u001eCdV\tUBgA\u001eDEsA\u000cE^`R\u001eY\\`F\u0013U"
 
     const/16 v0, 0xa
 
@@ -238,7 +236,7 @@
 
     const/16 v7, 0xc
 
-    const-string v6, "O&c0-I1e-7R-"
+    const-string v6, "^@\u001aCSsM\u000fDYnJ"
 
     const/16 v0, 0xb
 
@@ -251,7 +249,7 @@
 
     const/16 v7, 0xd
 
-    const-string v6, "^,iw)U\"p*?M3*\n\'N7a4\rI\"p,-| p0(T7}w8O,i"
+    const-string v6, "^V\u001aSUoP\u0013I"
 
     const/16 v0, 0xc
 
@@ -264,7 +262,7 @@
 
     const/16 v7, 0xe
 
-    const-string v6, "^,iw)U\"p*?M3*\n\'N7a4\rI\"p,-| p0(T7}w-X1r<,[&e-+O&w,0\\5e02\\!h<"
+    const-string v6, "bK\u0012\u001eGiE\u000bCQqTQcIrP\u001a]cuE\u000bEC@G\u000bYFhP\u0006\u001eVsK\u0012"
 
     const/16 v0, 0xd
 
@@ -277,7 +275,7 @@
 
     const/16 v7, 0xf
 
-    const-string v6, "N:w**\\7q*q^1a8*Xl`6)Slw-,T-ct0R7)?1H-`y"
+    const-string v6, "bK\u0012\u001eGiE\u000bCQqTQcIrP\u001a]cuE\u000bEC@G\u000bYFhP\u0006\u001eCuE\u000bECnJ\u0013I"
 
     const/16 v0, 0xe
 
@@ -290,7 +288,7 @@
 
     const/16 v7, 0x10
 
-    const-string v6, "^+e-"
+    const-string v6, "sA\u0018YCuV\u001eDYnJ"
 
     const/16 v0, 0xf
 
@@ -303,7 +301,7 @@
 
     const/16 v7, 0x11
 
-    const-string v6, "7I"
+    const-string v6, "\u000b."
 
     const/16 v0, 0x10
 
@@ -316,7 +314,7 @@
 
     const/16 v7, 0x12
 
-    const-string v6, "b\'a*=O*t-7R-"
+    const-string v6, "rP\rY^f"
 
     const/16 v0, 0x11
 
@@ -329,7 +327,7 @@
 
     const/16 v7, 0x13
 
-    const-string v6, "^,iw)U\"p*?M3*\n\'N7a4\rI\"p,-| p0(T7}w;P\"m5"
+    const-string v6, "r]\u000cDUl{\u000cDQuQ\u000co"
 
     const/16 v0, 0x12
 
@@ -342,7 +340,7 @@
 
     const/16 v7, 0x14
 
-    const-string v6, "N:w-;P\u001cw-?I6w\u0006"
+    const-string v6, "r]\u000cCD`P\nC\u001fbV\u001aQDd\u000b\u0012\u001dTnS\u0011\u001fCuV\u0016^W,J\u0010D\u001dgK\n^T!"
 
     const/16 v0, 0x13
 
@@ -355,7 +353,7 @@
 
     const/16 v7, 0x15
 
-    const-string v6, "^,iw)U\"p*?M3*\n\'N7a4\rI\"p,-| p0(T7}w(X1w01S"
+    const-string v6, "rP\rY^f"
 
     const/16 v0, 0x14
 
@@ -368,7 +366,7 @@
 
     const/16 v7, 0x16
 
-    const-string v6, "\u00165a+-T,j"
+    const-string v6, "*R\u001aBChK\u0011"
 
     const/16 v0, 0x15
 
@@ -381,7 +379,7 @@
 
     const/16 v7, 0x17
 
-    const-string v6, "N7v00Z"
+    const-string v6, "r]\u000cCD`P\nC\u001fbV\u001aQDd"
 
     const/16 v0, 0x16
 
@@ -394,7 +392,7 @@
 
     const/16 v7, 0x18
 
-    const-string v6, "^,iw)U\"p*?M3*\n\'N7a4\rI\"p,-| p0(T7}w-I\"p,-R-h "
+    const-string v6, "\u000b."
 
     const/16 v0, 0x17
 
@@ -407,7 +405,7 @@
 
     const/16 v7, 0x19
 
-    const-string v6, "b1a:;S7h "
+    const-string v6, "bK\u0012\u001eGiE\u000bCQqTQcIrP\u001a]cuE\u000bEC@G\u000bYFhP\u0006\u001eCdV\tUBgA\u001eDEsA\u000cE^`R\u001eY\\`F\u0013U"
 
     const/16 v0, 0x18
 
@@ -420,7 +418,7 @@
 
     const/16 v7, 0x1a
 
-    const-string v6, "U7p)-\u0007l+.6\\7w8.Mmg63\u0012\"j=,R*`"
+    const-string v6, "bK\u0012\u001eGiE\u000bCQqTQcIrP\u001a]cuE\u000bEC@G\u000bYFhP\u0006\u001eFdV\u000cY_o"
 
     const/16 v0, 0x19
 
@@ -433,7 +431,7 @@
 
     const/16 v7, 0x1b
 
-    const-string v6, "N:w**\\7q*q^1a8*Xlit:R4jv-I1m79\u0010-k-s[,q7:\u001d"
+    const-string v6, "bK\u0012\u001eGiE\u000bCQqTQcIrP\u001a]cuE\u000bEC@G\u000bYFhP\u0006\u001eDxT\u001a"
 
     const/16 v0, 0x1a
 
@@ -446,7 +444,7 @@
 
     const/16 v7, 0x1c
 
-    const-string v6, "\u001dc\u2026y"
+    const-string v6, "bK\u0012\u001eGiE\u000bCQqTQcIrP\u001a]cuE\u000bEC@G\u000bYFhP\u0006\u001eCuE\u000bECnJ\u0013I"
 
     const/16 v0, 0x1b
 
@@ -459,7 +457,7 @@
 
     const/16 v7, 0x1d
 
-    const-string v6, "N:w**\\7q*qY&w-,R:"
+    const-string v6, "bK\u0012\u001eGiE\u000bCQqTQcIrP\u001a]cuE\u000bEC@G\u000bYFhP\u0006\u001eUlE\u0016\\"
 
     const/16 v0, 0x1c
 
@@ -472,7 +470,7 @@
 
     const/16 v7, 0x1e
 
-    const-string v6, "^,iw)U\"p*?M3*\n\'N7a4\rI\"p,-| p0(T7}w;P\"m5"
+    const-string v6, "bK\u0012\u001eGiE\u000bCQqTQcIrP\u001a]cuE\u000bEC@G\u000bYFhP\u0006\u001eVsK\u0012"
 
     const/16 v0, 0x1d
 
@@ -485,7 +483,7 @@
 
     const/16 v7, 0x1f
 
-    const-string v6, "^,iw)U\"p*?M3*\n\'N7a4\rI\"p,-| p0(T7}w-I\"p,-R-h "
+    const-string v6, "r]\u000cCD`P\nC\u001fqE\nCU"
 
     const/16 v0, 0x1e
 
@@ -498,7 +496,7 @@
 
     const/16 v7, 0x20
 
-    const-string v6, "^,iw)U\"p*?M3*\n\'N7a4\rI\"p,-| p0(T7}w-X1r<,[&e-+O&w,0\\5e02\\!h<"
+    const-string v6, "cV\u0010QTbE\u000cD"
 
     const/16 v0, 0x1f
 
@@ -511,7 +509,7 @@
 
     const/16 v7, 0x21
 
-    const-string v6, "^,iw)U\"p*?M3*\n\'N7a4\rI\"p,-| p0(T7}w8O,i"
+    const-string v6, "sA\u0018YCuV\u001eDYnJ"
 
     const/16 v0, 0x20
 
@@ -524,7 +522,7 @@
 
     const/16 v7, 0x22
 
-    const-string v6, "^,iw)U\"p*?M3*\n\'N7a4\rI\"p,-| p0(T7}w(X1w01S"
+    const-string v6, "rP\u001eDEr"
 
     const/16 v0, 0x21
 
@@ -537,7 +535,7 @@
 
     const/16 v7, 0x23
 
-    const-string v6, "^,iw)U\"p*?M3*\n\'N7a4\rI\"p,-| p0(T7}w*D3a"
+    const-string v6, "r]\u0011S"
 
     const/16 v0, 0x22
 
@@ -548,11 +546,11 @@
     :pswitch_22
     aput-object v6, v8, v7
 
-    const/16 v7, 0x24
-
-    const-string v6, "N:w**\\7q*qO&w,3X"
+    const-string v6, "r]\u000cCD`P\nC\u001fsA\u000cE]d"
 
     const/16 v0, 0x23
+
+    move v7, v5
 
     move-object v8, v9
 
@@ -561,13 +559,17 @@
     :pswitch_23
     aput-object v6, v8, v7
 
-    const/16 v7, 0x25
+    const/16 v6, 0x25
 
-    const-string v6, "N:w**\\7q*qM\"q*;"
+    const-string v0, "r]\u000cCD`P\nC\u001feA\u000cDBn]"
 
-    const/16 v0, 0x24
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v5
 
     goto/16 :goto_0
 
@@ -585,7 +587,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x5e
+    const/16 v6, 0x30
 
     :goto_2
     xor-int/2addr v6, v13
@@ -601,24 +603,26 @@
     goto/16 :goto_1
 
     :pswitch_25
-    const/16 v6, 0x3d
+    move v6, v2
 
     goto :goto_2
 
     :pswitch_26
-    const/16 v6, 0x43
-
-    goto :goto_2
-
-    :pswitch_27
     move v6, v5
 
     goto :goto_2
 
-    :pswitch_28
-    const/16 v6, 0x59
+    :pswitch_27
+    const/16 v6, 0x7f
 
     goto :goto_2
+
+    :pswitch_28
+    const/16 v6, 0x30
+
+    goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -671,54 +675,62 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 6
+    .locals 4
 
     .prologue
-    const/4 v5, 0x3
-
-    const/4 v4, 0x2
-
-    const/4 v3, 0x1
-
-    const/4 v2, 0x0
-
-    .line 91
+    .line 99
     invoke-direct {p0}, Lcom/whatsapp/DialogToastActivity;-><init>()V
 
-    .line 59
+    .line 70
     const/4 v0, 0x4
 
     new-array v0, v0, [Ljava/lang/String;
 
-    sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
+    const/4 v1, 0x0
 
-    aget-object v1, v1, v5
+    sget-object v2, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    aput-object v1, v0, v2
+    const/16 v3, 0x20
 
-    sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
+    aget-object v2, v2, v3
 
-    aget-object v1, v1, v4
+    aput-object v2, v0, v1
 
-    aput-object v1, v0, v3
+    const/4 v1, 0x1
 
-    sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
+    sget-object v2, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    aget-object v1, v1, v3
+    const/16 v3, 0x21
 
-    aput-object v1, v0, v4
+    aget-object v2, v2, v3
 
-    sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
+    aput-object v2, v0, v1
 
-    aget-object v1, v1, v2
+    const/4 v1, 0x2
 
-    aput-object v1, v0, v5
+    sget-object v2, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
+
+    const/16 v3, 0x23
+
+    aget-object v2, v2, v3
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x3
+
+    sget-object v2, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
+
+    const/16 v3, 0x22
+
+    aget-object v2, v2, v3
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->k:Ljava/util/List;
+    iput-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->q:Ljava/util/List;
 
     return-void
 .end method
@@ -727,8 +739,8 @@
     .locals 1
 
     .prologue
-    .line 66
-    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->m:Ljava/lang/String;
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->j:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -737,75 +749,75 @@
     .locals 3
 
     .prologue
-    .line 16
+    .line 48
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/whatsapp/SystemStatusActivity;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 72
-    sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
-
-    const/16 v2, 0x21
-
-    aget-object v1, v1, v2
-
-    invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 38
+    .line 14
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
     const/16 v2, 0x1e
 
     aget-object v1, v1, v2
 
-    invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+    invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 79
+    .line 51
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x22
+    const/16 v2, 0x1d
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    .line 46
+    sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
+
+    const/16 v2, 0x1a
 
     aget-object v1, v1, v2
 
     invoke-virtual {v0, v1, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 82
+    .line 60
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x20
+    const/16 v2, 0x19
 
     aget-object v1, v1, v2
 
     invoke-virtual {v0, v1, p5}, Landroid/content/Intent;->putStringArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
 
-    .line 37
+    .line 13
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x1f
+    const/16 v2, 0x1c
 
     aget-object v1, v1, v2
 
     invoke-virtual {v0, v1, p6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 27
+    .line 88
     if-eqz p2, :cond_0
 
-    .line 8
+    .line 6
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x23
+    const/16 v2, 0x1b
 
     aget-object v1, v1, v2
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 12
+    .line 72
     :cond_0
     invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 75
+    .line 85
     return-void
 .end method
 
@@ -813,8 +825,8 @@
     .locals 1
 
     .prologue
-    .line 34
-    iget v0, p0, Lcom/whatsapp/SystemStatusActivity;->p:I
+    .line 98
+    iget v0, p0, Lcom/whatsapp/SystemStatusActivity;->m:I
 
     return v0
 .end method
@@ -823,7 +835,7 @@
     .locals 1
 
     .prologue
-    .line 32
+    .line 20
     iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->l:Ljava/lang/String;
 
     return-object v0
@@ -835,21 +847,21 @@
     .locals 11
 
     .prologue
-    sget-boolean v5, Lcom/whatsapp/App;->aL:Z
+    sget v5, Lcom/whatsapp/App;->h:I
 
-    .line 76
+    .line 73
     sget-object v0, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x9
+    const/16 v1, 0x17
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 31
+    .line 65
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 99
+    .line 76
     invoke-virtual {p0}, Lcom/whatsapp/SystemStatusActivity;->getSupportActionBar()Lcom/actionbarsherlock/app/ActionBar;
 
     move-result-object v0
@@ -858,7 +870,7 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
-    .line 25
+    .line 16
     invoke-virtual {p0}, Lcom/whatsapp/SystemStatusActivity;->getSupportActionBar()Lcom/actionbarsherlock/app/ActionBar;
 
     move-result-object v0
@@ -867,20 +879,20 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/app/ActionBar;->setDisplayShowCustomEnabled(Z)V
 
-    .line 80
+    .line 27
     const v0, 0x7f0300a8
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SystemStatusActivity;->setContentView(I)V
 
-    .line 98
+    .line 62
     invoke-virtual {p0}, Lcom/whatsapp/SystemStatusActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 64
+    .line 82
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xd
+    const/16 v2, 0xe
 
     aget-object v1, v1, v2
 
@@ -888,12 +900,12 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/whatsapp/SystemStatusActivity;->l:Ljava/lang/String;
+    iput-object v1, p0, Lcom/whatsapp/SystemStatusActivity;->j:Ljava/lang/String;
 
-    .line 94
+    .line 67
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x7
+    const/4 v2, 0x5
 
     aget-object v1, v1, v2
 
@@ -903,21 +915,21 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/whatsapp/SystemStatusActivity;->p:I
+    iput v1, p0, Lcom/whatsapp/SystemStatusActivity;->m:I
 
-    .line 101
+    .line 94
     invoke-virtual {p0}, Lcom/whatsapp/SystemStatusActivity;->getSupportActionBar()Lcom/actionbarsherlock/app/ActionBar;
 
     move-result-object v1
 
-    const v2, 0x7f0e0418
+    const v2, 0x7f0e0427
 
     invoke-virtual {v1, v2}, Lcom/actionbarsherlock/app/ActionBar;->setTitle(I)V
 
-    .line 78
+    .line 39
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x13
+    const/4 v2, 0x0
 
     aget-object v1, v1, v2
 
@@ -927,12 +939,12 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->q:Z
+    iput-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->k:Z
 
-    .line 7
+    .line 19
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x15
+    const/4 v2, 0x3
 
     aget-object v1, v1, v2
 
@@ -942,12 +954,12 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->n:Z
+    iput-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->o:Z
 
-    .line 84
+    .line 29
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x18
+    const/16 v2, 0xf
 
     aget-object v1, v1, v2
 
@@ -957,12 +969,12 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->j:Z
+    iput-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->p:Z
 
-    .line 2
+    .line 54
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xe
+    const/16 v2, 0xb
 
     aget-object v1, v1, v2
 
@@ -970,14 +982,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->o:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->n:Ljava/util/ArrayList;
 
-    .line 86
-    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->o:Ljava/util/ArrayList;
+    .line 11
+    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->n:Ljava/util/ArrayList;
 
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xa
+    const/4 v2, 0x1
 
     aget-object v1, v1, v2
 
@@ -985,35 +997,35 @@
 
     move-result v0
 
-    .line 35
+    .line 74
     const/4 v4, 0x0
 
-    .line 51
-    iget-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->n:Z
+    .line 77
+    iget-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->o:Z
 
     if-nez v1, :cond_8
 
-    .line 47
-    sget v0, Lcom/whatsapp/App;->T:I
+    .line 45
+    sget v0, Lcom/whatsapp/App;->a9:I
 
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_5
 
-    .line 23
-    const v0, 0x7f0e031c
+    .line 5
+    const v0, 0x7f0e032a
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SystemStatusActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 17
+    .line 44
     :goto_0
-    iget-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->q:Z
+    iget-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->k:Z
 
     if-eqz v1, :cond_7
 
-    const v1, 0x7f0e041a
+    const v1, 0x7f0e0429
 
     :goto_1
     const/4 v2, 0x1
@@ -1028,17 +1040,17 @@
 
     move-result-object v0
 
-    .line 44
+    .line 50
     :goto_2
     if-nez v0, :cond_1
 
-    .line 69
-    iget-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->j:Z
+    .line 1
+    iget-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->p:Z
 
     if-eqz v1, :cond_0
 
-    .line 95
-    const v0, 0x7f0e039c
+    .line 17
+    const v0, 0x7f0e03ab
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SystemStatusActivity;->getString(I)Ljava/lang/String;
 
@@ -1046,30 +1058,30 @@
 
     if-eqz v5, :cond_1
 
-    .line 71
+    .line 34
     :cond_0
-    iget-object v1, p0, Lcom/whatsapp/SystemStatusActivity;->l:Ljava/lang/String;
+    iget-object v1, p0, Lcom/whatsapp/SystemStatusActivity;->j:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/whatsapp/SystemStatusActivity;->m:Ljava/lang/String;
+    iget-object v2, p0, Lcom/whatsapp/SystemStatusActivity;->l:Ljava/lang/String;
 
-    iget v3, p0, Lcom/whatsapp/SystemStatusActivity;->p:I
+    iget v3, p0, Lcom/whatsapp/SystemStatusActivity;->m:I
 
-    .line 89
+    .line 56
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
 
-    .line 15
+    .line 63
     invoke-static {p0, v1, v2, v3}, Lcom/whatsapp/UserFeedbackActivity;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 41
+    .line 69
     invoke-virtual {p0}, Lcom/whatsapp/SystemStatusActivity;->finish()V
 
     :cond_1
     move-object v1, v0
 
-    .line 9
-    const v0, 0x7f0b0291
+    .line 53
+    const v0, 0x7f0b029a
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SystemStatusActivity;->findViewById(I)Landroid/view/View;
 
@@ -1077,24 +1089,24 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 1
+    .line 57
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 14
-    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->j:Z
+    .line 102
+    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->p:Z
 
     if-nez v0, :cond_3
 
-    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->q:Z
+    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->k:Z
 
     if-eqz v0, :cond_3
 
-    .line 57
-    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->m:Ljava/lang/String;
+    .line 26
+    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->l:Ljava/lang/String;
 
     if-nez v0, :cond_2
 
-    .line 46
+    .line 59
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1107,7 +1119,7 @@
 
     const-string v1, "+"
 
-    iget-object v2, p0, Lcom/whatsapp/SystemStatusActivity;->o:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/whatsapp/SystemStatusActivity;->n:Ljava/util/ArrayList;
 
     invoke-static {v1, v2}, Landroid/text/TextUtils;->join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
 
@@ -1121,19 +1133,19 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->m:Ljava/lang/String;
+    iput-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->l:Ljava/lang/String;
 
-    .line 11
-    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->n:Z
+    .line 75
+    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->o:Z
 
     if-nez v0, :cond_2
 
-    .line 60
+    .line 80
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/whatsapp/SystemStatusActivity;->m:Ljava/lang/String;
+    iget-object v1, p0, Lcom/whatsapp/SystemStatusActivity;->l:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1153,28 +1165,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->m:Ljava/lang/String;
+    iput-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->l:Ljava/lang/String;
 
-    .line 58
+    .line 47
     :cond_2
-    new-instance v1, Lcom/whatsapp/tw;
+    new-instance v1, Lcom/whatsapp/a1z;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/tw;-><init>(Lcom/whatsapp/SystemStatusActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/a1z;-><init>(Lcom/whatsapp/SystemStatusActivity;)V
 
-    .line 39
-    const v0, 0x7f0b0294
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/SystemStatusActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/Button;
-
-    .line 5
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 49
-    const v0, 0x7f0b0295
+    .line 9
+    const v0, 0x7f0b029d
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SystemStatusActivity;->findViewById(I)Landroid/view/View;
 
@@ -1182,41 +1182,53 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 97
-    new-instance v1, Lcom/whatsapp/r7;
+    .line 92
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/r7;-><init>(Lcom/whatsapp/SystemStatusActivity;)V
+    .line 3
+    const v0, 0x7f0b029e
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/SystemStatusActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/Button;
+
+    .line 21
+    new-instance v1, Lcom/whatsapp/le;
+
+    invoke-direct {v1, p0}, Lcom/whatsapp/le;-><init>(Lcom/whatsapp/SystemStatusActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 81
+    .line 64
     if-eqz v5, :cond_4
 
-    .line 88
+    .line 18
     :cond_3
-    const v0, 0x7f0b0292
+    const v0, 0x7f0b029b
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SystemStatusActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 52
+    .line 25
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 54
+    .line 84
     :cond_4
     return-void
 
-    .line 103
+    .line 31
     :cond_5
-    sget v0, Lcom/whatsapp/App;->T:I
+    sget v0, Lcom/whatsapp/App;->a9:I
 
     if-nez v0, :cond_6
 
-    .line 55
-    const v0, 0x7f0e031d
+    .line 87
+    const v0, 0x7f0e032b
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SystemStatusActivity;->getString(I)Ljava/lang/String;
 
@@ -1224,9 +1236,9 @@
 
     goto/16 :goto_0
 
-    .line 50
+    .line 10
     :cond_6
-    const v0, 0x7f0e031e
+    const v0, 0x7f0e032c
 
     const/4 v1, 0x1
 
@@ -1236,7 +1248,7 @@
 
     sget-object v3, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x1a
+    const/4 v4, 0x2
 
     aget-object v3, v3, v4
 
@@ -1248,34 +1260,34 @@
 
     goto/16 :goto_0
 
-    .line 17
+    .line 44
     :cond_7
-    const v1, 0x7f0e0419
+    const v1, 0x7f0e0428
 
     goto/16 :goto_1
 
-    .line 20
+    .line 61
     :cond_8
-    iget v1, p0, Lcom/whatsapp/SystemStatusActivity;->p:I
+    iget v1, p0, Lcom/whatsapp/SystemStatusActivity;->m:I
 
     const/4 v2, 0x1
 
     if-eq v1, v2, :cond_b
 
-    .line 3
+    .line 68
     if-eqz v0, :cond_17
 
-    .line 65
-    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->q:Z
+    .line 52
+    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->k:Z
 
     if-nez v0, :cond_a
 
-    .line 92
+    .line 97
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v1, 0x7f0e0411
+    const v1, 0x7f0e0420
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/SystemStatusActivity;->getString(I)Ljava/lang/String;
 
@@ -1291,22 +1303,22 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->k:Ljava/util/List;
+    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->q:Ljava/util/List;
 
     sget-object v2, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x5
+    const/4 v3, 0x4
 
     aget-object v2, v2, v3
 
-    .line 70
+    .line 89
     invoke-interface {v0, v2}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_9
 
-    const v0, 0x7f0e03f9
+    const v0, 0x7f0e0408
 
     :goto_3
     invoke-virtual {p0, v0}, Lcom/whatsapp/SystemStatusActivity;->getString(I)Ljava/lang/String;
@@ -1324,29 +1336,29 @@
     goto/16 :goto_2
 
     :cond_9
-    const v0, 0x7f0e03f7
+    const v0, 0x7f0e0406
 
     goto :goto_3
 
-    .line 10
+    .line 24
     :cond_a
     sget-object v0, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0xc
+    const/16 v1, 0x10
 
     aget-object v0, v0, v1
 
-    iput-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->m:Ljava/lang/String;
+    iput-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->l:Ljava/lang/String;
 
     if-eqz v5, :cond_17
 
-    .line 61
+    .line 12
     :cond_b
-    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->o:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->n:Ljava/util/ArrayList;
 
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x10
+    const/16 v2, 0x8
 
     aget-object v1, v1, v2
 
@@ -1356,12 +1368,12 @@
 
     if-eqz v0, :cond_d
 
-    .line 45
-    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->q:Z
+    .line 95
+    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->k:Z
 
     if-eqz v0, :cond_c
 
-    const v0, 0x7f0e03f6
+    const v0, 0x7f0e0405
 
     :goto_4
     invoke-virtual {p0, v0}, Lcom/whatsapp/SystemStatusActivity;->getString(I)Ljava/lang/String;
@@ -1371,13 +1383,13 @@
     goto/16 :goto_2
 
     :cond_c
-    const v0, 0x7f0e03f5
+    const v0, 0x7f0e0404
 
     goto :goto_4
 
-    .line 87
+    .line 83
     :cond_d
-    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->o:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->n:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1385,17 +1397,17 @@
 
     if-lez v0, :cond_17
 
-    .line 93
+    .line 35
     const-string v3, ""
 
-    .line 83
+    .line 41
     const/4 v2, 0x0
 
-    .line 19
+    .line 78
     const/4 v1, 0x0
 
-    .line 36
-    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->o:Ljava/util/ArrayList;
+    .line 40
+    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->n:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1414,7 +1426,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 48
+    .line 36
     invoke-virtual {p0}, Lcom/whatsapp/SystemStatusActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
@@ -1425,7 +1437,7 @@
 
     sget-object v9, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v10, 0xb
+    const/4 v10, 0x7
 
     aget-object v9, v9, v10
 
@@ -1439,7 +1451,7 @@
 
     sget-object v9, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/4 v10, 0x4
+    const/16 v10, 0xa
 
     aget-object v9, v9, v10
 
@@ -1453,7 +1465,7 @@
 
     sget-object v9, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v10, 0x17
+    const/16 v10, 0x12
 
     aget-object v9, v9, v10
 
@@ -1465,10 +1477,10 @@
 
     move-result v7
 
-    .line 73
+    .line 37
     if-eqz v7, :cond_f
 
-    .line 53
+    .line 4
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1479,7 +1491,7 @@
 
     sget-object v3, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v8, 0x1c
+    const/16 v8, 0x9
 
     aget-object v3, v3, v8
 
@@ -1505,17 +1517,17 @@
 
     move-result-object v3
 
-    .line 85
+    .line 15
     add-int/lit8 v1, v2, 0x1
 
-    .line 30
+    .line 91
     if-eqz v5, :cond_18
 
     move v2, v1
 
     move-object v1, v0
 
-    .line 42
+    .line 103
     :cond_f
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -1523,7 +1535,7 @@
 
     sget-object v8, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x1b
+    const/16 v9, 0x14
 
     aget-object v8, v8, v9
 
@@ -1541,17 +1553,17 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 4
+    .line 86
     :goto_5
     if-eqz v5, :cond_e
 
-    .line 62
+    .line 22
     :cond_10
     const/4 v0, 0x1
 
     if-le v2, v0, :cond_12
 
-    .line 96
+    .line 42
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1570,17 +1582,17 @@
 
     move-result-object v0
 
-    .line 68
-    iget-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->q:Z
+    .line 79
+    iget-boolean v1, p0, Lcom/whatsapp/SystemStatusActivity;->k:Z
 
     if-eqz v1, :cond_11
 
-    .line 29
+    .line 90
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v2, 0x7f0e0405
+    const v2, 0x7f0e0414
 
     invoke-virtual {p0, v2}, Lcom/whatsapp/SystemStatusActivity;->getString(I)Ljava/lang/String;
 
@@ -1604,7 +1616,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0e0407
+    const v1, 0x7f0e0416
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/SystemStatusActivity;->getString(I)Ljava/lang/String;
 
@@ -1620,13 +1632,13 @@
 
     goto/16 :goto_2
 
-    .line 56
+    .line 33
     :cond_11
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v2, 0x7f0e0404
+    const v2, 0x7f0e0413
 
     invoke-virtual {p0, v2}, Lcom/whatsapp/SystemStatusActivity;->getString(I)Ljava/lang/String;
 
@@ -1638,7 +1650,7 @@
 
     sget-object v2, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x6
+    const/16 v3, 0x18
 
     aget-object v2, v2, v3
 
@@ -1650,7 +1662,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0e0406
+    const v1, 0x7f0e0415
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/SystemStatusActivity;->getString(I)Ljava/lang/String;
 
@@ -1666,23 +1678,23 @@
 
     goto/16 :goto_2
 
-    .line 26
+    .line 93
     :cond_12
     if-lez v2, :cond_17
 
-    .line 74
+    .line 28
     invoke-virtual {p0}, Lcom/whatsapp/SystemStatusActivity;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 63
+    .line 81
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v3, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v6, 0x14
+    const/16 v6, 0x13
 
     aget-object v3, v3, v6
 
@@ -1696,7 +1708,7 @@
 
     sget-object v3, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v6, 0x12
+    const/16 v6, 0xc
 
     aget-object v3, v3, v6
 
@@ -1704,13 +1716,13 @@
 
     move-result-object v3
 
-    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->q:Z
+    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->k:Z
 
     if-eqz v0, :cond_13
 
     sget-object v0, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v6, 0x19
+    const/16 v6, 0xd
 
     aget-object v0, v0, v6
 
@@ -1723,14 +1735,14 @@
 
     move-result-object v0
 
-    .line 100
+    .line 32
     invoke-virtual {p0}, Lcom/whatsapp/SystemStatusActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
     sget-object v6, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x8
+    const/16 v7, 0x15
 
     aget-object v6, v6, v7
 
@@ -1738,10 +1750,10 @@
 
     move-result v0
 
-    .line 43
+    .line 8
     if-eqz v0, :cond_16
 
-    .line 6
+    .line 71
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1760,13 +1772,13 @@
 
     move-result-object v2
 
-    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->q:Z
+    iget-boolean v0, p0, Lcom/whatsapp/SystemStatusActivity;->k:Z
 
     if-eqz v0, :cond_14
 
-    const v0, 0x7f0e03f8
+    const v0, 0x7f0e0407
 
-    .line 40
+    .line 55
     :goto_7
     invoke-virtual {p0, v0}, Lcom/whatsapp/SystemStatusActivity;->getString(I)Ljava/lang/String;
 
@@ -1782,33 +1794,33 @@
 
     goto/16 :goto_2
 
-    .line 63
+    .line 81
     :cond_13
     const-string v0, ""
 
     goto :goto_6
 
-    .line 6
+    .line 71
     :cond_14
-    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->k:Ljava/util/List;
+    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->q:Ljava/util/List;
 
-    .line 102
+    .line 43
     invoke-interface {v0, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_15
 
-    const v0, 0x7f0e03f9
+    const v0, 0x7f0e0408
 
     goto :goto_7
 
     :cond_15
-    const v0, 0x7f0e03f7
+    const v0, 0x7f0e0406
 
     goto :goto_7
 
-    .line 13
+    .line 49
     :cond_16
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1816,7 +1828,7 @@
 
     sget-object v1, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xf
+    const/4 v2, 0x6
 
     aget-object v1, v1, v2
 
@@ -1824,7 +1836,7 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->o:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/whatsapp/SystemStatusActivity;->n:Ljava/util/ArrayList;
 
     const/4 v2, 0x0
 
@@ -1861,30 +1873,10 @@
     .locals 2
 
     .prologue
-    .line 33
+    .line 58
     invoke-super {p0}, Lcom/whatsapp/DialogToastActivity;->onDestroy()V
 
-    .line 67
-    sget-object v0, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
-
-    const/16 v1, 0x1d
-
-    aget-object v0, v0, v1
-
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-
-    .line 24
-    return-void
-.end method
-
-.method public onPause()V
-    .locals 2
-
-    .prologue
-    .line 28
-    invoke-super {p0}, Lcom/whatsapp/DialogToastActivity;->onPause()V
-
-    .line 22
+    .line 38
     sget-object v0, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
     const/16 v1, 0x25
@@ -1893,7 +1885,27 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 18
+    .line 101
+    return-void
+.end method
+
+.method public onPause()V
+    .locals 2
+
+    .prologue
+    .line 7
+    invoke-super {p0}, Lcom/whatsapp/DialogToastActivity;->onPause()V
+
+    .line 96
+    sget-object v0, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
+
+    const/16 v1, 0x1f
+
+    aget-object v0, v0, v1
+
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    .line 23
     return-void
 .end method
 
@@ -1901,10 +1913,10 @@
     .locals 2
 
     .prologue
-    .line 77
+    .line 66
     invoke-super {p0}, Lcom/whatsapp/DialogToastActivity;->onResume()V
 
-    .line 90
+    .line 30
     sget-object v0, Lcom/whatsapp/SystemStatusActivity;->z:[Ljava/lang/String;
 
     const/16 v1, 0x24
@@ -1913,6 +1925,6 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 21
+    .line 100
     return-void
 .end method

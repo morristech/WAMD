@@ -16,7 +16,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 9
     new-instance v0, Landroid/support/v4/widget/SlidingPaneLayout$SavedState$1;
 
     invoke-direct {v0}, Landroid/support/v4/widget/SlidingPaneLayout$SavedState$1;-><init>()V
@@ -30,10 +30,10 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 5
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 10
+    .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
@@ -48,7 +48,7 @@
     .line 6
     return-void
 
-    .line 10
+    .line 4
     :cond_0
     const/4 v0, 0x0
 
@@ -59,7 +59,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 8
     invoke-direct {p0, p1}, Landroid/support/v4/widget/SlidingPaneLayout$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -69,10 +69,10 @@
     .locals 0
 
     .prologue
-    .line 8
+    .line 1
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
-    .line 9
+    .line 10
     return-void
 .end method
 
@@ -82,10 +82,10 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 7
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 1
+    .line 3
     iget-boolean v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SavedState;->isOpen:Z
 
     if-eqz v0, :cond_0
@@ -95,10 +95,10 @@
     :goto_0
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 5
+    .line 2
     return-void
 
-    .line 1
+    .line 3
     :cond_0
     const/4 v0, 0x0
 

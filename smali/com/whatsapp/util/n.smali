@@ -1,71 +1,52 @@
-.class public Lcom/whatsapp/util/n;
-.super Ljava/util/LinkedHashMap;
+.class final Lcom/whatsapp/util/n;
+.super Ljava/lang/Object;
 .source "n.java"
 
-
-# static fields
-.field private static final b:F = 0.75f
+# interfaces
+.implements Landroid/view/ViewTreeObserver$OnDrawListener;
 
 
 # instance fields
-.field private a:I
+.field final a:Ljava/lang/Runnable;
+
+.field final b:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 3
+.method constructor <init>(Landroid/view/View;Ljava/lang/Runnable;)V
+    .locals 0
 
     .prologue
-    const/high16 v2, 0x3f400000
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/util/n;->b:Landroid/view/View;
 
-    .line 1
-    int-to-float v0, p1
+    iput-object p2, p0, Lcom/whatsapp/util/n;->a:Ljava/lang/Runnable;
 
-    div-float/2addr v0, v2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    float-to-double v0, v0
-
-    invoke-static {v0, v1}, Ljava/lang/Math;->ceil(D)D
-
-    move-result-wide v0
-
-    double-to-int v0, v0
-
-    add-int/lit8 v0, v0, 0x1
-
-    const/4 v1, 0x1
-
-    invoke-direct {p0, v0, v2, v1}, Ljava/util/LinkedHashMap;-><init>(IFZ)V
-
-    .line 3
-    iput p1, p0, Lcom/whatsapp/util/n;->a:I
-
-    .line 4
     return-void
 .end method
 
 
 # virtual methods
-.method protected removeEldestEntry(Ljava/util/Map$Entry;)Z
-    .locals 2
+.method public onDraw()V
+    .locals 1
 
     .prologue
-    .line 2
-    invoke-virtual {p0}, Lcom/whatsapp/util/n;->size()I
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/util/n;->b:Landroid/view/View;
 
-    move-result v0
+    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
-    iget v1, p0, Lcom/whatsapp/util/n;->a:I
+    move-result-object v0
 
-    if-le v0, v1, :cond_0
+    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnDrawListener(Landroid/view/ViewTreeObserver$OnDrawListener;)V
 
-    const/4 v0, 0x1
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/util/n;->a:Ljava/lang/Runnable;
 
-    :goto_0
-    return v0
+    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
+    .line 1
+    return-void
 .end method

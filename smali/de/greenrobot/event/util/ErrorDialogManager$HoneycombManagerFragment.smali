@@ -16,11 +16,11 @@
 # instance fields
 .field protected a:Landroid/os/Bundle;
 
-.field private b:Lde/greenrobot/event/f;
+.field protected b:Z
 
-.field protected c:Z
+.field private c:Ljava/lang/Object;
 
-.field private d:Ljava/lang/Object;
+.field private d:Lde/greenrobot/event/h;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     new-array v5, v0, [Ljava/lang/String;
 
-    const-string v4, "\u000e+2\u0001I\u000f+r\u0014T\u0008!hH^\u001c+r\u0012Y\u001f=2\u0003I\u0018!n9_\u0003/p\t\\"
+    const-string v4, "&n8~\u0018\'nxk\u0005 db7\u000f4nxm\u00087x8|\u00180ddF\u000e+jzv\r\u001dfww\u000b%nd"
 
     const/4 v0, -0x1
 
@@ -75,7 +75,7 @@
 
     aput-object v4, v6, v5
 
-    const-string v0, "\u000e+2\u0001I\u000f+r\u0014T\u0008!hH^\u001c+r\u0012Y\u001f=2\u0003I\u0018!n9_\u0003/p\t\\"
+    const-string v0, "&n8~\u0018\'nxk\u0005 db7\u000f4nxm\u00087x8|\u00180ddF\u000e+jzv\r\u001dfww\u000b%nd"
 
     move-object v4, v0
 
@@ -90,7 +90,7 @@
     :pswitch_0
     aput-object v4, v6, v5
 
-    const-string v0, "\u000e+2\u0001I\u000f+r\u0014T\u0008!hH^\u001c+r\u0012Y\u001f=2\u0003I\u0018!n9_\u0003/p\t\\5#}\u0008Z\r+n"
+    const-string v0, "&n8~\u0018\'nxk\u0005 db7\u000f4nxm\u00087x8|\u00180ddF\u000e+jzv\r"
 
     move-object v4, v0
 
@@ -107,7 +107,7 @@
 
     const/4 v4, 0x3
 
-    const-string v0, "\u000e+2\u0001I\u000f+r\u0014T\u0008!hH^\u001c+r\u0012Y\u001f=2\u0003I\u0018!n9_\u0003/p\t\\5#}\u0008Z\r+n"
+    const-string v0, "&n8~\u0018\'nxk\u0005 db7\u000f4nxm\u00087x8|\u00180ddF\u000e+jzv\r"
 
     move v5, v4
 
@@ -133,7 +133,7 @@
 
     packed-switch v4, :pswitch_data_1
 
-    const/16 v4, 0x3b
+    const/16 v4, 0x6a
 
     :goto_2
     xor-int/2addr v4, v11
@@ -149,22 +149,22 @@
     goto :goto_1
 
     :pswitch_3
-    const/16 v4, 0x6a
+    const/16 v4, 0x42
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v4, 0x4e
+    const/16 v4, 0xb
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v4, 0x1c
+    const/16 v4, 0x16
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v4, 0x66
+    const/16 v4, 0x19
 
     goto :goto_2
 
@@ -188,7 +188,7 @@
     .locals 0
 
     .prologue
-    .line 18
+    .line 22
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
     return-void
@@ -198,99 +198,12 @@
     .locals 5
 
     .prologue
-    .line 3
+    .line 8
     invoke-virtual {p0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
-    .line 24
-    sget-object v0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x2
-
-    aget-object v0, v0, v2
-
-    invoke-virtual {v1, v0}, Landroid/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroid/app/Fragment;
-
-    move-result-object v0
-
-    check-cast v0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;
-
-    .line 1
-    if-nez v0, :cond_0
-
-    .line 4
-    new-instance v0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;
-
-    invoke-direct {v0}, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;-><init>()V
-
-    .line 14
-    invoke-virtual {v1}, Landroid/app/FragmentManager;->beginTransaction()Landroid/app/FragmentTransaction;
-
-    move-result-object v2
-
-    sget-object v3, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->z:[Ljava/lang/String;
-
-    const/4 v4, 0x3
-
-    aget-object v3, v3, v4
-
-    invoke-virtual {v2, v0, v3}, Landroid/app/FragmentTransaction;->add(Landroid/app/Fragment;Ljava/lang/String;)Landroid/app/FragmentTransaction;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/app/FragmentTransaction;->commit()I
-
-    .line 16
-    invoke-virtual {v1}, Landroid/app/FragmentManager;->executePendingTransactions()Z
-
-    .line 20
-    :cond_0
-    iput-boolean p2, v0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->c:Z
-
-    .line 11
-    iput-object p3, v0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->a:Landroid/os/Bundle;
-
     .line 7
-    iput-object p1, v0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->d:Ljava/lang/Object;
-
-    .line 19
-    return-void
-.end method
-
-
-# virtual methods
-.method public onEventMainThread(Lde/greenrobot/event/util/a;)V
-    .locals 4
-
-    .prologue
-    .line 9
-    iget-object v0, p0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->d:Ljava/lang/Object;
-
-    invoke-static {v0, p1}, Lde/greenrobot/event/util/m;->a(Ljava/lang/Object;Lde/greenrobot/event/util/a;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 26
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 13
-    :cond_1
-    invoke-static {p1}, Lde/greenrobot/event/util/m;->a(Lde/greenrobot/event/util/a;)V
-
-    .line 8
-    invoke-virtual {p0}, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->getFragmentManager()Landroid/app/FragmentManager;
-
-    move-result-object v1
-
-    .line 21
-    invoke-virtual {v1}, Landroid/app/FragmentManager;->executePendingTransactions()Z
-
-    .line 12
     sget-object v0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->z:[Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -301,35 +214,122 @@
 
     move-result-object v0
 
-    check-cast v0, Landroid/app/DialogFragment;
+    check-cast v0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;
+
+    .line 28
+    if-nez v0, :cond_0
+
+    .line 9
+    new-instance v0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;
+
+    invoke-direct {v0}, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;-><init>()V
+
+    .line 6
+    invoke-virtual {v1}, Landroid/app/FragmentManager;->beginTransaction()Landroid/app/FragmentTransaction;
+
+    move-result-object v2
+
+    sget-object v3, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->z:[Ljava/lang/String;
+
+    const/4 v4, 0x1
+
+    aget-object v3, v3, v4
+
+    invoke-virtual {v2, v0, v3}, Landroid/app/FragmentTransaction;->add(Landroid/app/Fragment;Ljava/lang/String;)Landroid/app/FragmentTransaction;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/app/FragmentTransaction;->commit()I
+
+    .line 15
+    invoke-virtual {v1}, Landroid/app/FragmentManager;->executePendingTransactions()Z
+
+    .line 11
+    :cond_0
+    iput-boolean p2, v0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->b:Z
+
+    .line 20
+    iput-object p3, v0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->a:Landroid/os/Bundle;
+
+    .line 4
+    iput-object p1, v0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->c:Ljava/lang/Object;
+
+    .line 13
+    return-void
+.end method
+
+
+# virtual methods
+.method public onEventMainThread(Lde/greenrobot/event/util/f;)V
+    .locals 4
+
+    .prologue
+    .line 24
+    iget-object v0, p0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->c:Ljava/lang/Object;
+
+    invoke-static {v0, p1}, Lde/greenrobot/event/util/g;->b(Ljava/lang/Object;Lde/greenrobot/event/util/f;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    .line 23
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 21
+    :cond_1
+    invoke-static {p1}, Lde/greenrobot/event/util/g;->a(Lde/greenrobot/event/util/f;)V
+
+    .line 5
+    invoke-virtual {p0}, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->getFragmentManager()Landroid/app/FragmentManager;
+
+    move-result-object v1
+
+    .line 18
+    invoke-virtual {v1}, Landroid/app/FragmentManager;->executePendingTransactions()Z
 
     .line 29
-    if-eqz v0, :cond_2
+    sget-object v0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->z:[Ljava/lang/String;
 
-    .line 22
-    invoke-virtual {v0}, Landroid/app/DialogFragment;->dismiss()V
+    const/4 v2, 0x3
 
-    .line 25
-    :cond_2
-    sget-object v0, Lde/greenrobot/event/util/m;->g:Lde/greenrobot/event/util/i;
+    aget-object v0, v0, v2
 
-    iget-boolean v2, p0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->c:Z
-
-    iget-object v3, p0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->a:Landroid/os/Bundle;
-
-    invoke-virtual {v0, p1, v2, v3}, Lde/greenrobot/event/util/i;->a(Lde/greenrobot/event/util/a;ZLandroid/os/Bundle;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Landroid/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroid/app/Fragment;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/DialogFragment;
 
-    .line 15
+    .line 1
+    if-eqz v0, :cond_2
+
+    .line 17
+    invoke-virtual {v0}, Landroid/app/DialogFragment;->dismiss()V
+
+    .line 2
+    :cond_2
+    sget-object v0, Lde/greenrobot/event/util/g;->b:Lde/greenrobot/event/util/a;
+
+    iget-boolean v2, p0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->b:Z
+
+    iget-object v3, p0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->a:Landroid/os/Bundle;
+
+    invoke-virtual {v0, p1, v2, v3}, Lde/greenrobot/event/util/a;->a(Lde/greenrobot/event/util/f;ZLandroid/os/Bundle;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/DialogFragment;
+
+    .line 30
     if-eqz v0, :cond_0
 
-    .line 5
+    .line 25
     sget-object v2, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x1
+    const/4 v3, 0x2
 
     aget-object v2, v2, v3
 
@@ -342,15 +342,15 @@
     .locals 1
 
     .prologue
-    .line 6
-    iget-object v0, p0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->b:Lde/greenrobot/event/f;
+    .line 26
+    iget-object v0, p0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->d:Lde/greenrobot/event/h;
 
-    invoke-virtual {v0, p0}, Lde/greenrobot/event/f;->b(Ljava/lang/Object;)V
+    invoke-virtual {v0, p0}, Lde/greenrobot/event/h;->d(Ljava/lang/Object;)V
 
-    .line 23
+    .line 16
     invoke-super {p0}, Landroid/app/Fragment;->onPause()V
 
-    .line 28
+    .line 14
     return-void
 .end method
 
@@ -358,25 +358,25 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 3
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
-    .line 2
-    sget-object v0, Lde/greenrobot/event/util/m;->g:Lde/greenrobot/event/util/i;
+    .line 27
+    sget-object v0, Lde/greenrobot/event/util/g;->b:Lde/greenrobot/event/util/a;
 
-    iget-object v0, v0, Lde/greenrobot/event/util/i;->a:Lde/greenrobot/event/util/f;
+    iget-object v0, v0, Lde/greenrobot/event/util/a;->b:Lde/greenrobot/event/util/h;
 
-    invoke-virtual {v0}, Lde/greenrobot/event/util/f;->a()Lde/greenrobot/event/f;
+    invoke-virtual {v0}, Lde/greenrobot/event/util/h;->b()Lde/greenrobot/event/h;
 
     move-result-object v0
 
-    iput-object v0, p0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->b:Lde/greenrobot/event/f;
+    iput-object v0, p0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->d:Lde/greenrobot/event/h;
 
-    .line 30
-    iget-object v0, p0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->b:Lde/greenrobot/event/f;
+    .line 19
+    iget-object v0, p0, Lde/greenrobot/event/util/ErrorDialogManager$HoneycombManagerFragment;->d:Lde/greenrobot/event/h;
 
-    invoke-virtual {v0, p0}, Lde/greenrobot/event/f;->d(Ljava/lang/Object;)V
+    invoke-virtual {v0, p0}, Lde/greenrobot/event/h;->a(Ljava/lang/Object;)V
 
-    .line 27
+    .line 10
     return-void
 .end method

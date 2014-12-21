@@ -2,10 +2,5 @@
 .super Ljava/lang/Object;
 .source "fW.java"
 
-
-# virtual methods
-.method public abstract c()Lcom/google/eE;
-.end method
-
-.method public abstract d()Z
-.end method
+# interfaces
+.implements Lcom/google/gR;

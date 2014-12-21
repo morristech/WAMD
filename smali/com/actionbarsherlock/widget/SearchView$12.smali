@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 1
     iput-object p1, p0, Lcom/actionbarsherlock/widget/SearchView$12;->this$0:Lcom/actionbarsherlock/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,7 +37,7 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 4
     return-void
 .end method
 
@@ -45,7 +45,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 5
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView$12;->this$0:Lcom/actionbarsherlock/widget/SearchView;
 
     invoke-static {v0, p1}, Lcom/actionbarsherlock/widget/SearchView;->access$2100(Lcom/actionbarsherlock/widget/SearchView;Ljava/lang/CharSequence;)V

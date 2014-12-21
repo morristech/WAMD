@@ -12,7 +12,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 9
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabAdapter;->this$0:Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
@@ -24,7 +24,7 @@
     .locals 0
 
     .prologue
-    .line 9
+    .line 5
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabAdapter;-><init>(Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;)V
 
     return-void
@@ -54,7 +54,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 7
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabAdapter;->this$0:Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
 
     invoke-static {v0}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;->access$200(Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;)Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;
@@ -78,7 +78,7 @@
     .locals 2
 
     .prologue
-    .line 2
+    .line 3
     int-to-long v0, p1
 
     return-wide v0
@@ -88,10 +88,10 @@
     .locals 3
 
     .prologue
-    .line 5
+    .line 2
     if-nez p2, :cond_1
 
-    .line 6
+    .line 8
     iget-object v1, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabAdapter;->this$0:Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
 
     invoke-virtual {p0, p1}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabAdapter;->getItem(I)Ljava/lang/Object;
@@ -106,14 +106,14 @@
 
     move-result-object v1
 
-    sget-boolean v0, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v0, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
     if-eqz v0, :cond_0
 
     :goto_0
     move-object v0, v1
 
-    .line 3
+    .line 6
     check-cast v0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;
 
     invoke-virtual {p0, p1}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabAdapter;->getItem(I)Ljava/lang/Object;
@@ -124,7 +124,7 @@
 
     invoke-virtual {v0, v2}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->bindTab(Lcom/actionbarsherlock/app/ActionBar$Tab;)V
 
-    .line 7
+    .line 1
     :cond_0
     return-object v1
 

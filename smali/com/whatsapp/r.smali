@@ -1,193 +1,126 @@
-.class Lcom/whatsapp/r;
-.super Ljava/lang/Object;
+.class final Lcom/whatsapp/r;
+.super Lcom/whatsapp/g;
 .source "r.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/GroupChatInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/GroupChatInfo;)V
+.method constructor <init>()V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/r;->a:Lcom/whatsapp/GroupChatInfo;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 5
+    invoke-direct {p0}, Lcom/whatsapp/g;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
+.method public a(Lcom/whatsapp/protocol/c9;I)V
     .locals 6
 
     .prologue
-    const/4 v5, 0x0
+    sget v0, Lcom/whatsapp/App;->h:I
 
-    const/4 v4, 0x1
-
-    const/4 v3, 0x0
-
-    .line 13
-    iget-object v0, p0, Lcom/whatsapp/r;->a:Lcom/whatsapp/GroupChatInfo;
-
-    const v1, 0x7f0b01f9
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/GroupChatInfo;->findViewById(I)Landroid/view/View;
+    .line 9
+    invoke-static {}, Lcom/whatsapp/VideoTranscodeService;->b()Ljava/util/HashMap;
 
     move-result-object v1
+
+    monitor-enter v1
 
     .line 8
-    iget-object v0, p0, Lcom/whatsapp/r;->a:Lcom/whatsapp/GroupChatInfo;
+    :try_start_0
+    iget-byte v2, p1, Lcom/whatsapp/protocol/c9;->b:B
 
-    const v2, 0x7f0b01f7
+    const/4 v3, 0x3
 
-    invoke-virtual {v0, v2}, Lcom/whatsapp/GroupChatInfo;->findViewById(I)Landroid/view/View;
+    if-ne v2, v3, :cond_3
 
-    move-result-object v0
+    .line 1
+    iget v2, p1, Lcom/whatsapp/protocol/c9;->f:I
 
-    check-cast v0, Landroid/widget/TextView;
+    const/4 v3, 0x1
 
-    .line 7
-    const/4 v2, 0x4
+    if-ne v2, v3, :cond_0
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
-
-    .line 15
-    iget-object v1, p0, Lcom/whatsapp/r;->a:Lcom/whatsapp/GroupChatInfo;
-
-    invoke-static {v1}, Lcom/whatsapp/GroupChatInfo;->j(Lcom/whatsapp/GroupChatInfo;)Landroid/widget/TextView;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 17
-    sget-object v1, Lcom/whatsapp/afm;->f:Lcom/whatsapp/afm;
-
-    iget-object v2, p0, Lcom/whatsapp/r;->a:Lcom/whatsapp/GroupChatInfo;
-
-    invoke-static {v2}, Lcom/whatsapp/GroupChatInfo;->h(Lcom/whatsapp/GroupChatInfo;)Ljava/lang/String;
+    .line 4
+    invoke-static {}, Lcom/whatsapp/VideoTranscodeService;->b()Ljava/util/HashMap;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/whatsapp/afm;->b(Ljava/lang/String;)Z
+    iget-object v3, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    move-result v1
+    invoke-virtual {v2, v3, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_1
 
     .line 12
-    invoke-virtual {v0}, Landroid/widget/TextView;->getPaintFlags()I
-
-    move-result v1
-
-    or-int/lit8 v1, v1, 0x8
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setPaintFlags(I)V
-
-    .line 14
-    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setEnabled(Z)V
-
-    .line 9
-    iget-object v1, p0, Lcom/whatsapp/r;->a:Lcom/whatsapp/GroupChatInfo;
-
-    invoke-static {v1}, Lcom/whatsapp/GroupChatInfo;->j(Lcom/whatsapp/GroupChatInfo;)Landroid/widget/TextView;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/CompoundButton;
-
-    invoke-virtual {v1, v5}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
-
-    .line 5
-    iget-object v1, p0, Lcom/whatsapp/r;->a:Lcom/whatsapp/GroupChatInfo;
-
-    invoke-static {v1}, Lcom/whatsapp/GroupChatInfo;->j(Lcom/whatsapp/GroupChatInfo;)Landroid/widget/TextView;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/CompoundButton;
-
-    invoke-virtual {v1, v4}, Landroid/widget/CompoundButton;->setChecked(Z)V
-
-    .line 3
-    iget-object v1, p0, Lcom/whatsapp/r;->a:Lcom/whatsapp/GroupChatInfo;
-
-    invoke-static {v1}, Lcom/whatsapp/GroupChatInfo;->j(Lcom/whatsapp/GroupChatInfo;)Landroid/widget/TextView;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/CompoundButton;
-
-    iget-object v2, p0, Lcom/whatsapp/r;->a:Lcom/whatsapp/GroupChatInfo;
-
-    iget-object v2, v2, Lcom/whatsapp/GroupChatInfo;->m:Landroid/widget/CompoundButton$OnCheckedChangeListener;
-
-    invoke-virtual {v1, v2}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
-
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
-
-    if-eqz v1, :cond_1
-
-    .line 16
     :cond_0
-    invoke-virtual {v0}, Landroid/widget/TextView;->getPaintFlags()I
+    invoke-static {}, Lcom/whatsapp/VideoTranscodeService;->b()Ljava/util/HashMap;
 
-    move-result v1
+    move-result-object v2
 
-    and-int/lit8 v1, v1, -0x9
+    iget-object v3, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setPaintFlags(I)V
-
-    .line 4
-    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setEnabled(Z)V
-
-    .line 10
-    iget-object v0, p0, Lcom/whatsapp/r;->a:Lcom/whatsapp/GroupChatInfo;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatInfo;->j(Lcom/whatsapp/GroupChatInfo;)Landroid/widget/TextView;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/CompoundButton;
-
-    invoke-virtual {v0, v5}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v2, v3}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
-    iget-object v0, p0, Lcom/whatsapp/r;->a:Lcom/whatsapp/GroupChatInfo;
+    :cond_1
+    invoke-static {}, Lcom/whatsapp/VideoTranscodeService;->b()Ljava/util/HashMap;
 
-    invoke-static {v0}, Lcom/whatsapp/GroupChatInfo;->j(Lcom/whatsapp/GroupChatInfo;)Landroid/widget/TextView;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/util/HashMap;->isEmpty()Z
 
-    check-cast v0, Landroid/widget/CompoundButton;
+    move-result v2
 
-    invoke-virtual {v0, v3}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    if-eqz v2, :cond_2
+
+    .line 3
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    new-instance v3, Landroid/content/Intent;
+
+    sget-object v4, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    const-class v5, Lcom/whatsapp/VideoTranscodeService;
+
+    invoke-direct {v3, v4, v5}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {v2, v3}, Lcom/whatsapp/App;->stopService(Landroid/content/Intent;)Z
+
+    if-eqz v0, :cond_3
 
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/r;->a:Lcom/whatsapp/GroupChatInfo;
+    :cond_2
+    new-instance v0, Landroid/content/Intent;
 
-    invoke-static {v0}, Lcom/whatsapp/GroupChatInfo;->j(Lcom/whatsapp/GroupChatInfo;)Landroid/widget/TextView;
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    move-result-object v0
+    const-class v3, Lcom/whatsapp/VideoTranscodeService;
 
-    check-cast v0, Landroid/widget/CompoundButton;
+    invoke-direct {v0, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    iget-object v1, p0, Lcom/whatsapp/r;->a:Lcom/whatsapp/GroupChatInfo;
+    .line 7
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    iget-object v1, v1, Lcom/whatsapp/GroupChatInfo;->m:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+    invoke-virtual {v2, v0}, Lcom/whatsapp/App;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    invoke-virtual {v0, v1}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    .line 10
+    :cond_3
+    monitor-exit v1
 
     .line 11
-    :cond_1
     return-void
+
+    .line 10
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
 .end method

@@ -27,7 +27,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "? \u00029\u0011\r6C$\u0004\u0006\'C \u0015\r?C*\u0000\u0006<\u000c=A\n7C\'\u0014\u0004>M"
+    const-string v0, "^*b\"jl<#?\u007fg-#;nl5#1{g6l&:k=#<oe4-"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -65,7 +65,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x61
+    const/16 v0, 0x1a
 
     :goto_1
     xor-int/2addr v0, v4
@@ -81,24 +81,26 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x68
+    const/16 v0, 0x9
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x52
+    const/16 v0, 0x58
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x63
+    const/4 v0, 0x3
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x49
+    const/16 v0, 0x52
 
     goto :goto_1
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -115,25 +117,25 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 51
+    .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 56
+    .line 3
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mSubMenu:Lcom/actionbarsherlock/view/SubMenu;
 
-    .line 62
+    .line 23
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mMenuItemClickListener:Lcom/actionbarsherlock/view/MenuItem$OnMenuItemClickListener;
 
-    .line 53
+    .line 4
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mActionExpandListener:Lcom/actionbarsherlock/view/MenuItem$OnActionExpandListener;
 
-    .line 29
+    .line 22
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeActionExpandListener:Landroid/view/MenuItem$OnActionExpandListener;
 
-    .line 30
+    .line 54
     if-nez p1, :cond_0
 
-    .line 19
+    .line 34
     new-instance v0, Ljava/lang/IllegalStateException;
 
     sget-object v1, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->z:Ljava/lang/String;
@@ -142,11 +144,11 @@
 
     throw v0
 
-    .line 32
+    .line 45
     :cond_0
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
-    .line 25
+    .line 67
     return-void
 .end method
 
@@ -154,7 +156,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 15
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mActionExpandListener:Lcom/actionbarsherlock/view/MenuItem$OnActionExpandListener;
 
     return-object v0
@@ -166,7 +168,7 @@
     .locals 1
 
     .prologue
-    .line 41
+    .line 37
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0}, Landroid/view/MenuItem;->collapseActionView()Z
@@ -180,7 +182,7 @@
     .locals 1
 
     .prologue
-    .line 26
+    .line 20
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0}, Landroid/view/MenuItem;->expandActionView()Z
@@ -194,14 +196,14 @@
     .locals 2
 
     .prologue
-    .line 48
+    .line 61
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0}, Landroid/view/MenuItem;->getActionProvider()Landroid/view/ActionProvider;
 
     move-result-object v0
 
-    .line 12
+    .line 66
     if-eqz v0, :cond_0
 
     :try_start_0
@@ -209,7 +211,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 52
+    .line 6
     check-cast v0, Lcom/actionbarsherlock/internal/view/ActionProviderWrapper;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/view/ActionProviderWrapper;->unwrap()Lcom/actionbarsherlock/view/ActionProvider;
@@ -218,17 +220,17 @@
 
     move-result-object v0
 
-    .line 55
+    .line 49
     :goto_0
     return-object v0
 
-    .line 52
+    .line 6
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 55
+    .line 49
     :cond_0
     const/4 v0, 0x0
 
@@ -239,20 +241,20 @@
     .locals 2
 
     .prologue
-    .line 64
+    .line 58
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0}, Landroid/view/MenuItem;->getActionView()Landroid/view/View;
 
     move-result-object v0
 
-    .line 73
+    .line 59
     :try_start_0
     instance-of v1, v0, Lcom/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper;
 
     if-eqz v1, :cond_0
 
-    .line 46
+    .line 62
     check-cast v0, Lcom/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper;->unwrap()Landroid/view/View;
@@ -274,7 +276,7 @@
     .locals 1
 
     .prologue
-    .line 33
+    .line 56
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0}, Landroid/view/MenuItem;->getGroupId()I
@@ -288,7 +290,7 @@
     .locals 1
 
     .prologue
-    .line 36
+    .line 69
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0}, Landroid/view/MenuItem;->getIcon()Landroid/graphics/drawable/Drawable;
@@ -302,7 +304,7 @@
     .locals 1
 
     .prologue
-    .line 47
+    .line 16
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0}, Landroid/view/MenuItem;->getItemId()I
@@ -316,7 +318,7 @@
     .locals 2
 
     .prologue
-    .line 4
+    .line 43
     :try_start_0
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->hasSubMenu()Z
     :try_end_0
@@ -331,7 +333,7 @@
 
     if-nez v0, :cond_0
 
-    .line 23
+    .line 29
     new-instance v0, Lcom/actionbarsherlock/internal/view/menu/SubMenuWrapper;
 
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
@@ -346,13 +348,13 @@
     :try_end_1
     .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 24
+    .line 72
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mSubMenu:Lcom/actionbarsherlock/view/SubMenu;
 
     return-object v0
 
-    .line 4
+    .line 43
     :catch_0
     move-exception v0
 
@@ -361,7 +363,7 @@
     :try_end_2
     .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 23
+    .line 29
     :catch_1
     move-exception v0
 
@@ -372,7 +374,7 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 41
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0}, Landroid/view/MenuItem;->hasSubMenu()Z
@@ -386,7 +388,7 @@
     .locals 1
 
     .prologue
-    .line 70
+    .line 65
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0}, Landroid/view/MenuItem;->isActionViewExpanded()Z
@@ -400,7 +402,7 @@
     .locals 1
 
     .prologue
-    .line 21
+    .line 40
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0}, Landroid/view/MenuItem;->isVisible()Z
@@ -414,13 +416,13 @@
     .locals 1
 
     .prologue
-    .line 45
+    .line 36
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mMenuItemClickListener:Lcom/actionbarsherlock/view/MenuItem$OnMenuItemClickListener;
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 55
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mMenuItemClickListener:Lcom/actionbarsherlock/view/MenuItem$OnMenuItemClickListener;
 
     invoke-interface {v0, p0}, Lcom/actionbarsherlock/view/MenuItem$OnMenuItemClickListener;->onMenuItemClick(Lcom/actionbarsherlock/view/MenuItem;)Z
@@ -429,17 +431,15 @@
 
     move-result v0
 
-    .line 31
     :goto_0
     return v0
 
-    .line 3
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 31
+    .line 52
     :cond_0
     const/4 v0, 0x0
 
@@ -450,7 +450,7 @@
     .locals 2
 
     .prologue
-    .line 18
+    .line 63
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     new-instance v1, Lcom/actionbarsherlock/internal/view/ActionProviderWrapper;
@@ -459,7 +459,7 @@
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setActionProvider(Landroid/view/ActionProvider;)Landroid/view/MenuItem;
 
-    .line 42
+    .line 19
     return-object p0
 .end method
 
@@ -467,28 +467,28 @@
     .locals 3
 
     .prologue
-    .line 1
+    .line 25
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setActionView(I)Landroid/view/MenuItem;
 
-    .line 63
+    .line 73
     if-eqz p1, :cond_0
 
-    .line 40
+    .line 17
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0}, Landroid/view/MenuItem;->getActionView()Landroid/view/View;
 
     move-result-object v0
 
-    .line 50
+    .line 2
     :try_start_0
     instance-of v1, v0, Lcom/actionbarsherlock/view/CollapsibleActionView;
 
     if-eqz v1, :cond_0
 
-    .line 57
+    .line 10
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     new-instance v2, Lcom/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper;
@@ -499,11 +499,11 @@
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 54
+    .line 71
     :cond_0
     return-object p0
 
-    .line 57
+    .line 10
     :catch_0
     move-exception v0
 
@@ -514,7 +514,7 @@
     .locals 1
 
     .prologue
-    .line 28
+    .line 76
     if-eqz p1, :cond_0
 
     :try_start_0
@@ -531,16 +531,16 @@
 
     move-object p1, v0
 
-    .line 11
+    .line 7
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setActionView(Landroid/view/View;)Landroid/view/MenuItem;
 
-    .line 34
+    .line 57
     return-object p0
 
-    .line 28
+    .line 76
     :catch_0
     move-exception v0
 
@@ -551,12 +551,12 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 5
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setAlphabeticShortcut(C)Landroid/view/MenuItem;
 
-    .line 43
+    .line 68
     return-object p0
 .end method
 
@@ -564,12 +564,12 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 42
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setCheckable(Z)Landroid/view/MenuItem;
 
-    .line 68
+    .line 38
     return-object p0
 .end method
 
@@ -577,12 +577,12 @@
     .locals 1
 
     .prologue
-    .line 60
+    .line 74
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setChecked(Z)Landroid/view/MenuItem;
 
-    .line 13
+    .line 64
     return-object p0
 .end method
 
@@ -590,12 +590,12 @@
     .locals 1
 
     .prologue
-    .line 20
+    .line 51
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
-    .line 6
+    .line 18
     return-object p0
 .end method
 
@@ -603,12 +603,12 @@
     .locals 1
 
     .prologue
-    .line 65
+    .line 70
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
-    .line 71
+    .line 39
     return-object p0
 .end method
 
@@ -616,12 +616,12 @@
     .locals 1
 
     .prologue
-    .line 22
+    .line 32
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/MenuItem;
 
-    .line 10
+    .line 31
     return-object p0
 .end method
 
@@ -629,12 +629,12 @@
     .locals 1
 
     .prologue
-    .line 72
+    .line 28
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setNumericShortcut(C)Landroid/view/MenuItem;
 
-    .line 7
+    .line 30
     return-object p0
 .end method
 
@@ -642,23 +642,23 @@
     .locals 2
 
     .prologue
-    .line 76
+    .line 75
     :try_start_0
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mActionExpandListener:Lcom/actionbarsherlock/view/MenuItem$OnActionExpandListener;
 
-    .line 35
+    .line 46
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeActionExpandListener:Landroid/view/MenuItem$OnActionExpandListener;
 
     if-nez v0, :cond_0
 
-    .line 66
+    .line 53
     new-instance v0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper$1;
 
     invoke-direct {v0, p0}, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper$1;-><init>(Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;)V
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeActionExpandListener:Landroid/view/MenuItem$OnActionExpandListener;
 
-    .line 44
+    .line 50
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeActionExpandListener:Landroid/view/MenuItem$OnActionExpandListener;
@@ -667,11 +667,11 @@
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 75
+    .line 14
     :cond_0
     return-object p0
 
-    .line 44
+    .line 50
     :catch_0
     move-exception v0
 
@@ -682,15 +682,15 @@
     .locals 1
 
     .prologue
-    .line 59
+    .line 60
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mMenuItemClickListener:Lcom/actionbarsherlock/view/MenuItem$OnMenuItemClickListener;
 
-    .line 15
+    .line 1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p0}, Landroid/view/MenuItem;->setOnMenuItemClickListener(Landroid/view/MenuItem$OnMenuItemClickListener;)Landroid/view/MenuItem;
 
-    .line 16
+    .line 44
     return-object p0
 .end method
 
@@ -698,12 +698,12 @@
     .locals 1
 
     .prologue
-    .line 37
+    .line 24
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
-    .line 67
+    .line 21
     return-void
 .end method
 
@@ -711,12 +711,12 @@
     .locals 1
 
     .prologue
-    .line 27
+    .line 12
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setTitle(I)Landroid/view/MenuItem;
 
-    .line 5
+    .line 11
     return-object p0
 .end method
 
@@ -724,12 +724,12 @@
     .locals 1
 
     .prologue
-    .line 58
+    .line 35
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
-    .line 49
+    .line 26
     return-object p0
 .end method
 
@@ -737,12 +737,12 @@
     .locals 1
 
     .prologue
-    .line 39
+    .line 33
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setTitleCondensed(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
-    .line 74
+    .line 13
     return-object p0
 .end method
 
@@ -750,11 +750,11 @@
     .locals 1
 
     .prologue
-    .line 69
+    .line 47
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;->mNativeItem:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    .line 61
+    .line 48
     return-object p0
 .end method

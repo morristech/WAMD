@@ -22,15 +22,15 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 6
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 7
+    .line 5
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/view/menu/ActionMenuView$LayoutParams;->isOverflowButton:Z
 
-    .line 4
+    .line 8
     return-void
 .end method
 
@@ -38,10 +38,10 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 2
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout$LayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 5
+    .line 1
     return-void
 .end method
 
@@ -49,14 +49,14 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 3
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout$LayoutParams;-><init>(Landroid/widget/LinearLayout$LayoutParams;)V
 
-    .line 3
+    .line 7
     iget-boolean v0, p1, Lcom/actionbarsherlock/internal/view/menu/ActionMenuView$LayoutParams;->isOverflowButton:Z
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/view/menu/ActionMenuView$LayoutParams;->isOverflowButton:Z
 
-    .line 6
+    .line 4
     return-void
 .end method

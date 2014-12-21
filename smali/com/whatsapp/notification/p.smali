@@ -3,20 +3,20 @@
 .source "p.java"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/notification/g;
+.field final a:Lcom/whatsapp/notification/PopupNotification;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/notification/g;)V
+.method constructor <init>(Lcom/whatsapp/notification/PopupNotification;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/notification/p;->a:Lcom/whatsapp/notification/g;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/notification/p;->a:Lcom/whatsapp/notification/PopupNotification;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,60 +25,15 @@
 
 
 # virtual methods
-.method public a(Lcom/whatsapp/protocol/ae;Lcom/whatsapp/protocol/ae;)I
-    .locals 4
-
-    .prologue
-    .line 1
-    iget-wide v0, p1, Lcom/whatsapp/protocol/ae;->n:J
-
-    iget-wide v2, p2, Lcom/whatsapp/protocol/ae;->n:J
-
-    cmp-long v0, v0, v2
-
-    if-nez v0, :cond_0
-
-    .line 5
-    const/4 v0, 0x0
-
-    .line 7
-    :goto_0
-    return v0
-
-    .line 4
-    :cond_0
-    iget-wide v0, p1, Lcom/whatsapp/protocol/ae;->n:J
-
-    iget-wide v2, p2, Lcom/whatsapp/protocol/ae;->n:J
-
-    cmp-long v0, v0, v2
-
-    if-gez v0, :cond_1
-
-    .line 7
-    const/4 v0, -0x1
-
-    goto :goto_0
-
-    .line 6
-    :cond_1
-    const/4 v0, 0x1
-
-    goto :goto_0
-.end method
-
-.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public onClick(Landroid/view/View;)V
     .locals 1
 
     .prologue
-    .line 3
-    check-cast p1, Lcom/whatsapp/protocol/ae;
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/notification/p;->a:Lcom/whatsapp/notification/PopupNotification;
 
-    check-cast p2, Lcom/whatsapp/protocol/ae;
+    invoke-static {v0}, Lcom/whatsapp/notification/PopupNotification;->a(Lcom/whatsapp/notification/PopupNotification;)V
 
-    invoke-virtual {p0, p1, p2}, Lcom/whatsapp/notification/p;->a(Lcom/whatsapp/protocol/ae;Lcom/whatsapp/protocol/ae;)I
-
-    move-result v0
-
-    return v0
+    .line 1
+    return-void
 .end method

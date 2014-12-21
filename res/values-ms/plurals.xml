@@ -122,9 +122,6 @@ servis"</item>
     <plurals name="participants_remaining">
         <item quantity="other">%d baki</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Anda boleh teruskan. Kami telah pulihkan %,d mesej.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Menghantar video %1$d kepada %2$s</item>
     </plurals>

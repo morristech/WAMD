@@ -71,14 +71,6 @@
     <string name="audio_note_tip">按住錄音，鬆開傳送</string>
     <string name="audio_note_tip_2">錄音時間太短，請重試</string>
     <string name="audio_note_top_mic_tip">請對著手機上端的麥克風說話</string>
-    <string name="auth_client_needs_enabling_title">應用程式需要啟用 Google Play 服務。</string>
-    <string name="auth_client_needs_installation_title">應用程式需要安裝 Google Play 服務。</string>
-    <string name="auth_client_needs_update_title">應用程式需要更新 Google Play 服務。</string>
-    <string name="auth_client_play_services_err_notification_msg">Google Play 服務錯誤</string>
-    <string name="auth_client_requested_by_msg">提出要求的應用程式：%1$s</string>
-    <string name="auth_client_using_bad_version_title">應用程式嘗試使用的 Google Play 服務版本有誤。</string>
-    <string name="barcode_scanner_dialog_body">這個應用程式需要條碼掃描器. 您想要安裝嗎?</string>
-    <string name="barcode_scanner_dialog_title">安裝條碼掃描器?</string>
     <string name="block">封鎖</string>
     <string name="block_ask">您確定要封鎖這個聯絡人嗎?</string>
     <string name="block_list_desc_1">"點擊右上方圖標以選擇想封鎖的聯絡人。
@@ -159,23 +151,32 @@
     <string name="color_red">紅色</string>
     <string name="color_white">白色</string>
     <string name="color_yellow">黃色</string>
+    <string name="common_android_wear_notification_needs_update_text">有一個應用程式要求更新 Android Wear 應用程式。</string>
+    <string name="common_android_wear_update_text">您必須更新 Android Wear 應用程式，這個應用程式才能運作。</string>
+    <string name="common_android_wear_update_title">更新 Android Wear</string>
     <string name="common_google_play_services_enable_button">啟用 Google Play 服務</string>
     <string name="common_google_play_services_enable_text">您必須啟用 Google Play 服務，這個應用程式才能運作。</string>
     <string name="common_google_play_services_enable_title">啟用 Google Play 服務</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">「%1$s」提出要求</string>
     <string name="common_google_play_services_install_button">取得 Google Play 服務</string>
     <string name="common_google_play_services_install_text_phone">您的手機並未安裝 Google Play 服務，所以無法執行這個應用程式。</string>
     <string name="common_google_play_services_install_text_tablet">您的平板電腦並未安裝 Google Play 服務，所以無法執行這個應用程式。</string>
     <string name="common_google_play_services_install_title">取得 Google Play 服務</string>
     <string name="common_google_play_services_invalid_account_text">這個裝置上沒有您所指定的帳戶，請選擇其他帳戶。</string>
     <string name="common_google_play_services_invalid_account_title">無效的帳戶</string>
+    <string name="common_google_play_services_needs_enabling_title">應用程式要求啟用 Google Play 服務。</string>
     <string name="common_google_play_services_network_error_text">需要數據連線才能連上 Google Play 服務。</string>
     <string name="common_google_play_services_network_error_title">網路錯誤</string>
+    <string name="common_google_play_services_notification_needs_installation_title">應用程式要求安裝 Google Play 服務。</string>
+    <string name="common_google_play_services_notification_needs_update_title">應用程式要求更新 Google Play 服務。</string>
+    <string name="common_google_play_services_notification_ticker">Google Play 服務發生錯誤</string>
     <string name="common_google_play_services_unknown_issue">Google Play 服務發生不明問題。</string>
     <string name="common_google_play_services_unsupported_text">您的裝置不支援部分應用程式所需的 Google Play 服務。如需協助，請與您的裝置製造商聯絡。</string>
     <string name="common_google_play_services_unsupported_title">Google Play 服務</string>
     <string name="common_google_play_services_update_button">更新</string>
     <string name="common_google_play_services_update_text">您必須更新 Google Play 服務，才能執行這個應用程式。</string>
     <string name="common_google_play_services_update_title">更新 Google Play 服務</string>
+    <string name="common_open_on_phone">在手機上開啟</string>
     <string name="common_signin_button_text">登入</string>
     <string name="common_signin_button_text_long">使用 Google 帳戶登入</string>
     <string name="confirm_forward_msg">轉發至%s?</string>
@@ -352,7 +353,6 @@
     <string name="eula_description">與世界各地的朋友使用跨平台的移動通訊</string>
     <string name="eula_tablets_not_supported">注：目前不支持平板電腦。</string>
     <string name="eula_terms_of_service">服務條款</string>
-    <string name="eula_title">歡迎使用WhatsApp！</string>
     <string name="existing_contact">現有的</string>
     <string name="exit">退出</string>
     <string name="exit_group">退出群組</string>
@@ -477,7 +477,7 @@
     <string name="group_name_hint">在此輸入群組主題...</string>
     <string name="group_name_shortcut_was_removed">"您已不再是群組 '%s' 的成員"</string>
     <string name="group_participant_added_name">%s 已加入</string>
-    <string name="group_participant_added_you">您被新增了</string>
+    <string name="group_participant_added_you">您被加到群組</string>
     <string name="group_participant_changed_number">%1$s 已從 %2$s 變更為 %3$s</string>
     <string name="group_participant_changed_number_unknown_name">%1$s 已變更為 %2$s</string>
     <string name="group_participant_demoted_you">您已不是本群組管理員</string>
@@ -527,7 +527,6 @@
     <string name="insufficient_space_for_download_shared_storage">您的內部存儲器中沒有足夠的空間所以無法下載。請刪除一些文件，並再試一次。</string>
     <string name="invalid_media_message_download">無法下載檔案因為訊息有問題。請對方再重傳一次訊息。</string>
     <string name="invalid_message_forward">訊息無法轉寄。</string>
-    <string name="invalid_qr_code">無效的 QR 碼</string>
     <string name="invalid_url_for_download">下載失敗. 請再次要求傳送該文件。</string>
     <string name="invite">邀請</string>
     <string name="invite_friends">邀請您的朋友</string>
@@ -573,7 +572,6 @@ WhatsApp服務"</string>
     <string name="menuitem_add">新增</string>
     <string name="menuitem_contacts">聯絡人</string>
     <string name="menuitem_debug">調試</string>
-    <string name="menuitem_delete_qr">刪除 QR 條碼</string>
     <string name="menuitem_groupchat">新增群組</string>
     <string name="menuitem_list">新增廣播</string>
     <string name="menuitem_mute">靜音</string>
@@ -614,14 +612,10 @@ WhatsApp服務"</string>
     <string name="msg_store_backup_failed">無法備份對話記錄</string>
     <string name="msg_store_backup_failed_try_again_later">無法建立訊息備份。請稍後再試。</string>
     <string name="msg_store_backup_found">找到您的備份</string>
-    <string name="msg_store_backup_found_registration">發現訊息備份！</string>
     <string name="msg_store_backup_skipped">跳過執行備份</string>
     <string name="msg_store_backup_skipped_no_media">無法執行備份：沒有媒體卡。</string>
     <string name="msg_store_backup_skipped_read_only_media">無法執行備份：媒體卡狀態是唯讀。</string>
     <string name="msg_store_confirm">確認</string>
-    <string name="msg_store_creation_backup_message">您想要從之前的備份還原您的對話記錄嗎?</string>
-    <string name="msg_store_do_not_restore">不要恢復</string>
-    <string name="msg_store_do_not_restore_no_thanks">不要還原</string>
     <string name="msg_store_error_found">有錯誤發生。請重新啟動WhatsApp。</string>
     <string name="msg_store_error_not_restored">對不起，我們無法恢復任何您的對話記錄備份。</string>
     <string name="msg_store_last_confirmation_not_to_restore">如果不執行備份還原，您將會失去之前的所有對話記錄。確定要這樣做嗎 ?</string>
@@ -648,9 +642,6 @@ WhatsApp服務"</string>
     <string name="need_sd_card_shared_storage">請關閉USB儲存裝置並再試一次。</string>
     <string name="network_required">您目前沒有連線上網。</string>
     <string name="network_usage_ask_reset_message">您確定要重設統計流量嗎?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">上次重設於: %1$s</string>
     <string name="network_usage_media_bytes_received">多媒體下載(Bytes):</string>
     <string name="network_usage_media_bytes_sent">多媒體送出(Bytes):</string>
@@ -1006,18 +997,18 @@ WhatsApp服務"</string>
     <string name="software_expired_get_from_play">這箇版本的WhatsApp太久而且已經不再運作.請到Google Play 下載最新版本.</string>
     <string name="software_expired_get_from_play_with_date">自 &lt;b>%1$s&lt;/b> 起已不再支援此WhatsApp版本 。請到Google Play下載最新版本。&lt;br>&lt;br>您裝置上的日期是&lt;b>%2$s&lt;/b>。假使此日期不正確，請更正您的裝置日期設定雖後重新啟動 WhatsApp。</string>
     <string name="software_expired_with_date">於 &lt;b>%1$s&lt;/b> 起已不再支援此一版本之WhatsApp。請點“下載”以取得最新之版本。&lt;br>&lt;br>您目前裝置上的日期是 &lt;b>%2$s&lt;/b>。假使此一日期並不正確，則請更正您裝置上的系統日期後再重新啟動 WhatsApp。</string>
-    <string name="spam_generic">"因為您可能違反了我們的服務條款，您的帳號被 WhatsApp 暫時停用。
+    <string name="spam_generic">"由於您抵觸了我們的服務條款，您的帳號已被 WhatsApp 暫時停用。
+ 
 您將可以在這個時間後再次使用 WhatsApp："</string>
     <string name="spam_generic_data_connection_missing">請確定您的手機有良好的數據網絡連線。</string>
     <string name="spam_generic_unknown_time_left">因為您可能違反了我們的服務條款，您的帳號已被 WhatsApp 暫時停用。您很快就能重新使用 WhatsApp。</string>
     <string name="spam_learn_more">了解更多</string>
     <string name="spam_title">暫停使用</string>
-    <string name="spam_too_many_blocks">由於很多用戶將您封鎖，您的帳號已被 WhatsApp 暫時停用。</string>
-    <string name="spam_too_many_groups">"由於您建立了太多的群組，並且該群組中的成員沒有儲存您的號碼在通訊錄中，所以您的 WhatsApp 被暫時停用。
+    <string name="spam_too_many_groups">"由於您建立了太多的群組，並且該群組中的成員沒有您的號碼在通訊錄中，所以您的 WhatsApp 被暫時停用。
+ 
 您將可以在這個時間後再次使用 WhatsApp："</string>
-    <string name="spam_too_many_messages">"由於您傳送了過多的訊息給沒有保存您在通訊錄內的用戶，所以您的帳號被 WhatsApp 暫時停用。
-您將可以在這個時間後再次使用 WhatsApp："</string>
-    <string name="spam_too_many_people">"由於您傳送了過多相同的訊息給太多用戶，所以您的帳號被 WhatsApp 暫時停用。
+    <string name="spam_too_many_messages">"由於您向太多未新增您為聯絡人的用戶傳送訊息，您的帳號已被 WhatsApp 暫時停用。
+ 
 您將可以在這個時間後再次使用 WhatsApp："</string>
     <string name="status">狀態</string>
     <string name="status_default_at_gym">在健身房</string>

@@ -6,5 +6,5 @@
 
 
 # virtual methods
-.method public abstract e(Lcom/google/android/gms/maps/model/internal/d;)V
+.method public abstract onCameraChange(Lcom/google/android/gms/maps/model/CameraPosition;)V
 .end method

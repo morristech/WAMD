@@ -29,7 +29,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "-\u001dL-\u0008\u0006\u001d\\"
+    const-string v6, "|\u0005}|$W\u0005m"
 
     const/4 v0, -0x1
 
@@ -67,7 +67,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "4\u0011K2\u000c>\u0011g(\t"
+    const-string v0, "e\tzc o\tVy%"
 
     move-object v6, v0
 
@@ -82,7 +82,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "4\u0011K2\u000c>\u0011g(\t"
+    const-string v0, "|\u0005}|$W\u0005m"
 
     move-object v6, v0
 
@@ -97,7 +97,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "-\u001dL-\u0008\u0006\u001d\\"
+    const-string v0, "e\tzc o\tVy%"
 
     move-object v6, v0
 
@@ -112,7 +112,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "-\u001dL-\u0008\u0006\u001d\\"
+    const-string v0, "|\u0005}|$W\u0005m"
 
     move-object v6, v0
 
@@ -129,7 +129,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "4\u0011K2\u000c>\u0011g(\t"
+    const-string v0, "e\tzc o\tVy%"
 
     move v7, v6
 
@@ -155,7 +155,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x6d
+    const/16 v6, 0x41
 
     :goto_2
     xor-int/2addr v6, v13
@@ -171,22 +171,22 @@
     goto :goto_1
 
     :pswitch_5
-    const/16 v6, 0x59
+    const/16 v6, 0x8
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v6, 0x74
+    const/16 v6, 0x6c
 
     goto :goto_2
 
     :pswitch_7
-    const/16 v6, 0x38
+    const/16 v6, 0x9
 
     goto :goto_2
 
     :pswitch_8
-    const/16 v6, 0x41
+    const/16 v6, 0x10
 
     goto :goto_2
 
@@ -212,96 +212,94 @@
     .locals 3
 
     .prologue
-    .line 14
+    const/4 v2, 0x0
+
+    .line 12
     invoke-direct {p0}, Landroid/support/v4/app/DialogFragment;-><init>()V
 
-    .line 23
-    const/4 v0, 0x0
+    .line 3
+    iput-boolean v2, p0, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->b:Z
 
-    iput-boolean v0, p0, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->b:Z
-
-    .line 4
+    .line 20
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 3
+    .line 25
     sget-object v1, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x4
 
     aget-object v1, v1, v2
 
-    const v2, 0x7f0e02e8
-
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
-
-    .line 22
-    sget-object v1, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x5
-
-    aget-object v1, v1, v2
-
-    const v2, 0x7f0e0341
+    const v2, 0x7f0e02f5
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 19
+    sget-object v1, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x1
+
+    aget-object v1, v1, v2
+
+    const v2, 0x7f0e034f
+
+    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    .line 17
     invoke-virtual {p0, v0}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 12
+    .line 23
     return-void
 .end method
 
-.method static a(II)Landroid/support/v4/app/DialogFragment;
-    .locals 1
-
-    .prologue
-    .line 30
-    invoke-static {p0, p1}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->b(II)Landroid/support/v4/app/DialogFragment;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method private static b(II)Landroid/support/v4/app/DialogFragment;
+.method private static a(II)Landroid/support/v4/app/DialogFragment;
     .locals 4
 
     .prologue
-    .line 9
+    .line 11
     new-instance v0, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;
 
     invoke-direct {v0}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;-><init>()V
 
-    .line 32
+    .line 9
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 21
+    .line 31
     sget-object v2, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x3
+    const/4 v3, 0x4
 
     aget-object v2, v2, v3
 
     invoke-virtual {v1, v2, p0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 8
+    .line 6
     sget-object v2, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x2
+    const/4 v3, 0x5
 
     aget-object v2, v2, v3
 
     invoke-virtual {v1, v2, p1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 13
+    .line 22
     invoke-virtual {v0, v1}, Landroid/support/v4/app/DialogFragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 1
+    .line 32
+    return-object v0
+.end method
+
+.method static b(II)Landroid/support/v4/app/DialogFragment;
+    .locals 1
+
+    .prologue
+    .line 2
+    invoke-static {p0, p1}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->a(II)Landroid/support/v4/app/DialogFragment;
+
+    move-result-object v0
+
     return-object v0
 .end method
 
@@ -311,66 +309,66 @@
     .locals 1
 
     .prologue
-    .line 18
+    .line 4
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->isResumed()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 29
+    .line 7
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->dismiss()V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 27
+    .line 18
     :cond_0
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->b:Z
 
-    .line 10
+    .line 8
     :cond_1
     return-void
 .end method
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
-    .locals 6
+    .locals 4
 
     .prologue
-    const/4 v5, 0x1
-
-    const/4 v4, 0x0
-
-    .line 6
+    .line 21
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
     sget-object v1, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->z:[Ljava/lang/String;
 
-    aget-object v1, v1, v4
+    const/4 v2, 0x2
+
+    aget-object v1, v1, v2
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 11
+    .line 13
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
     sget-object v2, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->z:[Ljava/lang/String;
 
-    aget-object v2, v2, v5
+    const/4 v3, 0x3
+
+    aget-object v2, v2, v3
 
     invoke-virtual {v1, v2}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 25
+    .line 16
     new-instance v2, Landroid/app/ProgressDialog;
 
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -379,17 +377,17 @@
 
     invoke-direct {v2, v3}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    .line 31
+    .line 14
     if-eqz v0, :cond_0
 
-    .line 20
+    .line 5
     invoke-virtual {p0, v0}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 5
+    .line 27
     :cond_0
     invoke-virtual {p0, v1}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->getString(I)Ljava/lang/String;
 
@@ -397,11 +395,15 @@
 
     invoke-virtual {v2, v0}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 26
-    invoke-virtual {v2, v5}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
+    .line 29
+    const/4 v0, 0x1
 
-    .line 7
-    invoke-virtual {v2, v4}, Landroid/app/ProgressDialog;->setCancelable(Z)V
+    invoke-virtual {v2, v0}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
+
+    .line 30
+    const/4 v0, 0x0
+
+    invoke-virtual {v2, v0}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     .line 28
     return-object v2
@@ -411,23 +413,23 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 24
     invoke-super {p0}, Landroid/support/v4/app/DialogFragment;->onStart()V
 
-    .line 16
+    .line 26
     iget-boolean v0, p0, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->b:Z
 
     if-eqz v0, :cond_0
 
-    .line 15
+    .line 1
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->dismiss()V
 
-    .line 24
+    .line 15
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->b:Z
 
-    .line 17
+    .line 10
     :cond_0
     return-void
 .end method

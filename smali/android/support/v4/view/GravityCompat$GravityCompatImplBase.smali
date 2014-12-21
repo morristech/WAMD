@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,7 +23,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 2
     const v0, -0x800001
 
     and-int/2addr v0, p1

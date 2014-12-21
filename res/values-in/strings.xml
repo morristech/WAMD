@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Tahan untuk merekam, lepas untuk mengirim</string>
     <string name="audio_note_tip_2">Mohon rekam pesan yang lebih panjang</string>
     <string name="audio_note_top_mic_tip">Harap berbicara ke mikrofon di atas telepon Anda</string>
-    <string name="auth_client_needs_enabling_title">Aplikasi membutuhkan Layanan Google Play untuk dapat diaktifkan.</string>
-    <string name="auth_client_needs_installation_title">Aplikasi membutuhkan pemasangan Layanan Google Play.</string>
-    <string name="auth_client_needs_update_title">Aplikasi membutuhkan pembaruan untuk Layanan Google Play.</string>
-    <string name="auth_client_play_services_err_notification_msg">Kesalahan layanan Google Play</string>
-    <string name="auth_client_requested_by_msg">Diminta oleh %1$s</string>
-    <string name="auth_client_using_bad_version_title">Aplikasi mencoba menggunakan versi Layanan Google Play yang rusak.</string>
-    <string name="barcode_scanner_dialog_body">Aplikasi ini membutuhkan pemindai barcode. Apakah Anda ingin memasangnya?</string>
-    <string name="barcode_scanner_dialog_title">Pasang Pemindai Barcode?</string>
     <string name="block">Blokir</string>
     <string name="block_ask">Apakah Anda yakin ingin memblokir kontak ini?</string>
     <string name="block_list_desc_1">"Tekan ikon di sudut kanan atas untuk memilih kontak yang akan diblokir.
@@ -113,6 +105,8 @@ Hanya kontak yang telah menyimpan %s pada buku kontak mereka akan menerima pesan
     <string name="camera_shortcut">Kamera WhatsApp</string>
     <string name="camera_title">Kirim foto atau video WhatsApp</string>
     <string name="camera_video_preview_title">Kirim video WhatsApp</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">Untuk melakukan panggilan WhatsApp, matikan mode pesawat terlebih dahulu.</string>
+    <string name="can_not_start_voip_call_in_phone_call">Anda tidak dapat melakukan panggilan WhatsApp jika Anda sedang melakukan panggilan telepon.</string>
     <string name="cancel">Batal</string>
     <string name="cannot_send_not_a_group_participant">Anda tidak dapat mengirim pesan ke grup ini karena Anda bukan lagi peserta.</string>
     <string name="cannot_send_selected_file">Tidak dapat mengirimkan media file ini. Anda mungkin memilih file yang salah atau format file yang tidak didukung.</string>
@@ -161,23 +155,32 @@ Jika Anda memiliki nomor telepon dan juga ponsel baru, harap ganti nomor Anda te
     <string name="color_red">Merah</string>
     <string name="color_white">Putih</string>
     <string name="color_yellow">Kuning</string>
+    <string name="common_android_wear_notification_needs_update_text">Aplikasi memerlukan pembaruan ke aplikasi Android Wear.</string>
+    <string name="common_android_wear_update_text">Aplikasi ini tidak akan berjalan sampai Anda memperbarui layanan Android Wear.</string>
+    <string name="common_android_wear_update_title">Perbarui Android Wear</string>
     <string name="common_google_play_services_enable_button">Aktifkan layanan Google Play</string>
     <string name="common_google_play_services_enable_text">Aplikasi ini tidak akan bekerja sampai Anda mengaktifkan layanan Google Play.</string>
     <string name="common_google_play_services_enable_title">Aktifkan layanan Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Diminta oleh %1$s</string>
     <string name="common_google_play_services_install_button">Dapatkan layanan Google Play</string>
     <string name="common_google_play_services_install_text_phone">Aplikasi ini tidak akan berjalan tanpa layanan Google Play, yang tidak ada di ponsel Anda.</string>
     <string name="common_google_play_services_install_text_tablet">Aplikasi ini tidak akan berjalan tanpa layanan Google Play, yang tidak ada di tablet Anda.</string>
     <string name="common_google_play_services_install_title">Dapatkan layanan Google Play</string>
     <string name="common_google_play_services_invalid_account_text">Akun yang ditentukan tidak ada di perangkat ini. Pilih akun lain.</string>
     <string name="common_google_play_services_invalid_account_title">Akun Tidak Valid</string>
+    <string name="common_google_play_services_needs_enabling_title">Aplikasi mewajibkan agar layanan Google Play diaktifkan.</string>
     <string name="common_google_play_services_network_error_text">Sambungan data diperlukan untuk tersambung ke layanan Google Play.</string>
     <string name="common_google_play_services_network_error_title">Kesalahan Jaringan</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Aplikasi mewajibkan pemasangan layanan Google Play.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Aplikasi mewajibkan pembaruan untuk layanan Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Kesalahan layanan Google Play</string>
     <string name="common_google_play_services_unknown_issue">Masalah tidak diketahui pada layanan Google Play.</string>
     <string name="common_google_play_services_unsupported_text">Layanan Google Play, yang diandalkan oleh beberapa aplikasi Anda, tidak didukung oleh perangkat Anda. Hubungi pabrikan untuk mendapatkan bantuan.</string>
     <string name="common_google_play_services_unsupported_title">Layanan Google Play</string>
     <string name="common_google_play_services_update_button">Perbarui</string>
     <string name="common_google_play_services_update_text">Aplikasi ini tidak akan berjalan sampai Anda memperbarui layanan Google Play.</string>
     <string name="common_google_play_services_update_title">Perbarui layanan Google Play</string>
+    <string name="common_open_on_phone">Buka di ponsel</string>
     <string name="common_signin_button_text">Masuk</string>
     <string name="common_signin_button_text_long">Masuk dengan Google</string>
     <string name="confirm_forward_msg">Teruskan ke %s?</string>
@@ -354,7 +357,7 @@ Tersedia: %1$s"</string>
     <string name="eula_description">Kirim pesan ponsel lintas platform dengan teman-teman di seluruh dunia</string>
     <string name="eula_tablets_not_supported">Catatan: saat ini tablet belum didukung.</string>
     <string name="eula_terms_of_service">Ketentuan Layanan</string>
-    <string name="eula_title">Selamat Datang di WhatsApp!</string>
+    <string name="eula_title">Selamat datang di WhatsApp</string>
     <string name="existing_contact">Tambah ke Kontak</string>
     <string name="exit">Keluar</string>
     <string name="exit_group">Keluar dari grup</string>
@@ -486,7 +489,7 @@ Kini layanan Anda akan berakhir pada %s."</string>
     <string name="group_participant_left_name">%s keluar</string>
     <string name="group_participant_left_you">Anda keluar</string>
     <string name="group_participant_promoted_you">Anda sekarang adalah admin</string>
-    <string name="group_participant_removed_name">%s sudah dihapus</string>
+    <string name="group_participant_removed_name">%s telah dikeluarkan</string>
     <string name="group_participant_removed_you">Anda telah dikeluarkan</string>
     <string name="group_participants_name_added_names">%1$s menambahkan %2$s</string>
     <string name="group_participants_name_added_you">%s menambahkan Anda</string>
@@ -529,7 +532,6 @@ Kini layanan Anda akan berakhir pada %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Tidak dapat mengunduh karena media penyimpanan internal tidak cukup. Mohon hapus beberapa file dari media penyimpan internal Anda dan coba lagi.</string>
     <string name="invalid_media_message_download">Tidak dapat mengunduh media dari pesan yang tidak sah. Coba kirimkan pesan kembali.</string>
     <string name="invalid_message_forward">Pesan tidak dapat diteruskan pada kontak yang tidak sah.</string>
-    <string name="invalid_qr_code">Kode QR salah</string>
     <string name="invalid_url_for_download">Tidak dapat mengunduh. Silakan minta untuk dikirimi ulang.</string>
     <string name="invite">Undang</string>
     <string name="invite_friends">Undang teman Anda</string>
@@ -542,7 +544,7 @@ Kini layanan Anda akan berakhir pada %s."</string>
 WhatsApp
 untuk selamanya"</string>
     <string name="list_conversations_added_name">... telah ditambahkan</string>
-    <string name="list_conversations_removed_name">... telah dihapus</string>
+    <string name="list_conversations_removed_name">... telah dikeluarkan</string>
     <string name="list_info">Informasi daftar siaran</string>
     <string name="list_recipient_added">%s ditambahkan dalam daftar</string>
     <string name="list_recipient_removed">%s telah dihapus dari daftar</string>
@@ -575,7 +577,6 @@ WhatsApp hanya bisa di-instal pada satu perangkat per satu nomor ponsel."</strin
     <string name="menuitem_add">Tambah</string>
     <string name="menuitem_contacts">Kontak</string>
     <string name="menuitem_debug">Debug</string>
-    <string name="menuitem_delete_qr">Hapus kode QR</string>
     <string name="menuitem_groupchat">Grup baru</string>
     <string name="menuitem_list">Siaran baru</string>
     <string name="menuitem_mute">Senyapkan</string>
@@ -616,14 +617,15 @@ WhatsApp hanya bisa di-instal pada satu perangkat per satu nomor ponsel."</strin
     <string name="msg_store_backup_failed">Tidak dapat membackup pesan</string>
     <string name="msg_store_backup_failed_try_again_later">Tidak dapat membackup pesan. Mohon coba lagi nanti</string>
     <string name="msg_store_backup_found">Backup ditemukan</string>
-    <string name="msg_store_backup_found_registration">Riwayat pesan ditemukan!</string>
+    <string name="msg_store_backup_found_registration">Backup percakapan ditemukan</string>
+    <string name="msg_store_backup_found_title">Pulihkan riwayat chatting</string>
     <string name="msg_store_backup_skipped">Backup dilewati</string>
     <string name="msg_store_backup_skipped_no_media">Backup pesan dilewati: Media card tidak ditemukan.</string>
     <string name="msg_store_backup_skipped_read_only_media">Backup pesan dilewati: Media card dalam mode read-only.</string>
     <string name="msg_store_confirm">Konfirmasi</string>
-    <string name="msg_store_creation_backup_message">Apakah Anda ingin memulihkan riwayat pesan Anda dari backup?</string>
-    <string name="msg_store_do_not_restore">Jangan dipulihkan</string>
-    <string name="msg_store_do_not_restore_no_thanks">Tidak, terima kasih</string>
+    <string name="msg_store_creation_backup_message">Pulihkan riwayat chatting Anda dari backup. Jika Anda tidak memulihkannya sekarang, Anda tidak dapat memulihkannya nanti.</string>
+    <string name="msg_store_do_not_restore">Lewati pemulihan</string>
+    <string name="msg_store_do_not_restore_no_thanks">Lewati pemulihan</string>
     <string name="msg_store_error_found">Terjadi kesalahan. Mohon hentikan dan buka kembali WhatsApp.</string>
     <string name="msg_store_error_not_restored">Mohon maaf, kami tidak dapat memulihkan apapun dari cadangan riwayat pesan Anda.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Pesan akan hilang. Anda yakin tidak ingin memulihkan riwayat pesan dari backup?</string>
@@ -650,9 +652,6 @@ WhatsApp hanya bisa di-instal pada satu perangkat per satu nomor ponsel."</strin
     <string name="need_sd_card_shared_storage">Silakan mematikan penyimpanan USB dan coba lagi.</string>
     <string name="network_required">Anda sedang tidak punya akses ke jaringan.</string>
     <string name="network_usage_ask_reset_message">Apakah Anda yakin ingin mengatur ulang statistik?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Waktu pengaturan ulang terakhir: %1$s</string>
     <string name="network_usage_media_bytes_received">Bita media diterima:</string>
     <string name="network_usage_media_bytes_sent">Bita media dikirim:</string>
@@ -899,6 +898,7 @@ Silakan coba kembali setelah %1$s."</string>
     <string name="send_location">Kirimkan lokasi</string>
     <string name="send_payment_button">Kirim URL pembayaran</string>
     <string name="send_payment_url_via">Kirim URL pembayaran melalui...</string>
+    <string name="send_this_location">Kirim lokasi ini</string>
     <string name="send_your_current_location">Kirim lokasi Anda saat ini</string>
     <string name="sending_video_to_contact">Mengirimkan video ke %s</string>
     <string name="sent_to_group">Kirim ke “%s”</string>
@@ -1011,17 +1011,17 @@ Dikirim dari WhatsApp"</string>
     <string name="software_expired_get_from_play_with_date">Versi WhatsApp ini sudah kadaluarsa pada &lt;b>%1$s&lt;/b>. Mohon mengunduh versi terbaru pada Google Play.&lt;br>&lt;br>Tanggal perangkat Anda adalah &lt;b>%2$s&lt;/b>. Jika ini salah, mohon perbaiki setelan tanggal Anda lalu menutup dan membuka ulang WhatsApp.</string>
     <string name="software_expired_with_date">Versi WhatsApp ini sudah kadaluarsa pada &lt;b>%1$s&lt;/b>. Tekan “Unduh” untuk mengunduh versi terbaru.&lt;br>&lt;br>Tanggal perangkat Anda adalah &lt;b>%2$s&lt;/b>. Jika ini salah, mohon perbaiki setelan tanggal Anda lalu menutup dan membuka ulang WhatsApp.</string>
     <string name="spam_generic">"Anda diblokir sementara dari WhatsApp karena Anda mungkin melanggar ketentuan layanan kami.
+
 Anda dapat menggunakan WhatsApp lagi dalam:"</string>
     <string name="spam_generic_data_connection_missing">Pastikan telepon Anda memiliki koneksi data yang aktif.</string>
     <string name="spam_generic_unknown_time_left">Anda diblokir sementara dari WhatsApp karena Anda mungkin melanggar ketentuan layanan kami. Anda akan dapat menggunakan WhatsApp kembali dalam waktu dekat.</string>
     <string name="spam_learn_more">Pelajari lebih lanjut</string>
     <string name="spam_title">Diblokir sementara</string>
-    <string name="spam_too_many_blocks">Anda diblokir sementara dari WhatsApp karena terlalu banyak orang telah memblokir Anda.</string>
     <string name="spam_too_many_groups">"Anda diblokir sementara dari WhatsApp karena Anda membuat terlalu banyak grup dengan kontak yang tidak menyimpan nomor Anda di Buku Alamat mereka.
+
 Anda dapat menggunakan WhatsApp lagi dalam:"</string>
     <string name="spam_too_many_messages">"Anda diblokir sementara dari WhatsApp karena Anda mengirim terlalu banyak pesan ke kontak yang tidak menyimpan nomor Anda di Buku Alamat mereka.
-Anda dapat menggunakan WhatsApp lagi dalam:"</string>
-    <string name="spam_too_many_people">"Anda diblokir sementara dari WhatsApp karena Anda mengirim pesan yang sama ke terlalu banyak kontak.
+
 Anda dapat menggunakan WhatsApp lagi dalam:"</string>
     <string name="status">Status</string>
     <string name="status_default_at_gym">Di Pusat Kebugaran</string>
@@ -1190,7 +1190,9 @@ Silakan coba verifikasi suara."</string>
     <string name="view_list_media">Media daftar siaran</string>
     <string name="view_website">Lihat website</string>
     <string name="voip_activity_label">Panggilan Suara</string>
+    <string name="voip_call_bluetooth_toggle_description">Mati/Nyalakan Bluetooth</string>
     <string name="voip_call_end_button_description">Akhiri Panggilan Suara</string>
+    <string name="voip_call_failed_no_network">Tidak dapat melakukan panggilan. Pastikan ponsel Anda terhubung ke internet, lalu coba lagi.</string>
     <string name="voip_call_goto_chat_description">Lihat Percakapan</string>
     <string name="voip_call_incoming">Panggilan masuk</string>
     <string name="voip_call_label">PANGGILAN WHATSAPP</string>
@@ -1243,5 +1245,4 @@ Mohon lupakan \"%1$s\" atau nonaktifkan Wi-Fi untuk mengembalikan konektivitas j
     <string name="yesterday">Kemarin</string>
     <string name="yesterday_at">kemarin pada %s</string>
     <string name="you">Anda</string>
-    <string name="voip_call_bluetooth_toggle_description">Mati/Nyalakan Bluetooth</string>
 </resources>

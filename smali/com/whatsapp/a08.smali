@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/SetStatus;
+.field final a:Lcom/whatsapp/ContactPicker;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/SetStatus;)V
+.method constructor <init>(Lcom/whatsapp/ContactPicker;)V
     .locals 0
 
     .prologue
     .line 2
-    iput-object p1, p0, Lcom/whatsapp/a08;->a:Lcom/whatsapp/SetStatus;
+    iput-object p1, p0, Lcom/whatsapp/a08;->a:Lcom/whatsapp/ContactPicker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,29 +30,12 @@
 
     .prologue
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/a08;->a:Lcom/whatsapp/SetStatus;
+    iget-object v0, p0, Lcom/whatsapp/a08;->a:Lcom/whatsapp/ContactPicker;
 
-    const/4 v1, 0x3
+    const/4 v1, 0x4
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/SetStatus;->removeDialog(I)V
-
-    .line 5
-    sget-object v0, Lcom/whatsapp/SetStatus;->p:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
-
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/a08;->a:Lcom/whatsapp/SetStatus;
-
-    invoke-static {v0}, Lcom/whatsapp/SetStatus;->c(Lcom/whatsapp/SetStatus;)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/ContactPicker;->removeDialog(I)V
 
     .line 3
-    iget-object v0, p0, Lcom/whatsapp/a08;->a:Lcom/whatsapp/SetStatus;
-
-    iget-object v0, v0, Lcom/whatsapp/SetStatus;->k:Lcom/whatsapp/aag;
-
-    invoke-virtual {v0}, Lcom/whatsapp/aag;->notifyDataSetChanged()V
-
-    .line 6
     return-void
 .end method

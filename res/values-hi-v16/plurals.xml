@@ -156,10 +156,6 @@
         <item quantity="other">%2$d मित्रों से %1$s सन्देश</item>
         <item quantity="one">%2$d मित्र से %1$s सन्देश</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">आप तैयार हैं। हमने %,d संदेशों को पुन: प्रतिस्थापित कर दिया है।</item>
-        <item quantity="one">आप तैयार हैं। हमने %,d संदेश को पुन: प्रतिस्थापित कर दिया है।</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">%2$s को %1$d विडियो भेजे जा रहे हैं</item>
         <item quantity="one">%2$s को %1$d विडियो भेजा जा रहा है</item>

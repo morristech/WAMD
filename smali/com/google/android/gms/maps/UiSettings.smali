@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field private final gM:Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;
+.field private final alH:Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/gms/maps/UiSettings;->gM:Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;
+    iput-object p1, p0, Lcom/google/android/gms/maps/UiSettings;->alH:Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;
 
     return-void
 .end method
@@ -23,7 +23,7 @@
     .locals 2
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/maps/UiSettings;->gM:Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;
+    iget-object v0, p0, Lcom/google/android/gms/maps/UiSettings;->alH:Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;
 
     invoke-interface {v0, p1}, Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;->setCompassEnabled(Z)V
     :try_end_0
@@ -45,7 +45,7 @@
     .locals 2
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/maps/UiSettings;->gM:Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;
+    iget-object v0, p0, Lcom/google/android/gms/maps/UiSettings;->alH:Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;
 
     invoke-interface {v0, p1}, Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;->setMyLocationButtonEnabled(Z)V
     :try_end_0
@@ -67,7 +67,7 @@
     .locals 2
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/maps/UiSettings;->gM:Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;
+    iget-object v0, p0, Lcom/google/android/gms/maps/UiSettings;->alH:Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;
 
     invoke-interface {v0, p1}, Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;->setZoomControlsEnabled(Z)V
     :try_end_0

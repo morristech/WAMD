@@ -12,7 +12,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 2
     const/4 v0, 0x1
 
     return v0
@@ -27,6 +27,6 @@
 
     invoke-virtual {v0}, Landroid/support/v4/widget/CursorAdapter;->onContentChanged()V
 
-    .line 2
+    .line 3
     return-void
 .end method

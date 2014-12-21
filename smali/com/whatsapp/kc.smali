@@ -3,36 +3,20 @@
 .source "kc.java"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroid/view/View$OnTouchListener;
 
 
 # instance fields
-.field final a:Landroid/view/View;
-
-.field final b:Lcom/whatsapp/g1;
-
-.field final c:Landroid/view/View;
-
-.field final d:Z
-
-.field final e:Landroid/view/View;
+.field final a:Lcom/whatsapp/atu;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/g1;Landroid/view/View;ZLandroid/view/View;Landroid/view/View;)V
+.method constructor <init>(Lcom/whatsapp/atu;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/kc;->b:Lcom/whatsapp/g1;
-
-    iput-object p2, p0, Lcom/whatsapp/kc;->e:Landroid/view/View;
-
-    iput-boolean p3, p0, Lcom/whatsapp/kc;->d:Z
-
-    iput-object p4, p0, Lcom/whatsapp/kc;->a:Landroid/view/View;
-
-    iput-object p5, p0, Lcom/whatsapp/kc;->c:Landroid/view/View;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/kc;->a:Lcom/whatsapp/atu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,29 +25,33 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 7
+.method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 2
 
     .prologue
-    .line 3
-    iget-object v6, p0, Lcom/whatsapp/kc;->e:Landroid/view/View;
-
-    new-instance v0, Lcom/whatsapp/aj;
-
-    iget-object v1, p0, Lcom/whatsapp/kc;->b:Lcom/whatsapp/g1;
-
-    iget-object v2, p0, Lcom/whatsapp/kc;->e:Landroid/view/View;
-
-    iget-object v3, p0, Lcom/whatsapp/kc;->c:Landroid/view/View;
-
-    iget-object v4, p0, Lcom/whatsapp/kc;->a:Landroid/view/View;
-
-    iget-boolean v5, p0, Lcom/whatsapp/kc;->d:Z
-
-    invoke-direct/range {v0 .. v5}, Lcom/whatsapp/aj;-><init>(Lcom/whatsapp/g1;Landroid/view/View;Landroid/view/View;Landroid/view/View;Z)V
-
-    invoke-virtual {v6, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
-
     .line 2
-    return-void
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
+
+    move-result v0
+
+    const/4 v1, 0x4
+
+    if-ne v0, v1, :cond_0
+
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/kc;->a:Lcom/whatsapp/atu;
+
+    invoke-virtual {v0}, Lcom/whatsapp/atu;->dismiss()V
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 5
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

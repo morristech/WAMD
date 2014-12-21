@@ -1,38 +1,50 @@
 .class Lcom/whatsapp/o9;
-.super Lcom/whatsapp/util/at;
+.super Ljava/lang/Object;
 .source "o9.java"
+
+# interfaces
+.implements Landroid/preference/Preference$OnPreferenceChangeListener;
 
 
 # instance fields
-.field final b:Lcom/whatsapp/ConversationRowMedia;
+.field final a:Lcom/whatsapp/SettingsAutodownload;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ConversationRowMedia;)V
+.method constructor <init>(Lcom/whatsapp/SettingsAutodownload;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/o9;->b:Lcom/whatsapp/ConversationRowMedia;
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/o9;->a:Lcom/whatsapp/SettingsAutodownload;
 
-    invoke-direct {p0}, Lcom/whatsapp/util/at;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/view/View;)V
-    .locals 1
+.method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
+    .locals 2
 
     .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/o9;->b:Lcom/whatsapp/ConversationRowMedia;
-
-    iget-object v0, v0, Lcom/whatsapp/ConversationRowMedia;->C:Lcom/whatsapp/protocol/ae;
-
-    invoke-static {v0}, Lcom/whatsapp/App;->o(Lcom/whatsapp/protocol/ae;)V
-
     .line 3
-    return-void
+    check-cast p2, [Ljava/lang/CharSequence;
+
+    check-cast p2, [Ljava/lang/CharSequence;
+
+    invoke-static {p2}, Lcom/whatsapp/SettingsAutodownload;->b([Ljava/lang/CharSequence;)I
+
+    move-result v0
+
+    .line 1
+    const/4 v1, 0x2
+
+    invoke-static {v1, v0}, Lcom/whatsapp/App;->a(II)V
+
+    .line 4
+    const/4 v0, 0x1
+
+    return v0
 .end method

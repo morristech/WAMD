@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Houd ingedrukt om op te nemen en laat los om te verzenden</string>
     <string name="audio_note_tip_2">Neem een langer bericht op</string>
     <string name="audio_note_top_mic_tip">Praat in de richting van de bovenste microfoon</string>
-    <string name="auth_client_needs_enabling_title">Google Play-services moet zijn ingeschakeld voor een applicatie.</string>
-    <string name="auth_client_needs_installation_title">Google Play-services moet zijn geïnstalleerd voor een applicatie.</string>
-    <string name="auth_client_needs_update_title">Google Play-services moet worden geüpdatet voor een applicatie.</string>
-    <string name="auth_client_play_services_err_notification_msg">Fout met Google Play-services</string>
-    <string name="auth_client_requested_by_msg">Aangevraagd door %1$s</string>
-    <string name="auth_client_using_bad_version_title">Onjuiste versie van Google Play-services wordt gebruikt.</string>
-    <string name="barcode_scanner_dialog_body">Voor deze applicatie is een barcodescanner nodig. Wilt u er een installeren?</string>
-    <string name="barcode_scanner_dialog_title">Barcode Scanner installeren?</string>
     <string name="block">Blokkeren</string>
     <string name="block_ask">Weet u zeker dat u dit contact wilt blokkeren?</string>
     <string name="block_list_desc_1">"Tik op het pictogram rechtsboven om een contact te blokkeren.
@@ -113,10 +105,12 @@ Alleen contacten die %s in hun adresboek hebben zullen uw zendberichten ontvange
     <string name="camera_shortcut">WhatsApp-camera</string>
     <string name="camera_title">WhatsApp-foto of -video verzenden</string>
     <string name="camera_video_preview_title">WhatsApp-video verzenden</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">Om via WhatsApp te bellen dient u eerst de vliegtuigmodus uit te schakelen.</string>
+    <string name="can_not_start_voip_call_in_phone_call">U kunt niet bellen via WhatsApp als u al aan het bellen bent.</string>
     <string name="cancel">Annuleren</string>
     <string name="cannot_send_not_a_group_participant">U kunt geen berichten sturen naar deze groep omdat u geen deelnemer meer bent.</string>
     <string name="cannot_send_selected_file">Kan dit mediabestand niet verzenden. U hebt het verkeerde bestand gekozen of het bestandsformaat wordt niet ondersteund.</string>
-    <string name="cannot_send_to_blocked_contact_1">Kan geen bericht verzenden naar %s (geblokkeerd contact).</string>
+    <string name="cannot_send_to_blocked_contact_1">Kan geen bericht verzenden naar geblokkeerd contact %s.</string>
     <string name="cannot_send_to_group_not_member">FOUT: kan niet verzenden naar deze groep, geen deelnemer</string>
     <string name="cannot_share_selected_file">Kan dit bestand niet delen.</string>
     <string name="cannot_start_camera">Kan camera niet starten</string>
@@ -161,23 +155,32 @@ Als u ook een nieuwe telefoon hebt, wijzig dan eerst uw nummer op uw oude telefo
     <string name="color_red">Rood</string>
     <string name="color_white">Wit</string>
     <string name="color_yellow">Geel</string>
+    <string name="common_android_wear_notification_needs_update_text">Er is een update van de Android Wear-app vereist voor een bepaalde app.</string>
+    <string name="common_android_wear_update_text">Deze app wordt niet uitgevoerd, tenzij u de Android Wear-app bijwerkt.</string>
+    <string name="common_android_wear_update_title">Android Wear bijwerken</string>
     <string name="common_google_play_services_enable_button">Google Play-services inschak.</string>
     <string name="common_google_play_services_enable_text">Deze app werkt niet, tenzij u Google Play-services inschakelt.</string>
     <string name="common_google_play_services_enable_title">Google Play-services inschakelen</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Aangevraagd door %1$s</string>
     <string name="common_google_play_services_install_button">Google Play-services ophalen</string>
     <string name="common_google_play_services_install_text_phone">Deze app kan niet worden uitgevoerd zonder Google Play-services die ontbreken op uw telefoon.</string>
     <string name="common_google_play_services_install_text_tablet">Deze app kan niet worden uitgevoerd zonder Google Play-services die ontbreken op uw tablet.</string>
     <string name="common_google_play_services_install_title">Google Play-services ophalen</string>
     <string name="common_google_play_services_invalid_account_text">Het gespecificeerde account bestaat niet op dit apparaat. Kies een ander account.</string>
     <string name="common_google_play_services_invalid_account_title">Ongeldig account</string>
+    <string name="common_google_play_services_needs_enabling_title">Google Play-services moet zijn ingeschakeld voor een app.</string>
     <string name="common_google_play_services_network_error_text">Er is een gegevensverbinding nodig om verbinding te kunnen maken met Google Play-services.</string>
     <string name="common_google_play_services_network_error_title">Netwerkfout</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Google Play-services moet zijn geïnstalleerd voor een app.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Google Play-services moet worden geüpdatet voor een app.</string>
+    <string name="common_google_play_services_notification_ticker">Fout met Google Play-services</string>
     <string name="common_google_play_services_unknown_issue">Onbekend probleem met Google Play-services.</string>
     <string name="common_google_play_services_unsupported_text">Google Play-services, dat vereist is voor een aantal van uw applicaties, wordt niet ondersteund door uw apparaat. Neem contact op met de fabrikant voor ondersteuning.</string>
     <string name="common_google_play_services_unsupported_title">Google Play-services</string>
-    <string name="common_google_play_services_update_button">Bijwerken</string>
-    <string name="common_google_play_services_update_text">Deze app kan niet worden uitgevoerd, tenzij u Google Play-services bijwerkt.</string>
-    <string name="common_google_play_services_update_title">Google Play-services bijwerken</string>
+    <string name="common_google_play_services_update_button">Updaten</string>
+    <string name="common_google_play_services_update_text">Deze app kan niet worden uitgevoerd, tenzij u Google Play-services updatet.</string>
+    <string name="common_google_play_services_update_title">Google Play-services updaten</string>
+    <string name="common_open_on_phone">Openen op telefoon</string>
     <string name="common_signin_button_text">Inloggen</string>
     <string name="common_signin_button_text_long">Inloggen met Google</string>
     <string name="confirm_forward_msg">Doorsturen naar %s?</string>
@@ -354,7 +357,7 @@ Beschikbaar: %1$s"</string>
     <string name="eula_description">Cross-platform mobiele berichtendienst tussen vrienden over de hele wereld</string>
     <string name="eula_tablets_not_supported">Let op: tablets worden momenteel niet ondersteund.</string>
     <string name="eula_terms_of_service">Algemene voorwaarden</string>
-    <string name="eula_title">Welkom bij WhatsApp!</string>
+    <string name="eula_title">Welkom bij WhatsApp</string>
     <string name="existing_contact">Bestaande</string>
     <string name="exit">Verlaten</string>
     <string name="exit_group">Groep verlaten</string>
@@ -529,7 +532,6 @@ WhatsApp verloopt nu op %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Kan niet downloaden omdat er onvoldoende ruimte beschikbaar is op uw interne opslag. Maak ruimte vrij en probeer het opnieuw.</string>
     <string name="invalid_media_message_download">Kan media niet downloaden. Probeer het bericht opnieuw te verzenden.</string>
     <string name="invalid_message_forward">Bericht kan niet worden doorgestuurd naar een ongeldig contact.</string>
-    <string name="invalid_qr_code">Ongeldige QR-code</string>
     <string name="invalid_url_for_download">Kan niet downloaden. Vraag of het bestand opnieuw kan worden verzonden.</string>
     <string name="invite">Uitnodigen</string>
     <string name="invite_friends">Vrienden uitnodigen</string>
@@ -575,7 +577,6 @@ WhatsApp kan maar op één apparaat per telefoonnummer worden geïnstalleerd."</
     <string name="menuitem_add">Toevoegen</string>
     <string name="menuitem_contacts">Contacten</string>
     <string name="menuitem_debug">Ontwikkelen</string>
-    <string name="menuitem_delete_qr">QR-code verwijderen</string>
     <string name="menuitem_groupchat">Nieuwe groep</string>
     <string name="menuitem_list">Nieuwe verzendlijst</string>
     <string name="menuitem_mute">Dempen</string>
@@ -616,14 +617,15 @@ WhatsApp kan maar op één apparaat per telefoonnummer worden geïnstalleerd."</
     <string name="msg_store_backup_failed">Kan geen back-up maken van berichten</string>
     <string name="msg_store_backup_failed_try_again_later">Kan geen back-up maken van berichten. Probeer het later opnieuw.</string>
     <string name="msg_store_backup_found">Back-up gevonden</string>
-    <string name="msg_store_backup_found_registration">Back-up van berichten gevonden!</string>
+    <string name="msg_store_backup_found_registration">Back-up van chats gevonden</string>
+    <string name="msg_store_backup_found_title">Chatgeschiedenis herstellen</string>
     <string name="msg_store_backup_skipped">Back-up overgeslagen</string>
     <string name="msg_store_backup_skipped_no_media">Back-up maken van bericht overgeslagen: Geen SD kaart gevonden.</string>
     <string name="msg_store_backup_skipped_read_only_media">Back-up maken van bericht afgebroken: SD-kaart is alleen-lezen.</string>
     <string name="msg_store_confirm">Bevestigen</string>
-    <string name="msg_store_creation_backup_message">Wilt u uw gespreksgeschiedenis herstellen?</string>
-    <string name="msg_store_do_not_restore">Niet herstellen</string>
-    <string name="msg_store_do_not_restore_no_thanks">Nee, bedankt</string>
+    <string name="msg_store_creation_backup_message">Chatgeschiedenis herstellen van back-up. U kunt dit niet later alsnog doen.</string>
+    <string name="msg_store_do_not_restore">Herstellen overslaan</string>
+    <string name="msg_store_do_not_restore_no_thanks">Herstellen overslaan</string>
     <string name="msg_store_error_found">Er is een fout opgetreden. Start WhatsApp opnieuw op.</string>
     <string name="msg_store_error_not_restored">Sorry, we kunnen uw gespreksgeschiedenis niet herstellen.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Berichten zullen verloren gaan. Weet u zeker dat u uw gespreksgeschiedenis niet wilt herstellen?</string>
@@ -650,9 +652,6 @@ WhatsApp kan maar op één apparaat per telefoonnummer worden geïnstalleerd."</
     <string name="need_sd_card_shared_storage">Schakel USB-opslag uit en probeer het opnieuw.</string>
     <string name="network_required">U hebt momenteel geen netwerkverbinding.</string>
     <string name="network_usage_ask_reset_message">Weet u zeker dat u uw statistieken wilt wissen?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f kB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Voor het laatst gewist: %1$s</string>
     <string name="network_usage_media_bytes_received">Ontvangen media in bytes:</string>
     <string name="network_usage_media_bytes_sent">Verzonden media in bytes:</string>
@@ -899,6 +898,7 @@ Probeer het over %1$s opnieuw."</string>
     <string name="send_location">Locatie verzenden</string>
     <string name="send_payment_button">Betalings-URL verzenden</string>
     <string name="send_payment_url_via">Betalings-URL verzenden via...</string>
+    <string name="send_this_location">Deze locatie verzenden</string>
     <string name="send_your_current_location">Uw huidige locatie verzenden</string>
     <string name="sending_video_to_contact">Video verzenden naar %s</string>
     <string name="sent_to_group">Verzenden naar “%s”</string>
@@ -1010,19 +1010,19 @@ Verzonden via WhatsApp"</string>
     <string name="software_expired_get_from_play">Deze versie van WhatsApp is te oud en werkt niet meer. Bezoek Google Play om de nieuwste versie te downloaden.</string>
     <string name="software_expired_get_from_play_with_date">Deze versie van WhatsApp werkt niet meer sinds &lt;b>%1$s&lt;/b>. Download de nieuwste versie uit de Google Play Store.&lt;br>&lt;br> De datum op uw apparaat is &lt;b>%2$s&lt;/b>. Wijzig de datum in de instellingen en start WhatsApp opnieuw op als deze onjuist is.</string>
     <string name="software_expired_with_date">Deze versie van WhatsApp is verouderd sinds &lt;b>%1$s&lt;/b>. Tik op “Downloaden” om de nieuwste versie te downloaden.&lt;br>&lt;br>De datum op uw apparaat is &lt;b>%2$s&lt;/b>. Wijzig de datum in de instellingen en start WhatsApp opnieuw op als deze onjuist is.</string>
-    <string name="spam_generic">"U mag WhatsApp tijdelijk niet gebruiken omdat u mogelijk onze algemene voorwaarden hebt geschonden.
-U kunt WhatsApp weer gebruiken over:"</string>
+    <string name="spam_generic">"U mag WhatsApp tijdelijk niet gebruiken, omdat u mogelijk onze algemene voorwaarden hebt geschonden. 
+
+ U kunt WhatsApp weer gebruiken over:"</string>
     <string name="spam_generic_data_connection_missing">Zorg ervoor dat u een actieve internetverbinding hebt.</string>
     <string name="spam_generic_unknown_time_left">U mag WhatsApp tijdelijk niet gebruiken omdat u mogelijk onze algemene voorwaarden hebt geschonden. U mag WhatsApp binnenkort weer gebruiken.</string>
     <string name="spam_learn_more">Meer informatie</string>
     <string name="spam_title">Tijdelijk geblokkeerd</string>
-    <string name="spam_too_many_blocks">U mag WhatsApp tijdelijk niet gebruiken omdat te veel mensen u geblokkeerd hebben.</string>
-    <string name="spam_too_many_groups">"U mag WhatsApp tijdelijk niet gebruiken omdat u te veel groepen hebt gemaakt met mensen die u niet in hun adresboek hebben.
-U kunt WhatsApp weer gebruiken over:"</string>
-    <string name="spam_too_many_messages">"U mag WhatsApp tijdelijk niet gebruiken omdat u te veel berichten hebt gestuurd naar mensen die u niet in hun adresboek hebben.
-U kunt WhatsApp weer gebruiken over:"</string>
-    <string name="spam_too_many_people">"U mag WhatsApp tijdelijk niet gebruiken, omdat u hetzelfde bericht naar te veel mensen hebt verzonden.
-U kunt WhatsApp weer gebruiken over:"</string>
+    <string name="spam_too_many_groups">"U mag WhatsApp tijdelijk niet gebruiken omdat u te veel groepen hebt gemaakt met mensen die uw nummer niet in hun adresboek hebben.
+
+U mag WhatsApp weer gebruiken over:"</string>
+    <string name="spam_too_many_messages">"U mag WhatsApp tijdelijk niet gebruiken omdat u te veel berichten hebt verzonden naar mensen die uw nummer niet in hun adresboek hebben.
+
+U mag WhatsApp weer gebruiken over:"</string>
     <string name="status">Status</string>
     <string name="status_default_at_gym">In de sportschool</string>
     <string name="status_default_at_movies">In de bioscoop</string>
@@ -1190,7 +1190,9 @@ Probeer gesproken verificatie."</string>
     <string name="view_list_media">Media in verzendlijst</string>
     <string name="view_website">Website weergeven</string>
     <string name="voip_activity_label">Spraakoproep</string>
+    <string name="voip_call_bluetooth_toggle_description">Bluetooth aan/uit</string>
     <string name="voip_call_end_button_description">Spraakoproep beëindigen</string>
+    <string name="voip_call_failed_no_network">Oproep niet mogelijk. Zorg ervoor dat uw telefoon internetverbinding heeft en probeer opnieuw.</string>
     <string name="voip_call_goto_chat_description">Gesprek bekijken</string>
     <string name="voip_call_incoming">INKOMENDE OPROEP</string>
     <string name="voip_call_label">WHATSAPP-OPROEP</string>
@@ -1243,5 +1245,4 @@ Vergeet \"%1$s\" of schakel Wi-Fi uit om de verbinding te herstellen."</string>
     <string name="yesterday">Gisteren</string>
     <string name="yesterday_at">gisteren om %s</string>
     <string name="you">U</string>
-    <string name="voip_call_bluetooth_toggle_description">Bluetooth aan/uit</string>
 </resources>

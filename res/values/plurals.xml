@@ -152,6 +152,10 @@ remaining"</item>
         <item quantity="other">%1$d messages</item>
         <item quantity="one">%1$d message</item>
     </plurals>
+    <plurals name="network_usage_voip_call_count">
+        <item quantity="other">%1$d calls</item>
+        <item quantity="one">%1$d call</item>
+    </plurals>
     <plurals name="notification_new_message">
         <item quantity="other">%d new messages</item>
         <item quantity="one">%d new message</item>
@@ -169,8 +173,8 @@ remaining"</item>
         <item quantity="one">%d remaining</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">"You are good to go. We've just restored %,d messages."</item>
-        <item quantity="one">"You are good to go. We've just restored %,d message."</item>
+        <item quantity="other">"%,d messages restored. You're good to go."</item>
+        <item quantity="one">"%,d message restored. You're good to go."</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Sending %1$d videos to %2$s</item>
@@ -191,6 +195,10 @@ remaining"</item>
     <plurals name="unread_message_count">
         <item quantity="other">%d unread messages</item>
         <item quantity="one">%d unread message</item>
+    </plurals>
+    <plurals name="web_session_last_active_minutes_ago">
+        <item quantity="other">Last active %d minutes ago</item>
+        <item quantity="one">Last active %d minute ago</item>
     </plurals>
     <plurals name="years">
         <item quantity="other">%d years</item>

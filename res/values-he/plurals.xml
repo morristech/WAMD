@@ -168,10 +168,6 @@
         <item quantity="other">%d נותרו</item>
         <item quantity="one">%d נותר</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">את/ה יכול/ה להמשיך הלאה. שיחזרנו %,d הודעות.</item>
-        <item quantity="one">את/ה יכול/ה להמשיך הלאה. שיחזרנו הודעה %,d.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">שולח %1$d וידאו אל %2$s</item>
         <item quantity="one">שולח %1$d וידאו אל %2$s</item>

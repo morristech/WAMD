@@ -1,45 +1,30 @@
-.class Lcom/whatsapp/iu;
-.super Ljava/lang/Object;
+.class final Lcom/whatsapp/iu;
+.super Landroid/os/Handler;
 .source "iu.java"
-
-# interfaces
-.implements Lcom/whatsapp/wallpaper/b;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/TouchImageView;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/TouchImageView;)V
+.method constructor <init>()V
     .locals 0
 
     .prologue
     .line 1
-    iput-object p1, p0, Lcom/whatsapp/iu;->a:Lcom/whatsapp/TouchImageView;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/graphics/Bitmap;)V
+.method public handleMessage(Landroid/os/Message;)V
     .locals 1
 
     .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/iu;->a:Lcom/whatsapp/TouchImageView;
-
-    iget-boolean v0, v0, Lcom/whatsapp/TouchImageView;->w:Z
-
-    if-eqz v0, :cond_0
-
     .line 3
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->recycle()V
+    sget-object v0, Lcom/whatsapp/App;->L:Landroid/media/AsyncPlayer;
 
-    .line 4
-    :cond_0
+    invoke-virtual {v0}, Landroid/media/AsyncPlayer;->stop()V
+
+    .line 2
     return-void
 .end method

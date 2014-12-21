@@ -1,72 +1,62 @@
 .class Lcom/whatsapp/c;
-.super Landroid/text/style/ReplacementSpan;
+.super Ljava/lang/Object;
 .source "c.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field a:I
+.field final a:Lcom/whatsapp/aps;
 
-.field b:I
+.field final b:Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;
 
 
 # direct methods
-.method constructor <init>(II)V
+.method constructor <init>(Lcom/whatsapp/aps;Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;)V
     .locals 0
 
     .prologue
-    .line 10
-    invoke-direct {p0}, Landroid/text/style/ReplacementSpan;-><init>()V
-
     .line 3
-    iput p1, p0, Lcom/whatsapp/c;->a:I
+    iput-object p1, p0, Lcom/whatsapp/c;->a:Lcom/whatsapp/aps;
 
-    .line 4
-    iput p2, p0, Lcom/whatsapp/c;->b:I
+    iput-object p2, p0, Lcom/whatsapp/c;->b:Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;
 
-    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public draw(Landroid/graphics/Canvas;Ljava/lang/CharSequence;IIFIIILandroid/graphics/Paint;)V
-    .locals 0
-
-    .prologue
-    .line 5
-    return-void
-.end method
-
-.method public getSize(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Paint$FontMetricsInt;)I
+.method public run()V
     .locals 2
 
     .prologue
-    const/4 v1, 0x0
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/c;->a:Lcom/whatsapp/aps;
 
-    .line 6
-    if-eqz p5, :cond_0
+    iget-object v0, v0, Lcom/whatsapp/aps;->a:Lcom/whatsapp/ConversationsFragment$ClearAllMessagesDialogFragment;
 
-    .line 7
-    iget v0, p0, Lcom/whatsapp/c;->b:I
+    invoke-virtual {v0}, Lcom/whatsapp/ConversationsFragment$ClearAllMessagesDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
-    neg-int v0, v0
+    move-result-object v0
 
-    iput v0, p5, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
+    invoke-static {v0}, Lcom/whatsapp/App;->a(Landroid/app/Activity;)V
+
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/c;->b:Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;
+
+    invoke-virtual {v0}, Lcom/whatsapp/DialogToastFragmentActivity$ProgressDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/whatsapp/mm;
+
+    invoke-direct {v1, p0}, Lcom/whatsapp/mm;-><init>(Lcom/whatsapp/c;)V
+
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/FragmentActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
     .line 2
-    iput v1, p5, Landroid/graphics/Paint$FontMetricsInt;->descent:I
-
-    .line 11
-    iget v0, p5, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
-
-    iput v0, p5, Landroid/graphics/Paint$FontMetricsInt;->top:I
-
-    .line 9
-    iput v1, p5, Landroid/graphics/Paint$FontMetricsInt;->bottom:I
-
-    .line 8
-    :cond_0
-    iget v0, p0, Lcom/whatsapp/c;->a:I
-
-    return v0
+    return-void
 .end method

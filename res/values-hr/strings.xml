@@ -31,7 +31,7 @@
     <string name="add_group_participants">Dodaj sudionike grupi</string>
     <string name="add_info_to_existing_contact">Dodaj u postojeći kontakt</string>
     <string name="add_info_to_new_contact">Dodaj u novi kontakt</string>
-    <string name="add_shortcut">Dodaj prečac razgovora</string>
+    <string name="add_shortcut">Dodaj kraticu za razgovor</string>
     <string name="add_shortcut_short">Dodaj prečicu</string>
     <string name="add_status">Dodaj novi status</string>
     <string name="address">adresa</string>
@@ -71,14 +71,6 @@
     <string name="audio_note_tip">Držati za snimanje, otpustiti za slanje</string>
     <string name="audio_note_tip_2">Molimo snimite dužu poruku</string>
     <string name="audio_note_top_mic_tip">Molimo govorite u mikrofon na vrhu telefona</string>
-    <string name="auth_client_needs_enabling_title">Aplikacija zahtijeva omogućavanje Usluga za Google Play.</string>
-    <string name="auth_client_needs_installation_title">Aplikacija zahtijeva instaliranje Usluga za Google Play.</string>
-    <string name="auth_client_needs_update_title">Aplikacija zahtijeva ažuriranje Usluga za Google Play.</string>
-    <string name="auth_client_play_services_err_notification_msg">Pogreška usluga za Google Play</string>
-    <string name="auth_client_requested_by_msg">Zahtijeva aplikacija %1$s</string>
-    <string name="auth_client_using_bad_version_title">Aplikacija je pokušala upotrijebiti lošu verziju Usluga za Google Play.</string>
-    <string name="barcode_scanner_dialog_body">Ova aplikacija zahtijeva barkôd skener. Da li ga želite instalirati?</string>
-    <string name="barcode_scanner_dialog_title">Instalirati barkôd skener?</string>
     <string name="block">Blokiraj</string>
     <string name="block_ask">Jeste li sigurni da želite blokirati ovaj kontakt?</string>
     <string name="block_list_desc_1">"Dotaknite ikonu u gornjem desnom uglu za izbor kontakta koji želite blokirati.
@@ -159,23 +151,32 @@ Ako imate i novi uređaj i novi broj, prvo promijenite broj na Vašem starom ure
     <string name="color_red">Crveno</string>
     <string name="color_white">Bijelo</string>
     <string name="color_yellow">Žuto</string>
+    <string name="common_android_wear_notification_needs_update_text">Aplikacija zahtijeva ažuriranje na aplikaciju Android Wear.</string>
+    <string name="common_android_wear_update_text">Ova aplikacija neće funkcionirati ako ne ažurirate aplikaciju Android Wear.</string>
+    <string name="common_android_wear_update_title">Ažurirajte Android Wear</string>
     <string name="common_google_play_services_enable_button">Omogući usluge za Google Play</string>
     <string name="common_google_play_services_enable_text">Ova aplikacija neće raditi ako ne omogućite usluge za Google Play.</string>
     <string name="common_google_play_services_enable_title">Omogući usluge za Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Zahtijeva aplikacija %1$s</string>
     <string name="common_google_play_services_install_button">Preuzmi usluge za Google Play</string>
     <string name="common_google_play_services_install_text_phone">Ova aplikacija neće funkcionirati bez usluga za Google Play, koje nisu instalirane na vašem telefonu.</string>
     <string name="common_google_play_services_install_text_tablet">Ova aplikacija neće funkcionirati bez usluga za Google Play, koje nisu instalirane na vašem tabletnom računalu.</string>
     <string name="common_google_play_services_install_title">Preuzmi usluge za Google Play</string>
     <string name="common_google_play_services_invalid_account_text">Navedeni račun ne postoji na ovom uređaju. Odaberite neki drugi račun.</string>
     <string name="common_google_play_services_invalid_account_title">Nevažeći račun</string>
+    <string name="common_google_play_services_needs_enabling_title">Aplikacija zahtijeva da Usluge za Google Play budu omogućene.</string>
     <string name="common_google_play_services_network_error_text">Potrebna je podatkovna veza za povezivanje s uslugama Google Play.</string>
     <string name="common_google_play_services_network_error_title">Mrežna pogreška</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Aplikacija zahtijeva instaliranje Usluga za Google Play.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Aplikacija zahtijeva ažuriranje Usluga za Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Pogreška Usluga za Google Play</string>
     <string name="common_google_play_services_unknown_issue">Nepoznata poteškoća s uslugama za Google Play.</string>
     <string name="common_google_play_services_unsupported_text">Usluge za Google Play, koje su potrebne za funkcioniranje nekih vaših aplikacija, nisu podržane na vašem uređaju. Pomoć potražite od proizvođača.</string>
     <string name="common_google_play_services_unsupported_title">Usluge za Google Play</string>
     <string name="common_google_play_services_update_button">Ažuriranje</string>
     <string name="common_google_play_services_update_text">Ova se aplikacija neće pokrenuti ako ne ažurirate usluge za Google Play.</string>
     <string name="common_google_play_services_update_title">Ažuriraj usluge za Google Play</string>
+    <string name="common_open_on_phone">Otvaranje na telefonu</string>
     <string name="common_signin_button_text">Prijava</string>
     <string name="common_signin_button_text_long">Prijava uslugom Google</string>
     <string name="confirm_forward_msg">Proslijediti kontaktu %s?</string>
@@ -224,7 +225,7 @@ Ako imate i novi uređaj i novi broj, prvo promijenite broj na Vašem starom ure
     <string name="conversation_contact_online">na vezi</string>
     <string name="conversation_download_audio">Preuzimam audio zapis</string>
     <string name="conversation_is_composing">piše...</string>
-    <string name="conversation_is_recording">snimam zvuk...</string>
+    <string name="conversation_is_recording">snima zvuk...</string>
     <string name="conversation_last_seen">zadnje gledano</string>
     <string name="conversation_menu_forward">Proslijedi</string>
     <string name="conversation_name_is_composing">%s piše...</string>
@@ -292,7 +293,7 @@ Ako imate i novi uređaj i novi broj, prvo promijenite broj na Vašem starom ure
     <string name="dialog_button_more_info">Više informacija</string>
     <string name="disable_wifi">Onemogući Wi-Fi</string>
     <string name="discount_10_percent">POPUST 10%</string>
-    <string name="discount_25_percent">POPUST 25%</string>
+    <string name="discount_25_percent">25% popusta</string>
     <string name="does_not_match_button">Ovo nije odgovor na moje pitanje.</string>
     <string name="done">Gotovo</string>
     <string name="download_failed">Preuzimanje neuspjelo</string>
@@ -348,7 +349,6 @@ Dostupno je: %1$s"</string>
     <string name="eula_description">Slanje poruka prijateljima iz cijelog svijeta putem mobilnih uređaja na različitim operativnim sustavima</string>
     <string name="eula_tablets_not_supported">Opaska: Tableti trenutno nisu podržani.</string>
     <string name="eula_terms_of_service">Uvjeti korištenja</string>
-    <string name="eula_title">Dobrodošli na WhatsApp!</string>
     <string name="existing_contact">Postojeći</string>
     <string name="exit">Izlaz</string>
     <string name="exit_group">Izlaz iz grupe</string>
@@ -523,7 +523,6 @@ Vaša usluga sada ističe %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Nije moguće preuzeti sadržaj jer nemate dovoljno mjesta na internoj memoriji. Pokušajte ponovo nakon što izbrišete neke dokumente sa interne memorije kako bi ste napravili slobodnog prostora.</string>
     <string name="invalid_media_message_download">Nije moguće preuzeti mediji iz nevažeće poruke. Molimo pokušajte ponovno poslati poruku.</string>
     <string name="invalid_message_forward">Poruka ne može biti proslijeđena nevažećem kontaktu.</string>
-    <string name="invalid_qr_code">Pogrešan QR kôd</string>
     <string name="invalid_url_for_download">Nemoguće preuzimanje. Molimo zatražite da Vam se pošalje ponovo.</string>
     <string name="invite">Pozovi</string>
     <string name="invite_friends">Pozovite svoje prijatelje</string>
@@ -535,11 +534,11 @@ Vaša usluga sada ističe %s."</string>
     <string name="lifetime_service">"Uživajte doživotno
 u
 WhatsApp usluzi"</string>
-    <string name="list_conversations_added_name">... je dodan(a)</string>
+    <string name="list_conversations_added_name">... je dodan/a</string>
     <string name="list_conversations_removed_name">... je uklonjen/a</string>
     <string name="list_info">Detalji o distrib. listi</string>
-    <string name="list_recipient_added">%s dodan(a) na popis</string>
-    <string name="list_recipient_removed">%s uklonjen(a) s popisa</string>
+    <string name="list_recipient_added">%s dodan/a na popis</string>
+    <string name="list_recipient_removed">%s uklonjen/a s popisa</string>
     <string name="list_recipients">Dodaj primatelje distribucijske liste</string>
     <string name="listen">Slušaj</string>
     <string name="load_earlier_messages">Učitaj ranije poruke</string>
@@ -556,7 +555,7 @@ WhatsApp usluzi"</string>
     <string name="login_failure_password">"Spajanje nije uspjelo! Molimo ponovo verificirajte Vaš broj.
 
 WhatsApp se može instalirati samo na jednom uređaju po broju telefona."</string>
-    <string name="lowercase_audio">audio</string>
+    <string name="lowercase_audio">zvuk</string>
     <string name="lowercase_image">slikovnu</string>
     <string name="lowercase_video">video</string>
     <string name="manually_install_software">Molimo ručno instalirajte preuzeti programski paket.</string>
@@ -569,7 +568,6 @@ WhatsApp se može instalirati samo na jednom uređaju po broju telefona."</strin
     <string name="menuitem_add">Dodaj</string>
     <string name="menuitem_contacts">Kontakti</string>
     <string name="menuitem_debug">Popravi</string>
-    <string name="menuitem_delete_qr">Izbriši QR kôd</string>
     <string name="menuitem_groupchat">Nova grupa</string>
     <string name="menuitem_list">Novi prijenos</string>
     <string name="menuitem_mute">Nečujno</string>
@@ -610,14 +608,10 @@ WhatsApp se može instalirati samo na jednom uređaju po broju telefona."</strin
     <string name="msg_store_backup_failed">Arhiviranje poruka nije moguće</string>
     <string name="msg_store_backup_failed_try_again_later">Nije moguće napraviti sigurnosnu kopiju poruka. Molimo pokušajte ponovno kasnije.</string>
     <string name="msg_store_backup_found">Arhiva pronađena</string>
-    <string name="msg_store_backup_found_registration">Pronađena arhiva poruka!</string>
     <string name="msg_store_backup_skipped">Arhiviranje preskočeno</string>
     <string name="msg_store_backup_skipped_no_media">Arhiviranje poruka preskočeno: Kartica za medijske zapise nije pronađena.</string>
     <string name="msg_store_backup_skipped_read_only_media">Arhiviranje poruka preskočeno: Kartica za medijske zapise podešena samo za čitanje.</string>
     <string name="msg_store_confirm">Potvrdi</string>
-    <string name="msg_store_creation_backup_message">Želite li vratiti povijest vaših poruka iz arhive?</string>
-    <string name="msg_store_do_not_restore">Nemoj vratiti</string>
-    <string name="msg_store_do_not_restore_no_thanks">Ne hvala</string>
     <string name="msg_store_error_found">Došlo je do greške. Molimo vas da zaustavite i ponovno pokrenete WhatsApp.</string>
     <string name="msg_store_error_not_restored">Žao nam je, nismo u mogućnosti vratiti Vašu povijest poruka.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Poruke će biti izgubljene. Jeste li sigurni da ne želite vratiti ranije arhivirane poruke?</string>
@@ -644,16 +638,13 @@ WhatsApp se može instalirati samo na jednom uređaju po broju telefona."</strin
     <string name="need_sd_card_shared_storage">Molimo Vas ugasite USB masovnu pohranu te pokušajte ponovno.</string>
     <string name="network_required">Trenutno nemate pristup mreži.</string>
     <string name="network_usage_ask_reset_message">Jeste sigurni da želite resetirati statistiku?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Zadnje vrijeme resetiranja: %1$s</string>
     <string name="network_usage_media_bytes_received">Primljeno medijskog sadržaja:</string>
     <string name="network_usage_media_bytes_sent">Poslano medijskog sadržaja:</string>
     <string name="network_usage_message_bytes_received">Veličina primljenih poruka:</string>
     <string name="network_usage_message_bytes_sent">Veličina poslanih poruka:</string>
     <string name="network_usage_messages_received">Poruka primljeno:</string>
-    <string name="network_usage_messages_sent">Poruka poslano:</string>
+    <string name="network_usage_messages_sent">Poslano poruka:</string>
     <string name="network_usage_reset">Resetiraj statistiku</string>
     <string name="network_usage_total_bytes_received">Ukupno primljeno:</string>
     <string name="network_usage_total_bytes_sent">Ukupno poslano:</string>
@@ -742,7 +733,7 @@ WhatsApp se može instalirati samo na jednom uređaju po broju telefona."</strin
     <string name="preview_failed">Neuspio pregled slike, molim pokušajte ponovno.</string>
     <string name="preview_msg">Pregled</string>
     <string name="privacy_contacts">Moji kontakti</string>
-    <string name="privacy_everyone">Svi</string>
+    <string name="privacy_everyone">Svatko</string>
     <string name="privacy_messaging">Slanje poruka</string>
     <string name="privacy_nobody">Nitko</string>
     <string name="processing">Obrađujem...</string>
@@ -771,7 +762,7 @@ WhatsApp se može instalirati samo na jednom uređaju po broju telefona."</strin
     <string name="register_bad_format">nije valjan mobilni broj za državu: %s.</string>
     <string name="register_bad_phone">Nevaljana dužina pozivnog broja za državu: %s.</string>
     <string name="register_bad_phone_too_long">Telefonski broj koji ste unijeli je predug za odabranu državu: %s.</string>
-    <string name="register_bad_phone_too_short">Telefonski broj koji ste unijeli je prekratak za državu: %s.</string>
+    <string name="register_bad_phone_too_short">Uneseni broj telefona je prekratak za državu: %s</string>
     <string name="register_bad_token">Čini se da je vaš klijent izmjenjen. %s</string>
     <string name="register_check_connectivity">"Neuspjelo povezivanje. Provjerite vezu s internetom i pokušajte ponovo.
 
@@ -798,7 +789,7 @@ WhatsApp se može instalirati samo na jednom uređaju po broju telefona."</strin
 
 %s
 
-Da li je ovo OK, ili želite izmijeniti broj?"</string>
+Je li ovo u redu, ili želite izmijeniti broj?"</string>
     <string name="register_phone_your_number">telefonski broj</string>
     <string name="register_preparing">Pripremam...</string>
     <string name="register_server_voice_too_many_tries">Ovjera glasom bila je neuspješna previše puta. Molimo kontaktirajte službu za korisnike za pomoć.</string>
@@ -829,9 +820,9 @@ Molim pokušajte ponovo nakon što omogućite telefon."</string>
     <string name="register_voice_input_error_maximum">"Unijeli ste pogrešan kod previše puta.
 
 Molimo kontaktirajte službu za korisnike za pomoć."</string>
-    <string name="register_voice_input_error_maximum_with_time">"Unijeli ste pogrešan kod previše puta.
+    <string name="register_voice_input_error_maximum_with_time">"Unijeli ste pogrešan kôd previše puta.
 
-Molim provjerite kôd mobilnog operatera možete li primati SMS poruke i telefonske pozive.
+Molim provjerite kod mobilnog operatera možete li primati SMS poruke i telefonske pozive.
 
 Molim pričekajte slanje novog kôda.
 
@@ -855,7 +846,7 @@ Pokušajte ponovo nakon %1$s."</string>
     <string name="register_xmpp_title">Pokretanje...</string>
     <string name="registration_cellular_network_required">Podatkovna mreža je potreba za aktivaciju WhatsApp Messenger-a.</string>
     <string name="remove">Ukloni</string>
-    <string name="remove_contact_name_from_group">Ukloniti %1$s iz grupe</string>
+    <string name="remove_contact_name_from_group">Ukloni %1$s iz grupe</string>
     <string name="remove_contact_name_from_list">Ukloni %1$s iz distribucijske liste</string>
     <string name="remove_contact_name_group_admin">Ukloni %1$s iz administratora grupe</string>
     <string name="remove_participant_dialog_title">Ukloniti %1$s iz grupe “%2$s”?</string>
@@ -868,7 +859,7 @@ Pokušajte ponovo nakon %1$s."</string>
     <string name="rotate_left">Okreni ulijevo</string>
     <string name="rotate_right">Okreni udesno</string>
     <string name="save_to_gallery">Spremi u galeriju</string>
-    <string name="search">Traži</string>
+    <string name="search">Pretraži</string>
     <string name="search_earlier">RANIJE</string>
     <string name="search_faq">Pretraži FAQ</string>
     <string name="search_hint">pretraži...</string>
@@ -913,20 +904,20 @@ ističe danas!"</string>
     <string name="settings_autodownload_cellular">Pri korištenju podatkovne veze</string>
     <string name="settings_autodownload_message">NAPOMENA: Glasovne poruke se uvijek automatski preuzimaju za najbolji doživljaj komunikacije</string>
     <string name="settings_autodownload_none">Bez medija</string>
-    <string name="settings_autodownload_roaming">Pri roamingu</string>
+    <string name="settings_autodownload_roaming">U roamingu</string>
     <string name="settings_autodownload_roaming_warning">Upozorenje: Automatsko preuzimanje videa dok ste u roamingu može rezultirati višim troškovima operatera. Budite oprezni!</string>
     <string name="settings_autodownload_wifi">Kad ste spojeni na Wi-Fi</string>
     <string name="settings_backup_db_now_message">Stvaranje arhive na SD kartici. Dnevno arhiviranje se obavlja u %1$s.</string>
     <string name="settings_backup_db_now_message_shared_storage">Stvaranje sigurnosne kopiju u internoj dijeljenoj pohrani. Dnevne sigurnosne kopije stvaraju se u %1$s.</string>
     <string name="settings_block_list">Blokirani kontakti: %s</string>
     <string name="settings_block_list_none">Nema</string>
-    <string name="settings_block_list_summary">Popis kontakata koje ste blokirali.</string>
+    <string name="settings_block_list_summary">Popis blokiranih kontakata.</string>
     <string name="settings_change_number">Promijenite broj</string>
     <string name="settings_chat">Postavke razgovora</string>
     <string name="settings_chat_sound">Tonovi razgovora</string>
     <string name="settings_chat_sound_summary">Uključi zvukove za dolazne i odlazne poruke.</string>
     <string name="settings_custom_conversation_sound">Zvono kontakta</string>
-    <string name="settings_custom_conversation_sound_summary">Koristite personalizirani zvuk zvona kao obavijesni zvuk zvona</string>
+    <string name="settings_custom_conversation_sound_summary">Koristite personaliziranu melodiju kontakta kao ton obavijesti</string>
     <string name="settings_delete_account">Izbriši moj račun</string>
     <string name="settings_dialog_title">Unesite svoje ime</string>
     <string name="settings_email_chat_history">Poslati razgovor e-mailom</string>
@@ -982,10 +973,10 @@ Poslano sa WhatsApp-a"</string>
     <string name="slide_to_reject">klizni za odbacivanje</string>
     <string name="small_case_subject">naslov...</string>
     <string name="sms_invite">Pozovi</string>
-    <string name="sms_notification_headline_unverified">WhatsApp - Telefonski broj nije verificiran!</string>
+    <string name="sms_notification_headline_unverified">WhatsApp - Telefonski broj nije potvrđen!</string>
     <string name="sms_notification_headline_verified">WhatsApp - Telefonski broj verificiran!</string>
     <string name="sms_notification_message_unverified">Dotaknite za potvrdu Vašeg broja</string>
-    <string name="sms_notification_message_verified">Telefonski broj je verificiran!</string>
+    <string name="sms_notification_message_verified">Telefonski broj je potvrdjen!</string>
     <string name="sms_notification_title_unverified">Broj nije potvrđen</string>
     <string name="sms_notification_title_verified">Čestitamo!</string>
     <string name="sms_reset">Resetiraj</string>
@@ -997,19 +988,16 @@ Poslano sa WhatsApp-a"</string>
     <string name="software_expired_get_from_play">Ova verzija WhatsApp-a je previše stara i više ne funkcionira. Molimo idite na Google Play i preuzmite najnoviju verziju.</string>
     <string name="software_expired_get_from_play_with_date">Ova verzija WhatsApp-a zastarjela je na &lt;b>%1$s&lt;/b>. Molimo posjetite Google Trgovinu da biste preuzeli najnoviju verziju.&lt;br>&lt;br> Datum na Vašem uređaju je &lt;b>%2$s&lt;/b>. U koliko datum nije točan, molimo ispravite ga u postavkama Vašeg uređaja te ponovo pokrenite WhatsApp.</string>
     <string name="software_expired_with_date">Ova verzija WhatsApp-a zastarjela je na &lt;b>%1$s&lt;/b>. Taknite “Preuzimanje” da biste preuzeli najnoviju verziju.&lt;br>&lt;br> Datum na Vašem uređaju je &lt;b>%2$s&lt;/b>. U koliko datum nije točan, molimo ispravite ga u postavkama Vašeg uređaja te ponovo pokrenite WhatsApp.</string>
-    <string name="spam_generic">"Trenutno Vam je onemogućena WhatsApp usluga iz razloga što ste prekršili naše uvjete korištenja.
-WhatsApp ćete ponovo moći koristiti za:"</string>
+    <string name="spam_generic">"Privremeno ste blokirani sa WhatsApp-a jer ste prekršili naše uvjete korištenja.
+
+WhatsApp ćete moći ponovno koristiti za:"</string>
     <string name="spam_generic_data_connection_missing">Molimo provjerite da telefon ima internetsku vezu.</string>
     <string name="spam_generic_unknown_time_left">Privremeno vam je zabranjeno koristiti WhatsApp jer ste možda prekršili naše uvjete korištenja. Moći ćete koristiti WhatsApp uskoro</string>
     <string name="spam_learn_more">Više</string>
     <string name="spam_title">Privremeno zabranjen pristup</string>
-    <string name="spam_too_many_blocks">Trenutno Vam je zabranjen pristup aplikaciji WhatsApp jer Vas je previše ljudi blokiralo.</string>
-    <string name="spam_too_many_groups">"Trenutno Vam je onemogućena WhatsApp usluga iz razloga što ste kreirali previše grupa s osobama koje Vas nemaju u svom adresaru.
-WhatsApp ćete ponovo moći koristiti za:"</string>
-    <string name="spam_too_many_messages">"Trenutno Vam je onemogućena WhatsApp usluga iz razloga što ste poslai previše poruka na osobama koje Vas nemaju u svom adresaru.
-WhatsApp ćete ponovo moći koristiti za:"</string>
-    <string name="spam_too_many_people">"Trenutno Vam je onemogućena WhatsApp usluga iz razloga što ste poslali istu poruku na previše osoba.
-WhatsApp ćete ponovo moći koristiti za:"</string>
+    <string name="spam_too_many_messages">"Privremeno ste blokirani sa WhatsApp-a jer ste poslali previše poruka ljudima koji vas nemaju u imeniku.
+
+WhatsApp ćete moći ponovno koristiti za:"</string>
     <string name="status">Status</string>
     <string name="status_default_at_gym">U teretani</string>
     <string name="status_default_at_movies">U kinu</string>
@@ -1110,7 +1098,7 @@ Preuzmite ga sada sa %s i pozdravite se s SMS-om!"</string>
     <string name="tell_a_friend_email_subject">WhatsApp Messenger: Android + iPhone + Nokia + BlackBerry + Windows Phone</string>
     <string name="tell_a_friend_sms">Isprobajte WhatsApp Messenger za Vaš pametni telefon. Preuzmite ga još danas s %s</string>
     <string name="tell_a_friend_via">Recite prijatelju putem...</string>
-    <string name="tell_friends">Podijelite WhatsApp</string>
+    <string name="tell_friends">Reci prijatelju o WhatsApp-u</string>
     <string name="time_at">%1$s u %2$s</string>
     <string name="title">WhatsApp Messenger</string>
     <string name="today">Danas</string>
@@ -1137,7 +1125,7 @@ Preuzmite ga sada sa %s i pozdravite se s SMS-om!"</string>
     <string name="upgrade_question">Nadograditi?</string>
     <string name="use_as_wallpaper">Koristi kao pozadinsku sliku</string>
     <string name="vcard_format_unsupport">Format ovog vcard-a nije podržan.</string>
-    <string name="verification_retry_headline">WhatsApp - Molimo ponovo pokušajte verificirati telefonski broj</string>
+    <string name="verification_retry_headline">WhatsApp - Molimo ponovno pokušajte provjeru broja</string>
     <string name="verification_retry_message">Molimo ponovno pokušajte verificirati telefonski broj.</string>
     <string name="verification_retry_title">WhatsApp</string>
     <string name="verify_sms_description">Čekanje na automatsku potvrdu SMS poruke poslane na</string>
@@ -1146,7 +1134,7 @@ Preuzmite ga sada sa %s i pozdravite se s SMS-om!"</string>
 Opustite se i pričekajte. Obavijestit ćemo vas kad dovršimo verifikaciju."</string>
     <string name="verify_sms_failed">"SMS verifikacija nije uspjela.
 Molimo pokušajte s glasovnom verifikacijom."</string>
-    <string name="verify_sms_header">SMS verifikacija</string>
+    <string name="verify_sms_header">SMS potvrda</string>
     <string name="verify_sms_roaming_warning">Čini se da ste u roamingu, mogli biste imati problema prilikom primanja SMS poruka i poziva.</string>
     <string name="verify_sms_try">POKUŠAJ %1$d OD %2$d</string>
     <string name="verify_voice_call_button">Nazovi me</string>
@@ -1155,7 +1143,7 @@ Molimo pokušajte s glasovnom verifikacijom."</string>
     <string name="verify_voice_description_top">WhatsApp Vas također može nazvati na</string>
     <string name="verify_voice_enter_code">Unesite kôd</string>
     <string name="verify_voice_header">Glasovna potvrda</string>
-    <string name="verify_voice_tap_call_first">Molimo najprije dotaknite ‘%s’.</string>
+    <string name="verify_voice_tap_call_first">Molimo prvo dotaknite `%s´.</string>
     <string name="version_prefix">Verzija</string>
     <string name="vibrate_length_default">Zadano</string>
     <string name="vibrate_length_long">Dugo</string>
@@ -1172,7 +1160,7 @@ Molimo pokušajte s glasovnom verifikacijom."</string>
     <string name="view_contact_name">Pregled %1$s</string>
     <string name="view_contact_unsupport">Ova funkcija nije podržana na Vašem uređaju</string>
     <string name="view_conversation_media">Medijski zapisi</string>
-    <string name="view_group_media">Medijski zapisi grupe</string>
+    <string name="view_group_media">Grupni sadržaj</string>
     <string name="view_in_gallery">Pogledaj u galeriji</string>
     <string name="view_list_media">Mediji distribucijske liste</string>
     <string name="view_website">Pogledaj internet stranicu</string>

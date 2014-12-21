@@ -28,7 +28,7 @@
 
     move-result v0
 
-    .line 3
+    .line 2
     int-to-float v1, v0
 
     invoke-virtual {p3}, Ljava/lang/Integer;->intValue()I
@@ -56,7 +56,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 3
     check-cast p2, Ljava/lang/Integer;
 
     check-cast p3, Ljava/lang/Integer;

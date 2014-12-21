@@ -9,91 +9,91 @@
 
 
 # static fields
-.field private static G:Landroid/graphics/Paint;
+.field private static P:Landroid/graphics/Paint;
 
-.field private static k:I
+.field public static a:Landroid/graphics/Bitmap;
 
-.field public static r:Landroid/graphics/Bitmap;
+.field private static g:Z
 
-.field private static w:Z
+.field private static v:I
 
-.field private static x:Landroid/graphics/Paint;
+.field private static w:Landroid/graphics/Paint;
 
 
 # instance fields
-.field private A:Landroid/graphics/RectF;
+.field private A:Landroid/graphics/Matrix;
 
-.field private B:F
+.field private B:I
 
-.field private C:Z
+.field private C:Landroid/graphics/Rect;
 
-.field private D:Lcom/whatsapp/af4;
+.field private D:F
 
-.field private E:[F
+.field private E:Z
 
-.field private F:Landroid/graphics/Matrix;
+.field private F:Lcom/whatsapp/ty;
 
-.field private H:Landroid/graphics/drawable/BitmapDrawable;
+.field private G:Landroid/view/ScaleGestureDetector;
 
-.field private I:Z
+.field private H:Landroid/view/View$OnClickListener;
 
-.field private J:Landroid/view/View$OnClickListener;
+.field private I:Lcom/whatsapp/ap1;
 
-.field private K:Z
+.field private J:[F
 
-.field private L:Z
+.field private K:Landroid/graphics/Matrix;
 
-.field private M:F
+.field private L:I
 
-.field private N:I
+.field private M:Landroid/graphics/drawable/BitmapDrawable;
 
-.field private O:I
+.field private N:F
 
-.field private P:F
+.field private O:F
 
-.field private a:Lcom/whatsapp/av7;
+.field private b:Landroid/graphics/RectF;
 
-.field private b:Lcom/whatsapp/azf;
-
-.field private c:Landroid/graphics/RectF;
+.field private c:Z
 
 .field private d:Z
 
 .field private e:Z
 
-.field private f:F
+.field private f:I
 
-.field private g:Z
+.field private h:Z
 
-.field private h:Lcom/whatsapp/al7;
+.field private i:Landroid/support/v4/view/GestureDetectorCompat;
 
-.field private i:Z
+.field private j:Z
 
-.field private j:I
+.field private k:Lcom/whatsapp/a0p;
 
-.field private l:F
+.field private l:Lcom/whatsapp/afo;
 
-.field private m:Landroid/graphics/Matrix;
+.field private m:Z
 
-.field private n:Z
+.field private n:Landroid/graphics/RectF;
 
-.field private o:Landroid/support/v4/view/GestureDetectorCompat;
+.field private o:Z
 
-.field private p:I
+.field private p:F
 
-.field private q:Landroid/graphics/Rect;
+.field private q:I
 
-.field private s:I
+.field private r:Landroid/graphics/RectF;
+
+.field private s:F
 
 .field private t:Landroid/graphics/Matrix;
 
-.field private u:F
+.field private u:Z
 
-.field private v:Landroid/view/ScaleGestureDetector;
+.field private x:Lcom/whatsapp/k9;
 
-.field private y:Lcom/whatsapp/a2i;
+.field private y:I
 
-.field private z:Landroid/graphics/RectF;
+.field private z:F
 
 
 # direct methods
@@ -101,77 +101,77 @@
     .locals 1
 
     .prologue
-    .line 109
+    .line 309
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    .line 267
+    .line 72
+    new-instance v0, Landroid/graphics/Matrix;
+
+    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
+
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
+
+    .line 258
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
 
-    .line 297
-    new-instance v0, Landroid/graphics/Matrix;
-
-    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
-
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->F:Landroid/graphics/Matrix;
-
-    .line 208
+    .line 183
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/whatsapp/PhotoView;->N:I
+    iput v0, p0, Lcom/whatsapp/PhotoView;->B:I
 
-    .line 281
+    .line 56
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
 
-    .line 347
+    .line 95
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/whatsapp/PhotoView;->e:Z
 
-    .line 155
-    sget-object v0, Lcom/whatsapp/af4;->FIT_CENTER:Lcom/whatsapp/af4;
+    .line 13
+    sget-object v0, Lcom/whatsapp/a0p;->FIT_CENTER:Lcom/whatsapp/a0p;
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->D:Lcom/whatsapp/af4;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->k:Lcom/whatsapp/a0p;
 
-    .line 218
+    .line 110
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->c:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->b:Landroid/graphics/RectF;
 
-    .line 168
+    .line 267
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->z:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->r:Landroid/graphics/RectF;
 
-    .line 378
+    .line 340
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
-    .line 242
+    .line 48
     const/16 v0, 0x9
 
     new-array v0, v0, [F
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->E:[F
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->J:[F
 
-    .line 142
-    invoke-direct {p0}, Lcom/whatsapp/PhotoView;->f()V
+    .line 178
+    invoke-direct {p0}, Lcom/whatsapp/PhotoView;->a()V
 
-    .line 145
+    .line 58
     return-void
 .end method
 
@@ -179,77 +179,77 @@
     .locals 1
 
     .prologue
-    .line 46
+    .line 243
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 236
+    .line 191
+    new-instance v0, Landroid/graphics/Matrix;
+
+    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
+
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
+
+    .line 47
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
 
-    .line 12
-    new-instance v0, Landroid/graphics/Matrix;
-
-    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
-
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->F:Landroid/graphics/Matrix;
-
-    .line 146
+    .line 321
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/whatsapp/PhotoView;->N:I
+    iput v0, p0, Lcom/whatsapp/PhotoView;->B:I
 
-    .line 220
+    .line 75
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
 
-    .line 59
+    .line 68
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/whatsapp/PhotoView;->e:Z
 
-    .line 254
-    sget-object v0, Lcom/whatsapp/af4;->FIT_CENTER:Lcom/whatsapp/af4;
+    .line 272
+    sget-object v0, Lcom/whatsapp/a0p;->FIT_CENTER:Lcom/whatsapp/a0p;
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->D:Lcom/whatsapp/af4;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->k:Lcom/whatsapp/a0p;
 
-    .line 117
+    .line 300
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->c:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->b:Landroid/graphics/RectF;
 
-    .line 122
+    .line 179
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->z:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->r:Landroid/graphics/RectF;
 
-    .line 328
+    .line 277
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
-    .line 264
+    .line 70
     const/16 v0, 0x9
 
     new-array v0, v0, [F
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->E:[F
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->J:[F
 
-    .line 257
-    invoke-direct {p0}, Lcom/whatsapp/PhotoView;->f()V
+    .line 337
+    invoke-direct {p0}, Lcom/whatsapp/PhotoView;->a()V
 
-    .line 197
+    .line 51
     return-void
 .end method
 
@@ -257,77 +257,77 @@
     .locals 1
 
     .prologue
-    .line 198
+    .line 161
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 184
+    .line 284
+    new-instance v0, Landroid/graphics/Matrix;
+
+    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
+
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
+
+    .line 36
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
 
-    .line 31
-    new-instance v0, Landroid/graphics/Matrix;
-
-    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
-
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->F:Landroid/graphics/Matrix;
-
-    .line 272
+    .line 361
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/whatsapp/PhotoView;->N:I
+    iput v0, p0, Lcom/whatsapp/PhotoView;->B:I
 
-    .line 13
+    .line 106
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
 
-    .line 33
+    .line 203
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/whatsapp/PhotoView;->e:Z
 
-    .line 72
-    sget-object v0, Lcom/whatsapp/af4;->FIT_CENTER:Lcom/whatsapp/af4;
+    .line 270
+    sget-object v0, Lcom/whatsapp/a0p;->FIT_CENTER:Lcom/whatsapp/a0p;
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->D:Lcom/whatsapp/af4;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->k:Lcom/whatsapp/a0p;
 
-    .line 389
+    .line 292
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->c:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->b:Landroid/graphics/RectF;
 
-    .line 189
+    .line 15
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->z:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->r:Landroid/graphics/RectF;
 
-    .line 276
+    .line 152
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
-    .line 313
+    .line 285
     const/16 v0, 0x9
 
     new-array v0, v0, [F
 
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->E:[F
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->J:[F
 
-    .line 104
-    invoke-direct {p0}, Lcom/whatsapp/PhotoView;->f()V
+    .line 163
+    invoke-direct {p0}, Lcom/whatsapp/PhotoView;->a()V
 
-    .line 170
+    .line 231
     return-void
 .end method
 
@@ -335,8 +335,8 @@
     .locals 1
 
     .prologue
-    .line 358
-    iget v0, p0, Lcom/whatsapp/PhotoView;->l:F
+    .line 374
+    iget v0, p0, Lcom/whatsapp/PhotoView;->p:F
 
     return v0
 .end method
@@ -345,42 +345,163 @@
     .locals 0
 
     .prologue
-    .line 319
-    iput p1, p0, Lcom/whatsapp/PhotoView;->l:F
+    .line 33
+    iput p1, p0, Lcom/whatsapp/PhotoView;->p:F
 
     return p1
+.end method
+
+.method private a()V
+    .locals 4
+
+    .prologue
+    const/4 v3, 0x1
+
+    .line 209
+    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    .line 239
+    sget-boolean v1, Lcom/whatsapp/PhotoView;->g:Z
+
+    if-nez v1, :cond_0
+
+    .line 37
+    sput-boolean v3, Lcom/whatsapp/PhotoView;->g:Z
+
+    .line 233
+    new-instance v1, Landroid/graphics/Paint;
+
+    invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
+
+    sput-object v1, Lcom/whatsapp/PhotoView;->w:Landroid/graphics/Paint;
+
+    .line 57
+    sget-object v1, Lcom/whatsapp/PhotoView;->w:Landroid/graphics/Paint;
+
+    invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+
+    .line 136
+    sget-object v1, Lcom/whatsapp/PhotoView;->w:Landroid/graphics/Paint;
+
+    sget-object v2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
+
+    invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+
+    .line 65
+    new-instance v1, Landroid/graphics/Paint;
+
+    invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
+
+    sput-object v1, Lcom/whatsapp/PhotoView;->P:Landroid/graphics/Paint;
+
+    .line 317
+    sget-object v1, Lcom/whatsapp/PhotoView;->P:Landroid/graphics/Paint;
+
+    invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+
+    .line 63
+    sget-object v1, Lcom/whatsapp/PhotoView;->P:Landroid/graphics/Paint;
+
+    sget-object v2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
+
+    invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+
+    .line 27
+    :cond_0
+    new-instance v1, Landroid/support/v4/view/GestureDetectorCompat;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, v0, p0, v2}, Landroid/support/v4/view/GestureDetectorCompat;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;Landroid/os/Handler;)V
+
+    iput-object v1, p0, Lcom/whatsapp/PhotoView;->i:Landroid/support/v4/view/GestureDetectorCompat;
+
+    .line 202
+    new-instance v1, Landroid/view/ScaleGestureDetector;
+
+    invoke-direct {v1, v0, p0}, Landroid/view/ScaleGestureDetector;-><init>(Landroid/content/Context;Landroid/view/ScaleGestureDetector$OnScaleGestureListener;)V
+
+    iput-object v1, p0, Lcom/whatsapp/PhotoView;->G:Landroid/view/ScaleGestureDetector;
+
+    .line 104
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x13
+
+    if-lt v0, v1, :cond_1
+
+    .line 35
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->G:Landroid/view/ScaleGestureDetector;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/ScaleGestureDetector;->setQuickScaleEnabled(Z)V
+
+    .line 240
+    :cond_1
+    new-instance v0, Lcom/whatsapp/ap1;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/ap1;-><init>(Lcom/whatsapp/PhotoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->I:Lcom/whatsapp/ap1;
+
+    .line 211
+    new-instance v0, Lcom/whatsapp/k9;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/k9;-><init>(Lcom/whatsapp/PhotoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->x:Lcom/whatsapp/k9;
+
+    .line 112
+    new-instance v0, Lcom/whatsapp/afo;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/afo;-><init>(Lcom/whatsapp/PhotoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->l:Lcom/whatsapp/afo;
+
+    .line 297
+    new-instance v0, Lcom/whatsapp/ty;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/ty;-><init>(Lcom/whatsapp/PhotoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->F:Lcom/whatsapp/ty;
+
+    .line 283
+    return-void
 .end method
 
 .method private a(FFFZ)V
     .locals 6
 
     .prologue
-    .line 131
-    iget v0, p0, Lcom/whatsapp/PhotoView;->B:F
+    .line 252
+    iget v0, p0, Lcom/whatsapp/PhotoView;->s:F
 
     invoke-static {p1, v0}, Ljava/lang/Math;->max(FF)F
 
     move-result v0
 
-    .line 129
-    iget v1, p0, Lcom/whatsapp/PhotoView;->u:F
+    .line 154
+    iget v1, p0, Lcom/whatsapp/PhotoView;->N:F
 
     invoke-static {v0, v1}, Ljava/lang/Math;->min(FF)F
 
     move-result v0
 
-    .line 185
+    .line 303
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->d()F
 
     move-result v1
 
-    .line 120
+    .line 280
     div-float v1, v0, v1
 
-    .line 261
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
+    .line 46
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
 
-    iget v3, p0, Lcom/whatsapp/PhotoView;->l:F
+    iget v3, p0, Lcom/whatsapp/PhotoView;->p:F
 
     neg-float v3, v3
 
@@ -402,18 +523,18 @@
 
     invoke-virtual {v2, v3, v4, v5}, Landroid/graphics/Matrix;->postRotate(FFF)Z
 
-    .line 321
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
+    .line 149
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
 
     invoke-virtual {v2, v1, v1, p2, p3}, Landroid/graphics/Matrix;->postScale(FFFF)Z
 
-    .line 317
-    iput v0, p0, Lcom/whatsapp/PhotoView;->f:F
+    .line 257
+    iput v0, p0, Lcom/whatsapp/PhotoView;->z:F
 
-    .line 253
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
+    .line 206
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
 
-    iget v1, p0, Lcom/whatsapp/PhotoView;->l:F
+    iget v1, p0, Lcom/whatsapp/PhotoView;->p:F
 
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
 
@@ -433,13 +554,13 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/graphics/Matrix;->postRotate(FFF)Z
 
-    .line 34
-    invoke-direct {p0, p4}, Lcom/whatsapp/PhotoView;->a(Z)V
+    .line 388
+    invoke-direct {p0, p4}, Lcom/whatsapp/PhotoView;->c(Z)V
 
-    .line 295
+    .line 50
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->invalidate()V
 
-    .line 203
+    .line 224
     return-void
 .end method
 
@@ -447,7 +568,7 @@
     .locals 0
 
     .prologue
-    .line 369
+    .line 276
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/whatsapp/PhotoView;->a(FFFZ)V
 
     return-void
@@ -457,13 +578,1120 @@
     .locals 0
 
     .prologue
-    .line 283
-    invoke-direct {p0, p1}, Lcom/whatsapp/PhotoView;->a(Z)V
+    .line 333
+    invoke-direct {p0, p1}, Lcom/whatsapp/PhotoView;->b(Z)V
 
     return-void
 .end method
 
-.method private a(Z)V
+.method private a(FF)Z
+    .locals 9
+
+    .prologue
+    const/high16 v8, 0x40000000
+
+    const/4 v1, 0x0
+
+    sget v4, Lcom/whatsapp/App;->h:I
+
+    .line 262
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
+
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->b:Landroid/graphics/RectF;
+
+    invoke-virtual {v0, v2}, Landroid/graphics/RectF;->set(Landroid/graphics/RectF;)V
+
+    .line 143
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
+
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
+
+    invoke-virtual {v0, v2}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;)Z
+
+    .line 364
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->E:Z
+
+    if-eqz v0, :cond_5
+
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
+
+    iget v0, v0, Landroid/graphics/Rect;->left:I
+
+    int-to-float v0, v0
+
+    .line 237
+    :goto_0
+    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->E:Z
+
+    if-eqz v2, :cond_6
+
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
+
+    iget v2, v2, Landroid/graphics/Rect;->right:I
+
+    int-to-float v2, v2
+
+    .line 196
+    :goto_1
+    iget-object v3, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
+
+    iget v5, v3, Landroid/graphics/RectF;->left:F
+
+    .line 181
+    iget-object v3, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
+
+    iget v6, v3, Landroid/graphics/RectF;->right:F
+
+    .line 187
+    iget-boolean v3, p0, Lcom/whatsapp/PhotoView;->E:Z
+
+    if-eqz v3, :cond_0
+
+    .line 195
+    iget-object v3, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
+
+    iget v3, v3, Landroid/graphics/RectF;->right:F
+
+    sub-float v3, v0, v3
+
+    iget-object v7, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
+
+    iget v7, v7, Landroid/graphics/RectF;->left:F
+
+    sub-float v7, v2, v7
+
+    .line 201
+    invoke-static {v7, p1}, Ljava/lang/Math;->min(FF)F
+
+    move-result v7
+
+    .line 383
+    invoke-static {v3, v7}, Ljava/lang/Math;->max(FF)F
+
+    move-result v3
+
+    if-eqz v4, :cond_a
+
+    .line 127
+    :cond_0
+    sub-float v3, v6, v5
+
+    sub-float v7, v2, v0
+
+    cmpg-float v3, v3, v7
+
+    if-gez v3, :cond_1
+
+    .line 11
+    sub-float v3, v2, v0
+
+    add-float v7, v6, v5
+
+    sub-float/2addr v3, v7
+
+    div-float/2addr v3, v8
+
+    add-float/2addr v3, v0
+
+    if-eqz v4, :cond_a
+
+    .line 369
+    :cond_1
+    sub-float/2addr v2, v6
+
+    sub-float/2addr v0, v5
+
+    invoke-static {v0, p1}, Ljava/lang/Math;->min(FF)F
+
+    move-result v0
+
+    invoke-static {v2, v0}, Ljava/lang/Math;->max(FF)F
+
+    move-result v0
+
+    .line 99
+    :goto_2
+    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->E:Z
+
+    if-eqz v2, :cond_2
+
+    iget-object v1, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
+
+    iget v1, v1, Landroid/graphics/Rect;->top:I
+
+    int-to-float v1, v1
+
+    .line 60
+    :cond_2
+    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->E:Z
+
+    if-eqz v2, :cond_7
+
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
+
+    iget v2, v2, Landroid/graphics/Rect;->bottom:I
+
+    int-to-float v2, v2
+
+    .line 130
+    :goto_3
+    iget-object v3, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
+
+    iget v5, v3, Landroid/graphics/RectF;->top:F
+
+    .line 286
+    iget-object v3, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
+
+    iget v6, v3, Landroid/graphics/RectF;->bottom:F
+
+    .line 23
+    iget-boolean v3, p0, Lcom/whatsapp/PhotoView;->E:Z
+
+    if-eqz v3, :cond_3
+
+    .line 225
+    iget-object v3, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
+
+    iget v3, v3, Landroid/graphics/RectF;->bottom:F
+
+    sub-float v3, v1, v3
+
+    iget-object v7, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
+
+    iget v7, v7, Landroid/graphics/RectF;->top:F
+
+    sub-float v7, v2, v7
+
+    .line 194
+    invoke-static {v7, p2}, Ljava/lang/Math;->min(FF)F
+
+    move-result v7
+
+    .line 22
+    invoke-static {v3, v7}, Ljava/lang/Math;->max(FF)F
+
+    move-result v3
+
+    if-eqz v4, :cond_9
+
+    .line 30
+    :cond_3
+    sub-float v3, v6, v5
+
+    sub-float v7, v2, v1
+
+    cmpg-float v3, v3, v7
+
+    if-gez v3, :cond_4
+
+    .line 74
+    sub-float v3, v2, v1
+
+    add-float v7, v6, v5
+
+    sub-float/2addr v3, v7
+
+    div-float/2addr v3, v8
+
+    add-float/2addr v3, v1
+
+    if-eqz v4, :cond_9
+
+    .line 103
+    :cond_4
+    sub-float/2addr v2, v6
+
+    sub-float/2addr v1, v5
+
+    invoke-static {v1, p2}, Ljava/lang/Math;->min(FF)F
+
+    move-result v1
+
+    invoke-static {v2, v1}, Ljava/lang/Math;->max(FF)F
+
+    move-result v1
+
+    .line 107
+    :goto_4
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
+
+    invoke-virtual {v2, v0, v1}, Landroid/graphics/Matrix;->postTranslate(FF)Z
+
+    .line 355
+    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->invalidate()V
+
+    .line 169
+    cmpl-float v0, v0, p1
+
+    if-nez v0, :cond_8
+
+    cmpl-float v0, v1, p2
+
+    if-nez v0, :cond_8
+
+    const/4 v0, 0x1
+
+    :goto_5
+    return v0
+
+    :cond_5
+    move v0, v1
+
+    .line 364
+    goto/16 :goto_0
+
+    .line 237
+    :cond_6
+    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
+
+    move-result v2
+
+    int-to-float v2, v2
+
+    goto/16 :goto_1
+
+    .line 60
+    :cond_7
+    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getHeight()I
+
+    move-result v2
+
+    int-to-float v2, v2
+
+    goto :goto_3
+
+    .line 169
+    :cond_8
+    const/4 v0, 0x0
+
+    goto :goto_5
+
+    :cond_9
+    move v1, v3
+
+    goto :goto_4
+
+    :cond_a
+    move v0, v3
+
+    goto :goto_2
+.end method
+
+.method static a(Lcom/whatsapp/PhotoView;FF)Z
+    .locals 1
+
+    .prologue
+    .line 71
+    invoke-direct {p0, p1, p2}, Lcom/whatsapp/PhotoView;->a(FF)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method static b(Lcom/whatsapp/PhotoView;Z)V
+    .locals 0
+
+    .prologue
+    .line 141
+    invoke-direct {p0, p1}, Lcom/whatsapp/PhotoView;->c(Z)V
+
+    return-void
+.end method
+
+.method private b(Z)V
+    .locals 6
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 299
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
+
+    if-eqz v0, :cond_0
+
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->h:Z
+
+    if-nez v0, :cond_1
+
+    .line 153
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 290
+    :cond_1
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
+
+    invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getIntrinsicWidth()I
+
+    move-result v0
+
+    .line 25
+    iget-object v1, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
+
+    invoke-virtual {v1}, Landroid/graphics/drawable/BitmapDrawable;->getIntrinsicHeight()I
+
+    move-result v1
+
+    .line 189
+    iget-object v3, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
+
+    invoke-virtual {v3, v2, v2, v0, v1}, Landroid/graphics/drawable/BitmapDrawable;->setBounds(IIII)V
+
+    .line 53
+    iget v3, p0, Lcom/whatsapp/PhotoView;->p:F
+
+    const/high16 v4, 0x43340000
+
+    rem-float/2addr v3, v4
+
+    invoke-static {v3}, Ljava/lang/Math;->abs(F)F
+
+    move-result v3
+
+    const/high16 v4, 0x42b40000
+
+    cmpl-float v3, v3, v4
+
+    if-nez v3, :cond_9
+
+    .line 123
+    :goto_1
+    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
+
+    move-result v3
+
+    .line 89
+    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getHeight()I
+
+    move-result v4
+
+    .line 221
+    if-ltz v1, :cond_2
+
+    if-ne v3, v1, :cond_8
+
+    :cond_2
+    if-ltz v0, :cond_3
+
+    if-ne v4, v0, :cond_8
+
+    :cond_3
+    const/4 v0, 0x1
+
+    .line 246
+    :goto_2
+    if-nez p1, :cond_4
+
+    iget v1, p0, Lcom/whatsapp/PhotoView;->s:F
+
+    const/4 v2, 0x0
+
+    cmpl-float v1, v1, v2
+
+    if-nez v1, :cond_5
+
+    iget-object v1, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
+
+    if-eqz v1, :cond_5
+
+    iget-boolean v1, p0, Lcom/whatsapp/PhotoView;->h:Z
+
+    if-eqz v1, :cond_5
+
+    .line 114
+    :cond_4
+    invoke-direct {p0}, Lcom/whatsapp/PhotoView;->c()V
+
+    .line 357
+    :cond_5
+    if-nez v0, :cond_6
+
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
+
+    invoke-virtual {v0}, Landroid/graphics/Matrix;->isIdentity()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    .line 31
+    :cond_6
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/Matrix;
+
+    sget v0, Lcom/whatsapp/App;->h:I
+
+    if-eqz v0, :cond_0
+
+    .line 363
+    :cond_7
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
+
+    iput-object v0, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/Matrix;
+
+    goto :goto_0
+
+    :cond_8
+    move v0, v2
+
+    .line 221
+    goto :goto_2
+
+    :cond_9
+    move v5, v1
+
+    move v1, v0
+
+    move v0, v5
+
+    goto :goto_1
+.end method
+
+.method private c()V
+    .locals 14
+
+    .prologue
+    const/high16 v13, 0x3f800000
+
+    const/high16 v12, 0x43340000
+
+    const/high16 v9, 0x42b40000
+
+    const/high16 v11, 0x40400000
+
+    const/4 v10, 0x0
+
+    sget v3, Lcom/whatsapp/App;->h:I
+
+    .line 21
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
+
+    invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getIntrinsicWidth()I
+
+    move-result v4
+
+    .line 313
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
+
+    invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getIntrinsicHeight()I
+
+    move-result v5
+
+    .line 294
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->E:Z
+
+    if-eqz v0, :cond_f
+
+    sget v0, Lcom/whatsapp/PhotoView;->v:I
+
+    .line 43
+    :goto_0
+    iget-boolean v1, p0, Lcom/whatsapp/PhotoView;->E:Z
+
+    if-eqz v1, :cond_10
+
+    sget v2, Lcom/whatsapp/PhotoView;->v:I
+
+    .line 61
+    :goto_1
+    if-ltz v4, :cond_0
+
+    if-ne v0, v4, :cond_11
+
+    :cond_0
+    if-ltz v5, :cond_1
+
+    if-ne v2, v5, :cond_11
+
+    :cond_1
+    const/4 v1, 0x1
+
+    .line 101
+    :goto_2
+    iput v10, p0, Lcom/whatsapp/PhotoView;->D:F
+
+    .line 322
+    if-eqz v1, :cond_2
+
+    iget-boolean v1, p0, Lcom/whatsapp/PhotoView;->E:Z
+
+    if-nez v1, :cond_2
+
+    .line 380
+    iget-object v1, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
+
+    invoke-virtual {v1}, Landroid/graphics/Matrix;->reset()V
+
+    .line 109
+    iput v13, p0, Lcom/whatsapp/PhotoView;->s:F
+
+    .line 132
+    iput v13, p0, Lcom/whatsapp/PhotoView;->z:F
+
+    if-eqz v3, :cond_e
+
+    .line 265
+    :cond_2
+    iget-object v1, p0, Lcom/whatsapp/PhotoView;->b:Landroid/graphics/RectF;
+
+    int-to-float v6, v4
+
+    int-to-float v7, v5
+
+    invoke-virtual {v1, v10, v10, v6, v7}, Landroid/graphics/RectF;->set(FFFF)V
+
+    .line 217
+    iget-boolean v1, p0, Lcom/whatsapp/PhotoView;->E:Z
+
+    if-eqz v1, :cond_3
+
+    .line 190
+    iget-object v1, p0, Lcom/whatsapp/PhotoView;->r:Landroid/graphics/RectF;
+
+    iget-object v6, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
+
+    invoke-virtual {v1, v6}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
+
+    if-eqz v3, :cond_4
+
+    .line 197
+    :cond_3
+    iget-object v1, p0, Lcom/whatsapp/PhotoView;->r:Landroid/graphics/RectF;
+
+    int-to-float v6, v0
+
+    int-to-float v7, v2
+
+    invoke-virtual {v1, v10, v10, v6, v7}, Landroid/graphics/RectF;->set(FFFF)V
+
+    .line 288
+    :cond_4
+    iget-object v1, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
+
+    div-int/lit8 v6, v0, 0x2
+
+    div-int/lit8 v7, v4, 0x2
+
+    sub-int/2addr v6, v7
+
+    int-to-float v6, v6
+
+    div-int/lit8 v7, v2, 0x2
+
+    div-int/lit8 v8, v5, 0x2
+
+    sub-int/2addr v7, v8
+
+    int-to-float v7, v7
+
+    invoke-virtual {v1, v6, v7}, Landroid/graphics/Matrix;->setTranslate(FF)V
+
+    .line 126
+    iget v1, p0, Lcom/whatsapp/PhotoView;->q:I
+
+    if-eqz v1, :cond_19
+
+    .line 6
+    iget v1, p0, Lcom/whatsapp/PhotoView;->q:I
+
+    .line 287
+    :goto_3
+    iget v2, p0, Lcom/whatsapp/PhotoView;->p:F
+
+    rem-float/2addr v2, v12
+
+    invoke-static {v2}, Ljava/lang/Math;->abs(F)F
+
+    move-result v2
+
+    cmpl-float v2, v2, v9
+
+    if-nez v2, :cond_12
+
+    int-to-float v2, v0
+
+    int-to-float v6, v5
+
+    div-float/2addr v2, v6
+
+    int-to-float v6, v1
+
+    int-to-float v7, v4
+
+    div-float/2addr v6, v7
+
+    .line 121
+    invoke-static {v2, v6}, Ljava/lang/Math;->min(FF)F
+
+    move-result v2
+
+    .line 167
+    :goto_4
+    iput v2, p0, Lcom/whatsapp/PhotoView;->s:F
+
+    .line 83
+    iget v2, p0, Lcom/whatsapp/PhotoView;->s:F
+
+    invoke-static {v2, v11}, Ljava/lang/Math;->min(FF)F
+
+    move-result v2
+
+    iput v2, p0, Lcom/whatsapp/PhotoView;->s:F
+
+    .line 145
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->k:Lcom/whatsapp/a0p;
+
+    sget-object v6, Lcom/whatsapp/a0p;->CENTER_CROP:Lcom/whatsapp/a0p;
+
+    if-ne v2, v6, :cond_5
+
+    .line 91
+    iget v2, p0, Lcom/whatsapp/PhotoView;->p:F
+
+    rem-float/2addr v2, v12
+
+    invoke-static {v2}, Ljava/lang/Math;->abs(F)F
+
+    move-result v2
+
+    cmpl-float v2, v2, v9
+
+    if-nez v2, :cond_13
+
+    int-to-float v2, v0
+
+    int-to-float v6, v5
+
+    div-float/2addr v2, v6
+
+    int-to-float v6, v1
+
+    int-to-float v7, v4
+
+    div-float/2addr v6, v7
+
+    .line 210
+    invoke-static {v2, v6}, Ljava/lang/Math;->max(FF)F
+
+    move-result v2
+
+    .line 158
+    :goto_5
+    if-eqz v3, :cond_8
+
+    .line 84
+    :cond_5
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->k:Lcom/whatsapp/a0p;
+
+    sget-object v6, Lcom/whatsapp/a0p;->FIT_WIDTH:Lcom/whatsapp/a0p;
+
+    if-ne v2, v6, :cond_6
+
+    .line 218
+    iget v2, p0, Lcom/whatsapp/PhotoView;->p:F
+
+    rem-float/2addr v2, v12
+
+    invoke-static {v2}, Ljava/lang/Math;->abs(F)F
+
+    move-result v2
+
+    cmpl-float v2, v2, v9
+
+    if-nez v2, :cond_14
+
+    int-to-float v2, v0
+
+    int-to-float v6, v5
+
+    div-float/2addr v2, v6
+
+    :goto_6
+    if-eqz v3, :cond_8
+
+    .line 45
+    :cond_6
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->k:Lcom/whatsapp/a0p;
+
+    sget-object v6, Lcom/whatsapp/a0p;->FIT_HEIGHT:Lcom/whatsapp/a0p;
+
+    if-ne v2, v6, :cond_7
+
+    .line 172
+    iget v2, p0, Lcom/whatsapp/PhotoView;->p:F
+
+    rem-float/2addr v2, v12
+
+    invoke-static {v2}, Ljava/lang/Math;->abs(F)F
+
+    move-result v2
+
+    cmpl-float v2, v2, v9
+
+    if-nez v2, :cond_15
+
+    int-to-float v2, v1
+
+    int-to-float v6, v4
+
+    div-float/2addr v2, v6
+
+    :goto_7
+    if-eqz v3, :cond_8
+
+    .line 42
+    :cond_7
+    iget v2, p0, Lcom/whatsapp/PhotoView;->s:F
+
+    .line 295
+    :cond_8
+    iget v6, p0, Lcom/whatsapp/PhotoView;->p:F
+
+    rem-float/2addr v6, v12
+
+    invoke-static {v6}, Ljava/lang/Math;->abs(F)F
+
+    move-result v6
+
+    cmpl-float v6, v6, v9
+
+    if-nez v6, :cond_a
+
+    .line 184
+    int-to-float v6, v0
+
+    int-to-float v7, v5
+
+    div-float/2addr v6, v7
+
+    .line 176
+    int-to-float v7, v1
+
+    int-to-float v8, v4
+
+    div-float/2addr v7, v8
+
+    .line 324
+    div-float v8, v6, v7
+
+    sub-float/2addr v8, v13
+
+    invoke-static {v8}, Ljava/lang/Math;->abs(F)F
+
+    move-result v8
+
+    iget v9, p0, Lcom/whatsapp/PhotoView;->O:F
+
+    cmpg-float v8, v8, v9
+
+    if-gez v8, :cond_9
+
+    .line 304
+    invoke-static {v6, v7}, Ljava/lang/Math;->max(FF)F
+
+    move-result v2
+
+    iput v2, p0, Lcom/whatsapp/PhotoView;->D:F
+
+    .line 34
+    iget v2, p0, Lcom/whatsapp/PhotoView;->D:F
+
+    .line 326
+    :cond_9
+    if-eqz v3, :cond_b
+
+    .line 353
+    :cond_a
+    int-to-float v6, v0
+
+    int-to-float v7, v4
+
+    div-float/2addr v6, v7
+
+    .line 98
+    int-to-float v7, v1
+
+    int-to-float v8, v5
+
+    div-float/2addr v7, v8
+
+    .line 327
+    div-float v8, v6, v7
+
+    sub-float/2addr v8, v13
+
+    invoke-static {v8}, Ljava/lang/Math;->abs(F)F
+
+    move-result v8
+
+    iget v9, p0, Lcom/whatsapp/PhotoView;->O:F
+
+    cmpg-float v8, v8, v9
+
+    if-gez v8, :cond_b
+
+    .line 105
+    invoke-static {v6, v7}, Ljava/lang/Math;->max(FF)F
+
+    move-result v2
+
+    iput v2, p0, Lcom/whatsapp/PhotoView;->D:F
+
+    .line 97
+    iget v2, p0, Lcom/whatsapp/PhotoView;->D:F
+
+    .line 226
+    :cond_b
+    iget v6, p0, Lcom/whatsapp/PhotoView;->z:F
+
+    cmpl-float v6, v6, v10
+
+    if-nez v6, :cond_c
+
+    .line 92
+    invoke-static {v2, v11}, Ljava/lang/Math;->min(FF)F
+
+    move-result v6
+
+    iput v6, p0, Lcom/whatsapp/PhotoView;->z:F
+
+    .line 301
+    :cond_c
+    iget-boolean v6, p0, Lcom/whatsapp/PhotoView;->d:Z
+
+    if-eqz v6, :cond_16
+
+    iget-boolean v6, p0, Lcom/whatsapp/PhotoView;->o:Z
+
+    if-eqz v6, :cond_16
+
+    .line 281
+    :cond_d
+    :goto_8
+    iput v0, p0, Lcom/whatsapp/PhotoView;->y:I
+
+    .line 150
+    iput v1, p0, Lcom/whatsapp/PhotoView;->L:I
+
+    .line 385
+    iget v0, p0, Lcom/whatsapp/PhotoView;->D:F
+
+    invoke-static {v0, v11}, Ljava/lang/Math;->min(FF)F
+
+    move-result v0
+
+    iput v0, p0, Lcom/whatsapp/PhotoView;->D:F
+
+    .line 216
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
+
+    iget v1, p0, Lcom/whatsapp/PhotoView;->z:F
+
+    iget v2, p0, Lcom/whatsapp/PhotoView;->z:F
+
+    div-int/lit8 v3, v4, 0x2
+
+    int-to-float v3, v3
+
+    div-int/lit8 v4, v5, 0x2
+
+    int-to-float v4, v4
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/Matrix;->preScale(FFFF)Z
+
+    .line 62
+    :cond_e
+    iget v0, p0, Lcom/whatsapp/PhotoView;->s:F
+
+    const/high16 v1, 0x41000000
+
+    mul-float/2addr v0, v1
+
+    const/high16 v1, 0x41000000
+
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(FF)F
+
+    move-result v0
+
+    iput v0, p0, Lcom/whatsapp/PhotoView;->N:F
+
+    .line 79
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
+
+    iget v1, p0, Lcom/whatsapp/PhotoView;->p:F
+
+    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
+
+    move-result v2
+
+    div-int/lit8 v2, v2, 0x2
+
+    int-to-float v2, v2
+
+    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getHeight()I
+
+    move-result v3
+
+    div-int/lit8 v3, v3, 0x2
+
+    int-to-float v3, v3
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/graphics/Matrix;->postRotate(FFF)Z
+
+    .line 308
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
+
+    iget-object v1, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
+
+    invoke-virtual {v0, v1}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
+
+    .line 164
+    return-void
+
+    .line 294
+    :cond_f
+    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
+
+    move-result v0
+
+    goto/16 :goto_0
+
+    .line 43
+    :cond_10
+    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getHeight()I
+
+    move-result v2
+
+    goto/16 :goto_1
+
+    .line 61
+    :cond_11
+    const/4 v1, 0x0
+
+    goto/16 :goto_2
+
+    .line 121
+    :cond_12
+    int-to-float v2, v0
+
+    int-to-float v6, v4
+
+    div-float/2addr v2, v6
+
+    int-to-float v6, v1
+
+    int-to-float v7, v5
+
+    div-float/2addr v6, v7
+
+    .line 167
+    invoke-static {v2, v6}, Ljava/lang/Math;->min(FF)F
+
+    move-result v2
+
+    goto/16 :goto_4
+
+    .line 210
+    :cond_13
+    int-to-float v2, v0
+
+    int-to-float v6, v4
+
+    div-float/2addr v2, v6
+
+    int-to-float v6, v1
+
+    int-to-float v7, v5
+
+    div-float/2addr v6, v7
+
+    .line 158
+    invoke-static {v2, v6}, Ljava/lang/Math;->max(FF)F
+
+    move-result v2
+
+    goto/16 :goto_5
+
+    .line 218
+    :cond_14
+    int-to-float v2, v0
+
+    int-to-float v6, v4
+
+    div-float/2addr v2, v6
+
+    goto/16 :goto_6
+
+    .line 172
+    :cond_15
+    int-to-float v2, v1
+
+    int-to-float v6, v5
+
+    div-float/2addr v2, v6
+
+    goto/16 :goto_7
+
+    .line 175
+    :cond_16
+    iget-boolean v6, p0, Lcom/whatsapp/PhotoView;->o:Z
+
+    if-eqz v6, :cond_17
+
+    .line 96
+    iget v6, p0, Lcom/whatsapp/PhotoView;->y:I
+
+    if-eq v6, v0, :cond_d
+
+    .line 214
+    invoke-static {v2, v11}, Ljava/lang/Math;->min(FF)F
+
+    move-result v6
+
+    iput v6, p0, Lcom/whatsapp/PhotoView;->z:F
+
+    if-eqz v3, :cond_d
+
+    .line 256
+    :cond_17
+    iget-boolean v6, p0, Lcom/whatsapp/PhotoView;->d:Z
+
+    if-eqz v6, :cond_18
+
+    .line 32
+    iget v6, p0, Lcom/whatsapp/PhotoView;->L:I
+
+    if-eq v6, v1, :cond_d
+
+    .line 29
+    invoke-static {v2, v11}, Ljava/lang/Math;->min(FF)F
+
+    move-result v6
+
+    iput v6, p0, Lcom/whatsapp/PhotoView;->z:F
+
+    if-eqz v3, :cond_d
+
+    .line 232
+    :cond_18
+    invoke-static {v2, v11}, Ljava/lang/Math;->min(FF)F
+
+    move-result v2
+
+    iput v2, p0, Lcom/whatsapp/PhotoView;->z:F
+
+    goto/16 :goto_8
+
+    :cond_19
+    move v1, v2
+
+    goto/16 :goto_3
+.end method
+
+.method private c(Z)V
     .locals 11
 
     .prologue
@@ -473,57 +1701,57 @@
 
     const/4 v1, 0x0
 
-    sget-boolean v5, Lcom/whatsapp/App;->aL:Z
+    sget v5, Lcom/whatsapp/App;->h:I
 
-    .line 280
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    .line 7
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->c:Landroid/graphics/RectF;
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->b:Landroid/graphics/RectF;
 
     invoke-virtual {v0, v2}, Landroid/graphics/RectF;->set(Landroid/graphics/RectF;)V
 
-    .line 255
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
+    .line 128
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
 
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
     invoke-virtual {v0, v2}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;)Z
 
-    .line 249
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->K:Z
+    .line 204
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->E:Z
 
     if-eqz v0, :cond_a
 
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->left:I
 
     int-to-float v0, v0
 
-    .line 370
+    .line 344
     :goto_0
-    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->K:Z
+    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->E:Z
 
     if-eqz v2, :cond_b
 
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
 
     iget v2, v2, Landroid/graphics/Rect;->right:I
 
     int-to-float v2, v2
 
-    .line 282
+    .line 367
     :goto_1
-    iget-object v3, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    iget-object v3, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
     iget v4, v3, Landroid/graphics/RectF;->left:F
 
-    .line 346
-    iget-object v3, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    .line 289
+    iget-object v3, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
     iget v6, v3, Landroid/graphics/RectF;->right:F
 
-    .line 186
+    .line 356
     sub-float v3, v6, v4
 
     sub-float v7, v2, v0
@@ -532,7 +1760,7 @@
 
     if-gez v3, :cond_0
 
-    .line 229
+    .line 44
     sub-float v3, v2, v0
 
     add-float v7, v6, v4
@@ -545,24 +1773,24 @@
 
     if-eqz v5, :cond_10
 
-    .line 240
+    .line 78
     :cond_0
     cmpl-float v3, v4, v0
 
     if-lez v3, :cond_1
 
-    .line 48
+    .line 293
     sub-float/2addr v0, v4
 
     if-eqz v5, :cond_3
 
-    .line 133
+    .line 200
     :cond_1
     cmpg-float v0, v6, v2
 
     if-gez v0, :cond_2
 
-    .line 121
+    .line 266
     sub-float v0, v2, v6
 
     if-eqz v5, :cond_3
@@ -570,43 +1798,43 @@
     :cond_2
     move v0, v1
 
-    .line 123
+    .line 329
     :cond_3
     :goto_2
-    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->K:Z
+    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->E:Z
 
     if-eqz v2, :cond_c
 
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
 
     iget v2, v2, Landroid/graphics/Rect;->top:I
 
     int-to-float v2, v2
 
-    .line 304
+    .line 236
     :goto_3
-    iget-boolean v3, p0, Lcom/whatsapp/PhotoView;->K:Z
+    iget-boolean v3, p0, Lcom/whatsapp/PhotoView;->E:Z
 
     if-eqz v3, :cond_d
 
-    iget-object v3, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
+    iget-object v3, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
 
     iget v3, v3, Landroid/graphics/Rect;->bottom:I
 
     int-to-float v3, v3
 
-    .line 292
+    .line 320
     :goto_4
-    iget-object v4, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    iget-object v4, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
     iget v6, v4, Landroid/graphics/RectF;->top:F
 
-    .line 300
-    iget-object v4, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    .line 261
+    iget-object v4, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
     iget v7, v4, Landroid/graphics/RectF;->bottom:F
 
-    .line 58
+    .line 115
     sub-float v4, v7, v6
 
     sub-float v8, v3, v2
@@ -615,7 +1843,7 @@
 
     if-gez v4, :cond_4
 
-    .line 290
+    .line 274
     sub-float v4, v3, v2
 
     add-float v8, v7, v6
@@ -628,29 +1856,29 @@
 
     if-eqz v5, :cond_f
 
-    .line 83
+    .line 253
     :cond_4
     cmpl-float v4, v6, v2
 
     if-lez v4, :cond_5
 
-    .line 235
+    .line 131
     sub-float/2addr v2, v6
 
     if-eqz v5, :cond_e
 
-    .line 289
+    .line 347
     :cond_5
     cmpg-float v2, v7, v3
 
     if-gez v2, :cond_6
 
-    .line 299
+    .line 259
     sub-float v2, v3, v7
 
     if-eqz v5, :cond_e
 
-    .line 148
+    .line 144
     :cond_6
     :goto_5
     invoke-static {v0}, Ljava/lang/Math;->abs(F)F
@@ -672,33 +1900,33 @@
     :cond_7
     if-nez p1, :cond_8
 
-    .line 35
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->b:Lcom/whatsapp/azf;
+    .line 85
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->l:Lcom/whatsapp/afo;
 
-    invoke-virtual {v2, v0, v1}, Lcom/whatsapp/azf;->a(FF)Z
+    invoke-virtual {v2, v0, v1}, Lcom/whatsapp/afo;->a(FF)Z
 
     if-eqz v5, :cond_9
 
-    .line 26
+    .line 228
     :cond_8
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
 
     invoke-virtual {v2, v0, v1}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
-    .line 251
+    .line 28
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->invalidate()V
 
-    .line 128
+    .line 238
     :cond_9
     return-void
 
     :cond_a
     move v0, v1
 
-    .line 249
+    .line 204
     goto/16 :goto_0
 
-    .line 370
+    .line 344
     :cond_b
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
 
@@ -711,10 +1939,10 @@
     :cond_c
     move v2, v1
 
-    .line 123
+    .line 329
     goto :goto_3
 
-    .line 304
+    .line 236
     :cond_d
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getHeight()I
 
@@ -740,1257 +1968,34 @@
     goto :goto_2
 .end method
 
-.method static a(Lcom/whatsapp/PhotoView;FF)Z
-    .locals 1
-
-    .prologue
-    .line 68
-    invoke-direct {p0, p1, p2}, Lcom/whatsapp/PhotoView;->b(FF)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method private b()V
-    .locals 14
-
-    .prologue
-    const/high16 v13, 0x3f800000
-
-    const/high16 v12, 0x43340000
-
-    const/high16 v9, 0x42b40000
-
-    const/high16 v11, 0x40400000
-
-    const/4 v10, 0x0
-
-    sget-boolean v3, Lcom/whatsapp/App;->aL:Z
-
-    .line 332
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
-
-    invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getIntrinsicWidth()I
-
-    move-result v4
-
-    .line 331
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
-
-    invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getIntrinsicHeight()I
-
-    move-result v5
-
-    .line 16
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->K:Z
-
-    if-eqz v0, :cond_f
-
-    sget v0, Lcom/whatsapp/PhotoView;->k:I
-
-    .line 173
-    :goto_0
-    iget-boolean v1, p0, Lcom/whatsapp/PhotoView;->K:Z
-
-    if-eqz v1, :cond_10
-
-    sget v2, Lcom/whatsapp/PhotoView;->k:I
-
-    .line 136
-    :goto_1
-    if-ltz v4, :cond_0
-
-    if-ne v0, v4, :cond_11
-
-    :cond_0
-    if-ltz v5, :cond_1
-
-    if-ne v2, v5, :cond_11
-
-    :cond_1
-    const/4 v1, 0x1
-
-    .line 86
-    :goto_2
-    iput v10, p0, Lcom/whatsapp/PhotoView;->P:F
-
-    .line 89
-    if-eqz v1, :cond_2
-
-    iget-boolean v1, p0, Lcom/whatsapp/PhotoView;->K:Z
-
-    if-nez v1, :cond_2
-
-    .line 97
-    iget-object v1, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
-
-    invoke-virtual {v1}, Landroid/graphics/Matrix;->reset()V
-
-    .line 204
-    iput v13, p0, Lcom/whatsapp/PhotoView;->B:F
-
-    .line 164
-    iput v13, p0, Lcom/whatsapp/PhotoView;->f:F
-
-    if-eqz v3, :cond_e
-
-    .line 174
-    :cond_2
-    iget-object v1, p0, Lcom/whatsapp/PhotoView;->c:Landroid/graphics/RectF;
-
-    int-to-float v6, v4
-
-    int-to-float v7, v5
-
-    invoke-virtual {v1, v10, v10, v6, v7}, Landroid/graphics/RectF;->set(FFFF)V
-
-    .line 202
-    iget-boolean v1, p0, Lcom/whatsapp/PhotoView;->K:Z
-
-    if-eqz v1, :cond_3
-
-    .line 66
-    iget-object v1, p0, Lcom/whatsapp/PhotoView;->z:Landroid/graphics/RectF;
-
-    iget-object v6, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
-
-    invoke-virtual {v1, v6}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
-
-    if-eqz v3, :cond_4
-
-    .line 42
-    :cond_3
-    iget-object v1, p0, Lcom/whatsapp/PhotoView;->z:Landroid/graphics/RectF;
-
-    int-to-float v6, v0
-
-    int-to-float v7, v2
-
-    invoke-virtual {v1, v10, v10, v6, v7}, Landroid/graphics/RectF;->set(FFFF)V
-
-    .line 271
-    :cond_4
-    iget-object v1, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
-
-    div-int/lit8 v6, v0, 0x2
-
-    div-int/lit8 v7, v4, 0x2
-
-    sub-int/2addr v6, v7
-
-    int-to-float v6, v6
-
-    div-int/lit8 v7, v2, 0x2
-
-    div-int/lit8 v8, v5, 0x2
-
-    sub-int/2addr v7, v8
-
-    int-to-float v7, v7
-
-    invoke-virtual {v1, v6, v7}, Landroid/graphics/Matrix;->setTranslate(FF)V
-
-    .line 113
-    iget v1, p0, Lcom/whatsapp/PhotoView;->j:I
-
-    if-eqz v1, :cond_19
-
-    .line 43
-    iget v1, p0, Lcom/whatsapp/PhotoView;->j:I
-
-    .line 176
-    :goto_3
-    iget v2, p0, Lcom/whatsapp/PhotoView;->l:F
-
-    rem-float/2addr v2, v12
-
-    invoke-static {v2}, Ljava/lang/Math;->abs(F)F
-
-    move-result v2
-
-    cmpl-float v2, v2, v9
-
-    if-nez v2, :cond_12
-
-    int-to-float v2, v0
-
-    int-to-float v6, v5
-
-    div-float/2addr v2, v6
-
-    int-to-float v6, v1
-
-    int-to-float v7, v4
-
-    div-float/2addr v6, v7
-
-    .line 179
-    invoke-static {v2, v6}, Ljava/lang/Math;->min(FF)F
-
-    move-result v2
-
-    .line 49
-    :goto_4
-    iput v2, p0, Lcom/whatsapp/PhotoView;->B:F
-
-    .line 381
-    iget v2, p0, Lcom/whatsapp/PhotoView;->B:F
-
-    invoke-static {v2, v11}, Ljava/lang/Math;->min(FF)F
-
-    move-result v2
-
-    iput v2, p0, Lcom/whatsapp/PhotoView;->B:F
-
-    .line 221
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->D:Lcom/whatsapp/af4;
-
-    sget-object v6, Lcom/whatsapp/af4;->CENTER_CROP:Lcom/whatsapp/af4;
-
-    if-ne v2, v6, :cond_5
-
-    .line 211
-    iget v2, p0, Lcom/whatsapp/PhotoView;->l:F
-
-    rem-float/2addr v2, v12
-
-    invoke-static {v2}, Ljava/lang/Math;->abs(F)F
-
-    move-result v2
-
-    cmpl-float v2, v2, v9
-
-    if-nez v2, :cond_13
-
-    int-to-float v2, v0
-
-    int-to-float v6, v5
-
-    div-float/2addr v2, v6
-
-    int-to-float v6, v1
-
-    int-to-float v7, v4
-
-    div-float/2addr v6, v7
-
-    .line 158
-    invoke-static {v2, v6}, Ljava/lang/Math;->max(FF)F
-
-    move-result v2
-
-    .line 367
-    :goto_5
-    if-eqz v3, :cond_8
-
-    .line 323
-    :cond_5
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->D:Lcom/whatsapp/af4;
-
-    sget-object v6, Lcom/whatsapp/af4;->FIT_WIDTH:Lcom/whatsapp/af4;
-
-    if-ne v2, v6, :cond_6
-
-    .line 230
-    iget v2, p0, Lcom/whatsapp/PhotoView;->l:F
-
-    rem-float/2addr v2, v12
-
-    invoke-static {v2}, Ljava/lang/Math;->abs(F)F
-
-    move-result v2
-
-    cmpl-float v2, v2, v9
-
-    if-nez v2, :cond_14
-
-    int-to-float v2, v0
-
-    int-to-float v6, v5
-
-    div-float/2addr v2, v6
-
-    :goto_6
-    if-eqz v3, :cond_8
-
-    .line 64
-    :cond_6
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->D:Lcom/whatsapp/af4;
-
-    sget-object v6, Lcom/whatsapp/af4;->FIT_HEIGHT:Lcom/whatsapp/af4;
-
-    if-ne v2, v6, :cond_7
-
-    .line 181
-    iget v2, p0, Lcom/whatsapp/PhotoView;->l:F
-
-    rem-float/2addr v2, v12
-
-    invoke-static {v2}, Ljava/lang/Math;->abs(F)F
-
-    move-result v2
-
-    cmpl-float v2, v2, v9
-
-    if-nez v2, :cond_15
-
-    int-to-float v2, v1
-
-    int-to-float v6, v4
-
-    div-float/2addr v2, v6
-
-    :goto_7
-    if-eqz v3, :cond_8
-
-    .line 98
-    :cond_7
-    iget v2, p0, Lcom/whatsapp/PhotoView;->B:F
-
-    .line 91
-    :cond_8
-    iget v6, p0, Lcom/whatsapp/PhotoView;->l:F
-
-    rem-float/2addr v6, v12
-
-    invoke-static {v6}, Ljava/lang/Math;->abs(F)F
-
-    move-result v6
-
-    cmpl-float v6, v6, v9
-
-    if-nez v6, :cond_a
-
-    .line 269
-    int-to-float v6, v0
-
-    int-to-float v7, v5
-
-    div-float/2addr v6, v7
-
-    .line 144
-    int-to-float v7, v1
-
-    int-to-float v8, v4
-
-    div-float/2addr v7, v8
-
-    .line 383
-    div-float v8, v6, v7
-
-    sub-float/2addr v8, v13
-
-    invoke-static {v8}, Ljava/lang/Math;->abs(F)F
-
-    move-result v8
-
-    iget v9, p0, Lcom/whatsapp/PhotoView;->M:F
-
-    cmpg-float v8, v8, v9
-
-    if-gez v8, :cond_9
-
-    .line 149
-    invoke-static {v6, v7}, Ljava/lang/Math;->max(FF)F
-
-    move-result v2
-
-    iput v2, p0, Lcom/whatsapp/PhotoView;->P:F
-
-    .line 307
-    iget v2, p0, Lcom/whatsapp/PhotoView;->P:F
-
-    .line 152
-    :cond_9
-    if-eqz v3, :cond_b
-
-    .line 327
-    :cond_a
-    int-to-float v6, v0
-
-    int-to-float v7, v4
-
-    div-float/2addr v6, v7
-
-    .line 325
-    int-to-float v7, v1
-
-    int-to-float v8, v5
-
-    div-float/2addr v7, v8
-
-    .line 103
-    div-float v8, v6, v7
-
-    sub-float/2addr v8, v13
-
-    invoke-static {v8}, Ljava/lang/Math;->abs(F)F
-
-    move-result v8
-
-    iget v9, p0, Lcom/whatsapp/PhotoView;->M:F
-
-    cmpg-float v8, v8, v9
-
-    if-gez v8, :cond_b
-
-    .line 36
-    invoke-static {v6, v7}, Ljava/lang/Math;->max(FF)F
-
-    move-result v2
-
-    iput v2, p0, Lcom/whatsapp/PhotoView;->P:F
-
-    .line 286
-    iget v2, p0, Lcom/whatsapp/PhotoView;->P:F
-
-    .line 199
-    :cond_b
-    iget v6, p0, Lcom/whatsapp/PhotoView;->f:F
-
-    cmpl-float v6, v6, v10
-
-    if-nez v6, :cond_c
-
-    .line 243
-    invoke-static {v2, v11}, Ljava/lang/Math;->min(FF)F
-
-    move-result v6
-
-    iput v6, p0, Lcom/whatsapp/PhotoView;->f:F
-
-    .line 126
-    :cond_c
-    iget-boolean v6, p0, Lcom/whatsapp/PhotoView;->I:Z
-
-    if-eqz v6, :cond_16
-
-    iget-boolean v6, p0, Lcom/whatsapp/PhotoView;->C:Z
-
-    if-eqz v6, :cond_16
-
-    .line 216
-    :cond_d
-    :goto_8
-    iput v0, p0, Lcom/whatsapp/PhotoView;->O:I
-
-    .line 92
-    iput v1, p0, Lcom/whatsapp/PhotoView;->s:I
-
-    .line 356
-    iget v0, p0, Lcom/whatsapp/PhotoView;->P:F
-
-    invoke-static {v0, v11}, Ljava/lang/Math;->min(FF)F
-
-    move-result v0
-
-    iput v0, p0, Lcom/whatsapp/PhotoView;->P:F
-
-    .line 210
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
-
-    iget v1, p0, Lcom/whatsapp/PhotoView;->f:F
-
-    iget v2, p0, Lcom/whatsapp/PhotoView;->f:F
-
-    div-int/lit8 v3, v4, 0x2
-
-    int-to-float v3, v3
-
-    div-int/lit8 v4, v5, 0x2
-
-    int-to-float v4, v4
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/Matrix;->preScale(FFFF)Z
-
-    .line 67
-    :cond_e
-    iget v0, p0, Lcom/whatsapp/PhotoView;->B:F
-
-    const/high16 v1, 0x41000000
-
-    mul-float/2addr v0, v1
-
-    const/high16 v1, 0x41000000
-
-    invoke-static {v0, v1}, Ljava/lang/Math;->max(FF)F
-
-    move-result v0
-
-    iput v0, p0, Lcom/whatsapp/PhotoView;->u:F
-
-    .line 336
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
-
-    iget v1, p0, Lcom/whatsapp/PhotoView;->l:F
-
-    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
-
-    move-result v2
-
-    div-int/lit8 v2, v2, 0x2
-
-    int-to-float v2, v2
-
-    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getHeight()I
-
-    move-result v3
-
-    div-int/lit8 v3, v3, 0x2
-
-    int-to-float v3, v3
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/graphics/Matrix;->postRotate(FFF)Z
-
-    .line 141
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->F:Landroid/graphics/Matrix;
-
-    iget-object v1, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
-
-    invoke-virtual {v0, v1}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
-
-    .line 81
-    return-void
-
-    .line 16
-    :cond_f
-    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
-
-    move-result v0
-
-    goto/16 :goto_0
-
-    .line 173
-    :cond_10
-    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getHeight()I
-
-    move-result v2
-
-    goto/16 :goto_1
-
-    .line 136
-    :cond_11
-    const/4 v1, 0x0
-
-    goto/16 :goto_2
-
-    .line 179
-    :cond_12
-    int-to-float v2, v0
-
-    int-to-float v6, v4
-
-    div-float/2addr v2, v6
-
-    int-to-float v6, v1
-
-    int-to-float v7, v5
-
-    div-float/2addr v6, v7
-
-    .line 49
-    invoke-static {v2, v6}, Ljava/lang/Math;->min(FF)F
-
-    move-result v2
-
-    goto/16 :goto_4
-
-    .line 158
-    :cond_13
-    int-to-float v2, v0
-
-    int-to-float v6, v4
-
-    div-float/2addr v2, v6
-
-    int-to-float v6, v1
-
-    int-to-float v7, v5
-
-    div-float/2addr v6, v7
-
-    .line 367
-    invoke-static {v2, v6}, Ljava/lang/Math;->max(FF)F
-
-    move-result v2
-
-    goto/16 :goto_5
-
-    .line 230
-    :cond_14
-    int-to-float v2, v0
-
-    int-to-float v6, v4
-
-    div-float/2addr v2, v6
-
-    goto/16 :goto_6
-
-    .line 181
-    :cond_15
-    int-to-float v2, v1
-
-    int-to-float v6, v5
-
-    div-float/2addr v2, v6
-
-    goto/16 :goto_7
-
-    .line 102
-    :cond_16
-    iget-boolean v6, p0, Lcom/whatsapp/PhotoView;->C:Z
-
-    if-eqz v6, :cond_17
-
-    .line 132
-    iget v6, p0, Lcom/whatsapp/PhotoView;->O:I
-
-    if-eq v6, v0, :cond_d
-
-    .line 56
-    invoke-static {v2, v11}, Ljava/lang/Math;->min(FF)F
-
-    move-result v6
-
-    iput v6, p0, Lcom/whatsapp/PhotoView;->f:F
-
-    if-eqz v3, :cond_d
-
-    .line 140
-    :cond_17
-    iget-boolean v6, p0, Lcom/whatsapp/PhotoView;->I:Z
-
-    if-eqz v6, :cond_18
-
-    .line 205
-    iget v6, p0, Lcom/whatsapp/PhotoView;->s:I
-
-    if-eq v6, v1, :cond_d
-
-    .line 273
-    invoke-static {v2, v11}, Ljava/lang/Math;->min(FF)F
-
-    move-result v6
-
-    iput v6, p0, Lcom/whatsapp/PhotoView;->f:F
-
-    if-eqz v3, :cond_d
-
-    .line 380
-    :cond_18
-    invoke-static {v2, v11}, Ljava/lang/Math;->min(FF)F
-
-    move-result v2
-
-    iput v2, p0, Lcom/whatsapp/PhotoView;->f:F
-
-    goto/16 :goto_8
-
-    :cond_19
-    move v1, v2
-
-    goto/16 :goto_3
-.end method
-
-.method static b(Lcom/whatsapp/PhotoView;Z)V
-    .locals 0
-
-    .prologue
-    .line 387
-    invoke-direct {p0, p1}, Lcom/whatsapp/PhotoView;->c(Z)V
-
-    return-void
-.end method
-
-.method private b(FF)Z
-    .locals 9
-
-    .prologue
-    const/high16 v8, 0x40000000
-
-    const/4 v1, 0x0
-
-    sget-boolean v4, Lcom/whatsapp/App;->aL:Z
-
-    .line 373
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
-
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->c:Landroid/graphics/RectF;
-
-    invoke-virtual {v0, v2}, Landroid/graphics/RectF;->set(Landroid/graphics/RectF;)V
-
-    .line 100
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
-
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
-
-    invoke-virtual {v0, v2}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;)Z
-
-    .line 363
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->K:Z
-
-    if-eqz v0, :cond_5
-
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
-
-    iget v0, v0, Landroid/graphics/Rect;->left:I
-
-    int-to-float v0, v0
-
-    .line 37
-    :goto_0
-    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->K:Z
-
-    if-eqz v2, :cond_6
-
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->right:I
-
-    int-to-float v2, v2
-
-    .line 326
-    :goto_1
-    iget-object v3, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
-
-    iget v5, v3, Landroid/graphics/RectF;->left:F
-
-    .line 357
-    iget-object v3, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
-
-    iget v6, v3, Landroid/graphics/RectF;->right:F
-
-    .line 143
-    iget-boolean v3, p0, Lcom/whatsapp/PhotoView;->K:Z
-
-    if-eqz v3, :cond_0
-
-    .line 70
-    iget-object v3, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
-
-    iget v3, v3, Landroid/graphics/RectF;->right:F
-
-    sub-float v3, v0, v3
-
-    iget-object v7, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
-
-    iget v7, v7, Landroid/graphics/RectF;->left:F
-
-    sub-float v7, v2, v7
-
-    .line 209
-    invoke-static {v7, p1}, Ljava/lang/Math;->min(FF)F
-
-    move-result v7
-
-    .line 40
-    invoke-static {v3, v7}, Ljava/lang/Math;->max(FF)F
-
-    move-result v3
-
-    if-eqz v4, :cond_a
-
-    .line 258
-    :cond_0
-    sub-float v3, v6, v5
-
-    sub-float v7, v2, v0
-
-    cmpg-float v3, v3, v7
-
-    if-gez v3, :cond_1
-
-    .line 345
-    sub-float v3, v2, v0
-
-    add-float v7, v6, v5
-
-    sub-float/2addr v3, v7
-
-    div-float/2addr v3, v8
-
-    add-float/2addr v3, v0
-
-    if-eqz v4, :cond_a
-
-    .line 201
-    :cond_1
-    sub-float/2addr v2, v6
-
-    sub-float/2addr v0, v5
-
-    invoke-static {v0, p1}, Ljava/lang/Math;->min(FF)F
-
-    move-result v0
-
-    invoke-static {v2, v0}, Ljava/lang/Math;->max(FF)F
-
-    move-result v0
-
-    .line 294
-    :goto_2
-    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->K:Z
-
-    if-eqz v2, :cond_2
-
-    iget-object v1, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->top:I
-
-    int-to-float v1, v1
-
-    .line 274
-    :cond_2
-    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->K:Z
-
-    if-eqz v2, :cond_7
-
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->bottom:I
-
-    int-to-float v2, v2
-
-    .line 52
-    :goto_3
-    iget-object v3, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
-
-    iget v5, v3, Landroid/graphics/RectF;->top:F
-
-    .line 167
-    iget-object v3, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
-
-    iget v6, v3, Landroid/graphics/RectF;->bottom:F
-
-    .line 366
-    iget-boolean v3, p0, Lcom/whatsapp/PhotoView;->K:Z
-
-    if-eqz v3, :cond_3
-
-    .line 227
-    iget-object v3, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
-
-    iget v3, v3, Landroid/graphics/RectF;->bottom:F
-
-    sub-float v3, v1, v3
-
-    iget-object v7, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
-
-    iget v7, v7, Landroid/graphics/RectF;->top:F
-
-    sub-float v7, v2, v7
-
-    .line 62
-    invoke-static {v7, p2}, Ljava/lang/Math;->min(FF)F
-
-    move-result v7
-
-    .line 50
-    invoke-static {v3, v7}, Ljava/lang/Math;->max(FF)F
-
-    move-result v3
-
-    if-eqz v4, :cond_9
-
-    .line 71
-    :cond_3
-    sub-float v3, v6, v5
-
-    sub-float v7, v2, v1
-
-    cmpg-float v3, v3, v7
-
-    if-gez v3, :cond_4
-
-    .line 169
-    sub-float v3, v2, v1
-
-    add-float v7, v6, v5
-
-    sub-float/2addr v3, v7
-
-    div-float/2addr v3, v8
-
-    add-float/2addr v3, v1
-
-    if-eqz v4, :cond_9
-
-    .line 19
-    :cond_4
-    sub-float/2addr v2, v6
-
-    sub-float/2addr v1, v5
-
-    invoke-static {v1, p2}, Ljava/lang/Math;->min(FF)F
-
-    move-result v1
-
-    invoke-static {v2, v1}, Ljava/lang/Math;->max(FF)F
-
-    move-result v1
-
-    .line 330
-    :goto_4
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
-
-    invoke-virtual {v2, v0, v1}, Landroid/graphics/Matrix;->postTranslate(FF)Z
-
-    .line 233
-    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->invalidate()V
-
-    .line 344
-    cmpl-float v0, v0, p1
-
-    if-nez v0, :cond_8
-
-    cmpl-float v0, v1, p2
-
-    if-nez v0, :cond_8
-
-    const/4 v0, 0x1
-
-    :goto_5
-    return v0
-
-    :cond_5
-    move v0, v1
-
-    .line 363
-    goto/16 :goto_0
-
-    .line 37
-    :cond_6
-    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    goto/16 :goto_1
-
-    .line 274
-    :cond_7
-    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getHeight()I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    goto :goto_3
-
-    .line 344
-    :cond_8
-    const/4 v0, 0x0
-
-    goto :goto_5
-
-    :cond_9
-    move v1, v3
-
-    goto :goto_4
-
-    :cond_a
-    move v0, v3
-
-    goto :goto_2
-.end method
-
-.method private c(Z)V
-    .locals 6
-
-    .prologue
-    const/4 v2, 0x0
-
-    .line 320
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
-
-    if-eqz v0, :cond_0
-
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->n:Z
-
-    if-nez v0, :cond_1
-
-    .line 360
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 95
-    :cond_1
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
-
-    invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getIntrinsicWidth()I
-
-    move-result v0
-
-    .line 115
-    iget-object v1, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
-
-    invoke-virtual {v1}, Landroid/graphics/drawable/BitmapDrawable;->getIntrinsicHeight()I
-
-    move-result v1
-
-    .line 11
-    iget-object v3, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
-
-    invoke-virtual {v3, v2, v2, v0, v1}, Landroid/graphics/drawable/BitmapDrawable;->setBounds(IIII)V
-
-    .line 206
-    iget v3, p0, Lcom/whatsapp/PhotoView;->l:F
-
-    const/high16 v4, 0x43340000
-
-    rem-float/2addr v3, v4
-
-    invoke-static {v3}, Ljava/lang/Math;->abs(F)F
-
-    move-result v3
-
-    const/high16 v4, 0x42b40000
-
-    cmpl-float v3, v3, v4
-
-    if-nez v3, :cond_9
-
-    .line 260
-    :goto_1
-    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
-
-    move-result v3
-
-    .line 195
-    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getHeight()I
-
-    move-result v4
-
-    .line 316
-    if-ltz v1, :cond_2
-
-    if-ne v3, v1, :cond_8
-
-    :cond_2
-    if-ltz v0, :cond_3
-
-    if-ne v4, v0, :cond_8
-
-    :cond_3
-    const/4 v0, 0x1
-
-    .line 2
-    :goto_2
-    if-nez p1, :cond_4
-
-    iget v1, p0, Lcom/whatsapp/PhotoView;->B:F
-
-    const/4 v2, 0x0
-
-    cmpl-float v1, v1, v2
-
-    if-nez v1, :cond_5
-
-    iget-object v1, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
-
-    if-eqz v1, :cond_5
-
-    iget-boolean v1, p0, Lcom/whatsapp/PhotoView;->n:Z
-
-    if-eqz v1, :cond_5
-
-    .line 107
-    :cond_4
-    invoke-direct {p0}, Lcom/whatsapp/PhotoView;->b()V
-
-    .line 82
-    :cond_5
-    if-nez v0, :cond_6
-
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
-
-    invoke-virtual {v0}, Landroid/graphics/Matrix;->isIdentity()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_7
-
-    .line 15
-    :cond_6
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->m:Landroid/graphics/Matrix;
-
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
-
-    if-eqz v0, :cond_0
-
-    .line 382
-    :cond_7
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
-
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->m:Landroid/graphics/Matrix;
-
-    goto :goto_0
-
-    :cond_8
-    move v0, v2
-
-    .line 316
-    goto :goto_2
-
-    :cond_9
-    move v5, v1
-
-    move v1, v0
-
-    move v0, v5
-
-    goto :goto_1
-.end method
-
-.method private f()V
-    .locals 4
-
-    .prologue
-    const/4 v3, 0x1
-
-    .line 55
-    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    .line 178
-    sget-boolean v1, Lcom/whatsapp/PhotoView;->w:Z
-
-    if-nez v1, :cond_0
-
-    .line 318
-    sput-boolean v3, Lcom/whatsapp/PhotoView;->w:Z
-
-    .line 306
-    new-instance v1, Landroid/graphics/Paint;
-
-    invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
-
-    sput-object v1, Lcom/whatsapp/PhotoView;->x:Landroid/graphics/Paint;
-
-    .line 135
-    sget-object v1, Lcom/whatsapp/PhotoView;->x:Landroid/graphics/Paint;
-
-    invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setAntiAlias(Z)V
-
-    .line 130
-    sget-object v1, Lcom/whatsapp/PhotoView;->x:Landroid/graphics/Paint;
-
-    sget-object v2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
-
-    invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
-
-    .line 4
-    new-instance v1, Landroid/graphics/Paint;
-
-    invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
-
-    sput-object v1, Lcom/whatsapp/PhotoView;->G:Landroid/graphics/Paint;
-
-    .line 172
-    sget-object v1, Lcom/whatsapp/PhotoView;->G:Landroid/graphics/Paint;
-
-    invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setAntiAlias(Z)V
-
-    .line 238
-    sget-object v1, Lcom/whatsapp/PhotoView;->G:Landroid/graphics/Paint;
-
-    sget-object v2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
-
-    invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
-
-    .line 106
-    :cond_0
-    new-instance v1, Landroid/support/v4/view/GestureDetectorCompat;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v1, v0, p0, v2}, Landroid/support/v4/view/GestureDetectorCompat;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;Landroid/os/Handler;)V
-
-    iput-object v1, p0, Lcom/whatsapp/PhotoView;->o:Landroid/support/v4/view/GestureDetectorCompat;
-
-    .line 308
-    new-instance v1, Landroid/view/ScaleGestureDetector;
-
-    invoke-direct {v1, v0, p0}, Landroid/view/ScaleGestureDetector;-><init>(Landroid/content/Context;Landroid/view/ScaleGestureDetector$OnScaleGestureListener;)V
-
-    iput-object v1, p0, Lcom/whatsapp/PhotoView;->v:Landroid/view/ScaleGestureDetector;
-
-    .line 112
-    new-instance v0, Lcom/whatsapp/al7;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/al7;-><init>(Lcom/whatsapp/PhotoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->h:Lcom/whatsapp/al7;
-
-    .line 343
-    new-instance v0, Lcom/whatsapp/av7;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/av7;-><init>(Lcom/whatsapp/PhotoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->a:Lcom/whatsapp/av7;
-
-    .line 275
-    new-instance v0, Lcom/whatsapp/azf;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/azf;-><init>(Lcom/whatsapp/PhotoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->b:Lcom/whatsapp/azf;
-
-    .line 348
-    new-instance v0, Lcom/whatsapp/a2i;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/a2i;-><init>(Lcom/whatsapp/PhotoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/PhotoView;->y:Lcom/whatsapp/a2i;
-
-    .line 80
-    return-void
-.end method
-
 
 # virtual methods
-.method protected a()F
-    .locals 1
-
-    .prologue
-    .line 263
-    iget v0, p0, Lcom/whatsapp/PhotoView;->B:F
-
-    return v0
-.end method
-
 .method public a(FZ)V
     .locals 3
 
     .prologue
-    .line 51
+    .line 365
     if-eqz p2, :cond_0
 
-    .line 147
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->y:Lcom/whatsapp/a2i;
+    .line 102
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->F:Lcom/whatsapp/ty;
 
-    invoke-virtual {v0, p1}, Lcom/whatsapp/a2i;->a(F)V
+    invoke-virtual {v0, p1}, Lcom/whatsapp/ty;->a(F)V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 265
+    .line 138
     :cond_0
-    iget v0, p0, Lcom/whatsapp/PhotoView;->l:F
+    iget v0, p0, Lcom/whatsapp/PhotoView;->p:F
 
     add-float/2addr v0, p1
 
-    iput v0, p0, Lcom/whatsapp/PhotoView;->l:F
+    iput v0, p0, Lcom/whatsapp/PhotoView;->p:F
 
-    .line 134
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
+    .line 234
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
 
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
 
@@ -2010,10 +2015,10 @@
 
     invoke-virtual {v0, p1, v1, v2}, Landroid/graphics/Matrix;->postRotate(FFF)Z
 
-    .line 311
+    .line 205
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->invalidate()V
 
-    .line 268
+    .line 346
     :cond_1
     return-void
 .end method
@@ -2024,33 +2029,33 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 385
-    .line 190
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
+    .line 242
+    .line 208
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
 
     if-eqz v0, :cond_5
 
-    .line 21
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
+    .line 192
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 7
+    .line 377
     if-ne p1, v0, :cond_0
 
-    .line 207
+    .line 148
     :goto_0
     return-void
 
-    .line 162
+    .line 134
     :cond_0
     if-eqz p1, :cond_4
 
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
 
-    .line 362
+    .line 5
     invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getIntrinsicWidth()I
 
     move-result v0
@@ -2061,9 +2066,9 @@
 
     if-ne v0, v2, :cond_1
 
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
 
-    .line 284
+    .line 379
     invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getIntrinsicHeight()I
 
     move-result v0
@@ -2077,26 +2082,26 @@
     :cond_1
     const/4 v0, 0x1
 
-    .line 340
+    .line 296
     :goto_1
     const/4 v2, 0x0
 
-    iput v2, p0, Lcom/whatsapp/PhotoView;->B:F
+    iput v2, p0, Lcom/whatsapp/PhotoView;->s:F
 
-    .line 337
+    .line 64
     const/4 v2, 0x0
 
-    iput-object v2, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
+    iput-object v2, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
 
-    .line 228
+    .line 81
     :goto_2
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
 
     if-nez v2, :cond_2
 
     if-eqz p1, :cond_2
 
-    .line 374
+    .line 345
     new-instance v2, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getResources()Landroid/content/res/Resources;
@@ -2105,23 +2110,23 @@
 
     invoke-direct {v2, v3, p1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    iput-object v2, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
+    iput-object v2, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
 
-    .line 310
+    .line 41
     :cond_2
     if-eqz v0, :cond_3
 
-    .line 53
-    iput v1, p0, Lcom/whatsapp/PhotoView;->O:I
+    .line 171
+    iput v1, p0, Lcom/whatsapp/PhotoView;->y:I
 
-    .line 339
-    iput v1, p0, Lcom/whatsapp/PhotoView;->s:I
+    .line 273
+    iput v1, p0, Lcom/whatsapp/PhotoView;->L:I
 
-    .line 177
+    .line 351
     :cond_3
-    invoke-direct {p0, v0}, Lcom/whatsapp/PhotoView;->c(Z)V
+    invoke-direct {p0, v0}, Lcom/whatsapp/PhotoView;->b(Z)V
 
-    .line 69
+    .line 342
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->invalidate()V
 
     goto :goto_0
@@ -2129,7 +2134,7 @@
     :cond_4
     move v0, v1
 
-    .line 284
+    .line 379
     goto :goto_1
 
     :cond_5
@@ -2138,7 +2143,108 @@
     goto :goto_2
 .end method
 
-.method public a(FF)Z
+.method public a(Z)V
+    .locals 1
+
+    .prologue
+    .line 373
+    iput-boolean p1, p0, Lcom/whatsapp/PhotoView;->c:Z
+
+    .line 155
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->c:Z
+
+    if-nez v0, :cond_0
+
+    .line 207
+    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->g()V
+
+    .line 249
+    :cond_0
+    return-void
+.end method
+
+.method public b()V
+    .locals 2
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 157
+    iput-object v1, p0, Lcom/whatsapp/PhotoView;->i:Landroid/support/v4/view/GestureDetectorCompat;
+
+    .line 1
+    iput-object v1, p0, Lcom/whatsapp/PhotoView;->G:Landroid/view/ScaleGestureDetector;
+
+    .line 215
+    iput-object v1, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
+
+    .line 314
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->I:Lcom/whatsapp/ap1;
+
+    if-eqz v0, :cond_0
+
+    .line 186
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->I:Lcom/whatsapp/ap1;
+
+    invoke-virtual {v0}, Lcom/whatsapp/ap1;->a()V
+
+    .line 381
+    :cond_0
+    iput-object v1, p0, Lcom/whatsapp/PhotoView;->I:Lcom/whatsapp/ap1;
+
+    .line 275
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->x:Lcom/whatsapp/k9;
+
+    if-eqz v0, :cond_1
+
+    .line 254
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->x:Lcom/whatsapp/k9;
+
+    invoke-virtual {v0}, Lcom/whatsapp/k9;->a()V
+
+    .line 349
+    :cond_1
+    iput-object v1, p0, Lcom/whatsapp/PhotoView;->x:Lcom/whatsapp/k9;
+
+    .line 182
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->l:Lcom/whatsapp/afo;
+
+    if-eqz v0, :cond_2
+
+    .line 311
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->l:Lcom/whatsapp/afo;
+
+    invoke-virtual {v0}, Lcom/whatsapp/afo;->a()V
+
+    .line 193
+    :cond_2
+    iput-object v1, p0, Lcom/whatsapp/PhotoView;->l:Lcom/whatsapp/afo;
+
+    .line 173
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->F:Lcom/whatsapp/ty;
+
+    if-eqz v0, :cond_3
+
+    .line 10
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->F:Lcom/whatsapp/ty;
+
+    invoke-virtual {v0}, Lcom/whatsapp/ty;->a()V
+
+    .line 219
+    :cond_3
+    iput-object v1, p0, Lcom/whatsapp/PhotoView;->F:Lcom/whatsapp/ty;
+
+    .line 339
+    invoke-virtual {p0, v1}, Lcom/whatsapp/PhotoView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 124
+    iput-object v1, p0, Lcom/whatsapp/PhotoView;->H:Landroid/view/View$OnClickListener;
+
+    .line 151
+    return-void
+.end method
+
+.method public b(FF)Z
     .locals 4
 
     .prologue
@@ -2146,30 +2252,30 @@
 
     const/4 v1, 0x0
 
-    .line 85
-    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->L:Z
+    .line 174
+    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->c:Z
 
     if-nez v2, :cond_1
 
     move v0, v1
 
-    .line 349
+    .line 334
     :cond_0
     :goto_0
     return v0
 
-    .line 137
+    .line 230
     :cond_1
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->a:Lcom/whatsapp/av7;
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->x:Lcom/whatsapp/k9;
 
-    invoke-static {v2}, Lcom/whatsapp/av7;->a(Lcom/whatsapp/av7;)Z
+    invoke-static {v2}, Lcom/whatsapp/k9;->a(Lcom/whatsapp/k9;)Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 355
-    iget v2, p0, Lcom/whatsapp/PhotoView;->P:F
+    .line 212
+    iget v2, p0, Lcom/whatsapp/PhotoView;->D:F
 
     const/4 v3, 0x0
 
@@ -2177,12 +2283,12 @@
 
     if-nez v2, :cond_2
 
-    .line 349
+    .line 334
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->d()F
 
     move-result v2
 
-    iget v3, p0, Lcom/whatsapp/PhotoView;->B:F
+    iget v3, p0, Lcom/whatsapp/PhotoView;->s:F
 
     cmpl-float v2, v2, v3
 
@@ -2192,13 +2298,13 @@
 
     goto :goto_0
 
-    .line 29
+    .line 319
     :cond_2
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->d()F
 
     move-result v2
 
-    iget v3, p0, Lcom/whatsapp/PhotoView;->P:F
+    iget v3, p0, Lcom/whatsapp/PhotoView;->D:F
 
     cmpl-float v2, v2, v3
 
@@ -2209,107 +2315,6 @@
     goto :goto_0
 .end method
 
-.method public b(Z)V
-    .locals 1
-
-    .prologue
-    .line 45
-    iput-boolean p1, p0, Lcom/whatsapp/PhotoView;->L:Z
-
-    .line 215
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->L:Z
-
-    if-nez v0, :cond_0
-
-    .line 77
-    invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->g()V
-
-    .line 252
-    :cond_0
-    return-void
-.end method
-
-.method public c()V
-    .locals 2
-
-    .prologue
-    const/4 v1, 0x0
-
-    .line 183
-    iput-object v1, p0, Lcom/whatsapp/PhotoView;->o:Landroid/support/v4/view/GestureDetectorCompat;
-
-    .line 22
-    iput-object v1, p0, Lcom/whatsapp/PhotoView;->v:Landroid/view/ScaleGestureDetector;
-
-    .line 338
-    iput-object v1, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
-
-    .line 312
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->h:Lcom/whatsapp/al7;
-
-    if-eqz v0, :cond_0
-
-    .line 163
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->h:Lcom/whatsapp/al7;
-
-    invoke-virtual {v0}, Lcom/whatsapp/al7;->a()V
-
-    .line 244
-    :cond_0
-    iput-object v1, p0, Lcom/whatsapp/PhotoView;->h:Lcom/whatsapp/al7;
-
-    .line 375
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->a:Lcom/whatsapp/av7;
-
-    if-eqz v0, :cond_1
-
-    .line 188
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->a:Lcom/whatsapp/av7;
-
-    invoke-virtual {v0}, Lcom/whatsapp/av7;->a()V
-
-    .line 353
-    :cond_1
-    iput-object v1, p0, Lcom/whatsapp/PhotoView;->a:Lcom/whatsapp/av7;
-
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->b:Lcom/whatsapp/azf;
-
-    if-eqz v0, :cond_2
-
-    .line 127
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->b:Lcom/whatsapp/azf;
-
-    invoke-virtual {v0}, Lcom/whatsapp/azf;->a()V
-
-    .line 47
-    :cond_2
-    iput-object v1, p0, Lcom/whatsapp/PhotoView;->b:Lcom/whatsapp/azf;
-
-    .line 93
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->y:Lcom/whatsapp/a2i;
-
-    if-eqz v0, :cond_3
-
-    .line 94
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->y:Lcom/whatsapp/a2i;
-
-    invoke-virtual {v0}, Lcom/whatsapp/a2i;->a()V
-
-    .line 377
-    :cond_3
-    iput-object v1, p0, Lcom/whatsapp/PhotoView;->y:Lcom/whatsapp/a2i;
-
-    .line 3
-    invoke-virtual {p0, v1}, Lcom/whatsapp/PhotoView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 259
-    iput-object v1, p0, Lcom/whatsapp/PhotoView;->J:Landroid/view/View$OnClickListener;
-
-    .line 65
-    return-void
-.end method
-
 .method public c(FF)Z
     .locals 4
 
@@ -2318,30 +2323,30 @@
 
     const/4 v1, 0x0
 
-    .line 342
-    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->L:Z
+    .line 360
+    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->c:Z
 
     if-nez v2, :cond_1
 
     move v0, v1
 
-    .line 250
+    .line 328
     :cond_0
     :goto_0
     return v0
 
-    .line 322
+    .line 386
     :cond_1
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->a:Lcom/whatsapp/av7;
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->x:Lcom/whatsapp/k9;
 
-    invoke-static {v2}, Lcom/whatsapp/av7;->a(Lcom/whatsapp/av7;)Z
+    invoke-static {v2}, Lcom/whatsapp/k9;->a(Lcom/whatsapp/k9;)Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 138
-    iget v2, p0, Lcom/whatsapp/PhotoView;->P:F
+    .line 263
+    iget v2, p0, Lcom/whatsapp/PhotoView;->D:F
 
     const/4 v3, 0x0
 
@@ -2349,12 +2354,12 @@
 
     if-nez v2, :cond_2
 
-    .line 60
+    .line 328
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->d()F
 
     move-result v2
 
-    iget v3, p0, Lcom/whatsapp/PhotoView;->B:F
+    iget v3, p0, Lcom/whatsapp/PhotoView;->s:F
 
     cmpl-float v2, v2, v3
 
@@ -2370,7 +2375,7 @@
 
     move-result v2
 
-    iget v3, p0, Lcom/whatsapp/PhotoView;->P:F
+    iget v3, p0, Lcom/whatsapp/PhotoView;->D:F
 
     cmpl-float v2, v2, v3
 
@@ -2385,24 +2390,34 @@
     .locals 1
 
     .prologue
-    .line 376
-    iget v0, p0, Lcom/whatsapp/PhotoView;->f:F
+    .line 39
+    iget v0, p0, Lcom/whatsapp/PhotoView;->z:F
 
     return v0
 .end method
 
-.method public e()V
+.method protected e()F
+    .locals 1
+
+    .prologue
+    .line 59
+    iget v0, p0, Lcom/whatsapp/PhotoView;->s:F
+
+    return v0
+.end method
+
+.method public f()V
     .locals 2
 
     .prologue
-    .line 293
+    .line 90
     const/high16 v0, 0x42b40000
 
     const/4 v1, 0x1
 
     invoke-virtual {p0, v0, v1}, Lcom/whatsapp/PhotoView;->a(FZ)V
 
-    .line 79
+    .line 312
     return-void
 .end method
 
@@ -2410,33 +2425,33 @@
     .locals 2
 
     .prologue
-    .line 161
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
+    .line 341
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
 
-    iget-object v1, p0, Lcom/whatsapp/PhotoView;->F:Landroid/graphics/Matrix;
+    iget-object v1, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
 
-    .line 278
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->t:Landroid/graphics/Matrix;
+    .line 165
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->K:Landroid/graphics/Matrix;
 
-    iget-object v1, p0, Lcom/whatsapp/PhotoView;->E:[F
+    iget-object v1, p0, Lcom/whatsapp/PhotoView;->J:[F
 
     invoke-virtual {v0, v1}, Landroid/graphics/Matrix;->getValues([F)V
 
-    .line 192
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->E:[F
+    .line 76
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->J:[F
 
     const/4 v1, 0x0
 
     aget v0, v0, v1
 
-    iput v0, p0, Lcom/whatsapp/PhotoView;->f:F
+    iput v0, p0, Lcom/whatsapp/PhotoView;->z:F
 
-    .line 20
+    .line 390
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->invalidate()V
 
-    .line 124
+    .line 55
     return-void
 .end method
 
@@ -2444,14 +2459,14 @@
     .locals 2
 
     .prologue
-    .line 151
+    .line 38
     const/high16 v0, -0x3d4c0000
 
     const/4 v1, 0x1
 
     invoke-virtual {p0, v0, v1}, Lcom/whatsapp/PhotoView;->a(FZ)V
 
-    .line 159
+    .line 358
     return-void
 .end method
 
@@ -2459,27 +2474,27 @@
     .locals 5
 
     .prologue
-    .line 1
+    .line 350
     iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->e:Z
 
     if-eqz v0, :cond_2
 
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->L:Z
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->c:Z
 
     if-eqz v0, :cond_2
 
-    .line 314
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->g:Z
+    .line 185
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->j:Z
 
     if-nez v0, :cond_1
 
-    .line 213
+    .line 86
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->d()F
 
     move-result v1
 
-    .line 333
-    iget v0, p0, Lcom/whatsapp/PhotoView;->B:F
+    .line 113
+    iget v0, p0, Lcom/whatsapp/PhotoView;->s:F
 
     cmpl-float v0, v1, v0
 
@@ -2487,30 +2502,30 @@
 
     const/high16 v0, 0x40200000
 
-    .line 364
+    .line 12
     :goto_0
-    iget v2, p0, Lcom/whatsapp/PhotoView;->B:F
+    iget v2, p0, Lcom/whatsapp/PhotoView;->s:F
 
     invoke-static {v2, v0}, Ljava/lang/Math;->max(FF)F
 
     move-result v0
 
-    .line 24
-    iget v2, p0, Lcom/whatsapp/PhotoView;->u:F
+    .line 17
+    iget v2, p0, Lcom/whatsapp/PhotoView;->N:F
 
     invoke-static {v2, v0}, Ljava/lang/Math;->min(FF)F
 
     move-result v0
 
-    .line 125
-    iget v2, p0, Lcom/whatsapp/PhotoView;->B:F
+    .line 20
+    iget v2, p0, Lcom/whatsapp/PhotoView;->s:F
 
     cmpl-float v2, v0, v2
 
     if-nez v2, :cond_0
 
-    .line 156
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->h:Lcom/whatsapp/al7;
+    .line 384
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->I:Lcom/whatsapp/ap1;
 
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
 
@@ -2528,15 +2543,15 @@
 
     int-to-float v4, v4
 
-    invoke-virtual {v2, v1, v0, v3, v4}, Lcom/whatsapp/al7;->a(FFFF)Z
+    invoke-virtual {v2, v1, v0, v3, v4}, Lcom/whatsapp/ap1;->a(FFFF)Z
 
-    sget-boolean v2, Lcom/whatsapp/App;->aL:Z
+    sget v2, Lcom/whatsapp/App;->h:I
 
     if-eqz v2, :cond_1
 
-    .line 114
+    .line 247
     :cond_0
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->h:Lcom/whatsapp/al7;
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->I:Lcom/whatsapp/ap1;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -2546,23 +2561,23 @@
 
     move-result v4
 
-    invoke-virtual {v2, v1, v0, v3, v4}, Lcom/whatsapp/al7;->a(FFFF)Z
+    invoke-virtual {v2, v1, v0, v3, v4}, Lcom/whatsapp/ap1;->a(FFFF)Z
 
-    .line 27
+    .line 16
     :cond_1
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/whatsapp/PhotoView;->g:Z
+    iput-boolean v0, p0, Lcom/whatsapp/PhotoView;->j:Z
 
-    .line 157
+    .line 268
     :cond_2
     const/4 v0, 0x1
 
     return v0
 
-    .line 333
+    .line 113
     :cond_3
-    iget v0, p0, Lcom/whatsapp/PhotoView;->B:F
+    iget v0, p0, Lcom/whatsapp/PhotoView;->s:F
 
     goto :goto_0
 .end method
@@ -2571,7 +2586,7 @@
     .locals 1
 
     .prologue
-    .line 309
+    .line 140
     const/4 v0, 0x1
 
     return v0
@@ -2581,22 +2596,22 @@
     .locals 1
 
     .prologue
-    .line 361
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->L:Z
+    .line 122
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->c:Z
 
     if-eqz v0, :cond_0
 
-    .line 18
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->a:Lcom/whatsapp/av7;
+    .line 229
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->x:Lcom/whatsapp/k9;
 
-    invoke-virtual {v0}, Lcom/whatsapp/av7;->a()V
+    invoke-virtual {v0}, Lcom/whatsapp/k9;->a()V
 
-    .line 180
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->b:Lcom/whatsapp/azf;
+    .line 348
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->l:Lcom/whatsapp/afo;
 
-    invoke-virtual {v0}, Lcom/whatsapp/azf;->a()V
+    invoke-virtual {v0}, Lcom/whatsapp/afo;->a()V
 
-    .line 76
+    .line 213
     :cond_0
     const/4 v0, 0x1
 
@@ -2609,50 +2624,50 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 150
+    .line 119
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 10
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
+    .line 66
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
 
     if-eqz v0, :cond_5
 
-    .line 41
+    .line 2
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getSaveCount()I
 
     move-result v0
 
-    .line 329
+    .line 368
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 371
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->m:Landroid/graphics/Matrix;
+    .line 354
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/Matrix;
 
     if-eqz v2, :cond_0
 
-    .line 78
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->m:Landroid/graphics/Matrix;
+    .line 139
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/Matrix;
 
     invoke-virtual {p1, v2}, Landroid/graphics/Canvas;->concat(Landroid/graphics/Matrix;)V
 
-    .line 291
+    .line 222
     :cond_0
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {v2, p1}, Landroid/graphics/drawable/BitmapDrawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 153
+    .line 330
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
-    .line 105
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->i:Z
+    .line 3
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->m:Z
 
     if-eqz v0, :cond_1
 
-    .line 247
-    sget-object v0, Lcom/whatsapp/PhotoView;->r:Landroid/graphics/Bitmap;
+    .line 188
+    sget-object v0, Lcom/whatsapp/PhotoView;->a:Landroid/graphics/Bitmap;
 
-    .line 9
+    .line 372
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
 
     move-result v2
@@ -2665,7 +2680,7 @@
 
     div-int/lit8 v2, v2, 0x2
 
-    .line 248
+    .line 199
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getHeight()I
 
     move-result v3
@@ -2678,7 +2693,7 @@
 
     div-int/lit8 v3, v3, 0x2
 
-    .line 335
+    .line 118
     int-to-float v2, v2
 
     int-to-float v3, v3
@@ -2687,11 +2702,11 @@
 
     invoke-virtual {p1, v0, v2, v3, v4}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 352
+    .line 389
     :cond_1
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {v2}, Landroid/graphics/drawable/BitmapDrawable;->getBounds()Landroid/graphics/Rect;
 
@@ -2699,8 +2714,8 @@
 
     invoke-virtual {v0, v2}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
 
-    .line 90
-    iget v0, p0, Lcom/whatsapp/PhotoView;->l:F
+    .line 391
+    iget v0, p0, Lcom/whatsapp/PhotoView;->p:F
 
     const/high16 v2, 0x43340000
 
@@ -2716,50 +2731,50 @@
 
     if-nez v0, :cond_2
 
-    .line 277
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    .line 375
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->right:F
 
-    .line 225
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    .line 352
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
-    iget-object v3, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    iget-object v3, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
     iget v3, v3, Landroid/graphics/RectF;->bottom:F
 
     iput v3, v2, Landroid/graphics/RectF;->right:F
 
-    .line 359
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    .line 318
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
     iput v0, v2, Landroid/graphics/RectF;->bottom:F
 
-    .line 256
+    .line 338
     :cond_2
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->m:Landroid/graphics/Matrix;
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/Matrix;
 
     if-eqz v0, :cond_3
 
-    .line 384
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->m:Landroid/graphics/Matrix;
+    .line 282
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/Matrix;
 
-    iget-object v2, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/RectF;
+    iget-object v2, p0, Lcom/whatsapp/PhotoView;->n:Landroid/graphics/RectF;
 
     invoke-virtual {v0, v2}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;)Z
 
-    .line 154
+    .line 133
     :cond_3
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->K:Z
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->E:Z
 
     if-eqz v0, :cond_5
 
-    .line 23
+    .line 302
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getSaveCount()I
 
     move-result v6
 
-    .line 17
+    .line 168
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
 
     move-result v0
@@ -2772,7 +2787,7 @@
 
     int-to-float v4, v0
 
-    sget-object v5, Lcom/whatsapp/PhotoView;->x:Landroid/graphics/Paint;
+    sget-object v5, Lcom/whatsapp/PhotoView;->w:Landroid/graphics/Paint;
 
     move-object v0, p1
 
@@ -2780,41 +2795,41 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 194
+    .line 223
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 116
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
+    .line 159
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->clipRect(Landroid/graphics/Rect;)Z
 
-    .line 101
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->m:Landroid/graphics/Matrix;
+    .line 248
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/Matrix;
 
     if-eqz v0, :cond_4
 
-    .line 350
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->m:Landroid/graphics/Matrix;
+    .line 52
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->A:Landroid/graphics/Matrix;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->concat(Landroid/graphics/Matrix;)V
 
-    .line 388
+    .line 315
     :cond_4
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->H:Landroid/graphics/drawable/BitmapDrawable;
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->M:Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/BitmapDrawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 75
+    .line 260
     invoke-virtual {p1, v6}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
-    .line 175
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
+    .line 291
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
 
-    sget-object v1, Lcom/whatsapp/PhotoView;->G:Landroid/graphics/Paint;
+    sget-object v1, Lcom/whatsapp/PhotoView;->P:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 30
+    .line 49
     :cond_5
     return-void
 .end method
@@ -2823,17 +2838,17 @@
     .locals 1
 
     .prologue
-    .line 54
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->L:Z
+    .line 120
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->c:Z
 
     if-eqz v0, :cond_0
 
-    .line 118
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->a:Lcom/whatsapp/av7;
+    .line 116
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->x:Lcom/whatsapp/k9;
 
-    invoke-virtual {v0, p3, p4}, Lcom/whatsapp/av7;->a(FF)Z
+    invoke-virtual {v0, p3, p4}, Lcom/whatsapp/k9;->a(FF)Z
 
-    .line 217
+    .line 146
     :cond_0
     const/4 v0, 0x1
 
@@ -2844,31 +2859,31 @@
     .locals 5
 
     .prologue
-    .line 296
+    .line 4
     invoke-super/range {p0 .. p5}, Landroid/view/View;->onLayout(ZIIII)V
 
-    .line 87
+    .line 160
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/whatsapp/PhotoView;->n:Z
+    iput-boolean v0, p0, Lcom/whatsapp/PhotoView;->h:Z
 
-    .line 212
+    .line 305
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getWidth()I
 
     move-result v0
 
-    .line 61
+    .line 111
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getHeight()I
 
     move-result v1
 
-    .line 302
-    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->K:Z
+    .line 336
+    iget-boolean v2, p0, Lcom/whatsapp/PhotoView;->E:Z
 
     if-eqz v2, :cond_0
 
-    .line 214
-    sget v2, Lcom/whatsapp/PhotoView;->k:I
+    .line 362
+    sget v2, Lcom/whatsapp/PhotoView;->v:I
 
     invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
 
@@ -2878,42 +2893,42 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/whatsapp/PhotoView;->p:I
+    iput v2, p0, Lcom/whatsapp/PhotoView;->f:I
 
-    .line 287
-    iget v2, p0, Lcom/whatsapp/PhotoView;->p:I
+    .line 54
+    iget v2, p0, Lcom/whatsapp/PhotoView;->f:I
 
     sub-int/2addr v0, v2
 
     div-int/lit8 v0, v0, 0x2
 
-    .line 88
-    iget v2, p0, Lcom/whatsapp/PhotoView;->p:I
+    .line 67
+    iget v2, p0, Lcom/whatsapp/PhotoView;->f:I
 
     sub-int/2addr v1, v2
 
     div-int/lit8 v1, v1, 0x2
 
-    .line 191
-    iget v2, p0, Lcom/whatsapp/PhotoView;->p:I
+    .line 371
+    iget v2, p0, Lcom/whatsapp/PhotoView;->f:I
 
     add-int/2addr v2, v0
 
-    .line 182
-    iget v3, p0, Lcom/whatsapp/PhotoView;->p:I
+    .line 94
+    iget v3, p0, Lcom/whatsapp/PhotoView;->f:I
 
     add-int/2addr v3, v1
 
-    .line 279
-    iget-object v4, p0, Lcom/whatsapp/PhotoView;->q:Landroid/graphics/Rect;
+    .line 100
+    iget-object v4, p0, Lcom/whatsapp/PhotoView;->C:Landroid/graphics/Rect;
 
     invoke-virtual {v4, v0, v1, v2, v3}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 219
+    .line 77
     :cond_0
-    invoke-direct {p0, p1}, Lcom/whatsapp/PhotoView;->c(Z)V
+    invoke-direct {p0, p1}, Lcom/whatsapp/PhotoView;->b(Z)V
 
-    .line 222
+    .line 40
     return-void
 .end method
 
@@ -2921,7 +2936,7 @@
     .locals 0
 
     .prologue
-    .line 266
+    .line 245
     return-void
 .end method
 
@@ -2929,15 +2944,15 @@
     .locals 2
 
     .prologue
-    .line 200
-    iget v0, p0, Lcom/whatsapp/PhotoView;->N:I
+    .line 323
+    iget v0, p0, Lcom/whatsapp/PhotoView;->B:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 119
-    iget v0, p0, Lcom/whatsapp/PhotoView;->N:I
+    .line 370
+    iget v0, p0, Lcom/whatsapp/PhotoView;->B:I
 
     const/high16 v1, -0x80000000
 
@@ -2947,24 +2962,24 @@
 
     invoke-super {p0, p1, v0}, Landroid/view/View;->onMeasure(II)V
 
-    .line 160
+    .line 162
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->getMeasuredWidth()I
 
     move-result v0
 
-    iget v1, p0, Lcom/whatsapp/PhotoView;->N:I
+    iget v1, p0, Lcom/whatsapp/PhotoView;->B:I
 
     invoke-virtual {p0, v0, v1}, Lcom/whatsapp/PhotoView;->setMeasuredDimension(II)V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 245
+    .line 14
     :cond_0
     invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
 
-    .line 73
+    .line 147
     :cond_1
     return-void
 .end method
@@ -2975,27 +2990,27 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 231
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->L:Z
+    .line 241
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->c:Z
 
     if-eqz v0, :cond_0
 
-    .line 32
-    iput-boolean v3, p0, Lcom/whatsapp/PhotoView;->d:Z
+    .line 9
+    iput-boolean v3, p0, Lcom/whatsapp/PhotoView;->u:Z
 
-    .line 301
+    .line 325
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->d()F
 
     move-result v0
 
-    .line 226
+    .line 251
     invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getScaleFactor()F
 
     move-result v1
 
     mul-float/2addr v0, v1
 
-    .line 39
+    .line 382
     invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getFocusX()F
 
     move-result v1
@@ -3006,7 +3021,7 @@
 
     invoke-direct {p0, v0, v1, v2, v3}, Lcom/whatsapp/PhotoView;->a(FFFZ)V
 
-    .line 171
+    .line 235
     :cond_0
     const/4 v0, 0x1
 
@@ -3019,20 +3034,20 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 285
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->L:Z
+    .line 73
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->c:Z
 
     if-eqz v0, :cond_0
 
-    .line 96
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->h:Lcom/whatsapp/al7;
+    .line 69
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->I:Lcom/whatsapp/ap1;
 
-    invoke-virtual {v0}, Lcom/whatsapp/al7;->a()V
+    invoke-virtual {v0}, Lcom/whatsapp/ap1;->a()V
 
-    .line 334
-    iput-boolean v1, p0, Lcom/whatsapp/PhotoView;->d:Z
+    .line 376
+    iput-boolean v1, p0, Lcom/whatsapp/PhotoView;->u:Z
 
-    .line 63
+    .line 269
     :cond_0
     return v1
 .end method
@@ -3041,24 +3056,24 @@
     .locals 1
 
     .prologue
-    .line 368
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->L:Z
+    .line 135
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->c:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->d:Z
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->u:Z
 
     if-eqz v0, :cond_0
 
-    .line 234
+    .line 316
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/whatsapp/PhotoView;->g:Z
+    iput-boolean v0, p0, Lcom/whatsapp/PhotoView;->j:Z
 
-    .line 84
+    .line 18
     invoke-virtual {p0}, Lcom/whatsapp/PhotoView;->g()V
 
-    .line 288
+    .line 264
     :cond_0
     return-void
 .end method
@@ -3067,19 +3082,19 @@
     .locals 2
 
     .prologue
-    .line 193
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->L:Z
+    .line 227
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->c:Z
 
     if-eqz v0, :cond_0
 
-    .line 139
+    .line 343
     neg-float v0, p3
 
     neg-float v1, p4
 
-    invoke-direct {p0, v0, v1}, Lcom/whatsapp/PhotoView;->b(FF)Z
+    invoke-direct {p0, v0, v1}, Lcom/whatsapp/PhotoView;->a(FF)Z
 
-    .line 8
+    .line 117
     :cond_0
     const/4 v0, 0x1
 
@@ -3090,7 +3105,7 @@
     .locals 0
 
     .prologue
-    .line 237
+    .line 298
     return-void
 .end method
 
@@ -3098,27 +3113,27 @@
     .locals 1
 
     .prologue
-    .line 305
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->J:Landroid/view/View$OnClickListener;
+    .line 279
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->H:Landroid/view/View$OnClickListener;
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->d:Z
+    iget-boolean v0, p0, Lcom/whatsapp/PhotoView;->u:Z
 
     if-nez v0, :cond_0
 
-    .line 270
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->J:Landroid/view/View$OnClickListener;
+    .line 307
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->H:Landroid/view/View$OnClickListener;
 
     invoke-interface {v0, p0}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
 
-    .line 196
+    .line 331
     :cond_0
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/whatsapp/PhotoView;->d:Z
+    iput-boolean v0, p0, Lcom/whatsapp/PhotoView;->u:Z
 
-    .line 108
+    .line 359
     const/4 v0, 0x1
 
     return v0
@@ -3128,7 +3143,7 @@
     .locals 1
 
     .prologue
-    .line 298
+    .line 129
     const/4 v0, 0x0
 
     return v0
@@ -3140,60 +3155,60 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 99
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->v:Landroid/view/ScaleGestureDetector;
+    .line 8
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->G:Landroid/view/ScaleGestureDetector;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->o:Landroid/support/v4/view/GestureDetectorCompat;
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->i:Landroid/support/v4/view/GestureDetectorCompat;
 
     if-nez v0, :cond_1
 
-    .line 239
+    .line 278
     :cond_0
     :goto_0
     return v1
 
-    .line 166
+    .line 88
     :cond_1
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->v:Landroid/view/ScaleGestureDetector;
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->G:Landroid/view/ScaleGestureDetector;
 
     invoke-virtual {v0, p1}, Landroid/view/ScaleGestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
-    .line 324
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->o:Landroid/support/v4/view/GestureDetectorCompat;
+    .line 26
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->i:Landroid/support/v4/view/GestureDetectorCompat;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/view/GestureDetectorCompat;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
-    .line 351
+    .line 156
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
 
-    .line 187
+    .line 142
     packed-switch v0, :pswitch_data_0
 
     :pswitch_0
     goto :goto_0
 
-    .line 341
+    .line 332
     :pswitch_1
-    iget-object v0, p0, Lcom/whatsapp/PhotoView;->a:Lcom/whatsapp/av7;
+    iget-object v0, p0, Lcom/whatsapp/PhotoView;->x:Lcom/whatsapp/k9;
 
-    invoke-static {v0}, Lcom/whatsapp/av7;->a(Lcom/whatsapp/av7;)Z
+    invoke-static {v0}, Lcom/whatsapp/k9;->a(Lcom/whatsapp/k9;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 379
+    .line 108
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/whatsapp/PhotoView;->a(Z)V
+    invoke-direct {p0, v0}, Lcom/whatsapp/PhotoView;->c(Z)V
 
     goto :goto_0
 
-    .line 187
+    .line 142
     nop
 
     :pswitch_data_0
@@ -3208,10 +3223,10 @@
     .locals 0
 
     .prologue
-    .line 28
-    iput p1, p0, Lcom/whatsapp/PhotoView;->j:I
+    .line 19
+    iput p1, p0, Lcom/whatsapp/PhotoView;->q:I
 
-    .line 262
+    .line 82
     return-void
 .end method
 
@@ -3219,10 +3234,10 @@
     .locals 0
 
     .prologue
-    .line 223
-    iput p1, p0, Lcom/whatsapp/PhotoView;->M:F
+    .line 198
+    iput p1, p0, Lcom/whatsapp/PhotoView;->O:F
 
-    .line 14
+    .line 306
     return-void
 .end method
 
@@ -3230,10 +3245,10 @@
     .locals 0
 
     .prologue
-    .line 111
-    iput-boolean p1, p0, Lcom/whatsapp/PhotoView;->i:Z
+    .line 220
+    iput-boolean p1, p0, Lcom/whatsapp/PhotoView;->m:Z
 
-    .line 303
+    .line 80
     return-void
 .end method
 
@@ -3241,10 +3256,10 @@
     .locals 0
 
     .prologue
-    .line 372
-    iput-object p1, p0, Lcom/whatsapp/PhotoView;->J:Landroid/view/View$OnClickListener;
+    .line 387
+    iput-object p1, p0, Lcom/whatsapp/PhotoView;->H:Landroid/view/View$OnClickListener;
 
-    .line 386
+    .line 335
     return-void
 .end method
 
@@ -3252,14 +3267,14 @@
     .locals 1
 
     .prologue
-    .line 25
+    .line 378
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/whatsapp/PhotoView;->l:F
+    iput v0, p0, Lcom/whatsapp/PhotoView;->p:F
 
-    .line 365
+    .line 93
     invoke-virtual {p0, p1, p2}, Lcom/whatsapp/PhotoView;->a(FZ)V
 
-    .line 57
+    .line 177
     return-void
 .end method

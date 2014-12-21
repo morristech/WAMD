@@ -26,14 +26,14 @@
     .locals 2
 
     .prologue
-    .line 3
+    .line 2
     iget-object v0, p0, Lcom/whatsapp/GroupChatLiveLocationsActivity$2;->f:Lcom/whatsapp/GroupChatLiveLocationsActivity;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->a(Lcom/whatsapp/GroupChatLiveLocationsActivity;Lcom/whatsapp/protocol/c;)Lcom/whatsapp/protocol/c;
+    invoke-static {v0, v1}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->a(Lcom/whatsapp/GroupChatLiveLocationsActivity;Lcom/whatsapp/protocol/i;)Lcom/whatsapp/protocol/i;
 
-    .line 2
+    .line 3
     invoke-super {p0, p1}, Lcom/whatsapp/GoogleMapView;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v0

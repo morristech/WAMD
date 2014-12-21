@@ -28,7 +28,7 @@
 
     new-array v5, v0, [Ljava/lang/String;
 
-    const-string v0, "Bg,t#fT\u0018C\u0005hW"
+    const-string v0, "~O\u001c*OZ|(\u001diT\u007f"
 
     move v6, v2
 
@@ -53,7 +53,7 @@
 
     aput-object v5, v7, v6
 
-    const-string v0, "Bg,t#fT\u0018C\u0005hW"
+    const-string v0, "~O\u001c*OZ|(\u001diT\u007f"
 
     move-object v5, v0
 
@@ -68,7 +68,7 @@
     :pswitch_0
     aput-object v5, v7, v6
 
-    const-string v0, "Bg,t#fT\u0018C\u0005hW"
+    const-string v0, "~O\u001c*OZ|(\u001diT\u007f"
 
     move-object v5, v0
 
@@ -85,7 +85,7 @@
 
     const/4 v5, 0x3
 
-    const-string v0, "Bg,t#fT\u0018C\u0005hW"
+    const-string v0, "~O\u001c*OZ|(\u001diT\u007f"
 
     move v6, v5
 
@@ -102,9 +102,9 @@
 
     sput-object v8, Landroid/support/v4/text/ICUCompatIcs;->z:[Ljava/lang/String;
 
-    .line 5
+    .line 9
     :try_start_0
-    const-string v0, "gM\u001bT#yAW^/~\n0t\u0019"
+    const-string v0, "[e+\nOEig\u0000CB\"\u0000*u"
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -117,7 +117,7 @@
 
     move-result-object v0
 
-    .line 5
+    .line 9
     :try_start_1
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_1
@@ -125,12 +125,12 @@
 
     move-result-object v4
 
-    .line 8
+    .line 6
     if-eqz v4, :cond_0
 
-    .line 6
+    .line 21
     :try_start_2
-    const-string v0, "lA\rd/yM\tC"
+    const-string v0, "Pi=:CEe9\u001d"
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 
@@ -148,7 +148,7 @@
 
     packed-switch v1, :pswitch_data_1
 
-    .line 6
+    .line 21
     const/4 v1, 0x1
 
     :try_start_3
@@ -166,8 +166,8 @@
 
     sput-object v0, Landroid/support/v4/text/ICUCompatIcs;->sGetScriptMethod:Ljava/lang/reflect/Method;
 
-    .line 11
-    const-string v0, "j@\u001d{%`A\u0015N\u001f~F\rV+x"
+    .line 17
+    const-string v0, "Vh-%I\\i%\u0010sBn=\u0008GD"
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_1
 
@@ -177,12 +177,12 @@
 
     goto :goto_1
 
-    .line 12
+    .line 3
     :catch_0
     move-exception v0
 
-    .line 13
-    const-string v1, "Bg,t#fT\u0018C\u0005hW"
+    .line 10
+    const-string v1, "~O\u001c*OZ|(\u001diT\u007f"
 
     .line 4294967295
     invoke-static {v1}, Landroid/support/v4/text/ICUCompatIcs;->z(Ljava/lang/String;)[C
@@ -193,15 +193,15 @@
 
     move-result-object v1
 
-    .line 13
+    .line 10
     invoke-static {v1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 21
+    .line 26
     :cond_0
     :goto_2
     return-void
 
-    .line 11
+    .line 17
     :pswitch_3
     const/4 v1, 0x1
 
@@ -250,13 +250,13 @@
     .locals 3
 
     .prologue
-    .line 23
+    .line 15
     :try_start_0
     sget-object v0, Landroid/support/v4/text/ICUCompatIcs;->sAddLikelySubtagsMethod:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 24
+    .line 23
     const/4 v0, 0x1
 
     new-array v0, v0, [Ljava/lang/Object;
@@ -265,7 +265,7 @@
 
     aput-object p0, v0, v1
 
-    .line 17
+    .line 5
     sget-object v1, Landroid/support/v4/text/ICUCompatIcs;->sAddLikelySubtagsMethod:Ljava/lang/reflect/Method;
 
     const/4 v2, 0x0
@@ -279,18 +279,18 @@
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 18
+    .line 24
     :goto_0
     return-object v0
 
-    .line 16
+    .line 1
     :catch_0
     move-exception v0
 
-    .line 28
+    .line 7
     sget-object v1, Landroid/support/v4/text/ICUCompatIcs;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x3
+    const/4 v2, 0x2
 
     aget-object v1, v1, v2
 
@@ -300,17 +300,17 @@
     :goto_1
     move-object v0, p0
 
-    .line 18
+    .line 24
     goto :goto_0
 
-    .line 27
+    .line 19
     :catch_1
     move-exception v0
 
-    .line 2
+    .line 14
     sget-object v1, Landroid/support/v4/text/ICUCompatIcs;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x2
+    const/4 v2, 0x3
 
     aget-object v1, v1, v2
 
@@ -329,13 +329,13 @@
 
     const/4 v4, 0x0
 
-    .line 26
+    .line 22
     :try_start_0
     sget-object v0, Landroid/support/v4/text/ICUCompatIcs;->sGetScriptMethod:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 25
+    .line 13
     const/4 v0, 0x1
 
     new-array v0, v0, [Ljava/lang/Object;
@@ -344,7 +344,7 @@
 
     aput-object p0, v0, v2
 
-    .line 7
+    .line 12
     sget-object v2, Landroid/support/v4/text/ICUCompatIcs;->sGetScriptMethod:Ljava/lang/reflect/Method;
 
     const/4 v3, 0x0
@@ -358,18 +358,18 @@
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 15
+    .line 16
     :goto_0
     return-object v0
 
-    .line 10
+    .line 8
     :catch_0
     move-exception v0
 
-    .line 22
+    .line 18
     sget-object v2, Landroid/support/v4/text/ICUCompatIcs;->z:[Ljava/lang/String;
 
-    aget-object v2, v2, v4
+    aget-object v2, v2, v5
 
     invoke-static {v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -377,17 +377,17 @@
     :goto_1
     move-object v0, v1
 
-    .line 15
+    .line 16
     goto :goto_0
 
-    .line 19
+    .line 11
     :catch_1
     move-exception v0
 
-    .line 20
+    .line 4
     sget-object v2, Landroid/support/v4/text/ICUCompatIcs;->z:[Ljava/lang/String;
 
-    aget-object v2, v2, v5
+    aget-object v2, v2, v4
 
     invoke-static {v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -425,7 +425,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x4c
+    const/16 v0, 0x20
 
     :goto_1
     xor-int/2addr v0, v3
@@ -441,22 +441,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0xb
+    const/16 v0, 0x37
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x24
+    const/16 v0, 0xc
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x79
+    const/16 v0, 0x49
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x37
+    const/16 v0, 0x69
 
     goto :goto_1
 
@@ -488,7 +488,7 @@
 
     aget-char v2, v0, v1
 
-    xor-int/lit8 v2, v2, 0x4c
+    xor-int/lit8 v2, v2, 0x20
 
     int-to-char v2, v2
 

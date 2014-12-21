@@ -1,81 +1,72 @@
 .class Lcom/whatsapp/gallerypicker/x;
-.super Landroid/graphics/drawable/ShapeDrawable;
+.super Ljava/lang/Object;
 .source "x.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/gallerypicker/GalleryPicker;
+.field final a:Lcom/whatsapp/gallerypicker/b2;
+
+.field final b:Lcom/whatsapp/gallerypicker/ag;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/gallerypicker/GalleryPicker;)V
+.method constructor <init>(Lcom/whatsapp/gallerypicker/ag;Lcom/whatsapp/gallerypicker/b2;)V
     .locals 0
 
     .prologue
-    .line 4
-    iput-object p1, p0, Lcom/whatsapp/gallerypicker/x;->a:Lcom/whatsapp/gallerypicker/GalleryPicker;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/gallerypicker/x;->b:Lcom/whatsapp/gallerypicker/ag;
 
-    invoke-direct {p0}, Landroid/graphics/drawable/ShapeDrawable;-><init>()V
+    iput-object p2, p0, Lcom/whatsapp/gallerypicker/x;->a:Lcom/whatsapp/gallerypicker/b2;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public draw(Landroid/graphics/Canvas;)V
-    .locals 0
-
-    .prologue
-    .line 5
-    return-void
-.end method
-
-.method public getIntrinsicHeight()I
+.method public run()V
     .locals 2
 
     .prologue
-    .line 1
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/x;->b:Lcom/whatsapp/gallerypicker/ag;
 
-    move-result-object v0
+    invoke-virtual {v0}, Lcom/whatsapp/gallerypicker/ag;->isCancelled()Z
 
-    iget v0, v0, Lcom/whatsapp/se;->B:F
+    move-result v0
 
-    const/high16 v1, 0x42000000
+    if-nez v0, :cond_0
 
-    mul-float/2addr v0, v1
-
-    float-to-int v0, v0
-
-    return v0
-.end method
-
-.method public getIntrinsicWidth()I
-    .locals 2
-
-    .prologue
     .line 2
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/x;->b:Lcom/whatsapp/gallerypicker/ag;
+
+    iget-object v0, v0, Lcom/whatsapp/gallerypicker/ag;->b:Lcom/whatsapp/gallerypicker/ImageGallery;
+
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImageGallery;->d(Lcom/whatsapp/gallerypicker/ImageGallery;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    iget v0, v0, Lcom/whatsapp/se;->B:F
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/x;->a:Lcom/whatsapp/gallerypicker/b2;
 
-    const/high16 v1, 0x42000000
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    mul-float/2addr v0, v1
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/x;->b:Lcom/whatsapp/gallerypicker/ag;
 
-    float-to-int v0, v0
+    iget-object v0, v0, Lcom/whatsapp/gallerypicker/ag;->b:Lcom/whatsapp/gallerypicker/ImageGallery;
 
-    return v0
-.end method
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImageGallery;->a(Lcom/whatsapp/gallerypicker/ImageGallery;)Lcom/whatsapp/gallerypicker/ae;
 
-.method public getOpacity()I
-    .locals 1
+    move-result-object v0
 
-    .prologue
+    invoke-virtual {v0}, Lcom/whatsapp/gallerypicker/ae;->notifyDataSetChanged()V
+
     .line 3
-    const/4 v0, 0x0
-
-    return v0
+    :cond_0
+    return-void
 .end method

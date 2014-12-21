@@ -1,52 +1,69 @@
-.class Lcom/whatsapp/n6;
+.class synthetic Lcom/whatsapp/n6;
 .super Ljava/lang/Object;
 .source "n6.java"
 
-# interfaces
-.implements Ljava/lang/Runnable;
 
-
-# instance fields
-.field final a:Lcom/whatsapp/ContactInfo;
+# static fields
+.field static final a:[I
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ContactInfo;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .prologue
     .line 1
-    iput-object p1, p0, Lcom/whatsapp/n6;->a:Lcom/whatsapp/ContactInfo;
+    invoke-static {}, Lcom/whatsapp/wr;->values()[Lcom/whatsapp/wr;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
 
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Lcom/whatsapp/n6;->a:[I
+
+    :try_start_0
+    sget-object v0, Lcom/whatsapp/n6;->a:[I
+
+    sget-object v1, Lcom/whatsapp/wr;->AGREE_1:Lcom/whatsapp/wr;
+
+    invoke-virtual {v1}, Lcom/whatsapp/wr;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_1
+
+    :goto_0
+    :try_start_1
+    sget-object v0, Lcom/whatsapp/n6;->a:[I
+
+    sget-object v1, Lcom/whatsapp/wr;->AGREE_2:Lcom/whatsapp/wr;
+
+    invoke-virtual {v1}, Lcom/whatsapp/wr;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_0
+
+    :goto_1
     return-void
-.end method
 
+    :catch_0
+    move-exception v0
 
-# virtual methods
-.method public run()V
-    .locals 4
+    goto :goto_1
 
-    .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/n6;->a:Lcom/whatsapp/ContactInfo;
+    :catch_1
+    move-exception v0
 
-    invoke-static {v0}, Lcom/whatsapp/ContactInfo;->f(Lcom/whatsapp/ContactInfo;)V
-
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/n6;->a:Lcom/whatsapp/ContactInfo;
-
-    iget-object v0, v0, Lcom/whatsapp/ContactInfo;->n:Landroid/os/Handler;
-
-    iget-object v1, p0, Lcom/whatsapp/n6;->a:Lcom/whatsapp/ContactInfo;
-
-    invoke-static {v1}, Lcom/whatsapp/ContactInfo;->a(Lcom/whatsapp/ContactInfo;)J
-
-    move-result-wide v2
-
-    invoke-virtual {v0, p0, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    .line 4
-    return-void
+    goto :goto_0
 .end method

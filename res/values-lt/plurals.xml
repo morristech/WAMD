@@ -214,11 +214,6 @@ pabaigos"</item>
         <item quantity="one">%d liko</item>
         <item quantity="few">%d liko</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Esate pasiruošę tęsti. Mes ką tik atkūrėme %,d žinučių.</item>
-        <item quantity="one">Esate pasiruošę tęsti. Mes ką tik atkūrėme %,d žinutę.</item>
-        <item quantity="few">Esate pasiruošę tęsti. Mes ką tik atkūrėme %,d žinutes.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Siunčia %1$d video %2$s</item>
         <item quantity="one">Siunčia %1$d video %2$s</item>

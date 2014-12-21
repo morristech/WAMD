@@ -13,9 +13,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
-
-    const/16 v6, 0x40
+    .locals 10
 
     const/4 v1, 0x0
 
@@ -23,7 +21,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "22\'.p\u0016/44@\t.22l\n,#2"
+    const-string v2, "(\t:\u000eV \u0003p\u0015W=\u00020\u0008\u0017,\u001f*\u000eXg,\u001b%f\u000c1\u001b2m"
 
     const/4 v0, -0x1
 
@@ -38,20 +36,20 @@
 
     move-result-object v2
 
-    array-length v7, v2
+    array-length v6, v2
 
-    move v8, v7
+    move v7, v6
 
-    move v9, v1
+    move v8, v1
 
-    move-object v7, v2
+    move-object v6, v2
 
     :goto_1
-    if-gt v8, v9, :cond_0
+    if-gt v7, v8, :cond_0
 
     new-instance v2, Ljava/lang/String;
 
-    invoke-direct {v2, v7}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v2, v6}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v2}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -63,7 +61,7 @@
 
     const/4 v2, 0x1
 
-    const-string v0, "\u0007.\"2l\u000f$h)m\u0012%(4-\u0003822bH\u000b\u0003\u0019\\#\u0016\u0003\u000eW"
+    const-string v0, "\u001d\u0015?\u0012J9\u0008,\u0008z&\t*\u000eV%\u000b;\u000e"
 
     move v3, v2
 
@@ -83,48 +81,46 @@
     return-void
 
     :cond_0
-    aget-char v10, v7, v9
+    aget-char v9, v6, v8
 
-    rem-int/lit8 v2, v9, 0x5
+    rem-int/lit8 v2, v8, 0x5
 
     packed-switch v2, :pswitch_data_1
 
-    const/4 v2, 0x3
+    const/16 v2, 0x39
 
     :goto_2
-    xor-int/2addr v2, v10
+    xor-int/2addr v2, v9
 
     int-to-char v2, v2
 
-    aput-char v2, v7, v9
+    aput-char v2, v6, v8
 
-    add-int/lit8 v2, v9, 0x1
+    add-int/lit8 v2, v8, 0x1
 
-    move v9, v2
+    move v8, v2
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v2, 0x66
+    const/16 v2, 0x49
 
     goto :goto_2
 
     :pswitch_2
-    move v2, v6
+    const/16 v2, 0x67
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v2, 0x46
+    const/16 v2, 0x5e
 
     goto :goto_2
 
     :pswitch_4
-    move v2, v6
+    const/16 v2, 0x7c
 
     goto :goto_2
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -146,11 +142,11 @@
     .locals 3
 
     .prologue
-    .line 6
+    .line 1
     :try_start_0
     sget-object v0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$3;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     aget-object v0, v0, v1
 
@@ -160,7 +156,7 @@
 
     check-cast v0, Landroid/view/KeyEvent;
 
-    .line 5
+    .line 4
     iget-object v1, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$3;->this$0:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
 
     iget-object v1, v1, Landroid/support/v4/media/TransportMediatorJellybeanMR2;->mTransportCallback:Landroid/support/v4/media/TransportMediatorCallback;
@@ -173,14 +169,14 @@
     :goto_0
     return-void
 
-    .line 4
+    .line 2
     :catch_0
     move-exception v0
 
-    .line 1
+    .line 5
     sget-object v1, Landroid/support/v4/media/TransportMediatorJellybeanMR2$3;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     aget-object v1, v1, v2
 

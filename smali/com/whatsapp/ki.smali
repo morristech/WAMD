@@ -1,65 +1,49 @@
-.class public final Lcom/whatsapp/ki;
-.super Lcom/whatsapp/kd;
+.class Lcom/whatsapp/ki;
+.super Ljava/lang/Object;
 .source "ki.java"
+
+# interfaces
+.implements Landroid/preference/Preference$OnPreferenceClickListener;
 
 
 # instance fields
-.field public a:Ljava/lang/Double;
-
-.field public b:Ljava/lang/Double;
+.field final a:Lcom/whatsapp/Settings;
 
 
 # direct methods
-.method public constructor <init>()V
+.method constructor <init>(Lcom/whatsapp/Settings;)V
     .locals 0
 
     .prologue
-    .line 6
-    invoke-direct {p0}, Lcom/whatsapp/kd;-><init>()V
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/ki;->a:Lcom/whatsapp/Settings;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method a(Landroid/content/Context;)V
-    .locals 2
+.method public onPreferenceClick(Landroid/preference/Preference;)Z
+    .locals 4
 
     .prologue
-    .line 1
-    sget-object v0, Lcom/whatsapp/a21;->EVENT:Lcom/whatsapp/a21;
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/ki;->a:Lcom/whatsapp/Settings;
 
-    sget-object v1, Lcom/whatsapp/a03;->UI_USAGE:Lcom/whatsapp/a03;
+    new-instance v1, Landroid/content/Intent;
 
-    invoke-virtual {v1}, Lcom/whatsapp/a03;->getCode()I
+    iget-object v2, p0, Lcom/whatsapp/ki;->a:Lcom/whatsapp/Settings;
 
-    move-result v1
+    const-class v3, Lcom/whatsapp/SettingsAccount;
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    move-result-object v1
-
-    invoke-static {p1, v0, v1}, Lcom/whatsapp/h0;->a(Landroid/content/Context;Lcom/whatsapp/a21;Ljava/lang/Integer;)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/Settings;->startActivity(Landroid/content/Intent;)V
 
     .line 3
-    sget-object v0, Lcom/whatsapp/a21;->UI_USAGE_TYPE:Lcom/whatsapp/a21;
+    const/4 v0, 0x1
 
-    iget-object v1, p0, Lcom/whatsapp/ki;->a:Ljava/lang/Double;
-
-    invoke-static {p1, v0, v1}, Lcom/whatsapp/h0;->a(Landroid/content/Context;Lcom/whatsapp/a21;Ljava/lang/Double;)V
-
-    .line 4
-    sget-object v0, Lcom/whatsapp/a21;->ENTRY_POINT:Lcom/whatsapp/a21;
-
-    iget-object v1, p0, Lcom/whatsapp/ki;->b:Ljava/lang/Double;
-
-    invoke-static {p1, v0, v1}, Lcom/whatsapp/h0;->a(Landroid/content/Context;Lcom/whatsapp/a21;Ljava/lang/Double;)V
-
-    .line 5
-    sget-object v0, Lcom/whatsapp/a21;->EVENT:Lcom/whatsapp/a21;
-
-    invoke-static {p1, v0}, Lcom/whatsapp/h0;->a(Landroid/content/Context;Lcom/whatsapp/a21;)V
-
-    .line 2
-    return-void
+    return v0
 .end method

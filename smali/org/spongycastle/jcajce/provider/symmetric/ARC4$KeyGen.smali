@@ -9,32 +9,30 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 5
 
-    const/16 v1, 0x50
-
-    const-string v0, "g0d"
+    const-string v0, ":17"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v0
 
-    array-length v2, v0
+    array-length v1, v0
 
-    const/4 v3, 0x0
-
-    move v4, v3
+    const/4 v2, 0x0
 
     move v3, v2
 
-    move-object v2, v0
+    move v2, v1
+
+    move-object v1, v0
 
     :goto_0
-    if-gt v3, v4, :cond_0
+    if-gt v2, v3, :cond_0
 
     new-instance v0, Ljava/lang/String;
 
-    invoke-direct {v0, v2}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -45,46 +43,48 @@
     return-void
 
     :cond_0
-    aget-char v5, v2, v4
+    aget-char v4, v1, v3
 
-    rem-int/lit8 v0, v4, 0x5
+    rem-int/lit8 v0, v3, 0x5
 
     packed-switch v0, :pswitch_data_0
 
-    move v0, v1
+    const/16 v0, 0xa
 
     :goto_1
-    xor-int/2addr v0, v5
+    xor-int/2addr v0, v4
 
     int-to-char v0, v0
 
-    aput-char v0, v2, v4
+    aput-char v0, v1, v3
 
-    add-int/lit8 v0, v4, 0x1
+    add-int/lit8 v0, v3, 0x1
 
-    move v4, v0
+    move v3, v0
 
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x35
+    const/16 v0, 0x68
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x73
+    const/16 v0, 0x72
 
     goto :goto_1
 
     :pswitch_2
-    move v0, v1
+    const/4 v0, 0x3
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x4d
+    const/16 v0, 0x21
 
     goto :goto_1
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0

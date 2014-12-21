@@ -3,24 +3,24 @@
 .source "afx.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/view/View$OnTouchListener;
 
 
 # instance fields
-.field final a:Ljava/util/ArrayList;
+.field final a:Lcom/whatsapp/g7;
 
-.field final b:Lcom/whatsapp/BroadcastDetails;
+.field final b:Landroid/os/Handler;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/BroadcastDetails;Ljava/util/ArrayList;)V
+.method constructor <init>(Lcom/whatsapp/g7;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/afx;->b:Lcom/whatsapp/BroadcastDetails;
+    .line 9
+    iput-object p1, p0, Lcom/whatsapp/afx;->a:Lcom/whatsapp/g7;
 
-    iput-object p2, p0, Lcom/whatsapp/afx;->a:Ljava/util/ArrayList;
+    iput-object p2, p0, Lcom/whatsapp/afx;->b:Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,50 +29,81 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 3
+.method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 5
 
     .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/afx;->a:Ljava/util/ArrayList;
+    const/4 v4, 0x0
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    if-ge p2, v0, :cond_0
-
-    .line 5
-    iget-object v1, p0, Lcom/whatsapp/afx;->b:Lcom/whatsapp/BroadcastDetails;
-
-    iget-object v0, p0, Lcom/whatsapp/afx;->b:Lcom/whatsapp/BroadcastDetails;
-
-    invoke-static {v0}, Lcom/whatsapp/BroadcastDetails;->b(Lcom/whatsapp/BroadcastDetails;)Lcom/whatsapp/adg;
-
-    move-result-object v2
-
-    iget-object v0, p0, Lcom/whatsapp/afx;->a:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Integer;
-
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    .line 10
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
 
-    invoke-static {v1, v2, v0}, Lcom/whatsapp/BroadcastDetails;->a(Lcom/whatsapp/BroadcastDetails;Lcom/whatsapp/adg;I)Z
+    packed-switch v0, :pswitch_data_0
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/whatsapp/afx;->b:Lcom/whatsapp/BroadcastDetails;
-
-    const/4 v1, 0x3
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/BroadcastDetails;->removeDialog(I)V
+    :goto_0
+    :pswitch_0
+    return v4
 
     .line 4
-    return-void
+    :pswitch_1
+    iget-object v0, p0, Lcom/whatsapp/afx;->a:Lcom/whatsapp/g7;
+
+    invoke-static {v0}, Lcom/whatsapp/g7;->h(Lcom/whatsapp/g7;)Lcom/whatsapp/_1;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 7
+    iget-object v0, p0, Lcom/whatsapp/afx;->a:Lcom/whatsapp/g7;
+
+    invoke-static {v0}, Lcom/whatsapp/g7;->h(Lcom/whatsapp/g7;)Lcom/whatsapp/_1;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/whatsapp/_1;->a()V
+
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/afx;->b:Landroid/os/Handler;
+
+    invoke-static {}, Lcom/whatsapp/g7;->e()I
+
+    move-result v1
+
+    int-to-long v2, v1
+
+    invoke-virtual {v0, v4, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+
+    goto :goto_0
+
+    .line 5
+    :pswitch_2
+    iget-object v0, p0, Lcom/whatsapp/afx;->b:Landroid/os/Handler;
+
+    invoke-virtual {v0, v4}, Landroid/os/Handler;->removeMessages(I)V
+
+    goto :goto_0
+
+    .line 8
+    :pswitch_3
+    iget-object v0, p0, Lcom/whatsapp/afx;->b:Landroid/os/Handler;
+
+    invoke-virtual {v0, v4}, Landroid/os/Handler;->removeMessages(I)V
+
+    goto :goto_0
+
+    .line 10
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_0
+        :pswitch_3
+    .end packed-switch
 .end method

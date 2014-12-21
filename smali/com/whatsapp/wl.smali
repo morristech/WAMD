@@ -3,24 +3,20 @@
 .source "wl.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/c9;
-
-.field final b:Ljava/util/ArrayList;
+.field final a:Lcom/whatsapp/lf;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/c9;Ljava/util/ArrayList;)V
+.method constructor <init>(Lcom/whatsapp/lf;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/wl;->a:Lcom/whatsapp/c9;
-
-    iput-object p2, p0, Lcom/whatsapp/wl;->b:Ljava/util/ArrayList;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/wl;->a:Lcom/whatsapp/lf;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,29 +25,24 @@
 
 
 # virtual methods
-.method public run()V
+.method public onClick(Landroid/view/View;)V
     .locals 2
 
     .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/wl;->a:Lcom/whatsapp/c9;
-
-    invoke-virtual {v0}, Lcom/whatsapp/c9;->isCancelled()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
     .line 4
-    iget-object v0, p0, Lcom/whatsapp/wl;->a:Lcom/whatsapp/c9;
+    sget-object v0, Lcom/whatsapp/fieldstats/bp;->TELL_A_FRIEND:Lcom/whatsapp/fieldstats/bp;
 
-    iget-object v0, v0, Lcom/whatsapp/c9;->a:Lcom/whatsapp/ContactInfo;
+    sget-object v1, Lcom/whatsapp/fieldstats/a3;->EMPTY_CONTACTS:Lcom/whatsapp/fieldstats/a3;
 
-    iget-object v1, p0, Lcom/whatsapp/wl;->b:Ljava/util/ArrayList;
+    invoke-static {v0, v1}, Lcom/whatsapp/f3;->a(Lcom/whatsapp/fieldstats/bp;Lcom/whatsapp/fieldstats/a3;)V
 
-    invoke-static {v0, v1}, Lcom/whatsapp/ContactInfo;->a(Lcom/whatsapp/ContactInfo;Ljava/util/ArrayList;)V
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/wl;->a:Lcom/whatsapp/lf;
 
-    .line 1
-    :cond_0
+    iget-object v0, v0, Lcom/whatsapp/lf;->a:Lcom/whatsapp/ContactPicker;
+
+    invoke-static {v0}, Lcom/whatsapp/App;->b(Landroid/app/Activity;)V
+
+    .line 2
     return-void
 .end method

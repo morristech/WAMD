@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "gEAm"
+    const-string v0, "oX|L"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x63
+    const/16 v0, 0x72
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,22 +65,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x9
+    const/4 v0, 0x1
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x30
-
-    goto :goto_1
-
-    :pswitch_2
     const/16 v0, 0x2d
 
     goto :goto_1
 
+    :pswitch_2
+    const/16 v0, 0x10
+
+    goto :goto_1
+
     :pswitch_3
-    const/4 v0, 0x1
+    const/16 v0, 0x20
 
     goto :goto_1
 
@@ -99,15 +99,15 @@
     .locals 2
 
     .prologue
-    .line 9
+    .line 10
     if-nez p0, :cond_0
 
-    .line 11
+    .line 3
     sget-object v0, Landroid/support/v4/util/DebugUtils;->z:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v0, Landroid/support/v4/util/LruCache;->a:I
+    sget-boolean v0, Landroid/support/v4/util/LruCache;->a:Z
 
     if-eqz v0, :cond_3
 
@@ -121,7 +121,7 @@
 
     move-result-object v0
 
-    .line 3
+    .line 1
     if-eqz v0, :cond_1
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
@@ -130,7 +130,7 @@
 
     if-gtz v1, :cond_2
 
-    .line 12
+    .line 8
     :cond_1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -140,33 +140,33 @@
 
     move-result-object v0
 
-    .line 2
+    .line 12
     const/16 v1, 0x2e
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v1
 
-    .line 5
+    .line 6
     if-lez v1, :cond_2
 
-    .line 8
+    .line 11
     add-int/lit8 v1, v1, 0x1
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 6
+    .line 7
     :cond_2
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1
+    .line 9
     const/16 v0, 0x7b
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 7
+    .line 2
     invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v0
@@ -177,7 +177,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 10
+    .line 5
     :cond_3
     return-void
 .end method

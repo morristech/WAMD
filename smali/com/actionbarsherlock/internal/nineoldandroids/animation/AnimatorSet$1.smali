@@ -16,14 +16,14 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 6
     iput-object p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$1;->this$0:Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet;
 
     iput-object p2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$1;->val$nodesToStart:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorListenerAdapter;-><init>()V
 
-    .line 9
+    .line 2
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$1;->canceled:Z
@@ -37,7 +37,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 3
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$1;->canceled:Z
@@ -50,21 +50,21 @@
     .locals 5
 
     .prologue
-    sget v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 2
+    .line 12
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$1;->canceled:Z
 
     if-nez v0, :cond_0
 
-    .line 6
+    .line 9
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$1;->val$nodesToStart:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
-    .line 12
+    .line 11
     const/4 v0, 0x0
 
     move v1, v0
@@ -72,7 +72,7 @@
     :goto_0
     if-ge v1, v3, :cond_0
 
-    .line 3
+    .line 5
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$1;->val$nodesToStart:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -81,12 +81,12 @@
 
     check-cast v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$Node;
 
-    .line 11
+    .line 10
     iget-object v4, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$Node;->animation:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;
 
     invoke-virtual {v4}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->start()V
 
-    .line 10
+    .line 8
     iget-object v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$1;->this$0:Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet;
 
     invoke-static {v4}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet;->access$000(Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet;)Ljava/util/ArrayList;
@@ -97,12 +97,12 @@
 
     invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 5
+    .line 4
     add-int/lit8 v0, v1, 0x1
 
     if-eqz v2, :cond_1
 
-    .line 4
+    .line 1
     :cond_0
     return-void
 

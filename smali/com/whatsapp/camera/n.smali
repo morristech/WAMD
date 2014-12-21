@@ -3,178 +3,93 @@
 .source "n.java"
 
 # interfaces
-.implements Landroid/hardware/Camera$ErrorCallback;
+.implements Landroid/widget/TextView$OnEditorActionListener;
 
 
 # static fields
-.field private static final z:[Ljava/lang/String;
+.field private static final z:Ljava/lang/String;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/camera/CameraView;
+.field final a:Lcom/whatsapp/camera/CameraActivity;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 13
+    .locals 5
 
-    const/4 v4, 0x3
+    const-string v0, "P\u0019g\u000f7f\u001ar\u000e+V\u0013"
 
-    const/4 v3, 0x2
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
-    const/4 v2, 0x1
+    move-result-object v0
 
-    const/4 v1, 0x0
+    array-length v1, v0
 
-    const/4 v0, 0x5
+    const/4 v2, 0x0
 
-    new-array v6, v0, [Ljava/lang/String;
+    move v3, v2
 
-    const-string v5, "PlwX\u000f\u0002z{U\u0007J"
+    move v2, v1
 
-    const/4 v0, -0x1
-
-    move-object v7, v6
-
-    move-object v8, v6
-
-    move v6, v1
+    move-object v1, v0
 
     :goto_0
-    invoke-virtual {v5}, Ljava/lang/String;->toCharArray()[C
+    if-gt v2, v3, :cond_0
 
-    move-result-object v5
+    new-instance v0, Ljava/lang/String;
 
-    array-length v9, v5
+    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
 
-    move v10, v9
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
 
-    move v11, v1
+    move-result-object v0
 
-    move-object v9, v5
-
-    :goto_1
-    if-gt v10, v11, :cond_0
-
-    new-instance v5, Ljava/lang/String;
-
-    invoke-direct {v5, v9}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v5}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v5
-
-    packed-switch v0, :pswitch_data_0
-
-    aput-object v5, v7, v6
-
-    const-string v0, "\u0013\u007f\u007f^\u0012\u0011h{^\u0017_mfZ\u0012\u0004}sV\u0005\u0002\u007f2X\u0001\u001d{`Z@\u0015l`T\u0012J"
-
-    move-object v5, v0
-
-    move v6, v2
-
-    move-object v7, v8
-
-    move v0, v1
-
-    goto :goto_0
-
-    :pswitch_0
-    aput-object v5, v7, v6
-
-    const-string v0, "PjsP\t\u001eybR\u0003\u0004k`^Z"
-
-    move-object v5, v0
-
-    move v6, v3
-
-    move-object v7, v8
-
-    move v0, v2
-
-    goto :goto_0
-
-    :pswitch_1
-    aput-object v5, v7, v6
-
-    const-string v0, "Pw|K\u0012\u0015h{^\u0017J"
-
-    move-object v5, v0
-
-    move v6, v4
-
-    move-object v7, v8
-
-    move v0, v3
-
-    goto :goto_0
-
-    :pswitch_2
-    aput-object v5, v7, v6
-
-    const/4 v5, 0x4
-
-    const-string v0, "\u0013\u007f\u007f^\u0012\u0011h{^\u0017_mfZ\u0012\u0004}sV\u0005\u0002\u007f2"
-
-    move v6, v5
-
-    move-object v7, v8
-
-    move-object v5, v0
-
-    move v0, v4
-
-    goto :goto_0
-
-    :pswitch_3
-    aput-object v5, v7, v6
-
-    sput-object v8, Lcom/whatsapp/camera/n;->z:[Ljava/lang/String;
+    sput-object v0, Lcom/whatsapp/camera/n;->z:Ljava/lang/String;
 
     return-void
 
     :cond_0
-    aget-char v12, v9, v11
+    aget-char v4, v1, v3
 
-    rem-int/lit8 v5, v11, 0x5
+    rem-int/lit8 v0, v3, 0x5
 
-    packed-switch v5, :pswitch_data_1
+    packed-switch v0, :pswitch_data_0
 
-    const/16 v5, 0x60
+    const/16 v0, 0x43
 
-    :goto_2
-    xor-int/2addr v5, v12
+    :goto_1
+    xor-int/2addr v0, v4
 
-    int-to-char v5, v5
+    int-to-char v0, v0
 
-    aput-char v5, v9, v11
+    aput-char v0, v1, v3
 
-    add-int/lit8 v5, v11, 0x1
+    add-int/lit8 v0, v3, 0x1
 
-    move v11, v5
+    move v3, v0
+
+    goto :goto_0
+
+    :pswitch_0
+    const/16 v0, 0x39
 
     goto :goto_1
 
-    :pswitch_4
-    const/16 v5, 0x70
+    :pswitch_1
+    const/16 v0, 0x77
 
-    goto :goto_2
+    goto :goto_1
 
-    :pswitch_5
-    const/16 v5, 0x1e
+    :pswitch_2
+    const/16 v0, 0x17
 
-    goto :goto_2
+    goto :goto_1
 
-    :pswitch_6
-    const/16 v5, 0x12
+    :pswitch_3
+    const/16 v0, 0x7a
 
-    goto :goto_2
-
-    :pswitch_7
-    const/16 v5, 0x3b
-
-    goto :goto_2
+    goto :goto_1
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -183,22 +98,14 @@
         :pswitch_2
         :pswitch_3
     .end packed-switch
-
-    :pswitch_data_1
-    .packed-switch 0x0
-        :pswitch_4
-        :pswitch_5
-        :pswitch_6
-        :pswitch_7
-    .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/whatsapp/camera/CameraView;)V
+.method constructor <init>(Lcom/whatsapp/camera/CameraActivity;)V
     .locals 0
 
     .prologue
-    .line 11
-    iput-object p1, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraView;
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -207,181 +114,56 @@
 
 
 # virtual methods
-.method public onError(ILandroid/hardware/Camera;)V
+.method public onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
     .locals 3
 
     .prologue
-    .line 13
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v1, Lcom/whatsapp/camera/n;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x1
-
-    aget-object v1, v1, v2
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    sget-object v1, Lcom/whatsapp/camera/n;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x2
-
-    aget-object v1, v1, v2
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraView;
-
-    invoke-static {v1}, Lcom/whatsapp/camera/CameraView;->i(Lcom/whatsapp/camera/CameraView;)Z
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    sget-object v1, Lcom/whatsapp/camera/n;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x0
-
-    aget-object v1, v1, v2
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraView;
-
-    .line 9
-    invoke-static {v1}, Lcom/whatsapp/camera/CameraView;->j(Lcom/whatsapp/camera/CameraView;)Z
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    sget-object v1, Lcom/whatsapp/camera/n;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x3
-
-    aget-object v1, v1, v2
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraView;
-
-    invoke-static {v1}, Lcom/whatsapp/camera/CameraView;->c(Lcom/whatsapp/camera/CameraView;)Z
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 14
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
-
-    .line 12
-    const/16 v0, 0x64
-
-    if-ne p1, v0, :cond_0
-
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraView;
-
-    invoke-static {v0}, Lcom/whatsapp/camera/CameraView;->a(Lcom/whatsapp/camera/CameraView;)V
-
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraView;
-
-    invoke-static {v0}, Lcom/whatsapp/camera/CameraView;->f(Lcom/whatsapp/camera/CameraView;)V
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraView;
-
-    invoke-static {v0}, Lcom/whatsapp/camera/CameraView;->d(Lcom/whatsapp/camera/CameraView;)Landroid/hardware/Camera;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraView;
-
-    invoke-static {v1}, Lcom/whatsapp/camera/CameraView;->k(Lcom/whatsapp/camera/CameraView;)Landroid/view/SurfaceHolder;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/hardware/Camera;->setPreviewDisplay(Landroid/view/SurfaceHolder;)V
-
-    .line 10
-    iget-object v0, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraView;
-
-    invoke-static {v0}, Lcom/whatsapp/camera/CameraView;->e(Lcom/whatsapp/camera/CameraView;)V
-    :try_end_0
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-
-    .line 16
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 15
-    :catch_0
-    move-exception v0
+    const/4 v1, 0x0
 
     .line 5
-    :goto_1
-    iget-object v1, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraView;
+    if-eqz p3, :cond_0
 
-    invoke-static {v1}, Lcom/whatsapp/camera/CameraView;->d(Lcom/whatsapp/camera/CameraView;)Landroid/hardware/Camera;
+    invoke-virtual {p3}, Landroid/view/KeyEvent;->getKeyCode()I
 
-    move-result-object v1
+    move-result v0
 
-    invoke-virtual {v1}, Landroid/hardware/Camera;->release()V
+    const/16 v2, 0x42
 
-    .line 4
-    iget-object v1, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraView;
-
-    const/4 v2, 0x0
-
-    invoke-static {v1, v2}, Lcom/whatsapp/camera/CameraView;->a(Lcom/whatsapp/camera/CameraView;Landroid/hardware/Camera;)Landroid/hardware/Camera;
-
-    .line 7
-    sget-object v1, Lcom/whatsapp/camera/n;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x4
-
-    aget-object v1, v1, v2
-
-    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
+    if-ne v0, v2, :cond_0
 
     .line 6
-    iget-object v0, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraView;
+    iget-object v0, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraActivity;
 
-    invoke-static {v0}, Lcom/whatsapp/camera/CameraView;->g(Lcom/whatsapp/camera/CameraView;)V
+    sget-object v2, Lcom/whatsapp/camera/n;->z:Ljava/lang/String;
 
+    invoke-virtual {v0, v2}, Lcom/whatsapp/camera/CameraActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/inputmethod/InputMethodManager;
+
+    .line 3
+    iget-object v2, p0, Lcom/whatsapp/camera/n;->a:Lcom/whatsapp/camera/CameraActivity;
+
+    invoke-static {v2}, Lcom/whatsapp/camera/CameraActivity;->t(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/ConversationTextEntry;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/whatsapp/ConversationTextEntry;->getWindowToken()Landroid/os/IBinder;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2, v1}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
+
+    .line 4
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    move v0, v1
+
+    .line 1
     goto :goto_0
-
-    .line 15
-    :catch_1
-    move-exception v0
-
-    goto :goto_1
 .end method

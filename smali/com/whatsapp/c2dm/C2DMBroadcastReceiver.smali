@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "|}[\u001dep}Q_g1sXWpp{R\u001da-v[\u001dkqfS]v1@spGVDs"
+    const-string v0, "\u0011\u0017#6k\u001d\u0017)ti\\\u0019 |~\u001d\u0011*6o@\u001c#6e\u001c\u000c+vx\\*\u000b[I;.\u000b"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/4 v0, 0x2
+    const/16 v0, 0xc
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,26 +65,24 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x1f
+    const/16 v0, 0x72
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x12
+    const/16 v0, 0x78
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x36
+    const/16 v0, 0x4e
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x33
+    const/16 v0, 0x18
 
     goto :goto_1
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -99,7 +97,7 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 2
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -126,23 +124,23 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
-    invoke-static {p1, p2}, Lcom/whatsapp/c2dm/a;->a(Landroid/content/Context;Landroid/content/Intent;)V
+    .line 1
+    invoke-static {p1, p2}, Lcom/whatsapp/c2dm/b;->a(Landroid/content/Context;Landroid/content/Intent;)V
 
-    sget-boolean v0, Lcom/whatsapp/c2dm/C2DMRegistrar;->c:Z
+    sget v0, Lcom/whatsapp/c2dm/C2DMRegistrar;->b:I
 
     if-eqz v0, :cond_1
 
-    .line 1
+    .line 4
     :cond_0
     invoke-static {p1, p2}, Lcom/whatsapp/c2dm/C2DMRegistrar;->a(Landroid/content/Context;Landroid/content/Intent;)V
 
-    .line 4
+    .line 3
     :cond_1
     const/4 v0, -0x1
 
     invoke-virtual {p0, v0, v2, v2}, Lcom/whatsapp/c2dm/C2DMBroadcastReceiver;->setResult(ILjava/lang/String;Landroid/os/Bundle;)V
 
-    .line 2
+    .line 5
     return-void
 .end method

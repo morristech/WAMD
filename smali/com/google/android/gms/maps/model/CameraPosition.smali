@@ -6,11 +6,11 @@
 
 
 # static fields
-.field public static final CREATOR:Lcom/google/android/gms/maps/model/CameraPositionCreator;
+.field public static final CREATOR:Lcom/google/android/gms/maps/model/a;
 
 
 # instance fields
-.field private final ab:I
+.field private final CK:I
 
 .field public final bearing:F
 
@@ -25,11 +25,11 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/google/android/gms/maps/model/CameraPositionCreator;
+    new-instance v0, Lcom/google/android/gms/maps/model/a;
 
-    invoke-direct {v0}, Lcom/google/android/gms/maps/model/CameraPositionCreator;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/gms/maps/model/a;-><init>()V
 
-    sput-object v0, Lcom/google/android/gms/maps/model/CameraPosition;->CREATOR:Lcom/google/android/gms/maps/model/CameraPositionCreator;
+    sput-object v0, Lcom/google/android/gms/maps/model/CameraPosition;->CREATOR:Lcom/google/android/gms/maps/model/a;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     const-string v0, "null camera target"
 
-    invoke-static {p2, v0}, Lcom/google/android/gms/internal/s;->b(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2, v0}, Lcom/google/android/gms/internal/jx;->b(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     cmpg-float v0, v2, p4
 
@@ -62,9 +62,9 @@
     :goto_0
     const-string v1, "Tilt needs to be between 0 and 90 inclusive"
 
-    invoke-static {v0, v1}, Lcom/google/android/gms/internal/s;->b(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/google/android/gms/internal/jx;->b(ZLjava/lang/Object;)V
 
-    iput p1, p0, Lcom/google/android/gms/maps/model/CameraPosition;->ab:I
+    iput p1, p0, Lcom/google/android/gms/maps/model/CameraPosition;->CK:I
 
     iput-object p2, p0, Lcom/google/android/gms/maps/model/CameraPosition;->target:Lcom/google/android/gms/maps/model/LatLng;
 
@@ -130,15 +130,7 @@
 .end method
 
 .method public static createFromAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)Lcom/google/android/gms/maps/model/CameraPosition;
-    .locals 11
-
-    const/4 v10, 0x4
-
-    const/4 v6, 0x3
-
-    const/4 v4, 0x2
-
-    const/4 v5, 0x1
+    .locals 10
 
     const/4 v1, 0x0
 
@@ -154,30 +146,38 @@
 
     move-result-object v0
 
-    sget-object v2, Lcom/google/android/gms/e;->MapAttrs:[I
+    sget-object v2, Lcom/google/android/gms/a;->MapAttrs:[I
 
     invoke-virtual {v0, p1, v2}, Landroid/content/res/Resources;->obtainAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object v3
 
-    invoke-virtual {v3, v4}, Landroid/content/res/TypedArray;->hasValue(I)Z
+    sget v0, Lcom/google/android/gms/a;->MapAttrs_cameraTargetLat:I
+
+    invoke-virtual {v3, v0}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
-    invoke-virtual {v3, v4, v1}, Landroid/content/res/TypedArray;->getFloat(IF)F
+    sget v0, Lcom/google/android/gms/a;->MapAttrs_cameraTargetLat:I
+
+    invoke-virtual {v3, v0, v1}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
     move-result v0
 
     :goto_1
-    invoke-virtual {v3, v6}, Landroid/content/res/TypedArray;->hasValue(I)Z
+    sget v2, Lcom/google/android/gms/a;->MapAttrs_cameraTargetLng:I
+
+    invoke-virtual {v3, v2}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
     move-result v2
 
     if-eqz v2, :cond_4
 
-    invoke-virtual {v3, v6, v1}, Landroid/content/res/TypedArray;->getFloat(IF)F
+    sget v2, Lcom/google/android/gms/a;->MapAttrs_cameraTargetLng:I
+
+    invoke-virtual {v3, v2, v1}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
     move-result v2
 
@@ -196,7 +196,7 @@
 
     invoke-virtual {v0, v4}, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->target(Lcom/google/android/gms/maps/model/LatLng;)Lcom/google/android/gms/maps/model/CameraPosition$Builder;
 
-    const/4 v2, 0x5
+    sget v2, Lcom/google/android/gms/a;->MapAttrs_cameraZoom:I
 
     invoke-virtual {v3, v2}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
@@ -204,7 +204,7 @@
 
     if-eqz v2, :cond_1
 
-    const/4 v2, 0x5
+    sget v2, Lcom/google/android/gms/a;->MapAttrs_cameraZoom:I
 
     invoke-virtual {v3, v2, v1}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
@@ -213,26 +213,34 @@
     invoke-virtual {v0, v2}, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->zoom(F)Lcom/google/android/gms/maps/model/CameraPosition$Builder;
 
     :cond_1
-    invoke-virtual {v3, v5}, Landroid/content/res/TypedArray;->hasValue(I)Z
+    sget v2, Lcom/google/android/gms/a;->MapAttrs_cameraBearing:I
+
+    invoke-virtual {v3, v2}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    invoke-virtual {v3, v5, v1}, Landroid/content/res/TypedArray;->getFloat(IF)F
+    sget v2, Lcom/google/android/gms/a;->MapAttrs_cameraBearing:I
+
+    invoke-virtual {v3, v2, v1}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
     move-result v2
 
     invoke-virtual {v0, v2}, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->bearing(F)Lcom/google/android/gms/maps/model/CameraPosition$Builder;
 
     :cond_2
-    invoke-virtual {v3, v10}, Landroid/content/res/TypedArray;->hasValue(I)Z
+    sget v2, Lcom/google/android/gms/a;->MapAttrs_cameraTilt:I
+
+    invoke-virtual {v3, v2}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    invoke-virtual {v3, v10, v1}, Landroid/content/res/TypedArray;->getFloat(IF)F
+    sget v2, Lcom/google/android/gms/a;->MapAttrs_cameraTilt:I
+
+    invoke-virtual {v3, v2, v1}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
     move-result v1
 
@@ -349,6 +357,14 @@
     goto :goto_0
 .end method
 
+.method getVersionCode()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/gms/maps/model/CameraPosition;->CK:I
+
+    return v0
+.end method
+
 .method public hashCode()I
     .locals 3
 
@@ -392,17 +408,9 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lcom/google/android/gms/internal/r;->hashCode([Ljava/lang/Object;)I
+    invoke-static {v0}, Lcom/google/android/gms/internal/jv;->hashCode([Ljava/lang/Object;)I
 
     move-result v0
-
-    return v0
-.end method
-
-.method i()I
-    .locals 1
-
-    iget v0, p0, Lcom/google/android/gms/maps/model/CameraPosition;->ab:I
 
     return v0
 .end method
@@ -410,7 +418,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    invoke-static {p0}, Lcom/google/android/gms/internal/r;->c(Ljava/lang/Object;)Lcom/google/android/gms/internal/r$a;
+    invoke-static {p0}, Lcom/google/android/gms/internal/jv;->h(Ljava/lang/Object;)Lcom/google/android/gms/internal/jv$a;
 
     move-result-object v0
 
@@ -418,7 +426,7 @@
 
     iget-object v2, p0, Lcom/google/android/gms/maps/model/CameraPosition;->target:Lcom/google/android/gms/maps/model/LatLng;
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/internal/r$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/android/gms/internal/r$a;
+    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/internal/jv$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/android/gms/internal/jv$a;
 
     move-result-object v0
 
@@ -430,7 +438,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/internal/r$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/android/gms/internal/r$a;
+    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/internal/jv$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/android/gms/internal/jv$a;
 
     move-result-object v0
 
@@ -442,7 +450,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/internal/r$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/android/gms/internal/r$a;
+    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/internal/jv$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/android/gms/internal/jv$a;
 
     move-result-object v0
 
@@ -454,11 +462,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/internal/r$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/android/gms/internal/r$a;
+    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/internal/jv$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/android/gms/internal/jv$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/r$a;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/jv$a;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -468,20 +476,20 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    invoke-static {}, Lcom/google/android/gms/maps/internal/q;->bn()Z
+    invoke-static {}, Lcom/google/android/gms/maps/internal/aa;->ob()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/maps/model/a;->a(Lcom/google/android/gms/maps/model/CameraPosition;Landroid/os/Parcel;I)V
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/maps/model/b;->a(Lcom/google/android/gms/maps/model/CameraPosition;Landroid/os/Parcel;I)V
 
     sget v0, Lcom/google/android/gms/maps/model/LatLng;->a:I
 
     if-eqz v0, :cond_1
 
     :cond_0
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/maps/model/CameraPositionCreator;->a(Lcom/google/android/gms/maps/model/CameraPosition;Landroid/os/Parcel;I)V
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/maps/model/a;->a(Lcom/google/android/gms/maps/model/CameraPosition;Landroid/os/Parcel;I)V
 
     :cond_1
     return-void

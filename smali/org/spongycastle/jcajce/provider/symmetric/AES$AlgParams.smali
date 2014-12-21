@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "jy$4\u001c}"
+    const-string v0, "\u0011Pe\u001c\u0001\u0006"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x55
+    const/16 v0, 0x48
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,22 +65,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x2b
+    const/16 v0, 0x50
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x3c
+    const/16 v0, 0x15
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x77
+    const/16 v0, 0x36
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x14
+    const/16 v0, 0x3c
 
     goto :goto_1
 
@@ -97,7 +97,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 2
     invoke-direct {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/IvAlgorithmParameters;-><init>()V
 
     return-void
@@ -109,7 +109,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 1
     sget-object v0, Lorg/spongycastle/jcajce/provider/symmetric/AES$AlgParams;->z:Ljava/lang/String;
 
     return-object v0

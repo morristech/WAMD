@@ -1,76 +1,89 @@
-.class Lcom/whatsapp/protocol/cf;
-.super Lcom/whatsapp/protocol/ab;
+.class public Lcom/whatsapp/protocol/cf;
+.super Ljava/lang/Object;
 .source "cf.java"
 
 
 # instance fields
-.field final a:Lcom/whatsapp/protocol/av;
+.field public a:Lcom/whatsapp/protocol/bb;
 
-.field final b:Ljava/lang/Runnable;
+.field public b:Z
 
-.field final c:Lcom/whatsapp/protocol/a9;
+.field public c:I
+
+.field public d:Ljava/lang/String;
+
+.field public e:I
+
+.field public f:Z
+
+.field public g:J
+
+.field public h:Z
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/protocol/a9;Ljava/lang/Runnable;Lcom/whatsapp/protocol/av;)V
+.method public constructor <init>(Lcom/whatsapp/protocol/bb;ZZJZII)V
+    .locals 2
+
+    .prologue
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    iput-object p1, p0, Lcom/whatsapp/protocol/cf;->a:Lcom/whatsapp/protocol/bb;
+
+    .line 4
+    iget-object v0, p1, Lcom/whatsapp/protocol/bb;->b:Ljava/lang/String;
+
+    iput-object v0, p0, Lcom/whatsapp/protocol/cf;->d:Ljava/lang/String;
+
+    .line 1
+    iput-boolean p2, p0, Lcom/whatsapp/protocol/cf;->h:Z
+
+    .line 8
+    iput-wide p4, p0, Lcom/whatsapp/protocol/cf;->g:J
+
+    .line 11
+    iput-boolean p3, p0, Lcom/whatsapp/protocol/cf;->b:Z
+
+    .line 16
+    iput-boolean p6, p0, Lcom/whatsapp/protocol/cf;->f:Z
+
+    .line 13
+    iput p7, p0, Lcom/whatsapp/protocol/cf;->c:I
+
+    .line 9
+    iput p8, p0, Lcom/whatsapp/protocol/cf;->e:I
+
+    .line 7
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;ZZJZI)V
     .locals 0
 
     .prologue
-    .line 6
-    iput-object p1, p0, Lcom/whatsapp/protocol/cf;->c:Lcom/whatsapp/protocol/a9;
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lcom/whatsapp/protocol/cf;->b:Ljava/lang/Runnable;
-
-    iput-object p3, p0, Lcom/whatsapp/protocol/cf;->a:Lcom/whatsapp/protocol/av;
-
-    invoke-direct {p0}, Lcom/whatsapp/protocol/ab;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a(I)V
-    .locals 1
-
-    .prologue
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/protocol/cf;->a:Lcom/whatsapp/protocol/av;
-
-    if-eqz v0, :cond_0
-
-    .line 8
-    iget-object v0, p0, Lcom/whatsapp/protocol/cf;->a:Lcom/whatsapp/protocol/av;
-
-    invoke-interface {v0, p1}, Lcom/whatsapp/protocol/av;->a(I)V
+    .line 14
+    iput-object p1, p0, Lcom/whatsapp/protocol/cf;->d:Ljava/lang/String;
 
     .line 5
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/protocol/cf;->c:Lcom/whatsapp/protocol/a9;
+    iput-boolean p2, p0, Lcom/whatsapp/protocol/cf;->h:Z
 
-    iget-object v0, v0, Lcom/whatsapp/protocol/a9;->l:Lcom/whatsapp/protocol/al;
+    .line 15
+    iput-wide p4, p0, Lcom/whatsapp/protocol/cf;->g:J
 
-    invoke-interface {v0, p1}, Lcom/whatsapp/protocol/al;->f(I)V
+    .line 17
+    iput-boolean p3, p0, Lcom/whatsapp/protocol/cf;->b:Z
 
-    .line 2
-    return-void
-.end method
+    .line 12
+    iput-boolean p6, p0, Lcom/whatsapp/protocol/cf;->f:Z
 
-.method public a(Lcom/whatsapp/protocol/ax;Ljava/lang/String;)V
-    .locals 1
+    .line 10
+    iput p7, p0, Lcom/whatsapp/protocol/cf;->c:I
 
-    .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/protocol/cf;->b:Ljava/lang/Runnable;
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/protocol/cf;->b:Ljava/lang/Runnable;
-
-    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
-
-    .line 4
-    :cond_0
+    .line 18
     return-void
 .end method

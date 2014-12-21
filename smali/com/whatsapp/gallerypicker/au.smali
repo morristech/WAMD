@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;
+.field final a:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-.field final b:Lcom/whatsapp/gallerypicker/ImagePreview;
+.field final b:Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;
 
 
 # direct methods
@@ -17,10 +17,10 @@
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/gallerypicker/au;->a:Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/gallerypicker/au;->b:Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;
 
-    iput-object p2, p0, Lcom/whatsapp/gallerypicker/au;->b:Lcom/whatsapp/gallerypicker/ImagePreview;
+    iput-object p2, p0, Lcom/whatsapp/gallerypicker/au;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,23 +34,23 @@
 
     .prologue
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/gallerypicker/au;->a:Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/au;->b:Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;
 
     iget-object v0, v0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->z:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->s(Lcom/whatsapp/gallerypicker/ImagePreview;)Landroid/support/v4/view/ViewPager;
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->v(Lcom/whatsapp/gallerypicker/ImagePreview;)Landroid/support/v4/view/ViewPager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/gallerypicker/au;->a:Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/au;->b:Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;
 
     iget-object v1, v1, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->z:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    invoke-static {v1}, Lcom/whatsapp/gallerypicker/ImagePreview;->t(Lcom/whatsapp/gallerypicker/ImagePreview;)Ljava/util/ArrayList;
+    invoke-static {v1}, Lcom/whatsapp/gallerypicker/ImagePreview;->k(Lcom/whatsapp/gallerypicker/ImagePreview;)Ljava/util/ArrayList;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/whatsapp/gallerypicker/au;->a:Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;
+    iget-object v2, p0, Lcom/whatsapp/gallerypicker/au;->b:Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;
 
     invoke-static {v2}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->a(Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;)Landroid/net/Uri;
 
@@ -62,6 +62,6 @@
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPager;->setCurrentItem(I)V
 
-    .line 3
+    .line 2
     return-void
 .end method

@@ -1,179 +1,68 @@
-.class public interface abstract Lcom/whatsapp/messaging/bd;
+.class final Lcom/whatsapp/messaging/bd;
 .super Ljava/lang/Object;
 .source "bd.java"
 
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
 
 # virtual methods
-.method public abstract a()V
+.method public a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/ad;
+    .locals 2
+
+    .prologue
+    .line 3
+    new-instance v0, Lcom/whatsapp/messaging/ad;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p1, v1}, Lcom/whatsapp/messaging/ad;-><init>(Landroid/os/Parcel;Lcom/whatsapp/messaging/b7;)V
+
+    return-object v0
 .end method
 
-.method public abstract a(I)V
+.method public a(I)[Lcom/whatsapp/messaging/ad;
+    .locals 1
+
+    .prologue
+    .line 1
+    new-array v0, p1, [Lcom/whatsapp/messaging/ad;
+
+    return-object v0
 .end method
 
-.method public abstract a(IJ)V
+.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 4
+    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/bd;->a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/ad;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
-.method public abstract a(I[BLjava/lang/String;[B[BLjava/lang/Runnable;)V
-.end method
+.method public newArray(I)[Ljava/lang/Object;
+    .locals 1
 
-.method public abstract a(JJ)V
-.end method
+    .prologue
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/bd;->a(I)[Lcom/whatsapp/messaging/ad;
 
-.method public abstract a(Landroid/os/Bundle;)V
-.end method
+    move-result-object v0
 
-.method public abstract a(Lcom/whatsapp/messaging/ay;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/messaging/p;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/protocol/ae;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/protocol/au;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/protocol/au;IJ)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/protocol/au;ILjava/lang/String;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/protocol/au;Ljava/lang/String;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/protocol/au;Ljava/lang/String;IJ)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/protocol/au;[BIJ)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/protocol/l;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/protocol/l;Lcom/whatsapp/protocol/au;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/protocol/l;Lcom/whatsapp/protocol/au;[BIJ)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/sb;)V
-.end method
-
-.method public abstract a(Ljava/lang/Integer;[Ljava/lang/String;)V
-.end method
-
-.method public abstract a(Ljava/lang/Integer;[Ljava/lang/String;[Ljava/lang/String;)V
-.end method
-
-.method public abstract a(Ljava/lang/String;)V
-.end method
-
-.method public abstract a(Ljava/lang/String;I)V
-.end method
-
-.method public abstract a(Ljava/lang/String;IIJ)V
-.end method
-
-.method public abstract a(Ljava/lang/String;I[Lcom/whatsapp/contact/g;)V
-.end method
-
-.method public abstract a(Ljava/lang/String;JLjava/lang/String;)V
-.end method
-
-.method public abstract a(Ljava/lang/String;Ljava/lang/String;)V
-.end method
-
-.method public abstract a(Ljava/lang/String;Ljava/lang/String;I)V
-.end method
-
-.method public abstract a(Ljava/lang/String;Ljava/lang/String;IJ)V
-.end method
-
-.method public abstract a(Ljava/lang/String;Ljava/lang/String;J)V
-.end method
-
-.method public abstract a(Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;)V
-.end method
-
-.method public abstract a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
-.end method
-
-.method public abstract a(Ljava/lang/String;[B[B[B[B)V
-.end method
-
-.method public abstract a(Ljava/util/Hashtable;)V
-.end method
-
-.method public abstract a(Z)V
-.end method
-
-.method public abstract a([Ljava/lang/String;Ljava/lang/String;)V
-.end method
-
-.method public abstract a([Ljava/lang/String;[Ljava/lang/String;)V
-.end method
-
-.method public abstract b()V
-.end method
-
-.method public abstract b(I)V
-.end method
-
-.method public abstract b(IJ)V
-.end method
-
-.method public abstract b(Landroid/os/Bundle;)V
-.end method
-
-.method public abstract b(Lcom/whatsapp/protocol/l;)V
-.end method
-
-.method public abstract b(Ljava/lang/String;)V
-.end method
-
-.method public abstract b(Ljava/lang/String;I)V
-.end method
-
-.method public abstract b(Ljava/lang/String;Ljava/lang/String;)V
-.end method
-
-.method public abstract b(Ljava/lang/String;Ljava/lang/String;J)V
-.end method
-
-.method public abstract b(Ljava/util/Hashtable;)V
-.end method
-
-.method public abstract c()V
-.end method
-
-.method public abstract c(I)V
-.end method
-
-.method public abstract c(Ljava/lang/String;)V
-.end method
-
-.method public abstract c(Ljava/lang/String;Ljava/lang/String;)V
-.end method
-
-.method public abstract d(Ljava/lang/String;Ljava/lang/String;)V
-.end method
-
-.method public abstract e(Ljava/lang/String;Ljava/lang/String;)V
-.end method
-
-.method public abstract f(Ljava/lang/String;Ljava/lang/String;)V
-.end method
-
-.method public abstract g(Ljava/lang/String;Ljava/lang/String;)V
-.end method
-
-.method public abstract h(Ljava/lang/String;Ljava/lang/String;)V
-.end method
-
-.method public abstract i(Ljava/lang/String;Ljava/lang/String;)V
-.end method
-
-.method public abstract j(Ljava/lang/String;Ljava/lang/String;)V
+    return-object v0
 .end method

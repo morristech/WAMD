@@ -1,85 +1,63 @@
 .class Lcom/whatsapp/qrcode/a;
-.super Landroid/view/animation/Animation;
+.super Ljava/lang/Object;
 .source "a.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/qrcode/QrCodeOverlay;
+.field final a:Lcom/whatsapp/qrcode/c;
 
 
 # direct methods
-.method private constructor <init>(Lcom/whatsapp/qrcode/QrCodeOverlay;)V
+.method constructor <init>(Lcom/whatsapp/qrcode/c;)V
     .locals 0
 
     .prologue
-    .line 8
-    iput-object p1, p0, Lcom/whatsapp/qrcode/a;->a:Lcom/whatsapp/qrcode/QrCodeOverlay;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/qrcode/a;->a:Lcom/whatsapp/qrcode/c;
 
-    invoke-direct {p0}, Landroid/view/animation/Animation;-><init>()V
-
-    return-void
-.end method
-
-.method constructor <init>(Lcom/whatsapp/qrcode/QrCodeOverlay;Lcom/whatsapp/qrcode/e;)V
-    .locals 0
-
-    .prologue
-    .line 10
-    invoke-direct {p0, p1}, Lcom/whatsapp/qrcode/a;-><init>(Lcom/whatsapp/qrcode/QrCodeOverlay;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected applyTransformation(FLandroid/view/animation/Transformation;)V
-    .locals 5
+.method public run()V
+    .locals 2
 
     .prologue
-    .line 9
-    iget-object v0, p0, Lcom/whatsapp/qrcode/a;->a:Lcom/whatsapp/qrcode/QrCodeOverlay;
-
-    invoke-virtual {v0}, Lcom/whatsapp/qrcode/QrCodeOverlay;->getWidth()I
-
-    move-result v0
-
-    .line 1
-    iget-object v1, p0, Lcom/whatsapp/qrcode/a;->a:Lcom/whatsapp/qrcode/QrCodeOverlay;
-
-    invoke-virtual {v1}, Lcom/whatsapp/qrcode/QrCodeOverlay;->getHeight()I
-
-    move-result v1
-
     .line 2
-    invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
+    iget-object v0, p0, Lcom/whatsapp/qrcode/a;->a:Lcom/whatsapp/qrcode/c;
 
-    move-result v2
+    iget-object v0, v0, Lcom/whatsapp/qrcode/c;->a:Lcom/whatsapp/qrcode/QrCodeView;
 
-    mul-int/lit8 v2, v2, 0x3
+    invoke-static {v0}, Lcom/whatsapp/qrcode/QrCodeView;->a(Lcom/whatsapp/qrcode/QrCodeView;)Landroid/hardware/Camera;
 
-    div-int/lit8 v2, v2, 0x4
+    move-result-object v0
 
-    .line 5
-    sub-int/2addr v0, v2
-
-    div-int/lit8 v0, v0, 0x2
-
-    .line 4
-    sub-int/2addr v1, v2
-
-    div-int/lit8 v1, v1, 0x2
-
-    .line 11
-    add-int v3, v0, v2
+    if-eqz v0, :cond_0
 
     .line 3
-    add-int/2addr v2, v1
+    iget-object v0, p0, Lcom/whatsapp/qrcode/a;->a:Lcom/whatsapp/qrcode/c;
 
-    .line 6
-    iget-object v4, p0, Lcom/whatsapp/qrcode/a;->a:Lcom/whatsapp/qrcode/QrCodeOverlay;
+    iget-object v0, v0, Lcom/whatsapp/qrcode/c;->a:Lcom/whatsapp/qrcode/QrCodeView;
 
-    invoke-virtual {v4, v0, v1, v3, v2}, Lcom/whatsapp/qrcode/QrCodeOverlay;->invalidate(IIII)V
+    invoke-static {v0}, Lcom/whatsapp/qrcode/QrCodeView;->a(Lcom/whatsapp/qrcode/QrCodeView;)Landroid/hardware/Camera;
 
-    .line 7
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/whatsapp/qrcode/a;->a:Lcom/whatsapp/qrcode/c;
+
+    iget-object v1, v1, Lcom/whatsapp/qrcode/c;->a:Lcom/whatsapp/qrcode/QrCodeView;
+
+    iget-object v1, v1, Lcom/whatsapp/qrcode/QrCodeView;->d:Landroid/hardware/Camera$AutoFocusCallback;
+
+    invoke-virtual {v0, v1}, Landroid/hardware/Camera;->autoFocus(Landroid/hardware/Camera$AutoFocusCallback;)V
+
+    .line 4
+    :cond_0
     return-void
 .end method

@@ -1,447 +1,292 @@
 .class Lcom/whatsapp/zk;
-.super Landroid/support/v4/view/PagerAdapter;
+.super Ljava/lang/Object;
 .source "zk.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# static fields
+.field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ContactPicker;
+.field final a:Lcom/whatsapp/rg;
+
+.field final b:Lcom/whatsapp/ContactInfo;
 
 
 # direct methods
-.method private constructor <init>(Lcom/whatsapp/ContactPicker;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 11
 
-    .prologue
-    .line 14
-    iput-object p1, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
+    const/4 v2, 0x1
 
-    invoke-direct {p0}, Landroid/support/v4/view/PagerAdapter;-><init>()V
+    const/4 v1, 0x0
+
+    const/4 v0, 0x3
+
+    new-array v4, v0, [Ljava/lang/String;
+
+    const-string v3, "m\r\u0003@"
+
+    const/4 v0, -0x1
+
+    move-object v5, v4
+
+    move-object v6, v4
+
+    move v4, v1
+
+    :goto_0
+    invoke-virtual {v3}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v3
+
+    array-length v7, v3
+
+    move v8, v7
+
+    move v9, v1
+
+    move-object v7, v3
+
+    :goto_1
+    if-gt v8, v9, :cond_0
+
+    new-instance v3, Ljava/lang/String;
+
+    invoke-direct {v3, v7}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v3}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v3
+
+    packed-switch v0, :pswitch_data_0
+
+    aput-object v3, v5, v4
+
+    const-string v0, "z\u0007\u0001\u000egz\u001c0\u0013h\u007f\u0007@\u001eox\u0004O\u001eox\u0004\n\u0008&x\u0018\u001fZhv\u001cO\u001cil\u0006\u000b"
+
+    move-object v3, v0
+
+    move v4, v2
+
+    move-object v5, v6
+
+    move v0, v1
+
+    goto :goto_0
+
+    :pswitch_0
+    aput-object v3, v5, v4
+
+    const/4 v3, 0x2
+
+    const-string v0, "x\u0006\u000b\u0008ip\u000cA\u0013hm\r\u0001\u000e(x\u000b\u001b\u0013iwF+3GU"
+
+    move v4, v3
+
+    move-object v5, v6
+
+    move-object v3, v0
+
+    move v0, v2
+
+    goto :goto_0
+
+    :pswitch_1
+    aput-object v3, v5, v4
+
+    sput-object v6, Lcom/whatsapp/zk;->z:[Ljava/lang/String;
 
     return-void
+
+    :cond_0
+    aget-char v10, v7, v9
+
+    rem-int/lit8 v3, v9, 0x5
+
+    packed-switch v3, :pswitch_data_1
+
+    const/4 v3, 0x6
+
+    :goto_2
+    xor-int/2addr v3, v10
+
+    int-to-char v3, v3
+
+    aput-char v3, v7, v9
+
+    add-int/lit8 v3, v9, 0x1
+
+    move v9, v3
+
+    goto :goto_1
+
+    :pswitch_2
+    const/16 v3, 0x19
+
+    goto :goto_2
+
+    :pswitch_3
+    const/16 v3, 0x68
+
+    goto :goto_2
+
+    :pswitch_4
+    const/16 v3, 0x6f
+
+    goto :goto_2
+
+    :pswitch_5
+    const/16 v3, 0x7a
+
+    goto :goto_2
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+        :pswitch_5
+    .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/whatsapp/ContactPicker;Lcom/whatsapp/ag3;)V
+.method constructor <init>(Lcom/whatsapp/ContactInfo;Lcom/whatsapp/rg;)V
     .locals 0
 
     .prologue
-    .line 37
-    invoke-direct {p0, p1}, Lcom/whatsapp/zk;-><init>(Lcom/whatsapp/ContactPicker;)V
+    .line 5
+    iput-object p1, p0, Lcom/whatsapp/zk;->b:Lcom/whatsapp/ContactInfo;
+
+    iput-object p2, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/rg;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public destroyItem(Landroid/view/View;ILjava/lang/Object;)V
-    .locals 0
+.method public onClick(Landroid/view/View;)V
+    .locals 4
 
     .prologue
-    .line 24
-    check-cast p1, Landroid/support/v4/view/ViewPager;
+    .line 3
+    :try_start_0
+    iget-object v0, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/rg;
 
-    check-cast p3, Landroid/view/View;
+    invoke-static {v0}, Lcom/whatsapp/rg;->b(Lcom/whatsapp/rg;)Lcom/whatsapp/tc;
 
-    invoke-virtual {p1, p3}, Landroid/support/v4/view/ViewPager;->removeView(Landroid/view/View;)V
+    move-result-object v0
 
-    .line 34
-    return-void
-.end method
+    if-eqz v0, :cond_0
 
-.method public finishUpdate(Landroid/view/View;)V
-    .locals 0
-
-    .prologue
-    .line 19
-    return-void
-.end method
-
-.method public getCount()I
-    .locals 1
-
-    .prologue
     .line 10
-    iget-object v0, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
+    iget-object v0, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/rg;
 
-    invoke-static {v0}, Lcom/whatsapp/ContactPicker;->m(Lcom/whatsapp/ContactPicker;)Z
+    invoke-static {v0}, Lcom/whatsapp/rg;->b(Lcom/whatsapp/rg;)Lcom/whatsapp/tc;
 
-    move-result v0
+    move-result-object v0
 
-    if-nez v0, :cond_0
+    iget-object v1, p0, Lcom/whatsapp/zk;->b:Lcom/whatsapp/ContactInfo;
 
-    iget-object v0, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
+    invoke-static {v0, v1}, Lcom/whatsapp/App;->a(Lcom/whatsapp/tc;Landroid/app/Activity;)V
 
-    invoke-static {v0}, Lcom/whatsapp/ContactPicker;->i(Lcom/whatsapp/ContactPicker;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v0}, Lcom/whatsapp/ContactPicker;->e(Lcom/whatsapp/ContactPicker;)Z
-
-    move-result v0
+    sget v0, Lcom/whatsapp/App;->h:I
+    :try_end_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-eqz v0, :cond_1
 
-    .line 1
+    .line 8
     :cond_0
-    const/4 v0, 0x3
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 33
-    :goto_0
-    return v0
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    :cond_1
-    const/4 v0, 0x1
+    sget-object v1, Lcom/whatsapp/zk;->z:[Ljava/lang/String;
 
-    goto :goto_0
-.end method
+    const/4 v2, 0x0
 
-.method public getPageTitle(I)Ljava/lang/CharSequence;
-    .locals 1
+    aget-object v1, v1, v2
 
-    .prologue
-    .line 29
-    const-string v0, ""
-
-    return-object v0
-.end method
-
-.method public instantiateItem(Landroid/view/View;I)Ljava/lang/Object;
-    .locals 6
-
-    .prologue
-    const/4 v5, 0x1
-
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
-
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-virtual {v0}, Lcom/whatsapp/ContactPicker;->getLayoutInflater()Landroid/view/LayoutInflater;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 40
-    const v2, 0x7f030037
+    iget-object v1, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/rg;
 
-    const/4 v3, 0x0
-
-    invoke-virtual {v0, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
-
-    move-result-object v2
-
-    .line 15
-    const v0, 0x102000a
-
-    invoke-virtual {v2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/ListView;
-
-    .line 36
-    invoke-virtual {v0, v5}, Landroid/widget/ListView;->setFastScrollEnabled(Z)V
-
-    .line 30
-    invoke-virtual {v0, v5}, Landroid/widget/ListView;->setScrollbarFadingEnabled(Z)V
-
-    .line 12
-    const v3, 0x7f0b0135
-
-    invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v3}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
-
-    .line 20
-    invoke-virtual {v0, v5}, Landroid/widget/ListView;->setTextFilterEnabled(Z)V
-
-    .line 23
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v4, 0xb
-
-    if-lt v3, v4, :cond_0
-
-    .line 42
-    invoke-virtual {v0, v5}, Landroid/widget/ListView;->setFastScrollAlwaysVisible(Z)V
-
-    .line 31
-    const/high16 v3, 0x2000000
-
-    invoke-virtual {v0, v3}, Landroid/widget/ListView;->setScrollBarStyle(I)V
-
-    if-eqz v1, :cond_1
-
-    .line 21
-    :cond_0
-    const v3, 0x7f02062a
-
-    invoke-virtual {v0, v3}, Landroid/widget/ListView;->setSelector(I)V
-
-    .line 2
-    :cond_1
-    new-instance v3, Lcom/whatsapp/avx;
-
-    invoke-direct {v3, p0, v0}, Lcom/whatsapp/avx;-><init>(Lcom/whatsapp/zk;Landroid/widget/ListView;)V
-
-    invoke-virtual {v0, v3}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
-
-    .line 41
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->v(Lcom/whatsapp/ContactPicker;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->s(Lcom/whatsapp/ContactPicker;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->d(Lcom/whatsapp/ContactPicker;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->m(Lcom/whatsapp/ContactPicker;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->i(Lcom/whatsapp/ContactPicker;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->e(Lcom/whatsapp/ContactPicker;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    .line 17
-    new-instance v3, Lcom/whatsapp/a0;
-
-    invoke-direct {v3, p0, v0}, Lcom/whatsapp/a0;-><init>(Lcom/whatsapp/zk;Landroid/widget/ListView;)V
-
-    invoke-virtual {v0, v3}, Landroid/widget/ListView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
-
-    .line 39
-    :cond_2
-    new-instance v3, Lcom/whatsapp/m1;
-
-    invoke-direct {v3, p0}, Lcom/whatsapp/m1;-><init>(Lcom/whatsapp/zk;)V
-
-    .line 4
-    const v4, 0x7f0b01da
-
-    invoke-virtual {v2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 43
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-virtual {v3, v0}, Lcom/whatsapp/ContactPicker;->registerForContextMenu(Landroid/view/View;)V
-
-    .line 13
-    packed-switch p2, :pswitch_data_0
-
-    .line 32
-    :cond_3
-    :goto_0
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v1}, Lcom/whatsapp/rg;->d(Lcom/whatsapp/rg;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setTag(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7
-    check-cast p1, Landroid/support/v4/view/ViewPager;
+    move-result-object v0
 
-    const/4 v0, 0x0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {p1, v2, v0}, Landroid/support/v4/view/ViewPager;->addView(Landroid/view/View;I)V
-
-    .line 28
-    return-object v2
-
-    .line 22
-    :pswitch_0
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->v(Lcom/whatsapp/ContactPicker;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_4
-
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->m(Lcom/whatsapp/ContactPicker;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_4
-
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->i(Lcom/whatsapp/ContactPicker;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_4
-
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->e(Lcom/whatsapp/ContactPicker;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_5
-
-    .line 25
-    :cond_4
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->g(Lcom/whatsapp/ContactPicker;)Lcom/whatsapp/vp;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v3}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
-
-    if-eqz v1, :cond_3
-
-    .line 8
-    :cond_5
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->r(Lcom/whatsapp/ContactPicker;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_6
-
-    .line 26
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->f(Lcom/whatsapp/ContactPicker;)Lcom/whatsapp/vp;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v3}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
-
-    if-eqz v1, :cond_3
-
-    .line 38
-    :cond_6
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->a(Lcom/whatsapp/ContactPicker;)Lcom/whatsapp/vp;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v3}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
-
-    .line 3
-    if-eqz v1, :cond_3
-
-    .line 16
-    :pswitch_1
-    iget-object v3, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v3}, Lcom/whatsapp/ContactPicker;->f(Lcom/whatsapp/ContactPicker;)Lcom/whatsapp/vp;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v3}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
-
-    .line 18
-    if-eqz v1, :cond_3
+    move-result-object v0
 
     .line 11
-    :pswitch_2
-    iget-object v1, p0, Lcom/whatsapp/zk;->a:Lcom/whatsapp/ContactPicker;
+    new-instance v1, Landroid/content/Intent;
 
-    invoke-static {v1}, Lcom/whatsapp/ContactPicker;->a(Lcom/whatsapp/ContactPicker;)Lcom/whatsapp/vp;
+    sget-object v2, Lcom/whatsapp/zk;->z:[Ljava/lang/String;
 
-    move-result-object v1
+    const/4 v3, 0x2
 
-    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
+    aget-object v2, v2, v3
 
-    goto :goto_0
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    .line 13
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-    .end packed-switch
-.end method
+    move-result-object v0
 
-.method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
-    .locals 1
+    invoke-direct {v1, v2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .prologue
-    .line 35
-    if-ne p1, p2, :cond_0
+    .line 7
+    :try_start_1
+    iget-object v0, p0, Lcom/whatsapp/zk;->b:Lcom/whatsapp/ContactInfo;
 
-    const/4 v0, 0x1
+    invoke-virtual {v0, v1}, Lcom/whatsapp/ContactInfo;->startActivity(Landroid/content/Intent;)V
+    :try_end_1
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
+    .line 1
+    :cond_1
     :goto_0
-    return v0
+    return-void
 
-    :cond_0
-    const/4 v0, 0x0
+    .line 10
+    :catch_0
+    move-exception v0
+
+    throw v0
+
+    .line 9
+    :catch_1
+    move-exception v0
+
+    .line 6
+    sget-object v0, Lcom/whatsapp/zk;->z:[Ljava/lang/String;
+
+    const/4 v1, 0x1
+
+    aget-object v0, v0, v1
+
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
+
+    .line 4
+    invoke-static {}, Lcom/whatsapp/App;->av()V
 
     goto :goto_0
-.end method
-
-.method public restoreState(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V
-    .locals 0
-
-    .prologue
-    .line 9
-    return-void
-.end method
-
-.method public saveState()Landroid/os/Parcelable;
-    .locals 1
-
-    .prologue
-    .line 6
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public startUpdate(Landroid/view/View;)V
-    .locals 0
-
-    .prologue
-    .line 27
-    return-void
 .end method

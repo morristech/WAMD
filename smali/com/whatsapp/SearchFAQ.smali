@@ -12,22 +12,20 @@
 
 .field private j:Ljava/lang/String;
 
-.field private k:Ljava/lang/String;
+.field private k:Ljava/util/ArrayList;
 
-.field private l:Lcom/whatsapp/kv;
+.field private l:Lcom/whatsapp/fieldstats/a0;
 
-.field private m:Ljava/lang/String;
+.field private m:Ljava/util/HashMap;
 
-.field private n:Ljava/util/ArrayList;
+.field private n:Ljava/lang/String;
 
-.field private o:Ljava/util/HashMap;
+.field private o:Ljava/lang/String;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 14
-
-    const/4 v5, 0x4
 
     const/4 v4, 0x3
 
@@ -35,13 +33,15 @@
 
     const/4 v2, 0x1
 
+    const/4 v5, 0x4
+
     const/4 v1, 0x0
 
     const/16 v0, 0x13
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}K^:5_"
+    const-string v6, "\u0010O.Qh;T3]a;S*Uj\u0010"
 
     const/4 v0, -0x1
 
@@ -79,7 +79,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}K[:6N\tN%"
+    const-string v0, "!R(_vDP;Bw\rN=\u0010`\u000bU8\\aDO/D$\u000bFz"
 
     move-object v6, v0
 
@@ -94,7 +94,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "8B\u0001Y\'0HKB&-I\u000b_f<T\u0011Y)w\u007f1y\r\u0018a"
+    const-string v0, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qtVv\u000bM"
 
     move-object v6, v0
 
@@ -109,7 +109,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "5M\u001cD=-s\u000cE.5M\u0011N:"
+    const-string v0, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qt@v\u000bB6Ui"
 
     move-object v6, v0
 
@@ -124,7 +124,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}KH\',B\u0011"
+    const-string v0, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qtSk\u0011N."
 
     move-object v6, v0
 
@@ -141,7 +141,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}K_!-@\u0000X"
+    const-string v0, "\u0005N>Bk\rDtYj\u0010E4D*\u0001X.BeJs\u000ebA%m"
 
     move v7, v6
 
@@ -158,7 +158,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}KO-*O\u0017B8-E\nE;"
+    const-string v6, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qtCp\u0005T/C"
 
     const/4 v0, 0x5
 
@@ -171,7 +171,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}KM:6A"
+    const-string v6, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qtEv\u0008S"
 
     const/4 v0, 0x6
 
@@ -184,7 +184,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}KX<8X\u0010X"
+    const-string v6, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qtDm\u0010L?C"
 
     const/4 v0, 0x7
 
@@ -197,7 +197,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "8B\u0001Y\'0HKB&-I\u000b_f<T\u0011Y)w\u007f1y\r\u0018a"
+    const-string v6, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qtTa\u0017C(Yt\u0010I5^w"
 
     const/16 v0, 0x8
 
@@ -210,7 +210,7 @@
 
     const/16 v7, 0xa
 
-    const-string v6, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}K[:6N\tN%"
+    const-string v6, "\u0005N>Bk\rDtYj\u0010E4D*\u0001X.BeJs\u000ebA%m"
 
     const/16 v0, 0x9
 
@@ -223,7 +223,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}KX<8X\u0010X"
+    const-string v6, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qtCp\u0005T/C"
 
     const/16 v0, 0xa
 
@@ -236,7 +236,7 @@
 
     const/16 v7, 0xc
 
-    const-string v6, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}KM:6A"
+    const-string v6, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qtTa\u0017C(Yt\u0010I5^w"
 
     const/16 v0, 0xb
 
@@ -249,7 +249,7 @@
 
     const/16 v7, 0xd
 
-    const-string v6, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}KO-*O\u0017B8-E\nE;"
+    const-string v6, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qtDm\u0010L?C"
 
     const/16 v0, 0xc
 
@@ -262,7 +262,7 @@
 
     const/16 v7, 0xe
 
-    const-string v6, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}KH\',B\u0011"
+    const-string v6, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qtEv\u0008S"
 
     const/16 v0, 0xd
 
@@ -275,7 +275,7 @@
 
     const/16 v7, 0xf
 
-    const-string v6, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}K^:5_"
+    const-string v6, "\u0008A#_q\u0010\u007f3^b\u0008A.Uv"
 
     const/16 v0, 0xe
 
@@ -288,7 +288,7 @@
 
     const/16 v7, 0x10
 
-    const-string v6, ":C\u0008\u0005?1M\u0011X))\\Kx-8^\u0006C\u000e\u0018}K_!-@\u0000X"
+    const-string v6, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qtVv\u000bM"
 
     const/16 v0, 0xf
 
@@ -301,7 +301,7 @@
 
     const/16 v7, 0x11
 
-    const-string v6, "\u001c^\u0017D:y\\\u0004Y;0B\u0002\u000b,6Y\u0007G-yC\u0010_h6JE"
+    const-string v6, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qt@v\u000bB6Ui"
 
     const/16 v0, 0x10
 
@@ -314,7 +314,7 @@
 
     const/16 v7, 0x12
 
-    const-string v6, "-C\u0011J$\u0006X\u000cF-\u0006_\u0015N&-"
+    const-string v6, "\u0007O7\u001es\u000cA.Ce\u0014Ptca\u0005R9XB%qtSk\u0011N."
 
     const/16 v0, 0x11
 
@@ -336,7 +336,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x48
+    move v6, v5
 
     :goto_2
     xor-int/2addr v6, v13
@@ -352,24 +352,26 @@
     goto/16 :goto_1
 
     :pswitch_12
-    const/16 v6, 0x59
+    const/16 v6, 0x64
 
     goto :goto_2
 
     :pswitch_13
-    const/16 v6, 0x2c
+    const/16 v6, 0x20
 
     goto :goto_2
 
     :pswitch_14
-    const/16 v6, 0x65
+    const/16 v6, 0x5a
 
     goto :goto_2
 
     :pswitch_15
-    const/16 v6, 0x2b
+    const/16 v6, 0x30
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -406,19 +408,19 @@
     .locals 0
 
     .prologue
-    .line 11
+    .line 56
     invoke-direct {p0}, Lcom/whatsapp/DialogToastListActivity;-><init>()V
 
-    .line 46
+    .line 18
     return-void
 .end method
 
-.method static a(Lcom/whatsapp/SearchFAQ;)Lcom/whatsapp/kv;
+.method static a(Lcom/whatsapp/SearchFAQ;)Lcom/whatsapp/fieldstats/a0;
     .locals 1
 
     .prologue
-    .line 78
-    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/kv;
+    .line 34
+    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/fieldstats/a0;
 
     return-object v0
 .end method
@@ -427,8 +429,8 @@
     .locals 0
 
     .prologue
-    .line 41
-    iput-object p1, p0, Lcom/whatsapp/SearchFAQ;->k:Ljava/lang/String;
+    .line 22
+    iput-object p1, p0, Lcom/whatsapp/SearchFAQ;->o:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -437,89 +439,89 @@
     .locals 3
 
     .prologue
-    .line 28
+    .line 79
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/whatsapp/SearchFAQ;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 48
+    .line 32
     sget-object v1, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xc
+    const/4 v2, 0x2
 
     aget-object v1, v1, v2
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 53
+    .line 25
     sget-object v1, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xa
+    const/4 v2, 0x3
 
     aget-object v1, v1, v2
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 21
+    .line 23
     sget-object v1, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xb
+    const/4 v2, 0x6
 
     aget-object v1, v1, v2
 
     invoke-virtual {v0, v1, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 76
+    .line 35
     sget-object v1, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xe
+    const/4 v2, 0x4
 
     aget-object v1, v1, v2
 
     invoke-virtual {v0, v1, p5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 64
+    .line 40
     sget-object v1, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x10
+    const/16 v2, 0x8
 
     aget-object v1, v1, v2
 
     invoke-virtual {v0, v1, p6}, Landroid/content/Intent;->putStringArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
 
-    .line 19
-    sget-object v1, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
-
-    const/16 v2, 0xd
-
-    aget-object v1, v1, v2
-
-    invoke-virtual {v0, v1, p7}, Landroid/content/Intent;->putStringArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
-
-    .line 8
-    sget-object v1, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
-
-    const/16 v2, 0xf
-
-    aget-object v1, v1, v2
-
-    invoke-virtual {v0, v1, p8}, Landroid/content/Intent;->putStringArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
-
-    .line 74
+    .line 2
     sget-object v1, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
     const/16 v2, 0x9
 
     aget-object v1, v1, v2
 
+    invoke-virtual {v0, v1, p7}, Landroid/content/Intent;->putStringArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
+
+    .line 7
+    sget-object v1, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x7
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, v1, p8}, Landroid/content/Intent;->putStringArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
+
+    .line 78
+    sget-object v1, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x5
+
+    aget-object v1, v1, v2
+
     invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putParcelableArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
 
-    .line 38
+    .line 61
     invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 54
+    .line 28
     return-void
 .end method
 
@@ -527,33 +529,13 @@
     .locals 1
 
     .prologue
-    .line 44
-    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->n:Ljava/util/ArrayList;
+    .line 64
+    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->k:Ljava/util/ArrayList;
 
     return-object v0
 .end method
 
 .method static c(Lcom/whatsapp/SearchFAQ;)Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->m:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method static d(Lcom/whatsapp/SearchFAQ;)Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->j:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method static e(Lcom/whatsapp/SearchFAQ;)Ljava/lang/String;
     .locals 1
 
     .prologue
@@ -563,26 +545,46 @@
     return-object v0
 .end method
 
+.method static d(Lcom/whatsapp/SearchFAQ;)Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 43
+    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->j:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method static e(Lcom/whatsapp/SearchFAQ;)Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 27
+    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->n:Ljava/lang/String;
+
+    return-object v0
+.end method
+
 
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
-    .locals 8
+    .locals 9
 
     .prologue
-    .line 62
-    const/4 v0, 0x1
+    const/4 v8, 0x1
 
-    if-ne p1, v0, :cond_3
+    .line 49
+    if-ne p1, v8, :cond_3
 
-    .line 57
+    .line 69
     const/4 v0, -0x1
 
     if-ne p2, v0, :cond_3
 
-    .line 79
+    .line 62
     sget-object v0, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x12
+    const/4 v1, 0x0
 
     aget-object v0, v0, v1
 
@@ -602,10 +604,10 @@
 
     move-result-wide v2
 
-    .line 51
-    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->o:Ljava/util/HashMap;
+    .line 70
+    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->m:Ljava/util/HashMap;
 
-    iget-object v1, p0, Lcom/whatsapp/SearchFAQ;->k:Ljava/lang/String;
+    iget-object v1, p0, Lcom/whatsapp/SearchFAQ;->o:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -613,10 +615,10 @@
 
     if-eqz v0, :cond_4
 
-    .line 16
-    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->o:Ljava/util/HashMap;
+    .line 45
+    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->m:Ljava/util/HashMap;
 
-    iget-object v1, p0, Lcom/whatsapp/SearchFAQ;->k:Ljava/lang/String;
+    iget-object v1, p0, Lcom/whatsapp/SearchFAQ;->o:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -630,12 +632,12 @@
 
     add-double/2addr v0, v2
 
-    .line 36
+    .line 68
     :goto_0
     :try_start_0
-    iget-object v4, p0, Lcom/whatsapp/SearchFAQ;->o:Ljava/util/HashMap;
+    iget-object v4, p0, Lcom/whatsapp/SearchFAQ;->m:Ljava/util/HashMap;
 
-    iget-object v5, p0, Lcom/whatsapp/SearchFAQ;->k:Ljava/lang/String;
+    iget-object v5, p0, Lcom/whatsapp/SearchFAQ;->o:Ljava/lang/String;
 
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
@@ -643,15 +645,15 @@
 
     invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
-    iget-object v4, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/kv;
+    .line 9
+    iget-object v4, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/fieldstats/a0;
 
-    iget-object v4, v4, Lcom/whatsapp/kv;->b:Ljava/lang/Double;
+    iget-object v4, v4, Lcom/whatsapp/fieldstats/a0;->i:Ljava/lang/Double;
 
     if-nez v4, :cond_0
 
-    .line 26
-    iget-object v4, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/kv;
+    .line 36
+    iget-object v4, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/fieldstats/a0;
 
     const-wide/16 v6, 0x0
 
@@ -659,15 +661,15 @@
 
     move-result-object v5
 
-    iput-object v5, v4, Lcom/whatsapp/kv;->b:Ljava/lang/Double;
+    iput-object v5, v4, Lcom/whatsapp/fieldstats/a0;->i:Ljava/lang/Double;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 77
+    .line 39
     :cond_0
-    iget-object v4, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/kv;
+    iget-object v4, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/fieldstats/a0;
 
-    iget-object v4, v4, Lcom/whatsapp/kv;->b:Ljava/lang/Double;
+    iget-object v4, v4, Lcom/whatsapp/fieldstats/a0;->i:Ljava/lang/Double;
 
     invoke-virtual {v4}, Ljava/lang/Double;->doubleValue()D
 
@@ -677,41 +679,41 @@
 
     if-lez v4, :cond_1
 
-    .line 20
+    .line 46
     :try_start_1
-    iget-object v4, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/kv;
+    iget-object v4, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/fieldstats/a0;
 
-    iget-object v5, p0, Lcom/whatsapp/SearchFAQ;->k:Ljava/lang/String;
+    iget-object v5, p0, Lcom/whatsapp/SearchFAQ;->o:Ljava/lang/String;
 
     invoke-static {v5}, Ljava/lang/Double;->valueOf(Ljava/lang/String;)Ljava/lang/Double;
 
     move-result-object v5
 
-    iput-object v5, v4, Lcom/whatsapp/kv;->m:Ljava/lang/Double;
+    iput-object v5, v4, Lcom/whatsapp/fieldstats/a0;->o:Ljava/lang/Double;
 
-    .line 50
-    iget-object v4, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/kv;
+    .line 75
+    iget-object v4, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/fieldstats/a0;
 
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object v0
 
-    iput-object v0, v4, Lcom/whatsapp/kv;->b:Ljava/lang/Double;
+    iput-object v0, v4, Lcom/whatsapp/fieldstats/a0;->i:Ljava/lang/Double;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 63
+    .line 1
     :cond_1
     :goto_1
     :try_start_2
-    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/kv;
+    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/fieldstats/a0;
 
-    iget-object v0, v0, Lcom/whatsapp/kv;->k:Ljava/lang/Double;
+    iget-object v0, v0, Lcom/whatsapp/fieldstats/a0;->j:Ljava/lang/Double;
 
     if-nez v0, :cond_2
 
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/kv;
+    .line 12
+    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/fieldstats/a0;
 
     const-wide/16 v4, 0x0
 
@@ -719,15 +721,15 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/whatsapp/kv;->k:Ljava/lang/Double;
+    iput-object v1, v0, Lcom/whatsapp/fieldstats/a0;->j:Ljava/lang/Double;
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 66
+    .line 42
     :cond_2
-    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/kv;
+    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/fieldstats/a0;
 
-    iget-object v1, v0, Lcom/whatsapp/kv;->k:Ljava/lang/Double;
+    iget-object v1, v0, Lcom/whatsapp/fieldstats/a0;->j:Ljava/lang/Double;
 
     invoke-virtual {v1}, Ljava/lang/Double;->doubleValue()D
 
@@ -739,38 +741,36 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/whatsapp/kv;->k:Ljava/lang/Double;
+    iput-object v1, v0, Lcom/whatsapp/fieldstats/a0;->j:Ljava/lang/Double;
 
-    .line 55
+    .line 50
     :cond_3
     return-void
 
-    .line 26
+    .line 36
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 40
+    .line 6
     :catch_1
     move-exception v0
 
-    .line 29
+    .line 55
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v1, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x11
-
-    aget-object v1, v1, v4
+    aget-object v1, v1, v8
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/SearchFAQ;->k:Ljava/lang/String;
+    iget-object v1, p0, Lcom/whatsapp/SearchFAQ;->o:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -784,7 +784,7 @@
 
     goto :goto_1
 
-    .line 4
+    .line 12
     :catch_2
     move-exception v0
 
@@ -800,36 +800,36 @@
     .locals 11
 
     .prologue
-    const/4 v5, 0x1
-
     const/4 v1, 0x0
 
-    sget-boolean v4, Lcom/whatsapp/App;->aL:Z
+    sget v4, Lcom/whatsapp/App;->h:I
 
-    .line 56
+    .line 52
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastListActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 75
+    .line 30
     invoke-virtual {p0}, Lcom/whatsapp/SearchFAQ;->getSupportActionBar()Lcom/actionbarsherlock/app/ActionBar;
 
     move-result-object v0
 
-    invoke-virtual {v0, v5}, Lcom/actionbarsherlock/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
+    const/4 v2, 0x1
 
-    .line 31
+    invoke-virtual {v0, v2}, Lcom/actionbarsherlock/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
+
+    .line 74
     const v0, 0x7f03009d
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SearchFAQ;->setContentView(I)V
 
-    .line 15
+    .line 16
     invoke-virtual {p0}, Lcom/whatsapp/SearchFAQ;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
-    .line 18
+    .line 8
     sget-object v0, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x7
+    const/16 v3, 0x10
 
     aget-object v0, v0, v3
 
@@ -837,23 +837,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/SearchFAQ;->m:Ljava/lang/String;
-
-    .line 34
-    sget-object v0, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
-
-    aget-object v0, v0, v5
-
-    invoke-virtual {v2, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
     iput-object v0, p0, Lcom/whatsapp/SearchFAQ;->j:Ljava/lang/String;
 
-    .line 27
+    .line 11
     sget-object v0, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x8
+    const/16 v3, 0x11
 
     aget-object v0, v0, v3
 
@@ -863,10 +852,23 @@
 
     iput-object v0, p0, Lcom/whatsapp/SearchFAQ;->i:Ljava/lang/String;
 
-    .line 24
+    .line 3
     sget-object v0, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x2
+    const/16 v3, 0xb
+
+    aget-object v0, v0, v3
+
+    invoke-virtual {v2, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/whatsapp/SearchFAQ;->n:Ljava/lang/String;
+
+    .line 47
+    sget-object v0, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
+
+    const/16 v3, 0xa
 
     aget-object v0, v0, v3
 
@@ -874,28 +876,28 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/SearchFAQ;->n:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/whatsapp/SearchFAQ;->k:Ljava/util/ArrayList;
+
+    .line 76
+    new-instance v0, Lcom/whatsapp/fieldstats/a0;
+
+    invoke-direct {v0}, Lcom/whatsapp/fieldstats/a0;-><init>()V
+
+    iput-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/fieldstats/a0;
 
     .line 37
-    new-instance v0, Lcom/whatsapp/kv;
+    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/fieldstats/a0;
 
-    invoke-direct {v0}, Lcom/whatsapp/kv;-><init>()V
+    iget-object v3, p0, Lcom/whatsapp/SearchFAQ;->i:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/kv;
+    iput-object v3, v0, Lcom/whatsapp/fieldstats/a0;->n:Ljava/lang/String;
 
-    .line 58
-    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/kv;
+    .line 19
+    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/fieldstats/a0;
 
-    iget-object v3, p0, Lcom/whatsapp/SearchFAQ;->j:Ljava/lang/String;
+    sget-object v3, Lcom/whatsapp/fieldstats/b1;->PROBLEM_DESCRIPTION:Lcom/whatsapp/fieldstats/b1;
 
-    iput-object v3, v0, Lcom/whatsapp/kv;->g:Ljava/lang/String;
-
-    .line 12
-    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/kv;
-
-    sget-object v3, Lcom/whatsapp/ke;->PROBLEM_DESCRIPTION:Lcom/whatsapp/ke;
-
-    invoke-virtual {v3}, Lcom/whatsapp/ke;->getCode()I
+    invoke-virtual {v3}, Lcom/whatsapp/fieldstats/b1;->getCode()I
 
     move-result v3
 
@@ -905,17 +907,17 @@
 
     move-result-object v3
 
-    iput-object v3, v0, Lcom/whatsapp/kv;->l:Ljava/lang/Double;
+    iput-object v3, v0, Lcom/whatsapp/fieldstats/a0;->d:Ljava/lang/Double;
 
-    .line 65
+    .line 59
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/SearchFAQ;->o:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/whatsapp/SearchFAQ;->m:Ljava/util/HashMap;
 
-    .line 35
-    const v0, 0x7f0b0286
+    .line 53
+    const v0, 0x7f0b028f
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SearchFAQ;->findViewById(I)Landroid/view/View;
 
@@ -923,17 +925,17 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 59
-    new-instance v3, Lcom/whatsapp/aca;
+    .line 15
+    new-instance v3, Lcom/whatsapp/yb;
 
-    invoke-direct {v3, p0}, Lcom/whatsapp/aca;-><init>(Lcom/whatsapp/SearchFAQ;)V
+    invoke-direct {v3, p0}, Lcom/whatsapp/yb;-><init>(Lcom/whatsapp/SearchFAQ;)V
 
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 23
+    .line 57
     sget-object v0, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x5
+    const/16 v3, 0xd
 
     aget-object v0, v0, v3
 
@@ -941,10 +943,10 @@
 
     move-result-object v5
 
-    .line 49
+    .line 41
     sget-object v0, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x6
+    const/16 v3, 0xc
 
     aget-object v0, v0, v3
 
@@ -952,19 +954,21 @@
 
     move-result-object v6
 
-    .line 10
+    .line 51
     sget-object v0, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    aget-object v0, v0, v1
+    const/16 v3, 0xe
+
+    aget-object v0, v0, v3
 
     invoke-virtual {v2, v0}, Landroid/content/Intent;->getStringArrayListExtra(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v7
 
-    .line 70
+    .line 5
     sget-object v0, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x4
+    const/16 v3, 0x12
 
     aget-object v0, v0, v3
 
@@ -972,19 +976,19 @@
 
     move-result v8
 
-    .line 52
+    .line 63
     new-instance v9, Ljava/util/ArrayList;
 
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
 
     move v3, v1
 
-    .line 45
+    .line 72
     :goto_0
     if-ge v3, v8, :cond_0
 
-    .line 72
-    new-instance v10, Lcom/whatsapp/_z;
+    .line 67
+    new-instance v10, Lcom/whatsapp/k3;
 
     invoke-virtual {v5, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1004,33 +1008,33 @@
 
     check-cast v2, Ljava/lang/String;
 
-    invoke-direct {v10, p0, v0, v1, v2}, Lcom/whatsapp/_z;-><init>(Lcom/whatsapp/SearchFAQ;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v10, p0, v0, v1, v2}, Lcom/whatsapp/k3;-><init>(Lcom/whatsapp/SearchFAQ;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 73
     invoke-virtual {v9, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 68
+    .line 38
     add-int/lit8 v0, v3, 0x1
 
     if-eqz v4, :cond_1
 
-    .line 25
+    .line 58
     :cond_0
-    new-instance v1, Lcom/whatsapp/ni;
+    new-instance v1, Lcom/whatsapp/fx;
 
     const v0, 0x7f03009f
 
-    invoke-direct {v1, p0, p0, v0, v9}, Lcom/whatsapp/ni;-><init>(Lcom/whatsapp/SearchFAQ;Landroid/content/Context;ILjava/util/List;)V
+    invoke-direct {v1, p0, p0, v0, v9}, Lcom/whatsapp/fx;-><init>(Lcom/whatsapp/SearchFAQ;Landroid/content/Context;ILjava/util/List;)V
 
-    .line 13
+    .line 4
     invoke-virtual {p0}, Lcom/whatsapp/SearchFAQ;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
 
-    .line 5
+    .line 29
     sget-object v0, Lcom/whatsapp/SearchFAQ;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x3
+    const/16 v3, 0xf
 
     aget-object v0, v0, v3
 
@@ -1040,25 +1044,25 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    .line 3
+    .line 14
     const v3, 0x7f03009e
 
     const/4 v4, 0x0
 
-    invoke-static {v0, v3, v4}, Lcom/whatsapp/ad_;->a(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;)Landroid/view/View;
+    invoke-static {v0, v3, v4}, Lcom/whatsapp/t3;->a(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
-    .line 17
+    .line 65
     invoke-virtual {v2, v0}, Landroid/widget/ListView;->addHeaderView(Landroid/view/View;)V
 
-    .line 2
+    .line 20
     invoke-virtual {p0, v1}, Lcom/whatsapp/SearchFAQ;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 39
+    .line 26
     invoke-virtual {p0, v2}, Lcom/whatsapp/SearchFAQ;->registerForContextMenu(Landroid/view/View;)V
 
-    .line 67
+    .line 48
     return-void
 
     :cond_1
@@ -1071,10 +1075,10 @@
     .locals 2
 
     .prologue
-    .line 69
+    .line 44
     packed-switch p1, :pswitch_data_0
 
-    .line 42
+    .line 54
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastListActivity;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
@@ -1082,14 +1086,14 @@
     :goto_0
     return-object v0
 
-    .line 43
+    .line 60
     :pswitch_0
     new-instance v0, Landroid/app/ProgressDialog;
 
     invoke-direct {v0, p0}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    .line 30
-    const v1, 0x7f0e031a
+    .line 10
+    const v1, 0x7f0e0328
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/SearchFAQ;->getString(I)Ljava/lang/String;
 
@@ -1097,19 +1101,19 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 47
+    .line 31
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
-    .line 61
+    .line 77
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     goto :goto_0
 
-    .line 69
+    .line 44
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -1120,13 +1124,13 @@
     .locals 1
 
     .prologue
-    .line 32
+    .line 13
     invoke-super {p0}, Lcom/whatsapp/DialogToastListActivity;->onDestroy()V
 
-    .line 60
-    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/kv;
+    .line 66
+    iget-object v0, p0, Lcom/whatsapp/SearchFAQ;->l:Lcom/whatsapp/fieldstats/a0;
 
-    invoke-static {p0, v0}, Lcom/whatsapp/h0;->a(Landroid/content/Context;Lcom/whatsapp/kd;)V
+    invoke-static {p0, v0}, Lcom/whatsapp/fieldstats/bf;->a(Landroid/content/Context;Lcom/whatsapp/fieldstats/am;)V
 
     .line 33
     return-void

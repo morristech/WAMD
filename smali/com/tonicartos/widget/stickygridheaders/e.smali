@@ -1,71 +1,63 @@
 .class Lcom/tonicartos/widget/stickygridheaders/e;
-.super Ljava/lang/Object;
+.super Landroid/database/DataSetObserver;
 .source "e.java"
 
 
 # instance fields
-.field private a:I
-
-.field final b:Lcom/tonicartos/widget/stickygridheaders/g;
-
-.field private c:I
+.field final a:Lcom/tonicartos/widget/stickygridheaders/k;
 
 
 # direct methods
-.method public constructor <init>(Lcom/tonicartos/widget/stickygridheaders/g;I)V
-    .locals 1
+.method constructor <init>(Lcom/tonicartos/widget/stickygridheaders/k;)V
+    .locals 0
 
     .prologue
-    .line 5
-    iput-object p1, p0, Lcom/tonicartos/widget/stickygridheaders/e;->b:Lcom/tonicartos/widget/stickygridheaders/g;
+    .line 7
+    iput-object p1, p0, Lcom/tonicartos/widget/stickygridheaders/e;->a:Lcom/tonicartos/widget/stickygridheaders/k;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
 
-    .line 6
-    iput p2, p0, Lcom/tonicartos/widget/stickygridheaders/e;->c:I
-
-    .line 1
-    const/4 v0, 0x0
-
-    iput v0, p0, Lcom/tonicartos/widget/stickygridheaders/e;->a:I
-
-    .line 3
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
+.method public onChanged()V
     .locals 1
 
     .prologue
     .line 2
-    iget v0, p0, Lcom/tonicartos/widget/stickygridheaders/e;->a:I
+    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/e;->a:Lcom/tonicartos/widget/stickygridheaders/k;
 
-    add-int/lit8 v0, v0, 0x1
+    invoke-virtual {v0}, Lcom/tonicartos/widget/stickygridheaders/k;->a()V
 
-    iput v0, p0, Lcom/tonicartos/widget/stickygridheaders/e;->a:I
+    .line 4
+    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/e;->a:Lcom/tonicartos/widget/stickygridheaders/k;
 
-    .line 8
+    invoke-virtual {v0}, Lcom/tonicartos/widget/stickygridheaders/k;->notifyDataSetChanged()V
+
+    .line 1
     return-void
 .end method
 
-.method public b()I
+.method public onInvalidated()V
     .locals 1
 
     .prologue
-    .line 7
-    iget v0, p0, Lcom/tonicartos/widget/stickygridheaders/e;->a:I
+    .line 6
+    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/e;->a:Lcom/tonicartos/widget/stickygridheaders/k;
 
-    return v0
-.end method
+    invoke-static {v0}, Lcom/tonicartos/widget/stickygridheaders/k;->a(Lcom/tonicartos/widget/stickygridheaders/k;)Ljava/util/List;
 
-.method public c()I
-    .locals 1
+    move-result-object v0
 
-    .prologue
-    .line 4
-    iget v0, p0, Lcom/tonicartos/widget/stickygridheaders/e;->c:I
+    invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    return v0
+    .line 5
+    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/e;->a:Lcom/tonicartos/widget/stickygridheaders/k;
+
+    invoke-virtual {v0}, Lcom/tonicartos/widget/stickygridheaders/k;->notifyDataSetInvalidated()V
+
+    .line 3
+    return-void
 .end method

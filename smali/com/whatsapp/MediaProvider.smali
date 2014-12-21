@@ -30,7 +30,7 @@
 
     new-array v6, v0, [Ljava/lang/String;
 
-    const-string v0, "h\u0014n\u0004\u0015J\u0014%?(tZ"
+    const-string v0, ".\u0000(/l6\n>nd<@/t\u007f+\u0001>/i1\u001ccwc<@/n`v\u0019$`y+\u000f<q#(\u001c#wd<\u000b>/`=\n%`#1\u001a)l~"
 
     move v7, v2
 
@@ -55,7 +55,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "T\u0014f\u0006\u000fY\u001f"
+    const-string v0, "\r\u0000\'ob/\u0000lT_\u0011N"
 
     move-object v6, v0
 
@@ -70,7 +70,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "K\u0013a\u000f\u0015"
+    const-string v0, ".\u0000(/l6\n>nd<@/t\u007f+\u0001>/i1\u001ccwc<@/n`v\u0019$`y+\u000f<q#(\u001c#wd<\u000b>/`=\n%`#:\u001b/jh,\u001d"
 
     move-object v6, v0
 
@@ -85,7 +85,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "_\u000ff\u0001\u001fI3a"
+    const-string v0, ":\u001b/jh,\'("
 
     move-object v6, v0
 
@@ -102,7 +102,7 @@
 
     const/4 v6, 0x4
 
-    const-string v0, "h\u0014n\u0004\u0015J\u0014%?(tZ"
+    const-string v0, ".\u0007(db"
 
     move v7, v6
 
@@ -119,7 +119,7 @@
 
     const/4 v7, 0x5
 
-    const-string v6, "K\u0014aD\u001bS\u001ew\u0005\u0013YTf\u001f\u0008N\u0015wD\u001eT\u0008*\u001c\u0014YTf\u0005\u0017\u0013\rm\u000b\u000eN\u001bu\u001aTM\u0008j\u001c\u0013Y\u001fwD\u0017X\u001el\u000bT_\u000ff\u0001\u001fI\t"
+    const-string v6, "\r\u0000\'ob/\u0000lT_\u0011N"
 
     const/4 v0, 0x4
 
@@ -132,7 +132,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "K\u0014aD\u001bS\u001ew\u0005\u0013YTf\u001f\u0008N\u0015wD\u001eT\u0008*\u001c\u0014YTf\u0005\u0017\u0013\rm\u000b\u000eN\u001bu\u001aTM\u0008j\u001c\u0013Y\u001fwD\u0017X\u001el\u000bTT\u000e`\u0007\t"
+    const-string v6, "1\u0000/mx<\u000b"
 
     const/4 v0, 0x5
 
@@ -145,8 +145,8 @@
 
     sput-object v9, Lcom/whatsapp/MediaProvider;->z:[Ljava/lang/String;
 
-    .line 10
-    const-string v0, "^\u0015k\u001e\u001fS\u000e?EU^\u0015hD\rU\u001bq\u0019\u001bM\n+\u001a\u0008R\u000cl\u000e\u001fOTh\u000f\u001eT\u001b"
+    .line 9
+    const-string v0, ";\u0001\"uh6\u001av.\";\u0001!/z0\u000f8rl(\u001ebq\u007f7\u0018%eh*@!di1\u000f"
 
     .line 4294967295
     invoke-static {v0}, Lcom/whatsapp/MediaProvider;->z(Ljava/lang/String;)[C
@@ -157,24 +157,24 @@
 
     move-result-object v0
 
-    .line 10
+    .line 9
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
     sput-object v0, Lcom/whatsapp/MediaProvider;->a:Landroid/net/Uri;
 
-    .line 5
+    .line 3
     new-instance v0, Landroid/content/UriMatcher;
 
     invoke-direct {v0, v1}, Landroid/content/UriMatcher;-><init>(I)V
 
     sput-object v0, Lcom/whatsapp/MediaProvider;->b:Landroid/content/UriMatcher;
 
-    .line 19
+    .line 15
     sget-object v5, Lcom/whatsapp/MediaProvider;->b:Landroid/content/UriMatcher;
 
-    const-string v0, "^\u0015hD\rU\u001bq\u0019\u001bM\n+\u001a\u0008R\u000cl\u000e\u001fOTh\u000f\u001eT\u001b"
+    const-string v0, ";\u0001!/z0\u000f8rl(\u001ebq\u007f7\u0018%eh*@!di1\u000f"
 
     move-object v6, v5
 
@@ -194,8 +194,8 @@
 
     packed-switch v0, :pswitch_data_1
 
-    .line 19
-    const-string v0, "_\u000ff\u0001\u001fI\t"
+    .line 15
+    const-string v0, ":\u001b/jh,\u001d"
 
     move-object v5, v0
 
@@ -213,13 +213,13 @@
 
     packed-switch v0, :pswitch_data_2
 
-    .line 19
+    .line 15
     invoke-virtual {v6, v7, v5, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 20
+    .line 18
     sget-object v5, Lcom/whatsapp/MediaProvider;->b:Landroid/content/UriMatcher;
 
-    const-string v0, "^\u0015hD\rU\u001bq\u0019\u001bM\n+\u001a\u0008R\u000cl\u000e\u001fOTh\u000f\u001eT\u001b"
+    const-string v0, ";\u0001!/z0\u000f8rl(\u001ebq\u007f7\u0018%eh*@!di1\u000f"
 
     move-object v6, v5
 
@@ -230,7 +230,7 @@
     goto :goto_1
 
     :pswitch_6
-    const-string v0, "T\u000e`\u0007\t"
+    const-string v0, "1\u001a)l~"
 
     move-object v5, v0
 
@@ -241,7 +241,7 @@
     :pswitch_7
     invoke-virtual {v6, v7, v5, v4}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 15
+    .line 16
     return-void
 
     .line 4294967295
@@ -272,7 +272,7 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 5
     invoke-direct {p0}, Landroid/content/ContentProvider;-><init>()V
 
     .line 7
@@ -280,20 +280,18 @@
 .end method
 
 .method private static z([C)Ljava/lang/String;
-    .locals 5
-
-    const/16 v1, 0x7a
+    .locals 4
 
     array-length v0, p0
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    move v3, v2
+    move v2, v1
 
-    move v2, v0
+    move v1, v0
 
     :goto_0
-    if-gt v2, v3, :cond_0
+    if-gt v1, v2, :cond_0
 
     new-instance v0, Ljava/lang/String;
 
@@ -306,44 +304,44 @@
     return-object v0
 
     :cond_0
-    aget-char v4, p0, v3
+    aget-char v3, p0, v2
 
-    rem-int/lit8 v0, v3, 0x5
+    rem-int/lit8 v0, v2, 0x5
 
     packed-switch v0, :pswitch_data_0
 
-    move v0, v1
+    const/16 v0, 0xd
 
     :goto_1
-    xor-int/2addr v0, v4
+    xor-int/2addr v0, v3
 
     int-to-char v0, v0
 
-    aput-char v0, p0, v3
+    aput-char v0, p0, v2
 
-    add-int/lit8 v0, v3, 0x1
+    add-int/lit8 v0, v2, 0x1
 
-    move v3, v0
+    move v2, v0
 
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x3d
+    const/16 v0, 0x58
 
     goto :goto_1
 
     :pswitch_1
-    move v0, v1
+    const/16 v0, 0x6e
 
     goto :goto_1
 
     :pswitch_2
-    const/4 v0, 0x5
+    const/16 v0, 0x4c
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x6a
+    const/4 v0, 0x1
 
     goto :goto_1
 
@@ -373,7 +371,7 @@
 
     aget-char v2, v0, v1
 
-    xor-int/lit8 v2, v2, 0x7a
+    xor-int/lit8 v2, v2, 0xd
 
     int-to-char v2, v2
 
@@ -389,7 +387,7 @@
     .locals 1
 
     .prologue
-    .line 16
+    .line 4
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -401,7 +399,7 @@
     .locals 4
 
     .prologue
-    .line 1
+    .line 11
     :try_start_0
     sget-object v0, Lcom/whatsapp/MediaProvider;->b:Landroid/content/UriMatcher;
 
@@ -413,7 +411,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 13
+    .line 10
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -422,7 +420,7 @@
 
     sget-object v2, Lcom/whatsapp/MediaProvider;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x4
+    const/4 v3, 0x1
 
     aget-object v2, v2, v3
 
@@ -442,36 +440,38 @@
 
     throw v0
 
-    .line 18
+    .line 2
     :pswitch_0
     :try_start_1
     sget-object v0, Lcom/whatsapp/MediaProvider;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x5
+    const/4 v1, 0x2
 
     aget-object v0, v0, v1
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_0
 
+    .line 13
     :goto_0
     return-object v0
 
+    .line 2
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 3
+    .line 13
     :pswitch_1
     sget-object v0, Lcom/whatsapp/MediaProvider;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x6
+    const/4 v1, 0x0
 
     aget-object v0, v0, v1
 
     goto :goto_0
 
-    .line 1
+    .line 11
     nop
 
     :pswitch_data_0
@@ -485,7 +485,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 17
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -497,33 +497,31 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 6
     const/4 v0, 0x1
 
     return v0
 .end method
 
 .method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-    .locals 6
+    .locals 5
 
     .prologue
     const/4 v0, 0x3
 
-    const/4 v1, 0x1
-
-    .line 8
+    .line 22
     :try_start_0
-    sget-object v2, Lcom/whatsapp/MediaProvider;->b:Landroid/content/UriMatcher;
+    sget-object v1, Lcom/whatsapp/MediaProvider;->b:Landroid/content/UriMatcher;
 
-    invoke-virtual {v2, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
+    invoke-virtual {v1, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result v2
+    move-result v1
 
-    packed-switch v2, :pswitch_data_0
+    packed-switch v1, :pswitch_data_0
 
-    .line 14
+    .line 19
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -532,7 +530,7 @@
 
     sget-object v2, Lcom/whatsapp/MediaProvider;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x0
+    const/4 v3, 0x5
 
     aget-object v2, v2, v3
 
@@ -552,92 +550,92 @@
 
     throw v0
 
-    .line 6
+    .line 21
     :pswitch_0
     :try_start_1
-    new-instance v0, Lcom/whatsapp/a8t;
+    new-instance v0, Lcom/whatsapp/f0;
 
     invoke-virtual {p0}, Lcom/whatsapp/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/whatsapp/a8t;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/whatsapp/f0;-><init>(Landroid/content/Context;)V
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 22
     :goto_0
     return-object v0
 
-    .line 6
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 17
+    .line 20
     :pswitch_1
-    sget-object v2, Lcom/whatsapp/MediaProvider;->z:[Ljava/lang/String;
+    sget-object v1, Lcom/whatsapp/MediaProvider;->z:[Ljava/lang/String;
 
-    aget-object v2, v2, v0
+    aget-object v1, v1, v0
 
-    invoke-virtual {p1, v2}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 11
+    .line 14
+    sget-object v1, Lcom/whatsapp/MediaProvider;->z:[Ljava/lang/String;
+
+    const/4 v3, 0x6
+
+    aget-object v1, v1, v3
+
+    invoke-virtual {p1, v1}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 12
+    :try_start_2
     sget-object v3, Lcom/whatsapp/MediaProvider;->z:[Ljava/lang/String;
 
-    aget-object v3, v3, v1
+    const/4 v4, 0x4
 
-    invoke-virtual {p1, v3}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+    aget-object v3, v3, v4
 
-    move-result-object v3
-
-    .line 21
-    :try_start_2
-    sget-object v4, Lcom/whatsapp/MediaProvider;->z:[Ljava/lang/String;
-
-    const/4 v5, 0x2
-
-    aget-object v4, v4, v5
-
-    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_1
 
-    move-result v3
+    move-result v1
 
-    if-eqz v3, :cond_0
+    if-eqz v1, :cond_0
 
-    .line 22
+    .line 1
     :goto_1
-    new-instance v1, Lcom/whatsapp/a0e;
+    new-instance v1, Lcom/whatsapp/atx;
 
-    sget-object v3, Lcom/whatsapp/App;->l:Lcom/whatsapp/a2v;
+    sget-object v3, Lcom/whatsapp/App;->au:Lcom/whatsapp/amo;
 
-    invoke-virtual {v3, v2, v0}, Lcom/whatsapp/a2v;->a(Ljava/lang/String;B)Landroid/database/Cursor;
+    invoke-virtual {v3, v2, v0}, Lcom/whatsapp/amo;->a(Ljava/lang/String;B)Landroid/database/Cursor;
 
     move-result-object v0
 
-    invoke-direct {v1, v2, v0}, Lcom/whatsapp/a0e;-><init>(Ljava/lang/String;Landroid/database/Cursor;)V
+    invoke-direct {v1, v2, v0}, Lcom/whatsapp/atx;-><init>(Ljava/lang/String;Landroid/database/Cursor;)V
 
     move-object v0, v1
 
     goto :goto_0
 
-    .line 21
+    .line 12
     :catch_1
     move-exception v0
 
     throw v0
 
     :cond_0
-    move v0, v1
+    const/4 v0, 0x1
 
     goto :goto_1
 
-    .line 8
+    .line 22
     nop
 
     :pswitch_data_0
@@ -651,7 +649,7 @@
     .locals 1
 
     .prologue
-    .line 9
+    .line 8
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V

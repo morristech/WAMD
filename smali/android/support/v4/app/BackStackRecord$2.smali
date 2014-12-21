@@ -6,33 +6,22 @@
 .implements Landroid/view/ViewTreeObserver$OnPreDrawListener;
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroid/support/v4/app/BackStackRecord;->prepareSharedElementTransition(Landroid/support/v4/app/BackStackRecord$TransitionState;Landroid/view/View;Ljava/lang/Object;Landroid/support/v4/app/Fragment;Landroid/support/v4/app/Fragment;ZLjava/util/ArrayList;)V
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
-.end annotation
-
-
 # instance fields
-.field final synthetic this$0:Landroid/support/v4/app/BackStackRecord;
+.field final this$0:Landroid/support/v4/app/BackStackRecord;
 
-.field final synthetic val$inFragment:Landroid/support/v4/app/Fragment;
+.field final val$inFragment:Landroid/support/v4/app/Fragment;
 
-.field final synthetic val$isBack:Z
+.field final val$isBack:Z
 
-.field final synthetic val$outFragment:Landroid/support/v4/app/Fragment;
+.field final val$outFragment:Landroid/support/v4/app/Fragment;
 
-.field final synthetic val$sceneRoot:Landroid/view/View;
+.field final val$sceneRoot:Landroid/view/View;
 
-.field final synthetic val$sharedElementTargets:Ljava/util/ArrayList;
+.field final val$sharedElementTargets:Ljava/util/ArrayList;
 
-.field final synthetic val$sharedElementTransition:Ljava/lang/Object;
+.field final val$sharedElementTransition:Ljava/lang/Object;
 
-.field final synthetic val$state:Landroid/support/v4/app/BackStackRecord$TransitionState;
+.field final val$state:Landroid/support/v4/app/BackStackRecord$TransitionState;
 
 
 # direct methods
@@ -40,7 +29,7 @@
     .locals 0
 
     .prologue
-    .line 1234
+    .line 12
     iput-object p1, p0, Landroid/support/v4/app/BackStackRecord$2;->this$0:Landroid/support/v4/app/BackStackRecord;
 
     iput-object p2, p0, Landroid/support/v4/app/BackStackRecord$2;->val$sceneRoot:Landroid/view/View;
@@ -68,7 +57,7 @@
     .locals 6
 
     .prologue
-    .line 1237
+    .line 7
     iget-object v0, p0, Landroid/support/v4/app/BackStackRecord$2;->val$sceneRoot:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
@@ -77,24 +66,24 @@
 
     invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
-    .line 1239
+    .line 11
     iget-object v0, p0, Landroid/support/v4/app/BackStackRecord$2;->val$sharedElementTransition:Ljava/lang/Object;
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_2
 
-    .line 1240
+    .line 10
     iget-object v0, p0, Landroid/support/v4/app/BackStackRecord$2;->val$sharedElementTransition:Ljava/lang/Object;
 
     iget-object v1, p0, Landroid/support/v4/app/BackStackRecord$2;->val$sharedElementTargets:Ljava/util/ArrayList;
 
     invoke-static {v0, v1}, Landroid/support/v4/app/FragmentTransitionCompat21;->removeTargets(Ljava/lang/Object;Ljava/util/ArrayList;)V
 
-    .line 1242
+    .line 4
     iget-object v0, p0, Landroid/support/v4/app/BackStackRecord$2;->val$sharedElementTargets:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 1244
+    .line 1
     iget-object v0, p0, Landroid/support/v4/app/BackStackRecord$2;->this$0:Landroid/support/v4/app/BackStackRecord;
 
     iget-object v1, p0, Landroid/support/v4/app/BackStackRecord$2;->val$state:Landroid/support/v4/app/BackStackRecord$TransitionState;
@@ -103,20 +92,18 @@
 
     iget-object v3, p0, Landroid/support/v4/app/BackStackRecord$2;->val$inFragment:Landroid/support/v4/app/Fragment;
 
-    # invokes: Landroid/support/v4/app/BackStackRecord;->mapSharedElementsIn(Landroid/support/v4/app/BackStackRecord$TransitionState;ZLandroid/support/v4/app/Fragment;)Landroid/support/v4/util/ArrayMap;
     invoke-static {v0, v1, v2, v3}, Landroid/support/v4/app/BackStackRecord;->access$000(Landroid/support/v4/app/BackStackRecord;Landroid/support/v4/app/BackStackRecord$TransitionState;ZLandroid/support/v4/app/Fragment;)Landroid/support/v4/util/ArrayMap;
 
     move-result-object v5
 
-    .line 1246
-    .local v5, "namedViews":Landroid/support/v4/util/ArrayMap;, "Landroid/support/v4/util/ArrayMap<Ljava/lang/String;Landroid/view/View;>;"
+    .line 3
     invoke-virtual {v5}, Landroid/support/v4/util/ArrayMap;->isEmpty()Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
-    .line 1247
+    .line 8
     iget-object v0, p0, Landroid/support/v4/app/BackStackRecord$2;->val$sharedElementTargets:Ljava/util/ArrayList;
 
     iget-object v1, p0, Landroid/support/v4/app/BackStackRecord$2;->val$state:Landroid/support/v4/app/BackStackRecord$TransitionState;
@@ -125,23 +112,36 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1251
-    :goto_0
+    sget v0, Landroid/support/v4/app/FragmentActivity;->a:I
+
+    if-eqz v0, :cond_1
+
+    .line 9
+    :cond_0
+    iget-object v0, p0, Landroid/support/v4/app/BackStackRecord$2;->val$sharedElementTargets:Ljava/util/ArrayList;
+
+    invoke-virtual {v5}, Landroid/support/v4/util/ArrayMap;->values()Ljava/util/Collection;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
+
+    .line 6
+    :cond_1
     iget-object v0, p0, Landroid/support/v4/app/BackStackRecord$2;->val$sharedElementTransition:Ljava/lang/Object;
 
     iget-object v1, p0, Landroid/support/v4/app/BackStackRecord$2;->val$sharedElementTargets:Ljava/util/ArrayList;
 
     invoke-static {v0, v1}, Landroid/support/v4/app/FragmentTransitionCompat21;->addTargets(Ljava/lang/Object;Ljava/util/ArrayList;)V
 
-    .line 1254
+    .line 13
     iget-object v0, p0, Landroid/support/v4/app/BackStackRecord$2;->this$0:Landroid/support/v4/app/BackStackRecord;
 
     iget-object v1, p0, Landroid/support/v4/app/BackStackRecord$2;->val$state:Landroid/support/v4/app/BackStackRecord$TransitionState;
 
-    # invokes: Landroid/support/v4/app/BackStackRecord;->setEpicenterIn(Landroid/support/v4/util/ArrayMap;Landroid/support/v4/app/BackStackRecord$TransitionState;)V
     invoke-static {v0, v5, v1}, Landroid/support/v4/app/BackStackRecord;->access$100(Landroid/support/v4/app/BackStackRecord;Landroid/support/v4/util/ArrayMap;Landroid/support/v4/app/BackStackRecord$TransitionState;)V
 
-    .line 1256
+    .line 5
     iget-object v0, p0, Landroid/support/v4/app/BackStackRecord$2;->this$0:Landroid/support/v4/app/BackStackRecord;
 
     iget-object v1, p0, Landroid/support/v4/app/BackStackRecord$2;->val$state:Landroid/support/v4/app/BackStackRecord$TransitionState;
@@ -152,26 +152,11 @@
 
     iget-boolean v4, p0, Landroid/support/v4/app/BackStackRecord$2;->val$isBack:Z
 
-    # invokes: Landroid/support/v4/app/BackStackRecord;->callSharedElementEnd(Landroid/support/v4/app/BackStackRecord$TransitionState;Landroid/support/v4/app/Fragment;Landroid/support/v4/app/Fragment;ZLandroid/support/v4/util/ArrayMap;)V
     invoke-static/range {v0 .. v5}, Landroid/support/v4/app/BackStackRecord;->access$200(Landroid/support/v4/app/BackStackRecord;Landroid/support/v4/app/BackStackRecord$TransitionState;Landroid/support/v4/app/Fragment;Landroid/support/v4/app/Fragment;ZLandroid/support/v4/util/ArrayMap;)V
 
-    .line 1260
-    .end local v5    # "namedViews":Landroid/support/v4/util/ArrayMap;, "Landroid/support/v4/util/ArrayMap<Ljava/lang/String;Landroid/view/View;>;"
-    :cond_0
+    .line 2
+    :cond_2
     const/4 v0, 0x1
 
     return v0
-
-    .line 1249
-    .restart local v5    # "namedViews":Landroid/support/v4/util/ArrayMap;, "Landroid/support/v4/util/ArrayMap<Ljava/lang/String;Landroid/view/View;>;"
-    :cond_1
-    iget-object v0, p0, Landroid/support/v4/app/BackStackRecord$2;->val$sharedElementTargets:Ljava/util/ArrayList;
-
-    invoke-virtual {v5}, Landroid/support/v4/util/ArrayMap;->values()Ljava/util/Collection;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
-
-    goto :goto_0
 .end method

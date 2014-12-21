@@ -17,7 +17,7 @@
 .method static constructor <clinit>()V
     .locals 11
 
-    const/4 v6, 0x6
+    const/16 v6, 0x38
 
     const/4 v1, 0x0
 
@@ -25,7 +25,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "WJiv&uL\u007fP\"kMcu\u000bhTbc1"
+    const-string v2, "\u0000J\u001cHo\"L\nnk<M\u0016KB?T\u0017]x"
 
     const/4 v0, -0x1
 
@@ -65,7 +65,7 @@
 
     const/4 v2, 0x1
 
-    const-string v0, "WJiv&uL\u007fP\"kMcu\u000bhTbc1"
+    const-string v0, "\u0000J\u001cHo\"L\nnk<M\u0016KB?T\u0017]x"
 
     move v3, v2
 
@@ -91,7 +91,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0x43
+    const/16 v2, 0xa
 
     :goto_2
     xor-int/2addr v2, v10
@@ -107,17 +107,17 @@
     goto :goto_1
 
     :pswitch_1
-    const/4 v2, 0x7
+    const/16 v2, 0x50
 
     goto :goto_2
 
     :pswitch_2
-    const/16 v2, 0x38
+    move v2, v6
 
     goto :goto_2
 
     :pswitch_3
-    move v2, v6
+    const/16 v2, 0x73
 
     goto :goto_2
 
@@ -144,15 +144,15 @@
     .locals 1
 
     .prologue
-    .line 24
+    .line 14
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;-><init>(Ljava/lang/String;Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$1;)V
 
-    .line 10
+    .line 22
     invoke-virtual {p0, p2}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->setFloatValues([F)V
 
-    .line 8
+    .line 11
     return-void
 .end method
 
@@ -162,7 +162,7 @@
     .locals 1
 
     .prologue
-    .line 19
+    .line 3
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->mFloatKeyframeSet:Lcom/actionbarsherlock/internal/nineoldandroids/animation/FloatKeyframeSet;
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/FloatKeyframeSet;->getFloatValue(F)F
@@ -171,7 +171,7 @@
 
     iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->mFloatAnimatedValue:F
 
-    .line 14
+    .line 8
     return-void
 .end method
 
@@ -179,7 +179,7 @@
     .locals 2
 
     .prologue
-    .line 9
+    .line 17
     invoke-super {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->clone()Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
     move-result-object v0
@@ -193,7 +193,7 @@
 
     iput-object v1, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->mFloatKeyframeSet:Lcom/actionbarsherlock/internal/nineoldandroids/animation/FloatKeyframeSet;
 
-    .line 16
+    .line 23
     return-object v0
 .end method
 
@@ -201,7 +201,7 @@
     .locals 1
 
     .prologue
-    .line 15
+    .line 5
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->clone()Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;
 
     move-result-object v0
@@ -213,7 +213,7 @@
     .locals 1
 
     .prologue
-    .line 20
+    .line 19
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->clone()Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;
 
     move-result-object v0
@@ -225,7 +225,7 @@
     .locals 1
 
     .prologue
-    .line 25
+    .line 21
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->mFloatAnimatedValue:F
 
     invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -241,12 +241,12 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 7
+    .line 24
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->mSetter:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 22
+    .line 7
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->mTmpValueArray:[Ljava/lang/Object;
 
@@ -260,7 +260,7 @@
 
     aput-object v2, v0, v1
 
-    .line 6
+    .line 13
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->mSetter:Ljava/lang/reflect/Method;
 
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->mTmpValueArray:[Ljava/lang/Object;
@@ -270,16 +270,16 @@
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 11
+    .line 16
     :cond_0
     :goto_0
     return-void
 
-    .line 4
+    .line 10
     :catch_0
     move-exception v0
 
-    .line 18
+    .line 2
     sget-object v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->z:[Ljava/lang/String;
 
     const/4 v2, 0x1
@@ -298,7 +298,7 @@
     :catch_1
     move-exception v0
 
-    .line 17
+    .line 4
     sget-object v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->z:[Ljava/lang/String;
 
     aget-object v1, v1, v3
@@ -316,17 +316,17 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 6
     invoke-super {p0, p1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->setFloatValues([F)V
 
-    .line 3
+    .line 9
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->mKeyframeSet:Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;
 
     check-cast v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/FloatKeyframeSet;
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->mFloatKeyframeSet:Lcom/actionbarsherlock/internal/nineoldandroids/animation/FloatKeyframeSet;
 
-    .line 13
+    .line 26
     return-void
 .end method
 
@@ -334,9 +334,9 @@
     .locals 0
 
     .prologue
-    .line 23
+    .line 15
     invoke-super {p0, p1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->setupSetter(Ljava/lang/Class;)V
 
-    .line 26
+    .line 25
     return-void
 .end method

@@ -1,12 +1,10 @@
-.class final Lorg/whispersystems/libaxolotl/ae;
-.super Lorg/whispersystems/libaxolotl/a3;
+.class public abstract Lorg/whispersystems/libaxolotl/ae;
+.super Ljava/lang/Object;
 .source "ae.java"
 
 
 # static fields
-.field static final b:Lorg/whispersystems/libaxolotl/ae;
-
-.field private static final serialVersionUID:J
+.field public static a:I
 
 .field private static final z:[Ljava/lang/String;
 
@@ -15,8 +13,7 @@
 .method static constructor <clinit>()V
     .locals 13
 
-    .prologue
-    const/16 v8, 0x7b
+    const/4 v4, 0x3
 
     const/4 v3, 0x2
 
@@ -24,346 +21,491 @@
 
     const/4 v1, 0x0
 
-    const/4 v0, 0x4
+    const/4 v0, 0x5
 
-    new-array v5, v0, [Ljava/lang/String;
+    new-array v6, v0, [Ljava/lang/String;
 
-    const-string v4, "9\u0008\u0012\u0006\u0014>5\u0002J\u0017dRWO\u0015?\u000f\u0012G\u001fl\u0014\u0011\u0006\u001al(\u0002V\u000b \u0012\u0012T[8\u0013\u0016R[>\u001e\u0003S\t\"\u0008WH\u000e \u0017"
+    const-string v5, "qL*{-q`y-H"
 
     const/4 v0, -0x1
 
-    move-object v6, v5
+    move-object v7, v6
 
-    move-object v7, v5
+    move-object v8, v6
 
-    move v5, v1
+    move v6, v1
 
     :goto_0
-    invoke-virtual {v4}, Ljava/lang/String;->toCharArray()[C
+    invoke-virtual {v5}, Ljava/lang/String;->toCharArray()[C
 
-    move-result-object v4
+    move-result-object v5
 
-    array-length v9, v4
+    array-length v9, v5
 
     move v10, v9
 
     move v11, v1
 
-    move-object v9, v4
+    move-object v9, v5
 
     :goto_1
     if-gt v10, v11, :cond_0
 
-    new-instance v4, Ljava/lang/String;
+    new-instance v5, Ljava/lang/String;
 
-    invoke-direct {v4, v9}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v5, v9}, Ljava/lang/String;-><init>([C)V
 
-    invoke-virtual {v4}, Ljava/lang/String;->intern()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/String;->intern()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
     packed-switch v0, :pswitch_data_0
 
-    aput-object v4, v6, v5
+    aput-object v5, v7, v6
 
-    const-string v0, "9\u0008\u0012\u0006\u0014>5\u0002J\u0017dRWO\u0015?\u000f\u0012G\u001fl\u0014\u0011\u0006\u0014>S\u0019S\u0017 R"
+    const-string v0, "qL*{-q`y-H"
 
-    move-object v4, v0
+    move-object v5, v0
 
-    move v5, v2
+    move v6, v2
 
-    move-object v6, v7
+    move-object v7, v8
 
     move v0, v1
 
     goto :goto_0
 
     :pswitch_0
-    aput-object v4, v6, v5
+    aput-object v5, v7, v6
 
-    const-string v0, "\u0003\u000b\u0003O\u0014\"\u001a\u001b\u0008\u001a.\u0008\u0012H\u000fdR"
+    const-string v0, "qL*{-q`y-H"
 
-    move-object v4, v0
+    move-object v5, v0
 
-    move v5, v3
+    move v6, v3
 
-    move-object v6, v7
+    move-object v7, v8
 
     move v0, v2
 
     goto :goto_0
 
     :pswitch_1
-    aput-object v4, v6, v5
+    aput-object v5, v7, v6
 
-    const/4 v4, 0x3
+    const-string v0, "qL*{-q`y-H"
 
-    const-string v0, ":\u001a\u001bS\u001el\u0012\u0004\u0006\u001a.\u0008\u0012H\u000f"
+    move-object v5, v0
 
-    move v5, v4
+    move v6, v4
 
-    move-object v6, v7
-
-    move-object v4, v0
+    move-object v7, v8
 
     move v0, v3
 
     goto :goto_0
 
     :pswitch_2
-    aput-object v4, v6, v5
+    aput-object v5, v7, v6
 
-    sput-object v7, Lorg/whispersystems/libaxolotl/ae;->z:[Ljava/lang/String;
+    const/4 v5, 0x4
 
-    .line 15
-    new-instance v0, Lorg/whispersystems/libaxolotl/ae;
+    const-string v0, "lO v\u0011NOkn\u001bKR\"w\u0010\u0003\u0001"
 
-    invoke-direct {v0}, Lorg/whispersystems/libaxolotl/ae;-><init>()V
+    move v6, v5
 
-    sput-object v0, Lorg/whispersystems/libaxolotl/ae;->b:Lorg/whispersystems/libaxolotl/ae;
+    move-object v7, v8
+
+    move-object v5, v0
+
+    move v0, v4
+
+    goto :goto_0
+
+    :pswitch_3
+    aput-object v5, v7, v6
+
+    sput-object v8, Lorg/whispersystems/libaxolotl/ae;->z:[Ljava/lang/String;
 
     return-void
 
-    .line 4294967295
     :cond_0
     aget-char v12, v9, v11
 
-    rem-int/lit8 v4, v11, 0x5
+    rem-int/lit8 v5, v11, 0x5
 
-    packed-switch v4, :pswitch_data_1
+    packed-switch v5, :pswitch_data_1
 
-    move v4, v8
+    const/16 v5, 0x7e
 
     :goto_2
-    xor-int/2addr v4, v12
+    xor-int/2addr v5, v12
 
-    int-to-char v4, v4
+    int-to-char v5, v5
 
-    aput-char v4, v9, v11
+    aput-char v5, v9, v11
 
-    add-int/lit8 v4, v11, 0x1
+    add-int/lit8 v5, v11, 0x1
 
-    move v11, v4
+    move v11, v5
 
     goto :goto_1
 
-    :pswitch_3
-    const/16 v4, 0x4c
-
-    goto :goto_2
-
     :pswitch_4
-    move v4, v8
+    const/16 v5, 0x39
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v4, 0x77
+    const/16 v5, 0x21
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v4, 0x26
+    const/16 v5, 0x4b
 
     goto :goto_2
 
-    nop
+    :pswitch_7
+    const/16 v5, 0x18
+
+    goto :goto_2
 
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
         :pswitch_1
         :pswitch_2
+        :pswitch_3
     .end packed-switch
 
     :pswitch_data_1
     .packed-switch 0x0
-        :pswitch_3
         :pswitch_4
         :pswitch_5
         :pswitch_6
+        :pswitch_7
     .end packed-switch
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 8
-    invoke-direct {p0}, Lorg/whispersystems/libaxolotl/a3;-><init>()V
+    .line 33
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method private readResolve()Ljava/lang/Object;
-    .locals 1
+.method public static a(I)Lorg/whispersystems/libaxolotl/ae;
+    .locals 4
 
     .prologue
-    .line 9
-    sget-object v0, Lorg/whispersystems/libaxolotl/ae;->b:Lorg/whispersystems/libaxolotl/ae;
+    .line 16
+    packed-switch p0, :pswitch_data_0
 
-    return-object v0
-.end method
+    .line 25
+    new-instance v0, Ljava/lang/AssertionError;
 
+    new-instance v1, Ljava/lang/StringBuilder;
 
-# virtual methods
-.method public a()Ljava/lang/Object;
-    .locals 3
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .prologue
-    .line 12
-    new-instance v0, Ljava/lang/IllegalStateException;
+    sget-object v2, Lorg/whispersystems/libaxolotl/ae;->z:[Ljava/lang/String;
 
-    sget-object v1, Lorg/whispersystems/libaxolotl/ae;->z:[Ljava/lang/String;
+    const/4 v3, 0x4
 
-    const/4 v2, 0x3
+    aget-object v2, v2, v3
 
-    aget-object v1, v1, v2
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    move-result-object v1
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
     throw v0
-.end method
 
-.method public a(Lorg/whispersystems/libaxolotl/a4;)Ljava/lang/Object;
-    .locals 3
+    .line 17
+    :pswitch_0
+    new-instance v0, Lorg/whispersystems/libaxolotl/a8;
 
-    .prologue
-    .line 11
-    invoke-interface {p1}, Lorg/whispersystems/libaxolotl/a4;->a()Ljava/lang/Object;
+    invoke-direct {v0}, Lorg/whispersystems/libaxolotl/a8;-><init>()V
 
-    move-result-object v0
-
-    sget-object v1, Lorg/whispersystems/libaxolotl/ae;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x0
-
-    aget-object v1, v1, v2
-
-    invoke-static {v0, v1}, Lorg/whispersystems/libaxolotl/bp;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
+    :goto_0
     return-object v0
+
+    .line 15
+    :pswitch_1
+    new-instance v0, Lorg/whispersystems/libaxolotl/af;
+
+    invoke-direct {v0}, Lorg/whispersystems/libaxolotl/af;-><init>()V
+
+    goto :goto_0
+
+    .line 16
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x2
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
 .end method
 
-.method public a(Lorg/whispersystems/libaxolotl/L;)Lorg/whispersystems/libaxolotl/a3;
-    .locals 1
+.method private a([B[B)[B
+    .locals 4
 
     .prologue
-    .line 6
-    invoke-static {p1}, Lorg/whispersystems/libaxolotl/bp;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 3
-    invoke-static {}, Lorg/whispersystems/libaxolotl/a3;->e()Lorg/whispersystems/libaxolotl/a3;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public a(Lorg/whispersystems/libaxolotl/a3;)Lorg/whispersystems/libaxolotl/a3;
-    .locals 1
-
-    .prologue
-    .line 2
-    invoke-static {p1}, Lorg/whispersystems/libaxolotl/bp;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lorg/whispersystems/libaxolotl/a3;
-
-    return-object v0
-.end method
-
-.method public b()Ljava/lang/Object;
-    .locals 1
-
-    .prologue
-    .line 13
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public c(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
-
-    .prologue
-    .line 10
+    .line 18
+    :try_start_0
     sget-object v0, Lorg/whispersystems/libaxolotl/ae;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     aget-object v0, v0, v1
 
-    invoke-static {p1, v0}, Lorg/whispersystems/libaxolotl/bp;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ljavax/crypto/Mac;->getInstance(Ljava/lang/String;)Ljavax/crypto/Mac;
+
+    move-result-object v0
+
+    .line 8
+    new-instance v1, Ljavax/crypto/spec/SecretKeySpec;
+
+    sget-object v2, Lorg/whispersystems/libaxolotl/ae;->z:[Ljava/lang/String;
+
+    const/4 v3, 0x1
+
+    aget-object v2, v2, v3
+
+    invoke-direct {v1, p1, v2}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Ljavax/crypto/Mac;->init(Ljava/security/Key;)V
+
+    .line 27
+    invoke-virtual {v0, p2}, Ljavax/crypto/Mac;->doFinal([B)[B
+    :try_end_0
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/security/InvalidKeyException; {:try_start_0 .. :try_end_0} :catch_1
 
     move-result-object v0
 
     return-object v0
-.end method
 
-.method public c()Ljava/util/Set;
-    .locals 1
+    .line 3
+    :catch_0
+    move-exception v0
 
-    .prologue
-    .line 4
-    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public d()Z
-    .locals 1
-
-    .prologue
-    .line 7
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    .prologue
-    .line 5
-    if-ne p1, p0, :cond_0
-
-    const/4 v0, 0x1
-
+    .line 29
     :goto_0
-    return v0
+    new-instance v1, Ljava/lang/AssertionError;
 
-    :cond_0
-    const/4 v0, 0x0
+    invoke-direct {v1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+
+    throw v1
+
+    .line 3
+    :catch_1
+    move-exception v0
 
     goto :goto_0
 .end method
 
-.method public hashCode()I
+.method private b([B[BI)[B
+    .locals 9
+
+    .prologue
+    sget v2, Lorg/whispersystems/libaxolotl/ae;->a:I
+
+    .line 21
+    int-to-double v0, p3
+
+    const-wide/high16 v4, 0x4040000000000000L
+
+    div-double/2addr v0, v4
+
+    :try_start_0
+    invoke-static {v0, v1}, Ljava/lang/Math;->ceil(D)D
+
+    move-result-wide v0
+
+    double-to-int v3, v0
+
+    .line 30
+    const/4 v0, 0x0
+
+    new-array v1, v0, [B
+
+    .line 34
+    new-instance v4, Ljava/io/ByteArrayOutputStream;
+
+    invoke-direct {v4}, Ljava/io/ByteArrayOutputStream;-><init>()V
+
+    .line 22
+    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/ae;->a()I
+
+    move-result v0
+
+    :cond_0
+    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/ae;->a()I
+
+    move-result v5
+
+    add-int/2addr v5, v3
+
+    if-ge v0, v5, :cond_2
+
+    .line 31
+    sget-object v5, Lorg/whispersystems/libaxolotl/ae;->z:[Ljava/lang/String;
+
+    const/4 v6, 0x2
+
+    aget-object v5, v5, v6
+
+    invoke-static {v5}, Ljavax/crypto/Mac;->getInstance(Ljava/lang/String;)Ljavax/crypto/Mac;
+    :try_end_0
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/security/InvalidKeyException; {:try_start_0 .. :try_end_0} :catch_2
+
+    move-result-object v5
+
+    .line 28
+    :try_start_1
+    new-instance v6, Ljavax/crypto/spec/SecretKeySpec;
+
+    sget-object v7, Lorg/whispersystems/libaxolotl/ae;->z:[Ljava/lang/String;
+
+    const/4 v8, 0x3
+
+    aget-object v7, v7, v8
+
+    invoke-direct {v6, p1, v7}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
+
+    invoke-virtual {v5, v6}, Ljavax/crypto/Mac;->init(Ljava/security/Key;)V
+
+    .line 4
+    invoke-virtual {v5, v1}, Ljavax/crypto/Mac;->update([B)V
+
+    .line 9
+    if-eqz p2, :cond_1
+
+    .line 24
+    invoke-virtual {v5, p2}, Ljavax/crypto/Mac;->update([B)V
+    :try_end_1
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/security/InvalidKeyException; {:try_start_1 .. :try_end_1} :catch_2
+
+    .line 7
+    :cond_1
+    int-to-byte v1, v0
+
+    :try_start_2
+    invoke-virtual {v5, v1}, Ljavax/crypto/Mac;->update(B)V
+
+    .line 20
+    invoke-virtual {v5}, Ljavax/crypto/Mac;->doFinal()[B
+
+    move-result-object v1
+
+    .line 13
+    array-length v5, v1
+
+    invoke-static {p3, v5}, Ljava/lang/Math;->min(II)I
+
+    move-result v5
+
+    .line 26
+    const/4 v6, 0x0
+
+    invoke-virtual {v4, v1, v6, v5}, Ljava/io/ByteArrayOutputStream;->write([BII)V
+
+    .line 1
+    sub-int/2addr p3, v5
+
+    .line 14
+    add-int/lit8 v0, v0, 0x1
+
+    if-eqz v2, :cond_0
+
+    .line 23
+    :cond_2
+    invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
+
+    move-result-object v0
+
+    return-object v0
+
+    .line 24
+    :catch_0
+    move-exception v0
+
+    throw v0
+    :try_end_2
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_2 .. :try_end_2} :catch_1
+    .catch Ljava/security/InvalidKeyException; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 32
+    :catch_1
+    move-exception v0
+
+    .line 10
+    :goto_0
+    new-instance v1, Ljava/lang/AssertionError;
+
+    invoke-direct {v1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+
+    throw v1
+
+    .line 32
+    :catch_2
+    move-exception v0
+
+    goto :goto_0
+.end method
+
+
+# virtual methods
+.method protected abstract a()I
+.end method
+
+.method public a([B[BI)[B
     .locals 1
 
     .prologue
-    .line 14
-    const v0, 0x598df91c
+    .line 12
+    const/16 v0, 0x20
 
-    return v0
+    new-array v0, v0, [B
+
+    .line 5
+    invoke-virtual {p0, p1, v0, p2, p3}, Lorg/whispersystems/libaxolotl/ae;->a([B[B[BI)[B
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 2
+.method public a([B[B[BI)[B
+    .locals 1
 
     .prologue
-    .line 1
-    sget-object v0, Lorg/whispersystems/libaxolotl/ae;->z:[Ljava/lang/String;
+    .line 11
+    invoke-direct {p0, p2, p1}, Lorg/whispersystems/libaxolotl/ae;->a([B[B)[B
 
-    const/4 v1, 0x2
+    move-result-object v0
 
-    aget-object v0, v0, v1
+    .line 6
+    invoke-direct {p0, v0, p3, p4}, Lorg/whispersystems/libaxolotl/ae;->b([B[BI)[B
+
+    move-result-object v0
 
     return-object v0
 .end method

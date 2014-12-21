@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field a:Ljava/lang/Object;
+.field a:Z
 
-.field b:Z
+.field b:Ljava/lang/Object;
 
-.field c:Z
+.field c:Lde/greenrobot/event/b;
 
-.field final d:Ljava/util/List;
+.field d:Z
 
 .field e:Z
 
-.field f:Lde/greenrobot/event/d;
+.field final f:Ljava/util/List;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lde/greenrobot/event/a;->d:Ljava/util/List;
+    iput-object v0, p0, Lde/greenrobot/event/a;->f:Ljava/util/List;
 
     return-void
 .end method

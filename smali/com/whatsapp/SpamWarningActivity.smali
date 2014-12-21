@@ -18,9 +18,9 @@
     .locals 12
 
     .prologue
-    const/4 v2, 0x1
-
     const/4 v3, 0x2
+
+    const/4 v2, 0x1
 
     const/4 v1, 0x0
 
@@ -28,7 +28,7 @@
 
     new-array v5, v0, [Ljava/lang/String;
 
-    const-string v4, "\u001d{<-m\u0015qv6l\u0008p6+,\u001ft,:e\u0013g!qJ3X\u001d"
+    const-string v4, "N\u0002z\u0006^F\u00080\u001d_[\tp\u0000\u001fN\u000fj\u001d^ABS5xa"
 
     const/4 v0, -0x1
 
@@ -66,7 +66,7 @@
 
     aput-object v4, v6, v5
 
-    const-string v0, "\u001d{<-m\u0015qv6l\u0008p6+,\u001dv,6m\u0012;\u0015\u001eK2"
+    const-string v0, "N\u0002z\u0006^F\u00080\u001d_[\tp\u0000\u001fL\rj\u0011V@\u001egZy`!["
 
     move-object v4, v0
 
@@ -81,7 +81,7 @@
     :pswitch_0
     aput-object v4, v6, v5
 
-    const-string v0, "\u0019m(6p\u0005J11]\u000fp;0l\u0018f"
+    const-string v0, "\\\u001c\u007f\u0019nX\rl\u001aXA\u000bA\u0006TN\u001fq\u001anD\tg"
 
     move-object v4, v0
 
@@ -98,7 +98,7 @@
 
     const/4 v4, 0x3
 
-    const-string v0, "\u000fe92]\u000bt*1k\u0012r\u0007-g\u001df71]\u0017p!"
+    const-string v0, "J\u0014n\u001dCV3w\u001an\\\t}\u001b_K\u001f"
 
     move v5, v4
 
@@ -115,7 +115,7 @@
 
     sput-object v7, Lcom/whatsapp/SpamWarningActivity;->z:[Ljava/lang/String;
 
-    .line 7
+    .line 30
     new-instance v0, Landroid/os/ConditionVariable;
 
     invoke-direct {v0, v1}, Landroid/os/ConditionVariable;-><init>(Z)V
@@ -132,7 +132,7 @@
 
     packed-switch v4, :pswitch_data_1
 
-    move v4, v3
+    const/16 v4, 0x31
 
     :goto_2
     xor-int/2addr v4, v11
@@ -148,24 +148,26 @@
     goto :goto_1
 
     :pswitch_3
-    const/16 v4, 0x7c
+    const/16 v4, 0x2f
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v4, 0x15
+    const/16 v4, 0x6c
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v4, 0x58
+    const/16 v4, 0x1e
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v4, 0x5f
+    const/16 v4, 0x74
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -187,7 +189,7 @@
     .locals 0
 
     .prologue
-    .line 10
+    .line 39
     invoke-direct {p0}, Lcom/whatsapp/DialogToastActivity;-><init>()V
 
     return-void
@@ -197,15 +199,15 @@
     .locals 1
 
     .prologue
-    .line 44
-    new-instance v0, Lcom/whatsapp/vy;
+    .line 15
+    new-instance v0, Lcom/whatsapp/aik;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/vy;-><init>(Lcom/whatsapp/SpamWarningActivity;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/aik;-><init>(Lcom/whatsapp/SpamWarningActivity;)V
 
-    .line 23
-    invoke-virtual {v0}, Lcom/whatsapp/vy;->start()V
+    .line 35
+    invoke-virtual {v0}, Lcom/whatsapp/aik;->start()V
 
-    .line 33
+    .line 32
     return-void
 .end method
 
@@ -213,25 +215,25 @@
     .locals 1
 
     .prologue
-    .line 30
+    .line 3
     if-eqz p0, :cond_0
 
-    .line 29
+    .line 2
     sget-object v0, Lcom/whatsapp/SpamWarningActivity;->j:Landroid/os/ConditionVariable;
 
     invoke-virtual {v0}, Landroid/os/ConditionVariable;->open()V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 25
+    .line 21
     :cond_0
     sget-object v0, Lcom/whatsapp/SpamWarningActivity;->j:Landroid/os/ConditionVariable;
 
     invoke-virtual {v0}, Landroid/os/ConditionVariable;->close()V
 
-    .line 43
+    .line 29
     :cond_1
     return-void
 .end method
@@ -240,18 +242,18 @@
     .locals 1
 
     .prologue
-    .line 45
+    .line 14
     sget-object v0, Lcom/whatsapp/SpamWarningActivity;->j:Landroid/os/ConditionVariable;
 
     return-object v0
 .end method
 
-.method private d()V
+.method private c()V
     .locals 7
 
     .prologue
-    .line 9
-    const v0, 0x7f0b0086
+    .line 20
+    const v0, 0x7f0b0088
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SpamWarningActivity;->findViewById(I)Landroid/view/View;
 
@@ -259,40 +261,40 @@
 
     check-cast v6, Lcom/whatsapp/CircularProgressBar;
 
-    .line 19
+    .line 34
     const/4 v0, 0x0
 
     invoke-virtual {v6, v0}, Lcom/whatsapp/CircularProgressBar;->setVisibility(I)V
 
-    .line 3
+    .line 27
     const/high16 v0, -0x10000
 
     invoke-virtual {v6, v0}, Lcom/whatsapp/CircularProgressBar;->setProgressBarBackgroundColor(I)V
 
-    .line 34
+    .line 48
     const v0, -0x1f1f20
 
     invoke-virtual {v6, v0}, Lcom/whatsapp/CircularProgressBar;->setProgressBarColor(I)V
 
-    .line 14
+    .line 43
     const/16 v0, 0x1e
 
     invoke-virtual {v6, v0}, Lcom/whatsapp/CircularProgressBar;->setPaintStrokeFactor(I)V
 
-    .line 41
+    .line 46
     const/4 v0, 0x1
 
     invoke-virtual {v6, v0}, Lcom/whatsapp/CircularProgressBar;->setKnobEnabled(Z)V
 
-    .line 11
+    .line 40
     iget v0, p0, Lcom/whatsapp/SpamWarningActivity;->k:I
 
     mul-int/lit16 v0, v0, 0x3e8
 
     invoke-virtual {v6, v0}, Lcom/whatsapp/CircularProgressBar;->setMax(I)V
 
-    .line 46
-    new-instance v0, Lcom/whatsapp/ey;
+    .line 1
+    new-instance v0, Lcom/whatsapp/tk;
 
     iget v1, p0, Lcom/whatsapp/SpamWarningActivity;->k:I
 
@@ -304,12 +306,12 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/whatsapp/ey;-><init>(Lcom/whatsapp/SpamWarningActivity;JJLcom/whatsapp/CircularProgressBar;)V
+    invoke-direct/range {v0 .. v6}, Lcom/whatsapp/tk;-><init>(Lcom/whatsapp/SpamWarningActivity;JJLcom/whatsapp/CircularProgressBar;)V
 
-    .line 8
-    invoke-virtual {v0}, Lcom/whatsapp/ey;->start()Landroid/os/CountDownTimer;
+    .line 50
+    invoke-virtual {v0}, Lcom/whatsapp/tk;->start()Landroid/os/CountDownTimer;
 
-    .line 47
+    .line 44
     return-void
 .end method
 
@@ -319,35 +321,35 @@
     .locals 3
 
     .prologue
-    .line 2
+    .line 36
     new-instance v0, Landroid/content/Intent;
 
-    sget-object v1, Lcom/whatsapp/SpamWarningActivity;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x1
-
-    aget-object v1, v1, v2
-
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 49
     sget-object v1, Lcom/whatsapp/SpamWarningActivity;->z:[Ljava/lang/String;
 
     const/4 v2, 0x0
 
     aget-object v1, v1, v2
 
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 8
+    sget-object v1, Lcom/whatsapp/SpamWarningActivity;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x1
+
+    aget-object v1, v1, v2
+
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 5
+    .line 19
     const/high16 v1, 0x10000000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 6
+    .line 45
     invoke-virtual {p0, v0}, Lcom/whatsapp/SpamWarningActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 48
+    .line 24
     return-void
 .end method
 
@@ -359,29 +361,29 @@
 
     const/4 v5, -0x1
 
-    sget-boolean v2, Lcom/whatsapp/App;->aL:Z
+    sget v2, Lcom/whatsapp/App;->h:I
 
     .line 37
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 38
+    .line 25
     const v0, 0x7f03001d
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SpamWarningActivity;->setContentView(I)V
 
-    .line 27
-    const v0, 0x7f0e03d7
+    .line 31
+    const v0, 0x7f0e03e6
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SpamWarningActivity;->setTitle(I)V
 
-    .line 17
+    .line 47
     invoke-virtual {p0}, Lcom/whatsapp/SpamWarningActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
     sget-object v1, Lcom/whatsapp/SpamWarningActivity;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x3
+    const/4 v3, 0x2
 
     aget-object v1, v1, v3
 
@@ -391,14 +393,14 @@
 
     move-result v3
 
-    .line 35
+    .line 41
     invoke-virtual {p0}, Lcom/whatsapp/SpamWarningActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
     sget-object v1, Lcom/whatsapp/SpamWarningActivity;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x2
+    const/4 v4, 0x3
 
     aget-object v1, v1, v4
 
@@ -411,26 +413,26 @@
     .line 28
     packed-switch v3, :pswitch_data_0
 
-    .line 21
+    .line 38
     :cond_0
     iget v0, p0, Lcom/whatsapp/SpamWarningActivity;->k:I
 
     if-ne v0, v5, :cond_1
 
-    .line 22
-    const v0, 0x7f0e03d5
+    .line 26
+    const v0, 0x7f0e03e4
 
     if-eqz v2, :cond_4
 
-    .line 31
+    .line 6
     :cond_1
-    const v0, 0x7f0e03d3
+    const v0, 0x7f0e03e2
 
     move v1, v0
 
-    .line 24
+    .line 17
     :goto_0
-    const v0, 0x7f0b0087
+    const v0, 0x7f0b0089
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SpamWarningActivity;->findViewById(I)Landroid/view/View;
 
@@ -438,15 +440,15 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 16
-    new-instance v4, Lcom/whatsapp/afb;
+    .line 10
+    new-instance v4, Lcom/whatsapp/mo;
 
-    invoke-direct {v4, p0, v3}, Lcom/whatsapp/afb;-><init>(Lcom/whatsapp/SpamWarningActivity;I)V
+    invoke-direct {v4, p0, v3}, Lcom/whatsapp/mo;-><init>(Lcom/whatsapp/SpamWarningActivity;I)V
 
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 39
-    const v0, 0x7f0b0085
+    .line 18
+    const v0, 0x7f0b0087
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SpamWarningActivity;->findViewById(I)Landroid/view/View;
 
@@ -456,27 +458,12 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 4
+    .line 9
     iget v0, p0, Lcom/whatsapp/SpamWarningActivity;->k:I
 
     if-ne v0, v5, :cond_2
 
-    .line 40
-    const v0, 0x7f0b0086
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/SpamWarningActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v6}, Landroid/view/View;->setVisibility(I)V
-
-    .line 36
-    invoke-direct {p0}, Lcom/whatsapp/SpamWarningActivity;->a()V
-
-    if-eqz v2, :cond_3
-
-    .line 26
-    :cond_2
+    .line 13
     const v0, 0x7f0b0088
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SpamWarningActivity;->findViewById(I)Landroid/view/View;
@@ -485,39 +472,54 @@
 
     invoke-virtual {v0, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 32
-    invoke-direct {p0}, Lcom/whatsapp/SpamWarningActivity;->d()V
+    .line 12
+    invoke-direct {p0}, Lcom/whatsapp/SpamWarningActivity;->a()V
 
-    .line 13
+    if-eqz v2, :cond_3
+
+    .line 51
+    :cond_2
+    const v0, 0x7f0b008a
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/SpamWarningActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v6}, Landroid/view/View;->setVisibility(I)V
+
+    .line 23
+    invoke-direct {p0}, Lcom/whatsapp/SpamWarningActivity;->c()V
+
+    .line 49
     :cond_3
     return-void
 
-    .line 20
+    .line 4
     :pswitch_0
-    const v0, 0x7f0e03da
+    const v0, 0x7f0e03e9
 
-    .line 50
+    .line 5
     if-eqz v2, :cond_4
 
-    .line 18
+    .line 33
     :pswitch_1
-    const v0, 0x7f0e03d8
+    const v0, 0x7f0e03e7
 
-    .line 1
+    .line 22
     if-eqz v2, :cond_4
 
-    .line 12
+    .line 16
     :pswitch_2
-    const v0, 0x7f0e03d9
+    const v0, 0x7f0e03e8
 
-    .line 15
+    .line 11
     if-eqz v2, :cond_4
-
-    .line 51
-    :pswitch_3
-    const v0, 0x7f0e03db
 
     .line 42
+    :pswitch_3
+    const v0, 0x7f0e03ea
+
+    .line 7
     if-nez v2, :cond_0
 
     :cond_4

@@ -4,37 +4,37 @@
 
 
 # static fields
-.field public static p:I
+.field private static p:F
 
-.field private static q:F
+.field public static r:F
 
-.field public static t:Landroid/graphics/Paint;
+.field public static s:I
 
-.field public static z:F
+.field public static u:Landroid/graphics/Paint;
 
 
 # instance fields
-.field A:Lcom/whatsapp/se;
+.field A:Z
 
-.field B:Z
+.field public B:F
 
-.field n:Z
+.field private n:J
 
-.field public o:F
+.field o:Z
 
-.field r:Z
+.field q:I
 
-.field s:Z
+.field t:Z
 
-.field u:I
+.field v:Lcom/whatsapp/art;
 
-.field private v:Landroid/os/Handler;
+.field protected w:Z
 
-.field w:Z
+.field private x:Landroid/os/Handler;
 
-.field private x:J
+.field y:Z
 
-.field protected y:Z
+.field z:Z
 
 
 # direct methods
@@ -42,36 +42,36 @@
     .locals 2
 
     .prologue
-    .line 28
+    .line 57
     const/high16 v0, 0x40400000
 
-    sput v0, Lcom/whatsapp/TouchImageView;->q:F
+    sput v0, Lcom/whatsapp/TouchImageView;->p:F
 
-    .line 18
+    .line 11
     const/4 v0, 0x0
 
-    sput v0, Lcom/whatsapp/TouchImageView;->p:I
+    sput v0, Lcom/whatsapp/TouchImageView;->s:I
 
-    .line 41
+    .line 32
     const/high16 v0, -0x40800000
 
-    sput v0, Lcom/whatsapp/TouchImageView;->z:F
+    sput v0, Lcom/whatsapp/TouchImageView;->r:F
 
-    .line 51
+    .line 23
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    sput-object v0, Lcom/whatsapp/TouchImageView;->t:Landroid/graphics/Paint;
+    sput-object v0, Lcom/whatsapp/TouchImageView;->u:Landroid/graphics/Paint;
 
-    .line 20
-    sget-object v0, Lcom/whatsapp/TouchImageView;->t:Landroid/graphics/Paint;
+    .line 54
+    sget-object v0, Lcom/whatsapp/TouchImageView;->u:Landroid/graphics/Paint;
 
     const/high16 v1, -0x1000000
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 14
+    .line 25
     return-void
 .end method
 
@@ -83,54 +83,54 @@
 
     const/4 v0, 0x0
 
-    .line 25
+    .line 55
     invoke-direct {p0, p1}, Lcom/whatsapp/wallpaper/ImageViewTouchBase;-><init>(Landroid/content/Context;)V
 
-    .line 15
-    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->s:Z
-
-    .line 38
-    iput v0, p0, Lcom/whatsapp/TouchImageView;->u:I
-
-    .line 29
-    iput-boolean v1, p0, Lcom/whatsapp/TouchImageView;->r:Z
-
-    .line 22
-    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->n:Z
-
-    .line 58
-    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->B:Z
-
-    .line 50
-    iput-boolean v1, p0, Lcom/whatsapp/TouchImageView;->w:Z
-
     .line 7
-    new-instance v0, Lcom/whatsapp/qd;
+    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->y:Z
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/qd;-><init>(Lcom/whatsapp/TouchImageView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/TouchImageView;->v:Landroid/os/Handler;
+    .line 59
+    iput v0, p0, Lcom/whatsapp/TouchImageView;->q:I
 
     .line 48
+    iput-boolean v1, p0, Lcom/whatsapp/TouchImageView;->t:Z
+
+    .line 5
+    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->z:Z
+
+    .line 53
+    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->o:Z
+
+    .line 26
+    iput-boolean v1, p0, Lcom/whatsapp/TouchImageView;->A:Z
+
+    .line 50
+    new-instance v0, Lcom/whatsapp/vc;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/vc;-><init>(Lcom/whatsapp/TouchImageView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/TouchImageView;->x:Landroid/os/Handler;
+
+    .line 44
     const/high16 v0, 0x3f800000
 
-    iput v0, p0, Lcom/whatsapp/TouchImageView;->o:F
+    iput v0, p0, Lcom/whatsapp/TouchImageView;->B:F
 
-    .line 32
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    .line 1
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/TouchImageView;->A:Lcom/whatsapp/se;
+    iput-object v0, p0, Lcom/whatsapp/TouchImageView;->v:Lcom/whatsapp/art;
 
-    .line 9
-    new-instance v0, Lcom/whatsapp/iu;
+    .line 6
+    new-instance v0, Lcom/whatsapp/apz;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/iu;-><init>(Lcom/whatsapp/TouchImageView;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/apz;-><init>(Lcom/whatsapp/TouchImageView;)V
 
-    invoke-virtual {p0, v0}, Lcom/whatsapp/TouchImageView;->setRecycler(Lcom/whatsapp/wallpaper/b;)V
+    invoke-virtual {p0, v0}, Lcom/whatsapp/TouchImageView;->setRecycler(Lcom/whatsapp/wallpaper/n;)V
 
-    .line 37
+    .line 12
     return-void
 .end method
 
@@ -142,54 +142,54 @@
 
     const/4 v0, 0x0
 
-    .line 55
+    .line 4
     invoke-direct {p0, p1, p2}, Lcom/whatsapp/wallpaper/ImageViewTouchBase;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 34
-    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->s:Z
+    .line 20
+    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->y:Z
 
-    .line 53
-    iput v0, p0, Lcom/whatsapp/TouchImageView;->u:I
+    .line 27
+    iput v0, p0, Lcom/whatsapp/TouchImageView;->q:I
 
-    .line 46
-    iput-boolean v1, p0, Lcom/whatsapp/TouchImageView;->r:Z
+    .line 60
+    iput-boolean v1, p0, Lcom/whatsapp/TouchImageView;->t:Z
 
-    .line 43
-    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->n:Z
+    .line 9
+    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->z:Z
 
-    .line 42
-    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->B:Z
+    .line 39
+    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->o:Z
 
-    .line 10
-    iput-boolean v1, p0, Lcom/whatsapp/TouchImageView;->w:Z
+    .line 35
+    iput-boolean v1, p0, Lcom/whatsapp/TouchImageView;->A:Z
 
-    .line 3
-    new-instance v0, Lcom/whatsapp/qd;
+    .line 36
+    new-instance v0, Lcom/whatsapp/vc;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/qd;-><init>(Lcom/whatsapp/TouchImageView;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/vc;-><init>(Lcom/whatsapp/TouchImageView;)V
 
-    iput-object v0, p0, Lcom/whatsapp/TouchImageView;->v:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/whatsapp/TouchImageView;->x:Landroid/os/Handler;
 
-    .line 23
+    .line 13
     const/high16 v0, 0x3f800000
 
-    iput v0, p0, Lcom/whatsapp/TouchImageView;->o:F
+    iput v0, p0, Lcom/whatsapp/TouchImageView;->B:F
 
-    .line 8
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    .line 51
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/TouchImageView;->A:Lcom/whatsapp/se;
+    iput-object v0, p0, Lcom/whatsapp/TouchImageView;->v:Lcom/whatsapp/art;
 
-    .line 45
-    new-instance v0, Lcom/whatsapp/a15;
+    .line 10
+    new-instance v0, Lcom/whatsapp/n7;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/a15;-><init>(Lcom/whatsapp/TouchImageView;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/n7;-><init>(Lcom/whatsapp/TouchImageView;)V
 
-    invoke-virtual {p0, v0}, Lcom/whatsapp/TouchImageView;->setRecycler(Lcom/whatsapp/wallpaper/b;)V
+    invoke-virtual {p0, v0}, Lcom/whatsapp/TouchImageView;->setRecycler(Lcom/whatsapp/wallpaper/n;)V
 
-    .line 39
+    .line 21
     return-void
 .end method
 
@@ -197,8 +197,8 @@
     .locals 2
 
     .prologue
-    .line 17
-    iget-wide v0, p0, Lcom/whatsapp/TouchImageView;->x:J
+    .line 42
+    iget-wide v0, p0, Lcom/whatsapp/TouchImageView;->n:J
 
     return-wide v0
 .end method
@@ -209,10 +209,10 @@
     .locals 0
 
     .prologue
-    .line 60
+    .line 2
     invoke-super {p0, p1, p2, p3}, Lcom/whatsapp/wallpaper/ImageViewTouchBase;->a(FFF)V
 
-    .line 11
+    .line 33
     return-void
 .end method
 
@@ -220,10 +220,10 @@
     .locals 0
 
     .prologue
-    .line 56
+    .line 31
     invoke-super {p0, p1, p2}, Lcom/whatsapp/wallpaper/ImageViewTouchBase;->b(FF)V
 
-    .line 47
+    .line 46
     return-void
 .end method
 
@@ -235,28 +235,28 @@
 
     const/4 v5, 0x0
 
-    .line 13
+    .line 22
     invoke-super {p0, p1}, Lcom/whatsapp/wallpaper/ImageViewTouchBase;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 24
-    iget-boolean v0, p0, Lcom/whatsapp/TouchImageView;->n:Z
+    .line 43
+    iget-boolean v0, p0, Lcom/whatsapp/TouchImageView;->z:Z
 
     if-eqz v0, :cond_0
 
-    .line 27
+    .line 45
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
-    .line 31
+    .line 24
     invoke-virtual {v1, v6}, Landroid/graphics/Paint;->setDither(Z)V
 
-    .line 21
+    .line 8
     invoke-virtual {p0}, Lcom/whatsapp/TouchImageView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v2, 0x7f0205c6
+    const v2, 0x7f0205cf
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -268,7 +268,7 @@
 
     move-result-object v0
 
-    .line 33
+    .line 18
     new-instance v2, Landroid/graphics/Matrix;
 
     invoke-virtual {p0}, Lcom/whatsapp/TouchImageView;->getImageMatrix()Landroid/graphics/Matrix;
@@ -277,23 +277,23 @@
 
     invoke-direct {v2, v3}, Landroid/graphics/Matrix;-><init>(Landroid/graphics/Matrix;)V
 
-    .line 52
-    iget-object v3, p0, Lcom/whatsapp/TouchImageView;->f:Lcom/whatsapp/wallpaper/r;
+    .line 17
+    iget-object v3, p0, Lcom/whatsapp/TouchImageView;->b:Lcom/whatsapp/wallpaper/h;
 
-    invoke-virtual {v3}, Lcom/whatsapp/wallpaper/r;->d()Landroid/graphics/Bitmap;
+    invoke-virtual {v3}, Lcom/whatsapp/wallpaper/h;->e()Landroid/graphics/Bitmap;
 
     move-result-object v3
 
     if-eqz v3, :cond_0
 
-    .line 59
+    .line 49
     const/4 v3, 0x2
 
     new-array v3, v3, [F
 
-    iget-object v4, p0, Lcom/whatsapp/TouchImageView;->f:Lcom/whatsapp/wallpaper/r;
+    iget-object v4, p0, Lcom/whatsapp/TouchImageView;->b:Lcom/whatsapp/wallpaper/h;
 
-    invoke-virtual {v4}, Lcom/whatsapp/wallpaper/r;->a()I
+    invoke-virtual {v4}, Lcom/whatsapp/wallpaper/h;->b()I
 
     move-result v4
 
@@ -303,9 +303,9 @@
 
     aput v4, v3, v5
 
-    iget-object v4, p0, Lcom/whatsapp/TouchImageView;->f:Lcom/whatsapp/wallpaper/r;
+    iget-object v4, p0, Lcom/whatsapp/TouchImageView;->b:Lcom/whatsapp/wallpaper/h;
 
-    invoke-virtual {v4}, Lcom/whatsapp/wallpaper/r;->c()I
+    invoke-virtual {v4}, Lcom/whatsapp/wallpaper/h;->a()I
 
     move-result v4
 
@@ -315,10 +315,10 @@
 
     aput v4, v3, v6
 
-    .line 1
+    .line 16
     invoke-virtual {v2, v3}, Landroid/graphics/Matrix;->mapPoints([F)V
 
-    .line 2
+    .line 19
     invoke-virtual {p0}, Lcom/whatsapp/TouchImageView;->getPaddingLeft()I
 
     move-result v2
@@ -345,7 +345,7 @@
 
     div-int/lit8 v3, v3, 0x2
 
-    .line 30
+    .line 3
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v4
@@ -356,29 +356,29 @@
 
     int-to-float v3, v3
 
-    .line 54
+    .line 40
     invoke-virtual {p1, v0, v2, v3, v1}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 44
+    .line 37
     :cond_0
-    iget-boolean v0, p0, Lcom/whatsapp/TouchImageView;->y:Z
+    iget-boolean v0, p0, Lcom/whatsapp/TouchImageView;->w:Z
 
     if-eqz v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/whatsapp/TouchImageView;->s:Z
+    iget-boolean v0, p0, Lcom/whatsapp/TouchImageView;->y:Z
 
     if-nez v0, :cond_1
 
-    .line 57
+    .line 47
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Lcom/whatsapp/TouchImageView;->getWidth()I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/whatsapp/TouchImageView;->A:Lcom/whatsapp/se;
+    iget-object v2, p0, Lcom/whatsapp/TouchImageView;->v:Lcom/whatsapp/art;
 
-    iget v2, v2, Lcom/whatsapp/se;->g:I
+    iget v2, v2, Lcom/whatsapp/art;->b:I
 
     sub-int/2addr v1, v2
 
@@ -392,16 +392,16 @@
 
     invoke-direct {v0, v1, v5, v2, v3}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 16
+    .line 29
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Lcom/whatsapp/TouchImageView;->getWidth()I
 
     move-result v2
 
-    iget-object v3, p0, Lcom/whatsapp/TouchImageView;->A:Lcom/whatsapp/se;
+    iget-object v3, p0, Lcom/whatsapp/TouchImageView;->v:Lcom/whatsapp/art;
 
-    iget v3, v3, Lcom/whatsapp/se;->g:I
+    iget v3, v3, Lcom/whatsapp/art;->b:I
 
     sub-int/2addr v2, v3
 
@@ -415,17 +415,17 @@
 
     invoke-direct {v1, v2, v5, v3, v4}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 40
-    sget-object v2, Lcom/whatsapp/TouchImageView;->t:Landroid/graphics/Paint;
+    .line 52
+    sget-object v2, Lcom/whatsapp/TouchImageView;->u:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v2}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 49
-    sget-object v0, Lcom/whatsapp/TouchImageView;->t:Landroid/graphics/Paint;
+    .line 14
+    sget-object v0, Lcom/whatsapp/TouchImageView;->u:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v1, v0}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 26
+    .line 30
     :cond_1
     return-void
 .end method
@@ -434,19 +434,19 @@
     .locals 1
 
     .prologue
-    .line 36
+    .line 28
     invoke-super/range {p0 .. p5}, Lcom/whatsapp/wallpaper/ImageViewTouchBase;->onLayout(ZIIII)V
 
-    .line 19
-    iget-object v0, p0, Lcom/whatsapp/TouchImageView;->f:Lcom/whatsapp/wallpaper/r;
+    .line 56
+    iget-object v0, p0, Lcom/whatsapp/TouchImageView;->b:Lcom/whatsapp/wallpaper/h;
 
-    invoke-virtual {v0}, Lcom/whatsapp/wallpaper/r;->d()Landroid/graphics/Bitmap;
+    invoke-virtual {v0}, Lcom/whatsapp/wallpaper/h;->e()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 35
+    .line 34
     :cond_0
     return-void
 .end method
@@ -455,7 +455,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 58
     const/4 v0, 0x0
 
     return v0
@@ -465,14 +465,14 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 38
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->s:Z
+    iput-boolean v0, p0, Lcom/whatsapp/TouchImageView;->y:Z
 
-    .line 12
+    .line 41
     invoke-super {p0, p1}, Lcom/whatsapp/wallpaper/ImageViewTouchBase;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 4
+    .line 15
     return-void
 .end method

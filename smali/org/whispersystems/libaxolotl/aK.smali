@@ -1,60 +1,76 @@
-.class Lorg/whispersystems/libaxolotl/aK;
+.class public Lorg/whispersystems/libaxolotl/aK;
 .super Ljava/lang/Object;
 .source "aK.java"
 
 
 # instance fields
-.field private final a:Lorg/whispersystems/libaxolotl/aM;
+.field private final a:[B
 
-.field private final b:Lorg/whispersystems/libaxolotl/aQ;
+.field private final b:[B
 
 
 # direct methods
-.method private constructor <init>(Lorg/whispersystems/libaxolotl/aM;Lorg/whispersystems/libaxolotl/aQ;)V
-    .locals 0
+.method public constructor <init>([B)V
+    .locals 3
 
     .prologue
+    const/16 v1, 0x20
+
+    sget v0, Lorg/whispersystems/libaxolotl/ae;->a:I
+
     .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
-    iput-object p1, p0, Lorg/whispersystems/libaxolotl/aK;->a:Lorg/whispersystems/libaxolotl/aM;
+    .line 3
+    invoke-static {p1, v1, v1}, Lorg/whispersystems/libaxolotl/b7;->a([BII)[[B
 
-    .line 7
-    iput-object p2, p0, Lorg/whispersystems/libaxolotl/aK;->b:Lorg/whispersystems/libaxolotl/aQ;
+    move-result-object v1
+
+    .line 5
+    const/4 v2, 0x0
+
+    aget-object v2, v1, v2
+
+    iput-object v2, p0, Lorg/whispersystems/libaxolotl/aK;->b:[B
+
+    .line 6
+    const/4 v2, 0x1
+
+    aget-object v1, v1, v2
+
+    iput-object v1, p0, Lorg/whispersystems/libaxolotl/aK;->a:[B
 
     .line 1
-    return-void
-.end method
+    sget-boolean v1, Lorg/whispersystems/libaxolotl/as;->l:Z
 
-.method constructor <init>(Lorg/whispersystems/libaxolotl/aM;Lorg/whispersystems/libaxolotl/aQ;Lorg/whispersystems/libaxolotl/b3;)V
-    .locals 0
+    if-eqz v1, :cond_0
 
-    .prologue
-    .line 2
-    invoke-direct {p0, p1, p2}, Lorg/whispersystems/libaxolotl/aK;-><init>(Lorg/whispersystems/libaxolotl/aM;Lorg/whispersystems/libaxolotl/aQ;)V
+    add-int/lit8 v0, v0, 0x1
 
+    sput v0, Lorg/whispersystems/libaxolotl/ae;->a:I
+
+    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Lorg/whispersystems/libaxolotl/aQ;
+.method public a()[B
     .locals 1
 
     .prologue
-    .line 3
-    iget-object v0, p0, Lorg/whispersystems/libaxolotl/aK;->b:Lorg/whispersystems/libaxolotl/aQ;
+    .line 7
+    iget-object v0, p0, Lorg/whispersystems/libaxolotl/aK;->a:[B
 
     return-object v0
 .end method
 
-.method public b()Lorg/whispersystems/libaxolotl/aM;
+.method public b()[B
     .locals 1
 
     .prologue
-    .line 6
-    iget-object v0, p0, Lorg/whispersystems/libaxolotl/aK;->a:Lorg/whispersystems/libaxolotl/aM;
+    .line 2
+    iget-object v0, p0, Lorg/whispersystems/libaxolotl/aK;->b:[B
 
     return-object v0
 .end method

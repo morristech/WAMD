@@ -1,103 +1,83 @@
 .class Lcom/whatsapp/zp;
-.super Lcom/whatsapp/y_;
+.super Ljava/lang/Object;
 .source "zp.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ui;
+.field final a:Lcom/whatsapp/al4;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ui;)V
+.method constructor <init>(Lcom/whatsapp/al4;)V
     .locals 0
 
     .prologue
-    .line 4
-    iput-object p1, p0, Lcom/whatsapp/zp;->a:Lcom/whatsapp/ui;
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/zp;->a:Lcom/whatsapp/al4;
 
-    invoke-direct {p0}, Lcom/whatsapp/y_;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/whatsapp/protocol/ae;I)V
-    .locals 4
+.method public run()V
+    .locals 9
 
     .prologue
-    .line 2
-    iget-byte v0, p1, Lcom/whatsapp/protocol/ae;->t:B
+    const/4 v2, 0x0
 
-    if-nez v0, :cond_1
-
-    iget v0, p1, Lcom/whatsapp/protocol/ae;->E:I
-
-    const/4 v1, 0x6
-
-    if-ne v0, v1, :cond_1
-
-    iget-object v0, p0, Lcom/whatsapp/zp;->a:Lcom/whatsapp/ui;
-
-    .line 6
-    invoke-static {v0}, Lcom/whatsapp/ui;->d(Lcom/whatsapp/ui;)Ljava/lang/String;
-
-    move-result-object v0
-
-    iget-object v1, p1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
-
-    iget-object v1, v1, Lcom/whatsapp/protocol/au;->a:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    const/4 v1, 0x1
 
     .line 3
-    invoke-virtual {v0}, Lcom/whatsapp/d_;->g()Lcom/whatsapp/ada;
+    iget-object v0, p0, Lcom/whatsapp/zp;->a:Lcom/whatsapp/al4;
 
-    move-result-object v0
+    iget-object v0, v0, Lcom/whatsapp/al4;->d:Landroid/view/View;
 
-    iget-object v0, v0, Lcom/whatsapp/ada;->a:Ljava/lang/String;
+    const/16 v3, 0x8
 
-    iget-object v1, p1, Lcom/whatsapp/protocol/ae;->g:Ljava/lang/String;
+    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 7
+    new-instance v0, Landroid/view/animation/TranslateAnimation;
 
-    move-result v0
+    const/high16 v8, 0x3f800000
 
-    if-eqz v0, :cond_1
+    move v3, v1
 
-    iget-wide v0, p1, Lcom/whatsapp/protocol/ae;->M:J
+    move v4, v2
 
-    const-wide/16 v2, 0x5
+    move v5, v1
 
-    cmp-long v0, v0, v2
+    move v6, v2
 
-    if-eqz v0, :cond_0
+    move v7, v1
 
-    iget-wide v0, p1, Lcom/whatsapp/protocol/ae;->M:J
+    invoke-direct/range {v0 .. v8}, Landroid/view/animation/TranslateAnimation;-><init>(IFIFIFIF)V
 
-    const-wide/16 v2, 0x7
+    .line 4
+    new-instance v1, Lcom/whatsapp/ai1;
 
-    cmp-long v0, v0, v2
+    invoke-direct {v1, p0}, Lcom/whatsapp/ai1;-><init>(Lcom/whatsapp/zp;)V
 
-    if-nez v0, :cond_1
+    invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
     .line 5
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/zp;->a:Lcom/whatsapp/ui;
+    const-wide/16 v2, 0xc8
 
-    invoke-static {v0}, Lcom/whatsapp/ui;->e(Lcom/whatsapp/ui;)Landroid/app/Activity;
+    invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
 
-    move-result-object v0
+    .line 6
+    iget-object v1, p0, Lcom/whatsapp/zp;->a:Lcom/whatsapp/al4;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    iget-object v1, v1, Lcom/whatsapp/al4;->d:Landroid/view/View;
+
+    invoke-virtual {v1, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
     .line 1
-    :cond_1
     return-void
 .end method

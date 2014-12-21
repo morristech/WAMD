@@ -1,175 +1,80 @@
-.class Lcom/whatsapp/jh;
+.class public Lcom/whatsapp/jh;
 .super Ljava/lang/Object;
 .source "jh.java"
 
-# interfaces
-.implements Landroid/view/View$OnLongClickListener;
-
-
-# static fields
-.field private static final z:Ljava/lang/String;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/Conversation;
-
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public static a(Landroid/app/Activity;Lcom/actionbarsherlock/app/ActionBar;Ljava/lang/String;Landroid/view/View$OnClickListener;)Landroid/view/View;
+    .locals 5
 
-    const/16 v1, 0x42
+    .prologue
+    const/4 v4, -0x2
 
-    const-string v0, "/K\u001e,o\'@"
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+    .line 1
+    invoke-virtual {p0}, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    array-length v2, v0
+    const v1, 0x7f030019
+
+    const/4 v2, 0x0
 
     const/4 v3, 0x0
 
-    move v4, v3
+    invoke-static {v0, v1, v2, v3}, Lcom/whatsapp/t3;->a(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    move v3, v2
+    move-result-object v1
 
-    move-object v2, v0
-
-    :goto_0
-    if-gt v3, v4, :cond_0
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v2}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/jh;->z:Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v5, v2, v4
-
-    rem-int/lit8 v0, v4, 0x5
-
-    packed-switch v0, :pswitch_data_0
-
-    const/16 v0, 0x1b
-
-    :goto_1
-    xor-int/2addr v0, v5
-
-    int-to-char v0, v0
-
-    aput-char v0, v2, v4
-
-    add-int/lit8 v0, v4, 0x1
-
-    move v4, v0
-
-    goto :goto_0
-
-    :pswitch_0
-    move v0, v1
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v0, 0x24
-
-    goto :goto_1
-
-    :pswitch_2
-    const/16 v0, 0x6b
-
-    goto :goto_1
-
-    :pswitch_3
-    move v0, v1
-
-    goto :goto_1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-.end method
-
-.method constructor <init>(Lcom/whatsapp/Conversation;)V
-    .locals 0
-
-    .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/jh;->a:Lcom/whatsapp/Conversation;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public onLongClick(Landroid/view/View;)Z
-    .locals 2
-
-    .prologue
     .line 6
-    iget-object v0, p0, Lcom/whatsapp/jh;->a:Lcom/whatsapp/Conversation;
+    new-instance v2, Lcom/actionbarsherlock/app/ActionBar$LayoutParams;
 
-    invoke-static {v0}, Lcom/whatsapp/Conversation;->T(Lcom/whatsapp/Conversation;)Lcom/whatsapp/fz;
+    invoke-direct {v2, v4, v4}, Lcom/actionbarsherlock/app/ActionBar$LayoutParams;-><init>(II)V
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/fz;->dismiss()V
-
-    .line 2
-    invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 8
-    sget-object v1, Lcom/whatsapp/jh;->z:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 3
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_0
 
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/jh;->a:Lcom/whatsapp/Conversation;
+    const/4 v0, 0x5
 
-    const/16 v1, 0xf
+    :goto_0
+    iput v0, v2, Lcom/actionbarsherlock/app/ActionBar$LayoutParams;->gravity:I
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/Conversation;->showDialog(I)V
-
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
-
-    if-eqz v0, :cond_1
+    .line 2
+    invoke-virtual {p1, v1, v2}, Lcom/actionbarsherlock/app/ActionBar;->setCustomView(Landroid/view/View;Lcom/actionbarsherlock/app/ActionBar$LayoutParams;)V
 
     .line 4
-    :cond_0
-    const/16 v0, 0x15
+    const v0, 0x7f0b007d
 
-    iget-object v1, p0, Lcom/whatsapp/jh;->a:Lcom/whatsapp/Conversation;
+    invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    invoke-static {v0, v1}, Lcom/whatsapp/util/bo;->a(ILandroid/app/Activity;)V
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    invoke-virtual {p2}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 5
-    const/4 v0, 0x0
+    const v0, 0x7f0b007c
 
-    sput-boolean v0, Lcom/whatsapp/Conversation;->l:Z
+    invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 7
+    return-object v1
 
     .line 3
-    :cond_1
-    const/4 v0, 0x1
+    :cond_0
+    const/4 v0, 0x3
 
-    return v0
+    goto :goto_0
 .end method

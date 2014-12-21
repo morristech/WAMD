@@ -1,48 +1,58 @@
-.class Lcom/whatsapp/adj;
-.super Ljava/lang/Object;
+.class public Lcom/whatsapp/adj;
+.super Lcom/whatsapp/ada;
 .source "adj.java"
-
-# interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/SettingsChat;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/SettingsChat;)V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/adj;->a:Lcom/whatsapp/SettingsChat;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 6
+    invoke-direct {p0}, Lcom/whatsapp/ada;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
+.method public a(I)I
     .locals 2
 
     .prologue
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/adj;->a:Lcom/whatsapp/SettingsChat;
+    const/4 v1, 0x1
 
-    const/4 v1, 0x6
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/SettingsChat;->showDialog(I)V
-
-    .line 1
-    new-instance v0, Lcom/whatsapp/acv;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/acv;-><init>(Lcom/whatsapp/adj;)V
-
-    invoke-static {v0}, Lcom/whatsapp/util/u;->a(Ljava/lang/Runnable;)V
+    .line 7
+    rem-int/lit8 v0, p1, 0x64
 
     .line 2
-    return-void
+    if-ne p1, v1, :cond_0
+
+    .line 5
+    const/4 v0, 0x2
+
+    :goto_0
+    return v0
+
+    .line 1
+    :cond_0
+    if-eqz p1, :cond_1
+
+    if-lt v0, v1, :cond_2
+
+    const/16 v1, 0x13
+
+    if-gt v0, v1, :cond_2
+
+    .line 3
+    :cond_1
+    const/16 v0, 0x8
+
+    goto :goto_0
+
+    .line 4
+    :cond_2
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

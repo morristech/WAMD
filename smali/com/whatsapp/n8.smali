@@ -7,16 +7,20 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/eg;
+.field final a:Lcom/whatsapp/ContactsFragment;
+
+.field final b:Lcom/whatsapp/tc;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/eg;)V
+.method constructor <init>(Lcom/whatsapp/ContactsFragment;Lcom/whatsapp/tc;)V
     .locals 0
 
     .prologue
-    .line 4
-    iput-object p1, p0, Lcom/whatsapp/n8;->a:Lcom/whatsapp/eg;
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/n8;->a:Lcom/whatsapp/ContactsFragment;
+
+    iput-object p2, p0, Lcom/whatsapp/n8;->b:Lcom/whatsapp/tc;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,38 +33,36 @@
     .locals 3
 
     .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/n8;->a:Lcom/whatsapp/eg;
+    .line 4
+    const-wide/16 v0, 0x12c
 
-    iget-object v0, v0, Lcom/whatsapp/eg;->a:Lcom/whatsapp/ContactPickerHelp;
+    :try_start_0
+    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
 
-    const v1, 0x7f0b012c
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/n8;->a:Lcom/whatsapp/ContactsFragment;
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/ContactPickerHelp;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/n8;->a:Lcom/whatsapp/eg;
-
-    iget-object v0, v0, Lcom/whatsapp/eg;->a:Lcom/whatsapp/ContactPickerHelp;
-
-    const v2, 0x7f0b00f8
-
-    invoke-virtual {v0, v2}, Lcom/whatsapp/ContactPickerHelp;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0}, Lcom/whatsapp/ContactsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    check-cast v0, Landroid/widget/ScrollView;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    iget-object v2, p0, Lcom/whatsapp/n8;->b:Lcom/whatsapp/tc;
 
-    invoke-virtual {v1}, Landroid/view/View;->getTop()I
+    iget-object v2, v2, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    move-result v1
+    invoke-static {v0, v1, v2}, Lcom/whatsapp/App;->a(Landroid/app/Activity;ZLjava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v0, v2, v1}, Landroid/widget/ScrollView;->smoothScrollTo(II)V
-
-    .line 1
+    .line 5
+    :goto_0
     return-void
+
+    .line 3
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
 .end method

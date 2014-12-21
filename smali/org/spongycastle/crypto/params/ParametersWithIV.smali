@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static a:I
+.field public static a:Z
 
 
 # instance fields
@@ -21,14 +21,14 @@
     .locals 2
 
     .prologue
-    .line 7
+    .line 8
     const/4 v0, 0x0
 
     array-length v1, p2
 
     invoke-direct {p0, p1, p2, v0, v1}, Lorg/spongycastle/crypto/params/ParametersWithIV;-><init>(Lorg/spongycastle/crypto/CipherParameters;[BII)V
 
-    .line 1
+    .line 2
     return-void
 .end method
 
@@ -36,43 +36,37 @@
     .locals 3
 
     .prologue
-    const/4 v0, 0x0
-
-    sget v1, Lorg/spongycastle/crypto/params/ParametersWithIV;->a:I
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-boolean v0, Lorg/spongycastle/crypto/params/ParametersWithIV;->a:Z
 
     .line 9
-    new-array v2, p4, [B
-
-    iput-object v2, p0, Lorg/spongycastle/crypto/params/ParametersWithIV;->iv:[B
-
-    .line 6
-    iput-object p1, p0, Lorg/spongycastle/crypto/params/ParametersWithIV;->parameters:Lorg/spongycastle/crypto/CipherParameters;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    iget-object v2, p0, Lorg/spongycastle/crypto/params/ParametersWithIV;->iv:[B
+    new-array v1, p4, [B
 
-    invoke-static {p2, p3, v2, v0, p4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    iput-object v1, p0, Lorg/spongycastle/crypto/params/ParametersWithIV;->iv:[B
 
-    .line 3
-    if-eqz v1, :cond_0
+    .line 1
+    iput-object p1, p0, Lorg/spongycastle/crypto/params/ParametersWithIV;->parameters:Lorg/spongycastle/crypto/CipherParameters;
 
-    sget-boolean v1, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
+    .line 5
+    iget-object v1, p0, Lorg/spongycastle/crypto/params/ParametersWithIV;->iv:[B
 
-    if-eqz v1, :cond_1
+    const/4 v2, 0x0
 
-    :goto_0
-    sput-boolean v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
+    invoke-static {p2, p3, v1, v2, p4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    sget v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    sput v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
 
     :cond_0
     return-void
-
-    :cond_1
-    const/4 v0, 0x1
-
-    goto :goto_0
 .end method
 
 
@@ -81,7 +75,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 3
     iget-object v0, p0, Lorg/spongycastle/crypto/params/ParametersWithIV;->iv:[B
 
     return-object v0
@@ -91,7 +85,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 7
     iget-object v0, p0, Lorg/spongycastle/crypto/params/ParametersWithIV;->parameters:Lorg/spongycastle/crypto/CipherParameters;
 
     return-object v0

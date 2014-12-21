@@ -29,7 +29,7 @@
     .locals 2
 
     .prologue
-    .line 3
+    .line 6
     iget-object v0, p0, Lcom/actionbarsherlock/widget/ActivityChooserView$2;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserView;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/ActivityChooserView;->isShowingPopup()Z
@@ -47,7 +47,7 @@
 
     if-nez v0, :cond_0
 
-    .line 6
+    .line 5
     iget-object v0, p0, Lcom/actionbarsherlock/widget/ActivityChooserView$2;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserView;
 
     invoke-static {v0}, Lcom/actionbarsherlock/widget/ActivityChooserView;->access$100(Lcom/actionbarsherlock/widget/ActivityChooserView;)Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;
@@ -56,11 +56,11 @@
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;->dismiss()V
 
-    sget-boolean v0, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    sget v0, Lcom/actionbarsherlock/widget/SearchView;->a:I
 
     if-eqz v0, :cond_1
 
-    .line 5
+    .line 2
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/ActivityChooserView$2;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserView;
 
@@ -70,14 +70,14 @@
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;->show()V
 
-    .line 7
+    .line 8
     iget-object v0, p0, Lcom/actionbarsherlock/widget/ActivityChooserView$2;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserView;
 
     iget-object v0, v0, Lcom/actionbarsherlock/widget/ActivityChooserView;->mProvider:Lcom/actionbarsherlock/view/ActionProvider;
 
     if-eqz v0, :cond_1
 
-    .line 2
+    .line 7
     iget-object v0, p0, Lcom/actionbarsherlock/widget/ActivityChooserView$2;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserView;
 
     iget-object v0, v0, Lcom/actionbarsherlock/widget/ActivityChooserView;->mProvider:Lcom/actionbarsherlock/view/ActionProvider;
@@ -86,7 +86,7 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/view/ActionProvider;->subUiVisibilityChanged(Z)V
 
-    .line 8
+    .line 3
     :cond_1
     return-void
 .end method

@@ -12,23 +12,23 @@
 
 
 # instance fields
-.field private a:Lcom/whatsapp/wallpaper/p;
+.field a:Landroid/content/pm/PackageManager;
 
-.field private b:Landroid/widget/ImageView;
+.field private b:Ljava/util/ArrayList;
 
-.field c:Landroid/content/pm/PackageManager;
+.field private c:Landroid/graphics/Bitmap;
 
-.field d:Landroid/content/res/Resources;
+.field private d:Lcom/whatsapp/wallpaper/j;
 
-.field private e:Landroid/graphics/Bitmap;
+.field private e:Lcom/whatsapp/wallpaper/b;
 
-.field private f:Ljava/util/ArrayList;
+.field private f:Landroid/widget/ImageView;
 
-.field private g:Lcom/whatsapp/wallpaper/h;
+.field private g:Lcom/whatsapp/CustomVelocityGallery;
 
-.field private h:Ljava/util/ArrayList;
+.field h:Landroid/content/res/Resources;
 
-.field private i:Lcom/whatsapp/CustomVelocityGallery;
+.field private i:Ljava/util/ArrayList;
 
 .field private j:Z
 
@@ -37,13 +37,13 @@
 .method static constructor <clinit>()V
     .locals 14
 
+    const/4 v5, 0x4
+
     const/4 v4, 0x3
 
     const/4 v3, 0x2
 
     const/4 v2, 0x1
-
-    const/4 v5, 0x5
 
     const/4 v1, 0x0
 
@@ -51,7 +51,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "x.\u000fjrs \u00167dk1L3dw-\u0012%u~3"
+    const-string v6, ",\u001a\u00012c\'\u0014\u0018ou?\u0005Bku#\u0019\u001c}d*\u0007"
 
     const/4 v0, -0x1
 
@@ -89,7 +89,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "i$\u0006\ra"
+    const-string v0, "8\u0014\u0000pd.\u0005\tnK?\u001c\u000fwq="
 
     move-object v6, v0
 
@@ -104,7 +104,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "t3\u000b!ko \u0016-ju"
+    const-string v0, ",\u001a\u00012c\'\u0014\u0018ou?\u0005Bku#\u0019\u001c}d*\u0007"
 
     move-object v6, v0
 
@@ -119,7 +119,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "t3\u000b!ko \u0016-ju"
+    const-string v0, " \u0007\u0005yz;\u0014\u0018u{!"
 
     move-object v6, v0
 
@@ -134,15 +134,13 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const/4 v6, 0x4
-
-    const-string v0, "z/\u00066jr%L7`o5\u000b*bho#\u0014UW\u0008!\u0005QR\u000e,\u001bV^\u00156\rK\\\u0012"
-
-    move v7, v6
-
-    move-object v8, v9
+    const-string v0, "=\u0010\u0008Up"
 
     move-object v6, v0
+
+    move v7, v5
+
+    move-object v8, v9
 
     move v0, v4
 
@@ -151,22 +149,9 @@
     :pswitch_3
     aput-object v6, v8, v7
 
-    const-string v6, "z/\u00066jr%L7`o5\u000b*bho1\u0001FN\u0013+\u0010\\D\u0012\'\u0010QR\u000f%\u0017"
+    const/4 v6, 0x5
 
-    const/4 v0, 0x4
-
-    move v7, v5
-
-    move-object v8, v9
-
-    goto :goto_0
-
-    :pswitch_4
-    aput-object v6, v8, v7
-
-    const/4 v6, 0x6
-
-    const-string v0, "x.\u000fjrs \u00167dk1L3dw-\u0012%u~3"
+    const-string v0, " \u0007\u0005yz;\u0014\u0018u{!"
 
     move v7, v6
 
@@ -178,12 +163,25 @@
 
     goto :goto_0
 
+    :pswitch_4
+    aput-object v6, v8, v7
+
+    const/4 v7, 0x6
+
+    const-string v6, ".\u001b\u0008n{&\u0011Boq;\u0001\u0005rs<[?YW\u001a\'%HM\u0010&)H@\u0006;+O"
+
+    const/4 v0, 0x5
+
+    move-object v8, v9
+
+    goto :goto_0
+
     :pswitch_5
     aput-object v6, v8, v7
 
     const/4 v7, 0x7
 
-    const-string v6, "l \u000e(uz1\u00076Zk(\u0001/`i"
+    const-string v6, ".\u001b\u0008n{&\u0011Boq;\u0001\u0005rs<[-LD\u0003</]@\u0006:\"CG\n!8UZ\u0008&"
 
     const/4 v0, 0x6
 
@@ -196,7 +194,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "l \u000e(uz1\u00076*i$\u0011+pi\"\u0007\u001bkt5=\"jn/\u0006"
+    const-string v6, "\u0010\u0006\u0001}x#"
 
     const/4 v0, 0x7
 
@@ -209,7 +207,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "\u007f3\u00033dy-\u0007"
+    const-string v6, "8\u0014\u0000pd.\u0005\tn;=\u0010\u001fsa=\u0016\tCz \u00013z{:\u001b\u0008"
 
     const/16 v0, 0x8
 
@@ -222,7 +220,7 @@
 
     const/16 v7, 0xa
 
-    const-string v6, "D2\u000f%iw"
+    const-string v6, "+\u0007\rku-\u0019\t"
 
     const/16 v0, 0x9
 
@@ -235,7 +233,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, "\u007f3\u00033dy-\u0007"
+    const-string v6, "+\u0007\rku-\u0019\t"
 
     const/16 v0, 0xa
 
@@ -257,7 +255,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    move v6, v5
+    const/16 v6, 0x14
 
     :goto_2
     xor-int/2addr v6, v13
@@ -273,22 +271,22 @@
     goto/16 :goto_1
 
     :pswitch_b
-    const/16 v6, 0x1b
+    const/16 v6, 0x4f
 
     goto :goto_2
 
     :pswitch_c
-    const/16 v6, 0x41
+    const/16 v6, 0x75
 
     goto :goto_2
 
     :pswitch_d
-    const/16 v6, 0x62
+    const/16 v6, 0x6c
 
     goto :goto_2
 
     :pswitch_e
-    const/16 v6, 0x44
+    const/16 v6, 0x1c
 
     goto :goto_2
 
@@ -324,103 +322,103 @@
     .prologue
     const/16 v1, 0x18
 
-    .line 30
+    .line 41
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 37
+    .line 83
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->h:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->i:Ljava/util/ArrayList;
 
-    .line 7
+    .line 75
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->f:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->b:Ljava/util/ArrayList;
 
-    .line 49
+    .line 52
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->j:Z
 
-    .line 71
+    .line 82
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->d:Landroid/content/res/Resources;
+    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->h:Landroid/content/res/Resources;
 
-    .line 15
+    .line 93
     return-void
+.end method
+
+.method static a(Lcom/whatsapp/wallpaper/WallpaperPicker;)Landroid/graphics/Bitmap;
+    .locals 1
+
+    .prologue
+    .line 14
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->c:Landroid/graphics/Bitmap;
+
+    return-object v0
 .end method
 
 .method static a(Lcom/whatsapp/wallpaper/WallpaperPicker;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
 
     .prologue
-    .line 74
-    iput-object p1, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->e:Landroid/graphics/Bitmap;
+    .line 61
+    iput-object p1, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->c:Landroid/graphics/Bitmap;
 
     return-object p1
 .end method
 
-.method static a(Lcom/whatsapp/wallpaper/WallpaperPicker;Lcom/whatsapp/wallpaper/p;)Lcom/whatsapp/wallpaper/p;
+.method static a(Lcom/whatsapp/wallpaper/WallpaperPicker;Lcom/whatsapp/wallpaper/j;)Lcom/whatsapp/wallpaper/j;
     .locals 0
 
     .prologue
-    .line 25
-    iput-object p1, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->a:Lcom/whatsapp/wallpaper/p;
+    .line 35
+    iput-object p1, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->d:Lcom/whatsapp/wallpaper/j;
 
     return-object p1
-.end method
-
-.method static a(Lcom/whatsapp/wallpaper/WallpaperPicker;)Ljava/util/ArrayList;
-    .locals 1
-
-    .prologue
-    .line 32
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->f:Ljava/util/ArrayList;
-
-    return-object v0
 .end method
 
 .method private a()V
     .locals 3
 
     .prologue
-    .line 85
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->d:Landroid/content/res/Resources;
+    .line 32
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->h:Landroid/content/res/Resources;
 
     sget-object v1, Lcom/whatsapp/wallpaper/WallpaperPicker;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x0
+    const/4 v2, 0x2
 
     aget-object v1, v1, v2
 
     invoke-direct {p0, v0, v1}, Lcom/whatsapp/wallpaper/WallpaperPicker;->a(Landroid/content/res/Resources;Ljava/lang/String;)V
 
-    .line 3
+    .line 16
     return-void
 .end method
 
 .method private a(I)V
-    .locals 5
+    .locals 4
 
     .prologue
-    const/4 v4, 0x1
-
-    .line 81
+    .line 33
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 73
+    .line 36
     sget-object v0, Lcom/whatsapp/wallpaper/WallpaperPicker;->z:[Ljava/lang/String;
 
-    aget-object v2, v0, v4
+    const/4 v2, 0x4
 
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->f:Ljava/util/ArrayList;
+    aget-object v2, v0, v2
+
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -430,39 +428,41 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 14
+    .line 74
     invoke-virtual {p0}, Lcom/whatsapp/wallpaper/WallpaperPicker;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
     sget-object v2, Lcom/whatsapp/wallpaper/WallpaperPicker;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x2
+    const/4 v3, 0x3
 
     aget-object v2, v2, v3
 
-    invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    const/4 v3, 0x1
+
+    invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v0
 
-    .line 31
+    .line 70
     sget-object v2, Lcom/whatsapp/wallpaper/WallpaperPicker;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x3
+    const/4 v3, 0x5
 
     aget-object v2, v2, v3
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 53
+    .line 1
     const/4 v0, -0x1
 
     invoke-virtual {p0, v0, v1}, Lcom/whatsapp/wallpaper/WallpaperPicker;->setResult(ILandroid/content/Intent;)V
 
-    .line 90
+    .line 43
     invoke-virtual {p0}, Lcom/whatsapp/wallpaper/WallpaperPicker;->finish()V
 
-    .line 28
+    .line 47
     return-void
 .end method
 
@@ -472,9 +472,9 @@
     .prologue
     const/4 v8, 0x1
 
-    sget-boolean v1, Lcom/whatsapp/wallpaper/ImageViewTouchBase;->b:Z
+    sget-boolean v1, Lcom/whatsapp/wallpaper/ImageViewTouchBase;->m:Z
 
-    .line 70
+    .line 50
     const/high16 v0, 0x7f050000
 
     :try_start_0
@@ -482,7 +482,7 @@
 
     move-result-object v2
 
-    .line 59
+    .line 19
     array-length v3, v2
 
     const/4 v0, 0x0
@@ -492,10 +492,10 @@
 
     aget-object v4, v2, v0
 
-    .line 46
+    .line 60
     sget-object v5, Lcom/whatsapp/wallpaper/WallpaperPicker;->z:[Ljava/lang/String;
 
-    const/16 v6, 0xb
+    const/16 v6, 0xa
 
     aget-object v5, v5, v6
 
@@ -503,10 +503,10 @@
 
     move-result v5
 
-    .line 39
+    .line 79
     if-eqz v5, :cond_1
 
-    .line 10
+    .line 76
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -517,7 +517,7 @@
 
     sget-object v6, Lcom/whatsapp/wallpaper/WallpaperPicker;->z:[Ljava/lang/String;
 
-    const/16 v7, 0xa
+    const/16 v7, 0x8
 
     aget-object v6, v6, v7
 
@@ -531,7 +531,7 @@
 
     sget-object v6, Lcom/whatsapp/wallpaper/WallpaperPicker;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x9
+    const/16 v7, 0xb
 
     aget-object v6, v6, v7
 
@@ -542,12 +542,12 @@
 
     move-result v4
 
-    .line 19
+    .line 37
     if-eqz v4, :cond_1
 
-    .line 55
+    .line 7
     :try_start_1
-    iget-object v6, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->h:Ljava/util/ArrayList;
+    iget-object v6, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->i:Ljava/util/ArrayList;
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -555,8 +555,8 @@
 
     invoke-virtual {v6, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 57
-    iget-object v4, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->f:Ljava/util/ArrayList;
+    .line 56
+    iget-object v4, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->b:Ljava/util/ArrayList;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -567,16 +567,16 @@
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_2
 
-    .line 82
+    .line 9
     :cond_1
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 33
+    .line 49
     :cond_2
     :try_start_2
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -584,16 +584,16 @@
 
     if-nez v0, :cond_3
 
-    .line 56
+    .line 53
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/wallpaper/WallpaperPicker;->showDialog(I)V
 
-    .line 86
+    .line 92
     :goto_0
     return-void
 
-    .line 57
+    .line 56
     :catch_0
     move-exception v0
 
@@ -602,40 +602,40 @@
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_2 .. :try_end_2} :catch_1
     .catch Ljava/lang/NullPointerException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 92
+    .line 13
     :catch_1
     move-exception v0
 
-    .line 6
+    .line 88
     sget-object v0, Lcom/whatsapp/wallpaper/WallpaperPicker;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x8
+    const/16 v1, 0x9
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 89
+    .line 48
     invoke-virtual {p0, v8}, Lcom/whatsapp/wallpaper/WallpaperPicker;->showDialog(I)V
 
     goto :goto_0
 
-    .line 66
+    .line 30
     :cond_3
     :try_start_3
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->g:Lcom/whatsapp/wallpaper/h;
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->e:Lcom/whatsapp/wallpaper/b;
 
-    invoke-virtual {v0}, Lcom/whatsapp/wallpaper/h;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/whatsapp/wallpaper/b;->notifyDataSetChanged()V
     :try_end_3
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_3 .. :try_end_3} :catch_1
     .catch Ljava/lang/NullPointerException; {:try_start_3 .. :try_end_3} :catch_2
 
-    .line 45
+    .line 15
     iput-boolean v8, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->j:Z
 
     goto :goto_0
 
-    .line 41
+    .line 11
     :catch_2
     move-exception v0
 
@@ -645,32 +645,32 @@
     goto :goto_0
 .end method
 
-.method static b(Lcom/whatsapp/wallpaper/WallpaperPicker;)Landroid/graphics/Bitmap;
+.method static b(Lcom/whatsapp/wallpaper/WallpaperPicker;)Ljava/util/ArrayList;
     .locals 1
 
     .prologue
-    .line 36
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->e:Landroid/graphics/Bitmap;
+    .line 25
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->b:Ljava/util/ArrayList;
 
     return-object v0
 .end method
 
-.method static c(Lcom/whatsapp/wallpaper/WallpaperPicker;)Landroid/widget/ImageView;
+.method static c(Lcom/whatsapp/wallpaper/WallpaperPicker;)Ljava/util/ArrayList;
     .locals 1
 
     .prologue
-    .line 58
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->b:Landroid/widget/ImageView;
+    .line 24
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->i:Ljava/util/ArrayList;
 
     return-object v0
 .end method
 
-.method static d(Lcom/whatsapp/wallpaper/WallpaperPicker;)Ljava/util/ArrayList;
+.method static d(Lcom/whatsapp/wallpaper/WallpaperPicker;)Landroid/widget/ImageView;
     .locals 1
 
     .prologue
-    .line 54
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->h:Ljava/util/ArrayList;
+    .line 69
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->f:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -681,7 +681,7 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 68
     :try_start_0
     iget-boolean v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->j:Z
     :try_end_0
@@ -689,9 +689,9 @@
 
     if-eqz v0, :cond_0
 
-    .line 9
+    .line 8
     :try_start_1
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->i:Lcom/whatsapp/CustomVelocityGallery;
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->g:Lcom/whatsapp/CustomVelocityGallery;
 
     invoke-virtual {v0}, Lcom/whatsapp/CustomVelocityGallery;->getSelectedItemPosition()I
 
@@ -699,19 +699,19 @@
 
     invoke-direct {p0, v0}, Lcom/whatsapp/wallpaper/WallpaperPicker;->a(I)V
 
-    sget-boolean v0, Lcom/whatsapp/wallpaper/ImageViewTouchBase;->b:Z
+    sget-boolean v0, Lcom/whatsapp/wallpaper/ImageViewTouchBase;->m:Z
 
     if-eqz v0, :cond_1
 
-    .line 64
+    .line 17
     :cond_0
     invoke-virtual {p0}, Lcom/whatsapp/wallpaper/WallpaperPicker;->finish()V
 
-    .line 69
+    .line 58
     :cond_1
     return-void
 
-    .line 9
+    .line 8
     :catch_0
     move-exception v0
 
@@ -719,7 +719,7 @@
     :try_end_1
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 64
+    .line 17
     :catch_1
     move-exception v0
 
@@ -730,28 +730,30 @@
     .locals 4
 
     .prologue
-    .line 83
+    const/4 v3, 0x1
+
+    const/4 v2, 0x0
+
+    .line 72
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 8
-    const/4 v0, 0x1
+    .line 67
+    invoke-virtual {p0, v3}, Lcom/whatsapp/wallpaper/WallpaperPicker;->requestWindowFeature(I)Z
 
-    invoke-virtual {p0, v0}, Lcom/whatsapp/wallpaper/WallpaperPicker;->requestWindowFeature(I)Z
-
-    .line 44
+    .line 63
     invoke-virtual {p0}, Lcom/whatsapp/wallpaper/WallpaperPicker;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->c:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->a:Landroid/content/pm/PackageManager;
 
-    .line 72
+    .line 21
     const v0, 0x7f0300b2
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/wallpaper/WallpaperPicker;->setContentView(I)V
 
-    .line 91
-    const v0, 0x7f0b0268
+    .line 90
+    const v0, 0x7f0b0271
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/wallpaper/WallpaperPicker;->findViewById(I)Landroid/view/View;
 
@@ -759,45 +761,43 @@
 
     check-cast v0, Lcom/whatsapp/CustomVelocityGallery;
 
-    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->i:Lcom/whatsapp/CustomVelocityGallery;
+    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->g:Lcom/whatsapp/CustomVelocityGallery;
+
+    .line 28
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->g:Lcom/whatsapp/CustomVelocityGallery;
+
+    new-instance v1, Lcom/whatsapp/wallpaper/g;
+
+    invoke-direct {v1, p0}, Lcom/whatsapp/wallpaper/g;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;)V
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/CustomVelocityGallery;->setVelocityTransformer(Lcom/whatsapp/aib;)V
+
+    .line 4
+    new-instance v0, Lcom/whatsapp/wallpaper/b;
+
+    invoke-direct {v0, p0, p0}, Lcom/whatsapp/wallpaper/b;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;Lcom/whatsapp/wallpaper/WallpaperPicker;)V
+
+    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->e:Lcom/whatsapp/wallpaper/b;
 
     .line 22
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->i:Lcom/whatsapp/CustomVelocityGallery;
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->g:Lcom/whatsapp/CustomVelocityGallery;
 
-    new-instance v1, Lcom/whatsapp/wallpaper/e;
-
-    invoke-direct {v1, p0}, Lcom/whatsapp/wallpaper/e;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;)V
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/CustomVelocityGallery;->setVelocityTransformer(Lcom/whatsapp/my;)V
-
-    .line 17
-    new-instance v0, Lcom/whatsapp/wallpaper/h;
-
-    invoke-direct {v0, p0, p0}, Lcom/whatsapp/wallpaper/h;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;Lcom/whatsapp/wallpaper/WallpaperPicker;)V
-
-    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->g:Lcom/whatsapp/wallpaper/h;
-
-    .line 20
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->i:Lcom/whatsapp/CustomVelocityGallery;
-
-    iget-object v1, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->g:Lcom/whatsapp/wallpaper/h;
+    iget-object v1, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->e:Lcom/whatsapp/wallpaper/b;
 
     invoke-virtual {v0, v1}, Lcom/whatsapp/CustomVelocityGallery;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
-    .line 63
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->i:Lcom/whatsapp/CustomVelocityGallery;
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->g:Lcom/whatsapp/CustomVelocityGallery;
 
     invoke-virtual {v0, p0}, Lcom/whatsapp/CustomVelocityGallery;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    .line 27
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->i:Lcom/whatsapp/CustomVelocityGallery;
+    .line 20
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->g:Lcom/whatsapp/CustomVelocityGallery;
 
-    const/4 v1, 0x0
+    invoke-virtual {v0, v2}, Lcom/whatsapp/CustomVelocityGallery;->setCallbackDuringFling(Z)V
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/CustomVelocityGallery;->setCallbackDuringFling(Z)V
-
-    .line 35
-    const v0, 0x7f0b02d8
+    .line 84
+    const v0, 0x7f0b02e4
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/wallpaper/WallpaperPicker;->findViewById(I)Landroid/view/View;
 
@@ -805,8 +805,8 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 26
-    const v0, 0x7f0b02d7
+    .line 57
+    const v0, 0x7f0b02e3
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/wallpaper/WallpaperPicker;->findViewById(I)Landroid/view/View;
 
@@ -814,15 +814,15 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->f:Landroid/widget/ImageView;
 
-    .line 18
+    .line 54
     :try_start_0
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->c:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->a:Landroid/content/pm/PackageManager;
 
     sget-object v1, Lcom/whatsapp/wallpaper/WallpaperPicker;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x6
+    const/4 v2, 0x0
 
     aget-object v1, v1, v2
 
@@ -830,26 +830,24 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->d:Landroid/content/res/Resources;
+    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->h:Landroid/content/res/Resources;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 84
+    .line 39
     :goto_0
     return-void
 
-    .line 52
+    .line 27
     :catch_0
     move-exception v0
 
-    .line 47
+    .line 65
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v2, Lcom/whatsapp/wallpaper/WallpaperPicker;->z:[Ljava/lang/String;
-
-    const/4 v3, 0x7
 
     aget-object v2, v2, v3
 
@@ -878,16 +876,17 @@
     .locals 4
 
     .prologue
-    .line 51
+    .line 85
     packed-switch p1, :pswitch_data_0
 
-    .line 78
+    .line 40
     const/4 v0, 0x0
 
+    .line 55
     :goto_0
     return-object v0
 
-    .line 67
+    .line 62
     :pswitch_0
     :try_start_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -898,19 +897,19 @@
 
     sget-object v0, Lcom/whatsapp/wallpaper/WallpaperPicker;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x5
+    const/4 v1, 0x6
 
     aget-object v0, v0, v1
     :try_end_0
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 42
+    .line 87
     :goto_1
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0e047f
+    const v2, 0x7f0e0491
 
     invoke-virtual {p0, v2}, Lcom/whatsapp/wallpaper/WallpaperPicker;->getString(I)Ljava/lang/String;
 
@@ -920,56 +919,56 @@
 
     move-result-object v1
 
-    const v2, 0x7f0e0200
+    const v2, 0x7f0e0206
 
-    .line 4
+    .line 18
     invoke-virtual {p0, v2}, Lcom/whatsapp/wallpaper/WallpaperPicker;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 13
+    .line 77
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f0e0492
+    const v2, 0x7f0e04aa
 
-    .line 43
+    .line 81
     invoke-virtual {p0, v2}, Lcom/whatsapp/wallpaper/WallpaperPicker;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    new-instance v3, Lcom/whatsapp/wallpaper/k;
+    new-instance v3, Lcom/whatsapp/wallpaper/d;
 
-    invoke-direct {v3, p0, v0}, Lcom/whatsapp/wallpaper/k;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;Ljava/lang/String;)V
+    invoke-direct {v3, p0, v0}, Lcom/whatsapp/wallpaper/d;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;Ljava/lang/String;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0e0294
+    const v1, 0x7f0e02a1
 
-    .line 60
+    .line 66
     invoke-virtual {p0, v1}, Lcom/whatsapp/wallpaper/WallpaperPicker;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    new-instance v2, Lcom/whatsapp/wallpaper/n;
+    new-instance v2, Lcom/whatsapp/wallpaper/p;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/wallpaper/n;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;)V
+    invoke-direct {v2, p0}, Lcom/whatsapp/wallpaper/p;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 50
+    .line 55
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 67
+    .line 62
     :catch_0
     move-exception v0
 
@@ -978,63 +977,63 @@
     :cond_0
     sget-object v0, Lcom/whatsapp/wallpaper/WallpaperPicker;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x4
+    const/4 v1, 0x7
 
     aget-object v0, v0, v1
 
     goto :goto_1
 
-    .line 34
+    .line 44
     :pswitch_1
-    new-instance v0, Lcom/whatsapp/wallpaper/l;
+    new-instance v0, Lcom/whatsapp/wallpaper/e;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/wallpaper/l;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/wallpaper/e;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;)V
 
-    .line 79
+    .line 2
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0e0134
+    const v2, 0x7f0e013a
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f0e02aa
+    const v2, 0x7f0e02b7
 
     invoke-virtual {v1, v2, v0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0e0080
+    const v1, 0x7f0e007a
 
-    new-instance v2, Lcom/whatsapp/wallpaper/d;
+    new-instance v2, Lcom/whatsapp/wallpaper/q;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/wallpaper/d;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;)V
+    invoke-direct {v2, p0}, Lcom/whatsapp/wallpaper/q;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;)V
 
-    .line 16
+    .line 42
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/wallpaper/j;
+    new-instance v1, Lcom/whatsapp/wallpaper/k;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/wallpaper/j;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/wallpaper/k;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;)V
 
-    .line 62
+    .line 86
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 76
+    .line 5
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0
 
     goto/16 :goto_0
 
-    .line 51
+    .line 85
     nop
 
     :pswitch_data_0
@@ -1048,21 +1047,21 @@
     .locals 2
 
     .prologue
-    .line 77
+    .line 91
     :try_start_0
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->a:Lcom/whatsapp/wallpaper/p;
+    .line 34
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->d:Lcom/whatsapp/wallpaper/j;
     :try_end_0
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-eqz v0, :cond_0
 
     :try_start_1
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->a:Lcom/whatsapp/wallpaper/p;
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->d:Lcom/whatsapp/wallpaper/j;
 
-    invoke-virtual {v0}, Lcom/whatsapp/wallpaper/p;->getStatus()Landroid/os/AsyncTask$Status;
+    invoke-virtual {v0}, Lcom/whatsapp/wallpaper/j;->getStatus()Landroid/os/AsyncTask$Status;
 
     move-result-object v0
 
@@ -1070,23 +1069,23 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 48
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->a:Lcom/whatsapp/wallpaper/p;
+    .line 64
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->d:Lcom/whatsapp/wallpaper/j;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/wallpaper/p;->cancel(Z)Z
+    invoke-virtual {v0, v1}, Lcom/whatsapp/wallpaper/j;->cancel(Z)Z
 
-    .line 21
+    .line 23
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->a:Lcom/whatsapp/wallpaper/p;
+    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->d:Lcom/whatsapp/wallpaper/j;
 
-    .line 87
+    .line 51
     :cond_0
     return-void
 
-    .line 5
+    .line 34
     :catch_0
     move-exception v0
 
@@ -1094,7 +1093,7 @@
     :try_end_1
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 21
+    .line 23
     :catch_1
     move-exception v0
 
@@ -1107,16 +1106,16 @@
     .prologue
     .line 29
     :try_start_0
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->a:Lcom/whatsapp/wallpaper/p;
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->d:Lcom/whatsapp/wallpaper/j;
     :try_end_0
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-eqz v0, :cond_0
 
     :try_start_1
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->a:Lcom/whatsapp/wallpaper/p;
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->d:Lcom/whatsapp/wallpaper/j;
 
-    invoke-virtual {v0}, Lcom/whatsapp/wallpaper/p;->getStatus()Landroid/os/AsyncTask$Status;
+    invoke-virtual {v0}, Lcom/whatsapp/wallpaper/j;->getStatus()Landroid/os/AsyncTask$Status;
 
     move-result-object v0
 
@@ -1124,23 +1123,23 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 68
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->a:Lcom/whatsapp/wallpaper/p;
+    .line 31
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->d:Lcom/whatsapp/wallpaper/j;
 
-    invoke-virtual {v0}, Lcom/whatsapp/wallpaper/p;->a()V
+    invoke-virtual {v0}, Lcom/whatsapp/wallpaper/j;->a()V
     :try_end_1
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 2
+    .line 26
     :cond_0
-    new-instance v0, Lcom/whatsapp/wallpaper/p;
+    new-instance v0, Lcom/whatsapp/wallpaper/j;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/wallpaper/p;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/wallpaper/j;-><init>(Lcom/whatsapp/wallpaper/WallpaperPicker;)V
 
-    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->a:Lcom/whatsapp/wallpaper/p;
+    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->d:Lcom/whatsapp/wallpaper/j;
 
-    .line 40
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->a:Lcom/whatsapp/wallpaper/p;
+    .line 80
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallpaperPicker;->d:Lcom/whatsapp/wallpaper/j;
 
     const/4 v1, 0x1
 
@@ -1154,9 +1153,9 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v0, v1}, Lcom/whatsapp/b6;->a(Landroid/os/AsyncTask;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-static {v0, v1}, Lcom/whatsapp/rf;->a(Landroid/os/AsyncTask;[Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 1
+    .line 46
     return-void
 
     .line 29
@@ -1168,7 +1167,7 @@
     :try_end_2
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 68
+    .line 31
     :catch_1
     move-exception v0
 
@@ -1179,7 +1178,7 @@
     .locals 0
 
     .prologue
-    .line 80
+    .line 71
     return-void
 .end method
 
@@ -1187,12 +1186,12 @@
     .locals 0
 
     .prologue
-    .line 61
+    .line 6
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 93
+    .line 12
     invoke-direct {p0}, Lcom/whatsapp/wallpaper/WallpaperPicker;->a()V
 
-    .line 23
+    .line 73
     return-void
 .end method

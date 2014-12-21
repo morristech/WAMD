@@ -1,2 +1,2 @@
-.class public final Lcom/google/android/gms/internal/g;
-.super Landroid/widget/ImageView;
+.class public interface abstract Lcom/google/android/gms/internal/g;
+.super Ljava/lang/Object;

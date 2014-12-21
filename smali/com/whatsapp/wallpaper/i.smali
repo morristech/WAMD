@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 3
     iput-object p1, p0, Lcom/whatsapp/wallpaper/i;->a:Lcom/whatsapp/wallpaper/CropImage;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -26,19 +26,21 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 1
+    .locals 2
 
     .prologue
-    .line 4
+    .line 1
     iget-object v0, p0, Lcom/whatsapp/wallpaper/i;->a:Lcom/whatsapp/wallpaper/CropImage;
 
-    invoke-static {v0}, Lcom/whatsapp/wallpaper/CropImage;->a(Lcom/whatsapp/wallpaper/CropImage;)V
+    const/4 v1, 0x0
 
-    .line 3
+    invoke-virtual {v0, v1}, Lcom/whatsapp/wallpaper/CropImage;->setResult(I)V
+
+    .line 2
     iget-object v0, p0, Lcom/whatsapp/wallpaper/i;->a:Lcom/whatsapp/wallpaper/CropImage;
 
     invoke-virtual {v0}, Lcom/whatsapp/wallpaper/CropImage;->finish()V
 
-    .line 2
+    .line 4
     return-void
 .end method

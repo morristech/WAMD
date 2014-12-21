@@ -25,7 +25,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "Co"
+    const-string v0, "L5"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -63,7 +63,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/4 v0, 0x7
+    const/16 v0, 0x19
 
     :goto_1
     xor-int/2addr v0, v4
@@ -79,26 +79,24 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x63
+    const/16 v0, 0x6c
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x4f
+    const/16 v0, 0x15
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x4c
+    const/16 v0, 0x21
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x2a
+    const/16 v0, 0x23
 
     goto :goto_1
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -113,22 +111,22 @@
     .locals 2
 
     .prologue
-    .line 63
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 19
+    .line 6
     array-length v0, p1
 
     iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mNumKeyframes:I
 
-    .line 51
+    .line 59
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mKeyframes:Ljava/util/ArrayList;
 
-    .line 78
+    .line 67
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mKeyframes:Ljava/util/ArrayList;
 
     invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -137,7 +135,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 30
+    .line 16
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mKeyframes:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
@@ -150,7 +148,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mFirstKeyframe:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
-    .line 2
+    .line 68
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mKeyframes:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mNumKeyframes:I
@@ -165,7 +163,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mLastKeyframe:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
-    .line 69
+    .line 62
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mLastKeyframe:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getInterpolator()Landroid/view/animation/Interpolator;
@@ -174,7 +172,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mInterpolator:Landroid/view/animation/Interpolator;
 
-    .line 76
+    .line 33
     return-void
 .end method
 
@@ -188,12 +186,12 @@
 
     const/4 v6, 0x0
 
-    sget v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 50
+    .line 48
     array-length v3, p0
 
-    .line 61
+    .line 5
     const/4 v0, 0x2
 
     invoke-static {v3, v0}, Ljava/lang/Math;->max(II)I
@@ -202,10 +200,10 @@
 
     new-array v4, v0, [Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;
 
-    .line 74
+    .line 47
     if-ne v3, v1, :cond_0
 
-    .line 28
+    .line 57
     invoke-static {v7}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->ofFloat(F)Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
     move-result-object v0
@@ -214,7 +212,7 @@
 
     aput-object v0, v4, v6
 
-    .line 17
+    .line 42
     const/high16 v0, 0x3f800000
 
     aget v5, p0, v6
@@ -229,7 +227,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 60
+    .line 64
     :cond_0
     aget v0, p0, v6
 
@@ -241,11 +239,11 @@
 
     aput-object v0, v4, v6
 
-    .line 47
+    .line 31
     :goto_0
     if-ge v1, v3, :cond_1
 
-    .line 23
+    .line 70
     int-to-float v0, v1
 
     add-int/lit8 v5, v3, -0x1
@@ -264,12 +262,12 @@
 
     aput-object v0, v4, v1
 
-    .line 9
+    .line 29
     add-int/lit8 v0, v1, 0x1
 
     if-eqz v2, :cond_2
 
-    .line 31
+    .line 54
     :cond_1
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/FloatKeyframeSet;
 
@@ -289,22 +287,22 @@
     .locals 6
 
     .prologue
-    sget v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 48
+    .line 4
     iget-object v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mKeyframes:Ljava/util/ArrayList;
 
-    .line 67
+    .line 20
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mKeyframes:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v4
 
-    .line 27
+    .line 58
     new-array v5, v4, [Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
-    .line 64
+    .line 56
     const/4 v0, 0x0
 
     move v1, v0
@@ -312,7 +310,7 @@
     :goto_0
     if-ge v1, v4, :cond_0
 
-    .line 62
+    .line 11
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -325,18 +323,18 @@
 
     aput-object v0, v5, v1
 
-    .line 53
+    .line 41
     add-int/lit8 v0, v1, 0x1
 
     if-eqz v2, :cond_1
 
-    .line 75
+    .line 76
     :cond_0
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;
 
     invoke-direct {v0, v5}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;-><init>([Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;)V
 
-    .line 49
+    .line 69
     return-object v0
 
     :cond_1
@@ -349,7 +347,7 @@
     .locals 1
 
     .prologue
-    .line 66
+    .line 1
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->clone()Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;
 
     move-result-object v0
@@ -363,28 +361,28 @@
     .prologue
     const/4 v0, 0x1
 
-    sget v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 25
+    .line 39
     iget v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mNumKeyframes:I
 
     const/4 v2, 0x2
 
     if-ne v1, v2, :cond_1
 
-    .line 12
+    .line 45
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mInterpolator:Landroid/view/animation/Interpolator;
 
     if-eqz v0, :cond_0
 
-    .line 5
+    .line 44
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mInterpolator:Landroid/view/animation/Interpolator;
 
     invoke-interface {v0, p1}, Landroid/view/animation/Interpolator;->getInterpolation(F)F
 
     move-result p1
 
-    .line 34
+    .line 17
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mEvaluator:Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;
 
@@ -396,20 +394,21 @@
 
     iget-object v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mLastKeyframe:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
-    .line 70
+    .line 34
     invoke-virtual {v2}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getValue()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 77
+    .line 15
     invoke-interface {v0, p1, v1, v2}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;->evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
+    .line 40
     :goto_0
     return-object v0
 
-    .line 10
+    .line 38
     :cond_1
     const/4 v1, 0x0
 
@@ -417,7 +416,7 @@
 
     if-gtz v1, :cond_3
 
-    .line 72
+    .line 7
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mKeyframes:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -426,20 +425,20 @@
 
     check-cast v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
-    .line 57
+    .line 63
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getInterpolator()Landroid/view/animation/Interpolator;
 
     move-result-object v1
 
-    .line 3
+    .line 49
     if-eqz v1, :cond_2
 
-    .line 43
+    .line 66
     invoke-interface {v1, p1}, Landroid/view/animation/Interpolator;->getInterpolation(F)F
 
     move-result p1
 
-    .line 33
+    .line 50
     :cond_2
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mFirstKeyframe:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
@@ -447,10 +446,10 @@
 
     move-result v1
 
-    .line 29
+    .line 22
     sub-float v2, p1, v1
 
-    .line 56
+    .line 73
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getFraction()F
 
     move-result v3
@@ -459,7 +458,7 @@
 
     div-float v1, v2, v1
 
-    .line 73
+    .line 13
     iget-object v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mEvaluator:Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;
 
     iget-object v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mFirstKeyframe:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
@@ -468,19 +467,19 @@
 
     move-result-object v3
 
-    .line 39
+    .line 12
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 13
+    .line 14
     invoke-interface {v2, v1, v3, v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;->evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 55
+    .line 37
     :cond_3
     const/high16 v1, 0x3f800000
 
@@ -488,7 +487,7 @@
 
     if-ltz v1, :cond_5
 
-    .line 18
+    .line 60
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mKeyframes:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mNumKeyframes:I
@@ -501,33 +500,33 @@
 
     check-cast v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
-    .line 24
+    .line 65
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mLastKeyframe:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
     invoke-virtual {v1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getInterpolator()Landroid/view/animation/Interpolator;
 
     move-result-object v1
 
-    .line 4
+    .line 32
     if-eqz v1, :cond_4
 
-    .line 1
+    .line 21
     invoke-interface {v1, p1}, Landroid/view/animation/Interpolator;->getInterpolation(F)F
 
     move-result p1
 
-    .line 15
+    .line 43
     :cond_4
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getFraction()F
 
     move-result v1
 
-    .line 7
+    .line 8
     sub-float v2, p1, v1
 
     iget-object v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mLastKeyframe:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
-    .line 35
+    .line 52
     invoke-virtual {v3}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getFraction()F
 
     move-result v3
@@ -536,7 +535,7 @@
 
     div-float v1, v2, v1
 
-    .line 52
+    .line 72
     iget-object v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mEvaluator:Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getValue()Ljava/lang/Object;
@@ -545,19 +544,19 @@
 
     iget-object v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mLastKeyframe:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
-    .line 38
+    .line 77
     invoke-virtual {v3}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getValue()Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 11
+    .line 40
     invoke-interface {v2, v1, v0, v3}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;->evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 45
+    .line 2
     :cond_5
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mFirstKeyframe:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
@@ -565,13 +564,13 @@
 
     move v1, v0
 
-    .line 32
+    .line 78
     :goto_1
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mNumKeyframes:I
 
     if-ge v1, v0, :cond_8
 
-    .line 40
+    .line 75
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mKeyframes:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -580,7 +579,7 @@
 
     check-cast v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
-    .line 16
+    .line 71
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getFraction()F
 
     move-result v4
@@ -589,29 +588,29 @@
 
     if-gez v4, :cond_7
 
-    .line 6
+    .line 9
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getInterpolator()Landroid/view/animation/Interpolator;
 
     move-result-object v1
 
-    .line 37
+    .line 36
     if-eqz v1, :cond_6
 
-    .line 42
+    .line 46
     invoke-interface {v1, p1}, Landroid/view/animation/Interpolator;->getInterpolation(F)F
 
     move-result p1
 
-    .line 26
+    .line 55
     :cond_6
     invoke-virtual {v2}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getFraction()F
 
     move-result v1
 
-    .line 8
+    .line 23
     sub-float v3, p1, v1
 
-    .line 41
+    .line 28
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getFraction()F
 
     move-result v4
@@ -620,32 +619,32 @@
 
     div-float v1, v3, v1
 
-    .line 22
+    .line 53
     iget-object v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mEvaluator:Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;
 
     invoke-virtual {v2}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getValue()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 14
+    .line 19
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 59
+    .line 18
     invoke-interface {v3, v1, v2, v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;->evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     goto/16 :goto_0
 
-    .line 20
+    .line 27
     :cond_7
     add-int/lit8 v1, v1, 0x1
 
     if-eqz v3, :cond_9
 
-    .line 21
+    .line 3
     :cond_8
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mLastKeyframe:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
@@ -665,10 +664,10 @@
     .locals 0
 
     .prologue
-    .line 58
+    .line 30
     iput-object p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->mEvaluator:Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;
 
-    .line 44
+    .line 61
     return-void
 .end method
 
@@ -676,12 +675,12 @@
     .locals 5
 
     .prologue
-    sget v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 65
+    .line 74
     const-string v1, " "
 
-    .line 54
+    .line 10
     const/4 v0, 0x0
 
     move v4, v0
@@ -695,7 +694,7 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 36
+    .line 35
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -730,12 +729,12 @@
 
     move-result-object v2
 
-    .line 71
+    .line 26
     add-int/lit8 v0, v1, 0x1
 
     if-eqz v3, :cond_0
 
-    .line 46
+    .line 24
     :goto_1
     return-object v2
 

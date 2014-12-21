@@ -3,9 +3,9 @@
 .source "ConversationsFragment.java"
 
 # interfaces
-.implements Lcom/whatsapp/afq;
-.implements Lcom/whatsapp/apf;
-.implements Lcom/whatsapp/o7;
+.implements Lcom/whatsapp/by;
+.implements Lcom/whatsapp/hm;
+.implements Lcom/whatsapp/q_;
 
 
 # static fields
@@ -17,42 +17,42 @@
 
 .field private c:I
 
-.field private d:Lcom/whatsapp/c6;
+.field private d:Ljava/util/ArrayList;
 
-.field private e:Ljava/util/ArrayList;
+.field private e:Ljava/lang/String;
 
-.field f:Landroid/widget/TextView;
+.field private f:Lcom/whatsapp/c0;
 
-.field private g:Lcom/whatsapp/ll;
+.field private g:Ljava/lang/String;
 
 .field h:Landroid/widget/TextView;
 
-.field private i:Ljava/lang/String;
+.field i:Landroid/widget/TextView;
 
-.field private j:Lcom/whatsapp/a83;
+.field private j:Lcom/whatsapp/wg;
 
-.field private k:Ljava/lang/String;
+.field private k:Lcom/whatsapp/hz;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 14
 
+    const/4 v5, 0x4
+
+    const/4 v4, 0x3
+
+    const/4 v3, 0x2
+
     const/4 v2, 0x1
-
-    const/16 v5, 0x16
-
-    const/16 v4, 0xa
-
-    const/16 v3, 0x8
 
     const/4 v1, 0x0
 
-    const/16 v0, 0x1d
+    const/16 v0, 0x1c
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "3ye$\u00088w|y\u001e fWz\r5pmx\u001a>umy"
+    const-string v6, "X =#\u0017I<2!\u001bT! z\u0011I*2!\u0017"
 
     const/4 v0, -0x1
 
@@ -90,7 +90,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "3yf|\u001a\"ei~\u0016?x{%\u000c5blo\u00135bmi\u00171b\'l\u001e9zmn"
+    const-string v0, "w =2\"I* &\u0017_\u001d<\"8R+"
 
     move-object v6, v0
 
@@ -105,15 +105,13 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const/4 v6, 0x2
-
-    const-string v0, "4sdo\u000b5Ikb\u001e$Ike\n>b"
-
-    move v7, v6
-
-    move-object v8, v9
+    const-string v0, "X =#\u0017I<2!\u001bT! z\u0011I*2!\u0017"
 
     move-object v6, v0
+
+    move v7, v3
+
+    move-object v8, v9
 
     move v0, v2
 
@@ -122,39 +120,47 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const/4 v7, 0x3
+    const-string v0, "X =#\u0017I<2!\u001bT! z\u0011T!\'0\nO`= \u001eW"
 
-    const-string v6, "3yf|\u001a\"ei~\u0016?x{%\u000f1c{o"
+    move-object v6, v0
 
-    const/4 v0, 0x2
+    move v7, v4
 
     move-object v8, v9
+
+    move v0, v3
 
     goto :goto_0
 
     :pswitch_2
     aput-object v6, v8, v7
 
-    const/4 v7, 0x4
+    const-string v0, "Y=<4\u0016X. !"
 
-    const-string v6, ":\u007fl"
+    move-object v6, v0
 
-    const/4 v0, 0x3
+    move v7, v5
 
     move-object v8, v9
+
+    move v0, v4
 
     goto :goto_0
 
     :pswitch_3
     aput-object v6, v8, v7
 
-    const/4 v7, 0x5
+    const/4 v6, 0x5
 
-    const-string v6, "3yf|\u001a\"ei~\u0016?x{%\r5e}g\u001a"
+    const-string v0, "\\=< \u0002d!<!\u001bX*\u0013!\u0017V?"
 
-    const/4 v0, 0x4
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v5
 
     goto :goto_0
 
@@ -163,7 +169,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "3yf|\u001a\"ei~\u0016?x{%\u001c\"si~\u001a"
+    const-string v6, "K\'<;\u0017d;*%\u0017"
 
     const/4 v0, 0x5
 
@@ -176,7 +182,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "\u001cyfm/\"s{y\u001a4Dg}59r"
+    const-string v6, "K\'<;\u0017"
 
     const/4 v0, 0x6
 
@@ -187,11 +193,11 @@
     :pswitch_6
     aput-object v6, v8, v7
 
-    const-string v6, "3yf|\u001a\"ei~\u0016?x{%\u001c\"si~\u001a"
+    const/16 v7, 0x8
+
+    const-string v6, "M!7{\u0013U+!:\u001b_a0 \u0000H !{\u001bO*>z\u0011T!\'4\u0011O"
 
     const/4 v0, 0x7
-
-    move v7, v3
 
     move-object v8, v9
 
@@ -200,28 +206,24 @@
     :pswitch_7
     aput-object v6, v8, v7
 
-    const/16 v6, 0x9
+    const/16 v7, 0x9
 
-    const-string v0, " ~gd\u001a"
+    const-string v6, "X =#\u0017I<2!\u001bT! z\u0011T!\'0\nOo ,\u0001O*>u\u0011T!\'4\u0011Oo?<\u0001Oo0:\u0007W+s;\u001dOo5:\u0007U+"
 
-    move v7, v6
+    const/16 v0, 0x8
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v3
 
     goto :goto_0
 
     :pswitch_8
     aput-object v6, v8, v7
 
-    const-string v6, "3yf|\u001a\"ei~\u0016?x{%\u001c?x|o\u0007$6{s\u000c$se*\u001c?x|k\u001c$6dc\u000c$6ke\n<r(d\u0010$6ne\n>r"
+    const/16 v7, 0xa
+
+    const-string v6, "K\'<;\u0017"
 
     const/16 v0, 0x9
-
-    move v7, v4
 
     move-object v8, v9
 
@@ -230,17 +232,13 @@
     :pswitch_9
     aput-object v6, v8, v7
 
-    const/16 v6, 0xb
+    const/16 v7, 0xb
 
-    const-string v0, "1xlx\u00109r&c\u0011$sf~Q1u|c\u0010>8AD,\u0015D\\U0\u0002IMN6\u0004"
+    const-string v6, "Z!7\'\u001dR+}<\u001cO*=!\\Z,\'<\u001dUa\u001a\u001b!~\u001d\u0007"
 
-    move v7, v6
+    const/16 v0, 0xa
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v4
 
     goto :goto_0
 
@@ -249,7 +247,7 @@
 
     const/16 v7, 0xc
 
-    const-string v6, "1xlx\u00109r&c\u0011$sf~Q1u|c\u0010>8AD,\u0015D\\"
+    const-string v6, "X =#\u0017I<2!\u001bT! z\u0016^#6!\u0017\u0014(!:\u0007Ku"
 
     const/16 v0, 0xb
 
@@ -262,7 +260,7 @@
 
     const/16 v7, 0xd
 
-    const-string v6, " ~gd\u001a\u000fbqz\u001a"
+    const-string v6, "Z!7\'\u001dR+}<\u001cO*=!\\Z,\'<\u001dUa\u001a\u001b!~\u001d\u0007\n=i\u0010\u0016\u0011;o"
 
     const/16 v0, 0xc
 
@@ -275,7 +273,7 @@
 
     const/16 v7, 0xe
 
-    const-string v6, "&xl$\u001e>rze\u001648k\u007f\r#yz$\u0016$se%\u001c?x|k\u001c$"
+    const-string v6, "w =2\"I* &\u0017_\u001d<\"8R+"
 
     const/16 v0, 0xd
 
@@ -288,7 +286,7 @@
 
     const/16 v7, 0xf
 
-    const-string v6, " ~gd\u001a"
+    const-string v6, "Q&7"
 
     const/16 v0, 0xe
 
@@ -301,7 +299,7 @@
 
     const/16 v7, 0x10
 
-    const-string v6, "3yf|\u001a\"ei~\u0016?x{%\u001b5zm~\u001a\u007fqze\n ,"
+    const-string v6, "X =#\u0017I<2!\u001bT! z\u0000^<&8\u0017"
 
     const/16 v0, 0xf
 
@@ -314,7 +312,7 @@
 
     const/16 v7, 0x11
 
-    const-string v6, "3yf|\u001a\"ei~\u0016?x{%\u001c?x|o\u0007$9f\u007f\u0013<"
+    const-string v6, "X =!\u0013X;"
 
     const/16 v0, 0x10
 
@@ -327,7 +325,7 @@
 
     const/16 v7, 0x12
 
-    const-string v6, "7dg\u007f\u000f\u000fxg~\u00163sH~\u001a=f"
+    const-string v6, "X =#\u0017I<2!\u001bT! z\u0000^<&9\u0006\u0014<8<\u0002\u0014,<;\u0006Z,\'u\u001cT;s4\u0016_*7"
 
     const/16 v0, 0x11
 
@@ -340,7 +338,7 @@
 
     const/16 v7, 0x13
 
-    const-string v6, "2dgk\u001b3w{~"
+    const-string v6, "X =#\u0017I<2!\u001bT! z\u0000^<&9\u0006\u001b,<;\u0006Z,\'u\u001cT;s4\u0016_*7"
 
     const/16 v0, 0x12
 
@@ -353,7 +351,7 @@
 
     const/16 v7, 0x14
 
-    const-string v6, "7dg\u007f\u000f\u000fxg~\u00163sH~\u001a=f"
+    const-string v6, "X >{\u0005S.\'&\u0013K?\u000c%\u0000^)6\'\u0017U,6&"
 
     const/16 v0, 0x13
 
@@ -366,7 +364,7 @@
 
     const/16 v7, 0x15
 
-    const-string v6, "3ye$\u00088w|y\u001e fWz\r5pmx\u001a>umy"
+    const-string v6, "X =#\u0017I<2!\u001bT! z\u0001^;70\u001e^;66\u001aZ;|3\u0013R#61"
 
     const/16 v0, 0x14
 
@@ -377,11 +375,11 @@
     :pswitch_14
     aput-object v6, v8, v7
 
-    const-string v6, "4sdo\u000b5Ikb\u001e$Ike\n>b"
+    const/16 v7, 0x16
+
+    const-string v6, "_*?0\u0006^\u00100=\u0013O\u00100:\u0007U;"
 
     const/16 v0, 0x15
-
-    move v7, v5
 
     move-object v8, v9
 
@@ -390,17 +388,13 @@
     :pswitch_15
     aput-object v6, v8, v7
 
-    const/16 v6, 0x17
+    const/16 v7, 0x17
 
-    const-string v0, "3yf|\u001a\"ei~\u0016?x{%\u001b5e|x\u0010)"
+    const-string v6, "_*?0\u0006^\u00100=\u0013O\u00100:\u0007U;"
 
-    move v7, v6
+    const/16 v0, 0x16
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v5
 
     goto/16 :goto_0
 
@@ -409,7 +403,7 @@
 
     const/16 v7, 0x18
 
-    const-string v6, "\u001cyfm/\"s{y\u001a4Dg}59r"
+    const-string v6, "X >{\u0005S.\'&\u0013K?\u000c%\u0000^)6\'\u0017U,6&"
 
     const/16 v0, 0x17
 
@@ -422,7 +416,7 @@
 
     const/16 v7, 0x19
 
-    const-string v6, "3yf|\u001a\"ei~\u0016?x{%\r5e}f\u000bpugd\u000b1u|*\u0011?b(k\u001b4sl"
+    const-string v6, "X =#\u0017I<2!\u001bT! z\u0002Z: 0"
 
     const/16 v0, 0x18
 
@@ -435,7 +429,7 @@
 
     const/16 v7, 0x1a
 
-    const-string v6, "!dWi\u00104s"
+    const-string v6, "X =#\u0017I<2!\u001bT! z\u0016^<\'\'\u001dB"
 
     const/16 v0, 0x19
 
@@ -448,7 +442,7 @@
 
     const/16 v7, 0x1b
 
-    const-string v6, "3yf~\u001e3b"
+    const-string v6, "\\=< \u0002d!<!\u001bX*\u0013!\u0017V?"
 
     const/16 v0, 0x1a
 
@@ -457,19 +451,6 @@
     goto/16 :goto_0
 
     :pswitch_1a
-    aput-object v6, v8, v7
-
-    const/16 v7, 0x1c
-
-    const-string v6, "3yf|\u001a\"ei~\u0016?x{%\r5e}f\u000b\u007fecc\u000f\u007fugd\u000b1u|*\u0011?b(k\u001b4sl"
-
-    const/16 v0, 0x1b
-
-    move-object v8, v9
-
-    goto/16 :goto_0
-
-    :pswitch_1b
     aput-object v6, v8, v7
 
     sput-object v9, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
@@ -483,7 +464,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x7f
+    const/16 v6, 0x72
 
     :goto_2
     xor-int/2addr v6, v13
@@ -498,23 +479,23 @@
 
     goto/16 :goto_1
 
+    :pswitch_1b
+    const/16 v6, 0x3b
+
+    goto :goto_2
+
     :pswitch_1c
-    const/16 v6, 0x50
+    const/16 v6, 0x4f
 
     goto :goto_2
 
     :pswitch_1d
-    move v6, v5
+    const/16 v6, 0x53
 
     goto :goto_2
 
     :pswitch_1e
-    move v6, v3
-
-    goto :goto_2
-
-    :pswitch_1f
-    move v6, v4
+    const/16 v6, 0x55
 
     goto :goto_2
 
@@ -549,15 +530,14 @@
         :pswitch_18
         :pswitch_19
         :pswitch_1a
-        :pswitch_1b
     .end packed-switch
 
     :pswitch_data_1
     .packed-switch 0x0
+        :pswitch_1b
         :pswitch_1c
         :pswitch_1d
         :pswitch_1e
-        :pswitch_1f
     .end packed-switch
 .end method
 
@@ -565,69 +545,26 @@
     .locals 1
 
     .prologue
-    .line 177
+    .line 68
     invoke-direct {p0}, Lcom/actionbarsherlock/app/SherlockListFragment;-><init>()V
 
-    .line 200
-    new-instance v0, Lcom/whatsapp/c6;
+    .line 94
+    new-instance v0, Lcom/whatsapp/wg;
 
-    invoke-direct {v0}, Lcom/whatsapp/c6;-><init>()V
+    invoke-direct {v0}, Lcom/whatsapp/wg;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/ConversationsFragment;->d:Lcom/whatsapp/c6;
+    iput-object v0, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/wg;
 
-    .line 15
+    .line 228
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    iput-object v0, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
-    .line 333
+    .line 318
     return-void
 .end method
 
-.method private static a()I
-    .locals 4
-
-    .prologue
-    const/4 v3, 0x0
-
-    .line 27
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    sget-object v1, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
-
-    const/16 v2, 0x15
-
-    aget-object v1, v1, v2
-
-    invoke-virtual {v0, v1, v3}, Lcom/whatsapp/App;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    move-result-object v0
-
-    .line 272
-    sget-object v1, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
-
-    const/16 v2, 0x16
-
-    aget-object v1, v1, v2
-
-    invoke-interface {v0, v1, v3}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method static a(Lcom/whatsapp/ConversationsFragment;)I
-    .locals 1
-
-    .prologue
-    .line 352
-    iget v0, p0, Lcom/whatsapp/ConversationsFragment;->c:I
-
-    return v0
-.end method
-
-.method private a(Lcom/whatsapp/adg;Landroid/support/v4/app/DialogFragment;)Landroid/support/v4/app/DialogFragment;
+.method private a(Lcom/whatsapp/tc;Landroid/support/v4/app/DialogFragment;)Landroid/support/v4/app/DialogFragment;
     .locals 3
 
     .prologue
@@ -636,34 +573,22 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 90
+    .line 111
     sget-object v1, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x4
+    const/16 v2, 0xf
 
     aget-object v1, v1, v2
 
-    iget-object v2, p1, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v2, p1, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 11
+    .line 225
     invoke-virtual {p2, v0}, Landroid/support/v4/app/DialogFragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 152
+    .line 325
     return-object p2
-.end method
-
-.method static a(Lcom/whatsapp/ConversationsFragment;Ljava/lang/String;)Landroid/view/View;
-    .locals 1
-
-    .prologue
-    .line 261
-    invoke-direct {p0, p1}, Lcom/whatsapp/ConversationsFragment;->a(Ljava/lang/String;)Landroid/view/View;
-
-    move-result-object v0
-
-    return-object v0
 .end method
 
 .method private a(Ljava/lang/String;)Landroid/view/View;
@@ -672,18 +597,18 @@
     .prologue
     const/4 v2, 0x0
 
-    sget-boolean v4, Lcom/whatsapp/App;->aL:Z
+    sget v4, Lcom/whatsapp/App;->h:I
 
-    .line 344
+    .line 323
     if-nez p1, :cond_0
 
     move-object v0, v2
 
-    .line 260
+    .line 274
     :goto_0
     return-object v0
 
-    .line 275
+    .line 256
     :cond_0
     const/4 v0, 0x0
 
@@ -698,29 +623,29 @@
 
     if-ge v1, v0, :cond_2
 
-    .line 315
+    .line 12
     iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 38
+    .line 3
     invoke-virtual {v3}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 222
-    instance-of v5, v0, Lcom/whatsapp/xd;
+    .line 41
+    instance-of v5, v0, Lcom/whatsapp/n9;
 
     if-eqz v5, :cond_1
 
-    .line 211
-    check-cast v0, Lcom/whatsapp/xd;
+    .line 137
+    check-cast v0, Lcom/whatsapp/n9;
 
-    .line 157
+    .line 46
     :try_start_0
-    iget-object v0, v0, Lcom/whatsapp/xd;->k:Ljava/lang/String;
+    iget-object v0, v0, Lcom/whatsapp/n9;->a:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
     :try_end_0
@@ -732,7 +657,7 @@
 
     move-object v0, v3
 
-    .line 260
+    .line 172
     goto :goto_0
 
     :catch_0
@@ -740,7 +665,7 @@
 
     throw v0
 
-    .line 306
+    .line 234
     :cond_1
     add-int/lit8 v0, v1, 0x1
 
@@ -749,7 +674,7 @@
     :cond_2
     move-object v0, v2
 
-    .line 134
+    .line 25
     goto :goto_0
 
     :cond_3
@@ -758,12 +683,32 @@
     goto :goto_1
 .end method
 
+.method static a(Lcom/whatsapp/ConversationsFragment;)Landroid/widget/ListView;
+    .locals 1
+
+    .prologue
+    .line 142
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
+
+    return-object v0
+.end method
+
+.method static a(Lcom/whatsapp/ConversationsFragment;Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    .prologue
+    .line 233
+    iput-object p1, p0, Lcom/whatsapp/ConversationsFragment;->g:Ljava/lang/String;
+
+    return-object p1
+.end method
+
 .method static a(Lcom/whatsapp/ConversationsFragment;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
 
     .prologue
-    .line 193
-    iput-object p1, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/util/ArrayList;
+    .line 183
+    iput-object p1, p0, Lcom/whatsapp/ConversationsFragment;->d:Ljava/util/ArrayList;
 
     return-object p1
 .end method
@@ -772,20 +717,22 @@
     .locals 3
 
     .prologue
-    const/4 v2, 0x0
-
-    .line 146
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 266
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     sget-object v1, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
+    const/16 v2, 0x14
+
     aget-object v1, v1, v2
+
+    const/4 v2, 0x0
 
     invoke-virtual {v0, v1, v2}, Lcom/whatsapp/App;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
-    .line 263
+    .line 73
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
@@ -794,23 +741,23 @@
     :try_start_0
     sget-object v1, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x2
+    const/16 v2, 0x16
 
     aget-object v1, v1, v2
 
     invoke-interface {v0, v1, p0}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
-    .line 122
+    .line 92
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 264
+    .line 326
     sget-object v0, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x1
+    const/16 v1, 0x15
 
     aget-object v0, v0, v1
 
@@ -818,11 +765,11 @@
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2
+    .line 45
     :cond_0
     return-void
 
-    .line 264
+    .line 326
     :catch_0
     move-exception v0
 
@@ -833,39 +780,39 @@
     .locals 7
 
     .prologue
-    .line 149
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    .line 69
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
 
     if-eqz v0, :cond_0
 
-    .line 107
+    .line 28
     invoke-direct {p0, p2}, Lcom/whatsapp/ConversationsFragment;->a(Ljava/lang/String;)Landroid/view/View;
 
     move-result-object v2
 
-    .line 312
+    .line 221
     if-eqz v2, :cond_0
 
-    .line 96
+    .line 21
     invoke-virtual {v2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v5
 
-    check-cast v5, Lcom/whatsapp/xd;
+    check-cast v5, Lcom/whatsapp/n9;
 
-    .line 266
-    invoke-static {p2}, Lcom/whatsapp/_q;->b(Ljava/lang/String;)Lcom/whatsapp/adg;
+    .line 182
+    invoke-static {p2}, Lcom/whatsapp/n3;->b(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v3
 
-    .line 316
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    .line 348
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
 
-    iget-object v1, v3, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v1, v3, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
     sget-object v4, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v6, 0x14
+    const/16 v6, 0x1b
 
     aget-object v4, v4, v6
 
@@ -875,41 +822,33 @@
 
     move-object v1, p1
 
-    invoke-virtual/range {v0 .. v5}, Lcom/whatsapp/ll;->a(Landroid/content/Context;Landroid/view/View;Lcom/whatsapp/adg;ZLcom/whatsapp/xd;)V
+    invoke-virtual/range {v0 .. v5}, Lcom/whatsapp/hz;->a(Landroid/content/Context;Landroid/view/View;Lcom/whatsapp/tc;ZLcom/whatsapp/n9;)V
 
-    .line 295
+    .line 229
     :cond_0
     return-void
 .end method
 
-.method static b(Lcom/whatsapp/ConversationsFragment;Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
+.method static b(Lcom/whatsapp/ConversationsFragment;Ljava/lang/String;)Landroid/view/View;
+    .locals 1
 
     .prologue
-    .line 311
-    iput-object p1, p0, Lcom/whatsapp/ConversationsFragment;->k:Ljava/lang/String;
+    .line 341
+    invoke-direct {p0, p1}, Lcom/whatsapp/ConversationsFragment;->a(Ljava/lang/String;)Landroid/view/View;
 
-    return-object p1
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method static b(Lcom/whatsapp/ConversationsFragment;)Ljava/util/ArrayList;
     .locals 1
 
     .prologue
-    .line 185
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/util/ArrayList;
+    .line 329
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->d:Ljava/util/ArrayList;
 
     return-object v0
-.end method
-
-.method static b(I)V
-    .locals 0
-
-    .prologue
-    .line 243
-    invoke-static {p0}, Lcom/whatsapp/ConversationsFragment;->a(I)V
-
-    return-void
 .end method
 
 .method private b(Landroid/view/View;)V
@@ -924,12 +863,12 @@
 
     const/4 v2, 0x0
 
-    .line 87
+    .line 151
     new-instance v9, Landroid/view/animation/AnimationSet;
 
     invoke-direct {v9, v5}, Landroid/view/animation/AnimationSet;-><init>(Z)V
 
-    .line 345
+    .line 39
     new-instance v0, Landroid/view/animation/ScaleAnimation;
 
     move v3, v1
@@ -942,47 +881,47 @@
 
     invoke-direct/range {v0 .. v8}, Landroid/view/animation/ScaleAnimation;-><init>(FFFFIFIF)V
 
-    .line 336
+    .line 226
     new-instance v3, Landroid/view/animation/AlphaAnimation;
 
     invoke-direct {v3, v1, v2}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
-    .line 190
+    .line 335
     invoke-virtual {v9, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 142
+    .line 134
     invoke-virtual {v9, v3}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 244
+    .line 56
     invoke-virtual {p1}, Landroid/view/View;->getTop()I
 
     move-result v0
 
-    .line 26
+    .line 253
     const-wide/16 v2, 0x12c
 
     invoke-virtual {v9, v2, v3}, Landroid/view/animation/AnimationSet;->setDuration(J)V
 
-    .line 60
+    .line 193
     invoke-virtual {p1, v9}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 232
-    new-instance v1, Lcom/whatsapp/agy;
+    .line 163
+    new-instance v1, Lcom/whatsapp/y3;
 
-    invoke-direct {v1, p0, v0}, Lcom/whatsapp/agy;-><init>(Lcom/whatsapp/ConversationsFragment;I)V
+    invoke-direct {v1, p0, v0}, Lcom/whatsapp/y3;-><init>(Lcom/whatsapp/ConversationsFragment;I)V
 
     invoke-virtual {v9, v1}, Landroid/view/animation/AnimationSet;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
-    .line 291
+    .line 103
     return-void
 .end method
 
-.method static c(Lcom/whatsapp/ConversationsFragment;)Lcom/whatsapp/a83;
+.method static c(Lcom/whatsapp/ConversationsFragment;)Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 241
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    .line 311
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -991,195 +930,238 @@
     .locals 4
 
     .prologue
-    .line 217
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 301
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    invoke-virtual {v0}, Lcom/whatsapp/d_;->j()I
+    invoke-virtual {v0}, Lcom/whatsapp/et;->f()I
 
     move-result v0
 
-    .line 171
+    .line 161
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getView()Landroid/view/View;
 
     move-result-object v1
 
-    const v2, 0x7f0b0199
+    const v2, 0x7f0b019b
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 13
+    .line 237
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getView()Landroid/view/View;
 
     move-result-object v2
 
-    const v3, 0x7f0b0198
+    const v3, 0x7f0b019a
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    .line 228
+    .line 108
     if-lez v0, :cond_0
 
-    .line 165
+    .line 244
     const/4 v0, 0x0
 
     :try_start_0
     invoke-virtual {v2, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 105
+    .line 197
     iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
 
-    .line 78
+    .line 317
     const/16 v0, 0x8
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 31
+    .line 116
     :cond_0
     const/4 v0, 0x0
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 118
+    .line 188
     iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
 
-    .line 229
+    .line 36
     const/16 v0, 0x8
 
     invoke-virtual {v2, v0}, Landroid/view/View;->setVisibility(I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 325
+    .line 99
     :cond_1
     return-void
 
-    .line 229
+    .line 36
     :catch_0
     move-exception v0
 
     throw v0
 .end method
 
-.method static d(Lcom/whatsapp/ConversationsFragment;)V
-    .locals 0
-
-    .prologue
-    .line 127
-    invoke-direct {p0}, Lcom/whatsapp/ConversationsFragment;->e()V
-
-    return-void
-.end method
-
-.method private e()V
+.method static d(Lcom/whatsapp/ConversationsFragment;)Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 23
-    :try_start_0
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    .line 17
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Ljava/lang/String;
 
-    if-eqz v0, :cond_0
-
-    .line 42
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
-
-    invoke-virtual {v0}, Lcom/whatsapp/ll;->notifyDataSetChanged()V
-    :try_end_0
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 144
-    :cond_0
-    return-void
-
-    .line 42
-    :catch_0
-    move-exception v0
-
-    throw v0
+    return-object v0
 .end method
 
-.method static e(Lcom/whatsapp/ConversationsFragment;)V
+.method static d(I)V
     .locals 0
 
     .prologue
-    .line 106
-    invoke-direct {p0}, Lcom/whatsapp/ConversationsFragment;->c()V
+    .line 159
+    invoke-static {p0}, Lcom/whatsapp/ConversationsFragment;->a(I)V
 
     return-void
+.end method
+
+.method static e(Lcom/whatsapp/ConversationsFragment;)Lcom/whatsapp/hz;
+    .locals 1
+
+    .prologue
+    .line 149
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
+
+    return-object v0
 .end method
 
 .method static f()I
     .locals 1
 
     .prologue
-    .line 30
-    invoke-static {}, Lcom/whatsapp/ConversationsFragment;->a()I
+    .line 305
+    invoke-static {}, Lcom/whatsapp/ConversationsFragment;->g()I
 
     move-result v0
 
     return v0
 .end method
 
-.method static f(Lcom/whatsapp/ConversationsFragment;)Ljava/lang/String;
+.method static f(Lcom/whatsapp/ConversationsFragment;)V
+    .locals 0
+
+    .prologue
+    .line 241
+    invoke-direct {p0}, Lcom/whatsapp/ConversationsFragment;->h()V
+
+    return-void
+.end method
+
+.method private static g()I
+    .locals 4
+
+    .prologue
+    const/4 v3, 0x0
+
+    .line 340
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    sget-object v1, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
+
+    const/16 v2, 0x18
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, v1, v3}, Lcom/whatsapp/App;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    .line 173
+    sget-object v1, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
+
+    const/16 v2, 0x17
+
+    aget-object v1, v1, v2
+
+    invoke-interface {v0, v1, v3}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method static g(Lcom/whatsapp/ConversationsFragment;)Lcom/whatsapp/c0;
     .locals 1
 
     .prologue
-    .line 6
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Ljava/lang/String;
+    .line 319
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
     return-object v0
 .end method
 
-.method static g(Lcom/whatsapp/ConversationsFragment;)Landroid/widget/ListView;
+.method static h(Lcom/whatsapp/ConversationsFragment;)I
     .locals 1
 
     .prologue
-    .line 67
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
+    .line 164
+    iget v0, p0, Lcom/whatsapp/ConversationsFragment;->c:I
+
+    return v0
+.end method
+
+.method private h()V
+    .locals 1
+
+    .prologue
+    .line 38
+    :try_start_0
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
+
+    if-eqz v0, :cond_0
+
+    .line 34
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
+
+    invoke-virtual {v0}, Lcom/whatsapp/hz;->notifyDataSetChanged()V
+    :try_end_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 77
+    :cond_0
+    return-void
+
+    .line 34
+    :catch_0
+    move-exception v0
+
+    throw v0
+.end method
+
+.method static i(Lcom/whatsapp/ConversationsFragment;)Lcom/whatsapp/wg;
+    .locals 1
+
+    .prologue
+    .line 230
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/wg;
 
     return-object v0
 .end method
 
-.method static h(Lcom/whatsapp/ConversationsFragment;)Lcom/whatsapp/ll;
-    .locals 1
+.method static j(Lcom/whatsapp/ConversationsFragment;)V
+    .locals 0
 
     .prologue
-    .line 163
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    .line 121
+    invoke-direct {p0}, Lcom/whatsapp/ConversationsFragment;->c()V
 
-    return-object v0
-.end method
-
-.method static i(Lcom/whatsapp/ConversationsFragment;)Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 57
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method static j(Lcom/whatsapp/ConversationsFragment;)Lcom/whatsapp/c6;
-    .locals 1
-
-    .prologue
-    .line 101
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->d:Lcom/whatsapp/c6;
-
-    return-object v0
+    return-void
 .end method
 
 
@@ -1188,34 +1170,34 @@
     .locals 1
 
     .prologue
-    .line 284
+    .line 133
     :try_start_0
-    invoke-direct {p0}, Lcom/whatsapp/ConversationsFragment;->e()V
+    invoke-direct {p0}, Lcom/whatsapp/ConversationsFragment;->h()V
 
-    .line 154
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    .line 206
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-eqz v0, :cond_0
 
     :try_start_1
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
 
-    invoke-virtual {v0}, Lcom/whatsapp/ll;->getCount()I
+    invoke-virtual {v0}, Lcom/whatsapp/hz;->getCount()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 92
+    .line 223
     invoke-direct {p0}, Lcom/whatsapp/ConversationsFragment;->c()V
 
-    .line 303
+    .line 37
     :cond_0
     return-void
 
-    .line 154
+    .line 206
     :catch_0
     move-exception v0
 
@@ -1223,7 +1205,7 @@
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 92
+    .line 223
     :catch_1
     move-exception v0
 
@@ -1234,16 +1216,16 @@
     .locals 3
 
     .prologue
-    .line 24
-    sget-object v0, Lcom/whatsapp/App;->l:Lcom/whatsapp/a2v;
+    .line 146
+    sget-object v0, Lcom/whatsapp/App;->au:Lcom/whatsapp/amo;
 
-    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/whatsapp/a2v;->b(Ljava/lang/String;Z)V
+    invoke-virtual {v0, v1, v2}, Lcom/whatsapp/amo;->b(Ljava/lang/String;Z)V
 
-    .line 129
+    .line 181
     return-void
 .end method
 
@@ -1251,16 +1233,16 @@
     .locals 1
 
     .prologue
-    .line 276
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    .line 211
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
 
-    invoke-virtual {v0}, Lcom/whatsapp/ll;->getFilter()Landroid/widget/Filter;
+    invoke-virtual {v0}, Lcom/whatsapp/hz;->getFilter()Landroid/widget/Filter;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Landroid/widget/Filter;->filter(Ljava/lang/CharSequence;)V
 
-    .line 145
+    .line 328
     return-void
 .end method
 
@@ -1268,12 +1250,12 @@
     .locals 1
 
     .prologue
-    .line 119
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 263
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     invoke-direct {p0, v0, p1}, Lcom/whatsapp/ConversationsFragment;->a(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 181
+    .line 5
     return-void
 .end method
 
@@ -1281,18 +1263,18 @@
     .locals 2
 
     .prologue
-    .line 225
+    .line 194
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/_m;
+    new-instance v1, Lcom/whatsapp/qy;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/whatsapp/_m;-><init>(Lcom/whatsapp/ConversationsFragment;Ljava/lang/String;Z)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/whatsapp/qy;-><init>(Lcom/whatsapp/ConversationsFragment;Ljava/lang/String;Z)V
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/FragmentActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 331
+    .line 57
     return-void
 .end method
 
@@ -1300,7 +1282,7 @@
     .locals 0
 
     .prologue
-    .line 173
+    .line 259
     return-void
 .end method
 
@@ -1308,19 +1290,19 @@
     .locals 2
 
     .prologue
-    .line 182
+    .line 9
     :try_start_0
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-eqz v0, :cond_2
 
-    .line 286
+    .line 88
     :try_start_1
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
 
-    invoke-static {v0}, Lcom/whatsapp/ll;->a(Lcom/whatsapp/ll;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/whatsapp/hz;->a(Lcom/whatsapp/hz;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1332,29 +1314,29 @@
 
     if-eqz v0, :cond_0
 
-    .line 247
+    .line 239
     :try_start_2
-    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->g()Ljava/util/ArrayList;
+    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->d()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/whatsapp/ConversationsFragment;->d:Ljava/util/ArrayList;
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 59
+    .line 61
     :cond_0
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
 
-    invoke-virtual {v0}, Lcom/whatsapp/ll;->getFilter()Landroid/widget/Filter;
+    invoke-virtual {v0}, Lcom/whatsapp/hz;->getFilter()Landroid/widget/Filter;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
 
-    invoke-static {v1}, Lcom/whatsapp/ll;->a(Lcom/whatsapp/ll;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/whatsapp/hz;->a(Lcom/whatsapp/hz;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1362,35 +1344,35 @@
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 249
+    .line 294
     :cond_1
     :try_start_3
-    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->d()V
+    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->e()V
 
-    .line 320
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    .line 254
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
 
-    invoke-virtual {v0}, Lcom/whatsapp/ll;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/whatsapp/hz;->notifyDataSetChanged()V
 
-    .line 300
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    .line 283
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
 
-    invoke-virtual {v0}, Lcom/whatsapp/ll;->getCount()I
+    invoke-virtual {v0}, Lcom/whatsapp/hz;->getCount()I
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 49
+    .line 346
     invoke-direct {p0}, Lcom/whatsapp/ConversationsFragment;->c()V
     :try_end_3
     .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 227
+    .line 336
     :cond_2
     return-void
 
-    .line 286
+    .line 88
     :catch_0
     move-exception v0
 
@@ -1399,7 +1381,7 @@
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_1
 
-    .line 247
+    .line 239
     :catch_1
     move-exception v0
 
@@ -1408,63 +1390,224 @@
     :try_end_5
     .catch Landroid/content/ActivityNotFoundException; {:try_start_5 .. :try_end_5} :catch_2
 
-    .line 59
+    .line 61
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 49
+    .line 346
     :catch_3
     move-exception v0
 
     throw v0
 .end method
 
-.method public b(Ljava/lang/String;)V
+.method b(I)V
     .locals 1
 
     .prologue
-    .line 180
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    invoke-direct {p0, v0, p1}, Lcom/whatsapp/ConversationsFragment;->a(Landroid/content/Context;Ljava/lang/String;)V
-
-    .line 112
-    return-void
-.end method
-
-.method c(I)V
-    .locals 1
-
-    .prologue
-    .line 85
+    .line 203
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/whatsapp/hy;
+    check-cast v0, Lcom/whatsapp/ad4;
 
-    invoke-interface {v0, p1}, Lcom/whatsapp/hy;->a(I)V
+    invoke-interface {v0, p1}, Lcom/whatsapp/ad4;->a(I)V
 
-    .line 270
+    .line 11
     return-void
+.end method
+
+.method public b(Ljava/lang/String;)V
+    .locals 1
+
+    .prologue
+    .line 204
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    invoke-direct {p0, v0, p1}, Lcom/whatsapp/ConversationsFragment;->a(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 220
+    return-void
+.end method
+
+.method protected c(I)V
+    .locals 14
+
+    .prologue
+    sget v11, Lcom/whatsapp/App;->h:I
+
+    .line 202
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
+
+    invoke-virtual {v0}, Landroid/widget/ListView;->getLastVisiblePosition()I
+
+    move-result v0
+
+    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
+
+    invoke-virtual {v1}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Landroid/widget/ListAdapter;->getCount()I
+
+    move-result v1
+
+    add-int/lit8 v1, v1, -0x1
+
+    if-ge v0, v1, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
+
+    invoke-virtual {v0}, Landroid/widget/ListView;->getChildCount()I
+
+    move-result v12
+
+    .line 289
+    const/4 v9, 0x0
+
+    .line 264
+    const/4 v0, 0x0
+
+    move v10, v0
+
+    :goto_0
+    if-ge v10, v12, :cond_0
+
+    .line 217
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
+
+    invoke-virtual {v0, v10}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v13
+
+    .line 43
+    invoke-virtual {v13}, Landroid/view/View;->getTop()I
+
+    move-result v0
+
+    if-lt v0, p1, :cond_2
+
+    .line 232
+    new-instance v0, Landroid/view/animation/TranslateAnimation;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x1
+
+    const/high16 v6, 0x3f800000
+
+    const/4 v7, 0x1
+
+    const/4 v8, 0x0
+
+    invoke-direct/range {v0 .. v8}, Landroid/view/animation/TranslateAnimation;-><init>(IFIFIFIF)V
+
+    .line 71
+    const-wide/16 v2, 0x96
+
+    invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
+
+    .line 299
+    mul-int/lit16 v1, v9, 0x12c
+
+    int-to-double v2, v1
+
+    invoke-static {v2, v3}, Ljava/lang/Math;->sqrt(D)D
+
+    move-result-wide v2
+
+    double-to-int v1, v2
+
+    mul-int/lit8 v1, v1, 0x8
+
+    int-to-long v2, v1
+
+    invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setStartOffset(J)V
+
+    .line 207
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setFillAfter(Z)V
+
+    .line 306
+    invoke-virtual {v13, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
+
+    .line 339
+    add-int/lit8 v0, v9, 0x1
+
+    .line 322
+    :goto_1
+    add-int/lit8 v1, v10, 0x1
+
+    if-eqz v11, :cond_1
+
+    .line 186
+    :cond_0
+    return-void
+
+    :cond_1
+    move v10, v1
+
+    move v9, v0
+
+    goto :goto_0
+
+    :cond_2
+    move v0, v9
+
+    goto :goto_1
 .end method
 
 .method public c(Ljava/lang/String;)V
     .locals 1
 
     .prologue
-    .line 9
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 184
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     invoke-direct {p0, v0, p1}, Lcom/whatsapp/ConversationsFragment;->a(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 71
+    .line 235
     return-void
 .end method
 
-.method protected d()V
+.method protected d()Ljava/util/ArrayList;
+    .locals 1
+
+    .prologue
+    .line 117
+    invoke-static {}, Lcom/whatsapp/n3;->g()Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public d(Ljava/lang/String;)V
+    .locals 1
+
+    .prologue
+    .line 313
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    invoke-direct {p0, v0, p1}, Lcom/whatsapp/ConversationsFragment;->a(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 330
+    return-void
+.end method
+
+.method protected e()V
     .locals 7
 
     .prologue
@@ -1472,24 +1615,24 @@
 
     const/4 v0, 0x0
 
-    .line 35
+    .line 115
     :try_start_0
-    invoke-static {}, Lcom/whatsapp/_q;->f()I
+    invoke-static {}, Lcom/whatsapp/n3;->a()I
 
     move-result v2
 
     iput v2, p0, Lcom/whatsapp/ConversationsFragment;->c:I
 
-    .line 63
+    .line 122
     iget v2, p0, Lcom/whatsapp/ConversationsFragment;->c:I
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-lez v2, :cond_0
 
-    .line 99
+    .line 110
     :try_start_1
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->h:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->i:Landroid/widget/TextView;
 
     const v3, 0x7f0e004c
 
@@ -1513,39 +1656,39 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 83
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->h:Landroid/widget/TextView;
+    .line 176
+    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->i:Landroid/widget/TextView;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 82
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->f:Landroid/widget/TextView;
-
-    const/16 v3, 0x8
-
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setVisibility(I)V
-
-    sget-boolean v2, Lcom/whatsapp/App;->aL:Z
-    :try_end_1
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
-
-    if-eqz v2, :cond_1
-
-    .line 319
-    :cond_0
-    :try_start_2
+    .line 174
     iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->h:Landroid/widget/TextView;
 
     const/16 v3, 0x8
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 133
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->f:Landroid/widget/TextView;
+    sget v2, Lcom/whatsapp/App;->h:I
+    :try_end_1
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    invoke-static {}, Lcom/whatsapp/ConversationsFragment;->a()I
+    if-eqz v2, :cond_1
+
+    .line 243
+    :cond_0
+    :try_start_2
+    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->i:Landroid/widget/TextView;
+
+    const/16 v3, 0x8
+
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 214
+    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->h:Landroid/widget/TextView;
+
+    invoke-static {}, Lcom/whatsapp/ConversationsFragment;->g()I
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
@@ -1558,11 +1701,11 @@
     :goto_0
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 248
+    .line 303
     :cond_1
     return-void
 
-    .line 82
+    .line 174
     :catch_0
     move-exception v0
 
@@ -1571,7 +1714,7 @@
     :try_end_3
     .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_1
 
-    .line 133
+    .line 214
     :catch_1
     move-exception v0
 
@@ -1591,171 +1734,22 @@
     goto :goto_0
 .end method
 
-.method protected d(I)V
-    .locals 14
-
-    .prologue
-    sget-boolean v11, Lcom/whatsapp/App;->aL:Z
-
-    .line 308
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
-
-    invoke-virtual {v0}, Landroid/widget/ListView;->getLastVisiblePosition()I
-
-    move-result v0
-
-    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
-
-    invoke-virtual {v1}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Landroid/widget/ListAdapter;->getCount()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, -0x1
-
-    if-ge v0, v1, :cond_0
-
-    .line 55
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
-
-    invoke-virtual {v0}, Landroid/widget/ListView;->getChildCount()I
-
-    move-result v12
-
-    .line 318
-    const/4 v9, 0x0
-
-    .line 131
-    const/4 v0, 0x0
-
-    move v10, v0
-
-    :goto_0
-    if-ge v10, v12, :cond_0
-
-    .line 299
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
-
-    invoke-virtual {v0, v10}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v13
-
-    .line 36
-    invoke-virtual {v13}, Landroid/view/View;->getTop()I
-
-    move-result v0
-
-    if-lt v0, p1, :cond_2
-
-    .line 307
-    new-instance v0, Landroid/view/animation/TranslateAnimation;
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x1
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x1
-
-    const/high16 v6, 0x3f800000
-
-    const/4 v7, 0x1
-
-    const/4 v8, 0x0
-
-    invoke-direct/range {v0 .. v8}, Landroid/view/animation/TranslateAnimation;-><init>(IFIFIFIF)V
-
-    .line 18
-    const-wide/16 v2, 0x96
-
-    invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
-
-    .line 240
-    mul-int/lit16 v1, v9, 0x12c
-
-    int-to-double v2, v1
-
-    invoke-static {v2, v3}, Ljava/lang/Math;->sqrt(D)D
-
-    move-result-wide v2
-
-    double-to-int v1, v2
-
-    mul-int/lit8 v1, v1, 0x8
-
-    int-to-long v2, v1
-
-    invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setStartOffset(J)V
-
-    .line 33
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setFillAfter(Z)V
-
-    .line 158
-    invoke-virtual {v13, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
-
-    .line 253
-    add-int/lit8 v0, v9, 0x1
-
-    .line 130
-    :goto_1
-    add-int/lit8 v1, v10, 0x1
-
-    if-eqz v11, :cond_1
-
-    .line 231
-    :cond_0
-    return-void
-
-    :cond_1
-    move v10, v1
-
-    move v9, v0
-
-    goto :goto_0
-
-    :cond_2
-    move v0, v9
-
-    goto :goto_1
-.end method
-
-.method public d(Ljava/lang/String;)V
-    .locals 1
-
-    .prologue
-    .line 239
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    invoke-direct {p0, v0, p1}, Lcom/whatsapp/ConversationsFragment;->a(Landroid/content/Context;Ljava/lang/String;)V
-
-    .line 278
-    return-void
-.end method
-
 .method public e(Ljava/lang/String;)V
     .locals 2
 
     .prologue
-    .line 91
+    .line 298
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/azp;
+    new-instance v1, Lcom/whatsapp/q2;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/azp;-><init>(Lcom/whatsapp/ConversationsFragment;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/q2;-><init>(Lcom/whatsapp/ConversationsFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/FragmentActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 44
+    .line 16
     return-void
 .end method
 
@@ -1763,38 +1757,26 @@
     .locals 1
 
     .prologue
-    .line 221
+    .line 205
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/whatsapp/hy;
+    check-cast v0, Lcom/whatsapp/ad4;
 
-    invoke-interface {v0, p1}, Lcom/whatsapp/hy;->f(Ljava/lang/String;)V
+    invoke-interface {v0, p1}, Lcom/whatsapp/ad4;->f(Ljava/lang/String;)V
 
-    .line 79
+    .line 171
     return-void
 .end method
 
-.method protected g()Ljava/util/ArrayList;
-    .locals 1
-
-    .prologue
-    .line 166
-    invoke-static {}, Lcom/whatsapp/_q;->a()Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method protected h()V
+.method protected i()V
     .locals 7
 
     .prologue
     const/4 v6, 0x0
 
-    const v5, 0x7f0b01a7
+    const v5, 0x7f0b01a9
 
     const v4, 0x7f030058
 
@@ -1802,7 +1784,7 @@
 
     const/4 v2, 0x0
 
-    .line 350
+    .line 76
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -1817,53 +1799,12 @@
 
     move-result-object v0
 
-    .line 167
+    .line 316
     iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
 
     invoke-virtual {v1, v0, v6, v3}, Landroid/widget/ListView;->addFooterView(Landroid/view/View;Ljava/lang/Object;Z)V
 
-    .line 128
-    invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
-    iput-object v0, p0, Lcom/whatsapp/ConversationsFragment;->f:Landroid/widget/TextView;
-
-    .line 294
-    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/support/v4/app/FragmentActivity;->getLayoutInflater()Landroid/view/LayoutInflater;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
-
-    invoke-virtual {v0, v4, v1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object v0
-
-    .line 353
-    const v1, 0x7f02062a
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
-
-    .line 39
-    new-instance v1, Lcom/whatsapp/a2q;
-
-    invoke-direct {v1, p0}, Lcom/whatsapp/a2q;-><init>(Lcom/whatsapp/ConversationsFragment;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 151
-    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
-
-    invoke-virtual {v1, v0, v6, v3}, Landroid/widget/ListView;->addFooterView(Landroid/view/View;Ljava/lang/Object;Z)V
-
-    .line 259
+    .line 93
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1872,380 +1813,423 @@
 
     iput-object v0, p0, Lcom/whatsapp/ConversationsFragment;->h:Landroid/widget/TextView;
 
-    .line 62
+    .line 286
+    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/support/v4/app/FragmentActivity;->getLayoutInflater()Landroid/view/LayoutInflater;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
+
+    invoke-virtual {v0, v4, v1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object v0
+
+    .line 190
+    const v1, 0x7f020637
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
+
+    .line 42
+    new-instance v1, Lcom/whatsapp/al3;
+
+    invoke-direct {v1, p0}, Lcom/whatsapp/al3;-><init>(Lcom/whatsapp/ConversationsFragment;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 324
+    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
+
+    invoke-virtual {v1, v0, v6, v3}, Landroid/widget/ListView;->addFooterView(Landroid/view/View;Ljava/lang/Object;Z)V
+
+    .line 331
+    invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/whatsapp/ConversationsFragment;->i:Landroid/widget/TextView;
+
+    .line 199
     return-void
 .end method
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
-    .locals 5
+    .locals 6
 
     .prologue
-    const/16 v4, 0xb
+    const/16 v5, 0xb
+
+    const/4 v1, 0x0
 
     const/4 v0, 0x1
 
-    .line 121
-    new-instance v1, Lcom/whatsapp/util/r;
+    .line 334
+    new-instance v2, Lcom/whatsapp/util/b1;
 
-    sget-object v2, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
+    sget-object v3, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x8
+    const/4 v4, 0x2
 
-    aget-object v2, v2, v3
+    aget-object v3, v3, v4
 
-    invoke-direct {v1, v2}, Lcom/whatsapp/util/r;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Lcom/whatsapp/util/b1;-><init>(Ljava/lang/String;)V
 
-    .line 194
+    .line 196
     :try_start_0
     invoke-super {p0, p1}, Lcom/actionbarsherlock/app/SherlockListFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
-    .line 343
-    const/4 v2, 0x1
+    .line 66
+    const/4 v3, 0x1
 
-    invoke-virtual {p0, v2}, Lcom/whatsapp/ConversationsFragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->setHasOptionsMenu(Z)V
 
-    .line 230
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    .line 291
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
-    if-nez v2, :cond_0
+    if-nez v3, :cond_0
 
-    .line 281
-    new-instance v2, Lcom/whatsapp/a83;
+    .line 123
+    new-instance v3, Lcom/whatsapp/c0;
 
-    invoke-direct {v2}, Lcom/whatsapp/a83;-><init>()V
+    invoke-direct {v3}, Lcom/whatsapp/c0;-><init>()V
 
-    iput-object v2, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    iput-object v3, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
-    .line 199
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    .line 80
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
-    const v3, 0x7f0e01ec
+    const v4, 0x7f0e01f2
 
-    invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    iput-object v3, v2, Lcom/whatsapp/a83;->c:Ljava/lang/String;
+    iput-object v4, v3, Lcom/whatsapp/c0;->c:Ljava/lang/String;
 
-    .line 156
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    .line 345
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
-    const v3, 0x7f0e01b2
+    const v4, 0x7f0e01b8
 
-    invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    iput-object v3, v2, Lcom/whatsapp/a83;->b:Ljava/lang/String;
+    iput-object v4, v3, Lcom/whatsapp/c0;->j:Ljava/lang/String;
 
-    .line 262
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    .line 89
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
-    const v3, 0x7f0e01b3
+    const v4, 0x7f0e01b9
 
-    invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    iput-object v3, v2, Lcom/whatsapp/a83;->i:Ljava/lang/String;
+    iput-object v4, v3, Lcom/whatsapp/c0;->h:Ljava/lang/String;
 
-    .line 206
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    .line 124
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
-    const v3, 0x7f0e00f6
+    const v4, 0x7f0e00fa
 
-    invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    iput-object v3, v2, Lcom/whatsapp/a83;->j:Ljava/lang/String;
+    iput-object v4, v3, Lcom/whatsapp/c0;->f:Ljava/lang/String;
 
-    .line 40
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    .line 276
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
-    const v3, 0x7f0e00f0
+    const v4, 0x7f0e00f4
 
-    invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    iput-object v3, v2, Lcom/whatsapp/a83;->g:Ljava/lang/String;
+    iput-object v4, v3, Lcom/whatsapp/c0;->g:Ljava/lang/String;
 
-    .line 143
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    .line 83
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
-    const v3, 0x7f0e00fa
+    const v4, 0x7f0e00fe
 
-    invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    iput-object v3, v2, Lcom/whatsapp/a83;->e:Ljava/lang/String;
+    iput-object v4, v3, Lcom/whatsapp/c0;->b:Ljava/lang/String;
 
-    .line 285
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    .line 126
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
-    const v3, 0x7f0e00f9
+    const v4, 0x7f0e00fd
 
-    invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    iput-object v3, v2, Lcom/whatsapp/a83;->f:Ljava/lang/String;
+    iput-object v4, v3, Lcom/whatsapp/c0;->i:Ljava/lang/String;
 
-    .line 279
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    .line 177
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
-    const v3, 0x7f0e00f7
+    const v4, 0x7f0e00fb
 
-    invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    iput-object v3, v2, Lcom/whatsapp/a83;->a:Ljava/lang/String;
+    iput-object v4, v3, Lcom/whatsapp/c0;->a:Ljava/lang/String;
 
-    .line 184
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    .line 120
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
-    const v3, 0x7f0e00f5
+    const v4, 0x7f0e00f9
 
-    invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    iput-object v3, v2, Lcom/whatsapp/a83;->h:Ljava/lang/String;
+    iput-object v4, v3, Lcom/whatsapp/c0;->d:Ljava/lang/String;
 
-    .line 323
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/a83;
+    .line 213
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->f:Lcom/whatsapp/c0;
 
-    const v3, 0x7f0e01ea
+    const v4, 0x7f0e01f0
 
-    invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    iput-object v3, v2, Lcom/whatsapp/a83;->d:Ljava/lang/String;
+    iput-object v4, v3, Lcom/whatsapp/c0;->e:Ljava/lang/String;
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 310
+    .line 297
     :cond_0
     :try_start_1
-    sget-object v2, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
+    sget-object v3, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x6
+    const/4 v4, 0x0
 
-    aget-object v2, v2, v3
+    aget-object v3, v3, v4
 
-    invoke-static {v2}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+    invoke-static {v3}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 168
-    invoke-static {}, Lcom/whatsapp/App;->ag()V
+    .line 309
+    invoke-static {}, Lcom/whatsapp/App;->ae()V
 
-    .line 250
-    invoke-static {p0}, Lcom/whatsapp/App;->b(Lcom/whatsapp/o7;)V
+    .line 147
+    invoke-static {p0}, Lcom/whatsapp/App;->b(Lcom/whatsapp/by;)V
 
-    .line 150
-    invoke-static {p0}, Lcom/whatsapp/App;->a(Lcom/whatsapp/apf;)V
+    .line 287
+    invoke-static {p0}, Lcom/whatsapp/App;->b(Lcom/whatsapp/q_;)V
 
-    .line 17
-    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->g()Ljava/util/ArrayList;
+    .line 114
+    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->d()Ljava/util/ArrayList;
 
-    move-result-object v2
+    move-result-object v3
 
-    iput-object v2, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/whatsapp/ConversationsFragment;->d:Ljava/util/ArrayList;
 
-    .line 61
+    .line 107
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getListView()Landroid/widget/ListView;
 
-    move-result-object v2
+    move-result-object v3
 
-    iput-object v2, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
+    iput-object v3, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
 
-    .line 172
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
+    .line 338
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
 
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    if-ge v3, v4, :cond_4
+    if-ge v4, v5, :cond_4
 
     :goto_0
     :try_start_2
-    invoke-virtual {v2, v0}, Landroid/widget/ListView;->setFastScrollEnabled(Z)V
+    invoke-virtual {v3, v0}, Landroid/widget/ListView;->setFastScrollEnabled(Z)V
 
-    .line 198
+    .line 321
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    if-ge v0, v4, :cond_1
+    if-ge v0, v5, :cond_1
 
-    .line 113
+    .line 8
     iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
 
-    const v2, 0x7f02062a
+    const v1, 0x7f020637
 
-    invoke-virtual {v0, v2}, Landroid/widget/ListView;->setSelector(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setSelector(I)V
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 267
+    .line 252
     :cond_1
     :try_start_3
     iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
 
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
-    invoke-virtual {v0, v2}, Landroid/widget/ListView;->setScrollbarFadingEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setScrollbarFadingEnabled(Z)V
 
-    .line 269
-    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->h()V
+    .line 165
+    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->i()V
 
-    .line 116
-    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->d()V
+    .line 216
+    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->e()V
 
-    .line 252
+    .line 290
     iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
 
-    new-instance v2, Lcom/whatsapp/l4;
+    new-instance v1, Lcom/whatsapp/a9d;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/l4;-><init>(Lcom/whatsapp/ConversationsFragment;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/a9d;-><init>(Lcom/whatsapp/ConversationsFragment;)V
 
-    invoke-virtual {v0, v2}, Landroid/widget/ListView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
 
-    .line 328
-    new-instance v0, Lcom/whatsapp/ll;
+    .line 218
+    new-instance v0, Lcom/whatsapp/hz;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/ll;-><init>(Lcom/whatsapp/ConversationsFragment;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/hz;-><init>(Lcom/whatsapp/ConversationsFragment;)V
 
-    iput-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    iput-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
 
-    .line 246
+    .line 64
     iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
 
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
 
-    invoke-virtual {v0, v2}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 192
+    .line 344
     iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
 
-    new-instance v2, Lcom/whatsapp/alu;
+    new-instance v1, Lcom/whatsapp/am4;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/alu;-><init>(Lcom/whatsapp/ConversationsFragment;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/am4;-><init>(Lcom/whatsapp/ConversationsFragment;)V
 
-    invoke-virtual {v0, v2}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 34
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->g:Lcom/whatsapp/ll;
+    .line 238
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->k:Lcom/whatsapp/hz;
 
-    invoke-virtual {v0}, Lcom/whatsapp/ll;->getCount()I
+    invoke-virtual {v0}, Lcom/whatsapp/hz;->getCount()I
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 334
+    .line 74
     invoke-direct {p0}, Lcom/whatsapp/ConversationsFragment;->c()V
     :try_end_3
     .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 88
+    .line 178
     :cond_2
     :try_start_4
     iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->b:Landroid/widget/ListView;
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationsFragment;->registerForContextMenu(Landroid/view/View;)V
 
-    .line 235
+    .line 185
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getView()Landroid/view/View;
 
     move-result-object v0
 
-    const v2, 0x7f0b01da
+    const v1, 0x7f0b01dc
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    new-instance v2, Lcom/whatsapp/ow;
+    new-instance v1, Lcom/whatsapp/e3;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/ow;-><init>(Lcom/whatsapp/ConversationsFragment;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/e3;-><init>(Lcom/whatsapp/ConversationsFragment;)V
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 280
+    .line 156
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getView()Landroid/view/View;
 
     move-result-object v0
 
-    const v2, 0x7f0b0197
+    const v1, 0x7f0b0199
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    new-instance v2, Lcom/whatsapp/or;
+    new-instance v1, Lcom/whatsapp/ew;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/or;-><init>(Lcom/whatsapp/ConversationsFragment;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/ew;-><init>(Lcom/whatsapp/ConversationsFragment;)V
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 332
+    .line 86
     if-eqz p1, :cond_3
 
-    .line 74
+    .line 84
     sget-object v0, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x7
+    const/4 v1, 0x1
 
-    aget-object v0, v0, v2
+    aget-object v0, v0, v1
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iput-object v0, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 50
+    .line 261
     :cond_3
-    invoke-virtual {v1}, Lcom/whatsapp/util/r;->c()J
+    invoke-virtual {v2}, Lcom/whatsapp/util/b1;->c()J
 
-    .line 236
+    .line 191
     return-void
 
-    .line 323
+    .line 213
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 172
+    .line 338
     :catch_1
     move-exception v0
 
     throw v0
 
     :cond_4
-    const/4 v0, 0x0
+    move v0, v1
 
     goto/16 :goto_0
 
-    .line 113
+    .line 8
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 334
+    .line 74
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 74
+    .line 84
     :catch_4
     move-exception v0
 
@@ -2258,24 +2242,24 @@
     .prologue
     const/4 v4, -0x1
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
-    .line 204
+    .line 153
     sparse-switch p1, :sswitch_data_0
 
-    .line 1
+    .line 54
     :cond_0
     :goto_0
     return-void
 
-    .line 213
+    .line 87
     :sswitch_0
     if-ne p2, v4, :cond_0
 
-    .line 271
+    .line 62
     sget-object v1, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x1b
+    const/16 v2, 0x11
 
     aget-object v1, v1, v2
 
@@ -2283,16 +2267,16 @@
 
     move-result-object v1
 
-    .line 155
-    sget-object v2, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 296
+    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    invoke-virtual {v2, v1}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v2, v1}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v1
 
-    .line 5
+    .line 119
     :try_start_0
-    invoke-static {v1}, Lcom/whatsapp/Conversation;->a(Lcom/whatsapp/adg;)Landroid/content/Intent;
+    invoke-static {v1}, Lcom/whatsapp/Conversation;->a(Lcom/whatsapp/tc;)Landroid/content/Intent;
 
     move-result-object v1
 
@@ -2300,23 +2284,23 @@
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 218
+    .line 152
     if-eqz v0, :cond_0
 
-    .line 147
+    .line 100
     :sswitch_1
     if-ne p2, v4, :cond_3
 
-    .line 215
-    sget-object v1, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 23
+    sget-object v1, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v1, v2}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v1
 
-    .line 257
+    .line 135
     if-eqz p3, :cond_1
 
     :try_start_1
@@ -2328,36 +2312,36 @@
 
     if-eqz v2, :cond_1
 
-    .line 220
+    .line 320
     :try_start_2
-    sget-object v2, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
     invoke-virtual {p3}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3, v1}, Lcom/whatsapp/d_;->a(Landroid/net/Uri;Lcom/whatsapp/adg;)V
+    invoke-virtual {v2, v3, v1}, Lcom/whatsapp/et;->a(Landroid/net/Uri;Lcom/whatsapp/tc;)V
 
     if-eqz v0, :cond_2
 
-    .line 37
+    .line 51
     :cond_1
-    sget-object v2, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    invoke-virtual {v2, v1}, Lcom/whatsapp/d_;->c(Lcom/whatsapp/adg;)V
+    invoke-virtual {v2, v1}, Lcom/whatsapp/et;->b(Lcom/whatsapp/tc;)V
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_3
 
-    .line 255
+    .line 98
     :cond_2
     if-eqz v0, :cond_0
 
-    .line 233
+    .line 150
     :cond_3
     :try_start_3
     sget-object v1, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x19
+    const/16 v2, 0x13
 
     aget-object v1, v1, v2
 
@@ -2365,234 +2349,179 @@
     :try_end_3
     .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_4
 
-    .line 137
+    .line 6
     if-eqz v0, :cond_0
 
-    .line 56
+    .line 72
     :sswitch_2
     if-ne p2, v4, :cond_4
 
-    .line 346
-    sget-object v1, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 255
+    sget-object v1, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v1, v2}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v1
 
-    .line 242
+    .line 270
     :try_start_4
-    sget-object v2, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    invoke-virtual {v2, v1}, Lcom/whatsapp/d_;->c(Lcom/whatsapp/adg;)V
-    :try_end_4
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_5
+    invoke-virtual {v2, v1}, Lcom/whatsapp/et;->b(Lcom/whatsapp/tc;)V
 
-    .line 277
+    .line 215
     if-eqz v0, :cond_0
 
-    .line 86
+    .line 70
     :cond_4
-    :try_start_5
-    sget-object v1, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
-
-    const/16 v2, 0x1c
-
-    aget-object v1, v1, v2
-
-    invoke-static {v1}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-    :try_end_5
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_5 .. :try_end_5} :catch_6
-
-    .line 12
-    if-eqz v0, :cond_0
-
-    .line 201
-    :sswitch_3
-    if-ne p2, v4, :cond_0
-
-    .line 97
     sget-object v0, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x1a
+    const/16 v1, 0x12
 
     aget-object v0, v0, v1
 
-    invoke-virtual {p3, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+    :try_end_4
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_0
 
-    move-result-object v0
-
-    .line 98
-    if-eqz v0, :cond_0
-
-    .line 214
-    :try_start_6
-    invoke-static {v0}, Lcom/whatsapp/App;->v(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 339
-    const v0, 0x7f0e0208
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationsFragment;->c(I)V
-    :try_end_6
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_6 .. :try_end_6} :catch_0
-
-    goto/16 :goto_0
+    goto :goto_0
 
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 147
+    .line 100
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 220
+    .line 320
     :catch_2
     move-exception v0
 
-    :try_start_7
+    :try_start_5
     throw v0
-    :try_end_7
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_7 .. :try_end_7} :catch_3
+    :try_end_5
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_5 .. :try_end_5} :catch_3
 
-    .line 37
+    .line 51
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 56
+    .line 72
     :catch_4
     move-exception v0
 
     throw v0
 
-    .line 12
-    :catch_5
-    move-exception v0
-
-    :try_start_8
-    throw v0
-    :try_end_8
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_8 .. :try_end_8} :catch_6
-
-    .line 201
-    :catch_6
-    move-exception v0
-
-    throw v0
-
-    .line 204
-    nop
-
+    .line 153
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_0
         0xa -> :sswitch_1
         0xb -> :sswitch_2
-        0xd -> :sswitch_3
     .end sparse-switch
 .end method
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
-    .locals 6
+    .locals 7
 
     .prologue
-    const/16 v3, 0xb
+    const/16 v6, 0xb
+
+    const/16 v4, 0xa
 
     const/4 v5, 0x0
 
     const/4 v1, 0x1
 
-    sget-boolean v2, Lcom/whatsapp/App;->aL:Z
+    sget v2, Lcom/whatsapp/App;->h:I
 
-    .line 111
+    .line 47
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v0
 
     packed-switch v0, :pswitch_data_0
 
-    .line 10
+    .line 53
     invoke-super {p0, p1}, Lcom/actionbarsherlock/app/SherlockListFragment;->onContextItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
-    .line 338
+    .line 349
     :goto_0
     return v0
 
-    .line 95
+    .line 27
     :pswitch_0
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
-    invoke-virtual {v0, v2}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v0, v2}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v0
 
-    .line 175
+    .line 271
     :try_start_0
-    iget-object v2, v0, Lcom/whatsapp/adg;->m:Lcom/whatsapp/iv;
+    iget-object v2, v0, Lcom/whatsapp/tc;->s:Lcom/whatsapp/p5;
 
     if-eqz v2, :cond_0
 
-    .line 115
+    .line 154
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/whatsapp/ContactInfo;->a(Lcom/whatsapp/adg;Landroid/app/Activity;)V
+    invoke-static {v0, v2}, Lcom/whatsapp/ContactInfo;->a(Lcom/whatsapp/tc;Landroid/app/Activity;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_0
     move v0, v1
 
-    .line 125
+    .line 265
     goto :goto_0
 
-    .line 115
+    .line 154
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 287
+    .line 104
     :pswitch_1
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
-    invoke-virtual {v0, v3}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v0, v3}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v0
 
-    .line 183
+    .line 136
     :try_start_1
-    invoke-virtual {v0}, Lcom/whatsapp/adg;->t()Z
+    invoke-virtual {v0}, Lcom/whatsapp/tc;->i()Z
 
     move-result v3
 
     if-eqz v3, :cond_3
 
-    .line 223
+    .line 55
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v4, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x10
+    const/16 v5, 0xc
 
     aget-object v4, v4, v5
 
@@ -2610,35 +2539,35 @@
 
     invoke-static {v3}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 102
-    sget-boolean v3, Lcom/whatsapp/ba;->f:Z
+    .line 295
+    sget-boolean v3, Lcom/whatsapp/rb;->a:Z
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
     if-eqz v3, :cond_1
 
-    .line 16
+    .line 109
     :try_start_2
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v3
 
-    const v4, 0x7f0e01ed
+    const v4, 0x7f0e01f3
 
     const/4 v5, 0x0
 
-    invoke-static {v3, v4, v5}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
+    invoke-static {v3, v4, v5}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
     if-eqz v2, :cond_5
 
-    .line 100
+    .line 105
     :cond_1
     :try_start_3
-    iget-object v3, v0, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v3, v0, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    invoke-static {v3}, Lcom/whatsapp/ba;->f(Ljava/lang/String;)Z
+    invoke-static {v3}, Lcom/whatsapp/rb;->b(Ljava/lang/String;)Z
     :try_end_3
     .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_3
 
@@ -2647,7 +2576,7 @@
     if-eqz v3, :cond_2
 
     :try_start_4
-    invoke-virtual {v0}, Lcom/whatsapp/adg;->s()Z
+    invoke-virtual {v0}, Lcom/whatsapp/tc;->b()Z
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_4
 
@@ -2655,13 +2584,13 @@
 
     if-nez v3, :cond_2
 
-    .line 329
+    .line 95
     :try_start_5
     new-instance v3, Lcom/whatsapp/ConversationsFragment$ExitGroupDialogFragment;
 
     invoke-direct {v3}, Lcom/whatsapp/ConversationsFragment$ExitGroupDialogFragment;-><init>()V
 
-    invoke-direct {p0, v0, v3}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/adg;Landroid/support/v4/app/DialogFragment;)Landroid/support/v4/app/DialogFragment;
+    invoke-direct {p0, v0, v3}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/tc;Landroid/support/v4/app/DialogFragment;)Landroid/support/v4/app/DialogFragment;
 
     move-result-object v3
 
@@ -2677,14 +2606,14 @@
 
     if-eqz v2, :cond_5
 
-    .line 162
+    .line 26
     :cond_2
     :try_start_6
     new-instance v3, Lcom/whatsapp/ConversationsFragment$DeleteGroupDialogFragment;
 
     invoke-direct {v3}, Lcom/whatsapp/ConversationsFragment$DeleteGroupDialogFragment;-><init>()V
 
-    invoke-direct {p0, v0, v3}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/adg;Landroid/support/v4/app/DialogFragment;)Landroid/support/v4/app/DialogFragment;
+    invoke-direct {p0, v0, v3}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/tc;Landroid/support/v4/app/DialogFragment;)Landroid/support/v4/app/DialogFragment;
 
     move-result-object v3
 
@@ -2700,10 +2629,10 @@
 
     if-eqz v2, :cond_5
 
-    .line 301
+    .line 18
     :cond_3
     :try_start_7
-    invoke-virtual {v0}, Lcom/whatsapp/adg;->q()Z
+    invoke-virtual {v0}, Lcom/whatsapp/tc;->p()Z
     :try_end_7
     .catch Landroid/content/ActivityNotFoundException; {:try_start_7 .. :try_end_7} :catch_7
 
@@ -2711,13 +2640,13 @@
 
     if-eqz v3, :cond_4
 
-    .line 124
+    .line 168
     :try_start_8
     new-instance v3, Lcom/whatsapp/ConversationsFragment$DeleteBroadcastListDialogFragment;
 
     invoke-direct {v3}, Lcom/whatsapp/ConversationsFragment$DeleteBroadcastListDialogFragment;-><init>()V
 
-    invoke-direct {p0, v0, v3}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/adg;Landroid/support/v4/app/DialogFragment;)Landroid/support/v4/app/DialogFragment;
+    invoke-direct {p0, v0, v3}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/tc;Landroid/support/v4/app/DialogFragment;)Landroid/support/v4/app/DialogFragment;
 
     move-result-object v3
 
@@ -2733,14 +2662,14 @@
 
     if-eqz v2, :cond_5
 
-    .line 54
+    .line 201
     :cond_4
     :try_start_9
     new-instance v2, Lcom/whatsapp/ConversationsFragment$DeleteContactDialogFragment;
 
     invoke-direct {v2}, Lcom/whatsapp/ConversationsFragment$DeleteContactDialogFragment;-><init>()V
 
-    invoke-direct {p0, v0, v2}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/adg;Landroid/support/v4/app/DialogFragment;)Landroid/support/v4/app/DialogFragment;
+    invoke-direct {p0, v0, v2}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/tc;Landroid/support/v4/app/DialogFragment;)Landroid/support/v4/app/DialogFragment;
 
     move-result-object v0
 
@@ -2757,10 +2686,10 @@
     :cond_5
     move v0, v1
 
-    .line 45
+    .line 288
     goto/16 :goto_0
 
-    .line 102
+    .line 295
     :catch_1
     move-exception v0
 
@@ -2769,7 +2698,7 @@
     :try_end_a
     .catch Landroid/content/ActivityNotFoundException; {:try_start_a .. :try_end_a} :catch_2
 
-    .line 16
+    .line 109
     :catch_2
     move-exception v0
 
@@ -2778,7 +2707,7 @@
     :try_end_b
     .catch Landroid/content/ActivityNotFoundException; {:try_start_b .. :try_end_b} :catch_3
 
-    .line 100
+    .line 105
     :catch_3
     move-exception v0
 
@@ -2795,7 +2724,7 @@
     :try_end_d
     .catch Landroid/content/ActivityNotFoundException; {:try_start_d .. :try_end_d} :catch_5
 
-    .line 329
+    .line 95
     :catch_5
     move-exception v0
 
@@ -2804,7 +2733,7 @@
     :try_end_e
     .catch Landroid/content/ActivityNotFoundException; {:try_start_e .. :try_end_e} :catch_6
 
-    .line 162
+    .line 26
     :catch_6
     move-exception v0
 
@@ -2813,7 +2742,7 @@
     :try_end_f
     .catch Landroid/content/ActivityNotFoundException; {:try_start_f .. :try_end_f} :catch_7
 
-    .line 301
+    .line 18
     :catch_7
     move-exception v0
 
@@ -2822,7 +2751,7 @@
     :try_end_10
     .catch Landroid/content/ActivityNotFoundException; {:try_start_10 .. :try_end_10} :catch_8
 
-    .line 124
+    .line 168
     :catch_8
     move-exception v0
 
@@ -2831,23 +2760,23 @@
     :try_end_11
     .catch Landroid/content/ActivityNotFoundException; {:try_start_11 .. :try_end_11} :catch_9
 
-    .line 54
+    .line 201
     :catch_9
     move-exception v0
 
     throw v0
 
-    .line 89
+    .line 310
     :pswitch_2
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
-    invoke-virtual {v0, v3}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v0, v3}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/whatsapp/adg;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/whatsapp/tc;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -2856,25 +2785,23 @@
 
     sget-object v4, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v5, 0xc
-
-    aget-object v4, v4, v5
+    aget-object v4, v4, v6
 
     sget-object v5, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-direct {v3, v4, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 273
+    .line 97
     :try_start_12
     sget-object v4, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x9
+    const/4 v5, 0x7
 
     aget-object v4, v4, v5
 
     invoke-virtual {v3, v4, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 48
+    .line 162
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -2889,14 +2816,14 @@
 
     invoke-virtual {v3, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    .line 179
+    .line 102
     invoke-virtual {v3}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v0
 
     if-eqz v0, :cond_6
 
-    .line 140
+    .line 189
     const/16 v0, 0xa
 
     invoke-virtual {p0, v3, v0}, Lcom/whatsapp/ConversationsFragment;->startActivityForResult(Landroid/content/Intent;I)V
@@ -2905,27 +2832,27 @@
 
     if-eqz v2, :cond_7
 
-    .line 195
+    .line 192
     :cond_6
     :try_start_13
     sget-object v0, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xa
+    const/16 v2, 0x9
 
     aget-object v0, v0, v2
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
 
-    .line 314
-    invoke-static {}, Lcom/whatsapp/App;->u()V
+    .line 210
+    invoke-static {}, Lcom/whatsapp/App;->m()V
 
     :cond_7
     move v0, v1
 
-    .line 21
+    .line 349
     goto/16 :goto_0
 
-    .line 140
+    .line 189
     :catch_a
     move-exception v0
 
@@ -2933,44 +2860,44 @@
     :try_end_13
     .catch Landroid/content/ActivityNotFoundException; {:try_start_13 .. :try_end_13} :catch_b
 
-    .line 314
+    .line 210
     :catch_b
     move-exception v0
 
     throw v0
 
-    .line 114
+    .line 224
     :pswitch_3
     new-instance v0, Landroid/content/Intent;
 
     sget-object v2, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
+    const/16 v3, 0xd
+
     aget-object v2, v2, v3
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 297
+    .line 246
     sget-object v2, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v3, 0xe
+    const/16 v3, 0x8
 
     aget-object v2, v2, v3
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 197
+    .line 219
     sget-object v2, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v3, 0xf
+    aget-object v2, v2, v4
 
-    aget-object v2, v2, v3
+    sget-object v3, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    sget-object v3, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    iget-object v4, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
-
-    .line 104
-    invoke-virtual {v3, v4}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    .line 284
+    invoke-virtual {v3, v4}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v3
 
@@ -2978,17 +2905,17 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Lcom/whatsapp/adg;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v3, v4}, Lcom/whatsapp/tc;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 72
+    .line 112
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 305
+    .line 49
     sget-object v2, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v3, 0xd
+    const/4 v3, 0x6
 
     aget-object v2, v2, v3
 
@@ -2996,12 +2923,12 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 337
+    .line 307
     const/high16 v2, 0x80000
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 108
+    .line 91
     const/16 v2, 0xb
 
     :try_start_14
@@ -3012,44 +2939,44 @@
     :goto_1
     move v0, v1
 
-    .line 132
+    .line 222
     goto/16 :goto_0
 
-    .line 19
+    .line 143
     :catch_c
     move-exception v0
 
-    .line 80
+    .line 195
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
     const v2, 0x7f0e0022
 
-    invoke-static {v0, v2, v5}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
+    invoke-static {v0, v2, v5}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
 
     goto :goto_1
 
-    .line 351
+    .line 251
     :pswitch_4
     :try_start_15
-    sget-boolean v0, Lcom/whatsapp/App;->k:Z
+    sget-boolean v0, Lcom/whatsapp/App;->aD:Z
     :try_end_15
     .catch Landroid/content/ActivityNotFoundException; {:try_start_15 .. :try_end_15} :catch_d
 
     if-nez v0, :cond_8
 
     :try_start_16
-    sget-boolean v0, Lcom/whatsapp/App;->u:Z
+    sget-boolean v0, Lcom/whatsapp/App;->aw:Z
     :try_end_16
     .catch Landroid/content/ActivityNotFoundException; {:try_start_16 .. :try_end_16} :catch_e
 
     if-eqz v0, :cond_9
 
-    .line 58
+    .line 315
     :cond_8
     :try_start_17
-    invoke-static {}, Lcom/whatsapp/App;->B()Z
+    invoke-static {}, Lcom/whatsapp/App;->au()Z
     :try_end_17
     .catch Landroid/content/ActivityNotFoundException; {:try_start_17 .. :try_end_17} :catch_f
 
@@ -3057,21 +2984,21 @@
 
     if-eqz v0, :cond_b
 
-    const v0, 0x7f0e027c
+    const v0, 0x7f0e0285
 
     :goto_2
     :try_start_18
-    invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationsFragment;->c(I)V
+    invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationsFragment;->b(I)V
 
     if-eqz v2, :cond_a
 
-    .line 117
+    .line 144
     :cond_9
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
-    invoke-virtual {v0, v2}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v0, v2}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v0
 
@@ -3079,11 +3006,11 @@
 
     invoke-direct {v2}, Lcom/whatsapp/ConversationsFragment$EmailConversationMediaChoiceDialogFragment;-><init>()V
 
-    invoke-direct {p0, v0, v2}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/adg;Landroid/support/v4/app/DialogFragment;)Landroid/support/v4/app/DialogFragment;
+    invoke-direct {p0, v0, v2}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/tc;Landroid/support/v4/app/DialogFragment;)Landroid/support/v4/app/DialogFragment;
 
     move-result-object v0
 
-    .line 216
+    .line 268
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getFragmentManager()Landroid/support/v4/app/FragmentManager;
 
     move-result-object v2
@@ -3097,10 +3024,10 @@
     :cond_a
     move v0, v1
 
-    .line 25
+    .line 333
     goto/16 :goto_0
 
-    .line 351
+    .line 251
     :catch_d
     move-exception v0
 
@@ -3109,7 +3036,7 @@
     :try_end_19
     .catch Landroid/content/ActivityNotFoundException; {:try_start_19 .. :try_end_19} :catch_e
 
-    .line 58
+    .line 315
     :catch_e
     move-exception v0
 
@@ -3124,17 +3051,17 @@
     throw v0
 
     :cond_b
-    const v0, 0x7f0e027d
+    const v0, 0x7f0e0286
 
     goto :goto_2
 
-    .line 216
+    .line 268
     :catch_10
     move-exception v0
 
     throw v0
 
-    .line 81
+    .line 65
     :pswitch_5
     invoke-interface {p1}, Landroid/view/MenuItem;->getMenuInfo()Landroid/view/ContextMenu$ContextMenuInfo;
 
@@ -3148,10 +3075,10 @@
 
     move v0, v1
 
-    .line 75
+    .line 208
     goto/16 :goto_0
 
-    .line 148
+    .line 90
     :pswitch_6
     invoke-interface {p1}, Landroid/view/MenuItem;->getMenuInfo()Landroid/view/ContextMenu$ContextMenuInfo;
 
@@ -3165,41 +3092,41 @@
 
     move v0, v1
 
-    .line 313
+    .line 145
     goto/16 :goto_0
 
-    .line 186
+    .line 138
     :pswitch_7
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    sget-object v2, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
-    invoke-virtual {v2, v3}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v2, v3}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lcom/whatsapp/d_;->g(Lcom/whatsapp/adg;)V
+    invoke-virtual {v0, v2}, Lcom/whatsapp/et;->d(Lcom/whatsapp/tc;)V
 
     move v0, v1
 
-    .line 324
+    .line 293
     goto/16 :goto_0
 
-    .line 203
+    .line 249
     :pswitch_8
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
-    invoke-virtual {v0, v3}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v0, v3}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v0
 
-    .line 7
+    .line 187
     :try_start_1b
-    invoke-virtual {v0}, Lcom/whatsapp/adg;->q()Z
+    invoke-virtual {v0}, Lcom/whatsapp/tc;->p()Z
     :try_end_1b
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1b .. :try_end_1b} :catch_11
 
@@ -3207,31 +3134,31 @@
 
     if-eqz v3, :cond_c
 
-    .line 32
+    .line 292
     :try_start_1c
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lcom/whatsapp/ListChatInfo;->a(Lcom/whatsapp/adg;Landroid/app/Activity;)V
+    invoke-static {v0, v3}, Lcom/whatsapp/ListChatInfo;->a(Lcom/whatsapp/tc;Landroid/app/Activity;)V
 
     if-eqz v2, :cond_d
 
-    .line 274
+    .line 158
     :cond_c
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/whatsapp/GroupChatInfo;->a(Lcom/whatsapp/adg;Landroid/app/Activity;)V
+    invoke-static {v0, v2}, Lcom/whatsapp/GroupChatInfo;->a(Lcom/whatsapp/tc;Landroid/app/Activity;)V
 
     :cond_d
     move v0, v1
 
-    .line 338
+    .line 343
     goto/16 :goto_0
 
-    .line 32
+    .line 292
     :catch_11
     move-exception v0
 
@@ -3239,13 +3166,13 @@
     :try_end_1c
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1c .. :try_end_1c} :catch_12
 
-    .line 274
+    .line 158
     :catch_12
     move-exception v0
 
     throw v0
 
-    .line 111
+    .line 47
     nop
 
     :pswitch_data_0
@@ -3270,12 +3197,12 @@
 
     const/4 v5, 0x0
 
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
+    sget v1, Lcom/whatsapp/App;->h:I
 
-    .line 29
+    .line 267
     invoke-super {p0, p1, p2, p3}, Lcom/actionbarsherlock/app/SherlockListFragment;->onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
 
-    .line 189
+    .line 236
     check-cast p3, Landroid/widget/AdapterView$AdapterContextMenuInfo;
 
     iget-object v0, p3, Landroid/widget/AdapterView$AdapterContextMenuInfo;->targetView:Landroid/view/View;
@@ -3284,16 +3211,16 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/whatsapp/xd;
+    check-cast v0, Lcom/whatsapp/n9;
 
-    .line 65
+    .line 19
     if-nez v0, :cond_1
 
-    .line 161
+    .line 167
     :try_start_0
     sget-object v0, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x11
+    const/4 v1, 0x3
 
     aget-object v0, v0, v1
 
@@ -3301,40 +3228,41 @@
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 322
+    .line 281
     :cond_0
     :goto_0
     return-void
 
+    .line 141
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 28
+    .line 247
     :cond_1
-    iget-object v2, v0, Lcom/whatsapp/xd;->k:Ljava/lang/String;
+    iget-object v2, v0, Lcom/whatsapp/n9;->a:Ljava/lang/String;
 
-    iput-object v2, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iput-object v2, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
-    .line 282
-    sget-object v2, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 278
+    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iget-object v3, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
-    invoke-virtual {v2, v3}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v2, v3}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v2
 
-    .line 164
+    .line 308
     :try_start_1
     sget-object v3, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x13
+    const/4 v4, 0x4
 
     aget-object v3, v3, v4
 
-    iget-object v4, v0, Lcom/whatsapp/xd;->k:Ljava/lang/String;
+    iget-object v4, v0, Lcom/whatsapp/n9;->a:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -3342,14 +3270,14 @@
 
     if-eqz v3, :cond_2
 
-    .line 135
+    .line 20
     const/4 v0, 0x0
 
     const v1, 0x7f0b000d
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0e0119
+    const v3, 0x7f0e011f
 
     invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
@@ -3361,16 +3289,16 @@
 
     goto :goto_0
 
-    .line 292
+    .line 262
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 290
+    .line 139
     :cond_2
     :try_start_2
-    invoke-virtual {v2}, Lcom/whatsapp/adg;->s()Z
+    invoke-virtual {v2}, Lcom/whatsapp/tc;->b()Z
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
@@ -3378,13 +3306,13 @@
 
     if-eqz v3, :cond_3
 
-    .line 174
+    .line 160
     :try_start_3
-    iget-object v0, v2, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v0, v2, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
     sget-object v1, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x12
+    const/4 v2, 0x5
 
     aget-object v1, v1, v2
 
@@ -3396,8 +3324,8 @@
 
     if-nez v0, :cond_0
 
-    .line 330
-    const v0, 0x7f0e011f
+    .line 82
+    const v0, 0x7f0e0125
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
@@ -3407,7 +3335,7 @@
 
     goto :goto_0
 
-    .line 174
+    .line 160
     :catch_2
     move-exception v0
 
@@ -3416,18 +3344,18 @@
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 293
+    .line 175
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 340
+    .line 155
     :cond_3
     :try_start_5
-    iget-object v3, v2, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v3, v2, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    invoke-static {}, Lcom/whatsapp/ba;->e()Ljava/lang/String;
+    invoke-static {}, Lcom/whatsapp/rb;->f()Ljava/lang/String;
 
     move-result-object v4
 
@@ -3439,17 +3367,17 @@
 
     if-nez v3, :cond_0
 
-    .line 210
+    .line 140
     :try_start_6
-    iget-object v3, v2, Lcom/whatsapp/adg;->m:Lcom/whatsapp/iv;
+    iget-object v3, v2, Lcom/whatsapp/tc;->s:Lcom/whatsapp/p5;
     :try_end_6
     .catch Landroid/content/ActivityNotFoundException; {:try_start_6 .. :try_end_6} :catch_6
 
     if-nez v3, :cond_6
 
-    .line 22
+    .line 157
     :try_start_7
-    invoke-virtual {v2}, Lcom/whatsapp/adg;->t()Z
+    invoke-virtual {v2}, Lcom/whatsapp/tc;->i()Z
     :try_end_7
     .catch Landroid/content/ActivityNotFoundException; {:try_start_7 .. :try_end_7} :catch_7
 
@@ -3457,9 +3385,9 @@
 
     if-eqz v3, :cond_4
 
-    .line 226
+    .line 342
     :try_start_8
-    iget-object v0, v0, Lcom/whatsapp/xd;->m:Landroid/view/View;
+    iget-object v0, v0, Lcom/whatsapp/n9;->g:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
     :try_end_8
@@ -3469,14 +3397,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 126
+    .line 15
     const/4 v0, 0x0
 
     const v3, 0x7f0b000f
 
     const/4 v4, 0x0
 
-    const v5, 0x7f0e01d3
+    const v5, 0x7f0e01d9
 
     :try_start_9
     invoke-virtual {p0, v5}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
@@ -3489,10 +3417,10 @@
 
     if-eqz v1, :cond_7
 
-    .line 202
+    .line 231
     :cond_4
     :try_start_a
-    invoke-virtual {v2}, Lcom/whatsapp/adg;->q()Z
+    invoke-virtual {v2}, Lcom/whatsapp/tc;->p()Z
     :try_end_a
     .catch Landroid/content/ActivityNotFoundException; {:try_start_a .. :try_end_a} :catch_a
 
@@ -3500,14 +3428,14 @@
 
     if-eqz v0, :cond_5
 
-    .line 258
+    .line 332
     const/4 v0, 0x0
 
     const v3, 0x7f0b000f
 
     const/4 v4, 0x0
 
-    const v5, 0x7f0e0214
+    const v5, 0x7f0e021a
 
     :try_start_b
     invoke-virtual {p0, v5}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
@@ -3520,7 +3448,7 @@
 
     if-eqz v1, :cond_7
 
-    .line 84
+    .line 272
     :cond_5
     const/4 v0, 0x0
 
@@ -3537,7 +3465,7 @@
 
     invoke-interface {p1, v0, v3, v4, v5}, Landroid/view/ContextMenu;->add(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
 
-    .line 191
+    .line 275
     const/4 v0, 0x0
 
     const v3, 0x7f0b0009
@@ -3554,7 +3482,7 @@
 
     if-eqz v1, :cond_7
 
-    .line 160
+    .line 129
     :cond_6
     const/4 v0, 0x0
 
@@ -3562,7 +3490,7 @@
 
     const/4 v4, 0x0
 
-    const v5, 0x7f0e0460
+    const v5, 0x7f0e0470
 
     invoke-virtual {p0, v5}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
@@ -3572,10 +3500,10 @@
     :try_end_c
     .catch Landroid/content/ActivityNotFoundException; {:try_start_c .. :try_end_c} :catch_c
 
-    .line 212
+    .line 22
     :cond_7
     :try_start_d
-    invoke-virtual {v2}, Lcom/whatsapp/adg;->q()Z
+    invoke-virtual {v2}, Lcom/whatsapp/tc;->p()Z
     :try_end_d
     .catch Landroid/content/ActivityNotFoundException; {:try_start_d .. :try_end_d} :catch_d
 
@@ -3584,13 +3512,13 @@
     if-nez v0, :cond_8
 
     :try_start_e
-    invoke-static {}, Lcom/whatsapp/App;->az()Z
+    invoke-static {}, Lcom/whatsapp/App;->ar()Z
 
     move-result v0
 
     if-nez v0, :cond_8
 
-    .line 268
+    .line 35
     const/4 v0, 0x0
 
     const v3, 0x7f0b000c
@@ -3607,14 +3535,14 @@
     :try_end_e
     .catch Landroid/content/ActivityNotFoundException; {:try_start_e .. :try_end_e} :catch_e
 
-    .line 170
+    .line 30
     :cond_8
     :try_start_f
-    sget-object v0, Lcom/whatsapp/App;->l:Lcom/whatsapp/a2v;
+    sget-object v0, Lcom/whatsapp/App;->au:Lcom/whatsapp/amo;
 
-    iget-object v3, v2, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v3, v2, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    invoke-virtual {v0, v3}, Lcom/whatsapp/a2v;->h(Ljava/lang/String;)Z
+    invoke-virtual {v0, v3}, Lcom/whatsapp/amo;->o(Ljava/lang/String;)Z
     :try_end_f
     .catch Landroid/content/ActivityNotFoundException; {:try_start_f .. :try_end_f} :catch_f
 
@@ -3622,11 +3550,11 @@
 
     if-eqz v0, :cond_a
 
-    .line 342
+    .line 60
     :try_start_10
-    iget-object v0, v2, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v0, v2, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/whatsapp/adg;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/whatsapp/tc;->d(Ljava/lang/String;)Z
     :try_end_10
     .catch Landroid/content/ActivityNotFoundException; {:try_start_10 .. :try_end_10} :catch_10
 
@@ -3634,14 +3562,14 @@
 
     if-eqz v0, :cond_9
 
-    .line 51
+    .line 200
     const/4 v0, 0x0
 
     const v3, 0x7f0b0010
 
     const/4 v4, 0x0
 
-    const v5, 0x7f0e0436
+    const v5, 0x7f0e0446
 
     :try_start_11
     invoke-virtual {p0, v5}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
@@ -3654,7 +3582,7 @@
 
     if-eqz v1, :cond_c
 
-    .line 341
+    .line 78
     :cond_9
     const/4 v0, 0x0
 
@@ -3662,7 +3590,7 @@
 
     const/4 v4, 0x0
 
-    const v5, 0x7f0e0437
+    const v5, 0x7f0e0447
 
     :try_start_12
     invoke-virtual {p0, v5}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
@@ -3675,12 +3603,12 @@
 
     if-eqz v1, :cond_c
 
-    .line 69
+    .line 198
     :cond_a
     :try_start_13
-    iget-object v0, v2, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v0, v2, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/whatsapp/adg;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/whatsapp/tc;->d(Ljava/lang/String;)Z
     :try_end_13
     .catch Landroid/content/ActivityNotFoundException; {:try_start_13 .. :try_end_13} :catch_13
 
@@ -3688,7 +3616,7 @@
 
     if-eqz v0, :cond_b
 
-    .line 110
+    .line 260
     const/4 v0, 0x0
 
     const v3, 0x7f0b000a
@@ -3706,7 +3634,7 @@
 
     if-eqz v1, :cond_c
 
-    .line 251
+    .line 29
     :cond_b
     const/4 v0, 0x0
 
@@ -3724,10 +3652,10 @@
     :try_end_14
     .catch Landroid/content/ActivityNotFoundException; {:try_start_14 .. :try_end_14} :catch_14
 
-    .line 8
+    .line 245
     :cond_c
     :try_start_15
-    invoke-virtual {v2}, Lcom/whatsapp/adg;->t()Z
+    invoke-virtual {v2}, Lcom/whatsapp/tc;->i()Z
     :try_end_15
     .catch Landroid/content/ActivityNotFoundException; {:try_start_15 .. :try_end_15} :catch_15
 
@@ -3735,7 +3663,7 @@
 
     if-eqz v0, :cond_d
 
-    .line 41
+    .line 106
     const/4 v3, 0x0
 
     const v4, 0x7f0b000d
@@ -3743,9 +3671,9 @@
     const/4 v5, 0x0
 
     :try_start_16
-    iget-object v0, v2, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v0, v2, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/whatsapp/ba;->f(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/whatsapp/rb;->b(Ljava/lang/String;)Z
     :try_end_16
     .catch Landroid/content/ActivityNotFoundException; {:try_start_16 .. :try_end_16} :catch_16
 
@@ -3753,7 +3681,7 @@
 
     if-eqz v0, :cond_10
 
-    const v0, 0x7f0e016e
+    const v0, 0x7f0e0174
 
     :goto_1
     :try_start_17
@@ -3767,10 +3695,10 @@
 
     if-eqz v1, :cond_f
 
-    .line 136
+    .line 302
     :cond_d
     :try_start_18
-    invoke-virtual {v2}, Lcom/whatsapp/adg;->q()Z
+    invoke-virtual {v2}, Lcom/whatsapp/tc;->p()Z
     :try_end_18
     .catch Landroid/content/ActivityNotFoundException; {:try_start_18 .. :try_end_18} :catch_18
 
@@ -3778,14 +3706,14 @@
 
     if-eqz v0, :cond_e
 
-    .line 348
+    .line 269
     const/4 v0, 0x0
 
     const v2, 0x7f0b000d
 
     const/4 v3, 0x0
 
-    const v4, 0x7f0e0121
+    const v4, 0x7f0e0127
 
     :try_start_19
     invoke-virtual {p0, v4}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
@@ -3796,7 +3724,7 @@
 
     if-eqz v1, :cond_f
 
-    .line 317
+    .line 59
     :cond_e
     const/4 v0, 0x0
 
@@ -3804,7 +3732,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0e011a
+    const v3, 0x7f0e0120
 
     invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
@@ -3814,27 +3742,27 @@
     :try_end_19
     .catch Landroid/content/ActivityNotFoundException; {:try_start_19 .. :try_end_19} :catch_19
 
-    .line 234
+    .line 258
     :cond_f
     :try_start_1a
-    sget-object v0, Lcom/whatsapp/App;->l:Lcom/whatsapp/a2v;
+    sget-object v0, Lcom/whatsapp/App;->au:Lcom/whatsapp/amo;
 
-    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/a2v;->q(Ljava/lang/String;)Lcom/whatsapp/protocol/ae;
+    invoke-virtual {v0, v1}, Lcom/whatsapp/amo;->i(Ljava/lang/String;)Lcom/whatsapp/protocol/c9;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 283
+    .line 279
     const/4 v0, 0x0
 
     const v1, 0x7f0b000e
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0e013b
+    const v3, 0x7f0e0141
 
     invoke-virtual {p0, v3}, Lcom/whatsapp/ConversationsFragment;->getString(I)Ljava/lang/String;
 
@@ -3851,13 +3779,13 @@
 
     throw v0
 
-    .line 288
+    .line 96
     :catch_5
     move-exception v0
 
     throw v0
 
-    .line 22
+    .line 157
     :catch_6
     move-exception v0
 
@@ -3866,7 +3794,7 @@
     :try_end_1b
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1b .. :try_end_1b} :catch_7
 
-    .line 226
+    .line 342
     :catch_7
     move-exception v0
 
@@ -3875,13 +3803,13 @@
     :try_end_1c
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1c .. :try_end_1c} :catch_8
 
-    .line 94
+    .line 281
     :catch_8
     move-exception v0
 
     throw v0
 
-    .line 202
+    .line 231
     :catch_9
     move-exception v0
 
@@ -3890,7 +3818,7 @@
     :try_end_1d
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1d .. :try_end_1d} :catch_a
 
-    .line 258
+    .line 332
     :catch_a
     move-exception v0
 
@@ -3899,7 +3827,7 @@
     :try_end_1e
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1e .. :try_end_1e} :catch_b
 
-    .line 191
+    .line 275
     :catch_b
     move-exception v0
 
@@ -3908,13 +3836,13 @@
     :try_end_1f
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1f .. :try_end_1f} :catch_c
 
-    .line 160
+    .line 129
     :catch_c
     move-exception v0
 
     throw v0
 
-    .line 212
+    .line 22
     :catch_d
     move-exception v0
 
@@ -3923,13 +3851,13 @@
     :try_end_20
     .catch Landroid/content/ActivityNotFoundException; {:try_start_20 .. :try_end_20} :catch_e
 
-    .line 268
+    .line 35
     :catch_e
     move-exception v0
 
     throw v0
 
-    .line 342
+    .line 60
     :catch_f
     move-exception v0
 
@@ -3938,7 +3866,7 @@
     :try_end_21
     .catch Landroid/content/ActivityNotFoundException; {:try_start_21 .. :try_end_21} :catch_10
 
-    .line 51
+    .line 200
     :catch_10
     move-exception v0
 
@@ -3947,7 +3875,7 @@
     :try_end_22
     .catch Landroid/content/ActivityNotFoundException; {:try_start_22 .. :try_end_22} :catch_11
 
-    .line 341
+    .line 78
     :catch_11
     move-exception v0
 
@@ -3956,7 +3884,7 @@
     :try_end_23
     .catch Landroid/content/ActivityNotFoundException; {:try_start_23 .. :try_end_23} :catch_12
 
-    .line 69
+    .line 198
     :catch_12
     move-exception v0
 
@@ -3965,7 +3893,7 @@
     :try_end_24
     .catch Landroid/content/ActivityNotFoundException; {:try_start_24 .. :try_end_24} :catch_13
 
-    .line 110
+    .line 260
     :catch_13
     move-exception v0
 
@@ -3974,13 +3902,13 @@
     :try_end_25
     .catch Landroid/content/ActivityNotFoundException; {:try_start_25 .. :try_end_25} :catch_14
 
-    .line 251
+    .line 29
     :catch_14
     move-exception v0
 
     throw v0
 
-    .line 41
+    .line 106
     :catch_15
     move-exception v0
 
@@ -3995,11 +3923,11 @@
     throw v0
 
     :cond_10
-    const v0, 0x7f0e011f
+    const v0, 0x7f0e0125
 
     goto :goto_1
 
-    .line 136
+    .line 302
     :catch_17
     move-exception v0
 
@@ -4008,7 +3936,7 @@
     :try_end_27
     .catch Landroid/content/ActivityNotFoundException; {:try_start_27 .. :try_end_27} :catch_18
 
-    .line 348
+    .line 269
     :catch_18
     move-exception v0
 
@@ -4017,7 +3945,7 @@
     :try_end_28
     .catch Landroid/content/ActivityNotFoundException; {:try_start_28 .. :try_end_28} :catch_19
 
-    .line 317
+    .line 59
     :catch_19
     move-exception v0
 
@@ -4028,10 +3956,10 @@
     .locals 0
 
     .prologue
-    .line 335
+    .line 7
     invoke-super {p0, p1, p2}, Lcom/actionbarsherlock/app/SherlockListFragment;->onCreateOptionsMenu(Lcom/actionbarsherlock/view/Menu;Lcom/actionbarsherlock/view/MenuInflater;)V
 
-    .line 254
+    .line 85
     return-void
 .end method
 
@@ -4039,7 +3967,7 @@
     .locals 2
 
     .prologue
-    .line 237
+    .line 304
     const v0, 0x7f030055
 
     const/4 v1, 0x0
@@ -4055,30 +3983,30 @@
     .locals 2
 
     .prologue
-    .line 20
+    .line 24
     sget-object v0, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x17
+    const/16 v1, 0x1a
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 256
+    .line 31
     invoke-super {p0}, Lcom/actionbarsherlock/app/SherlockListFragment;->onDestroy()V
 
-    .line 123
-    invoke-static {p0}, Lcom/whatsapp/App;->a(Lcom/whatsapp/o7;)V
+    .line 312
+    invoke-static {p0}, Lcom/whatsapp/App;->a(Lcom/whatsapp/by;)V
 
-    .line 219
-    invoke-static {p0}, Lcom/whatsapp/App;->b(Lcom/whatsapp/apf;)V
+    .line 132
+    invoke-static {p0}, Lcom/whatsapp/App;->a(Lcom/whatsapp/q_;)V
 
-    .line 153
-    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->d:Lcom/whatsapp/c6;
+    .line 50
+    iget-object v0, p0, Lcom/whatsapp/ConversationsFragment;->j:Lcom/whatsapp/wg;
 
-    invoke-virtual {v0}, Lcom/whatsapp/c6;->a()V
+    invoke-virtual {v0}, Lcom/whatsapp/wg;->a()V
 
-    .line 349
+    .line 240
     return-void
 .end method
 
@@ -4090,21 +4018,21 @@
 
     const/4 v2, 0x1
 
-    sget-boolean v3, Lcom/whatsapp/App;->aL:Z
+    sget v3, Lcom/whatsapp/App;->h:I
 
-    .line 47
+    .line 130
     invoke-interface {p1}, Lcom/actionbarsherlock/view/MenuItem;->getItemId()I
 
     move-result v1
 
     packed-switch v1, :pswitch_data_0
 
-    .line 321
+    .line 347
     :goto_0
     :pswitch_0
     return v0
 
-    .line 52
+    .line 250
     :pswitch_1
     new-instance v0, Landroid/content/Intent;
 
@@ -4116,15 +4044,15 @@
 
     invoke-direct {v0, v1, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 309
+    .line 44
     invoke-virtual {p0, v0, v2}, Lcom/whatsapp/ConversationsFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     move v0, v2
 
-    .line 321
+    .line 67
     goto :goto_0
 
-    .line 76
+    .line 257
     :pswitch_2
     new-instance v0, Landroid/content/Intent;
 
@@ -4136,17 +4064,17 @@
 
     invoke-direct {v0, v1, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 70
+    .line 277
     invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationsFragment;->startActivity(Landroid/content/Intent;)V
 
     move v0, v2
 
-    .line 141
+    .line 347
     goto :goto_0
 
-    .line 326
+    .line 227
     :pswitch_3
-    invoke-static {}, Lcom/whatsapp/_q;->i()Ljava/util/ArrayList;
+    invoke-static {}, Lcom/whatsapp/n3;->b()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -4161,7 +4089,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_6
 
     invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -4169,18 +4097,18 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 188
+    .line 285
     :try_start_0
-    invoke-static {v0}, Lcom/whatsapp/ba;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/whatsapp/rb;->h(Ljava/lang/String;)Z
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result v5
 
-    if-eqz v5, :cond_4
+    if-eqz v5, :cond_5
 
     :try_start_1
-    invoke-static {}, Lcom/whatsapp/App;->y()Ljava/lang/String;
+    invoke-static {}, Lcom/whatsapp/App;->aw()Ljava/lang/String;
 
     move-result-object v5
 
@@ -4190,36 +4118,36 @@
 
     move-result v5
 
-    if-eqz v5, :cond_4
+    if-eqz v5, :cond_5
 
-    .line 46
+    .line 148
     :try_start_2
-    invoke-static {v0}, Lcom/whatsapp/adg;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/whatsapp/tc;->b(Ljava/lang/String;)Z
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
     move-result v0
 
-    if-nez v0, :cond_4
+    if-nez v0, :cond_5
 
-    .line 207
+    .line 52
     add-int/lit8 v1, v1, 0x1
 
     move v0, v1
 
-    .line 159
+    .line 32
     :goto_2
-    if-eqz v3, :cond_3
+    if-eqz v3, :cond_4
 
-    .line 298
+    .line 101
     :goto_3
     :try_start_3
-    sget v1, Lcom/whatsapp/t4;->o:I
+    sget v1, Lcom/whatsapp/bw;->a:I
 
     if-lt v0, v1, :cond_0
 
-    .line 176
-    const v0, 0x7f0e01b4
+    .line 180
+    const v0, 0x7f0e01ba
 
     const/4 v1, 0x1
 
@@ -4227,7 +4155,7 @@
 
     const/4 v3, 0x0
 
-    sget v4, Lcom/whatsapp/t4;->o:I
+    sget v4, Lcom/whatsapp/bw;->a:I
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -4245,10 +4173,10 @@
 
     move v0, v2
 
-    .line 103
+    .line 127
     goto :goto_0
 
-    .line 188
+    .line 285
     :catch_0
     move-exception v0
 
@@ -4257,7 +4185,7 @@
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_1
 
-    .line 46
+    .line 148
     :catch_1
     move-exception v0
 
@@ -4266,19 +4194,19 @@
     :try_end_5
     .catch Landroid/content/ActivityNotFoundException; {:try_start_5 .. :try_end_5} :catch_2
 
-    .line 207
+    .line 52
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 103
+    .line 127
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 289
+    .line 242
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
@@ -4290,27 +4218,56 @@
 
     invoke-direct {v0, v1, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 347
+    .line 212
     invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationsFragment;->startActivity(Landroid/content/Intent;)V
 
     move v0, v2
 
-    .line 139
+    .line 75
     goto/16 :goto_0
 
-    .line 178
+    .line 10
     :pswitch_4
     :try_start_6
-    invoke-static {}, Lcom/whatsapp/yo;->h()Z
+    invoke-static {}, Lcom/whatsapp/ow;->g()Z
     :try_end_6
     .catch Landroid/content/ActivityNotFoundException; {:try_start_6 .. :try_end_6} :catch_4
 
     move-result v0
 
-    if-nez v0, :cond_1
+    if-eqz v0, :cond_1
 
-    .line 73
+    .line 179
     :try_start_7
+    new-instance v0, Landroid/content/Intent;
+
+    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v1
+
+    const-class v4, Lcom/whatsapp/WebSessionsActivity;
+
+    invoke-direct {v0, v1, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationsFragment;->startActivity(Landroid/content/Intent;)V
+    :try_end_7
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_7 .. :try_end_7} :catch_5
+
+    if-eqz v3, :cond_3
+
+    .line 280
+    :cond_1
+    :try_start_8
+    invoke-static {}, Lcom/whatsapp/App;->aW()Z
+    :try_end_8
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_8 .. :try_end_8} :catch_6
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 79
+    :try_start_9
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -4321,54 +4278,79 @@
 
     invoke-direct {v0, v1, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const/16 v1, 0xd
+    invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationsFragment;->startActivity(Landroid/content/Intent;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/whatsapp/ConversationsFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    if-eqz v3, :cond_3
 
-    if-eqz v3, :cond_2
-
-    .line 196
-    :cond_1
-    const/4 v0, 0x1
-
-    invoke-static {v0}, Lcom/whatsapp/App;->b(Z)V
-
+    .line 13
     :cond_2
+    invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v0
+
+    const v1, 0x7f0e0287
+
+    const/4 v3, 0x0
+
+    invoke-static {v0, v1, v3}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
+    :try_end_9
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_9 .. :try_end_9} :catch_7
+
+    :cond_3
     move v0, v2
 
-    .line 14
+    .line 63
     goto/16 :goto_0
 
-    .line 73
+    .line 179
     :catch_4
     move-exception v0
 
+    :try_start_a
     throw v0
-    :try_end_7
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_7 .. :try_end_7} :catch_5
+    :try_end_a
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_a .. :try_end_a} :catch_5
 
-    .line 196
+    .line 280
     :catch_5
+    move-exception v0
+
+    :try_start_b
+    throw v0
+    :try_end_b
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_b .. :try_end_b} :catch_6
+
+    .line 79
+    :catch_6
+    move-exception v0
+
+    :try_start_c
+    throw v0
+    :try_end_c
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_c .. :try_end_c} :catch_7
+
+    .line 13
+    :catch_7
     move-exception v0
 
     throw v0
 
-    :cond_3
+    :cond_4
     move v1, v0
 
-    goto :goto_1
-
-    :cond_4
-    move v0, v1
-
-    goto :goto_2
+    goto/16 :goto_1
 
     :cond_5
     move v0, v1
 
+    goto :goto_2
+
+    :cond_6
+    move v0, v1
+
     goto :goto_3
 
-    .line 47
+    .line 130
     :pswitch_data_0
     .packed-switch 0x7f0b0012
         :pswitch_2
@@ -4385,26 +4367,26 @@
     .locals 2
 
     .prologue
-    .line 245
+    .line 14
     sget-object v0, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x3
+    const/16 v1, 0x19
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 208
+    .line 169
     invoke-super {p0}, Lcom/actionbarsherlock/app/SherlockListFragment;->onPause()V
 
-    .line 238
+    .line 300
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/whatsapp/util/undobar/UndoBarController;->b(Landroid/app/Activity;)V
 
-    .line 138
+    .line 33
     return-void
 .end method
 
@@ -4412,27 +4394,27 @@
     .locals 2
 
     .prologue
-    .line 265
+    .line 113
     sget-object v0, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x5
+    const/16 v1, 0x10
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 304
+    .line 166
     invoke-super {p0}, Lcom/actionbarsherlock/app/SherlockListFragment;->onResume()V
 
-    .line 205
-    invoke-static {}, Lcom/whatsapp/notification/y;->b()V
+    .line 125
+    invoke-static {}, Lcom/whatsapp/notification/f;->a()V
 
-    .line 66
-    sget-object v0, Lcom/whatsapp/App;->ab:Landroid/media/AsyncPlayer;
+    .line 1
+    sget-object v0, Lcom/whatsapp/App;->L:Landroid/media/AsyncPlayer;
 
     invoke-virtual {v0}, Landroid/media/AsyncPlayer;->stop()V
 
-    .line 224
+    .line 170
     return-void
 .end method
 
@@ -4440,21 +4422,21 @@
     .locals 2
 
     .prologue
-    .line 77
+    .line 273
     invoke-super {p0, p1}, Lcom/actionbarsherlock/app/SherlockListFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 64
+    .line 118
     sget-object v0, Lcom/whatsapp/ConversationsFragment;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x18
+    const/16 v1, 0xe
 
     aget-object v0, v0, v1
 
-    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/whatsapp/ConversationsFragment;->e:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 93
+    .line 282
     return-void
 .end method
 
@@ -4462,10 +4444,10 @@
     .locals 0
 
     .prologue
-    .line 302
+    .line 314
     invoke-super {p0}, Lcom/actionbarsherlock/app/SherlockListFragment;->onStart()V
 
-    .line 169
+    .line 131
     return-void
 .end method
 
@@ -4473,9 +4455,9 @@
     .locals 0
 
     .prologue
-    .line 296
+    .line 58
     invoke-super {p0}, Lcom/actionbarsherlock/app/SherlockListFragment;->onStop()V
 
-    .line 3
+    .line 337
     return-void
 .end method

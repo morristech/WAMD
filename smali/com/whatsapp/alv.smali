@@ -1,255 +1,252 @@
-.class final enum Lcom/whatsapp/alv;
-.super Ljava/lang/Enum;
+.class Lcom/whatsapp/alv;
+.super Lcom/google/android/maps/ItemizedOverlay;
 .source "alv.java"
 
 
-# static fields
-.field public static final BROADCAST:Lcom/whatsapp/alv;
-
-.field public static final CALL:Lcom/whatsapp/alv;
-
-.field public static final NORMAL:Lcom/whatsapp/alv;
-
-.field private static final a:[Lcom/whatsapp/alv;
-
-.field private static final z:[Ljava/lang/String;
+# instance fields
+.field final a:Lcom/whatsapp/LocationPicker;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 13
+.method public constructor <init>(Lcom/whatsapp/LocationPicker;)V
+    .locals 2
 
     .prologue
-    const/4 v12, 0x3
+    .line 26
+    iput-object p1, p0, Lcom/whatsapp/alv;->a:Lcom/whatsapp/LocationPicker;
 
-    const/4 v5, 0x2
+    .line 9
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    const/4 v2, 0x1
+    invoke-virtual {v0}, Lcom/whatsapp/App;->getResources()Landroid/content/res/Resources;
 
-    const/4 v1, 0x0
+    move-result-object v0
 
-    new-array v4, v12, [Ljava/lang/String;
+    const v1, 0x7f020638
 
-    const-string v3, "*@Ie"
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
-    const/4 v0, -0x1
+    move-result-object v0
 
-    move-object v6, v4
+    invoke-static {v0}, Lcom/whatsapp/alv;->boundCenter(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
-    move-object v7, v4
+    move-result-object v0
 
-    move v4, v1
+    invoke-direct {p0, v0}, Lcom/google/android/maps/ItemizedOverlay;-><init>(Landroid/graphics/drawable/Drawable;)V
 
-    :goto_0
-    invoke-virtual {v3}, Ljava/lang/String;->toCharArray()[C
+    .line 20
+    new-instance v0, Lcom/whatsapp/x9;
 
-    move-result-object v3
+    invoke-direct {v0, p0, p1}, Lcom/whatsapp/x9;-><init>(Lcom/whatsapp/alv;Lcom/whatsapp/LocationPicker;)V
 
-    array-length v8, v3
+    invoke-virtual {p0, v0}, Lcom/whatsapp/alv;->setOnFocusChangeListener(Lcom/google/android/maps/ItemizedOverlay$OnFocusChangeListener;)V
 
-    move v9, v8
-
-    move v10, v1
-
-    move-object v8, v3
-
-    :goto_1
-    if-gt v9, v10, :cond_0
-
-    new-instance v3, Ljava/lang/String;
-
-    invoke-direct {v3, v8}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v3}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v3
-
-    packed-switch v0, :pswitch_data_0
-
-    aput-object v3, v6, v4
-
-    const-string v0, "+SJh.*@V}"
-
-    move-object v3, v0
-
-    move v4, v2
-
-    move-object v6, v7
-
-    move v0, v1
-
-    goto :goto_0
-
-    :pswitch_0
-    aput-object v3, v6, v4
-
-    const-string v0, "\'NWd+%"
-
-    move-object v3, v0
-
-    move v4, v5
-
-    move-object v6, v7
-
-    move v0, v2
-
-    goto :goto_0
-
-    :pswitch_1
-    aput-object v3, v6, v4
-
-    sput-object v7, Lcom/whatsapp/alv;->z:[Ljava/lang/String;
-
-    .line 6
-    new-instance v0, Lcom/whatsapp/alv;
-
-    sget-object v3, Lcom/whatsapp/alv;->z:[Ljava/lang/String;
-
-    aget-object v3, v3, v5
-
-    invoke-direct {v0, v3, v1}, Lcom/whatsapp/alv;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/whatsapp/alv;->NORMAL:Lcom/whatsapp/alv;
-
-    .line 4
-    new-instance v0, Lcom/whatsapp/alv;
-
-    sget-object v3, Lcom/whatsapp/alv;->z:[Ljava/lang/String;
-
-    aget-object v3, v3, v2
-
-    invoke-direct {v0, v3, v2}, Lcom/whatsapp/alv;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/whatsapp/alv;->BROADCAST:Lcom/whatsapp/alv;
-
-    .line 3
-    new-instance v0, Lcom/whatsapp/alv;
-
-    sget-object v3, Lcom/whatsapp/alv;->z:[Ljava/lang/String;
-
-    aget-object v3, v3, v1
-
-    invoke-direct {v0, v3, v5}, Lcom/whatsapp/alv;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/whatsapp/alv;->CALL:Lcom/whatsapp/alv;
-
-    .line 5
-    new-array v0, v12, [Lcom/whatsapp/alv;
-
-    sget-object v3, Lcom/whatsapp/alv;->NORMAL:Lcom/whatsapp/alv;
-
-    aput-object v3, v0, v1
-
-    sget-object v1, Lcom/whatsapp/alv;->BROADCAST:Lcom/whatsapp/alv;
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/whatsapp/alv;->CALL:Lcom/whatsapp/alv;
-
-    aput-object v1, v0, v5
-
-    sput-object v0, Lcom/whatsapp/alv;->a:[Lcom/whatsapp/alv;
-
+    .line 12
     return-void
-
-    .line 4294967295
-    :cond_0
-    aget-char v11, v8, v10
-
-    rem-int/lit8 v3, v10, 0x5
-
-    packed-switch v3, :pswitch_data_1
-
-    const/16 v3, 0x6a
-
-    :goto_2
-    xor-int/2addr v3, v11
-
-    int-to-char v3, v3
-
-    aput-char v3, v8, v10
-
-    add-int/lit8 v3, v10, 0x1
-
-    move v10, v3
-
-    goto :goto_1
-
-    :pswitch_2
-    const/16 v3, 0x69
-
-    goto :goto_2
-
-    :pswitch_3
-    move v3, v2
-
-    goto :goto_2
-
-    :pswitch_4
-    const/4 v3, 0x5
-
-    goto :goto_2
-
-    :pswitch_5
-    const/16 v3, 0x29
-
-    goto :goto_2
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-    .end packed-switch
-
-    :pswitch_data_1
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_3
-        :pswitch_4
-        :pswitch_5
-    .end packed-switch
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+
+# virtual methods
+.method public a()V
+    .locals 1
+
+    .prologue
+    .line 21
+    const/4 v0, -0x1
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/alv;->setLastFocusedIndex(I)V
+
+    .line 18
+    invoke-virtual {p0}, Lcom/whatsapp/alv;->populate()V
+
+    .line 13
+    return-void
+.end method
+
+.method protected createItem(I)Lcom/google/android/maps/OverlayItem;
+    .locals 8
+
+    .prologue
+    const-wide v6, 0x412e848000000000L
+
+    .line 17
+    iget-object v0, p0, Lcom/whatsapp/alv;->a:Lcom/whatsapp/LocationPicker;
+
+    invoke-static {v0}, Lcom/whatsapp/LocationPicker;->p(Lcom/whatsapp/LocationPicker;)Lcom/whatsapp/at9;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/whatsapp/at9;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/whatsapp/PlaceInfo;
+
+    .line 22
+    new-instance v1, Lcom/google/android/maps/GeoPoint;
+
+    iget-wide v2, v0, Lcom/whatsapp/PlaceInfo;->lat:D
+
+    mul-double/2addr v2, v6
+
+    double-to-int v2, v2
+
+    iget-wide v4, v0, Lcom/whatsapp/PlaceInfo;->lon:D
+
+    mul-double/2addr v4, v6
+
+    double-to-int v0, v4
+
+    invoke-direct {v1, v2, v0}, Lcom/google/android/maps/GeoPoint;-><init>(II)V
+
+    .line 4
+    new-instance v0, Lcom/google/android/maps/OverlayItem;
+
+    const-string v2, ""
+
+    const-string v3, ""
+
+    invoke-direct {v0, v1, v2, v3}, Lcom/google/android/maps/OverlayItem;-><init>(Lcom/google/android/maps/GeoPoint;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 2
+    sget-object v1, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    .line 25
+    invoke-virtual {v1}, Lcom/whatsapp/App;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v2, 0x7f020638
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/whatsapp/alv;->boundCenter(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/google/android/maps/OverlayItem;->setMarker(Landroid/graphics/drawable/Drawable;)V
+
+    .line 3
+    return-object v0
+.end method
+
+.method public draw(Landroid/graphics/Canvas;Lcom/google/android/maps/MapView;Z)V
     .locals 0
 
     .prologue
-    .line 2
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lcom/whatsapp/alv;
-    .locals 1
-
-    .prologue
-    .line 1
-    const-class v0, Lcom/whatsapp/alv;
-
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/whatsapp/alv;
-
-    return-object v0
-.end method
-
-.method public static values()[Lcom/whatsapp/alv;
-    .locals 1
-
-    .prologue
     .line 7
-    sget-object v0, Lcom/whatsapp/alv;->a:[Lcom/whatsapp/alv;
+    if-eqz p3, :cond_0
 
-    invoke-virtual {v0}, [Lcom/whatsapp/alv;->clone()Ljava/lang/Object;
+    .line 10
+    :goto_0
+    return-void
+
+    .line 8
+    :cond_0
+    invoke-super {p0, p1, p2, p3}, Lcom/google/android/maps/ItemizedOverlay;->draw(Landroid/graphics/Canvas;Lcom/google/android/maps/MapView;Z)V
+
+    goto :goto_0
+.end method
+
+.method protected onTap(I)Z
+    .locals 2
+
+    .prologue
+    .line 6
+    iget-object v1, p0, Lcom/whatsapp/alv;->a:Lcom/whatsapp/LocationPicker;
+
+    iget-object v0, p0, Lcom/whatsapp/alv;->a:Lcom/whatsapp/LocationPicker;
+
+    invoke-static {v0}, Lcom/whatsapp/LocationPicker;->p(Lcom/whatsapp/LocationPicker;)Lcom/whatsapp/at9;
 
     move-result-object v0
 
-    check-cast v0, [Lcom/whatsapp/alv;
+    invoke-virtual {v0, p1}, Lcom/whatsapp/at9;->get(I)Ljava/lang/Object;
 
-    return-object v0
+    move-result-object v0
+
+    check-cast v0, Lcom/whatsapp/PlaceInfo;
+
+    invoke-static {v1, v0}, Lcom/whatsapp/LocationPicker;->a(Lcom/whatsapp/LocationPicker;Lcom/whatsapp/PlaceInfo;)Lcom/whatsapp/PlaceInfo;
+
+    .line 14
+    iget-object v0, p0, Lcom/whatsapp/alv;->a:Lcom/whatsapp/LocationPicker;
+
+    invoke-static {v0}, Lcom/whatsapp/LocationPicker;->g(Lcom/whatsapp/LocationPicker;)Lcom/whatsapp/ig;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/whatsapp/ig;->notifyDataSetChanged()V
+
+    .line 23
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x8
+
+    if-lt v0, v1, :cond_0
+
+    .line 15
+    iget-object v0, p0, Lcom/whatsapp/alv;->a:Lcom/whatsapp/LocationPicker;
+
+    invoke-static {v0}, Lcom/whatsapp/LocationPicker;->b(Lcom/whatsapp/LocationPicker;)Landroid/widget/ListView;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Landroid/widget/ListView;->smoothScrollToPosition(I)V
+
+    sget v0, Lcom/whatsapp/App;->h:I
+
+    if-eqz v0, :cond_1
+
+    .line 24
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/alv;->a:Lcom/whatsapp/LocationPicker;
+
+    invoke-static {v0}, Lcom/whatsapp/LocationPicker;->b(Lcom/whatsapp/LocationPicker;)Landroid/widget/ListView;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Landroid/widget/ListView;->setSelection(I)V
+
+    .line 19
+    :cond_1
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public size()I
+    .locals 1
+
+    .prologue
+    .line 16
+    iget-object v0, p0, Lcom/whatsapp/alv;->a:Lcom/whatsapp/LocationPicker;
+
+    invoke-static {v0}, Lcom/whatsapp/LocationPicker;->p(Lcom/whatsapp/LocationPicker;)Lcom/whatsapp/at9;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 11
+    :goto_0
+    return v0
+
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/alv;->a:Lcom/whatsapp/LocationPicker;
+
+    invoke-static {v0}, Lcom/whatsapp/LocationPicker;->p(Lcom/whatsapp/LocationPicker;)Lcom/whatsapp/at9;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/whatsapp/at9;->size()I
+
+    move-result v0
+
+    goto :goto_0
 .end method

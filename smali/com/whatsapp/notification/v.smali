@@ -9,14 +9,18 @@
 # instance fields
 .field final a:Lcom/whatsapp/notification/PopupNotification;
 
+.field final b:Lcom/whatsapp/yk;
+
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/notification/PopupNotification;)V
+.method constructor <init>(Lcom/whatsapp/notification/PopupNotification;Lcom/whatsapp/yk;)V
     .locals 0
 
     .prologue
-    .line 3
+    .line 2
     iput-object p1, p0, Lcom/whatsapp/notification/v;->a:Lcom/whatsapp/notification/PopupNotification;
+
+    iput-object p2, p0, Lcom/whatsapp/notification/v;->b:Lcom/whatsapp/yk;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,10 +33,10 @@
     .locals 1
 
     .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/notification/v;->a:Lcom/whatsapp/notification/PopupNotification;
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/notification/v;->b:Lcom/whatsapp/yk;
 
-    invoke-static {v0}, Lcom/whatsapp/notification/PopupNotification;->g(Lcom/whatsapp/notification/PopupNotification;)V
+    invoke-virtual {v0}, Lcom/whatsapp/yk;->d()V
 
     .line 1
     return-void

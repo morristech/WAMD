@@ -1,56 +1,60 @@
 .class Lcom/whatsapp/lg;
-.super Landroid/os/AsyncTask;
+.super Ljava/lang/Object;
 .source "lg.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/r6;
+.field final a:Lcom/whatsapp/Conversations;
+
+.field final b:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/r6;)V
+.method constructor <init>(Lcom/whatsapp/Conversations;Ljava/lang/String;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/lg;->a:Lcom/whatsapp/r6;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/lg;->a:Lcom/whatsapp/Conversations;
 
-    invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
+    iput-object p2, p0, Lcom/whatsapp/lg;->b:Ljava/lang/String;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected a([Lcom/whatsapp/adg;)Ljava/lang/Void;
+.method public run()V
     .locals 2
 
     .prologue
     .line 2
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    const-wide/16 v0, 0x12c
 
-    invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    :try_start_0
+    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
 
-    move-result-object v1
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/lg;->b:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/d_;->c(Ljava/util/Collection;)V
+    const/4 v1, 0x0
 
-    .line 3
-    const/4 v0, 0x0
+    invoke-static {v0, v1}, Lcom/whatsapp/App;->a(Ljava/lang/String;Lcom/whatsapp/protocol/bn;)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object v0
-.end method
+    .line 5
+    :goto_0
+    return-void
 
-.method protected doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    .prologue
     .line 4
-    check-cast p1, [Lcom/whatsapp/adg;
+    :catch_0
+    move-exception v0
 
-    invoke-virtual {p0, p1}, Lcom/whatsapp/lg;->a([Lcom/whatsapp/adg;)Ljava/lang/Void;
-
-    move-result-object v0
-
-    return-object v0
+    goto :goto_0
 .end method

@@ -4,36 +4,34 @@
 
 
 # static fields
-.field private static W:Landroid/os/Handler;
+.field private static Q:Landroid/os/Handler;
 
 .field private static final ab:[Ljava/lang/String;
 
 
 # instance fields
-.field private final N:Lcom/whatsapp/CircularProgressBar;
+.field private final N:Landroid/widget/TextView;
 
-.field private final O:Landroid/view/View;
+.field private O:Lcom/whatsapp/a_3;
 
-.field private P:Lcom/whatsapp/az6;
+.field private final P:Landroid/widget/TextView;
 
-.field private final Q:Landroid/widget/TextView;
-
-.field private final R:Landroid/widget/TextView;
+.field private final R:Lcom/whatsapp/CircularProgressBar;
 
 .field private final S:Landroid/view/View;
 
-.field private T:Lcom/whatsapp/util/x;
+.field private final T:Landroid/widget/ImageView;
 
-.field private final U:Landroid/widget/TextView;
+.field private final U:Landroid/view/View;
 
-.field private final V:Landroid/widget/ImageView;
+.field private V:Lcom/whatsapp/util/ao;
+
+.field private final W:Landroid/widget/TextView;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 14
-
-    const/4 v5, 0x4
 
     const/4 v4, 0x3
 
@@ -41,13 +39,15 @@
 
     const/4 v2, 0x1
 
+    const/4 v5, 0x6
+
     const/4 v1, 0x0
 
     const/16 v0, 0xf
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "t5$X)\'\'3K51%l"
+    const-string v6, "6\u0011+\u0000cE\u001e8\t<"
 
     const/4 v0, -0x1
 
@@ -85,7 +85,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "t4$U}"
+    const-string v0, "6\u00030\rhe\u0011\'\u001ets\u0013x"
 
     move-object v6, v0
 
@@ -100,7 +100,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "t5/I\"n"
+    const-string v0, "|\u001e&"
 
     move-object v6, v0
 
@@ -115,7 +115,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "t5?T\"\'57T7n"
+    const-string v0, "`\u001e\'\u001bks\u00041\rasXb\nty\u001a\u001d\u0001c,"
 
     move-object v6, v0
 
@@ -130,13 +130,15 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "\"(3N*12%X 1nv_5;,\tT\"n"
+    const/4 v6, 0x4
 
-    move-object v6, v0
+    const-string v0, "6\u0003;\u001cc,"
 
-    move v7, v5
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
 
     move v0, v4
 
@@ -145,9 +147,35 @@
     :pswitch_3
     aput-object v6, v8, v7
 
-    const/4 v6, 0x5
+    const/4 v7, 0x5
 
-    const-string v0, "t/7T\"n"
+    const-string v6, "f\u00181"
+
+    const/4 v0, 0x4
+
+    move-object v8, v9
+
+    goto :goto_0
+
+    :pswitch_4
+    aput-object v6, v8, v7
+
+    const-string v6, "6\u00030\rhe\u0011\'\u001et\u007f\u0019%V"
+
+    const/4 v0, 0x5
+
+    move v7, v5
+
+    move-object v8, v9
+
+    goto :goto_0
+
+    :pswitch_5
+    aput-object v6, v8, v7
+
+    const/4 v6, 0x7
+
+    const-string v0, "6\u0003+\u0001ce\u0003#\u0001v,"
 
     move v7, v6
 
@@ -159,38 +187,12 @@
 
     goto :goto_0
 
-    :pswitch_4
-    aput-object v6, v8, v7
-
-    const/4 v7, 0x6
-
-    const-string v6, "t,3].5\u001e%P=1{"
-
-    const/4 v0, 0x5
-
-    move-object v8, v9
-
-    goto :goto_0
-
-    :pswitch_5
-    aput-object v6, v8, v7
-
-    const/4 v7, 0x7
-
-    const-string v6, "t5$X)\'\'3K5=/1\u0003"
-
-    const/4 v0, 0x6
-
-    move-object v8, v9
-
-    goto :goto_0
-
     :pswitch_6
     aput-object v6, v8, v7
 
     const/16 v7, 0x8
 
-    const-string v6, "t\'?U\"\u0007(,\\}"
+    const-string v6, "w\u001b\'\u001er"
 
     const/4 v0, 0x7
 
@@ -203,7 +205,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "t\'?U\"n"
+    const-string v6, "6\u001a\'\u0008ow(1\u0005|sM"
 
     const/16 v0, 0x8
 
@@ -216,7 +218,7 @@
 
     const/16 v7, 0xa
 
-    const-string v6, "$.%"
+    const-string v6, "6\u0011+\u0000c,"
 
     const/16 v0, 0x9
 
@@ -229,7 +231,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, ">(2"
+    const-string v6, "6\u00070\u0003ad\u00121\u001f<"
 
     const/16 v0, 0xa
 
@@ -242,7 +244,7 @@
 
     const/16 v7, 0xc
 
-    const-string v6, "5-3K3"
+    const-string v6, "6\u0019#\u0001c,"
 
     const/16 v0, 0xb
 
@@ -255,7 +257,7 @@
 
     const/16 v7, 0xd
 
-    const-string v6, "t1$V &$%J}"
+    const-string v6, "6\u00020\u0000<"
 
     const/16 v0, 0xc
 
@@ -268,7 +270,7 @@
 
     const/16 v7, 0xe
 
-    const-string v6, "?$/"
+    const-string v6, "}\u0012;"
 
     const/16 v0, 0xd
 
@@ -290,7 +292,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x47
+    move v6, v5
 
     :goto_2
     xor-int/2addr v6, v13
@@ -306,22 +308,22 @@
     goto/16 :goto_1
 
     :pswitch_e
-    const/16 v6, 0x54
+    const/16 v6, 0x16
 
     goto :goto_2
 
     :pswitch_f
-    const/16 v6, 0x41
+    const/16 v6, 0x77
 
     goto :goto_2
 
     :pswitch_10
-    const/16 v6, 0x56
+    const/16 v6, 0x42
 
     goto :goto_2
 
     :pswitch_11
-    const/16 v6, 0x39
+    const/16 v6, 0x6c
 
     goto :goto_2
 
@@ -352,22 +354,22 @@
     .end packed-switch
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lcom/whatsapp/protocol/ae;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/whatsapp/protocol/c9;)V
     .locals 2
 
     .prologue
-    .line 32
-    invoke-direct {p0, p1, p2}, Lcom/whatsapp/ConversationRowMedia;-><init>(Landroid/content/Context;Lcom/whatsapp/protocol/ae;)V
+    .line 108
+    invoke-direct {p0, p1, p2}, Lcom/whatsapp/ConversationRowMedia;-><init>(Landroid/content/Context;Lcom/whatsapp/protocol/c9;)V
 
-    .line 81
-    new-instance v0, Lcom/whatsapp/xj;
+    .line 109
+    new-instance v0, Lcom/whatsapp/ls;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/xj;-><init>(Lcom/whatsapp/ConversationRowVideo;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/ls;-><init>(Lcom/whatsapp/ConversationRowVideo;)V
 
-    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->T:Lcom/whatsapp/util/x;
+    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->V:Lcom/whatsapp/util/ao;
 
-    .line 136
-    const v0, 0x7f0b017a
+    .line 120
+    const v0, 0x7f0b017c
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationRowVideo;->findViewById(I)Landroid/view/View;
 
@@ -375,10 +377,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
 
-    .line 5
-    const v0, 0x7f0b0128
+    .line 24
+    const v0, 0x7f0b012a
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationRowVideo;->findViewById(I)Landroid/view/View;
 
@@ -386,10 +388,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->V:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->T:Landroid/widget/ImageView;
 
-    .line 134
-    const v0, 0x7f0b0086
+    .line 125
+    const v0, 0x7f0b0088
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationRowVideo;->findViewById(I)Landroid/view/View;
 
@@ -397,10 +399,10 @@
 
     check-cast v0, Lcom/whatsapp/CircularProgressBar;
 
-    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->N:Lcom/whatsapp/CircularProgressBar;
+    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->R:Lcom/whatsapp/CircularProgressBar;
 
-    .line 104
-    const v0, 0x7f0b0129
+    .line 13
+    const v0, 0x7f0b012b
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationRowVideo;->findViewById(I)Landroid/view/View;
 
@@ -408,10 +410,19 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->U:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->W:Landroid/widget/TextView;
 
-    .line 35
-    const v0, 0x7f0b0180
+    .line 85
+    const v0, 0x7f0b0182
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationRowVideo;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->U:Landroid/view/View;
+
+    .line 71
+    const v0, 0x7f0b0181
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationRowVideo;->findViewById(I)Landroid/view/View;
 
@@ -419,17 +430,8 @@
 
     iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->S:Landroid/view/View;
 
-    .line 98
-    const v0, 0x7f0b017f
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationRowVideo;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->O:Landroid/view/View;
-
-    .line 132
-    const v0, 0x7f0b0181
+    .line 117
+    const v0, 0x7f0b0183
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationRowVideo;->findViewById(I)Landroid/view/View;
 
@@ -437,17 +439,17 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->Q:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->P:Landroid/widget/TextView;
 
-    .line 96
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->N:Lcom/whatsapp/CircularProgressBar;
+    .line 81
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->R:Lcom/whatsapp/CircularProgressBar;
 
     const/16 v1, 0x64
 
     invoke-virtual {v0, v1}, Lcom/whatsapp/CircularProgressBar;->setMax(I)V
 
-    .line 125
-    sget-object v0, Lcom/whatsapp/ConversationRowVideo;->W:Landroid/os/Handler;
+    .line 123
+    sget-object v0, Lcom/whatsapp/ConversationRowVideo;->Q:Landroid/os/Handler;
 
     if-nez v0, :cond_0
 
@@ -457,11 +459,11 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 31
+    .line 50
     :cond_0
-    invoke-direct {p0, p2}, Lcom/whatsapp/ConversationRowVideo;->c(Lcom/whatsapp/protocol/ae;)V
+    invoke-direct {p0, p2}, Lcom/whatsapp/ConversationRowVideo;->c(Lcom/whatsapp/protocol/c9;)V
 
-    .line 97
+    .line 111
     return-void
 .end method
 
@@ -469,8 +471,8 @@
     .locals 1
 
     .prologue
-    .line 84
-    sget-object v0, Lcom/whatsapp/ConversationRowVideo;->W:Landroid/os/Handler;
+    .line 64
+    sget-object v0, Lcom/whatsapp/ConversationRowVideo;->Q:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -479,37 +481,37 @@
     .locals 1
 
     .prologue
-    .line 13
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->V:Landroid/widget/ImageView;
+    .line 26
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->T:Landroid/widget/ImageView;
 
     return-object v0
 .end method
 
-.method static a(Lcom/whatsapp/ConversationRowVideo;Lcom/whatsapp/az6;)Lcom/whatsapp/az6;
+.method static a(Lcom/whatsapp/ConversationRowVideo;Lcom/whatsapp/a_3;)Lcom/whatsapp/a_3;
     .locals 0
 
     .prologue
-    .line 83
-    iput-object p1, p0, Lcom/whatsapp/ConversationRowVideo;->P:Lcom/whatsapp/az6;
+    .line 90
+    iput-object p1, p0, Lcom/whatsapp/ConversationRowVideo;->O:Lcom/whatsapp/a_3;
 
     return-object p1
 .end method
 
-.method static b(Lcom/whatsapp/ConversationRowVideo;)Lcom/whatsapp/az6;
+.method static b(Lcom/whatsapp/ConversationRowVideo;)Lcom/whatsapp/a_3;
     .locals 1
 
     .prologue
-    .line 37
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->P:Lcom/whatsapp/az6;
+    .line 101
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->O:Lcom/whatsapp/a_3;
 
     return-object v0
 .end method
 
-.method private c(Lcom/whatsapp/protocol/ae;)V
+.method private c(Lcom/whatsapp/protocol/c9;)V
     .locals 11
 
     .prologue
-    const v10, 0x7f020590
+    const v10, 0x7f020599
 
     const/4 v9, 0x0
 
@@ -517,120 +519,120 @@
 
     const/4 v3, 0x0
 
-    sget-boolean v4, Lcom/whatsapp/App;->aL:Z
+    sget v4, Lcom/whatsapp/App;->h:I
 
-    .line 76
-    iget-object v0, p1, Lcom/whatsapp/protocol/ae;->p:Ljava/lang/Object;
+    .line 10
+    iget-object v0, p1, Lcom/whatsapp/protocol/c9;->i:Ljava/lang/Object;
 
     check-cast v0, Lcom/whatsapp/MediaData;
 
-    .line 59
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->U:Landroid/widget/TextView;
+    .line 79
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->W:Landroid/widget/TextView;
 
     invoke-virtual {v1, v8}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 77
+    .line 12
     iget-boolean v1, v0, Lcom/whatsapp/MediaData;->transferring:Z
 
     if-eqz v1, :cond_4
 
-    .line 25
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->O:Landroid/view/View;
-
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
-
-    .line 4
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Lcom/whatsapp/CircularProgressBar;
-
-    invoke-virtual {v1, v3}, Lcom/whatsapp/CircularProgressBar;->setVisibility(I)V
-
-    .line 124
+    .line 95
     iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->S:Landroid/view/View;
 
     invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 43
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
+    .line 100
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Lcom/whatsapp/CircularProgressBar;
+
+    invoke-virtual {v1, v3}, Lcom/whatsapp/CircularProgressBar;->setVisibility(I)V
+
+    .line 69
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->U:Landroid/view/View;
+
+    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+
+    .line 135
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
 
     const-string v2, ""
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 16
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
+    .line 3
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
 
     invoke-virtual {v1, v8}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 99
-    iget-object v1, p1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    .line 77
+    iget-object v1, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-boolean v1, v1, Lcom/whatsapp/protocol/au;->c:Z
+    iget-boolean v1, v1, Lcom/whatsapp/protocol/bb;->c:Z
 
     if-eqz v1, :cond_0
 
-    .line 67
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->L:Lcom/whatsapp/util/at;
+    .line 32
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->M:Lcom/whatsapp/util/l;
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/ConversationRowVideo;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     if-eqz v4, :cond_1
 
-    .line 41
+    .line 131
     :cond_0
     invoke-virtual {p0, v9}, Lcom/whatsapp/ConversationRowVideo;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 92
+    .line 126
     :cond_1
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->M:Lcom/whatsapp/util/at;
+    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->L:Lcom/whatsapp/util/l;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 8
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Lcom/whatsapp/CircularProgressBar;
+    .line 138
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Lcom/whatsapp/CircularProgressBar;
 
-    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->M:Lcom/whatsapp/util/at;
+    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->L:Lcom/whatsapp/util/l;
 
     invoke-virtual {v1, v2}, Lcom/whatsapp/CircularProgressBar;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 109
+    .line 80
     iget-wide v6, v0, Lcom/whatsapp/MediaData;->progress:J
 
     long-to-int v1, v6
 
-    .line 64
-    iget-object v2, v0, Lcom/whatsapp/MediaData;->transcoder:Lcom/whatsapp/acp;
+    .line 103
+    iget-object v2, v0, Lcom/whatsapp/MediaData;->transcoder:Lcom/whatsapp/afu;
 
     if-eqz v2, :cond_3
 
-    iget-object v2, v0, Lcom/whatsapp/MediaData;->transcoder:Lcom/whatsapp/acp;
+    iget-object v2, v0, Lcom/whatsapp/MediaData;->transcoder:Lcom/whatsapp/afu;
 
-    invoke-virtual {v2}, Lcom/whatsapp/acp;->b()Z
+    invoke-virtual {v2}, Lcom/whatsapp/afu;->c()Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 51
-    iget-object v2, v0, Lcom/whatsapp/MediaData;->uploader:Lcom/whatsapp/yl;
+    .line 82
+    iget-object v2, v0, Lcom/whatsapp/MediaData;->uploader:Lcom/whatsapp/bv;
 
     if-nez v2, :cond_2
 
-    .line 93
+    .line 45
     div-int/lit8 v1, v1, 0x2
 
     if-eqz v4, :cond_3
 
-    .line 114
+    .line 88
     :cond_2
     div-int/lit8 v1, v1, 0x2
 
     add-int/lit8 v1, v1, 0x32
 
-    .line 34
+    .line 58
     :cond_3
-    iget-object v5, p0, Lcom/whatsapp/ConversationRowVideo;->N:Lcom/whatsapp/CircularProgressBar;
+    iget-object v5, p0, Lcom/whatsapp/ConversationRowVideo;->R:Lcom/whatsapp/CircularProgressBar;
 
     if-nez v1, :cond_15
 
@@ -639,118 +641,118 @@
     :goto_0
     invoke-virtual {v5, v2}, Lcom/whatsapp/CircularProgressBar;->setIndeterminate(Z)V
 
-    .line 112
-    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->N:Lcom/whatsapp/CircularProgressBar;
+    .line 134
+    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->R:Lcom/whatsapp/CircularProgressBar;
 
     invoke-virtual {v2, v1}, Lcom/whatsapp/CircularProgressBar;->setProgress(I)V
 
-    .line 29
+    .line 8
     if-eqz v4, :cond_8
 
-    .line 36
+    .line 102
     :cond_4
     iget-boolean v1, v0, Lcom/whatsapp/MediaData;->transferred:Z
 
     if-nez v1, :cond_5
 
-    iget-boolean v1, p1, Lcom/whatsapp/protocol/ae;->y:Z
+    iget-boolean v1, p1, Lcom/whatsapp/protocol/c9;->t:Z
 
     if-eqz v1, :cond_6
 
-    iget-object v1, p1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v1, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-boolean v1, v1, Lcom/whatsapp/protocol/au;->c:Z
+    iget-boolean v1, v1, Lcom/whatsapp/protocol/bb;->c:Z
 
     if-eqz v1, :cond_6
 
-    iget-object v1, p1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v1, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-object v1, v1, Lcom/whatsapp/protocol/au;->a:Ljava/lang/String;
+    iget-object v1, v1, Lcom/whatsapp/protocol/bb;->b:Ljava/lang/String;
 
-    .line 42
-    invoke-static {v1}, Lcom/whatsapp/adg;->d(Ljava/lang/String;)Z
+    .line 22
+    invoke-static {v1}, Lcom/whatsapp/tc;->d(Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_6
 
-    .line 20
+    .line 137
     :cond_5
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->O:Landroid/view/View;
-
-    invoke-virtual {v1, v8}, Landroid/view/View;->setVisibility(I)V
-
-    .line 50
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
-
-    const v2, 0x7f0e02db
-
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
-
-    .line 121
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
-
-    invoke-virtual {v1, v8}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 10
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Lcom/whatsapp/CircularProgressBar;
-
-    invoke-virtual {v1, v8}, Lcom/whatsapp/CircularProgressBar;->setVisibility(I)V
-
-    .line 90
     iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->S:Landroid/view/View;
 
     invoke-virtual {v1, v8}, Landroid/view/View;->setVisibility(I)V
 
-    .line 12
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->z:Landroid/view/View$OnLongClickListener;
+    .line 6
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
+
+    const v2, 0x7f0e02e8
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
+
+    .line 49
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
+
+    invoke-virtual {v1, v8}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 16
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Lcom/whatsapp/CircularProgressBar;
+
+    invoke-virtual {v1, v8}, Lcom/whatsapp/CircularProgressBar;->setVisibility(I)V
+
+    .line 83
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->U:Landroid/view/View;
+
+    invoke-virtual {v1, v8}, Landroid/view/View;->setVisibility(I)V
+
+    .line 65
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->H:Landroid/view/View$OnLongClickListener;
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/ConversationRowVideo;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 54
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
+    .line 96
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->L:Lcom/whatsapp/util/at;
+    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->M:Lcom/whatsapp/util/l;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 40
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->L:Lcom/whatsapp/util/at;
+    .line 38
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->M:Lcom/whatsapp/util/l;
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/ConversationRowVideo;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     if-eqz v4, :cond_8
 
-    .line 45
+    .line 28
     :cond_6
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->O:Landroid/view/View;
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->S:Landroid/view/View;
 
     invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 17
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Lcom/whatsapp/CircularProgressBar;
+    .line 132
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Lcom/whatsapp/CircularProgressBar;
 
     invoke-virtual {v1, v8}, Lcom/whatsapp/CircularProgressBar;->setVisibility(I)V
 
-    .line 110
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->S:Landroid/view/View;
+    .line 106
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->U:Landroid/view/View;
 
     invoke-virtual {v1, v8}, Landroid/view/View;->setVisibility(I)V
 
-    .line 122
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
+    .line 115
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 115
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->z:Landroid/view/View$OnLongClickListener;
+    .line 118
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->H:Landroid/view/View$OnLongClickListener;
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/ConversationRowVideo;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 111
-    iget-object v1, p1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    .line 55
+    iget-object v1, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-boolean v1, v1, Lcom/whatsapp/protocol/au;->c:Z
+    iget-boolean v1, v1, Lcom/whatsapp/protocol/bb;->c:Z
 
     if-eqz v1, :cond_7
 
@@ -758,41 +760,41 @@
 
     if-eqz v1, :cond_7
 
-    .line 44
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
+    .line 98
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
 
-    const v2, 0x7f0e034f
+    const v2, 0x7f0e035d
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 113
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
+    .line 52
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
 
-    const v2, 0x7f0200e5
+    const v2, 0x7f0200eb
 
     invoke-virtual {v1, v2, v3, v3, v3}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
-    .line 30
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
+    .line 113
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->K:Lcom/whatsapp/util/at;
+    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->K:Lcom/whatsapp/util/l;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 127
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->L:Lcom/whatsapp/util/at;
+    .line 112
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->M:Lcom/whatsapp/util/l;
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/ConversationRowVideo;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     if-eqz v4, :cond_8
 
-    .line 11
+    .line 56
     :cond_7
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
 
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    iget-wide v6, p1, Lcom/whatsapp/protocol/ae;->M:J
+    iget-wide v6, p1, Lcom/whatsapp/protocol/c9;->M:J
 
     invoke-static {v2, v6, v7}, Landroid/text/format/Formatter;->formatShortFileSize(Landroid/content/Context;J)Ljava/lang/String;
 
@@ -800,95 +802,95 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 47
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
+    .line 46
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
 
-    const v2, 0x7f0200bc
+    const v2, 0x7f0200bf
 
     invoke-virtual {v1, v2, v3, v3, v3}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
-    .line 91
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->R:Landroid/widget/TextView;
+    .line 9
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->N:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->J:Lcom/whatsapp/util/at;
+    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->J:Lcom/whatsapp/util/l;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 66
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->J:Lcom/whatsapp/util/at;
+    .line 127
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->J:Lcom/whatsapp/util/l;
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/ConversationRowVideo;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 101
+    .line 40
     :cond_8
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->V:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->T:Landroid/widget/ImageView;
 
-    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->T:Lcom/whatsapp/util/x;
+    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->V:Lcom/whatsapp/util/ao;
 
-    invoke-static {p1, v1, v2}, Lcom/whatsapp/util/a7;->c(Lcom/whatsapp/protocol/ae;Landroid/widget/ImageView;Lcom/whatsapp/util/x;)V
+    invoke-static {p1, v1, v2}, Lcom/whatsapp/util/ap;->c(Lcom/whatsapp/protocol/c9;Landroid/widget/ImageView;Lcom/whatsapp/util/ao;)V
 
-    .line 128
-    sget-object v1, Lcom/whatsapp/ConversationRowVideo;->W:Landroid/os/Handler;
+    .line 42
+    sget-object v1, Lcom/whatsapp/ConversationRowVideo;->Q:Landroid/os/Handler;
 
     if-eqz v1, :cond_a
 
-    .line 88
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->P:Lcom/whatsapp/az6;
+    .line 19
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->O:Lcom/whatsapp/a_3;
 
     if-eqz v1, :cond_9
 
-    .line 82
-    sget-object v1, Lcom/whatsapp/ConversationRowVideo;->W:Landroid/os/Handler;
+    .line 130
+    sget-object v1, Lcom/whatsapp/ConversationRowVideo;->Q:Landroid/os/Handler;
 
-    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->P:Lcom/whatsapp/az6;
+    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->O:Lcom/whatsapp/a_3;
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 21
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->P:Lcom/whatsapp/az6;
+    .line 25
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->O:Lcom/whatsapp/a_3;
 
-    invoke-virtual {v1}, Lcom/whatsapp/az6;->a()V
+    invoke-virtual {v1}, Lcom/whatsapp/a_3;->a()V
 
-    .line 120
+    .line 27
     :cond_9
-    new-instance v1, Lcom/whatsapp/az6;
+    new-instance v1, Lcom/whatsapp/a_3;
 
-    invoke-direct {v1, p0, v0}, Lcom/whatsapp/az6;-><init>(Lcom/whatsapp/ConversationRowVideo;Lcom/whatsapp/MediaData;)V
+    invoke-direct {v1, p0, v0}, Lcom/whatsapp/a_3;-><init>(Lcom/whatsapp/ConversationRowVideo;Lcom/whatsapp/MediaData;)V
 
-    iput-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->P:Lcom/whatsapp/az6;
+    iput-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->O:Lcom/whatsapp/a_3;
 
-    .line 139
-    sget-object v1, Lcom/whatsapp/ConversationRowVideo;->W:Landroid/os/Handler;
+    .line 114
+    sget-object v1, Lcom/whatsapp/ConversationRowVideo;->Q:Landroid/os/Handler;
 
-    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->P:Lcom/whatsapp/az6;
+    iget-object v2, p0, Lcom/whatsapp/ConversationRowVideo;->O:Lcom/whatsapp/a_3;
 
     const-wide/16 v6, 0x7d0
 
     invoke-virtual {v1, v2, v6, v7}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 85
+    .line 20
     :cond_a
-    iget v1, p1, Lcom/whatsapp/protocol/ae;->A:I
+    iget v1, p1, Lcom/whatsapp/protocol/c9;->s:I
 
     if-nez v1, :cond_b
 
-    .line 28
+    .line 59
     iget-object v0, v0, Lcom/whatsapp/MediaData;->file:Ljava/io/File;
 
-    invoke-static {v0}, Lcom/whatsapp/util/bo;->a(Ljava/io/File;)I
+    invoke-static {v0}, Lcom/whatsapp/util/ac;->a(Ljava/io/File;)I
 
     move-result v0
 
-    iput v0, p1, Lcom/whatsapp/protocol/ae;->A:I
+    iput v0, p1, Lcom/whatsapp/protocol/c9;->s:I
 
-    .line 46
+    .line 86
     :cond_b
-    iget v0, p1, Lcom/whatsapp/protocol/ae;->A:I
+    iget v0, p1, Lcom/whatsapp/protocol/c9;->s:I
 
     if-eqz v0, :cond_c
 
-    .line 95
-    iget v0, p1, Lcom/whatsapp/protocol/ae;->A:I
+    .line 128
+    iget v0, p1, Lcom/whatsapp/protocol/c9;->s:I
 
     int-to-long v0, v0
 
@@ -898,46 +900,46 @@
 
     if-eqz v4, :cond_d
 
-    .line 80
+    .line 29
     :cond_c
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    iget-wide v6, p1, Lcom/whatsapp/protocol/ae;->M:J
+    iget-wide v6, p1, Lcom/whatsapp/protocol/c9;->M:J
 
     invoke-static {v0, v6, v7}, Landroid/text/format/Formatter;->formatShortFileSize(Landroid/content/Context;J)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 55
+    .line 99
     :cond_d
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->U:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->W:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 53
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->U:Landroid/widget/TextView;
+    .line 124
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->W:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 39
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 14
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
 
     move-result v0
 
     if-eqz v0, :cond_e
 
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->U:Landroid/widget/TextView;
+    .line 62
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->W:Landroid/widget/TextView;
 
     invoke-virtual {v0, v10, v3, v3, v3}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
     if-eqz v4, :cond_f
 
-    .line 24
+    .line 84
     :cond_e
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->U:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->W:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/whatsapp/util/bd;
+    new-instance v1, Lcom/whatsapp/util/w;
 
     invoke-virtual {p0}, Lcom/whatsapp/ConversationRowVideo;->getContext()Landroid/content/Context;
 
@@ -947,61 +949,61 @@
 
     move-result-object v2
 
-    .line 94
+    .line 33
     invoke-virtual {v2, v10}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Lcom/whatsapp/util/bd;-><init>(Landroid/graphics/drawable/Drawable;)V
+    invoke-direct {v1, v2}, Lcom/whatsapp/util/w;-><init>(Landroid/graphics/drawable/Drawable;)V
 
-    .line 65
+    .line 93
     invoke-virtual {v0, v9, v9, v1, v9}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 135
+    .line 51
     :cond_f
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->H:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->B:Landroid/widget/TextView;
 
     if-eqz v0, :cond_11
 
-    .line 48
-    iget-boolean v0, p1, Lcom/whatsapp/protocol/ae;->y:Z
+    .line 41
+    iget-boolean v0, p1, Lcom/whatsapp/protocol/c9;->t:Z
 
     if-eqz v0, :cond_10
 
-    iget-object v0, p1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v0, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-boolean v0, v0, Lcom/whatsapp/protocol/au;->c:Z
+    iget-boolean v0, v0, Lcom/whatsapp/protocol/bb;->c:Z
 
     if-eqz v0, :cond_10
 
-    iget-object v0, p1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v0, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-object v0, v0, Lcom/whatsapp/protocol/au;->a:Ljava/lang/String;
+    iget-object v0, v0, Lcom/whatsapp/protocol/bb;->b:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/whatsapp/adg;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/whatsapp/tc;->a(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_10
 
-    .line 79
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->H:Landroid/widget/TextView;
+    .line 75
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->B:Landroid/widget/TextView;
 
-    const v1, 0x7f0200b4
+    const v1, 0x7f0200b7
 
     invoke-virtual {v0, v1, v3, v3, v3}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
     if-eqz v4, :cond_11
 
-    .line 62
+    .line 97
     :cond_10
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->H:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->B:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3, v3, v3, v3}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
-    .line 19
+    .line 31
     :cond_11
-    iget-object v0, p1, Lcom/whatsapp/protocol/ae;->L:Ljava/lang/String;
+    iget-object v0, p1, Lcom/whatsapp/protocol/c9;->l:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1009,58 +1011,58 @@
 
     if-nez v0, :cond_12
 
-    .line 102
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->Q:Landroid/widget/TextView;
+    .line 43
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->P:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 123
-    iget-object v1, p1, Lcom/whatsapp/protocol/ae;->L:Ljava/lang/String;
+    .line 54
+    iget-object v1, p1, Lcom/whatsapp/protocol/c9;->l:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->Q:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->P:Landroid/widget/TextView;
 
     check-cast v0, Lcom/whatsapp/TextEmojiLabel;
 
-    invoke-static {v1, v0, v3, p1}, Lcom/whatsapp/ConversationRowText;->setMessageText(Ljava/lang/String;Lcom/whatsapp/TextEmojiLabel;ILcom/whatsapp/protocol/ae;)V
+    invoke-static {v1, v0, v3, p1}, Lcom/whatsapp/ConversationRowText;->setMessageText(Ljava/lang/String;Lcom/whatsapp/TextEmojiLabel;ILcom/whatsapp/protocol/c9;)V
 
     if-eqz v4, :cond_13
 
-    .line 3
+    .line 72
     :cond_12
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->Q:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->P:Landroid/widget/TextView;
 
     invoke-virtual {v0, v8}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 100
+    .line 53
     :cond_13
-    sget-object v0, Lcom/whatsapp/Conversation;->P:Lcom/whatsapp/protocol/au;
+    sget-object v0, Lcom/whatsapp/Conversation;->aS:Lcom/whatsapp/protocol/bb;
 
     if-eqz v0, :cond_14
 
-    sget-object v0, Lcom/whatsapp/Conversation;->P:Lcom/whatsapp/protocol/au;
+    sget-object v0, Lcom/whatsapp/Conversation;->aS:Lcom/whatsapp/protocol/bb;
 
-    iget-object v1, p1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v1, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/protocol/au;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lcom/whatsapp/protocol/bb;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_14
 
-    .line 130
-    sput-object v9, Lcom/whatsapp/Conversation;->P:Lcom/whatsapp/protocol/au;
+    .line 76
+    sput-object v9, Lcom/whatsapp/Conversation;->aS:Lcom/whatsapp/protocol/bb;
 
-    .line 68
-    invoke-virtual {p0, p1}, Lcom/whatsapp/ConversationRowVideo;->b(Lcom/whatsapp/protocol/ae;)V
+    .line 87
+    invoke-virtual {p0, p1}, Lcom/whatsapp/ConversationRowVideo;->b(Lcom/whatsapp/protocol/c9;)V
 
-    .line 107
+    .line 5
     :cond_14
     return-void
 
     :cond_15
     move v2, v3
 
-    .line 34
+    .line 58
     goto/16 :goto_0
 .end method
 
@@ -1070,60 +1072,60 @@
     .locals 4
 
     .prologue
-    const v1, 0x7f0205aa
+    const v1, 0x7f0205b3
 
-    sget-boolean v2, Lcom/whatsapp/App;->aL:Z
+    sget v2, Lcom/whatsapp/App;->h:I
 
-    .line 73
+    .line 39
     const/16 v0, 0xd
 
-    invoke-static {p1, v0}, Lcom/whatsapp/protocol/aj;->a(II)I
+    invoke-static {p1, v0}, Lcom/whatsapp/protocol/bw;->a(II)I
 
     move-result v0
 
     if-ltz v0, :cond_0
 
-    .line 71
-    const v0, 0x7f0205a4
+    .line 110
+    const v0, 0x7f0205ad
 
     if-eqz v2, :cond_3
 
-    .line 137
+    .line 44
     :cond_0
     const/4 v0, 0x5
 
-    invoke-static {p1, v0}, Lcom/whatsapp/protocol/aj;->a(II)I
+    invoke-static {p1, v0}, Lcom/whatsapp/protocol/bw;->a(II)I
 
     move-result v0
 
     if-ltz v0, :cond_1
 
-    .line 49
-    const v0, 0x7f0205a8
+    .line 73
+    const v0, 0x7f0205b1
 
     if-eqz v2, :cond_3
 
-    .line 33
+    .line 48
     :cond_1
     const/4 v0, 0x4
 
-    invoke-static {p1, v0}, Lcom/whatsapp/protocol/aj;->a(II)I
+    invoke-static {p1, v0}, Lcom/whatsapp/protocol/bw;->a(II)I
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 2
-    const v0, 0x7f0205a6
+    .line 34
+    const v0, 0x7f0205af
 
     if-eqz v2, :cond_3
 
     :cond_2
     move v0, v1
 
-    .line 75
+    .line 57
     :cond_3
-    sget v2, Lcom/whatsapp/App;->G:I
+    sget v2, Lcom/whatsapp/App;->m:I
 
     const/4 v3, 0x3
 
@@ -1135,61 +1137,51 @@
 
     move v0, v1
 
-    .line 14
+    .line 104
     :cond_4
     return v0
 .end method
 
-.method public a(Lcom/whatsapp/protocol/ae;Z)V
+.method public a(Lcom/whatsapp/protocol/c9;Z)V
     .locals 1
 
     .prologue
-    .line 133
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->C:Lcom/whatsapp/protocol/ae;
+    .line 70
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->y:Lcom/whatsapp/protocol/c9;
 
     if-ne p1, v0, :cond_0
 
     if-eqz p2, :cond_1
 
-    .line 74
+    .line 17
     :cond_0
-    invoke-direct {p0, p1}, Lcom/whatsapp/ConversationRowVideo;->c(Lcom/whatsapp/protocol/ae;)V
+    invoke-direct {p0, p1}, Lcom/whatsapp/ConversationRowVideo;->c(Lcom/whatsapp/protocol/c9;)V
 
-    .line 106
+    .line 122
     :cond_1
-    invoke-super {p0, p1, p2}, Lcom/whatsapp/ConversationRowMedia;->a(Lcom/whatsapp/protocol/ae;Z)V
+    invoke-super {p0, p1, p2}, Lcom/whatsapp/ConversationRowMedia;->a(Lcom/whatsapp/protocol/c9;Z)V
 
-    .line 72
+    .line 74
     return-void
 .end method
 
-.method protected b()I
-    .locals 1
+.method protected b(Lcom/whatsapp/protocol/c9;)V
+    .locals 7
 
     .prologue
-    .line 138
-    const v0, 0x7f03004d
-
-    return v0
-.end method
-
-.method protected b(Lcom/whatsapp/protocol/ae;)V
-    .locals 6
-
-    .prologue
-    const/4 v5, 0x1
+    const/4 v6, 0x1
 
     const/4 v2, 0x0
 
-    .line 118
-    iget-object v0, p1, Lcom/whatsapp/protocol/ae;->p:Ljava/lang/Object;
+    .line 66
+    iget-object v0, p1, Lcom/whatsapp/protocol/c9;->i:Ljava/lang/Object;
 
     check-cast v0, Lcom/whatsapp/MediaData;
 
-    .line 38
-    iget-object v1, p1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    .line 129
+    iget-object v1, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-boolean v1, v1, Lcom/whatsapp/protocol/au;->c:Z
+    iget-boolean v1, v1, Lcom/whatsapp/protocol/bb;->c:Z
 
     if-nez v1, :cond_0
 
@@ -1197,24 +1189,24 @@
 
     if-nez v1, :cond_0
 
-    .line 129
+    .line 116
     :goto_0
     return-void
 
-    .line 52
+    .line 92
     :cond_0
     iget-object v1, v0, Lcom/whatsapp/MediaData;->file:Ljava/io/File;
 
     if-eqz v1, :cond_2
 
-    .line 57
+    .line 94
     iget-object v1, v0, Lcom/whatsapp/MediaData;->file:Ljava/io/File;
 
     invoke-static {v1}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 87
+    .line 121
     new-instance v3, Ljava/io/File;
 
     invoke-virtual {v1}, Landroid/net/Uri;->getPath()Ljava/lang/String;
@@ -1223,16 +1215,16 @@
 
     invoke-direct {v3, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 103
+    .line 105
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
     move-result v1
 
-    .line 60
+    .line 18
     :goto_1
     if-nez v1, :cond_1
 
-    .line 116
+    .line 78
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/whatsapp/ConversationRowVideo;->getContext()Landroid/content/Context;
@@ -1243,10 +1235,10 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 22
+    .line 7
     sget-object v1, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
 
-    const/16 v2, 0xa
+    const/4 v2, 0x5
 
     aget-object v1, v1, v2
 
@@ -1254,44 +1246,44 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 86
+    .line 91
     sget-object v1, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
 
-    const/16 v2, 0xc
+    const/16 v2, 0x8
 
     aget-object v1, v1, v2
 
-    invoke-virtual {v0, v1, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+    invoke-virtual {v0, v1, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 6
+    .line 4
     sget-object v1, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
 
-    const/16 v2, 0xb
+    const/4 v2, 0x2
 
     aget-object v1, v1, v2
 
-    iget-object v2, p1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v2, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-object v2, v2, Lcom/whatsapp/protocol/au;->a:Ljava/lang/String;
+    iget-object v2, v2, Lcom/whatsapp/protocol/bb;->b:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 58
+    .line 107
     sget-object v1, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
 
     const/16 v2, 0xe
 
     aget-object v1, v1, v2
 
-    iget-object v2, p1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v2, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    invoke-virtual {v2}, Lcom/whatsapp/protocol/au;->hashCode()I
+    invoke-virtual {v2}, Lcom/whatsapp/protocol/bb;->hashCode()I
 
     move-result v2
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 70
+    .line 47
     invoke-virtual {p0}, Lcom/whatsapp/ConversationRowVideo;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -1300,11 +1292,29 @@
 
     goto :goto_0
 
-    .line 89
+    .line 61
     :cond_1
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v3, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
+
+    const/4 v4, 0x3
+
+    aget-object v3, v3, v4
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget-object v3, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
+
+    iget-boolean v3, v3, Lcom/whatsapp/protocol/bb;->c:Z
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     sget-object v3, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
 
@@ -1316,25 +1326,7 @@
 
     move-result-object v1
 
-    iget-object v3, p1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
-
-    iget-boolean v3, v3, Lcom/whatsapp/protocol/au;->c:Z
-
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v3, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
-
-    const/4 v4, 0x2
-
-    aget-object v3, v3, v4
-
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    iget-byte v3, p1, Lcom/whatsapp/protocol/ae;->t:B
+    iget-byte v3, p1, Lcom/whatsapp/protocol/c9;->b:B
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1342,7 +1334,7 @@
 
     sget-object v3, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
 
-    const/4 v4, 0x5
+    const/16 v4, 0xc
 
     aget-object v3, v3, v4
 
@@ -1350,7 +1342,7 @@
 
     move-result-object v1
 
-    iget-object v3, p1, Lcom/whatsapp/protocol/ae;->z:Ljava/lang/String;
+    iget-object v3, p1, Lcom/whatsapp/protocol/c9;->G:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1358,13 +1350,15 @@
 
     sget-object v3, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
 
-    aget-object v3, v3, v5
+    const/16 v4, 0xd
+
+    aget-object v3, v3, v4
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    iget-object v3, p1, Lcom/whatsapp/protocol/ae;->u:Ljava/lang/String;
+    iget-object v3, p1, Lcom/whatsapp/protocol/c9;->e:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1372,7 +1366,7 @@
 
     sget-object v3, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
 
-    const/16 v4, 0x9
+    const/16 v4, 0xa
 
     aget-object v3, v3, v4
 
@@ -1388,7 +1382,7 @@
 
     sget-object v3, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
 
-    const/16 v4, 0xd
+    const/16 v4, 0xb
 
     aget-object v3, v3, v4
 
@@ -1404,39 +1398,37 @@
 
     sget-object v3, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
 
+    aget-object v3, v3, v6
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget-boolean v3, v0, Lcom/whatsapp/MediaData;->transferred:Z
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    sget-object v3, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
+
+    const/4 v4, 0x6
+
+    aget-object v3, v3, v4
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget-boolean v3, v0, Lcom/whatsapp/MediaData;->transferring:Z
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    sget-object v3, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
+
     aget-object v2, v3, v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    iget-boolean v2, v0, Lcom/whatsapp/MediaData;->transferred:Z
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
-
-    const/4 v3, 0x7
-
-    aget-object v2, v2, v3
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    iget-boolean v2, v0, Lcom/whatsapp/MediaData;->transferring:Z
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
-
-    const/16 v3, 0x8
-
-    aget-object v2, v2, v3
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1450,7 +1442,7 @@
 
     sget-object v1, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
 
-    const/4 v2, 0x6
+    const/16 v2, 0x9
 
     aget-object v1, v1, v2
 
@@ -1458,7 +1450,7 @@
 
     move-result-object v0
 
-    iget-wide v2, p1, Lcom/whatsapp/protocol/ae;->M:J
+    iget-wide v2, p1, Lcom/whatsapp/protocol/c9;->M:J
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -1466,7 +1458,7 @@
 
     sget-object v1, Lcom/whatsapp/ConversationRowVideo;->ab:[Ljava/lang/String;
 
-    const/4 v2, 0x3
+    const/4 v2, 0x7
 
     aget-object v1, v1, v2
 
@@ -1474,7 +1466,7 @@
 
     move-result-object v0
 
-    iget-wide v2, p1, Lcom/whatsapp/protocol/ae;->n:J
+    iget-wide v2, p1, Lcom/whatsapp/protocol/c9;->K:J
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -1486,23 +1478,23 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 108
-    invoke-static {}, Lcom/whatsapp/xy;->r()V
+    .line 11
+    invoke-static {}, Lcom/whatsapp/yk;->k()V
 
     .line 119
-    iget-object v0, p1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v0, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-object v0, v0, Lcom/whatsapp/protocol/au;->a:Ljava/lang/String;
+    iget-object v0, v0, Lcom/whatsapp/protocol/bb;->b:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/whatsapp/ConversationRowVideo;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-static {p1, v0, v1}, Lcom/whatsapp/MediaView;->a(Lcom/whatsapp/protocol/ae;Ljava/lang/String;Landroid/content/Context;)Landroid/content/Intent;
+    invoke-static {p1, v0, v1}, Lcom/whatsapp/MediaView;->a(Lcom/whatsapp/protocol/c9;Ljava/lang/String;Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 56
+    .line 136
     invoke-virtual {p0}, Lcom/whatsapp/ConversationRowVideo;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -1517,28 +1509,38 @@
     goto/16 :goto_1
 .end method
 
-.method public f()V
+.method protected f()I
     .locals 1
 
     .prologue
-    .line 78
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->C:Lcom/whatsapp/protocol/ae;
+    .line 36
+    const v0, 0x7f03004c
 
-    invoke-direct {p0, v0}, Lcom/whatsapp/ConversationRowVideo;->c(Lcom/whatsapp/protocol/ae;)V
+    return v0
+.end method
 
-    .line 1
-    invoke-super {p0}, Lcom/whatsapp/ConversationRowMedia;->f()V
+.method public i()V
+    .locals 1
 
-    .line 23
+    .prologue
+    .line 133
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->y:Lcom/whatsapp/protocol/c9;
+
+    invoke-direct {p0, v0}, Lcom/whatsapp/ConversationRowVideo;->c(Lcom/whatsapp/protocol/c9;)V
+
+    .line 2
+    invoke-super {p0}, Lcom/whatsapp/ConversationRowMedia;->i()V
+
+    .line 139
     return-void
 .end method
 
-.method protected g()I
+.method protected l()I
     .locals 1
 
     .prologue
-    .line 105
-    const v0, 0x7f03004c
+    .line 89
+    const v0, 0x7f03004d
 
     return v0
 .end method
@@ -1547,42 +1549,42 @@
     .locals 4
 
     .prologue
-    .line 117
+    .line 1
     invoke-super {p0, p1}, Lcom/whatsapp/ConversationRowMedia;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 15
-    sget-object v0, Lcom/whatsapp/ConversationRowVideo;->W:Landroid/os/Handler;
+    .line 68
+    sget-object v0, Lcom/whatsapp/ConversationRowVideo;->Q:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->P:Lcom/whatsapp/az6;
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->O:Lcom/whatsapp/a_3;
 
     if-nez v0, :cond_0
 
-    .line 61
-    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->C:Lcom/whatsapp/protocol/ae;
+    .line 67
+    iget-object v0, p0, Lcom/whatsapp/ConversationRowVideo;->y:Lcom/whatsapp/protocol/c9;
 
-    iget-object v0, v0, Lcom/whatsapp/protocol/ae;->p:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/whatsapp/protocol/c9;->i:Ljava/lang/Object;
 
     check-cast v0, Lcom/whatsapp/MediaData;
 
-    .line 26
-    new-instance v1, Lcom/whatsapp/az6;
+    .line 37
+    new-instance v1, Lcom/whatsapp/a_3;
 
-    invoke-direct {v1, p0, v0}, Lcom/whatsapp/az6;-><init>(Lcom/whatsapp/ConversationRowVideo;Lcom/whatsapp/MediaData;)V
+    invoke-direct {v1, p0, v0}, Lcom/whatsapp/a_3;-><init>(Lcom/whatsapp/ConversationRowVideo;Lcom/whatsapp/MediaData;)V
 
-    iput-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->P:Lcom/whatsapp/az6;
+    iput-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->O:Lcom/whatsapp/a_3;
 
-    .line 9
-    sget-object v0, Lcom/whatsapp/ConversationRowVideo;->W:Landroid/os/Handler;
+    .line 23
+    sget-object v0, Lcom/whatsapp/ConversationRowVideo;->Q:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->P:Lcom/whatsapp/az6;
+    iget-object v1, p0, Lcom/whatsapp/ConversationRowVideo;->O:Lcom/whatsapp/a_3;
 
     const-wide/16 v2, 0x7d0
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 27
+    .line 60
     :cond_0
     return-void
 .end method

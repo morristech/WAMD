@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 1
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupTouchInterceptor;->this$0:Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -27,7 +27,7 @@
     .locals 0
 
     .prologue
-    .line 6
+    .line 7
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupTouchInterceptor;-><init>(Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;)V
 
     return-void
@@ -39,19 +39,19 @@
     .locals 6
 
     .prologue
-    .line 10
+    .line 11
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
 
-    .line 1
+    .line 2
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
 
     move-result v1
 
     float-to-int v1, v1
 
-    .line 2
+    .line 5
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
 
     move-result v2
@@ -63,7 +63,7 @@
 
     iget-object v3, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupTouchInterceptor;->this$0:Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;
 
-    .line 4
+    .line 3
     invoke-static {v3}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;->access$800(Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;)Landroid/widget/PopupWindow;
 
     move-result-object v3
@@ -86,7 +86,7 @@
 
     iget-object v3, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupTouchInterceptor;->this$0:Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;
 
-    .line 11
+    .line 10
     invoke-static {v3}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;->access$800(Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;)Landroid/widget/PopupWindow;
 
     move-result-object v3
@@ -111,7 +111,7 @@
 
     if-ge v2, v1, :cond_0
 
-    .line 7
+    .line 6
     iget-object v1, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupTouchInterceptor;->this$0:Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;
 
     invoke-static {v1}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;->access$1000(Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;)Landroid/os/Handler;
@@ -128,17 +128,17 @@
 
     invoke-virtual {v1, v2, v4, v5}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    sget-boolean v1, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v1, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
     if-eqz v1, :cond_1
 
-    .line 3
+    .line 4
     :cond_0
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_1
 
-    .line 12
+    .line 8
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupTouchInterceptor;->this$0:Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;
 
     invoke-static {v0}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;->access$1000(Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;)Landroid/os/Handler;
@@ -153,7 +153,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 8
+    .line 12
     :cond_1
     const/4 v0, 0x0
 

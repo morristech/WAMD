@@ -1,53 +1,103 @@
 .class Lcom/whatsapp/m;
-.super Ljava/lang/Object;
+.super Lcom/whatsapp/g;
 .source "m.java"
-
-# interfaces
-.implements Landroid/widget/TextView$OnEditorActionListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/WebImagePicker;
+.field final a:Lcom/whatsapp/yo;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/WebImagePicker;)V
+.method constructor <init>(Lcom/whatsapp/yo;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/m;->a:Lcom/whatsapp/WebImagePicker;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/m;->a:Lcom/whatsapp/yo;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcom/whatsapp/g;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
-    .locals 1
+.method public b(Lcom/whatsapp/protocol/c9;I)V
+    .locals 4
 
     .prologue
-    .line 3
-    const/4 v0, 0x3
+    .line 6
+    iget-byte v0, p1, Lcom/whatsapp/protocol/c9;->b:B
 
-    if-ne p2, v0, :cond_0
+    if-nez v0, :cond_1
 
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/m;->a:Lcom/whatsapp/WebImagePicker;
+    iget v0, p1, Lcom/whatsapp/protocol/c9;->f:I
 
-    invoke-static {v0}, Lcom/whatsapp/WebImagePicker;->f(Lcom/whatsapp/WebImagePicker;)V
+    const/4 v1, 0x6
 
-    .line 1
-    const/4 v0, 0x1
+    if-ne v0, v1, :cond_1
+
+    iget-object v0, p0, Lcom/whatsapp/m;->a:Lcom/whatsapp/yo;
 
     .line 5
-    :goto_0
-    return v0
+    invoke-static {v0}, Lcom/whatsapp/yo;->a(Lcom/whatsapp/yo;)Ljava/lang/String;
 
+    move-result-object v0
+
+    iget-object v1, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
+
+    iget-object v1, v1, Lcom/whatsapp/protocol/bb;->b:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
+
+    .line 1
+    invoke-virtual {v0}, Lcom/whatsapp/et;->g()Lcom/whatsapp/tb;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/whatsapp/tb;->b:Ljava/lang/String;
+
+    iget-object v1, p1, Lcom/whatsapp/protocol/c9;->D:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-wide v0, p1, Lcom/whatsapp/protocol/c9;->M:J
+
+    const-wide/16 v2, 0x5
+
+    cmp-long v0, v0, v2
+
+    if-eqz v0, :cond_0
+
+    iget-wide v0, p1, Lcom/whatsapp/protocol/c9;->M:J
+
+    const-wide/16 v2, 0x7
+
+    cmp-long v0, v0, v2
+
+    if-nez v0, :cond_1
+
+    .line 2
     :cond_0
-    const/4 v0, 0x0
+    iget-object v0, p0, Lcom/whatsapp/m;->a:Lcom/whatsapp/yo;
 
-    goto :goto_0
+    invoke-static {v0}, Lcom/whatsapp/yo;->f(Lcom/whatsapp/yo;)Landroid/app/Activity;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+
+    .line 4
+    :cond_1
+    return-void
 .end method

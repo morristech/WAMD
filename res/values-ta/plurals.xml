@@ -164,10 +164,6 @@
         <item quantity="other">%d மீதமுள்ளன</item>
         <item quantity="one">%d மீதமுள்ளது</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">நீங்கள் தொடரலாம், %,d தகவல்கள் மீட்கப்பட்டன</item>
-        <item quantity="one">நீங்கள் தொடரலாம், %,d தகவல் மீட்கப்பட்டது</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">%1$d காணொலிகள் %2$s அவர்களுக்கு அனுப்பபடுகிறது</item>
         <item quantity="one">%1$d காணொலி %2$s அவர்களுக்கு அனுப்பபடுகிறது</item>

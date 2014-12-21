@@ -3,24 +3,20 @@
 .source "l_.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ny;
-
-.field final b:Z
+.field final a:Lcom/whatsapp/VerifySms;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ny;Z)V
+.method constructor <init>(Lcom/whatsapp/VerifySms;)V
     .locals 0
 
     .prologue
-    .line 5
-    iput-object p1, p0, Lcom/whatsapp/l_;->a:Lcom/whatsapp/ny;
-
-    iput-boolean p2, p0, Lcom/whatsapp/l_;->b:Z
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/l_;->a:Lcom/whatsapp/VerifySms;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,32 +25,22 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 1
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 2
 
     .prologue
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/l_;->a:Lcom/whatsapp/VerifySms;
+
+    const/4 v1, 0x7
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/VerifySms;->removeDialog(I)V
+
     .line 3
-    iget-boolean v0, p0, Lcom/whatsapp/l_;->b:Z
+    iget-object v0, p0, Lcom/whatsapp/l_;->a:Lcom/whatsapp/VerifySms;
 
-    if-nez v0, :cond_0
-
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/l_;->a:Lcom/whatsapp/ny;
-
-    iget-object v0, v0, Lcom/whatsapp/ny;->a:Lcom/whatsapp/adg;
-
-    invoke-virtual {v0}, Lcom/whatsapp/adg;->l()V
+    invoke-static {v0}, Lcom/whatsapp/VerifySms;->m(Lcom/whatsapp/VerifySms;)V
 
     .line 4
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/l_;->a:Lcom/whatsapp/ny;
-
-    iget-object v0, v0, Lcom/whatsapp/ny;->a:Lcom/whatsapp/adg;
-
-    iget-object v0, v0, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    invoke-static {v0}, Lcom/whatsapp/App;->n(Ljava/lang/String;)V
-
-    .line 2
     return-void
 .end method

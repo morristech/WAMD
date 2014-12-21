@@ -52,6 +52,7 @@
     <string name="android_wear_see_you_soon">Gặp lại sau</string>
     <string name="android_wear_thanks">Cảm ơn</string>
     <string name="android_wear_yes">Có</string>
+    <string name="answer_the_call">Trả lời</string>
     <string name="archive_all_chats">Lưu toàn bộ các cuộc hội thoại</string>
     <string name="archive_all_chats_ask">Bạn có chắc muốn lưu TOÀN BỘ các cuộc hội thoại?</string>
     <string name="archive_broadcast">Lưu danh sách</string>
@@ -71,14 +72,6 @@
     <string name="audio_note_tip">Giữ để ghi âm, nhả ra để gửi</string>
     <string name="audio_note_tip_2">Vui lòng ghi âm dài hơn</string>
     <string name="audio_note_top_mic_tip">Vui lòng nói vào Micro phía trên điện thoại của bạn</string>
-    <string name="auth_client_needs_enabling_title">Ứng dụng yêu cầu Dịch vụ của Google Play phải được bật.</string>
-    <string name="auth_client_needs_installation_title">Ứng dụng yêu cầu cài đặt Dịch vụ của Google Play.</string>
-    <string name="auth_client_needs_update_title">Ứng dụng yêu cầu cập nhật dành cho Dịch vụ Google Play.</string>
-    <string name="auth_client_play_services_err_notification_msg">Lỗi dịch vụ của Google Play</string>
-    <string name="auth_client_requested_by_msg">Được yêu cầu bởi %1$s</string>
-    <string name="auth_client_using_bad_version_title">Ứng dụng đã cố sử dụng phiên bản không đúng của Dịch vụ của Google Play.</string>
-    <string name="barcode_scanner_dialog_body">Ứng dụng này cần ứng dụng quét mã. Bạn có muốn cài đặt không?</string>
-    <string name="barcode_scanner_dialog_title">Cài đặt Trình quét mã?</string>
     <string name="block">Chặn</string>
     <string name="block_ask">Bạn thực sự muốn chặn người này?</string>
     <string name="block_list_desc_1">"Nhấn vào biểu tượng trên góc trên cùng bên phải để chọn liên lạc sẽ chặn.
@@ -112,6 +105,8 @@ Chỉ liên lạc với %s trong danh bạ mới nhận được phát tin của
     <string name="camera_shortcut">Camera WhatsApp</string>
     <string name="camera_title">Gửi ảnh hoặc video qua WhatsApp</string>
     <string name="camera_video_preview_title">Gửi video của WhatsApp</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">Để thực hiện cuộc gọi WhatsApp, trước hết hãy tắt chế độ Máy bay.</string>
+    <string name="can_not_start_voip_call_in_phone_call">Bạn không thể thực hiện cuộc gọi WhatsApp khi bạn đang gọi thông thường.</string>
     <string name="cancel">Huỷ</string>
     <string name="cannot_send_not_a_group_participant">Bạn không thể gửi tin nhắn cho nhóm này do bạn không còn là thành viên nhóm.</string>
     <string name="cannot_send_selected_file">Không gửi được tệp. Bạn đã chọn nhầm tệp hoặc định dạng không được hỗ trợ.</string>
@@ -141,6 +136,7 @@ Nếu bạn có cả điện thoại mới và số điện thoại mới, vui l
     <string name="clear_all_chats_ask">Bạn thực sự muốn xóa các tin nhắn trong TOÀN BỘ các cuộc hội thoại?</string>
     <string name="clear_call_log">Xóa lịch sử cuộc gọi</string>
     <string name="clear_call_log_ask">Bạn có muốn xóa toàn bộ nhật ký cuộc gọi?</string>
+    <string name="clear_single_log">Xóa khỏi lịch sử cuộc gọi</string>
     <string name="clock_wrong">Ngày trên điện thoại của bạn không chính xác! Hãy chỉnh lại đồng hồ và thử lại lần nữa.</string>
     <string name="clock_wrong_report_current_date_time">"Ngày tháng và thời gian điện thoại là: 
 %1$s
@@ -159,23 +155,32 @@ Nếu bạn có cả điện thoại mới và số điện thoại mới, vui l
     <string name="color_red">Đỏ</string>
     <string name="color_white">Trắng</string>
     <string name="color_yellow">Vàng</string>
+    <string name="common_android_wear_notification_needs_update_text">Ứng dụng yêu cầu cập nhật lên ứng dụng Android Wear.</string>
+    <string name="common_android_wear_update_text">Ứng dụng này chỉ chạy khi bạn cập nhật ứng dụng Android Wear.</string>
+    <string name="common_android_wear_update_title">Cập nhật Android Wear</string>
     <string name="common_google_play_services_enable_button">Bật dịch vụ của Google Play</string>
     <string name="common_google_play_services_enable_text">Ứng dụng này sẽ không hoạt động trừ khi bạn bật dịch vụ của Google Play.</string>
     <string name="common_google_play_services_enable_title">Bật dịch vụ của Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Được yêu cầu bởi %1$s</string>
     <string name="common_google_play_services_install_button">Cài đặt dịch vụ của Google Play</string>
     <string name="common_google_play_services_install_text_phone">Ứng dụng này sẽ không chạy nếu không có dịch vụ của Google Play. Điện thoại của bạn bị thiếu dịch vụ này.</string>
     <string name="common_google_play_services_install_text_tablet">Ứng dụng này sẽ không chạy nếu không có dịch vụ của Google Play. Máy tính bảng của bạn bị thiếu dịch vụ này.</string>
     <string name="common_google_play_services_install_title">Cài đặt dịch vụ của Google Play</string>
     <string name="common_google_play_services_invalid_account_text">Tài khoản đã chỉ định không tồn tại trên thiết bị này. Vui lòng chọn một tài khoản khác.</string>
     <string name="common_google_play_services_invalid_account_title">Tài khoản không hợp lệ</string>
+    <string name="common_google_play_services_needs_enabling_title">Một ứng dụng yêu cầu bật các dịch vụ của Google Play.</string>
     <string name="common_google_play_services_network_error_text">Cần có kết nối dữ liệu để kết nối với các dịch vụ của Google Play.</string>
     <string name="common_google_play_services_network_error_title">Lỗi mạng</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Một ứng dụng yêu cầu cài đặt các dịch vụ của Google Play.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Một ứng dụng yêu cầu cập nhật đối với các dịch vụ của Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Lỗi dịch vụ của Google Play</string>
     <string name="common_google_play_services_unknown_issue">Sự cố không xác định với dịch vụ của Google Play.</string>
     <string name="common_google_play_services_unsupported_text">Các dịch vụ của Google Play mà một số ứng dụng của bạn dựa vào không được thiết bị của bạn hỗ trợ. Vui lòng liên hệ với nhà sản xuất để được hỗ trợ.</string>
     <string name="common_google_play_services_unsupported_title">Dịch vụ của Google Play</string>
     <string name="common_google_play_services_update_button">Cập nhật</string>
     <string name="common_google_play_services_update_text">Ứng dụng này sẽ không chạy trừ khi bạn cập nhật dịch vụ của Google Play.</string>
     <string name="common_google_play_services_update_title">Cập nhật dịch vụ của Google Play</string>
+    <string name="common_open_on_phone">Mở trên điện thoại</string>
     <string name="common_signin_button_text">Đăng nhập</string>
     <string name="common_signin_button_text_long">Đăng nhập bằng Google</string>
     <string name="confirm_forward_msg">Chuyển tiếp đến %s?</string>
@@ -197,7 +202,7 @@ Nếu bạn có cả điện thoại mới và số điện thoại mới, vui l
     <string name="contact_picker_no_wa_groups">Không có nhóm WhatsApp</string>
     <string name="contact_picker_no_wa_recents">Không có Trò chuyện</string>
     <string name="contact_sim">SIM</string>
-    <string name="contact_status">Trạng thái (Status)</string>
+    <string name="contact_status">Trạng thái</string>
     <string name="contact_support_via">Liên hệ hỗ trợ qua...</string>
     <string name="contacts">Danh bạ</string>
     <string name="contacts_help">Hỗ trợ</string>
@@ -352,7 +357,7 @@ Còn dư: %1$s"</string>
     <string name="eula_description">Nhắn tin đa hệ điều hành với bạn bè khắp thế giới</string>
     <string name="eula_tablets_not_supported">Chú ý: Chưa hỗ trợ máy tính bảng.</string>
     <string name="eula_terms_of_service">Điều khoản dịch vụ</string>
-    <string name="eula_title">Chào mừng tới WhatsApp!</string>
+    <string name="eula_title">Chào mừng tới với WhatsApp</string>
     <string name="existing_contact">Đã tồn tại</string>
     <string name="exit">Thoát</string>
     <string name="exit_group">Thoát nhóm</string>
@@ -527,7 +532,6 @@ Dịch vụ sẽ hết hạn vào %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Không tải về được vì không còn đủ bộ nhớ. Vui lòng xóa bớt vài tập tin và thử lại.</string>
     <string name="invalid_media_message_download">Không tải được thông tin từ tin nhắn lỗi. Vui lòng thử gửi lại tin nhắn.</string>
     <string name="invalid_message_forward">Không chuyển tiếp được tin nhắn, liên lạc không hợp lệ.</string>
-    <string name="invalid_qr_code">Mã QR không hợp lệ</string>
     <string name="invalid_url_for_download">Không tải về được. Yêu cầu xin được gửi lại.</string>
     <string name="invite">Mời</string>
     <string name="invite_friends">Mời dùng WhatsApp</string>
@@ -573,7 +577,6 @@ WhatsApp chỉ có thể được cài đặt trên một thiết bị đối v�
     <string name="menuitem_add">Thêm</string>
     <string name="menuitem_contacts">Danh bạ</string>
     <string name="menuitem_debug">Sửa lỗi</string>
-    <string name="menuitem_delete_qr">Xóa mã QR</string>
     <string name="menuitem_groupchat">Nhóm mới</string>
     <string name="menuitem_list">Danh sách nhận tin mới</string>
     <string name="menuitem_mute">Tắt âm</string>
@@ -584,7 +587,7 @@ WhatsApp chỉ có thể được cài đặt trên một thiết bị đối v�
     <string name="menuitem_refresh">Tải lại</string>
     <string name="menuitem_scan_qr">Quét mã QR</string>
     <string name="menuitem_settings">Cài đặt</string>
-    <string name="menuitem_status">Trạng thái (Status)</string>
+    <string name="menuitem_status">Trạng thái</string>
     <string name="message_cannot_forward_call">Không gửi được nhật ký cuộc gọi</string>
     <string name="message_cannot_forward_unfinished_upload">Không chuyển tiếp được tin nhắn này cho đến khi máy chủ nhận được.</string>
     <string name="message_contact">Tin nhắn liên lạc</string>
@@ -614,14 +617,15 @@ WhatsApp chỉ có thể được cài đặt trên một thiết bị đối v�
     <string name="msg_store_backup_failed">Không thể sao lưu tin nhắn</string>
     <string name="msg_store_backup_failed_try_again_later">Không thể sao lưu tin nhắn. Vui lòng thử lại sau.</string>
     <string name="msg_store_backup_found">Tìm thấy sao lưu</string>
-    <string name="msg_store_backup_found_registration">Tìm thấy sao lưu tin nhắn!</string>
+    <string name="msg_store_backup_found_registration">Tìm thấy dữ liệu sao lưu</string>
+    <string name="msg_store_backup_found_title">Khôi phục lịch sử tin nhắn</string>
     <string name="msg_store_backup_skipped">Hủy sao lưu</string>
     <string name="msg_store_backup_skipped_no_media">Bỏ qua sao lưu tin nhắn: Không tìm thấy thẻ nhớ.</string>
     <string name="msg_store_backup_skipped_read_only_media">Bỏ qua sao lưu tin nhắn: Thẻ nhớ chỉ đọc.</string>
     <string name="msg_store_confirm">Xác nhận</string>
-    <string name="msg_store_creation_backup_message">Bạn có muốn khôi phục lại lịch sử tin nhắn?</string>
-    <string name="msg_store_do_not_restore">Không</string>
-    <string name="msg_store_do_not_restore_no_thanks">Không</string>
+    <string name="msg_store_creation_backup_message">Khôi phục lịch sử tin nhắn. Nếu bạn không khôi phục bây giờ, sau này bạn sẽ không thể khôi phục được.</string>
+    <string name="msg_store_do_not_restore">Không khôi phục</string>
+    <string name="msg_store_do_not_restore_no_thanks">Không khôi phục</string>
     <string name="msg_store_error_found">Đã xảy ra lỗi. Vui lòng tắt và khởi động lại WhatsApp.</string>
     <string name="msg_store_error_not_restored">Rất tiếc, chúng tôi không thể khôi phục tin nhắn đã được sao lưu.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Các tin nhắn sẽ bị mất. Bạn có chắc không muốn khôi phục tin nhắn lưu trữ từ phần sao lưu?</string>
@@ -648,9 +652,6 @@ WhatsApp chỉ có thể được cài đặt trên một thiết bị đối v�
     <string name="need_sd_card_shared_storage">Vui lòng ngắt kết nối USB và thử lại.</string>
     <string name="network_required">Hiện tại bạn không có kết nối Internet.</string>
     <string name="network_usage_ask_reset_message">Bạn thực sự muốn đặt lại các số liệu thống kê?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f KB</string>
     <string name="network_usage_last_reset_time">Lần cuối: %1$s</string>
     <string name="network_usage_media_bytes_received">Đa phương tiện đã nhận:</string>
     <string name="network_usage_media_bytes_sent">Đa phương tiện đã gửi:</string>
@@ -691,6 +692,7 @@ WhatsApp chỉ có thể được cài đặt trên một thiết bị đối v�
     <string name="notes">Thay đổi</string>
     <string name="notification_ticker_header">Tin nhắn từ %s</string>
     <string name="ok">OK</string>
+    <string name="ongoing_call">Đang gọi</string>
     <string name="outgoing_call">Cuộc gọi đi</string>
     <string name="overlay_reregister">Xác minh lại</string>
     <string name="participant_adding">Đang thêm...</string>
@@ -862,6 +864,7 @@ Thử lại sau %1$s."</string>
     <string name="register_wait_message">Vui lòng đợi chút</string>
     <string name="register_xmpp_title">Đang khởi tạo...</string>
     <string name="registration_cellular_network_required">Kết nối mạng để kích hoạt WhatsApp.</string>
+    <string name="reject_the_call">Từ chối</string>
     <string name="remove">Bỏ</string>
     <string name="remove_contact_name_from_group">Bỏ %1$s khỏi nhóm</string>
     <string name="remove_contact_name_from_list">Bỏ %1$s khỏi danh sách phát tin</string>
@@ -895,6 +898,7 @@ Thử lại sau %1$s."</string>
     <string name="send_location">Gửi vị trí</string>
     <string name="send_payment_button">Gửi địa chỉ thanh toán</string>
     <string name="send_payment_url_via">Gửi địa chỉ thanh toán qua...</string>
+    <string name="send_this_location">Chia sẻ vị trí này</string>
     <string name="send_your_current_location">Chia sẻ vị trí hiện tại</string>
     <string name="sending_video_to_contact">Đang gửi video cho %s</string>
     <string name="sent_to_group">Gửi cho “%s”</string>
@@ -972,6 +976,7 @@ sẽ hết hạn hôm nay!"</string>
     <string name="settings_privacy_message">"Nếu bạn không hiển thị 'Lần cuối thấy' của bạn, bạn sẽ không thấy được 'Lần cuối thấy' của người khác"</string>
     <string name="settings_privacy_profile_photo">Ảnh đại diện</string>
     <string name="settings_privacy_read_receipts">Báo đã đọc</string>
+    <string name="settings_privacy_read_receipts_message">Nếu bạn tắt tính năng Báo đã đọc, bạn sẽ không thể nhìn thấy dấu hiệu này từ những người khác. Báo đã đọc được bật mặc định cho các nhóm.</string>
     <string name="settings_privacy_status">Trạng thái</string>
     <string name="settings_profile_info">Cá nhân</string>
     <string name="settings_push_name_summary">Đây không phải là tên đăng nhập hoặc mã PIN. Tên này sẽ được các liên lạc WhatsApp nhìn thấy.</string>
@@ -1006,19 +1011,19 @@ Gửi bằng WhatsApp"</string>
     <string name="software_expired_get_from_play_with_date">Phiên bản WhatsApp này sẽ trở thành cũ vào &lt;b>%1$s&lt;/b>. Vui lòng truy cập Google Play để tải phiên bản mới nhất.&lt;br>&lt;br>Thời gian trên thiết bị: &lt;b>%2$s&lt;/b>. Nếu nó không chính xác, vui lòng sửa lại thời gian và khởi động lại WhatsApp.</string>
     <string name="software_expired_with_date">Phiên bản WhatsApp này sẽ trở thành cũ vào &lt;b>%1$s&lt;/b>. Nhấn “Tải về” để tải phiên bản mới nhất.&lt;br>&lt;br>Thời gian trên thiết bị: &lt;b>%2$s&lt;/b>. Nếu nó không chính xác, vui lòng sửa lại thời gian và khởi động lại WhatsApp.</string>
     <string name="spam_generic">"Bạn tạm thời bị chặn sử dụng WhatsApp do bạn đã vi phạm điều khoản sử dụng dịch vụ.
+
 Bạn có thể tiếp tục sử dụng WhatsApp trong:"</string>
     <string name="spam_generic_data_connection_missing">Chắc chắn rằng điện thoại của bạn đang có kết nối dữ liệu.</string>
     <string name="spam_generic_unknown_time_left">Bạn tạm thời bị chặn sử dụng WhatsApp vì bạn đã vi phạm điều khoản dịch vụ của chúng tôi. Bạn sẽ có thể tiếp tục sử dụng WhatsApp trong thời gian sớm.</string>
     <string name="spam_learn_more">Tìm hiểu thêm</string>
     <string name="spam_title">Tạm thời bị chặn</string>
-    <string name="spam_too_many_blocks">Bạn tạm thời bị chặn sử dụng WhatsApp do có quá nhiều người chặn bạn.</string>
     <string name="spam_too_many_groups">"Bạn tạm thời bị chặn sử dụng WhatsApp do bạn đã tạo quá nhiều nhóm với những người không có số điện thoại của bạn trong danh bạ của họ.
+
 Bạn có thể tiếp tục sử dụng WhatsApp trong:"</string>
-    <string name="spam_too_many_messages">"Bạn tạm thời bị chặn sử dụng WhatsApp do bạn đã gửi quá nhiều tin nhắn cho những người không có số điện thoại của bạn trong danh bạ của họ.
+    <string name="spam_too_many_messages">"Bạn tạm thời bị chặn sử dụng WhatsApp do bạn đã gửi quá nhiều tin nhắn cho những người không có số điện thoại của bạn trong danh bạ.
+
 Bạn có thể tiếp tục sử dụng WhatsApp trong:"</string>
-    <string name="spam_too_many_people">"Bạn tạm thời bị chặn sử dụng WhatsApp do bạn đã gửi cùng một tin nhắn cho quá nhiều người.
-Bạn có thể tiếp tục sử dụng WhatsApp trong:"</string>
-    <string name="status">Trạng thái (Status)</string>
+    <string name="status">Trạng thái</string>
     <string name="status_default_at_gym">Ở phòng Gym</string>
     <string name="status_default_at_movies">Ở rạp phim</string>
     <string name="status_default_at_school">Ở trường</string>
@@ -1185,7 +1190,9 @@ Vui lòng thử xác nhận qua cuộc gọi."</string>
     <string name="view_list_media">Danh sách đa phương tiện</string>
     <string name="view_website">Xem trang web</string>
     <string name="voip_activity_label">Cuộc gọi thoại</string>
+    <string name="voip_call_bluetooth_toggle_description">Bật Bluetooth</string>
     <string name="voip_call_end_button_description">Kết thúc cuộc gọi</string>
+    <string name="voip_call_failed_no_network">Không thể thực hiện được cuộc gọi. Chắc chắn rằng điện thoại đã được kết nối Internet và thử lại.</string>
     <string name="voip_call_goto_chat_description">Xem tin nhắn</string>
     <string name="voip_call_incoming">CUỘC GỌI ĐẾN</string>
     <string name="voip_call_label">GỌI WHATSAPP</string>

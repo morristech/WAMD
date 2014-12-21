@@ -15,10 +15,10 @@
     .line 1
     invoke-direct {p0, p1}, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;-><init>(Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;)V
 
-    .line 5
+    .line 2
     iput-boolean p2, p0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;->mDefaultIsRtl:Z
 
-    .line 2
+    .line 3
     return-void
 .end method
 
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 5
     invoke-direct {p0, p1, p2}, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;-><init>(Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;Z)V
 
     return-void
@@ -38,7 +38,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 4
     iget-boolean v0, p0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;->mDefaultIsRtl:Z
 
     return v0

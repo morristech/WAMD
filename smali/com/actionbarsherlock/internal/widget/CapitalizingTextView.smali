@@ -24,7 +24,7 @@
 
     const/4 v2, 0x0
 
-    .line 12
+    .line 19
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0xe
@@ -36,7 +36,7 @@
     :goto_0
     sput-boolean v0, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->SANS_ICE_CREAM:Z
 
-    .line 6
+    .line 16
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x9
@@ -48,7 +48,7 @@
     :goto_1
     sput-boolean v0, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->IS_GINGERBREAD:Z
 
-    .line 18
+    .line 15
     new-array v0, v1, [I
 
     const v1, 0x101038c
@@ -62,13 +62,13 @@
     :cond_0
     move v0, v2
 
-    .line 12
+    .line 19
     goto :goto_0
 
     :cond_1
     move v0, v2
 
-    .line 6
+    .line 16
     goto :goto_1
 .end method
 
@@ -76,12 +76,12 @@
     .locals 1
 
     .prologue
-    .line 19
+    .line 10
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, p2, v0}, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 15
+    .line 12
     return-void
 .end method
 
@@ -91,17 +91,17 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 14
+    .line 9
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 9
+    .line 3
     sget-object v0, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->R_styleable_TextView:[I
 
     invoke-virtual {p1, p2, v0, p3, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
-    .line 5
+    .line 13
     const/4 v1, 0x1
 
     invoke-virtual {v0, v2, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -113,7 +113,7 @@
     .line 11
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 7
+    .line 4
     return-void
 .end method
 
@@ -123,9 +123,9 @@
     .locals 3
 
     .prologue
-    sget-boolean v0, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v0, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
-    .line 16
+    .line 20
     :try_start_0
     sget-boolean v1, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->SANS_ICE_CREAM:Z
 
@@ -139,7 +139,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 8
+    .line 14
     :try_start_1
     sget-boolean v1, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->IS_GINGERBREAD:Z
     :try_end_1
@@ -163,12 +163,12 @@
     :try_end_2
     .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_3
 
-    .line 20
+    .line 7
     :cond_0
     :goto_0
     return-void
 
-    .line 16
+    .line 20
     :catch_0
     move-exception v0
 
@@ -185,17 +185,17 @@
     :try_end_4
     .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_2
 
-    .line 8
+    .line 14
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 13
+    .line 8
     :catch_3
     move-exception v1
 
-    .line 2
+    .line 5
     :try_start_5
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
@@ -209,10 +209,10 @@
     :try_end_5
     .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
 
-    .line 3
+    .line 6
     if-eqz v0, :cond_0
 
-    .line 4
+    .line 2
     :cond_1
     :try_start_6
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -227,7 +227,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 10
+    .line 17
     :cond_2
     invoke-virtual {p0, p1}, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->setText(Ljava/lang/CharSequence;)V
     :try_end_6
@@ -240,7 +240,7 @@
 
     throw v0
 
-    .line 4
+    .line 2
     :catch_5
     move-exception v0
 

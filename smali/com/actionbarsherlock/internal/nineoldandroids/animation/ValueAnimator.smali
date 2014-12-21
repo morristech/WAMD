@@ -78,7 +78,7 @@
 
     new-array v5, v0, [Ljava/lang/String;
 
-    const-string v4, "\u001ei\u0005\u0015F+h\u001e\u000b\u00072f\u0015XH1k\u0015XE:\'\u001e\rI\u007fh\u0002Xk0h\u001c\u001dU\u007fs\u0004\nB>c\u001f"
+    const-string v4, "\\\u0018P>0i\u0019K qp\u0017@s>s\u001a@s3xVK&?=\u0019Ws\u001dr\u0019I6#=\u0002Q!4|\u0012J"
 
     const/4 v0, -0x1
 
@@ -116,7 +116,7 @@
 
     aput-object v4, v6, v5
 
-    const-string v0, "U\'LX\u0007"
+    const-string v0, "\\\u0018P>0i\u0019K q~\u0017W=>iVQ2\'xVW66|\u0002P%4=\u0012L!0i\u001fV=k="
 
     move-object v4, v0
 
@@ -131,7 +131,7 @@
     :pswitch_0
     aput-object v4, v6, v5
 
-    const-string v0, "\tf\u0000\rB\u001ei\u0005\u0015F+h\u001e8"
+    const-string v0, "\u0017V\u0019sq"
 
     move-object v4, v0
 
@@ -148,7 +148,7 @@
 
     const/4 v4, 0x3
 
-    const-string v0, "\u001ei\u0005\u0015F+h\u001e\u000b\u0007<f\u0002\u0016H+\'\u0004\u0019Q:\'\u0002\u001d@>s\u0005\u000eB\u007fc\u0019\nF+n\u0003\u0016\u001d\u007f"
+    const-string v0, "K\u0017U&4\\\u0018P>0i\u0019K\u0013"
 
     move v5, v4
 
@@ -165,56 +165,56 @@
 
     sput-object v7, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->z:[Ljava/lang/String;
 
-    .line 144
+    .line 193
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
 
     sput-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sAnimationHandler:Ljava/lang/ThreadLocal;
 
-    .line 67
+    .line 190
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$1;
 
     invoke-direct {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$1;-><init>()V
 
     sput-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sAnimations:Ljava/lang/ThreadLocal;
 
-    .line 187
+    .line 53
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$2;
 
     invoke-direct {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$2;-><init>()V
 
     sput-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sPendingAnimations:Ljava/lang/ThreadLocal;
 
-    .line 116
+    .line 10
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$3;
 
     invoke-direct {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$3;-><init>()V
 
     sput-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sDelayedAnims:Ljava/lang/ThreadLocal;
 
-    .line 101
+    .line 151
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$4;
 
     invoke-direct {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$4;-><init>()V
 
     sput-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sEndingAnims:Ljava/lang/ThreadLocal;
 
-    .line 64
+    .line 127
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$5;
 
     invoke-direct {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$5;-><init>()V
 
     sput-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sReadyAnims:Ljava/lang/ThreadLocal;
 
-    .line 110
+    .line 162
     new-instance v0, Landroid/view/animation/AccelerateDecelerateInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/AccelerateDecelerateInterpolator;-><init>()V
 
     sput-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sDefaultInterpolator:Landroid/view/animation/Interpolator;
 
-    .line 36
+    .line 178
     const-wide/16 v0, 0xa
 
     sput-wide v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sFrameDelay:J
@@ -229,7 +229,7 @@
 
     packed-switch v4, :pswitch_data_1
 
-    const/16 v4, 0x27
+    const/16 v4, 0x51
 
     :goto_2
     xor-int/2addr v4, v11
@@ -245,24 +245,26 @@
     goto :goto_1
 
     :pswitch_3
-    const/16 v4, 0x5f
+    const/16 v4, 0x1d
 
     goto :goto_2
 
     :pswitch_4
-    const/4 v4, 0x7
+    const/16 v4, 0x76
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v4, 0x6c
+    const/16 v4, 0x39
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v4, 0x78
+    const/16 v4, 0x53
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -281,93 +283,99 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 5
+    .locals 6
 
     .prologue
-    const/4 v4, 0x0
-
-    sget v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
-
-    .line 180
-    invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;-><init>()V
-
-    .line 191
-    const-wide/16 v2, -0x1
-
-    iput-wide v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mSeekTime:J
-
-    .line 168
-    iput-boolean v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingBackwards:Z
-
-    .line 133
-    iput v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mCurrentIteration:I
-
-    .line 61
-    const/4 v1, 0x0
-
-    iput v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mCurrentFraction:F
-
-    .line 5
-    iput-boolean v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartedDelay:Z
-
-    .line 227
-    iput v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
-
-    .line 86
-    iput-boolean v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mRunning:Z
-
-    .line 234
-    iput-boolean v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStarted:Z
-
-    .line 78
-    iput-boolean v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mInitialized:Z
-
-    .line 132
-    const-wide/16 v2, 0x12c
-
-    iput-wide v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mDuration:J
-
-    .line 99
-    const-wide/16 v2, 0x0
-
-    iput-wide v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartDelay:J
-
-    .line 172
-    iput v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mRepeatCount:I
-
-    .line 122
     const/4 v1, 0x1
 
-    iput v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mRepeatMode:I
+    const/4 v0, 0x0
+
+    sget-boolean v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
     .line 50
-    sget-object v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sDefaultInterpolator:Landroid/view/animation/Interpolator;
+    invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;-><init>()V
 
-    iput-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mInterpolator:Landroid/view/animation/Interpolator;
+    .line 131
+    const-wide/16 v4, -0x1
 
-    .line 195
-    const/4 v1, 0x0
+    iput-wide v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mSeekTime:J
 
-    iput-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mUpdateListeners:Ljava/util/ArrayList;
+    .line 79
+    iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingBackwards:Z
 
-    .line 197
-    sget-boolean v1, Lcom/actionbarsherlock/app/SherlockActivity;->a:Z
+    .line 228
+    iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mCurrentIteration:I
 
-    if-eqz v1, :cond_0
+    .line 184
+    const/4 v3, 0x0
 
-    add-int/lit8 v0, v0, 0x1
+    iput v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mCurrentFraction:F
 
-    sput v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    .line 117
+    iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartedDelay:Z
+
+    .line 23
+    iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
+
+    .line 109
+    iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mRunning:Z
+
+    .line 144
+    iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStarted:Z
+
+    .line 3
+    iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mInitialized:Z
+
+    .line 181
+    const-wide/16 v4, 0x12c
+
+    iput-wide v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mDuration:J
+
+    .line 5
+    const-wide/16 v4, 0x0
+
+    iput-wide v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartDelay:J
+
+    .line 41
+    iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mRepeatCount:I
+
+    .line 170
+    iput v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mRepeatMode:I
+
+    .line 120
+    sget-object v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sDefaultInterpolator:Landroid/view/animation/Interpolator;
+
+    iput-object v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mInterpolator:Landroid/view/animation/Interpolator;
+
+    .line 137
+    const/4 v3, 0x0
+
+    iput-object v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mUpdateListeners:Ljava/util/ArrayList;
+
+    .line 174
+    sget v3, Lcom/actionbarsherlock/app/SherlockActivity;->a:I
+
+    if-eqz v3, :cond_0
+
+    if-eqz v2, :cond_1
+
+    :goto_0
+    sput-boolean v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
     :cond_0
     return-void
+
+    :cond_1
+    move v0, v1
+
+    goto :goto_0
 .end method
 
 .method static access$000()Ljava/lang/ThreadLocal;
     .locals 1
 
     .prologue
-    .line 143
+    .line 44
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sAnimations:Ljava/lang/ThreadLocal;
 
     return-object v0
@@ -377,7 +385,7 @@
     .locals 1
 
     .prologue
-    .line 170
+    .line 110
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sDelayedAnims:Ljava/lang/ThreadLocal;
 
     return-object v0
@@ -387,7 +395,7 @@
     .locals 2
 
     .prologue
-    .line 192
+    .line 81
     sget-wide v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sFrameDelay:J
 
     return-wide v0
@@ -397,7 +405,7 @@
     .locals 1
 
     .prologue
-    .line 124
+    .line 58
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sPendingAnimations:Ljava/lang/ThreadLocal;
 
     return-object v0
@@ -407,7 +415,7 @@
     .locals 2
 
     .prologue
-    .line 204
+    .line 207
     iget-wide v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartDelay:J
 
     return-wide v0
@@ -417,7 +425,7 @@
     .locals 0
 
     .prologue
-    .line 136
+    .line 206
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->startAnimation()V
 
     return-void
@@ -427,7 +435,7 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 187
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sReadyAnims:Ljava/lang/ThreadLocal;
 
     return-object v0
@@ -437,7 +445,7 @@
     .locals 1
 
     .prologue
-    .line 179
+    .line 63
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sEndingAnims:Ljava/lang/ThreadLocal;
 
     return-object v0
@@ -447,7 +455,7 @@
     .locals 1
 
     .prologue
-    .line 32
+    .line 219
     invoke-direct {p0, p1, p2}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->delayedAnimationFrame(J)Z
 
     move-result v0
@@ -459,7 +467,7 @@
     .locals 0
 
     .prologue
-    .line 58
+    .line 218
     iput-boolean p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mRunning:Z
 
     return p1
@@ -469,7 +477,7 @@
     .locals 0
 
     .prologue
-    .line 18
+    .line 145
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->endAnimation()V
 
     return-void
@@ -481,33 +489,33 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 57
+    .line 194
     :try_start_0
     iget-boolean v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartedDelay:Z
 
     if-nez v1, :cond_0
 
-    .line 11
+    .line 214
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartedDelay:Z
 
-    .line 6
+    .line 2
     iput-wide p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mDelayStartTime:J
 
-    sget v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-eqz v1, :cond_1
 
-    .line 95
+    .line 47
     :cond_0
     iget-wide v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mDelayStartTime:J
 
     sub-long v2, p1, v2
 
-    .line 150
+    .line 35
     :try_start_1
     iget-wide v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartDelay:J
 
@@ -515,7 +523,7 @@
 
     if-lez v1, :cond_1
 
-    .line 188
+    .line 123
     iget-wide v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartDelay:J
 
     sub-long/2addr v2, v4
@@ -524,30 +532,30 @@
 
     iput-wide v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartTime:J
 
-    .line 3
+    .line 229
     const/4 v1, 0x1
 
     iput v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 208
+    .line 147
     :goto_0
     return v0
 
-    .line 6
+    .line 2
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 208
+    .line 28
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 71
+    .line 147
     :cond_1
     const/4 v0, 0x0
 
@@ -560,9 +568,9 @@
     .prologue
     const/4 v3, 0x0
 
-    sget v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 148
+    .line 8
     :try_start_0
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sAnimations:Ljava/lang/ThreadLocal;
 
@@ -574,7 +582,7 @@
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 52
+    .line 27
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sPendingAnimations:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -585,7 +593,7 @@
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 114
+    .line 173
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sDelayedAnims:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -596,12 +604,12 @@
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 117
+    .line 7
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
 
-    .line 24
+    .line 171
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mRunning:Z
 
     if-eqz v0, :cond_0
@@ -612,28 +620,28 @@
 
     if-eqz v0, :cond_0
 
-    .line 231
+    .line 125
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mListeners:Ljava/util/ArrayList;
 
-    .line 62
+    .line 167
     invoke-virtual {v0}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/util/ArrayList;
 
-    .line 89
+    .line 30
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v5
 
     move v2, v3
 
-    .line 105
+    .line 209
     :goto_0
     if-ge v2, v5, :cond_0
 
-    .line 131
+    .line 90
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -642,22 +650,22 @@
 
     invoke-interface {v1, p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator$AnimatorListener;->onAnimationEnd(Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;)V
 
-    .line 149
+    .line 115
     add-int/lit8 v1, v2, 0x1
 
     if-eqz v4, :cond_1
 
-    .line 108
+    .line 200
     :cond_0
     iput-boolean v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mRunning:Z
 
-    .line 218
+    .line 165
     iput-boolean v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStarted:Z
 
-    .line 138
+    .line 164
     return-void
 
-    .line 24
+    .line 171
     :catch_0
     move-exception v0
 
@@ -673,15 +681,15 @@
     .locals 1
 
     .prologue
-    .line 111
+    .line 179
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;
 
     invoke-direct {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;-><init>()V
 
-    .line 130
+    .line 97
     invoke-virtual {v0, p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->setFloatValues([F)V
 
-    .line 155
+    .line 192
     return-object v0
 .end method
 
@@ -691,9 +699,9 @@
     .prologue
     const/4 v3, 0x0
 
-    sget v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 232
+    .line 217
     :try_start_0
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
@@ -701,7 +709,7 @@
 
     if-nez v0, :cond_0
 
-    .line 42
+    .line 77
     new-instance v0, Landroid/util/AndroidRuntimeException;
 
     sget-object v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->z:[Ljava/lang/String;
@@ -721,32 +729,32 @@
 
     throw v0
 
-    .line 228
+    .line 197
     :cond_0
     :try_start_1
     iput-boolean p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingBackwards:Z
 
-    .line 215
+    .line 70
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mCurrentIteration:I
 
-    .line 76
+    .line 189
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
 
-    .line 181
+    .line 231
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStarted:Z
 
-    .line 69
+    .line 106
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartedDelay:Z
 
-    .line 66
+    .line 111
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sPendingAnimations:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -766,52 +774,52 @@
 
     if-nez v0, :cond_1
 
-    .line 190
+    .line 82
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->getCurrentPlayTime()J
 
     move-result-wide v0
 
     invoke-virtual {p0, v0, v1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->setCurrentPlayTime(J)V
 
-    .line 39
+    .line 143
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
 
-    .line 194
+    .line 176
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mRunning:Z
 
-    .line 51
+    .line 87
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mListeners:Ljava/util/ArrayList;
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
     if-eqz v0, :cond_1
 
-    .line 31
+    .line 11
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mListeners:Ljava/util/ArrayList;
 
-    .line 84
+    .line 80
     invoke-virtual {v0}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/util/ArrayList;
 
-    .line 9
+    .line 196
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v5
 
     move v2, v3
 
-    .line 146
+    .line 113
     :goto_0
     if-ge v2, v5, :cond_1
 
-    .line 135
+    .line 155
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -820,12 +828,12 @@
 
     invoke-interface {v1, p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator$AnimatorListener;->onAnimationStart(Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;)V
 
-    .line 40
+    .line 20
     add-int/lit8 v1, v2, 0x1
 
     if-eqz v4, :cond_3
 
-    .line 235
+    .line 104
     :cond_1
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sAnimationHandler:Ljava/lang/ThreadLocal;
 
@@ -835,29 +843,29 @@
 
     check-cast v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$AnimationHandler;
 
-    .line 44
+    .line 94
     if-nez v0, :cond_2
 
-    .line 221
+    .line 103
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$AnimationHandler;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, v1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$AnimationHandler;-><init>(Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$1;)V
 
-    .line 70
+    .line 52
     sget-object v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sAnimationHandler:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1, v0}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
-    .line 201
+    .line 148
     :cond_2
     invoke-virtual {v0, v3}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$AnimationHandler;->sendEmptyMessage(I)Z
 
-    .line 93
+    .line 40
     return-void
 
-    .line 51
+    .line 87
     :catch_1
     move-exception v0
 
@@ -873,13 +881,13 @@
     .locals 6
 
     .prologue
-    sget v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 100
+    .line 130
     :try_start_0
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->initAnimation()V
 
-    .line 156
+    .line 122
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sAnimations:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -890,7 +898,7 @@
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 176
+    .line 105
     iget-wide v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartDelay:J
 
     const-wide/16 v4, 0x0
@@ -905,22 +913,22 @@
 
     if-eqz v0, :cond_0
 
-    .line 225
+    .line 188
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mListeners:Ljava/util/ArrayList;
 
-    .line 147
+    .line 159
     invoke-virtual {v0}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/util/ArrayList;
 
-    .line 81
+    .line 1
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v4
 
-    .line 82
+    .line 54
     const/4 v1, 0x0
 
     move v2, v1
@@ -928,7 +936,7 @@
     :goto_0
     if-ge v2, v4, :cond_0
 
-    .line 230
+    .line 57
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -937,16 +945,16 @@
 
     invoke-interface {v1, p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator$AnimatorListener;->onAnimationStart(Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;)V
 
-    .line 106
+    .line 68
     add-int/lit8 v1, v2, 0x1
 
     if-eqz v3, :cond_1
 
-    .line 83
+    .line 89
     :cond_0
     return-void
 
-    .line 176
+    .line 105
     :catch_0
     move-exception v0
 
@@ -966,48 +974,48 @@
     .prologue
     const/4 v0, 0x0
 
-    sget v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 199
+    .line 31
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mInterpolator:Landroid/view/animation/Interpolator;
 
     invoke-interface {v1, p1}, Landroid/view/animation/Interpolator;->getInterpolation(F)F
 
     move-result v3
 
-    .line 129
+    .line 61
     iput v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mCurrentFraction:F
 
-    .line 22
+    .line 160
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValues:[Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
     array-length v4, v1
 
     move v1, v0
 
-    .line 80
+    .line 16
     :cond_0
     if-ge v1, v4, :cond_1
 
-    .line 65
+    .line 136
     iget-object v5, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValues:[Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
     aget-object v5, v5, v1
 
     invoke-virtual {v5, v3}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->calculateValue(F)V
 
-    .line 175
+    .line 38
     add-int/lit8 v1, v1, 0x1
 
     if-eqz v2, :cond_0
 
-    .line 203
+    .line 26
     :cond_1
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mUpdateListeners:Ljava/util/ArrayList;
 
     if-eqz v1, :cond_2
 
-    .line 23
+    .line 156
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mUpdateListeners:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
@@ -1016,11 +1024,11 @@
 
     move v1, v0
 
-    .line 109
+    .line 45
     :goto_0
     if-ge v1, v3, :cond_2
 
-    .line 123
+    .line 51
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mUpdateListeners:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1031,12 +1039,12 @@
 
     invoke-interface {v0, p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$AnimatorUpdateListener;->onAnimationUpdate(Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;)V
 
-    .line 233
+    .line 14
     add-int/lit8 v0, v1, 0x1
 
     if-eqz v2, :cond_3
 
-    .line 163
+    .line 124
     :cond_2
     return-void
 
@@ -1058,9 +1066,9 @@
 
     const/high16 v2, 0x3f800000
 
-    sget v6, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v6, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 21
+    .line 183
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
     :try_end_0
@@ -1068,13 +1076,13 @@
 
     if-nez v0, :cond_1
 
-    .line 158
+    .line 186
     const/4 v0, 0x1
 
     :try_start_1
     iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
 
-    .line 118
+    .line 211
     iget-wide v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mSeekTime:J
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
@@ -1083,13 +1091,13 @@
 
     if-gez v0, :cond_0
 
-    .line 216
+    .line 195
     :try_start_2
     iput-wide p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartTime:J
 
     if-eqz v6, :cond_1
 
-    .line 226
+    .line 17
     :cond_0
     iget-wide v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mSeekTime:J
 
@@ -1097,14 +1105,14 @@
 
     iput-wide v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartTime:J
 
-    .line 79
+    .line 161
     const-wide/16 v0, -0x1
 
     iput-wide v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mSeekTime:J
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 90
+    .line 128
     :cond_1
     :try_start_3
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
@@ -1113,11 +1121,11 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 207
+    .line 64
     :goto_0
     return v3
 
-    .line 118
+    .line 211
     :catch_0
     move-exception v0
 
@@ -1126,7 +1134,7 @@
     :try_end_4
     .catch Ljava/lang/IllegalArgumentException; {:try_start_4 .. :try_end_4} :catch_1
 
-    .line 216
+    .line 195
     :catch_1
     move-exception v0
 
@@ -1135,13 +1143,13 @@
     :try_end_5
     .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_2
 
-    .line 79
+    .line 161
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 161
+    .line 112
     :pswitch_0
     :try_start_6
     iget-wide v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mDuration:J
@@ -1166,13 +1174,13 @@
 
     move v1, v0
 
-    .line 154
+    .line 168
     :goto_1
     cmpl-float v0, v1, v2
 
     if-ltz v0, :cond_6
 
-    .line 98
+    .line 99
     :try_start_7
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mCurrentIteration:I
 
@@ -1189,7 +1197,7 @@
 
     if-ne v0, v5, :cond_5
 
-    .line 126
+    .line 221
     :cond_2
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mListeners:Ljava/util/ArrayList;
     :try_end_8
@@ -1197,7 +1205,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 157
+    .line 126
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mListeners:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -1206,11 +1214,11 @@
 
     move v5, v3
 
-    .line 206
+    .line 93
     :goto_2
     if-ge v5, v7, :cond_3
 
-    .line 202
+    .line 22
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mListeners:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1221,12 +1229,12 @@
 
     invoke-interface {v0, p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator$AnimatorListener;->onAnimationRepeat(Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;)V
 
-    .line 25
+    .line 202
     add-int/lit8 v0, v5, 0x1
 
     if-eqz v6, :cond_a
 
-    .line 137
+    .line 142
     :cond_3
     :try_start_9
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mRepeatMode:I
@@ -1237,7 +1245,7 @@
 
     if-ne v0, v5, :cond_4
 
-    .line 73
+    .line 71
     :try_start_a
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingBackwards:Z
     :try_end_a
@@ -1250,7 +1258,7 @@
     :goto_3
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingBackwards:Z
 
-    .line 167
+    .line 48
     :cond_4
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mCurrentIteration:I
 
@@ -1260,10 +1268,10 @@
 
     iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mCurrentIteration:I
 
-    .line 107
+    .line 215
     rem-float/2addr v1, v2
 
-    .line 196
+    .line 56
     iget-wide v8, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartTime:J
 
     iget-wide v10, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mDuration:J
@@ -1274,7 +1282,7 @@
 
     if-eqz v6, :cond_6
 
-    .line 128
+    .line 83
     :cond_5
     invoke-static {v1, v2}, Ljava/lang/Math;->min(FF)F
 
@@ -1282,22 +1290,22 @@
 
     move v3, v4
 
-    .line 38
+    .line 191
     :cond_6
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingBackwards:Z
 
     if-eqz v0, :cond_7
 
-    .line 27
+    .line 208
     sub-float v1, v2, v1
 
-    .line 164
+    .line 118
     :cond_7
     invoke-virtual {p0, v1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->animateValue(F)V
 
     goto :goto_0
 
-    .line 161
+    .line 112
     :catch_3
     move-exception v0
 
@@ -1316,7 +1324,7 @@
 
     goto :goto_1
 
-    .line 98
+    .line 99
     :catch_5
     move-exception v0
 
@@ -1325,13 +1333,13 @@
     :try_end_c
     .catch Ljava/lang/IllegalArgumentException; {:try_start_c .. :try_end_c} :catch_6
 
-    .line 126
+    .line 221
     :catch_6
     move-exception v0
 
     throw v0
 
-    .line 73
+    .line 71
     :catch_7
     move-exception v0
 
@@ -1355,7 +1363,7 @@
 
     goto :goto_2
 
-    .line 90
+    .line 128
     nop
 
     :pswitch_data_0
@@ -1369,9 +1377,9 @@
     .locals 3
 
     .prologue
-    sget v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 30
+    .line 95
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
     :try_end_0
@@ -1399,7 +1407,7 @@
     :try_start_2
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sDelayedAnims:Ljava/lang/ThreadLocal;
 
-    .line 47
+    .line 75
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -1414,7 +1422,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 166
+    .line 133
     :cond_0
     :try_start_3
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mRunning:Z
@@ -1427,17 +1435,17 @@
 
     if-eqz v0, :cond_2
 
-    .line 17
+    .line 62
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mListeners:Ljava/util/ArrayList;
 
-    .line 162
+    .line 18
     invoke-virtual {v0}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/util/ArrayList;
 
-    .line 77
+    .line 158
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -1455,21 +1463,21 @@
 
     check-cast v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator$AnimatorListener;
 
-    .line 112
+    .line 226
     invoke-interface {v0, p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator$AnimatorListener;->onAnimationCancel(Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;)V
 
-    .line 60
+    .line 24
     if-eqz v1, :cond_1
 
-    .line 113
+    .line 116
     :cond_2
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->endAnimation()V
 
-    .line 165
+    .line 223
     :cond_3
     return-void
 
-    .line 30
+    .line 95
     :catch_0
     move-exception v0
 
@@ -1478,7 +1486,7 @@
     :try_end_4
     .catch Ljava/lang/IllegalArgumentException; {:try_start_4 .. :try_end_4} :catch_1
 
-    .line 47
+    .line 75
     :catch_1
     move-exception v0
 
@@ -1487,7 +1495,7 @@
     :try_end_5
     .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_2
 
-    .line 166
+    .line 133
     :catch_2
     move-exception v0
 
@@ -1506,7 +1514,7 @@
     .locals 1
 
     .prologue
-    .line 97
+    .line 29
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->clone()Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;
 
     move-result-object v0
@@ -1520,42 +1528,42 @@
     .prologue
     const/4 v1, 0x0
 
-    sget v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 68
+    .line 119
     invoke-super {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->clone()Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;
 
     move-result-object v0
 
     check-cast v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;
 
-    .line 214
+    .line 235
     iget-object v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mUpdateListeners:Ljava/util/ArrayList;
 
     if-eqz v2, :cond_1
 
-    .line 13
+    .line 132
     iget-object v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mUpdateListeners:Ljava/util/ArrayList;
 
-    .line 34
+    .line 107
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v2, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mUpdateListeners:Ljava/util/ArrayList;
 
-    .line 7
+    .line 39
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
     move-result v5
 
     move v2, v1
 
-    .line 28
+    .line 72
     :cond_0
     if-ge v2, v5, :cond_1
 
-    .line 2
+    .line 101
     iget-object v6, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mUpdateListeners:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1564,70 +1572,70 @@
 
     invoke-virtual {v6, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 220
+    .line 78
     add-int/lit8 v2, v2, 0x1
 
     if-eqz v3, :cond_0
 
-    .line 49
+    .line 33
     :cond_1
     const-wide/16 v4, -0x1
 
     iput-wide v4, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mSeekTime:J
 
-    .line 102
+    .line 4
     iput-boolean v1, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingBackwards:Z
 
-    .line 8
+    .line 25
     iput v1, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mCurrentIteration:I
 
-    .line 92
+    .line 216
     iput-boolean v1, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mInitialized:Z
 
-    .line 56
+    .line 172
     iput v1, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
 
-    .line 139
+    .line 102
     iput-boolean v1, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartedDelay:Z
 
-    .line 171
+    .line 232
     iget-object v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValues:[Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
-    .line 45
+    .line 180
     if-eqz v2, :cond_3
 
-    .line 37
+    .line 220
     array-length v4, v2
 
-    .line 121
+    .line 177
     new-array v5, v4, [Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
     iput-object v5, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValues:[Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
-    .line 41
+    .line 210
     new-instance v5, Ljava/util/HashMap;
 
     invoke-direct {v5, v4}, Ljava/util/HashMap;-><init>(I)V
 
     iput-object v5, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValuesMap:Ljava/util/HashMap;
 
-    .line 210
+    .line 96
     :cond_2
     if-ge v1, v4, :cond_3
 
-    .line 182
+    .line 60
     aget-object v5, v2, v1
 
     invoke-virtual {v5}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->clone()Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
     move-result-object v5
 
-    .line 12
+    .line 213
     iget-object v6, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValues:[Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
     aput-object v5, v6, v1
 
-    .line 46
+    .line 76
     iget-object v6, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValuesMap:Ljava/util/HashMap;
 
     invoke-virtual {v5}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->getPropertyName()Ljava/lang/String;
@@ -1636,12 +1644,12 @@
 
     invoke-virtual {v6, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 15
+    .line 169
     add-int/lit8 v1, v1, 0x1
 
     if-eqz v3, :cond_2
 
-    .line 224
+    .line 139
     :cond_3
     return-object v0
 .end method
@@ -1650,7 +1658,7 @@
     .locals 1
 
     .prologue
-    .line 103
+    .line 114
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->clone()Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;
 
     move-result-object v0
@@ -1662,9 +1670,9 @@
     .locals 3
 
     .prologue
-    sget v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 141
+    .line 203
     :try_start_0
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->sAnimations:Ljava/lang/ThreadLocal;
 
@@ -1699,32 +1707,32 @@
 
     if-nez v0, :cond_0
 
-    .line 173
+    .line 225
     const/4 v0, 0x0
 
     :try_start_2
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartedDelay:Z
 
-    .line 55
+    .line 65
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->startAnimation()V
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
 
     if-eqz v1, :cond_1
 
-    .line 63
+    .line 43
     :cond_0
     :try_start_3
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mInitialized:Z
 
     if-nez v0, :cond_1
 
-    .line 88
+    .line 92
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->initAnimation()V
     :try_end_3
     .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 200
+    .line 85
     :cond_1
     :try_start_4
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mRepeatCount:I
@@ -1744,7 +1752,7 @@
 
     if-ne v0, v2, :cond_2
 
-    .line 237
+    .line 163
     const/4 v0, 0x0
 
     :try_start_6
@@ -1752,7 +1760,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 159
+    .line 121
     :cond_2
     const/high16 v0, 0x3f800000
 
@@ -1760,14 +1768,14 @@
     :try_end_6
     .catch Ljava/lang/IllegalArgumentException; {:try_start_6 .. :try_end_6} :catch_6
 
-    .line 48
+    .line 98
     :cond_3
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->endAnimation()V
 
-    .line 72
+    .line 138
     return-void
 
-    .line 141
+    .line 203
     :catch_0
     move-exception v0
 
@@ -1776,7 +1784,7 @@
     :try_end_7
     .catch Ljava/lang/IllegalArgumentException; {:try_start_7 .. :try_end_7} :catch_1
 
-    .line 55
+    .line 65
     :catch_1
     move-exception v0
 
@@ -1785,7 +1793,7 @@
     :try_end_8
     .catch Ljava/lang/IllegalArgumentException; {:try_start_8 .. :try_end_8} :catch_2
 
-    .line 63
+    .line 43
     :catch_2
     move-exception v0
 
@@ -1794,13 +1802,13 @@
     :try_end_9
     .catch Ljava/lang/IllegalArgumentException; {:try_start_9 .. :try_end_9} :catch_3
 
-    .line 88
+    .line 92
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 200
+    .line 85
     :catch_4
     move-exception v0
 
@@ -1809,7 +1817,7 @@
     :try_end_a
     .catch Ljava/lang/IllegalArgumentException; {:try_start_a .. :try_end_a} :catch_5
 
-    .line 237
+    .line 163
     :catch_5
     move-exception v0
 
@@ -1818,7 +1826,7 @@
     :try_end_b
     .catch Ljava/lang/IllegalArgumentException; {:try_start_b .. :try_end_b} :catch_6
 
-    .line 159
+    .line 121
     :catch_6
     move-exception v0
 
@@ -1829,7 +1837,7 @@
     .locals 4
 
     .prologue
-    .line 184
+    .line 140
     :try_start_0
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mInitialized:Z
     :try_end_0
@@ -1842,15 +1850,15 @@
 
     if-nez v0, :cond_1
 
-    .line 142
+    .line 88
     :cond_0
     const-wide/16 v0, 0x0
 
-    .line 177
+    .line 237
     :goto_0
     return-wide v0
 
-    .line 184
+    .line 140
     :catch_0
     move-exception v0
 
@@ -1858,13 +1866,13 @@
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 142
+    .line 88
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 177
+    .line 237
     :cond_1
     invoke-static {}, Landroid/view/animation/AnimationUtils;->currentAnimationTimeMillis()J
 
@@ -1881,43 +1889,43 @@
     .locals 4
 
     .prologue
-    sget v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 96
+    .line 108
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mInitialized:Z
 
     if-nez v0, :cond_2
 
-    .line 75
+    .line 6
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValues:[Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
     array-length v2, v0
 
-    .line 145
+    .line 204
     const/4 v0, 0x0
 
     :cond_0
     if-ge v0, v2, :cond_1
 
-    .line 115
+    .line 201
     iget-object v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValues:[Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
     aget-object v3, v3, v0
 
     invoke-virtual {v3}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->init()V
 
-    .line 183
+    .line 134
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 186
+    .line 141
     :cond_1
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mInitialized:Z
 
-    .line 185
+    .line 74
     :cond_2
     return-void
 .end method
@@ -1928,7 +1936,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 160
+    .line 69
     :try_start_0
     iget v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
     :try_end_0
@@ -1967,15 +1975,15 @@
     .locals 5
 
     .prologue
-    .line 212
+    .line 222
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->initAnimation()V
 
-    .line 193
+    .line 227
     invoke-static {}, Landroid/view/animation/AnimationUtils;->currentAnimationTimeMillis()J
 
     move-result-wide v0
 
-    .line 26
+    .line 233
     :try_start_0
     iget v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
 
@@ -1983,29 +1991,29 @@
 
     if-eq v2, v3, :cond_0
 
-    .line 205
+    .line 182
     iput-wide p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mSeekTime:J
 
-    .line 19
+    .line 55
     const/4 v2, 0x2
 
     iput v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mPlayingState:I
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 33
+    .line 12
     :cond_0
     sub-long v2, v0, p1
 
     iput-wide v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartTime:J
 
-    .line 104
+    .line 175
     invoke-virtual {p0, v0, v1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->animationFrame(J)Z
 
-    .line 151
+    .line 212
     return-void
 
-    .line 19
+    .line 55
     :catch_0
     move-exception v0
 
@@ -2016,14 +2024,14 @@
     .locals 5
 
     .prologue
-    .line 178
+    .line 37
     const-wide/16 v0, 0x0
 
     cmp-long v0, p1, v0
 
     if-gez v0, :cond_0
 
-    .line 134
+    .line 205
     :try_start_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -2033,7 +2041,7 @@
 
     sget-object v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x3
+    const/4 v3, 0x1
 
     aget-object v2, v2, v3
 
@@ -2060,11 +2068,11 @@
 
     throw v0
 
-    .line 20
+    .line 9
     :cond_0
     iput-wide p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mDuration:J
 
-    .line 127
+    .line 198
     return-object p0
 .end method
 
@@ -2074,7 +2082,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 219
+    .line 91
     if-eqz p1, :cond_0
 
     :try_start_0
@@ -2084,18 +2092,18 @@
 
     if-nez v0, :cond_1
 
-    .line 198
+    .line 224
     :cond_0
     :goto_0
     return-void
 
-    .line 94
+    .line 42
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 10
+    .line 13
     :cond_1
     :try_start_1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValues:[Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
@@ -2111,7 +2119,7 @@
 
     if-nez v0, :cond_3
 
-    .line 174
+    .line 150
     :cond_2
     const/4 v0, 0x1
 
@@ -2129,28 +2137,28 @@
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->setValues([Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;)V
 
-    sget v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
 
     if-eqz v0, :cond_4
 
-    .line 43
+    .line 86
     :cond_3
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValues:[Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
     aget-object v0, v0, v3
 
-    .line 125
+    .line 199
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->setFloatValues([F)V
 
-    .line 189
+    .line 129
     :cond_4
     iput-boolean v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mInitialized:Z
 
     goto :goto_0
 
-    .line 10
+    .line 13
     :catch_1
     move-exception v0
 
@@ -2159,7 +2167,7 @@
     :try_end_3
     .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_2
 
-    .line 174
+    .line 150
     :catch_2
     move-exception v0
 
@@ -2170,18 +2178,18 @@
     .locals 1
 
     .prologue
-    .line 153
+    .line 154
     if-eqz p1, :cond_0
 
-    .line 222
+    .line 19
     :try_start_0
     iput-object p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mInterpolator:Landroid/view/animation/Interpolator;
 
-    sget v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
     if-eqz v0, :cond_1
 
-    .line 85
+    .line 46
     :cond_0
     new-instance v0, Landroid/view/animation/LinearInterpolator;
 
@@ -2191,11 +2199,11 @@
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 87
+    .line 84
     :cond_1
     return-void
 
-    .line 85
+    .line 46
     :catch_0
     move-exception v0
 
@@ -2206,10 +2214,10 @@
     .locals 1
 
     .prologue
-    .line 236
+    .line 230
     iput-wide p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mStartDelay:J
 
-    .line 59
+    .line 185
     return-void
 .end method
 
@@ -2219,15 +2227,15 @@
     .prologue
     const/4 v1, 0x0
 
-    sget v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 229
+    .line 236
     array-length v3, p1
 
-    .line 217
+    .line 59
     iput-object p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValues:[Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
-    .line 54
+    .line 135
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0, v3}, Ljava/util/HashMap;-><init>(I)V
@@ -2236,14 +2244,14 @@
 
     move v0, v1
 
-    .line 4
+    .line 34
     :cond_0
     if-ge v0, v3, :cond_1
 
-    .line 53
+    .line 21
     aget-object v4, p1, v0
 
-    .line 74
+    .line 66
     iget-object v5, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValuesMap:Ljava/util/HashMap;
 
     invoke-virtual {v4}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->getPropertyName()Ljava/lang/String;
@@ -2252,16 +2260,16 @@
 
     invoke-virtual {v5, v6, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 223
+    .line 32
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v2, :cond_0
 
-    .line 91
+    .line 100
     :cond_1
     iput-boolean v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mInitialized:Z
 
-    .line 120
+    .line 166
     return-void
 .end method
 
@@ -2269,12 +2277,12 @@
     .locals 1
 
     .prologue
-    .line 169
+    .line 73
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->start(Z)V
 
-    .line 1
+    .line 234
     return-void
 .end method
 
@@ -2282,16 +2290,16 @@
     .locals 5
 
     .prologue
-    sget v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 140
+    .line 36
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x2
+    const/4 v3, 0x3
 
     aget-object v1, v1, v3
 
@@ -2315,12 +2323,12 @@
 
     move-result-object v1
 
-    .line 213
+    .line 15
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->mValues:[Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
     if-eqz v0, :cond_1
 
-    .line 209
+    .line 49
     const/4 v0, 0x0
 
     :cond_0
@@ -2330,7 +2338,7 @@
 
     if-ge v0, v3, :cond_1
 
-    .line 119
+    .line 146
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -2341,7 +2349,7 @@
 
     sget-object v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x1
+    const/4 v4, 0x2
 
     aget-object v3, v3, v4
 
@@ -2365,12 +2373,12 @@
 
     move-result-object v1
 
-    .line 35
+    .line 149
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v2, :cond_0
 
-    .line 211
+    .line 67
     :cond_1
     return-object v1
 .end method

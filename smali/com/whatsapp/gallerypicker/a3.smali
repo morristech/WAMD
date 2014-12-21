@@ -1,95 +1,102 @@
 .class Lcom/whatsapp/gallerypicker/a3;
-.super Lcom/whatsapp/a11;
+.super Ljava/lang/Object;
 .source "a3.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final i:Lcom/whatsapp/gallerypicker/ImagePreview;
+.field final a:Lcom/whatsapp/gallerypicker/ImagePreview;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/gallerypicker/ImagePreview;Landroid/app/Activity;)V
+.method constructor <init>(Lcom/whatsapp/gallerypicker/ImagePreview;)V
     .locals 0
 
     .prologue
-    .line 9
-    iput-object p1, p0, Lcom/whatsapp/gallerypicker/a3;->i:Lcom/whatsapp/gallerypicker/ImagePreview;
+    .line 10
+    iput-object p1, p0, Lcom/whatsapp/gallerypicker/a3;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    invoke-direct {p0, p2}, Lcom/whatsapp/a11;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public dismiss()V
-    .locals 5
+.method public run()V
+    .locals 4
 
     .prologue
-    sget v2, Lcom/whatsapp/gallerypicker/ImagePreview;->d:I
+    .line 5
+    .line 8
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/a3;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    .line 1
-    invoke-super {p0}, Lcom/whatsapp/a11;->dismiss()V
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->s(Lcom/whatsapp/gallerypicker/ImagePreview;)Landroid/view/View;
+
+    move-result-object v0
+
+    const/high16 v1, 0x75000000
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
 
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/gallerypicker/a3;->i:Lcom/whatsapp/gallerypicker/ImagePreview;
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/a3;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->s(Lcom/whatsapp/gallerypicker/ImagePreview;)Landroid/support/v4/view/ViewPager;
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->t(Lcom/whatsapp/gallerypicker/ImagePreview;)Z
 
-    move-result-object v0
+    move-result v0
 
-    invoke-virtual {v0}, Landroid/support/v4/view/ViewPager;->getChildCount()I
-
-    move-result v3
-
-    .line 4
-    const/4 v0, 0x0
-
-    move v1, v0
-
-    :goto_0
-    if-ge v1, v3, :cond_1
+    if-nez v0, :cond_0
 
     .line 6
-    iget-object v0, p0, Lcom/whatsapp/gallerypicker/a3;->i:Lcom/whatsapp/gallerypicker/ImagePreview;
+    const/16 v0, 0xb2
 
-    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->s(Lcom/whatsapp/gallerypicker/ImagePreview;)Landroid/support/v4/view/ViewPager;
+    .line 9
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/a3;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    move-result-object v0
+    invoke-static {v1}, Lcom/whatsapp/gallerypicker/ImagePreview;->i(Lcom/whatsapp/gallerypicker/ImagePreview;)Landroid/widget/TextView;
 
-    invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPager;->getChildAt(I)Landroid/view/View;
+    move-result-object v1
 
-    move-result-object v0
+    const v2, -0x4d000001
 
-    .line 8
-    const v4, 0x7f0b0165
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    .line 1
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/a3;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    move-result-object v0
+    invoke-static {v1}, Lcom/whatsapp/gallerypicker/ImagePreview;->f(Lcom/whatsapp/gallerypicker/ImagePreview;)Landroid/graphics/drawable/Drawable;
 
-    check-cast v0, Landroid/widget/ImageButton;
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
+
+    .line 11
+    :cond_0
+    new-instance v0, Landroid/view/animation/AlphaAnimation;
+
+    const/4 v1, 0x0
+
+    const/high16 v2, 0x3f800000
+
+    invoke-direct {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
+
+    .line 4
+    const-wide/16 v2, 0x12c
+
+    invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
 
     .line 7
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/a3;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    .line 5
-    const v4, 0x7f0204c2
+    invoke-static {v1}, Lcom/whatsapp/gallerypicker/ImagePreview;->s(Lcom/whatsapp/gallerypicker/ImagePreview;)Landroid/view/View;
 
-    invoke-virtual {v0, v4}, Landroid/widget/ImageButton;->setImageResource(I)V
+    move-result-object v1
 
-    .line 10
-    :cond_0
-    add-int/lit8 v0, v1, 0x1
-
-    if-eqz v2, :cond_2
+    invoke-virtual {v1, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
     .line 3
-    :cond_1
     return-void
-
-    :cond_2
-    move v1, v0
-
-    goto :goto_0
 .end method

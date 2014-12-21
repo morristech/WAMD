@@ -18,9 +18,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
-
-    const/16 v6, 0x2d
+    .locals 10
 
     const/4 v1, 0x0
 
@@ -28,7 +26,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "\u0015\r\rH<IE\u000e\u0017"
+    const-string v2, "\u0007+~On[c}\u0010"
 
     const/4 v0, -0x1
 
@@ -43,20 +41,20 @@
 
     move-result-object v2
 
-    array-length v7, v2
+    array-length v6, v2
 
-    move v8, v7
+    move v7, v6
 
-    move v9, v1
+    move v8, v1
 
-    move-object v7, v2
+    move-object v6, v2
 
     :goto_1
-    if-gt v8, v9, :cond_0
+    if-gt v7, v8, :cond_0
 
     new-instance v2, Ljava/lang/String;
 
-    invoke-direct {v2, v7}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v2, v6}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v2}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -68,7 +66,7 @@
 
     const/4 v2, 0x1
 
-    const-string v0, "\\H\tB9XH3C3A\u0017"
+    const-string v0, "NnzEkJn@DaS1"
 
     move v3, v2
 
@@ -88,46 +86,48 @@
     return-void
 
     :cond_0
-    aget-char v10, v7, v9
+    aget-char v9, v6, v8
 
-    rem-int/lit8 v2, v9, 0x5
+    rem-int/lit8 v2, v8, 0x5
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0x55
+    const/4 v2, 0x7
 
     :goto_2
-    xor-int/2addr v2, v10
+    xor-int/2addr v2, v9
 
     int-to-char v2, v2
 
-    aput-char v2, v7, v9
+    aput-char v2, v6, v8
 
-    add-int/lit8 v2, v9, 0x1
+    add-int/lit8 v2, v8, 0x1
 
-    move v9, v2
+    move v8, v2
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v2, 0x2e
+    const/16 v2, 0x3c
 
     goto :goto_2
 
     :pswitch_2
-    move v2, v6
+    const/16 v2, 0xb
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v2, 0x7a
+    const/16 v2, 0x9
 
     goto :goto_2
 
     :pswitch_4
-    move v2, v6
+    const/16 v2, 0x2a
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -149,7 +149,7 @@
     .locals 2
 
     .prologue
-    .line 11
+    .line 17
     iget v0, p1, Lcom/actionbarsherlock/widget/ActivityChooserModel$ActivityResolveInfo;->weight:F
 
     invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
@@ -189,15 +189,15 @@
 
     const/4 v1, 0x0
 
-    .line 3
+    .line 6
     if-ne p0, p1, :cond_1
 
-    .line 19
+    .line 15
     :cond_0
     :goto_0
     return v0
 
-    .line 13
+    .line 3
     :cond_1
     if-nez p1, :cond_2
 
@@ -206,7 +206,7 @@
     .line 4
     goto :goto_0
 
-    .line 9
+    .line 13
     :cond_2
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -220,14 +220,14 @@
 
     move v0, v1
 
-    .line 19
+    .line 11
     goto :goto_0
 
-    .line 15
+    .line 18
     :cond_3
     check-cast p1, Lcom/actionbarsherlock/widget/ActivityChooserModel$ActivityResolveInfo;
 
-    .line 16
+    .line 2
     iget v2, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$ActivityResolveInfo;->weight:F
 
     invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
@@ -244,7 +244,7 @@
 
     move v0, v1
 
-    .line 1
+    .line 15
     goto :goto_0
 .end method
 
@@ -252,7 +252,7 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 16
     iget v0, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$ActivityResolveInfo;->weight:F
 
     invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
@@ -268,17 +268,17 @@
     .locals 6
 
     .prologue
-    .line 2
+    .line 5
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 7
+    .line 9
     const-string v1, "["
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 10
+    .line 7
     sget-object v1, Lcom/actionbarsherlock/widget/ActivityChooserModel$ActivityResolveInfo;->z:[Ljava/lang/String;
 
     const/4 v2, 0x1
@@ -297,7 +297,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5
+    .line 10
     sget-object v1, Lcom/actionbarsherlock/widget/ActivityChooserModel$ActivityResolveInfo;->z:[Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -318,12 +318,12 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 18
+    .line 19
     const-string v1, "]"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6
+    .line 14
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private A:Landroid/graphics/Matrix;
+.field private A:Landroid/net/Uri;
 
-.field private B:Landroid/net/Uri;
+.field private B:Landroid/graphics/Matrix;
 
 .field final z:Lcom/whatsapp/gallerypicker/ImagePreview;
 
@@ -16,42 +16,42 @@
     .locals 1
 
     .prologue
-    .line 30
+    .line 21
     iput-object p1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->z:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    .line 1
+    .line 5
     invoke-direct {p0, p2}, Lcom/whatsapp/MediaGalleryImageView;-><init>(Landroid/content/Context;)V
 
-    .line 23
+    .line 13
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->A:Landroid/graphics/Matrix;
+    iput-object v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->B:Landroid/graphics/Matrix;
 
-    .line 11
+    .line 12
     sget-object v0, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 17
+    .line 14
     invoke-direct {p0, p3}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->a(Landroid/net/Uri;)V
 
-    .line 28
+    .line 30
     new-instance v0, Lcom/whatsapp/gallerypicker/au;
 
     invoke-direct {v0, p0, p1}, Lcom/whatsapp/gallerypicker/au;-><init>(Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;Lcom/whatsapp/gallerypicker/ImagePreview;)V
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 5
-    new-instance v0, Lcom/whatsapp/gallerypicker/b1;
+    .line 31
+    new-instance v0, Lcom/whatsapp/gallerypicker/bk;
 
-    invoke-direct {v0, p0, p1}, Lcom/whatsapp/gallerypicker/b1;-><init>(Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;Lcom/whatsapp/gallerypicker/ImagePreview;)V
+    invoke-direct {v0, p0, p1}, Lcom/whatsapp/gallerypicker/bk;-><init>(Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;Lcom/whatsapp/gallerypicker/ImagePreview;)V
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 21
+    .line 18
     return-void
 .end method
 
@@ -59,8 +59,8 @@
     .locals 1
 
     .prologue
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->B:Landroid/net/Uri;
+    .line 11
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->A:Landroid/net/Uri;
 
     return-object v0
 .end method
@@ -69,10 +69,10 @@
     .locals 3
 
     .prologue
-    .line 31
-    iput-object p1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->B:Landroid/net/Uri;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->A:Landroid/net/Uri;
 
-    .line 22
+    .line 19
     const/high16 v0, 0x42900000
 
     invoke-virtual {p0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->getResources()Landroid/content/res/Resources;
@@ -89,10 +89,10 @@
 
     float-to-int v1, v0
 
-    .line 4
+    .line 7
     iget-object v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->z:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->q(Lcom/whatsapp/gallerypicker/ImagePreview;)Ljava/util/HashMap;
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->j(Lcom/whatsapp/gallerypicker/ImagePreview;)Ljava/util/HashMap;
 
     move-result-object v0
 
@@ -104,7 +104,7 @@
 
     iget-object v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->z:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->q(Lcom/whatsapp/gallerypicker/ImagePreview;)Ljava/util/HashMap;
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->j(Lcom/whatsapp/gallerypicker/ImagePreview;)Ljava/util/HashMap;
 
     move-result-object v0
 
@@ -114,31 +114,31 @@
 
     check-cast v0, Landroid/net/Uri;
 
-    .line 9
+    .line 17
     :goto_0
-    const v2, 0x7f090024
+    const v2, 0x7f090025
 
     invoke-virtual {p0, v2}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->setBackgroundResource(I)V
 
-    .line 25
-    new-instance v2, Lcom/whatsapp/gallerypicker/az;
+    .line 4
+    new-instance v2, Lcom/whatsapp/gallerypicker/as;
 
-    invoke-direct {v2, p0, v0, v1}, Lcom/whatsapp/gallerypicker/az;-><init>(Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;Landroid/net/Uri;I)V
+    invoke-direct {v2, p0, v0, v1}, Lcom/whatsapp/gallerypicker/as;-><init>(Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;Landroid/net/Uri;I)V
 
     const/4 v0, 0x0
 
     new-array v0, v0, [Ljava/lang/Void;
 
-    .line 32
-    invoke-virtual {v2, v0}, Lcom/whatsapp/gallerypicker/az;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    .line 1
+    invoke-virtual {v2, v0}, Lcom/whatsapp/gallerypicker/as;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 13
+    .line 9
     return-void
 
     :cond_0
     move-object v0, p1
 
-    .line 4
+    .line 7
     goto :goto_0
 .end method
 
@@ -146,7 +146,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 26
     invoke-direct {p0, p1}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->a(Landroid/net/Uri;)V
 
     return-void
@@ -158,41 +158,41 @@
     .locals 4
 
     .prologue
-    .line 12
+    .line 25
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 29
+    .line 16
     iget-object v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->z:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->w(Lcom/whatsapp/gallerypicker/ImagePreview;)Landroid/view/View;
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->q(Lcom/whatsapp/gallerypicker/ImagePreview;)Landroid/view/View;
 
     move-result-object v0
 
     if-ne v0, p0, :cond_0
 
-    .line 8
+    .line 2
     const v0, -0xeeeeef
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->drawColor(I)V
 
-    .line 27
+    .line 20
     :goto_0
     return-void
 
-    .line 24
+    .line 22
     :cond_0
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->y:Z
+    iput-boolean v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->v:Z
 
-    .line 19
+    .line 24
     iget-object v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->z:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->r(Lcom/whatsapp/gallerypicker/ImagePreview;)Ljava/util/HashMap;
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->l(Lcom/whatsapp/gallerypicker/ImagePreview;)Ljava/util/HashMap;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->B:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->A:Landroid/net/Uri;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -200,14 +200,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 15
+    .line 8
     iget-object v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->z:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->r(Lcom/whatsapp/gallerypicker/ImagePreview;)Ljava/util/HashMap;
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->l(Lcom/whatsapp/gallerypicker/ImagePreview;)Ljava/util/HashMap;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->B:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->A:Landroid/net/Uri;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -219,8 +219,8 @@
 
     move-result v0
 
-    .line 20
-    iget-object v1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->A:Landroid/graphics/Matrix;
+    .line 23
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->B:Landroid/graphics/Matrix;
 
     int-to-float v0, v0
 
@@ -242,16 +242,16 @@
 
     invoke-virtual {v1, v0, v2, v3}, Landroid/graphics/Matrix;->setRotate(FFF)V
 
-    .line 26
-    iget-object v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->A:Landroid/graphics/Matrix;
+    .line 32
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->B:Landroid/graphics/Matrix;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->concat(Landroid/graphics/Matrix;)V
 
-    .line 10
+    .line 6
     :cond_1
     invoke-super {p0, p1}, Lcom/whatsapp/MediaGalleryImageView;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 18
+    .line 29
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     goto :goto_0
@@ -261,7 +261,7 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 28
     invoke-virtual {p0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->getSuggestedMinimumHeight()I
 
     move-result v0
@@ -270,9 +270,9 @@
 
     move-result v0
 
-    .line 16
+    .line 27
     invoke-virtual {p0, v0, v0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbImageView;->setMeasuredDimension(II)V
 
-    .line 6
+    .line 15
     return-void
 .end method

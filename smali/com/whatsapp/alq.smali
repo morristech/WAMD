@@ -3,240 +3,104 @@
 .source "alq.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/google/android/gms/maps/GoogleMap$OnMarkerClickListener;
 
 
 # instance fields
-.field private a:J
-
-.field private b:J
-
-.field final c:Lcom/whatsapp/a8f;
+.field final a:Lcom/whatsapp/GroupChatLiveLocationsActivity2;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/a8f;)V
-    .locals 2
+.method constructor <init>(Lcom/whatsapp/GroupChatLiveLocationsActivity2;)V
+    .locals 0
 
     .prologue
-    .line 10
-    iput-object p1, p0, Lcom/whatsapp/alq;->c:Lcom/whatsapp/a8f;
+    .line 6
+    iput-object p1, p0, Lcom/whatsapp/alq;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 3
-    const-wide/16 v0, 0x1388
-
-    iput-wide v0, p0, Lcom/whatsapp/alq;->a:J
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 8
+.method public onMarkerClick(Lcom/google/android/gms/maps/model/Marker;)Z
+    .locals 4
 
     .prologue
-    const-wide/16 v6, 0x1388
-
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
+    const/4 v3, 0x1
 
     .line 5
-    :try_start_0
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    iget-object v0, p0, Lcom/whatsapp/alq;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity2;
 
-    move-result-wide v2
-
-    iget-wide v4, p0, Lcom/whatsapp/alq;->b:J
-
-    sub-long/2addr v2, v4
-
-    cmp-long v0, v2, v6
-
-    if-lez v0, :cond_0
-
-    .line 4
-    const-wide/16 v2, 0x1388
-
-    iput-wide v2, p0, Lcom/whatsapp/alq;->a:J
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-
-    if-eqz v1, :cond_1
-
-    .line 15
-    :cond_0
-    :try_start_1
-    iget-wide v2, p0, Lcom/whatsapp/alq;->a:J
-
-    const-wide/16 v4, 0x2
-
-    mul-long/2addr v2, v4
-
-    const-wide/16 v4, 0x7530
-
-    invoke-static {v2, v3, v4, v5}, Ljava/lang/Math;->min(JJ)J
-
-    move-result-wide v2
-
-    iput-wide v2, p0, Lcom/whatsapp/alq;->a:J
-    :try_end_1
-    .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 11
-    :cond_1
-    :try_start_2
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    invoke-static {}, Lcom/whatsapp/App;->am()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_5
-
-    sget-object v0, Lcom/whatsapp/contact/i;->INTERACTIVE_DELTA:Lcom/whatsapp/contact/i;
-    :try_end_2
-    .catch Ljava/lang/InterruptedException; {:try_start_2 .. :try_end_2} :catch_2
-
-    :goto_0
-    invoke-static {v2, v0}, Lcom/whatsapp/contact/b;->a(Landroid/content/Context;Lcom/whatsapp/contact/i;)Lcom/whatsapp/contact/n;
+    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity2;->f(Lcom/whatsapp/GroupChatLiveLocationsActivity2;)Ljava/util/HashMap;
 
     move-result-object v0
 
-    .line 14
-    :try_start_3
-    invoke-virtual {v0}, Lcom/whatsapp/contact/n;->isFailure()Z
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result v2
+    move-result-object v0
 
-    if-eqz v2, :cond_2
+    check-cast v0, Ljava/util/ArrayList;
 
-    .line 13
-    iget-object v2, p0, Lcom/whatsapp/alq;->c:Lcom/whatsapp/a8f;
+    .line 8
+    iget-object v1, p0, Lcom/whatsapp/alq;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity2;
 
-    const/4 v3, 0x0
+    invoke-static {v1}, Lcom/whatsapp/GroupChatLiveLocationsActivity2;->b(Lcom/whatsapp/GroupChatLiveLocationsActivity2;)Lcom/whatsapp/yo;
 
-    invoke-virtual {v2, v3}, Lcom/whatsapp/a8f;->c(Z)V
-    :try_end_3
-    .catch Ljava/lang/InterruptedException; {:try_start_3 .. :try_end_3} :catch_3
+    move-result-object v1
 
-    if-eqz v1, :cond_3
+    invoke-virtual {v1, v0}, Lcom/whatsapp/yo;->a(Ljava/util/ArrayList;)V
 
-    .line 6
-    :cond_2
-    :try_start_4
-    invoke-virtual {v0}, Lcom/whatsapp/contact/n;->isSuccess()Z
-    :try_end_4
-    .catch Ljava/lang/InterruptedException; {:try_start_4 .. :try_end_4} :catch_4
+    .line 9
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v1
 
-    if-eqz v1, :cond_3
+    if-ne v1, v3, :cond_0
 
     .line 2
-    :try_start_5
-    iget-object v1, p0, Lcom/whatsapp/alq;->c:Lcom/whatsapp/a8f;
+    iget-object v1, p0, Lcom/whatsapp/alq;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity2;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Lcom/whatsapp/a8f;->a(Z)V
-    :try_end_5
-    .catch Ljava/lang/InterruptedException; {:try_start_5 .. :try_end_5} :catch_5
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    .line 9
-    :cond_3
-    :try_start_6
-    iget-wide v2, p0, Lcom/whatsapp/alq;->a:J
+    move-result-object v0
 
-    invoke-static {v2, v3}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_6
-    .catch Ljava/lang/InterruptedException; {:try_start_6 .. :try_end_6} :catch_7
+    check-cast v0, Lcom/whatsapp/protocol/i;
 
-    .line 16
-    :goto_1
-    :try_start_7
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v2
-
-    iput-wide v2, p0, Lcom/whatsapp/alq;->b:J
-
-    .line 1
-    sget-object v1, Lcom/whatsapp/contact/n;->IN_PROGRESS:Lcom/whatsapp/contact/n;
-
-    if-ne v0, v1, :cond_4
+    invoke-static {v1, v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity2;->a(Lcom/whatsapp/GroupChatLiveLocationsActivity2;Lcom/whatsapp/protocol/i;)Lcom/whatsapp/protocol/i;
 
     .line 7
-    iget-object v0, p0, Lcom/whatsapp/alq;->c:Lcom/whatsapp/a8f;
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/alq;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity2;
 
-    invoke-static {v0}, Lcom/whatsapp/a8f;->a(Lcom/whatsapp/a8f;)V
-    :try_end_7
-    .catch Ljava/lang/InterruptedException; {:try_start_7 .. :try_end_7} :catch_6
-
-    .line 8
-    :cond_4
-    return-void
+    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity2;->a(Lcom/whatsapp/GroupChatLiveLocationsActivity2;)V
 
     .line 4
-    :catch_0
-    move-exception v0
+    iget-object v0, p0, Lcom/whatsapp/alq;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity2;
 
-    :try_start_8
-    throw v0
-    :try_end_8
-    .catch Ljava/lang/InterruptedException; {:try_start_8 .. :try_end_8} :catch_1
+    invoke-static {v0, v3}, Lcom/whatsapp/GroupChatLiveLocationsActivity2;->b(Lcom/whatsapp/GroupChatLiveLocationsActivity2;Z)Z
 
-    .line 15
-    :catch_1
-    move-exception v0
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/alq;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity2;
 
-    throw v0
+    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity2;->i(Lcom/whatsapp/GroupChatLiveLocationsActivity2;)Lcom/google/android/gms/maps/GoogleMap;
 
-    .line 11
-    :catch_2
-    move-exception v0
+    move-result-object v0
 
-    throw v0
+    invoke-virtual {p1}, Lcom/google/android/gms/maps/model/Marker;->getPosition()Lcom/google/android/gms/maps/model/LatLng;
 
-    :cond_5
-    sget-object v0, Lcom/whatsapp/contact/i;->BACKGROUND_DELTA:Lcom/whatsapp/contact/i;
+    move-result-object v1
 
-    goto :goto_0
+    invoke-static {v1}, Lcom/google/android/gms/maps/CameraUpdateFactory;->newLatLng(Lcom/google/android/gms/maps/model/LatLng;)Lcom/google/android/gms/maps/CameraUpdate;
 
-    .line 13
-    :catch_3
-    move-exception v0
+    move-result-object v1
 
-    :try_start_9
-    throw v0
-    :try_end_9
-    .catch Ljava/lang/InterruptedException; {:try_start_9 .. :try_end_9} :catch_4
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/maps/GoogleMap;->animateCamera(Lcom/google/android/gms/maps/CameraUpdate;)V
 
-    .line 6
-    :catch_4
-    move-exception v0
-
-    :try_start_a
-    throw v0
-    :try_end_a
-    .catch Ljava/lang/InterruptedException; {:try_start_a .. :try_end_a} :catch_5
-
-    .line 2
-    :catch_5
-    move-exception v0
-
-    throw v0
-
-    .line 7
-    :catch_6
-    move-exception v0
-
-    throw v0
-
-    .line 12
-    :catch_7
-    move-exception v1
-
-    goto :goto_1
+    .line 3
+    return v3
 .end method

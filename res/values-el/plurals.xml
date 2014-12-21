@@ -168,10 +168,6 @@
         <item quantity="other">%d απομένουν</item>
         <item quantity="one">%d απομένει</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Μπορείτε να συνεχίσετε. Το %,d των μηνυμάτων σας έχει αποκατασταθεί.</item>
-        <item quantity="one">Μπορείτε να συνεχίσετε. Το %,d του μηνύματος σας μόλις αποκαταστάθηκε.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Αποστολή %1$d βίντεο σε %2$s</item>
         <item quantity="one">Αποστολή %1$d βίντεο σε %2$s</item>

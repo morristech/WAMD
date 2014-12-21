@@ -1,132 +1,64 @@
-.class synthetic Lcom/whatsapp/ur;
+.class Lcom/whatsapp/ur;
 .super Ljava/lang/Object;
 .source "ur.java"
 
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
-# static fields
-.field static final a:[I
+
+# instance fields
+.field final a:Lcom/whatsapp/ProfileInfoActivity;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method constructor <init>(Lcom/whatsapp/ProfileInfoActivity;)V
+    .locals 0
+
+    .prologue
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/ur;->a:Lcom/whatsapp/ProfileInfoActivity;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 8
 
     .prologue
     .line 1
-    invoke-static {}, Lcom/whatsapp/contact/n;->values()[Lcom/whatsapp/contact/n;
+    new-instance v4, Lcom/whatsapp/o1;
 
-    move-result-object v0
+    invoke-direct {v4, p0}, Lcom/whatsapp/o1;-><init>(Lcom/whatsapp/ur;)V
 
-    array-length v0, v0
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/ur;->a:Lcom/whatsapp/ProfileInfoActivity;
 
-    new-array v0, v0, [I
+    invoke-static {v0}, Lcom/whatsapp/App;->m(Landroid/content/Context;)Ljava/lang/String;
 
-    sput-object v0, Lcom/whatsapp/ur;->a:[I
+    move-result-object v3
 
-    :try_start_0
-    sget-object v0, Lcom/whatsapp/ur;->a:[I
+    .line 6
+    new-instance v0, Lcom/whatsapp/sd;
 
-    sget-object v1, Lcom/whatsapp/contact/n;->UP_TO_DATE:Lcom/whatsapp/contact/n;
+    iget-object v1, p0, Lcom/whatsapp/ur;->a:Lcom/whatsapp/ProfileInfoActivity;
 
-    invoke-virtual {v1}, Lcom/whatsapp/contact/n;->ordinal()I
+    const v2, 0x7f0e039d
 
-    move-result v1
+    const/16 v5, 0x19
 
-    const/4 v2, 0x1
+    const/4 v6, 0x0
 
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_4
+    const v7, 0x7f0e02a4
 
-    :goto_0
-    :try_start_1
-    sget-object v0, Lcom/whatsapp/ur;->a:[I
+    invoke-direct/range {v0 .. v7}, Lcom/whatsapp/sd;-><init>(Landroid/app/Activity;ILjava/lang/String;Lcom/whatsapp/oh;III)V
 
-    sget-object v1, Lcom/whatsapp/contact/n;->IN_PROGRESS:Lcom/whatsapp/contact/n;
+    .line 3
+    invoke-virtual {v0}, Lcom/whatsapp/sd;->show()V
 
-    invoke-virtual {v1}, Lcom/whatsapp/contact/n;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_3
-
-    :goto_1
-    :try_start_2
-    sget-object v0, Lcom/whatsapp/ur;->a:[I
-
-    sget-object v1, Lcom/whatsapp/contact/n;->FAILED:Lcom/whatsapp/contact/n;
-
-    invoke-virtual {v1}, Lcom/whatsapp/contact/n;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x3
-
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :goto_2
-    :try_start_3
-    sget-object v0, Lcom/whatsapp/ur;->a:[I
-
-    sget-object v1, Lcom/whatsapp/contact/n;->DELAYED:Lcom/whatsapp/contact/n;
-
-    invoke-virtual {v1}, Lcom/whatsapp/contact/n;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x4
-
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_1
-
-    :goto_3
-    :try_start_4
-    sget-object v0, Lcom/whatsapp/ur;->a:[I
-
-    sget-object v1, Lcom/whatsapp/contact/n;->NETWORK_UNAVAILABLE:Lcom/whatsapp/contact/n;
-
-    invoke-virtual {v1}, Lcom/whatsapp/contact/n;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x5
-
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_0
-
-    :goto_4
+    .line 2
     return-void
-
-    :catch_0
-    move-exception v0
-
-    goto :goto_4
-
-    :catch_1
-    move-exception v0
-
-    goto :goto_3
-
-    :catch_2
-    move-exception v0
-
-    goto :goto_2
-
-    :catch_3
-    move-exception v0
-
-    goto :goto_1
-
-    :catch_4
-    move-exception v0
-
-    goto :goto_0
 .end method

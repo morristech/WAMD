@@ -1,228 +1,207 @@
-.class final Lcom/whatsapp/util/bx;
-.super Ljava/lang/Object;
+.class Lcom/whatsapp/util/bx;
+.super Lcom/whatsapp/util/bc;
 .source "bx.java"
-
-# interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
-
-
-# static fields
-.field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field final a:Landroid/widget/EditText;
-
-.field final b:Landroid/app/Activity;
-
-.field final c:Landroid/widget/CheckBox;
-
-.field final d:Landroid/widget/CheckBox;
+.field a:Landroid/media/MediaPlayer;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 10
-
-    const/4 v1, 0x0
-
-    const/4 v0, 0x2
-
-    new-array v3, v0, [Ljava/lang/String;
-
-    const-string v2, "\u0013\u0016\u0018\u0000S\"\u0010\u001e"
-
-    const/4 v0, -0x1
-
-    move-object v4, v3
-
-    move-object v5, v3
-
-    move v3, v1
-
-    :goto_0
-    invoke-virtual {v2}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v2
-
-    array-length v6, v2
-
-    move v7, v6
-
-    move v8, v1
-
-    move-object v6, v2
-
-    :goto_1
-    if-gt v7, v8, :cond_0
-
-    new-instance v2, Ljava/lang/String;
-
-    invoke-direct {v2, v6}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v2}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v2
-
-    packed-switch v0, :pswitch_data_0
-
-    aput-object v2, v4, v3
-
-    const/4 v2, 0x1
-
-    const-string v0, "\u000f\u0018\u0004\u0010R \u0018\u001a\u0011"
-
-    move v3, v2
-
-    move-object v4, v5
-
-    move-object v2, v0
-
-    move v0, v1
-
-    goto :goto_0
-
-    :pswitch_0
-    aput-object v2, v4, v3
-
-    sput-object v5, Lcom/whatsapp/util/bx;->z:[Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v9, v6, v8
-
-    rem-int/lit8 v2, v8, 0x5
-
-    packed-switch v2, :pswitch_data_1
-
-    const/16 v2, 0x21
-
-    :goto_2
-    xor-int/2addr v2, v9
-
-    int-to-char v2, v2
-
-    aput-char v2, v6, v8
-
-    add-int/lit8 v2, v8, 0x1
-
-    move v8, v2
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v2, 0x43
-
-    goto :goto_2
-
-    :pswitch_2
-    const/16 v2, 0x79
-
-    goto :goto_2
-
-    :pswitch_3
-    const/16 v2, 0x6a
-
-    goto :goto_2
-
-    :pswitch_4
-    const/16 v2, 0x74
-
-    goto :goto_2
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-
-    :pswitch_data_1
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-        :pswitch_4
-    .end packed-switch
-.end method
-
-.method constructor <init>(Landroid/widget/EditText;Landroid/widget/CheckBox;Landroid/widget/CheckBox;Landroid/app/Activity;)V
-    .locals 0
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/util/bx;->a:Landroid/widget/EditText;
+    .line 24
+    invoke-direct {p0}, Lcom/whatsapp/util/bc;-><init>()V
 
-    iput-object p2, p0, Lcom/whatsapp/util/bx;->d:Landroid/widget/CheckBox;
+    .line 23
+    new-instance v0, Landroid/media/MediaPlayer;
 
-    iput-object p3, p0, Lcom/whatsapp/util/bx;->c:Landroid/widget/CheckBox;
+    invoke-direct {v0}, Landroid/media/MediaPlayer;-><init>()V
 
-    iput-object p4, p0, Lcom/whatsapp/util/bx;->b:Landroid/app/Activity;
+    iput-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 11
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
 
+    invoke-virtual {v0, p1}, Landroid/media/MediaPlayer;->setDataSource(Ljava/lang/String;)V
+
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 3
+.method public a()V
+    .locals 1
+
+    .prologue
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->pause()V
+
+    .line 19
+    return-void
+.end method
+
+.method public a(I)V
+    .locals 1
+
+    .prologue
+    .line 12
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0, p1}, Landroid/media/MediaPlayer;->seekTo(I)V
+
+    .line 25
+    return-void
+.end method
+
+.method public a(Landroid/media/MediaPlayer$OnErrorListener;)V
+    .locals 1
+
+    .prologue
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0, p1}, Landroid/media/MediaPlayer;->setOnErrorListener(Landroid/media/MediaPlayer$OnErrorListener;)V
+
+    .line 14
+    return-void
+.end method
+
+.method public a(Landroid/media/MediaPlayer$OnPreparedListener;)V
+    .locals 1
+
+    .prologue
+    .line 16
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0, p1}, Landroid/media/MediaPlayer;->setOnPreparedListener(Landroid/media/MediaPlayer$OnPreparedListener;)V
+
+    .line 13
+    return-void
+.end method
+
+.method public b()V
+    .locals 1
+
+    .prologue
+    .line 18
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->start()V
+
+    .line 7
+    return-void
+.end method
+
+.method public b(I)V
+    .locals 1
+
+    .prologue
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0, p1}, Landroid/media/MediaPlayer;->setAudioStreamType(I)V
+
+    .line 21
+    return-void
+.end method
+
+.method public c()I
+    .locals 1
+
+    .prologue
+    .line 8
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->getDuration()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public d()V
+    .locals 1
 
     .prologue
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
 
-    invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->stop()V
 
-    move-result-object v0
-
-    .line 7
-    iget-object v1, p0, Lcom/whatsapp/util/bx;->d:Landroid/widget/CheckBox;
-
-    invoke-virtual {v1}, Landroid/widget/CheckBox;->isChecked()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 8
-    sget-object v1, Lcom/whatsapp/util/bx;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x0
-
-    aget-object v1, v1, v2
-
-    invoke-static {v1}, Lcom/whatsapp/util/o;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    sget v1, Lcom/whatsapp/util/Log;->c:I
-
-    if-eqz v1, :cond_1
-
-    .line 4
-    :cond_0
-    sget-object v1, Lcom/whatsapp/util/bx;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x1
-
-    aget-object v1, v1, v2
-
-    invoke-static {v1}, Lcom/whatsapp/util/o;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 5
-    :cond_1
-    iget-object v1, p0, Lcom/whatsapp/util/bx;->c:Landroid/widget/CheckBox;
-
-    invoke-virtual {v1}, Landroid/widget/CheckBox;->isChecked()Z
-
-    move-result v1
-
-    invoke-static {v1}, Lcom/whatsapp/util/o;->a(Z)Z
-
-    .line 1
-    iget-object v1, p0, Lcom/whatsapp/util/bx;->b:Landroid/app/Activity;
-
-    invoke-static {v0, v1}, Lcom/whatsapp/util/o;->a(Ljava/lang/CharSequence;Landroid/app/Activity;)V
-
-    .line 6
+    .line 15
     return-void
+.end method
+
+.method public e()I
+    .locals 1
+
+    .prologue
+    .line 22
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->getAudioSessionId()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public f()V
+    .locals 1
+
+    .prologue
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->prepare()V
+
+    .line 17
+    return-void
+.end method
+
+.method public g()Z
+    .locals 1
+
+    .prologue
+    .line 9
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->isPlaying()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public h()V
+    .locals 1
+
+    .prologue
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->release()V
+
+    .line 26
+    return-void
+.end method
+
+.method public i()I
+    .locals 1
+
+    .prologue
+    .line 20
+    iget-object v0, p0, Lcom/whatsapp/util/bx;->a:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->getCurrentPosition()I
+
+    move-result v0
+
+    return v0
 .end method

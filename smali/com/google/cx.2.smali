@@ -1,69 +1,102 @@
-.class synthetic Lcom/google/cx;
+.class Lcom/google/cx;
 .super Ljava/lang/Object;
 .source "cx.java"
 
+# interfaces
+.implements Ljava/util/Iterator;
 
-# static fields
-.field static final a:[I
+
+# instance fields
+.field private a:Ljava/util/Iterator;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Ljava/util/Iterator;)V
+    .locals 0
+
+    .prologue
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 11
+    iput-object p1, p0, Lcom/google/cx;->a:Ljava/util/Iterator;
+
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/util/Map$Entry;
     .locals 3
 
     .prologue
-    .line 1
-    invoke-static {}, Lcom/google/z;->values()[Lcom/google/z;
+    .line 6
+    iget-object v0, p0, Lcom/google/cx;->a:Ljava/util/Iterator;
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    array-length v0, v0
+    check-cast v0, Ljava/util/Map$Entry;
 
-    new-array v0, v0, [I
+    .line 1
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
-    sput-object v0, Lcom/google/cx;->a:[I
+    move-result-object v1
 
-    :try_start_0
-    sget-object v0, Lcom/google/cx;->a:[I
+    instance-of v1, v1, Lcom/google/fU;
 
-    sget-object v1, Lcom/google/z;->MESSAGE:Lcom/google/z;
+    if-eqz v1, :cond_0
 
-    invoke-virtual {v1}, Lcom/google/z;->ordinal()I
+    .line 5
+    new-instance v1, Lcom/google/l;
 
-    move-result v1
+    const/4 v2, 0x0
 
-    const/4 v2, 0x1
+    invoke-direct {v1, v0, v2}, Lcom/google/l;-><init>(Ljava/util/Map$Entry;Lcom/google/y;)V
 
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_1
+    move-object v0, v1
 
-    :goto_0
-    :try_start_1
-    sget-object v0, Lcom/google/cx;->a:[I
+    :cond_0
+    return-object v0
+.end method
 
-    sget-object v1, Lcom/google/z;->ENUM:Lcom/google/z;
+.method public hasNext()Z
+    .locals 1
 
-    invoke-virtual {v1}, Lcom/google/z;->ordinal()I
+    .prologue
+    .line 8
+    iget-object v0, p0, Lcom/google/cx;->a:Ljava/util/Iterator;
 
-    move-result v1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    const/4 v2, 0x2
+    move-result v0
 
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_0
+    return v0
+.end method
 
-    :goto_1
+.method public next()Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 2
+    invoke-virtual {p0}, Lcom/google/cx;->a()Ljava/util/Map$Entry;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public remove()V
+    .locals 1
+
+    .prologue
+    .line 7
+    iget-object v0, p0, Lcom/google/cx;->a:Ljava/util/Iterator;
+
+    invoke-interface {v0}, Ljava/util/Iterator;->remove()V
+
+    .line 10
     return-void
-
-    :catch_0
-    move-exception v0
-
-    goto :goto_1
-
-    :catch_1
-    move-exception v0
-
-    goto :goto_0
 .end method

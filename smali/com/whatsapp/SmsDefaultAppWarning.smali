@@ -9,7 +9,9 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 12
+    .locals 13
+
+    const/4 v8, 0x4
 
     const/4 v3, 0x2
 
@@ -17,11 +19,9 @@
 
     const/4 v1, 0x0
 
-    const/4 v0, 0x4
+    new-array v5, v8, [Ljava/lang/String;
 
-    new-array v5, v0, [Ljava/lang/String;
-
-    const-string v4, "&\u000bG\u0010QtP\u001c\u0017J/\u000b@\u0001R>QP\u000fOa\u001b_O"
+    const-string v4, "\u000f\u0018Kv\u0012\u0007\u0012\u0001m\u0013\u001a\u0013ApS\u000f\u0015[m\u0012\u0000X|A3*\"`"
 
     const/4 v0, -0x1
 
@@ -36,20 +36,20 @@
 
     move-result-object v4
 
-    array-length v8, v4
+    array-length v9, v4
 
-    move v9, v8
+    move v10, v9
 
-    move v10, v1
+    move v11, v1
 
-    move-object v8, v4
+    move-object v9, v4
 
     :goto_1
-    if-gt v9, v10, :cond_0
+    if-gt v10, v11, :cond_0
 
     new-instance v4, Ljava/lang/String;
 
-    invoke-direct {v4, v8}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v4, v9}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v4}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -59,7 +59,7 @@
 
     aput-object v4, v6, v5
 
-    const-string v0, "=\u0012@\u0004G(\u001eF\u000cV/\u000fC\u0017C<\u0011Z\u000eEa\u001cA\u0005C:\u001a"
+    const-string v0, "\r\u0019B*\n\u0006\u0017[w\u001c\u001e\u0006"
 
     move-object v4, v0
 
@@ -74,7 +74,7 @@
     :pswitch_0
     aput-object v4, v6, v5
 
-    const-string v0, "/\u0011W\u0012M\'\u001b\u001d\tL:\u001a]\u0014\u000c/\u001cG\tM Q`%l\n+|"
+    const-string v0, "\u001d\u001b\\`\u0018\u0008\u0017Zh\t\u000f\u0006_s\u001c\u001c\u0018Fj\u001aA\u0015]a\u001c\u001a\u0013"
 
     move-object v4, v0
 
@@ -91,7 +91,7 @@
 
     const/4 v4, 0x3
 
-    const-string v0, "-\u0010^NU&\u001eG\u0013C>\u000f"
+    const-string v0, "\u0006\u0002[t\u000eTY\u0000s\u0015\u000f\u0002\\e\r\u001eXLk\u0010A\u0012C+"
 
     move v5, v4
 
@@ -111,46 +111,48 @@
     return-void
 
     :cond_0
-    aget-char v11, v8, v10
+    aget-char v12, v9, v11
 
-    rem-int/lit8 v4, v10, 0x5
+    rem-int/lit8 v4, v11, 0x5
 
     packed-switch v4, :pswitch_data_1
 
-    const/16 v4, 0x22
+    const/16 v4, 0x7d
 
     :goto_2
-    xor-int/2addr v4, v11
+    xor-int/2addr v4, v12
 
     int-to-char v4, v4
 
-    aput-char v4, v8, v10
+    aput-char v4, v9, v11
 
-    add-int/lit8 v4, v10, 0x1
+    add-int/lit8 v4, v11, 0x1
 
-    move v10, v4
+    move v11, v4
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v4, 0x4e
+    const/16 v4, 0x6e
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v4, 0x7f
+    const/16 v4, 0x76
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v4, 0x33
+    const/16 v4, 0x2f
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v4, 0x60
+    move v4, v8
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -172,17 +174,66 @@
     .locals 0
 
     .prologue
-    .line 8
+    .line 12
     invoke-direct {p0}, Lcom/whatsapp/DialogToastActivity;-><init>()V
 
     return-void
 .end method
 
 .method private a()V
-    .locals 2
+    .locals 6
 
     .prologue
     .line 23
+    invoke-virtual {p0}, Lcom/whatsapp/SmsDefaultAppWarning;->getIntent()Landroid/content/Intent;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Intent;->getData()Landroid/net/Uri;
+
+    move-result-object v0
+
+    const v1, 0x7f0e0437
+
+    const/4 v2, 0x1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    sget-object v4, Lcom/whatsapp/SmsDefaultAppWarning;->z:[Ljava/lang/String;
+
+    const/4 v5, 0x3
+
+    aget-object v4, v4, v5
+
+    aput-object v4, v2, v3
+
+    invoke-virtual {p0, v1, v2}, Lcom/whatsapp/SmsDefaultAppWarning;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {p0, v0, v1}, Lcom/whatsapp/App;->a(Landroid/app/Activity;Landroid/net/Uri;Ljava/lang/String;)V
+
+    .line 14
+    return-void
+.end method
+
+.method static a(Lcom/whatsapp/SmsDefaultAppWarning;)V
+    .locals 0
+
+    .prologue
+    .line 16
+    invoke-direct {p0}, Lcom/whatsapp/SmsDefaultAppWarning;->a()V
+
+    return-void
+.end method
+
+.method private b()V
+    .locals 2
+
+    .prologue
+    .line 13
     invoke-virtual {p0}, Lcom/whatsapp/SmsDefaultAppWarning;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
@@ -195,54 +246,7 @@
 
     invoke-static {p0, v0, v1}, Lcom/whatsapp/App;->a(Landroid/app/Activity;Landroid/net/Uri;Ljava/lang/String;)V
 
-    .line 14
-    return-void
-.end method
-
-.method static a(Lcom/whatsapp/SmsDefaultAppWarning;)V
-    .locals 0
-
-    .prologue
-    .line 5
-    invoke-direct {p0}, Lcom/whatsapp/SmsDefaultAppWarning;->b()V
-
-    return-void
-.end method
-
-.method private b()V
-    .locals 5
-
-    .prologue
-    const/4 v4, 0x0
-
-    .line 26
-    invoke-virtual {p0}, Lcom/whatsapp/SmsDefaultAppWarning;->getIntent()Landroid/content/Intent;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Intent;->getData()Landroid/net/Uri;
-
-    move-result-object v0
-
-    const v1, 0x7f0e0428
-
-    const/4 v2, 0x1
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    sget-object v3, Lcom/whatsapp/SmsDefaultAppWarning;->z:[Ljava/lang/String;
-
-    aget-object v3, v3, v4
-
-    aput-object v3, v2, v4
-
-    invoke-virtual {p0, v1, v2}, Lcom/whatsapp/SmsDefaultAppWarning;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {p0, v0, v1}, Lcom/whatsapp/App;->a(Landroid/app/Activity;Landroid/net/Uri;Ljava/lang/String;)V
-
-    .line 13
+    .line 28
     return-void
 .end method
 
@@ -250,8 +254,8 @@
     .locals 0
 
     .prologue
-    .line 25
-    invoke-direct {p0}, Lcom/whatsapp/SmsDefaultAppWarning;->a()V
+    .line 19
+    invoke-direct {p0}, Lcom/whatsapp/SmsDefaultAppWarning;->b()V
 
     return-void
 .end method
@@ -259,35 +263,35 @@
 
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
-    .locals 5
+    .locals 4
 
     .prologue
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
-    .line 22
+    .line 11
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 16
+    .line 17
     sget-object v0, Lcom/whatsapp/SmsDefaultAppWarning;->z:[Ljava/lang/String;
 
-    aget-object v0, v0, v4
+    const/4 v1, 0x2
+
+    aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 4
+    .line 3
     new-instance v0, Landroid/content/Intent;
 
     sget-object v1, Lcom/whatsapp/SmsDefaultAppWarning;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x2
 
     aget-object v1, v1, v2
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 21
+    .line 26
     invoke-virtual {p0}, Lcom/whatsapp/SmsDefaultAppWarning;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
@@ -298,16 +302,16 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 27
+    .line 24
     invoke-virtual {p0}, Lcom/whatsapp/SmsDefaultAppWarning;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0, v3}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+    invoke-virtual {v1, v0, v2}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
 
     move-result-object v0
 
-    .line 17
+    .line 6
     if-eqz v0, :cond_0
 
     iget-object v1, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
@@ -316,33 +320,31 @@
 
     sget-object v1, Lcom/whatsapp/SmsDefaultAppWarning;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x3
-
-    aget-object v1, v1, v2
+    aget-object v1, v1, v3
 
     iget-object v0, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
-    .line 18
+    .line 8
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 20
-    invoke-virtual {p0, v3}, Lcom/whatsapp/SmsDefaultAppWarning;->showDialog(I)V
+    .line 5
+    invoke-virtual {p0, v2}, Lcom/whatsapp/SmsDefaultAppWarning;->showDialog(I)V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 15
+    .line 22
     :cond_0
-    invoke-virtual {p0, v4}, Lcom/whatsapp/SmsDefaultAppWarning;->showDialog(I)V
+    invoke-virtual {p0, v3}, Lcom/whatsapp/SmsDefaultAppWarning;->showDialog(I)V
 
-    .line 3
+    .line 15
     :cond_1
     return-void
 .end method
@@ -351,59 +353,50 @@
     .locals 4
 
     .prologue
-    const v3, 0x7f0e03cb
+    const v3, 0x7f0e03da
 
-    const v2, 0x7f0e03c3
+    const v2, 0x7f0e03d2
 
-    .line 10
+    .line 7
     packed-switch p1, :pswitch_data_0
 
-    .line 1
+    .line 4
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastActivity;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
 
-    .line 28
+    .line 25
     :goto_0
     return-object v0
 
-    .line 2
+    .line 1
     :pswitch_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0e0484
+    const v1, 0x7f0e0496
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/_9;
+    new-instance v1, Lcom/whatsapp/ax;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/_9;-><init>(Lcom/whatsapp/SmsDefaultAppWarning;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/ax;-><init>(Lcom/whatsapp/SmsDefaultAppWarning;)V
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0e03ca
+    const v1, 0x7f0e03d9
 
-    new-instance v2, Lcom/whatsapp/a0l;
+    new-instance v2, Lcom/whatsapp/al9;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/a0l;-><init>(Lcom/whatsapp/SmsDefaultAppWarning;)V
+    invoke-direct {v2, p0}, Lcom/whatsapp/al9;-><init>(Lcom/whatsapp/SmsDefaultAppWarning;)V
 
-    .line 12
+    .line 18
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v0
-
-    new-instance v1, Lcom/whatsapp/d3;
-
-    invoke-direct {v1, p0}, Lcom/whatsapp/d3;-><init>(Lcom/whatsapp/SmsDefaultAppWarning;)V
-
-    .line 19
-    invoke-virtual {v0, v3, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
@@ -411,64 +404,73 @@
 
     invoke-direct {v1, p0}, Lcom/whatsapp/i1;-><init>(Lcom/whatsapp/SmsDefaultAppWarning;)V
 
-    .line 6
+    .line 10
+    invoke-virtual {v0, v3, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/whatsapp/ar9;
+
+    invoke-direct {v1, p0}, Lcom/whatsapp/ar9;-><init>(Lcom/whatsapp/SmsDefaultAppWarning;)V
+
+    .line 20
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 7
+    .line 25
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 9
+    .line 27
     :pswitch_1
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0e0483
+    const v1, 0x7f0e0495
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/adh;
+    new-instance v1, Lcom/whatsapp/mw;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/adh;-><init>(Lcom/whatsapp/SmsDefaultAppWarning;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/mw;-><init>(Lcom/whatsapp/SmsDefaultAppWarning;)V
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/a28;
+    new-instance v1, Lcom/whatsapp/iz;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/a28;-><init>(Lcom/whatsapp/SmsDefaultAppWarning;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/iz;-><init>(Lcom/whatsapp/SmsDefaultAppWarning;)V
 
-    .line 24
+    .line 9
     invoke-virtual {v0, v3, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/ua;
+    new-instance v1, Lcom/whatsapp/fi;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/ua;-><init>(Lcom/whatsapp/SmsDefaultAppWarning;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/fi;-><init>(Lcom/whatsapp/SmsDefaultAppWarning;)V
 
-    .line 11
+    .line 21
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 28
+    .line 2
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 10
+    .line 7
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

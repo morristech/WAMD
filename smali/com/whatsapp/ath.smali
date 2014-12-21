@@ -1,68 +1,105 @@
-.class Lcom/whatsapp/ath;
+.class final Lcom/whatsapp/ath;
 .super Ljava/lang/Object;
 .source "ath.java"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
 
 # instance fields
-.field final a:Lcom/whatsapp/ContactsFragment;
-
-.field final b:Lcom/whatsapp/adg;
+.field private final a:Ljava/util/Stack;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ContactsFragment;Lcom/whatsapp/adg;)V
-    .locals 0
+.method private constructor <init>()V
+    .locals 1
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/ath;->a:Lcom/whatsapp/ContactsFragment;
-
-    iput-object p2, p0, Lcom/whatsapp/ath;->b:Lcom/whatsapp/adg;
-
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    new-instance v0, Ljava/util/Stack;
+
+    invoke-direct {v0}, Ljava/util/Stack;-><init>()V
+
+    iput-object v0, p0, Lcom/whatsapp/ath;->a:Ljava/util/Stack;
 
     return-void
 .end method
 
+.method constructor <init>(Lcom/whatsapp/a0t;)V
+    .locals 0
+
+    .prologue
+    .line 3
+    invoke-direct {p0}, Lcom/whatsapp/ath;-><init>()V
+
+    return-void
+.end method
+
+.method static a(Lcom/whatsapp/ath;)Ljava/util/Stack;
+    .locals 1
+
+    .prologue
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/ath;->a:Ljava/util/Stack;
+
+    return-object v0
+.end method
+
 
 # virtual methods
-.method public run()V
+.method public a(Landroid/widget/ImageView;)V
     .locals 3
 
     .prologue
-    .line 5
-    const-wide/16 v0, 0x12c
+    sget v2, Lcom/whatsapp/App;->h:I
 
-    :try_start_0
-    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
+    .line 2
+    const/4 v0, 0x0
 
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/ath;->a:Lcom/whatsapp/ContactsFragment;
+    move v1, v0
 
-    invoke-virtual {v0}, Lcom/whatsapp/ContactsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    :cond_0
+    :goto_0
+    iget-object v0, p0, Lcom/whatsapp/ath;->a:Ljava/util/Stack;
+
+    invoke-virtual {v0}, Ljava/util/Stack;->size()I
+
+    move-result v0
+
+    if-ge v1, v0, :cond_2
+
+    .line 8
+    iget-object v0, p0, Lcom/whatsapp/ath;->a:Ljava/util/Stack;
+
+    invoke-virtual {v0, v1}, Ljava/util/Stack;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    const/4 v1, 0x0
+    check-cast v0, Lcom/whatsapp/a5o;
 
-    iget-object v2, p0, Lcom/whatsapp/ath;->b:Lcom/whatsapp/adg;
+    iget-object v0, v0, Lcom/whatsapp/a5o;->a:Landroid/widget/ImageView;
 
-    iget-object v2, v2, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    if-ne v0, p1, :cond_1
 
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/App;->a(Landroid/app/Activity;ZLjava/lang/String;)V
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 9
+    iget-object v0, p0, Lcom/whatsapp/ath;->a:Ljava/util/Stack;
+
+    invoke-virtual {v0, v1}, Ljava/util/Stack;->remove(I)Ljava/lang/Object;
+
+    if-eqz v2, :cond_0
 
     .line 1
-    :goto_0
+    :cond_1
+    add-int/lit8 v0, v1, 0x1
+
+    if-eqz v2, :cond_3
+
+    .line 7
+    :cond_2
     return-void
 
-    .line 2
-    :catch_0
-    move-exception v0
+    :cond_3
+    move v1, v0
 
     goto :goto_0
 .end method

@@ -12,7 +12,7 @@
     .locals 0
 
     .prologue
-    .line 6
+    .line 1
     iput-object p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$6;->this$0:Landroid/support/v4/widget/SwipeRefreshLayout;
 
     invoke-direct {p0}, Landroid/view/animation/Animation;-><init>()V
@@ -26,8 +26,8 @@
     .locals 3
 
     .prologue
-    .line 1
-    .line 8
+    .line 4
+    .line 5
     iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout$6;->this$0:Landroid/support/v4/widget/SwipeRefreshLayout;
 
     invoke-static {v0}, Landroid/support/v4/widget/SwipeRefreshLayout;->access$1100(Landroid/support/v4/widget/SwipeRefreshLayout;)Z
@@ -36,7 +36,7 @@
 
     if-nez v0, :cond_0
 
-    .line 4
+    .line 9
     iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout$6;->this$0:Landroid/support/v4/widget/SwipeRefreshLayout;
 
     invoke-static {v0}, Landroid/support/v4/widget/SwipeRefreshLayout;->access$1200(Landroid/support/v4/widget/SwipeRefreshLayout;)F
@@ -61,7 +61,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 5
+    .line 8
     :cond_0
     iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout$6;->this$0:Landroid/support/v4/widget/SwipeRefreshLayout;
 
@@ -71,7 +71,7 @@
 
     float-to-int v0, v0
 
-    .line 2
+    .line 3
     :cond_1
     iget-object v1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$6;->this$0:Landroid/support/v4/widget/SwipeRefreshLayout;
 
@@ -104,13 +104,13 @@
 
     sub-int/2addr v0, v1
 
-    .line 9
+    .line 6
     iget-object v1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$6;->this$0:Landroid/support/v4/widget/SwipeRefreshLayout;
 
     const/4 v2, 0x0
 
     invoke-static {v1, v0, v2}, Landroid/support/v4/widget/SwipeRefreshLayout;->access$900(Landroid/support/v4/widget/SwipeRefreshLayout;IZ)V
 
-    .line 10
+    .line 2
     return-void
 .end method

@@ -49,13 +49,13 @@
     .locals 12
 
     .prologue
-    const/16 v1, 0x76
+    const/16 v2, 0x48
 
-    const/16 v2, 0x51
+    const/16 v3, 0x43
 
-    const/16 v3, 0x33
+    const/16 v4, 0x25
 
-    const/16 v4, 0xd
+    const/16 v1, 0x22
 
     const/4 v6, 0x0
 
@@ -63,7 +63,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "\u001f?El\u0012\u001f5\u0013}\u001f\u00040^h\n\u0013#\u0013}\u001f\u0005\"Vi^\u0002>\u0013L;%qZc\u0017\u0002q\u001e-"
+    const-string v0, "K >\"IK*h3DP/%&QG<h3DQ=-\'\u0005V!h\u0002`qn!-LVnec"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -92,7 +92,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "7\u0014`"
+    const-string v0, "c\u000b\u001b"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -121,7 +121,7 @@
 
     const/4 v10, 0x2
 
-    const-string v0, "\u001f?Cx\nV3Fk\u0018\u0013#\u0013y\u0011\u0019q@e\u0011\u0004%"
+    const-string v0, "c\u000b\u001bc@L)!-@\u0002 \'7\u0005K !7LC\"!0@F"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -150,7 +150,7 @@
 
     const/4 v10, 0x3
 
-    const-string v0, "\u0019$G}\u000b\u0002qQx\u0018\u00104A-\n\u0019>\u0013~\u0016\u0019#G"
+    const-string v0, "M;<3PVn*6CD+:cQM!h0MM<<"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -179,7 +179,7 @@
 
     const/4 v10, 0x4
 
-    const-string v0, "7\u0014`-\u001b\u00186Zc\u001bV?\\y^\u001f?Zy\u0017\u0017=Z~\u001b\u0012"
+    const-string v0, "K 86Q\u0002,=%CG<h7JMn;+JP:"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -208,7 +208,7 @@
 
     const/4 v8, 0x5
 
-    const-string v0, "=4J-\u0012\u0013?Ty\u0016V?\\y^Gc\u000b\"OOc\u001c?K@qQd\n\u0005\u007f"
+    const-string v0, "i+1cIG /7M\u0002 \'7\u0005\u0013|pl\u0014\u001b|gq\u0010\u0014n**QQ`"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -237,7 +237,7 @@
 
     sput-object v9, Lorg/spongycastle/crypto/engines/AESFastEngine;->z:[Ljava/lang/String;
 
-    .line 164
+    .line 105
     const/16 v0, 0x100
 
     new-array v0, v0, [B
@@ -246,7 +246,7 @@
 
     sput-object v0, Lorg/spongycastle/crypto/engines/AESFastEngine;->S:[B
 
-    .line 167
+    .line 158
     const/16 v0, 0x100
 
     new-array v0, v0, [B
@@ -255,7 +255,7 @@
 
     sput-object v0, Lorg/spongycastle/crypto/engines/AESFastEngine;->Si:[B
 
-    .line 38
+    .line 120
     const/16 v0, 0x1e
 
     new-array v0, v0, [I
@@ -264,7 +264,7 @@
 
     sput-object v0, Lorg/spongycastle/crypto/engines/AESFastEngine;->rcon:[I
 
-    .line 175
+    .line 74
     const/16 v0, 0x400
 
     new-array v0, v0, [I
@@ -273,7 +273,7 @@
 
     sput-object v0, Lorg/spongycastle/crypto/engines/AESFastEngine;->T:[I
 
-    .line 32
+    .line 35
     const/16 v0, 0x400
 
     new-array v0, v0, [I
@@ -292,7 +292,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x7e
+    move v0, v4
 
     :goto_6
     xor-int/2addr v0, v10
@@ -313,17 +313,17 @@
     goto :goto_6
 
     :pswitch_1
-    move v0, v2
+    const/16 v0, 0x4e
 
     goto :goto_6
 
     :pswitch_2
-    move v0, v3
+    move v0, v2
 
     goto :goto_6
 
     :pswitch_3
-    move v0, v4
+    move v0, v3
 
     goto :goto_6
 
@@ -334,7 +334,7 @@
 
     packed-switch v0, :pswitch_data_1
 
-    const/16 v0, 0x7e
+    move v0, v4
 
     :goto_7
     xor-int/2addr v0, v11
@@ -355,17 +355,17 @@
     goto :goto_7
 
     :pswitch_5
-    move v0, v2
+    const/16 v0, 0x4e
 
     goto :goto_7
 
     :pswitch_6
-    move v0, v3
+    move v0, v2
 
     goto :goto_7
 
     :pswitch_7
-    move v0, v4
+    move v0, v3
 
     goto :goto_7
 
@@ -376,7 +376,7 @@
 
     packed-switch v0, :pswitch_data_2
 
-    const/16 v0, 0x7e
+    move v0, v4
 
     :goto_8
     xor-int/2addr v0, v11
@@ -397,17 +397,17 @@
     goto :goto_8
 
     :pswitch_9
-    move v0, v2
+    const/16 v0, 0x4e
 
     goto :goto_8
 
     :pswitch_a
-    move v0, v3
+    move v0, v2
 
     goto :goto_8
 
     :pswitch_b
-    move v0, v4
+    move v0, v3
 
     goto :goto_8
 
@@ -418,7 +418,7 @@
 
     packed-switch v0, :pswitch_data_3
 
-    const/16 v0, 0x7e
+    move v0, v4
 
     :goto_9
     xor-int/2addr v0, v11
@@ -439,17 +439,17 @@
     goto :goto_9
 
     :pswitch_d
-    move v0, v2
+    const/16 v0, 0x4e
 
     goto :goto_9
 
     :pswitch_e
-    move v0, v3
+    move v0, v2
 
     goto :goto_9
 
     :pswitch_f
-    move v0, v4
+    move v0, v3
 
     goto :goto_9
 
@@ -460,7 +460,7 @@
 
     packed-switch v0, :pswitch_data_4
 
-    const/16 v0, 0x7e
+    move v0, v4
 
     :goto_a
     xor-int/2addr v0, v11
@@ -481,17 +481,17 @@
     goto :goto_a
 
     :pswitch_11
-    move v0, v2
+    const/16 v0, 0x4e
 
     goto :goto_a
 
     :pswitch_12
-    move v0, v3
+    move v0, v2
 
     goto :goto_a
 
     :pswitch_13
-    move v0, v4
+    move v0, v3
 
     goto :goto_a
 
@@ -502,7 +502,7 @@
 
     packed-switch v0, :pswitch_data_5
 
-    const/16 v0, 0x7e
+    move v0, v4
 
     :goto_b
     xor-int/2addr v0, v10
@@ -523,21 +523,21 @@
     goto :goto_b
 
     :pswitch_15
-    move v0, v2
+    const/16 v0, 0x4e
 
     goto :goto_b
 
     :pswitch_16
-    move v0, v3
+    move v0, v2
 
     goto :goto_b
 
     :pswitch_17
-    move v0, v4
+    move v0, v3
 
     goto :goto_b
 
-    .line 164
+    .line 105
     nop
 
     :array_0
@@ -800,7 +800,7 @@
         0x16t
     .end array-data
 
-    .line 167
+    .line 158
     :array_1
     .array-data 1
         0x52t
@@ -1061,7 +1061,7 @@
         0x7dt
     .end array-data
 
-    .line 38
+    .line 120
     :array_2
     .array-data 4
         0x1
@@ -1096,7 +1096,7 @@
         0x91
     .end array-data
 
-    .line 175
+    .line 74
     :array_3
     .array-data 4
         -0x5a9c9c3a
@@ -2125,7 +2125,7 @@
         0x2c3a1616
     .end array-data
 
-    .line 32
+    .line 35
     :array_4
     .array-data 4
         0x50a7f451
@@ -3208,17 +3208,17 @@
     .locals 1
 
     .prologue
-    .line 54
+    .line 179
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 93
+    .line 17
     const/4 v0, 0x0
 
     check-cast v0, [[I
 
     iput-object v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->WorkingKey:[[I
 
-    .line 52
+    .line 98
     return-void
 .end method
 
@@ -3226,7 +3226,7 @@
     .locals 2
 
     .prologue
-    .line 128
+    .line 24
     const v0, 0x7f7f7f7f
 
     and-int/2addr v0, p0
@@ -3252,7 +3252,7 @@
     .prologue
     sget v5, Lorg/spongycastle/crypto/engines/RC4Engine;->a:I
 
-    .line 4
+    .line 99
     iget v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C0:I
 
     iget v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->ROUNDS:I
@@ -3265,7 +3265,7 @@
 
     xor-int v4, v0, v1
 
-    .line 102
+    .line 129
     iget v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C1:I
 
     iget v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->ROUNDS:I
@@ -3278,7 +3278,7 @@
 
     xor-int v3, v0, v1
 
-    .line 105
+    .line 163
     iget v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C2:I
 
     iget v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->ROUNDS:I
@@ -3291,7 +3291,7 @@
 
     xor-int v2, v0, v1
 
-    .line 50
+    .line 149
     iget v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->ROUNDS:I
 
     add-int/lit8 v1, v0, -0x1
@@ -3318,20 +3318,20 @@
 
     move v4, v13
 
-    .line 86
+    .line 50
     :cond_0
     const/4 v6, 0x1
 
     if-le v4, v6, :cond_1
 
-    .line 147
+    .line 125
     ushr-int/lit8 v6, v0, 0x8
 
     ushr-int/lit8 v7, v1, 0x10
 
     ushr-int/lit8 v8, v2, 0x18
 
-    .line 149
+    .line 42
     and-int/lit16 v9, v3, 0xff
 
     and-int/lit16 v6, v6, 0xff
@@ -3340,7 +3340,7 @@
 
     and-int/lit16 v8, v8, 0xff
 
-    .line 176
+    .line 166
     sget-object v10, Lorg/spongycastle/crypto/engines/AESFastEngine;->Tinv:[I
 
     aget v9, v10, v9
@@ -3377,14 +3377,14 @@
 
     xor-int/2addr v6, v7
 
-    .line 39
+    .line 182
     ushr-int/lit8 v7, v3, 0x8
 
     ushr-int/lit8 v8, v0, 0x10
 
     ushr-int/lit8 v9, v1, 0x18
 
-    .line 109
+    .line 62
     and-int/lit16 v10, v2, 0xff
 
     and-int/lit16 v7, v7, 0xff
@@ -3393,7 +3393,7 @@
 
     and-int/lit16 v9, v9, 0xff
 
-    .line 172
+    .line 131
     sget-object v11, Lorg/spongycastle/crypto/engines/AESFastEngine;->Tinv:[I
 
     aget v10, v11, v10
@@ -3430,14 +3430,14 @@
 
     xor-int/2addr v7, v8
 
-    .line 25
+    .line 32
     ushr-int/lit8 v8, v2, 0x8
 
     ushr-int/lit8 v9, v3, 0x10
 
     ushr-int/lit8 v10, v0, 0x18
 
-    .line 3
+    .line 145
     and-int/lit16 v11, v1, 0xff
 
     and-int/lit16 v8, v8, 0xff
@@ -3446,7 +3446,7 @@
 
     and-int/lit16 v10, v10, 0xff
 
-    .line 145
+    .line 78
     sget-object v12, Lorg/spongycastle/crypto/engines/AESFastEngine;->Tinv:[I
 
     aget v11, v12, v11
@@ -3483,14 +3483,14 @@
 
     xor-int/2addr v8, v9
 
-    .line 48
+    .line 9
     ushr-int/lit8 v1, v1, 0x8
 
     ushr-int/lit8 v2, v2, 0x10
 
     ushr-int/lit8 v3, v3, 0x18
 
-    .line 44
+    .line 117
     and-int/lit16 v0, v0, 0xff
 
     and-int/lit16 v1, v1, 0xff
@@ -3499,7 +3499,7 @@
 
     and-int/lit16 v3, v3, 0xff
 
-    .line 69
+    .line 173
     sget-object v9, Lorg/spongycastle/crypto/engines/AESFastEngine;->Tinv:[I
 
     aget v0, v9, v0
@@ -3538,14 +3538,14 @@
 
     xor-int/2addr v0, v1
 
-    .line 90
+    .line 95
     ushr-int/lit8 v1, v0, 0x8
 
     ushr-int/lit8 v2, v8, 0x10
 
     ushr-int/lit8 v3, v7, 0x18
 
-    .line 141
+    .line 34
     and-int/lit16 v4, v6, 0xff
 
     and-int/lit16 v1, v1, 0xff
@@ -3554,7 +3554,7 @@
 
     and-int/lit16 v3, v3, 0xff
 
-    .line 79
+    .line 93
     sget-object v10, Lorg/spongycastle/crypto/engines/AESFastEngine;->Tinv:[I
 
     aget v4, v10, v4
@@ -3591,14 +3591,14 @@
 
     xor-int v3, v1, v2
 
-    .line 26
+    .line 169
     ushr-int/lit8 v1, v6, 0x8
 
     ushr-int/lit8 v2, v0, 0x10
 
     ushr-int/lit8 v4, v8, 0x18
 
-    .line 47
+    .line 53
     and-int/lit16 v10, v7, 0xff
 
     and-int/lit16 v1, v1, 0xff
@@ -3607,7 +3607,7 @@
 
     and-int/lit16 v4, v4, 0xff
 
-    .line 60
+    .line 36
     sget-object v11, Lorg/spongycastle/crypto/engines/AESFastEngine;->Tinv:[I
 
     aget v10, v11, v10
@@ -3644,14 +3644,14 @@
 
     xor-int/2addr v2, v1
 
-    .line 110
+    .line 106
     ushr-int/lit8 v1, v7, 0x8
 
     ushr-int/lit8 v4, v6, 0x10
 
     ushr-int/lit8 v10, v0, 0x18
 
-    .line 113
+    .line 13
     and-int/lit16 v11, v8, 0xff
 
     and-int/lit16 v1, v1, 0xff
@@ -3660,7 +3660,7 @@
 
     and-int/lit16 v10, v10, 0xff
 
-    .line 182
+    .line 168
     sget-object v12, Lorg/spongycastle/crypto/engines/AESFastEngine;->Tinv:[I
 
     aget v11, v12, v11
@@ -3697,14 +3697,14 @@
 
     xor-int/2addr v1, v4
 
-    .line 35
+    .line 136
     ushr-int/lit8 v4, v8, 0x8
 
     ushr-int/lit8 v7, v7, 0x10
 
     ushr-int/lit8 v6, v6, 0x18
 
-    .line 58
+    .line 124
     and-int/lit16 v0, v0, 0xff
 
     and-int/lit16 v4, v4, 0xff
@@ -3713,7 +3713,7 @@
 
     and-int/lit16 v6, v6, 0xff
 
-    .line 107
+    .line 83
     sget-object v8, Lorg/spongycastle/crypto/engines/AESFastEngine;->Tinv:[I
 
     aget v0, v8, v0
@@ -3754,7 +3754,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 106
+    .line 85
     :cond_1
     ushr-int/lit8 v4, v0, 0x8
 
@@ -3762,7 +3762,7 @@
 
     ushr-int/lit8 v6, v2, 0x18
 
-    .line 169
+    .line 70
     and-int/lit16 v7, v3, 0xff
 
     and-int/lit16 v4, v4, 0xff
@@ -3771,7 +3771,7 @@
 
     and-int/lit16 v6, v6, 0xff
 
-    .line 45
+    .line 167
     sget-object v8, Lorg/spongycastle/crypto/engines/AESFastEngine;->Tinv:[I
 
     aget v7, v8, v7
@@ -3810,14 +3810,14 @@
 
     xor-int/2addr v4, v5
 
-    .line 101
+    .line 29
     ushr-int/lit8 v5, v3, 0x8
 
     ushr-int/lit8 v6, v0, 0x10
 
     ushr-int/lit8 v7, v1, 0x18
 
-    .line 74
+    .line 94
     and-int/lit16 v8, v2, 0xff
 
     and-int/lit16 v5, v5, 0xff
@@ -3826,7 +3826,7 @@
 
     and-int/lit16 v7, v7, 0xff
 
-    .line 123
+    .line 40
     sget-object v9, Lorg/spongycastle/crypto/engines/AESFastEngine;->Tinv:[I
 
     aget v8, v9, v8
@@ -3865,14 +3865,14 @@
 
     xor-int/2addr v5, v6
 
-    .line 73
+    .line 4
     ushr-int/lit8 v6, v2, 0x8
 
     ushr-int/lit8 v7, v3, 0x10
 
     ushr-int/lit8 v8, v0, 0x18
 
-    .line 97
+    .line 14
     and-int/lit16 v9, v1, 0xff
 
     and-int/lit16 v6, v6, 0xff
@@ -3881,7 +3881,7 @@
 
     and-int/lit16 v8, v8, 0xff
 
-    .line 82
+    .line 59
     sget-object v10, Lorg/spongycastle/crypto/engines/AESFastEngine;->Tinv:[I
 
     aget v9, v10, v9
@@ -3920,14 +3920,14 @@
 
     xor-int/2addr v6, v7
 
-    .line 140
+    .line 68
     ushr-int/lit8 v1, v1, 0x8
 
     ushr-int/lit8 v2, v2, 0x10
 
     ushr-int/lit8 v3, v3, 0x18
 
-    .line 22
+    .line 177
     and-int/lit16 v0, v0, 0xff
 
     and-int/lit16 v1, v1, 0xff
@@ -3936,7 +3936,7 @@
 
     and-int/lit16 v3, v3, 0xff
 
-    .line 160
+    .line 67
     sget-object v7, Lorg/spongycastle/crypto/engines/AESFastEngine;->Tinv:[I
 
     aget v0, v7, v0
@@ -3975,14 +3975,14 @@
 
     xor-int/2addr v0, v1
 
-    .line 42
+    .line 148
     ushr-int/lit8 v1, v0, 0x8
 
     ushr-int/lit8 v2, v6, 0x10
 
     ushr-int/lit8 v3, v5, 0x18
 
-    .line 136
+    .line 144
     sget-object v7, Lorg/spongycastle/crypto/engines/AESFastEngine;->Si:[B
 
     and-int/lit16 v8, v4, 0xff
@@ -4015,7 +4015,7 @@
 
     and-int/lit16 v3, v3, 0xff
 
-    .line 112
+    .line 75
     shl-int/lit8 v1, v1, 0x8
 
     xor-int/2addr v1, v7
@@ -4040,14 +4040,14 @@
 
     iput v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C0:I
 
-    .line 68
+    .line 63
     ushr-int/lit8 v1, v4, 0x8
 
     ushr-int/lit8 v2, v0, 0x10
 
     ushr-int/lit8 v3, v6, 0x18
 
-    .line 16
+    .line 113
     sget-object v7, Lorg/spongycastle/crypto/engines/AESFastEngine;->Si:[B
 
     and-int/lit16 v8, v5, 0xff
@@ -4080,7 +4080,7 @@
 
     and-int/lit16 v3, v3, 0xff
 
-    .line 33
+    .line 1
     shl-int/lit8 v1, v1, 0x8
 
     xor-int/2addr v1, v7
@@ -4105,14 +4105,14 @@
 
     iput v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C1:I
 
-    .line 111
+    .line 69
     ushr-int/lit8 v1, v5, 0x8
 
     ushr-int/lit8 v2, v4, 0x10
 
     ushr-int/lit8 v3, v0, 0x18
 
-    .line 61
+    .line 5
     sget-object v7, Lorg/spongycastle/crypto/engines/AESFastEngine;->Si:[B
 
     and-int/lit16 v8, v6, 0xff
@@ -4145,7 +4145,7 @@
 
     and-int/lit16 v3, v3, 0xff
 
-    .line 51
+    .line 76
     shl-int/lit8 v1, v1, 0x8
 
     xor-int/2addr v1, v7
@@ -4170,14 +4170,14 @@
 
     iput v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C2:I
 
-    .line 21
+    .line 152
     ushr-int/lit8 v1, v6, 0x8
 
     ushr-int/lit8 v2, v5, 0x10
 
     ushr-int/lit8 v3, v4, 0x18
 
-    .line 124
+    .line 86
     sget-object v4, Lorg/spongycastle/crypto/engines/AESFastEngine;->Si:[B
 
     and-int/lit16 v0, v0, 0xff
@@ -4210,7 +4210,7 @@
 
     and-int/lit16 v3, v3, 0xff
 
-    .line 166
+    .line 118
     shl-int/lit8 v1, v1, 0x8
 
     xor-int/2addr v0, v1
@@ -4235,7 +4235,7 @@
 
     iput v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C3:I
 
-    .line 183
+    .line 123
     return-void
 .end method
 
@@ -4245,7 +4245,7 @@
     .prologue
     sget v5, Lorg/spongycastle/crypto/engines/RC4Engine;->a:I
 
-    .line 49
+    .line 97
     iget v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C0:I
 
     const/4 v1, 0x0
@@ -4258,7 +4258,7 @@
 
     xor-int v4, v0, v1
 
-    .line 118
+    .line 60
     iget v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C1:I
 
     const/4 v1, 0x0
@@ -4271,7 +4271,7 @@
 
     xor-int v3, v0, v1
 
-    .line 9
+    .line 44
     iget v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C2:I
 
     const/4 v1, 0x0
@@ -4284,7 +4284,7 @@
 
     xor-int v2, v0, v1
 
-    .line 5
+    .line 114
     const/4 v1, 0x1
 
     iget v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C3:I
@@ -4299,7 +4299,7 @@
 
     xor-int/2addr v0, v6
 
-    .line 96
+    .line 121
     :cond_0
     iget v6, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->ROUNDS:I
 
@@ -4307,14 +4307,14 @@
 
     if-ge v1, v6, :cond_1
 
-    .line 57
+    .line 73
     ushr-int/lit8 v6, v3, 0x8
 
     ushr-int/lit8 v7, v2, 0x10
 
     ushr-int/lit8 v8, v0, 0x18
 
-    .line 37
+    .line 54
     and-int/lit16 v9, v4, 0xff
 
     and-int/lit16 v6, v6, 0xff
@@ -4323,7 +4323,7 @@
 
     and-int/lit16 v8, v8, 0xff
 
-    .line 53
+    .line 19
     sget-object v10, Lorg/spongycastle/crypto/engines/AESFastEngine;->T:[I
 
     aget v9, v10, v9
@@ -4360,14 +4360,14 @@
 
     xor-int/2addr v6, v7
 
-    .line 15
+    .line 88
     ushr-int/lit8 v7, v2, 0x8
 
     ushr-int/lit8 v8, v0, 0x10
 
     ushr-int/lit8 v9, v4, 0x18
 
-    .line 132
+    .line 80
     and-int/lit16 v10, v3, 0xff
 
     and-int/lit16 v7, v7, 0xff
@@ -4376,7 +4376,7 @@
 
     and-int/lit16 v9, v9, 0xff
 
-    .line 95
+    .line 66
     sget-object v11, Lorg/spongycastle/crypto/engines/AESFastEngine;->T:[I
 
     aget v10, v11, v10
@@ -4413,14 +4413,14 @@
 
     xor-int/2addr v7, v8
 
-    .line 177
+    .line 128
     ushr-int/lit8 v8, v0, 0x8
 
     ushr-int/lit8 v9, v4, 0x10
 
     ushr-int/lit8 v10, v3, 0x18
 
-    .line 80
+    .line 11
     and-int/lit16 v11, v2, 0xff
 
     and-int/lit16 v8, v8, 0xff
@@ -4429,7 +4429,7 @@
 
     and-int/lit16 v10, v10, 0xff
 
-    .line 10
+    .line 181
     sget-object v12, Lorg/spongycastle/crypto/engines/AESFastEngine;->T:[I
 
     aget v11, v12, v11
@@ -4466,14 +4466,14 @@
 
     xor-int/2addr v8, v9
 
-    .line 78
+    .line 103
     ushr-int/lit8 v4, v4, 0x8
 
     ushr-int/lit8 v3, v3, 0x10
 
     ushr-int/lit8 v2, v2, 0x18
 
-    .line 179
+    .line 12
     and-int/lit16 v0, v0, 0xff
 
     and-int/lit16 v4, v4, 0xff
@@ -4482,7 +4482,7 @@
 
     and-int/lit16 v2, v2, 0xff
 
-    .line 34
+    .line 20
     sget-object v9, Lorg/spongycastle/crypto/engines/AESFastEngine;->T:[I
 
     aget v0, v9, v0
@@ -4521,14 +4521,14 @@
 
     xor-int/2addr v0, v1
 
-    .line 144
+    .line 143
     ushr-int/lit8 v1, v7, 0x8
 
     ushr-int/lit8 v2, v8, 0x10
 
     ushr-int/lit8 v3, v0, 0x18
 
-    .line 56
+    .line 104
     and-int/lit16 v4, v6, 0xff
 
     and-int/lit16 v1, v1, 0xff
@@ -4537,7 +4537,7 @@
 
     and-int/lit16 v3, v3, 0xff
 
-    .line 146
+    .line 58
     sget-object v10, Lorg/spongycastle/crypto/engines/AESFastEngine;->T:[I
 
     aget v4, v10, v4
@@ -4574,14 +4574,14 @@
 
     xor-int v4, v1, v2
 
-    .line 174
+    .line 159
     ushr-int/lit8 v1, v8, 0x8
 
     ushr-int/lit8 v2, v0, 0x10
 
     ushr-int/lit8 v3, v6, 0x18
 
-    .line 92
+    .line 96
     and-int/lit16 v10, v7, 0xff
 
     and-int/lit16 v1, v1, 0xff
@@ -4590,7 +4590,7 @@
 
     and-int/lit16 v3, v3, 0xff
 
-    .line 88
+    .line 37
     sget-object v11, Lorg/spongycastle/crypto/engines/AESFastEngine;->T:[I
 
     aget v10, v11, v10
@@ -4627,14 +4627,14 @@
 
     xor-int v3, v1, v2
 
-    .line 64
+    .line 77
     ushr-int/lit8 v1, v0, 0x8
 
     ushr-int/lit8 v2, v6, 0x10
 
     ushr-int/lit8 v10, v7, 0x18
 
-    .line 157
+    .line 130
     and-int/lit16 v11, v8, 0xff
 
     and-int/lit16 v1, v1, 0xff
@@ -4643,7 +4643,7 @@
 
     and-int/lit16 v10, v10, 0xff
 
-    .line 116
+    .line 25
     sget-object v12, Lorg/spongycastle/crypto/engines/AESFastEngine;->T:[I
 
     aget v11, v12, v11
@@ -4680,14 +4680,14 @@
 
     xor-int/2addr v2, v1
 
-    .line 162
+    .line 89
     ushr-int/lit8 v1, v6, 0x8
 
     ushr-int/lit8 v6, v7, 0x10
 
     ushr-int/lit8 v7, v8, 0x18
 
-    .line 17
+    .line 171
     and-int/lit16 v0, v0, 0xff
 
     and-int/lit16 v1, v1, 0xff
@@ -4696,7 +4696,7 @@
 
     and-int/lit16 v7, v7, 0xff
 
-    .line 83
+    .line 92
     sget-object v8, Lorg/spongycastle/crypto/engines/AESFastEngine;->T:[I
 
     aget v0, v8, v0
@@ -4737,7 +4737,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 31
+    .line 55
     :cond_1
     ushr-int/lit8 v5, v3, 0x8
 
@@ -4745,7 +4745,7 @@
 
     ushr-int/lit8 v7, v0, 0x18
 
-    .line 178
+    .line 31
     and-int/lit16 v8, v4, 0xff
 
     and-int/lit16 v5, v5, 0xff
@@ -4754,7 +4754,7 @@
 
     and-int/lit16 v7, v7, 0xff
 
-    .line 76
+    .line 178
     sget-object v9, Lorg/spongycastle/crypto/engines/AESFastEngine;->T:[I
 
     aget v8, v9, v8
@@ -4791,14 +4791,14 @@
 
     xor-int/2addr v5, v6
 
-    .line 13
+    .line 21
     ushr-int/lit8 v6, v2, 0x8
 
     ushr-int/lit8 v7, v0, 0x10
 
     ushr-int/lit8 v8, v4, 0x18
 
-    .line 155
+    .line 146
     and-int/lit16 v9, v3, 0xff
 
     and-int/lit16 v6, v6, 0xff
@@ -4807,7 +4807,7 @@
 
     and-int/lit16 v8, v8, 0xff
 
-    .line 29
+    .line 23
     sget-object v10, Lorg/spongycastle/crypto/engines/AESFastEngine;->T:[I
 
     aget v9, v10, v9
@@ -4844,14 +4844,14 @@
 
     xor-int/2addr v6, v7
 
-    .line 142
+    .line 48
     ushr-int/lit8 v7, v0, 0x8
 
     ushr-int/lit8 v8, v4, 0x10
 
     ushr-int/lit8 v9, v3, 0x18
 
-    .line 148
+    .line 22
     and-int/lit16 v10, v2, 0xff
 
     and-int/lit16 v7, v7, 0xff
@@ -4860,7 +4860,7 @@
 
     and-int/lit16 v9, v9, 0xff
 
-    .line 180
+    .line 174
     sget-object v11, Lorg/spongycastle/crypto/engines/AESFastEngine;->T:[I
 
     aget v10, v11, v10
@@ -4897,14 +4897,14 @@
 
     xor-int/2addr v7, v8
 
-    .line 115
+    .line 100
     ushr-int/lit8 v4, v4, 0x8
 
     ushr-int/lit8 v3, v3, 0x10
 
     ushr-int/lit8 v2, v2, 0x18
 
-    .line 71
+    .line 10
     and-int/lit16 v0, v0, 0xff
 
     and-int/lit16 v4, v4, 0xff
@@ -4913,7 +4913,7 @@
 
     and-int/lit16 v2, v2, 0xff
 
-    .line 62
+    .line 87
     sget-object v8, Lorg/spongycastle/crypto/engines/AESFastEngine;->T:[I
 
     aget v0, v8, v0
@@ -4952,14 +4952,14 @@
 
     xor-int/2addr v0, v1
 
-    .line 94
+    .line 82
     ushr-int/lit8 v1, v6, 0x8
 
     ushr-int/lit8 v3, v7, 0x10
 
     ushr-int/lit8 v4, v0, 0x18
 
-    .line 139
+    .line 8
     sget-object v8, Lorg/spongycastle/crypto/engines/AESFastEngine;->S:[B
 
     and-int/lit16 v9, v5, 0xff
@@ -4992,7 +4992,7 @@
 
     and-int/lit16 v4, v4, 0xff
 
-    .line 163
+    .line 139
     shl-int/lit8 v1, v1, 0x8
 
     xor-int/2addr v1, v8
@@ -5015,14 +5015,14 @@
 
     iput v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C0:I
 
-    .line 1
+    .line 65
     ushr-int/lit8 v1, v7, 0x8
 
     ushr-int/lit8 v3, v0, 0x10
 
     ushr-int/lit8 v4, v5, 0x18
 
-    .line 171
+    .line 140
     sget-object v8, Lorg/spongycastle/crypto/engines/AESFastEngine;->S:[B
 
     and-int/lit16 v9, v6, 0xff
@@ -5055,7 +5055,7 @@
 
     and-int/lit16 v4, v4, 0xff
 
-    .line 137
+    .line 157
     shl-int/lit8 v1, v1, 0x8
 
     xor-int/2addr v1, v8
@@ -5078,14 +5078,14 @@
 
     iput v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C1:I
 
-    .line 41
+    .line 127
     ushr-int/lit8 v1, v0, 0x8
 
     ushr-int/lit8 v3, v5, 0x10
 
     ushr-int/lit8 v4, v6, 0x18
 
-    .line 89
+    .line 161
     sget-object v8, Lorg/spongycastle/crypto/engines/AESFastEngine;->S:[B
 
     and-int/lit16 v9, v7, 0xff
@@ -5118,7 +5118,7 @@
 
     and-int/lit16 v4, v4, 0xff
 
-    .line 138
+    .line 155
     shl-int/lit8 v1, v1, 0x8
 
     xor-int/2addr v1, v8
@@ -5141,14 +5141,14 @@
 
     iput v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C2:I
 
-    .line 151
+    .line 3
     ushr-int/lit8 v1, v5, 0x8
 
     ushr-int/lit8 v3, v6, 0x10
 
     ushr-int/lit8 v4, v7, 0x18
 
-    .line 173
+    .line 79
     sget-object v5, Lorg/spongycastle/crypto/engines/AESFastEngine;->S:[B
 
     and-int/lit16 v0, v0, 0xff
@@ -5181,7 +5181,7 @@
 
     and-int/lit16 v4, v4, 0xff
 
-    .line 154
+    .line 133
     shl-int/lit8 v1, v1, 0x8
 
     xor-int/2addr v0, v1
@@ -5204,7 +5204,7 @@
 
     iput v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C3:I
 
-    .line 152
+    .line 28
     return-void
 .end method
 
@@ -5214,12 +5214,12 @@
     .prologue
     sget v4, Lorg/spongycastle/crypto/engines/RC4Engine;->a:I
 
-    .line 99
+    .line 43
     array-length v0, p1
 
     div-int/lit8 v3, v0, 0x4
 
-    .line 161
+    .line 110
     const/4 v0, 0x4
 
     if-eq v3, v0, :cond_0
@@ -5240,7 +5240,7 @@
 
     if-eq v0, v1, :cond_2
 
-    .line 159
+    .line 141
     :cond_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -5261,13 +5261,13 @@
 
     throw v0
 
-    .line 170
+    .line 116
     :cond_2
     add-int/lit8 v0, v3, 0x6
 
     iput v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->ROUNDS:I
 
-    .line 130
+    .line 72
     iget v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->ROUNDS:I
 
     add-int/lit8 v0, v0, 0x1
@@ -5286,19 +5286,19 @@
 
     check-cast v0, [[I
 
-    .line 98
+    .line 71
     const/4 v2, 0x0
 
-    .line 70
+    .line 137
     const/4 v1, 0x0
 
-    .line 150
+    .line 57
     :cond_3
     array-length v5, p1
 
     if-ge v1, v5, :cond_4
 
-    .line 30
+    .line 45
     shr-int/lit8 v5, v2, 0x2
 
     aget-object v5, v0, v5
@@ -5339,15 +5339,15 @@
 
     aput v7, v5, v6
 
-    .line 24
+    .line 135
     add-int/lit8 v1, v1, 0x4
 
-    .line 104
+    .line 151
     add-int/lit8 v2, v2, 0x1
 
     if-eqz v4, :cond_3
 
-    .line 114
+    .line 30
     :cond_4
     iget v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->ROUNDS:I
 
@@ -5357,11 +5357,11 @@
 
     move v2, v3
 
-    .line 181
+    .line 162
     :goto_0
     if-ge v2, v5, :cond_7
 
-    .line 6
+    .line 101
     add-int/lit8 v1, v2, -0x1
 
     shr-int/lit8 v1, v1, 0x2
@@ -5374,12 +5374,12 @@
 
     aget v1, v1, v6
 
-    .line 65
+    .line 175
     rem-int v6, v2, v3
 
     if-nez v6, :cond_5
 
-    .line 8
+    .line 91
     const/16 v6, 0x8
 
     invoke-static {v1, v6}, Lorg/spongycastle/crypto/engines/AESFastEngine;->shift(II)I
@@ -5402,7 +5402,7 @@
 
     if-eqz v4, :cond_6
 
-    .line 127
+    .line 153
     :cond_5
     const/4 v6, 0x6
 
@@ -5417,12 +5417,12 @@
 
     if-ne v6, v7, :cond_6
 
-    .line 18
+    .line 119
     invoke-static {v1}, Lorg/spongycastle/crypto/engines/AESFastEngine;->subWord(I)I
 
     move-result v1
 
-    .line 108
+    .line 138
     :cond_6
     shr-int/lit8 v6, v2, 0x2
 
@@ -5446,16 +5446,16 @@
 
     aput v1, v6, v7
 
-    .line 7
+    .line 90
     add-int/lit8 v1, v2, 0x1
 
     if-eqz v4, :cond_c
 
-    .line 103
+    .line 15
     :cond_7
     if-nez p2, :cond_b
 
-    .line 85
+    .line 81
     const/4 v1, 0x1
 
     :cond_8
@@ -5463,7 +5463,7 @@
 
     if-ge v1, v2, :cond_b
 
-    .line 19
+    .line 156
     const/4 v2, 0x0
 
     :cond_9
@@ -5471,7 +5471,7 @@
 
     if-ge v2, v3, :cond_a
 
-    .line 43
+    .line 61
     aget-object v3, v0, v1
 
     aget-object v5, v0, v1
@@ -5484,22 +5484,22 @@
 
     aput v5, v3, v2
 
-    .line 133
+    .line 39
     add-int/lit8 v2, v2, 0x1
 
     if-eqz v4, :cond_9
 
-    .line 66
+    .line 180
     :cond_a
     add-int/lit8 v1, v1, 0x1
 
     if-eqz v4, :cond_8
 
-    .line 67
+    .line 56
     :cond_b
     return-object v0
 
-    .line 127
+    .line 153
     :catch_1
     move-exception v0
 
@@ -5515,25 +5515,25 @@
     .locals 5
 
     .prologue
-    .line 20
+    .line 126
     invoke-static {p0}, Lorg/spongycastle/crypto/engines/AESFastEngine;->FFmulX(I)I
 
     move-result v0
 
-    .line 81
+    .line 122
     invoke-static {v0}, Lorg/spongycastle/crypto/engines/AESFastEngine;->FFmulX(I)I
 
     move-result v1
 
-    .line 27
+    .line 160
     invoke-static {v1}, Lorg/spongycastle/crypto/engines/AESFastEngine;->FFmulX(I)I
 
     move-result v2
 
-    .line 100
+    .line 154
     xor-int v3, p0, v2
 
-    .line 46
+    .line 51
     xor-int v4, v0, v1
 
     xor-int/2addr v2, v4
@@ -5573,33 +5573,33 @@
     .locals 2
 
     .prologue
-    .line 135
+    .line 84
     iget v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C0:I
 
     invoke-static {v0, p1, p2}, Lorg/spongycastle/util/Pack;->intToLittleEndian(I[BI)V
 
-    .line 77
+    .line 47
     iget v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C1:I
 
     add-int/lit8 v1, p2, 0x4
 
     invoke-static {v0, p1, v1}, Lorg/spongycastle/util/Pack;->intToLittleEndian(I[BI)V
 
-    .line 168
+    .line 109
     iget v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C2:I
 
     add-int/lit8 v1, p2, 0x8
 
     invoke-static {v0, p1, v1}, Lorg/spongycastle/util/Pack;->intToLittleEndian(I[BI)V
 
-    .line 125
+    .line 107
     iget v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C3:I
 
     add-int/lit8 v1, p2, 0xc
 
     invoke-static {v0, p1, v1}, Lorg/spongycastle/util/Pack;->intToLittleEndian(I[BI)V
 
-    .line 131
+    .line 38
     return-void
 .end method
 
@@ -5607,7 +5607,7 @@
     .locals 2
 
     .prologue
-    .line 87
+    .line 147
     ushr-int v0, p0, p1
 
     neg-int v1, p1
@@ -5623,14 +5623,14 @@
     .locals 5
 
     .prologue
-    .line 129
+    .line 176
     ushr-int/lit8 v0, p0, 0x8
 
     ushr-int/lit8 v1, p0, 0x10
 
     ushr-int/lit8 v2, p0, 0x18
 
-    .line 55
+    .line 183
     sget-object v3, Lorg/spongycastle/crypto/engines/AESFastEngine;->S:[B
 
     and-int/lit16 v4, p0, 0xff
@@ -5663,7 +5663,7 @@
 
     and-int/lit16 v2, v2, 0xff
 
-    .line 36
+    .line 108
     shl-int/lit8 v0, v0, 0x8
 
     or-int/2addr v0, v3
@@ -5683,14 +5683,14 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 142
     invoke-static {p1, p2}, Lorg/spongycastle/util/Pack;->littleEndianToInt([BI)I
 
     move-result v0
 
     iput v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C0:I
 
-    .line 143
+    .line 132
     add-int/lit8 v0, p2, 0x4
 
     invoke-static {p1, v0}, Lorg/spongycastle/util/Pack;->littleEndianToInt([BI)I
@@ -5699,7 +5699,7 @@
 
     iput v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C1:I
 
-    .line 122
+    .line 102
     add-int/lit8 v0, p2, 0x8
 
     invoke-static {p1, v0}, Lorg/spongycastle/util/Pack;->littleEndianToInt([BI)I
@@ -5708,7 +5708,7 @@
 
     iput v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C2:I
 
-    .line 120
+    .line 170
     add-int/lit8 v0, p2, 0xc
 
     invoke-static {p1, v0}, Lorg/spongycastle/util/Pack;->littleEndianToInt([BI)I
@@ -5717,7 +5717,7 @@
 
     iput v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->C3:I
 
-    .line 40
+    .line 18
     return-void
 .end method
 
@@ -5727,7 +5727,7 @@
     .locals 2
 
     .prologue
-    .line 153
+    .line 134
     sget-object v0, Lorg/spongycastle/crypto/engines/AESFastEngine;->z:[Ljava/lang/String;
 
     const/4 v1, 0x1
@@ -5741,7 +5741,7 @@
     .locals 1
 
     .prologue
-    .line 158
+    .line 164
     const/16 v0, 0x10
 
     return v0
@@ -5751,13 +5751,13 @@
     .locals 4
 
     .prologue
-    .line 75
+    .line 26
     :try_start_0
     instance-of v0, p2, Lorg/spongycastle/crypto/params/KeyParameter;
 
     if-eqz v0, :cond_0
 
-    .line 91
+    .line 41
     check-cast p2, Lorg/spongycastle/crypto/params/KeyParameter;
 
     invoke-virtual {p2}, Lorg/spongycastle/crypto/params/KeyParameter;->getKey()[B
@@ -5770,12 +5770,12 @@
 
     iput-object v0, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->WorkingKey:[[I
 
-    .line 72
+    .line 115
     iput-boolean p1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->forEncryption:Z
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 23
+    .line 16
     return-void
 
     :catch_0
@@ -5783,7 +5783,7 @@
 
     throw v0
 
-    .line 121
+    .line 172
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -5828,18 +5828,18 @@
     .prologue
     sget v0, Lorg/spongycastle/crypto/engines/RC4Engine;->a:I
 
-    .line 11
+    .line 150
     :try_start_0
     iget-object v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->WorkingKey:[[I
 
     if-nez v1, :cond_0
 
-    .line 84
+    .line 49
     new-instance v0, Ljava/lang/IllegalStateException;
 
     sget-object v1, Lorg/spongycastle/crypto/engines/AESFastEngine;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x4
+    const/4 v2, 0x2
 
     aget-object v1, v1, v2
 
@@ -5854,7 +5854,7 @@
 
     throw v0
 
-    .line 134
+    .line 112
     :cond_0
     add-int/lit8 v1, p2, 0x10
 
@@ -5863,12 +5863,12 @@
 
     if-le v1, v2, :cond_1
 
-    .line 126
+    .line 64
     new-instance v0, Lorg/spongycastle/crypto/DataLengthException;
 
     sget-object v1, Lorg/spongycastle/crypto/engines/AESFastEngine;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x2
+    const/4 v2, 0x4
 
     aget-object v1, v1, v2
 
@@ -5883,7 +5883,7 @@
 
     throw v0
 
-    .line 119
+    .line 52
     :cond_1
     add-int/lit8 v1, p4, 0x10
 
@@ -5892,7 +5892,7 @@
 
     if-le v1, v2, :cond_2
 
-    .line 63
+    .line 33
     new-instance v0, Lorg/spongycastle/crypto/OutputLengthException;
 
     sget-object v1, Lorg/spongycastle/crypto/engines/AESFastEngine;->z:[Ljava/lang/String;
@@ -5912,19 +5912,19 @@
 
     throw v0
 
-    .line 28
+    .line 46
     :cond_2
     :try_start_3
     invoke-direct {p0, p1, p2}, Lorg/spongycastle/crypto/engines/AESFastEngine;->unpackBlock([BI)V
 
-    .line 117
+    .line 7
     iget-boolean v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->forEncryption:Z
     :try_end_3
     .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_3
 
     if-eqz v1, :cond_3
 
-    .line 59
+    .line 111
     :try_start_4
     iget-object v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->WorkingKey:[[I
 
@@ -5932,7 +5932,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 2
+    .line 6
     :cond_3
     iget-object v1, p0, Lorg/spongycastle/crypto/engines/AESFastEngine;->WorkingKey:[[I
 
@@ -5940,15 +5940,15 @@
     :try_end_4
     .catch Ljava/lang/IllegalArgumentException; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 156
+    .line 27
     :cond_4
     :try_start_5
     invoke-direct {p0, p3, p4}, Lorg/spongycastle/crypto/engines/AESFastEngine;->packBlock([BI)V
 
-    .line 12
+    .line 2
     const/16 v1, 0x10
 
-    sget-boolean v2, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
+    sget v2, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
 
     if-eqz v2, :cond_5
 
@@ -5961,7 +5961,7 @@
     :cond_5
     return v1
 
-    .line 59
+    .line 111
     :catch_3
     move-exception v0
 
@@ -5970,13 +5970,13 @@
     :try_end_6
     .catch Ljava/lang/IllegalArgumentException; {:try_start_6 .. :try_end_6} :catch_4
 
-    .line 2
+    .line 6
     :catch_4
     move-exception v0
 
     throw v0
 
-    .line 12
+    .line 2
     :catch_5
     move-exception v0
 

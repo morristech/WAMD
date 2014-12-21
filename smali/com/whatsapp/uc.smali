@@ -1,40 +1,34 @@
 .class Lcom/whatsapp/uc;
-.super Lorg/apache/http/entity/EntityTemplate;
+.super Ljava/lang/Object;
 .source "uc.java"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/tn;
-
-.field b:J
+.field final a:Lcom/whatsapp/GroupChatInfo;
 
 
 # direct methods
-.method public constructor <init>(Lcom/whatsapp/tn;Lorg/apache/http/entity/ContentProducer;J)V
-    .locals 1
+.method constructor <init>(Lcom/whatsapp/GroupChatInfo;)V
+    .locals 0
 
     .prologue
     .line 2
-    iput-object p1, p0, Lcom/whatsapp/uc;->a:Lcom/whatsapp/tn;
+    iput-object p1, p0, Lcom/whatsapp/uc;->a:Lcom/whatsapp/GroupChatInfo;
 
-    .line 5
-    invoke-direct {p0, p2}, Lorg/apache/http/entity/EntityTemplate;-><init>(Lorg/apache/http/entity/ContentProducer;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
-    iput-wide p3, p0, Lcom/whatsapp/uc;->b:J
-
-    .line 1
     return-void
 .end method
 
 
 # virtual methods
-.method public getContentLength()J
-    .locals 2
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
 
     .prologue
-    .line 4
-    iget-wide v0, p0, Lcom/whatsapp/uc;->b:J
-
-    return-wide v0
+    .line 1
+    return-void
 .end method

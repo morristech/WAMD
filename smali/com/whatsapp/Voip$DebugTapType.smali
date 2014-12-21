@@ -34,7 +34,7 @@
 
     new-array v5, v13, [Ljava/lang/String;
 
-    const-string v4, "}8:6Vy8=,^a9&7Zl2=6["
+    const-string v4, "m8\u0019pik#\nhcl.\u0002scf"
 
     const/4 v0, -0x1
 
@@ -72,7 +72,7 @@
 
     aput-object v4, v7, v5
 
-    const-string v0, "`(-4Pf3>,Za>67Zk"
+    const-string v0, "p,\u001ahec=\u0019btg)"
 
     move-object v4, v0
 
@@ -87,7 +87,7 @@
     :pswitch_0
     aput-object v4, v7, v5
 
-    const-string v0, "}<.,\\n--&Mj9"
+    const-string v0, "p(\u000erot(\thgl)\u0012sca\"\trb"
 
     move-object v4, v0
 
@@ -102,7 +102,7 @@
     :pswitch_1
     aput-object v4, v7, v5
 
-    const-string v0, "l<)\'J}8=,^a9&#P|)&#M`>< Lj9"
+    const-string v0, "a,\u001dcsp(\thgl)\u0012giq9\u0012gtm.\u0008dug)"
 
     move-object v4, v0
 
@@ -124,13 +124,13 @@
 
     sget-object v4, Lcom/whatsapp/Voip$DebugTapType;->z:[Ljava/lang/String;
 
-    aget-object v4, v4, v1
+    aget-object v4, v4, v3
 
     invoke-direct {v0, v4, v1}, Lcom/whatsapp/Voip$DebugTapType;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/whatsapp/Voip$DebugTapType;->RECEIVED_AND_DECODED:Lcom/whatsapp/Voip$DebugTapType;
 
-    .line 2
+    .line 7
     new-instance v0, Lcom/whatsapp/Voip$DebugTapType;
 
     sget-object v4, Lcom/whatsapp/Voip$DebugTapType;->z:[Ljava/lang/String;
@@ -141,29 +141,29 @@
 
     sput-object v0, Lcom/whatsapp/Voip$DebugTapType;->CAPTURED_AND_POST_PROCESSED:Lcom/whatsapp/Voip$DebugTapType;
 
-    .line 4
+    .line 1
+    new-instance v0, Lcom/whatsapp/Voip$DebugTapType;
+
+    sget-object v4, Lcom/whatsapp/Voip$DebugTapType;->z:[Ljava/lang/String;
+
+    aget-object v4, v4, v1
+
+    invoke-direct {v0, v4, v3}, Lcom/whatsapp/Voip$DebugTapType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/whatsapp/Voip$DebugTapType;->OUTGOING_ENCODED:Lcom/whatsapp/Voip$DebugTapType;
+
+    .line 5
     new-instance v0, Lcom/whatsapp/Voip$DebugTapType;
 
     sget-object v4, Lcom/whatsapp/Voip$DebugTapType;->z:[Ljava/lang/String;
 
     aget-object v4, v4, v2
 
-    invoke-direct {v0, v4, v3}, Lcom/whatsapp/Voip$DebugTapType;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/whatsapp/Voip$DebugTapType;->OUTGOING_ENCODED:Lcom/whatsapp/Voip$DebugTapType;
-
-    .line 8
-    new-instance v0, Lcom/whatsapp/Voip$DebugTapType;
-
-    sget-object v4, Lcom/whatsapp/Voip$DebugTapType;->z:[Ljava/lang/String;
-
-    aget-object v4, v4, v3
-
     invoke-direct {v0, v4, v6}, Lcom/whatsapp/Voip$DebugTapType;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/whatsapp/Voip$DebugTapType;->RAW_CAPTURED:Lcom/whatsapp/Voip$DebugTapType;
 
-    .line 6
+    .line 2
     new-array v0, v13, [Lcom/whatsapp/Voip$DebugTapType;
 
     sget-object v4, Lcom/whatsapp/Voip$DebugTapType;->RECEIVED_AND_DECODED:Lcom/whatsapp/Voip$DebugTapType;
@@ -194,7 +194,7 @@
 
     packed-switch v4, :pswitch_data_1
 
-    const/16 v4, 0x1f
+    const/16 v4, 0x26
 
     :goto_2
     xor-int/2addr v4, v12
@@ -210,22 +210,22 @@
     goto :goto_1
 
     :pswitch_3
-    const/16 v4, 0x2f
+    const/16 v4, 0x22
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v4, 0x7d
+    const/16 v4, 0x6d
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v4, 0x79
+    const/16 v4, 0x4d
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v4, 0x73
+    const/16 v4, 0x37
 
     goto :goto_2
 
@@ -249,7 +249,7 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 4
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -259,7 +259,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 6
     const-class v0, Lcom/whatsapp/Voip$DebugTapType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -275,7 +275,7 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 8
     sget-object v0, Lcom/whatsapp/Voip$DebugTapType;->$VALUES:[Lcom/whatsapp/Voip$DebugTapType;
 
     invoke-virtual {v0}, [Lcom/whatsapp/Voip$DebugTapType;->clone()Ljava/lang/Object;

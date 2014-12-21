@@ -2,10 +2,5 @@
 .super Ljava/lang/Object;
 .source "aG.java"
 
-
-# virtual methods
-.method public abstract a()I
-.end method
-
-.method public abstract b()[B
-.end method
+# interfaces
+.implements Lcom/google/gQ;

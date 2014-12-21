@@ -7,20 +7,24 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/Conversation;
+.field final a:Lcom/whatsapp/amo;
 
-.field final b:I
+.field final b:Z
+
+.field final c:Ljava/util/Collection;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/Conversation;I)V
+.method constructor <init>(Lcom/whatsapp/amo;Ljava/util/Collection;Z)V
     .locals 0
 
     .prologue
-    .line 6
-    iput-object p1, p0, Lcom/whatsapp/pe;->a:Lcom/whatsapp/Conversation;
+    .line 7
+    iput-object p1, p0, Lcom/whatsapp/pe;->a:Lcom/whatsapp/amo;
 
-    iput p2, p0, Lcom/whatsapp/pe;->b:I
+    iput-object p2, p0, Lcom/whatsapp/pe;->c:Ljava/util/Collection;
+
+    iput-boolean p3, p0, Lcom/whatsapp/pe;->b:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,58 +34,72 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 6
 
     .prologue
-    const/4 v3, 0x0
+    sget-boolean v1, Lcom/whatsapp/tv;->e:Z
 
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/pe;->a:Lcom/whatsapp/Conversation;
+    .line 6
+    new-instance v2, Ljava/util/HashMap;
 
-    iget-object v0, v0, Lcom/whatsapp/Conversation;->q:Landroid/widget/ListView;
+    invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
-    invoke-virtual {v0, v3}, Landroid/widget/ListView;->setTranscriptMode(I)V
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/pe;->c:Ljava/util/Collection;
 
-    .line 9
-    iget-object v0, p0, Lcom/whatsapp/pe;->a:Lcom/whatsapp/Conversation;
+    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
-    iget-object v0, v0, Lcom/whatsapp/Conversation;->au:Lcom/whatsapp/it;
+    move-result-object v3
 
-    invoke-static {v0}, Lcom/whatsapp/it;->a(Lcom/whatsapp/it;)I
+    :cond_0
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
-    .line 2
-    iget-object v1, p0, Lcom/whatsapp/pe;->a:Lcom/whatsapp/Conversation;
+    if-eqz v0, :cond_1
 
-    invoke-static {v1}, Lcom/whatsapp/Conversation;->h(Lcom/whatsapp/Conversation;)Landroid/view/View;
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_0
+    check-cast v0, Lcom/whatsapp/protocol/c9;
 
     .line 8
-    add-int/lit8 v0, v0, 0x1
+    iget-object v4, p0, Lcom/whatsapp/pe;->a:Lcom/whatsapp/amo;
 
-    .line 1
-    :cond_0
-    iget-object v1, p0, Lcom/whatsapp/pe;->a:Lcom/whatsapp/Conversation;
+    iget-boolean v5, p0, Lcom/whatsapp/pe;->b:Z
 
-    iget-object v1, v1, Lcom/whatsapp/Conversation;->q:Landroid/widget/ListView;
+    invoke-static {v4, v0, v5}, Lcom/whatsapp/amo;->a(Lcom/whatsapp/amo;Lcom/whatsapp/protocol/c9;Z)I
 
-    iget v2, p0, Lcom/whatsapp/pe;->b:I
+    move-result v4
 
-    invoke-virtual {v1, v0, v2}, Landroid/widget/ListView;->setSelectionFromTop(II)V
+    .line 2
+    iget-object v0, v0, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/pe;->a:Lcom/whatsapp/Conversation;
+    iget-object v0, v0, Lcom/whatsapp/protocol/bb;->b:Ljava/lang/String;
 
-    invoke-static {v0, v3}, Lcom/whatsapp/Conversation;->d(Lcom/whatsapp/Conversation;Z)Z
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v0, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    if-eqz v1, :cond_0
 
     .line 5
-    iget-object v0, p0, Lcom/whatsapp/pe;->a:Lcom/whatsapp/Conversation;
+    :cond_1
+    iget-object v0, p0, Lcom/whatsapp/pe;->a:Lcom/whatsapp/amo;
 
-    invoke-static {v0, v3}, Lcom/whatsapp/Conversation;->e(Lcom/whatsapp/Conversation;Z)Z
+    invoke-static {v0}, Lcom/whatsapp/amo;->c(Lcom/whatsapp/amo;)Landroid/os/Handler;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/whatsapp/yi;
+
+    invoke-direct {v1, p0, v2}, Lcom/whatsapp/yi;-><init>(Lcom/whatsapp/pe;Ljava/util/HashMap;)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 3
     return-void

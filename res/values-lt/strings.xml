@@ -71,14 +71,6 @@
     <string name="audio_note_tip">Palaikykite, kad įrašyti, atleiskite, kad išsiųsti.</string>
     <string name="audio_note_tip_2">Prašome įrašyti ilgesnę žinutę</string>
     <string name="audio_note_top_mic_tip">Kalbėkite į mikrofoną telefono viršuje</string>
-    <string name="auth_client_needs_enabling_title">Norint naudoti programą būtina įgalinti „Google Play“ paslaugas.</string>
-    <string name="auth_client_needs_installation_title">Norint naudoti programą būtina įdiegti „Google Play“ paslaugas.</string>
-    <string name="auth_client_needs_update_title">Norint naudoti programą būtina atnaujinti „Google Play“ paslaugas.</string>
-    <string name="auth_client_play_services_err_notification_msg">„Google Play“ paslaugų klaida</string>
-    <string name="auth_client_requested_by_msg">Užklausą pateikė „%1$s“</string>
-    <string name="auth_client_using_bad_version_title">Programa bandė naudotis netinkama „Google Play“ paslaugų versija.</string>
-    <string name="barcode_scanner_dialog_body">Šiai programai reikalingas brūkšninių kodų skaitytuvas. Ar norite įdiegti brūkšninių kodų skaitytuvą?</string>
-    <string name="barcode_scanner_dialog_title">Įdiegti brūkšninių kodų skaitytuvą?</string>
     <string name="block">Blokuoti</string>
     <string name="block_ask">Ar jūs tikrai norite užblokuoti šį kontaktą?</string>
     <string name="block_list_desc_1">"Bakstelėkite piktogramą viršutiniame dešiniajame kampe, kad pasirinktumėte kontaktą, kurį norite užblokuoti.
@@ -159,23 +151,32 @@ Jei turite naują telefoną ir naują numerį, pirmiausia pakeiskite numerį sen
     <string name="color_red">Raudona</string>
     <string name="color_white">Balta</string>
     <string name="color_yellow">Geltona</string>
+    <string name="common_android_wear_notification_needs_update_text">Programai reikalingas „Android Wear“ programos naujinys.</string>
+    <string name="common_android_wear_update_text">Ši programa veiks tik atnaujinus „Android Wear“ programą.</string>
+    <string name="common_android_wear_update_title">Atnaujinkite „Android Wear“</string>
     <string name="common_google_play_services_enable_button">Įgal. „Google Play“ paslaugas</string>
     <string name="common_google_play_services_enable_text">Ši programa neveiks, jei neįgalinsite „Google Play“ paslaugų.</string>
     <string name="common_google_play_services_enable_title">Įgalinti „Google Play“ paslaugas</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Užklausą pateikė „%1$s“</string>
     <string name="common_google_play_services_install_button">Gauti „Google Play“ paslaugų</string>
     <string name="common_google_play_services_install_text_phone">Ši programa neveiks be „Google Play“ paslaugų, kurios neįdiegtos telefone.</string>
     <string name="common_google_play_services_install_text_tablet">Ši programa neveiks be „Google Play“ paslaugų, kurios neįdiegtos planšetiniame kompiuteryje.</string>
     <string name="common_google_play_services_install_title">Gauti „Google Play“ paslaugų</string>
     <string name="common_google_play_services_invalid_account_text">Nurodytos paskyros šiame įrenginyje nėra. Pasirinkite kitą paskyrą.</string>
     <string name="common_google_play_services_invalid_account_title">Netinkama paskyra</string>
+    <string name="common_google_play_services_needs_enabling_title">Norint naudoti programą būtina įgalinti „Google Play“ paslaugas.</string>
     <string name="common_google_play_services_network_error_text">Norint prisijungti prie „Google Play“ paslaugų reikia duomenų ryšio.</string>
     <string name="common_google_play_services_network_error_title">Tinklo klaida</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Norint naudoti programą būtina įdiegti „Google Play“ paslaugas.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Norint naudoti programą būtina atnaujinti „Google Play“ paslaugas.</string>
+    <string name="common_google_play_services_notification_ticker">„Google Play“ paslaugų klaida</string>
     <string name="common_google_play_services_unknown_issue">Nežinoma „Google Play“ paslaugų problema.</string>
     <string name="common_google_play_services_unsupported_text">Jūsų įrenginys nepalaiko „Google Play“ paslaugų, kuriomis remiasi kai kurios programos. Jei reikia pagalbos, susisiekite su gamintoju.</string>
     <string name="common_google_play_services_unsupported_title">„Google Play“ paslaugos</string>
     <string name="common_google_play_services_update_button">Atnaujinti</string>
     <string name="common_google_play_services_update_text">Ši programa neveiks, jei neatnaujinsite „Google Play“ paslaugų.</string>
     <string name="common_google_play_services_update_title">Atnaujinti „Google Play“ paslaugas</string>
+    <string name="common_open_on_phone">Atidaryti telefonu</string>
     <string name="common_signin_button_text">Prisij.</string>
     <string name="common_signin_button_text_long">Prisij. naud. „Google“</string>
     <string name="confirm_forward_msg">Persiųsti %s?</string>
@@ -348,7 +349,6 @@ Galima: %1$s"</string>
     <string name="eula_description">Mobilus bendravimas su draugais visame pasaulyje tarp įvairių mobiliųjų platformų.</string>
     <string name="eula_tablets_not_supported">Pastaba: planšetės šiuo metu nepalaikomos.</string>
     <string name="eula_terms_of_service">Paslaugų Teikimo Sąlygos</string>
-    <string name="eula_title">Sveiki prisijungę prie WhatsApp!</string>
     <string name="existing_contact">Esamas</string>
     <string name="exit">Išeiti</string>
     <string name="exit_group">Išeiti iš grupės</string>
@@ -523,7 +523,6 @@ Dabar jūsų paslaugos galiojimas baigiasi %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Negalima atsisiųsti, nes nėra pakankamai vietos jūsų vidinėje bendrinamoje atmintinėje. Prašome pašalinti nereikalingas bylas iš jūsų vidinės bendrinamos atmintis ir bandyti dar kartą.</string>
     <string name="invalid_media_message_download">egalima atsisiųsti medijos ir negaliojančios žinutės. Bandykite siųsti žinutę dar kartą.</string>
     <string name="invalid_message_forward">Žinutė negali būti persiųsta negaliojančiam kontaktui.</string>
-    <string name="invalid_qr_code">Negaliojantis QR kodas</string>
     <string name="invalid_url_for_download">Negalima atsisiųsti. Paprašykite, kad jis būtų pakartotinai išsiųstas jums.</string>
     <string name="invite">Pakviesti</string>
     <string name="invite_friends">Pakviesti jūsų draugus</string>
@@ -569,7 +568,6 @@ WhatsApp gali būti įdiegtas tik viename įrenginyje su tuo pačiu telefono num
     <string name="menuitem_add">Pridėti</string>
     <string name="menuitem_contacts">Kontaktai</string>
     <string name="menuitem_debug">Derinti</string>
-    <string name="menuitem_delete_qr">Ištrinti QR kodą</string>
     <string name="menuitem_groupchat">Nauja grupė</string>
     <string name="menuitem_list">Transliuoti</string>
     <string name="menuitem_mute">Begarsis</string>
@@ -610,14 +608,10 @@ WhatsApp gali būti įdiegtas tik viename įrenginyje su tuo pačiu telefono num
     <string name="msg_store_backup_failed">Nepavyko padaryti žinučių atsarginės kopijos</string>
     <string name="msg_store_backup_failed_try_again_later">Nepavyko sukurti atsarginės žinučių kopijos. Prašome bandyti vėliau.</string>
     <string name="msg_store_backup_found">Rasta atsarginė kopija</string>
-    <string name="msg_store_backup_found_registration">Rasta žinučių kopija!</string>
     <string name="msg_store_backup_skipped">Kopijų kūrimas nutrauktas</string>
     <string name="msg_store_backup_skipped_no_media">Žinutės atsarginės kopijos darymas praleistas: Nerasta media kortelė.</string>
     <string name="msg_store_backup_skipped_read_only_media">Žinutės atsarginė kopija nepadaryta: media kortelė nustatyta tik skaitymo rėžimu.</string>
     <string name="msg_store_confirm">Patvirtinti</string>
-    <string name="msg_store_creation_backup_message">Ar norėtumėte atstatyti žinučių istoriją iš atsarginės kopijos?</string>
-    <string name="msg_store_do_not_restore">Neatstatyti</string>
-    <string name="msg_store_do_not_restore_no_thanks">Ačiū, ne</string>
     <string name="msg_store_error_found">Įvyko klaida. Prašome sustabdyti ir perkrauti WhatsApp.</string>
     <string name="msg_store_error_not_restored">Atsiprašome, mes negalėjome atkurti jūsų žinučių istorijos iš atsarginės kopijos.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Žinutės bus prarastos. Ar tikrai nenorite atstatyti žinučių iš rezervinės kopijos?</string>
@@ -644,9 +638,6 @@ WhatsApp gali būti įdiegtas tik viename įrenginyje su tuo pačiu telefono num
     <string name="need_sd_card_shared_storage">Prašome išjungti USB laikmeną ir pabandyti iš naujo.</string>
     <string name="network_required">Šiuo metu Jūs neturite tinklo ryšio</string>
     <string name="network_usage_ask_reset_message">Ar tikrai norite anuliuoti statistiką?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Paskutinis perkrovimo laikas: %1$s</string>
     <string name="network_usage_media_bytes_received">Gauta medija baitų:</string>
     <string name="network_usage_media_bytes_sent">Išsiųsta medija baitų:</string>
@@ -997,19 +988,10 @@ Išsiųsta su WhatsApp"</string>
     <string name="software_expired_get_from_play">Ši WhatsApp versija yra per sena ir nebeveikianti. Prašome eiti į Google Play ir atsisiųsti naujausią versiją.</string>
     <string name="software_expired_get_from_play_with_date">Ši WhatsApp versija taps pasenusi &lt;b>%1$s&lt;/b>. Prašome eiti į Google Play ir atsisiųsti naujasią versiją .&lt;br>&lt;br>Jūsų įrenginio data yra &lt;b>%2$s&lt;/b>. Jei data neteisinga prašome pataisyti jūsų įrenginio laiko nustatymą ir paleisti WhatsApp iš naujo.</string>
     <string name="software_expired_with_date">Ši WhatsApp versija taps pasenusi &lt;b>%1$s&lt;/b>. Bakstelėkite “Atsiųsti” norėdai atsisiųsti naujausią versiją.&lt;br>&lt;br>Jūsų įrenginio data yra &lt;b>%2$s&lt;/b>. Jei data neteisinga prašome pataisyti jūsų įrenginio laiko nustatymą ir paleisti WhatsApp iš naujo.</string>
-    <string name="spam_generic">"Jums laikinai draudžiamas prisijungimas prie WhatsApp, kadangi jūs pažeidėte mūsų paslaugų teikimo sąlygas.
-Jūs vėl galėsite naudotis WhatsApp:"</string>
     <string name="spam_generic_data_connection_missing">Įsitikinkite, kad jūsų telefonas turi aktyvų duomenų perdavimo ryšį.</string>
     <string name="spam_generic_unknown_time_left">Jums laikinai draudžiama naudotis WhatsApp, kadangi jūs galėjote pažeisti mūsų paslaugų teikimo sąlygas. Greitai vėl galėsite naudotis WhatsApp.</string>
     <string name="spam_learn_more">Sužinokite daugiau</string>
     <string name="spam_title">Laikinai draudžiama</string>
-    <string name="spam_too_many_blocks">Jums laikinai draudžiamas prisijungimas prie WhatsApp, nes daug žmonių jus užblokavo.</string>
-    <string name="spam_too_many_groups">"Jums laikinai draudžiama prisijungti prie WhatsApp, kadangi jūs sukūrėte pernelyg daug grupių su žmonėmis, kurie jūsų neturi savo adresų knygelėse.
-Jūs vėl galėsite naudotis WhatsApp:"</string>
-    <string name="spam_too_many_messages">"Jums laikinai draudžiamas prisijungimas prie WhatsApp, kadangi jūs išsiuntėte pernelyg daug žinučių žmonėms, kurie jūsų neturi savo adresų knygelėse.
-Jūs vėl galėsite naudotis WhatsApp:"</string>
-    <string name="spam_too_many_people">"Jums laikinai uždrausta naudotis WhatsApp, kadangi jūs siuntėte tą pačią žinutę pernelyg daug žmonių. 
-Jūs vėl galėsite naudotis WhatsApp:"</string>
     <string name="status">Būsena</string>
     <string name="status_default_at_gym">Sporto salėje</string>
     <string name="status_default_at_movies">Kino teatre</string>

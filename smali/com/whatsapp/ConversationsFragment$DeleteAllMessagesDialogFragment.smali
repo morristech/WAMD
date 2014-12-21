@@ -20,12 +20,12 @@
     .locals 3
 
     .prologue
-    .line 5
-    new-instance v0, Lcom/whatsapp/acz;
+    .line 4
+    new-instance v0, Lcom/whatsapp/ar2;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/acz;-><init>(Lcom/whatsapp/ConversationsFragment$DeleteAllMessagesDialogFragment;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/ar2;-><init>(Lcom/whatsapp/ConversationsFragment$DeleteAllMessagesDialogFragment;)V
 
-    .line 2
+    .line 1
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment$DeleteAllMessagesDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -34,21 +34,21 @@
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0e0115
+    const v2, 0x7f0e011a
 
-    .line 1
+    .line 5
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f0e02aa
+    const v2, 0x7f0e02b7
 
-    .line 4
+    .line 2
     invoke-virtual {v1, v2, v0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0e0080
+    const v1, 0x7f0e007a
 
     const/4 v2, 0x0
 

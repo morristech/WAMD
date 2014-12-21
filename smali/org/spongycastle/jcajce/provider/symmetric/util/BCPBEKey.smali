@@ -32,7 +32,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "\u00111Q"
+    const-string v0, "!qk"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -70,7 +70,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x48
+    const/16 v0, 0x43
 
     :goto_1
     xor-int/2addr v0, v4
@@ -86,26 +86,24 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x43
+    const/16 v0, 0x73
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x70
+    const/16 v0, 0x30
 
     goto :goto_1
 
     :pswitch_2
-    const/4 v0, 0x6
+    const/16 v0, 0x3c
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x2b
+    const/16 v0, 0x26
 
     goto :goto_1
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -120,36 +118,36 @@
     .locals 1
 
     .prologue
-    .line 19
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 28
+    .line 12
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->tryWrong:Z
 
-    .line 2
+    .line 21
     iput-object p1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->algorithm:Ljava/lang/String;
 
-    .line 29
+    .line 23
     iput p2, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->type:I
 
-    .line 4
+    .line 11
     iput p3, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->digest:I
 
-    .line 25
+    .line 8
     iput p4, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->keySize:I
 
-    .line 14
+    .line 10
     iput p5, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->ivSize:I
 
-    .line 16
+    .line 14
     iput-object p6, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->pbeKeySpec:Ljavax/crypto/spec/PBEKeySpec;
 
-    .line 27
+    .line 7
     iput-object p7, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->param:Lorg/spongycastle/crypto/CipherParameters;
 
-    .line 20
+    .line 15
     return-void
 .end method
 
@@ -159,7 +157,7 @@
     .locals 1
 
     .prologue
-    .line 31
+    .line 4
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->algorithm:Ljava/lang/String;
 
     return-object v0
@@ -169,7 +167,7 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 16
     iget v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->digest:I
 
     return v0
@@ -179,19 +177,19 @@
     .locals 2
 
     .prologue
-    .line 15
+    .line 28
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->param:Lorg/spongycastle/crypto/CipherParameters;
 
     if-eqz v0, :cond_2
 
-    .line 18
+    .line 25
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->param:Lorg/spongycastle/crypto/CipherParameters;
 
     instance-of v0, v0, Lorg/spongycastle/crypto/params/ParametersWithIV;
 
     if-eqz v0, :cond_0
 
-    .line 22
+    .line 17
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->param:Lorg/spongycastle/crypto/CipherParameters;
 
     check-cast v0, Lorg/spongycastle/crypto/params/ParametersWithIV;
@@ -206,23 +204,22 @@
 
     if-eqz v1, :cond_1
 
-    .line 1
+    .line 22
     :cond_0
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->param:Lorg/spongycastle/crypto/CipherParameters;
 
     check-cast v0, Lorg/spongycastle/crypto/params/KeyParameter;
 
-    .line 13
+    .line 27
     :cond_1
     invoke-virtual {v0}, Lorg/spongycastle/crypto/params/KeyParameter;->getKey()[B
 
     move-result-object v0
 
-    .line 21
     :goto_0
     return-object v0
 
-    .line 12
+    .line 1
     :cond_2
     iget v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->type:I
 
@@ -230,7 +227,7 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 11
+    .line 24
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->pbeKeySpec:Ljavax/crypto/spec/PBEKeySpec;
 
     invoke-virtual {v0}, Ljavax/crypto/spec/PBEKeySpec;->getPassword()[C
@@ -243,7 +240,7 @@
 
     goto :goto_0
 
-    .line 21
+    .line 9
     :cond_3
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->pbeKeySpec:Ljavax/crypto/spec/PBEKeySpec;
 
@@ -262,7 +259,7 @@
     .locals 1
 
     .prologue
-    .line 9
+    .line 13
     sget-object v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->z:Ljava/lang/String;
 
     return-object v0
@@ -272,7 +269,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 31
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->pbeKeySpec:Ljavax/crypto/spec/PBEKeySpec;
 
     invoke-virtual {v0}, Ljavax/crypto/spec/PBEKeySpec;->getIterationCount()I
@@ -286,7 +283,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 6
     iget v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->ivSize:I
 
     return v0
@@ -296,7 +293,7 @@
     .locals 1
 
     .prologue
-    .line 24
+    .line 30
     iget v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->keySize:I
 
     return v0
@@ -316,7 +313,7 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 18
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->pbeKeySpec:Ljavax/crypto/spec/PBEKeySpec;
 
     invoke-virtual {v0}, Ljavax/crypto/spec/PBEKeySpec;->getPassword()[C
@@ -330,7 +327,7 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 20
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->pbeKeySpec:Ljavax/crypto/spec/PBEKeySpec;
 
     invoke-virtual {v0}, Ljavax/crypto/spec/PBEKeySpec;->getSalt()[B
@@ -344,7 +341,7 @@
     .locals 1
 
     .prologue
-    .line 23
+    .line 29
     iget v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->type:I
 
     return v0
@@ -354,10 +351,10 @@
     .locals 0
 
     .prologue
-    .line 8
+    .line 3
     iput-boolean p1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->tryWrong:Z
 
-    .line 30
+    .line 2
     return-void
 .end method
 
@@ -365,7 +362,7 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 19
     iget-boolean v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->tryWrong:Z
 
     return v0

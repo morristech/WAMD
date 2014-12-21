@@ -40,7 +40,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "6\u000c;d\u001fS\u0017\'m\u0001\u0012\n e\nS\u0013,e\u0018S&\u0004G"
+    const-string v6, ".6CR:K-_[$\n0XS/K)TS=K\u001c|q"
 
     const/4 v0, -0x1
 
@@ -78,7 +78,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "6\u000c;d\u001fS\u0017\'m\u0001\u0012\n e\nS\u0013,e\u0018S&\u0004G"
+    const-string v0, ".6CR:K-_[$\n0XS/K)TS=K\u001c|q"
 
     move-object v6, v0
 
@@ -93,7 +93,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "\u001e\u001b\'~"
+    const-string v0, "\u0006!_H"
 
     move-object v6, v0
 
@@ -108,7 +108,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "\u0014\u000c&~\u001d"
+    const-string v0, "\u00020TP"
 
     move-object v6, v0
 
@@ -123,7 +123,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "6\u00069n\u000e\u0007\u0017\'lM\u001e\u001b\'~AS\u0019&\u007fM"
+    const-string v0, "\u00020TP"
 
     move-object v6, v0
 
@@ -140,7 +140,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "\u001a\n,f"
+    const-string v0, "\u000c6^H8"
 
     move v7, v6
 
@@ -157,7 +157,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "&\u0010,s\u001d\u0016\u001d=n\tS\u001b\'oM\u001c\u0018io\u0002\u0010\u000b$n\u0003\u0007"
+    const-string v6, "\u0006!_H"
 
     const/4 v0, 0x5
 
@@ -170,7 +170,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "\u001e\u001b\'~"
+    const-string v6, "\u000c6^H8"
 
     const/4 v0, 0x6
 
@@ -183,7 +183,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "\u001e\u001b\'~"
+    const-string v6, ".<AX+\u001f-_Zh\u0006!_HdK#^Ih"
 
     const/4 v0, 0x7
 
@@ -196,7 +196,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "\u0014\u000c&~\u001d"
+    const-string v6, ">*TE8\u000e\'EX,K!_Yh\u0004\"\u0011Y\'\u00081\\X&\u001f"
 
     const/16 v0, 0x8
 
@@ -209,7 +209,7 @@
 
     const/16 v7, 0xa
 
-    const-string v6, "\u001a\n,f"
+    const-string v6, "\u0006!_H"
 
     const/16 v0, 0x9
 
@@ -222,7 +222,7 @@
 
     sput-object v9, Lcom/actionbarsherlock/view/MenuInflater;->z:[Ljava/lang/String;
 
-    .line 59
+    .line 33
     new-array v0, v2, [Ljava/lang/Class;
 
     const-class v2, Landroid/content/Context;
@@ -231,7 +231,7 @@
 
     sput-object v0, Lcom/actionbarsherlock/view/MenuInflater;->ACTION_VIEW_CONSTRUCTOR_SIGNATURE:[Ljava/lang/Class;
 
-    .line 23
+    .line 3
     sget-object v0, Lcom/actionbarsherlock/view/MenuInflater;->ACTION_VIEW_CONSTRUCTOR_SIGNATURE:[Ljava/lang/Class;
 
     sput-object v0, Lcom/actionbarsherlock/view/MenuInflater;->ACTION_PROVIDER_CONSTRUCTOR_SIGNATURE:[Ljava/lang/Class;
@@ -246,7 +246,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x6d
+    const/16 v6, 0x48
 
     :goto_2
     xor-int/2addr v6, v13
@@ -262,22 +262,22 @@
     goto/16 :goto_1
 
     :pswitch_a
-    const/16 v6, 0x73
+    const/16 v6, 0x6b
 
     goto :goto_2
 
     :pswitch_b
-    const/16 v6, 0x7e
+    const/16 v6, 0x44
 
     goto :goto_2
 
     :pswitch_c
-    const/16 v6, 0x49
+    const/16 v6, 0x31
 
     goto :goto_2
 
     :pswitch_d
-    const/16 v6, 0xb
+    const/16 v6, 0x3d
 
     goto :goto_2
 
@@ -310,16 +310,16 @@
     .locals 2
 
     .prologue
-    .line 56
+    .line 32
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 25
+    .line 8
     iput-object p1, p0, Lcom/actionbarsherlock/view/MenuInflater;->mContext:Landroid/content/Context;
 
-    .line 14
+    .line 37
     iput-object p1, p0, Lcom/actionbarsherlock/view/MenuInflater;->mRealOwner:Ljava/lang/Object;
 
-    .line 8
+    .line 72
     const/4 v0, 0x1
 
     new-array v0, v0, [Ljava/lang/Object;
@@ -330,12 +330,12 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/view/MenuInflater;->mActionViewConstructorArguments:[Ljava/lang/Object;
 
-    .line 62
+    .line 18
     iget-object v0, p0, Lcom/actionbarsherlock/view/MenuInflater;->mActionViewConstructorArguments:[Ljava/lang/Object;
 
     iput-object v0, p0, Lcom/actionbarsherlock/view/MenuInflater;->mActionProviderConstructorArguments:[Ljava/lang/Object;
 
-    .line 41
+    .line 19
     return-void
 .end method
 
@@ -343,16 +343,16 @@
     .locals 2
 
     .prologue
-    .line 63
+    .line 51
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 67
+    .line 75
     iput-object p1, p0, Lcom/actionbarsherlock/view/MenuInflater;->mContext:Landroid/content/Context;
 
-    .line 17
+    .line 1
     iput-object p2, p0, Lcom/actionbarsherlock/view/MenuInflater;->mRealOwner:Ljava/lang/Object;
 
-    .line 19
+    .line 28
     const/4 v0, 0x1
 
     new-array v0, v0, [Ljava/lang/Object;
@@ -363,12 +363,12 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/view/MenuInflater;->mActionViewConstructorArguments:[Ljava/lang/Object;
 
-    .line 60
+    .line 25
     iget-object v0, p0, Lcom/actionbarsherlock/view/MenuInflater;->mActionViewConstructorArguments:[Ljava/lang/Object;
 
     iput-object v0, p0, Lcom/actionbarsherlock/view/MenuInflater;->mActionProviderConstructorArguments:[Ljava/lang/Object;
 
-    .line 45
+    .line 50
     return-void
 .end method
 
@@ -376,7 +376,7 @@
     .locals 1
 
     .prologue
-    .line 29
+    .line 14
     iget-object v0, p0, Lcom/actionbarsherlock/view/MenuInflater;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -386,7 +386,7 @@
     .locals 1
 
     .prologue
-    .line 69
+    .line 54
     sget-object v0, Lcom/actionbarsherlock/view/MenuInflater;->ACTION_PROVIDER_CONSTRUCTOR_SIGNATURE:[Ljava/lang/Class;
 
     return-object v0
@@ -396,7 +396,7 @@
     .locals 1
 
     .prologue
-    .line 64
+    .line 22
     iget-object v0, p0, Lcom/actionbarsherlock/view/MenuInflater;->mActionProviderConstructorArguments:[Ljava/lang/Object;
 
     return-object v0
@@ -406,7 +406,7 @@
     .locals 1
 
     .prologue
-    .line 71
+    .line 47
     iget-object v0, p0, Lcom/actionbarsherlock/view/MenuInflater;->mRealOwner:Ljava/lang/Object;
 
     return-object v0
@@ -416,7 +416,7 @@
     .locals 1
 
     .prologue
-    .line 49
+    .line 74
     sget-object v0, Lcom/actionbarsherlock/view/MenuInflater;->ACTION_VIEW_CONSTRUCTOR_SIGNATURE:[Ljava/lang/Class;
 
     return-object v0
@@ -426,7 +426,7 @@
     .locals 1
 
     .prologue
-    .line 42
+    .line 17
     iget-object v0, p0, Lcom/actionbarsherlock/view/MenuInflater;->mActionViewConstructorArguments:[Ljava/lang/Object;
 
     return-object v0
@@ -438,35 +438,37 @@
     .prologue
     const/4 v5, 0x0
 
-    const/4 v3, 0x2
+    const/4 v1, 0x2
 
     const/4 v2, 0x1
 
     const/4 v6, 0x0
 
-    sget-boolean v7, Lcom/actionbarsherlock/view/ActionMode;->a:Z
+    sget v7, Lcom/actionbarsherlock/view/ActionMode;->a:I
 
-    .line 36
+    .line 27
     new-instance v8, Lcom/actionbarsherlock/view/MenuInflater$MenuState;
 
     invoke-direct {v8, p0, p3}, Lcom/actionbarsherlock/view/MenuInflater$MenuState;-><init>(Lcom/actionbarsherlock/view/MenuInflater;Lcom/actionbarsherlock/view/Menu;)V
 
-    .line 15
+    .line 73
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
 
     move-result v0
 
-    .line 75
+    .line 46
     :cond_0
-    if-ne v0, v3, :cond_2
+    if-ne v0, v1, :cond_2
 
-    .line 16
+    .line 24
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 22
+    .line 45
     sget-object v0, Lcom/actionbarsherlock/view/MenuInflater;->z:[Ljava/lang/String;
+
+    const/16 v3, 0xa
 
     aget-object v0, v0, v3
 
@@ -476,15 +478,15 @@
 
     if-eqz v0, :cond_1
 
-    .line 38
+    .line 62
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v0
 
-    .line 73
+    .line 71
     if-eqz v7, :cond_3
 
-    .line 61
+    .line 44
     :cond_1
     :try_start_0
     new-instance v0, Ljava/lang/RuntimeException;
@@ -495,7 +497,7 @@
 
     sget-object v3, Lcom/actionbarsherlock/view/MenuInflater;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x4
+    const/16 v4, 0x8
 
     aget-object v3, v3, v4
 
@@ -522,13 +524,13 @@
 
     throw v0
 
-    .line 51
+    .line 15
     :cond_2
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v0
 
-    .line 74
+    .line 21
     if-ne v0, v2, :cond_0
 
     :cond_3
@@ -538,17 +540,17 @@
 
     move v3, v6
 
-    .line 47
+    .line 31
     :goto_0
     if-nez v4, :cond_5
 
-    .line 54
+    .line 12
     packed-switch v0, :pswitch_data_0
 
     :cond_4
     move v0, v4
 
-    .line 26
+    .line 65
     :goto_1
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
@@ -556,28 +558,28 @@
 
     if-eqz v7, :cond_f
 
-    .line 4
+    .line 35
     :cond_5
     return-void
 
-    .line 18
+    .line 77
     :pswitch_0
     if-eqz v3, :cond_6
 
-    .line 11
+    .line 30
     if-eqz v7, :cond_4
 
-    .line 66
+    .line 60
     :cond_6
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 28
+    .line 61
     :try_start_1
     sget-object v9, Lcom/actionbarsherlock/view/MenuInflater;->z:[Ljava/lang/String;
 
-    const/16 v10, 0x9
+    const/4 v10, 0x7
 
     aget-object v9, v9, v10
 
@@ -589,7 +591,7 @@
 
     if-eqz v9, :cond_7
 
-    .line 20
+    .line 40
     :try_start_2
     invoke-virtual {v8, p2}, Lcom/actionbarsherlock/view/MenuInflater$MenuState;->readGroup(Landroid/util/AttributeSet;)V
     :try_end_2
@@ -597,12 +599,12 @@
 
     if-eqz v7, :cond_4
 
-    .line 33
+    .line 23
     :cond_7
     :try_start_3
     sget-object v9, Lcom/actionbarsherlock/view/MenuInflater;->z:[Ljava/lang/String;
 
-    const/4 v10, 0x5
+    const/4 v10, 0x4
 
     aget-object v9, v9, v10
 
@@ -614,17 +616,17 @@
 
     if-eqz v9, :cond_8
 
-    .line 46
+    .line 48
     :try_start_4
     invoke-virtual {v8, p2}, Lcom/actionbarsherlock/view/MenuInflater$MenuState;->readItem(Landroid/util/AttributeSet;)V
 
     if-eqz v7, :cond_4
 
-    .line 77
+    .line 49
     :cond_8
     sget-object v9, Lcom/actionbarsherlock/view/MenuInflater;->z:[Ljava/lang/String;
 
-    const/4 v10, 0x7
+    const/4 v10, 0x2
 
     aget-object v9, v9, v10
 
@@ -636,30 +638,30 @@
 
     if-eqz v9, :cond_9
 
-    .line 30
+    .line 52
     invoke-virtual {v8}, Lcom/actionbarsherlock/view/MenuInflater$MenuState;->addSubMenuItem()Lcom/actionbarsherlock/view/SubMenu;
 
     move-result-object v9
 
-    .line 35
+    .line 36
     invoke-direct {p0, p1, p2, v9}, Lcom/actionbarsherlock/view/MenuInflater;->parseMenu(Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Lcom/actionbarsherlock/view/Menu;)V
 
-    .line 13
+    .line 69
     if-eqz v7, :cond_4
 
-    .line 39
+    .line 11
     :cond_9
     if-eqz v7, :cond_e
 
     move v1, v2
 
-    .line 21
+    .line 34
     :goto_2
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 31
+    .line 64
     if-eqz v1, :cond_a
 
     :try_start_5
@@ -677,10 +679,10 @@
 
     move v3, v6
 
-    .line 27
+    .line 16
     goto :goto_1
 
-    .line 20
+    .line 40
     :catch_1
     move-exception v0
 
@@ -689,7 +691,7 @@
     :try_end_6
     .catch Landroid/view/InflateException; {:try_start_6 .. :try_end_6} :catch_2
 
-    .line 33
+    .line 23
     :catch_2
     move-exception v0
 
@@ -698,7 +700,7 @@
     :try_end_7
     .catch Landroid/view/InflateException; {:try_start_7 .. :try_end_7} :catch_3
 
-    .line 46
+    .line 48
     :catch_3
     move-exception v0
 
@@ -707,24 +709,24 @@
     :try_end_8
     .catch Landroid/view/InflateException; {:try_start_8 .. :try_end_8} :catch_4
 
-    .line 77
+    .line 49
     :catch_4
     move-exception v0
 
     throw v0
 
-    .line 31
+    .line 64
     :catch_5
     move-exception v0
 
     throw v0
 
-    .line 5
+    .line 43
     :cond_a
     :try_start_9
     sget-object v9, Lcom/actionbarsherlock/view/MenuInflater;->z:[Ljava/lang/String;
 
-    const/4 v10, 0x3
+    const/4 v10, 0x5
 
     aget-object v9, v9, v10
 
@@ -736,7 +738,7 @@
 
     if-eqz v9, :cond_b
 
-    .line 10
+    .line 20
     :try_start_a
     invoke-virtual {v8}, Lcom/actionbarsherlock/view/MenuInflater$MenuState;->resetGroup()V
     :try_end_a
@@ -744,12 +746,12 @@
 
     if-eqz v7, :cond_11
 
-    .line 52
+    .line 26
     :cond_b
     :try_start_b
     sget-object v9, Lcom/actionbarsherlock/view/MenuInflater;->z:[Ljava/lang/String;
 
-    const/16 v10, 0xa
+    const/4 v10, 0x3
 
     aget-object v9, v9, v10
 
@@ -761,7 +763,7 @@
 
     if-eqz v9, :cond_d
 
-    .line 43
+    .line 13
     :try_start_c
     invoke-virtual {v8}, Lcom/actionbarsherlock/view/MenuInflater$MenuState;->hasAddedItem()Z
     :try_end_c
@@ -771,7 +773,7 @@
 
     if-nez v9, :cond_11
 
-    .line 70
+    .line 6
     :try_start_d
     invoke-static {v8}, Lcom/actionbarsherlock/view/MenuInflater$MenuState;->access$000(Lcom/actionbarsherlock/view/MenuInflater$MenuState;)Lcom/actionbarsherlock/view/ActionProvider;
     :try_end_d
@@ -781,7 +783,7 @@
 
     if-eqz v9, :cond_c
 
-    .line 65
+    .line 58
     :try_start_e
     invoke-static {v8}, Lcom/actionbarsherlock/view/MenuInflater$MenuState;->access$000(Lcom/actionbarsherlock/view/MenuInflater$MenuState;)Lcom/actionbarsherlock/view/ActionProvider;
 
@@ -795,7 +797,7 @@
 
     if-eqz v9, :cond_c
 
-    .line 1
+    .line 10
     :try_start_f
     invoke-virtual {v8}, Lcom/actionbarsherlock/view/MenuInflater$MenuState;->addSubMenuItem()Lcom/actionbarsherlock/view/SubMenu;
     :try_end_f
@@ -803,18 +805,18 @@
 
     if-eqz v7, :cond_11
 
-    .line 7
+    .line 5
     :cond_c
     :try_start_10
     invoke-virtual {v8}, Lcom/actionbarsherlock/view/MenuInflater$MenuState;->addItem()V
 
     if-eqz v7, :cond_11
 
-    .line 68
+    .line 66
     :cond_d
     sget-object v9, Lcom/actionbarsherlock/view/MenuInflater;->z:[Ljava/lang/String;
 
-    const/16 v10, 0x8
+    const/4 v10, 0x6
 
     aget-object v9, v9, v10
 
@@ -826,17 +828,17 @@
 
     if-eqz v3, :cond_11
 
-    .line 44
+    .line 67
     if-eqz v7, :cond_10
 
-    .line 58
+    .line 41
     :pswitch_1
     :try_start_11
     new-instance v0, Ljava/lang/RuntimeException;
 
     sget-object v1, Lcom/actionbarsherlock/view/MenuInflater;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x6
+    const/16 v2, 0x9
 
     aget-object v1, v1, v2
 
@@ -851,7 +853,7 @@
 
     throw v0
 
-    .line 10
+    .line 20
     :catch_7
     move-exception v0
 
@@ -860,7 +862,7 @@
     :try_end_12
     .catch Landroid/view/InflateException; {:try_start_12 .. :try_end_12} :catch_8
 
-    .line 52
+    .line 26
     :catch_8
     move-exception v0
 
@@ -869,7 +871,7 @@
     :try_end_13
     .catch Landroid/view/InflateException; {:try_start_13 .. :try_end_13} :catch_9
 
-    .line 43
+    .line 13
     :catch_9
     move-exception v0
 
@@ -878,7 +880,7 @@
     :try_end_14
     .catch Landroid/view/InflateException; {:try_start_14 .. :try_end_14} :catch_a
 
-    .line 70
+    .line 6
     :catch_a
     move-exception v0
 
@@ -887,7 +889,7 @@
     :try_end_15
     .catch Landroid/view/InflateException; {:try_start_15 .. :try_end_15} :catch_b
 
-    .line 65
+    .line 58
     :catch_b
     move-exception v0
 
@@ -896,7 +898,7 @@
     :try_end_16
     .catch Landroid/view/InflateException; {:try_start_16 .. :try_end_16} :catch_c
 
-    .line 1
+    .line 10
     :catch_c
     move-exception v0
 
@@ -905,7 +907,7 @@
     :try_end_17
     .catch Landroid/view/InflateException; {:try_start_17 .. :try_end_17} :catch_d
 
-    .line 7
+    .line 5
     :catch_d
     move-exception v0
 
@@ -914,7 +916,7 @@
     :try_end_18
     .catch Landroid/view/InflateException; {:try_start_18 .. :try_end_18} :catch_e
 
-    .line 68
+    .line 66
     :catch_e
     move-exception v0
 
@@ -963,7 +965,9 @@
 
     goto/16 :goto_1
 
-    .line 54
+    .line 12
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -978,10 +982,10 @@
     .locals 5
 
     .prologue
-    .line 48
+    .line 68
     const/4 v1, 0x0
 
-    .line 3
+    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/view/MenuInflater;->mContext:Landroid/content/Context;
 
@@ -993,38 +997,38 @@
 
     move-result-object v1
 
-    .line 12
+    .line 57
     invoke-static {v1}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
 
     move-result-object v0
 
-    .line 32
+    .line 29
     invoke-direct {p0, v1, v0, p2}, Lcom/actionbarsherlock/view/MenuInflater;->parseMenu(Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Lcom/actionbarsherlock/view/Menu;)V
     :try_end_0
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
+    .line 39
     if-eqz v1, :cond_0
 
     invoke-interface {v1}, Landroid/content/res/XmlResourceParser;->close()V
 
-    .line 55
+    .line 59
     :cond_0
     return-void
 
-    .line 37
+    .line 56
     :catch_0
     move-exception v0
 
-    .line 40
+    .line 55
     :try_start_1
     new-instance v2, Landroid/view/InflateException;
 
     sget-object v3, Lcom/actionbarsherlock/view/MenuInflater;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x1
+    const/4 v4, 0x0
 
     aget-object v3, v3, v4
 
@@ -1034,7 +1038,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 72
+    .line 63
     :catchall_0
     move-exception v0
 
@@ -1048,17 +1052,17 @@
     :cond_1
     throw v0
 
-    .line 50
+    .line 38
     :catch_1
     move-exception v0
 
-    .line 57
+    .line 9
     :try_start_3
     new-instance v2, Landroid/view/InflateException;
 
     sget-object v3, Lcom/actionbarsherlock/view/MenuInflater;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x0
+    const/4 v4, 0x1
 
     aget-object v3, v3, v4
 
@@ -1068,7 +1072,7 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 72
+    .line 63
     :catch_2
     move-exception v0
 

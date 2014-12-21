@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 16
+    .line 15
     iput-object p1, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -29,7 +29,7 @@
     .locals 1
 
     .prologue
-    .line 19
+    .line 12
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 21
+    .line 13
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -53,12 +53,12 @@
     .locals 1
 
     .prologue
-    .line 25
+    .line 1
     iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0}, Landroid/support/v4/util/MapCollections;->colClear()V
 
-    .line 22
+    .line 20
     return-void
 .end method
 
@@ -66,7 +66,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 5
     :try_start_0
     iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
 
@@ -98,7 +98,7 @@
     .locals 1
 
     .prologue
-    .line 18
+    .line 6
     iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0}, Landroid/support/v4/util/MapCollections;->colGetMap()Ljava/util/Map;
@@ -116,7 +116,7 @@
     .locals 1
 
     .prologue
-    .line 20
+    .line 17
     invoke-static {p0, p1}, Landroid/support/v4/util/MapCollections;->equalsSetHelper(Ljava/util/Set;Ljava/lang/Object;)Z
 
     move-result v0
@@ -130,9 +130,9 @@
     .prologue
     const/4 v2, 0x0
 
-    sget v4, Landroid/support/v4/util/LruCache;->a:I
+    sget-boolean v4, Landroid/support/v4/util/LruCache;->a:Z
 
-    .line 15
+    .line 18
     iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0}, Landroid/support/v4/util/MapCollections;->colGetSize()I
@@ -148,14 +148,14 @@
     :goto_0
     if-ltz v3, :cond_0
 
-    .line 4
+    .line 11
     iget-object v1, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v1, v3, v2}, Landroid/support/v4/util/MapCollections;->colGetEntry(II)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 23
+    .line 24
     if-nez v1, :cond_1
 
     move v1, v2
@@ -168,11 +168,11 @@
 
     if-eqz v4, :cond_2
 
-    .line 6
+    .line 2
     :cond_0
     return v0
 
-    .line 23
+    .line 24
     :cond_1
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -190,7 +190,7 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 16
     :try_start_0
     iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
 
@@ -222,7 +222,7 @@
     .locals 3
 
     .prologue
-    .line 10
+    .line 8
     new-instance v0, Landroid/support/v4/util/MapCollections$ArrayIterator;
 
     iget-object v1, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
@@ -238,17 +238,17 @@
     .locals 2
 
     .prologue
-    .line 11
+    .line 19
     iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/util/MapCollections;->colIndexOfKey(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 24
+    .line 25
     if-ltz v0, :cond_0
 
-    .line 14
+    .line 22
     :try_start_0
     iget-object v1, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
 
@@ -256,18 +256,20 @@
     :try_end_0
     .catch Ljava/lang/UnsupportedOperationException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 17
+    .line 9
     const/4 v0, 0x1
 
+    .line 23
     :goto_0
     return v0
 
+    .line 9
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 1
+    .line 23
     :cond_0
     const/4 v0, 0x0
 
@@ -278,7 +280,7 @@
     .locals 1
 
     .prologue
-    .line 13
+    .line 26
     iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0}, Landroid/support/v4/util/MapCollections;->colGetMap()Ljava/util/Map;
@@ -314,7 +316,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 21
     iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0}, Landroid/support/v4/util/MapCollections;->colGetSize()I
@@ -328,7 +330,7 @@
     .locals 2
 
     .prologue
-    .line 9
+    .line 4
     iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
 
     const/4 v1, 0x0
@@ -344,7 +346,7 @@
     .locals 2
 
     .prologue
-    .line 5
+    .line 10
     iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->this$0:Landroid/support/v4/util/MapCollections;
 
     const/4 v1, 0x0

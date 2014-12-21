@@ -8,7 +8,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 1
     invoke-static {p0, p1}, Landroid/view/KeyEvent;->metaStateHasModifiers(II)Z
 
     move-result v0
@@ -20,7 +20,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 3
     invoke-static {p0}, Landroid/view/KeyEvent;->metaStateHasNoModifiers(I)Z
 
     move-result v0

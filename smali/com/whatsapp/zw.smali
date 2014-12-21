@@ -1,34 +1,19 @@
-.class public final enum Lcom/whatsapp/zw;
-.super Ljava/lang/Enum;
+.class Lcom/whatsapp/zw;
+.super Landroid/os/Handler;
 .source "zw.java"
 
 
 # static fields
-.field public static final MIXED:Lcom/whatsapp/zw;
-
-.field public static final P2P:Lcom/whatsapp/zw;
-
-.field public static final TCP_RELAY:Lcom/whatsapp/zw;
-
-.field public static final UDP_RELAY:Lcom/whatsapp/zw;
-
-.field private static final a:[Lcom/whatsapp/zw;
-
 .field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field private final b:I
+.field final a:Lcom/whatsapp/DeleteAccount;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 14
-
-    .prologue
-    const/4 v13, 0x4
-
-    const/4 v6, 0x3
+    .locals 12
 
     const/4 v3, 0x2
 
@@ -36,15 +21,17 @@
 
     const/4 v1, 0x0
 
-    new-array v5, v13, [Ljava/lang/String;
+    const/4 v0, 0x4
 
-    const-string v4, "J[u>w[Td8"
+    new-array v5, v0, [Ljava/lang/String;
+
+    const-string v4, "1iMv\u00110!@p\u0006:yOgJ6dDp\u000exbT~\u00070~\u000e~\u0004!oI"
 
     const/4 v0, -0x1
 
-    move-object v7, v5
+    move-object v6, v5
 
-    move-object v8, v5
+    move-object v7, v5
 
     move v5, v1
 
@@ -53,20 +40,20 @@
 
     move-result-object v4
 
-    array-length v9, v4
+    array-length v8, v4
 
-    move v10, v9
+    move v9, v8
 
-    move v11, v1
+    move v10, v1
 
-    move-object v9, v4
+    move-object v8, v4
 
     :goto_1
-    if-gt v10, v11, :cond_0
+    if-gt v9, v10, :cond_0
 
     new-instance v4, Ljava/lang/String;
 
-    invoke-direct {v4, v9}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v4, v8}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v4}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -74,162 +61,98 @@
 
     packed-switch v0, :pswitch_data_0
 
-    aput-object v4, v7, v5
+    aput-object v4, v6, v5
 
-    const-string v0, "N*u"
+    const-string v0, "1iMv\u00110!@p\u0006:yOgJ!eLv\n x"
 
     move-object v4, v0
 
     move v5, v2
 
-    move-object v7, v8
+    move-object v6, v7
 
     move v0, v1
 
     goto :goto_0
 
     :pswitch_0
-    aput-object v4, v7, v5
+    aput-object v4, v6, v5
 
-    const-string v0, "SQ}$a"
+    const-string v0, "1iMv\u00110!@p\u0006:yOgJ0~S|\u0017"
 
     move-object v4, v0
 
     move v5, v3
 
-    move-object v7, v8
+    move-object v6, v7
 
     move v0, v2
 
     goto :goto_0
 
     :pswitch_1
-    aput-object v4, v7, v5
+    aput-object v4, v6, v5
 
-    const-string v0, "K\\u>w[Td8"
+    const/4 v4, 0x3
+
+    const-string v0, "1iMv\u00110!@p\u0006:yOgJ6dDp\u000exbT~\u00070~\u000e~\u000c&a@g\u0006="
+
+    move v5, v4
+
+    move-object v6, v7
 
     move-object v4, v0
-
-    move v5, v6
-
-    move-object v7, v8
 
     move v0, v3
 
     goto :goto_0
 
     :pswitch_2
-    aput-object v4, v7, v5
+    aput-object v4, v6, v5
 
-    sput-object v8, Lcom/whatsapp/zw;->z:[Ljava/lang/String;
-
-    .line 6
-    new-instance v0, Lcom/whatsapp/zw;
-
-    sget-object v4, Lcom/whatsapp/zw;->z:[Ljava/lang/String;
-
-    aget-object v4, v4, v2
-
-    invoke-direct {v0, v4, v1, v2}, Lcom/whatsapp/zw;-><init>(Ljava/lang/String;II)V
-
-    sput-object v0, Lcom/whatsapp/zw;->P2P:Lcom/whatsapp/zw;
-
-    .line 4
-    new-instance v0, Lcom/whatsapp/zw;
-
-    sget-object v4, Lcom/whatsapp/zw;->z:[Ljava/lang/String;
-
-    aget-object v4, v4, v6
-
-    invoke-direct {v0, v4, v2, v3}, Lcom/whatsapp/zw;-><init>(Ljava/lang/String;II)V
-
-    sput-object v0, Lcom/whatsapp/zw;->UDP_RELAY:Lcom/whatsapp/zw;
-
-    .line 5
-    new-instance v0, Lcom/whatsapp/zw;
-
-    sget-object v4, Lcom/whatsapp/zw;->z:[Ljava/lang/String;
-
-    aget-object v4, v4, v1
-
-    invoke-direct {v0, v4, v3, v6}, Lcom/whatsapp/zw;-><init>(Ljava/lang/String;II)V
-
-    sput-object v0, Lcom/whatsapp/zw;->TCP_RELAY:Lcom/whatsapp/zw;
-
-    .line 11
-    new-instance v0, Lcom/whatsapp/zw;
-
-    sget-object v4, Lcom/whatsapp/zw;->z:[Ljava/lang/String;
-
-    aget-object v4, v4, v3
-
-    invoke-direct {v0, v4, v6, v13}, Lcom/whatsapp/zw;-><init>(Ljava/lang/String;II)V
-
-    sput-object v0, Lcom/whatsapp/zw;->MIXED:Lcom/whatsapp/zw;
-
-    .line 1
-    new-array v0, v13, [Lcom/whatsapp/zw;
-
-    sget-object v4, Lcom/whatsapp/zw;->P2P:Lcom/whatsapp/zw;
-
-    aput-object v4, v0, v1
-
-    sget-object v1, Lcom/whatsapp/zw;->UDP_RELAY:Lcom/whatsapp/zw;
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/whatsapp/zw;->TCP_RELAY:Lcom/whatsapp/zw;
-
-    aput-object v1, v0, v3
-
-    sget-object v1, Lcom/whatsapp/zw;->MIXED:Lcom/whatsapp/zw;
-
-    aput-object v1, v0, v6
-
-    sput-object v0, Lcom/whatsapp/zw;->a:[Lcom/whatsapp/zw;
+    sput-object v7, Lcom/whatsapp/zw;->z:[Ljava/lang/String;
 
     return-void
 
-    .line 4294967295
     :cond_0
-    aget-char v12, v9, v11
+    aget-char v11, v8, v10
 
-    rem-int/lit8 v4, v11, 0x5
+    rem-int/lit8 v4, v10, 0x5
 
     packed-switch v4, :pswitch_data_1
 
-    const/16 v4, 0x25
+    const/16 v4, 0x65
 
     :goto_2
-    xor-int/2addr v4, v12
+    xor-int/2addr v4, v11
 
     int-to-char v4, v4
 
-    aput-char v4, v9, v11
+    aput-char v4, v8, v10
 
-    add-int/lit8 v4, v11, 0x1
+    add-int/lit8 v4, v10, 0x1
 
-    move v11, v4
+    move v10, v4
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v4, 0x1e
+    const/16 v4, 0x55
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v4, 0x18
+    const/16 v4, 0xc
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v4, 0x25
+    const/16 v4, 0x21
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v4, 0x61
+    const/16 v4, 0x13
 
     goto :goto_2
 
@@ -249,60 +172,179 @@
     .end packed-switch
 .end method
 
-.method private constructor <init>(Ljava/lang/String;II)V
+.method constructor <init>(Lcom/whatsapp/DeleteAccount;)V
     .locals 0
 
     .prologue
-    .line 2
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 3
-    iput p3, p0, Lcom/whatsapp/zw;->b:I
-
     .line 10
+    iput-object p1, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
+
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lcom/whatsapp/zw;
-    .locals 1
-
-    .prologue
-    .line 7
-    const-class v0, Lcom/whatsapp/zw;
-
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/whatsapp/zw;
-
-    return-object v0
-.end method
-
-.method public static values()[Lcom/whatsapp/zw;
-    .locals 1
-
-    .prologue
-    .line 8
-    sget-object v0, Lcom/whatsapp/zw;->a:[Lcom/whatsapp/zw;
-
-    invoke-virtual {v0}, [Lcom/whatsapp/zw;->clone()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [Lcom/whatsapp/zw;
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public getCode()I
-    .locals 1
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 8
 
     .prologue
-    .line 9
-    iget v0, p0, Lcom/whatsapp/zw;->b:I
+    const/16 v7, 0x6d
 
-    return v0
+    const/4 v6, 0x4
+
+    const/4 v5, 0x1
+
+    sget v0, Lcom/whatsapp/App;->h:I
+
+    .line 4
+    iget v1, p1, Landroid/os/Message;->what:I
+
+    packed-switch v1, :pswitch_data_0
+
+    .line 18
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 21
+    :pswitch_0
+    sget-object v1, Lcom/whatsapp/zw;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    aget-object v1, v1, v2
+
+    invoke-static {v1}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
+
+    .line 17
+    iget-object v1, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    invoke-static {v1}, Lcom/whatsapp/DeleteAccount;->c(Lcom/whatsapp/DeleteAccount;)Landroid/os/Handler;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v6}, Landroid/os/Handler;->removeMessages(I)V
+
+    .line 7
+    iget-object v1, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    invoke-virtual {v1, v5}, Lcom/whatsapp/DeleteAccount;->removeDialog(I)V
+
+    .line 1
+    iget-object v1, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    new-instance v2, Landroid/content/Intent;
+
+    iget-object v3, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    const-class v4, Lcom/whatsapp/DeleteAccountConfirmation;
+
+    invoke-direct {v2, v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {v1, v2}, Lcom/whatsapp/DeleteAccount;->startActivity(Landroid/content/Intent;)V
+
+    .line 9
+    iget-object v1, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    invoke-virtual {v1}, Lcom/whatsapp/DeleteAccount;->finish()V
+
+    .line 16
+    if-eqz v0, :cond_0
+
+    .line 12
+    :pswitch_1
+    sget-object v1, Lcom/whatsapp/zw;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x3
+
+    aget-object v1, v1, v2
+
+    invoke-static {v1}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
+
+    .line 6
+    iget-object v1, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    invoke-static {v1}, Lcom/whatsapp/DeleteAccount;->c(Lcom/whatsapp/DeleteAccount;)Landroid/os/Handler;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v6}, Landroid/os/Handler;->removeMessages(I)V
+
+    .line 14
+    iget-object v1, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    invoke-virtual {v1, v5}, Lcom/whatsapp/DeleteAccount;->removeDialog(I)V
+
+    .line 3
+    iget-object v1, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    const v2, 0x7f0e0114
+
+    invoke-virtual {v1, v2}, Lcom/whatsapp/DeleteAccount;->a(I)V
+
+    .line 19
+    if-eqz v0, :cond_0
+
+    .line 8
+    :pswitch_2
+    sget-object v1, Lcom/whatsapp/zw;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x2
+
+    aget-object v1, v1, v2
+
+    invoke-static {v1}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
+
+    .line 22
+    iget-object v1, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    invoke-virtual {v1, v5}, Lcom/whatsapp/DeleteAccount;->removeDialog(I)V
+
+    .line 20
+    iget-object v1, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    invoke-virtual {v1, v7}, Lcom/whatsapp/DeleteAccount;->showDialog(I)V
+
+    .line 13
+    if-eqz v0, :cond_0
+
+    .line 11
+    :pswitch_3
+    sget-object v0, Lcom/whatsapp/zw;->z:[Ljava/lang/String;
+
+    aget-object v0, v0, v5
+
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    invoke-static {v0}, Lcom/whatsapp/DeleteAccount;->c(Lcom/whatsapp/DeleteAccount;)Landroid/os/Handler;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v6}, Landroid/os/Handler;->removeMessages(I)V
+
+    .line 15
+    iget-object v0, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    invoke-virtual {v0, v5}, Lcom/whatsapp/DeleteAccount;->removeDialog(I)V
+
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/zw;->a:Lcom/whatsapp/DeleteAccount;
+
+    invoke-virtual {v0, v7}, Lcom/whatsapp/DeleteAccount;->showDialog(I)V
+
+    goto :goto_0
+
+    .line 4
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+    .end packed-switch
 .end method

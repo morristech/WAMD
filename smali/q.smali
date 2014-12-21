@@ -1,16 +1,6 @@
 .class public Lq;
-.super Ljava/lang/Object;
+.super Lp;
 .source "q.java"
-
-
-# instance fields
-.field public a:I
-
-.field public b:Ljava/lang/String;
-
-.field public c:Ljava/lang/String;
-
-.field public d:Z
 
 
 # direct methods
@@ -19,7 +9,18 @@
 
     .prologue
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lp;-><init>()V
 
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 2
+    invoke-direct {p0, p1}, Lp;-><init>(Ljava/lang/String;)V
+
+    .line 3
     return-void
 .end method

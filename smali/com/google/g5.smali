@@ -1,405 +1,590 @@
-.class synthetic Lcom/google/g5;
-.super Ljava/lang/Object;
+.class public final enum Lcom/google/g5;
+.super Ljava/lang/Enum;
 .source "g5.java"
 
 
 # static fields
-.field static final a:[I
+.field public static final FIXED_LINE:Lcom/google/g5;
+
+.field public static final FIXED_LINE_OR_MOBILE:Lcom/google/g5;
+
+.field public static final MOBILE:Lcom/google/g5;
+
+.field public static final PAGER:Lcom/google/g5;
+
+.field public static final PERSONAL_NUMBER:Lcom/google/g5;
+
+.field public static final PREMIUM_RATE:Lcom/google/g5;
+
+.field public static final SHARED_COST:Lcom/google/g5;
+
+.field public static final TOLL_FREE:Lcom/google/g5;
+
+.field public static final UAN:Lcom/google/g5;
+
+.field public static final UNKNOWN:Lcom/google/g5;
+
+.field public static final VOICEMAIL:Lcom/google/g5;
+
+.field public static final VOIP:Lcom/google/g5;
+
+.field private static final a:[Lcom/google/g5;
+
+.field private static final z:[Ljava/lang/String;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 14
 
     .prologue
-    .line 1
-    invoke-static {}, Lcom/google/dJ;->values()[Lcom/google/dJ;
+    const/4 v4, 0x3
 
-    move-result-object v0
-
-    array-length v0, v0
-
-    new-array v0, v0, [I
-
-    sput-object v0, Lcom/google/g5;->a:[I
-
-    :try_start_0
-    sget-object v0, Lcom/google/g5;->a:[I
-
-    sget-object v1, Lcom/google/dJ;->INT32:Lcom/google/dJ;
-
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
-
-    move-result v1
+    const/4 v3, 0x2
 
     const/4 v2, 0x1
 
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_11
+    const/16 v5, 0x8
+
+    const/4 v1, 0x0
+
+    const/16 v0, 0xc
+
+    new-array v7, v0, [Ljava/lang/String;
+
+    const-string v6, "ei$"
+
+    const/4 v0, -0x1
+
+    move-object v8, v7
+
+    move-object v9, v7
+
+    move v7, v1
 
     :goto_0
-    :try_start_1
-    sget-object v0, Lcom/google/g5;->a:[I
+    invoke-virtual {v6}, Ljava/lang/String;->toCharArray()[C
 
-    sget-object v1, Lcom/google/dJ;->SINT32:Lcom/google/dJ;
+    move-result-object v6
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    array-length v10, v6
 
-    move-result v1
+    move v11, v10
 
-    const/4 v2, 0x2
+    move v12, v1
 
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_10
+    move-object v10, v6
 
     :goto_1
-    :try_start_2
-    sget-object v0, Lcom/google/g5;->a:[I
+    if-gt v11, v12, :cond_0
 
-    sget-object v1, Lcom/google/dJ;->SFIXED32:Lcom/google/dJ;
+    new-instance v6, Ljava/lang/String;
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    invoke-direct {v6, v10}, Ljava/lang/String;-><init>([C)V
 
-    move-result v1
+    invoke-virtual {v6}, Ljava/lang/String;->intern()Ljava/lang/String;
 
-    const/4 v2, 0x3
+    move-result-object v6
 
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_f
+    packed-switch v0, :pswitch_data_0
 
-    :goto_2
-    :try_start_3
-    sget-object v0, Lcom/google/g5;->a:[I
+    aput-object v6, v8, v7
 
-    sget-object v1, Lcom/google/dJ;->INT64:Lcom/google/dJ;
+    const-string v0, "dg&eWvz/l"
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    move-object v6, v0
 
-    move-result v1
+    move v7, v2
 
-    const/4 v2, 0x4
+    move-object v8, v9
 
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_e
+    move v0, v1
 
-    :goto_3
-    :try_start_4
-    sget-object v0, Lcom/google/g5;->a:[I
+    goto :goto_0
 
-    sget-object v1, Lcom/google/dJ;->SINT64:Lcom/google/dJ;
+    :pswitch_0
+    aput-object v6, v8, v7
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    const-string v0, "fg#y"
 
-    move-result v1
+    move-object v6, v0
 
-    const/4 v2, 0x5
+    move v7, v3
 
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_d
+    move-object v8, v9
 
-    :goto_4
-    :try_start_5
-    sget-object v0, Lcom/google/g5;->a:[I
+    move v0, v2
 
-    sget-object v1, Lcom/google/dJ;->SFIXED64:Lcom/google/dJ;
+    goto :goto_0
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    :pswitch_1
+    aput-object v6, v8, v7
 
-    move-result v1
+    const-string v0, "`m8zG~i&vFee(lZ"
 
-    const/4 v2, 0x6
+    move-object v6, v0
 
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_c
+    move v7, v4
 
-    :goto_5
-    :try_start_6
-    sget-object v0, Lcom/google/g5;->a:[I
+    move-object v8, v9
 
-    sget-object v1, Lcom/google/dJ;->BOOL:Lcom/google/dJ;
+    move v0, v3
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    goto :goto_0
 
-    move-result v1
+    :pswitch_2
+    aput-object v6, v8, v7
 
-    const/4 v2, 0x7
+    const/4 v6, 0x4
 
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_b
+    const-string v0, "va2lLod#gM"
 
-    :goto_6
-    :try_start_7
-    sget-object v0, Lcom/google/g5;->a:[I
+    move v7, v6
 
-    sget-object v1, Lcom/google/dJ;->FLOAT:Lcom/google/dJ;
+    move-object v8, v9
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    move-object v6, v0
 
-    move-result v1
+    move v0, v4
 
-    const/16 v2, 0x8
+    goto :goto_0
 
-    aput v2, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_a
+    :pswitch_3
+    aput-object v6, v8, v7
 
-    :goto_7
-    :try_start_8
-    sget-object v0, Lcom/google/g5;->a:[I
+    const/4 v7, 0x5
 
-    sget-object v1, Lcom/google/dJ;->DOUBLE:Lcom/google/dJ;
+    const-string v6, "}g(`Du"
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    const/4 v0, 0x4
 
-    move-result v1
+    move-object v8, v9
 
-    const/16 v2, 0x9
+    goto :goto_0
 
-    aput v2, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_9
+    :pswitch_4
+    aput-object v6, v8, v7
 
-    :goto_8
-    :try_start_9
-    sget-object v0, Lcom/google/g5;->a:[I
+    const/4 v7, 0x6
 
-    sget-object v1, Lcom/google/dJ;->UINT32:Lcom/google/dJ;
+    const-string v6, "c`+{Mtw)f[d"
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    const/4 v0, 0x5
 
-    move-result v1
+    move-object v8, v9
 
-    const/16 v2, 0xa
+    goto :goto_0
 
-    aput v2, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_8
+    :pswitch_5
+    aput-object v6, v8, v7
 
-    :goto_9
-    :try_start_a
-    sget-object v0, Lcom/google/g5;->a:[I
+    const/4 v7, 0x7
 
-    sget-object v1, Lcom/google/dJ;->FIXED32:Lcom/google/dJ;
+    const-string v6, "`i-lZ"
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    const/4 v0, 0x6
 
-    move-result v1
+    move-object v8, v9
 
-    const/16 v2, 0xb
+    goto :goto_0
 
-    aput v2, v0, v1
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_7
+    :pswitch_6
+    aput-object v6, v8, v7
 
-    :goto_a
-    :try_start_b
-    sget-object v0, Lcom/google/g5;->a:[I
+    const-string v6, "fg#jM}i#e"
 
-    sget-object v1, Lcom/google/dJ;->UINT64:Lcom/google/dJ;
+    const/4 v0, 0x7
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    move v7, v5
 
-    move-result v1
+    move-object v8, v9
 
-    const/16 v2, 0xc
+    goto :goto_0
 
-    aput v2, v0, v1
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_6
+    :pswitch_7
+    aput-object v6, v8, v7
 
-    :goto_b
-    :try_start_c
-    sget-object v0, Lcom/google/g5;->a:[I
+    const/16 v6, 0x9
 
-    sget-object v1, Lcom/google/dJ;->FIXED64:Lcom/google/dJ;
+    const-string v0, "va2lLod#gMog8vE\u007fj#eM"
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    move v7, v6
 
-    move-result v1
+    move-object v8, v9
 
-    const/16 v2, 0xd
+    move-object v6, v0
 
-    aput v2, v0, v1
-    :try_end_c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_5
+    move v0, v5
 
-    :goto_c
-    :try_start_d
-    sget-object v0, Lcom/google/g5;->a:[I
+    goto :goto_0
 
-    sget-object v1, Lcom/google/dJ;->STRING:Lcom/google/dJ;
+    :pswitch_8
+    aput-object v6, v8, v7
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    const/16 v7, 0xa
 
-    move-result v1
+    const-string v6, "ef!gGgf"
 
-    const/16 v2, 0xe
+    const/16 v0, 0x9
 
-    aput v2, v0, v1
-    :try_end_d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_4
+    move-object v8, v9
 
-    :goto_d
-    :try_start_e
-    sget-object v0, Lcom/google/g5;->a:[I
+    goto :goto_0
 
-    sget-object v1, Lcom/google/dJ;->BYTES:Lcom/google/dJ;
+    :pswitch_9
+    aput-object v6, v8, v7
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    const/16 v7, 0xb
 
-    move-result v1
+    const-string v6, "`z/dAee5{Idm"
 
-    const/16 v2, 0xf
+    const/16 v0, 0xa
 
-    aput v2, v0, v1
-    :try_end_e
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_e .. :try_end_e} :catch_3
+    move-object v8, v9
 
-    :goto_e
-    :try_start_f
-    sget-object v0, Lcom/google/g5;->a:[I
+    goto :goto_0
 
-    sget-object v1, Lcom/google/dJ;->ENUM:Lcom/google/dJ;
+    :pswitch_a
+    aput-object v6, v8, v7
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    sput-object v9, Lcom/google/g5;->z:[Ljava/lang/String;
 
-    move-result v1
+    .line 12
+    new-instance v0, Lcom/google/g5;
 
-    const/16 v2, 0x10
+    sget-object v6, Lcom/google/g5;->z:[Ljava/lang/String;
 
-    aput v2, v0, v1
-    :try_end_f
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_f .. :try_end_f} :catch_2
+    const/4 v7, 0x4
 
-    :goto_f
-    :try_start_10
-    sget-object v0, Lcom/google/g5;->a:[I
+    aget-object v6, v6, v7
 
-    sget-object v1, Lcom/google/dJ;->MESSAGE:Lcom/google/dJ;
+    invoke-direct {v0, v6, v1}, Lcom/google/g5;-><init>(Ljava/lang/String;I)V
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    sput-object v0, Lcom/google/g5;->FIXED_LINE:Lcom/google/g5;
 
-    move-result v1
+    .line 8
+    new-instance v0, Lcom/google/g5;
 
-    const/16 v2, 0x11
+    sget-object v6, Lcom/google/g5;->z:[Ljava/lang/String;
 
-    aput v2, v0, v1
-    :try_end_10
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_10 .. :try_end_10} :catch_1
+    const/4 v7, 0x5
 
-    :goto_10
-    :try_start_11
-    sget-object v0, Lcom/google/g5;->a:[I
+    aget-object v6, v6, v7
 
-    sget-object v1, Lcom/google/dJ;->GROUP:Lcom/google/dJ;
+    invoke-direct {v0, v6, v2}, Lcom/google/g5;-><init>(Ljava/lang/String;I)V
 
-    invoke-virtual {v1}, Lcom/google/dJ;->ordinal()I
+    sput-object v0, Lcom/google/g5;->MOBILE:Lcom/google/g5;
 
-    move-result v1
+    .line 10
+    new-instance v0, Lcom/google/g5;
 
-    const/16 v2, 0x12
+    sget-object v6, Lcom/google/g5;->z:[Ljava/lang/String;
 
-    aput v2, v0, v1
-    :try_end_11
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_11 .. :try_end_11} :catch_0
+    const/16 v7, 0x9
 
-    :goto_11
+    aget-object v6, v6, v7
+
+    invoke-direct {v0, v6, v3}, Lcom/google/g5;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/g5;->FIXED_LINE_OR_MOBILE:Lcom/google/g5;
+
+    .line 5
+    new-instance v0, Lcom/google/g5;
+
+    sget-object v6, Lcom/google/g5;->z:[Ljava/lang/String;
+
+    aget-object v6, v6, v2
+
+    invoke-direct {v0, v6, v4}, Lcom/google/g5;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/g5;->TOLL_FREE:Lcom/google/g5;
+
+    .line 1
+    new-instance v0, Lcom/google/g5;
+
+    sget-object v6, Lcom/google/g5;->z:[Ljava/lang/String;
+
+    const/16 v7, 0xb
+
+    aget-object v6, v6, v7
+
+    const/4 v7, 0x4
+
+    invoke-direct {v0, v6, v7}, Lcom/google/g5;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/g5;->PREMIUM_RATE:Lcom/google/g5;
+
+    .line 9
+    new-instance v0, Lcom/google/g5;
+
+    sget-object v6, Lcom/google/g5;->z:[Ljava/lang/String;
+
+    const/4 v7, 0x6
+
+    aget-object v6, v6, v7
+
+    const/4 v7, 0x5
+
+    invoke-direct {v0, v6, v7}, Lcom/google/g5;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/g5;->SHARED_COST:Lcom/google/g5;
+
+    .line 14
+    new-instance v0, Lcom/google/g5;
+
+    sget-object v6, Lcom/google/g5;->z:[Ljava/lang/String;
+
+    aget-object v6, v6, v3
+
+    const/4 v7, 0x6
+
+    invoke-direct {v0, v6, v7}, Lcom/google/g5;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/g5;->VOIP:Lcom/google/g5;
+
+    .line 6
+    new-instance v0, Lcom/google/g5;
+
+    sget-object v6, Lcom/google/g5;->z:[Ljava/lang/String;
+
+    aget-object v6, v6, v4
+
+    const/4 v7, 0x7
+
+    invoke-direct {v0, v6, v7}, Lcom/google/g5;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/g5;->PERSONAL_NUMBER:Lcom/google/g5;
+
+    .line 3
+    new-instance v0, Lcom/google/g5;
+
+    sget-object v6, Lcom/google/g5;->z:[Ljava/lang/String;
+
+    const/4 v7, 0x7
+
+    aget-object v6, v6, v7
+
+    invoke-direct {v0, v6, v5}, Lcom/google/g5;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/g5;->PAGER:Lcom/google/g5;
+
+    .line 4
+    new-instance v0, Lcom/google/g5;
+
+    sget-object v6, Lcom/google/g5;->z:[Ljava/lang/String;
+
+    aget-object v6, v6, v1
+
+    const/16 v7, 0x9
+
+    invoke-direct {v0, v6, v7}, Lcom/google/g5;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/g5;->UAN:Lcom/google/g5;
+
+    .line 16
+    new-instance v0, Lcom/google/g5;
+
+    sget-object v6, Lcom/google/g5;->z:[Ljava/lang/String;
+
+    aget-object v6, v6, v5
+
+    const/16 v7, 0xa
+
+    invoke-direct {v0, v6, v7}, Lcom/google/g5;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/g5;->VOICEMAIL:Lcom/google/g5;
+
+    .line 15
+    new-instance v0, Lcom/google/g5;
+
+    sget-object v6, Lcom/google/g5;->z:[Ljava/lang/String;
+
+    const/16 v7, 0xa
+
+    aget-object v6, v6, v7
+
+    const/16 v7, 0xb
+
+    invoke-direct {v0, v6, v7}, Lcom/google/g5;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/g5;->UNKNOWN:Lcom/google/g5;
+
+    .line 7
+    const/16 v0, 0xc
+
+    new-array v0, v0, [Lcom/google/g5;
+
+    sget-object v6, Lcom/google/g5;->FIXED_LINE:Lcom/google/g5;
+
+    aput-object v6, v0, v1
+
+    sget-object v1, Lcom/google/g5;->MOBILE:Lcom/google/g5;
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/google/g5;->FIXED_LINE_OR_MOBILE:Lcom/google/g5;
+
+    aput-object v1, v0, v3
+
+    sget-object v1, Lcom/google/g5;->TOLL_FREE:Lcom/google/g5;
+
+    aput-object v1, v0, v4
+
+    const/4 v1, 0x4
+
+    sget-object v2, Lcom/google/g5;->PREMIUM_RATE:Lcom/google/g5;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x5
+
+    sget-object v2, Lcom/google/g5;->SHARED_COST:Lcom/google/g5;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x6
+
+    sget-object v2, Lcom/google/g5;->VOIP:Lcom/google/g5;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x7
+
+    sget-object v2, Lcom/google/g5;->PERSONAL_NUMBER:Lcom/google/g5;
+
+    aput-object v2, v0, v1
+
+    sget-object v1, Lcom/google/g5;->PAGER:Lcom/google/g5;
+
+    aput-object v1, v0, v5
+
+    const/16 v1, 0x9
+
+    sget-object v2, Lcom/google/g5;->UAN:Lcom/google/g5;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xa
+
+    sget-object v2, Lcom/google/g5;->VOICEMAIL:Lcom/google/g5;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xb
+
+    sget-object v2, Lcom/google/g5;->UNKNOWN:Lcom/google/g5;
+
+    aput-object v2, v0, v1
+
+    sput-object v0, Lcom/google/g5;->a:[Lcom/google/g5;
+
     return-void
 
-    :catch_0
-    move-exception v0
+    .line 4294967295
+    :cond_0
+    aget-char v13, v10, v12
 
-    goto :goto_11
+    rem-int/lit8 v6, v12, 0x5
 
-    :catch_1
-    move-exception v0
+    packed-switch v6, :pswitch_data_1
 
-    goto :goto_10
+    move v6, v5
 
-    :catch_2
-    move-exception v0
+    :goto_2
+    xor-int/2addr v6, v13
 
-    goto :goto_f
+    int-to-char v6, v6
 
-    :catch_3
-    move-exception v0
+    aput-char v6, v10, v12
 
-    goto :goto_e
+    add-int/lit8 v6, v12, 0x1
 
-    :catch_4
-    move-exception v0
-
-    goto :goto_d
-
-    :catch_5
-    move-exception v0
-
-    goto :goto_c
-
-    :catch_6
-    move-exception v0
-
-    goto :goto_b
-
-    :catch_7
-    move-exception v0
-
-    goto :goto_a
-
-    :catch_8
-    move-exception v0
-
-    goto :goto_9
-
-    :catch_9
-    move-exception v0
-
-    goto :goto_8
-
-    :catch_a
-    move-exception v0
-
-    goto/16 :goto_7
-
-    :catch_b
-    move-exception v0
-
-    goto/16 :goto_6
-
-    :catch_c
-    move-exception v0
-
-    goto/16 :goto_5
-
-    :catch_d
-    move-exception v0
-
-    goto/16 :goto_4
-
-    :catch_e
-    move-exception v0
-
-    goto/16 :goto_3
-
-    :catch_f
-    move-exception v0
-
-    goto/16 :goto_2
-
-    :catch_10
-    move-exception v0
+    move v12, v6
 
     goto/16 :goto_1
 
-    :catch_11
-    move-exception v0
+    :pswitch_b
+    const/16 v6, 0x30
 
-    goto/16 :goto_0
+    goto :goto_2
+
+    :pswitch_c
+    const/16 v6, 0x28
+
+    goto :goto_2
+
+    :pswitch_d
+    const/16 v6, 0x6a
+
+    goto :goto_2
+
+    :pswitch_e
+    const/16 v6, 0x29
+
+    goto :goto_2
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+        :pswitch_5
+        :pswitch_6
+        :pswitch_7
+        :pswitch_8
+        :pswitch_9
+        :pswitch_a
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_b
+        :pswitch_c
+        :pswitch_d
+        :pswitch_e
+    .end packed-switch
+.end method
+
+.method private constructor <init>(Ljava/lang/String;I)V
+    .locals 0
+
+    .prologue
+    .line 11
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lcom/google/g5;
+    .locals 1
+
+    .prologue
+    .line 2
+    const-class v0, Lcom/google/g5;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/g5;
+
+    return-object v0
+.end method
+
+.method public static values()[Lcom/google/g5;
+    .locals 1
+
+    .prologue
+    .line 13
+    sget-object v0, Lcom/google/g5;->a:[Lcom/google/g5;
+
+    invoke-virtual {v0}, [Lcom/google/g5;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Lcom/google/g5;
+
+    return-object v0
 .end method

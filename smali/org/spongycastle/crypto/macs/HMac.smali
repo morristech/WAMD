@@ -11,7 +11,7 @@
 
 .field private static final OPAD:B = 0x5ct
 
-.field public static a:Z
+.field public static a:I
 
 .field private static blockLengths:Ljava/util/Hashtable;
 
@@ -39,21 +39,21 @@
     .locals 12
 
     .prologue
-    const/16 v3, 0x7b
+    const/16 v2, 0x4a
 
-    const/16 v4, 0x4e
+    const/16 v3, 0x43
 
-    const/16 v2, 0x34
+    const/16 v4, 0x32
 
     const/4 v6, 0x0
 
-    const/4 v1, 0x5
+    const/16 v1, 0x4c
 
     const/4 v0, 0x2
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "*|6D\r"
+    const-string v0, "9$(\"];$c([+/08\u0012<+0?W(pc"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -82,7 +82,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "pZ\u0010k!rZ[a\'bQ\u0008qnuU\u0008v+a\u000e["
+    const-string v0, "c\u0002\u000e\rq"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -111,17 +111,17 @@
 
     sput-object v9, Lorg/spongycastle/crypto/macs/HMac;->z:[Ljava/lang/String;
 
-    .line 74
+    .line 33
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
     sput-object v0, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    .line 61
+    .line 52
     sget-object v9, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    const-string v0, "B{(Q}1\u0005J"
+    const-string v0, "\u000b\u0005\u0010\u0018\u0001x{r"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -147,7 +147,7 @@
 
     move-result-object v0
 
-    .line 61
+    .line 52
     const/16 v5, 0x20
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -156,10 +156,10 @@
 
     invoke-virtual {v9, v0, v5}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 27
+    .line 58
     sget-object v9, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    const-string v0, "HpI"
+    const-string v0, "\u0001\u000eq"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -185,7 +185,7 @@
 
     move-result-object v0
 
-    .line 27
+    .line 58
     const/16 v5, 0x10
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -194,10 +194,10 @@
 
     invoke-virtual {v9, v0, v5}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 16
+    .line 7
     sget-object v9, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    const-string v0, "HpO"
+    const-string v0, "\u0001\u000ew"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -223,7 +223,7 @@
 
     move-result-object v0
 
-    .line 16
+    .line 7
     const/16 v5, 0x40
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -232,10 +232,10 @@
 
     invoke-virtual {v9, v0, v5}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
+    .line 38
     sget-object v9, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    const-string v0, "HpN"
+    const-string v0, "\u0001\u000ev"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -261,7 +261,7 @@
 
     move-result-object v0
 
-    .line 7
+    .line 38
     const/16 v5, 0x40
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -270,10 +270,10 @@
 
     invoke-virtual {v9, v0, v5}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 26
+    .line 19
     sget-object v9, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    const-string v0, "W}+@\u0003A\u0005I="
+    const-string v0, "\u001e\u0003\u0013\t\u007f\u0008{qt"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -299,7 +299,7 @@
 
     move-result-object v0
 
-    .line 26
+    .line 19
     const/16 v5, 0x40
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -308,10 +308,10 @@
 
     invoke-virtual {v9, v0, v5}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 46
+    .line 32
     sget-object v9, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    const-string v0, "W}+@\u0003A\u0005M5"
+    const-string v0, "\u001e\u0003\u0013\t\u007f\u0008{u|"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -337,7 +337,7 @@
 
     move-result-object v0
 
-    .line 46
+    .line 32
     const/16 v5, 0x40
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -346,10 +346,10 @@
 
     invoke-virtual {v9, v0, v5}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 39
+    .line 25
     sget-object v9, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    const-string v0, "V|:(\u007f"
+    const-string v0, "\u001f\u0002\u0002a\u0003"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -375,7 +375,7 @@
 
     move-result-object v0
 
-    .line 39
+    .line 25
     const/16 v5, 0x40
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -384,10 +384,10 @@
 
     invoke-virtual {v9, v0, v5}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
+    .line 5
     sget-object v9, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    const-string v0, "V|:(|7\u0000"
+    const-string v0, "\u001f\u0002\u0002a\u0000~~"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -413,7 +413,7 @@
 
     move-result-object v0
 
-    .line 3
+    .line 5
     const/16 v5, 0x40
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -422,10 +422,10 @@
 
     invoke-virtual {v9, v0, v5}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 54
+    .line 61
     sget-object v9, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    const-string v0, "V|:(|0\u0002"
+    const-string v0, "\u001f\u0002\u0002a\u0000y|"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -451,7 +451,7 @@
 
     move-result-object v0
 
-    .line 54
+    .line 61
     const/16 v5, 0x40
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -460,10 +460,10 @@
 
     invoke-virtual {v9, v0, v5}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
+    .line 23
     sget-object v9, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    const-string v0, "V|:(}=\u0000"
+    const-string v0, "\u001f\u0002\u0002a\u0001t~"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -489,7 +489,7 @@
 
     move-result-object v0
 
-    .line 2
+    .line 23
     const/16 v5, 0x80
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -498,10 +498,10 @@
 
     invoke-virtual {v9, v0, v5}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 18
+    .line 69
     sget-object v9, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    const-string v0, "V|:({4\u0006"
+    const-string v0, "\u001f\u0002\u0002a\u0007}x"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -527,7 +527,7 @@
 
     move-result-object v0
 
-    .line 18
+    .line 69
     const/16 v5, 0x80
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -536,10 +536,10 @@
 
     invoke-virtual {v9, v0, v5}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 21
+    .line 27
     sget-object v9, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    const-string v0, "Q]\u001c`<"
+    const-string v0, "\u0018#$)@"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -565,7 +565,7 @@
 
     move-result-object v0
 
-    .line 21
+    .line 27
     const/16 v5, 0x40
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -574,10 +574,10 @@
 
     invoke-virtual {v9, v0, v5}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 48
+    .line 15
     sget-object v8, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
-    const-string v0, "R\\\u0012w\"u[\u0014i"
+    const-string v0, "\u001b\"*>^<%, "
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -603,7 +603,7 @@
 
     move-result-object v0
 
-    .line 48
+    .line 15
     const/16 v1, 0x40
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -612,7 +612,7 @@
 
     invoke-virtual {v8, v0, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 66
+    .line 54
     return-void
 
     .line 4294967295
@@ -1246,8 +1246,6 @@
 
     goto :goto_1d
 
-    nop
-
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -1373,14 +1371,14 @@
     .locals 1
 
     .prologue
-    .line 30
+    .line 31
     invoke-static {p1}, Lorg/spongycastle/crypto/macs/HMac;->getByteLength(Lorg/spongycastle/crypto/Digest;)I
 
     move-result v0
 
     invoke-direct {p0, p1, v0}, Lorg/spongycastle/crypto/macs/HMac;-><init>(Lorg/spongycastle/crypto/Digest;I)V
 
-    .line 47
+    .line 45
     return-void
 .end method
 
@@ -1388,30 +1386,30 @@
     .locals 2
 
     .prologue
-    .line 11
+    .line 67
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 55
+    .line 65
     iput-object p1, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
-    .line 36
+    .line 12
     invoke-interface {p1}, Lorg/spongycastle/crypto/Digest;->getDigestSize()I
 
     move-result v0
 
     iput v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digestSize:I
 
-    .line 15
+    .line 63
     iput p2, p0, Lorg/spongycastle/crypto/macs/HMac;->blockLength:I
 
-    .line 76
+    .line 17
     iget v0, p0, Lorg/spongycastle/crypto/macs/HMac;->blockLength:I
 
     new-array v0, v0, [B
 
     iput-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
 
-    .line 71
+    .line 42
     iget v0, p0, Lorg/spongycastle/crypto/macs/HMac;->blockLength:I
 
     iget v1, p0, Lorg/spongycastle/crypto/macs/HMac;->digestSize:I
@@ -1422,7 +1420,7 @@
 
     iput-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
 
-    .line 56
+    .line 77
     return-void
 .end method
 
@@ -1430,13 +1428,13 @@
     .locals 4
 
     .prologue
-    .line 68
+    .line 40
     :try_start_0
     instance-of v0, p0, Lorg/spongycastle/crypto/ExtendedDigest;
 
     if-eqz v0, :cond_0
 
-    .line 42
+    .line 71
     check-cast p0, Lorg/spongycastle/crypto/ExtendedDigest;
 
     invoke-interface {p0}, Lorg/spongycastle/crypto/ExtendedDigest;->getByteLength()I
@@ -1445,15 +1443,17 @@
 
     move-result v0
 
+    .line 76
     :goto_0
     return v0
 
+    .line 71
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 32
+    .line 59
     :cond_0
     sget-object v0, Lorg/spongycastle/crypto/macs/HMac;->blockLengths:Ljava/util/Hashtable;
 
@@ -1467,10 +1467,10 @@
 
     check-cast v0, Ljava/lang/Integer;
 
-    .line 77
+    .line 43
     if-nez v0, :cond_1
 
-    .line 38
+    .line 2
     :try_start_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -1480,7 +1480,7 @@
 
     sget-object v2, Lorg/spongycastle/crypto/macs/HMac;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x1
+    const/4 v3, 0x0
 
     aget-object v2, v2, v3
 
@@ -1511,7 +1511,7 @@
 
     throw v0
 
-    .line 23
+    .line 76
     :cond_1
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
@@ -1524,15 +1524,15 @@
     .locals 3
 
     .prologue
-    sget-boolean v1, Lorg/spongycastle/crypto/macs/HMac;->a:Z
+    sget v1, Lorg/spongycastle/crypto/macs/HMac;->a:I
 
-    .line 31
+    .line 57
     const/4 v0, 0x0
 
     :cond_0
     if-ge v0, p1, :cond_1
 
-    .line 53
+    .line 21
     aget-byte v2, p0, v0
 
     xor-int/2addr v2, p2
@@ -1541,12 +1541,12 @@
 
     aput-byte v2, p0, v0
 
-    .line 75
+    .line 3
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 6
+    .line 16
     :cond_1
     return-void
 .end method
@@ -1554,102 +1554,102 @@
 
 # virtual methods
 .method public doFinal([BI)I
-    .locals 7
+    .locals 6
 
     .prologue
-    const/4 v1, 0x0
+    const/4 v5, 0x0
 
-    sget-boolean v2, Lorg/spongycastle/crypto/macs/HMac;->a:Z
+    sget v1, Lorg/spongycastle/crypto/macs/HMac;->a:I
 
-    .line 10
+    .line 53
     :try_start_0
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
-    iget-object v3, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
+    iget-object v2, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
 
-    iget v4, p0, Lorg/spongycastle/crypto/macs/HMac;->blockLength:I
+    iget v3, p0, Lorg/spongycastle/crypto/macs/HMac;->blockLength:I
 
-    invoke-interface {v0, v3, v4}, Lorg/spongycastle/crypto/Digest;->doFinal([BI)I
+    invoke-interface {v0, v2, v3}, Lorg/spongycastle/crypto/Digest;->doFinal([BI)I
 
-    .line 34
+    .line 70
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->opadState:Lorg/spongycastle/util/Memoable;
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-eqz v0, :cond_0
 
-    .line 5
+    .line 9
     :try_start_1
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
     check-cast v0, Lorg/spongycastle/util/Memoable;
 
-    iget-object v3, p0, Lorg/spongycastle/crypto/macs/HMac;->opadState:Lorg/spongycastle/util/Memoable;
+    iget-object v2, p0, Lorg/spongycastle/crypto/macs/HMac;->opadState:Lorg/spongycastle/util/Memoable;
 
-    invoke-interface {v0, v3}, Lorg/spongycastle/util/Memoable;->reset(Lorg/spongycastle/util/Memoable;)V
+    invoke-interface {v0, v2}, Lorg/spongycastle/util/Memoable;->reset(Lorg/spongycastle/util/Memoable;)V
 
-    .line 62
+    .line 39
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
-    iget-object v3, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
+    iget-object v2, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
 
-    iget v4, p0, Lorg/spongycastle/crypto/macs/HMac;->blockLength:I
+    iget v3, p0, Lorg/spongycastle/crypto/macs/HMac;->blockLength:I
 
-    iget-object v5, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
+    iget-object v4, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
-    invoke-interface {v5}, Lorg/spongycastle/crypto/Digest;->getDigestSize()I
+    invoke-interface {v4}, Lorg/spongycastle/crypto/Digest;->getDigestSize()I
 
-    move-result v5
+    move-result v4
 
-    invoke-interface {v0, v3, v4, v5}, Lorg/spongycastle/crypto/Digest;->update([BII)V
+    invoke-interface {v0, v2, v3, v4}, Lorg/spongycastle/crypto/Digest;->update([BII)V
 
-    if-eqz v2, :cond_1
+    if-eqz v1, :cond_1
 
-    .line 78
+    .line 55
     :cond_0
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
-    iget-object v3, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
+    iget-object v2, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
 
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
-    iget-object v5, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
+    iget-object v4, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
 
-    array-length v5, v5
+    array-length v4, v4
 
-    invoke-interface {v0, v3, v4, v5}, Lorg/spongycastle/crypto/Digest;->update([BII)V
+    invoke-interface {v0, v2, v3, v4}, Lorg/spongycastle/crypto/Digest;->update([BII)V
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 29
+    .line 49
     :cond_1
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
     invoke-interface {v0, p1, p2}, Lorg/spongycastle/crypto/Digest;->doFinal([BI)I
 
-    move-result v3
+    move-result v2
 
-    .line 59
+    .line 72
     iget v0, p0, Lorg/spongycastle/crypto/macs/HMac;->blockLength:I
 
     :cond_2
-    iget-object v4, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
+    iget-object v3, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
 
-    array-length v4, v4
+    array-length v3, v3
 
-    if-ge v0, v4, :cond_3
+    if-ge v0, v3, :cond_3
 
-    .line 49
-    iget-object v4, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
+    .line 62
+    iget-object v3, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
 
-    aput-byte v1, v4, v0
+    aput-byte v5, v3, v0
 
-    .line 13
+    .line 10
     add-int/lit8 v0, v0, 0x1
 
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_2
 
-    .line 64
+    .line 66
     :cond_3
     :try_start_2
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->ipadState:Lorg/spongycastle/util/Memoable;
@@ -1658,54 +1658,51 @@
 
     if-eqz v0, :cond_4
 
-    .line 63
+    .line 29
     :try_start_3
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
     check-cast v0, Lorg/spongycastle/util/Memoable;
 
-    iget-object v4, p0, Lorg/spongycastle/crypto/macs/HMac;->ipadState:Lorg/spongycastle/util/Memoable;
+    iget-object v3, p0, Lorg/spongycastle/crypto/macs/HMac;->ipadState:Lorg/spongycastle/util/Memoable;
 
-    invoke-interface {v0, v4}, Lorg/spongycastle/util/Memoable;->reset(Lorg/spongycastle/util/Memoable;)V
+    invoke-interface {v0, v3}, Lorg/spongycastle/util/Memoable;->reset(Lorg/spongycastle/util/Memoable;)V
 
-    if-eqz v2, :cond_5
+    if-eqz v1, :cond_5
 
-    .line 25
+    .line 22
     :cond_4
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
-    iget-object v4, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
+    iget-object v3, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
 
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
-    iget-object v6, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
+    iget-object v5, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
 
-    array-length v6, v6
+    array-length v5, v5
 
-    invoke-interface {v0, v4, v5, v6}, Lorg/spongycastle/crypto/Digest;->update([BII)V
+    invoke-interface {v0, v3, v4, v5}, Lorg/spongycastle/crypto/Digest;->update([BII)V
     :try_end_3
     .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 35
+    .line 18
     :cond_5
     :try_start_4
-    sget-boolean v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
-    :try_end_4
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_4 .. :try_end_4} :catch_4
+    sget v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
 
     if-eqz v0, :cond_6
 
-    if-eqz v2, :cond_7
+    add-int/lit8 v0, v1, 0x1
 
-    move v0, v1
-
-    :goto_0
-    sput-boolean v0, Lorg/spongycastle/crypto/macs/HMac;->a:Z
+    sput v0, Lorg/spongycastle/crypto/macs/HMac;->a:I
+    :try_end_4
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_4 .. :try_end_4} :catch_4
 
     :cond_6
-    return v3
+    return v2
 
-    .line 62
+    .line 39
     :catch_0
     move-exception v0
 
@@ -1714,13 +1711,13 @@
     :try_end_5
     .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_1
 
-    .line 78
+    .line 55
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 63
+    .line 29
     :catch_2
     move-exception v0
 
@@ -1729,37 +1726,24 @@
     :try_end_6
     .catch Ljava/lang/IllegalArgumentException; {:try_start_6 .. :try_end_6} :catch_3
 
-    .line 25
+    .line 22
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 35
+    .line 18
     :catch_4
     move-exception v0
 
-    :try_start_7
     throw v0
-    :try_end_7
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_7 .. :try_end_7} :catch_5
-
-    :catch_5
-    move-exception v0
-
-    throw v0
-
-    :cond_7
-    const/4 v0, 0x1
-
-    goto :goto_0
 .end method
 
 .method public getAlgorithmName()Ljava/lang/String;
     .locals 3
 
     .prologue
-    .line 33
+    .line 37
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1776,7 +1760,7 @@
 
     sget-object v1, Lorg/spongycastle/crypto/macs/HMac;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     aget-object v1, v1, v2
 
@@ -1795,7 +1779,7 @@
     .locals 1
 
     .prologue
-    .line 70
+    .line 13
     iget v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digestSize:I
 
     return v0
@@ -1805,7 +1789,7 @@
     .locals 1
 
     .prologue
-    .line 45
+    .line 44
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
     return-object v0
@@ -1815,90 +1799,80 @@
     .locals 5
 
     .prologue
-    const/4 v1, 0x0
+    const/4 v4, 0x0
 
-    sget-boolean v3, Lorg/spongycastle/crypto/macs/HMac;->a:Z
+    sget v1, Lorg/spongycastle/crypto/macs/HMac;->a:I
 
-    .line 17
+    .line 1
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
     invoke-interface {v0}, Lorg/spongycastle/crypto/Digest;->reset()V
 
-    .line 57
+    .line 28
     check-cast p1, Lorg/spongycastle/crypto/params/KeyParameter;
 
     invoke-virtual {p1}, Lorg/spongycastle/crypto/params/KeyParameter;->getKey()[B
 
-    move-result-object v4
+    move-result-object v2
 
-    .line 24
-    array-length v0, v4
+    .line 26
+    array-length v0, v2
 
-    .line 8
-    iget v2, p0, Lorg/spongycastle/crypto/macs/HMac;->blockLength:I
+    .line 47
+    iget v3, p0, Lorg/spongycastle/crypto/macs/HMac;->blockLength:I
 
-    if-le v0, v2, :cond_0
+    if-le v0, v3, :cond_0
 
-    .line 14
-    iget-object v2, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
+    .line 4
+    iget-object v3, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
-    invoke-interface {v2, v4, v1, v0}, Lorg/spongycastle/crypto/Digest;->update([BII)V
+    invoke-interface {v3, v2, v4, v0}, Lorg/spongycastle/crypto/Digest;->update([BII)V
 
-    .line 58
+    .line 11
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
-    iget-object v2, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
+    iget-object v3, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
 
-    invoke-interface {v0, v2, v1}, Lorg/spongycastle/crypto/Digest;->doFinal([BI)I
+    invoke-interface {v0, v3, v4}, Lorg/spongycastle/crypto/Digest;->doFinal([BI)I
 
-    .line 44
-    iget v2, p0, Lorg/spongycastle/crypto/macs/HMac;->digestSize:I
+    .line 36
+    iget v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digestSize:I
 
-    if-eqz v3, :cond_1
+    if-eqz v1, :cond_1
 
-    :try_start_0
-    sget-boolean v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
-    :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+    sget v3, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
 
-    if-eqz v0, :cond_5
+    add-int/lit8 v3, v3, 0x1
 
-    move v0, v1
+    sput v3, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
 
-    :goto_0
-    sput-boolean v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
-
-    move v0, v2
-
-    .line 43
+    .line 75
     :cond_0
+    iget-object v3, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
+
+    invoke-static {v2, v4, v3, v4, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 78
+    :cond_1
     iget-object v2, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
 
-    invoke-static {v4, v1, v2, v1, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    array-length v2, v2
 
-    move v2, v0
+    if-ge v0, v2, :cond_2
 
-    .line 60
-    :cond_1
-    iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
+    .line 74
+    iget-object v2, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
 
-    array-length v0, v0
+    aput-byte v4, v2, v0
 
-    if-ge v2, v0, :cond_2
+    .line 46
+    add-int/lit8 v0, v0, 0x1
 
-    .line 51
-    iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
+    if-eqz v1, :cond_1
 
-    aput-byte v1, v0, v2
-
-    .line 73
-    add-int/lit8 v2, v2, 0x1
-
-    if-eqz v3, :cond_1
-
-    .line 50
+    .line 8
     :cond_2
-    :try_start_1
+    :try_start_0
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
 
     const/4 v1, 0x0
@@ -1911,7 +1885,7 @@
 
     invoke-static {v0, v1, v2, v3, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 67
+    .line 41
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
 
     iget v1, p0, Lorg/spongycastle/crypto/macs/HMac;->blockLength:I
@@ -1920,7 +1894,7 @@
 
     invoke-static {v0, v1, v2}, Lorg/spongycastle/crypto/macs/HMac;->xorPad([BIB)V
 
-    .line 65
+    .line 60
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->outputBuf:[B
 
     iget v1, p0, Lorg/spongycastle/crypto/macs/HMac;->blockLength:I
@@ -1929,14 +1903,14 @@
 
     invoke-static {v0, v1, v2}, Lorg/spongycastle/crypto/macs/HMac;->xorPad([BIB)V
 
-    .line 40
+    .line 35
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
     instance-of v0, v0, Lorg/spongycastle/util/Memoable;
 
     if-eqz v0, :cond_3
 
-    .line 69
+    .line 6
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
     check-cast v0, Lorg/spongycastle/util/Memoable;
@@ -1947,7 +1921,7 @@
 
     iput-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->opadState:Lorg/spongycastle/util/Memoable;
 
-    .line 72
+    .line 50
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->opadState:Lorg/spongycastle/util/Memoable;
 
     check-cast v0, Lorg/spongycastle/crypto/Digest;
@@ -1959,12 +1933,12 @@
     iget v3, p0, Lorg/spongycastle/crypto/macs/HMac;->blockLength:I
 
     invoke-interface {v0, v1, v2, v3}, Lorg/spongycastle/crypto/Digest;->update([BII)V
-    :try_end_1
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 22
+    .line 34
     :cond_3
-    :try_start_2
+    :try_start_1
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
     iget-object v1, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
@@ -1977,7 +1951,7 @@
 
     invoke-interface {v0, v1, v2, v3}, Lorg/spongycastle/crypto/Digest;->update([BII)V
 
-    .line 28
+    .line 68
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
     instance-of v0, v0, Lorg/spongycastle/util/Memoable;
@@ -1994,32 +1968,21 @@
     move-result-object v0
 
     iput-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->ipadState:Lorg/spongycastle/util/Memoable;
-    :try_end_2
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
+    :try_end_1
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 4
+    .line 64
     :cond_4
     return-void
 
-    .line 44
+    .line 50
     :catch_0
     move-exception v0
 
     throw v0
 
-    :cond_5
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    .line 72
-    :catch_1
-    move-exception v0
-
-    throw v0
-
     .line 20
-    :catch_2
+    :catch_1
     move-exception v0
 
     throw v0
@@ -2029,12 +1992,12 @@
     .locals 4
 
     .prologue
-    .line 41
+    .line 73
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
     invoke-interface {v0}, Lorg/spongycastle/crypto/Digest;->reset()V
 
-    .line 1
+    .line 24
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
     iget-object v1, p0, Lorg/spongycastle/crypto/macs/HMac;->inputPad:[B
@@ -2047,7 +2010,7 @@
 
     invoke-interface {v0, v1, v2, v3}, Lorg/spongycastle/crypto/Digest;->update([BII)V
 
-    .line 12
+    .line 51
     return-void
 .end method
 
@@ -2055,12 +2018,12 @@
     .locals 1
 
     .prologue
-    .line 52
+    .line 56
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
     invoke-interface {v0, p1}, Lorg/spongycastle/crypto/Digest;->update(B)V
 
-    .line 9
+    .line 30
     return-void
 .end method
 
@@ -2068,11 +2031,11 @@
     .locals 1
 
     .prologue
-    .line 37
+    .line 48
     iget-object v0, p0, Lorg/spongycastle/crypto/macs/HMac;->digest:Lorg/spongycastle/crypto/Digest;
 
     invoke-interface {v0, p1, p2, p3}, Lorg/spongycastle/crypto/Digest;->update([BII)V
 
-    .line 19
+    .line 14
     return-void
 .end method

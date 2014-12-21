@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 2
     invoke-direct {p0}, Landroid/view/animation/AccelerateDecelerateInterpolator;-><init>()V
 
     return-void
@@ -18,7 +18,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 1
     invoke-direct {p0}, Landroid/support/v4/widget/MaterialProgressDrawable$StartCurveInterpolator;-><init>()V
 
     return-void

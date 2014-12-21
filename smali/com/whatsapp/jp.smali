@@ -3,7 +3,7 @@
 .source "jp.java"
 
 # interfaces
-.implements Landroid/preference/Preference$OnPreferenceClickListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # static fields
@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/SettingsHelp;
+.field final a:Lcom/whatsapp/AccountInfoActivity;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "8CSm;j\u0018\u0008j?\'\u0019Pu)$DFm8~THpg6VV2"
+    const-string v2, "Bz\u0010T\u0002JpZO\u0003Wq\u001aRCBw\u0000O\u0002M:\"o(t"
 
     const/4 v0, -0x1
 
@@ -64,7 +64,7 @@
 
     const/4 v2, 0x1
 
-    const-string v0, "1YCo\'9S\tt&$RIif1TSt\'>\u0019qT\r\u0007"
+    const-string v0, "K`\u0000V\u001e\u0019;[D\u0001LsZQ\u0005B`\u0007G\u001dS:\u0017I\u0000\u000cu\u0010U"
 
     move v3, v2
 
@@ -90,7 +90,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0x48
+    const/16 v2, 0x6d
 
     :goto_2
     xor-int/2addr v2, v9
@@ -106,22 +106,22 @@
     goto :goto_1
 
     :pswitch_1
-    const/16 v2, 0x50
+    const/16 v2, 0x23
 
     goto :goto_2
 
     :pswitch_2
-    const/16 v2, 0x37
+    const/16 v2, 0x14
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v2, 0x27
+    const/16 v2, 0x74
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v2, 0x1d
+    const/16 v2, 0x26
 
     goto :goto_2
 
@@ -139,12 +139,12 @@
     .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/whatsapp/SettingsHelp;)V
+.method constructor <init>(Lcom/whatsapp/AccountInfoActivity;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/jp;->a:Lcom/whatsapp/SettingsHelp;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/jp;->a:Lcom/whatsapp/AccountInfoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -153,42 +153,36 @@
 
 
 # virtual methods
-.method public onPreferenceClick(Landroid/preference/Preference;)Z
+.method public onClick(Landroid/view/View;)V
     .locals 4
 
     .prologue
-    const/4 v3, 0x1
+    .line 1
+    new-instance v0, Landroid/content/Intent;
 
-    .line 6
-    sget-object v0, Lcom/whatsapp/adr;->FAQ:Lcom/whatsapp/adr;
+    sget-object v1, Lcom/whatsapp/jp;->z:[Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/whatsapp/a1s;->a(Lcom/whatsapp/adr;)V
+    const/4 v2, 0x0
 
-    .line 3
-    sget-object v0, Lcom/whatsapp/jp;->z:[Ljava/lang/String;
-
-    const/4 v1, 0x0
-
-    aget-object v0, v0, v1
-
-    .line 4
-    new-instance v1, Landroid/content/Intent;
+    aget-object v1, v1, v2
 
     sget-object v2, Lcom/whatsapp/jp;->z:[Ljava/lang/String;
 
+    const/4 v3, 0x1
+
     aget-object v2, v2, v3
 
-    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-direct {v1, v2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/jp;->a:Lcom/whatsapp/SettingsHelp;
+    iget-object v1, p0, Lcom/whatsapp/jp;->a:Lcom/whatsapp/AccountInfoActivity;
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/SettingsHelp;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/whatsapp/AccountInfoActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 5
-    return v3
+    .line 3
+    return-void
 .end method

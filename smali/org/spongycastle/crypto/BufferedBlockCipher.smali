@@ -25,13 +25,13 @@
 .method static constructor <clinit>()V
     .locals 12
 
-    const/16 v3, 0x68
+    const/16 v3, 0x6e
 
-    const/16 v2, 0x67
+    const/16 v2, 0x61
 
-    const/16 v1, 0x2d
+    const/16 v1, 0x5d
 
-    const/16 v4, 0x24
+    const/16 v4, 0x55
 
     const/4 v6, 0x0
 
@@ -39,7 +39,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "\u0010L\u0013\t\u0004\u001aB\u0013HF\u0018B\u0004\u0003\u0004\u0007D\u001d\r\u0004\u0015A\u000e\u000fJ\u0011I"
+    const-string v0, "7<\u000fI!T5\u0000\u00180T<A\u00000\u0013<\u0015\u0007#\u0011}\u0008\u0000%\u0001)A\u00020\u001a:\u0015\u0006t"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -68,7 +68,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "\u001bX\u0013\u0018Q\u0000\r\u0005\u001dB\u0012H\u0015HP\u001bBG\u001bL\u001b_\u0013HB\u001b_G\u000cK2D\t\tH\\\u0004"
+    const-string v0, "\u001b(\u0015\u001e \u0000}\u0003\u001b3\u00128\u0013N!\u001b2A\u001d=\u001b/\u0015"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -97,7 +97,7 @@
 
     const/4 v10, 0x2
 
-    const-string v0, "\u001bX\u0013\u0018Q\u0000\r\u0005\u001dB\u0012H\u0015HP\u001bBG\u001bL\u001b_\u0013"
+    const-string v0, "$\u001a1"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -126,7 +126,7 @@
 
     const/4 v10, 0x3
 
-    const-string v0, "7L\tOPTE\u0006\u001eATLG\u0006A\u0013L\u0013\u0001R\u0011\r\u000e\u0006T\u0001YG\u0004A\u001aJ\u0013\u0000\u0005"
+    const-string v0, ";-\u0004\u0000\u00053\r"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -155,7 +155,7 @@
 
     const/4 v10, 0x4
 
-    const-string v0, "$j7"
+    const-string v0, "\u001b(\u0015\u001e \u0000}\u0003\u001b3\u00128\u0013N!\u001b2A\u001d=\u001b/\u0015N3\u001b/A\n:24\u000f\u000f9\\t"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -184,7 +184,7 @@
 
     const/4 v8, 0x5
 
-    const-string v0, ";]\u0002\u0006t3}"
+    const-string v0, "\u0010<\u0015\u000fu\u001a2\u0015N7\u00182\u0002\u0005u\u00074\u001b\u000bu\u00151\u0008\t;\u00119"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -520,10 +520,10 @@
     .locals 0
 
     .prologue
-    .line 12
+    .line 62
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 38
+    .line 45
     return-void
 .end method
 
@@ -537,13 +537,13 @@
 
     sget-boolean v3, Lorg/spongycastle/crypto/DataLengthException;->a:Z
 
-    .line 50
+    .line 73
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7
+    .line 17
     iput-object p1, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
-    .line 15
+    .line 37
     invoke-interface {p1}, Lorg/spongycastle/crypto/BlockCipher;->getBlockSize()I
 
     move-result v0
@@ -552,15 +552,15 @@
 
     iput-object v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
 
-    .line 5
+    .line 2
     iput v2, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
-    .line 59
+    .line 43
     invoke-interface {p1}, Lorg/spongycastle/crypto/BlockCipher;->getAlgorithmName()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 63
+    .line 6
     const/16 v0, 0x2f
 
     invoke-virtual {v4, v0}, Ljava/lang/String;->indexOf(I)I
@@ -569,13 +569,13 @@
 
     add-int/lit8 v5, v0, 0x1
 
-    .line 32
+    .line 56
     if-lez v5, :cond_4
 
     :try_start_0
     sget-object v0, Lorg/spongycastle/crypto/BufferedBlockCipher;->z:[Ljava/lang/String;
 
-    const/4 v6, 0x4
+    const/4 v6, 0x2
 
     aget-object v0, v0, v6
 
@@ -593,7 +593,7 @@
     :try_start_1
     iput-boolean v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->pgpCFB:Z
 
-    .line 66
+    .line 39
     iget-boolean v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->pgpCFB:Z
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
@@ -607,7 +607,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
+    .line 71
     :cond_0
     const/4 v0, 0x1
 
@@ -618,14 +618,14 @@
 
     if-eqz v3, :cond_2
 
-    .line 28
+    .line 64
     :cond_1
     if-lez v5, :cond_5
 
     :try_start_4
     sget-object v0, Lorg/spongycastle/crypto/BufferedBlockCipher;->z:[Ljava/lang/String;
 
-    const/4 v6, 0x5
+    const/4 v6, 0x3
 
     aget-object v0, v0, v6
 
@@ -642,10 +642,10 @@
     :goto_1
     iput-boolean v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->partialBlockOkay:Z
 
-    .line 1
+    .line 11
     :cond_2
     :try_start_5
-    sget-boolean v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
+    sget v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
     :try_end_5
     .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_6
 
@@ -659,7 +659,7 @@
     :cond_3
     return-void
 
-    .line 32
+    .line 56
     :catch_0
     move-exception v0
 
@@ -670,7 +670,7 @@
 
     goto :goto_0
 
-    .line 66
+    .line 39
     :catch_1
     move-exception v0
 
@@ -679,7 +679,7 @@
     :try_end_6
     .catch Ljava/lang/IllegalArgumentException; {:try_start_6 .. :try_end_6} :catch_2
 
-    .line 3
+    .line 71
     :catch_2
     move-exception v0
 
@@ -688,7 +688,7 @@
     :try_end_7
     .catch Ljava/lang/IllegalArgumentException; {:try_start_7 .. :try_end_7} :catch_3
 
-    .line 28
+    .line 64
     :catch_3
     move-exception v0
 
@@ -715,7 +715,7 @@
 
     goto :goto_1
 
-    .line 1
+    .line 11
     :catch_6
     move-exception v0
 
@@ -743,8 +743,8 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 34
-    .line 23
+    .line 7
+    .line 10
     :try_start_0
     iget v1, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
@@ -754,12 +754,12 @@
 
     if-le v1, v2, :cond_0
 
-    .line 41
+    .line 49
     new-instance v0, Lorg/spongycastle/crypto/OutputLengthException;
 
     sget-object v1, Lorg/spongycastle/crypto/BufferedBlockCipher;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x4
 
     aget-object v1, v1, v2
 
@@ -778,7 +778,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 64
+    .line 18
     :catchall_0
     move-exception v0
 
@@ -786,14 +786,14 @@
 
     throw v0
 
-    .line 45
+    .line 3
     :cond_0
     :try_start_2
     iget v1, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
     if-eqz v1, :cond_2
 
-    .line 22
+    .line 67
     iget-boolean v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->partialBlockOkay:Z
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
@@ -801,13 +801,13 @@
 
     if-nez v0, :cond_1
 
-    .line 72
+    .line 21
     :try_start_3
     new-instance v0, Lorg/spongycastle/crypto/DataLengthException;
 
     sget-object v1, Lorg/spongycastle/crypto/BufferedBlockCipher;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x0
+    const/4 v2, 0x5
 
     aget-object v1, v1, v2
 
@@ -826,7 +826,7 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 22
+    .line 67
     :catch_2
     move-exception v0
 
@@ -836,7 +836,7 @@
     .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_1
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 43
+    .line 50
     :cond_1
     :try_start_6
     iget-object v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
@@ -851,15 +851,15 @@
 
     invoke-interface {v0, v1, v2, v3, v4}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
 
-    .line 58
+    .line 46
     iget v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
-    .line 14
+    .line 35
     const/4 v1, 0x0
 
     iput v1, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
-    .line 31
+    .line 14
     iget-object v1, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
 
     const/4 v2, 0x0
@@ -868,7 +868,7 @@
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
-    .line 64
+    .line 18
     :cond_2
     invoke-virtual {p0}, Lorg/spongycastle/crypto/BufferedBlockCipher;->reset()V
 
@@ -905,7 +905,7 @@
     .locals 1
 
     .prologue
-    .line 70
+    .line 38
     iget-object v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
     return-object v0
@@ -915,17 +915,17 @@
     .locals 3
 
     .prologue
-    .line 30
+    .line 59
     iget v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
     add-int v1, p1, v0
 
-    .line 62
+    .line 66
     iget-boolean v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->pgpCFB:Z
 
     if-eqz v0, :cond_0
 
-    .line 11
+    .line 20
     iget-object v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
 
     array-length v0, v0
@@ -954,7 +954,7 @@
 
     rem-int v0, v1, v0
 
-    .line 6
+    .line 72
     :cond_1
     sub-int v0, v1, v0
 
@@ -965,18 +965,18 @@
     .locals 1
 
     .prologue
-    .line 52
+    .line 24
     iput-boolean p1, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->forEncryption:Z
 
-    .line 26
+    .line 33
     invoke-virtual {p0}, Lorg/spongycastle/crypto/BufferedBlockCipher;->reset()V
 
-    .line 56
+    .line 5
     iget-object v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
     invoke-interface {v0, p1, p2}, Lorg/spongycastle/crypto/BlockCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
 
-    .line 25
+    .line 63
     return-void
 .end method
 
@@ -986,8 +986,8 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 47
-    .line 2
+    .line 70
+    .line 34
     iget-object v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
 
     iget v2, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
@@ -998,7 +998,7 @@
 
     aput-byte p1, v0, v2
 
-    .line 71
+    .line 19
     iget v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
     iget-object v2, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
@@ -1007,7 +1007,7 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 67
+    .line 1
     iget-object v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
     iget-object v2, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
@@ -1016,10 +1016,10 @@
 
     move-result v0
 
-    .line 16
+    .line 40
     iput v1, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
-    .line 13
+    .line 25
     :goto_0
     return v0
 
@@ -1033,20 +1033,20 @@
     .locals 8
 
     .prologue
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
-    sget-boolean v3, Lorg/spongycastle/crypto/DataLengthException;->a:Z
+    sget-boolean v4, Lorg/spongycastle/crypto/DataLengthException;->a:Z
 
-    .line 9
+    .line 44
     if-gez p3, :cond_0
 
-    .line 54
+    .line 23
     :try_start_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     sget-object v1, Lorg/spongycastle/crypto/BufferedBlockCipher;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x3
+    const/4 v2, 0x0
 
     aget-object v1, v1, v2
 
@@ -1061,21 +1061,21 @@
 
     throw v0
 
-    .line 44
+    .line 27
     :cond_0
     invoke-virtual {p0}, Lorg/spongycastle/crypto/BufferedBlockCipher;->getBlockSize()I
 
     move-result v5
 
-    .line 10
+    .line 13
     invoke-virtual {p0, p3}, Lorg/spongycastle/crypto/BufferedBlockCipher;->getUpdateOutputSize(I)I
 
     move-result v0
 
-    .line 21
+    .line 42
     if-lez v0, :cond_1
 
-    .line 68
+    .line 36
     add-int/2addr v0, p5
 
     :try_start_1
@@ -1083,12 +1083,12 @@
 
     if-le v0, v1, :cond_1
 
-    .line 27
+    .line 57
     new-instance v0, Lorg/spongycastle/crypto/OutputLengthException;
 
     sget-object v1, Lorg/spongycastle/crypto/BufferedBlockCipher;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x2
+    const/4 v2, 0x1
 
     aget-object v1, v1, v2
 
@@ -1103,7 +1103,7 @@
 
     throw v0
 
-    .line 33
+    .line 41
     :cond_1
     iget-object v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
 
@@ -1113,37 +1113,37 @@
 
     sub-int v2, v0, v1
 
-    .line 18
-    if-le p3, v2, :cond_6
+    .line 74
+    if-le p3, v2, :cond_5
 
-    .line 17
+    .line 58
     iget-object v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
 
     iget v1, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
     invoke-static {p1, p2, v0, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 48
+    .line 52
     iget-object v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
     iget-object v1, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
 
-    invoke-interface {v0, v1, v4, p4, p5}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
+    invoke-interface {v0, v1, v3, p4, p5}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
 
     move-result v0
 
-    add-int/2addr v0, v4
+    add-int/2addr v0, v3
 
     .line 55
-    iput v4, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
+    iput v3, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
-    .line 46
+    .line 68
     sub-int v1, p3, v2
 
-    .line 20
+    .line 9
     add-int/2addr v2, p2
 
-    .line 19
+    .line 30
     :cond_2
     iget-object v6, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
 
@@ -1151,7 +1151,7 @@
 
     if-le v1, v6, :cond_3
 
-    .line 36
+    .line 22
     iget-object v6, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
     add-int v7, p5, v0
@@ -1162,43 +1162,37 @@
 
     add-int/2addr v0, v6
 
-    .line 74
+    .line 16
     sub-int/2addr v1, v5
 
-    .line 24
+    .line 48
     add-int/2addr v2, v5
 
-    if-eqz v3, :cond_2
+    if-eqz v4, :cond_2
 
-    :try_start_2
-    sget-boolean v3, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
-    :try_end_2
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
+    sget v4, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
 
-    if-eqz v3, :cond_5
+    add-int/lit8 v4, v4, 0x1
 
-    move v3, v4
+    sput v4, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
 
-    :goto_0
-    sput-boolean v3, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
-
-    .line 37
+    .line 31
     :cond_3
-    :goto_1
-    iget-object v3, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
+    :goto_0
+    iget-object v4, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
 
     iget v5, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
-    invoke-static {p1, v2, v3, v5, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {p1, v2, v4, v5, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 8
+    .line 29
     iget v2, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
     add-int/2addr v1, v2
 
     iput v1, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
-    .line 69
+    .line 8
     iget v1, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
     iget-object v2, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
@@ -1207,45 +1201,34 @@
 
     if-ne v1, v2, :cond_4
 
-    .line 40
+    .line 65
     iget-object v1, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
     iget-object v2, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
 
-    add-int v3, p5, v0
+    add-int v4, p5, v0
 
-    invoke-interface {v1, v2, v4, p4, v3}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
+    invoke-interface {v1, v2, v3, p4, v4}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
 
     move-result v1
 
     add-int/2addr v0, v1
 
-    .line 39
-    iput v4, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
+    .line 12
+    iput v3, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
-    .line 65
+    .line 32
     :cond_4
     return v0
 
-    .line 24
-    :catch_2
-    move-exception v0
-
-    throw v0
-
     :cond_5
-    const/4 v3, 0x1
-
-    goto :goto_0
-
-    :cond_6
-    move v0, v4
+    move v0, v3
 
     move v1, p3
 
     move v2, p2
 
-    goto :goto_1
+    goto :goto_0
 .end method
 
 .method public reset()V
@@ -1258,7 +1241,7 @@
 
     move v0, v1
 
-    .line 29
+    .line 28
     :cond_0
     iget-object v3, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
 
@@ -1266,12 +1249,12 @@
 
     if-ge v0, v3, :cond_1
 
-    .line 73
+    .line 26
     iget-object v3, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
 
     aput-byte v1, v3, v0
 
-    .line 57
+    .line 47
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v2, :cond_0
@@ -1280,11 +1263,11 @@
     :cond_1
     iput v1, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
-    .line 60
+    .line 15
     iget-object v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
     invoke-interface {v0}, Lorg/spongycastle/crypto/BlockCipher;->reset()V
 
-    .line 49
+    .line 54
     return-void
 .end method

@@ -6,13 +6,13 @@
 
 
 # static fields
-.field public static final CREATOR:Lcom/google/android/gms/maps/model/LatLngCreator;
+.field public static final CREATOR:Lcom/google/android/gms/maps/model/i;
 
 .field public static a:I
 
 
 # instance fields
-.field private final ab:I
+.field private final CK:I
 
 .field public final latitude:D
 
@@ -23,11 +23,11 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/google/android/gms/maps/model/LatLngCreator;
+    new-instance v0, Lcom/google/android/gms/maps/model/i;
 
-    invoke-direct {v0}, Lcom/google/android/gms/maps/model/LatLngCreator;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/gms/maps/model/i;-><init>()V
 
-    sput-object v0, Lcom/google/android/gms/maps/model/LatLng;->CREATOR:Lcom/google/android/gms/maps/model/LatLngCreator;
+    sput-object v0, Lcom/google/android/gms/maps/model/LatLng;->CREATOR:Lcom/google/android/gms/maps/model/i;
 
     return-void
 .end method
@@ -57,7 +57,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Lcom/google/android/gms/maps/model/LatLng;->ab:I
+    iput p1, p0, Lcom/google/android/gms/maps/model/LatLng;->CK:I
 
     const-wide v0, -0x3f99800000000000L
 
@@ -179,6 +179,14 @@
     goto :goto_0
 .end method
 
+.method getVersionCode()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/gms/maps/model/LatLng;->CK:I
+
+    return v0
+.end method
+
 .method public hashCode()I
     .locals 6
 
@@ -213,14 +221,6 @@
     long-to-int v1, v2
 
     add-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method i()I
-    .locals 1
-
-    iget v0, p0, Lcom/google/android/gms/maps/model/LatLng;->ab:I
 
     return v0
 .end method
@@ -272,20 +272,20 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    invoke-static {}, Lcom/google/android/gms/maps/internal/q;->bn()Z
+    invoke-static {}, Lcom/google/android/gms/maps/internal/aa;->ob()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/maps/model/e;->a(Lcom/google/android/gms/maps/model/LatLng;Landroid/os/Parcel;I)V
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/maps/model/j;->a(Lcom/google/android/gms/maps/model/LatLng;Landroid/os/Parcel;I)V
 
     sget v0, Lcom/google/android/gms/maps/model/LatLng;->a:I
 
     if-eqz v0, :cond_1
 
     :cond_0
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/maps/model/LatLngCreator;->a(Lcom/google/android/gms/maps/model/LatLng;Landroid/os/Parcel;I)V
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/maps/model/i;->a(Lcom/google/android/gms/maps/model/LatLng;Landroid/os/Parcel;I)V
 
     :cond_1
     return-void

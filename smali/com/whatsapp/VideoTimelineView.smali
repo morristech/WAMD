@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field private a:Landroid/os/AsyncTask;
+.field private a:Landroid/graphics/Rect;
 
-.field private b:Ljava/util/ArrayList;
+.field private b:I
 
-.field private c:I
+.field private c:Ljava/io/File;
 
-.field private d:Landroid/graphics/Rect;
+.field private d:Landroid/graphics/Paint;
 
-.field private e:Landroid/graphics/Paint;
+.field private e:Landroid/os/AsyncTask;
 
-.field private f:Landroid/graphics/RectF;
+.field private f:Ljava/util/ArrayList;
 
-.field private g:Ljava/io/File;
+.field private g:Landroid/graphics/RectF;
 
 
 # direct methods
@@ -24,33 +24,33 @@
     .locals 2
 
     .prologue
-    .line 25
+    .line 43
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    .line 50
+    .line 55
     new-instance v0, Landroid/graphics/Paint;
 
     const/4 v1, 0x1
 
     invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
 
-    iput-object v0, p0, Lcom/whatsapp/VideoTimelineView;->e:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Paint;
 
-    .line 27
+    .line 36
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/VideoTimelineView;->f:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/whatsapp/VideoTimelineView;->g:Landroid/graphics/RectF;
 
-    .line 46
+    .line 25
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/graphics/Rect;
 
-    .line 21
+    .line 7
     return-void
 .end method
 
@@ -58,28 +58,28 @@
     .locals 1
 
     .prologue
-    .line 43
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->e:Landroid/graphics/Paint;
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Paint;
 
     return-object v0
 .end method
 
-.method static b(Lcom/whatsapp/VideoTimelineView;)Ljava/io/File;
+.method static b(Lcom/whatsapp/VideoTimelineView;)Ljava/util/ArrayList;
     .locals 1
 
     .prologue
-    .line 32
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->g:Ljava/io/File;
+    .line 24
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->f:Ljava/util/ArrayList;
 
     return-object v0
 .end method
 
-.method static c(Lcom/whatsapp/VideoTimelineView;)Ljava/util/ArrayList;
+.method static c(Lcom/whatsapp/VideoTimelineView;)Ljava/io/File;
     .locals 1
 
     .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->b:Ljava/util/ArrayList;
+    .line 10
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->c:Ljava/io/File;
 
     return-object v0
 .end method
@@ -94,23 +94,23 @@
 
     const/4 v2, 0x0
 
-    sget-boolean v3, Lcom/whatsapp/App;->aL:Z
+    sget v3, Lcom/whatsapp/App;->h:I
 
-    .line 20
+    .line 39
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 9
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->g:Ljava/io/File;
+    .line 28
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->c:Ljava/io/File;
 
     if-nez v0, :cond_1
 
-    .line 54
+    .line 33
     :cond_0
     return-void
 
-    .line 34
+    .line 50
     :cond_1
-    iget v0, p0, Lcom/whatsapp/VideoTimelineView;->c:I
+    iget v0, p0, Lcom/whatsapp/VideoTimelineView;->b:I
 
     invoke-virtual {p0}, Lcom/whatsapp/VideoTimelineView;->getWidth()I
 
@@ -118,43 +118,43 @@
 
     if-eq v0, v1, :cond_2
 
-    .line 36
+    .line 2
     invoke-virtual {p0}, Lcom/whatsapp/VideoTimelineView;->getWidth()I
 
     move-result v0
 
-    iput v0, p0, Lcom/whatsapp/VideoTimelineView;->c:I
+    iput v0, p0, Lcom/whatsapp/VideoTimelineView;->b:I
 
-    .line 19
-    iput-object v4, p0, Lcom/whatsapp/VideoTimelineView;->b:Ljava/util/ArrayList;
+    .line 52
+    iput-object v4, p0, Lcom/whatsapp/VideoTimelineView;->f:Ljava/util/ArrayList;
 
-    .line 8
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/os/AsyncTask;
+    .line 15
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->e:Landroid/os/AsyncTask;
 
     if-eqz v0, :cond_2
 
     .line 3
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/os/AsyncTask;
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->e:Landroid/os/AsyncTask;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->cancel(Z)Z
 
-    .line 29
-    iput-object v4, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/os/AsyncTask;
+    .line 47
+    iput-object v4, p0, Lcom/whatsapp/VideoTimelineView;->e:Landroid/os/AsyncTask;
 
-    .line 51
+    .line 21
     :cond_2
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->f:Ljava/util/ArrayList;
 
     if-nez v0, :cond_3
 
-    .line 56
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/os/AsyncTask;
+    .line 38
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->e:Landroid/os/AsyncTask;
 
     if-nez v0, :cond_0
 
-    .line 22
+    .line 45
     invoke-virtual {p0}, Lcom/whatsapp/VideoTimelineView;->getWidth()I
 
     move-result v0
@@ -165,14 +165,14 @@
 
     div-int/2addr v0, v1
 
-    .line 44
+    .line 19
     invoke-virtual {p0}, Lcom/whatsapp/VideoTimelineView;->getHeight()I
 
     move-result v1
 
     int-to-float v1, v1
 
-    .line 13
+    .line 56
     invoke-virtual {p0}, Lcom/whatsapp/VideoTimelineView;->getWidth()I
 
     move-result v4
@@ -183,31 +183,31 @@
 
     div-float/2addr v4, v5
 
-    .line 40
+    .line 30
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5, v0}, Ljava/util/ArrayList;-><init>(I)V
 
-    iput-object v5, p0, Lcom/whatsapp/VideoTimelineView;->b:Ljava/util/ArrayList;
+    iput-object v5, p0, Lcom/whatsapp/VideoTimelineView;->f:Ljava/util/ArrayList;
 
-    .line 7
-    new-instance v5, Lcom/whatsapp/agm;
+    .line 40
+    new-instance v5, Lcom/whatsapp/ar;
 
-    invoke-direct {v5, p0, v4, v1, v0}, Lcom/whatsapp/agm;-><init>(Lcom/whatsapp/VideoTimelineView;FFI)V
+    invoke-direct {v5, p0, v4, v1, v0}, Lcom/whatsapp/ar;-><init>(Lcom/whatsapp/VideoTimelineView;FFI)V
 
-    iput-object v5, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/os/AsyncTask;
+    iput-object v5, p0, Lcom/whatsapp/VideoTimelineView;->e:Landroid/os/AsyncTask;
 
-    .line 30
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/os/AsyncTask;
+    .line 11
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->e:Landroid/os/AsyncTask;
 
     new-array v1, v2, [Ljava/lang/Void;
 
     invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 53
+    .line 23
     if-eqz v3, :cond_0
 
-    .line 47
+    .line 12
     :cond_3
     invoke-virtual {p0}, Lcom/whatsapp/VideoTimelineView;->getWidth()I
 
@@ -230,15 +230,15 @@
 
     div-float v4, v1, v0
 
-    .line 23
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->f:Landroid/graphics/RectF;
+    .line 54
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->g:Landroid/graphics/RectF;
 
     const/4 v1, 0x0
 
     iput v1, v0, Landroid/graphics/RectF;->top:F
 
-    .line 17
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->f:Landroid/graphics/RectF;
+    .line 37
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->g:Landroid/graphics/RectF;
 
     invoke-virtual {p0}, Lcom/whatsapp/VideoTimelineView;->getHeight()I
 
@@ -250,9 +250,9 @@
 
     move v1, v2
 
-    .line 39
+    .line 13
     :goto_0
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->f:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -260,8 +260,8 @@
 
     if-ge v1, v0, :cond_0
 
-    .line 14
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->f:Landroid/graphics/RectF;
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->g:Landroid/graphics/RectF;
 
     int-to-float v5, v1
 
@@ -269,10 +269,10 @@
 
     iput v5, v0, Landroid/graphics/RectF;->left:F
 
-    .line 11
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->f:Landroid/graphics/RectF;
+    .line 17
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->g:Landroid/graphics/RectF;
 
-    iget-object v5, p0, Lcom/whatsapp/VideoTimelineView;->f:Landroid/graphics/RectF;
+    iget-object v5, p0, Lcom/whatsapp/VideoTimelineView;->g:Landroid/graphics/RectF;
 
     iget v5, v5, Landroid/graphics/RectF;->left:F
 
@@ -280,8 +280,8 @@
 
     iput v5, v0, Landroid/graphics/RectF;->right:F
 
-    .line 35
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->b:Ljava/util/ArrayList;
+    .line 14
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->f:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -289,34 +289,34 @@
 
     check-cast v0, Landroid/graphics/Bitmap;
 
-    .line 41
+    .line 1
     if-eqz v0, :cond_6
 
-    .line 28
+    .line 5
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v5
 
-    .line 48
+    .line 51
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v6
 
-    .line 26
+    .line 49
     if-le v5, v6, :cond_4
 
-    .line 5
-    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Rect;
+    .line 22
+    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/graphics/Rect;
 
     iput v2, v7, Landroid/graphics/Rect;->top:I
 
-    .line 10
-    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Rect;
+    .line 46
+    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/graphics/Rect;
 
     iput v6, v7, Landroid/graphics/Rect;->bottom:I
 
-    .line 37
-    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Rect;
+    .line 31
+    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/graphics/Rect;
 
     sub-int v8, v5, v6
 
@@ -324,10 +324,10 @@
 
     iput v8, v7, Landroid/graphics/Rect;->left:I
 
-    .line 52
-    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Rect;
+    .line 34
+    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/graphics/Rect;
 
-    iget-object v8, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Rect;
+    iget-object v8, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/graphics/Rect;
 
     iget v8, v8, Landroid/graphics/Rect;->left:I
 
@@ -337,19 +337,19 @@
 
     if-eqz v3, :cond_5
 
-    .line 31
+    .line 44
     :cond_4
-    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Rect;
+    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/graphics/Rect;
 
     iput v2, v7, Landroid/graphics/Rect;->left:I
 
-    .line 38
-    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Rect;
+    .line 26
+    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/graphics/Rect;
 
     iput v5, v7, Landroid/graphics/Rect;->right:I
 
-    .line 6
-    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Rect;
+    .line 18
+    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/graphics/Rect;
 
     sub-int/2addr v6, v5
 
@@ -357,10 +357,10 @@
 
     iput v6, v7, Landroid/graphics/Rect;->top:I
 
-    .line 4
-    iget-object v6, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Rect;
+    .line 8
+    iget-object v6, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/graphics/Rect;
 
-    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Rect;
+    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->top:I
 
@@ -368,17 +368,17 @@
 
     iput v5, v6, Landroid/graphics/Rect;->bottom:I
 
-    .line 55
+    .line 48
     :cond_5
-    iget-object v5, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Rect;
+    iget-object v5, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/graphics/Rect;
 
-    iget-object v6, p0, Lcom/whatsapp/VideoTimelineView;->f:Landroid/graphics/RectF;
+    iget-object v6, p0, Lcom/whatsapp/VideoTimelineView;->g:Landroid/graphics/RectF;
 
-    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->e:Landroid/graphics/Paint;
+    iget-object v7, p0, Lcom/whatsapp/VideoTimelineView;->d:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v5, v6, v7}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
-    .line 45
+    .line 35
     :cond_6
     add-int/lit8 v0, v1, 0x1
 
@@ -395,31 +395,31 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 33
-    iput-object p1, p0, Lcom/whatsapp/VideoTimelineView;->g:Ljava/io/File;
+    .line 53
+    iput-object p1, p0, Lcom/whatsapp/VideoTimelineView;->c:Ljava/io/File;
 
-    .line 12
-    iput-object v2, p0, Lcom/whatsapp/VideoTimelineView;->b:Ljava/util/ArrayList;
+    .line 42
+    iput-object v2, p0, Lcom/whatsapp/VideoTimelineView;->f:Ljava/util/ArrayList;
 
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/os/AsyncTask;
+    .line 32
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->e:Landroid/os/AsyncTask;
 
     if-eqz v0, :cond_0
 
-    .line 42
-    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/os/AsyncTask;
+    .line 27
+    iget-object v0, p0, Lcom/whatsapp/VideoTimelineView;->e:Landroid/os/AsyncTask;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->cancel(Z)Z
 
-    .line 24
-    iput-object v2, p0, Lcom/whatsapp/VideoTimelineView;->a:Landroid/os/AsyncTask;
+    .line 41
+    iput-object v2, p0, Lcom/whatsapp/VideoTimelineView;->e:Landroid/os/AsyncTask;
 
-    .line 15
+    .line 20
     :cond_0
     invoke-virtual {p0}, Lcom/whatsapp/VideoTimelineView;->invalidate()V
 
-    .line 18
+    .line 9
     return-void
 .end method

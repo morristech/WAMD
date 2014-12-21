@@ -72,8 +72,6 @@
     <string name="audio_note_tip">החזק/י להקלטה, שחרר/י לשליחה</string>
     <string name="audio_note_tip_2">נא להקליט הודעה ארוכה יותר</string>
     <string name="audio_note_top_mic_tip">בבקשה, דבר/י אל המיקרופון אשר בחלקו העליון של הטלפון שלך</string>
-    <string name="barcode_scanner_dialog_body">אפליקציה זו דורשת סורק ברקוד. האם תרצה להתקין כזה?</string>
-    <string name="barcode_scanner_dialog_title">להתקין סורק ברקוד?</string>
     <string name="block">חסום</string>
     <string name="block_ask">האם הינך בטוח/ה שברצונך לחסום איש הקשר הזה?</string>
     <string name="block_list_desc_1">"הקש על הסמל בפינה הימינית העליונה כדי לבחור איש קשר לחסימה.
@@ -299,6 +297,7 @@
     <string name="error_adding_participant_500">אינך יכול להוסיף את %s מפני שקבוצה זו מלאה.</string>
     <string name="error_audio_messages_disabled_during_call">לא ניתן להקליט שמע במהלך שיחת WhatsApp.</string>
     <string name="error_bad_media">לא ניתן להשתמש בקובץ זה. סוג מדיה לא תקין או לא נתמך.</string>
+    <string name="error_call_disabled_during_call">לא ניתן לבצע שיחה חדשה בעת שכבר מתבצעת שיחה</string>
     <string name="error_db_diskio">לא ניתן לגשת למסד הנתונים.</string>
     <string name="error_file_is_not_a_image">הקובץ שבחרת אינו קובץ תמונה.</string>
     <string name="error_load_image">טעינת נתוני התמונה נכשלה, אנא נסה שוב מאוחר יותר.</string>
@@ -328,7 +327,6 @@
     <string name="eula_description">פלטפורמת מסרים ניידת עם חברים בכל העולם</string>
     <string name="eula_tablets_not_supported">הערה: טבלטים לא נתמכים כרגע.</string>
     <string name="eula_terms_of_service">תנאי השירות</string>
-    <string name="eula_title">ברוכים הבאים ל-WhatsApp!</string>
     <string name="existing_contact">קיים</string>
     <string name="exit">יציאה</string>
     <string name="exit_group">יציאה מהקבוצה</string>
@@ -458,6 +456,7 @@
     <string name="group_participant_changed_number_unknown_name">%1$s השתנה ל-%2$s</string>
     <string name="group_participant_demoted_you">אינך מנהל יותר</string>
     <string name="group_participant_left_name">%s עזב/ה</string>
+    <string name="group_participant_left_you">עזבת</string>
     <string name="group_participant_promoted_you">אתה כעת מנהל</string>
     <string name="group_participant_removed_name">%s הוסר/ה</string>
     <string name="group_participant_removed_you">הוסרת מהקבוצה</string>
@@ -502,7 +501,6 @@
     <string name="insufficient_space_for_download_shared_storage">לא היתה אפשרות להוריד בגלל שלא נותר מספיק מקום באחסון הפנימי המשותף שלך. אנא מחק/י קבצים מהאחסון הפנימי המשותף שלך ונסה שנית.</string>
     <string name="invalid_media_message_download">אין אפשרות להוריד את המדיה מתוך הודעה לא תקפה. אנא נסה/י לשלוח את ההודעה שוב.</string>
     <string name="invalid_message_forward">אין אפשרות להעביר את ההודעה לאיש קשר שאינו חוקי.</string>
-    <string name="invalid_qr_code">קוד QR שגוי</string>
     <string name="invalid_url_for_download">לא ניתן להוריד. אנא בקש/י שישלחו אליך את זה שוב.</string>
     <string name="invite">הזמן</string>
     <string name="invite_friends">הזמן את החברים שלך</string>
@@ -548,7 +546,6 @@
     <string name="menuitem_add">הוספה</string>
     <string name="menuitem_contacts">אנשי קשר</string>
     <string name="menuitem_debug">איתור באגים</string>
-    <string name="menuitem_delete_qr">מחיקת קוד QR</string>
     <string name="menuitem_groupchat">קבוצה חדשה</string>
     <string name="menuitem_list">רשימת תפוצה חדשה</string>
     <string name="menuitem_mute">השתק</string>
@@ -589,14 +586,10 @@
     <string name="msg_store_backup_failed">לא ניתן לגבות הודעות</string>
     <string name="msg_store_backup_failed_try_again_later">לא הייתה אפשרות לגבות את ההודעות. אנא נסה שוב מאוחר יותר.</string>
     <string name="msg_store_backup_found">גיבוי נמצא</string>
-    <string name="msg_store_backup_found_registration">גיבוי הודעות נמצא!</string>
     <string name="msg_store_backup_skipped">הגיבוי דולג</string>
     <string name="msg_store_backup_skipped_no_media">הגיבוי לא בוצע: לא נמצא כרטיס זכרון.</string>
     <string name="msg_store_backup_skipped_read_only_media">הגיבוי לא בוצע: נמצא כרטיס זכרון במצב קריאה בלבד.</string>
     <string name="msg_store_confirm">אישור</string>
-    <string name="msg_store_creation_backup_message">האם אתה מעוניין לשחזר את היסטוריית ההודעות שלך מהגיבוי?</string>
-    <string name="msg_store_do_not_restore">אל תשחזר</string>
-    <string name="msg_store_do_not_restore_no_thanks">לא תודה</string>
     <string name="msg_store_error_found">אירעה שגיאה. אנא אתחל מחדש את WhatsApp.</string>
     <string name="msg_store_error_not_restored">מצטערים, לא הצלחנו לשחזר אף אחד מגיבויי ההודעות שלך.</string>
     <string name="msg_store_last_confirmation_not_to_restore">ההודעות יאבדו. האם אתה בטוח שאינך רוצה לשחזר את היסטוריית ההודעות שלך מהגיבוי?</string>
@@ -623,9 +616,6 @@
     <string name="need_sd_card_shared_storage">אנא כבה/י את אחסון ה-USB ונסה/י שוב.</string>
     <string name="network_required">אין לך גישה לרשת כרגע.</string>
     <string name="network_usage_ask_reset_message">האם הינך בטוח/ה שברצונך לאפס את הסטטיסטיקות?</string>
-    <string name="network_usage_byte_count_gb">"%1$.1f ג'יגה-בייט"</string>
-    <string name="network_usage_byte_count_kb">%1$.1f קילו-בייט</string>
-    <string name="network_usage_byte_count_mb">%1$.1f מגה-בייט</string>
     <string name="network_usage_last_reset_time">איפוס אחרון בוצע ב: %1$s</string>
     <string name="network_usage_media_bytes_received">בתים של מדיה שהתקבלו:</string>
     <string name="network_usage_media_bytes_sent">בתים של מדיה שנשלחו:</string>
@@ -818,6 +808,7 @@
 אנא המתן/י לשליחת הקוד החדש.
 
 נסה/י שוב אחרי %1$s."</string>
+    <string name="register_voice_input_error_message">הקוד שהכנסת שגוי. אנא נסה שוב. (נותרו %d נסיונות)</string>
     <string name="register_voice_input_error_message_with_time">הקוד שהקשת שגוי. אנא נסה שנית בעוד %1$s. (%2$d) נסיונות נותרו.</string>
     <string name="register_voice_input_message">הכנס/י בבקשה את הקוד בן %d הספרות שלך</string>
     <string name="register_voice_input_title">קלט</string>
@@ -982,19 +973,10 @@
     <string name="software_expired_get_from_play">גרסה זו של WhatsApp ישנה מידי וכבר לא פעילה. אנא בקר/י ב-Google Play Store והורד/י את הגרסה האחרונה.</string>
     <string name="software_expired_get_from_play_with_date">גרסה זו של WhatsApp התישנה בתאריך &lt;b>%1$s&lt;/b>. אנא הורד את הגרסה העדכנית (&lt;br>&lt;br>) מ- Google Play. התאריך במכשירך הינו &lt;b>%2$s&lt;/b>, אם זה שגוי אנא תקן את התאריך במכשירך והפעל מחדש את WhatsApp.</string>
     <string name="software_expired_with_date">גירסה זו של WhatsApp התיישנה ב- &lt;b>%1$s&lt;/b>. הקש \"הורד\" לקבלת הגירסה המעודכנת ביותר. &lt;br>&lt;br> תאריך מכשירך הינו &lt;b>%2$s&lt;/b>. אם זה שגוי נא תקן/י את הגדרות התאריך במכשירך והפעל/י מחדש את WhatsApp.</string>
-    <string name="spam_generic">"הושעית זמנית מ-WhatsApp מפני שיתכן כי הפרת את תנאי השירות שלנו.
-תוכל להשתמש ב-WhatsApp שוב בתוך:"</string>
     <string name="spam_generic_data_connection_missing">נא ודא שלמכשירך יש חיבור נתונים פעיל.</string>
     <string name="spam_generic_unknown_time_left">הושעית זמנית מ-WhatsApp מכיוון שאולי הפרת את תנאי השירות. תוכל להשתמש ב-WhatsApp בקרוב.</string>
     <string name="spam_learn_more">למד עוד</string>
     <string name="spam_title">מושעה זמנית</string>
-    <string name="spam_too_many_blocks">אתה מושעה זמנית מ- WhatsApp מפני שאנשים רבים מדי חסמו אותך.</string>
-    <string name="spam_too_many_groups">"הושעית זמנית מ-WhatsApp מפני שיצרת יותר מדי קבוצות עם אנשים שאינך מופיע בספרי הכתובות שלהם.
-תוכל להשתמש ב-WhatsApp שוב בתוך:"</string>
-    <string name="spam_too_many_messages">"הושעית זמנית מ-WhatsApp מפני ששלחת יותר מדי הודעות לאנשים שאינך מופיע בספרי הכתובות שלהם.
-תוכל להשתמש ב-WhatsApp שוב בתוך:"</string>
-    <string name="spam_too_many_people">"הושעית זמנית מ-WhatsApp מפני ששלחת את אותה הודעה ליותר מדי אנשים.
-תוכל להשתמש ב-WhatsApp שוב בתוך:"</string>
     <string name="status">סטטוס</string>
     <string name="status_default_at_gym">בחדר הכושר</string>
     <string name="status_default_at_movies">בקולנוע</string>
@@ -1162,6 +1144,7 @@
     <string name="view_list_media">מדיה ברשימת התפוצה</string>
     <string name="view_website">צפה באתר האינטרנט</string>
     <string name="voip_activity_label">שיחה קולית</string>
+    <string name="voip_call_bluetooth_toggle_description">הפעל/כבה Bluetooth</string>
     <string name="voip_call_end_button_description">סיים שיחה קולית</string>
     <string name="voip_call_goto_chat_description">צפה בשיחה</string>
     <string name="voip_call_incoming">שיחה נכנסת</string>
@@ -1173,8 +1156,12 @@
     <string name="voip_call_recording_started">הקלטת שיחת VoIP החלה</string>
     <string name="voip_call_speakerphone_toggle_description">החלף לרמקול</string>
     <string name="voip_call_start_button_description">התחל שיחה קולית</string>
+    <string name="voip_debug_remove_all_recordings">הסר את כל ההקלטות</string>
     <string name="voip_debug_removed_all_recordings">כל ההקלטות הוסרו.</string>
+    <string name="voip_debug_report_bad_quality">דווח על איכות שמע ירודה</string>
     <string name="voip_debug_reported_bad_quality">נוצר רישום יומן אודות איכות שמע ירודה.</string>
+    <string name="voip_debug_start_recording">התחל הקלטה</string>
+    <string name="voip_debug_stop_recording">הפסק הקלטה</string>
     <string name="voip_not_allowed_at_this_time">%s אינו יכול לקבל שיחות WhatsApp כרגע</string>
     <string name="voip_not_allowed_needs_update">%s צריך לעדכן את האפליקציה כדי לקבל שיחות WhatsApp</string>
     <string name="voip_not_allowed_never">%s אינו יכול לקבל שיחות WhatsApp</string>
@@ -1211,5 +1198,4 @@ Press \"SMS\" כדי לשלוח הודעת SMS לאיש הקשר הזה, לחץ/
     <string name="yesterday">אתמול</string>
     <string name="yesterday_at">אתמול ב- %s</string>
     <string name="you">את/ה</string>
-    <string name="voip_call_bluetooth_toggle_description">הפעל/כבה Bluetooth</string>
 </resources>

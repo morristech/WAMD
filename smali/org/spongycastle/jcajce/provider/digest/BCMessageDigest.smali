@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static a:Z
+.field public static a:I
 
 
 # instance fields
@@ -16,17 +16,17 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 1
     invoke-interface {p1}, Lorg/spongycastle/crypto/Digest;->getAlgorithmName()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Ljava/security/MessageDigest;-><init>(Ljava/lang/String;)V
 
-    .line 1
+    .line 5
     iput-object p1, p0, Lorg/spongycastle/jcajce/provider/digest/BCMessageDigest;->digest:Lorg/spongycastle/crypto/Digest;
 
-    .line 6
+    .line 3
     return-void
 .end method
 
@@ -36,7 +36,7 @@
     .locals 3
 
     .prologue
-    .line 11
+    .line 12
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/digest/BCMessageDigest;->digest:Lorg/spongycastle/crypto/Digest;
 
     invoke-interface {v0}, Lorg/spongycastle/crypto/Digest;->getDigestSize()I
@@ -45,14 +45,14 @@
 
     new-array v0, v0, [B
 
-    .line 5
+    .line 4
     iget-object v1, p0, Lorg/spongycastle/jcajce/provider/digest/BCMessageDigest;->digest:Lorg/spongycastle/crypto/Digest;
 
     const/4 v2, 0x0
 
     invoke-interface {v1, v0, v2}, Lorg/spongycastle/crypto/Digest;->doFinal([BI)I
 
-    .line 7
+    .line 6
     return-object v0
 .end method
 
@@ -60,12 +60,12 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 8
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/digest/BCMessageDigest;->digest:Lorg/spongycastle/crypto/Digest;
 
     invoke-interface {v0}, Lorg/spongycastle/crypto/Digest;->reset()V
 
-    .line 3
+    .line 9
     return-void
 .end method
 
@@ -73,12 +73,12 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 2
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/digest/BCMessageDigest;->digest:Lorg/spongycastle/crypto/Digest;
 
     invoke-interface {v0, p1}, Lorg/spongycastle/crypto/Digest;->update(B)V
 
-    .line 8
+    .line 11
     return-void
 .end method
 
@@ -86,11 +86,11 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 7
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/digest/BCMessageDigest;->digest:Lorg/spongycastle/crypto/Digest;
 
     invoke-interface {v0, p1, p2, p3}, Lorg/spongycastle/crypto/Digest;->update([BII)V
 
-    .line 9
+    .line 10
     return-void
 .end method

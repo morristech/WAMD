@@ -8,42 +8,42 @@
 
 
 # instance fields
-.field private j:Landroid/graphics/Bitmap;
+.field private j:Landroid/widget/LinearLayout;
 
-.field private k:Landroid/widget/LinearLayout;
+.field private k:Ljava/lang/String;
 
-.field private l:Li;
+.field private l:Ljava/lang/String;
 
-.field private m:Ljava/lang/String;
+.field private m:La;
 
-.field private n:Ljava/lang/String;
+.field private n:Landroid/graphics/Bitmap;
 
-.field private o:Z
+.field private o:Ljava/lang/String;
 
 .field private p:Z
 
-.field private q:Ljava/lang/String;
+.field private q:Z
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 14
 
-    const/4 v3, 0x2
+    const/16 v5, 0x40
 
-    const/16 v4, 0x1b
+    const/16 v4, 0x30
 
-    const/4 v2, 0x1
+    const/16 v3, 0xc
+
+    const/4 v2, 0x4
 
     const/4 v1, 0x0
-
-    const/16 v5, 0x38
 
     const/16 v0, 0x5b
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "ezL\u000f\u0001"
+    const-string v6, "\n!Icq\u0012\u001fYbb\n!Div"
 
     const/4 v0, -0x1
 
@@ -81,13 +81,15 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "wr]\u0019KizJ\u000b\\btV\u001aYboY\rLhmQ\u001aA.oA\u001e].nV\u0005VnlVN"
+    const/4 v6, 0x1
 
-    move-object v6, v0
+    const-string v0, "\u00085\\`"
 
-    move v7, v2
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
 
     move v0, v1
 
@@ -96,43 +98,37 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "ezL\u000f\t"
+    const/4 v7, 0x2
 
-    move-object v6, v0
+    const-string v6, "\u0002!Dm6"
 
-    move v7, v3
+    const/4 v0, 0x1
 
     move-object v8, v9
-
-    move v0, v2
 
     goto :goto_0
 
     :pswitch_1
     aput-object v6, v8, v7
 
-    const/4 v6, 0x3
+    const/4 v7, 0x3
 
-    const-string v0, "!g\u0018"
+    const-string v6, "\u0002!Dm0"
 
-    move v7, v6
+    const/4 v0, 0x2
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v3
 
     goto :goto_0
 
     :pswitch_2
     aput-object v6, v8, v7
 
-    const/4 v7, 0x4
-
-    const-string v6, "wu\\@Yo\u007fJ\u0001Qe5[\u001bJrtJ@Qu~UA[nuL\u000f[uD]\u0018]oo"
+    const-string v6, "\u0002!Dm2"
 
     const/4 v0, 0x3
+
+    move v7, v2
 
     move-object v8, v9
 
@@ -141,13 +137,17 @@
     :pswitch_3
     aput-object v6, v8, v7
 
-    const/4 v7, 0x5
+    const/4 v6, 0x5
 
-    const-string v6, "lrU\u000bLxk]"
+    const-string v0, "\u0002!Dm3"
 
-    const/4 v0, 0x4
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v2
 
     goto :goto_0
 
@@ -156,7 +156,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "ezL\u000f\u000e"
+    const-string v6, "\u0002!Dm="
 
     const/4 v0, 0x5
 
@@ -169,7 +169,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "lrU\u000bLxk]"
+    const-string v6, "\u0002!Dm6"
 
     const/4 v0, 0x6
 
@@ -182,7 +182,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "ezL\u000f\t"
+    const-string v6, "\u0002!Dm6"
 
     const/4 v0, 0x7
 
@@ -195,7 +195,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "ezL\u000f\n"
+    const-string v6, "\u0014!GSg\t.Dmg\u0012\u001fYh"
 
     const/16 v0, 0x8
 
@@ -208,7 +208,7 @@
 
     const/16 v7, 0xa
 
-    const-string v6, "ezL\u000f\u0001"
+    const-string v6, "\u000b)]ip\u001f0U"
 
     const/16 v0, 0x9
 
@@ -221,7 +221,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, "ezL\u000f\u000c"
+    const-string v6, "\u0002!Dm5"
 
     const/16 v0, 0xa
 
@@ -232,11 +232,11 @@
     :pswitch_a
     aput-object v6, v8, v7
 
-    const/16 v7, 0xc
-
-    const-string v6, "ezL\u000f\n"
+    const-string v6, "\u000b)]ip\u001f0U"
 
     const/16 v0, 0xb
+
+    move v7, v3
 
     move-object v8, v9
 
@@ -245,13 +245,17 @@
     :pswitch_b
     aput-object v6, v8, v7
 
-    const/16 v7, 0xd
+    const/16 v6, 0xd
 
-    const-string v6, "wu\\@Yo\u007fJ\u0001Qe5[\u001bJrtJ@Qu~UAHitV\u000bgw)"
+    const-string v0, "\u0014!GSg\t.Dmg\u0012\u001fYh"
 
-    const/16 v0, 0xc
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v3
 
     goto/16 :goto_0
 
@@ -260,7 +264,7 @@
 
     const/16 v7, 0xe
 
-    const-string v6, "szO1[nuL\u000f[uDQ\n"
+    const-string v6, "\u0007#Scq\u00084obe\u000b%"
 
     const/16 v0, 0xd
 
@@ -273,7 +277,7 @@
 
     const/16 v7, 0xf
 
-    const-string v6, "ezL\u000f\u000c"
+    const-string v6, "(\tsGJ\'\ru"
 
     const/16 v0, 0xe
 
@@ -286,7 +290,7 @@
 
     const/16 v7, 0x10
 
-    const-string v6, "szO1[nuL\u000f[uDQ\n"
+    const-string v6, "\u0002!Dm5S"
 
     const/16 v0, 0xf
 
@@ -299,7 +303,7 @@
 
     const/16 v7, 0x11
 
-    const-string v6, "wu\\@Yo\u007fJ\u0001Qe5[\u001bJrtJ@Qu~UAVhxS\u0000Yl~"
+    const-string v6, "\u0002!Dm0"
 
     const/16 v0, 0x10
 
@@ -312,7 +316,7 @@
 
     const/16 v7, 0x12
 
-    const-string v6, "lrU\u000bLxk]"
+    const-string v6, "\u0010.T\"e\u0008$Bcm\u0002nSyv\u0015/B\"m\u0012%]#j\u0007-U"
 
     const/16 v0, 0x11
 
@@ -325,7 +329,7 @@
 
     const/16 v7, 0x13
 
-    const-string v6, "ezL\u000f\t1"
+    const-string v6, "\u0010)U{[\u0015(Q~a\u0002\u001fScj\u0012!Sx+\u0008%GSj\u0013-RivI.Ui`9$U`p\u0007\u001fCuj\u0005"
 
     const/16 v0, 0x12
 
@@ -338,7 +342,7 @@
 
     const/16 v7, 0x14
 
-    const-string v6, "szO1[nuL\u000f[uDQ\n"
+    const-string v6, "\u0007#Scq\u00084ox}\u0016%"
 
     const/16 v0, 0x13
 
@@ -351,7 +355,7 @@
 
     const/16 v7, 0x15
 
-    const-string v6, "lrU\u000bLxk]"
+    const-string v6, "\u0002!Dm7"
 
     const/16 v0, 0x14
 
@@ -364,7 +368,7 @@
 
     const/16 v7, 0x16
 
-    const-string v6, "wr]\u0019grsY\u001c]eD[\u0001Vuz[\u001a\u0017bi]\u000fLdD[\u0001Vuz[\u001a\u0002!"
+    const-string v6, "\u0010.T\"e\u0008$Bcm\u0002nSyv\u0015/B\"m\u0012%]#g\t.Dmg\u0012\u001fUza\u00084"
 
     const/16 v0, 0x15
 
@@ -377,7 +381,7 @@
 
     const/16 v7, 0x17
 
-    const-string v6, "ezL\u000f\r"
+    const-string v6, "\u000b)]ip\u001f0U"
 
     const/16 v0, 0x16
 
@@ -390,7 +394,7 @@
 
     const/16 v7, 0x18
 
-    const-string v6, "wr]\u0019grsY\u001c]eD[\u0001Vuz[\u001a\u0017tuS\u0001OoD[\u0001Vuz[\u001agtk\\\u000fLd!"
+    const-string v6, "\u0010.T\"e\u0008$Bcm\u0002nSyv\u0015/B\"m\u0012%]#m\u000b"
 
     const/16 v0, 0x17
 
@@ -403,7 +407,7 @@
 
     const/16 v7, 0x19
 
-    const-string v6, "ezL\u000f\u000b"
+    const-string v6, "\u0002!Dm5"
 
     const/16 v0, 0x18
 
@@ -416,7 +420,7 @@
 
     const/16 v7, 0x1a
 
-    const-string v6, "szO1[nuL\u000f[uDQ\n"
+    const-string v6, "\u000b)]ip\u001f0U"
 
     const/16 v0, 0x19
 
@@ -427,11 +431,11 @@
     :pswitch_19
     aput-object v6, v8, v7
 
-    const-string v6, "`x[\u0001Moog\u001aAq~"
+    const/16 v7, 0x1b
+
+    const-string v6, "\u0002!Dm7"
 
     const/16 v0, 0x1a
-
-    move v7, v4
 
     move-object v8, v9
 
@@ -440,17 +444,13 @@
     :pswitch_1a
     aput-object v6, v8, v7
 
-    const/16 v6, 0x1c
+    const/16 v7, 0x1c
 
-    const-string v0, "ezL\u000f\u000b"
+    const-string v6, "\u000b)]ip\u001f0U"
 
-    move v7, v6
+    const/16 v0, 0x1b
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v4
 
     goto/16 :goto_0
 
@@ -459,7 +459,7 @@
 
     const/16 v7, 0x1d
 
-    const-string v6, "szO1[nuL\u000f[uDQ\n"
+    const-string v6, "\u0002!Dm5"
 
     const/16 v0, 0x1c
 
@@ -472,7 +472,7 @@
 
     const/16 v7, 0x1e
 
-    const-string v6, "ezL\u000f\r"
+    const-string v6, "\u0014!GSg\t.Dmg\u0012\u001fYh"
 
     const/16 v0, 0x1d
 
@@ -485,7 +485,7 @@
 
     const/16 v7, 0x1f
 
-    const-string v6, "ezL\u000f\u000f"
+    const-string v6, "\u0014!GSg\t.Dmg\u0012\u001fYh"
 
     const/16 v0, 0x1e
 
@@ -498,7 +498,7 @@
 
     const/16 v7, 0x20
 
-    const-string v6, "ezL\u000f\t"
+    const-string v6, "\u0010)U{[\u0015(Q~a\u0002\u001fScj\u0012!Sx+\u0000!\\\u007fa9-Qxg\u000ez\u0010"
 
     const/16 v0, 0x1f
 
@@ -511,7 +511,7 @@
 
     const/16 v7, 0x21
 
-    const-string v6, "ezL\u000f\u000b"
+    const-string v6, "\u0010.T\"e\u0008$Bcm\u0002nSyv\u0015/B\"m\u0012%]#t\u000e/Dc"
 
     const/16 v0, 0x20
 
@@ -524,7 +524,7 @@
 
     const/16 v7, 0x22
 
-    const-string v6, "wr]\u0019grsY\u001c]eD[\u0001Vuz[\u001a\u0017gzT\u001d]^vY\u001a[i!\u0018"
+    const-string v6, "\u0002!Dm3"
 
     const/16 v0, 0x21
 
@@ -537,7 +537,7 @@
 
     const/16 v7, 0x23
 
-    const-string v6, "szO1[nuL\u000f[uDQ\n"
+    const-string v6, "\u0014!GSg\t.Dmg\u0012\u001fYh"
 
     const/16 v0, 0x22
 
@@ -550,7 +550,7 @@
 
     const/16 v7, 0x24
 
-    const-string v6, "lrU\u000bLxk]"
+    const-string v6, "\u0010.T\"e\u0008$Bcm\u0002nSyv\u0015/B\"m\u0012%]#j\u000f#[be\u000b%"
 
     const/16 v0, 0x23
 
@@ -563,7 +563,7 @@
 
     const/16 v7, 0x25
 
-    const-string v6, "C_y7"
+    const-string v6, "\u0014!GSg\t.Dmg\u0012\u001fYh"
 
     const/16 v0, 0x24
 
@@ -576,7 +576,7 @@
 
     const/16 v7, 0x26
 
-    const-string v6, "szO1[nuL\u000f[uDQ\n"
+    const-string v6, "\u0002!Dm1"
 
     const/16 v0, 0x25
 
@@ -589,7 +589,7 @@
 
     const/16 v7, 0x27
 
-    const-string v6, "wr]\u0019grsY\u001c]eD[\u0001Vuz[\u001a\u0017o~O1VtvZ\u000bJ.u]\u000b\\^\u007f]\u0002L`DK\u0017Vb"
+    const-string v6, "\u0002!Dm7"
 
     const/16 v0, 0x26
 
@@ -602,7 +602,7 @@
 
     const/16 v7, 0x28
 
-    const-string v6, "lrU\u000bLxk]"
+    const-string v6, "\u0010.T\"e\u0008$Bcm\u0002nSyv\u0015/B\"m\u0012%]#k\u0014\'Qbm\u001c!Dek\u0008"
 
     const/16 v0, 0x27
 
@@ -615,7 +615,7 @@
 
     const/16 v7, 0x29
 
-    const-string v6, "lrU\u000bLxk]"
+    const-string v6, "\u0010)U{[\u0015(Q~a\u0002\u001fScj\u0012!Sx+\u00052Ump\u0003\u001fScj\u0012!Sx>F"
 
     const/16 v0, 0x28
 
@@ -628,7 +628,7 @@
 
     const/16 v7, 0x2a
 
-    const-string v6, "wu\\@Yo\u007fJ\u0001Qe5[\u001bJrtJ@Qu~UAHnhL\u000fT,z\\\nJdhK1N3"
+    const-string v6, "\u0010.T\"e\u0008$Bcm\u0002nSyv\u0015/B\"m\u0012%]#t\t3DmhK!Thv\u00033CSrT"
 
     const/16 v0, 0x29
 
@@ -641,7 +641,7 @@
 
     const/16 v7, 0x2b
 
-    const-string v6, "ezL\u000f\t"
+    const-string v6, "\u0010)U{w\u000e!Bi`\u0005/^xe\u00054Qop\u000f6Yx}F"
 
     const/16 v0, 0x2a
 
@@ -654,7 +654,7 @@
 
     const/16 v7, 0x2c
 
-    const-string v6, "ezL\u000f\t"
+    const-string v6, "\u0014!GSg\t.Dmg\u0012\u001fYh"
 
     const/16 v0, 0x2b
 
@@ -667,7 +667,7 @@
 
     const/16 v7, 0x2d
 
-    const-string v6, "`\u007f\\1KizJ\u000b\\^xW\u0000L`xLA"
+    const-string v6, "F<\u0010"
 
     const/16 v0, 0x2c
 
@@ -680,7 +680,7 @@
 
     const/16 v7, 0x2e
 
-    const-string v6, "ezL\u000f\t4"
+    const-string v6, "\u0002!Dm1"
 
     const/16 v0, 0x2d
 
@@ -693,7 +693,7 @@
 
     const/16 v7, 0x2f
 
-    const-string v6, "OR{%v@V}"
+    const-string v6, "\u0010)U{w\u000e!Bi`\u0005/^xe\u00054Qop\u000f6Yx}I4I|aI5^gj\t7^,"
 
     const/16 v0, 0x2e
 
@@ -704,11 +704,11 @@
     :pswitch_2e
     aput-object v6, v8, v7
 
-    const/16 v7, 0x30
-
-    const-string v6, "szO1[nuL\u000f[uDQ\n"
+    const-string v6, "\u0002!Dm5"
 
     const/16 v0, 0x2f
+
+    move v7, v4
 
     move-object v8, v9
 
@@ -717,13 +717,17 @@
     :pswitch_2f
     aput-object v6, v8, v7
 
-    const/16 v7, 0x31
+    const/16 v6, 0x31
 
-    const-string v6, "wu\\@Yo\u007fJ\u0001Qe5[\u001bJrtJ@Qu~UAHitL\u0001"
+    const-string v0, "\u000b)]ip\u001f0U"
 
-    const/16 v0, 0x30
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v4
 
     goto/16 :goto_0
 
@@ -732,7 +736,7 @@
 
     const/16 v7, 0x32
 
-    const-string v6, "btU@Yo\u007fJ\u0001Qe5[\u0001Vuz[\u001aK"
+    const-string v6, "\u0002!Dm<"
 
     const/16 v0, 0x31
 
@@ -745,7 +749,7 @@
 
     const/16 v7, 0x33
 
-    const-string v6, "ezL\u000f\u000f"
+    const-string v6, "\u0002!Dm6"
 
     const/16 v0, 0x32
 
@@ -758,7 +762,7 @@
 
     const/16 v7, 0x34
 
-    const-string v6, "ezL\u000f\u0000"
+    const-string v6, "\u0002!Dm5V"
 
     const/16 v0, 0x33
 
@@ -771,7 +775,7 @@
 
     const/16 v7, 0x35
 
-    const-string v6, "ezL\u000f\n"
+    const-string v6, "\u0002!Dm1"
 
     const/16 v0, 0x34
 
@@ -784,7 +788,7 @@
 
     const/16 v7, 0x36
 
-    const-string v6, "wr]\u0019grsY\u001c]eD[\u0001Vuz[\u001a\u0017cz\\1Rh\u007f\u0002N"
+    const-string v6, "\u0002!Dm6"
 
     const/16 v0, 0x35
 
@@ -797,7 +801,7 @@
 
     const/16 v7, 0x37
 
-    const-string v6, "ezL\u000f\u000b"
+    const-string v6, "$\u0004qU"
 
     const/16 v0, 0x36
 
@@ -808,11 +812,11 @@
     :pswitch_36
     aput-object v6, v8, v7
 
-    const-string v6, "wu\\@Yo\u007fJ\u0001Qe5[\u001bJrtJ@Qu~UA]lzQ\u0002gw)"
+    const/16 v7, 0x38
+
+    const-string v6, "\u0002!Dm5"
 
     const/16 v0, 0x37
-
-    move v7, v5
 
     move-object v8, v9
 
@@ -821,17 +825,13 @@
     :pswitch_37
     aput-object v6, v8, v7
 
-    const/16 v6, 0x39
+    const/16 v7, 0x39
 
-    const-string v0, "ezL\u000f\t"
+    const-string v6, "\u000b)]ip\u001f0U"
 
-    move v7, v6
+    const/16 v0, 0x38
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v5
 
     goto/16 :goto_0
 
@@ -840,7 +840,7 @@
 
     const/16 v7, 0x3a
 
-    const-string v6, "wu\\@Yo\u007fJ\u0001Qe5[\u001bJrtJ@Qu~UAQl"
+    const-string v6, "\u0007$TSw\u000e!Bi`9#_bp\u0007#D#"
 
     const/16 v0, 0x39
 
@@ -853,7 +853,7 @@
 
     const/16 v7, 0x3b
 
-    const-string v6, "ezL\u000f\t"
+    const-string v6, "\u0014!GSg\t.Dmg\u0012\u001fYh"
 
     const/16 v0, 0x3a
 
@@ -866,7 +866,7 @@
 
     const/16 v7, 0x3c
 
-    const-string v6, "ezL\u000f\u000c"
+    const-string v6, "\u0005/]\"e\u0008$Bcm\u0002nScj\u0012!Sxw"
 
     const/16 v0, 0x3b
 
@@ -879,7 +879,7 @@
 
     const/16 v7, 0x3d
 
-    const-string v6, "wr]\u0019KizJ\u000b\\btV\u001aYboY\rLhmQ\u001aA!"
+    const-string v6, "\u0002!Dm0"
 
     const/16 v0, 0x3c
 
@@ -892,7 +892,7 @@
 
     const/16 v7, 0x3e
 
-    const-string v6, "lrU\u000bLxk]"
+    const-string v6, "\u0010.T\"e\u0008$Bcm\u0002nSyv\u0015/B\"m\u0012%]#t\u000e/^i[\u0010r"
 
     const/16 v0, 0x3d
 
@@ -905,7 +905,7 @@
 
     const/16 v7, 0x3f
 
-    const-string v6, "lrU\u000bLxk]"
+    const-string v6, "\u0002!Dm5"
 
     const/16 v0, 0x3e
 
@@ -916,11 +916,11 @@
     :pswitch_3e
     aput-object v6, v8, v7
 
-    const/16 v7, 0x40
-
-    const-string v6, "ezL\u000f\n"
+    const-string v6, "\u0014!GSg\t.Dmg\u0012\u001fYh"
 
     const/16 v0, 0x3f
+
+    move v7, v5
 
     move-object v8, v9
 
@@ -929,13 +929,17 @@
     :pswitch_3f
     aput-object v6, v8, v7
 
-    const/16 v7, 0x41
+    const/16 v6, 0x41
 
-    const-string v6, "ezL\u000f\r"
+    const-string v0, "\u0002!Dm="
 
-    const/16 v0, 0x40
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v5
 
     goto/16 :goto_0
 
@@ -944,7 +948,7 @@
 
     const/16 v7, 0x42
 
-    const-string v6, "ezL\u000f\n"
+    const-string v6, "\u0002!Dm7"
 
     const/16 v0, 0x41
 
@@ -957,7 +961,7 @@
 
     const/16 v7, 0x43
 
-    const-string v6, "wu\\@Yo\u007fJ\u0001Qe5[\u001bJrtJ@Qu~UAV`v]"
+    const-string v6, "\u000b)]ip\u001f0U"
 
     const/16 v0, 0x42
 
@@ -970,7 +974,7 @@
 
     const/16 v7, 0x44
 
-    const-string v6, "szO1[nuL\u000f[uDQ\n"
+    const-string v6, "\u0002!Dm5"
 
     const/16 v0, 0x43
 
@@ -983,7 +987,7 @@
 
     const/16 v7, 0x45
 
-    const-string v6, "ezL\u000f\n"
+    const-string v6, "\u0010)U{[\u0015(Q~a\u0002\u001fScj\u0012!Sx+\u0013.[cs\u0008\u001fScj\u0012!Sx[\u00130Tmp\u0003z"
 
     const/16 v0, 0x44
 
@@ -996,7 +1000,7 @@
 
     const/16 v7, 0x46
 
-    const-string v6, "wu\\@Yo\u007fJ\u0001Qe5[\u001bJrtJ@Qu~UAWs|Y\u0000Q{zL\u0007Wo"
+    const-string v6, "\u0002!Dm6"
 
     const/16 v0, 0x45
 
@@ -1009,7 +1013,7 @@
 
     const/16 v7, 0x47
 
-    const-string v6, "`x[\u0001Moog\u0000Yl~"
+    const-string v6, "\u000b)]ip\u001f0U"
 
     const/16 v0, 0x46
 
@@ -1022,7 +1026,7 @@
 
     const/16 v7, 0x48
 
-    const-string v6, "f~L:Aq~t\u000fZdwj\u000bKnnJ\r]"
+    const-string v6, "\u0010.T\"e\u0008$Bcm\u0002nSyv\u0015/B\"m\u0012%]#a\u000b!Y`[\u0010r"
 
     const/16 v0, 0x47
 
@@ -1035,7 +1039,7 @@
 
     const/16 v7, 0x49
 
-    const-string v6, "wxY\u001c\\"
+    const-string v6, "\u0010)U{[\u0015(Q~a\u0002\u001fScj\u0012!Sx+\u0004!TSn\u000f$\n,"
 
     const/16 v0, 0x48
 
@@ -1048,7 +1052,7 @@
 
     const/16 v7, 0x4a
 
-    const-string v6, ")sL\u001aH}sL\u001aHr2\u0002A\u0017)@d\u0019\u0015\\0d@\u0011*@d\u0019\u0015\\0\u0010Ac]l\u0015N\u0016.$\u001dHYlk\u0003Se+2\u0007"
+    const-string v6, "\u0001%DX}\u0016%|mf\u0003,biw\t5Boa"
 
     const/16 v0, 0x49
 
@@ -1061,7 +1065,7 @@
 
     const/16 v7, 0x4b
 
-    const-string v6, "kr\\"
+    const-string v6, "\u0010)U{l\u00072Uhg\t.Dmg\u0012o\\ce\u0002\u001fScj\u0012!Sx[\u0016(_xk9&Qeh\u0003$\u0010"
 
     const/16 v0, 0x4a
 
@@ -1074,7 +1078,7 @@
 
     const/16 v7, 0x4c
 
-    const-string v6, "wr]\u0019KizJ\u000b\\btV\u001aYbo\u0017\rJdzL\u000b\u0017wxY\u001c\\!rKNVtwTO"
+    const-string v6, "\u0010)U{w\u000e!Bi`\u0005/^xe\u00054\u001fov\u0003!Di+\u0010#Q~`F)C,j\u0013,\\-"
 
     const/16 v0, 0x4b
 
@@ -1087,7 +1091,7 @@
 
     const/16 v7, 0x4d
 
-    const-string v6, "wr]\u0019P`i]\n[nuL\u000f[u4T\u0001YeD[\u0001Vuz[\u001agqsW\u001aW^}Y\u0007Td\u007f\u0018"
+    const-string v6, "\u000c)T"
 
     const/16 v0, 0x4c
 
@@ -1100,7 +1104,7 @@
 
     const/16 v7, 0x4e
 
-    const-string v6, "TIt"
+    const-string v6, "\u0005/^xe\u00054oe`"
 
     const/16 v0, 0x4d
 
@@ -1113,7 +1117,7 @@
 
     const/16 v7, 0x4f
 
-    const-string v6, "btV\u001aYbog\u0007\\"
+    const-string v6, "\u0010#Q~`"
 
     const/16 v0, 0x4e
 
@@ -1126,7 +1130,7 @@
 
     const/16 v7, 0x50
 
-    const-string v6, "d\u007fQ\u001agbtV\u001aYbog\u0007Vgt"
+    const-string v6, "3\u0012|"
 
     const/16 v0, 0x4f
 
@@ -1139,7 +1143,7 @@
 
     const/16 v7, 0x51
 
-    const-string v6, "dvY\u0007T"
+    const-string v6, "\u0003$Yx[\u0005/^xe\u00054oej\u0000/"
 
     const/16 v0, 0x50
 
@@ -1152,7 +1156,7 @@
 
     const/16 v7, 0x52
 
-    const-string v6, "qtK\u001aYm"
+    const-string v6, "N(Dxt\u001a(Dxt\u0015i\n#+N\u001bl{);kl\"-M\u001bl{);k\u0018#_:7\u001d,*I\u007f\u0015*e\u000b0\u000b1YLi\u000f"
 
     const/16 v0, 0x51
 
@@ -1165,7 +1169,7 @@
 
     const/16 v7, 0x53
 
-    const-string v6, "wr]\u0019KizJ\u000b\\btV\u001aYboY\rLhmQ\u001aA.~@\u001a]ohQ\u0001V!"
+    const-string v6, "\n!Icq\u0012\u001fYbb\n!Div"
 
     const/16 v0, 0x52
 
@@ -1178,7 +1182,7 @@
 
     const/16 v7, 0x54
 
-    const-string v6, "qsW\u0000];"
+    const-string v6, "\u0003-Qeh"
 
     const/16 v0, 0x53
 
@@ -1191,7 +1195,7 @@
 
     const/16 v7, 0x55
 
-    const-string v6, "tu[\u0006]bp]\n\u0002"
+    const-string v6, "\u0016/Cxe\n"
 
     const/16 v0, 0x54
 
@@ -1204,7 +1208,7 @@
 
     const/16 v7, 0x56
 
-    const-string v6, "mzA\u0001MuDQ\u0000^mzL\u000bJ"
+    const-string v6, "\u0016(_ba\\"
 
     const/16 v0, 0x55
 
@@ -1217,7 +1221,7 @@
 
     const/16 v7, 0x57
 
-    const-string v6, "onT\u0002"
+    const-string v6, "\u0010)U{w\u000e!Bi`\u0005/^xe\u00054Qop\u000f6Yx}I%Hxa\u00083YcjF"
 
     const/16 v0, 0x56
 
@@ -1230,7 +1234,7 @@
 
     const/16 v7, 0x58
 
-    const-string v6, "mzA\u0001MuDQ\u0000^mzL\u000bJ"
+    const-string v6, "\u0013.Sda\u0005+Uh>"
 
     const/16 v0, 0x57
 
@@ -1243,7 +1247,7 @@
 
     const/16 v7, 0x59
 
-    const-string v6, "TIt"
+    const-string v6, "3\u0012|"
 
     const/16 v0, 0x58
 
@@ -1256,7 +1260,7 @@
 
     const/16 v7, 0x5a
 
-    const-string v6, "mzA\u0001MuDQ\u0000^mzL\u000bJ"
+    const-string v6, "\n!Icq\u0012\u001fYbb\n!Div"
 
     const/16 v0, 0x59
 
@@ -1278,7 +1282,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    move v6, v5
+    move v6, v2
 
     :goto_2
     xor-int/2addr v6, v13
@@ -1294,24 +1298,26 @@
     goto/16 :goto_1
 
     :pswitch_5a
-    move v6, v2
+    const/16 v6, 0x66
 
     goto :goto_2
 
     :pswitch_5b
-    move v6, v4
-
-    goto :goto_2
-
-    :pswitch_5c
     move v6, v5
 
     goto :goto_2
 
-    :pswitch_5d
-    const/16 v6, 0x6e
+    :pswitch_5c
+    move v6, v4
 
     goto :goto_2
+
+    :pswitch_5d
+    move v6, v3
+
+    goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -1424,33 +1430,82 @@
 
     const/4 v0, 0x0
 
-    .line 28
+    .line 149
     invoke-direct {p0}, Lcom/whatsapp/DialogToastActivity;-><init>()V
 
-    .line 315
-    iput-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 262
+    iput-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    .line 189
-    iput-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->o:Z
-
-    .line 241
-    iput-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/graphics/Bitmap;
-
-    .line 155
+    .line 371
     iput-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->p:Z
+
+    .line 124
+    iput-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->n:Landroid/graphics/Bitmap;
+
+    .line 294
+    iput-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->q:Z
 
     return-void
 .end method
 
-.method private a(Le;)Landroid/widget/RelativeLayout;
+.method private a(Ljava/lang/String;)La;
+    .locals 1
+
+    .prologue
+    .line 257
+    :try_start_0
+    invoke-static {p1}, La;->h(Ljava/lang/String;)La;
+    :try_end_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lp; {:try_start_0 .. :try_end_0} :catch_2
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+
+    .line 318
+    :catch_0
+    move-exception v0
+
+    .line 101
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->d(Ljava/lang/Throwable;)V
+
+    .line 58
+    :goto_1
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    .line 213
+    :catch_1
+    move-exception v0
+
+    .line 302
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->c(Ljava/lang/Throwable;)V
+
+    goto :goto_1
+
+    .line 227
+    :catch_2
+    move-exception v0
+
+    .line 108
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->d(Ljava/lang/Throwable;)V
+
+    goto :goto_1
+.end method
+
+.method private a(Lg;)Landroid/widget/RelativeLayout;
     .locals 8
 
     .prologue
     const/4 v4, 0x1
 
-    sget-boolean v3, Lcom/whatsapp/App;->aL:Z
+    sget v3, Lcom/whatsapp/App;->h:I
 
-    .line 56
+    .line 226
     sget-object v0, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
     const/16 v1, 0x5a
@@ -1463,46 +1518,46 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    .line 17
+    .line 345
     const v1, 0x7f0300af
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2, v4}, Lcom/whatsapp/ad_;->a(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-static {v0, v1, v2, v4}, Lcom/whatsapp/t3;->a(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    .line 10
+    .line 254
     :try_start_0
-    new-instance v1, Lcom/whatsapp/rt;
+    new-instance v1, Lcom/whatsapp/a7w;
 
-    invoke-direct {v1, p0, p1}, Lcom/whatsapp/rt;-><init>(Lcom/whatsapp/ViewSharedContactActivity;Le;)V
+    invoke-direct {v1, p0, p1}, Lcom/whatsapp/a7w;-><init>(Lcom/whatsapp/ViewSharedContactActivity;Lg;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 199
-    iget-object v1, p1, Le;->f:Ljava/lang/String;
+    .line 358
+    iget-object v1, p1, Lg;->b:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setTag(Ljava/lang/Object;)V
 
-    .line 320
+    .line 366
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setClickable(Z)V
 
-    .line 5
+    .line 249
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setFocusable(Z)V
 
-    .line 359
+    .line 16
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f02062a
+    const v2, 0x7f020637
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1510,13 +1565,13 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 172
-    iget-boolean v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->p:Z
+    .line 357
+    iget-boolean v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->q:Z
 
     if-eqz v1, :cond_0
 
-    .line 100
-    const v1, 0x7f0b02be
+    .line 154
+    const v1, 0x7f0b02c7
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -1528,9 +1583,9 @@
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 267
+    .line 161
     :cond_0
-    const v1, 0x7f0b02bf
+    const v1, 0x7f0b02c8
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -1538,11 +1593,11 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 323
+    .line 112
     :try_start_1
-    sget-object v2, Li;->e:Ljava/util/HashMap;
+    sget-object v2, La;->e:Ljava/util/HashMap;
 
-    iget-object v4, p1, Le;->e:Ljava/lang/String;
+    iget-object v4, p1, Lg;->e:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
     :try_end_1
@@ -1552,8 +1607,8 @@
 
     if-eqz v2, :cond_1
 
-    .line 58
-    const v2, 0x7f0e0091
+    .line 178
+    const v2, 0x7f0e008b
 
     const/4 v4, 0x1
 
@@ -1562,9 +1617,9 @@
 
     const/4 v5, 0x0
 
-    sget-object v6, Li;->i:Ljava/util/HashMap;
+    sget-object v6, La;->d:Ljava/util/HashMap;
 
-    iget-object v7, p1, Le;->e:Ljava/lang/String;
+    iget-object v7, p1, Lg;->e:Ljava/lang/String;
 
     invoke-virtual {v6, v7}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1580,9 +1635,9 @@
 
     if-eqz v3, :cond_5
 
-    .line 198
+    .line 319
     :cond_1
-    iget-object v2, p1, Le;->e:Ljava/lang/String;
+    iget-object v2, p1, Lg;->e:Ljava/lang/String;
 
     sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
@@ -1598,14 +1653,14 @@
 
     if-eqz v2, :cond_4
 
-    .line 255
-    iget-object v2, p1, Le;->b:Ljava/util/Set;
+    .line 206
+    iget-object v2, p1, Lg;->a:Ljava/util/Set;
 
     invoke-interface {v2}, Ljava/util/Set;->toArray()[Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 125
+    .line 315
     if-eqz v2, :cond_2
 
     :try_start_3
@@ -1615,9 +1670,9 @@
 
     if-lez v2, :cond_2
 
-    .line 275
+    .line 85
     :try_start_4
-    iget-object v2, p1, Le;->b:Ljava/util/Set;
+    iget-object v2, p1, Lg;->a:Ljava/util/Set;
 
     invoke-interface {v2}, Ljava/util/Set;->toArray()[Ljava/lang/Object;
 
@@ -1633,13 +1688,13 @@
 
     if-eqz v3, :cond_3
 
-    .line 168
+    .line 255
     :cond_2
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    const v4, 0x7f0e0468
+    const v4, 0x7f0e0478
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1649,16 +1704,16 @@
     :try_end_4
     .catch Ljava/lang/IllegalArgumentException; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 253
+    .line 115
     :cond_3
     if-eqz v3, :cond_5
 
-    .line 37
+    .line 246
     :cond_4
     :try_start_5
-    sget-object v2, Li;->i:Ljava/util/HashMap;
+    sget-object v2, La;->d:Ljava/util/HashMap;
 
-    iget-object v3, p1, Le;->e:Ljava/lang/String;
+    iget-object v3, p1, Lg;->e:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1670,9 +1725,9 @@
     :try_end_5
     .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_5
 
-    .line 180
+    .line 3
     :cond_5
-    const v1, 0x7f0b02c1
+    const v1, 0x7f0b02ca
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -1680,23 +1735,23 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 194
+    .line 159
     const/16 v2, 0x12c
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setWidth(I)V
 
-    .line 249
+    .line 271
     const/4 v2, 0x2
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setMaxLines(I)V
 
-    .line 288
-    iget-object v2, p1, Le;->f:Ljava/lang/String;
+    .line 151
+    iget-object v2, p1, Lg;->b:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 383
-    const v1, 0x7f0b02c0
+    .line 110
+    const v1, 0x7f0b02c9
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -1706,16 +1761,16 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 178
+    .line 120
     return-object v0
 
-    .line 100
+    .line 154
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 58
+    .line 178
     :catch_1
     move-exception v0
 
@@ -1724,13 +1779,13 @@
     :try_end_6
     .catch Ljava/lang/IllegalArgumentException; {:try_start_6 .. :try_end_6} :catch_2
 
-    .line 198
+    .line 319
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 275
+    .line 85
     :catch_3
     move-exception v0
 
@@ -1739,13 +1794,13 @@
     :try_end_7
     .catch Ljava/lang/IllegalArgumentException; {:try_start_7 .. :try_end_7} :catch_4
 
-    .line 168
+    .line 255
     :catch_4
     move-exception v0
 
     throw v0
 
-    .line 37
+    .line 246
     :catch_5
     move-exception v0
 
@@ -1756,12 +1811,12 @@
     .locals 4
 
     .prologue
+    const/4 v1, 0x0
+
     const/4 v3, 0x1
 
-    .line 157
+    .line 78
     sget-object v0, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v1, 0x56
 
     aget-object v0, v0, v1
 
@@ -1771,37 +1826,37 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    .line 165
+    .line 67
     const v1, 0x7f0300af
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2, v3}, Lcom/whatsapp/ad_;->a(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-static {v0, v1, v2, v3}, Lcom/whatsapp/t3;->a(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    .line 325
+    .line 350
     :try_start_0
     invoke-virtual {v0, p4}, Landroid/widget/RelativeLayout;->setTag(Ljava/lang/Object;)V
 
-    .line 82
+    .line 386
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setClickable(Z)V
 
-    .line 65
+    .line 291
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setFocusable(Z)V
 
-    .line 329
+    .line 75
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f02062a
+    const v2, 0x7f020637
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1809,13 +1864,13 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 242
-    iget-boolean v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->p:Z
+    .line 298
+    iget-boolean v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->q:Z
 
     if-eqz v1, :cond_0
 
-    .line 304
-    const v1, 0x7f0b02be
+    .line 239
+    const v1, 0x7f0b02c7
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -1827,9 +1882,9 @@
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 351
+    .line 176
     :cond_0
-    const v1, 0x7f0b02bf
+    const v1, 0x7f0b02c8
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -1837,11 +1892,11 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 349
+    .line 234
     invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 8
-    const v1, 0x7f0b02c1
+    .line 283
+    const v1, 0x7f0b02ca
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -1849,21 +1904,21 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 204
+    .line 105
     const/16 v2, 0x12c
 
     :try_start_1
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setWidth(I)V
 
-    .line 6
+    .line 68
     const/4 v2, 0x2
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setMaxLines(I)V
 
-    .line 177
+    .line 309
     sget-object v2, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x57
+    const/4 v3, 0x1
 
     aget-object v2, v2, v3
 
@@ -1873,14 +1928,14 @@
 
     if-nez v2, :cond_1
 
-    .line 355
+    .line 50
     invoke-virtual {v1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 346
+    .line 275
     :cond_1
-    const v1, 0x7f0b02c0
+    const v1, 0x7f0b02c9
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -1888,35 +1943,35 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    .line 43
+    .line 320
     invoke-virtual {v1, p3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
-    .line 88
+    .line 381
     return-object v0
 
-    .line 304
+    .line 239
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 355
+    .line 50
     :catch_1
     move-exception v0
 
     throw v0
 .end method
 
-.method private a(Lr;I)Landroid/widget/RelativeLayout;
+.method private a(Lm;I)Landroid/widget/RelativeLayout;
     .locals 5
 
     .prologue
     const/4 v3, 0x1
 
-    .line 59
+    .line 245
     sget-object v0, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x58
+    const/16 v1, 0x53
 
     aget-object v0, v0, v1
 
@@ -1926,39 +1981,39 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    .line 18
+    .line 136
     const v1, 0x7f0300af
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2, v3}, Lcom/whatsapp/ad_;->a(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-static {v0, v1, v2, v3}, Lcom/whatsapp/t3;->a(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    .line 97
+    .line 201
     :try_start_0
-    iget-object v1, p1, Lr;->b:Ljava/lang/String;
+    iget-object v1, p1, Lm;->f:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setTag(Ljava/lang/Object;)V
 
-    .line 258
+    .line 59
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setClickable(Z)V
 
-    .line 171
+    .line 252
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setFocusable(Z)V
 
-    .line 372
+    .line 10
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f02062a
+    const v2, 0x7f020637
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1966,13 +2021,13 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 338
-    iget-boolean v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->p:Z
+    .line 144
+    iget-boolean v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->q:Z
 
     if-eqz v1, :cond_0
 
-    .line 156
-    const v1, 0x7f0b02be
+    .line 195
+    const v1, 0x7f0b02c7
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -1984,9 +2039,9 @@
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 124
+    .line 295
     :cond_0
-    const v1, 0x7f0b02bf
+    const v1, 0x7f0b02c8
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -1994,7 +2049,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 367
+    .line 185
     :try_start_1
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2004,7 +2059,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0e045f
+    const v4, 0x7f0e046f
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2020,15 +2075,15 @@
 
     move-result-object v3
 
-    iget v2, p1, Lr;->a:I
+    iget v2, p1, Lm;->a:I
 
     if-nez v2, :cond_2
 
-    iget-object v2, p1, Lr;->e:Ljava/lang/String;
+    iget-object v2, p1, Lm;->d:Ljava/lang/String;
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 262
+    .line 32
     :goto_0
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2040,7 +2095,7 @@
 
     move-result-object v2
 
-    .line 24
+    .line 158
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -2059,11 +2114,11 @@
 
     move-result-object v2
 
-    .line 347
+    .line 38
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 183
-    const v1, 0x7f0b02c1
+    .line 17
+    const v1, 0x7f0b02ca
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -2071,26 +2126,26 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 78
+    .line 377
     const/16 v2, 0x12c
 
     :try_start_2
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setWidth(I)V
 
-    .line 50
+    .line 331
     const/4 v2, 0x3
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setMaxLines(I)V
 
-    .line 11
-    iget-object v2, p1, Lr;->f:Lp;
+    .line 44
+    iget-object v2, p1, Lm;->b:Ll;
 
     if-eqz v2, :cond_1
 
-    .line 334
-    iget-object v2, p1, Lr;->f:Lp;
+    .line 135
+    iget-object v2, p1, Lm;->b:Ll;
 
-    invoke-virtual {v2}, Lp;->a()Ljava/lang/String;
+    invoke-virtual {v2}, Ll;->b()Ljava/lang/String;
 
     move-result-object v2
 
@@ -2098,9 +2153,9 @@
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 104
+    .line 79
     :cond_1
-    const v1, 0x7f0b02c0
+    const v1, 0x7f0b02c9
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -2108,19 +2163,19 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    .line 285
+    .line 175
     invoke-virtual {v1, p2}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
-    .line 251
+    .line 73
     return-object v0
 
-    .line 156
+    .line 195
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 367
+    .line 185
     :catch_1
     move-exception v0
 
@@ -2129,70 +2184,20 @@
     :cond_2
     const-class v2, Landroid/provider/ContactsContract$CommonDataKinds$StructuredPostal;
 
-    iget v4, p1, Lr;->a:I
+    iget v4, p1, Lm;->a:I
 
-    .line 262
+    .line 32
     invoke-direct {p0, v2, v4}, Lcom/whatsapp/ViewSharedContactActivity;->a(Ljava/lang/Class;I)Ljava/lang/String;
 
     move-result-object v2
 
     goto :goto_0
 
-    .line 334
+    .line 135
     :catch_2
     move-exception v0
 
     throw v0
-.end method
-
-.method private a(Ljava/lang/String;)Li;
-    .locals 1
-
-    .prologue
-    .line 128
-    :try_start_0
-    invoke-static {p1}, Li;->b(Ljava/lang/String;)Li;
-    :try_end_0
-    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Lf; {:try_start_0 .. :try_end_0} :catch_2
-
-    move-result-object v0
-
-    .line 350
-    :goto_0
-    return-object v0
-
-    .line 386
-    :catch_0
-    move-exception v0
-
-    .line 342
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->c(Ljava/lang/Throwable;)V
-
-    .line 350
-    :goto_1
-    const/4 v0, 0x0
-
-    goto :goto_0
-
-    .line 202
-    :catch_1
-    move-exception v0
-
-    .line 186
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/Throwable;)V
-
-    goto :goto_1
-
-    .line 245
-    :catch_2
-    move-exception v0
-
-    .line 339
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->c(Ljava/lang/Throwable;)V
-
-    goto :goto_1
 .end method
 
 .method private a(Ljava/lang/Class;I)Ljava/lang/String;
@@ -2201,11 +2206,11 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 299
+    .line 322
     :try_start_0
     sget-object v0, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x48
+    const/16 v2, 0x4a
 
     aget-object v0, v0, v2
 
@@ -2223,8 +2228,8 @@
 
     move-result-object v0
 
-    .line 107
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 375
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     const/4 v3, 0x0
 
@@ -2259,32 +2264,251 @@
     :goto_0
     return-object v0
 
-    .line 62
+    .line 230
     :catch_0
     move-exception v0
 
-    .line 310
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/Throwable;)V
+    .line 290
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->c(Ljava/lang/Throwable;)V
 
     move-object v0, v1
 
-    .line 52
+    .line 203
     goto :goto_0
 .end method
 
 .method private a()V
+    .locals 4
+
+    .prologue
+    .line 330
+    :try_start_0
+    iget-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->p:Z
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-eqz v0, :cond_0
+
+    .line 111
+    const v0, 0x7f0e00c8
+
+    const/4 v1, 0x1
+
+    :try_start_1
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    iget-object v3, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
+
+    invoke-virtual {v3}, La;->a()Ljava/lang/String;
+
+    move-result-object v3
+
+    aput-object v3, v1, v2
+
+    invoke-virtual {p0, v0, v1}, Lcom/whatsapp/ViewSharedContactActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->f(Ljava/lang/String;)V
+
+    sget v0, Lcom/whatsapp/App;->h:I
+
+    if-eqz v0, :cond_1
+
+    .line 89
+    :cond_0
+    invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->c()V
+
+    .line 109
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->p:Z
+
+    .line 99
+    :cond_1
+    return-void
+
+    .line 111
+    :catch_0
+    move-exception v0
+
+    throw v0
+    :try_end_1
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 109
+    :catch_1
+    move-exception v0
+
+    throw v0
+.end method
+
+.method private a(Landroid/view/View;)V
+    .locals 2
+
+    .prologue
+    .line 384
+    const v0, 0x7f0b02c7
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/CheckBox;
+
+    .line 40
+    :try_start_0
+    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 313
+    const/4 v1, 0x0
+
+    :try_start_1
+    invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
+
+    sget v1, Lcom/whatsapp/App;->h:I
+
+    if-eqz v1, :cond_1
+
+    .line 12
+    :cond_0
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
+
+    .line 289
+    :cond_1
+    return-void
+
+    .line 313
+    :catch_0
+    move-exception v0
+
+    throw v0
+    :try_end_1
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 12
+    :catch_1
+    move-exception v0
+
+    throw v0
+.end method
+
+.method static a(Lcom/whatsapp/ViewSharedContactActivity;)V
+    .locals 0
+
+    .prologue
+    .line 311
+    invoke-direct {p0}, Lcom/whatsapp/ViewSharedContactActivity;->a()V
+
+    return-void
+.end method
+
+.method static a(Lcom/whatsapp/ViewSharedContactActivity;Landroid/view/View;)V
+    .locals 0
+
+    .prologue
+    .line 2
+    invoke-direct {p0, p1}, Lcom/whatsapp/ViewSharedContactActivity;->a(Landroid/view/View;)V
+
+    return-void
+.end method
+
+.method private a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+
+    .prologue
+    .line 84
+    const v0, 0x7f0b0135
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 184
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 25
+    const v0, 0x7f0b0190
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 21
+    :try_start_0
+    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 132
+    const/16 v1, 0x8
+
+    :try_start_1
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+
+    sget v1, Lcom/whatsapp/App;->h:I
+
+    if-eqz v1, :cond_1
+
+    .line 129
+    :cond_0
+    invoke-virtual {v0, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 86
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 280
+    :cond_1
+    return-void
+
+    .line 132
+    :catch_0
+    move-exception v0
+
+    throw v0
+    :try_end_1
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 86
+    :catch_1
+    move-exception v0
+
+    throw v0
+.end method
+
+.method private b()V
     .locals 7
 
     .prologue
-    sget-boolean v2, Lcom/whatsapp/App;->aL:Z
+    sget v2, Lcom/whatsapp/App;->h:I
 
-    .line 108
+    .line 34
     const/4 v0, 0x0
 
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->k:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getChildCount()I
 
@@ -2292,15 +2516,15 @@
 
     if-ge v1, v0, :cond_5
 
-    .line 233
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->k:Landroid/widget/LinearLayout;
+    .line 139
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 228
-    const v0, 0x7f0b02be
+    .line 122
+    const v0, 0x7f0b02c7
 
     invoke-virtual {v3, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2308,7 +2532,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    .line 2
+    .line 171
     :try_start_0
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -2316,14 +2540,14 @@
 
     if-nez v0, :cond_4
 
-    .line 29
+    .line 190
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x55
+    const/16 v5, 0x58
 
     aget-object v4, v4, v5
 
@@ -2341,18 +2565,18 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 219
+    .line 285
     invoke-virtual {v3}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
     instance-of v0, v0, Ljava/lang/String;
     :try_end_0
-    .catch Lf; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lp; {:try_start_0 .. :try_end_0} :catch_0
 
     if-eqz v0, :cond_0
 
-    .line 134
+    .line 240
     :try_start_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2360,7 +2584,7 @@
 
     sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x53
+    const/16 v5, 0x57
 
     aget-object v4, v4, v5
 
@@ -2386,10 +2610,10 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 149
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 341
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->l:Ljava/util/Map;
+    iget-object v0, v0, La;->j:Ljava/util/Map;
 
     invoke-virtual {v3}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -2401,53 +2625,53 @@
 
     invoke-interface {v0, v4}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
-    .catch Lf; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Lp; {:try_start_1 .. :try_end_1} :catch_1
 
     if-eqz v2, :cond_4
 
-    .line 352
+    .line 207
     :cond_0
     :try_start_2
     invoke-virtual {v3}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
-    instance-of v0, v0, Lr;
+    instance-of v0, v0, Lm;
     :try_end_2
-    .catch Lf; {:try_start_2 .. :try_end_2} :catch_2
+    .catch Lp; {:try_start_2 .. :try_end_2} :catch_2
 
     if-eqz v0, :cond_3
 
-    .line 280
+    .line 5
     invoke-virtual {v3}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lr;
+    check-cast v0, Lm;
 
-    .line 116
+    .line 114
     :try_start_3
-    iget-object v4, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v4, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v4, v4, Li;->m:Ljava/util/List;
+    iget-object v4, v4, La;->l:Ljava/util/List;
 
     invoke-interface {v4, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 73
-    iget-object v4, v0, Lr;->c:Ljava/lang/Class;
+    .line 87
+    iget-object v4, v0, Lm;->e:Ljava/lang/Class;
 
     const-class v5, Landroid/provider/ContactsContract$CommonDataKinds$Email;
 
     if-ne v4, v5, :cond_1
 
-    .line 47
+    .line 248
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v5, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v6, 0x51
+    const/16 v6, 0x54
 
     aget-object v5, v5, v6
 
@@ -2469,22 +2693,22 @@
 
     invoke-static {v4}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
     :try_end_3
-    .catch Lf; {:try_start_3 .. :try_end_3} :catch_3
+    .catch Lp; {:try_start_3 .. :try_end_3} :catch_3
 
     if-eqz v2, :cond_2
 
-    .line 370
+    .line 264
     :cond_1
     :try_start_4
-    iget-object v0, v0, Lr;->c:Ljava/lang/Class;
+    iget-object v0, v0, Lm;->e:Ljava/lang/Class;
 
     const-class v4, Landroid/provider/ContactsContract$CommonDataKinds$StructuredPostal;
     :try_end_4
-    .catch Lf; {:try_start_4 .. :try_end_4} :catch_4
+    .catch Lp; {:try_start_4 .. :try_end_4} :catch_4
 
     if-ne v0, v4, :cond_2
 
-    .line 117
+    .line 218
     :try_start_5
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2492,7 +2716,7 @@
 
     sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x52
+    const/16 v5, 0x55
 
     aget-object v4, v4, v5
 
@@ -2514,9 +2738,9 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
     :try_end_5
-    .catch Lf; {:try_start_5 .. :try_end_5} :catch_5
+    .catch Lp; {:try_start_5 .. :try_end_5} :catch_5
 
-    .line 276
+    .line 265
     :cond_2
     if-eqz v2, :cond_4
 
@@ -2526,17 +2750,17 @@
 
     move-result-object v0
 
-    instance-of v0, v0, Lo;
+    instance-of v0, v0, Lh;
     :try_end_6
-    .catch Lf; {:try_start_6 .. :try_end_6} :catch_6
+    .catch Lp; {:try_start_6 .. :try_end_6} :catch_6
 
     if-eqz v0, :cond_4
 
-    .line 379
+    .line 155
     :try_start_7
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->b:Ljava/util/List;
+    iget-object v0, v0, La;->c:Ljava/util/List;
 
     invoke-virtual {v3}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -2544,14 +2768,14 @@
 
     invoke-interface {v0, v4}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 89
+    .line 321
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x54
+    const/16 v5, 0x56
 
     aget-object v4, v4, v5
 
@@ -2573,127 +2797,127 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
     :try_end_7
-    .catch Lf; {:try_start_7 .. :try_end_7} :catch_7
+    .catch Lp; {:try_start_7 .. :try_end_7} :catch_7
 
-    .line 184
+    .line 306
     :cond_4
     add-int/lit8 v0, v1, 0x1
 
     if-eqz v2, :cond_6
 
-    .line 335
+    .line 20
     :cond_5
-    new-instance v0, La;
+    new-instance v0, Ln;
 
-    invoke-direct {v0}, La;-><init>()V
+    invoke-direct {v0}, Ln;-><init>()V
 
-    .line 206
+    .line 388
     :try_start_8
-    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
     const/4 v2, 0x2
 
-    invoke-virtual {v0, p0, v1, v2}, La;->a(Landroid/content/Context;Li;I)Ljava/lang/String;
+    invoke-virtual {v0, p0, v1, v2}, Ln;->a(Landroid/content/Context;La;I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 187
-    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->n:Ljava/lang/String;
+    .line 131
+    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->o:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v2, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v2, v2, Li;->h:Lj;
+    iget-object v2, v2, La;->k:Li;
 
-    iget-object v2, v2, Lj;->a:Ljava/lang/String;
+    iget-object v2, v2, Li;->f:Ljava/lang/String;
 
-    invoke-static {v1, v2, v0}, Lcom/whatsapp/App;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0}, Lcom/whatsapp/App;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 243
+    .line 324
     const/4 v0, -0x1
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->setResult(I)V
 
-    .line 36
+    .line 95
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->finish()V
     :try_end_8
-    .catch Lf; {:try_start_8 .. :try_end_8} :catch_8
+    .catch Lp; {:try_start_8 .. :try_end_8} :catch_8
 
-    .line 305
+    .line 253
     :goto_1
     return-void
 
-    .line 219
+    .line 285
     :catch_0
     move-exception v0
 
     :try_start_9
     throw v0
     :try_end_9
-    .catch Lf; {:try_start_9 .. :try_end_9} :catch_1
+    .catch Lp; {:try_start_9 .. :try_end_9} :catch_1
 
-    .line 149
+    .line 341
     :catch_1
     move-exception v0
 
     :try_start_a
     throw v0
     :try_end_a
-    .catch Lf; {:try_start_a .. :try_end_a} :catch_2
+    .catch Lp; {:try_start_a .. :try_end_a} :catch_2
 
-    .line 352
+    .line 207
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 47
+    .line 248
     :catch_3
     move-exception v0
 
     :try_start_b
     throw v0
     :try_end_b
-    .catch Lf; {:try_start_b .. :try_end_b} :catch_4
+    .catch Lp; {:try_start_b .. :try_end_b} :catch_4
 
-    .line 370
+    .line 264
     :catch_4
     move-exception v0
 
     :try_start_c
     throw v0
     :try_end_c
-    .catch Lf; {:try_start_c .. :try_end_c} :catch_5
+    .catch Lp; {:try_start_c .. :try_end_c} :catch_5
 
-    .line 117
+    .line 218
     :catch_5
     move-exception v0
 
     throw v0
 
-    .line 276
+    .line 265
     :catch_6
     move-exception v0
 
     :try_start_d
     throw v0
     :try_end_d
-    .catch Lf; {:try_start_d .. :try_end_d} :catch_7
+    .catch Lp; {:try_start_d .. :try_end_d} :catch_7
 
-    .line 89
+    .line 321
     :catch_7
     move-exception v0
 
     throw v0
 
-    .line 294
+    .line 202
     :catch_8
     move-exception v0
 
-    .line 296
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/Throwable;)V
+    .line 173
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->c(Ljava/lang/Throwable;)V
 
-    .line 152
-    const v0, 0x7f0e0275
+    .line 91
+    const v0, 0x7f0e027e
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->a(I)V
 
@@ -2705,231 +2929,12 @@
     goto/16 :goto_0
 .end method
 
-.method private a(Landroid/view/View;)V
-    .locals 2
-
-    .prologue
-    .line 96
-    const v0, 0x7f0b02be
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/CheckBox;
-
-    .line 99
-    :try_start_0
-    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
-    :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 291
-    const/4 v1, 0x0
-
-    :try_start_1
-    invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
-
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
-
-    if-eqz v1, :cond_1
-
-    .line 132
-    :cond_0
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
-
-    .line 356
-    :cond_1
-    return-void
-
-    .line 291
-    :catch_0
-    move-exception v0
-
-    throw v0
-    :try_end_1
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 132
-    :catch_1
-    move-exception v0
-
-    throw v0
-.end method
-
-.method static a(Lcom/whatsapp/ViewSharedContactActivity;)V
-    .locals 0
-
-    .prologue
-    .line 303
-    invoke-direct {p0}, Lcom/whatsapp/ViewSharedContactActivity;->a()V
-
-    return-void
-.end method
-
-.method static a(Lcom/whatsapp/ViewSharedContactActivity;Landroid/view/View;)V
-    .locals 0
-
-    .prologue
-    .line 235
-    invoke-direct {p0, p1}, Lcom/whatsapp/ViewSharedContactActivity;->a(Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method private a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 2
-
-    .prologue
-    .line 376
-    const v0, 0x7f0b0133
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
-    .line 278
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 64
-    const v0, 0x7f0b018e
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
-    .line 23
-    :try_start_0
-    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-    :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 126
-    const/16 v1, 0x8
-
-    :try_start_1
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
-
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
-
-    if-eqz v1, :cond_1
-
-    .line 121
-    :cond_0
-    invoke-virtual {v0, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 46
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 14
-    :cond_1
-    return-void
-
-    .line 126
-    :catch_0
-    move-exception v0
-
-    throw v0
-    :try_end_1
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 46
-    :catch_1
-    move-exception v0
-
-    throw v0
-.end method
-
-.method private b()V
-    .locals 4
-
-    .prologue
-    .line 138
-    :try_start_0
-    iget-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->o:Z
-    :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
-
-    if-eqz v0, :cond_0
-
-    .line 234
-    const v0, 0x7f0e00c4
-
-    const/4 v1, 0x1
-
-    :try_start_1
-    new-array v1, v1, [Ljava/lang/Object;
-
-    const/4 v2, 0x0
-
-    iget-object v3, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
-
-    invoke-virtual {v3}, Li;->a()Ljava/lang/String;
-
-    move-result-object v3
-
-    aput-object v3, v1, v2
-
-    invoke-virtual {p0, v0, v1}, Lcom/whatsapp/ViewSharedContactActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->f(Ljava/lang/String;)V
-
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
-
-    if-eqz v0, :cond_1
-
-    .line 281
-    :cond_0
-    invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->d()V
-
-    .line 105
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->o:Z
-
-    .line 75
-    :cond_1
-    return-void
-
-    .line 234
-    :catch_0
-    move-exception v0
-
-    throw v0
-    :try_end_1
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 105
-    :catch_1
-    move-exception v0
-
-    throw v0
-.end method
-
 .method static b(Lcom/whatsapp/ViewSharedContactActivity;)Z
     .locals 1
 
     .prologue
-    .line 70
-    iget-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->p:Z
+    .line 354
+    iget-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->q:Z
 
     return v0
 .end method
@@ -2938,7 +2943,7 @@
     .locals 0
 
     .prologue
-    .line 170
+    .line 8
     invoke-direct {p0}, Lcom/whatsapp/ViewSharedContactActivity;->b()V
 
     return-void
@@ -2946,11 +2951,13 @@
 
 
 # virtual methods
-.method protected d()V
+.method protected c()V
     .locals 15
 
     .prologue
     const/4 v8, 0x0
+
+    const/16 v12, 0x40
 
     const/4 v11, 0x3
 
@@ -2958,217 +2965,217 @@
 
     const/4 v5, 0x0
 
-    sget-boolean v6, Lcom/whatsapp/App;->aL:Z
+    sget v6, Lcom/whatsapp/App;->h:I
 
-    .line 9
+    .line 270
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 55
+    .line 209
     const/4 v1, 0x0
 
-    .line 91
+    .line 263
     sget-object v0, Landroid/provider/ContactsContract$RawContacts;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v0}, Landroid/content/ContentProviderOperation;->newInsert(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v0
 
-    .line 302
+    .line 187
     sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x47
+    const/16 v7, 0xe
 
     aget-object v4, v4, v7
 
     invoke-virtual {v0, v4, v8}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 290
-    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v7, 0x1b
-
-    aget-object v4, v4, v7
-
-    invoke-virtual {v0, v4, v8}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
-
-    .line 331
-    invoke-virtual {v0}, Landroid/content/ContentProviderOperation$Builder;->build()Landroid/content/ContentProviderOperation;
-
-    move-result-object v0
-
-    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 118
-    sget-object v0, Landroid/provider/ContactsContract$Data;->CONTENT_URI:Landroid/net/Uri;
-
-    invoke-static {v0}, Landroid/content/ContentProviderOperation;->newInsert(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
-
-    move-result-object v0
-
-    .line 151
+    .line 140
     sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
     const/16 v7, 0x14
 
     aget-object v4, v4, v7
 
-    invoke-virtual {v0, v4, v5}, Landroid/content/ContentProviderOperation$Builder;->withValueBackReference(Ljava/lang/String;I)Landroid/content/ContentProviderOperation$Builder;
+    invoke-virtual {v0, v4, v8}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 7
-    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v7, 0x28
-
-    aget-object v4, v4, v7
-
-    sget-object v7, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v8, 0x43
-
-    aget-object v7, v7, v8
-
-    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
-
-    .line 371
-    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v7, 0x3b
-
-    aget-object v4, v4, v7
-
-    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
-
-    iget-object v7, v7, Li;->h:Lj;
-
-    iget-object v7, v7, Lj;->a:Ljava/lang/String;
-
-    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
-
-    .line 273
-    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v7, 0x37
-
-    aget-object v4, v4, v7
-
-    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
-
-    iget-object v7, v7, Li;->h:Lj;
-
-    iget-object v7, v7, Lj;->b:Ljava/lang/String;
-
-    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
-
-    .line 42
-    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v7, 0x42
-
-    aget-object v4, v4, v7
-
-    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
-
-    iget-object v7, v7, Li;->h:Lj;
-
-    iget-object v7, v7, Lj;->e:Ljava/lang/String;
-
-    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
-
-    .line 150
-    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v7, 0x17
-
-    aget-object v4, v4, v7
-
-    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
-
-    iget-object v7, v7, Li;->h:Lj;
-
-    iget-object v7, v7, Lj;->h:Ljava/lang/String;
-
-    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
-
-    .line 32
-    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v7, 0xf
-
-    aget-object v4, v4, v7
-
-    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
-
-    iget-object v7, v7, Li;->h:Lj;
-
-    iget-object v7, v7, Lj;->d:Ljava/lang/String;
-
-    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
-
-    .line 330
-    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/4 v7, 0x6
-
-    aget-object v4, v4, v7
-
-    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
-
-    iget-object v7, v7, Li;->h:Lj;
-
-    iget-object v7, v7, Lj;->c:Ljava/lang/String;
-
-    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
-
-    .line 90
-    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v7, 0x33
-
-    aget-object v4, v4, v7
-
-    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
-
-    iget-object v7, v7, Li;->h:Lj;
-
-    iget-object v7, v7, Lj;->g:Ljava/lang/String;
-
-    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
-
-    .line 222
-    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v7, 0xa
-
-    aget-object v4, v4, v7
-
-    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
-
-    iget-object v7, v7, Li;->h:Lj;
-
-    iget-object v7, v7, Lj;->f:Ljava/lang/String;
-
-    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
-
-    .line 354
+    .line 56
     invoke-virtual {v0}, Landroid/content/ContentProviderOperation$Builder;->build()Landroid/content/ContentProviderOperation;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 230
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 338
+    sget-object v0, Landroid/provider/ContactsContract$Data;->CONTENT_URI:Landroid/net/Uri;
 
-    iget-object v0, v0, Li;->b:Ljava/util/List;
+    invoke-static {v0}, Landroid/content/ContentProviderOperation;->newInsert(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
+
+    move-result-object v0
+
+    .line 52
+    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/16 v7, 0xd
+
+    aget-object v4, v4, v7
+
+    invoke-virtual {v0, v4, v5}, Landroid/content/ContentProviderOperation$Builder;->withValueBackReference(Ljava/lang/String;I)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 28
+    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/16 v7, 0x1a
+
+    aget-object v4, v4, v7
+
+    sget-object v7, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/16 v8, 0x12
+
+    aget-object v7, v7, v8
+
+    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 292
+    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/16 v7, 0x30
+
+    aget-object v4, v4, v7
+
+    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
+
+    iget-object v7, v7, La;->k:Li;
+
+    iget-object v7, v7, Li;->f:Ljava/lang/String;
+
+    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 66
+    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/16 v7, 0x1b
+
+    aget-object v4, v4, v7
+
+    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
+
+    iget-object v7, v7, La;->k:Li;
+
+    iget-object v7, v7, Li;->h:Ljava/lang/String;
+
+    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 299
+    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/16 v7, 0x33
+
+    aget-object v4, v4, v7
+
+    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
+
+    iget-object v7, v7, La;->k:Li;
+
+    iget-object v7, v7, Li;->g:Ljava/lang/String;
+
+    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 317
+    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/16 v7, 0x26
+
+    aget-object v4, v4, v7
+
+    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
+
+    iget-object v7, v7, La;->k:Li;
+
+    iget-object v7, v7, Li;->d:Ljava/lang/String;
+
+    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 142
+    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/16 v7, 0x3d
+
+    aget-object v4, v4, v7
+
+    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
+
+    iget-object v7, v7, La;->k:Li;
+
+    iget-object v7, v7, Li;->c:Ljava/lang/String;
+
+    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 70
+    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/4 v7, 0x4
+
+    aget-object v4, v4, v7
+
+    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
+
+    iget-object v7, v7, La;->k:Li;
+
+    iget-object v7, v7, Li;->b:Ljava/lang/String;
+
+    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 222
+    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/4 v7, 0x5
+
+    aget-object v4, v4, v7
+
+    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
+
+    iget-object v7, v7, La;->k:Li;
+
+    iget-object v7, v7, Li;->e:Ljava/lang/String;
+
+    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 188
+    sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/16 v7, 0x41
+
+    aget-object v4, v4, v7
+
+    iget-object v7, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
+
+    iget-object v7, v7, La;->k:Li;
+
+    iget-object v7, v7, Li;->a:Ljava/lang/String;
+
+    invoke-virtual {v0, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 138
+    invoke-virtual {v0}, Landroid/content/ContentProviderOperation$Builder;->build()Landroid/content/ContentProviderOperation;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 189
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
+
+    iget-object v0, v0, La;->c:Ljava/util/List;
 
     if-eqz v0, :cond_2
 
-    .line 123
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 98
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->b:Ljava/util/List;
+    iget-object v0, v0, La;->c:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3185,59 +3192,59 @@
 
     move-result-object v0
 
-    check-cast v0, Lo;
+    check-cast v0, Lh;
 
-    .line 158
+    .line 157
     sget-object v7, Landroid/provider/ContactsContract$Data;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v7}, Landroid/content/ContentProviderOperation;->newInsert(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v7
 
-    .line 92
+    .line 199
     :try_start_0
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x26
+    const/16 v9, 0x9
 
     aget-object v8, v8, v9
 
     invoke-virtual {v7, v8, v1}, Landroid/content/ContentProviderOperation$Builder;->withValueBackReference(Ljava/lang/String;I)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 301
+    .line 11
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x3f
+    const/16 v9, 0x1c
 
     aget-object v8, v8, v9
 
     sget-object v9, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v10, 0xd
+    const/16 v10, 0x3e
 
     aget-object v9, v9, v10
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 260
+    .line 126
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x2b
+    const/16 v9, 0xb
 
     aget-object v8, v8, v9
 
-    iget-object v9, v0, Lo;->a:Ljava/lang/String;
+    iget-object v9, v0, Lh;->d:Ljava/lang/String;
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 223
+    .line 251
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x45
+    const/16 v9, 0x36
 
     aget-object v8, v8, v9
 
-    iget v9, v0, Lo;->d:I
+    iget v9, v0, Lh;->a:I
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3245,25 +3252,25 @@
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 212
-    iget v8, v0, Lo;->d:I
+    .line 369
+    iget v8, v0, Lh;->a:I
 
     if-nez v8, :cond_1
 
-    .line 80
+    .line 385
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x1c
+    const/16 v9, 0x15
 
     aget-object v8, v8, v9
 
-    iget-object v0, v0, Lo;->b:Ljava/lang/String;
+    iget-object v0, v0, Lh;->c:Ljava/lang/String;
 
     invoke-virtual {v7, v8, v0}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 164
+    .line 43
     :cond_1
     invoke-virtual {v7}, Landroid/content/ContentProviderOperation$Builder;->build()Landroid/content/ContentProviderOperation;
 
@@ -3271,21 +3278,21 @@
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 283
+    .line 215
     if-eqz v6, :cond_0
 
-    .line 45
+    .line 223
     :cond_2
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->m:Ljava/util/List;
+    iget-object v0, v0, La;->l:Ljava/util/List;
 
     if-eqz v0, :cond_a
 
-    .line 195
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 379
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->m:Ljava/util/List;
+    iget-object v0, v0, La;->l:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3302,66 +3309,66 @@
 
     move-result-object v0
 
-    check-cast v0, Lr;
+    check-cast v0, Lm;
 
-    .line 137
-    iget-object v7, v0, Lr;->c:Ljava/lang/Class;
+    .line 364
+    iget-object v7, v0, Lm;->e:Ljava/lang/Class;
 
     const-class v8, Landroid/provider/ContactsContract$CommonDataKinds$Email;
 
     if-ne v7, v8, :cond_5
 
-    .line 298
+    .line 81
     sget-object v7, Landroid/provider/ContactsContract$Data;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v7}, Landroid/content/ContentProviderOperation;->newInsert(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v7
 
-    .line 191
+    .line 221
     :try_start_1
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x10
+    const/16 v9, 0x25
 
     aget-object v8, v8, v9
 
     invoke-virtual {v7, v8, v1}, Landroid/content/ContentProviderOperation$Builder;->withValueBackReference(Ljava/lang/String;I)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 147
+    .line 261
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x12
+    const/16 v9, 0x17
 
     aget-object v8, v8, v9
 
     sget-object v9, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v10, 0x38
+    const/16 v10, 0x48
 
     aget-object v9, v9, v10
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 31
+    .line 137
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x39
+    const/16 v9, 0x1d
 
     aget-object v8, v8, v9
 
-    iget-object v9, v0, Lr;->b:Ljava/lang/String;
+    iget-object v9, v0, Lm;->f:Ljava/lang/String;
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 375
+    .line 153
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0xc
+    const/16 v9, 0x8
 
     aget-object v8, v8, v9
 
-    iget v9, v0, Lr;->a:I
+    iget v9, v0, Lm;->a:I
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3369,25 +3376,25 @@
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 159
-    iget v8, v0, Lr;->a:I
+    .line 6
+    iget v8, v0, Lm;->a:I
 
     if-nez v8, :cond_4
 
-    .line 148
+    .line 182
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x19
+    const/16 v9, 0x42
 
     aget-object v8, v8, v9
 
-    iget-object v9, v0, Lr;->e:Ljava/lang/String;
+    iget-object v9, v0, Lm;->d:Ljava/lang/String;
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 293
+    .line 355
     :cond_4
     :try_start_2
     invoke-virtual {v7}, Landroid/content/ContentProviderOperation$Builder;->build()Landroid/content/ContentProviderOperation;
@@ -3398,9 +3405,9 @@
 
     if-eqz v6, :cond_9
 
-    .line 263
+    .line 231
     :cond_5
-    iget-object v7, v0, Lr;->c:Ljava/lang/Class;
+    iget-object v7, v0, Lm;->e:Ljava/lang/Class;
 
     const-class v8, Landroid/provider/ContactsContract$CommonDataKinds$StructuredPostal;
     :try_end_2
@@ -3408,27 +3415,27 @@
 
     if-ne v7, v8, :cond_7
 
-    .line 252
+    .line 329
     sget-object v7, Landroid/provider/ContactsContract$Data;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v7}, Landroid/content/ContentProviderOperation;->newInsert(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v7
 
-    .line 207
+    .line 57
     :try_start_3
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x1a
+    const/16 v9, 0x23
 
     aget-object v8, v8, v9
 
     invoke-virtual {v7, v8, v1}, Landroid/content/ContentProviderOperation$Builder;->withValueBackReference(Ljava/lang/String;I)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 231
+    .line 339
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x29
+    const/16 v9, 0x31
 
     aget-object v8, v8, v9
 
@@ -3440,81 +3447,81 @@
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 127
+    .line 272
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x3c
+    const/16 v9, 0x11
 
     aget-object v8, v8, v9
 
-    iget-object v9, v0, Lr;->f:Lp;
+    iget-object v9, v0, Lm;->b:Ll;
 
-    invoke-virtual {v9}, Lp;->c()Ljava/lang/String;
+    invoke-virtual {v9}, Ll;->a()Ljava/lang/String;
 
     move-result-object v9
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 205
+    .line 30
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x1f
+    const/16 v9, 0x22
 
     aget-object v8, v8, v9
 
-    iget-object v9, v0, Lr;->f:Lp;
+    iget-object v9, v0, Lm;->b:Ll;
 
-    iget-object v9, v9, Lp;->a:Ljava/lang/String;
+    iget-object v9, v9, Ll;->c:Ljava/lang/String;
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 167
+    .line 236
+    sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/16 v9, 0x32
+
+    aget-object v8, v8, v9
+
+    iget-object v9, v0, Lm;->b:Ll;
+
+    iget-object v9, v9, Ll;->f:Ljava/lang/String;
+
+    invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 128
+    sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/4 v9, 0x6
+
+    aget-object v8, v8, v9
+
+    iget-object v9, v0, Lm;->b:Ll;
+
+    iget-object v9, v9, Ll;->b:Ljava/lang/String;
+
+    invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 46
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
     const/16 v9, 0x34
 
     aget-object v8, v8, v9
 
-    iget-object v9, v0, Lr;->f:Lp;
+    iget-object v9, v0, Lm;->b:Ll;
 
-    iget-object v9, v9, Lp;->d:Ljava/lang/String;
-
-    invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
-
-    .line 337
-    sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/4 v9, 0x0
-
-    aget-object v8, v8, v9
-
-    iget-object v9, v0, Lr;->f:Lp;
-
-    iget-object v9, v9, Lp;->f:Ljava/lang/String;
+    iget-object v9, v9, Ll;->e:Ljava/lang/String;
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 332
+    .line 373
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x13
+    const/4 v9, 0x2
 
     aget-object v8, v8, v9
 
-    iget-object v9, v0, Lr;->f:Lp;
-
-    iget-object v9, v9, Lp;->e:Ljava/lang/String;
-
-    invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
-
-    .line 361
-    sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v9, 0x9
-
-    aget-object v8, v8, v9
-
-    iget v9, v0, Lr;->a:I
+    iget v9, v0, Lm;->a:I
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3522,25 +3529,25 @@
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 387
-    iget v8, v0, Lr;->a:I
+    .line 279
+    iget v8, v0, Lm;->a:I
 
     if-nez v8, :cond_6
 
-    .line 216
+    .line 300
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x21
+    const/16 v9, 0x27
 
     aget-object v8, v8, v9
 
-    iget-object v9, v0, Lr;->e:Ljava/lang/String;
+    iget-object v9, v0, Lm;->d:Ljava/lang/String;
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 236
+    .line 370
     :cond_6
     :try_start_4
     invoke-virtual {v7}, Landroid/content/ContentProviderOperation$Builder;->build()Landroid/content/ContentProviderOperation;
@@ -3551,9 +3558,9 @@
 
     if-eqz v6, :cond_9
 
-    .line 378
+    .line 374
     :cond_7
-    iget-object v7, v0, Lr;->c:Ljava/lang/Class;
+    iget-object v7, v0, Lm;->e:Ljava/lang/Class;
 
     const-class v8, Landroid/provider/ContactsContract$CommonDataKinds$Im;
     :try_end_4
@@ -3561,7 +3568,7 @@
 
     if-ne v7, v8, :cond_8
 
-    .line 295
+    .line 19
     :try_start_5
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -3569,7 +3576,7 @@
 
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x3d
+    const/16 v9, 0x2b
 
     aget-object v8, v8, v9
 
@@ -3595,7 +3602,7 @@
 
     if-eqz v6, :cond_9
 
-    .line 240
+    .line 127
     :cond_8
     :try_start_6
     new-instance v7, Ljava/lang/StringBuilder;
@@ -3604,7 +3611,7 @@
 
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/4 v9, 0x1
+    const/16 v9, 0x2f
 
     aget-object v8, v8, v9
 
@@ -3628,22 +3635,22 @@
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_6
 
-    .line 94
+    .line 163
     :cond_9
     if-eqz v6, :cond_3
 
-    .line 33
+    .line 183
     :cond_a
     :try_start_7
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->d:Ljava/util/List;
+    iget-object v0, v0, La;->m:Ljava/util/List;
 
     if-eqz v0, :cond_c
 
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->d:Ljava/util/List;
+    iget-object v0, v0, La;->m:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
     :try_end_7
@@ -3653,50 +3660,50 @@
 
     if-lez v0, :cond_c
 
-    .line 286
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 378
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->d:Ljava/util/List;
+    iget-object v0, v0, La;->m:Ljava/util/List;
 
     invoke-interface {v0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lq;
+    check-cast v0, Lo;
 
-    .line 319
+    .line 348
     sget-object v1, Landroid/provider/ContactsContract$Data;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v1}, Landroid/content/ContentProviderOperation;->newInsert(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v4
 
-    .line 103
+    .line 220
     sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x44
+    const/16 v7, 0x3b
 
     aget-object v1, v1, v7
 
     invoke-virtual {v4, v1, v5}, Landroid/content/ContentProviderOperation$Builder;->withValueBackReference(Ljava/lang/String;I)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 203
+    .line 143
     sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/4 v7, 0x5
+    const/16 v7, 0xc
 
     aget-object v1, v1, v7
 
     sget-object v7, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v8, 0x46
+    const/16 v8, 0x28
 
     aget-object v7, v7, v8
 
     invoke-virtual {v4, v1, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 268
-    iget-object v1, v0, Lq;->b:Ljava/lang/String;
+    .line 266
+    iget-object v1, v0, Lo;->c:Ljava/lang/String;
 
     const-string v7, " "
 
@@ -3704,11 +3711,11 @@
 
     move-result v7
 
-    .line 141
+    .line 277
     if-lez v7, :cond_1b
 
     :try_start_8
-    iget-object v1, v0, Lq;->b:Ljava/lang/String;
+    iget-object v1, v0, Lo;->c:Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -3718,28 +3725,28 @@
 
     move-result-object v1
 
-    .line 214
+    .line 82
     :goto_0
     :try_start_9
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x2c
+    const/16 v9, 0x3f
 
     aget-object v8, v8, v9
 
     invoke-virtual {v4, v8, v1}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 321
+    .line 27
     if-lez v7, :cond_b
 
-    .line 209
+    .line 146
     sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v8, 0x41
+    const/16 v8, 0x35
 
     aget-object v1, v1, v8
 
-    iget-object v8, v0, Lq;->b:Ljava/lang/String;
+    iget-object v8, v0, Lo;->c:Ljava/lang/String;
 
     add-int/lit8 v7, v7, 0x1
 
@@ -3751,37 +3758,35 @@
     :try_end_9
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_9
 
-    .line 265
+    .line 310
     :cond_b
     sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v7, 0xb
+    aget-object v1, v1, v11
 
-    aget-object v1, v1, v7
-
-    iget-object v0, v0, Lq;->c:Ljava/lang/String;
+    iget-object v0, v0, Lo;->b:Ljava/lang/String;
 
     invoke-virtual {v4, v1, v0}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
-    .line 358
+    .line 160
     invoke-virtual {v4}, Landroid/content/ContentProviderOperation$Builder;->build()Landroid/content/ContentProviderOperation;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 120
+    .line 237
     :cond_c
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->l:Ljava/util/Map;
+    iget-object v0, v0, La;->j:Ljava/util/Map;
 
     if-eqz v0, :cond_12
 
-    .line 238
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 361
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->l:Ljava/util/Map;
+    iget-object v0, v0, La;->j:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -3804,10 +3809,10 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 313
+    .line 326
     sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x2f
+    const/16 v7, 0xf
 
     aget-object v1, v1, v7
 
@@ -3817,7 +3822,7 @@
 
     if-eqz v1, :cond_e
 
-    .line 374
+    .line 328
     sget-object v1, Landroid/provider/ContactsContract$Data;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v1}, Landroid/content/ContentProviderOperation;->newInsert(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
@@ -3826,24 +3831,24 @@
 
     sget-object v7, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v8, 0x1d
+    const/16 v8, 0x1e
 
     aget-object v7, v7, v8
 
-    .line 257
+    .line 103
     invoke-virtual {v1, v7, v5}, Landroid/content/ContentProviderOperation$Builder;->withValueBackReference(Ljava/lang/String;I)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v1
 
     sget-object v7, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v8, 0x24
+    const/16 v8, 0xa
 
     aget-object v7, v7, v8
 
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x11
+    const/16 v9, 0x24
 
     aget-object v8, v8, v9
 
@@ -3853,15 +3858,15 @@
 
     sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v8, 0x8
+    const/16 v8, 0x19
 
     aget-object v8, v1, v8
 
-    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v1, v1, Li;->l:Ljava/util/Map;
+    iget-object v1, v1, La;->j:Ljava/util/Map;
 
-    .line 192
+    .line 170
     invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -3872,28 +3877,28 @@
 
     move-result-object v1
 
-    check-cast v1, Le;
+    check-cast v1, Lg;
 
-    iget-object v1, v1, Le;->f:Ljava/lang/String;
+    iget-object v1, v1, Lg;->b:Ljava/lang/String;
 
-    .line 76
+    .line 39
     invoke-virtual {v7, v8, v1}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v1
 
-    .line 185
+    .line 29
     invoke-virtual {v1}, Landroid/content/ContentProviderOperation$Builder;->build()Landroid/content/ContentProviderOperation;
 
     move-result-object v1
 
-    .line 16
+    .line 77
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 368
+    .line 278
     :cond_e
     sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x25
+    const/16 v7, 0x37
 
     aget-object v1, v1, v7
 
@@ -3903,7 +3908,7 @@
 
     if-eqz v1, :cond_f
 
-    .line 266
+    .line 260
     sget-object v1, Landroid/provider/ContactsContract$Data;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v1}, Landroid/content/ContentProviderOperation;->newInsert(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
@@ -3912,24 +3917,24 @@
 
     sget-object v7, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v8, 0x30
+    const/16 v8, 0x1f
 
     aget-object v7, v7, v8
 
-    .line 69
+    .line 281
     invoke-virtual {v1, v7, v5}, Landroid/content/ContentProviderOperation$Builder;->withValueBackReference(Ljava/lang/String;I)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v1
 
     sget-object v7, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/4 v8, 0x7
+    const/16 v8, 0x43
 
     aget-object v7, v7, v8
 
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/4 v9, 0x4
+    const/16 v9, 0x16
 
     aget-object v8, v8, v9
 
@@ -3939,11 +3944,11 @@
 
     sget-object v7, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v8, 0x35
+    const/16 v8, 0x46
 
     aget-object v7, v7, v8
 
-    .line 282
+    .line 191
     invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v8
@@ -3954,15 +3959,15 @@
 
     sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v8, 0x20
+    const/16 v8, 0x38
 
     aget-object v8, v1, v8
 
-    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v1, v1, Li;->l:Ljava/util/Map;
+    iget-object v1, v1, La;->j:Ljava/util/Map;
 
-    .line 373
+    .line 26
     invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -3973,26 +3978,26 @@
 
     move-result-object v1
 
-    check-cast v1, Le;
+    check-cast v1, Lg;
 
-    iget-object v1, v1, Le;->f:Ljava/lang/String;
+    iget-object v1, v1, Lg;->b:Ljava/lang/String;
 
-    .line 256
+    .line 296
     invoke-virtual {v7, v8, v1}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v1
 
-    .line 326
+    .line 305
     invoke-virtual {v1}, Landroid/content/ContentProviderOperation$Builder;->build()Landroid/content/ContentProviderOperation;
 
     move-result-object v1
 
-    .line 153
+    .line 224
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 229
+    .line 225
     :cond_f
-    sget-object v1, Li;->e:Ljava/util/HashMap;
+    sget-object v1, La;->e:Ljava/util/HashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -4000,10 +4005,10 @@
 
     if-eqz v1, :cond_11
 
-    .line 67
-    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 1
+    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v1, v1, Li;->l:Ljava/util/Map;
+    iget-object v1, v1, La;->j:Ljava/util/Map;
 
     invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -4015,9 +4020,9 @@
 
     move-result-object v1
 
-    check-cast v1, Le;
+    check-cast v1, Lg;
 
-    .line 309
+    .line 97
     sget-object v7, Landroid/provider/ContactsContract$Data;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v7}, Landroid/content/ContentProviderOperation;->newInsert(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
@@ -4026,9 +4031,7 @@
 
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0xe
-
-    aget-object v8, v8, v9
+    aget-object v8, v8, v12
 
     invoke-virtual {v7, v8, v5}, Landroid/content/ContentProviderOperation$Builder;->withValueBackReference(Ljava/lang/String;I)Landroid/content/ContentProviderOperation$Builder;
 
@@ -4036,50 +4039,50 @@
 
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x15
+    const/16 v9, 0x39
 
     aget-object v8, v8, v9
 
     sget-object v9, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v10, 0x3a
+    const/16 v10, 0x18
 
     aget-object v9, v9, v10
 
-    .line 51
+    .line 62
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v7
 
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x1e
+    const/16 v9, 0x2e
 
     aget-object v8, v8, v9
 
-    sget-object v9, Li;->e:Ljava/util/HashMap;
+    sget-object v9, La;->e:Ljava/util/HashMap;
 
-    .line 311
+    .line 332
     invoke-virtual {v9, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v9
 
-    .line 226
+    .line 119
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v7
 
     sget-object v8, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/4 v9, 0x2
+    const/16 v9, 0x44
 
     aget-object v8, v8, v9
 
-    iget-object v9, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v9, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v9, v9, Li;->l:Ljava/util/Map;
+    iget-object v9, v9, La;->j:Ljava/util/Map;
 
-    .line 173
+    .line 71
     invoke-interface {v9, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -4090,22 +4093,22 @@
 
     move-result-object v0
 
-    check-cast v0, Le;
+    check-cast v0, Lg;
 
-    iget-object v0, v0, Le;->f:Ljava/lang/String;
+    iget-object v0, v0, Lg;->b:Ljava/lang/String;
 
-    .line 327
+    .line 334
     invoke-virtual {v7, v8, v0}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v0
 
-    .line 221
+    .line 286
     :try_start_a
-    iget-object v7, v1, Le;->b:Ljava/util/Set;
+    iget-object v7, v1, Lg;->a:Ljava/util/Set;
 
     if-eqz v7, :cond_10
 
-    iget-object v7, v1, Le;->b:Ljava/util/Set;
+    iget-object v7, v1, Lg;->a:Ljava/util/Set;
 
     invoke-interface {v7}, Ljava/util/Set;->size()I
     :try_end_a
@@ -4115,15 +4118,15 @@
 
     if-lez v7, :cond_10
 
-    .line 174
+    .line 368
     :try_start_b
     sget-object v7, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v8, 0x40
+    const/4 v8, 0x7
 
     aget-object v7, v7, v8
 
-    iget-object v1, v1, Le;->b:Ljava/util/Set;
+    iget-object v1, v1, Lg;->a:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->toArray()[Ljava/lang/Object;
 
@@ -4137,7 +4140,7 @@
     :try_end_b
     .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_b
 
-    .line 48
+    .line 211
     :cond_10
     invoke-virtual {v0}, Landroid/content/ContentProviderOperation$Builder;->build()Landroid/content/ContentProviderOperation;
 
@@ -4145,23 +4148,23 @@
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 277
+    .line 312
     :cond_11
     if-eqz v6, :cond_d
 
-    .line 4
+    .line 376
     :cond_12
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->n:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_13
 
-    .line 362
+    .line 325
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 19
-    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/graphics/Bitmap;
+    .line 18
+    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->n:Landroid/graphics/Bitmap;
 
     sget-object v4, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
 
@@ -4169,12 +4172,12 @@
 
     invoke-virtual {v1, v4, v7, v0}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 145
+    .line 337
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object v0
 
-    .line 63
+    .line 194
     sget-object v1, Landroid/provider/ContactsContract$Data;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v1}, Landroid/content/ContentProviderOperation;->newInsert(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
@@ -4183,35 +4186,35 @@
 
     sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x23
+    const/16 v7, 0x2c
 
     aget-object v4, v4, v7
 
-    .line 314
+    .line 177
     invoke-virtual {v1, v4, v5}, Landroid/content/ContentProviderOperation$Builder;->withValueBackReference(Ljava/lang/String;I)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v1
 
     sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x3e
+    const/16 v7, 0x47
 
     aget-object v4, v4, v7
 
     sget-object v7, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v8, 0x31
+    const/16 v8, 0x21
 
     aget-object v7, v7, v8
 
-    .line 348
+    .line 314
     invoke-virtual {v1, v4, v7}, Landroid/content/ContentProviderOperation$Builder;->withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v1
 
     sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x2e
+    const/16 v7, 0x10
 
     aget-object v4, v4, v7
 
@@ -4219,22 +4222,22 @@
 
     move-result-object v0
 
-    .line 35
+    .line 316
     invoke-virtual {v0}, Landroid/content/ContentProviderOperation$Builder;->build()Landroid/content/ContentProviderOperation;
 
     move-result-object v0
 
-    .line 316
+    .line 93
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 131
+    .line 64
     :cond_13
     :try_start_c
-    sget-object v0, Lcom/whatsapp/App;->aW:Landroid/content/ContentResolver;
+    sget-object v0, Lcom/whatsapp/App;->H:Landroid/content/ContentResolver;
 
     sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x32
+    const/16 v4, 0x3c
 
     aget-object v1, v1, v4
 
@@ -4242,7 +4245,7 @@
 
     move-result-object v0
 
-    .line 343
+    .line 174
     const/4 v1, 0x0
 
     aget-object v0, v0, v1
@@ -4253,14 +4256,14 @@
 
     move-result-object v7
 
-    .line 176
+    .line 362
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x16
+    const/16 v2, 0x29
 
     aget-object v1, v1, v2
 
@@ -4268,9 +4271,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v1, v1, Li;->h:Lj;
+    iget-object v1, v1, La;->k:Li;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -4278,7 +4281,7 @@
 
     sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x3
+    const/16 v2, 0x2d
 
     aget-object v1, v1, v2
 
@@ -4296,10 +4299,10 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 248
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 210
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->b:Ljava/util/List;
+    iget-object v0, v0, La;->c:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -4318,25 +4321,25 @@
 
     move-result-object v0
 
-    check-cast v0, Lo;
+    check-cast v0, Lh;
 
-    .line 312
-    sget-object v1, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 166
+    sget-object v1, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    iget-object v4, v0, Lo;->a:Ljava/lang/String;
+    iget-object v4, v0, Lh;->d:Ljava/lang/String;
 
-    invoke-virtual {v1, v4}, Lcom/whatsapp/d_;->e(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-virtual {v1, v4}, Lcom/whatsapp/et;->b(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v9
 
-    .line 110
+    .line 196
     invoke-virtual {v9}, Ljava/util/ArrayList;->size()I
 
     move-result v1
 
     if-lez v1, :cond_19
 
-    .line 246
+    .line 179
     invoke-virtual {v9}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v10
@@ -4355,29 +4358,29 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/whatsapp/adg;
+    check-cast v1, Lcom/whatsapp/tc;
 
-    .line 279
-    iget-object v11, v1, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    .line 169
+    iget-object v11, v1, Lcom/whatsapp/tc;->b:Ljava/lang/String;
     :try_end_c
     .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_d
 
     if-eqz v11, :cond_14
 
     :try_start_d
-    iget-object v11, v1, Lcom/whatsapp/adg;->m:Lcom/whatsapp/iv;
+    iget-object v11, v1, Lcom/whatsapp/tc;->s:Lcom/whatsapp/p5;
     :try_end_d
     .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_c
 
     if-eqz v11, :cond_15
 
-    .line 142
+    .line 274
     if-eqz v6, :cond_14
 
-    .line 111
+    .line 219
     :cond_15
     :try_start_e
-    iget-object v11, v1, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v11, v1, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
     const/16 v12, 0x40
 
@@ -4387,12 +4390,12 @@
 
     move-result v11
 
-    .line 81
+    .line 242
     const/4 v12, -0x1
 
     if-ne v11, v12, :cond_16
 
-    .line 227
+    .line 47
     :try_start_f
     new-instance v12, Ljava/lang/StringBuilder;
 
@@ -4400,7 +4403,7 @@
 
     sget-object v13, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v14, 0x36
+    const/16 v14, 0x49
 
     aget-object v13, v13, v14
 
@@ -4408,7 +4411,7 @@
 
     move-result-object v12
 
-    iget-object v13, v1, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v13, v1, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
     invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4422,13 +4425,13 @@
     :try_end_f
     .catch Ljava/lang/Exception; {:try_start_f .. :try_end_f} :catch_e
 
-    .line 87
+    .line 340
     if-eqz v6, :cond_14
 
-    .line 218
+    .line 303
     :cond_16
     :try_start_10
-    iget-object v12, v1, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v12, v1, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
     const/4 v13, 0x0
 
@@ -4438,9 +4441,9 @@
 
     move-result-object v11
 
-    .line 232
+    .line 150
     :try_start_11
-    iget-object v12, v0, Lo;->a:Ljava/lang/String;
+    iget-object v12, v0, Lh;->d:Ljava/lang/String;
 
     invoke-static {v12, v11}, Landroid/telephony/PhoneNumberUtils;->compare(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -4448,14 +4451,14 @@
 
     if-nez v11, :cond_17
 
-    .line 53
+    .line 216
     new-instance v11, Ljava/lang/StringBuilder;
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v12, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v13, 0x22
+    const/16 v13, 0x20
 
     aget-object v12, v12, v13
 
@@ -4463,7 +4466,7 @@
 
     move-result-object v11
 
-    iget-object v12, v1, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v12, v1, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
     invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4477,10 +4480,10 @@
     :try_end_11
     .catch Ljava/lang/Exception; {:try_start_11 .. :try_end_11} :catch_f
 
-    .line 237
+    .line 387
     if-eqz v6, :cond_14
 
-    .line 129
+    .line 335
     :cond_17
     :try_start_12
     new-instance v4, Ljava/lang/StringBuilder;
@@ -4489,7 +4492,7 @@
 
     sget-object v11, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v12, 0x18
+    const/16 v12, 0x45
 
     aget-object v11, v11, v12
 
@@ -4507,52 +4510,52 @@
 
     invoke-static {v4}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 264
-    new-instance v4, Lcom/whatsapp/iv;
+    .line 9
+    new-instance v4, Lcom/whatsapp/p5;
 
     invoke-static {v7}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
     move-result-wide v12
 
-    iget-object v11, v0, Lo;->a:Ljava/lang/String;
+    iget-object v11, v0, Lh;->d:Ljava/lang/String;
 
-    invoke-direct {v4, v12, v13, v11}, Lcom/whatsapp/iv;-><init>(JLjava/lang/String;)V
+    invoke-direct {v4, v12, v13, v11}, Lcom/whatsapp/p5;-><init>(JLjava/lang/String;)V
 
-    iput-object v4, v1, Lcom/whatsapp/adg;->m:Lcom/whatsapp/iv;
+    iput-object v4, v1, Lcom/whatsapp/tc;->s:Lcom/whatsapp/p5;
 
-    .line 250
-    iget-object v4, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 4
+    iget-object v4, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    invoke-virtual {v4}, Li;->a()Ljava/lang/String;
+    invoke-virtual {v4}, La;->a()Ljava/lang/String;
 
     move-result-object v4
 
-    iput-object v4, v1, Lcom/whatsapp/adg;->y:Ljava/lang/String;
+    iput-object v4, v1, Lcom/whatsapp/tc;->v:Ljava/lang/String;
 
-    .line 175
+    .line 96
     const/4 v4, 0x1
 
-    iput-boolean v4, v1, Lcom/whatsapp/adg;->x:Z
+    iput-boolean v4, v1, Lcom/whatsapp/tc;->F:Z
     :try_end_12
     .catch Ljava/lang/Exception; {:try_start_12 .. :try_end_12} :catch_d
 
-    .line 385
+    .line 121
     if-eqz v6, :cond_1e
 
     move v0, v3
 
-    .line 344
+    .line 147
     :goto_3
     if-eqz v0, :cond_18
 
-    .line 179
+    .line 269
     :try_start_13
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    invoke-virtual {v0, v9}, Lcom/whatsapp/d_;->c(Ljava/util/Collection;)V
+    invoke-virtual {v0, v9}, Lcom/whatsapp/et;->e(Ljava/util/Collection;)V
 
-    .line 388
-    sget-object v0, Lcom/whatsapp/App;->i:Landroid/os/Handler;
+    .line 205
+    sget-object v0, Lcom/whatsapp/App;->y:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
@@ -4560,50 +4563,50 @@
     :try_end_13
     .catch Ljava/lang/Exception; {:try_start_13 .. :try_end_13} :catch_10
 
-    .line 196
+    .line 74
     :cond_18
     if-eqz v6, :cond_1d
 
     :cond_19
     move v0, v3
 
-    .line 38
+    .line 288
     :goto_4
     if-eqz v6, :cond_1c
 
-    .line 115
+    .line 359
     :goto_5
     if-eqz v0, :cond_1a
 
-    .line 163
+    .line 363
     :try_start_14
     sget-object v0, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x27
+    const/16 v1, 0x13
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 54
-    new-instance v0, Lcom/whatsapp/ee;
+    .line 102
+    new-instance v0, Lcom/whatsapp/sf;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/ee;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/sf;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
 
-    invoke-static {v0}, Lcom/whatsapp/util/u;->a(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lcom/whatsapp/util/bs;->a(Ljava/lang/Runnable;)V
     :try_end_14
     .catch Ljava/lang/Exception; {:try_start_14 .. :try_end_14} :catch_11
 
-    .line 259
+    .line 123
     :cond_1a
     :goto_6
-    const v0, 0x7f0e00c3
+    const v0, 0x7f0e00c7
 
     new-array v1, v3, [Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v2, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    invoke-virtual {v2}, Li;->a()Ljava/lang/String;
+    invoke-virtual {v2}, La;->a()Ljava/lang/String;
 
     move-result-object v2
 
@@ -4615,34 +4618,34 @@
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->f(Ljava/lang/String;)V
 
-    .line 57
+    .line 212
     return-void
 
-    .line 80
+    .line 385
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 148
+    .line 182
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 263
+    .line 231
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 216
+    .line 300
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 378
+    .line 374
     :catch_4
     move-exception v0
 
@@ -4651,7 +4654,7 @@
     :try_end_15
     .catch Ljava/lang/Exception; {:try_start_15 .. :try_end_15} :catch_5
 
-    .line 295
+    .line 19
     :catch_5
     move-exception v0
 
@@ -4660,36 +4663,36 @@
     :try_end_16
     .catch Ljava/lang/Exception; {:try_start_16 .. :try_end_16} :catch_6
 
-    .line 240
+    .line 127
     :catch_6
     move-exception v0
 
     throw v0
 
-    .line 33
+    .line 183
     :catch_7
     move-exception v0
 
     throw v0
 
-    .line 141
+    .line 277
     :catch_8
     move-exception v0
 
     throw v0
 
     :cond_1b
-    iget-object v1, v0, Lq;->b:Ljava/lang/String;
+    iget-object v1, v0, Lo;->c:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 209
+    .line 146
     :catch_9
     move-exception v0
 
     throw v0
 
-    .line 221
+    .line 286
     :catch_a
     move-exception v0
 
@@ -4698,13 +4701,13 @@
     :try_end_17
     .catch Ljava/lang/Exception; {:try_start_17 .. :try_end_17} :catch_b
 
-    .line 174
+    .line 368
     :catch_b
     move-exception v0
 
     throw v0
 
-    .line 142
+    .line 274
     :catch_c
     move-exception v0
 
@@ -4713,18 +4716,18 @@
     :try_end_18
     .catch Ljava/lang/Exception; {:try_start_18 .. :try_end_18} :catch_d
 
-    .line 215
+    .line 180
     :catch_d
     move-exception v0
 
-    .line 146
+    .line 22
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v2, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x2d
+    const/16 v4, 0x3a
 
     aget-object v2, v2, v4
 
@@ -4748,26 +4751,26 @@
 
     goto :goto_6
 
-    .line 87
+    .line 340
     :catch_e
     move-exception v0
 
     :try_start_19
     throw v0
 
-    .line 237
+    .line 387
     :catch_f
     move-exception v0
 
     throw v0
 
-    .line 388
+    .line 205
     :catch_10
     move-exception v0
 
     throw v0
 
-    .line 54
+    .line 102
     :catch_11
     move-exception v0
 
@@ -4811,13 +4814,13 @@
 
     const/4 v4, 0x0
 
-    sget-boolean v7, Lcom/whatsapp/App;->aL:Z
+    sget v7, Lcom/whatsapp/App;->h:I
 
-    .line 133
+    .line 297
     :try_start_0
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 328
+    .line 167
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getSupportActionBar()Lcom/actionbarsherlock/app/ActionBar;
 
     move-result-object v0
@@ -4826,19 +4829,19 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
-    .line 254
+    .line 33
     const v0, 0x7f0300ae
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->setContentView(I)V
 
-    .line 270
+    .line 250
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
     sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x50
+    const/16 v3, 0x51
 
     aget-object v1, v1, v3
 
@@ -4848,43 +4851,9 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->p:Z
+    iput-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->q:Z
 
-    .line 201
-    invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getIntent()Landroid/content/Intent;
-
-    move-result-object v0
-
-    sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v3, 0x49
-
-    aget-object v1, v1, v3
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:Ljava/lang/String;
-
-    .line 308
-    invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getIntent()Landroid/content/Intent;
-
-    move-result-object v0
-
-    sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
-
-    const/16 v3, 0x4b
-
-    aget-object v1, v1, v3
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->n:Ljava/lang/String;
-
-    .line 79
+    .line 41
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
@@ -4899,14 +4868,48 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->q:Ljava/lang/String;
+    iput-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Ljava/lang/String;
 
-    .line 336
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:Ljava/lang/String;
+    .line 181
+    invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getIntent()Landroid/content/Intent;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/16 v3, 0x4d
+
+    aget-object v1, v1, v3
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->o:Ljava/lang/String;
+
+    .line 152
+    invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getIntent()Landroid/content/Intent;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
+
+    const/16 v3, 0x4e
+
+    aget-object v1, v1, v3
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->k:Ljava/lang/String;
+
+    .line 60
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
-    .line 197
+    .line 7
     sget-object v0, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
     const/16 v1, 0x4c
@@ -4915,28 +4918,27 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 15
-    const v0, 0x7f0e0433
+    .line 365
+    const v0, 0x7f0e0443
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
+    invoke-static {p0, v0, v1}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 289
+    .line 336
     :goto_0
     return-void
 
-    .line 41
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 306
+    .line 134
     :cond_0
-    const v0, 0x7f0b02ba
+    const v0, 0x7f0b02c3
 
     :try_start_1
     invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->findViewById(I)Landroid/view/View;
@@ -4945,42 +4947,42 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->k:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/widget/LinearLayout;
 
-    .line 84
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:Ljava/lang/String;
+    .line 168
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->a(Ljava/lang/String;)Li;
+    invoke-direct {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->a(Ljava/lang/String;)La;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iput-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    .line 40
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 92
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
     if-nez v0, :cond_1
 
-    .line 140
-    const v0, 0x7f0e015b
+    .line 94
+    const v0, 0x7f0e0161
 
-    new-instance v1, Lcom/whatsapp/yj;
+    new-instance v1, Lcom/whatsapp/a09;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/yj;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/a09;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/whatsapp/ViewSharedContactActivity;->a(ILcom/whatsapp/atj;)V
+    invoke-virtual {p0, v0, v1}, Lcom/whatsapp/ViewSharedContactActivity;->a(ILcom/whatsapp/adt;)V
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 188
+    .line 63
     :cond_1
     :try_start_2
-    iget-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->p:Z
+    iget-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->q:Z
 
     if-eqz v0, :cond_3
 
-    .line 182
-    const v0, 0x7f0b02bb
+    .line 125
+    const v0, 0x7f0b02c4
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->findViewById(I)Landroid/view/View;
 
@@ -4990,8 +4992,8 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 114
-    const v0, 0x7f0b02bc
+    .line 241
+    const v0, 0x7f0b02c5
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->findViewById(I)Landroid/view/View;
 
@@ -5001,32 +5003,32 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 20
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 186
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
 
     if-eqz v0, :cond_2
 
-    .line 21
+    .line 162
     :try_start_3
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getBaseContext()Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/whatsapp/ViewSharedContactActivity;->q:Ljava/lang/String;
+    iget-object v3, p0, Lcom/whatsapp/ViewSharedContactActivity;->k:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Li;->a(Landroid/content/Context;Ljava/lang/String;)[B
+    invoke-static {v1, v3}, La;->a(Landroid/content/Context;Ljava/lang/String;)[B
 
     move-result-object v1
 
-    iput-object v1, v0, Li;->j:[B
+    iput-object v1, v0, La;->g:[B
     :try_end_3
     .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 72
+    .line 156
     :cond_2
     :goto_1
     :try_start_4
@@ -5034,15 +5036,15 @@
 
     move-result-object v0
 
-    const v1, 0x7f0e0362
+    const v1, 0x7f0e0370
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/app/ActionBar;->setTitle(I)V
 
     if-eqz v7, :cond_4
 
-    .line 213
+    .line 276
     :cond_3
-    const v0, 0x7f0b02bb
+    const v0, 0x7f0b02c4
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->findViewById(I)Landroid/view/View;
 
@@ -5052,8 +5054,8 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 244
-    const v0, 0x7f0b02bc
+    .line 204
+    const v0, 0x7f0b02c5
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->findViewById(I)Landroid/view/View;
 
@@ -5063,56 +5065,56 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 193
+    .line 327
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getSupportActionBar()Lcom/actionbarsherlock/app/ActionBar;
 
     move-result-object v0
 
-    const v1, 0x7f0e0460
+    const v1, 0x7f0e0470
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/app/ActionBar;->setTitle(I)V
     :try_end_4
     .catch Ljava/lang/IllegalArgumentException; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 60
+    .line 258
     :cond_4
     :try_start_5
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
     :try_end_5
     .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_5
 
     if-eqz v0, :cond_13
 
-    .line 34
+    .line 307
     :try_start_6
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->j:[B
+    iget-object v0, v0, La;->g:[B
     :try_end_6
     .catch Ljava/lang/IllegalArgumentException; {:try_start_6 .. :try_end_6} :catch_6
 
     if-eqz v0, :cond_7
 
     :try_start_7
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->j:[B
+    iget-object v0, v0, La;->g:[B
 
     array-length v0, v0
 
     if-lez v0, :cond_7
 
-    .line 130
-    iget-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->p:Z
+    .line 69
+    iget-boolean v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->q:Z
     :try_end_7
     .catch Ljava/lang/IllegalArgumentException; {:try_start_7 .. :try_end_7} :catch_7
 
     if-nez v0, :cond_5
 
-    .line 269
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 247
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->j:[B
+    iget-object v0, v0, La;->g:[B
 
     invoke-static {v0, v4}, Landroid/backport/util/Base64;->decode([BI)[B
 
@@ -5120,13 +5122,13 @@
 
     if-eqz v7, :cond_6
 
-    .line 365
-    :cond_5
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
-
-    iget-object v6, v0, Li;->j:[B
-
     .line 284
+    :cond_5
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
+
+    iget-object v6, v0, La;->g:[B
+
+    .line 244
     :cond_6
     array-length v0, v6
 
@@ -5134,10 +5136,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/graphics/Bitmap;
+    iput-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->n:Landroid/graphics/Bitmap;
 
-    .line 25
-    new-instance v0, Lcom/whatsapp/adt;
+    .line 343
+    new-instance v0, Lcom/whatsapp/tj;
 
     move-object v1, p0
 
@@ -5145,10 +5147,10 @@
 
     move-object v5, v2
 
-    invoke-direct/range {v0 .. v6}, Lcom/whatsapp/adt;-><init>(Lcom/whatsapp/ViewSharedContactActivity;Lcom/whatsapp/iv;Ljava/lang/String;ILjava/lang/String;[B)V
+    invoke-direct/range {v0 .. v6}, Lcom/whatsapp/tj;-><init>(Lcom/whatsapp/ViewSharedContactActivity;Lcom/whatsapp/p5;Ljava/lang/String;ILjava/lang/String;[B)V
 
-    .line 220
-    const v1, 0x7f0b013f
+    .line 13
+    const v1, 0x7f0b0141
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/ViewSharedContactActivity;->findViewById(I)Landroid/view/View;
 
@@ -5156,47 +5158,47 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    .line 13
+    .line 90
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    const v5, 0x7f0a0057
+    const v5, 0x7f0a0059
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v3
 
-    .line 74
+    .line 107
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
-    const v6, 0x7f0a0056
+    const v6, 0x7f0a0058
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimension(I)F
 
     move-result v5
 
-    .line 112
-    invoke-virtual {v0, v3, v5, v4}, Lcom/whatsapp/adg;->a(IFZ)Landroid/graphics/Bitmap;
+    .line 118
+    invoke-virtual {v0, v3, v5, v4}, Lcom/whatsapp/tc;->a(IFZ)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 169
+    .line 352
     :cond_7
     :try_start_8
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->d:Ljava/util/List;
+    iget-object v0, v0, La;->m:Ljava/util/List;
 
     if-eqz v0, :cond_16
 
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->d:Ljava/util/List;
+    iget-object v0, v0, La;->m:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
     :try_end_8
@@ -5206,55 +5208,55 @@
 
     if-lez v0, :cond_16
 
-    .line 77
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 273
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->d:Ljava/util/List;
-
-    invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lq;
-
-    iget-object v1, v0, Lq;->b:Ljava/lang/String;
-
-    .line 144
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
-
-    iget-object v0, v0, Li;->d:Ljava/util/List;
+    iget-object v0, v0, La;->m:Ljava/util/List;
 
     invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lq;
+    check-cast v0, Lo;
 
-    iget-object v2, v0, Lq;->c:Ljava/lang/String;
+    iget-object v1, v0, Lo;->c:Ljava/lang/String;
+
+    .line 42
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
+
+    iget-object v0, v0, La;->m:Ljava/util/List;
+
+    invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lo;
+
+    iget-object v2, v0, Lo;->b:Ljava/lang/String;
 
     move-object v0, v1
 
-    .line 83
+    .line 200
     :goto_2
-    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v1, v1, Li;->h:Lj;
+    iget-object v1, v1, La;->k:Li;
 
-    iget-object v1, v1, Lj;->a:Ljava/lang/String;
+    iget-object v1, v1, Li;->f:Ljava/lang/String;
 
     invoke-direct {p0, v1, v0, v2}, Lcom/whatsapp/ViewSharedContactActivity;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 247
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 282
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->b:Ljava/util/List;
+    iget-object v0, v0, La;->c:Ljava/util/List;
 
     if-eqz v0, :cond_9
 
-    .line 27
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 356
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->b:Ljava/util/List;
+    iget-object v0, v0, La;->c:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -5271,20 +5273,20 @@
 
     move-result-object v0
 
-    check-cast v0, Lo;
+    check-cast v0, Lh;
 
-    .line 135
+    .line 349
     :try_start_9
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 190
+    .line 172
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    const v4, 0x7f0e0073
+    const v4, 0x7f0e006b
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -5300,15 +5302,15 @@
 
     move-result-object v3
 
-    iget v1, v0, Lo;->d:I
+    iget v1, v0, Lh;->a:I
 
     if-nez v1, :cond_14
 
-    iget-object v1, v0, Lo;->b:Ljava/lang/String;
+    iget-object v1, v0, Lh;->c:Ljava/lang/String;
     :try_end_9
     .catch Ljava/lang/IllegalArgumentException; {:try_start_9 .. :try_end_9} :catch_9
 
-    .line 225
+    .line 148
     :goto_3
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -5318,47 +5320,47 @@
 
     move-result-object v1
 
-    iget-object v3, v0, Lo;->a:Ljava/lang/String;
+    iget-object v3, v0, Lh;->d:Ljava/lang/String;
 
-    const v4, 0x7f02012e
+    const v4, 0x7f020136
 
-    iget-object v5, v0, Lo;->a:Ljava/lang/String;
+    iget-object v5, v0, Lh;->d:Ljava/lang/String;
 
-    .line 143
+    .line 233
     invoke-direct {p0, v1, v3, v4, v5}, Lcom/whatsapp/ViewSharedContactActivity;->a(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Landroid/widget/RelativeLayout;
 
     move-result-object v1
 
-    .line 366
-    new-instance v3, Lcom/whatsapp/en;
+    .line 65
+    new-instance v3, Lcom/whatsapp/rw;
 
-    invoke-direct {v3, p0}, Lcom/whatsapp/en;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
+    invoke-direct {v3, p0}, Lcom/whatsapp/rw;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
 
     invoke-virtual {v1, v3}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 101
+    .line 51
     invoke-virtual {v1, v0}, Landroid/widget/RelativeLayout;->setTag(Ljava/lang/Object;)V
 
-    .line 274
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->k:Landroid/widget/LinearLayout;
+    .line 217
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 322
+    .line 113
     if-eqz v7, :cond_8
 
-    .line 211
+    .line 31
     :cond_9
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->m:Ljava/util/List;
+    iget-object v0, v0, La;->l:Ljava/util/List;
 
     if-eqz v0, :cond_d
 
-    .line 364
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 346
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->m:Ljava/util/List;
+    iget-object v0, v0, La;->l:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -5375,11 +5377,11 @@
 
     move-result-object v0
 
-    check-cast v0, Lr;
+    check-cast v0, Lm;
 
-    .line 61
+    .line 72
     :try_start_a
-    iget-object v1, v0, Lr;->c:Ljava/lang/Class;
+    iget-object v1, v0, Lm;->e:Ljava/lang/Class;
 
     const-class v3, Landroid/provider/ContactsContract$CommonDataKinds$Email;
     :try_end_a
@@ -5387,7 +5389,7 @@
 
     if-ne v1, v3, :cond_b
 
-    .line 382
+    .line 117
     :try_start_b
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -5397,7 +5399,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0e013a
+    const v4, 0x7f0e0140
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -5413,15 +5415,15 @@
 
     move-result-object v3
 
-    iget v1, v0, Lr;->a:I
+    iget v1, v0, Lm;->a:I
 
     if-nez v1, :cond_15
 
-    iget-object v1, v0, Lr;->e:Ljava/lang/String;
+    iget-object v1, v0, Lm;->d:Ljava/lang/String;
     :try_end_b
     .catch Ljava/lang/IllegalArgumentException; {:try_start_b .. :try_end_b} :catch_b
 
-    .line 357
+    .line 104
     :goto_4
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -5431,38 +5433,38 @@
 
     move-result-object v1
 
-    iget-object v3, v0, Lr;->b:Ljava/lang/String;
+    iget-object v3, v0, Lm;->f:Ljava/lang/String;
 
-    const v4, 0x7f02012c
+    const v4, 0x7f020134
 
-    iget-object v5, v0, Lr;->b:Ljava/lang/String;
+    iget-object v5, v0, Lm;->f:Ljava/lang/String;
 
-    .line 44
+    .line 45
     invoke-direct {p0, v1, v3, v4, v5}, Lcom/whatsapp/ViewSharedContactActivity;->a(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Landroid/widget/RelativeLayout;
 
     move-result-object v1
 
-    .line 384
+    .line 293
     :try_start_c
-    new-instance v3, Lcom/whatsapp/ga;
+    new-instance v3, Lcom/whatsapp/m3;
 
-    invoke-direct {v3, p0}, Lcom/whatsapp/ga;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
+    invoke-direct {v3, p0}, Lcom/whatsapp/m3;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
 
     invoke-virtual {v1, v3}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 210
+    .line 267
     invoke-virtual {v1, v0}, Landroid/widget/RelativeLayout;->setTag(Ljava/lang/Object;)V
 
-    .line 66
-    iget-object v3, p0, Lcom/whatsapp/ViewSharedContactActivity;->k:Landroid/widget/LinearLayout;
+    .line 35
+    iget-object v3, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 341
+    .line 238
     if-eqz v7, :cond_c
 
     :cond_b
-    iget-object v1, v0, Lr;->c:Ljava/lang/Class;
+    iget-object v1, v0, Lm;->e:Ljava/lang/Class;
 
     const-class v3, Landroid/provider/ContactsContract$CommonDataKinds$StructuredPostal;
     :try_end_c
@@ -5470,44 +5472,44 @@
 
     if-ne v1, v3, :cond_c
 
-    .line 68
-    const v1, 0x7f02012d
+    .line 116
+    const v1, 0x7f020135
 
-    invoke-direct {p0, v0, v1}, Lcom/whatsapp/ViewSharedContactActivity;->a(Lr;I)Landroid/widget/RelativeLayout;
+    invoke-direct {p0, v0, v1}, Lcom/whatsapp/ViewSharedContactActivity;->a(Lm;I)Landroid/widget/RelativeLayout;
 
     move-result-object v1
 
-    .line 181
-    new-instance v3, Lcom/whatsapp/aa6;
+    .line 259
+    new-instance v3, Lcom/whatsapp/cw;
 
-    invoke-direct {v3, p0}, Lcom/whatsapp/aa6;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
+    invoke-direct {v3, p0}, Lcom/whatsapp/cw;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
 
     invoke-virtual {v1, v3}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 139
+    .line 367
     invoke-virtual {v1, v0}, Landroid/widget/RelativeLayout;->setTag(Ljava/lang/Object;)V
 
-    .line 318
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->k:Landroid/widget/LinearLayout;
+    .line 193
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 208
+    .line 164
     :cond_c
     if-eqz v7, :cond_a
 
-    .line 109
+    .line 130
     :cond_d
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->l:Ljava/util/Map;
+    iget-object v0, v0, La;->j:Ljava/util/Map;
 
     if-eqz v0, :cond_12
 
-    .line 113
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 308
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v0, v0, Li;->l:Ljava/util/Map;
+    iget-object v0, v0, La;->j:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -5530,10 +5532,10 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 30
-    iget-object v2, p0, Lcom/whatsapp/ViewSharedContactActivity;->l:Li;
+    .line 372
+    iget-object v2, p0, Lcom/whatsapp/ViewSharedContactActivity;->m:La;
 
-    iget-object v2, v2, Li;->l:Ljava/util/Map;
+    iget-object v2, v2, La;->j:Ljava/util/Map;
 
     invoke-interface {v2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -5541,7 +5543,7 @@
 
     check-cast v0, Ljava/util/List;
 
-    .line 102
+    .line 54
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -5557,21 +5559,21 @@
 
     move-result-object v0
 
-    check-cast v0, Le;
+    check-cast v0, Lg;
 
-    .line 239
-    invoke-virtual {v0}, Le;->toString()Ljava/lang/String;
+    .line 24
+    invoke-virtual {v0}, Lg;->toString()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-static {v3}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 217
-    iget-object v3, v0, Le;->e:Ljava/lang/String;
+    .line 229
+    iget-object v3, v0, Lg;->e:Ljava/lang/String;
 
     sget-object v4, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x4e
+    const/16 v5, 0x50
 
     aget-object v4, v4, v5
 
@@ -5581,10 +5583,10 @@
 
     if-eqz v3, :cond_10
 
-    .line 369
+    .line 228
     sget-object v3, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x4a
+    const/16 v4, 0x52
 
     aget-object v3, v3, v4
 
@@ -5592,45 +5594,45 @@
 
     move-result-object v3
 
-    .line 360
-    iget-object v4, v0, Le;->f:Ljava/lang/String;
+    .line 268
+    iget-object v4, v0, Lg;->b:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object v3
 
-    .line 154
+    .line 301
     invoke-virtual {v3}, Ljava/util/regex/Matcher;->matches()Z
 
     move-result v3
 
-    .line 106
+    .line 198
     if-nez v3, :cond_10
 
-    .line 95
+    .line 23
     if-eqz v7, :cond_f
 
-    .line 98
+    .line 351
     :cond_10
-    invoke-direct {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->a(Le;)Landroid/widget/RelativeLayout;
+    invoke-direct {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->a(Lg;)Landroid/widget/RelativeLayout;
 
     move-result-object v0
 
-    .line 363
-    iget-object v3, p0, Lcom/whatsapp/ViewSharedContactActivity;->k:Landroid/widget/LinearLayout;
+    .line 49
+    iget-object v3, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v0}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 292
+    .line 333
     if-eqz v7, :cond_f
 
-    .line 271
+    .line 48
     :cond_11
     if-eqz v7, :cond_e
 
-    .line 353
+    .line 192
     :cond_12
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->k:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getChildCount()I
 
@@ -5638,10 +5640,10 @@
 
     if-lez v0, :cond_13
 
-    .line 85
-    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->k:Landroid/widget/LinearLayout;
+    .line 235
+    iget-object v0, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/widget/LinearLayout;
 
-    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->k:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/whatsapp/ViewSharedContactActivity;->j:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1}, Landroid/widget/LinearLayout;->getChildCount()I
 
@@ -5653,8 +5655,8 @@
 
     move-result-object v0
 
-    .line 377
-    const v1, 0x7f0b00d5
+    .line 80
+    const v1, 0x7f0b00d7
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -5662,22 +5664,22 @@
 
     invoke-virtual {v0, v8}, Landroid/view/View;->setVisibility(I)V
 
-    .line 3
+    .line 37
     :cond_13
-    const v0, 0x7f0b024a
+    const v0, 0x7f0b0253
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/ff;
+    new-instance v1, Lcom/whatsapp/w9;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/ff;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/w9;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 272
-    const v0, 0x7f0b01bc
+    .line 360
+    const v0, 0x7f0b01be
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->findViewById(I)Landroid/view/View;
 
@@ -5685,20 +5687,20 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 381
-    const v1, 0x7f0e0361
+    .line 53
+    const v1, 0x7f0e036f
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
-    .line 224
-    new-instance v1, Lcom/whatsapp/sk;
+    .line 243
+    new-instance v1, Lcom/whatsapp/arx;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/sk;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/arx;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 324
-    const v0, 0x7f0b01bd
+    .line 382
+    const v0, 0x7f0b01bf
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ViewSharedContactActivity;->findViewById(I)Landroid/view/View;
 
@@ -5706,35 +5708,35 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 300
-    new-instance v1, Lcom/whatsapp/qp;
+    .line 145
+    new-instance v1, Lcom/whatsapp/kg;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/qp;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/kg;-><init>(Lcom/whatsapp/ViewSharedContactActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     goto/16 :goto_0
 
-    .line 140
+    .line 94
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 20
+    .line 186
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 380
+    .line 197
     :catch_3
     move-exception v0
 
-    .line 12
+    .line 106
     sget-object v0, Lcom/whatsapp/ViewSharedContactActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x4d
+    const/16 v1, 0x4b
 
     aget-object v0, v0, v1
 
@@ -5742,13 +5744,13 @@
 
     goto/16 :goto_1
 
-    .line 193
+    .line 327
     :catch_4
     move-exception v0
 
     throw v0
 
-    .line 34
+    .line 307
     :catch_5
     move-exception v0
 
@@ -5765,19 +5767,19 @@
     :try_end_e
     .catch Ljava/lang/IllegalArgumentException; {:try_start_e .. :try_end_e} :catch_7
 
-    .line 130
+    .line 69
     :catch_7
     move-exception v0
 
     throw v0
 
-    .line 169
+    .line 352
     :catch_8
     move-exception v0
 
     throw v0
 
-    .line 190
+    .line 172
     :catch_9
     move-exception v0
 
@@ -5786,16 +5788,16 @@
     :cond_14
     const-class v1, Landroid/provider/ContactsContract$CommonDataKinds$Phone;
 
-    iget v4, v0, Lo;->d:I
+    iget v4, v0, Lh;->a:I
 
-    .line 225
+    .line 148
     invoke-direct {p0, v1, v4}, Lcom/whatsapp/ViewSharedContactActivity;->a(Ljava/lang/Class;I)Ljava/lang/String;
 
     move-result-object v1
 
     goto/16 :goto_3
 
-    .line 382
+    .line 117
     :catch_a
     move-exception v0
 
@@ -5812,16 +5814,16 @@
     :cond_15
     const-class v1, Landroid/provider/ContactsContract$CommonDataKinds$Email;
 
-    iget v4, v0, Lr;->a:I
+    iget v4, v0, Lm;->a:I
 
-    .line 357
+    .line 104
     invoke-direct {p0, v1, v4}, Lcom/whatsapp/ViewSharedContactActivity;->a(Ljava/lang/Class;I)Ljava/lang/String;
 
     move-result-object v1
 
     goto/16 :goto_4
 
-    .line 341
+    .line 238
     :catch_c
     move-exception v0
 
@@ -5837,7 +5839,7 @@
     .locals 1
 
     .prologue
-    .line 86
+    .line 83
     const/4 v0, 0x0
 
     return v0
@@ -5849,7 +5851,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 39
+    .line 383
     :try_start_0
     invoke-interface {p1}, Lcom/actionbarsherlock/view/MenuItem;->getItemId()I
 
@@ -5857,40 +5859,40 @@
 
     sparse-switch v1, :sswitch_data_0
 
-    .line 261
+    .line 36
     const/4 v0, 0x0
 
-    .line 345
+    .line 344
     :goto_0
     return v0
 
-    .line 161
+    .line 76
     :sswitch_0
-    invoke-direct {p0}, Lcom/whatsapp/ViewSharedContactActivity;->b()V
+    invoke-direct {p0}, Lcom/whatsapp/ViewSharedContactActivity;->a()V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 1
+    .line 14
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 26
+    .line 256
     :sswitch_1
-    invoke-direct {p0}, Lcom/whatsapp/ViewSharedContactActivity;->a()V
+    invoke-direct {p0}, Lcom/whatsapp/ViewSharedContactActivity;->b()V
 
     goto :goto_0
 
-    .line 71
+    .line 304
     :sswitch_2
     invoke-virtual {p0}, Lcom/whatsapp/ViewSharedContactActivity;->finish()V
 
     goto :goto_0
 
-    .line 39
+    .line 383
     :sswitch_data_0
     .sparse-switch
         0x0 -> :sswitch_0
@@ -5903,9 +5905,9 @@
     .locals 0
 
     .prologue
-    .line 162
+    .line 347
     invoke-super {p0}, Lcom/whatsapp/DialogToastActivity;->onResume()V
 
-    .line 307
+    .line 287
     return-void
 .end method

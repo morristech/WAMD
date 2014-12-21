@@ -215,9 +215,9 @@ usługi"</item>
         <item quantity="few">pozostali %d</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Dobrze poszło. Właśnie przywróciliśmy %,d wiadomości.</item>
-        <item quantity="one">Dobrze poszło. Właśnie przywróciliśmy %,d wiadomość.</item>
-        <item quantity="few">Dobrze poszło. Właśnie przywróciliśmy %,d wiadomości.</item>
+        <item quantity="other">Przywrócono %,d wiadomości. Możesz kontynuować.</item>
+        <item quantity="one">Przywrócono %,d wiadomość. Możesz kontynuować.</item>
+        <item quantity="few">Przywrócono %,d wiadomości. Możesz kontynuować.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Wysyłanie %1$d filmów do %2$s</item>

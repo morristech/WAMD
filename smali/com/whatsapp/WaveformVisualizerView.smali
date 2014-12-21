@@ -18,27 +18,27 @@
     .locals 1
 
     .prologue
-    .line 23
+    .line 17
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    .line 10
+    .line 29
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v0, p0, Lcom/whatsapp/WaveformVisualizerView;->a:Landroid/graphics/Rect;
 
-    .line 36
+    .line 7
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lcom/whatsapp/WaveformVisualizerView;->b:Landroid/graphics/Paint;
 
-    .line 5
+    .line 8
     invoke-direct {p0}, Lcom/whatsapp/WaveformVisualizerView;->a()V
 
-    .line 22
+    .line 35
     return-void
 .end method
 
@@ -46,47 +46,47 @@
     .locals 4
 
     .prologue
-    .line 19
+    .line 26
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/whatsapp/WaveformVisualizerView;->d:[B
 
-    .line 33
+    .line 19
     iget-object v0, p0, Lcom/whatsapp/WaveformVisualizerView;->b:Landroid/graphics/Paint;
 
     const/high16 v1, 0x40000000
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 28
+    .line 21
     iget-object v0, p0, Lcom/whatsapp/WaveformVisualizerView;->b:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 25
+    .line 32
     iget-object v0, p0, Lcom/whatsapp/WaveformVisualizerView;->b:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Join;->ROUND:Landroid/graphics/Paint$Join;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeJoin(Landroid/graphics/Paint$Join;)V
 
-    .line 9
+    .line 13
     iget-object v0, p0, Lcom/whatsapp/WaveformVisualizerView;->b:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Cap;->ROUND:Landroid/graphics/Paint$Cap;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeCap(Landroid/graphics/Paint$Cap;)V
 
-    .line 14
+    .line 25
     iget-object v0, p0, Lcom/whatsapp/WaveformVisualizerView;->b:Landroid/graphics/Paint;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 15
+    .line 1
     iget-object v0, p0, Lcom/whatsapp/WaveformVisualizerView;->b:Landroid/graphics/Paint;
 
     const/4 v1, 0x0
@@ -101,7 +101,7 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 34
+    .line 27
     return-void
 .end method
 
@@ -111,13 +111,13 @@
     .locals 0
 
     .prologue
-    .line 29
+    .line 5
     iput-object p1, p0, Lcom/whatsapp/WaveformVisualizerView;->d:[B
 
-    .line 2
+    .line 38
     invoke-virtual {p0}, Lcom/whatsapp/WaveformVisualizerView;->invalidate()V
 
-    .line 32
+    .line 28
     return-void
 .end method
 
@@ -127,21 +127,21 @@
     .prologue
     const/4 v0, 0x0
 
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
+    sget v1, Lcom/whatsapp/App;->h:I
 
     .line 37
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 24
+    .line 9
     iget-object v2, p0, Lcom/whatsapp/WaveformVisualizerView;->d:[B
 
     if-nez v2, :cond_0
 
-    .line 38
+    .line 16
     :goto_0
     return-void
 
-    .line 13
+    .line 14
     :cond_0
     iget-object v2, p0, Lcom/whatsapp/WaveformVisualizerView;->c:[F
 
@@ -159,7 +159,7 @@
 
     if-ge v2, v3, :cond_2
 
-    .line 26
+    .line 34
     :cond_1
     iget-object v2, p0, Lcom/whatsapp/WaveformVisualizerView;->d:[B
 
@@ -171,7 +171,7 @@
 
     iput-object v2, p0, Lcom/whatsapp/WaveformVisualizerView;->c:[F
 
-    .line 20
+    .line 31
     :cond_2
     iget-object v2, p0, Lcom/whatsapp/WaveformVisualizerView;->a:Landroid/graphics/Rect;
 
@@ -185,7 +185,7 @@
 
     invoke-virtual {v2, v0, v0, v3, v4}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 17
+    .line 6
     iget-object v2, p0, Lcom/whatsapp/WaveformVisualizerView;->a:Landroid/graphics/Rect;
 
     iget v3, v2, Landroid/graphics/Rect;->top:I
@@ -211,7 +211,7 @@
 
     iput v3, v2, Landroid/graphics/Rect;->bottom:I
 
-    .line 31
+    .line 10
     iget-object v2, p0, Lcom/whatsapp/WaveformVisualizerView;->a:Landroid/graphics/Rect;
 
     iget v3, v2, Landroid/graphics/Rect;->left:I
@@ -224,7 +224,7 @@
 
     iput v3, v2, Landroid/graphics/Rect;->left:I
 
-    .line 12
+    .line 33
     iget-object v2, p0, Lcom/whatsapp/WaveformVisualizerView;->a:Landroid/graphics/Rect;
 
     iget v3, v2, Landroid/graphics/Rect;->right:I
@@ -237,12 +237,12 @@
 
     iput v3, v2, Landroid/graphics/Rect;->right:I
 
-    .line 4
+    .line 18
     new-instance v2, Landroid/graphics/Path;
 
     invoke-direct {v2}, Landroid/graphics/Path;-><init>()V
 
-    .line 27
+    .line 12
     iget-object v3, p0, Lcom/whatsapp/WaveformVisualizerView;->a:Landroid/graphics/Rect;
 
     iget v3, v3, Landroid/graphics/Rect;->left:I
@@ -255,7 +255,7 @@
 
     iget-object v5, p0, Lcom/whatsapp/WaveformVisualizerView;->a:Landroid/graphics/Rect;
 
-    .line 6
+    .line 36
     invoke-virtual {v5}, Landroid/graphics/Rect;->height()I
 
     move-result v5
@@ -288,10 +288,10 @@
 
     int-to-float v4, v4
 
-    .line 7
+    .line 4
     invoke-virtual {v2, v3, v4}, Landroid/graphics/Path;->moveTo(FF)V
 
-    .line 11
+    .line 22
     :cond_3
     iget-object v3, p0, Lcom/whatsapp/WaveformVisualizerView;->d:[B
 
@@ -301,14 +301,14 @@
 
     if-ge v0, v3, :cond_4
 
-    .line 1
+    .line 2
     iget-object v3, p0, Lcom/whatsapp/WaveformVisualizerView;->a:Landroid/graphics/Rect;
 
     iget v3, v3, Landroid/graphics/Rect;->left:I
 
     iget-object v4, p0, Lcom/whatsapp/WaveformVisualizerView;->a:Landroid/graphics/Rect;
 
-    .line 21
+    .line 3
     invoke-virtual {v4}, Landroid/graphics/Rect;->width()I
 
     move-result v4
@@ -333,7 +333,7 @@
 
     iget-object v5, p0, Lcom/whatsapp/WaveformVisualizerView;->a:Landroid/graphics/Rect;
 
-    .line 3
+    .line 23
     invoke-virtual {v5}, Landroid/graphics/Rect;->height()I
 
     move-result v5
@@ -366,15 +366,15 @@
 
     int-to-float v4, v4
 
-    .line 16
+    .line 24
     invoke-virtual {v2, v3, v4}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 35
+    .line 11
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_3
 
-    .line 8
+    .line 20
     :cond_4
     iget-object v0, p0, Lcom/whatsapp/WaveformVisualizerView;->b:Landroid/graphics/Paint;
 

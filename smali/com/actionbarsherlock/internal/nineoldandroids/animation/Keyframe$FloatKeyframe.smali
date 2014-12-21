@@ -12,18 +12,18 @@
     .locals 1
 
     .prologue
-    .line 15
+    .line 2
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;-><init>()V
 
-    .line 10
+    .line 21
     iput p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->mFraction:F
 
-    .line 18
+    .line 3
     sget-object v0, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->mValueType:Ljava/lang/Class;
 
-    .line 4
+    .line 11
     return-void
 .end method
 
@@ -31,26 +31,26 @@
     .locals 1
 
     .prologue
-    .line 9
+    .line 7
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;-><init>()V
 
-    .line 6
+    .line 4
     iput p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->mFraction:F
 
-    .line 13
+    .line 18
     iput p2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->mValue:F
 
-    .line 20
+    .line 14
     sget-object v0, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->mValueType:Ljava/lang/Class;
 
-    .line 11
+    .line 8
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->mHasValue:Z
 
-    .line 21
+    .line 13
     return-void
 .end method
 
@@ -60,7 +60,7 @@
     .locals 3
 
     .prologue
-    .line 7
+    .line 12
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;
 
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->getFraction()F
@@ -71,14 +71,14 @@
 
     invoke-direct {v0, v1, v2}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;-><init>(FF)V
 
-    .line 12
+    .line 6
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->getInterpolator()Landroid/view/animation/Interpolator;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 16
+    .line 15
     return-object v0
 .end method
 
@@ -86,7 +86,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 20
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->clone()Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;
 
     move-result-object v0
@@ -98,7 +98,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 5
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->clone()Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;
 
     move-result-object v0
@@ -120,7 +120,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 16
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->mValue:F
 
     invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -134,7 +134,7 @@
     .locals 2
 
     .prologue
-    .line 17
+    .line 9
     if-eqz p1, :cond_0
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -145,7 +145,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 14
+    .line 17
     check-cast p1, Ljava/lang/Float;
 
     invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
@@ -154,12 +154,12 @@
 
     iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->mValue:F
 
-    .line 8
+    .line 1
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe;->mHasValue:Z
 
-    .line 5
+    .line 10
     :cond_0
     return-void
 .end method

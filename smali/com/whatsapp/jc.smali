@@ -11,14 +11,14 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/VoipActivity;
+.field final a:Lcom/whatsapp/CallLogActivity;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "4:,U0\';!\u0005s#9)\u0005r7!1J~b%7@c10!"
+    const-string v0, "6wf"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -56,7 +56,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x10
+    const/16 v0, 0x77
 
     :goto_1
     xor-int/2addr v0, v4
@@ -72,24 +72,26 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x42
+    const/16 v0, 0x5c
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x55
+    const/16 v0, 0x1e
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x45
+    const/4 v0, 0x2
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x25
+    const/16 v0, 0x49
 
     goto :goto_1
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -100,12 +102,12 @@
     .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/whatsapp/VoipActivity;)V
+.method constructor <init>(Lcom/whatsapp/CallLogActivity;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/jc;->a:Lcom/whatsapp/VoipActivity;
+    .line 6
+    iput-object p1, p0, Lcom/whatsapp/jc;->a:Lcom/whatsapp/CallLogActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,39 +117,84 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 2
+    .locals 3
 
     .prologue
-    .line 2
-    sget-object v0, Lcom/whatsapp/jc;->z:Ljava/lang/String;
+    .line 7
+    iget-object v0, p0, Lcom/whatsapp/jc;->a:Lcom/whatsapp/CallLogActivity;
 
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-
-    .line 4
-    invoke-static {}, Lcom/whatsapp/Voip;->getCurrentCallState()Lcom/whatsapp/Voip$CallState;
+    invoke-static {v0}, Lcom/whatsapp/CallLogActivity;->a(Lcom/whatsapp/CallLogActivity;)Lcom/whatsapp/tc;
 
     move-result-object v0
 
-    sget-object v1, Lcom/whatsapp/Voip$CallState;->RECEIVED_CALL:Lcom/whatsapp/Voip$CallState;
+    iget-boolean v0, v0, Lcom/whatsapp/tc;->w:Z
 
-    if-ne v0, v1, :cond_0
+    if-eqz v0, :cond_0
+
+    .line 2
+    new-instance v0, Landroid/content/Intent;
+
+    iget-object v1, p0, Lcom/whatsapp/jc;->a:Lcom/whatsapp/CallLogActivity;
+
+    const-class v2, Lcom/whatsapp/ViewProfilePhoto;
+
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 1
+    sget-object v1, Lcom/whatsapp/jc;->z:Ljava/lang/String;
+
+    iget-object v2, p0, Lcom/whatsapp/jc;->a:Lcom/whatsapp/CallLogActivity;
+
+    invoke-static {v2}, Lcom/whatsapp/CallLogActivity;->a(Lcom/whatsapp/CallLogActivity;)Lcom/whatsapp/tc;
+
+    move-result-object v2
+
+    iget-object v2, v2, Lcom/whatsapp/tc;->b:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 8
+    iget-object v1, p0, Lcom/whatsapp/jc;->a:Lcom/whatsapp/CallLogActivity;
+
+    invoke-virtual {v1, v0}, Lcom/whatsapp/CallLogActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 5
-    iget-object v0, p0, Lcom/whatsapp/jc;->a:Lcom/whatsapp/VoipActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/VoipActivity;->d(Lcom/whatsapp/VoipActivity;)V
-
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 6
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/jc;->a:Lcom/whatsapp/VoipActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/VoipActivity;->u(Lcom/whatsapp/VoipActivity;)V
-
     .line 3
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/jc;->a:Lcom/whatsapp/CallLogActivity;
+
+    const v1, 0x7f0e02ad
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, v2}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
+
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/jc;->a:Lcom/whatsapp/CallLogActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/CallLogActivity;->a(Lcom/whatsapp/CallLogActivity;)Lcom/whatsapp/tc;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/whatsapp/tc;->b:Ljava/lang/String;
+
+    iget-object v1, p0, Lcom/whatsapp/jc;->a:Lcom/whatsapp/CallLogActivity;
+
+    invoke-static {v1}, Lcom/whatsapp/CallLogActivity;->a(Lcom/whatsapp/CallLogActivity;)Lcom/whatsapp/tc;
+
+    move-result-object v1
+
+    iget v1, v1, Lcom/whatsapp/tc;->f:I
+
+    const/4 v2, 0x2
+
+    invoke-static {v0, v1, v2}, Lcom/whatsapp/App;->a(Ljava/lang/String;II)V
+
+    .line 9
     :cond_1
     return-void
 .end method

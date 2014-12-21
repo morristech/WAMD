@@ -1,226 +1,130 @@
-.class public Lcom/whatsapp/g4;
-.super Ljava/lang/Object;
+.class Lcom/whatsapp/g4;
+.super Landroid/graphics/drawable/BitmapDrawable;
 .source "g4.java"
 
 
 # instance fields
-.field private a:J
+.field private a:Landroid/graphics/Paint;
 
-.field private b:J
-
-.field private c:J
-
-.field private d:Lcom/whatsapp/protocol/ae;
-
-.field private e:J
-
-.field private f:I
-
-.field private g:Z
-
-.field private h:J
-
-.field private i:J
+.field final b:Lcom/whatsapp/Conversation;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
-
-    .prologue
-    const-wide/16 v0, 0x1
-
-    .line 10
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 21
-    iput-wide v0, p0, Lcom/whatsapp/g4;->c:J
-
-    .line 7
-    iput-wide v0, p0, Lcom/whatsapp/g4;->h:J
-
-    .line 16
-    iput-wide v0, p0, Lcom/whatsapp/g4;->i:J
-
-    return-void
-.end method
-
-.method static a(Lcom/whatsapp/g4;I)I
+.method public constructor <init>(Lcom/whatsapp/Conversation;Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
     .locals 0
-
-    .prologue
-    .line 8
-    iput p1, p0, Lcom/whatsapp/g4;->f:I
-
-    return p1
-.end method
-
-.method static a(Lcom/whatsapp/g4;J)J
-    .locals 1
-
-    .prologue
-    .line 12
-    iput-wide p1, p0, Lcom/whatsapp/g4;->b:J
-
-    return-wide p1
-.end method
-
-.method static a(Lcom/whatsapp/g4;)Lcom/whatsapp/protocol/ae;
-    .locals 1
-
-    .prologue
-    .line 9
-    iget-object v0, p0, Lcom/whatsapp/g4;->d:Lcom/whatsapp/protocol/ae;
-
-    return-object v0
-.end method
-
-.method static a(Lcom/whatsapp/g4;Lcom/whatsapp/protocol/ae;)Lcom/whatsapp/protocol/ae;
-    .locals 0
-
-    .prologue
-    .line 6
-    iput-object p1, p0, Lcom/whatsapp/g4;->d:Lcom/whatsapp/protocol/ae;
-
-    return-object p1
-.end method
-
-.method static a(Lcom/whatsapp/g4;Z)Z
-    .locals 0
-
-    .prologue
-    .line 4
-    iput-boolean p1, p0, Lcom/whatsapp/g4;->g:Z
-
-    return p1
-.end method
-
-.method static b(Lcom/whatsapp/g4;)J
-    .locals 2
-
-    .prologue
-    .line 15
-    iget-wide v0, p0, Lcom/whatsapp/g4;->i:J
-
-    return-wide v0
-.end method
-
-.method static b(Lcom/whatsapp/g4;J)J
-    .locals 1
-
-    .prologue
-    .line 1
-    iput-wide p1, p0, Lcom/whatsapp/g4;->i:J
-
-    return-wide p1
-.end method
-
-.method static c(Lcom/whatsapp/g4;)J
-    .locals 2
-
-    .prologue
-    .line 5
-    iget-wide v0, p0, Lcom/whatsapp/g4;->e:J
-
-    return-wide v0
-.end method
-
-.method static c(Lcom/whatsapp/g4;J)J
-    .locals 1
 
     .prologue
     .line 11
-    iput-wide p1, p0, Lcom/whatsapp/g4;->h:J
+    iput-object p1, p0, Lcom/whatsapp/g4;->b:Lcom/whatsapp/Conversation;
 
-    return-wide p1
-.end method
-
-.method static d(Lcom/whatsapp/g4;)J
-    .locals 2
-
-    .prologue
     .line 14
-    iget-wide v0, p0, Lcom/whatsapp/g4;->h:J
+    invoke-direct {p0, p2, p3}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    return-wide v0
+    .line 15
+    return-void
 .end method
 
-.method static d(Lcom/whatsapp/g4;J)J
-    .locals 1
+
+# virtual methods
+.method public draw(Landroid/graphics/Canvas;)V
+    .locals 4
 
     .prologue
-    .line 19
-    iput-wide p1, p0, Lcom/whatsapp/g4;->e:J
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/g4;->a:Landroid/graphics/Paint;
 
-    return-wide p1
-.end method
+    if-nez v0, :cond_0
 
-.method static e(Lcom/whatsapp/g4;)J
-    .locals 2
-
-    .prologue
-    .line 18
-    iget-wide v0, p0, Lcom/whatsapp/g4;->c:J
-
-    return-wide v0
-.end method
-
-.method static e(Lcom/whatsapp/g4;J)J
-    .locals 1
-
-    .prologue
-    .line 17
-    iput-wide p1, p0, Lcom/whatsapp/g4;->c:J
-
-    return-wide p1
-.end method
-
-.method static f(Lcom/whatsapp/g4;)J
-    .locals 2
-
-    .prologue
-    .line 22
-    iget-wide v0, p0, Lcom/whatsapp/g4;->a:J
-
-    return-wide v0
-.end method
-
-.method static f(Lcom/whatsapp/g4;J)J
-    .locals 1
-
-    .prologue
     .line 2
-    iput-wide p1, p0, Lcom/whatsapp/g4;->a:J
+    new-instance v0, Landroid/graphics/Paint;
 
-    return-wide p1
-.end method
+    invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-.method static g(Lcom/whatsapp/g4;)I
-    .locals 1
+    iput-object v0, p0, Lcom/whatsapp/g4;->a:Landroid/graphics/Paint;
 
-    .prologue
+    .line 7
+    iget-object v0, p0, Lcom/whatsapp/g4;->a:Landroid/graphics/Paint;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+
+    .line 16
+    iget-object v0, p0, Lcom/whatsapp/g4;->a:Landroid/graphics/Paint;
+
+    sget-object v1, Landroid/graphics/Paint$Join;->ROUND:Landroid/graphics/Paint$Join;
+
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeJoin(Landroid/graphics/Paint$Join;)V
+
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/g4;->a:Landroid/graphics/Paint;
+
+    sget-object v1, Landroid/graphics/Paint$Cap;->ROUND:Landroid/graphics/Paint$Cap;
+
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeCap(Landroid/graphics/Paint$Cap;)V
+
+    .line 10
+    iget-object v0, p0, Lcom/whatsapp/g4;->a:Landroid/graphics/Paint;
+
+    const/high16 v1, 0x3f800000
+
+    iget-object v2, p0, Lcom/whatsapp/g4;->b:Lcom/whatsapp/Conversation;
+
+    invoke-static {v2}, Lcom/whatsapp/Conversation;->I(Lcom/whatsapp/Conversation;)Lcom/whatsapp/art;
+
+    move-result-object v2
+
+    iget v2, v2, Lcom/whatsapp/art;->u:F
+
+    mul-float/2addr v1, v2
+
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
+
+    .line 8
+    :cond_0
+    invoke-super {p0, p1}, Landroid/graphics/drawable/BitmapDrawable;->draw(Landroid/graphics/Canvas;)V
+
+    .line 12
+    iget-object v0, p0, Lcom/whatsapp/g4;->b:Lcom/whatsapp/Conversation;
+
+    invoke-virtual {v0}, Lcom/whatsapp/Conversation;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f0a0058
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v0
+
+    .line 9
+    new-instance v1, Landroid/graphics/RectF;
+
+    invoke-virtual {p0}, Lcom/whatsapp/g4;->getBounds()Landroid/graphics/Rect;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2}, Landroid/graphics/RectF;-><init>(Landroid/graphics/Rect;)V
+
     .line 3
-    iget v0, p0, Lcom/whatsapp/g4;->f:I
+    iget-object v2, p0, Lcom/whatsapp/g4;->a:Landroid/graphics/Paint;
 
-    return v0
-.end method
+    sget-object v3, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
-.method static h(Lcom/whatsapp/g4;)Z
-    .locals 1
+    invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .prologue
-    .line 20
-    iget-boolean v0, p0, Lcom/whatsapp/g4;->g:Z
+    .line 1
+    iget-object v2, p0, Lcom/whatsapp/g4;->a:Landroid/graphics/Paint;
 
-    return v0
-.end method
+    const/high16 v3, 0x59000000
 
-.method static i(Lcom/whatsapp/g4;)J
-    .locals 2
+    invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .prologue
     .line 13
-    iget-wide v0, p0, Lcom/whatsapp/g4;->b:J
+    iget-object v2, p0, Lcom/whatsapp/g4;->a:Landroid/graphics/Paint;
 
-    return-wide v0
+    invoke-virtual {p1, v1, v0, v0, v2}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
+
+    .line 5
+    return-void
 .end method

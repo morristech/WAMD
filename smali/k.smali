@@ -1,54 +1,35 @@
-.class Lk;
-.super Ljava/io/BufferedReader;
+.class public Lk;
+.super Ljava/lang/Object;
 .source "k.java"
 
 
 # instance fields
-.field private a:J
+.field public a:Ljava/util/ArrayList;
+
+.field public b:I
+
+.field public c:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Ljava/io/Reader;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .prologue
-    .line 1
-    invoke-direct {p0, p1}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lk;->a:Ljava/util/ArrayList;
+
+    .line 1
+    const/4 v0, 0x1
+
+    iput v0, p0, Lk;->b:I
+
     return-void
-.end method
-
-
-# virtual methods
-.method public readLine()Ljava/lang/String;
-    .locals 8
-
-    .prologue
-    .line 5
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v0
-
-    .line 7
-    invoke-super {p0}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 6
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v4
-
-    .line 2
-    iget-wide v6, p0, Lk;->a:J
-
-    sub-long v0, v4, v0
-
-    add-long/2addr v0, v6
-
-    iput-wide v0, p0, Lk;->a:J
-
-    .line 4
-    return-object v2
 .end method

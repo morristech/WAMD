@@ -40,7 +40,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "1|Wo"
+    const-string v6, "eQ$;=pM4;#p"
 
     const/4 v0, -0x1
 
@@ -78,7 +78,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, ">pZoO+lKo\\:zOo["
+    const-string v0, "vW$;$rW#!.e^+"
 
     move-object v6, v0
 
@@ -93,7 +93,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "<rUfV1t"
+    const-string v0, "eQ37;a"
 
     move-object v6, v0
 
@@ -108,7 +108,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "-vZoV)v]u\\>\u007fU"
+    const-string v0, "j]);"
 
     move-object v6, v0
 
@@ -123,7 +123,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, ">pMcI:"
+    const-string v0, "gS+2$jU"
 
     move-object v6, v0
 
@@ -140,7 +140,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, ">pZoO+lJoQ+"
+    const-string v0, "eQ$;=pM5;.a[1;)"
 
     move v7, v6
 
@@ -157,40 +157,51 @@
 
     sput-object v9, Lcom/whatsapp/Voip$CallState;->z:[Ljava/lang/String;
 
-    .line 6
-    new-instance v0, Lcom/whatsapp/Voip$CallState;
-
-    sget-object v6, Lcom/whatsapp/Voip$CallState;->z:[Ljava/lang/String;
-
-    aget-object v6, v6, v1
-
-    invoke-direct {v0, v6, v1}, Lcom/whatsapp/Voip$CallState;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/whatsapp/Voip$CallState;->NONE:Lcom/whatsapp/Voip$CallState;
-
-    .line 4
-    new-instance v0, Lcom/whatsapp/Voip$CallState;
-
-    sget-object v6, Lcom/whatsapp/Voip$CallState;->z:[Ljava/lang/String;
-
-    aget-object v6, v6, v3
-
-    invoke-direct {v0, v6, v2}, Lcom/whatsapp/Voip$CallState;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/whatsapp/Voip$CallState;->CALLING:Lcom/whatsapp/Voip$CallState;
-
-    .line 1
+    .line 5
     new-instance v0, Lcom/whatsapp/Voip$CallState;
 
     sget-object v6, Lcom/whatsapp/Voip$CallState;->z:[Ljava/lang/String;
 
     aget-object v6, v6, v4
 
+    invoke-direct {v0, v6, v1}, Lcom/whatsapp/Voip$CallState;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/whatsapp/Voip$CallState;->NONE:Lcom/whatsapp/Voip$CallState;
+
+    .line 1
+    new-instance v0, Lcom/whatsapp/Voip$CallState;
+
+    sget-object v6, Lcom/whatsapp/Voip$CallState;->z:[Ljava/lang/String;
+
+    aget-object v6, v6, v5
+
+    invoke-direct {v0, v6, v2}, Lcom/whatsapp/Voip$CallState;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/whatsapp/Voip$CallState;->CALLING:Lcom/whatsapp/Voip$CallState;
+
+    .line 3
+    new-instance v0, Lcom/whatsapp/Voip$CallState;
+
+    sget-object v6, Lcom/whatsapp/Voip$CallState;->z:[Ljava/lang/String;
+
+    aget-object v6, v6, v2
+
     invoke-direct {v0, v6, v3}, Lcom/whatsapp/Voip$CallState;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/whatsapp/Voip$CallState;->RECEIVED_CALL:Lcom/whatsapp/Voip$CallState;
 
-    .line 2
+    .line 7
+    new-instance v0, Lcom/whatsapp/Voip$CallState;
+
+    sget-object v6, Lcom/whatsapp/Voip$CallState;->z:[Ljava/lang/String;
+
+    aget-object v6, v6, v1
+
+    invoke-direct {v0, v6, v4}, Lcom/whatsapp/Voip$CallState;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/whatsapp/Voip$CallState;->ACCEPT_SENT:Lcom/whatsapp/Voip$CallState;
+
+    .line 9
     new-instance v0, Lcom/whatsapp/Voip$CallState;
 
     sget-object v6, Lcom/whatsapp/Voip$CallState;->z:[Ljava/lang/String;
@@ -199,27 +210,16 @@
 
     aget-object v6, v6, v7
 
-    invoke-direct {v0, v6, v4}, Lcom/whatsapp/Voip$CallState;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/whatsapp/Voip$CallState;->ACCEPT_SENT:Lcom/whatsapp/Voip$CallState;
-
-    .line 5
-    new-instance v0, Lcom/whatsapp/Voip$CallState;
-
-    sget-object v6, Lcom/whatsapp/Voip$CallState;->z:[Ljava/lang/String;
-
-    aget-object v6, v6, v2
-
     invoke-direct {v0, v6, v5}, Lcom/whatsapp/Voip$CallState;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/whatsapp/Voip$CallState;->ACCEPT_RECEIVED:Lcom/whatsapp/Voip$CallState;
 
-    .line 8
+    .line 2
     new-instance v0, Lcom/whatsapp/Voip$CallState;
 
     sget-object v6, Lcom/whatsapp/Voip$CallState;->z:[Ljava/lang/String;
 
-    aget-object v6, v6, v5
+    aget-object v6, v6, v3
 
     const/4 v7, 0x5
 
@@ -227,7 +227,7 @@
 
     sput-object v0, Lcom/whatsapp/Voip$CallState;->ACTIVE:Lcom/whatsapp/Voip$CallState;
 
-    .line 10
+    .line 8
     const/4 v0, 0x6
 
     new-array v0, v0, [Lcom/whatsapp/Voip$CallState;
@@ -270,7 +270,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x1f
+    const/16 v6, 0x6d
 
     :goto_2
     xor-int/2addr v6, v13
@@ -286,22 +286,22 @@
     goto/16 :goto_1
 
     :pswitch_5
-    const/16 v6, 0x7f
+    const/16 v6, 0x24
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v6, 0x33
+    const/16 v6, 0x12
 
     goto :goto_2
 
     :pswitch_7
-    const/16 v6, 0x19
+    const/16 v6, 0x67
 
     goto :goto_2
 
     :pswitch_8
-    const/16 v6, 0x2a
+    const/16 v6, 0x7e
 
     goto :goto_2
 
@@ -329,7 +329,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 10
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -339,7 +339,7 @@
     .locals 1
 
     .prologue
-    .line 9
+    .line 6
     const-class v0, Lcom/whatsapp/Voip$CallState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -355,7 +355,7 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 4
     sget-object v0, Lcom/whatsapp/Voip$CallState;->$VALUES:[Lcom/whatsapp/Voip$CallState;
 
     invoke-virtual {v0}, [Lcom/whatsapp/Voip$CallState;->clone()Ljava/lang/Object;

@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +35,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 3
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/DrawerLayout$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Landroid/support/v4/widget/DrawerLayout$SavedState;
 
     move-result-object v0
@@ -57,7 +57,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 4
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/DrawerLayout$SavedState$1;->newArray(I)[Landroid/support/v4/widget/DrawerLayout$SavedState;
 
     move-result-object v0

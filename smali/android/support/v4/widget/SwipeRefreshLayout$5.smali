@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 2
     iput-object p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$5;->this$0:Landroid/support/v4/widget/SwipeRefreshLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -29,7 +29,7 @@
     .locals 2
 
     .prologue
-    .line 6
+    .line 1
     iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout$5;->this$0:Landroid/support/v4/widget/SwipeRefreshLayout;
 
     invoke-static {v0}, Landroid/support/v4/widget/SwipeRefreshLayout;->access$600(Landroid/support/v4/widget/SwipeRefreshLayout;)Z
@@ -45,7 +45,7 @@
 
     invoke-static {v0, v1}, Landroid/support/v4/widget/SwipeRefreshLayout;->access$1000(Landroid/support/v4/widget/SwipeRefreshLayout;Landroid/view/animation/Animation$AnimationListener;)V
 
-    .line 1
+    .line 3
     :cond_0
     return-void
 .end method
@@ -54,7 +54,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 6
     return-void
 .end method
 
@@ -62,6 +62,6 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 5
     return-void
 .end method

@@ -3,32 +3,20 @@
 .source "fb.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnCancelListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/NewGroup;
-
-.field final b:Ljava/util/Vector;
-
-.field final c:Ljava/lang/String;
-
-.field final d:Ljava/lang/String;
+.field final a:Lcom/whatsapp/ContactPicker;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/NewGroup;Ljava/lang/String;Ljava/lang/String;Ljava/util/Vector;)V
+.method constructor <init>(Lcom/whatsapp/ContactPicker;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/fb;->a:Lcom/whatsapp/NewGroup;
-
-    iput-object p2, p0, Lcom/whatsapp/fb;->c:Ljava/lang/String;
-
-    iput-object p3, p0, Lcom/whatsapp/fb;->d:Ljava/lang/String;
-
-    iput-object p4, p0, Lcom/whatsapp/fb;->b:Ljava/util/Vector;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/fb;->a:Lcom/whatsapp/ContactPicker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,56 +25,17 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 6
+.method public onCancel(Landroid/content/DialogInterface;)V
+    .locals 2
 
     .prologue
-    .line 5
-    const-wide/16 v0, 0x12c
-
-    :try_start_0
-    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
-
-    .line 4
-    new-instance v0, Lcom/whatsapp/_v;
-
-    iget-object v2, p0, Lcom/whatsapp/fb;->c:Ljava/lang/String;
-
-    iget-object v3, p0, Lcom/whatsapp/fb;->d:Ljava/lang/String;
-
-    iget-object v4, p0, Lcom/whatsapp/fb;->b:Ljava/util/Vector;
-
-    const/16 v5, 0xe
-
-    move-object v1, p0
-
-    invoke-direct/range {v0 .. v5}, Lcom/whatsapp/_v;-><init>(Lcom/whatsapp/fb;Ljava/lang/String;Ljava/lang/String;Ljava/util/Vector;I)V
-
-    .line 6
-    invoke-static {v0}, Lcom/whatsapp/App;->e(Lcom/whatsapp/_f;)V
-
-    .line 7
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    sget-object v1, Lcom/whatsapp/qv;->GROUP_CREATE_C:Lcom/whatsapp/qv;
-
-    const/4 v2, 0x1
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/h0;->a(Landroid/content/Context;Lcom/whatsapp/qv;Ljava/lang/Integer;)V
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 3
-    :goto_0
-    return-void
-
     .line 1
-    :catch_0
-    move-exception v0
+    iget-object v0, p0, Lcom/whatsapp/fb;->a:Lcom/whatsapp/ContactPicker;
 
-    goto :goto_0
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/ContactPicker;->removeDialog(I)V
+
+    .line 2
+    return-void
 .end method

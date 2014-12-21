@@ -1,53 +1,49 @@
-.class public Lcom/whatsapp/j1;
+.class Lcom/whatsapp/j1;
 .super Ljava/lang/Object;
 .source "j1.java"
 
+# interfaces
+.implements Landroid/preference/Preference$OnPreferenceClickListener;
+
 
 # instance fields
-.field public a:Ljava/lang/String;
-
-.field public b:I
-
-.field public c:Z
-
-.field public d:Z
+.field final a:Lcom/whatsapp/SettingsAccount;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ZZ)V
+.method constructor <init>(Lcom/whatsapp/SettingsAccount;)V
     .locals 0
 
     .prologue
-    .line 4
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/j1;->a:Lcom/whatsapp/SettingsAccount;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/j1;->a:Ljava/lang/String;
-
-    .line 3
-    iput-boolean p2, p0, Lcom/whatsapp/j1;->c:Z
-
-    .line 6
-    iput-boolean p3, p0, Lcom/whatsapp/j1;->d:Z
-
-    .line 5
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Z
-    .locals 2
+.method public onPreferenceClick(Landroid/preference/Preference;)Z
+    .locals 4
 
     .prologue
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/j1;->a:Lcom/whatsapp/SettingsAccount;
+
+    new-instance v1, Landroid/content/Intent;
+
+    iget-object v2, p0, Lcom/whatsapp/j1;->a:Lcom/whatsapp/SettingsAccount;
+
+    const-class v3, Lcom/whatsapp/DeleteAccount;
+
+    invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/SettingsAccount;->startActivity(Landroid/content/Intent;)V
+
     .line 2
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
-
-    iget-object v1, p0, Lcom/whatsapp/j1;->a:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/d_;->g(Ljava/lang/String;)Z
-
-    move-result v0
+    const/4 v0, 0x1
 
     return v0
 .end method

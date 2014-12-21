@@ -29,7 +29,7 @@
 
     new-array v6, v0, [Ljava/lang/String;
 
-    const-string v5, "\u0019;] SP&"
+    const-string v5, "LB\t\u0002E_R\u001e\u001fXdT\u0019\u0010OcT\u0002\u000fCcPPL"
 
     const/4 v0, -0x1
 
@@ -67,7 +67,7 @@
 
     aput-object v5, v7, v6
 
-    const-string v0, "tnK(Hg~\\5U\\x[:B[x@%N[|\u0012f"
+    const-string v0, "!\u0017\u001f\n^h\n"
 
     move-object v5, v0
 
@@ -82,7 +82,7 @@
     :pswitch_0
     aput-object v5, v7, v6
 
-    const-string v0, "Gz[$"
+    const-string v0, "hY\u000e"
 
     move-object v5, v0
 
@@ -97,7 +97,7 @@
     :pswitch_1
     aput-object v5, v7, v6
 
-    const-string v0, "PuL"
+    const-string v0, "\u007fV\u0019\u000e"
 
     move-object v5, v0
 
@@ -114,7 +114,7 @@
 
     const/4 v5, 0x4
 
-    const-string v0, "Gz[$"
+    const-string v0, "\u007fV\u0019\u000e"
 
     move v6, v5
 
@@ -140,7 +140,7 @@
 
     packed-switch v5, :pswitch_data_1
 
-    const/16 v5, 0x27
+    const/16 v5, 0x2a
 
     :goto_2
     xor-int/2addr v5, v12
@@ -156,22 +156,22 @@
     goto :goto_1
 
     :pswitch_4
-    const/16 v5, 0x35
+    const/16 v5, 0xd
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v5, 0x1b
+    const/16 v5, 0x37
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v5, 0x2f
+    const/16 v5, 0x6d
 
     goto :goto_2
 
     :pswitch_7
-    const/16 v5, 0x41
+    const/16 v5, 0x6b
 
     goto :goto_2
 
@@ -196,57 +196,57 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
+    .line 10
     iput-object p1, p0, Lcom/whatsapp/protocol/VoipOptions$AudioRestrict;->encoding:Ljava/lang/String;
 
-    .line 2
+    .line 5
     iput-object p2, p0, Lcom/whatsapp/protocol/VoipOptions$AudioRestrict;->rate:Ljava/lang/Integer;
 
-    .line 10
+    .line 4
     return-void
 .end method
 
-.method public static fromProtocolTreeNode(Lcom/whatsapp/protocol/ax;)Lcom/whatsapp/protocol/VoipOptions$AudioRestrict;
+.method public static fromProtocolTreeNode(Lcom/whatsapp/protocol/ct;)Lcom/whatsapp/protocol/VoipOptions$AudioRestrict;
     .locals 4
 
     .prologue
-    .line 8
+    .line 2
     if-nez p0, :cond_0
 
     .line 1
     const/4 v0, 0x0
 
-    .line 5
+    .line 3
     :goto_0
     return-object v0
 
-    .line 9
+    .line 6
     :cond_0
     sget-object v0, Lcom/whatsapp/protocol/VoipOptions$AudioRestrict;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x3
+    const/4 v1, 0x2
 
     aget-object v0, v0, v1
 
-    invoke-virtual {p0, v0}, Lcom/whatsapp/protocol/ax;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/whatsapp/protocol/ct;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 3
+    .line 11
     sget-object v0, Lcom/whatsapp/protocol/VoipOptions$AudioRestrict;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x2
+    const/4 v2, 0x3
 
     aget-object v0, v0, v2
 
-    invoke-virtual {p0, v0}, Lcom/whatsapp/protocol/ax;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/whatsapp/protocol/ct;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 7
+    .line 8
     sget-object v2, Lcom/whatsapp/protocol/VoipOptions$AudioRestrict;->z:[Ljava/lang/String;
 
     const/4 v3, 0x4
@@ -257,7 +257,7 @@
 
     move-result-object v2
 
-    .line 5
+    .line 3
     new-instance v0, Lcom/whatsapp/protocol/VoipOptions$AudioRestrict;
 
     invoke-direct {v0, v1, v2}, Lcom/whatsapp/protocol/VoipOptions$AudioRestrict;-><init>(Ljava/lang/String;Ljava/lang/Integer;)V
@@ -271,14 +271,14 @@
     .locals 3
 
     .prologue
-    .line 6
+    .line 7
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v1, Lcom/whatsapp/protocol/VoipOptions$AudioRestrict;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     aget-object v1, v1, v2
 
@@ -300,7 +300,7 @@
 
     sget-object v1, Lcom/whatsapp/protocol/VoipOptions$AudioRestrict;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     aget-object v1, v1, v2
 

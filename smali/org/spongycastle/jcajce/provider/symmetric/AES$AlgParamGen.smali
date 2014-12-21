@@ -11,13 +11,13 @@
 .method static constructor <clinit>()V
     .locals 12
 
-    const/16 v1, 0x60
+    const/16 v1, 0x55
 
-    const/16 v4, 0x5c
+    const/16 v3, 0x4d
 
-    const/16 v3, 0x52
+    const/16 v2, 0x21
 
-    const/16 v2, 0x14
+    const/16 v4, 0xc
 
     const/4 v6, 0x0
 
@@ -25,7 +25,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "3W"
+    const-string v0, "\u001bNm\u007f\u0016%Q\"~\u00170EmM\u000f2N?e\u0017=L\u001dm\u00114L(x\u0006\'r=i\u0000uG\"~C\u0014d\u001e,\u00134S,a\u0006!D?,\u00040O(~\u0002!H\"bM"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -54,7 +54,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "!Q2"
+    const-string v0, "\u0014d\u001e"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -83,7 +83,7 @@
 
     const/4 v8, 0x2
 
-    const-string v0, ".{A!)\u0010d\u000e (\u0005pA\u00130\u0007{\u0013;(\u0008y13.\u0001y\u0004&9\u0012G\u00117?@r\u000e |!Q2r,\u0001f\u0000?9\u0014q\u0013r;\u0005z\u0004 =\u0014}\u000e<r"
+    const-string v0, "\u0006b"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -121,7 +121,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    move v0, v4
+    const/16 v0, 0x63
 
     :goto_3
     xor-int/2addr v0, v10
@@ -147,12 +147,12 @@
     goto :goto_3
 
     :pswitch_2
-    const/16 v0, 0x61
+    move v0, v3
 
     goto :goto_3
 
     :pswitch_3
-    move v0, v3
+    move v0, v4
 
     goto :goto_3
 
@@ -163,7 +163,7 @@
 
     packed-switch v0, :pswitch_data_1
 
-    move v0, v4
+    const/16 v0, 0x63
 
     :goto_4
     xor-int/2addr v0, v11
@@ -189,12 +189,12 @@
     goto :goto_4
 
     :pswitch_6
-    const/16 v0, 0x61
+    move v0, v3
 
     goto :goto_4
 
     :pswitch_7
-    move v0, v3
+    move v0, v4
 
     goto :goto_4
 
@@ -205,7 +205,7 @@
 
     packed-switch v0, :pswitch_data_2
 
-    move v0, v4
+    const/16 v0, 0x63
 
     :goto_5
     xor-int/2addr v0, v10
@@ -231,12 +231,12 @@
     goto :goto_5
 
     :pswitch_a
-    const/16 v0, 0x61
+    move v0, v3
 
     goto :goto_5
 
     :pswitch_b
-    move v0, v3
+    move v0, v4
 
     goto :goto_5
 
@@ -271,7 +271,7 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 8
     invoke-direct {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseAlgorithmParameterGenerator;-><init>()V
 
     return-void
@@ -283,18 +283,18 @@
     .locals 4
 
     .prologue
-    .line 9
+    .line 6
     const/16 v0, 0x10
 
     new-array v0, v0, [B
 
-    .line 12
+    .line 11
     :try_start_0
     iget-object v1, p0, Lorg/spongycastle/jcajce/provider/symmetric/AES$AlgParamGen;->random:Ljava/security/SecureRandom;
 
     if-nez v1, :cond_0
 
-    .line 4
+    .line 9
     new-instance v1, Ljava/security/SecureRandom;
 
     invoke-direct {v1}, Ljava/security/SecureRandom;-><init>()V
@@ -319,7 +319,7 @@
 
     sget-object v2, Lorg/spongycastle/jcajce/provider/symmetric/AES$AlgParamGen;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x0
+    const/4 v3, 0x2
 
     aget-object v2, v2, v3
 
@@ -327,7 +327,7 @@
 
     move-result-object v1
 
-    .line 6
+    .line 3
     new-instance v2, Ljavax/crypto/spec/IvParameterSpec;
 
     invoke-direct {v2, v0}, Ljavax/crypto/spec/IvParameterSpec;-><init>([B)V
@@ -336,20 +336,20 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 2
+    .line 12
     return-object v1
 
-    .line 4
+    .line 9
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 11
+    .line 4
     :catch_1
     move-exception v0
 
-    .line 1
+    .line 2
     new-instance v1, Ljava/lang/RuntimeException;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
@@ -365,12 +365,12 @@
     .locals 3
 
     .prologue
-    .line 8
+    .line 1
     new-instance v0, Ljava/security/InvalidAlgorithmParameterException;
 
     sget-object v1, Lorg/spongycastle/jcajce/provider/symmetric/AES$AlgParamGen;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x2
+    const/4 v2, 0x0
 
     aget-object v1, v1, v2
 

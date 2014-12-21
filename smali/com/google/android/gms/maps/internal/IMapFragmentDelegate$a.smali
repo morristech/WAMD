@@ -6,7 +6,7 @@
 
 
 # direct methods
-.method public static z(Landroid/os/IBinder;)Lcom/google/android/gms/maps/internal/IMapFragmentDelegate;
+.method public static aX(Landroid/os/IBinder;)Lcom/google/android/gms/maps/internal/IMapFragmentDelegate;
     .locals 2
 
     if-nez p0, :cond_0

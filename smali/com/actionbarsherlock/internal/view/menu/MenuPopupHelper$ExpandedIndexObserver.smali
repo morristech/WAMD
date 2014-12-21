@@ -12,7 +12,7 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 2
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuPopupHelper$ExpandedIndexObserver;->this$0:Lcom/actionbarsherlock/internal/view/menu/MenuPopupHelper;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
@@ -24,7 +24,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 4
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/internal/view/menu/MenuPopupHelper$ExpandedIndexObserver;-><init>(Lcom/actionbarsherlock/internal/view/menu/MenuPopupHelper;)V
 
     return-void

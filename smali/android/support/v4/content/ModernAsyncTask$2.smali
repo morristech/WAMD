@@ -12,7 +12,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 1
     iput-object p1, p0, Landroid/support/v4/content/ModernAsyncTask$2;->this$0:Landroid/support/v4/content/ModernAsyncTask;
 
     const/4 v0, 0x0
@@ -39,7 +39,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 1
+    .line 3
     const/16 v0, 0xa
 
     invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V

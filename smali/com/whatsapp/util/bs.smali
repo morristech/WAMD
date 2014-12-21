@@ -1,207 +1,68 @@
-.class Lcom/whatsapp/util/bs;
-.super Lcom/whatsapp/util/ba;
+.class public final Lcom/whatsapp/util/bs;
+.super Ljava/lang/Object;
 .source "bs.java"
 
 
-# instance fields
-.field a:Landroid/media/MediaPlayer;
+# static fields
+.field private static final a:Ljava/util/concurrent/BlockingQueue;
+
+.field private static final b:Ljava/util/concurrent/ThreadFactory;
+
+.field private static final c:Ljava/util/concurrent/ThreadPoolExecutor;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 9
 
     .prologue
-    .line 24
-    invoke-direct {p0}, Lcom/whatsapp/util/ba;-><init>()V
-
-    .line 8
-    new-instance v0, Landroid/media/MediaPlayer;
-
-    invoke-direct {v0}, Landroid/media/MediaPlayer;-><init>()V
-
-    iput-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
-
     .line 3
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
+    new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
-    invoke-virtual {v0, p1}, Landroid/media/MediaPlayer;->setDataSource(Ljava/lang/String;)V
+    const/16 v1, 0x800
 
-    .line 10
-    return-void
-.end method
+    invoke-direct {v0, v1}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>(I)V
 
-
-# virtual methods
-.method public a()V
-    .locals 1
-
-    .prologue
-    .line 25
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
-
-    invoke-virtual {v0}, Landroid/media/MediaPlayer;->stop()V
+    sput-object v0, Lcom/whatsapp/util/bs;->a:Ljava/util/concurrent/BlockingQueue;
 
     .line 1
+    new-instance v0, Lcom/whatsapp/util/j;
+
+    invoke-direct {v0}, Lcom/whatsapp/util/j;-><init>()V
+
+    sput-object v0, Lcom/whatsapp/util/bs;->b:Ljava/util/concurrent/ThreadFactory;
+
+    .line 5
+    new-instance v1, Ljava/util/concurrent/ThreadPoolExecutor;
+
+    const/4 v2, 0x5
+
+    const/16 v3, 0x80
+
+    const-wide/16 v4, 0x1
+
+    sget-object v6, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+
+    sget-object v7, Lcom/whatsapp/util/bs;->a:Ljava/util/concurrent/BlockingQueue;
+
+    sget-object v8, Lcom/whatsapp/util/bs;->b:Ljava/util/concurrent/ThreadFactory;
+
+    invoke-direct/range {v1 .. v8}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
+
+    sput-object v1, Lcom/whatsapp/util/bs;->c:Ljava/util/concurrent/ThreadPoolExecutor;
+
     return-void
 .end method
 
-.method public a(I)V
-    .locals 1
-
-    .prologue
-    .line 11
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
-
-    invoke-virtual {v0, p1}, Landroid/media/MediaPlayer;->seekTo(I)V
-
-    .line 9
-    return-void
-.end method
-
-.method public a(Landroid/media/MediaPlayer$OnErrorListener;)V
-    .locals 1
-
-    .prologue
-    .line 23
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
-
-    invoke-virtual {v0, p1}, Landroid/media/MediaPlayer;->setOnErrorListener(Landroid/media/MediaPlayer$OnErrorListener;)V
-
-    .line 20
-    return-void
-.end method
-
-.method public a(Landroid/media/MediaPlayer$OnPreparedListener;)V
-    .locals 1
-
-    .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
-
-    invoke-virtual {v0, p1}, Landroid/media/MediaPlayer;->setOnPreparedListener(Landroid/media/MediaPlayer$OnPreparedListener;)V
-
-    .line 21
-    return-void
-.end method
-
-.method public b()I
+.method public static a(Ljava/lang/Runnable;)V
     .locals 1
 
     .prologue
     .line 4
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
+    sget-object v0, Lcom/whatsapp/util/bs;->c:Ljava/util/concurrent/ThreadPoolExecutor;
 
-    invoke-virtual {v0}, Landroid/media/MediaPlayer;->getCurrentPosition()I
+    invoke-virtual {v0, p0}, Ljava/util/concurrent/ThreadPoolExecutor;->execute(Ljava/lang/Runnable;)V
 
-    move-result v0
-
-    return v0
-.end method
-
-.method public b(I)V
-    .locals 1
-
-    .prologue
-    .line 26
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
-
-    invoke-virtual {v0, p1}, Landroid/media/MediaPlayer;->setAudioStreamType(I)V
-
-    .line 17
-    return-void
-.end method
-
-.method public c()I
-    .locals 1
-
-    .prologue
-    .line 16
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
-
-    invoke-virtual {v0}, Landroid/media/MediaPlayer;->getAudioSessionId()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public d()V
-    .locals 1
-
-    .prologue
-    .line 6
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
-
-    invoke-virtual {v0}, Landroid/media/MediaPlayer;->pause()V
-
-    .line 12
-    return-void
-.end method
-
-.method public e()V
-    .locals 1
-
-    .prologue
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
-
-    invoke-virtual {v0}, Landroid/media/MediaPlayer;->release()V
-
-    .line 18
-    return-void
-.end method
-
-.method public f()Z
-    .locals 1
-
-    .prologue
-    .line 13
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
-
-    invoke-virtual {v0}, Landroid/media/MediaPlayer;->isPlaying()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public g()V
-    .locals 1
-
-    .prologue
-    .line 19
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
-
-    invoke-virtual {v0}, Landroid/media/MediaPlayer;->start()V
-
-    .line 15
-    return-void
-.end method
-
-.method public h()I
-    .locals 1
-
-    .prologue
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
-
-    invoke-virtual {v0}, Landroid/media/MediaPlayer;->getDuration()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public i()V
-    .locals 1
-
-    .prologue
-    .line 14
-    iget-object v0, p0, Lcom/whatsapp/util/bs;->a:Landroid/media/MediaPlayer;
-
-    invoke-virtual {v0}, Landroid/media/MediaPlayer;->prepare()V
-
-    .line 22
+    .line 2
     return-void
 .end method

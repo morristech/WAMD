@@ -72,8 +72,6 @@
     <string name="audio_note_tip">Yazmaq üçün basılı tutun, göndərmək üçün buraxın</string>
     <string name="audio_note_tip_2">Zəhmət olmasa daha uzun ismarıc yazın.</string>
     <string name="audio_note_top_mic_tip">Zəhmət olmasa telefonunuzun üstündəki mikrofona danışın</string>
-    <string name="barcode_scanner_dialog_body">Bu tətbiqetmə barkod skaneri tələb edir. Quraşdırmaq istəyirsiz?</string>
-    <string name="barcode_scanner_dialog_title">Barkod Skaner Quraşdırılsın?</string>
     <string name="block">Əngəllə</string>
     <string name="block_ask">Bu şəxsi əngəlləmək istədiyinizə əminsiniz?</string>
     <string name="block_list_desc_1">"Şəxsi əngəlləmək üçün sağ üst küncdəki simvola toxunun.
@@ -107,6 +105,8 @@ Yalnız əlaqə kitabçasında %s olan şəxslər yayım ismarıcınızı alacaq
     <string name="camera_shortcut">WhatsApp Kamera</string>
     <string name="camera_title">WhatsApp şəkil və ya video göndər</string>
     <string name="camera_video_preview_title">WhatsApp videosu göndər</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">WhatsApp zəngi etmək üçün Təyyarə rejimini deaktiv edin.</string>
+    <string name="can_not_start_voip_call_in_phone_call">Telefonla zəng edən zaman siz WhatsApp zəngi edə bilməzsiniz.</string>
     <string name="cancel">Ləğv et</string>
     <string name="cannot_send_not_a_group_participant">Qrupda iştirakçı qalmadığı üçün artıq siz bu qrupa ismarıc göndərə bilmərsiniz.</string>
     <string name="cannot_send_selected_file">Media faylını göndərmək olmur. Ya bu səhv fayldır və ya faylın formatı dəstəklənmir.</string>
@@ -504,7 +504,6 @@ Son xidmət tarixi %s olaraq dəyişdirildi."</string>
     <string name="insufficient_space_for_download_shared_storage">Ümümi daxili yaddaşda kifayət qədər yer olmadığından yüklənmə uğursuz oldu. Zəhmət olmasa ümumi yaddaşdan faylları silin və yenidən cəhd edin.</string>
     <string name="invalid_media_message_download">Medianı etibarsız ismarıcdan yükləyə bilməzsiniz. İsmarıcı yenidən göndərməyə cəhd edin.</string>
     <string name="invalid_message_forward">İsmarıc yalnış şəxsə yönləndirilə bilməz.</string>
-    <string name="invalid_qr_code">Yalnış QR kod</string>
     <string name="invalid_url_for_download">Yüklənə bilmir. Zəhmət olmasa yenidən göndərilməsini istəyin.</string>
     <string name="invite">Dəvət et</string>
     <string name="invite_friends">Dostlarını dəvət et</string>
@@ -550,7 +549,6 @@ WhatsApp xidmətindən zövq alın"</string>
     <string name="menuitem_add">Əlavə et</string>
     <string name="menuitem_contacts">Şəxslər</string>
     <string name="menuitem_debug">Debug</string>
-    <string name="menuitem_delete_qr">QR kodu sil</string>
     <string name="menuitem_groupchat">Yeni qrup</string>
     <string name="menuitem_list">Yeni yayım</string>
     <string name="menuitem_mute">Səssiz</string>
@@ -591,14 +589,15 @@ WhatsApp xidmətindən zövq alın"</string>
     <string name="msg_store_backup_failed">İsmarıcların nüsxələnməsi mümkün olmadı</string>
     <string name="msg_store_backup_failed_try_again_later">İsmarıcların nüsxələnməsi mümkün olmadı. Zəhmət olmasa, daha sonra təkrar yoxlayın.</string>
     <string name="msg_store_backup_found">Ehtiyat nüsxəsi tapıldı</string>
-    <string name="msg_store_backup_found_registration">Ismarıcların ehtiyat nüsxəsi tapıldı!</string>
+    <string name="msg_store_backup_found_registration">Söhbət nüsxəsi tapıldı</string>
+    <string name="msg_store_backup_found_title">Söhbət tarixçəsini bərpa et</string>
     <string name="msg_store_backup_skipped">Ehtiyat nüsxələmə buraxıldı</string>
     <string name="msg_store_backup_skipped_no_media">İsmarıc nüsxələnməsi davam etmədi: Media kartı aşkarlanmadı.</string>
     <string name="msg_store_backup_skipped_read_only_media">İsmarıc nüsxələnməsi davam etmədi: Media kartı yalnız oxuma rejimindədir.</string>
     <string name="msg_store_confirm">Qəbul et</string>
-    <string name="msg_store_creation_backup_message">Ismarıc tarixçəsinin ehtiyat nüsxədən bərpa edilməsini istəyirsiniz?</string>
-    <string name="msg_store_do_not_restore">Bərpa edilməsin</string>
-    <string name="msg_store_do_not_restore_no_thanks">Lazım deyil</string>
+    <string name="msg_store_creation_backup_message">Söhbət tarixçəsini nüsxədən bərpa edin. Əgər indi bərpa etməsəniz, daha sonra bu mümkün olmayacaq.</string>
+    <string name="msg_store_do_not_restore">Bərpanı atla</string>
+    <string name="msg_store_do_not_restore_no_thanks">Bərpanı atla</string>
     <string name="msg_store_error_found">"Xəta baş verdi. Zəhmət olmasa WhatsApp'ı bağlayın və yenidən açın."</string>
     <string name="msg_store_error_not_restored">Bağışlayın, nüsxədən heç bir söhbət tarixçəsini bərpa etmək mümkün olmadı.</string>
     <string name="msg_store_last_confirmation_not_to_restore">İsmarıclar silinəcəkdir. Siz ismarıc tarixçəsini nüsxədən bərpa etməyə əminsinizmi?</string>
@@ -625,9 +624,6 @@ WhatsApp xidmətindən zövq alın"</string>
     <string name="need_sd_card_shared_storage">USB yaddaş rejimini deaktiv edib bir daha sınayın.</string>
     <string name="network_required">Sizin hal-hazırda heç bir şəbəkəyə çıxışınız yoxdur</string>
     <string name="network_usage_ask_reset_message">Statistikanı sıfırlamaq istədiyinizə əminsiniz?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Son sıfırlama vaxtı: %1$s</string>
     <string name="network_usage_media_bytes_received">Media bayt qəbul edildi:</string>
     <string name="network_usage_media_bytes_sent">Göndərilən media həcmi bayt ilə:</string>
@@ -874,6 +870,7 @@ Zəhmət olmasa sizə göndərdiyimiz kodu daxil edin.
     <string name="send_location">Məkanı göndər</string>
     <string name="send_payment_button">Ödəmə linkini göndər</string>
     <string name="send_payment_url_via">... vasitəsilə ödəmə linkini göndər</string>
+    <string name="send_this_location">Bu məkanı göndər</string>
     <string name="send_your_current_location">Hal-hazırda yerləşdiyin məkanı göndər</string>
     <string name="sending_video_to_contact">%s hesabına video göndərilir</string>
     <string name="sent_to_group">Göndər: “%s”</string>
@@ -985,19 +982,19 @@ WhatsApp ilə göndərilmişdir"</string>
     <string name="software_expired_get_from_play">WhatsApp-ın bu versiyası artıq köhnəlmişdir və artıq xidmət göstərmir. Zəhmət olmasa, Google Play-a daxil olub son versiyani yükləyin.</string>
     <string name="software_expired_get_from_play_with_date">"WhatsApp'ın bu versiyasının istifadəsi &lt;b>%1$s&lt;/b> tarixində bitib. Zəhmət olmasa son versiyanı yükləmək üçün Google Play'ı açın.&lt;br>&lt;br>Cihazınızın tarixi &lt;b>%2$s&lt;/b>. Əgər bu tarix səhvdirsə, cihazınızın tarix tənzimləmələrini düzəldib WhatsApp'ı yenidən açın."</string>
     <string name="software_expired_with_date">"WhatsApp'ın bu versiyasının istifadəsi &lt;b>%1$s&lt;/b> tarixində bitmişdir. Ən son versiyanı endirmək üçün “Yüklə” düyməsinə toxunun.&lt;br>&lt;br>Cihazınızın tarixi &lt;b>%2$s&lt;/b>. Əgər bu tarix yalnışdırsa, cihazınızın tarix tənzimləmələrini düzəldib WhatsApp'ı yenidən açın."</string>
-    <string name="spam_generic">"Siz xidmət şərtlərimizi pozmağınız səbəbi ilə WhatsApp tərəfindən müvəqqəti əngəlləndiniz.
-WhatsApp-dan yenidən istifadə edə bilməniz üçün qalan müddət:"</string>
+    <string name="spam_generic">"Siz güman olunur ki, bizim xidmət şərtlərimizi pozmanız səbəbi ilə WhatsApp tərəfindən müvəqqəti əngəlləndiniz.
+
+WhatsApp-ın yenidən istifadəsi üçün qalan müddət:"</string>
     <string name="spam_generic_data_connection_missing">Telefonunuzda aktiv data bağlantısı olub olmadığını yoxlayın.</string>
     <string name="spam_generic_unknown_time_left">"Siz WhatsApp tərəfindən Xidmət Şərtlərimizi pozmanız səbəbi ilə müvəqqəti əngəllənmisiniz. Siz tezliklə WhatsApp'dan istifadə edə biləcəksiniz."</string>
     <string name="spam_learn_more">Ətraflı öyrən</string>
     <string name="spam_title">Müvəqqəti əngəllənib</string>
-    <string name="spam_too_many_blocks">Sizi çox sayda insan əngəllədiyi üçün siz müvəqqəti olaraq WhatsApp tərəfindən xidmətdən istifadəyə müvəqqəti qadağa olunmusunuz.</string>
-    <string name="spam_too_many_groups">"Siz əlaqələr kitabçasında olmadığınız şəxslərlə çoxlu sayda qrup yaratdığınız üçün WhatsApp tərəfindən müvəqqəti əngəlləndiniz.
-WhatsApp-dan yenidən istifadə edə bilməniz üçün qalan müddət:"</string>
-    <string name="spam_too_many_messages">"Siz əlaqələr kitabçasında olmadığınız şəxslərə çoxlu sayda ismarıclar göndərdiyiniz üçün WhatsApp tərəfindən müvəqqəti əngəlləndiniz.
-WhatsApp-dan yenidən istifadə edə bilməniz üçün qalan müddət:"</string>
-    <string name="spam_too_many_people">"Siz eyni ismarıcı çox sayda şəxsə göndərdiyiniz üçün WhatsApp tərəfindən müvəqqəti əngəlləndiniz.
-WhatsApp-dan yenidən istifadə edə bilməniz üçün qalan müddət:"</string>
+    <string name="spam_too_many_groups">"Siz əlaqələr kitabçasında olmadığınız şəxslərlə çoxlu sayda qrup yaratma səbəbi ilə WhatsApp tərəfindən müvəqqəti əngəlləndiniz.
+
+WhatsApp-ı yenidən istifadə edə bilməyiniz üçün gözləməli olduğunuz müddət:"</string>
+    <string name="spam_too_many_messages">"Siz əlaqələr kitabçasında olmadığınız şəxslərlə çoxlu sayda ismarıc göndərmə səbəbi ilə WhatsApp tərəfindən müvəqqəti əngəlləndiniz.
+
+WhatsApp-ı yenidən istifadə edə bilməyiniz üçün gözləməli olduğunuz müddət:"</string>
     <string name="status">Status</string>
     <string name="status_default_at_gym">İdman zalında</string>
     <string name="status_default_at_movies">Kinoteatrda</string>
@@ -1165,7 +1162,9 @@ Zəhmət olmasa səs vasitəsilə təsdiqləməni yoxlayın."</string>
     <string name="view_list_media">Yayım siyahısı mediası</string>
     <string name="view_website">Saytı aç</string>
     <string name="voip_activity_label">Zəng</string>
+    <string name="voip_call_bluetooth_toggle_description">Bluetooth-u Keçir</string>
     <string name="voip_call_end_button_description">Zəngi bitir</string>
+    <string name="voip_call_failed_no_network">Zəng etmək mümkün olmadı. Telefonunuzda internet bağlantısının olub olmadığından əmin olun.</string>
     <string name="voip_call_goto_chat_description">Söhbətə Bax</string>
     <string name="voip_call_incoming">GƏLƏN</string>
     <string name="voip_call_label">WHATSAPP ZƏNGİ</string>
@@ -1218,5 +1217,4 @@ Zəhmət olmasa şəbəkə bağlantınızı yaratmaq üçün \"%1$s\" bağlantı
     <string name="yesterday">Dünən</string>
     <string name="yesterday_at">dünən %s -də</string>
     <string name="you">Siz</string>
-    <string name="voip_call_bluetooth_toggle_description">Bluetooth-u Keçir</string>
 </resources>

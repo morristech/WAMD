@@ -12,13 +12,13 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 3
     invoke-direct {p0, p1, p2}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 8
+    .line 12
     iput-object p1, p0, Lcom/whatsapp/DividerView;->a:Landroid/content/Context;
 
-    .line 12
+    .line 7
     return-void
 .end method
 
@@ -30,21 +30,21 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 9
+    .line 4
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    .line 7
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    .line 9
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
     move-result-object v1
 
-    iget v1, v1, Lcom/whatsapp/se;->d:I
+    iget v1, v1, Lcom/whatsapp/art;->h:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 10
+    .line 6
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Lcom/whatsapp/DividerView;->getMeasuredWidth()I
@@ -57,33 +57,33 @@
 
     invoke-direct {v0, v3, v3, v1, v2}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 11
+    .line 10
     iget-object v1, p0, Lcom/whatsapp/DividerView;->a:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f020133
+    const v2, 0x7f02013b
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    .line 4
+    .line 8
     invoke-virtual {v1, v0}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
-    .line 6
+    .line 11
     const/4 v0, 0x1
 
     invoke-virtual {v1, v0}, Landroid/graphics/drawable/Drawable;->setDither(Z)V
 
-    .line 1
+    .line 5
     invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     .line 2
     invoke-super {p0, p1}, Landroid/widget/TextView;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 3
+    .line 1
     return-void
 .end method

@@ -25,12 +25,12 @@
     .locals 1
 
     .prologue
-    .line 66
+    .line 138
     sget v0, Lcom/actionbarsherlock/R$attr;->actionDropDownStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 106
+    .line 56
     return-void
 .end method
 
@@ -40,29 +40,29 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 1
+    .line 79
     invoke-direct {p0, p1, p2, p3}, Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 3
+    .line 74
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mTempRect:Landroid/graphics/Rect;
 
-    .line 92
+    .line 85
     sget-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockSpinner:[I
 
     invoke-virtual {p1, p2, v0, p3, v4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
-    .line 122
+    .line 43
     new-instance v1, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropdownPopup;
 
     invoke-direct {v1, p0, p1, p2, p3}, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropdownPopup;-><init>(Lcom/actionbarsherlock/internal/widget/IcsSpinner;Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 90
+    .line 27
     sget v2, Lcom/actionbarsherlock/R$styleable;->SherlockSpinner_android_dropDownWidth:I
 
     const/4 v3, -0x2
@@ -73,7 +73,7 @@
 
     iput v2, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mDropDownWidth:I
 
-    .line 109
+    .line 154
     sget v2, Lcom/actionbarsherlock/R$styleable;->SherlockSpinner_android_popupBackground:I
 
     invoke-virtual {v0, v2}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -82,20 +82,20 @@
 
     invoke-virtual {v1, v2}, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropdownPopup;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 16
+    .line 24
     sget v2, Lcom/actionbarsherlock/R$styleable;->SherlockSpinner_android_dropDownVerticalOffset:I
 
     invoke-virtual {v0, v2, v4}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
 
     move-result v2
 
-    .line 58
+    .line 51
     if-eqz v2, :cond_0
 
-    .line 80
+    .line 15
     invoke-virtual {v1, v2}, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropdownPopup;->setVerticalOffset(I)V
 
-    .line 63
+    .line 108
     :cond_0
     sget v2, Lcom/actionbarsherlock/R$styleable;->SherlockSpinner_android_dropDownHorizontalOffset:I
 
@@ -103,17 +103,17 @@
 
     move-result v2
 
-    .line 146
+    .line 93
     if-eqz v2, :cond_1
 
-    .line 21
+    .line 61
     invoke-virtual {v1, v2}, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropdownPopup;->setHorizontalOffset(I)V
 
-    .line 103
+    .line 70
     :cond_1
     iput-object v1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mPopup:Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;
 
-    .line 135
+    .line 33
     sget v1, Lcom/actionbarsherlock/R$styleable;->SherlockSpinner_android_gravity:I
 
     const/16 v2, 0x11
@@ -124,7 +124,7 @@
 
     iput v1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mGravity:I
 
-    .line 75
+    .line 149
     iget-object v1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mPopup:Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;
 
     sget v2, Lcom/actionbarsherlock/R$styleable;->SherlockSpinner_android_prompt:I
@@ -135,32 +135,32 @@
 
     invoke-interface {v1, v2}, Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;->setPromptText(Ljava/lang/CharSequence;)V
 
-    .line 93
+    .line 8
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mDisableChildrenWhenDisabled:Z
 
-    .line 118
+    .line 17
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 127
+    .line 47
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mTempAdapter:Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;
 
     if-eqz v0, :cond_2
 
-    .line 6
+    .line 28
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mPopup:Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;
 
     iget-object v1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mTempAdapter:Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;
 
     invoke-interface {v0, v1}, Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 2
+    .line 120
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mTempAdapter:Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;
 
-    .line 154
+    .line 1
     :cond_2
     return-void
 .end method
@@ -169,7 +169,7 @@
     .locals 1
 
     .prologue
-    .line 142
+    .line 94
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mTempRect:Landroid/graphics/Rect;
 
     return-object v0
@@ -179,29 +179,29 @@
     .locals 2
 
     .prologue
-    .line 25
+    .line 112
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mDataChanged:Z
 
     if-nez v0, :cond_0
 
-    .line 94
+    .line 66
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mRecycler:Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner$RecycleBin;
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner$RecycleBin;->get(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 44
+    .line 58
     if-eqz v0, :cond_0
 
-    .line 137
+    .line 38
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->setUpChild(Landroid/view/View;)V
 
-    .line 111
+    .line 115
     :goto_0
     return-object v0
 
-    .line 77
+    .line 136
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mAdapter:Landroid/widget/SpinnerAdapter;
 
@@ -211,7 +211,7 @@
 
     move-result-object v0
 
-    .line 39
+    .line 91
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->setUpChild(Landroid/view/View;)V
 
     goto :goto_0
@@ -223,43 +223,43 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 99
+    .line 131
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
-    .line 59
+    .line 98
     if-nez v0, :cond_0
 
-    .line 49
+    .line 12
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
-    .line 34
+    .line 119
     :cond_0
     invoke-virtual {p0, p1, v5, v0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->addViewInLayout(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)Z
 
-    .line 52
+    .line 99
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->hasFocus()Z
 
     move-result v1
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setSelected(Z)V
 
-    .line 140
+    .line 95
     iget-boolean v1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mDisableChildrenWhenDisabled:Z
 
     if-eqz v1, :cond_1
 
-    .line 31
+    .line 62
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->isEnabled()Z
 
     move-result v1
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setEnabled(Z)V
 
-    .line 78
+    .line 100
     :cond_1
     iget v1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mHeightMeasureSpec:I
 
@@ -279,7 +279,7 @@
 
     move-result v1
 
-    .line 91
+    .line 135
     iget v2, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mWidthMeasureSpec:I
 
     iget-object v3, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mSpinnerPadding:Landroid/graphics/Rect;
@@ -298,15 +298,15 @@
 
     move-result v0
 
-    .line 100
+    .line 21
     invoke-virtual {p1, v0, v1}, Landroid/view/View;->measure(II)V
 
-    .line 56
+    .line 19
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mSpinnerPadding:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->top:I
 
-    .line 57
+    .line 148
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->getMeasuredHeight()I
 
     move-result v1
@@ -323,7 +323,7 @@
 
     sub-int/2addr v1, v2
 
-    .line 96
+    .line 105
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v2
@@ -334,25 +334,25 @@
 
     add-int/2addr v0, v1
 
-    .line 27
+    .line 59
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v1
 
     add-int/2addr v1, v0
 
-    .line 97
+    .line 133
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v2
 
-    .line 32
+    .line 107
     add-int/2addr v2, v5
 
-    .line 112
+    .line 97
     invoke-virtual {p1, v5, v0, v2, v1}, Landroid/view/View;->layout(IIII)V
 
-    .line 150
+    .line 77
     return-void
 .end method
 
@@ -366,32 +366,32 @@
 
     const/4 v3, 0x0
 
-    .line 37
+    .line 134
     const/4 v1, 0x0
 
-    .line 117
+    .line 71
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->getChildCount()I
 
     move-result v2
 
     if-lez v2, :cond_2
 
-    .line 108
+    .line 30
     invoke-virtual {p0, v3}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 19
+    .line 88
     :cond_0
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 110
+    .line 87
     invoke-virtual {v1}, Landroid/view/View;->getBaseline()I
 
     move-result v2
 
-    .line 158
+    .line 111
     if-ltz v2, :cond_1
 
     invoke-virtual {v1}, Landroid/view/View;->getTop()I
@@ -400,10 +400,11 @@
 
     add-int/2addr v0, v2
 
+    .line 124
     :cond_1
     return v0
 
-    .line 43
+    .line 64
     :cond_2
     iget-object v2, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mAdapter:Landroid/widget/SpinnerAdapter;
 
@@ -417,17 +418,17 @@
 
     if-lez v2, :cond_0
 
-    .line 35
+    .line 80
     invoke-direct {p0, v3}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->makeAndAddView(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 128
+    .line 78
     iget-object v2, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mRecycler:Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner$RecycleBin;
 
     invoke-virtual {v2, v3, v1}, Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner$RecycleBin;->put(ILandroid/view/View;)V
 
-    .line 84
+    .line 143
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->removeAllViewsInLayout()V
 
     goto :goto_0
@@ -439,12 +440,12 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 72
+    .line 142
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mSpinnerPadding:Landroid/graphics/Rect;
 
     iget v1, v0, Landroid/graphics/Rect;->left:I
 
-    .line 50
+    .line 5
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->getRight()I
 
     move-result v0
@@ -467,63 +468,63 @@
 
     sub-int v2, v0, v2
 
-    .line 76
+    .line 90
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mDataChanged:Z
 
     if-eqz v0, :cond_0
 
-    .line 17
+    .line 116
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->handleDataChanged()V
 
-    .line 55
+    .line 65
     :cond_0
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mItemCount:I
 
     if-nez v0, :cond_1
 
-    .line 42
+    .line 147
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->resetList()V
 
-    .line 139
+    .line 156
     :goto_0
     return-void
 
-    .line 38
+    .line 36
     :cond_1
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mNextSelectedPosition:I
 
     if-ltz v0, :cond_2
 
-    .line 20
+    .line 46
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mNextSelectedPosition:I
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->setSelectedPositionInt(I)V
 
-    .line 147
+    .line 84
     :cond_2
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->recycleAllViews()V
 
-    .line 114
+    .line 67
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->removeAllViewsInLayout()V
 
-    .line 70
+    .line 125
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mSelectedPosition:I
 
     iput v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mFirstPosition:I
 
-    .line 46
+    .line 144
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mSelectedPosition:I
 
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->makeAndAddView(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 24
+    .line 151
     invoke-virtual {v3}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v4
 
-    .line 143
+    .line 104
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mGravity:I
 
     and-int/lit8 v0, v0, 0x7
@@ -532,36 +533,36 @@
 
     move v0, v1
 
-    .line 129
+    .line 117
     :cond_3
     :goto_1
     invoke-virtual {v3, v0}, Landroid/view/View;->offsetLeftAndRight(I)V
 
-    .line 12
+    .line 50
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mRecycler:Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner$RecycleBin;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner$RecycleBin;->clear()V
 
-    .line 74
+    .line 49
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->invalidate()V
 
-    .line 98
+    .line 75
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->checkSelectionChanged()V
 
-    .line 83
+    .line 158
     iput-boolean v6, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mDataChanged:Z
 
-    .line 120
+    .line 122
     iput-boolean v6, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mNeedSync:Z
 
-    .line 11
+    .line 63
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mSelectedPosition:I
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->setNextSelectedPositionInt(I)V
 
     goto :goto_0
 
-    .line 115
+    .line 157
     :sswitch_0
     div-int/lit8 v0, v2, 0x2
 
@@ -571,12 +572,12 @@
 
     sub-int/2addr v0, v5
 
-    .line 15
-    sget-boolean v5, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    .line 146
+    sget v5, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
     if-eqz v5, :cond_3
 
-    .line 126
+    .line 40
     :sswitch_1
     add-int v0, v1, v2
 
@@ -584,7 +585,7 @@
 
     goto :goto_1
 
-    .line 143
+    .line 104
     nop
 
     :sswitch_data_0
@@ -604,28 +605,28 @@
 
     const/4 v0, 0x0
 
-    sget-boolean v7, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v7, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
-    .line 5
+    .line 37
     if-nez p1, :cond_1
 
-    .line 102
+    .line 54
     :cond_0
     :goto_0
     return v0
 
-    .line 54
+    .line 82
     :cond_1
     invoke-static {v0, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v8
 
-    .line 125
+    .line 39
     invoke-static {v0, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v9
 
-    .line 144
+    .line 69
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->getSelectedItemPosition()I
 
     move-result v1
@@ -634,7 +635,7 @@
 
     move-result v1
 
-    .line 133
+    .line 23
     invoke-interface {p1}, Landroid/widget/SpinnerAdapter;->getCount()I
 
     move-result v3
@@ -645,10 +646,10 @@
 
     move-result v10
 
-    .line 148
+    .line 72
     sub-int v3, v10, v1
 
-    .line 62
+    .line 103
     rsub-int/lit8 v3, v3, 0xf
 
     sub-int/2addr v1, v3
@@ -665,45 +666,45 @@
 
     move v1, v0
 
-    .line 69
+    .line 123
     :goto_1
     if-ge v5, v10, :cond_4
 
-    .line 152
+    .line 45
     invoke-interface {p1, v5}, Landroid/widget/SpinnerAdapter;->getItemViewType(I)I
 
     move-result v0
 
-    .line 95
+    .line 34
     if-eq v0, v1, :cond_3
 
     move-object v1, v2
 
-    .line 45
+    .line 101
     :goto_2
     invoke-interface {p1, v5, v1, p0}, Landroid/widget/SpinnerAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v6
 
-    .line 9
+    .line 35
     invoke-virtual {v6}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
     if-nez v1, :cond_2
 
-    .line 8
+    .line 145
     new-instance v1, Landroid/view/ViewGroup$LayoutParams;
 
     invoke-direct {v1, v11, v11}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
 
     invoke-virtual {v6, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 65
+    .line 73
     :cond_2
     invoke-virtual {v6, v8, v9}, Landroid/view/View;->measure(II)V
 
-    .line 151
+    .line 152
     invoke-virtual {v6}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v1
@@ -712,23 +713,23 @@
 
     move-result v1
 
-    .line 68
+    .line 137
     add-int/lit8 v3, v5, 0x1
 
     if-eqz v7, :cond_5
 
     move v0, v1
 
-    .line 121
+    .line 13
     :goto_3
     if-eqz p2, :cond_0
 
-    .line 130
+    .line 92
     iget-object v1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mTempRect:Landroid/graphics/Rect;
 
     invoke-virtual {p2, v1}, Landroid/graphics/drawable/Drawable;->getPadding(Landroid/graphics/Rect;)Z
 
-    .line 113
+    .line 11
     iget-object v1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mTempRect:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->left:I
@@ -771,13 +772,13 @@
     .locals 0
 
     .prologue
-    .line 89
+    .line 130
     invoke-virtual {p0, p2}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->setSelection(I)V
 
-    .line 85
+    .line 140
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 47
+    .line 128
     return-void
 .end method
 
@@ -785,10 +786,10 @@
     .locals 1
 
     .prologue
-    .line 134
+    .line 102
     invoke-super {p0}, Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner;->onDetachedFromWindow()V
 
-    .line 107
+    .line 26
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mPopup:Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;
 
     if-eqz v0, :cond_0
@@ -801,12 +802,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 124
+    .line 141
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mPopup:Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;
 
     invoke-interface {v0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;->dismiss()V
 
-    .line 61
+    .line 32
     :cond_0
     return-void
 .end method
@@ -817,21 +818,21 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 36
+    .line 3
     invoke-super/range {p0 .. p5}, Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner;->onLayout(ZIIII)V
 
-    .line 26
+    .line 48
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mInLayout:Z
 
-    .line 116
+    .line 109
     invoke-virtual {p0, v1, v1}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->layout(IZ)V
 
-    .line 64
+    .line 113
     iput-boolean v1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mInLayout:Z
 
-    .line 101
+    .line 22
     return-void
 .end method
 
@@ -839,10 +840,10 @@
     .locals 3
 
     .prologue
-    .line 71
+    .line 4
     invoke-super {p0, p1, p2}, Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner;->onMeasure(II)V
 
-    .line 82
+    .line 52
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mPopup:Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;
 
     if-eqz v0, :cond_0
@@ -855,12 +856,12 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 67
+    .line 25
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->getMeasuredWidth()I
 
     move-result v0
 
-    .line 60
+    .line 106
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->getAdapter()Landroid/widget/SpinnerAdapter;
 
     move-result-object v1
@@ -873,30 +874,30 @@
 
     move-result v1
 
-    .line 22
+    .line 41
     invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
 
     move-result v0
 
-    .line 153
+    .line 129
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v1
 
-    .line 149
+    .line 150
     invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
 
     move-result v0
 
-    .line 40
+    .line 18
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->getMeasuredHeight()I
 
     move-result v1
 
-    .line 30
+    .line 121
     invoke-virtual {p0, v0, v1}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->setMeasuredDimension(II)V
 
-    .line 104
+    .line 57
     :cond_0
     return-void
 .end method
@@ -905,18 +906,18 @@
     .locals 2
 
     .prologue
-    .line 41
+    .line 44
     invoke-super {p0}, Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner;->performClick()Z
 
     move-result v0
 
-    .line 79
+    .line 9
     if-nez v0, :cond_0
 
-    .line 156
+    .line 81
     const/4 v0, 0x1
 
-    .line 141
+    .line 68
     iget-object v1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mPopup:Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;
 
     invoke-interface {v1}, Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;->isShowing()Z
@@ -925,12 +926,12 @@
 
     if-nez v1, :cond_0
 
-    .line 81
+    .line 14
     iget-object v1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mPopup:Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;
 
     invoke-interface {v1}, Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;->show()V
 
-    .line 88
+    .line 139
     :cond_0
     return v0
 .end method
@@ -939,15 +940,15 @@
     .locals 2
 
     .prologue
-    .line 157
+    .line 2
     invoke-super {p0, p1}, Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
-    .line 131
+    .line 127
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mPopup:Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;
 
     if-eqz v0, :cond_0
 
-    .line 4
+    .line 89
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mPopup:Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;
 
     new-instance v1, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;
@@ -956,11 +957,11 @@
 
     invoke-interface {v0, v1}, Lcom/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    sget-boolean v0, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v0, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
     if-eqz v0, :cond_1
 
-    .line 53
+    .line 10
     :cond_0
     new-instance v0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;
 
@@ -968,7 +969,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mTempAdapter:Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;
 
-    .line 87
+    .line 155
     :cond_1
     return-void
 .end method
@@ -977,40 +978,40 @@
     .locals 4
 
     .prologue
-    sget-boolean v1, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v1, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
-    .line 138
+    .line 60
     invoke-super {p0, p1}, Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner;->setEnabled(Z)V
 
-    .line 136
+    .line 132
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->mDisableChildrenWhenDisabled:Z
 
     if-eqz v0, :cond_1
 
-    .line 29
+    .line 114
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->getChildCount()I
 
     move-result v2
 
-    .line 48
+    .line 76
     const/4 v0, 0x0
 
     :cond_0
     if-ge v0, v2, :cond_1
 
-    .line 119
+    .line 55
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
     invoke-virtual {v3, p1}, Landroid/view/View;->setEnabled(Z)V
 
-    .line 51
+    .line 42
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 23
+    .line 6
     :cond_1
     return-void
 .end method

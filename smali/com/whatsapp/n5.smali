@@ -2,134 +2,103 @@
 .super Ljava/lang/Object;
 .source "n5.java"
 
-# interfaces
-.implements Landroid/view/View$OnClickListener;
-
-
-# static fields
-.field private static final z:Ljava/lang/String;
-
 
 # instance fields
-.field final a:Lcom/whatsapp/OverlayAlert;
+.field private a:I
+
+.field private b:[I
+
+.field private c:I
+
+.field private d:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    const-string v0, "`\u0000d 1n\u000f. 8}\u0013f;.{\u0013s}>c\u001fb98k"
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    move v3, v2
-
-    move v2, v1
-
-    move-object v1, v0
-
-    :goto_0
-    if-gt v2, v3, :cond_0
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/n5;->z:Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v4, v1, v3
-
-    rem-int/lit8 v0, v3, 0x5
-
-    packed-switch v0, :pswitch_data_0
-
-    const/16 v0, 0x5d
-
-    :goto_1
-    xor-int/2addr v0, v4
-
-    int-to-char v0, v0
-
-    aput-char v0, v1, v3
-
-    add-int/lit8 v0, v3, 0x1
-
-    move v3, v0
-
-    goto :goto_0
-
-    :pswitch_0
-    const/16 v0, 0xf
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v0, 0x76
-
-    goto :goto_1
-
-    :pswitch_2
-    const/4 v0, 0x1
-
-    goto :goto_1
-
-    :pswitch_3
-    const/16 v0, 0x52
-
-    goto :goto_1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-.end method
-
-.method constructor <init>(Lcom/whatsapp/OverlayAlert;)V
+.method private constructor <init>(I[III)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/n5;->a:Lcom/whatsapp/OverlayAlert;
-
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
+    iput p1, p0, Lcom/whatsapp/n5;->d:I
+
+    .line 8
+    iput-object p2, p0, Lcom/whatsapp/n5;->b:[I
+
+    .line 1
+    iput p3, p0, Lcom/whatsapp/n5;->a:I
+
+    .line 9
+    iput p4, p0, Lcom/whatsapp/n5;->c:I
+
+    .line 7
     return-void
+.end method
+
+.method constructor <init>(I[IIILcom/whatsapp/vg;)V
+    .locals 0
+
+    .prologue
+    .line 10
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/whatsapp/n5;-><init>(I[III)V
+
+    return-void
+.end method
+
+.method static a(Lcom/whatsapp/n5;)I
+    .locals 1
+
+    .prologue
+    .line 11
+    iget v0, p0, Lcom/whatsapp/n5;->d:I
+
+    return v0
+.end method
+
+.method static b(Lcom/whatsapp/n5;)I
+    .locals 1
+
+    .prologue
+    .line 4
+    iget v0, p0, Lcom/whatsapp/n5;->a:I
+
+    return v0
+.end method
+
+.method static c(Lcom/whatsapp/n5;)I
+    .locals 1
+
+    .prologue
+    .line 3
+    iget v0, p0, Lcom/whatsapp/n5;->c:I
+
+    return v0
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
+.method public a()I
+    .locals 1
+
+    .prologue
+    .line 12
+    iget-object v0, p0, Lcom/whatsapp/n5;->b:[I
+
+    array-length v0, v0
+
+    return v0
+.end method
+
+.method public a(I)I
     .locals 1
 
     .prologue
     .line 2
-    sget-object v0, Lcom/whatsapp/n5;->z:Ljava/lang/String;
+    iget-object v0, p0, Lcom/whatsapp/n5;->b:[I
 
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+    aget v0, v0, p1
 
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/n5;->a:Lcom/whatsapp/OverlayAlert;
-
-    invoke-static {v0}, Lcom/whatsapp/OverlayAlert;->a(Landroid/app/Activity;)V
-
-    .line 3
-    return-void
+    return v0
 .end method

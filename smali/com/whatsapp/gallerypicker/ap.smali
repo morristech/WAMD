@@ -1,66 +1,75 @@
-.class Lcom/whatsapp/gallerypicker/ap;
-.super Ljava/lang/Object;
+.class final Lcom/whatsapp/gallerypicker/ap;
+.super Landroid/support/v4/util/LruCache;
 .source "ap.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/gallerypicker/e;
-
-.field final b:Landroid/graphics/Bitmap;
-
-.field final c:Landroid/graphics/Bitmap;
-
-.field final d:Lcom/whatsapp/gallerypicker/ay;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/gallerypicker/e;Lcom/whatsapp/gallerypicker/ay;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)V
+.method constructor <init>(I)V
     .locals 0
 
     .prologue
     .line 2
-    iput-object p1, p0, Lcom/whatsapp/gallerypicker/ap;->a:Lcom/whatsapp/gallerypicker/e;
-
-    iput-object p2, p0, Lcom/whatsapp/gallerypicker/ap;->d:Lcom/whatsapp/gallerypicker/ay;
-
-    iput-object p3, p0, Lcom/whatsapp/gallerypicker/ap;->b:Landroid/graphics/Bitmap;
-
-    iput-object p4, p0, Lcom/whatsapp/gallerypicker/ap;->c:Landroid/graphics/Bitmap;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Landroid/support/v4/util/LruCache;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method protected a(Ljava/lang/String;Landroid/graphics/Bitmap;)I
+    .locals 2
 
     .prologue
+    .line 5
     .line 3
-    iget-object v1, p0, Lcom/whatsapp/gallerypicker/ap;->d:Lcom/whatsapp/gallerypicker/ay;
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    iget-object v2, p0, Lcom/whatsapp/gallerypicker/ap;->b:Landroid/graphics/Bitmap;
+    const/16 v1, 0xc
 
-    iget-object v0, p0, Lcom/whatsapp/gallerypicker/ap;->c:Landroid/graphics/Bitmap;
+    if-ge v0, v1, :cond_0
 
-    if-eqz v0, :cond_0
+    .line 7
+    invoke-virtual {p2}, Landroid/graphics/Bitmap;->getRowBytes()I
 
-    const/4 v0, 0x1
+    move-result v0
 
-    :goto_0
-    invoke-interface {v1, v2, v0}, Lcom/whatsapp/gallerypicker/ay;->a(Landroid/graphics/Bitmap;Z)V
+    invoke-virtual {p2}, Landroid/graphics/Bitmap;->getHeight()I
 
-    .line 1
-    return-void
+    move-result v1
 
-    .line 3
+    mul-int/2addr v0, v1
+
+    div-int/lit16 v0, v0, 0x400
+
+    sget-boolean v1, Lcom/whatsapp/gallerypicker/ImagePreview;->x:Z
+
+    if-eqz v1, :cond_1
+
+    .line 4
     :cond_0
-    const/4 v0, 0x0
+    invoke-virtual {p2}, Landroid/graphics/Bitmap;->getByteCount()I
 
-    goto :goto_0
+    move-result v0
+
+    div-int/lit16 v0, v0, 0x400
+
+    .line 6
+    :cond_1
+    return v0
+.end method
+
+.method protected sizeOf(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 1
+
+    .prologue
+    .line 1
+    check-cast p1, Ljava/lang/String;
+
+    check-cast p2, Landroid/graphics/Bitmap;
+
+    invoke-virtual {p0, p1, p2}, Lcom/whatsapp/gallerypicker/ap;->a(Ljava/lang/String;Landroid/graphics/Bitmap;)I
+
+    move-result v0
+
+    return v0
 .end method

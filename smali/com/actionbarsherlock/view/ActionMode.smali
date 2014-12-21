@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static a:Z
+.field public static a:I
 
 
 # direct methods
@@ -12,10 +12,10 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
+    .line 1
     return-void
 .end method
 

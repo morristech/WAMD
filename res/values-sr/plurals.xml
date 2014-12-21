@@ -215,9 +215,9 @@
         <item quantity="few">%d преостале</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Све је у реду. Управо је повраћено %,d порука.</item>
-        <item quantity="one">Све је у реду. Управо је повраћена %,d порука.</item>
-        <item quantity="few">Све је у реду. Управо су повраћене %,d поруке.</item>
+        <item quantity="other">%,d порука повраћено. Можеш почети.</item>
+        <item quantity="one">%,d порука повраћена. Можеш почети.</item>
+        <item quantity="few">%,d поруке повраћене. Можеш почети.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Слање %1$d видеа за %2$s</item>

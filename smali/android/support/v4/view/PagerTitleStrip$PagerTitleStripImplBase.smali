@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,6 +26,6 @@
     .line 3
     invoke-virtual {p1}, Landroid/widget/TextView;->setSingleLine()V
 
-    .line 1
+    .line 2
     return-void
 .end method

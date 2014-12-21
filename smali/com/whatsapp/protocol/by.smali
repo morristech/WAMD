@@ -1,57 +1,23 @@
-.class Lcom/whatsapp/protocol/by;
-.super Lcom/whatsapp/protocol/ab;
+.class public interface abstract Lcom/whatsapp/protocol/by;
+.super Ljava/lang/Object;
 .source "by.java"
 
 
-# instance fields
-.field final a:Lcom/whatsapp/protocol/a9;
-
-
-# direct methods
-.method constructor <init>(Lcom/whatsapp/protocol/a9;)V
-    .locals 0
-
-    .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/protocol/by;->a:Lcom/whatsapp/protocol/a9;
-
-    invoke-direct {p0}, Lcom/whatsapp/protocol/ab;-><init>()V
-
-    return-void
-.end method
-
-
 # virtual methods
-.method public a(I)V
-    .locals 1
-
-    .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/protocol/by;->a:Lcom/whatsapp/protocol/a9;
-
-    invoke-static {v0}, Lcom/whatsapp/protocol/a9;->b(Lcom/whatsapp/protocol/a9;)Lcom/whatsapp/protocol/a2;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, Lcom/whatsapp/protocol/a2;->c(I)V
-
-    .line 5
-    return-void
+.method public abstract a()V
 .end method
 
-.method public a(Lcom/whatsapp/protocol/ax;Ljava/lang/String;)V
-    .locals 1
+.method public abstract a(Lcom/whatsapp/protocol/bk;)V
+.end method
 
-    .prologue
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/protocol/by;->a:Lcom/whatsapp/protocol/a9;
+.method public abstract a(Lcom/whatsapp/protocol/ct;)V
+.end method
 
-    invoke-static {v0}, Lcom/whatsapp/protocol/a9;->b(Lcom/whatsapp/protocol/a9;)Lcom/whatsapp/protocol/a2;
+.method public abstract a(Lcom/whatsapp/protocol/ct;I)V
+.end method
 
-    move-result-object v0
+.method public abstract a(Lcom/whatsapp/protocol/ct;Z)V
+.end method
 
-    invoke-interface {v0}, Lcom/whatsapp/protocol/a2;->a()V
-
-    .line 4
-    return-void
+.method public abstract a(Ljava/lang/String;Ljava/lang/String;)V
 .end method

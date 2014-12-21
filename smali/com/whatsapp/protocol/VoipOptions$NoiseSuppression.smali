@@ -23,7 +23,7 @@
 
     new-array v4, v0, [Ljava/lang/String;
 
-    const-string v3, "! \u000c("
+    const-string v3, "Pi,w"
 
     const/4 v0, -0x1
 
@@ -61,7 +61,7 @@
 
     aput-object v3, v5, v4
 
-    const-string v0, "! \u000c("
+    const-string v0, "Pi,w"
 
     move-object v3, v0
 
@@ -78,7 +78,7 @@
 
     const/4 v3, 0x2
 
-    const-string v0, "\u0002 \u0001>o\u001f:\u0018=x)<\u001b$e\"4\u0005\"n)r"
+    const-string v0, "si!a\u0001ns8b\u0016Xu;{\u000bS}%}\u0000X;"
 
     move v4, v3
 
@@ -104,7 +104,7 @@
 
     packed-switch v3, :pswitch_data_1
 
-    const/16 v3, 0xa
+    const/16 v3, 0x64
 
     :goto_2
     xor-int/2addr v3, v10
@@ -120,24 +120,26 @@
     goto :goto_1
 
     :pswitch_2
-    const/16 v3, 0x4c
+    const/16 v3, 0x3d
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v3, 0x4f
+    const/4 v3, 0x6
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v3, 0x68
+    const/16 v3, 0x48
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v3, 0x4d
+    const/16 v3, 0x12
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -158,42 +160,42 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8
+    .line 7
     iput-object p1, p0, Lcom/whatsapp/protocol/VoipOptions$NoiseSuppression;->mode:Ljava/lang/Short;
 
-    .line 3
+    .line 2
     return-void
 .end method
 
-.method public static fromProtocolTreeNode(Lcom/whatsapp/protocol/ax;)Lcom/whatsapp/protocol/VoipOptions$NoiseSuppression;
+.method public static fromProtocolTreeNode(Lcom/whatsapp/protocol/ct;)Lcom/whatsapp/protocol/VoipOptions$NoiseSuppression;
     .locals 5
 
     .prologue
     const/4 v4, 0x0
 
-    .line 1
+    .line 3
     if-nez p0, :cond_0
 
-    .line 7
+    .line 4
     const/4 v0, 0x0
 
     :goto_0
     return-object v0
 
-    .line 4
+    .line 6
     :cond_0
     sget-object v0, Lcom/whatsapp/protocol/VoipOptions$NoiseSuppression;->z:[Ljava/lang/String;
 
     aget-object v0, v0, v4
 
-    invoke-virtual {p0, v0}, Lcom/whatsapp/protocol/ax;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/whatsapp/protocol/ct;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 6
+    .line 1
     new-instance v0, Lcom/whatsapp/protocol/VoipOptions$NoiseSuppression;
 
     sget-object v2, Lcom/whatsapp/protocol/VoipOptions$NoiseSuppression;->z:[Ljava/lang/String;
@@ -219,7 +221,7 @@
     .locals 3
 
     .prologue
-    .line 2
+    .line 5
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

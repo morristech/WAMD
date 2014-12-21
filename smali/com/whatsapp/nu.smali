@@ -3,20 +3,20 @@
 .source "nu.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ContactPicker;
+.field final a:Lcom/whatsapp/Conversation;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ContactPicker;)V
+.method constructor <init>(Lcom/whatsapp/Conversation;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/ContactPicker;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/Conversation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,35 +25,117 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 3
+.method public run()V
+    .locals 9
 
     .prologue
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/ContactPicker;
+    const/4 v2, 0x0
 
-    const/4 v1, -0x1
+    const/16 v3, 0x8
 
-    iget-object v2, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v2}, Lcom/whatsapp/ContactPicker;->y(Lcom/whatsapp/ContactPicker;)Landroid/content/Intent;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Lcom/whatsapp/ContactPicker;->setResult(ILandroid/content/Intent;)V
-
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/ContactPicker;
-
-    const/4 v1, 0x3
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/ContactPicker;->removeDialog(I)V
-
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-virtual {v0}, Lcom/whatsapp/ContactPicker;->finish()V
+    const/4 v1, 0x1
 
     .line 5
+    iget-object v0, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->J(Lcom/whatsapp/Conversation;)Landroid/view/View;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 12
+    iget-object v0, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->J(Lcom/whatsapp/Conversation;)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+
+    .line 10
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->ag(Lcom/whatsapp/Conversation;)Landroid/view/View;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->ag(Lcom/whatsapp/Conversation;)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+
+    .line 2
+    :cond_1
+    iget-object v0, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->z(Lcom/whatsapp/Conversation;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    .line 9
+    iget-object v0, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->z(Lcom/whatsapp/Conversation;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/widget/TextView;->getVisibility()I
+
+    move-result v0
+
+    if-eq v0, v3, :cond_2
+
+    .line 8
+    iget-object v0, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->z(Lcom/whatsapp/Conversation;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 6
+    new-instance v0, Landroid/view/animation/TranslateAnimation;
+
+    const/high16 v8, -0x40800000
+
+    move v3, v1
+
+    move v4, v2
+
+    move v5, v1
+
+    move v6, v2
+
+    move v7, v1
+
+    invoke-direct/range {v0 .. v8}, Landroid/view/animation/TranslateAnimation;-><init>(IFIFIFIF)V
+
+    .line 11
+    const-wide/16 v2, 0xc8
+
+    invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
+
+    .line 3
+    iget-object v1, p0, Lcom/whatsapp/nu;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v1}, Lcom/whatsapp/Conversation;->z(Lcom/whatsapp/Conversation;)Landroid/widget/TextView;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->startAnimation(Landroid/view/animation/Animation;)V
+
+    .line 7
+    :cond_2
     return-void
 .end method

@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,7 +23,7 @@
     .locals 2
 
     .prologue
-    .line 4
+    .line 5
     new-instance v0, Lcom/actionbarsherlock/internal/widget/IcsProgressBar$SavedState;
 
     const/4 v1, 0x0
@@ -37,7 +37,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 1
     invoke-virtual {p0, p1}, Lcom/actionbarsherlock/internal/widget/IcsProgressBar$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/actionbarsherlock/internal/widget/IcsProgressBar$SavedState;
 
     move-result-object v0
@@ -49,7 +49,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 4
     new-array v0, p1, [Lcom/actionbarsherlock/internal/widget/IcsProgressBar$SavedState;
 
     return-object v0
@@ -59,7 +59,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 2
     invoke-virtual {p0, p1}, Lcom/actionbarsherlock/internal/widget/IcsProgressBar$SavedState$1;->newArray(I)[Lcom/actionbarsherlock/internal/widget/IcsProgressBar$SavedState;
 
     move-result-object v0

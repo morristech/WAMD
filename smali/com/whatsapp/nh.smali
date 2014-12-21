@@ -1,9 +1,9 @@
-.class final Lcom/whatsapp/nh;
+.class Lcom/whatsapp/nh;
 .super Ljava/lang/Object;
 .source "nh.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/actionbarsherlock/app/ActionBar$OnMenuVisibilityListener;
 
 
 # static fields
@@ -11,16 +11,14 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/r3;
-
-.field private final b:Z
+.field final a:Lcom/whatsapp/Conversation;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "3~S\u0002\u00045eW\u001d\u0006pr_\u001e\u00042p]\u0019H6~LR\u0007>V[\u00068\"tu\u0017\u0011\u0003d]\u0011\r#b\u0004R"
+    const-string v0, "Xy\u0019V@Ie\u0016TLTxXOKvs\u0019UsRe\u001eBLW\u007f\u0003YfSw\u0019G@_6"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -58,7 +56,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x68
+    const/16 v0, 0x25
 
     :goto_1
     xor-int/2addr v0, v4
@@ -74,22 +72,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x50
+    const/16 v0, 0x3b
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x11
+    const/16 v0, 0x16
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x3e
+    const/16 v0, 0x77
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x72
+    const/16 v0, 0x20
 
     goto :goto_1
 
@@ -102,29 +100,27 @@
     .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/whatsapp/r3;Z)V
+.method constructor <init>(Lcom/whatsapp/Conversation;)V
     .locals 0
 
     .prologue
-    .line 7
-    iput-object p1, p0, Lcom/whatsapp/nh;->a:Lcom/whatsapp/r3;
+    .line 8
+    iput-object p1, p0, Lcom/whatsapp/nh;->a:Lcom/whatsapp/Conversation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
-    iput-boolean p2, p0, Lcom/whatsapp/nh;->b:Z
-
-    .line 4
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public onMenuVisibilityChanged(Z)V
+    .locals 3
 
     .prologue
-    .line 6
+    const/4 v2, 0x0
+
+    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -135,9 +131,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/whatsapp/nh;->b:Z
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -147,32 +141,69 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/nh;->a:Lcom/whatsapp/r3;
+    .line 4
+    if-eqz p1, :cond_1
 
-    iget-object v0, v0, Lcom/whatsapp/r3;->a:Lcom/whatsapp/au;
+    iget-object v0, p0, Lcom/whatsapp/nh;->a:Lcom/whatsapp/Conversation;
 
-    invoke-static {v0}, Lcom/whatsapp/au;->a(Lcom/whatsapp/au;)Lcom/whatsapp/App;
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->af(Lcom/whatsapp/Conversation;)Lcom/actionbarsherlock/view/MenuItem;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/whatsapp/App;->X:Ljava/util/Set;
+    if-eqz v0, :cond_1
 
-    iget-object v1, p0, Lcom/whatsapp/nh;->a:Lcom/whatsapp/r3;
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/nh;->a:Lcom/whatsapp/Conversation;
 
-    iget-object v1, v1, Lcom/whatsapp/r3;->c:Ljava/lang/String;
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->g(Lcom/whatsapp/Conversation;)Ljava/lang/Boolean;
 
-    invoke-interface {v0, v1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    .line 1
-    iget-boolean v0, p0, Lcom/whatsapp/nh;->b:Z
+    move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 8
-    invoke-static {}, Lcom/whatsapp/App;->aV()V
+    .line 7
+    iget-object v0, p0, Lcom/whatsapp/nh;->a:Lcom/whatsapp/Conversation;
 
-    .line 2
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->af(Lcom/whatsapp/Conversation;)Lcom/actionbarsherlock/view/MenuItem;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/whatsapp/nh;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v1}, Lcom/whatsapp/Conversation;->g(Lcom/whatsapp/Conversation;)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    invoke-interface {v0, v1}, Lcom/actionbarsherlock/view/MenuItem;->setEnabled(Z)Lcom/actionbarsherlock/view/MenuItem;
+
+    sget v0, Lcom/whatsapp/App;->h:I
+
+    if-eqz v0, :cond_1
+
+    .line 1
     :cond_0
+    iget-object v0, p0, Lcom/whatsapp/nh;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->af(Lcom/whatsapp/Conversation;)Lcom/actionbarsherlock/view/MenuItem;
+
+    move-result-object v0
+
+    invoke-interface {v0, v2}, Lcom/actionbarsherlock/view/MenuItem;->setEnabled(Z)Lcom/actionbarsherlock/view/MenuItem;
+
+    .line 3
+    new-instance v0, Lcom/whatsapp/ap9;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/ap9;-><init>(Lcom/whatsapp/nh;)V
+
+    new-array v1, v2, [Ljava/lang/Void;
+
+    invoke-static {v0, v1}, Lcom/whatsapp/rf;->a(Landroid/os/AsyncTask;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+
+    .line 6
+    :cond_1
     return-void
 .end method

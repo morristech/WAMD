@@ -3,20 +3,20 @@
 .source "z3.java"
 
 # interfaces
-.implements Landroid/preference/Preference$OnPreferenceClickListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/SettingsChat;
+.field final a:Lcom/whatsapp/VoipActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/SettingsChat;)V
+.method constructor <init>(Lcom/whatsapp/VoipActivity;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/z3;->a:Lcom/whatsapp/SettingsChat;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/z3;->a:Lcom/whatsapp/VoipActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,19 +25,29 @@
 
 
 # virtual methods
-.method public onPreferenceClick(Landroid/preference/Preference;)Z
-    .locals 2
+.method public onClick(Landroid/view/View;)V
+    .locals 1
 
     .prologue
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/z3;->a:Lcom/whatsapp/SettingsChat;
+    iget-object v0, p0, Lcom/whatsapp/z3;->a:Lcom/whatsapp/VoipActivity;
 
-    const/4 v1, 0x3
+    invoke-static {v0}, Lcom/whatsapp/VoipActivity;->c(Lcom/whatsapp/VoipActivity;)Lcom/whatsapp/VoiceService;
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/SettingsChat;->showDialog(I)V
+    move-result-object v0
 
-    .line 3
-    const/4 v0, 0x1
+    if-eqz v0, :cond_0
 
-    return v0
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/z3;->a:Lcom/whatsapp/VoipActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/VoipActivity;->c(Lcom/whatsapp/VoipActivity;)Lcom/whatsapp/VoiceService;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/whatsapp/VoiceService;->v()V
+
+    .line 4
+    :cond_0
+    return-void
 .end method

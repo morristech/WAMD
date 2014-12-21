@@ -1,9 +1,6 @@
 .class Lcom/whatsapp/pk;
-.super Ljava/lang/Object;
+.super Ljava/io/ObjectInputStream;
 .source "pk.java"
-
-# interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # static fields
@@ -11,16 +8,14 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ConversationsFragment$DeleteGroupDialogFragment;
-
-.field final b:Lcom/whatsapp/adg;
+.field final a:Lcom/whatsapp/g7;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "5\u000cwK\u0011$\u0010xI\u001d9\rj\u0012\u0001%\u0006k\u0010\u00103\u000f|I\u0011\u0011\u0011vH\u0004"
+    const-string v0, "\r\u0002\u0013}t\u0006\u000c\n b\u001e\u001dP\'p"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -58,7 +53,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x74
+    const/4 v0, 0x3
 
     :goto_1
     xor-int/2addr v0, v4
@@ -74,24 +69,26 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x56
+    const/16 v0, 0x6e
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x63
+    const/16 v0, 0x6d
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x19
+    const/16 v0, 0x7e
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x3d
+    const/16 v0, 0x53
 
     goto :goto_1
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -102,52 +99,49 @@
     .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/whatsapp/ConversationsFragment$DeleteGroupDialogFragment;Lcom/whatsapp/adg;)V
+.method constructor <init>(Lcom/whatsapp/g7;Ljava/io/InputStream;)V
     .locals 0
 
     .prologue
-    .line 6
-    iput-object p1, p0, Lcom/whatsapp/pk;->a:Lcom/whatsapp/ConversationsFragment$DeleteGroupDialogFragment;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/pk;->a:Lcom/whatsapp/g7;
 
-    iput-object p2, p0, Lcom/whatsapp/pk;->b:Lcom/whatsapp/adg;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2}, Ljava/io/ObjectInputStream;-><init>(Ljava/io/InputStream;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 1
+.method protected readClassDescriptor()Ljava/io/ObjectStreamClass;
+    .locals 3
 
     .prologue
-    .line 4
-    sget-object v0, Lcom/whatsapp/pk;->z:Ljava/lang/String;
-
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/pk;->b:Lcom/whatsapp/adg;
-
-    iget-object v0, v0, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    invoke-static {v0}, Lcom/whatsapp/App;->y(Ljava/lang/String;)V
-
     .line 5
-    invoke-static {}, Lcom/whatsapp/ConversationsFragment;->f()I
+    invoke-super {p0}, Ljava/io/ObjectInputStream;->readClassDescriptor()Ljava/io/ObjectStreamClass;
 
-    move-result v0
+    move-result-object v0
 
-    add-int/lit8 v0, v0, 0x1
+    .line 4
+    sget-object v1, Lcom/whatsapp/pk;->z:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/whatsapp/ConversationsFragment;->b(I)V
+    invoke-virtual {v0}, Ljava/io/ObjectStreamClass;->getName()Ljava/lang/String;
 
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/pk;->a:Lcom/whatsapp/ConversationsFragment$DeleteGroupDialogFragment;
+    move-result-object v2
 
-    invoke-virtual {v0}, Lcom/whatsapp/ConversationsFragment$DeleteGroupDialogFragment;->dismiss()V
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
 
     .line 3
-    return-void
+    const-class v0, Lcom/whatsapp/EmojiPicker$EmojiWeight;
+
+    invoke-static {v0}, Ljava/io/ObjectStreamClass;->lookup(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;
+
+    move-result-object v0
+
+    :cond_0
+    return-object v0
 .end method

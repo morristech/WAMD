@@ -1,39 +1,46 @@
 .class Lcom/whatsapp/_l;
-.super Lcom/whatsapp/_f;
+.super Ljava/lang/Object;
 .source "_l.java"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # instance fields
-.field final j:Lcom/whatsapp/GroupChatInfo;
+.field final a:Lcom/whatsapp/RecordAudio;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/GroupChatInfo;Ljava/lang/String;Ljava/lang/String;Ljava/util/Vector;I)V
+.method constructor <init>(Lcom/whatsapp/RecordAudio;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/_l;->j:Lcom/whatsapp/GroupChatInfo;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/_l;->a:Lcom/whatsapp/RecordAudio;
 
-    invoke-direct {p0, p2, p3, p4, p5}, Lcom/whatsapp/_f;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Vector;I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
-    .locals 1
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 2
 
     .prologue
-    .line 1
-    invoke-super {p0}, Lcom/whatsapp/_f;->a()V
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/_l;->a:Lcom/whatsapp/RecordAudio;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/RecordAudio;->removeDialog(I)V
+
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/_l;->a:Lcom/whatsapp/RecordAudio;
+
+    invoke-virtual {v0}, Lcom/whatsapp/RecordAudio;->finish()V
 
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/_l;->j:Lcom/whatsapp/GroupChatInfo;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatInfo;->d(Lcom/whatsapp/GroupChatInfo;)V
-
-    .line 4
     return-void
 .end method

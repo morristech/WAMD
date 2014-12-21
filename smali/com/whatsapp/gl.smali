@@ -1,161 +1,166 @@
-.class public Lcom/whatsapp/gl;
-.super Landroid/app/Dialog;
+.class Lcom/whatsapp/gl;
+.super Ljava/lang/Object;
 .source "gl.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# static fields
+.field private static final z:Ljava/lang/String;
 
 
 # instance fields
-.field private final a:I
-
-.field private final b:Landroid/app/Activity;
+.field final a:Lcom/whatsapp/RegisterName;
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;I)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 5
+
+    const-string v0, "z$d\n\u007fL\'q\u000bc|."
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    move v2, v1
+
+    move-object v1, v0
+
+    :goto_0
+    if-gt v2, v3, :cond_0
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/whatsapp/gl;->z:Ljava/lang/String;
+
+    return-void
+
+    :cond_0
+    aget-char v4, v1, v3
+
+    rem-int/lit8 v0, v3, 0x5
+
+    packed-switch v0, :pswitch_data_0
+
+    const/16 v0, 0xb
+
+    :goto_1
+    xor-int/2addr v0, v4
+
+    int-to-char v0, v0
+
+    aput-char v0, v1, v3
+
+    add-int/lit8 v0, v3, 0x1
+
+    move v3, v0
+
+    goto :goto_0
+
+    :pswitch_0
+    const/16 v0, 0x13
+
+    goto :goto_1
+
+    :pswitch_1
+    const/16 v0, 0x4a
+
+    goto :goto_1
+
+    :pswitch_2
+    const/16 v0, 0x14
+
+    goto :goto_1
+
+    :pswitch_3
+    const/16 v0, 0x7f
+
+    goto :goto_1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+    .end packed-switch
+.end method
+
+.method constructor <init>(Lcom/whatsapp/RegisterName;)V
+    .locals 0
 
     .prologue
-    .line 16
-    const v0, 0x7f0f0018
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/gl;->a:Lcom/whatsapp/RegisterName;
 
-    invoke-direct {p0, p1, v0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 20
-    iput-object p1, p0, Lcom/whatsapp/gl;->b:Landroid/app/Activity;
-
-    .line 15
-    iput p2, p0, Lcom/whatsapp/gl;->a:I
-
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
-    .locals 1
+.method public onClick(Landroid/view/View;)V
+    .locals 3
 
     .prologue
     .line 1
-    invoke-virtual {p0}, Lcom/whatsapp/gl;->onSaveInstanceState()Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/whatsapp/gl;->a:Lcom/whatsapp/RegisterName;
+
+    sget-object v1, Lcom/whatsapp/gl;->z:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/RegisterName;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 13
-    invoke-virtual {p0, v0}, Lcom/whatsapp/gl;->onCreate(Landroid/os/Bundle;)V
+    check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
-    .line 5
-    return-void
-.end method
+    .line 3
+    iget-object v1, p0, Lcom/whatsapp/gl;->a:Lcom/whatsapp/RegisterName;
 
-.method protected onCreate(Landroid/os/Bundle;)V
-    .locals 5
+    invoke-static {v1}, Lcom/whatsapp/RegisterName;->a(Lcom/whatsapp/RegisterName;)Landroid/widget/EditText;
 
-    .prologue
-    const/4 v4, -0x1
+    move-result-object v1
 
-    .line 14
-    invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
+    invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
-    .line 19
-    invoke-virtual {p0}, Lcom/whatsapp/gl;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/view/Window;->getLayoutInflater()Landroid/view/LayoutInflater;
-
-    move-result-object v0
-
-    iget v1, p0, Lcom/whatsapp/gl;->a:I
+    move-result-object v1
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
-    invoke-static {v0, v1, v2, v3}, Lcom/whatsapp/ad_;->a(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/gl;->a:Lcom/whatsapp/RegisterName;
 
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/gl;->setContentView(Landroid/view/View;)V
-
-    .line 4
-    invoke-virtual {p0}, Lcom/whatsapp/gl;->getWindow()Landroid/view/Window;
+    invoke-static {v0}, Lcom/whatsapp/RegisterName;->g(Lcom/whatsapp/RegisterName;)Lcom/whatsapp/atu;
 
     move-result-object v0
 
-    invoke-virtual {v0, v4, v4}, Landroid/view/Window;->setLayout(II)V
+    iget-object v1, p0, Lcom/whatsapp/gl;->a:Lcom/whatsapp/RegisterName;
 
-    .line 18
-    return-void
-.end method
+    const v2, 0x7f0b01c0
 
-.method public onKeyDown(ILandroid/view/KeyEvent;)Z
-    .locals 4
+    invoke-virtual {v1, v2}, Lcom/whatsapp/RegisterName;->findViewById(I)Landroid/view/View;
 
-    .prologue
-    const/4 v1, 0x1
+    move-result-object v1
 
-    .line 17
-    sget v0, Lcom/whatsapp/App;->T:I
-
-    const/4 v2, 0x3
-
-    if-ne v0, v2, :cond_0
+    invoke-virtual {v0, v1}, Lcom/whatsapp/atu;->a(Landroid/view/View;)V
 
     .line 2
-    const v0, 0x1020002
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/gl;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/view/ViewGroup;
-
-    .line 9
-    sparse-switch p1, :sswitch_data_0
-
-    .line 7
-    :cond_0
-    invoke-super {p0, p1, p2}, Landroid/app/Dialog;->onKeyDown(ILandroid/view/KeyEvent;)Z
-
-    move-result v0
-
-    .line 12
-    :goto_0
-    return v0
-
-    :sswitch_0
-    move v0, v1
-
-    .line 6
-    goto :goto_0
-
-    .line 3
-    :sswitch_1
-    iget-object v2, p0, Lcom/whatsapp/gl;->b:Landroid/app/Activity;
-
-    const/4 v3, 0x0
-
-    invoke-static {v0, v2, v3}, Lcom/whatsapp/util/o;->a(Landroid/view/ViewGroup;Landroid/app/Activity;Z)V
-
-    move v0, v1
-
-    .line 12
-    goto :goto_0
-
-    .line 11
-    :sswitch_2
-    invoke-static {}, Lcom/whatsapp/util/o;->c()V
-
-    move v0, v1
-
-    .line 8
-    goto :goto_0
-
-    .line 9
-    :sswitch_data_0
-    .sparse-switch
-        0x18 -> :sswitch_0
-        0x19 -> :sswitch_2
-        0x54 -> :sswitch_1
-    .end sparse-switch
+    return-void
 .end method

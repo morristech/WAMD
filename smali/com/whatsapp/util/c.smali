@@ -3,21 +3,15 @@
 .source "c.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field final a:Landroid/content/Context;
+.implements Lcom/whatsapp/util/at;
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;)V
+.method constructor <init>()V
     .locals 0
 
     .prologue
     .line 2
-    iput-object p1, p0, Lcom/whatsapp/util/c;->a:Landroid/content/Context;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,29 +19,50 @@
 
 
 # virtual methods
-.method public run()V
+.method public a(Landroid/graphics/drawable/Drawable;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
     .locals 4
 
     .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/util/c;->a:Landroid/content/Context;
+    const/4 v3, 0x0
 
-    new-instance v1, Landroid/content/Intent;
+    .line 4
+    .line 5
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
-    iget-object v2, p0, Lcom/whatsapp/util/c;->a:Landroid/content/Context;
+    move-result-object v0
 
-    const-class v3, Lcom/whatsapp/CorruptInstallationActivity;
+    invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
-    invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    move-result v1
 
-    const/high16 v2, 0x10000000
+    int-to-float v1, v1
 
-    invoke-virtual {v1, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+    invoke-virtual {v0, v1}, Lcom/whatsapp/art;->a(F)F
+
+    move-result v0
+
+    float-to-int v0, v0
+
+    .line 6
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
+
+    move-result v2
+
+    int-to-float v2, v2
+
+    invoke-virtual {v1, v2}, Lcom/whatsapp/art;->a(F)F
+
+    move-result v1
+
+    float-to-int v1, v1
 
     .line 3
-    return-void
+    invoke-virtual {p1, v3, v3, v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 1
+    return-object p1
 .end method

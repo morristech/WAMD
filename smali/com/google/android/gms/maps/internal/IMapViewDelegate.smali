@@ -9,7 +9,10 @@
 .method public abstract getMap()Lcom/google/android/gms/maps/internal/IGoogleMapDelegate;
 .end method
 
-.method public abstract getView()Lcom/google/android/gms/dynamic/b;
+.method public abstract getMapAsync(Lcom/google/android/gms/maps/internal/m;)V
+.end method
+
+.method public abstract getView()Lcom/google/android/gms/dynamic/d;
 .end method
 
 .method public abstract onCreate(Landroid/os/Bundle;)V

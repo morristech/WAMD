@@ -28,13 +28,13 @@
 .method static constructor <clinit>()V
     .locals 12
 
-    const/16 v2, 0x69
+    const/16 v1, 0x56
 
-    const/16 v4, 0x34
+    const/16 v3, 0x52
 
-    const/16 v1, 0x32
+    const/16 v2, 0x12
 
-    const/4 v3, 0x5
+    const/16 v4, 0xc
 
     const/4 v6, 0x0
 
@@ -42,7 +42,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "w4+"
+    const-string v0, "5\u0008|uxv\u0001s<h:\u000c2\"m$\u0008\u007f7x3\u001b2"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -71,7 +71,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "Q\u0016\u0007\"@\u0012\u0004\u001cuD]\u0005\u001d%Y]\u0013\u000c%"
+    const-string v0, "5\u0008|uxv\u001ag\"|9\u001bfra9\rwr"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -100,7 +100,7 @@
 
     const/4 v10, 0x2
 
-    const-string v0, "Q\u0016\u0007\"@\u0012\u001f\u0008kP^\u0012IuU@\u0016\u0004`@W\u0005I"
+    const-string v0, "\u0013*P"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -129,7 +129,7 @@
 
     const/4 v10, 0x3
 
-    const-string v0, "a4"
+    const-string v0, "\u0006\u0008v6e8\u000e2"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -158,7 +158,7 @@
 
     const/4 v10, 0x4
 
-    const-string v0, "b\u0016\ra]\\\u0010I"
+    const-string v0, "\u0018\u0006B3h2\u0000|5"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -185,7 +185,9 @@
 
     aput-object v0, v9, v10
 
-    const-string v0, "\u0012\u0002\u0007nZ]\u0000\u0007+"
+    const/4 v10, 0x5
+
+    const-string v0, "v\u001c|9b9\u001e||"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -210,11 +212,11 @@
 
     move-result-object v0
 
-    aput-object v0, v9, v3
+    aput-object v0, v9, v10
 
     const/4 v10, 0x6
 
-    const-string v0, "|\u00189dPV\u001e\u0007b"
+    const-string v0, "\u0005*"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -243,7 +245,7 @@
 
     const/4 v10, 0x7
 
-    const-string v0, "G\u0019\u0002k[E\u0019IjD_\u0018\r`\u0014"
+    const-string v0, "#\u0007y<c!\u00072\"m$\u0008\u007f7x3\u001b2&u&\u000c<"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -272,7 +274,7 @@
 
     const/16 v10, 0x8
 
-    const-string v0, "G\u0019\u0002k[E\u0019IuU@\u0016\u0004`@W\u0005IqMB\u0012G"
+    const-string v0, "\u001d\u000ckrj9\u001b23`1\u0006`;x>\u00042"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -301,7 +303,7 @@
 
     const/16 v10, 0x9
 
-    const-string v0, "b5,%FW\u0006\u001clFW\u0004IUvwW\u0019dFS\u001a\u000cqQ@\u0004Iq[\u0012\u0015\u000c%GW\u0003G"
+    const-string v0, "v\u0007}&,%\u001c{&m4\u0005wrj9\u001b2!u;\u0004w&~?\n27b$\u0010b&e9\u0007<"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -330,7 +332,7 @@
 
     const/16 v10, 0xa
 
-    const-string v0, "\\\u0018ILb\u0012\u0004\u000cq\u0014E\u001f\u000ck\u0014]\u0019\u000c%QJ\u0007\u000cf@W\u0013"
+    const-string v0, "v\u0019s!\u007f3\r"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -359,7 +361,7 @@
 
     const/16 v10, 0xb
 
-    const-string v0, "\u0012\u0019\u0006q\u0014A\u0002\u0000qUP\u001b\u000c%R]\u0005IvM_\u001a\u000cqF[\u0014I`Z@\u000e\u0019q]]\u0019G"
+    const-string v0, "#\u0007y<c!\u00072=|;\u0006v7,"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -386,9 +388,7 @@
 
     aput-object v0, v9, v10
 
-    const/16 v10, 0xc
-
-    const-string v0, "y\u0012\u0010%R]\u0005IdXU\u0018\u001bl@Z\u001aI"
+    const-string v0, "8\u00062\u001bZv\u001aw&,!\u0001w<,9\u0007wri.\u0019w1x3\r"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -413,11 +413,11 @@
 
     move-result-object v0
 
-    aput-object v0, v9, v10
+    aput-object v0, v9, v4
 
     const/16 v8, 0xd
 
-    const-string v0, "\u0012\u0007\u0008vGW\u0013"
+    const-string v0, "\u0006+Wr~3\u0018g;~3\u001a2\u0002N\u0013Ib3~7\u0004w&i$\u001a2&cv\u000bwr\u007f3\u001d<"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -476,7 +476,7 @@
     goto :goto_e
 
     :pswitch_1
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_e
 
@@ -518,7 +518,7 @@
     goto :goto_f
 
     :pswitch_5
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_f
 
@@ -560,7 +560,7 @@
     goto :goto_10
 
     :pswitch_9
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_10
 
@@ -602,7 +602,7 @@
     goto :goto_11
 
     :pswitch_d
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_11
 
@@ -644,7 +644,7 @@
     goto :goto_12
 
     :pswitch_11
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_12
 
@@ -659,7 +659,7 @@
     goto :goto_12
 
     :cond_5
-    aget-char v10, v5, v8
+    aget-char v11, v5, v8
 
     rem-int/lit8 v0, v8, 0x5
 
@@ -668,7 +668,7 @@
     move v0, v4
 
     :goto_13
-    xor-int/2addr v0, v10
+    xor-int/2addr v0, v11
 
     int-to-char v0, v0
 
@@ -686,7 +686,7 @@
     goto :goto_13
 
     :pswitch_15
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_13
 
@@ -728,7 +728,7 @@
     goto :goto_14
 
     :pswitch_19
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_14
 
@@ -770,7 +770,7 @@
     goto :goto_15
 
     :pswitch_1d
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_15
 
@@ -812,7 +812,7 @@
     goto :goto_16
 
     :pswitch_21
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_16
 
@@ -854,7 +854,7 @@
     goto :goto_17
 
     :pswitch_25
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_17
 
@@ -896,7 +896,7 @@
     goto :goto_18
 
     :pswitch_29
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_18
 
@@ -938,7 +938,7 @@
     goto :goto_19
 
     :pswitch_2d
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_19
 
@@ -953,7 +953,7 @@
     goto :goto_19
 
     :cond_c
-    aget-char v11, v5, v8
+    aget-char v10, v5, v8
 
     rem-int/lit8 v0, v8, 0x5
 
@@ -962,7 +962,7 @@
     move v0, v4
 
     :goto_1a
-    xor-int/2addr v0, v11
+    xor-int/2addr v0, v10
 
     int-to-char v0, v0
 
@@ -980,7 +980,7 @@
     goto :goto_1a
 
     :pswitch_31
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_1a
 
@@ -1022,7 +1022,7 @@
     goto :goto_1b
 
     :pswitch_35
-    const/16 v0, 0x77
+    const/16 v0, 0x69
 
     goto :goto_1b
 
@@ -1159,10 +1159,10 @@
 
     const/4 v3, 0x0
 
-    .line 57
+    .line 54
     invoke-direct {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseWrapCipher;-><init>()V
 
-    .line 103
+    .line 73
     const/4 v0, 0x4
 
     new-array v0, v0, [Ljava/lang/Class;
@@ -1191,22 +1191,22 @@
 
     iput-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->availableSpecs:[Ljava/lang/Class;
 
-    .line 100
+    .line 75
     iput v3, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->ivLength:I
 
-    .line 96
+    .line 17
     iput-object v4, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->pbeSpec:Ljavax/crypto/spec/PBEParameterSpec;
 
-    .line 35
+    .line 31
     iput-object v4, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->pbeAlgorithm:Ljava/lang/String;
 
-    .line 104
+    .line 24
     iput-object p1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->cipher:Lorg/spongycastle/crypto/StreamCipher;
 
-    .line 6
+    .line 25
     iput p2, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->ivLength:I
 
-    .line 56
+    .line 68
     return-void
 .end method
 
@@ -1216,10 +1216,10 @@
     .locals 6
 
     .prologue
-    .line 58
+    .line 15
     if-eqz p3, :cond_0
 
-    .line 42
+    .line 82
     :try_start_0
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->cipher:Lorg/spongycastle/crypto/StreamCipher;
 
@@ -1237,16 +1237,16 @@
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 66
+    .line 58
     :cond_0
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->cipher:Lorg/spongycastle/crypto/StreamCipher;
 
     invoke-interface {v0}, Lorg/spongycastle/crypto/StreamCipher;->reset()V
 
-    .line 68
+    .line 79
     return p3
 
-    .line 42
+    .line 82
     :catch_0
     move-exception v0
 
@@ -1257,30 +1257,30 @@
     .locals 2
 
     .prologue
-    .line 73
+    .line 56
     if-eqz p3, :cond_0
 
-    .line 15
+    .line 69
     invoke-virtual {p0, p1, p2, p3}, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->engineUpdate([BII)[B
 
     move-result-object v0
 
-    .line 94
+    .line 101
     iget-object v1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->cipher:Lorg/spongycastle/crypto/StreamCipher;
 
     invoke-interface {v1}, Lorg/spongycastle/crypto/StreamCipher;->reset()V
 
-    .line 79
+    .line 39
     :goto_0
     return-object v0
 
-    .line 22
+    .line 50
     :cond_0
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->cipher:Lorg/spongycastle/crypto/StreamCipher;
 
     invoke-interface {v0}, Lorg/spongycastle/crypto/StreamCipher;->reset()V
 
-    .line 31
+    .line 39
     const/4 v0, 0x0
 
     new-array v0, v0, [B
@@ -1292,7 +1292,7 @@
     .locals 1
 
     .prologue
-    .line 60
+    .line 55
     const/4 v0, 0x0
 
     return v0
@@ -1302,7 +1302,7 @@
     .locals 1
 
     .prologue
-    .line 63
+    .line 28
     :try_start_0
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->ivParam:Lorg/spongycastle/crypto/params/ParametersWithIV;
 
@@ -1334,7 +1334,7 @@
     .locals 1
 
     .prologue
-    .line 25
+    .line 103
     invoke-interface {p1}, Ljava/security/Key;->getEncoded()[B
 
     move-result-object v0
@@ -1350,7 +1350,7 @@
     .locals 0
 
     .prologue
-    .line 49
+    .line 36
     return p1
 .end method
 
@@ -1358,26 +1358,26 @@
     .locals 3
 
     .prologue
-    .line 1
+    .line 14
     :try_start_0
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->engineParams:Ljava/security/AlgorithmParameters;
 
     if-nez v0, :cond_0
 
-    .line 14
+    .line 92
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->pbeSpec:Ljavax/crypto/spec/PBEParameterSpec;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     if-eqz v0, :cond_0
 
-    .line 91
+    .line 16
     :try_start_1
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->pbeAlgorithm:Ljava/lang/String;
 
     sget-object v1, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x3
+    const/4 v2, 0x6
 
     aget-object v1, v1, v2
 
@@ -1385,33 +1385,33 @@
 
     move-result-object v0
 
-    .line 41
+    .line 63
     iget-object v1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->pbeSpec:Ljavax/crypto/spec/PBEParameterSpec;
 
     invoke-virtual {v0, v1}, Ljava/security/AlgorithmParameters;->init(Ljava/security/spec/AlgorithmParameterSpec;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 69
+    .line 105
     :goto_0
     return-object v0
 
-    .line 14
+    .line 92
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 105
+    .line 32
     :catch_1
     move-exception v0
 
-    .line 69
+    .line 105
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 4
+    .line 91
     :cond_0
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->engineParams:Ljava/security/AlgorithmParameters;
 
@@ -1422,15 +1422,15 @@
     .locals 4
 
     .prologue
-    .line 26
-    const/4 v1, 0x0
-
-    .line 54
-    if-eqz p3, :cond_2
-
-    .line 55
     const/4 v0, 0x0
 
+    .line 57
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz p3, :cond_2
+
+    .line 67
     :cond_0
     iget-object v2, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->availableSpecs:[Ljava/lang/Class;
 
@@ -1438,7 +1438,7 @@
 
     if-eq v0, v2, :cond_1
 
-    .line 67
+    .line 9
     :try_start_0
     iget-object v2, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->availableSpecs:[Ljava/lang/Class;
 
@@ -1452,11 +1452,11 @@
 
     move-object v0, v1
 
-    .line 72
+    .line 102
     :goto_0
     if-nez v0, :cond_3
 
-    .line 18
+    .line 100
     :try_start_1
     new-instance v0, Ljava/security/InvalidAlgorithmParameterException;
 
@@ -1466,7 +1466,7 @@
 
     sget-object v2, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x2
+    const/4 v3, 0x0
 
     aget-object v2, v2, v3
 
@@ -1497,11 +1497,11 @@
 
     throw v0
 
-    .line 32
+    .line 83
     :catch_1
     move-exception v2
 
-    .line 61
+    .line 27
     add-int/lit8 v0, v0, 0x1
 
     sget-boolean v2, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->a:Z
@@ -1516,14 +1516,14 @@
     :cond_2
     move-object v0, v1
 
-    .line 74
+    .line 30
     :cond_3
     invoke-virtual {p0, p1, p2, v0, p4}, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->engineInit(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V
 
-    .line 19
+    .line 72
     iput-object p3, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->engineParams:Ljava/security/AlgorithmParameters;
 
-    .line 51
+    .line 99
     return-void
 .end method
 
@@ -1531,7 +1531,7 @@
     .locals 2
 
     .prologue
-    .line 12
+    .line 22
     const/4 v0, 0x0
 
     :try_start_0
@@ -1541,14 +1541,14 @@
     :try_end_0
     .catch Ljava/security/InvalidAlgorithmParameterException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 46
+    .line 2
     return-void
 
-    .line 85
+    .line 74
     :catch_0
     move-exception v0
 
-    .line 28
+    .line 35
     new-instance v1, Ljava/security/InvalidKeyException;
 
     invoke-virtual {v0}, Ljava/security/InvalidAlgorithmParameterException;->getMessage()Ljava/lang/String;
@@ -1568,28 +1568,28 @@
 
     sget-boolean v4, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->a:Z
 
-    .line 50
+    .line 94
     const/4 v1, 0x0
 
     :try_start_0
     iput-object v1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->pbeSpec:Ljavax/crypto/spec/PBEParameterSpec;
 
-    .line 93
+    .line 40
     const/4 v1, 0x0
 
     iput-object v1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->pbeAlgorithm:Ljava/lang/String;
 
-    .line 78
+    .line 60
     const/4 v1, 0x0
 
     iput-object v1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->engineParams:Ljava/security/AlgorithmParameters;
 
-    .line 48
+    .line 88
     instance-of v1, p2, Ljavax/crypto/SecretKey;
 
     if-nez v1, :cond_0
 
-    .line 76
+    .line 44
     new-instance v1, Ljava/security/InvalidKeyException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1598,7 +1598,7 @@
 
     sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->z:[Ljava/lang/String;
 
-    const/16 v4, 0xc
+    const/16 v4, 0x8
 
     aget-object v3, v3, v4
 
@@ -1616,7 +1616,7 @@
 
     sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->z:[Ljava/lang/String;
 
-    const/16 v4, 0xb
+    const/16 v4, 0x9
 
     aget-object v3, v3, v4
 
@@ -1639,7 +1639,7 @@
 
     throw v1
 
-    .line 90
+    .line 5
     :cond_0
     instance-of v1, p2, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
@@ -1647,29 +1647,29 @@
 
     move-object v1, p2
 
-    .line 92
+    .line 43
     check-cast v1, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    .line 98
+    .line 66
     invoke-virtual {v1}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getAlgorithm()Ljava/lang/String;
 
     move-result-object v2
 
     iput-object v2, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->pbeAlgorithm:Ljava/lang/String;
 
-    .line 99
+    .line 61
     invoke-virtual {v1}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getParam()Lorg/spongycastle/crypto/CipherParameters;
 
     move-result-object v2
 
     if-eqz v2, :cond_1
 
-    .line 27
+    .line 70
     invoke-virtual {v1}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getParam()Lorg/spongycastle/crypto/CipherParameters;
 
     move-result-object v2
 
-    .line 34
+    .line 106
     :try_start_1
     new-instance v3, Ljavax/crypto/spec/PBEParameterSpec;
 
@@ -1687,7 +1687,7 @@
 
     if-eqz v4, :cond_4
 
-    .line 84
+    .line 96
     :cond_1
     instance-of v2, p3, Ljavax/crypto/spec/PBEParameterSpec;
     :try_end_1
@@ -1695,7 +1695,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 102
+    .line 19
     iget-object v2, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->cipher:Lorg/spongycastle/crypto/StreamCipher;
 
     invoke-interface {v2}, Lorg/spongycastle/crypto/StreamCipher;->getAlgorithmName()Ljava/lang/String;
@@ -1706,7 +1706,7 @@
 
     move-result-object v3
 
-    .line 106
+    .line 78
     :try_start_2
     move-object v0, p3
 
@@ -1718,13 +1718,13 @@
 
     if-eqz v4, :cond_3
 
-    .line 13
+    .line 89
     :cond_2
     new-instance v1, Ljava/security/InvalidAlgorithmParameterException;
 
     sget-object v2, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x9
+    const/16 v3, 0xd
 
     aget-object v2, v2, v3
 
@@ -1739,7 +1739,7 @@
 
     throw v1
 
-    .line 84
+    .line 96
     :catch_2
     move-exception v1
 
@@ -1748,7 +1748,7 @@
     :cond_3
     move-object v2, v3
 
-    .line 30
+    .line 59
     :cond_4
     :try_start_3
     invoke-virtual {v1}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getIvSize()I
@@ -1757,7 +1757,7 @@
 
     if-lez v1, :cond_5
 
-    .line 7
+    .line 1
     move-object v0, v2
 
     check-cast v0, Lorg/spongycastle/crypto/params/ParametersWithIV;
@@ -1768,15 +1768,15 @@
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_4
 
-    .line 97
+    .line 4
     :cond_5
     if-eqz v4, :cond_12
 
-    .line 44
+    .line 98
     :cond_6
     if-nez p3, :cond_7
 
-    .line 95
+    .line 20
     new-instance v2, Lorg/spongycastle/crypto/params/KeyParameter;
 
     invoke-interface {p2}, Ljava/security/Key;->getEncoded()[B
@@ -1787,7 +1787,7 @@
 
     if-eqz v4, :cond_11
 
-    .line 29
+    .line 12
     :cond_7
     :try_start_4
     instance-of v1, p3, Ljavax/crypto/spec/IvParameterSpec;
@@ -1796,7 +1796,7 @@
 
     if-eqz v1, :cond_8
 
-    .line 71
+    .line 45
     new-instance v2, Lorg/spongycastle/crypto/params/ParametersWithIV;
 
     new-instance v1, Lorg/spongycastle/crypto/params/KeyParameter;
@@ -1815,7 +1815,7 @@
 
     invoke-direct {v2, v1, v3}, Lorg/spongycastle/crypto/params/ParametersWithIV;-><init>(Lorg/spongycastle/crypto/CipherParameters;[B)V
 
-    .line 24
+    .line 93
     :try_start_5
     move-object v0, v2
 
@@ -1827,13 +1827,13 @@
 
     if-eqz v4, :cond_9
 
-    .line 3
+    .line 80
     :cond_8
     new-instance v1, Ljava/security/InvalidAlgorithmParameterException;
 
     sget-object v2, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x8
+    const/4 v3, 0x7
 
     aget-object v2, v2, v3
 
@@ -1848,13 +1848,13 @@
 
     throw v1
 
-    .line 7
+    .line 1
     :catch_4
     move-exception v1
 
     throw v1
 
-    .line 29
+    .line 12
     :catch_5
     move-exception v1
 
@@ -1863,7 +1863,7 @@
     :cond_9
     move-object v1, v2
 
-    .line 64
+    .line 51
     :goto_0
     :try_start_6
     iget v2, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->ivLength:I
@@ -1879,12 +1879,12 @@
     .line 47
     if-nez p4, :cond_a
 
-    .line 101
+    .line 13
     new-instance p4, Ljava/security/SecureRandom;
 
     invoke-direct {p4}, Ljava/security/SecureRandom;-><init>()V
 
-    .line 8
+    .line 95
     :cond_a
     if-eq p1, v7, :cond_b
 
@@ -1892,21 +1892,21 @@
 
     if-ne p1, v2, :cond_c
 
-    .line 77
+    .line 23
     :cond_b
     iget v2, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->ivLength:I
 
     new-array v3, v2, [B
 
-    .line 75
+    .line 85
     invoke-virtual {p4, v3}, Ljava/security/SecureRandom;->nextBytes([B)V
 
-    .line 82
+    .line 81
     new-instance v2, Lorg/spongycastle/crypto/params/ParametersWithIV;
 
     invoke-direct {v2, v1, v3}, Lorg/spongycastle/crypto/params/ParametersWithIV;-><init>(Lorg/spongycastle/crypto/CipherParameters;[B)V
 
-    .line 45
+    .line 33
     :try_start_7
     move-object v0, v2
 
@@ -1916,16 +1916,16 @@
 
     iput-object v1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->ivParam:Lorg/spongycastle/crypto/params/ParametersWithIV;
 
-    .line 89
+    .line 104
     if-eqz v4, :cond_e
 
-    .line 53
+    .line 3
     :cond_c
     new-instance v1, Ljava/security/InvalidAlgorithmParameterException;
 
     sget-object v2, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->z:[Ljava/lang/String;
 
-    const/16 v3, 0xa
+    const/16 v3, 0xc
 
     aget-object v2, v2, v3
 
@@ -1940,7 +1940,7 @@
 
     throw v1
 
-    .line 64
+    .line 51
     :catch_7
     move-exception v1
 
@@ -1949,11 +1949,11 @@
     :cond_d
     move-object v2, v1
 
-    .line 65
+    .line 84
     :cond_e
     packed-switch p1, :pswitch_data_0
 
-    .line 21
+    .line 7
     :cond_f
     :try_start_8
     new-instance v1, Ljava/security/InvalidParameterException;
@@ -1964,7 +1964,7 @@
 
     sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x7
+    const/16 v4, 0xb
 
     aget-object v3, v3, v4
 
@@ -1978,7 +1978,7 @@
 
     sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->z:[Ljava/lang/String;
 
-    const/16 v4, 0xd
+    const/16 v4, 0xa
 
     aget-object v3, v3, v4
 
@@ -2004,11 +2004,11 @@
     :try_end_9
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_9
 
-    .line 17
+    .line 65
     :catch_9
     move-exception v1
 
-    .line 11
+    .line 62
     new-instance v2, Ljava/security/InvalidKeyException;
 
     invoke-virtual {v1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
@@ -2019,7 +2019,7 @@
 
     throw v2
 
-    .line 5
+    .line 71
     :pswitch_0
     :try_start_a
     iget-object v1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->cipher:Lorg/spongycastle/crypto/StreamCipher;
@@ -2030,10 +2030,10 @@
     :try_end_a
     .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_a
 
-    .line 33
+    .line 87
     if-eqz v4, :cond_10
 
-    .line 38
+    .line 8
     :pswitch_1
     :try_start_b
     iget-object v1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->cipher:Lorg/spongycastle/crypto/StreamCipher;
@@ -2042,14 +2042,14 @@
 
     invoke-interface {v1, v3, v2}, Lorg/spongycastle/crypto/StreamCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
 
-    .line 2
+    .line 77
     if-nez v4, :cond_f
 
-    .line 9
+    .line 41
     :cond_10
     return-void
 
-    .line 33
+    .line 87
     :catch_a
     move-exception v1
 
@@ -2057,7 +2057,7 @@
     :try_end_b
     .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_b
 
-    .line 2
+    .line 77
     :catch_b
     move-exception v1
 
@@ -2076,7 +2076,7 @@
 
     goto/16 :goto_0
 
-    .line 65
+    .line 84
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -2090,11 +2090,11 @@
     .locals 4
 
     .prologue
-    .line 52
+    .line 53
     :try_start_0
     sget-object v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x2
 
     aget-object v0, v0, v1
 
@@ -2104,7 +2104,7 @@
 
     if-nez v0, :cond_0
 
-    .line 59
+    .line 21
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2140,7 +2140,7 @@
 
     throw v0
 
-    .line 88
+    .line 26
     :cond_0
     return-void
 .end method
@@ -2149,11 +2149,11 @@
     .locals 4
 
     .prologue
-    .line 20
+    .line 11
     :try_start_0
     sget-object v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x6
+    const/4 v1, 0x4
 
     aget-object v0, v0, v1
 
@@ -2163,7 +2163,7 @@
 
     if-nez v0, :cond_0
 
-    .line 37
+    .line 76
     new-instance v0, Ljavax/crypto/NoSuchPaddingException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2172,7 +2172,7 @@
 
     sget-object v2, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x4
+    const/4 v3, 0x3
 
     aget-object v2, v2, v3
 
@@ -2209,7 +2209,7 @@
 
     throw v0
 
-    .line 36
+    .line 86
     :cond_0
     return-void
 .end method
@@ -2218,7 +2218,7 @@
     .locals 6
 
     .prologue
-    .line 62
+    .line 90
     :try_start_0
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->cipher:Lorg/spongycastle/crypto/StreamCipher;
 
@@ -2236,14 +2236,14 @@
     :try_end_0
     .catch Lorg/spongycastle/crypto/DataLengthException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 39
+    .line 42
     return p3
 
-    .line 83
+    .line 34
     :catch_0
     move-exception v0
 
-    .line 10
+    .line 46
     new-instance v1, Ljavax/crypto/ShortBufferException;
 
     invoke-virtual {v0}, Lorg/spongycastle/crypto/DataLengthException;->getMessage()Ljava/lang/String;
@@ -2259,10 +2259,10 @@
     .locals 6
 
     .prologue
-    .line 16
+    .line 37
     new-array v4, p3, [B
 
-    .line 86
+    .line 10
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;->cipher:Lorg/spongycastle/crypto/StreamCipher;
 
     const/4 v5, 0x0
@@ -2275,6 +2275,6 @@
 
     invoke-interface/range {v0 .. v5}, Lorg/spongycastle/crypto/StreamCipher;->processBytes([BII[BI)I
 
-    .line 40
+    .line 48
     return-object v4
 .end method

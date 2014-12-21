@@ -19,8 +19,8 @@
     .locals 5
 
     .prologue
-    .line 1
-    const-string v0, "4x:MOpz>UG*vbmr\u001f]\u000eMS\nx+iO=|<X^1w"
+    .line 21
+    const-string v0, "\u0014>jT=P<nL5\n02t\u0000?\u001b^T!*>{p=\u001d:lA,\u00111"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -48,15 +48,15 @@
 
     move-result-object v0
 
-    .line 1
+    .line 21
     invoke-static {v0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher;->access$000(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 10
+    .line 24
     if-eqz v0, :cond_0
 
-    .line 22
+    .line 11
     invoke-static {v0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$AEADGenericBlockCipher;->findExceptionConstructor(Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object v0
@@ -67,7 +67,7 @@
     :goto_1
     return-void
 
-    .line 15
+    .line 4
     :cond_0
     const/4 v0, 0x0
 
@@ -83,7 +83,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x37
+    const/16 v0, 0x45
 
     :goto_2
     xor-int/2addr v0, v4
@@ -99,22 +99,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x5e
+    const/16 v0, 0x7e
 
     goto :goto_2
 
     :pswitch_1
-    const/16 v0, 0x19
+    const/16 v0, 0x5f
 
     goto :goto_2
 
     :pswitch_2
-    const/16 v0, 0x4c
+    const/16 v0, 0x1c
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v0, 0x2c
+    const/16 v0, 0x35
 
     goto :goto_2
 
@@ -131,13 +131,13 @@
     .locals 0
 
     .prologue
-    .line 14
+    .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
+    .line 8
     iput-object p1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$AEADGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/modes/AEADBlockCipher;
 
-    .line 13
+    .line 30
     return-void
 .end method
 
@@ -145,7 +145,7 @@
     .locals 3
 
     .prologue
-    .line 7
+    .line 17
     const/4 v0, 0x1
 
     :try_start_0
@@ -163,15 +163,14 @@
 
     move-result-object v0
 
-    .line 11
     :goto_0
     return-object v0
 
-    .line 21
+    .line 6
     :catch_0
     move-exception v0
 
-    .line 11
+    .line 12
     const/4 v0, 0x0
 
     goto :goto_0
@@ -183,7 +182,7 @@
     .locals 6
 
     .prologue
-    .line 26
+    .line 13
     :try_start_0
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$AEADGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/modes/AEADBlockCipher;
 
@@ -195,21 +194,21 @@
 
     return v0
 
-    .line 8
+    .line 26
     :catch_0
     move-exception v0
 
     move-object v1, v0
 
-    .line 9
+    .line 29
     sget-object v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$AEADGenericBlockCipher;->aeadBadTagConstructor:Ljava/lang/reflect/Constructor;
 
     if-eqz v0, :cond_0
 
-    .line 20
+    .line 14
     const/4 v2, 0x0
 
-    .line 17
+    .line 9
     :try_start_1
     sget-object v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$AEADGenericBlockCipher;->aeadBadTagConstructor:Ljava/lang/reflect/Constructor;
 
@@ -219,7 +218,7 @@
 
     const/4 v4, 0x0
 
-    .line 30
+    .line 20
     invoke-virtual {v1}, Lorg/spongycastle/crypto/InvalidCipherTextException;->getMessage()Ljava/lang/String;
 
     move-result-object v5
@@ -234,11 +233,11 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
 
-    .line 16
+    .line 31
     :goto_0
     if-eqz v0, :cond_0
 
-    .line 18
+    .line 2
     :try_start_2
     throw v0
     :try_end_2
@@ -249,7 +248,7 @@
 
     throw v0
 
-    .line 6
+    .line 5
     :catch_2
     move-exception v0
 
@@ -257,7 +256,7 @@
 
     goto :goto_0
 
-    .line 3
+    .line 33
     :cond_0
     new-instance v0, Ljavax/crypto/BadPaddingException;
 
@@ -274,7 +273,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 1
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$AEADGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/modes/AEADBlockCipher;
 
     invoke-interface {v0}, Lorg/spongycastle/crypto/modes/AEADBlockCipher;->getUnderlyingCipher()Lorg/spongycastle/crypto/BlockCipher;
@@ -292,7 +291,7 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 10
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$AEADGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/modes/AEADBlockCipher;
 
     invoke-interface {v0, p1}, Lorg/spongycastle/crypto/modes/AEADBlockCipher;->getOutputSize(I)I
@@ -306,7 +305,7 @@
     .locals 1
 
     .prologue
-    .line 28
+    .line 19
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$AEADGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/modes/AEADBlockCipher;
 
     invoke-interface {v0}, Lorg/spongycastle/crypto/modes/AEADBlockCipher;->getUnderlyingCipher()Lorg/spongycastle/crypto/BlockCipher;
@@ -320,7 +319,7 @@
     .locals 1
 
     .prologue
-    .line 23
+    .line 16
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$AEADGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/modes/AEADBlockCipher;
 
     invoke-interface {v0, p1}, Lorg/spongycastle/crypto/modes/AEADBlockCipher;->getUpdateOutputSize(I)I
@@ -334,12 +333,12 @@
     .locals 1
 
     .prologue
-    .line 31
+    .line 32
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$AEADGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/modes/AEADBlockCipher;
 
     invoke-interface {v0, p1, p2}, Lorg/spongycastle/crypto/modes/AEADBlockCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
 
-    .line 19
+    .line 22
     return-void
 .end method
 
@@ -347,7 +346,7 @@
     .locals 1
 
     .prologue
-    .line 24
+    .line 3
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$AEADGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/modes/AEADBlockCipher;
 
     invoke-interface {v0, p1, p2, p3}, Lorg/spongycastle/crypto/modes/AEADBlockCipher;->processByte(B[BI)I
@@ -385,12 +384,12 @@
     .locals 1
 
     .prologue
-    .line 29
+    .line 15
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$AEADGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/modes/AEADBlockCipher;
 
     invoke-interface {v0, p1, p2, p3}, Lorg/spongycastle/crypto/modes/AEADBlockCipher;->processAADBytes([BII)V
 
-    .line 2
+    .line 28
     return-void
 .end method
 
@@ -398,7 +397,7 @@
     .locals 1
 
     .prologue
-    .line 32
+    .line 18
     const/4 v0, 0x0
 
     return v0

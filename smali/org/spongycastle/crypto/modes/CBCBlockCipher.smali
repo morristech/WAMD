@@ -28,13 +28,13 @@
 .method static constructor <clinit>()V
     .locals 12
 
-    const/16 v1, 0x58
+    const/16 v4, 0x6e
 
-    const/16 v2, 0x3f
+    const/16 v3, 0x58
 
-    const/16 v4, 0x18
+    const/16 v2, 0x4b
 
-    const/16 v3, 0x12
+    const/16 v1, 0x1e
 
     const/4 v6, 0x0
 
@@ -42,7 +42,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "1Qb\u0004lx]g\u0017~=M2\u0005w7\u001fa\u0019w*K"
+    const-string v0, "w%\n-\u001a>)\u000f>\u0008{9Z,\u0001qk\t0\u0001l?"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -71,7 +71,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "w|P2"
+    const-string v0, "}*\u00146\u0001jk\u00190\u000fp,\u001fx\u000bp(\u0008!\u001ej\"\u0014?Nm?\u001b,\u000b><\u0013,\u0006q>\u000ex\u001el$\u000c1\nw%\u001dx\u0005{2T"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -100,7 +100,7 @@
 
     const/4 v10, 0x2
 
-    const-string v0, ";^|\u001fw,\u001fq\u0019y6XwQ}6\\`\u0008h,V|\u00168+Ks\u0005}xH{\u0005p7JfQh*Pd\u0018|1QuQs=F<"
+    const-string v0, "}*\u00146\u0001jk\u00190\u000fp,\u001fx\u000bp(\u0008!\u001ej\"\u0014?Nm?\u001b,\u000b><\u0013,\u0006q>\u000ex\u001el$\u000c1\nw%\u001dx\u0005{2T"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -129,7 +129,7 @@
 
     const/4 v10, 0x3
 
-    const-string v0, "1Q{\u0005q9S{\u0002y,V}\u001f8.Zq\u0005w*\u001f\u007f\u0004k,\u001fp\u00148,WwQk9RwQt=Qu\u0005px^aQz4Pq\u001a8+Vh\u0014"
+    const-string v0, "w%\u0013,\u0007\u007f\'\u0013+\u000fj\"\u00156Nh.\u0019,\u0001lk\u0017-\u001djk\u0018=Nj#\u001fx\u001d\u007f&\u001fx\u0002{%\u001d,\u0006>*\tx\u000cr$\u00193Nm\"\u0000="
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -158,7 +158,7 @@
 
     const/4 v10, 0x4
 
-    const-string v0, ";^|\u001fw,\u001fq\u0019y6XwQ}6\\`\u0008h,V|\u00168+Ks\u0005}xH{\u0005p7JfQh*Pd\u0018|1QuQs=F<"
+    const-string v0, "1\u00088\u001b"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -187,7 +187,7 @@
 
     const/4 v8, 0x5
 
-    const-string v0, "1Qb\u0004lx]g\u0017~=M2\u0005w7\u001fa\u0019w*K"
+    const-string v0, "w%\n-\u001a>)\u000f>\u0008{9Z,\u0001qk\t0\u0001l?"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -251,12 +251,12 @@
     goto :goto_6
 
     :pswitch_2
-    move v0, v3
+    const/16 v0, 0x7a
 
     goto :goto_6
 
     :pswitch_3
-    const/16 v0, 0x71
+    move v0, v3
 
     goto :goto_6
 
@@ -293,12 +293,12 @@
     goto :goto_7
 
     :pswitch_6
-    move v0, v3
+    const/16 v0, 0x7a
 
     goto :goto_7
 
     :pswitch_7
-    const/16 v0, 0x71
+    move v0, v3
 
     goto :goto_7
 
@@ -335,12 +335,12 @@
     goto :goto_8
 
     :pswitch_a
-    move v0, v3
+    const/16 v0, 0x7a
 
     goto :goto_8
 
     :pswitch_b
-    const/16 v0, 0x71
+    move v0, v3
 
     goto :goto_8
 
@@ -377,12 +377,12 @@
     goto :goto_9
 
     :pswitch_e
-    move v0, v3
+    const/16 v0, 0x7a
 
     goto :goto_9
 
     :pswitch_f
-    const/16 v0, 0x71
+    move v0, v3
 
     goto :goto_9
 
@@ -419,12 +419,12 @@
     goto :goto_a
 
     :pswitch_12
-    move v0, v3
+    const/16 v0, 0x7a
 
     goto :goto_a
 
     :pswitch_13
-    const/16 v0, 0x71
+    move v0, v3
 
     goto :goto_a
 
@@ -461,12 +461,12 @@
     goto :goto_b
 
     :pswitch_16
-    move v0, v3
+    const/16 v0, 0x7a
 
     goto :goto_b
 
     :pswitch_17
-    const/16 v0, 0x71
+    move v0, v3
 
     goto :goto_b
 
@@ -523,46 +523,46 @@
     .locals 1
 
     .prologue
-    .line 41
+    .line 31
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8
+    .line 34
     const/4 v0, 0x0
 
     iput-object v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
-    .line 17
+    .line 43
     iput-object p1, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
-    .line 32
+    .line 19
     invoke-interface {p1}, Lorg/spongycastle/crypto/BlockCipher;->getBlockSize()I
 
     move-result v0
 
     iput v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->blockSize:I
 
-    .line 24
+    .line 12
     iget v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->blockSize:I
 
     new-array v0, v0, [B
 
     iput-object v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->IV:[B
 
-    .line 5
+    .line 22
     iget v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->blockSize:I
 
     new-array v0, v0, [B
 
     iput-object v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cbcV:[B
 
-    .line 29
+    .line 20
     iget v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->blockSize:I
 
     new-array v0, v0, [B
 
     iput-object v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cbcNextV:[B
 
-    .line 37
+    .line 39
     return-void
 .end method
 
@@ -572,9 +572,9 @@
     .prologue
     const/4 v0, 0x0
 
-    sget-boolean v1, Lorg/spongycastle/crypto/modes/SICBlockCipher;->a:Z
+    sget v1, Lorg/spongycastle/crypto/modes/SICBlockCipher;->a:I
 
-    .line 48
+    .line 15
     :try_start_0
     iget v2, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->blockSize:I
 
@@ -584,7 +584,7 @@
 
     if-le v2, v3, :cond_0
 
-    .line 42
+    .line 55
     new-instance v0, Lorg/spongycastle/crypto/DataLengthException;
 
     sget-object v1, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->z:[Ljava/lang/String;
@@ -604,7 +604,7 @@
 
     throw v0
 
-    .line 11
+    .line 44
     :cond_0
     iget-object v2, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cbcNextV:[B
 
@@ -612,20 +612,20 @@
 
     invoke-static {p1, p2, v2, v0, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 53
+    .line 29
     iget-object v2, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
     invoke-interface {v2, p1, p2, p3, p4}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
 
     move-result v2
 
-    .line 19
+    .line 26
     :cond_1
     iget v3, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->blockSize:I
 
     if-ge v0, v3, :cond_2
 
-    .line 38
+    .line 17
     add-int v3, p4, v0
 
     aget-byte v4, p3, v3
@@ -640,24 +640,24 @@
 
     aput-byte v4, p3, v3
 
-    .line 47
+    .line 27
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_1
 
-    .line 10
+    .line 37
     :cond_2
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cbcV:[B
 
-    .line 50
+    .line 32
     iget-object v1, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cbcNextV:[B
 
     iput-object v1, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cbcV:[B
 
-    .line 4
+    .line 18
     iput-object v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cbcNextV:[B
 
-    .line 44
+    .line 6
     return v2
 .end method
 
@@ -667,9 +667,9 @@
     .prologue
     const/4 v1, 0x0
 
-    sget-boolean v2, Lorg/spongycastle/crypto/modes/SICBlockCipher;->a:Z
+    sget v2, Lorg/spongycastle/crypto/modes/SICBlockCipher;->a:I
 
-    .line 55
+    .line 13
     :try_start_0
     iget v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->blockSize:I
 
@@ -679,7 +679,7 @@
 
     if-le v0, v3, :cond_0
 
-    .line 3
+    .line 25
     new-instance v0, Lorg/spongycastle/crypto/DataLengthException;
 
     sget-object v1, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->z:[Ljava/lang/String;
@@ -702,13 +702,13 @@
     :cond_0
     move v0, v1
 
-    .line 52
+    .line 28
     :cond_1
     iget v3, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->blockSize:I
 
     if-ge v0, v3, :cond_2
 
-    .line 35
+    .line 7
     iget-object v3, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cbcV:[B
 
     aget-byte v4, v3, v0
@@ -723,12 +723,12 @@
 
     aput-byte v4, v3, v0
 
-    .line 28
+    .line 42
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v2, :cond_1
 
-    .line 7
+    .line 24
     :cond_2
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
@@ -738,7 +738,7 @@
 
     move-result v0
 
-    .line 25
+    .line 3
     iget-object v2, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cbcV:[B
 
     iget-object v3, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cbcV:[B
@@ -747,7 +747,7 @@
 
     invoke-static {p3, p4, v2, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 40
+    .line 45
     return v0
 .end method
 
@@ -757,7 +757,7 @@
     .locals 3
 
     .prologue
-    .line 45
+    .line 52
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -774,7 +774,7 @@
 
     sget-object v1, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x4
 
     aget-object v1, v1, v2
 
@@ -793,7 +793,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 38
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
     invoke-interface {v0}, Lorg/spongycastle/crypto/BlockCipher;->getBlockSize()I
@@ -807,7 +807,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 11
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
     return-object v0
@@ -817,30 +817,30 @@
     .locals 8
 
     .prologue
-    sget-boolean v1, Lorg/spongycastle/crypto/modes/SICBlockCipher;->a:Z
+    sget v1, Lorg/spongycastle/crypto/modes/SICBlockCipher;->a:I
 
-    .line 54
+    .line 51
     iget-boolean v2, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->encrypting:Z
 
-    .line 6
+    .line 16
     iput-boolean p1, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->encrypting:Z
 
-    .line 20
+    .line 40
     instance-of v0, p2, Lorg/spongycastle/crypto/params/ParametersWithIV;
 
     if-eqz v0, :cond_3
 
     move-object v0, p2
 
-    .line 51
+    .line 35
     check-cast v0, Lorg/spongycastle/crypto/params/ParametersWithIV;
 
-    .line 14
+    .line 47
     invoke-virtual {v0}, Lorg/spongycastle/crypto/params/ParametersWithIV;->getIV()[B
 
     move-result-object v3
 
-    .line 30
+    .line 9
     :try_start_0
     array-length v4, v3
 
@@ -848,7 +848,7 @@
 
     if-eq v4, v5, :cond_0
 
-    .line 22
+    .line 33
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     sget-object v1, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->z:[Ljava/lang/String;
@@ -868,7 +868,7 @@
 
     throw v0
 
-    .line 39
+    .line 53
     :cond_0
     const/4 v4, 0x0
 
@@ -881,10 +881,10 @@
 
     invoke-static {v3, v4, v5, v6, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 26
+    .line 49
     invoke-virtual {p0}, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->reset()V
 
-    .line 23
+    .line 5
     invoke-virtual {v0}, Lorg/spongycastle/crypto/params/ParametersWithIV;->getParameters()Lorg/spongycastle/crypto/CipherParameters;
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_2
@@ -893,7 +893,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 13
+    .line 4
     :try_start_2
     iget-object v3, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
@@ -907,17 +907,17 @@
 
     if-eqz v1, :cond_2
 
-    .line 15
+    .line 54
     :cond_1
     if-eq v2, p1, :cond_2
 
-    .line 46
+    .line 41
     :try_start_3
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     sget-object v1, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x4
+    const/4 v2, 0x1
 
     aget-object v1, v1, v2
 
@@ -932,7 +932,7 @@
 
     throw v0
 
-    .line 13
+    .line 4
     :catch_2
     move-exception v0
 
@@ -941,7 +941,7 @@
     :try_end_4
     .catch Ljava/lang/IllegalArgumentException; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 15
+    .line 54
     :catch_3
     move-exception v0
 
@@ -950,21 +950,21 @@
     :try_end_5
     .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_1
 
-    .line 33
+    .line 46
     :cond_2
     if-eqz v1, :cond_5
 
-    .line 43
+    .line 30
     :cond_3
     :try_start_6
     invoke-virtual {p0}, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->reset()V
     :try_end_6
     .catch Ljava/lang/IllegalArgumentException; {:try_start_6 .. :try_end_6} :catch_5
 
-    .line 16
+    .line 50
     if-eqz p2, :cond_4
 
-    .line 49
+    .line 21
     :try_start_7
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
@@ -974,11 +974,11 @@
 
     if-eqz v1, :cond_5
 
-    .line 36
+    .line 23
     :cond_4
     if-eq v2, p1, :cond_5
 
-    .line 31
+    .line 8
     :try_start_8
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -999,7 +999,7 @@
 
     throw v0
 
-    .line 49
+    .line 21
     :catch_5
     move-exception v0
 
@@ -1008,7 +1008,7 @@
     :try_end_9
     .catch Ljava/lang/IllegalArgumentException; {:try_start_9 .. :try_end_9} :catch_6
 
-    .line 36
+    .line 23
     :catch_6
     move-exception v0
 
@@ -1017,7 +1017,7 @@
     :try_end_a
     .catch Ljava/lang/IllegalArgumentException; {:try_start_a .. :try_end_a} :catch_4
 
-    .line 27
+    .line 1
     :cond_5
     return-void
 .end method
@@ -1026,7 +1026,7 @@
     .locals 1
 
     .prologue
-    .line 18
+    .line 2
     :try_start_0
     iget-boolean v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->encrypting:Z
 
@@ -1060,7 +1060,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 21
+    .line 48
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->IV:[B
 
     iget-object v1, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cbcV:[B
@@ -1071,16 +1071,16 @@
 
     invoke-static {v0, v3, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 9
+    .line 14
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cbcNextV:[B
 
     invoke-static {v0, v3}, Lorg/spongycastle/util/Arrays;->fill([BB)V
 
-    .line 34
+    .line 36
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
     invoke-interface {v0}, Lorg/spongycastle/crypto/BlockCipher;->reset()V
 
-    .line 12
+    .line 10
     return-void
 .end method

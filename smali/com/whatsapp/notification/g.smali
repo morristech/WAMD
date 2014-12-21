@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private final a:Lcom/whatsapp/notification/c;
+.field private final a:Z
 
 .field private final c:Z
 
@@ -23,7 +23,7 @@
 
 .field private final f:Z
 
-.field private final g:Z
+.field private final g:Lcom/whatsapp/notification/u;
 
 
 # direct methods
@@ -31,21 +31,21 @@
     .locals 14
 
     .prologue
-    const/16 v5, 0x2c
+    const/4 v4, 0x3
 
-    const/16 v4, 0xe
+    const/4 v3, 0x2
 
-    const/16 v3, 0xd
+    const/16 v5, 0x31
 
     const/4 v2, 0x1
 
     const/4 v1, 0x0
 
-    const/16 v0, 0x36
+    const/16 v0, 0x39
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "Ad\u0013lC\u00197"
+    const-string v6, "\\5\rMYA"
 
     const/4 v0, -0x1
 
@@ -83,7 +83,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "\u000fb\tgJ\u0008n\u001czE\u000ec]}Y\u0011}\u000fk_\u0012h\u00194\u000c\u000fb\t.E\u000f-\u000bk^\u0008k\u0014kHA\u007f\u0018iE\u0012y\u000foX\u0008b\u0013._\u0015l\tk"
+    const-string v0, "\u00122\u0018WW\u0005\u0002\u0000WV\u0014)3]^\u00102\u001e"
 
     move-object v6, v0
 
@@ -98,15 +98,13 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const/4 v6, 0x2
-
-    const-string v0, "\u000c~\u001a"
-
-    move v7, v6
-
-    move-object v8, v9
+    const-string v0, "\u00178\u0015"
 
     move-object v6, v0
+
+    move v7, v3
+
+    move-object v8, v9
 
     move v0, v2
 
@@ -115,26 +113,32 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const/4 v7, 0x3
+    const-string v0, "\u001d3\u0008L^\u00159BLT\u000f2\u0019LR\u0019gC\u0011R\u00130BIY\u001d)\u001f_A\u000cr^\u000f\u0002MmU\u0007\u0007Il"
 
-    const-string v6, "\u000fb\tgJ\u0018R\u000fgB\u0006y\u0012`I"
+    move-object v6, v0
 
-    const/4 v0, 0x2
+    move v7, v4
 
     move-object v8, v9
+
+    move v0, v3
 
     goto :goto_0
 
     :pswitch_2
     aput-object v6, v8, v7
 
-    const/4 v7, 0x4
+    const/4 v6, 0x4
 
-    const-string v6, "Ao\u0014iX\u0004u\t4"
+    const-string v0, "\u00122\u0018WW\u0005\u0002\u001aWS\u000e<\u0018[n\u00108\u0002YE\u0014"
 
-    const/4 v0, 0x3
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v4
 
     goto :goto_0
 
@@ -143,7 +147,7 @@
 
     const/4 v7, 0x5
 
-    const-string v6, "Ay\u0012`I\\n\u0012`Z\u0004\u007f\u000eoX\u0008b\u0013"
+    const-string v6, ":\u001b*xw:"
 
     const/4 v0, 0x4
 
@@ -156,7 +160,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "\u000fb\tgJ\u0008n\u001czE\u000ec\u000e.H\u0008~\u001cl@\u0004i"
+    const-string v6, "\u001b/\u0003KA#6\tGn\u00118\u001fMP\u001b8\u001f"
 
     const/4 v0, 0x5
 
@@ -169,7 +173,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "\u000ch\u000e}M\u0006h\u0013aX\u0008k\u0014mM\u0015d\u0012`\u0003\u0002x\u000fc_\u0006\"\u0013{@\r-"
+    const-string v6, "\\+\u0005\\C\u001d)\t\u0003"
 
     const/4 v0, 0x6
 
@@ -182,7 +186,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "\u0006\u007f\u0012{\\>f\u0018ws\u000ch\u000e}M\u0006h\u000e"
+    const-string v6, "\u001b/\u0003KA#3\u0003JX\u001a$3RX\u001b5\u0018aR\u00131\u0003L"
 
     const/4 v0, 0x7
 
@@ -195,7 +199,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "\u0006\u007f\u0012{\\>c\u0012zE\u0007t\"bE\u0006e\tQO\u000ea\u0012|"
+    const-string v6, "\\.\u000fLT\u001933R^\u001f6Q"
 
     const/16 v0, 0x8
 
@@ -208,7 +212,7 @@
 
     const/16 v7, 0xa
 
-    const-string v6, "\u000fb\tgJ\u0018R\u0011gK\ty\"mC\rb\u000f"
+    const-string v6, "\u0011.\u000b"
 
     const/16 v0, 0x9
 
@@ -221,7 +225,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, "Aa\u0014iD\u00150"
+    const-string v6, "\u001b/\u0003KA#6\tGn\u00118\u001fMP\u001b8\u001f"
 
     const/16 v0, 0xa
 
@@ -234,7 +238,7 @@
 
     const/16 v7, 0xc
 
-    const-string v6, "An\u0008}X\u000e`"
+    const-string v6, "\\1\u0005YY\u0008`"
 
     const/16 v0, 0xb
 
@@ -245,11 +249,11 @@
     :pswitch_b
     aput-object v6, v8, v7
 
-    const-string v6, "\u0002b\u0010 [\tl\t}M\u0011}\"~^\u0004k\u0018|I\u000fn\u0018}"
+    const/16 v7, 0xd
+
+    const-string v6, "\u001f2\u0001\u0010F\u0014<\u0018MP\u000c-3NC\u0019;\tLT\u0012>\tM"
 
     const/16 v0, 0xc
-
-    move v7, v3
 
     move-object v8, v9
 
@@ -258,32 +262,26 @@
     :pswitch_c
     aput-object v6, v8, v7
 
-    const-string v0, "\u000ch\u000e}M\u0006h\u0013aX\u0008k\u0014mM\u0015d\u0012`\u0003\u000fb\tgJ\u0018"
+    const/16 v7, 0xe
 
-    move-object v6, v0
+    const-string v6, "\u00118\u001fMP\u001b8\u0002QE\u0015;\u0005]P\u00084\u0003P\u001e\u000f<\u0001[\u0011"
 
-    move v7, v4
+    const/16 v0, 0xd
 
     move-object v8, v9
-
-    move v0, v3
 
     goto/16 :goto_0
 
     :pswitch_d
     aput-object v6, v8, v7
 
-    const/16 v6, 0xf
+    const/16 v7, 0xf
 
-    const-string v0, "\u000ch\u000e}M\u0006h\u0013aX\u0008k\u0014mM\u0015d\u0012`\u0003Ac\u0018y\u0011"
+    const-string v6, "\u001b/\u0003KA#3\u0003JX\u001a$3RX\u001b5\u0018"
 
-    move v7, v6
+    const/16 v0, 0xe
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v4
 
     goto/16 :goto_0
 
@@ -292,7 +290,7 @@
 
     const/16 v7, 0x10
 
-    const-string v6, "\u000ch\u000e}M\u0006h\u0013aX\u0008k\u0014mM\u0015d\u0012`\u0003\u0011\u007f\u0018xA\u0012jR`Y\ra]"
+    const-string v6, "\\>\u0003R^\u000e`\u0002K]\u0010"
 
     const/16 v0, 0xf
 
@@ -305,7 +303,7 @@
 
     const/16 v7, 0x11
 
-    const-string v6, "An\u0012bC\u00130\u0013{@\r"
+    const-string v6, "\\)\u0003PTA>\u0003PG\u0019/\u001f_E\u00152\u0002"
 
     const/16 v0, 0x10
 
@@ -318,7 +316,7 @@
 
     const/16 v7, 0x12
 
-    const-string v6, "\'K;Hj\'"
+    const-string v6, "\u00122\u0018WW\u0015>\rJX\u001333VP\u000f5"
 
     const/16 v0, 0x11
 
@@ -331,7 +329,7 @@
 
     const/16 v7, 0x13
 
-    const-string v6, "\nh\u0004"
+    const-string v6, "\u001d3\u0008L^\u00159BNT\u000e0\u0005MB\u00152\u0002\u0010d,\u0019-jt#\u001c<nn3\r?ab(\u001c8m"
 
     const/16 v0, 0x12
 
@@ -344,7 +342,7 @@
 
     const/16 v7, 0x14
 
-    const-string v6, "An\u0012bC\u00130"
+    const-string v6, "\u00118\u001fMP\u001b8\u0002QE\u0015;\u0005]P\u00084\u0003P\u001e\u00122\u0018WW\u0005"
 
     const/16 v0, 0x13
 
@@ -357,7 +355,7 @@
 
     const/16 v7, 0x15
 
-    const-string v6, "A`\u0018}_\u0000j\u00183"
+    const-string v6, "\\0\tMB\u001d:\t\u0003"
 
     const/16 v0, 0x14
 
@@ -370,7 +368,7 @@
 
     const/16 v7, 0x16
 
-    const-string v6, "Aa\u001c|K\u0004d\u001eaB"
+    const-string v6, "\\?\u0005YE\u0019%\u0018\u0004"
 
     const/16 v0, 0x15
 
@@ -383,7 +381,7 @@
 
     const/16 v7, 0x17
 
-    const-string v6, "Aa\u0014`I["
+    const-string v6, "\u000c5\u0003PT"
 
     const/16 v0, 0x16
 
@@ -396,7 +394,7 @@
 
     const/16 v7, 0x18
 
-    const-string v6, "\u0006\u007f\u0012{\\>c\u0012zE\u0007t\"bE\u0006e\t"
+    const-string v6, "\\>\u0019ME\u00130"
 
     const/16 v0, 0x17
 
@@ -409,7 +407,7 @@
 
     const/16 v7, 0x19
 
-    const-string v6, "Ao\u0014i\\\u0008n\t{^\u0004"
+    const-string v6, ":\u001b*xw:"
 
     const/16 v0, 0x18
 
@@ -422,7 +420,7 @@
 
     const/16 v7, 0x1a
 
-    const-string v6, "\u000fb\tgJ\u0018R\u0011gK\ty"
+    const-string v6, "\\>\u0003R^\u000e`"
 
     const/16 v0, 0x19
 
@@ -435,7 +433,7 @@
 
     const/16 v7, 0x1b
 
-    const-string v6, "A~\u001e|I\u0004c\"bC\u0002f@"
+    const-string v6, "\\?\u0005YA\u0015>\u0018KC\u0019"
 
     const/16 v0, 0x1a
 
@@ -448,7 +446,7 @@
 
     const/16 v7, 0x1c
 
-    const-string v6, "\u0006\u007f\u0012{\\>f\u0018ws\u000ch\u000e}M\u0006h\u000e"
+    const-string v6, "\\4\u0002\\^\u0004g"
 
     const/16 v0, 0x1b
 
@@ -461,7 +459,7 @@
 
     const/16 v7, 0x1d
 
-    const-string v6, "Ay\u0012`I\\c\u0012zE\u0007d\u001eoX\u0008b\u0013"
+    const-string v6, "\\1\rLV\u00194\u000fQ_"
 
     const/16 v0, 0x1c
 
@@ -474,7 +472,7 @@
 
     const/16 v7, 0x1e
 
-    const-string v6, "\u0000c\u0019|C\u0008iS|I\u0012b\u0008|O\u00047R!O\u000e`SyD\u0000y\u000eo\\\u0011\"O?\u001fP=D7\u001aT="
+    const-string v6, "\u00122\u0018WW\u0015>\rJX\u00133\u001f\u001eU\u0015.\r\\]\u00199"
 
     const/16 v0, 0x1d
 
@@ -487,7 +485,7 @@
 
     const/16 v7, 0x1f
 
-    const-string v6, "\u0006\u007f\u0012{\\>c\u0012zE\u0007t\"xE\u0003\u007f\u001czI>a\u0018`K\u0015e"
+    const-string v6, "\\1\u0005PTF"
 
     const/16 v0, 0x1e
 
@@ -500,7 +498,7 @@
 
     const/16 v7, 0x20
 
-    const-string v6, "\'K;Hj\'"
+    const-string v6, "\u00122\u0018WW\u0015>\rJX\u001333VP\u000f5"
 
     const/16 v0, 0x1f
 
@@ -513,7 +511,7 @@
 
     const/16 v7, 0x21
 
-    const-string v6, "An\u0012{B\u00150"
+    const-string v6, "\u00122\u0018WW\u0015>\rJX\u00133LMD\u000c-\u001e[B\u000f8\u0008\u0004\u0011\u00122\u0018\u001eX\u0012}\u001a[C\u0015;\u0005[U\\/\tYX\u000f)\u001e_E\u00152\u0002\u001eB\u0008<\u0018["
 
     const/16 v0, 0x20
 
@@ -526,7 +524,7 @@
 
     const/16 v7, 0x22
 
-    const-string v6, "\u000fb\tgJ\u0018R\u000bgN\u0013l\tks\rh\u0013iX\t"
+    const-string v6, "\\,\u0019WT\u0008`"
 
     const/16 v0, 0x21
 
@@ -539,7 +537,7 @@
 
     const/16 v7, 0x23
 
-    const-string v6, "\u0002b\u0010 [\tl\t}M\u0011}SgB\u0015h\u0013z\u0002\u0000n\tgC\u000f#-Bm8"
+    const-string v6, "\u00118\u001fMP\u001b8\u0002QE\u0015;\u0005]P\u00084\u0003P\u001e\u001f(\u001eSB\u001br\u0002K]\u0010}"
 
     const/16 v0, 0x22
 
@@ -552,7 +550,7 @@
 
     const/16 v7, 0x24
 
-    const-string v6, "\u0011e\u0012`I"
+    const-string v6, "\\)\u0003PTA3\u0003JX\u001a4\u000f_E\u00152\u0002"
 
     const/16 v0, 0x23
 
@@ -565,7 +563,7 @@
 
     const/16 v7, 0x25
 
-    const-string v6, "A|\u0008gI\u00150"
+    const-string v6, "\u001b/\u0003KA#3\u0003JX\u001a$3J^\u00128"
 
     const/16 v0, 0x24
 
@@ -578,7 +576,7 @@
 
     const/16 v7, 0x26
 
-    const-string v6, "A{\u0014l^\u0000y\u00183"
+    const-string v6, "\u00118\u001fMP\u001b8\u0002QE\u0015;\u0005]P\u00084\u0003P\u001e\\3\tI\u000c"
 
     const/16 v0, 0x25
 
@@ -591,7 +589,7 @@
 
     const/16 v7, 0x27
 
-    const-string v6, "\u0006\u007f\u0012{\\>c\u0012zE\u0007t\"zC\u000fh"
+    const-string v6, "\\>\u0003K_\u0008`"
 
     const/16 v0, 0x26
 
@@ -604,7 +602,7 @@
 
     const/16 v7, 0x28
 
-    const-string v6, "A~\u0012{B\u00050"
+    const-string v6, "\u001f2\u0001\u0010F\u0014<\u0018MP\u000c-BW_\u00088\u0002J\u001f\u001d>\u0018W^\u0012s<rp%"
 
     const/16 v0, 0x27
 
@@ -617,7 +615,7 @@
 
     const/16 v7, 0x29
 
-    const-string v6, "\u0000c\u0019|C\u0008iS~I\u0013`\u0014}_\u0008b\u0013 y1I<Zi>L-^s.].Q\u007f5L)]"
+    const-string v6, "\u001b/\u0003KA#3\u0003JX\u001a$3HX\u001e/\rJT#1\tPV\u00085"
 
     const/16 v0, 0x28
 
@@ -630,7 +628,7 @@
 
     const/16 v7, 0x2a
 
-    const-string v6, "Q=M>\u001cQ"
+    const-string v6, "\u00122\u0018WW\u0005\u0002\u0000WV\u0014)"
 
     const/16 v0, 0x29
 
@@ -643,7 +641,7 @@
 
     const/16 v7, 0x2b
 
-    const-string v6, "\u0006\u007f\u0012{\\>c\u0012zE\u0007t\"bE\u0006e\tQO\u000ea\u0012|"
+    const-string v6, "\\.\u0003K_\u0018`"
 
     const/16 v0, 0x2a
 
@@ -654,11 +652,11 @@
     :pswitch_2a
     aput-object v6, v8, v7
 
-    const-string v6, "Q=M>\u001cQ"
+    const/16 v7, 0x2c
+
+    const-string v6, "\u00122\u0018WW\u0005\u0002\u001eW_\u001b)\u0003PT"
 
     const/16 v0, 0x2b
-
-    move v7, v5
 
     move-object v8, v9
 
@@ -667,17 +665,13 @@
     :pswitch_2b
     aput-object v6, v8, v7
 
-    const/16 v6, 0x2d
+    const/16 v7, 0x2d
 
-    const-string v0, "\'K;Hj\'"
+    const-string v6, "\u00084\u0018RT#6\tG"
 
-    move v7, v6
+    const/16 v0, 0x2c
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v5
 
     goto/16 :goto_0
 
@@ -686,7 +680,7 @@
 
     const/16 v7, 0x2e
 
-    const-string v6, "\u0006\u007f\u0012{\\>c\u0012zE\u0007t\"zC\u000fh"
+    const-string v6, "\u0015.3P^\u00084\nWR\u001d)\u0005Q_Al"
 
     const/16 v0, 0x2d
 
@@ -699,7 +693,7 @@
 
     const/16 v7, 0x2f
 
-    const-string v6, "\u000fb\tgJ\u0018R\u0011gK\ty\"mC\rb\u000f"
+    const-string v6, "\u00122\u0018WW\u0005\u0002\u001eW_\u001b)\u0003PT"
 
     const/16 v0, 0x2e
 
@@ -712,7 +706,7 @@
 
     const/16 v7, 0x30
 
-    const-string v6, "\u000fb\tgJ\u0018R\u000bgN\u0013l\tks\rh\u0013iX\t"
+    const-string v6, "\u00122\u0018WW\u0005\u0002\u001aWS\u000e<\u0018[n\u00108\u0002YE\u0014"
 
     const/16 v0, 0x2f
 
@@ -723,11 +717,11 @@
     :pswitch_2f
     aput-object v6, v8, v7
 
-    const/16 v7, 0x31
-
-    const-string v6, "\u000fb\tgJ\u0018R\u000fgB\u0006y\u0012`I"
+    const-string v6, "Lm\\\u000e\u0001L"
 
     const/16 v0, 0x30
+
+    move v7, v5
 
     move-object v8, v9
 
@@ -736,13 +730,17 @@
     :pswitch_30
     aput-object v6, v8, v7
 
-    const/16 v7, 0x32
+    const/16 v6, 0x32
 
-    const-string v6, "\'K;Hj\'"
+    const-string v0, ":\u001b*xw:"
 
-    const/16 v0, 0x31
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v5
 
     goto/16 :goto_0
 
@@ -751,7 +749,7 @@
 
     const/16 v7, 0x33
 
-    const-string v6, "\u0006\u007f\u0012{\\>c\u0012zE\u0007t\"xE\u0003\u007f\u001czI>a\u0018`K\u0015e"
+    const-string v6, "\u00122\u0018WW\u0005\u0002\u0000WV\u0014)3]^\u00102\u001e"
 
     const/16 v0, 0x32
 
@@ -764,7 +762,7 @@
 
     const/16 v7, 0x34
 
-    const-string v6, "\u0015d\tbI>f\u0018w"
+    const-string v6, ":\u001b*xw:"
 
     const/16 v0, 0x33
 
@@ -777,7 +775,7 @@
 
     const/16 v7, 0x35
 
-    const-string v6, "\u0008~\"`C\u0015d\u001bgO\u0000y\u0014aB\\<"
+    const-string v6, "\u001b/\u0003KA#3\u0003JX\u001a$3J^\u00128"
 
     const/16 v0, 0x34
 
@@ -788,14 +786,53 @@
     :pswitch_34
     aput-object v6, v8, v7
 
-    sput-object v9, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
+    const/16 v7, 0x36
 
-    .line 77
-    new-array v7, v2, [Ljava/lang/String;
-
-    const-string v6, ">d\u0019"
+    const-string v6, "\u001b/\u0003KA#3\u0003JX\u001a$3RX\u001b5\u0018aR\u00131\u0003L"
 
     const/16 v0, 0x35
+
+    move-object v8, v9
+
+    goto/16 :goto_0
+
+    :pswitch_35
+    aput-object v6, v8, v7
+
+    const/16 v7, 0x37
+
+    const-string v6, "\u001b/\u0003KA#3\u0003JX\u001a$3HX\u001e/\rJT#1\tPV\u00085"
+
+    const/16 v0, 0x36
+
+    move-object v8, v9
+
+    goto/16 :goto_0
+
+    :pswitch_36
+    aput-object v6, v8, v7
+
+    const/16 v7, 0x38
+
+    const-string v6, "Lm\\\u000e\u0001L"
+
+    const/16 v0, 0x37
+
+    move-object v8, v9
+
+    goto/16 :goto_0
+
+    :pswitch_37
+    aput-object v6, v8, v7
+
+    sput-object v9, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
+
+    .line 125
+    new-array v7, v2, [Ljava/lang/String;
+
+    const-string v6, "#4\u0008"
+
+    const/16 v0, 0x38
 
     move-object v8, v7
 
@@ -828,33 +865,33 @@
 
     goto/16 :goto_1
 
-    :pswitch_35
-    const/16 v6, 0x61
-
-    goto :goto_2
-
-    :pswitch_36
-    move v6, v3
-
-    goto :goto_2
-
-    :pswitch_37
-    const/16 v6, 0x7d
-
-    goto :goto_2
-
     :pswitch_38
-    move v6, v4
+    const/16 v6, 0x7c
 
     goto :goto_2
 
-    .line 77
     :pswitch_39
+    const/16 v6, 0x5d
+
+    goto :goto_2
+
+    :pswitch_3a
+    const/16 v6, 0x6c
+
+    goto :goto_2
+
+    :pswitch_3b
+    const/16 v6, 0x3e
+
+    goto :goto_2
+
+    .line 125
+    :pswitch_3c
     aput-object v6, v8, v7
 
     sput-object v9, Lcom/whatsapp/notification/g;->b:[Ljava/lang/String;
 
-    .line 178
+    .line 131
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -921,41 +958,44 @@
         :pswitch_32
         :pswitch_33
         :pswitch_34
-        :pswitch_39
+        :pswitch_35
+        :pswitch_36
+        :pswitch_37
+        :pswitch_3c
     .end packed-switch
 
     :pswitch_data_1
     .packed-switch 0x0
-        :pswitch_35
-        :pswitch_36
-        :pswitch_37
         :pswitch_38
+        :pswitch_39
+        :pswitch_3a
+        :pswitch_3b
     .end packed-switch
 .end method
 
-.method public constructor <init>(Lcom/whatsapp/notification/c;ZZZZ)V
+.method public constructor <init>(Lcom/whatsapp/notification/u;ZZZZ)V
     .locals 0
 
     .prologue
-    .line 265
+    .line 95
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 171
-    iput-object p1, p0, Lcom/whatsapp/notification/g;->a:Lcom/whatsapp/notification/c;
+    .line 50
+    iput-object p1, p0, Lcom/whatsapp/notification/g;->g:Lcom/whatsapp/notification/u;
 
-    .line 49
-    iput-boolean p2, p0, Lcom/whatsapp/notification/g;->c:Z
+    .line 325
+    iput-boolean p2, p0, Lcom/whatsapp/notification/g;->e:Z
 
-    .line 111
-    iput-boolean p3, p0, Lcom/whatsapp/notification/g;->e:Z
+    .line 88
+    iput-boolean p3, p0, Lcom/whatsapp/notification/g;->a:Z
 
-    .line 78
-    iput-boolean p4, p0, Lcom/whatsapp/notification/g;->g:Z
+    .line 276
+    iput-boolean p4, p0, Lcom/whatsapp/notification/g;->f:Z
 
-    .line 179
-    iput-boolean p5, p0, Lcom/whatsapp/notification/g;->f:Z
+    .line 115
+    iput-boolean p5, p0, Lcom/whatsapp/notification/g;->c:Z
 
-    .line 8
+    .line 216
     return-void
 .end method
 
@@ -965,29 +1005,29 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 205
-    invoke-static {}, Lcom/whatsapp/notification/c;->b()Lcom/whatsapp/notification/c;
+    .line 128
+    invoke-static {}, Lcom/whatsapp/notification/u;->b()Lcom/whatsapp/notification/u;
 
     move-result-object v0
 
-    .line 285
-    sget-object v1, Lcom/whatsapp/apv;->GROUP:Lcom/whatsapp/apv;
+    .line 273
+    sget-object v1, Lcom/whatsapp/af0;->GROUP:Lcom/whatsapp/af0;
 
-    invoke-virtual {v0, p1, v1}, Lcom/whatsapp/notification/c;->a(Landroid/content/SharedPreferences;Lcom/whatsapp/apv;)I
+    invoke-virtual {v0, p1, v1}, Lcom/whatsapp/notification/u;->a(Landroid/content/SharedPreferences;Lcom/whatsapp/af0;)I
 
     move-result v1
 
-    .line 320
-    sget-object v2, Lcom/whatsapp/apv;->INDIVIDUAL:Lcom/whatsapp/apv;
+    .line 160
+    sget-object v2, Lcom/whatsapp/af0;->INDIVIDUAL:Lcom/whatsapp/af0;
 
-    invoke-virtual {v0, p1, v2}, Lcom/whatsapp/notification/c;->a(Landroid/content/SharedPreferences;Lcom/whatsapp/apv;)I
+    invoke-virtual {v0, p1, v2}, Lcom/whatsapp/notification/u;->a(Landroid/content/SharedPreferences;Lcom/whatsapp/af0;)I
 
     move-result v0
 
-    .line 7
+    .line 156
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x2e
+    const/16 v3, 0x35
 
     aget-object v2, v2, v3
 
@@ -995,10 +1035,10 @@
 
     move-result-object v2
 
-    .line 103
+    .line 220
     sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x31
+    const/16 v4, 0x2f
 
     aget-object v3, v3, v4
 
@@ -1006,10 +1046,10 @@
 
     move-result-object v3
 
-    .line 278
+    .line 315
     sget-object v4, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x2b
+    const/16 v5, 0x36
 
     aget-object v4, v4, v5
 
@@ -1023,16 +1063,16 @@
 
     move-result-object v4
 
-    .line 152
+    .line 3
     sget-object v5, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v6, 0x2f
+    const/16 v6, 0x33
 
     aget-object v5, v5, v6
 
     sget-object v6, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x2d
+    const/16 v7, 0x34
 
     aget-object v6, v6, v7
 
@@ -1040,10 +1080,10 @@
 
     move-result-object v5
 
-    .line 177
+    .line 183
     sget-object v6, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x33
+    const/16 v7, 0x37
 
     aget-object v6, v6, v7
 
@@ -1053,7 +1093,7 @@
 
     move-result-object v6
 
-    .line 249
+    .line 61
     sget-object v7, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
     const/16 v8, 0x30
@@ -1066,12 +1106,12 @@
 
     move-result-object v7
 
-    .line 239
+    .line 111
     if-nez v1, :cond_0
 
     if-nez v0, :cond_0
 
-    .line 217
+    .line 85
     :try_start_0
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
     :try_end_0
@@ -1081,7 +1121,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 63
+    .line 194
     :try_start_1
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
     :try_end_1
@@ -1094,11 +1134,11 @@
     :try_start_2
     sget-object v0, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x2c
+    const/16 v1, 0x38
 
     aget-object v0, v0, v1
 
-    .line 227
+    .line 146
     invoke-static {v0, v4}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
     :try_end_2
     .catch Ljava/lang/NumberFormatException; {:try_start_2 .. :try_end_2} :catch_2
@@ -1110,11 +1150,11 @@
     :try_start_3
     sget-object v0, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x2a
+    const/16 v1, 0x31
 
     aget-object v0, v0, v1
 
-    .line 247
+    .line 167
     invoke-static {v0, v5}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
     :try_end_3
     .catch Ljava/lang/NumberFormatException; {:try_start_3 .. :try_end_3} :catch_3
@@ -1126,7 +1166,7 @@
     :try_start_4
     const-string v0, "0"
 
-    .line 203
+    .line 30
     invoke-static {v0, v6}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
     :try_end_4
     .catch Ljava/lang/NumberFormatException; {:try_start_4 .. :try_end_4} :catch_4
@@ -1138,7 +1178,7 @@
     :try_start_5
     const-string v0, "0"
 
-    .line 92
+    .line 133
     invoke-static {v0, v7}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
     :try_end_5
     .catch Ljava/lang/NumberFormatException; {:try_start_5 .. :try_end_5} :catch_5
@@ -1152,7 +1192,7 @@
     :goto_0
     return v0
 
-    .line 63
+    .line 194
     :catch_0
     move-exception v0
 
@@ -1161,7 +1201,7 @@
     :try_end_6
     .catch Ljava/lang/NumberFormatException; {:try_start_6 .. :try_end_6} :catch_1
 
-    .line 227
+    .line 146
     :catch_1
     move-exception v0
 
@@ -1170,7 +1210,7 @@
     :try_end_7
     .catch Ljava/lang/NumberFormatException; {:try_start_7 .. :try_end_7} :catch_2
 
-    .line 247
+    .line 167
     :catch_2
     move-exception v0
 
@@ -1179,7 +1219,7 @@
     :try_end_8
     .catch Ljava/lang/NumberFormatException; {:try_start_8 .. :try_end_8} :catch_3
 
-    .line 203
+    .line 30
     :catch_3
     move-exception v0
 
@@ -1188,7 +1228,7 @@
     :try_end_9
     .catch Ljava/lang/NumberFormatException; {:try_start_9 .. :try_end_9} :catch_4
 
-    .line 92
+    .line 133
     :catch_4
     move-exception v0
 
@@ -1214,7 +1254,7 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 245
+    .line 36
     sget-object v0, Lcom/whatsapp/notification/g;->d:Ljava/util/HashMap;
 
     invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1223,10 +1263,10 @@
 
     check-cast v0, Ljava/lang/Boolean;
 
-    .line 293
+    .line 137
     if-eqz v0, :cond_1
 
-    .line 25
+    .line 323
     :try_start_0
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
     :try_end_0
@@ -1234,27 +1274,25 @@
 
     move-result v0
 
-    .line 80
     :cond_0
     :goto_0
     return v0
 
-    .line 25
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 291
+    .line 38
     :cond_1
     :try_start_1
-    sget-object v0, Lcom/whatsapp/App;->aW:Landroid/content/ContentResolver;
+    sget-object v0, Lcom/whatsapp/App;->H:Landroid/content/ContentResolver;
 
     sget-object v2, Lcom/whatsapp/notification/g;->b:[Ljava/lang/String;
 
     sget-object v1, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x35
+    const/16 v3, 0x2e
 
     aget-object v3, v1, v3
 
@@ -1262,7 +1300,7 @@
 
     sget-object v1, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x34
+    const/16 v5, 0x2d
 
     aget-object v5, v1, v5
 
@@ -1275,7 +1313,7 @@
 
     move-result-object v1
 
-    .line 84
+    .line 235
     if-eqz v1, :cond_3
 
     :try_start_2
@@ -1288,7 +1326,7 @@
 
     if-lez v0, :cond_3
 
-    .line 204
+    .line 243
     :try_start_3
     sget-object v0, Lcom/whatsapp/notification/g;->d:Ljava/util/HashMap;
 
@@ -1299,13 +1337,13 @@
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 186
+    .line 242
     const/4 v0, 0x1
 
-    .line 261
+    .line 230
     if-eqz v1, :cond_0
 
-    .line 16
+    .line 8
     :try_start_4
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
     :try_end_4
@@ -1318,7 +1356,7 @@
 
     throw v0
 
-    .line 84
+    .line 235
     :catch_2
     move-exception v0
 
@@ -1328,23 +1366,23 @@
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_3
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 288
+    .line 225
     :catch_3
     move-exception v0
 
     move-object v0, v1
 
-    .line 23
+    .line 102
     :goto_1
     if-eqz v0, :cond_2
 
-    .line 117
+    .line 222
     :try_start_6
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_5
 
-    .line 319
+    .line 158
     :cond_2
     :goto_2
     sget-object v0, Lcom/whatsapp/notification/g;->d:Ljava/util/HashMap;
@@ -1353,16 +1391,16 @@
 
     invoke-virtual {v0, p0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 80
+    .line 297
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 164
+    .line 279
     :cond_3
     if-eqz v1, :cond_2
 
-    .line 327
+    .line 21
     :try_start_7
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
     :try_end_7
@@ -1375,20 +1413,20 @@
 
     throw v0
 
-    .line 117
+    .line 222
     :catch_5
     move-exception v0
 
     throw v0
 
-    .line 317
+    .line 53
     :catchall_0
     move-exception v0
 
     :goto_3
     if-eqz v6, :cond_4
 
-    .line 110
+    .line 43
     :try_start_8
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
     :try_end_8
@@ -1402,7 +1440,7 @@
 
     throw v0
 
-    .line 317
+    .line 53
     :catchall_1
     move-exception v0
 
@@ -1410,7 +1448,7 @@
 
     goto :goto_3
 
-    .line 288
+    .line 225
     :catch_7
     move-exception v0
 
@@ -1429,15 +1467,15 @@
 
     const/4 v1, 0x0
 
-    .line 101
+    .line 224
     if-ne p0, p1, :cond_1
 
-    .line 243
+    .line 247
     :cond_0
     :goto_0
     return v0
 
-    .line 222
+    .line 233
     :cond_1
     if-eqz p1, :cond_2
 
@@ -1457,7 +1495,7 @@
     :cond_2
     move v0, v1
 
-    .line 13
+    .line 180
     goto :goto_0
 
     :catch_0
@@ -1465,51 +1503,51 @@
 
     throw v0
 
-    .line 188
+    .line 62
     :cond_3
     check-cast p1, Lcom/whatsapp/notification/g;
 
-    .line 237
+    .line 247
     :try_start_1
-    iget-boolean v2, p0, Lcom/whatsapp/notification/g;->f:Z
+    iget-boolean v2, p0, Lcom/whatsapp/notification/g;->c:Z
 
-    iget-boolean v3, p1, Lcom/whatsapp/notification/g;->f:Z
+    iget-boolean v3, p1, Lcom/whatsapp/notification/g;->c:Z
     :try_end_1
     .catch Ljava/lang/NumberFormatException; {:try_start_1 .. :try_end_1} :catch_1
 
     if-ne v2, v3, :cond_4
 
     :try_start_2
-    iget-boolean v2, p0, Lcom/whatsapp/notification/g;->c:Z
+    iget-boolean v2, p0, Lcom/whatsapp/notification/g;->e:Z
 
-    iget-boolean v3, p1, Lcom/whatsapp/notification/g;->c:Z
+    iget-boolean v3, p1, Lcom/whatsapp/notification/g;->e:Z
     :try_end_2
     .catch Ljava/lang/NumberFormatException; {:try_start_2 .. :try_end_2} :catch_2
 
     if-ne v2, v3, :cond_4
 
     :try_start_3
-    iget-boolean v2, p0, Lcom/whatsapp/notification/g;->g:Z
+    iget-boolean v2, p0, Lcom/whatsapp/notification/g;->f:Z
 
-    iget-boolean v3, p1, Lcom/whatsapp/notification/g;->g:Z
+    iget-boolean v3, p1, Lcom/whatsapp/notification/g;->f:Z
     :try_end_3
     .catch Ljava/lang/NumberFormatException; {:try_start_3 .. :try_end_3} :catch_3
 
     if-ne v2, v3, :cond_4
 
     :try_start_4
-    iget-boolean v2, p0, Lcom/whatsapp/notification/g;->e:Z
+    iget-boolean v2, p0, Lcom/whatsapp/notification/g;->a:Z
 
-    iget-boolean v3, p1, Lcom/whatsapp/notification/g;->e:Z
+    iget-boolean v3, p1, Lcom/whatsapp/notification/g;->a:Z
     :try_end_4
     .catch Ljava/lang/NumberFormatException; {:try_start_4 .. :try_end_4} :catch_4
 
     if-ne v2, v3, :cond_4
 
     :try_start_5
-    iget-object v2, p0, Lcom/whatsapp/notification/g;->a:Lcom/whatsapp/notification/c;
+    iget-object v2, p0, Lcom/whatsapp/notification/g;->g:Lcom/whatsapp/notification/u;
 
-    iget-object v3, p1, Lcom/whatsapp/notification/g;->a:Lcom/whatsapp/notification/c;
+    iget-object v3, p1, Lcom/whatsapp/notification/g;->g:Lcom/whatsapp/notification/u;
 
     invoke-virtual {v2, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
     :try_end_5
@@ -1570,18 +1608,18 @@
 
     const/4 v2, 0x0
 
-    .line 269
-    iget-object v0, p0, Lcom/whatsapp/notification/g;->a:Lcom/whatsapp/notification/c;
+    .line 147
+    iget-object v0, p0, Lcom/whatsapp/notification/g;->g:Lcom/whatsapp/notification/u;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
 
-    .line 115
+    .line 105
     mul-int/lit8 v3, v0, 0x1f
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/whatsapp/notification/g;->c:Z
+    iget-boolean v0, p0, Lcom/whatsapp/notification/g;->e:Z
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1592,11 +1630,11 @@
     :goto_0
     add-int/2addr v0, v3
 
-    .line 119
+    .line 329
     mul-int/lit8 v3, v0, 0x1f
 
     :try_start_1
-    iget-boolean v0, p0, Lcom/whatsapp/notification/g;->e:Z
+    iget-boolean v0, p0, Lcom/whatsapp/notification/g;->a:Z
     :try_end_1
     .catch Ljava/lang/NumberFormatException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -1607,11 +1645,11 @@
     :goto_1
     add-int/2addr v0, v3
 
-    .line 45
+    .line 44
     mul-int/lit8 v3, v0, 0x1f
 
     :try_start_2
-    iget-boolean v0, p0, Lcom/whatsapp/notification/g;->g:Z
+    iget-boolean v0, p0, Lcom/whatsapp/notification/g;->f:Z
     :try_end_2
     .catch Ljava/lang/NumberFormatException; {:try_start_2 .. :try_end_2} :catch_2
 
@@ -1622,11 +1660,11 @@
     :goto_2
     add-int/2addr v0, v3
 
-    .line 109
+    .line 278
     mul-int/lit8 v0, v0, 0x1f
 
     :try_start_3
-    iget-boolean v3, p0, Lcom/whatsapp/notification/g;->f:Z
+    iget-boolean v3, p0, Lcom/whatsapp/notification/g;->c:Z
     :try_end_3
     .catch Ljava/lang/NumberFormatException; {:try_start_3 .. :try_end_3} :catch_3
 
@@ -1635,10 +1673,10 @@
     :goto_3
     add-int/2addr v0, v1
 
-    .line 271
+    .line 15
     return v0
 
-    .line 115
+    .line 105
     :catch_0
     move-exception v0
 
@@ -1649,7 +1687,7 @@
 
     goto :goto_0
 
-    .line 119
+    .line 329
     :catch_1
     move-exception v0
 
@@ -1660,7 +1698,7 @@
 
     goto :goto_1
 
-    .line 45
+    .line 44
     :catch_2
     move-exception v0
 
@@ -1671,7 +1709,7 @@
 
     goto :goto_2
 
-    .line 109
+    .line 278
     :catch_3
     move-exception v0
 
@@ -1684,16 +1722,16 @@
 .end method
 
 .method public run()V
-    .locals 26
+    .locals 27
 
     .prologue
-    sget-boolean v17, Lcom/whatsapp/notification/PopupNotification;->e:Z
+    sget-boolean v17, Lcom/whatsapp/notification/PopupNotification;->D:Z
 
-    .line 112
+    .line 31
     :try_start_0
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    invoke-static {v2}, Lcom/whatsapp/App;->a(Landroid/content/Context;)I
+    invoke-static {v2}, Lcom/whatsapp/App;->f(Landroid/content/Context;)I
 
     move-result v2
 
@@ -1701,10 +1739,10 @@
 
     if-eq v2, v3, :cond_1
 
-    .line 51
+    .line 64
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x1
+    const/16 v3, 0x21
 
     aget-object v2, v2, v3
 
@@ -1717,15 +1755,15 @@
     :goto_0
     return-void
 
-    .line 19
+    .line 263
     :catch_0
     move-exception v2
 
     throw v2
 
-    .line 206
+    .line 262
     :cond_1
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
@@ -1739,7 +1777,7 @@
 
     move-result-object v18
 
-    .line 169
+    .line 182
     :try_start_1
     move-object/from16 v0, p0
 
@@ -1751,10 +1789,10 @@
 
     if-eqz v2, :cond_2
 
-    .line 129
+    .line 40
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x6
+    const/16 v3, 0x1e
 
     aget-object v2, v2, v3
 
@@ -1764,19 +1802,19 @@
 
     goto :goto_0
 
-    .line 297
+    .line 265
     :catch_1
     move-exception v2
 
     throw v2
 
-    .line 330
+    .line 54
     :cond_2
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x24
+    const/16 v4, 0x17
 
     aget-object v3, v3, v4
 
@@ -1788,129 +1826,179 @@
 
     check-cast v8, Landroid/telephony/TelephonyManager;
 
-    .line 197
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 108
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     invoke-static {v2}, Landroid/support/v4/app/NotificationManagerCompat;->from(Landroid/content/Context;)Landroid/support/v4/app/NotificationManagerCompat;
 
     move-result-object v19
 
-    .line 161
+    .line 97
     const/4 v5, 0x0
 
-    .line 159
-    const/4 v2, 0x0
-
-    .line 277
+    .line 189
     const/4 v4, 0x0
 
-    .line 93
+    .line 327
     const/4 v3, 0x0
 
-    .line 48
+    .line 75
+    const/4 v2, 0x0
+
+    .line 308
     new-instance v20, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 81
-    invoke-static {}, Lcom/whatsapp/_q;->i()Ljava/util/ArrayList;
+    .line 87
+    new-instance v13, Ljava/lang/StringBuilder;
+
+    invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 213
+    invoke-static {}, Lcom/whatsapp/n3;->b()Ljava/util/ArrayList;
+
+    move-result-object v14
+
+    .line 202
+    invoke-virtual {v14}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v10
 
-    .line 140
-    invoke-virtual {v10}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v9
-
     move v6, v5
 
-    move v5, v2
+    move v5, v4
+
+    move-object v4, v3
+
+    move-object v3, v2
 
     :goto_1
-    invoke-interface {v9}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v10}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
-    if-eqz v2, :cond_4f
+    if-eqz v2, :cond_53
 
-    invoke-interface {v9}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v10}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/String;
 
-    .line 120
-    sget-object v7, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 165
+    sget-object v7, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    invoke-virtual {v7, v2}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v7, v2}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
-    move-result-object v7
+    move-result-object v9
 
-    .line 144
-    iget v2, v7, Lcom/whatsapp/adg;->d:I
+    .line 168
+    iget v2, v9, Lcom/whatsapp/tc;->d:I
 
-    if-lez v2, :cond_4e
+    if-lez v2, :cond_52
 
-    .line 52
-    iget v2, v7, Lcom/whatsapp/adg;->d:I
+    .line 23
+    iget v2, v9, Lcom/whatsapp/tc;->d:I
 
     add-int/2addr v5, v2
 
-    .line 108
+    .line 98
     add-int/lit8 v6, v6, 0x1
 
-    .line 55
-    if-nez v3, :cond_4d
+    .line 175
+    sget-object v2, Lcom/whatsapp/App;->au:Lcom/whatsapp/amo;
 
-    .line 44
-    sget-object v2, Lcom/whatsapp/App;->l:Lcom/whatsapp/a2v;
+    iget-object v7, v9, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    iget-object v3, v7, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    invoke-virtual {v2, v7}, Lcom/whatsapp/amo;->l(Ljava/lang/String;)Lcom/whatsapp/protocol/c9;
 
-    invoke-virtual {v2, v3}, Lcom/whatsapp/a2v;->m(Ljava/lang/String;)Lcom/whatsapp/protocol/ae;
+    move-result-object v7
 
-    move-result-object v2
+    .line 193
+    if-eqz v7, :cond_51
 
-    .line 166
-    if-eqz v2, :cond_4c
+    .line 282
+    if-eqz v3, :cond_3
 
-    .line 106
-    if-eqz v17, :cond_54
-
-    move-object v3, v7
-
-    .line 147
-    :goto_2
     :try_start_2
+    iget-wide v0, v3, Lcom/whatsapp/protocol/c9;->K:J
+
+    move-wide/from16 v22, v0
+
+    iget-wide v0, v7, Lcom/whatsapp/protocol/c9;->K:J
+
+    move-wide/from16 v24, v0
+    :try_end_2
+    .catch Ljava/lang/NumberFormatException; {:try_start_2 .. :try_end_2} :catch_3
+
+    cmp-long v2, v22, v24
+
+    if-gez v2, :cond_50
+
+    :cond_3
+    move-object v2, v7
+
+    move-object v3, v9
+
+    .line 178
+    :goto_2
+    :try_start_3
+    iget-object v4, v7, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
+
+    iget-object v4, v4, Lcom/whatsapp/protocol/bb;->a:Ljava/lang/String;
+
+    invoke-virtual {v13, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    iget-object v11, v7, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
+
+    iget-boolean v11, v11, Lcom/whatsapp/protocol/bb;->c:Z
+
+    invoke-virtual {v4, v11}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    iget-object v7, v7, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
+
+    iget-object v7, v7, Lcom/whatsapp/protocol/bb;->b:Ljava/lang/String;
+
+    invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    if-eqz v17, :cond_55
+
+    .line 157
+    :goto_3
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v11, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
+    sget-object v7, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v12, 0x10
+    const/16 v11, 0x23
 
-    aget-object v11, v11, v12
+    aget-object v7, v7, v11
 
-    invoke-virtual {v4, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    iget-object v11, v7, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    invoke-virtual {v4, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    const-string v11, " "
+    iget-object v7, v9, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    invoke-virtual {v4, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    iget v11, v7, Lcom/whatsapp/adg;->d:I
+    const-string v7, " "
 
-    invoke-virtual {v4, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    iget v7, v9, Lcom/whatsapp/tc;->d:I
+
+    invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
@@ -1919,112 +2007,117 @@
     move-result-object v4
 
     invoke-static {v4}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
-    :try_end_2
-    .catch Ljava/lang/NumberFormatException; {:try_start_2 .. :try_end_2} :catch_3
-
-    if-eqz v17, :cond_52
-
-    .line 156
-    :goto_3
-    sget-object v4, Lcom/whatsapp/App;->l:Lcom/whatsapp/a2v;
-
-    iget-object v11, v7, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    invoke-virtual {v4, v11}, Lcom/whatsapp/a2v;->m(Ljava/lang/String;)Lcom/whatsapp/protocol/ae;
-
-    move-result-object v4
-
-    .line 165
-    if-eqz v4, :cond_53
-
-    .line 134
-    :try_start_3
-    iget-wide v12, v2, Lcom/whatsapp/protocol/ae;->n:J
-
-    iget-wide v14, v4, Lcom/whatsapp/protocol/ae;->n:J
     :try_end_3
     .catch Ljava/lang/NumberFormatException; {:try_start_3 .. :try_end_3} :catch_4
 
-    cmp-long v11, v12, v14
-
-    if-gez v11, :cond_52
-
-    .line 322
-    if-eqz v17, :cond_51
-
-    move-object v2, v4
-
-    move-object v4, v7
-
-    .line 215
-    :goto_4
-    :try_start_4
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v11, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
-
-    const/4 v12, 0x7
-
-    aget-object v11, v11, v12
-
-    invoke-virtual {v3, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    iget-object v11, v7, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    invoke-virtual {v3, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string v11, " "
-
-    invoke-virtual {v3, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    iget v7, v7, Lcom/whatsapp/adg;->d:I
-
-    invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v3}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
-    :try_end_4
-    .catch Ljava/lang/NumberFormatException; {:try_start_4 .. :try_end_4} :catch_5
-
-    move-object v3, v2
-
-    move v2, v5
+    move v4, v5
 
     move v5, v6
 
-    .line 312
+    .line 96
+    :goto_4
+    if-eqz v17, :cond_54
+
+    move-object v9, v2
+
+    move-object v10, v3
+
+    move v11, v4
+
+    move v12, v5
+
+    .line 269
     :goto_5
-    if-eqz v17, :cond_50
+    invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-object v13, v3
+    move-result-object v2
 
-    move-object v14, v4
+    invoke-static {v2}, Lcom/whatsapp/z1;->e(Ljava/lang/String;)Ljava/lang/String;
 
-    move v15, v2
+    move-result-object v21
 
-    move/from16 v16, v5
+    .line 292
+    sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    .line 306
-    :goto_6
-    if-eqz v16, :cond_3
+    const/16 v3, 0x12
 
-    if-nez v14, :cond_4
+    aget-object v2, v2, v3
 
-    .line 202
-    :cond_3
+    const/4 v3, 0x0
+
+    move-object/from16 v0, v18
+
+    invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 184
+    :try_start_4
+    move-object/from16 v0, v21
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    .line 144
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
+
+    const/16 v4, 0xe
+
+    aget-object v3, v3, v4
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v0, v21
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+    :try_end_4
+    .catch Ljava/lang/NumberFormatException; {:try_start_4 .. :try_end_4} :catch_2
+
+    goto/16 :goto_0
+
+    .line 284
+    :catch_2
+    move-exception v2
+
+    throw v2
+
+    .line 282
+    :catch_3
+    move-exception v2
+
+    throw v2
+
+    .line 157
+    :catch_4
+    move-exception v2
+
+    throw v2
+
+    .line 129
+    :cond_4
+    if-eqz v12, :cond_5
+
+    if-nez v10, :cond_6
+
+    .line 316
+    :cond_5
     const/4 v2, 0x1
 
     :try_start_5
@@ -2032,73 +2125,55 @@
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationManagerCompat;->cancel(I)V
     :try_end_5
-    .catch Ljava/lang/NumberFormatException; {:try_start_5 .. :try_end_5} :catch_2
+    .catch Ljava/lang/NumberFormatException; {:try_start_5 .. :try_end_5} :catch_5
 
     goto/16 :goto_0
 
-    .line 42
-    :catch_2
-    move-exception v2
-
-    throw v2
-
-    .line 147
-    :catch_3
-    move-exception v2
-
-    throw v2
-
-    .line 134
-    :catch_4
-    move-exception v2
-
-    throw v2
-
-    .line 215
+    .line 150
     :catch_5
     move-exception v2
 
     throw v2
 
-    .line 132
-    :cond_4
+    .line 294
+    :cond_6
     :try_start_6
-    invoke-virtual {v14}, Lcom/whatsapp/adg;->t()Z
+    invoke-virtual {v10}, Lcom/whatsapp/tc;->i()Z
 
     move-result v2
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_7
 
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    iget-object v3, v14, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v3, v10, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    invoke-static {v2, v3}, Lcom/whatsapp/notification/y;->b(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v2, v3}, Lcom/whatsapp/notification/f;->a(Landroid/content/Context;Ljava/lang/String;)Z
     :try_end_6
     .catch Ljava/lang/NumberFormatException; {:try_start_6 .. :try_end_6} :catch_7
 
     move-result v2
 
-    if-nez v2, :cond_5
+    if-nez v2, :cond_7
 
-    .line 266
+    .line 16
     :try_start_7
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->c:Z
+    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->e:Z
     :try_end_7
     .catch Ljava/lang/NumberFormatException; {:try_start_7 .. :try_end_7} :catch_8
 
     if-eqz v2, :cond_0
 
-    .line 28
+    .line 101
     :try_start_8
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     invoke-static {v2}, Lcom/whatsapp/appwidget/WidgetProvider;->a(Landroid/content/Context;)V
 
-    .line 21
-    invoke-static {}, Lcom/whatsapp/App;->aj()V
+    .line 81
+    invoke-static {}, Lcom/whatsapp/App;->B()V
     :try_end_8
     .catch Ljava/lang/NumberFormatException; {:try_start_8 .. :try_end_8} :catch_6
 
@@ -2109,7 +2184,7 @@
 
     throw v2
 
-    .line 132
+    .line 294
     :catch_7
     move-exception v2
 
@@ -2118,7 +2193,7 @@
     :try_end_9
     .catch Ljava/lang/NumberFormatException; {:try_start_9 .. :try_end_9} :catch_8
 
-    .line 266
+    .line 16
     :catch_8
     move-exception v2
 
@@ -2127,76 +2202,105 @@
     :try_end_a
     .catch Ljava/lang/NumberFormatException; {:try_start_a .. :try_end_a} :catch_6
 
-    .line 219
-    :cond_5
-    if-nez v14, :cond_3a
+    .line 321
+    :cond_7
+    if-nez v10, :cond_8
 
-    .line 14
+    .line 47
     const/4 v2, 0x0
 
-    move v9, v2
+    if-eqz v17, :cond_4f
 
-    .line 56
+    .line 296
+    :cond_8
+    :try_start_b
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/whatsapp/notification/g;->g:Lcom/whatsapp/notification/u;
+
+    .line 9
+    invoke-virtual {v10}, Lcom/whatsapp/tc;->i()Z
+    :try_end_b
+    .catch Ljava/lang/NumberFormatException; {:try_start_b .. :try_end_b} :catch_a
+
+    move-result v2
+
+    if-eqz v2, :cond_3d
+
+    :try_start_c
+    sget-object v2, Lcom/whatsapp/af0;->GROUP:Lcom/whatsapp/af0;
+    :try_end_c
+    .catch Ljava/lang/NumberFormatException; {:try_start_c .. :try_end_c} :catch_b
+
+    .line 103
+    :goto_6
+    move-object/from16 v0, v18
+
+    invoke-virtual {v3, v0, v2}, Lcom/whatsapp/notification/u;->a(Landroid/content/SharedPreferences;Lcom/whatsapp/af0;)I
+
+    move-result v2
+
+    move v13, v2
+
+    .line 177
     :goto_7
-    new-instance v21, Ljava/lang/StringBuilder;
+    new-instance v22, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v22 .. v22}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 310
+    .line 20
     const/4 v2, 0x1
 
-    move/from16 v0, v16
+    if-ne v12, v2, :cond_a
 
-    if-ne v0, v2, :cond_7
+    .line 58
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    .line 198
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    invoke-virtual {v14, v2}, Lcom/whatsapp/adg;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v10, v2}, Lcom/whatsapp/tc;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/whatsapp/util/ab;->b(Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/whatsapp/util/f;->b(Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 18
+    .line 33
     const/4 v3, 0x1
 
-    if-ne v15, v3, :cond_6
+    if-ne v11, v3, :cond_9
 
-    .line 133
-    :try_start_b
-    sget-object v3, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 143
+    :try_start_d
+    sget-object v3, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     const/4 v4, 0x0
 
     const/4 v5, 0x0
 
-    invoke-static {v3, v13, v14, v4, v5}, Lcom/whatsapp/notification/y;->a(Landroid/content/Context;Lcom/whatsapp/protocol/ae;Lcom/whatsapp/adg;ZZ)Ljava/lang/CharSequence;
+    invoke-static {v3, v9, v10, v4, v5}, Lcom/whatsapp/notification/f;->a(Landroid/content/Context;Lcom/whatsapp/protocol/c9;Lcom/whatsapp/tc;ZZ)Ljava/lang/CharSequence;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/whatsapp/util/ab;->b(Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/whatsapp/util/f;->b(Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v3
 
-    move-object/from16 v0, v21
+    move-object/from16 v0, v22
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    :try_end_b
-    .catch Ljava/lang/NumberFormatException; {:try_start_b .. :try_end_b} :catch_b
+    :try_end_d
+    .catch Ljava/lang/NumberFormatException; {:try_start_d .. :try_end_d} :catch_c
 
-    if-eqz v17, :cond_8
+    if-eqz v17, :cond_b
 
-    .line 113
-    :cond_6
-    :try_start_c
-    sget-object v3, Lcom/whatsapp/App;->aF:Lcom/whatsapp/a1e;
+    .line 310
+    :cond_9
+    :try_start_e
+    sget-object v3, Lcom/whatsapp/App;->aR:Lcom/whatsapp/o2;
 
-    const v4, 0x7f0d0022
+    const v4, 0x7f0d0023
 
-    invoke-virtual {v3, v4, v15}, Lcom/whatsapp/a1e;->a(II)Ljava/lang/String;
+    invoke-virtual {v3, v4, v11}, Lcom/whatsapp/o2;->a(II)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2206,29 +2310,29 @@
 
     const/4 v5, 0x0
 
-    .line 189
-    invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 319
+    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
     aput-object v6, v4, v5
 
-    .line 22
+    .line 223
     invoke-static {v3, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
 
-    move-object/from16 v0, v21
+    move-object/from16 v0, v22
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    :try_end_c
-    .catch Ljava/lang/NumberFormatException; {:try_start_c .. :try_end_c} :catch_c
+    :try_end_e
+    .catch Ljava/lang/NumberFormatException; {:try_start_e .. :try_end_e} :catch_d
 
-    if-eqz v17, :cond_8
+    if-eqz v17, :cond_b
 
-    .line 1
-    :cond_7
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 18
+    :cond_a
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     const v3, 0x7f0e0046
 
@@ -2236,24 +2340,24 @@
 
     move-result-object v2
 
-    .line 250
-    sget-object v3, Lcom/whatsapp/App;->aF:Lcom/whatsapp/a1e;
+    .line 232
+    sget-object v3, Lcom/whatsapp/App;->aR:Lcom/whatsapp/o2;
 
-    const v4, 0x7f0d0023
+    const v4, 0x7f0d0024
 
-    .line 258
-    invoke-virtual {v3, v4, v15}, Lcom/whatsapp/a1e;->a(II)Ljava/lang/String;
+    .line 34
+    invoke-virtual {v3, v4, v11}, Lcom/whatsapp/o2;->a(II)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 200
+    .line 291
     const/4 v4, 0x1
 
     new-array v4, v4, [Ljava/lang/Object;
 
     const/4 v5, 0x0
 
-    invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
@@ -2263,19 +2367,17 @@
 
     move-result-object v3
 
-    .line 65
-    sget-object v4, Lcom/whatsapp/App;->aF:Lcom/whatsapp/a1e;
+    .line 24
+    sget-object v4, Lcom/whatsapp/App;->aR:Lcom/whatsapp/o2;
 
-    const v5, 0x7f0d0024
+    const v5, 0x7f0d0025
 
-    .line 185
-    move/from16 v0, v16
-
-    invoke-virtual {v4, v5, v0}, Lcom/whatsapp/a1e;->a(II)Ljava/lang/String;
+    .line 336
+    invoke-virtual {v4, v5, v12}, Lcom/whatsapp/o2;->a(II)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 62
+    .line 141
     const/4 v5, 0x2
 
     new-array v5, v5, [Ljava/lang/Object;
@@ -2286,7 +2388,7 @@
 
     const/4 v3, 0x1
 
-    invoke-static/range {v16 .. v16}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v12}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
@@ -2296,184 +2398,176 @@
 
     move-result-object v3
 
-    .line 196
-    move-object/from16 v0, v21
+    .line 90
+    move-object/from16 v0, v22
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    :cond_8
-    move-object v12, v2
+    :cond_b
+    move-object/from16 v16, v2
 
-    .line 242
-    :try_start_d
+    .line 217
+    :try_start_f
+    move-object/from16 v0, p0
+
+    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->e:Z
+
+    if-nez v2, :cond_c
+
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/whatsapp/notification/g;->c:Z
-
-    if-nez v2, :cond_9
-
-    move-object/from16 v0, p0
-
-    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->f:Z
-    :try_end_d
-    .catch Ljava/lang/NumberFormatException; {:try_start_d .. :try_end_d} :catch_d
+    :try_end_f
+    .catch Ljava/lang/NumberFormatException; {:try_start_f .. :try_end_f} :catch_e
 
     if-eqz v2, :cond_0
 
-    .line 256
-    :cond_9
-    new-instance v22, Landroid/support/v4/app/NotificationCompat$Builder;
+    .line 10
+    :cond_c
+    new-instance v23, Landroid/support/v4/app/NotificationCompat$Builder;
 
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v23
 
     invoke-direct {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 315
+    .line 283
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x2
+    const/16 v3, 0xa
 
     aget-object v2, v2, v3
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v23
 
-    const v3, -0xa34395
-
-    invoke-virtual {v0, v3}, Landroid/support/v4/app/NotificationCompat$Builder;->setColor(I)Landroid/support/v4/app/NotificationCompat$Builder;
-
-    const/4 v3, 0x2
-    
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setCategory(Ljava/lang/String;)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 207
-    invoke-virtual {v14}, Lcom/whatsapp/adg;->t()Z
+    .line 6
+    invoke-virtual {v10}, Lcom/whatsapp/tc;->i()Z
 
     move-result v2
 
-    if-nez v2, :cond_a
+    if-nez v2, :cond_d
 
-    .line 252
-    sget-object v2, Lcom/whatsapp/App;->aW:Landroid/content/ContentResolver;
+    .line 134
+    sget-object v2, Lcom/whatsapp/App;->H:Landroid/content/ContentResolver;
 
-    invoke-virtual {v14, v2}, Lcom/whatsapp/adg;->a(Landroid/content/ContentResolver;)Landroid/net/Uri;
+    invoke-virtual {v10, v2}, Lcom/whatsapp/tc;->b(Landroid/content/ContentResolver;)Landroid/net/Uri;
 
     move-result-object v2
 
-    .line 145
-    if-eqz v2, :cond_a
+    .line 210
+    if-eqz v2, :cond_d
 
-    .line 125
-    :try_start_e
+    .line 63
+    :try_start_10
     invoke-virtual {v2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->addPerson(Ljava/lang/String;)Landroid/support/v4/app/NotificationCompat$Builder;
-    :try_end_e
-    .catch Ljava/lang/NumberFormatException; {:try_start_e .. :try_end_e} :catch_f
+    :try_end_10
+    .catch Ljava/lang/NumberFormatException; {:try_start_10 .. :try_end_10} :catch_10
 
-    .line 142
-    :cond_a
+    .line 318
+    :cond_d
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x8
+    const/16 v3, 0xb
 
     aget-object v2, v2, v3
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setGroup(Ljava/lang/String;)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 273
+    .line 56
     const/4 v2, 0x1
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setGroupSummary(Z)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 304
+    .line 185
     const/4 v3, 0x0
 
-    .line 170
+    .line 334
     const/4 v2, 0x0
 
-    .line 211
-    :try_start_f
+    .line 132
+    :try_start_11
     sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
-    :try_end_f
-    .catch Ljava/lang/NumberFormatException; {:try_start_f .. :try_end_f} :catch_10
+    :try_end_11
+    .catch Ljava/lang/NumberFormatException; {:try_start_11 .. :try_end_11} :catch_11
 
     const/16 v5, 0x10
 
-    if-lt v4, v5, :cond_4b
+    if-lt v4, v5, :cond_4e
 
     const/4 v4, 0x1
 
-    move/from16 v0, v16
+    if-ne v12, v4, :cond_4e
 
-    if-ne v0, v4, :cond_4b
-
-    :try_start_10
-    iget-byte v4, v13, Lcom/whatsapp/protocol/ae;->t:B
-    :try_end_10
-    .catch Ljava/lang/NumberFormatException; {:try_start_10 .. :try_end_10} :catch_11
+    :try_start_12
+    iget-byte v4, v9, Lcom/whatsapp/protocol/c9;->b:B
+    :try_end_12
+    .catch Ljava/lang/NumberFormatException; {:try_start_12 .. :try_end_12} :catch_12
 
     const/4 v5, 0x1
 
-    if-ne v4, v5, :cond_4b
+    if-ne v4, v5, :cond_4e
 
-    :try_start_11
-    iget-object v4, v13, Lcom/whatsapp/protocol/ae;->p:Ljava/lang/Object;
-    :try_end_11
-    .catch Ljava/lang/NumberFormatException; {:try_start_11 .. :try_end_11} :catch_12
+    :try_start_13
+    iget-object v4, v9, Lcom/whatsapp/protocol/c9;->i:Ljava/lang/Object;
+    :try_end_13
+    .catch Ljava/lang/NumberFormatException; {:try_start_13 .. :try_end_13} :catch_13
 
-    if-eqz v4, :cond_4b
+    if-eqz v4, :cond_4e
 
-    .line 210
-    invoke-static {v13}, Lcom/whatsapp/App;->i(Lcom/whatsapp/protocol/ae;)Landroid/graphics/Bitmap;
+    .line 94
+    invoke-static {v9}, Lcom/whatsapp/App;->f(Lcom/whatsapp/protocol/c9;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    move-object v11, v2
+    move-object v15, v2
 
-    .line 3
+    move-object v3, v2
+
+    .line 277
     :goto_8
-    :try_start_12
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
-    :try_end_12
-    .catch Ljava/lang/NumberFormatException; {:try_start_12 .. :try_end_12} :catch_13
+    :try_start_14
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    :try_end_14
+    .catch Ljava/lang/NumberFormatException; {:try_start_14 .. :try_end_14} :catch_14
 
     const/16 v4, 0xb
 
-    if-lt v3, v4, :cond_4a
+    if-lt v2, v4, :cond_4d
 
-    if-eqz v14, :cond_4a
+    if-eqz v10, :cond_4d
 
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
-    move/from16 v0, v16
+    if-ne v12, v2, :cond_4d
 
-    if-ne v0, v3, :cond_4a
+    .line 65
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    .line 181
-    sget-object v3, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    invoke-virtual {v2}, Lcom/whatsapp/App;->getResources()Landroid/content/res/Resources;
 
-    invoke-virtual {v3}, Lcom/whatsapp/App;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v3
+    move-result-object v2
 
     const v4, 0x1050005
 
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
-    move-result v3
+    move-result v2
 
-    .line 102
-    sget-object v4, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 145
+    sget-object v4, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     invoke-virtual {v4}, Lcom/whatsapp/App;->getResources()Landroid/content/res/Resources;
 
@@ -2485,108 +2579,121 @@
 
     move-result v4
 
-    .line 313
-    invoke-static {v3, v4}, Ljava/lang/Math;->min(II)I
+    .line 59
+    invoke-static {v2, v4}, Ljava/lang/Math;->min(II)I
 
-    move-result v3
+    move-result v4
 
-    .line 143
-    const/4 v4, 0x0
-
-    invoke-virtual {v14, v3, v4}, Lcom/whatsapp/adg;->b(IF)Landroid/graphics/Bitmap;
-
-    move-result-object v7
-
-    .line 270
-    if-nez v7, :cond_b
-
-    :try_start_13
-    iget-boolean v4, v14, Lcom/whatsapp/adg;->D:Z
-    :try_end_13
-    .catch Ljava/lang/NumberFormatException; {:try_start_13 .. :try_end_13} :catch_15
-
-    if-eqz v4, :cond_b
-
-    if-lez v3, :cond_b
-
-    .line 264
-    const/4 v4, 0x0
-
-    const/4 v5, 0x1
-
-    invoke-virtual {v14, v3, v4, v5}, Lcom/whatsapp/adg;->a(IFZ)Landroid/graphics/Bitmap;
-
-    move-result-object v7
-
-    .line 40
-    :cond_b
-    if-eqz v7, :cond_4a
-
-    .line 299
-    :try_start_14
-    sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
-
-    const/16 v4, 0x16
-
-    aget-object v3, v3, v4
-
-    move-object/from16 v0, v20
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 137
-    move-object/from16 v0, v22
-
-    invoke-virtual {v0, v7}, Landroid/support/v4/app/NotificationCompat$Builder;->setLargeIcon(Landroid/graphics/Bitmap;)Landroid/support/v4/app/NotificationCompat$Builder;
-
-    .line 303
-    invoke-static {}, Lcom/whatsapp/notification/AndroidWear;->b()Z
-    :try_end_14
-    .catch Ljava/lang/NumberFormatException; {:try_start_14 .. :try_end_14} :catch_17
-
-    move-result v3
-
-    if-eqz v3, :cond_4a
-
-    if-nez v2, :cond_4a
-
-    .line 36
-    :goto_9
+    .line 17
     :try_start_15
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
     :try_end_15
-    .catch Ljava/lang/NumberFormatException; {:try_start_15 .. :try_end_15} :catch_19
+    .catch Ljava/lang/NumberFormatException; {:try_start_15 .. :try_end_15} :catch_16
+
+    const/16 v5, 0x15
+
+    if-lt v2, v5, :cond_3e
+
+    const/4 v2, -0x1
+
+    .line 22
+    :goto_9
+    int-to-float v5, v2
+
+    invoke-virtual {v10, v4, v5}, Lcom/whatsapp/tc;->b(IF)Landroid/graphics/Bitmap;
+
+    move-result-object v7
+
+    .line 37
+    if-nez v7, :cond_e
+
+    :try_start_16
+    iget-boolean v5, v10, Lcom/whatsapp/tc;->w:Z
+    :try_end_16
+    .catch Ljava/lang/NumberFormatException; {:try_start_16 .. :try_end_16} :catch_17
+
+    if-eqz v5, :cond_e
+
+    if-lez v4, :cond_e
+
+    .line 13
+    int-to-float v2, v2
+
+    const/4 v5, 0x1
+
+    invoke-virtual {v10, v4, v2, v5}, Lcom/whatsapp/tc;->a(IFZ)Landroid/graphics/Bitmap;
+
+    move-result-object v7
+
+    .line 170
+    :cond_e
+    if-eqz v7, :cond_4d
+
+    .line 151
+    :try_start_17
+    sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
+
+    const/16 v4, 0x1d
+
+    aget-object v2, v2, v4
+
+    move-object/from16 v0, v20
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 116
+    move-object/from16 v0, v23
+
+    invoke-virtual {v0, v7}, Landroid/support/v4/app/NotificationCompat$Builder;->setLargeIcon(Landroid/graphics/Bitmap;)Landroid/support/v4/app/NotificationCompat$Builder;
+
+    .line 270
+    invoke-static {}, Lcom/whatsapp/notification/AndroidWear;->a()Z
+    :try_end_17
+    .catch Ljava/lang/NumberFormatException; {:try_start_17 .. :try_end_17} :catch_19
+
+    move-result v2
+
+    if-eqz v2, :cond_4d
+
+    if-nez v3, :cond_4d
+
+    .line 264
+    :goto_a
+    :try_start_18
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    :try_end_18
+    .catch Ljava/lang/NumberFormatException; {:try_start_18 .. :try_end_18} :catch_1b
 
     const/16 v3, 0x10
 
-    if-lt v2, v3, :cond_19
+    if-lt v2, v3, :cond_1c
 
-    .line 100
+    .line 155
     const/4 v2, 0x1
 
-    if-le v15, v2, :cond_14
+    if-le v11, v2, :cond_17
 
-    .line 254
+    .line 46
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
-    .line 50
-    new-instance v23, Ljava/util/ArrayList;
+    .line 211
+    new-instance v24, Ljava/util/ArrayList;
 
-    invoke-direct/range {v23 .. v23}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct/range {v24 .. v24}, Ljava/util/ArrayList;-><init>()V
 
-    .line 321
-    invoke-virtual {v10}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    .line 231
+    invoke-virtual {v14}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
 
-    :cond_c
+    :cond_f
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
-    if-eqz v2, :cond_e
+    if-eqz v2, :cond_11
 
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -2594,68 +2701,68 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 220
+    .line 80
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/whatsapp/notification/g;->a:Lcom/whatsapp/notification/c;
+    iget-object v4, v0, Lcom/whatsapp/notification/g;->g:Lcom/whatsapp/notification/u;
 
-    invoke-virtual {v4, v2}, Lcom/whatsapp/notification/c;->c(Ljava/lang/String;)Ljava/util/List;
+    invoke-virtual {v4, v2}, Lcom/whatsapp/notification/u;->b(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v2
 
-    .line 46
-    :try_start_16
+    .line 198
+    :try_start_19
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v4
 
-    if-lez v4, :cond_d
+    if-lez v4, :cond_10
 
-    .line 305
+    .line 312
     const/4 v4, 0x0
 
     invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    move-object/from16 v0, v23
+    move-object/from16 v0, v24
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_16
-    .catch Ljava/lang/NumberFormatException; {:try_start_16 .. :try_end_16} :catch_1a
+    :try_end_19
+    .catch Ljava/lang/NumberFormatException; {:try_start_19 .. :try_end_19} :catch_1c
 
-    .line 59
-    :cond_d
+    .line 207
+    :cond_10
     invoke-virtual {v5, v2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 47
-    if-eqz v17, :cond_c
+    .line 71
+    if-eqz v17, :cond_f
 
-    .line 31
-    :cond_e
-    new-instance v2, Lcom/whatsapp/notification/p;
+    .line 188
+    :cond_11
+    new-instance v2, Lcom/whatsapp/notification/b;
 
     move-object/from16 v0, p0
 
-    invoke-direct {v2, v0}, Lcom/whatsapp/notification/p;-><init>(Lcom/whatsapp/notification/g;)V
+    invoke-direct {v2, v0}, Lcom/whatsapp/notification/b;-><init>(Lcom/whatsapp/notification/g;)V
 
     invoke-static {v5, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 175
+    .line 154
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
     move-result v2
 
     const/4 v3, 0x1
 
-    if-le v2, v3, :cond_10
+    if-le v2, v3, :cond_13
 
-    .line 116
+    .line 12
     new-instance v6, Landroid/support/v4/app/NotificationCompat$InboxStyle;
 
     invoke-direct {v6}, Landroid/support/v4/app/NotificationCompat$InboxStyle;-><init>()V
 
-    .line 58
+    .line 203
     const/4 v2, 0x0
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
@@ -2670,69 +2777,67 @@
 
     move v3, v2
 
-    :goto_a
+    :goto_b
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
     move-result v2
 
-    if-ge v3, v2, :cond_f
+    if-ge v3, v2, :cond_12
 
-    .line 218
+    .line 196
     invoke-virtual {v5, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lcom/whatsapp/protocol/ae;
+    check-cast v2, Lcom/whatsapp/protocol/c9;
 
-    .line 60
-    sget-object v4, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 70
+    sget-object v4, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    iget-object v10, v2, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v14, v2, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-object v10, v10, Lcom/whatsapp/protocol/au;->a:Ljava/lang/String;
+    iget-object v14, v14, Lcom/whatsapp/protocol/bb;->b:Ljava/lang/String;
 
-    invoke-virtual {v4, v10}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v4, v14}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
-    move-result-object v10
+    move-result-object v14
 
-    .line 86
-    :try_start_17
-    sget-object v24, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-    :try_end_17
-    .catch Ljava/lang/NumberFormatException; {:try_start_17 .. :try_end_17} :catch_1b
-
-    const/4 v4, 0x1
-
-    move/from16 v0, v16
-
-    if-le v0, v4, :cond_3c
+    .line 317
+    :try_start_1a
+    sget-object v25, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+    :try_end_1a
+    .catch Ljava/lang/NumberFormatException; {:try_start_1a .. :try_end_1a} :catch_1d
 
     const/4 v4, 0x1
 
-    :goto_b
-    const/16 v25, 0x0
+    if-le v12, v4, :cond_3f
 
-    move-object/from16 v0, v24
+    const/4 v4, 0x1
 
-    move/from16 v1, v25
+    :goto_c
+    const/16 v26, 0x0
 
-    invoke-static {v0, v2, v10, v4, v1}, Lcom/whatsapp/notification/y;->a(Landroid/content/Context;Lcom/whatsapp/protocol/ae;Lcom/whatsapp/adg;ZZ)Ljava/lang/CharSequence;
+    move-object/from16 v0, v25
+
+    move/from16 v1, v26
+
+    invoke-static {v0, v2, v14, v4, v1}, Lcom/whatsapp/notification/f;->a(Landroid/content/Context;Lcom/whatsapp/protocol/c9;Lcom/whatsapp/tc;ZZ)Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/whatsapp/util/ab;->b(Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/whatsapp/util/f;->b(Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 260
+    .line 27
     invoke-virtual {v6, v2}, Landroid/support/v4/app/NotificationCompat$InboxStyle;->addLine(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$InboxStyle;
 
-    .line 263
+    .line 266
     sget-object v4, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v10, 0x17
+    const/16 v14, 0x1f
 
-    aget-object v4, v4, v10
+    aget-object v4, v4, v14
 
     move-object/from16 v0, v20
 
@@ -2744,9 +2849,9 @@
 
     move-result-object v4
 
-    const-string v10, "("
+    const-string v14, "("
 
-    invoke-virtual {v4, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
@@ -2762,26 +2867,26 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 290
+    .line 29
     add-int/lit8 v2, v3, 0x1
 
-    if-eqz v17, :cond_49
+    if-eqz v17, :cond_4c
 
-    .line 187
-    :cond_f
-    move-object/from16 v0, v21
+    .line 255
+    :cond_12
+    move-object/from16 v0, v22
 
     invoke-virtual {v6, v0}, Landroid/support/v4/app/NotificationCompat$InboxStyle;->setSummaryText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$InboxStyle;
 
-    .line 66
-    move-object/from16 v0, v22
+    .line 320
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v6}, Landroid/support/v4/app/NotificationCompat$Builder;->setStyle(Landroid/support/v4/app/NotificationCompat$Style;)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 296
+    .line 11
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x0
+    const/16 v3, 0x1c
 
     aget-object v2, v2, v3
 
@@ -2803,85 +2908,83 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 259
-    :cond_10
-    :try_start_18
-    invoke-static {}, Lcom/whatsapp/notification/AndroidWear;->b()Z
+    .line 304
+    :cond_13
+    :try_start_1b
+    invoke-static {}, Lcom/whatsapp/notification/AndroidWear;->a()Z
 
     move-result v2
 
-    if-eqz v2, :cond_13
+    if-eqz v2, :cond_16
 
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->f:Z
-    :try_end_18
-    .catch Ljava/lang/NumberFormatException; {:try_start_18 .. :try_end_18} :catch_1c
+    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->c:Z
+    :try_end_1b
+    .catch Ljava/lang/NumberFormatException; {:try_start_1b .. :try_end_1b} :catch_1e
 
-    if-eqz v2, :cond_11
+    if-eqz v2, :cond_14
 
     const/4 v2, 0x1
 
-    move/from16 v0, v16
+    if-gt v12, v2, :cond_16
 
-    if-gt v0, v2, :cond_13
-
-    .line 318
-    :cond_11
-    new-instance v2, Lcom/whatsapp/notification/p;
+    .line 218
+    :cond_14
+    new-instance v2, Lcom/whatsapp/notification/b;
 
     move-object/from16 v0, p0
 
-    invoke-direct {v2, v0}, Lcom/whatsapp/notification/p;-><init>(Lcom/whatsapp/notification/g;)V
+    invoke-direct {v2, v0}, Lcom/whatsapp/notification/b;-><init>(Lcom/whatsapp/notification/g;)V
 
-    move-object/from16 v0, v23
+    move-object/from16 v0, v24
 
     invoke-static {v0, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 225
-    new-instance v24, Landroid/support/v4/app/NotificationCompat$Builder;
+    .line 69
+    new-instance v25, Landroid/support/v4/app/NotificationCompat$Builder;
 
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v25
 
     invoke-direct {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 69
+    .line 79
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x1c
+    const/4 v3, 0x6
 
     aget-object v2, v2, v3
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v25
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setGroup(Ljava/lang/String;)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 88
-    const v2, 0x7f0205cb
+    .line 245
+    const v2, 0x7f0205d4
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v25
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 68
+    .line 172
     const/4 v2, 0x1
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v25
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setOnlyAlertOnce(Z)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 141
+    .line 253
     const/4 v2, 0x0
 
     move v3, v2
 
-    .line 257
-    :goto_c
+    .line 324
+    :goto_d
     const/4 v2, 0x0
 
-    invoke-virtual/range {v23 .. v23}, Ljava/util/ArrayList;->size()I
+    invoke-virtual/range {v24 .. v24}, Ljava/util/ArrayList;->size()I
 
     move-result v4
 
@@ -2891,20 +2994,20 @@
 
     move-result v2
 
-    if-ge v3, v2, :cond_48
+    if-ge v3, v2, :cond_4b
 
-    .line 124
-    move-object/from16 v0, v23
+    .line 77
+    move-object/from16 v0, v24
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lcom/whatsapp/protocol/ae;
+    check-cast v2, Lcom/whatsapp/protocol/c9;
 
-    iget-object v2, v2, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v2, v2, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-object v2, v2, Lcom/whatsapp/protocol/au;->a:Ljava/lang/String;
+    iget-object v2, v2, Lcom/whatsapp/protocol/bb;->b:Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -2912,87 +3015,87 @@
 
     invoke-virtual {v0, v2, v4}, Landroid/support/v4/app/NotificationManagerCompat;->cancel(Ljava/lang/String;I)V
 
-    .line 234
+    .line 45
     add-int/lit8 v2, v3, 0x1
 
-    if-eqz v17, :cond_47
+    if-eqz v17, :cond_4a
 
-    :cond_12
-    move v10, v2
+    :cond_15
+    move v14, v2
 
-    .line 283
-    :goto_d
-    invoke-virtual/range {v23 .. v23}, Ljava/util/ArrayList;->size()I
+    .line 240
+    :goto_e
+    invoke-virtual/range {v24 .. v24}, Ljava/util/ArrayList;->size()I
 
     move-result v2
 
-    if-ge v10, v2, :cond_13
+    if-ge v14, v2, :cond_16
 
-    .line 151
-    move-object/from16 v0, v23
+    .line 139
+    move-object/from16 v0, v24
 
-    invoke-virtual {v0, v10}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v14}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lcom/whatsapp/protocol/ae;
+    check-cast v2, Lcom/whatsapp/protocol/c9;
 
-    .line 287
-    sget-object v3, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 89
+    sget-object v3, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    iget-object v4, v2, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v4, v2, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    iget-object v4, v4, Lcom/whatsapp/protocol/au;->a:Ljava/lang/String;
+    iget-object v4, v4, Lcom/whatsapp/protocol/bb;->b:Ljava/lang/String;
 
-    invoke-virtual {v3, v4}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v3, v4}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v3
 
-    .line 70
-    iget-wide v4, v2, Lcom/whatsapp/protocol/ae;->n:J
+    .line 200
+    iget-wide v4, v2, Lcom/whatsapp/protocol/c9;->K:J
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v25
 
     invoke-virtual {v0, v4, v5}, Landroid/support/v4/app/NotificationCompat$Builder;->setWhen(J)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 38
-    sget-object v4, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 51
+    sget-object v4, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    invoke-static {v4, v2, v3}, Lcom/whatsapp/notification/y;->b(Landroid/content/Context;Lcom/whatsapp/protocol/ae;Lcom/whatsapp/adg;)Lcom/whatsapp/notification/ap;
+    invoke-static {v4, v2, v3}, Lcom/whatsapp/notification/f;->b(Landroid/content/Context;Lcom/whatsapp/protocol/c9;Lcom/whatsapp/tc;)Lcom/whatsapp/notification/a9;
 
     move-result-object v2
 
-    .line 128
-    :try_start_19
-    invoke-virtual {v2}, Lcom/whatsapp/notification/ap;->a()Ljava/lang/CharSequence;
+    .line 148
+    :try_start_1c
+    invoke-virtual {v2}, Lcom/whatsapp/notification/a9;->a()Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    invoke-static {v4}, Lcom/whatsapp/util/ab;->b(Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/whatsapp/util/f;->b(Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v4
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v25
 
     invoke-virtual {v0, v4}, Landroid/support/v4/app/NotificationCompat$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 308
-    invoke-virtual {v2}, Lcom/whatsapp/notification/ap;->b()Ljava/lang/CharSequence;
+    .line 314
+    invoke-virtual {v2}, Lcom/whatsapp/notification/a9;->b()Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/whatsapp/util/ab;->b(Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/whatsapp/util/f;->b(Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v2
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v25
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 153
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-    :try_end_19
-    .catch Ljava/lang/NumberFormatException; {:try_start_19 .. :try_end_19} :catch_1e
+    .line 221
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+    :try_end_1c
+    .catch Ljava/lang/NumberFormatException; {:try_start_1c .. :try_end_1c} :catch_20
 
     const/4 v4, 0x0
 
@@ -3000,30 +3103,28 @@
 
     const/4 v6, 0x1
 
-    move/from16 v0, v16
-
-    if-ne v0, v6, :cond_3d
+    if-ne v12, v6, :cond_40
 
     const/4 v6, 0x1
 
-    :goto_e
-    invoke-static/range {v2 .. v7}, Lcom/whatsapp/notification/AndroidWear;->a(Landroid/content/Context;Lcom/whatsapp/adg;ZLcom/whatsapp/protocol/ae;ZLandroid/graphics/Bitmap;)Landroid/support/v4/app/NotificationCompat$WearableExtender;
+    :goto_f
+    invoke-static/range {v2 .. v7}, Lcom/whatsapp/notification/AndroidWear;->a(Landroid/content/Context;Lcom/whatsapp/tc;ZLcom/whatsapp/protocol/c9;ZLandroid/graphics/Bitmap;)Landroid/support/v4/app/NotificationCompat$WearableExtender;
 
     move-result-object v2
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v25
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->extend(Landroid/support/v4/app/NotificationCompat$Extender;)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 57
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 106
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    invoke-static {v2, v3}, Lcom/whatsapp/Conversation;->a(Landroid/content/Context;Lcom/whatsapp/adg;)Landroid/content/Intent;
+    invoke-static {v2, v3}, Lcom/whatsapp/Conversation;->a(Landroid/content/Context;Lcom/whatsapp/tc;)Landroid/content/Intent;
 
     move-result-object v2
 
-    .line 182
-    sget-object v4, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 339
+    sget-object v4, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     const/4 v5, 0x0
 
@@ -3033,17 +3134,17 @@
 
     move-result-object v2
 
-    .line 294
-    move-object/from16 v0, v24
+    .line 293
+    move-object/from16 v0, v25
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 244
-    iget-object v2, v3, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    .line 192
+    iget-object v2, v3, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
     const/4 v3, 0x1
 
-    invoke-virtual/range {v24 .. v24}, Landroid/support/v4/app/NotificationCompat$Builder;->build()Landroid/app/Notification;
+    invoke-virtual/range {v25 .. v25}, Landroid/support/v4/app/NotificationCompat$Builder;->build()Landroid/app/Notification;
 
     move-result-object v4
 
@@ -3051,79 +3152,79 @@
 
     invoke-virtual {v0, v2, v3, v4}, Landroid/support/v4/app/NotificationManagerCompat;->notify(Ljava/lang/String;ILandroid/app/Notification;)V
 
-    .line 79
-    add-int/lit8 v2, v10, 0x1
+    .line 130
+    add-int/lit8 v2, v14, 0x1
 
-    if-eqz v17, :cond_12
+    if-eqz v17, :cond_15
 
-    .line 236
-    :cond_13
-    if-eqz v17, :cond_19
+    .line 332
+    :cond_16
+    if-eqz v17, :cond_1c
 
-    .line 87
-    :cond_14
-    :try_start_1a
-    invoke-static {}, Lcom/whatsapp/notification/AndroidWear;->b()Z
-    :try_end_1a
-    .catch Ljava/lang/NumberFormatException; {:try_start_1a .. :try_end_1a} :catch_1f
+    .line 171
+    :cond_17
+    :try_start_1d
+    invoke-static {}, Lcom/whatsapp/notification/AndroidWear;->a()Z
+    :try_end_1d
+    .catch Ljava/lang/NumberFormatException; {:try_start_1d .. :try_end_1d} :catch_21
 
     move-result v2
 
-    if-eqz v2, :cond_15
+    if-eqz v2, :cond_18
 
-    :try_start_1b
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    :try_start_1e
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     const/4 v4, 0x1
 
     const/4 v6, 0x1
 
-    move-object v3, v14
+    move-object v3, v10
 
-    move-object v5, v13
+    move-object v5, v9
 
-    invoke-static/range {v2 .. v7}, Lcom/whatsapp/notification/AndroidWear;->a(Landroid/content/Context;Lcom/whatsapp/adg;ZLcom/whatsapp/protocol/ae;ZLandroid/graphics/Bitmap;)Landroid/support/v4/app/NotificationCompat$WearableExtender;
+    invoke-static/range {v2 .. v7}, Lcom/whatsapp/notification/AndroidWear;->a(Landroid/content/Context;Lcom/whatsapp/tc;ZLcom/whatsapp/protocol/c9;ZLandroid/graphics/Bitmap;)Landroid/support/v4/app/NotificationCompat$WearableExtender;
 
     move-result-object v2
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->extend(Landroid/support/v4/app/NotificationCompat$Extender;)Landroid/support/v4/app/NotificationCompat$Builder;
-    :try_end_1b
-    .catch Ljava/lang/NumberFormatException; {:try_start_1b .. :try_end_1b} :catch_20
+    :try_end_1e
+    .catch Ljava/lang/NumberFormatException; {:try_start_1e .. :try_end_1e} :catch_22
 
-    .line 314
-    :cond_15
+    .line 288
+    :cond_18
     const/4 v2, 0x0
 
-    .line 168
-    if-eqz v11, :cond_16
+    .line 179
+    if-eqz v15, :cond_19
 
-    .line 325
+    .line 187
     new-instance v2, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;
 
     invoke-direct {v2}, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;-><init>()V
 
-    .line 43
-    move-object/from16 v0, v21
+    .line 91
+    move-object/from16 v0, v22
 
     invoke-virtual {v2, v0}, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->setSummaryText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$BigPictureStyle;
 
-    .line 29
-    invoke-virtual {v2, v11}, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->bigPicture(Landroid/graphics/Bitmap;)Landroid/support/v4/app/NotificationCompat$BigPictureStyle;
+    .line 238
+    invoke-virtual {v2, v15}, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->bigPicture(Landroid/graphics/Bitmap;)Landroid/support/v4/app/NotificationCompat$BigPictureStyle;
 
-    .line 240
-    move-object/from16 v0, v22
+    .line 140
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setStyle(Landroid/support/v4/app/NotificationCompat$Style;)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 96
+    .line 272
     const/4 v2, 0x1
 
-    .line 82
+    .line 66
     sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x19
+    const/16 v4, 0x1b
 
     aget-object v3, v3, v4
 
@@ -3131,26 +3232,26 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 282
-    :cond_16
-    if-nez v2, :cond_17
+    .line 41
+    :cond_19
+    if-nez v2, :cond_1a
 
-    .line 223
+    .line 215
     new-instance v2, Landroid/support/v4/app/NotificationCompat$BigTextStyle;
 
     invoke-direct {v2}, Landroid/support/v4/app/NotificationCompat$BigTextStyle;-><init>()V
 
-    .line 289
-    move-object/from16 v0, v21
+    .line 126
+    move-object/from16 v0, v22
 
     invoke-virtual {v2, v0}, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->bigText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$BigTextStyle;
 
-    .line 190
-    sget-object v3, Lcom/whatsapp/App;->aF:Lcom/whatsapp/a1e;
+    .line 74
+    sget-object v3, Lcom/whatsapp/App;->aR:Lcom/whatsapp/o2;
 
-    const v4, 0x7f0d0022
+    const v4, 0x7f0d0023
 
-    invoke-virtual {v3, v4, v15}, Lcom/whatsapp/a1e;->a(II)Ljava/lang/String;
+    invoke-virtual {v3, v4, v11}, Lcom/whatsapp/o2;->a(II)Ljava/lang/String;
 
     move-result-object v3
 
@@ -3160,29 +3261,29 @@
 
     const/4 v5, 0x0
 
-    .line 172
-    invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 76
+    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
     aput-object v6, v4, v5
 
-    .line 160
+    .line 57
     invoke-static {v3, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->setSummaryText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$BigTextStyle;
 
-    .line 148
-    move-object/from16 v0, v22
+    .line 173
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setStyle(Landroid/support/v4/app/NotificationCompat$Style;)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 246
+    .line 7
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x4
+    const/16 v3, 0x16
 
     aget-object v2, v2, v3
 
@@ -3192,96 +3293,96 @@
 
     move-result-object v2
 
-    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->length()I
+    invoke-virtual/range {v22 .. v22}, Ljava/lang/StringBuilder;->length()I
 
     move-result v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 193
-    :cond_17
-    :try_start_1c
-    iget-byte v2, v13, Lcom/whatsapp/protocol/ae;->t:B
+    .line 246
+    :cond_1a
+    :try_start_1f
+    iget-byte v2, v9, Lcom/whatsapp/protocol/c9;->b:B
 
     const/4 v3, 0x2
 
-    if-eq v2, v3, :cond_18
+    if-eq v2, v3, :cond_1b
 
-    iget-byte v2, v13, Lcom/whatsapp/protocol/ae;->t:B
-    :try_end_1c
-    .catch Ljava/lang/NumberFormatException; {:try_start_1c .. :try_end_1c} :catch_21
+    iget-byte v2, v9, Lcom/whatsapp/protocol/c9;->b:B
+    :try_end_1f
+    .catch Ljava/lang/NumberFormatException; {:try_start_1f .. :try_end_1f} :catch_23
 
     const/4 v3, 0x1
 
-    if-ne v2, v3, :cond_19
+    if-ne v2, v3, :cond_1c
 
-    :cond_18
-    :try_start_1d
-    iget-object v2, v13, Lcom/whatsapp/protocol/ae;->p:Ljava/lang/Object;
-    :try_end_1d
-    .catch Ljava/lang/NumberFormatException; {:try_start_1d .. :try_end_1d} :catch_22
+    :cond_1b
+    :try_start_20
+    iget-object v2, v9, Lcom/whatsapp/protocol/c9;->i:Ljava/lang/Object;
+    :try_end_20
+    .catch Ljava/lang/NumberFormatException; {:try_start_20 .. :try_end_20} :catch_24
 
-    if-eqz v2, :cond_19
+    if-eqz v2, :cond_1c
 
-    .line 162
-    iget-object v2, v13, Lcom/whatsapp/protocol/ae;->p:Ljava/lang/Object;
+    .line 205
+    iget-object v2, v9, Lcom/whatsapp/protocol/c9;->i:Ljava/lang/Object;
 
     check-cast v2, Lcom/whatsapp/MediaData;
 
-    .line 146
-    :try_start_1e
+    .line 169
+    :try_start_21
     iget-boolean v3, v2, Lcom/whatsapp/MediaData;->transferred:Z
 
-    if-eqz v3, :cond_19
+    if-eqz v3, :cond_1c
 
     iget-object v3, v2, Lcom/whatsapp/MediaData;->file:Ljava/io/File;
-    :try_end_1e
-    .catch Ljava/lang/NumberFormatException; {:try_start_1e .. :try_end_1e} :catch_23
+    :try_end_21
+    .catch Ljava/lang/NumberFormatException; {:try_start_21 .. :try_end_21} :catch_25
 
-    if-eqz v3, :cond_19
+    if-eqz v3, :cond_1c
 
-    :try_start_1f
+    :try_start_22
     iget-object v2, v2, Lcom/whatsapp/MediaData;->file:Ljava/io/File;
 
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
-    :try_end_1f
-    .catch Ljava/lang/NumberFormatException; {:try_start_1f .. :try_end_1f} :catch_24
+    :try_end_22
+    .catch Ljava/lang/NumberFormatException; {:try_start_22 .. :try_end_22} :catch_26
 
     move-result v2
 
-    if-eqz v2, :cond_19
+    if-eqz v2, :cond_1c
 
-    .line 30
-    invoke-static {v14}, Lcom/whatsapp/Conversation;->a(Lcom/whatsapp/adg;)Landroid/content/Intent;
+    .line 338
+    invoke-static {v10}, Lcom/whatsapp/Conversation;->a(Lcom/whatsapp/tc;)Landroid/content/Intent;
 
     move-result-object v2
 
-    .line 138
+    .line 190
     sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x23
+    const/16 v4, 0x28
 
     aget-object v3, v3, v4
 
     invoke-virtual {v2, v3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 232
+    .line 124
     sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x13
+    const/4 v4, 0x2
 
     aget-object v3, v3, v4
 
-    new-instance v4, Lcom/whatsapp/ap3;
+    new-instance v4, Lcom/whatsapp/bs;
 
-    iget-object v5, v13, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v5, v9, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    invoke-direct {v4, v5}, Lcom/whatsapp/ap3;-><init>(Lcom/whatsapp/protocol/au;)V
+    invoke-direct {v4, v5}, Lcom/whatsapp/bs;-><init>(Lcom/whatsapp/protocol/bb;)V
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 295
-    sget-object v3, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 123
+    sget-object v3, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     const/4 v4, 0x0
 
@@ -3291,154 +3392,154 @@
 
     move-result-object v4
 
-    .line 233
-    :try_start_20
-    iget-byte v2, v13, Lcom/whatsapp/protocol/ae;->t:B
-    :try_end_20
-    .catch Ljava/lang/NumberFormatException; {:try_start_20 .. :try_end_20} :catch_25
+    .line 201
+    :try_start_23
+    iget-byte v2, v9, Lcom/whatsapp/protocol/c9;->b:B
+    :try_end_23
+    .catch Ljava/lang/NumberFormatException; {:try_start_23 .. :try_end_23} :catch_27
 
     const/4 v3, 0x1
 
-    if-ne v2, v3, :cond_3e
+    if-ne v2, v3, :cond_41
 
-    const v2, 0x7f0205c9
+    const v2, 0x7f0205d2
 
     move v3, v2
 
-    :goto_f
-    :try_start_21
-    sget-object v5, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    :goto_10
+    :try_start_24
+    sget-object v5, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    iget-byte v2, v13, Lcom/whatsapp/protocol/ae;->t:B
-    :try_end_21
-    .catch Ljava/lang/NumberFormatException; {:try_start_21 .. :try_end_21} :catch_26
+    iget-byte v2, v9, Lcom/whatsapp/protocol/c9;->b:B
+    :try_end_24
+    .catch Ljava/lang/NumberFormatException; {:try_start_24 .. :try_end_24} :catch_28
 
     const/4 v6, 0x1
 
-    if-ne v2, v6, :cond_3f
+    if-ne v2, v6, :cond_42
 
-    const v2, 0x7f0e045f
+    const v2, 0x7f0e046f
 
-    .line 163
-    :goto_10
+    .line 295
+    :goto_11
     invoke-virtual {v5, v2}, Lcom/whatsapp/App;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 284
-    move-object/from16 v0, v22
+    .line 127
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v3, v2, v4}, Landroid/support/v4/app/NotificationCompat$Builder;->addAction(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 209
-    :cond_19
+    .line 267
+    :cond_1c
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    .line 301
+    .line 164
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/whatsapp/notification/g;->a:Lcom/whatsapp/notification/c;
+    iget-object v4, v0, Lcom/whatsapp/notification/g;->g:Lcom/whatsapp/notification/u;
 
-    iget-wide v4, v4, Lcom/whatsapp/notification/c;->e:J
+    iget-wide v4, v4, Lcom/whatsapp/notification/u;->e:J
 
     sub-long v4, v2, v4
 
-    .line 20
-    const v6, 0x7f0205cb
+    .line 122
+    const v6, 0x7f0205d4
 
-    :try_start_22
-    move-object/from16 v0, v22
+    :try_start_25
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v6}, Landroid/support/v4/app/NotificationCompat$Builder;->setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 183
+    .line 162
     move-object/from16 v0, p0
 
-    iget-boolean v6, v0, Lcom/whatsapp/notification/g;->f:Z
+    iget-boolean v6, v0, Lcom/whatsapp/notification/g;->c:Z
 
-    if-nez v6, :cond_1a
+    if-nez v6, :cond_1d
 
-    .line 180
-    sget-object v6, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 100
+    sget-object v6, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    invoke-static {v6, v13, v14}, Lcom/whatsapp/notification/y;->a(Landroid/content/Context;Lcom/whatsapp/protocol/ae;Lcom/whatsapp/adg;)Ljava/lang/String;
+    invoke-static {v6, v9, v10}, Lcom/whatsapp/notification/f;->a(Landroid/content/Context;Lcom/whatsapp/protocol/c9;Lcom/whatsapp/tc;)Ljava/lang/String;
 
     move-result-object v6
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v6}, Landroid/support/v4/app/NotificationCompat$Builder;->setTicker(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
-    :try_end_22
-    .catch Ljava/lang/NumberFormatException; {:try_start_22 .. :try_end_22} :catch_27
+    :try_end_25
+    .catch Ljava/lang/NumberFormatException; {:try_start_25 .. :try_end_25} :catch_29
 
-    .line 224
-    :cond_1a
-    :try_start_23
-    move-object/from16 v0, v22
+    .line 49
+    :cond_1d
+    :try_start_26
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v2, v3}, Landroid/support/v4/app/NotificationCompat$Builder;->setWhen(J)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 85
+    .line 261
     const-wide/16 v2, 0xc8
 
     cmp-long v2, v4, v2
 
-    if-lez v2, :cond_2e
+    if-lez v2, :cond_31
 
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->e:Z
-    :try_end_23
-    .catch Ljava/lang/NumberFormatException; {:try_start_23 .. :try_end_23} :catch_28
+    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->a:Z
+    :try_end_26
+    .catch Ljava/lang/NumberFormatException; {:try_start_26 .. :try_end_26} :catch_2a
 
-    if-nez v2, :cond_2e
+    if-nez v2, :cond_31
 
-    .line 5
+    .line 161
     const-string v2, "0"
 
-    .line 174
-    if-eqz v14, :cond_1d
+    .line 290
+    if-eqz v10, :cond_20
 
-    .line 149
-    :try_start_24
-    invoke-virtual {v14}, Lcom/whatsapp/adg;->t()Z
-    :try_end_24
-    .catch Ljava/lang/NumberFormatException; {:try_start_24 .. :try_end_24} :catch_29
-
-    move-result v3
-
-    if-eqz v3, :cond_1b
-
-    :try_start_25
-    sget-object v3, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    iget-object v4, v14, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    invoke-static {v3, v4}, Lcom/whatsapp/notification/y;->c(Landroid/content/Context;Ljava/lang/String;)Z
-    :try_end_25
-    .catch Ljava/lang/NumberFormatException; {:try_start_25 .. :try_end_25} :catch_2a
+    .line 333
+    :try_start_27
+    invoke-virtual {v10}, Lcom/whatsapp/tc;->i()Z
+    :try_end_27
+    .catch Ljava/lang/NumberFormatException; {:try_start_27 .. :try_end_27} :catch_2b
 
     move-result v3
 
-    if-nez v3, :cond_1d
+    if-eqz v3, :cond_1e
 
-    .line 35
-    :cond_1b
-    :try_start_26
-    invoke-virtual {v14}, Lcom/whatsapp/adg;->t()Z
-    :try_end_26
-    .catch Ljava/lang/NumberFormatException; {:try_start_26 .. :try_end_26} :catch_2b
+    :try_start_28
+    sget-object v3, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    iget-object v4, v10, Lcom/whatsapp/tc;->b:Ljava/lang/String;
+
+    invoke-static {v3, v4}, Lcom/whatsapp/notification/f;->d(Landroid/content/Context;Ljava/lang/String;)Z
+    :try_end_28
+    .catch Ljava/lang/NumberFormatException; {:try_start_28 .. :try_end_28} :catch_2c
+
+    move-result v3
+
+    if-nez v3, :cond_20
+
+    .line 219
+    :cond_1e
+    :try_start_29
+    invoke-virtual {v10}, Lcom/whatsapp/tc;->i()Z
+    :try_end_29
+    .catch Ljava/lang/NumberFormatException; {:try_start_29 .. :try_end_29} :catch_2d
 
     move-result v2
 
-    if-eqz v2, :cond_1c
+    if-eqz v2, :cond_1f
 
-    .line 150
+    .line 93
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x1f
+    const/16 v3, 0x29
 
     aget-object v2, v2, v3
 
@@ -3450,13 +3551,13 @@
 
     move-result-object v2
 
-    if-eqz v17, :cond_1d
+    if-eqz v17, :cond_20
 
-    .line 90
-    :cond_1c
+    .line 307
+    :cond_1f
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x22
+    const/4 v3, 0x4
 
     aget-object v2, v2, v3
 
@@ -3468,11 +3569,11 @@
 
     move-result-object v2
 
-    .line 123
-    :cond_1d
+    .line 250
+    :cond_20
     sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x26
+    const/4 v4, 0x7
 
     aget-object v3, v3, v4
 
@@ -3484,106 +3585,106 @@
 
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 255
+    .line 52
     const/4 v3, -0x1
 
-    :try_start_27
+    :try_start_2a
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
-    :try_end_27
-    .catch Ljava/lang/NumberFormatException; {:try_start_27 .. :try_end_27} :catch_2c
+    :try_end_2a
+    .catch Ljava/lang/NumberFormatException; {:try_start_2a .. :try_end_2a} :catch_2e
 
     move-result v4
 
     packed-switch v4, :pswitch_data_0
 
-    :cond_1e
+    :cond_21
     move v2, v3
 
-    :goto_11
+    :goto_12
     packed-switch v2, :pswitch_data_1
 
-    .line 127
-    :cond_1f
-    :goto_12
-    :try_start_28
+    .line 330
+    :cond_22
+    :goto_13
+    :try_start_2b
     invoke-virtual {v8}, Landroid/telephony/TelephonyManager;->getCallState()I
 
     move-result v2
 
-    if-nez v2, :cond_25
+    if-nez v2, :cond_28
 
-    invoke-static {}, Lcom/whatsapp/Voip;->c()Z
-    :try_end_28
-    .catch Ljava/lang/NumberFormatException; {:try_start_28 .. :try_end_28} :catch_32
+    invoke-static {}, Lcom/whatsapp/Voip;->g()Z
+    :try_end_2b
+    .catch Ljava/lang/NumberFormatException; {:try_start_2b .. :try_end_2b} :catch_34
 
     move-result v2
 
-    if-nez v2, :cond_25
+    if-nez v2, :cond_28
 
-    if-eqz v14, :cond_25
+    if-eqz v10, :cond_28
 
-    .line 229
+    .line 252
     const/4 v2, 0x0
 
-    .line 267
-    :try_start_29
-    sget-object v3, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 14
+    :try_start_2c
+    sget-object v3, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    iget-object v3, v3, Lcom/whatsapp/App;->w:Lcom/whatsapp/ScreenLockReceiver;
+    iget-object v3, v3, Lcom/whatsapp/App;->ax:Lcom/whatsapp/ScreenLockReceiver;
 
     invoke-virtual {v3}, Lcom/whatsapp/ScreenLockReceiver;->a()Z
 
     move-result v3
 
-    if-nez v3, :cond_40
+    if-nez v3, :cond_43
 
-    invoke-static {}, Lcom/whatsapp/App;->a_()Z
-    :try_end_29
-    .catch Ljava/lang/NumberFormatException; {:try_start_29 .. :try_end_29} :catch_34
-
-    move-result v3
-
-    if-eqz v3, :cond_40
-
-    :try_start_2a
-    invoke-static {}, Lcom/whatsapp/Conversation;->A()Z
-    :try_end_2a
-    .catch Ljava/lang/NumberFormatException; {:try_start_2a .. :try_end_2a} :catch_35
+    invoke-static {}, Lcom/whatsapp/App;->T()Z
+    :try_end_2c
+    .catch Ljava/lang/NumberFormatException; {:try_start_2c .. :try_end_2c} :catch_36
 
     move-result v3
 
-    if-eqz v3, :cond_40
+    if-eqz v3, :cond_43
 
-    .line 155
-    :try_start_2b
-    invoke-static {}, Lcom/whatsapp/Conversation;->o()Lcom/whatsapp/Conversation;
+    :try_start_2d
+    invoke-static {}, Lcom/whatsapp/Conversation;->v()Z
+    :try_end_2d
+    .catch Ljava/lang/NumberFormatException; {:try_start_2d .. :try_end_2d} :catch_37
+
+    move-result v3
+
+    if-eqz v3, :cond_43
+
+    .line 306
+    :try_start_2e
+    invoke-static {}, Lcom/whatsapp/Conversation;->c()Lcom/whatsapp/Conversation;
 
     move-result-object v3
 
-    iget-object v3, v3, Lcom/whatsapp/Conversation;->ar:Ljava/lang/String;
+    iget-object v3, v3, Lcom/whatsapp/Conversation;->aI:Ljava/lang/String;
 
-    iget-object v4, v14, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v4, v10, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-    :try_end_2b
-    .catch Ljava/lang/NumberFormatException; {:try_start_2b .. :try_end_2b} :catch_36
+    :try_end_2e
+    .catch Ljava/lang/NumberFormatException; {:try_start_2e .. :try_end_2e} :catch_38
 
     move-result v3
 
-    if-eqz v3, :cond_40
+    if-eqz v3, :cond_43
 
-    .line 9
-    :try_start_2c
-    sget-boolean v3, Lcom/whatsapp/Conversation;->av:Z
-    :try_end_2c
-    .catch Ljava/lang/NumberFormatException; {:try_start_2c .. :try_end_2c} :catch_37
+    .line 257
+    :try_start_2f
+    sget-boolean v3, Lcom/whatsapp/Conversation;->a6:Z
+    :try_end_2f
+    .catch Ljava/lang/NumberFormatException; {:try_start_2f .. :try_end_2f} :catch_39
 
-    if-eqz v3, :cond_20
+    if-eqz v3, :cond_23
 
-    .line 281
+    .line 72
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x5
+    const/16 v3, 0x11
 
     aget-object v2, v2, v3
 
@@ -3591,28 +3692,28 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 54
+    .line 249
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x1e
+    const/4 v3, 0x3
 
     aget-object v2, v2, v3
 
-    .line 17
-    :cond_20
-    :goto_13
-    if-eqz v2, :cond_25
+    .line 268
+    :cond_23
+    :goto_14
+    if-eqz v2, :cond_28
 
-    .line 272
+    .line 92
     invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v2
 
-    .line 184
-    :try_start_2d
+    .line 214
+    :try_start_30
     sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x28
+    const/16 v4, 0x2b
 
     aget-object v3, v3, v4
 
@@ -3624,125 +3725,125 @@
 
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 26
-    if-eqz v2, :cond_25
+    .line 241
+    if-eqz v2, :cond_28
 
-    .line 98
-    invoke-virtual {v14}, Lcom/whatsapp/adg;->t()Z
-    :try_end_2d
-    .catch Ljava/lang/NumberFormatException; {:try_start_2d .. :try_end_2d} :catch_38
-
-    move-result v3
-
-    if-eqz v3, :cond_21
-
-    :try_start_2e
-    sget-object v3, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    iget-object v4, v14, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    invoke-static {v3, v4}, Lcom/whatsapp/notification/y;->c(Landroid/content/Context;Ljava/lang/String;)Z
-    :try_end_2e
-    .catch Ljava/lang/NumberFormatException; {:try_start_2e .. :try_end_2e} :catch_39
-
-    move-result v3
-
-    if-nez v3, :cond_25
-
-    .line 235
-    :cond_21
-    :try_start_2f
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
-    :try_end_2f
-    .catch Ljava/lang/NumberFormatException; {:try_start_2f .. :try_end_2f} :catch_3a
-
-    const/16 v4, 0x15
-
-    if-lt v3, v4, :cond_24
-
-    :try_start_30
-    sget-object v3, Landroid/provider/Settings$System;->DEFAULT_NOTIFICATION_URI:Landroid/net/Uri;
-
-    invoke-virtual {v3, v2}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
+    .line 121
+    invoke-virtual {v10}, Lcom/whatsapp/tc;->i()Z
     :try_end_30
-    .catch Ljava/lang/NumberFormatException; {:try_start_30 .. :try_end_30} :catch_3b
-
-    move-result v3
-
-    if-nez v3, :cond_22
-
-    :try_start_31
-    invoke-static {v2}, Lcom/whatsapp/notification/g;->a(Landroid/net/Uri;)Z
-    :try_end_31
-    .catch Ljava/lang/NumberFormatException; {:try_start_31 .. :try_end_31} :catch_3c
+    .catch Ljava/lang/NumberFormatException; {:try_start_30 .. :try_end_30} :catch_3a
 
     move-result v3
 
     if-eqz v3, :cond_24
 
-    .line 214
-    :cond_22
-    :try_start_32
-    invoke-static {}, Lcom/whatsapp/Conversation;->A()Z
-    :try_end_32
-    .catch Ljava/lang/NumberFormatException; {:try_start_32 .. :try_end_32} :catch_3d
+    :try_start_31
+    sget-object v3, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    iget-object v4, v10, Lcom/whatsapp/tc;->b:Ljava/lang/String;
+
+    invoke-static {v3, v4}, Lcom/whatsapp/notification/f;->d(Landroid/content/Context;Ljava/lang/String;)Z
+    :try_end_31
+    .catch Ljava/lang/NumberFormatException; {:try_start_31 .. :try_end_31} :catch_3b
 
     move-result v3
 
-    if-eqz v3, :cond_23
+    if-nez v3, :cond_28
+
+    .line 117
+    :cond_24
+    :try_start_32
+    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
+    :try_end_32
+    .catch Ljava/lang/NumberFormatException; {:try_start_32 .. :try_end_32} :catch_3c
+
+    const/16 v4, 0x15
+
+    if-lt v3, v4, :cond_27
 
     :try_start_33
-    invoke-static {}, Lcom/whatsapp/Conversation;->o()Lcom/whatsapp/Conversation;
+    sget-object v3, Landroid/provider/Settings$System;->DEFAULT_NOTIFICATION_URI:Landroid/net/Uri;
 
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/whatsapp/Conversation;->v()Z
+    invoke-virtual {v3, v2}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
     :try_end_33
-    .catch Ljava/lang/NumberFormatException; {:try_start_33 .. :try_end_33} :catch_3e
+    .catch Ljava/lang/NumberFormatException; {:try_start_33 .. :try_end_33} :catch_3d
 
     move-result v3
 
     if-nez v3, :cond_25
 
-    .line 24
-    :cond_23
     :try_start_34
-    move-object/from16 v0, v22
+    invoke-static {v2}, Lcom/whatsapp/notification/g;->a(Landroid/net/Uri;)Z
+    :try_end_34
+    .catch Ljava/lang/NumberFormatException; {:try_start_34 .. :try_end_34} :catch_3e
+
+    move-result v3
+
+    if-eqz v3, :cond_27
+
+    .line 1
+    :cond_25
+    :try_start_35
+    invoke-static {}, Lcom/whatsapp/Conversation;->v()Z
+    :try_end_35
+    .catch Ljava/lang/NumberFormatException; {:try_start_35 .. :try_end_35} :catch_3f
+
+    move-result v3
+
+    if-eqz v3, :cond_26
+
+    :try_start_36
+    invoke-static {}, Lcom/whatsapp/Conversation;->c()Lcom/whatsapp/Conversation;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/whatsapp/Conversation;->i()Z
+    :try_end_36
+    .catch Ljava/lang/NumberFormatException; {:try_start_36 .. :try_end_36} :catch_40
+
+    move-result v3
+
+    if-nez v3, :cond_28
+
+    .line 163
+    :cond_26
+    :try_start_37
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setSound(Landroid/net/Uri;)Landroid/support/v4/app/NotificationCompat$Builder;
-    :try_end_34
-    .catch Ljava/lang/NumberFormatException; {:try_start_34 .. :try_end_34} :catch_3f
+    :try_end_37
+    .catch Ljava/lang/NumberFormatException; {:try_start_37 .. :try_end_37} :catch_41
 
-    if-eqz v17, :cond_25
+    if-eqz v17, :cond_28
 
-    .line 39
-    :cond_24
-    :try_start_35
+    .line 239
+    :cond_27
+    :try_start_38
     invoke-static {v2}, Lcom/whatsapp/App;->a(Landroid/net/Uri;)V
-    :try_end_35
-    .catch Ljava/lang/NumberFormatException; {:try_start_35 .. :try_end_35} :catch_40
+    :try_end_38
+    .catch Ljava/lang/NumberFormatException; {:try_start_38 .. :try_end_38} :catch_42
 
-    .line 216
-    :cond_25
+    .line 73
+    :cond_28
     const/4 v2, 0x0
 
-    .line 323
-    if-eqz v14, :cond_45
+    .line 335
+    if-eqz v10, :cond_48
 
-    .line 41
-    :try_start_36
-    invoke-virtual {v14}, Lcom/whatsapp/adg;->t()Z
-    :try_end_36
-    .catch Ljava/lang/NumberFormatException; {:try_start_36 .. :try_end_36} :catch_41
+    .line 204
+    :try_start_39
+    invoke-virtual {v10}, Lcom/whatsapp/tc;->i()Z
+    :try_end_39
+    .catch Ljava/lang/NumberFormatException; {:try_start_39 .. :try_end_39} :catch_43
 
     move-result v2
 
-    if-eqz v2, :cond_26
+    if-eqz v2, :cond_29
 
-    .line 32
+    .line 328
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x18
+    const/16 v3, 0xf
 
     aget-object v2, v2, v3
 
@@ -3754,13 +3855,13 @@
 
     move-result v2
 
-    if-eqz v17, :cond_44
+    if-eqz v17, :cond_47
 
-    .line 91
-    :cond_26
+    .line 119
+    :cond_29
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x1a
+    const/16 v3, 0x2a
 
     aget-object v2, v2, v3
 
@@ -3774,61 +3875,61 @@
 
     move v3, v2
 
-    .line 6
-    :goto_14
-    if-eqz v3, :cond_2d
+    .line 60
+    :goto_15
+    if-eqz v3, :cond_30
 
-    :try_start_37
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    :try_start_3a
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    iget-object v2, v2, Lcom/whatsapp/App;->w:Lcom/whatsapp/ScreenLockReceiver;
+    iget-object v2, v2, Lcom/whatsapp/App;->ax:Lcom/whatsapp/ScreenLockReceiver;
 
-    .line 2
+    .line 142
     invoke-virtual {v2}, Lcom/whatsapp/ScreenLockReceiver;->a()Z
-    :try_end_37
-    .catch Ljava/lang/NumberFormatException; {:try_start_37 .. :try_end_37} :catch_42
+    :try_end_3a
+    .catch Ljava/lang/NumberFormatException; {:try_start_3a .. :try_end_3a} :catch_44
 
     move-result v2
 
-    if-nez v2, :cond_27
+    if-nez v2, :cond_2a
 
-    :try_start_38
-    sget-object v2, Lcom/whatsapp/notification/PopupNotification;->j:Lcom/whatsapp/notification/PopupNotification;
-    :try_end_38
-    .catch Ljava/lang/NumberFormatException; {:try_start_38 .. :try_end_38} :catch_43
+    :try_start_3b
+    sget-object v2, Lcom/whatsapp/notification/PopupNotification;->G:Lcom/whatsapp/notification/PopupNotification;
+    :try_end_3b
+    .catch Ljava/lang/NumberFormatException; {:try_start_3b .. :try_end_3b} :catch_45
 
-    if-eqz v2, :cond_2d
+    if-eqz v2, :cond_30
 
-    :try_start_39
-    sget-object v2, Lcom/whatsapp/notification/PopupNotification;->j:Lcom/whatsapp/notification/PopupNotification;
+    :try_start_3c
+    sget-object v2, Lcom/whatsapp/notification/PopupNotification;->G:Lcom/whatsapp/notification/PopupNotification;
 
     instance-of v2, v2, Lcom/whatsapp/notification/PopupNotificationLocked;
-    :try_end_39
-    .catch Ljava/lang/NumberFormatException; {:try_start_39 .. :try_end_39} :catch_44
+    :try_end_3c
+    .catch Ljava/lang/NumberFormatException; {:try_start_3c .. :try_end_3c} :catch_46
 
-    if-eqz v2, :cond_2d
+    if-eqz v2, :cond_30
 
-    .line 311
-    :cond_27
-    :try_start_3a
-    invoke-virtual {v14}, Lcom/whatsapp/adg;->t()Z
-    :try_end_3a
-    .catch Ljava/lang/NumberFormatException; {:try_start_3a .. :try_end_3a} :catch_45
+    .line 174
+    :cond_2a
+    :try_start_3d
+    invoke-virtual {v10}, Lcom/whatsapp/tc;->i()Z
+    :try_end_3d
+    .catch Ljava/lang/NumberFormatException; {:try_start_3d .. :try_end_3d} :catch_47
 
     move-result v2
 
-    if-eqz v2, :cond_28
+    if-eqz v2, :cond_2b
 
     .line 212
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x9
+    const/16 v4, 0x8
 
     aget-object v2, v2, v4
 
     sget-object v4, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x12
+    const/4 v5, 0x5
 
     aget-object v4, v4, v5
 
@@ -3838,19 +3939,19 @@
 
     move-result-object v2
 
-    if-eqz v17, :cond_29
+    if-eqz v17, :cond_2c
 
-    .line 158
-    :cond_28
+    .line 26
+    :cond_2b
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0xa
+    const/4 v4, 0x1
 
     aget-object v2, v2, v4
 
     sget-object v4, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x20
+    const/16 v5, 0x19
 
     aget-object v4, v4, v5
 
@@ -3860,45 +3961,45 @@
 
     move-result-object v2
 
-    .line 251
-    :cond_29
-    if-eqz v2, :cond_2b
+    .line 5
+    :cond_2c
+    if-eqz v2, :cond_2e
 
-    .line 34
+    .line 251
     const/16 v4, 0x10
 
-    :try_start_3b
+    :try_start_3e
     invoke-static {v2, v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;I)I
-    :try_end_3b
-    .catch Ljava/lang/NumberFormatException; {:try_start_3b .. :try_end_3b} :catch_46
+    :try_end_3e
+    .catch Ljava/lang/NumberFormatException; {:try_start_3e .. :try_end_3e} :catch_48
 
     move-result v2
 
-    .line 329
-    :goto_15
+    .line 114
+    :goto_16
     const/high16 v4, -0x1000000
 
     or-int/2addr v2, v4
 
-    .line 226
+    .line 28
     const/high16 v4, -0x1000000
 
-    if-eq v2, v4, :cond_2a
+    if-eq v2, v4, :cond_2d
 
-    .line 276
+    .line 195
     const/16 v4, 0x3e8
 
     const/16 v5, 0xfa0
 
-    :try_start_3c
-    move-object/from16 v0, v22
+    :try_start_3f
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v2, v4, v5}, Landroid/support/v4/app/NotificationCompat$Builder;->setLights(III)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 95
+    .line 35
     sget-object v4, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x14
+    const/16 v5, 0x1a
 
     aget-object v4, v4, v5
 
@@ -3913,38 +4014,38 @@
     move-result-object v2
 
     invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    :try_end_3c
-    .catch Ljava/lang/NumberFormatException; {:try_start_3c .. :try_end_3c} :catch_47
+    :try_end_3f
+    .catch Ljava/lang/NumberFormatException; {:try_start_3f .. :try_end_3f} :catch_49
 
-    .line 139
-    :cond_2a
-    if-eqz v17, :cond_2c
+    .line 227
+    :cond_2d
+    if-eqz v17, :cond_2f
 
-    .line 104
-    :cond_2b
-    :try_start_3d
+    .line 271
+    :cond_2e
+    :try_start_40
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x11
+    const/16 v4, 0x10
 
     aget-object v2, v2, v4
 
     move-object/from16 v0, v20
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    :try_end_3d
-    .catch Ljava/lang/NumberFormatException; {:try_start_3d .. :try_end_3d} :catch_48
+    :try_end_40
+    .catch Ljava/lang/NumberFormatException; {:try_start_40 .. :try_end_40} :catch_4a
 
-    .line 173
-    :cond_2c
-    if-eqz v17, :cond_2e
+    .line 149
+    :cond_2f
+    if-eqz v17, :cond_31
 
-    .line 130
-    :cond_2d
-    :try_start_3e
+    .line 300
+    :cond_30
+    :try_start_41
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0xb
+    const/16 v4, 0xc
 
     aget-object v2, v2, v4
 
@@ -3960,7 +4061,7 @@
 
     sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x1b
+    const/16 v4, 0x9
 
     aget-object v3, v3, v4
 
@@ -3968,33 +4069,31 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    sget-object v3, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    iget-object v3, v3, Lcom/whatsapp/App;->w:Lcom/whatsapp/ScreenLockReceiver;
+    iget-object v3, v3, Lcom/whatsapp/App;->ax:Lcom/whatsapp/ScreenLockReceiver;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-    :try_end_3e
-    .catch Ljava/lang/NumberFormatException; {:try_start_3e .. :try_end_3e} :catch_49
+    :try_end_41
+    .catch Ljava/lang/NumberFormatException; {:try_start_41 .. :try_end_41} :catch_4b
 
-    .line 12
-    :cond_2e
+    .line 248
+    :cond_31
     const/4 v2, 0x1
 
-    move/from16 v0, v16
+    if-ne v12, v2, :cond_45
 
-    if-ne v0, v2, :cond_42
-
-    .line 72
-    :try_start_3f
-    invoke-static {v14}, Lcom/whatsapp/Conversation;->a(Lcom/whatsapp/adg;)Landroid/content/Intent;
-    :try_end_3f
-    .catch Ljava/lang/NumberFormatException; {:try_start_3f .. :try_end_3f} :catch_4a
+    .line 197
+    :try_start_42
+    invoke-static {v10}, Lcom/whatsapp/Conversation;->a(Lcom/whatsapp/tc;)Landroid/content/Intent;
+    :try_end_42
+    .catch Ljava/lang/NumberFormatException; {:try_start_42 .. :try_end_42} :catch_4c
 
     move-result-object v2
 
-    .line 213
-    :goto_16
-    sget-object v3, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 274
+    :goto_17
+    sget-object v3, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     const/4 v4, 0x0
 
@@ -4004,32 +4103,34 @@
 
     move-result-object v2
 
-    .line 328
-    :try_start_40
-    move-object/from16 v0, v22
+    .line 289
+    :try_start_43
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/support/v4/app/NotificationCompat$Builder;
 
+    .line 86
+    move-object/from16 v0, v23
+
+    move-object/from16 v1, v16
+
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/NotificationCompat$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
+
     .line 228
-    move-object/from16 v0, v22
+    move-object/from16 v0, v23
 
-    invoke-virtual {v0, v12}, Landroid/support/v4/app/NotificationCompat$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
-
-    .line 53
-    move-object/from16 v0, v22
-
-    move-object/from16 v1, v21
+    move-object/from16 v1, v22
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/NotificationCompat$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 61
-    sget v2, Lcom/whatsapp/App;->G:I
+    .line 120
+    sget v2, Lcom/whatsapp/App;->m:I
 
     const/4 v3, 0x1
 
-    if-lt v2, v3, :cond_2f
+    if-lt v2, v3, :cond_32
 
-    .line 64
+    .line 326
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
     const/16 v3, 0x15
@@ -4042,33 +4143,50 @@
 
     move-result-object v2
 
-    move-object/from16 v0, v21
+    move-object/from16 v0, v22
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
-    :try_end_40
-    .catch Ljava/lang/NumberFormatException; {:try_start_40 .. :try_end_40} :catch_4b
+    :try_end_43
+    .catch Ljava/lang/NumberFormatException; {:try_start_43 .. :try_end_43} :catch_4d
 
-    .line 89
-    :cond_2f
-    :try_start_41
+    .line 298
+    :cond_32
+    :try_start_44
+    sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
+
+    const/4 v3, 0x0
+
+    aget-object v2, v2, v3
+
+    move-object/from16 v0, v20
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v0, v21
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 299
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/whatsapp/notification/g;->a:Lcom/whatsapp/notification/c;
+    iget-object v2, v0, Lcom/whatsapp/notification/g;->g:Lcom/whatsapp/notification/u;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v4
 
-    iput-wide v4, v2, Lcom/whatsapp/notification/c;->e:J
+    iput-wide v4, v2, Lcom/whatsapp/notification/u;->e:J
 
-    .line 275
+    .line 281
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0xe
+    const/16 v4, 0x14
 
     aget-object v3, v3, v4
 
@@ -4090,48 +4208,30 @@
 
     invoke-static {v2}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 176
-    move-object/from16 v0, p0
-
-    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->c:Z
-
-    if-nez v2, :cond_30
-
+    .line 152
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/whatsapp/notification/g;->e:Z
-    :try_end_41
-    .catch Ljava/lang/NumberFormatException; {:try_start_41 .. :try_end_41} :catch_4c
 
-    if-nez v2, :cond_30
+    if-nez v2, :cond_33
 
-    .line 97
-    :try_start_42
+    move-object/from16 v0, p0
+
+    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->a:Z
+    :try_end_44
+    .catch Ljava/lang/NumberFormatException; {:try_start_44 .. :try_end_44} :catch_4e
+
+    if-nez v2, :cond_33
+
+    .line 259
+    :try_start_45
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0xf
-
-    aget-object v3, v3, v4
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    move-object/from16 v0, p0
-
-    iget-boolean v3, v0, Lcom/whatsapp/notification/g;->c:Z
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
-
-    const/16 v4, 0x25
+    const/16 v4, 0x26
 
     aget-object v3, v3, v4
 
@@ -4149,7 +4249,7 @@
 
     sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x21
+    const/16 v4, 0x22
 
     aget-object v3, v3, v4
 
@@ -4157,9 +4257,25 @@
 
     move-result-object v2
 
-    move/from16 v0, v16
+    move-object/from16 v0, p0
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget-boolean v3, v0, Lcom/whatsapp/notification/g;->a:Z
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
+
+    const/16 v4, 0x27
+
+    aget-object v3, v3, v4
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -4168,242 +4284,295 @@
     move-result-object v2
 
     invoke-static {v2}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-    :try_end_42
-    .catch Ljava/lang/NumberFormatException; {:try_start_42 .. :try_end_42} :catch_4d
+    :try_end_45
+    .catch Ljava/lang/NumberFormatException; {:try_start_45 .. :try_end_45} :catch_4f
 
-    .line 316
-    :cond_30
-    :try_start_43
+    .line 83
+    :cond_33
+    :try_start_46
     invoke-virtual {v8}, Landroid/telephony/TelephonyManager;->getCallState()I
 
     move-result v2
 
-    if-nez v2, :cond_43
+    if-nez v2, :cond_46
 
-    .line 191
-    invoke-static {}, Lcom/whatsapp/Voip;->c()Z
-    :try_end_43
-    .catch Ljava/lang/NumberFormatException; {:try_start_43 .. :try_end_43} :catch_4e
-
-    move-result v2
-
-    if-nez v2, :cond_43
-
-    if-eqz v14, :cond_43
-
-    if-eqz v9, :cond_43
-
-    :try_start_44
-    move-object/from16 v0, p0
-
-    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->g:Z
-    :try_end_44
-    .catch Ljava/lang/NumberFormatException; {:try_start_44 .. :try_end_44} :catch_51
-
-    if-nez v2, :cond_43
-
-    .line 94
-    :try_start_45
-    invoke-virtual {v14}, Lcom/whatsapp/adg;->t()Z
-    :try_end_45
-    .catch Ljava/lang/NumberFormatException; {:try_start_45 .. :try_end_45} :catch_52
-
-    move-result v2
-
-    if-eqz v2, :cond_31
-
-    :try_start_46
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    iget-object v3, v14, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    invoke-static {v2, v3}, Lcom/whatsapp/notification/y;->d(Landroid/content/Context;Ljava/lang/String;)Z
+    .line 305
+    invoke-static {}, Lcom/whatsapp/Voip;->g()Z
     :try_end_46
-    .catch Ljava/lang/NumberFormatException; {:try_start_46 .. :try_end_46} :catch_53
+    .catch Ljava/lang/NumberFormatException; {:try_start_46 .. :try_end_46} :catch_50
 
     move-result v2
 
-    if-nez v2, :cond_43
+    if-nez v2, :cond_46
 
-    :cond_31
-    const/4 v2, 0x1
+    if-eqz v10, :cond_46
 
-    .line 37
-    :goto_17
-    if-nez v2, :cond_32
+    if-eqz v13, :cond_46
 
     :try_start_47
     move-object/from16 v0, p0
 
-    iget-boolean v3, v0, Lcom/whatsapp/notification/g;->f:Z
+    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->f:Z
     :try_end_47
-    .catch Ljava/lang/NumberFormatException; {:try_start_47 .. :try_end_47} :catch_55
+    .catch Ljava/lang/NumberFormatException; {:try_start_47 .. :try_end_47} :catch_53
 
-    if-nez v3, :cond_32
+    if-nez v2, :cond_46
 
-    .line 201
-    const/4 v3, 0x1
-
+    .line 48
     :try_start_48
-    move-object/from16 v0, v22
-
-    invoke-virtual {v0, v3}, Landroid/support/v4/app/NotificationCompat$Builder;->setPriority(I)Landroid/support/v4/app/NotificationCompat$Builder;
+    invoke-virtual {v10}, Lcom/whatsapp/tc;->i()Z
     :try_end_48
-    .catch Ljava/lang/NumberFormatException; {:try_start_48 .. :try_end_48} :catch_56
-
-    .line 126
-    :cond_32
-    invoke-virtual/range {v22 .. v22}, Landroid/support/v4/app/NotificationCompat$Builder;->getNotification()Landroid/app/Notification;
-
-    move-result-object v3
-
-    .line 194
-    :try_start_49
-    move-object/from16 v0, p0
-
-    iget-boolean v4, v0, Lcom/whatsapp/notification/g;->f:Z
-    :try_end_49
-    .catch Ljava/lang/NumberFormatException; {:try_start_49 .. :try_end_49} :catch_57
-
-    if-eqz v4, :cond_33
-
-    const/4 v4, 0x1
-
-    if-ne v15, v4, :cond_33
-
-    .line 221
-    const/4 v4, 0x1
-
-    :try_start_4a
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v4}, Landroid/support/v4/app/NotificationManagerCompat;->cancel(I)V
-    :try_end_4a
-    .catch Ljava/lang/NumberFormatException; {:try_start_4a .. :try_end_4a} :catch_58
-
-    .line 248
-    :cond_33
-    const/4 v4, 0x1
-
-    :try_start_4b
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v4, v3}, Landroid/support/v4/app/NotificationManagerCompat;->notify(ILandroid/app/Notification;)V
-    :try_end_4b
-    .catch Ljava/lang/SecurityException; {:try_start_4b .. :try_end_4b} :catch_59
-
-    .line 167
-    :cond_34
-    :try_start_4c
-    move-object/from16 v0, p0
-
-    iget-boolean v3, v0, Lcom/whatsapp/notification/g;->f:Z
-    :try_end_4c
-    .catch Ljava/lang/NumberFormatException; {:try_start_4c .. :try_end_4c} :catch_5b
-
-    if-nez v3, :cond_0
-
-    .line 99
-    invoke-static {}, Lcom/whatsapp/Conversation;->A()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_36
-
-    .line 83
-    const/4 v3, 0x0
-
-    .line 238
-    if-eqz v14, :cond_35
-
-    .line 33
-    iget-object v3, v14, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    .line 195
-    :cond_35
-    :try_start_4d
-    invoke-static {}, Lcom/whatsapp/Conversation;->o()Lcom/whatsapp/Conversation;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v3}, Lcom/whatsapp/Conversation;->h(Ljava/lang/String;)V
-
-    .line 131
-    if-eqz v17, :cond_37
-
-    .line 298
-    :cond_36
-    invoke-static {}, Lcom/whatsapp/Conversation;->t()V
-    :try_end_4d
-    .catch Ljava/lang/NumberFormatException; {:try_start_4d .. :try_end_4d} :catch_5c
-
-    .line 279
-    :cond_37
-    if-eqz v2, :cond_38
-
-    .line 280
-    :try_start_4e
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    invoke-virtual {v2}, Lcom/whatsapp/App;->X()Landroid/os/Handler;
-
-    move-result-object v2
-
-    new-instance v3, Lcom/whatsapp/notification/a0;
-
-    sget-object v4, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    invoke-direct {v3, v4, v9}, Lcom/whatsapp/notification/a0;-><init>(Landroid/content/Context;I)V
-
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-    :try_end_4e
-    .catch Ljava/lang/NumberFormatException; {:try_start_4e .. :try_end_4e} :catch_5d
-
-    .line 300
-    :cond_38
-    :try_start_4f
-    move-object/from16 v0, p0
-
-    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->c:Z
-    :try_end_4f
-    .catch Ljava/lang/NumberFormatException; {:try_start_4f .. :try_end_4f} :catch_5e
-
-    if-eqz v2, :cond_39
-
-    if-eqz v14, :cond_39
-
-    :try_start_50
-    invoke-virtual {v14}, Lcom/whatsapp/adg;->t()Z
+    .catch Ljava/lang/NumberFormatException; {:try_start_48 .. :try_end_48} :catch_54
 
     move-result v2
 
-    if-eqz v2, :cond_39
+    if-eqz v2, :cond_34
 
-    .line 208
-    iget-object v2, v14, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    :try_start_49
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    invoke-static {v2}, Lcom/whatsapp/notification/y;->c(Ljava/lang/String;)V
-    :try_end_50
-    .catch Ljava/lang/NumberFormatException; {:try_start_50 .. :try_end_50} :catch_60
+    iget-object v3, v10, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    .line 230
-    :cond_39
-    :try_start_51
+    invoke-static {v2, v3}, Lcom/whatsapp/notification/f;->e(Landroid/content/Context;Ljava/lang/String;)Z
+    :try_end_49
+    .catch Ljava/lang/NumberFormatException; {:try_start_49 .. :try_end_49} :catch_55
+
+    move-result v2
+
+    if-nez v2, :cond_46
+
+    :cond_34
+    const/4 v2, 0x1
+
+    .line 136
+    :goto_18
+    if-nez v2, :cond_35
+
+    :try_start_4a
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->c:Z
+    iget-boolean v3, v0, Lcom/whatsapp/notification/g;->c:Z
+    :try_end_4a
+    .catch Ljava/lang/NumberFormatException; {:try_start_4a .. :try_end_4a} :catch_57
+
+    if-nez v3, :cond_35
+
+    .line 280
+    const/4 v3, 0x1
+
+    :try_start_4b
+    move-object/from16 v0, v23
+
+    invoke-virtual {v0, v3}, Landroid/support/v4/app/NotificationCompat$Builder;->setPriority(I)Landroid/support/v4/app/NotificationCompat$Builder;
+    :try_end_4b
+    .catch Ljava/lang/NumberFormatException; {:try_start_4b .. :try_end_4b} :catch_58
+
+    .line 209
+    :cond_35
+    new-instance v3, Landroid/content/Intent;
+
+    sget-object v4, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    const-class v5, Lcom/whatsapp/notification/MessageNotificationDismissedReceiver;
+
+    invoke-direct {v3, v4, v5}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 82
+    sget-object v4, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
+
+    const/16 v5, 0x20
+
+    aget-object v4, v4, v5
+
+    move-object/from16 v0, v21
+
+    invoke-virtual {v3, v4, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 199
+    sget-object v4, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    const/4 v5, 0x1
+
+    const/high16 v6, 0x8000000
+
+    invoke-static {v4, v5, v3, v6}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v3
+
+    .line 135
+    move-object/from16 v0, v23
+
+    invoke-virtual {v0, v3}, Landroid/support/v4/app/NotificationCompat$Builder;->setDeleteIntent(Landroid/app/PendingIntent;)Landroid/support/v4/app/NotificationCompat$Builder;
+
+    .line 191
+    sget-object v3, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    invoke-virtual {v3}, Lcom/whatsapp/App;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x7f09002d
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v3
+
+    move-object/from16 v0, v23
+
+    invoke-virtual {v0, v3}, Landroid/support/v4/app/NotificationCompat$Builder;->setColor(I)Landroid/support/v4/app/NotificationCompat$Builder;
+
+    .line 55
+    invoke-virtual/range {v23 .. v23}, Landroid/support/v4/app/NotificationCompat$Builder;->getNotification()Landroid/app/Notification;
+
+    move-result-object v3
+
+    .line 229
+    :try_start_4c
+    move-object/from16 v0, p0
+
+    iget-boolean v4, v0, Lcom/whatsapp/notification/g;->c:Z
+    :try_end_4c
+    .catch Ljava/lang/NumberFormatException; {:try_start_4c .. :try_end_4c} :catch_59
+
+    if-eqz v4, :cond_36
+
+    const/4 v4, 0x1
+
+    if-ne v11, v4, :cond_36
+
+    .line 78
+    const/4 v4, 0x1
+
+    :try_start_4d
+    move-object/from16 v0, v19
+
+    invoke-virtual {v0, v4}, Landroid/support/v4/app/NotificationManagerCompat;->cancel(I)V
+    :try_end_4d
+    .catch Ljava/lang/NumberFormatException; {:try_start_4d .. :try_end_4d} :catch_5a
+
+    .line 337
+    :cond_36
+    const/4 v4, 0x1
+
+    :try_start_4e
+    move-object/from16 v0, v19
+
+    invoke-virtual {v0, v4, v3}, Landroid/support/v4/app/NotificationManagerCompat;->notify(ILandroid/app/Notification;)V
+    :try_end_4e
+    .catch Ljava/lang/SecurityException; {:try_start_4e .. :try_end_4e} :catch_5b
+
+    .line 118
+    :cond_37
+    :try_start_4f
+    move-object/from16 v0, p0
+
+    iget-boolean v3, v0, Lcom/whatsapp/notification/g;->c:Z
+    :try_end_4f
+    .catch Ljava/lang/NumberFormatException; {:try_start_4f .. :try_end_4f} :catch_5d
+
+    if-nez v3, :cond_0
+
+    .line 113
+    invoke-static {}, Lcom/whatsapp/Conversation;->v()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_39
+
+    .line 138
+    const/4 v3, 0x0
+
+    .line 236
+    if-eqz v10, :cond_38
+
+    .line 303
+    iget-object v3, v10, Lcom/whatsapp/tc;->b:Ljava/lang/String;
+
+    .line 309
+    :cond_38
+    :try_start_50
+    invoke-static {}, Lcom/whatsapp/Conversation;->c()Lcom/whatsapp/Conversation;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v3}, Lcom/whatsapp/Conversation;->i(Ljava/lang/String;)V
+
+    .line 112
+    if-eqz v17, :cond_3a
+
+    .line 39
+    :cond_39
+    invoke-static {}, Lcom/whatsapp/Conversation;->t()V
+    :try_end_50
+    .catch Ljava/lang/NumberFormatException; {:try_start_50 .. :try_end_50} :catch_5e
+
+    .line 287
+    :cond_3a
+    if-eqz v2, :cond_3b
+
+    .line 322
+    :try_start_51
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    invoke-virtual {v2}, Lcom/whatsapp/App;->aO()Landroid/os/Handler;
+
+    move-result-object v2
+
+    new-instance v3, Lcom/whatsapp/notification/al;
+
+    sget-object v4, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    invoke-direct {v3, v4, v13}, Lcom/whatsapp/notification/al;-><init>(Landroid/content/Context;I)V
+
+    invoke-virtual {v2, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    :try_end_51
+    .catch Ljava/lang/NumberFormatException; {:try_start_51 .. :try_end_51} :catch_5f
+
+    .line 176
+    :cond_3b
+    :try_start_52
+    move-object/from16 v0, p0
+
+    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->e:Z
+    :try_end_52
+    .catch Ljava/lang/NumberFormatException; {:try_start_52 .. :try_end_52} :catch_60
+
+    if-eqz v2, :cond_3c
+
+    if-eqz v10, :cond_3c
+
+    :try_start_53
+    invoke-virtual {v10}, Lcom/whatsapp/tc;->i()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3c
+
+    .line 186
+    iget-object v2, v10, Lcom/whatsapp/tc;->b:Ljava/lang/String;
+
+    invoke-static {v2}, Lcom/whatsapp/notification/f;->c(Ljava/lang/String;)V
+    :try_end_53
+    .catch Ljava/lang/NumberFormatException; {:try_start_53 .. :try_end_53} :catch_62
+
+    .line 84
+    :cond_3c
+    :try_start_54
+    move-object/from16 v0, p0
+
+    iget-boolean v2, v0, Lcom/whatsapp/notification/g;->e:Z
 
     if-eqz v2, :cond_0
 
-    .line 241
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 301
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     invoke-static {v2}, Lcom/whatsapp/appwidget/WidgetProvider;->a(Landroid/content/Context;)V
 
-    .line 27
-    invoke-static {}, Lcom/whatsapp/App;->aj()V
-    :try_end_51
-    .catch Ljava/lang/NumberFormatException; {:try_start_51 .. :try_end_51} :catch_9
+    .line 42
+    invoke-static {}, Lcom/whatsapp/App;->B()V
+    :try_end_54
+    .catch Ljava/lang/NumberFormatException; {:try_start_54 .. :try_end_54} :catch_9
 
     goto/16 :goto_0
 
@@ -4412,482 +4581,471 @@
 
     throw v2
 
-    .line 309
-    :cond_3a
-    :try_start_52
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/whatsapp/notification/g;->a:Lcom/whatsapp/notification/c;
-
-    .line 307
-    invoke-virtual {v14}, Lcom/whatsapp/adg;->t()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3b
-
-    sget-object v2, Lcom/whatsapp/apv;->GROUP:Lcom/whatsapp/apv;
-    :try_end_52
-    .catch Ljava/lang/NumberFormatException; {:try_start_52 .. :try_end_52} :catch_a
-
-    .line 231
-    :goto_18
-    move-object/from16 v0, v18
-
-    invoke-virtual {v3, v0, v2}, Lcom/whatsapp/notification/c;->a(Landroid/content/SharedPreferences;Lcom/whatsapp/apv;)I
-
-    move-result v2
-
-    move v9, v2
-
-    goto/16 :goto_7
-
-    .line 307
+    .line 9
     :catch_a
-    move-exception v2
-
-    throw v2
-
-    :cond_3b
-    sget-object v2, Lcom/whatsapp/apv;->INDIVIDUAL:Lcom/whatsapp/apv;
-
-    goto :goto_18
-
-    .line 133
-    :catch_b
-    move-exception v2
-
-    :try_start_53
-    throw v2
-    :try_end_53
-    .catch Ljava/lang/NumberFormatException; {:try_start_53 .. :try_end_53} :catch_c
-
-    .line 22
-    :catch_c
-    move-exception v2
-
-    throw v2
-
-    .line 242
-    :catch_d
-    move-exception v2
-
-    :try_start_54
-    throw v2
-    :try_end_54
-    .catch Ljava/lang/NumberFormatException; {:try_start_54 .. :try_end_54} :catch_e
-
-    .line 302
-    :catch_e
-    move-exception v2
-
-    throw v2
-
-    .line 125
-    :catch_f
-    move-exception v2
-
-    throw v2
-
-    .line 211
-    :catch_10
     move-exception v2
 
     :try_start_55
     throw v2
     :try_end_55
-    .catch Ljava/lang/NumberFormatException; {:try_start_55 .. :try_end_55} :catch_11
+    .catch Ljava/lang/NumberFormatException; {:try_start_55 .. :try_end_55} :catch_b
 
-    :catch_11
+    :catch_b
+    move-exception v2
+
+    throw v2
+
+    :cond_3d
+    sget-object v2, Lcom/whatsapp/af0;->INDIVIDUAL:Lcom/whatsapp/af0;
+
+    goto/16 :goto_6
+
+    .line 143
+    :catch_c
     move-exception v2
 
     :try_start_56
     throw v2
     :try_end_56
-    .catch Ljava/lang/NumberFormatException; {:try_start_56 .. :try_end_56} :catch_12
+    .catch Ljava/lang/NumberFormatException; {:try_start_56 .. :try_end_56} :catch_d
 
-    :catch_12
+    .line 223
+    :catch_d
     move-exception v2
 
     throw v2
 
-    .line 3
-    :catch_13
+    .line 217
+    :catch_e
     move-exception v2
 
     :try_start_57
     throw v2
     :try_end_57
-    .catch Ljava/lang/NumberFormatException; {:try_start_57 .. :try_end_57} :catch_14
+    .catch Ljava/lang/NumberFormatException; {:try_start_57 .. :try_end_57} :catch_f
 
-    :catch_14
+    .line 302
+    :catch_f
     move-exception v2
 
     throw v2
 
-    .line 270
-    :catch_15
+    .line 63
+    :catch_10
+    move-exception v2
+
+    throw v2
+
+    .line 132
+    :catch_11
     move-exception v2
 
     :try_start_58
     throw v2
     :try_end_58
-    .catch Ljava/lang/NumberFormatException; {:try_start_58 .. :try_end_58} :catch_16
+    .catch Ljava/lang/NumberFormatException; {:try_start_58 .. :try_end_58} :catch_12
 
-    :catch_16
-    move-exception v2
-
-    throw v2
-
-    .line 303
-    :catch_17
+    :catch_12
     move-exception v2
 
     :try_start_59
     throw v2
     :try_end_59
-    .catch Ljava/lang/NumberFormatException; {:try_start_59 .. :try_end_59} :catch_18
+    .catch Ljava/lang/NumberFormatException; {:try_start_59 .. :try_end_59} :catch_13
+
+    :catch_13
+    move-exception v2
+
+    throw v2
+
+    .line 277
+    :catch_14
+    move-exception v2
+
+    :try_start_5a
+    throw v2
+    :try_end_5a
+    .catch Ljava/lang/NumberFormatException; {:try_start_5a .. :try_end_5a} :catch_15
+
+    :catch_15
+    move-exception v2
+
+    throw v2
+
+    .line 17
+    :catch_16
+    move-exception v2
+
+    throw v2
+
+    :cond_3e
+    const/4 v2, 0x0
+
+    goto/16 :goto_9
+
+    .line 37
+    :catch_17
+    move-exception v2
+
+    :try_start_5b
+    throw v2
+    :try_end_5b
+    .catch Ljava/lang/NumberFormatException; {:try_start_5b .. :try_end_5b} :catch_18
 
     :catch_18
     move-exception v2
 
     throw v2
 
-    .line 100
+    .line 270
     :catch_19
-    move-exception v2
-
-    throw v2
-
-    .line 305
-    :catch_1a
-    move-exception v2
-
-    throw v2
-
-    .line 86
-    :catch_1b
-    move-exception v2
-
-    throw v2
-
-    :cond_3c
-    const/4 v4, 0x0
-
-    goto/16 :goto_b
-
-    .line 259
-    :catch_1c
-    move-exception v2
-
-    :try_start_5a
-    throw v2
-    :try_end_5a
-    .catch Ljava/lang/NumberFormatException; {:try_start_5a .. :try_end_5a} :catch_1d
-
-    :catch_1d
-    move-exception v2
-
-    throw v2
-
-    .line 153
-    :catch_1e
-    move-exception v2
-
-    throw v2
-
-    :cond_3d
-    const/4 v6, 0x0
-
-    goto/16 :goto_e
-
-    .line 87
-    :catch_1f
-    move-exception v2
-
-    :try_start_5b
-    throw v2
-    :try_end_5b
-    .catch Ljava/lang/NumberFormatException; {:try_start_5b .. :try_end_5b} :catch_20
-
-    :catch_20
-    move-exception v2
-
-    throw v2
-
-    .line 193
-    :catch_21
     move-exception v2
 
     :try_start_5c
     throw v2
     :try_end_5c
-    .catch Ljava/lang/NumberFormatException; {:try_start_5c .. :try_end_5c} :catch_22
+    .catch Ljava/lang/NumberFormatException; {:try_start_5c .. :try_end_5c} :catch_1a
+
+    :catch_1a
+    move-exception v2
+
+    throw v2
+
+    .line 155
+    :catch_1b
+    move-exception v2
+
+    throw v2
+
+    .line 312
+    :catch_1c
+    move-exception v2
+
+    throw v2
+
+    .line 317
+    :catch_1d
+    move-exception v2
+
+    throw v2
+
+    :cond_3f
+    const/4 v4, 0x0
+
+    goto/16 :goto_c
+
+    .line 304
+    :catch_1e
+    move-exception v2
+
+    :try_start_5d
+    throw v2
+    :try_end_5d
+    .catch Ljava/lang/NumberFormatException; {:try_start_5d .. :try_end_5d} :catch_1f
+
+    :catch_1f
+    move-exception v2
+
+    throw v2
+
+    .line 221
+    :catch_20
+    move-exception v2
+
+    throw v2
+
+    :cond_40
+    const/4 v6, 0x0
+
+    goto/16 :goto_f
+
+    .line 171
+    :catch_21
+    move-exception v2
+
+    :try_start_5e
+    throw v2
+    :try_end_5e
+    .catch Ljava/lang/NumberFormatException; {:try_start_5e .. :try_end_5e} :catch_22
 
     :catch_22
     move-exception v2
 
     throw v2
 
-    .line 146
+    .line 246
     :catch_23
     move-exception v2
 
-    :try_start_5d
+    :try_start_5f
     throw v2
-    :try_end_5d
-    .catch Ljava/lang/NumberFormatException; {:try_start_5d .. :try_end_5d} :catch_24
+    :try_end_5f
+    .catch Ljava/lang/NumberFormatException; {:try_start_5f .. :try_end_5f} :catch_24
 
     :catch_24
     move-exception v2
 
     throw v2
 
-    .line 233
+    .line 169
     :catch_25
     move-exception v2
 
+    :try_start_60
     throw v2
-
-    :cond_3e
-    const v2, 0x7f0205c8
-
-    move v3, v2
-
-    goto/16 :goto_f
+    :try_end_60
+    .catch Ljava/lang/NumberFormatException; {:try_start_60 .. :try_end_60} :catch_26
 
     :catch_26
     move-exception v2
 
     throw v2
 
-    :cond_3f
-    const v2, 0x7f0e02db
-
-    goto/16 :goto_10
-
-    .line 180
+    .line 201
     :catch_27
     move-exception v2
 
     throw v2
 
-    .line 85
+    :cond_41
+    const v2, 0x7f0205d1
+
+    move v3, v2
+
+    goto/16 :goto_10
+
     :catch_28
     move-exception v2
 
     throw v2
 
-    .line 149
+    :cond_42
+    const v2, 0x7f0e02e8
+
+    goto/16 :goto_11
+
+    .line 100
     :catch_29
     move-exception v2
 
-    :try_start_5e
     throw v2
-    :try_end_5e
-    .catch Ljava/lang/NumberFormatException; {:try_start_5e .. :try_end_5e} :catch_2a
 
+    .line 261
     :catch_2a
     move-exception v2
 
-    :try_start_5f
     throw v2
-    :try_end_5f
-    .catch Ljava/lang/NumberFormatException; {:try_start_5f .. :try_end_5f} :catch_2b
 
-    .line 35
+    .line 333
     :catch_2b
     move-exception v2
 
-    throw v2
-
-    .line 255
-    :pswitch_0
-    :try_start_60
-    const-string v4, "1"
-
-    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-    :try_end_60
-    .catch Ljava/lang/NumberFormatException; {:try_start_60 .. :try_end_60} :catch_2c
-
-    move-result v4
-
-    if-eqz v4, :cond_1e
-
-    const/4 v3, 0x0
-
-    if-eqz v17, :cond_1e
-
-    :pswitch_1
     :try_start_61
-    const-string v4, "2"
-
-    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    throw v2
     :try_end_61
-    .catch Ljava/lang/NumberFormatException; {:try_start_61 .. :try_end_61} :catch_2d
-
-    move-result v4
-
-    if-eqz v4, :cond_1e
-
-    const/4 v3, 0x1
-
-    if-eqz v17, :cond_1e
-
-    :pswitch_2
-    :try_start_62
-    const-string v4, "3"
-
-    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-    :try_end_62
-    .catch Ljava/lang/NumberFormatException; {:try_start_62 .. :try_end_62} :catch_2e
-
-    move-result v2
-
-    if-eqz v2, :cond_1e
-
-    const/4 v2, 0x2
-
-    goto/16 :goto_11
+    .catch Ljava/lang/NumberFormatException; {:try_start_61 .. :try_end_61} :catch_2c
 
     :catch_2c
     move-exception v2
 
+    :try_start_62
     throw v2
+    :try_end_62
+    .catch Ljava/lang/NumberFormatException; {:try_start_62 .. :try_end_62} :catch_2d
 
+    .line 219
     :catch_2d
     move-exception v2
 
     throw v2
+
+    .line 52
+    :pswitch_0
+    :try_start_63
+    const-string v4, "1"
+
+    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :try_end_63
+    .catch Ljava/lang/NumberFormatException; {:try_start_63 .. :try_end_63} :catch_2e
+
+    move-result v4
+
+    if-eqz v4, :cond_21
+
+    const/4 v3, 0x0
+
+    if-eqz v17, :cond_21
+
+    :pswitch_1
+    :try_start_64
+    const-string v4, "2"
+
+    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :try_end_64
+    .catch Ljava/lang/NumberFormatException; {:try_start_64 .. :try_end_64} :catch_2f
+
+    move-result v4
+
+    if-eqz v4, :cond_21
+
+    const/4 v3, 0x1
+
+    if-eqz v17, :cond_21
+
+    :pswitch_2
+    :try_start_65
+    const-string v4, "3"
+
+    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :try_end_65
+    .catch Ljava/lang/NumberFormatException; {:try_start_65 .. :try_end_65} :catch_30
+
+    move-result v2
+
+    if-eqz v2, :cond_21
+
+    const/4 v2, 0x2
+
+    goto/16 :goto_12
 
     :catch_2e
     move-exception v2
 
     throw v2
 
-    .line 292
-    :pswitch_3
-    const/4 v2, 0x2
-
-    :try_start_63
-    move-object/from16 v0, v22
-
-    invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setDefaults(I)Landroid/support/v4/app/NotificationCompat$Builder;
-    :try_end_63
-    .catch Ljava/lang/NumberFormatException; {:try_start_63 .. :try_end_63} :catch_30
-
-    .line 199
-    if-eqz v17, :cond_1f
-
-    .line 114
-    :pswitch_4
-    const/4 v2, 0x5
-
-    :try_start_64
-    new-array v2, v2, [J
-
-    fill-array-data v2, :array_0
-
-    move-object/from16 v0, v22
-
-    invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setVibrate([J)Landroid/support/v4/app/NotificationCompat$Builder;
-    :try_end_64
-    .catch Ljava/lang/NumberFormatException; {:try_start_64 .. :try_end_64} :catch_31
-
-    .line 73
-    if-eqz v17, :cond_1f
-
-    .line 326
-    :pswitch_5
-    const/4 v2, 0x5
-
-    :try_start_65
-    new-array v2, v2, [J
-
-    fill-array-data v2, :array_1
-
-    move-object/from16 v0, v22
-
-    invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setVibrate([J)Landroid/support/v4/app/NotificationCompat$Builder;
-    :try_end_65
-    .catch Ljava/lang/NumberFormatException; {:try_start_65 .. :try_end_65} :catch_2f
-
-    goto/16 :goto_12
-
     :catch_2f
     move-exception v2
 
     throw v2
 
-    .line 199
     :catch_30
     move-exception v2
 
-    :try_start_66
     throw v2
-    :try_end_66
-    .catch Ljava/lang/NumberFormatException; {:try_start_66 .. :try_end_66} :catch_31
 
-    .line 73
+    .line 153
+    :pswitch_3
+    const/4 v2, 0x2
+
+    :try_start_66
+    move-object/from16 v0, v23
+
+    invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setDefaults(I)Landroid/support/v4/app/NotificationCompat$Builder;
+    :try_end_66
+    .catch Ljava/lang/NumberFormatException; {:try_start_66 .. :try_end_66} :catch_32
+
+    .line 313
+    if-eqz v17, :cond_22
+
+    .line 166
+    :pswitch_4
+    const/4 v2, 0x5
+
+    :try_start_67
+    new-array v2, v2, [J
+
+    fill-array-data v2, :array_0
+
+    move-object/from16 v0, v23
+
+    invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setVibrate([J)Landroid/support/v4/app/NotificationCompat$Builder;
+    :try_end_67
+    .catch Ljava/lang/NumberFormatException; {:try_start_67 .. :try_end_67} :catch_33
+
+    .line 99
+    if-eqz v17, :cond_22
+
+    .line 244
+    :pswitch_5
+    const/4 v2, 0x5
+
+    :try_start_68
+    new-array v2, v2, [J
+
+    fill-array-data v2, :array_1
+
+    move-object/from16 v0, v23
+
+    invoke-virtual {v0, v2}, Landroid/support/v4/app/NotificationCompat$Builder;->setVibrate([J)Landroid/support/v4/app/NotificationCompat$Builder;
+    :try_end_68
+    .catch Ljava/lang/NumberFormatException; {:try_start_68 .. :try_end_68} :catch_31
+
+    goto/16 :goto_13
+
     :catch_31
     move-exception v2
 
-    :try_start_67
     throw v2
-    :try_end_67
-    .catch Ljava/lang/NumberFormatException; {:try_start_67 .. :try_end_67} :catch_2f
 
-    .line 127
+    .line 313
     :catch_32
-    move-exception v2
-
-    :try_start_68
-    throw v2
-    :try_end_68
-    .catch Ljava/lang/NumberFormatException; {:try_start_68 .. :try_end_68} :catch_33
-
-    :catch_33
-    move-exception v2
-
-    throw v2
-
-    .line 267
-    :catch_34
     move-exception v2
 
     :try_start_69
     throw v2
     :try_end_69
-    .catch Ljava/lang/NumberFormatException; {:try_start_69 .. :try_end_69} :catch_35
+    .catch Ljava/lang/NumberFormatException; {:try_start_69 .. :try_end_69} :catch_33
 
-    :catch_35
+    .line 99
+    :catch_33
     move-exception v2
 
     :try_start_6a
     throw v2
     :try_end_6a
-    .catch Ljava/lang/NumberFormatException; {:try_start_6a .. :try_end_6a} :catch_36
+    .catch Ljava/lang/NumberFormatException; {:try_start_6a .. :try_end_6a} :catch_31
 
-    .line 155
-    :catch_36
+    .line 330
+    :catch_34
     move-exception v2
 
     :try_start_6b
     throw v2
     :try_end_6b
-    .catch Ljava/lang/NumberFormatException; {:try_start_6b .. :try_end_6b} :catch_37
+    .catch Ljava/lang/NumberFormatException; {:try_start_6b .. :try_end_6b} :catch_35
 
-    .line 9
-    :catch_37
+    :catch_35
     move-exception v2
 
     throw v2
 
-    .line 105
-    :cond_40
+    .line 14
+    :catch_36
+    move-exception v2
+
+    :try_start_6c
+    throw v2
+    :try_end_6c
+    .catch Ljava/lang/NumberFormatException; {:try_start_6c .. :try_end_6c} :catch_37
+
+    :catch_37
+    move-exception v2
+
+    :try_start_6d
+    throw v2
+    :try_end_6d
+    .catch Ljava/lang/NumberFormatException; {:try_start_6d .. :try_end_6d} :catch_38
+
+    .line 306
+    :catch_38
+    move-exception v2
+
+    :try_start_6e
+    throw v2
+    :try_end_6e
+    .catch Ljava/lang/NumberFormatException; {:try_start_6e .. :try_end_6e} :catch_39
+
+    .line 257
+    :catch_39
+    move-exception v2
+
+    throw v2
+
+    .line 254
+    :cond_43
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x1d
+    const/16 v3, 0x24
 
     aget-object v2, v2, v3
 
@@ -4895,17 +5053,17 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 10
-    invoke-virtual {v14}, Lcom/whatsapp/adg;->t()Z
+    .line 68
+    invoke-virtual {v10}, Lcom/whatsapp/tc;->i()Z
 
     move-result v2
 
-    if-eqz v2, :cond_41
+    if-eqz v2, :cond_44
 
-    .line 121
+    .line 110
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x27
+    const/16 v3, 0x25
 
     aget-object v2, v2, v3
 
@@ -4917,24 +5075,24 @@
 
     move-result-object v2
 
-    .line 15
+    .line 208
     :goto_19
-    if-nez v2, :cond_20
+    if-nez v2, :cond_23
 
-    .line 324
+    .line 159
     sget-object v2, Landroid/provider/Settings$System;->DEFAULT_NOTIFICATION_URI:Landroid/net/Uri;
 
     invoke-virtual {v2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    goto/16 :goto_13
+    goto/16 :goto_14
 
-    .line 274
-    :cond_41
+    .line 285
+    :cond_44
     sget-object v2, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x3
+    const/16 v3, 0x2c
 
     aget-object v2, v2, v3
 
@@ -4946,20 +5104,20 @@
 
     move-result-object v3
 
-    .line 74
+    .line 181
     move-object/from16 v0, v18
 
-    invoke-virtual {v14, v0}, Lcom/whatsapp/adg;->a(Landroid/content/SharedPreferences;)Ljava/lang/String;
+    invoke-virtual {v10, v0}, Lcom/whatsapp/tc;->a(Landroid/content/SharedPreferences;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 67
-    if-eqz v2, :cond_46
+    .line 2
+    if-eqz v2, :cond_49
 
-    .line 253
+    .line 32
     sget-object v3, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v4, 0xc
+    const/16 v4, 0x18
 
     aget-object v3, v3, v4
 
@@ -4969,288 +5127,288 @@
 
     goto :goto_19
 
-    .line 98
-    :catch_38
-    move-exception v2
-
-    :try_start_6c
-    throw v2
-    :try_end_6c
-    .catch Ljava/lang/NumberFormatException; {:try_start_6c .. :try_end_6c} :catch_39
-
-    :catch_39
-    move-exception v2
-
-    :try_start_6d
-    throw v2
-    :try_end_6d
-    .catch Ljava/lang/NumberFormatException; {:try_start_6d .. :try_end_6d} :catch_3a
-
-    .line 235
+    .line 121
     :catch_3a
-    move-exception v2
-
-    :try_start_6e
-    throw v2
-    :try_end_6e
-    .catch Ljava/lang/NumberFormatException; {:try_start_6e .. :try_end_6e} :catch_3b
-
-    :catch_3b
     move-exception v2
 
     :try_start_6f
     throw v2
     :try_end_6f
-    .catch Ljava/lang/NumberFormatException; {:try_start_6f .. :try_end_6f} :catch_3c
+    .catch Ljava/lang/NumberFormatException; {:try_start_6f .. :try_end_6f} :catch_3b
 
-    :catch_3c
+    :catch_3b
     move-exception v2
 
     :try_start_70
     throw v2
     :try_end_70
-    .catch Ljava/lang/NumberFormatException; {:try_start_70 .. :try_end_70} :catch_3d
+    .catch Ljava/lang/NumberFormatException; {:try_start_70 .. :try_end_70} :catch_3c
 
-    .line 214
-    :catch_3d
+    .line 117
+    :catch_3c
     move-exception v2
 
     :try_start_71
     throw v2
     :try_end_71
-    .catch Ljava/lang/NumberFormatException; {:try_start_71 .. :try_end_71} :catch_3e
+    .catch Ljava/lang/NumberFormatException; {:try_start_71 .. :try_end_71} :catch_3d
 
-    :catch_3e
+    :catch_3d
     move-exception v2
 
     :try_start_72
     throw v2
     :try_end_72
-    .catch Ljava/lang/NumberFormatException; {:try_start_72 .. :try_end_72} :catch_3f
+    .catch Ljava/lang/NumberFormatException; {:try_start_72 .. :try_end_72} :catch_3e
 
-    .line 24
-    :catch_3f
+    :catch_3e
     move-exception v2
 
     :try_start_73
     throw v2
     :try_end_73
-    .catch Ljava/lang/NumberFormatException; {:try_start_73 .. :try_end_73} :catch_40
+    .catch Ljava/lang/NumberFormatException; {:try_start_73 .. :try_end_73} :catch_3f
 
-    .line 39
-    :catch_40
-    move-exception v2
-
-    throw v2
-
-    .line 41
-    :catch_41
-    move-exception v2
-
-    throw v2
-
-    .line 2
-    :catch_42
+    .line 1
+    :catch_3f
     move-exception v2
 
     :try_start_74
     throw v2
     :try_end_74
-    .catch Ljava/lang/NumberFormatException; {:try_start_74 .. :try_end_74} :catch_43
+    .catch Ljava/lang/NumberFormatException; {:try_start_74 .. :try_end_74} :catch_40
 
-    :catch_43
+    :catch_40
     move-exception v2
 
     :try_start_75
     throw v2
     :try_end_75
-    .catch Ljava/lang/NumberFormatException; {:try_start_75 .. :try_end_75} :catch_44
+    .catch Ljava/lang/NumberFormatException; {:try_start_75 .. :try_end_75} :catch_41
 
-    :catch_44
+    .line 163
+    :catch_41
     move-exception v2
 
     :try_start_76
     throw v2
     :try_end_76
-    .catch Ljava/lang/NumberFormatException; {:try_start_76 .. :try_end_76} :catch_45
+    .catch Ljava/lang/NumberFormatException; {:try_start_76 .. :try_end_76} :catch_42
 
-    .line 311
-    :catch_45
+    .line 239
+    :catch_42
     move-exception v2
 
     throw v2
 
-    .line 192
-    :catch_46
-    move-exception v2
-
-    .line 286
-    const v2, 0xffffff
-
-    goto/16 :goto_15
-
-    .line 95
-    :catch_47
+    .line 204
+    :catch_43
     move-exception v2
 
     throw v2
 
-    .line 104
-    :catch_48
-    move-exception v2
-
-    throw v2
-
-    .line 130
-    :catch_49
-    move-exception v2
-
-    throw v2
-
-    .line 72
-    :catch_4a
-    move-exception v2
-
-    throw v2
-
-    :cond_42
-    new-instance v2, Landroid/content/Intent;
-
-    sget-object v3, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    .line 135
-    invoke-static {}, Lcom/whatsapp/Main;->g()Ljava/lang/Class;
-
-    move-result-object v4
-
-    invoke-direct {v2, v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    goto/16 :goto_16
-
-    .line 64
-    :catch_4b
-    move-exception v2
-
-    throw v2
-
-    .line 176
-    :catch_4c
+    .line 142
+    :catch_44
     move-exception v2
 
     :try_start_77
     throw v2
     :try_end_77
-    .catch Ljava/lang/NumberFormatException; {:try_start_77 .. :try_end_77} :catch_4d
+    .catch Ljava/lang/NumberFormatException; {:try_start_77 .. :try_end_77} :catch_45
 
-    .line 97
-    :catch_4d
-    move-exception v2
-
-    throw v2
-
-    .line 191
-    :catch_4e
+    :catch_45
     move-exception v2
 
     :try_start_78
     throw v2
     :try_end_78
-    .catch Ljava/lang/NumberFormatException; {:try_start_78 .. :try_end_78} :catch_4f
+    .catch Ljava/lang/NumberFormatException; {:try_start_78 .. :try_end_78} :catch_46
 
-    :catch_4f
+    :catch_46
     move-exception v2
 
     :try_start_79
     throw v2
     :try_end_79
-    .catch Ljava/lang/NumberFormatException; {:try_start_79 .. :try_end_79} :catch_50
+    .catch Ljava/lang/NumberFormatException; {:try_start_79 .. :try_end_79} :catch_47
 
-    :catch_50
+    .line 174
+    :catch_47
+    move-exception v2
+
+    throw v2
+
+    .line 258
+    :catch_48
+    move-exception v2
+
+    .line 331
+    const v2, 0xffffff
+
+    goto/16 :goto_16
+
+    .line 35
+    :catch_49
+    move-exception v2
+
+    throw v2
+
+    .line 271
+    :catch_4a
+    move-exception v2
+
+    throw v2
+
+    .line 300
+    :catch_4b
+    move-exception v2
+
+    throw v2
+
+    .line 197
+    :catch_4c
+    move-exception v2
+
+    throw v2
+
+    :cond_45
+    new-instance v2, Landroid/content/Intent;
+
+    sget-object v3, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
+
+    .line 19
+    invoke-static {}, Lcom/whatsapp/Main;->b()Ljava/lang/Class;
+
+    move-result-object v4
+
+    invoke-direct {v2, v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    goto/16 :goto_17
+
+    .line 326
+    :catch_4d
+    move-exception v2
+
+    throw v2
+
+    .line 152
+    :catch_4e
     move-exception v2
 
     :try_start_7a
     throw v2
     :try_end_7a
-    .catch Ljava/lang/NumberFormatException; {:try_start_7a .. :try_end_7a} :catch_51
+    .catch Ljava/lang/NumberFormatException; {:try_start_7a .. :try_end_7a} :catch_4f
 
-    :catch_51
+    .line 259
+    :catch_4f
+    move-exception v2
+
+    throw v2
+
+    .line 305
+    :catch_50
     move-exception v2
 
     :try_start_7b
     throw v2
     :try_end_7b
-    .catch Ljava/lang/NumberFormatException; {:try_start_7b .. :try_end_7b} :catch_52
+    .catch Ljava/lang/NumberFormatException; {:try_start_7b .. :try_end_7b} :catch_51
 
-    .line 94
-    :catch_52
+    :catch_51
     move-exception v2
 
     :try_start_7c
     throw v2
     :try_end_7c
-    .catch Ljava/lang/NumberFormatException; {:try_start_7c .. :try_end_7c} :catch_53
+    .catch Ljava/lang/NumberFormatException; {:try_start_7c .. :try_end_7c} :catch_52
 
-    :catch_53
+    :catch_52
     move-exception v2
 
     :try_start_7d
     throw v2
     :try_end_7d
-    .catch Ljava/lang/NumberFormatException; {:try_start_7d .. :try_end_7d} :catch_54
+    .catch Ljava/lang/NumberFormatException; {:try_start_7d .. :try_end_7d} :catch_53
 
-    :catch_54
-    move-exception v2
-
-    throw v2
-
-    :cond_43
-    const/4 v2, 0x0
-
-    goto/16 :goto_17
-
-    .line 37
-    :catch_55
+    :catch_53
     move-exception v2
 
     :try_start_7e
     throw v2
     :try_end_7e
-    .catch Ljava/lang/NumberFormatException; {:try_start_7e .. :try_end_7e} :catch_56
+    .catch Ljava/lang/NumberFormatException; {:try_start_7e .. :try_end_7e} :catch_54
 
-    .line 201
-    :catch_56
-    move-exception v2
-
-    throw v2
-
-    .line 194
-    :catch_57
+    .line 48
+    :catch_54
     move-exception v2
 
     :try_start_7f
     throw v2
     :try_end_7f
-    .catch Ljava/lang/NumberFormatException; {:try_start_7f .. :try_end_7f} :catch_58
+    .catch Ljava/lang/NumberFormatException; {:try_start_7f .. :try_end_7f} :catch_55
 
-    .line 221
+    :catch_55
+    move-exception v2
+
+    :try_start_80
+    throw v2
+    :try_end_80
+    .catch Ljava/lang/NumberFormatException; {:try_start_80 .. :try_end_80} :catch_56
+
+    :catch_56
+    move-exception v2
+
+    throw v2
+
+    :cond_46
+    const/4 v2, 0x0
+
+    goto/16 :goto_18
+
+    .line 136
+    :catch_57
+    move-exception v2
+
+    :try_start_81
+    throw v2
+    :try_end_81
+    .catch Ljava/lang/NumberFormatException; {:try_start_81 .. :try_end_81} :catch_58
+
+    .line 280
     :catch_58
     move-exception v2
 
     throw v2
 
-    .line 262
+    .line 229
     :catch_59
+    move-exception v2
+
+    :try_start_82
+    throw v2
+    :try_end_82
+    .catch Ljava/lang/NumberFormatException; {:try_start_82 .. :try_end_82} :catch_5a
+
+    .line 78
+    :catch_5a
+    move-exception v2
+
+    throw v2
+
+    .line 67
+    :catch_5b
     move-exception v3
 
-    .line 11
-    :try_start_80
+    .line 226
+    :try_start_83
     invoke-virtual {v3}, Ljava/lang/SecurityException;->toString()Ljava/lang/String;
 
     move-result-object v4
 
     sget-object v5, Lcom/whatsapp/notification/g;->z:[Ljava/lang/String;
 
-    const/16 v6, 0x29
+    const/16 v6, 0x13
 
     aget-object v5, v5, v6
 
@@ -5258,177 +5416,159 @@
 
     move-result v4
 
-    if-nez v4, :cond_34
+    if-nez v4, :cond_37
 
-    .line 157
+    .line 109
     throw v3
-    :try_end_80
-    .catch Ljava/lang/NumberFormatException; {:try_start_80 .. :try_end_80} :catch_5a
+    :try_end_83
+    .catch Ljava/lang/NumberFormatException; {:try_start_83 .. :try_end_83} :catch_5c
 
-    :catch_5a
-    move-exception v2
-
-    throw v2
-
-    .line 136
-    :catch_5b
-    move-exception v2
-
-    throw v2
-
-    .line 298
     :catch_5c
     move-exception v2
 
     throw v2
 
-    .line 280
+    .line 286
     :catch_5d
     move-exception v2
 
     throw v2
 
-    .line 300
+    .line 39
     :catch_5e
     move-exception v2
 
-    :try_start_81
     throw v2
-    :try_end_81
-    .catch Ljava/lang/NumberFormatException; {:try_start_81 .. :try_end_81} :catch_5f
 
+    .line 322
     :catch_5f
     move-exception v2
 
-    :try_start_82
     throw v2
-    :try_end_82
-    .catch Ljava/lang/NumberFormatException; {:try_start_82 .. :try_end_82} :catch_60
 
-    .line 208
+    .line 176
     :catch_60
     move-exception v2
 
+    :try_start_84
     throw v2
+    :try_end_84
+    .catch Ljava/lang/NumberFormatException; {:try_start_84 .. :try_end_84} :catch_61
 
-    :cond_44
-    move v3, v2
+    :catch_61
+    move-exception v2
 
-    goto/16 :goto_14
+    :try_start_85
+    throw v2
+    :try_end_85
+    .catch Ljava/lang/NumberFormatException; {:try_start_85 .. :try_end_85} :catch_62
 
-    :cond_45
-    move v3, v2
+    .line 186
+    :catch_62
+    move-exception v2
 
-    goto/16 :goto_14
-
-    :cond_46
-    move-object v2, v3
-
-    goto/16 :goto_19
+    throw v2
 
     :cond_47
     move v3, v2
 
-    goto/16 :goto_c
+    goto/16 :goto_15
 
     :cond_48
-    move v10, v3
+    move v3, v2
+
+    goto/16 :goto_15
+
+    :cond_49
+    move-object v2, v3
+
+    goto/16 :goto_19
+
+    :cond_4a
+    move v3, v2
 
     goto/16 :goto_d
 
-    :cond_49
+    :cond_4b
+    move v14, v3
+
+    goto/16 :goto_e
+
+    :cond_4c
     move v3, v2
+
+    goto/16 :goto_b
+
+    :cond_4d
+    move-object v7, v3
 
     goto/16 :goto_a
 
-    :cond_4a
-    move-object v7, v2
-
-    goto/16 :goto_9
-
-    :cond_4b
-    move-object v11, v2
-
-    move-object v2, v3
+    :cond_4e
+    move-object v15, v2
 
     goto/16 :goto_8
 
-    :cond_4c
+    :cond_4f
+    move v13, v2
+
+    goto/16 :goto_7
+
+    :cond_50
+    move-object v2, v3
+
     move-object v3, v4
 
     goto/16 :goto_2
 
-    :cond_4d
+    :cond_51
     move-object v2, v3
 
     move-object v3, v4
 
     goto/16 :goto_3
 
-    :cond_4e
-    move v2, v5
+    :cond_52
+    move-object v2, v3
 
-    move v5, v6
-
-    goto/16 :goto_5
-
-    :cond_4f
-    move-object v13, v3
-
-    move-object v14, v4
-
-    move v15, v5
-
-    move/from16 v16, v6
-
-    goto/16 :goto_6
-
-    :cond_50
-    move v6, v5
-
-    move v5, v2
-
-    goto/16 :goto_1
-
-    :cond_51
     move-object v3, v4
 
-    move v2, v5
-
-    move-object v4, v7
+    move v4, v5
 
     move v5, v6
-
-    goto/16 :goto_5
-
-    :cond_52
-    move-object v4, v3
-
-    move-object v3, v2
-
-    move v2, v5
-
-    move v5, v6
-
-    goto/16 :goto_5
-
-    :cond_53
-    move-object v4, v3
 
     goto/16 :goto_4
 
-    :cond_54
-    move-object v3, v2
+    :cond_53
+    move-object v9, v3
 
-    move-object v4, v7
+    move-object v10, v4
 
-    move v2, v5
+    move v11, v5
 
-    move v5, v6
+    move v12, v6
 
     goto/16 :goto_5
 
-    .line 255
+    :cond_54
+    move v6, v5
+
+    move v5, v4
+
+    move-object v4, v3
+
+    move-object v3, v2
+
+    goto/16 :goto_1
+
+    :cond_55
+    move v4, v5
+
+    move v5, v6
+
+    goto/16 :goto_4
+
+    .line 52
     nop
 
     :pswitch_data_0
@@ -5445,7 +5585,7 @@
         :pswitch_5
     .end packed-switch
 
-    .line 114
+    .line 166
     :array_0
     .array-data 8
         0x0
@@ -5455,7 +5595,7 @@
         0xc8
     .end array-data
 
-    .line 326
+    .line 244
     :array_1
     .array-data 8
         0x0

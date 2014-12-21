@@ -1,340 +1,533 @@
-.class Lcom/whatsapp/util/b1;
-.super Landroid/graphics/drawable/Drawable;
+.class public Lcom/whatsapp/util/b1;
+.super Ljava/lang/Object;
 .source "b1.java"
 
 
+# static fields
+.field private static final z:[Ljava/lang/String;
+
+
 # instance fields
-.field a:Ljava/lang/String;
+.field private final a:Z
 
-.field b:Landroid/graphics/Paint;
+.field private b:Z
 
-.field c:Landroid/graphics/Path;
+.field private c:J
+
+.field private d:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 3
+.method static constructor <clinit>()V
+    .locals 12
 
-    .prologue
+    const/4 v3, 0x2
+
     const/4 v2, 0x1
 
-    .line 8
-    invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
+    const/4 v1, 0x0
 
-    .line 23
-    new-instance v0, Landroid/graphics/Path;
+    const/4 v0, 0x4
 
-    invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
+    new-array v5, v0, [Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/whatsapp/util/b1;->c:Landroid/graphics/Path;
+    const-string v4, "643Iyko?H}i3?@&9"
 
-    .line 17
-    iput-object p1, p0, Lcom/whatsapp/util/b1;->a:Ljava/lang/String;
+    const/4 v0, -0x1
 
-    .line 21
-    new-instance v0, Landroid/graphics/Paint;
+    move-object v6, v5
 
-    invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
+    move-object v7, v5
 
-    iput-object v0, p0, Lcom/whatsapp/util/b1;->b:Landroid/graphics/Paint;
+    move v5, v1
 
-    .line 18
-    iget-object v0, p0, Lcom/whatsapp/util/b1;->b:Landroid/graphics/Paint;
+    :goto_0
+    invoke-virtual {v4}, Ljava/lang/String;->toCharArray()[C
 
-    const/high16 v1, -0x1000000
+    move-result-object v4
 
-    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
+    array-length v8, v4
 
-    .line 29
-    iget-object v0, p0, Lcom/whatsapp/util/b1;->b:Landroid/graphics/Paint;
+    move v9, v8
 
-    invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+    move v10, v1
 
-    .line 24
-    iget-object v0, p0, Lcom/whatsapp/util/b1;->b:Landroid/graphics/Paint;
+    move-object v8, v4
 
-    invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setFakeBoldText(Z)V
+    :goto_1
+    if-gt v9, v10, :cond_0
 
-    .line 19
-    iget-object v0, p0, Lcom/whatsapp/util/b1;->b:Landroid/graphics/Paint;
+    new-instance v4, Ljava/lang/String;
 
-    sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
+    invoke-direct {v4, v8}, Ljava/lang/String;-><init>([C)V
 
-    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+    invoke-virtual {v4}, Ljava/lang/String;->intern()Ljava/lang/String;
 
-    .line 16
-    iget-object v0, p0, Lcom/whatsapp/util/b1;->b:Landroid/graphics/Paint;
+    move-result-object v4
 
-    sget-object v1, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
+    packed-switch v0, :pswitch_data_0
 
-    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
+    aput-object v4, v6, v5
 
-    .line 1
+    const-string v0, "m)7An6%6Elj%>\u001e<"
+
+    move-object v4, v0
+
+    move v5, v2
+
+    move-object v6, v7
+
+    move v0, v1
+
+    goto :goto_0
+
+    :pswitch_0
+    aput-object v4, v6, v5
+
+    const-string v0, "643Iyko)Psizz"
+
+    move-object v4, v0
+
+    move v5, v3
+
+    move-object v6, v7
+
+    move v0, v2
+
+    goto :goto_0
+
+    :pswitch_1
+    aput-object v4, v6, v5
+
+    const/4 v4, 0x3
+
+    const-string v0, "m)7An63.Kl#`"
+
+    move v5, v4
+
+    move-object v6, v7
+
+    move-object v4, v0
+
+    move v0, v3
+
+    goto :goto_0
+
+    :pswitch_2
+    aput-object v4, v6, v5
+
+    sput-object v7, Lcom/whatsapp/util/b1;->z:[Ljava/lang/String;
+
     return-void
-.end method
-
-
-# virtual methods
-.method public draw(Landroid/graphics/Canvas;)V
-    .locals 7
-
-    .prologue
-    sget v0, Lcom/whatsapp/util/Log;->c:I
-
-    .line 7
-    invoke-virtual {p0}, Lcom/whatsapp/util/b1;->getBounds()Landroid/graphics/Rect;
-
-    move-result-object v1
-
-    .line 22
-    const/high16 v2, 0x40400000
-
-    invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
-
-    move-result v3
-
-    int-to-float v3, v3
-
-    mul-float/2addr v2, v3
-
-    const/high16 v3, 0x40a00000
-
-    div-float/2addr v2, v3
-
-    .line 10
-    iget-object v3, p0, Lcom/whatsapp/util/b1;->b:Landroid/graphics/Paint;
-
-    invoke-virtual {v3, v2}, Landroid/graphics/Paint;->setTextSize(F)V
-
-    .line 26
-    iget-object v3, p0, Lcom/whatsapp/util/b1;->b:Landroid/graphics/Paint;
-
-    sget-object v4, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
-
-    invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
-
-    .line 3
-    iget-object v3, p0, Lcom/whatsapp/util/b1;->a:Ljava/lang/String;
-
-    iget v4, v1, Landroid/graphics/Rect;->left:I
-
-    iget v5, v1, Landroid/graphics/Rect;->right:I
-
-    add-int/2addr v4, v5
-
-    div-int/lit8 v4, v4, 0x2
-
-    int-to-float v4, v4
-
-    iget v5, v1, Landroid/graphics/Rect;->top:I
-
-    int-to-float v5, v5
-
-    add-float/2addr v5, v2
-
-    iget-object v6, p0, Lcom/whatsapp/util/b1;->b:Landroid/graphics/Paint;
-
-    invoke-virtual {p1, v3, v4, v5, v6}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
-
-    .line 28
-    iget-object v3, p0, Lcom/whatsapp/util/b1;->b:Landroid/graphics/Paint;
-
-    sget-object v4, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
-
-    invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
-
-    .line 13
-    const/high16 v3, 0x40c00000
-
-    div-float v3, v2, v3
-
-    add-float/2addr v2, v3
-
-    .line 27
-    iget-object v3, p0, Lcom/whatsapp/util/b1;->c:Landroid/graphics/Path;
-
-    invoke-virtual {v3}, Landroid/graphics/Path;->reset()V
-
-    .line 30
-    iget-object v3, p0, Lcom/whatsapp/util/b1;->c:Landroid/graphics/Path;
-
-    iget v4, v1, Landroid/graphics/Rect;->left:I
-
-    add-int/lit8 v4, v4, 0x1
-
-    int-to-float v4, v4
-
-    iget v5, v1, Landroid/graphics/Rect;->bottom:I
-
-    add-int/lit8 v5, v5, -0x1
-
-    int-to-float v5, v5
-
-    invoke-virtual {v3, v4, v5}, Landroid/graphics/Path;->moveTo(FF)V
-
-    .line 5
-    iget-object v3, p0, Lcom/whatsapp/util/b1;->c:Landroid/graphics/Path;
-
-    iget v4, v1, Landroid/graphics/Rect;->left:I
-
-    add-int/lit8 v4, v4, 0x1
-
-    int-to-float v4, v4
-
-    iget v5, v1, Landroid/graphics/Rect;->top:I
-
-    add-int/lit8 v5, v5, 0x1
-
-    int-to-float v5, v5
-
-    invoke-virtual {v3, v4, v5}, Landroid/graphics/Path;->lineTo(FF)V
-
-    .line 25
-    iget-object v3, p0, Lcom/whatsapp/util/b1;->c:Landroid/graphics/Path;
-
-    iget v4, v1, Landroid/graphics/Rect;->right:I
-
-    int-to-float v4, v4
-
-    iget v5, v1, Landroid/graphics/Rect;->top:I
-
-    add-int/lit8 v5, v5, 0x1
-
-    int-to-float v5, v5
-
-    invoke-virtual {v3, v4, v5}, Landroid/graphics/Path;->lineTo(FF)V
-
-    .line 9
-    iget-object v3, p0, Lcom/whatsapp/util/b1;->c:Landroid/graphics/Path;
-
-    iget v4, v1, Landroid/graphics/Rect;->right:I
-
-    int-to-float v4, v4
-
-    iget v5, v1, Landroid/graphics/Rect;->top:I
-
-    int-to-float v5, v5
-
-    add-float/2addr v5, v2
-
-    invoke-virtual {v3, v4, v5}, Landroid/graphics/Path;->lineTo(FF)V
-
-    .line 11
-    iget-object v3, p0, Lcom/whatsapp/util/b1;->c:Landroid/graphics/Path;
-
-    iget v4, v1, Landroid/graphics/Rect;->left:I
-
-    add-int/lit8 v4, v4, 0x1
-
-    int-to-float v4, v4
-
-    iget v1, v1, Landroid/graphics/Rect;->top:I
-
-    int-to-float v1, v1
-
-    add-float/2addr v1, v2
-
-    invoke-virtual {v3, v4, v1}, Landroid/graphics/Path;->lineTo(FF)V
-
-    .line 14
-    iget-object v1, p0, Lcom/whatsapp/util/b1;->c:Landroid/graphics/Path;
-
-    sget-object v2, Landroid/graphics/Path$FillType;->WINDING:Landroid/graphics/Path$FillType;
-
-    invoke-virtual {v1, v2}, Landroid/graphics/Path;->setFillType(Landroid/graphics/Path$FillType;)V
-
-    .line 12
-    iget-object v1, p0, Lcom/whatsapp/util/b1;->c:Landroid/graphics/Path;
-
-    iget-object v2, p0, Lcom/whatsapp/util/b1;->b:Landroid/graphics/Paint;
-
-    invoke-virtual {p1, v1, v2}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
-
-    .line 20
-    if-eqz v0, :cond_0
-
-    sget v0, Lcom/whatsapp/DialogToastActivity;->i:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    sput v0, Lcom/whatsapp/DialogToastActivity;->i:I
 
     :cond_0
-    return-void
+    aget-char v11, v8, v10
+
+    rem-int/lit8 v4, v10, 0x5
+
+    packed-switch v4, :pswitch_data_1
+
+    const/16 v4, 0x1c
+
+    :goto_2
+    xor-int/2addr v4, v11
+
+    int-to-char v4, v4
+
+    aput-char v4, v8, v10
+
+    add-int/lit8 v4, v10, 0x1
+
+    move v10, v4
+
+    goto :goto_1
+
+    :pswitch_3
+    const/16 v4, 0x19
+
+    goto :goto_2
+
+    :pswitch_4
+    const/16 v4, 0x40
+
+    goto :goto_2
+
+    :pswitch_5
+    const/16 v4, 0x5a
+
+    goto :goto_2
+
+    :pswitch_6
+    const/16 v4, 0x24
+
+    goto :goto_2
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_4
+        :pswitch_5
+        :pswitch_6
+    .end packed-switch
 .end method
 
-.method public getIntrinsicHeight()I
-    .locals 2
-
-    .prologue
-    .line 6
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
-
-    move-result-object v0
-
-    iget v0, v0, Lcom/whatsapp/se;->B:F
-
-    const/high16 v1, 0x42000000
-
-    mul-float/2addr v0, v1
-
-    float-to-int v0, v0
-
-    return v0
-.end method
-
-.method public getIntrinsicWidth()I
-    .locals 2
-
-    .prologue
-    .line 31
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
-
-    move-result-object v0
-
-    iget v0, v0, Lcom/whatsapp/se;->B:F
-
-    const/high16 v1, 0x42000000
-
-    mul-float/2addr v0, v1
-
-    float-to-int v0, v0
-
-    return v0
-.end method
-
-.method public getOpacity()I
+.method public constructor <init>()V
     .locals 1
 
     .prologue
-    .line 15
-    const/4 v0, -0x3
+    .line 32
+    const/4 v0, 0x0
 
-    return v0
-.end method
-
-.method public setAlpha(I)V
-    .locals 1
-
-    .prologue
-    .line 33
-    iget-object v0, p0, Lcom/whatsapp/util/b1;->b:Landroid/graphics/Paint;
-
-    invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setAlpha(I)V
+    invoke-direct {p0, v0}, Lcom/whatsapp/util/b1;-><init>(Z)V
 
     .line 4
     return-void
 .end method
 
-.method public setColorFilter(Landroid/graphics/ColorFilter;)V
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 1
 
     .prologue
+    .line 23
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lcom/whatsapp/util/b1;-><init>(Z)V
+
+    .line 11
+    invoke-virtual {p0, p1}, Lcom/whatsapp/util/b1;->a(Ljava/lang/String;)V
+
+    .line 29
+    return-void
+.end method
+
+.method public constructor <init>(Z)V
+    .locals 2
+
+    .prologue
+    .line 34
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/whatsapp/util/b1;->b:Z
+
+    .line 18
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/whatsapp/util/b1;->d:Ljava/lang/String;
+
+    .line 16
+    const-wide/16 v0, 0x0
+
+    iput-wide v0, p0, Lcom/whatsapp/util/b1;->c:J
+
+    .line 40
+    iput-boolean p1, p0, Lcom/whatsapp/util/b1;->a:Z
+
+    .line 19
+    return-void
+.end method
+
+.method private a()J
+    .locals 2
+
+    .prologue
+    .line 24
+    iget-boolean v0, p0, Lcom/whatsapp/util/b1;->a:Z
+
+    if-eqz v0, :cond_0
+
+    .line 21
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v0
+
+    .line 31
+    :goto_0
+    return-wide v0
+
+    :cond_0
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+
+    move-result-wide v0
+
+    goto :goto_0
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/String;)V
+    .locals 1
+
+    .prologue
+    .line 20
+    iput-object p1, p0, Lcom/whatsapp/util/b1;->d:Ljava/lang/String;
+
+    .line 35
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/whatsapp/util/b1;->b:Z
+
+    .line 36
+    invoke-virtual {p0}, Lcom/whatsapp/util/b1;->d()V
+
+    .line 27
+    return-void
+.end method
+
+.method public b()J
+    .locals 5
+
+    .prologue
+    .line 10
+    invoke-direct {p0}, Lcom/whatsapp/util/b1;->a()J
+
+    move-result-wide v0
+
+    iget-wide v2, p0, Lcom/whatsapp/util/b1;->c:J
+
+    sub-long/2addr v0, v2
+
+    .line 30
+    iget-boolean v2, p0, Lcom/whatsapp/util/b1;->b:Z
+
+    if-eqz v2, :cond_1
+
+    .line 6
+    iget-object v2, p0, Lcom/whatsapp/util/b1;->d:Ljava/lang/String;
+
+    if-eqz v2, :cond_0
+
+    .line 26
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v3, p0, Lcom/whatsapp/util/b1;->d:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    sget-object v3, Lcom/whatsapp/util/b1;->z:[Ljava/lang/String;
+
+    const/4 v4, 0x0
+
+    aget-object v3, v3, v4
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    sget-boolean v2, Lcom/whatsapp/util/Log;->k:Z
+
+    if-eqz v2, :cond_1
+
+    .line 14
+    :cond_0
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v3, Lcom/whatsapp/util/b1;->z:[Ljava/lang/String;
+
+    const/4 v4, 0x1
+
+    aget-object v3, v3, v4
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    .line 12
+    :cond_1
+    return-wide v0
+.end method
+
+.method public b(Ljava/lang/String;)J
+    .locals 2
+
+    .prologue
+    .line 42
+    invoke-virtual {p0}, Lcom/whatsapp/util/b1;->c()J
+
+    move-result-wide v0
+
+    .line 5
+    invoke-virtual {p0, p1}, Lcom/whatsapp/util/b1;->a(Ljava/lang/String;)V
+
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/util/b1;->b:Landroid/graphics/Paint;
+    return-wide v0
+.end method
 
-    invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
+.method public c()J
+    .locals 7
 
-    .line 32
+    .prologue
+    const-wide/16 v0, 0x0
+
+    .line 7
+    iget-wide v2, p0, Lcom/whatsapp/util/b1;->c:J
+
+    cmp-long v2, v2, v0
+
+    if-nez v2, :cond_0
+
+    .line 39
+    :goto_0
+    return-wide v0
+
+    .line 38
+    :cond_0
+    invoke-direct {p0}, Lcom/whatsapp/util/b1;->a()J
+
+    move-result-wide v2
+
+    iget-wide v4, p0, Lcom/whatsapp/util/b1;->c:J
+
+    sub-long/2addr v2, v4
+
+    .line 37
+    iget-boolean v4, p0, Lcom/whatsapp/util/b1;->b:Z
+
+    if-eqz v4, :cond_2
+
+    .line 1
+    iget-object v4, p0, Lcom/whatsapp/util/b1;->d:Ljava/lang/String;
+
+    if-eqz v4, :cond_1
+
+    .line 13
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v5, p0, Lcom/whatsapp/util/b1;->d:Ljava/lang/String;
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    sget-object v5, Lcom/whatsapp/util/b1;->z:[Ljava/lang/String;
+
+    const/4 v6, 0x2
+
+    aget-object v5, v5, v6
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    sget-boolean v4, Lcom/whatsapp/util/Log;->k:Z
+
+    if-eqz v4, :cond_2
+
+    .line 28
+    :cond_1
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v5, Lcom/whatsapp/util/b1;->z:[Ljava/lang/String;
+
+    const/4 v6, 0x3
+
+    aget-object v5, v5, v6
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    .line 17
+    :cond_2
+    iput-wide v0, p0, Lcom/whatsapp/util/b1;->c:J
+
+    .line 33
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/whatsapp/util/b1;->b:Z
+
+    .line 15
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/whatsapp/util/b1;->d:Ljava/lang/String;
+
+    move-wide v0, v2
+
+    .line 39
+    goto :goto_0
+.end method
+
+.method public d()V
+    .locals 2
+
+    .prologue
+    .line 41
+    iget-boolean v0, p0, Lcom/whatsapp/util/b1;->b:Z
+
+    if-eqz v0, :cond_0
+
+    .line 22
+    iget-object v0, p0, Lcom/whatsapp/util/b1;->d:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    .line 9
+    :cond_0
+    invoke-direct {p0}, Lcom/whatsapp/util/b1;->a()J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lcom/whatsapp/util/b1;->c:J
+
+    .line 25
     return-void
 .end method

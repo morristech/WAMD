@@ -15,7 +15,7 @@
 
 .field public transient dedupeDownload:Z
 
-.field public transient downloader:Lcom/whatsapp/i3;
+.field public transient downloader:Lcom/whatsapp/u0;
 
 .field public faceX:I
 
@@ -31,7 +31,7 @@
 
 .field public transcoded:Z
 
-.field public transient transcoder:Lcom/whatsapp/acp;
+.field public transient transcoder:Lcom/whatsapp/afu;
 
 .field public transferred:Z
 
@@ -41,7 +41,7 @@
 
 .field public trimTo:J
 
-.field public transient uploader:Lcom/whatsapp/yl;
+.field public transient uploader:Lcom/whatsapp/bv;
 
 
 # direct methods
@@ -51,16 +51,16 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 4
+    .line 10
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
+    .line 4
     iput-boolean v0, p0, Lcom/whatsapp/MediaData;->transferring:Z
 
-    .line 8
+    .line 11
     iput-boolean v0, p0, Lcom/whatsapp/MediaData;->transferred:Z
 
-    .line 11
+    .line 5
     return-void
 .end method
 
@@ -70,40 +70,40 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 13
+    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 10
+    .line 2
     iput-boolean v0, p0, Lcom/whatsapp/MediaData;->transferring:Z
 
-    .line 5
+    .line 12
     iput-boolean v0, p0, Lcom/whatsapp/MediaData;->transferred:Z
 
-    .line 6
+    .line 1
     iget-boolean v0, p1, Lcom/whatsapp/MediaData;->transferred:Z
 
     iput-boolean v0, p0, Lcom/whatsapp/MediaData;->transferred:Z
 
-    .line 7
+    .line 13
     iget-object v0, p1, Lcom/whatsapp/MediaData;->file:Ljava/io/File;
 
     iput-object v0, p0, Lcom/whatsapp/MediaData;->file:Ljava/io/File;
 
-    .line 12
+    .line 9
     iget-wide v0, p1, Lcom/whatsapp/MediaData;->fileSize:J
 
     iput-wide v0, p0, Lcom/whatsapp/MediaData;->fileSize:J
 
-    .line 3
+    .line 6
     iget v0, p1, Lcom/whatsapp/MediaData;->faceX:I
 
     iput v0, p0, Lcom/whatsapp/MediaData;->faceX:I
 
-    .line 1
+    .line 3
     iget v0, p1, Lcom/whatsapp/MediaData;->faceY:I
 
     iput v0, p0, Lcom/whatsapp/MediaData;->faceY:I
 
-    .line 9
+    .line 8
     return-void
 .end method

@@ -32,7 +32,7 @@
     .end packed-switch
 .end method
 
-.method public static b(Ljava/lang/Boolean;)B
+.method public static c(Ljava/lang/Boolean;)B
     .locals 1
 
     if-eqz p0, :cond_1

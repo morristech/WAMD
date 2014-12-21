@@ -3,20 +3,20 @@
 .source "he.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/widget/AdapterView$OnItemClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ContactPicker;
+.field final a:Lcom/whatsapp/BlockList;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ContactPicker;)V
+.method constructor <init>(Lcom/whatsapp/BlockList;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/he;->a:Lcom/whatsapp/ContactPicker;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/he;->a:Lcom/whatsapp/BlockList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,17 +25,15 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+.method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+    .locals 1
 
     .prologue
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/he;->a:Lcom/whatsapp/ContactPicker;
+    iget-object v0, p0, Lcom/whatsapp/he;->a:Lcom/whatsapp/BlockList;
 
-    const/4 v1, 0x2
+    invoke-virtual {v0, p2}, Lcom/whatsapp/BlockList;->openContextMenu(Landroid/view/View;)V
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/ContactPicker;->removeDialog(I)V
-
-    .line 1
+    .line 3
     return-void
 .end method

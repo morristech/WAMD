@@ -11,13 +11,13 @@
 .method static constructor <clinit>()V
     .locals 12
 
-    const/16 v1, 0x7a
+    const/16 v4, 0x36
 
-    const/16 v4, 0x70
+    const/16 v2, 0x29
 
-    const/16 v2, 0x69
+    const/16 v3, 0x21
 
-    const/16 v3, 0x56
+    const/16 v1, 0xe
 
     const/4 v6, 0x0
 
@@ -25,7 +25,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, ">\u0016\u000ex1\u0013\u0013\u0008%^2\u001b\nx82;*y"
+    const-string v0, "O)N\u000fwb,HR\u0018C$J\u000f~C\u0004j\u000c"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -54,7 +54,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, ">\u0016\u000ex1\u0013\u0013\u0008%^4\u001f\u0010\u0011\u0015\u0011\u001f\u001b7\u0004\u0010\u0008G\u001e=>9D"
+    const-string v0, "O)N\u000fwb,HR\u0018C$J\u000f~C\u0004j\u000e"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -83,7 +83,7 @@
 
     const/4 v10, 0x2
 
-    const-string v0, ">\u0016\u000ex1\u0013\u0013\u0008%^4\u001f\u0010\u0011\u0015\u0011\u001f\u001b7\u0004\u0010\u0008G\u001e=>9F"
+    const-string v0, "C$J\u000f"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -112,7 +112,7 @@
 
     const/4 v10, 0x3
 
-    const-string v0, "77(\u0015"
+    const-string v0, "E PfS` [@Ba7\u0007"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -141,7 +141,7 @@
 
     const/4 v10, 0x4
 
-    const-string v0, "4\u001f\u0010\u0011\u0015\u0011\u001f\u001b7\u0004\u0010\u0008G"
+    const-string v0, "F\u0008hb"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -170,7 +170,7 @@
 
     const/4 v10, 0x5
 
-    const-string v0, ">\u0016\u000ex1\u0013\u0013\u0008%^2\u001b\nx82;*{"
+    const-string v0, "O)N\u000fwb,HR\u0018E PfS` [@Ba7\u0007i{O\u0006\u0006"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -199,7 +199,7 @@
 
     const/4 v8, 0x6
 
-    const-string v0, "2\u001b\nx"
+    const-string v0, "O)N\u000fwb,HR\u0018E PfS` [@Ba7\u0007i{O\u0006\u0004"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -253,12 +253,12 @@
     goto/16 :goto_0
 
     :pswitch_0
-    const/16 v0, 0x7f
+    move v0, v1
 
     goto :goto_7
 
     :pswitch_1
-    move v0, v1
+    const/16 v0, 0x45
 
     goto :goto_7
 
@@ -295,12 +295,12 @@
     goto/16 :goto_1
 
     :pswitch_4
-    const/16 v0, 0x7f
+    move v0, v1
 
     goto :goto_8
 
     :pswitch_5
-    move v0, v1
+    const/16 v0, 0x45
 
     goto :goto_8
 
@@ -337,12 +337,12 @@
     goto/16 :goto_2
 
     :pswitch_8
-    const/16 v0, 0x7f
+    move v0, v1
 
     goto :goto_9
 
     :pswitch_9
-    move v0, v1
+    const/16 v0, 0x45
 
     goto :goto_9
 
@@ -379,12 +379,12 @@
     goto/16 :goto_3
 
     :pswitch_c
-    const/16 v0, 0x7f
+    move v0, v1
 
     goto :goto_a
 
     :pswitch_d
-    move v0, v1
+    const/16 v0, 0x45
 
     goto :goto_a
 
@@ -421,12 +421,12 @@
     goto/16 :goto_4
 
     :pswitch_10
-    const/16 v0, 0x7f
+    move v0, v1
 
     goto :goto_b
 
     :pswitch_11
-    move v0, v1
+    const/16 v0, 0x45
 
     goto :goto_b
 
@@ -463,12 +463,12 @@
     goto/16 :goto_5
 
     :pswitch_14
-    const/16 v0, 0x7f
+    move v0, v1
 
     goto :goto_c
 
     :pswitch_15
-    move v0, v1
+    const/16 v0, 0x45
 
     goto :goto_c
 
@@ -505,12 +505,12 @@
     goto/16 :goto_6
 
     :pswitch_18
-    const/16 v0, 0x7f
+    move v0, v1
 
     goto :goto_d
 
     :pswitch_19
-    move v0, v1
+    const/16 v0, 0x45
 
     goto :goto_d
 
@@ -585,7 +585,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 5
     invoke-direct {p0}, Lorg/spongycastle/jcajce/provider/util/AlgorithmProvider;-><init>()V
 
     return-void
@@ -594,199 +594,193 @@
 
 # virtual methods
 .method protected addHMACAlgorithm(Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 7
+    .locals 5
 
     .prologue
-    const/4 v1, 0x1
-
-    const/4 v0, 0x0
-
-    sget-boolean v2, Lorg/spongycastle/jcajce/provider/digest/BCMessageDigest;->a:Z
+    sget v0, Lorg/spongycastle/jcajce/provider/digest/BCMessageDigest;->a:I
 
     .line 4
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v4, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
+    sget-object v2, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
 
-    const/4 v5, 0x3
+    const/4 v3, 0x4
 
-    aget-object v4, v4, v5
+    aget-object v2, v2, v3
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v1
 
-    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v1
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v1
 
-    .line 2
-    new-instance v4, Ljava/lang/StringBuilder;
+    .line 3
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v5, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
+    sget-object v3, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
 
-    const/4 v6, 0x6
+    const/4 v4, 0x2
 
-    aget-object v5, v5, v6
+    aget-object v3, v3, v4
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-interface {p1, v4, p3}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-interface {p1, v2, p3}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v5, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
+    sget-object v3, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
 
-    const/4 v6, 0x5
+    const/4 v4, 0x0
 
-    aget-object v5, v5, v6
+    aget-object v3, v3, v4
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-interface {p1, v4, v3}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 7
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v5, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
-
-    aget-object v5, v5, v0
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-interface {p1, v4, v3}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-interface {p1, v2, v1}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v5, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
+    sget-object v3, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
 
-    const/4 v6, 0x4
+    const/4 v4, 0x1
 
-    aget-object v5, v5, v6
+    aget-object v3, v3, v4
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-interface {p1, v4, p4}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-interface {p1, v2, v1}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
-    new-instance v4, Ljava/lang/StringBuilder;
+    .line 2
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v5, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
+    sget-object v3, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
 
-    aget-object v5, v5, v1
+    const/4 v4, 0x3
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aget-object v3, v3, v4
 
-    move-result-object v4
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v4
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v4
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-interface {p1, v4, v3}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+    move-result-object v2
 
-    .line 9
-    new-instance v4, Ljava/lang/StringBuilder;
+    invoke-interface {p1, v2, p4}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    .line 7
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    sget-object v5, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const/4 v6, 0x2
+    sget-object v3, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
 
-    aget-object v5, v5, v6
+    const/4 v4, 0x6
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aget-object v3, v3, v4
 
-    move-result-object v4
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v4
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v4
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-interface {p1, v4, v3}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+    move-result-object v2
+
+    invoke-interface {p1, v2, v1}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8
-    sget-boolean v3, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    if-eqz v3, :cond_0
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    if-eqz v2, :cond_1
+    sget-object v3, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;->z:[Ljava/lang/String;
 
-    :goto_0
-    sput-boolean v0, Lorg/spongycastle/jcajce/provider/digest/BCMessageDigest;->a:Z
+    const/4 v4, 0x5
+
+    aget-object v3, v3, v4
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-interface {p1, v2, v1}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 9
+    sget v1, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
+
+    if-eqz v1, :cond_0
+
+    add-int/lit8 v0, v0, 0x1
+
+    sput v0, Lorg/spongycastle/jcajce/provider/digest/BCMessageDigest;->a:I
 
     :cond_0
     return-void
-
-    :cond_1
-    move v0, v1
-
-    goto :goto_0
 .end method

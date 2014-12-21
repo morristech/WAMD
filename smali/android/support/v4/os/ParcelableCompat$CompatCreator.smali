@@ -15,13 +15,13 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     iput-object p1, p0, Landroid/support/v4/os/ParcelableCompat$CompatCreator;->mCallbacks:Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;
 
-    .line 3
+    .line 1
     return-void
 .end method
 
@@ -31,7 +31,7 @@
     .locals 2
 
     .prologue
-    .line 5
+    .line 4
     iget-object v0, p0, Landroid/support/v4/os/ParcelableCompat$CompatCreator;->mCallbacks:Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;
 
     const/4 v1, 0x0
@@ -47,7 +47,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 3
     iget-object v0, p0, Landroid/support/v4/os/ParcelableCompat$CompatCreator;->mCallbacks:Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;
 
     invoke-interface {v0, p1}, Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;->newArray(I)[Ljava/lang/Object;

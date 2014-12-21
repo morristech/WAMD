@@ -1,409 +1,396 @@
-.class final Lcom/google/f8;
-.super Lcom/google/f_;
+.class public final Lcom/google/f8;
+.super Ljava/lang/Object;
 .source "f8.java"
 
 
 # static fields
-.field private static final z:[Ljava/lang/String;
+.field public static b:Z
+
+.field public static final c:Lcom/google/f8;
 
 
 # instance fields
-.field private final k:Ljava/lang/reflect/Method;
+.field private final a:[I
 
-.field private final l:Ljava/lang/reflect/Method;
+.field private final d:Lcom/google/bB;
+
+.field private final e:I
+
+.field private final f:Lcom/google/bB;
+
+.field private final g:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 3
 
-    const/16 v2, 0x33
+    .prologue
+    .line 25
+    new-instance v0, Lcom/google/f8;
 
-    const/16 v4, 0x31
+    const/16 v1, 0x3a1
 
-    const/16 v1, 0x1c
+    const/4 v2, 0x3
 
-    const/16 v3, 0xc
+    invoke-direct {v0, v1, v2}, Lcom/google/f8;-><init>(II)V
 
-    const/4 v6, 0x0
-
-    const/4 v0, 0x2
-
-    new-array v9, v0, [Ljava/lang/String;
-
-    const-string v0, "{Vx\u001bPpFi\tToP~$Ah\\~"
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    array-length v5, v0
-
-    move v7, v5
-
-    move v8, v6
-
-    move-object v5, v0
-
-    :goto_0
-    if-gt v7, v8, :cond_0
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    aput-object v0, v9, v6
-
-    const/4 v8, 0x1
-
-    const-string v0, "jR`8TSU"
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    array-length v5, v0
-
-    move v7, v6
-
-    move v6, v5
-
-    move-object v5, v0
-
-    :goto_1
-    if-gt v6, v7, :cond_1
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    aput-object v0, v9, v8
-
-    sput-object v9, Lcom/google/f8;->z:[Ljava/lang/String;
+    sput-object v0, Lcom/google/f8;->c:Lcom/google/f8;
 
     return-void
-
-    :cond_0
-    aget-char v10, v5, v8
-
-    rem-int/lit8 v0, v8, 0x5
-
-    packed-switch v0, :pswitch_data_0
-
-    move v0, v4
-
-    :goto_2
-    xor-int/2addr v0, v10
-
-    int-to-char v0, v0
-
-    aput-char v0, v5, v8
-
-    add-int/lit8 v0, v8, 0x1
-
-    move v8, v0
-
-    goto :goto_0
-
-    :pswitch_0
-    move v0, v1
-
-    goto :goto_2
-
-    :pswitch_1
-    move v0, v2
-
-    goto :goto_2
-
-    :pswitch_2
-    move v0, v3
-
-    goto :goto_2
-
-    :pswitch_3
-    const/16 v0, 0x4d
-
-    goto :goto_2
-
-    :cond_1
-    aget-char v10, v5, v7
-
-    rem-int/lit8 v0, v7, 0x5
-
-    packed-switch v0, :pswitch_data_1
-
-    move v0, v4
-
-    :goto_3
-    xor-int/2addr v0, v10
-
-    int-to-char v0, v0
-
-    aput-char v0, v5, v7
-
-    add-int/lit8 v0, v7, 0x1
-
-    move v7, v0
-
-    goto :goto_1
-
-    :pswitch_4
-    move v0, v1
-
-    goto :goto_3
-
-    :pswitch_5
-    move v0, v2
-
-    goto :goto_3
-
-    :pswitch_6
-    move v0, v3
-
-    goto :goto_3
-
-    :pswitch_7
-    const/16 v0, 0x4d
-
-    goto :goto_3
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-
-    :pswitch_data_1
-    .packed-switch 0x0
-        :pswitch_4
-        :pswitch_5
-        :pswitch_6
-        :pswitch_7
-    .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/google/e9;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)V
+.method private constructor <init>(II)V
     .locals 5
 
     .prologue
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
-    const/4 v4, 0x0
+    const/4 v1, 0x0
 
-    .line 12
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/f_;-><init>(Lcom/google/e9;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)V
+    .line 36
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
-    iget-object v0, p0, Lcom/google/f8;->f:Ljava/lang/Class;
+    .line 4
+    iput p1, p0, Lcom/google/f8;->e:I
 
-    sget-object v1, Lcom/google/f8;->z:[Ljava/lang/String;
+    .line 20
+    new-array v0, p1, [I
 
-    aget-object v1, v1, v2
+    iput-object v0, p0, Lcom/google/f8;->a:[I
 
-    new-array v2, v2, [Ljava/lang/Class;
+    .line 16
+    new-array v0, p1, [I
 
-    const-class v3, Lcom/google/dt;
+    iput-object v0, p0, Lcom/google/f8;->g:[I
 
-    aput-object v3, v2, v4
+    move v0, v1
 
-    invoke-static {v0, v1, v2}, Lcom/google/aV;->a(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    move v2, v3
 
-    move-result-object v0
+    .line 7
+    :goto_0
+    if-ge v0, p1, :cond_0
 
-    iput-object v0, p0, Lcom/google/f8;->k:Ljava/lang/reflect/Method;
+    .line 32
+    iget-object v4, p0, Lcom/google/f8;->a:[I
+
+    aput v2, v4, v0
+
+    .line 31
+    mul-int/2addr v2, p2
+
+    rem-int/2addr v2, p1
+
+    .line 22
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    move v0, v1
+
+    .line 33
+    :goto_1
+    add-int/lit8 v2, p1, -0x1
+
+    if-ge v0, v2, :cond_1
+
+    .line 23
+    :try_start_0
+    iget-object v2, p0, Lcom/google/f8;->g:[I
+
+    iget-object v4, p0, Lcom/google/f8;->a:[I
+
+    aget v4, v4, v0
+
+    aput v0, v2, v4
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 10
-    iget-object v0, p0, Lcom/google/f8;->f:Ljava/lang/Class;
+    add-int/lit8 v0, v0, 0x1
 
-    sget-object v1, Lcom/google/f8;->z:[Ljava/lang/String;
+    goto :goto_1
 
-    aget-object v1, v1, v4
+    :catch_0
+    move-exception v0
 
-    new-array v2, v4, [Ljava/lang/Class;
+    throw v0
 
-    invoke-static {v0, v1, v2}, Lcom/google/aV;->a(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    .line 18
+    :cond_1
+    new-instance v0, Lcom/google/bB;
 
-    move-result-object v0
+    new-array v2, v3, [I
 
-    iput-object v0, p0, Lcom/google/f8;->l:Ljava/lang/reflect/Method;
+    aput v1, v2, v1
 
-    .line 3
+    invoke-direct {v0, p0, v2}, Lcom/google/bB;-><init>(Lcom/google/f8;[I)V
+
+    iput-object v0, p0, Lcom/google/f8;->d:Lcom/google/bB;
+
+    .line 35
+    new-instance v0, Lcom/google/bB;
+
+    new-array v2, v3, [I
+
+    aput v3, v2, v1
+
+    invoke-direct {v0, p0, v2}, Lcom/google/bB;-><init>(Lcom/google/f8;[I)V
+
+    iput-object v0, p0, Lcom/google/f8;->f:Lcom/google/bB;
+
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/google/aV;I)Ljava/lang/Object;
+.method a(I)I
+    .locals 1
+
+    .prologue
+    .line 21
+    iget-object v0, p0, Lcom/google/f8;->a:[I
+
+    aget v0, v0, p1
+
+    return v0
+.end method
+
+.method a(II)I
     .locals 3
 
     .prologue
-    .line 7
-    iget-object v0, p0, Lcom/google/f8;->l:Ljava/lang/reflect/Method;
+    .line 19
+    if-eqz p1, :cond_0
 
-    invoke-super {p0, p1, p2}, Lcom/google/f_;->a(Lcom/google/aV;I)Ljava/lang/Object;
+    if-nez p2, :cond_1
 
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    invoke-static {v0, v1, v2}, Lcom/google/aV;->a(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public a(Lcom/google/eG;)Ljava/lang/Object;
-    .locals 6
-
-    .prologue
-    sget v1, Lcom/google/a8;->b:I
-
-    .line 1
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
-
-    .line 13
-    invoke-super {p0, p1}, Lcom/google/f_;->a(Lcom/google/eG;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
+    .line 24
     :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    const/4 v0, 0x0
 
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v3
-
-    .line 4
-    iget-object v4, p0, Lcom/google/f8;->l:Ljava/lang/reflect/Method;
-
-    const/4 v5, 0x0
-
-    new-array v5, v5, [Ljava/lang/Object;
-
-    invoke-static {v4, v3, v5}, Lcom/google/aV;->a(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 5
-    if-eqz v1, :cond_0
-
-    .line 17
-    :cond_1
-    invoke-static {v2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public b(Lcom/google/aV;)Ljava/lang/Object;
-    .locals 6
-
-    .prologue
-    sget v1, Lcom/google/a8;->b:I
-
-    .line 6
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
-
-    .line 8
-    invoke-super {p0, p1}, Lcom/google/f_;->b(Lcom/google/aV;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v3
-
-    .line 14
-    iget-object v4, p0, Lcom/google/f8;->l:Ljava/lang/reflect/Method;
-
-    const/4 v5, 0x0
-
-    new-array v5, v5, [Ljava/lang/Object;
-
-    invoke-static {v4, v3, v5}, Lcom/google/aV;->a(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    :goto_0
+    return v0
 
     .line 11
-    if-eqz v1, :cond_0
-
-    .line 2
     :cond_1
-    invoke-static {v2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    iget-object v0, p0, Lcom/google/f8;->a:[I
 
-    move-result-object v0
+    iget-object v1, p0, Lcom/google/f8;->g:[I
+
+    aget v1, v1, p1
+
+    iget-object v2, p0, Lcom/google/f8;->g:[I
+
+    aget v2, v2, p2
+
+    add-int/2addr v1, v2
+
+    iget v2, p0, Lcom/google/f8;->e:I
+
+    add-int/lit8 v2, v2, -0x1
+
+    rem-int/2addr v1, v2
+
+    aget v0, v0, v1
+
+    goto :goto_0
+.end method
+
+.method a()Lcom/google/bB;
+    .locals 1
+
+    .prologue
+    .line 15
+    iget-object v0, p0, Lcom/google/f8;->d:Lcom/google/bB;
 
     return-object v0
 .end method
 
-.method public b(Lcom/google/eG;Ljava/lang/Object;)V
-    .locals 4
+.method b()I
+    .locals 1
+
+    .prologue
+    .line 5
+    iget v0, p0, Lcom/google/f8;->e:I
+
+    return v0
+.end method
+
+.method b(I)I
+    .locals 1
 
     .prologue
     .line 9
-    iget-object v0, p0, Lcom/google/f8;->k:Ljava/lang/reflect/Method;
+    if-nez p1, :cond_0
 
-    const/4 v1, 0x0
+    .line 17
+    :try_start_0
+    new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const/4 v2, 0x1
+    invoke-direct {v0}, Ljava/lang/IllegalArgumentException;-><init>()V
 
-    new-array v2, v2, [Ljava/lang/Object;
+    throw v0
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    const/4 v3, 0x0
+    :catch_0
+    move-exception v0
 
-    aput-object p2, v2, v3
+    throw v0
 
-    invoke-static {v0, v1, v2}, Lcom/google/aV;->a(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1
+    :cond_0
+    iget-object v0, p0, Lcom/google/f8;->g:[I
 
-    move-result-object v0
+    aget v0, v0, p1
 
-    invoke-super {p0, p1, v0}, Lcom/google/f_;->b(Lcom/google/eG;Ljava/lang/Object;)V
+    return v0
+.end method
 
-    .line 16
-    return-void
+.method b(II)I
+    .locals 2
+
+    .prologue
+    .line 29
+    iget v0, p0, Lcom/google/f8;->e:I
+
+    add-int/2addr v0, p1
+
+    sub-int/2addr v0, p2
+
+    iget v1, p0, Lcom/google/f8;->e:I
+
+    rem-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method c(I)I
+    .locals 3
+
+    .prologue
+    .line 3
+    if-nez p1, :cond_0
+
+    .line 27
+    :try_start_0
+    new-instance v0, Ljava/lang/ArithmeticException;
+
+    invoke-direct {v0}, Ljava/lang/ArithmeticException;-><init>()V
+
+    throw v0
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    move-exception v0
+
+    throw v0
+
+    .line 6
+    :cond_0
+    iget-object v0, p0, Lcom/google/f8;->a:[I
+
+    iget v1, p0, Lcom/google/f8;->e:I
+
+    iget-object v2, p0, Lcom/google/f8;->g:[I
+
+    aget v2, v2, p1
+
+    sub-int/2addr v1, v2
+
+    add-int/lit8 v1, v1, -0x1
+
+    aget v0, v0, v1
+
+    return v0
+.end method
+
+.method c()Lcom/google/bB;
+    .locals 1
+
+    .prologue
+    .line 37
+    iget-object v0, p0, Lcom/google/f8;->f:Lcom/google/bB;
+
+    return-object v0
+.end method
+
+.method c(II)Lcom/google/bB;
+    .locals 2
+
+    .prologue
+    .line 26
+    if-gez p1, :cond_0
+
+    .line 8
+    :try_start_0
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    invoke-direct {v0}, Ljava/lang/IllegalArgumentException;-><init>()V
+
+    throw v0
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    move-exception v0
+
+    throw v0
+
+    .line 13
+    :cond_0
+    if-nez p2, :cond_1
+
+    .line 12
+    :try_start_1
+    iget-object v0, p0, Lcom/google/f8;->d:Lcom/google/bB;
+    :try_end_1
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 28
+    :goto_0
+    return-object v0
+
+    .line 12
+    :catch_1
+    move-exception v0
+
+    throw v0
+
+    .line 30
+    :cond_1
+    add-int/lit8 v0, p1, 0x1
+
+    new-array v1, v0, [I
+
+    .line 34
+    const/4 v0, 0x0
+
+    aput p2, v1, v0
+
+    .line 28
+    new-instance v0, Lcom/google/bB;
+
+    invoke-direct {v0, p0, v1}, Lcom/google/bB;-><init>(Lcom/google/f8;[I)V
+
+    goto :goto_0
+.end method
+
+.method d(II)I
+    .locals 2
+
+    .prologue
+    .line 38
+    add-int v0, p1, p2
+
+    iget v1, p0, Lcom/google/f8;->e:I
+
+    rem-int/2addr v0, v1
+
+    return v0
 .end method

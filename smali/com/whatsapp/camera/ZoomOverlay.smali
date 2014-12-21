@@ -10,15 +10,15 @@
 # instance fields
 .field private a:Landroid/graphics/RectF;
 
-.field private b:Ljava/lang/Runnable;
+.field private b:F
 
-.field private c:F
+.field private c:Landroid/text/TextPaint;
 
-.field private d:F
+.field private d:Landroid/graphics/Paint;
 
-.field private e:Landroid/graphics/Paint;
+.field private e:F
 
-.field private f:Landroid/text/TextPaint;
+.field private f:Ljava/lang/Runnable;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     new-array v4, v0, [Ljava/lang/String;
 
-    const-string v3, "QzE\u0013 "
+    const-string v3, "4[}d."
 
     const/4 v0, -0x1
 
@@ -71,7 +71,7 @@
 
     aput-object v3, v5, v4
 
-    const-string v0, "\u000cdD["
+    const-string v0, "4[}d."
 
     move-object v3, v0
 
@@ -88,7 +88,7 @@
 
     const/4 v3, 0x2
 
-    const-string v0, "QzE\u0013 "
+    const-string v0, "iE|,"
 
     move v4, v3
 
@@ -114,7 +114,7 @@
 
     packed-switch v3, :pswitch_data_1
 
-    const/16 v3, 0x10
+    const/16 v3, 0x1e
 
     :goto_2
     xor-int/2addr v3, v10
@@ -130,22 +130,22 @@
     goto :goto_1
 
     :pswitch_2
-    const/16 v3, 0x29
+    const/16 v3, 0x4c
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v3, 0x4a
+    const/16 v3, 0x6b
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v3, 0x75
+    const/16 v3, 0x4d
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v3, 0x3d
+    const/16 v3, 0x4a
 
     goto :goto_2
 
@@ -170,38 +170,38 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 20
+    .line 38
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    .line 36
+    .line 24
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
     iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->a:Landroid/graphics/RectF;
 
-    .line 8
+    .line 6
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->e:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->d:Landroid/graphics/Paint;
 
-    .line 29
+    .line 15
     new-instance v0, Landroid/text/TextPaint;
 
     invoke-direct {v0, v1}, Landroid/text/TextPaint;-><init>(I)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Landroid/text/TextPaint;
+    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->c:Landroid/text/TextPaint;
 
-    .line 2
-    new-instance v0, Lcom/whatsapp/camera/b;
+    .line 46
+    new-instance v0, Lcom/whatsapp/camera/r;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/camera/b;-><init>(Lcom/whatsapp/camera/ZoomOverlay;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/camera/r;-><init>(Lcom/whatsapp/camera/ZoomOverlay;)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->b:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Ljava/lang/Runnable;
 
-    .line 1
+    .line 48
     return-void
 .end method
 
@@ -211,38 +211,38 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 51
+    .line 58
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 60
+    .line 4
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
     iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->a:Landroid/graphics/RectF;
 
-    .line 44
+    .line 51
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->e:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->d:Landroid/graphics/Paint;
 
-    .line 37
+    .line 14
     new-instance v0, Landroid/text/TextPaint;
 
     invoke-direct {v0, v1}, Landroid/text/TextPaint;-><init>(I)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Landroid/text/TextPaint;
+    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->c:Landroid/text/TextPaint;
 
-    .line 4
-    new-instance v0, Lcom/whatsapp/camera/b;
+    .line 5
+    new-instance v0, Lcom/whatsapp/camera/r;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/camera/b;-><init>(Lcom/whatsapp/camera/ZoomOverlay;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/camera/r;-><init>(Lcom/whatsapp/camera/ZoomOverlay;)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->b:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Ljava/lang/Runnable;
 
-    .line 9
+    .line 25
     return-void
 .end method
 
@@ -255,35 +255,35 @@
     .line 21
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 42
+    .line 61
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
     iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->a:Landroid/graphics/RectF;
 
-    .line 38
+    .line 28
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->e:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->d:Landroid/graphics/Paint;
 
-    .line 48
+    .line 13
     new-instance v0, Landroid/text/TextPaint;
 
     invoke-direct {v0, v1}, Landroid/text/TextPaint;-><init>(I)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Landroid/text/TextPaint;
+    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->c:Landroid/text/TextPaint;
 
-    .line 11
-    new-instance v0, Lcom/whatsapp/camera/b;
+    .line 7
+    new-instance v0, Lcom/whatsapp/camera/r;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/camera/b;-><init>(Lcom/whatsapp/camera/ZoomOverlay;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/camera/r;-><init>(Lcom/whatsapp/camera/ZoomOverlay;)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->b:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Ljava/lang/Runnable;
 
-    .line 6
+    .line 12
     return-void
 .end method
 
@@ -293,17 +293,17 @@
     .locals 4
 
     .prologue
-    .line 3
+    .line 2
     invoke-virtual {p0}, Lcom/whatsapp/camera/ZoomOverlay;->invalidate()V
 
-    .line 41
-    iget-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->b:Ljava/lang/Runnable;
+    .line 60
+    iget-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Ljava/lang/Runnable;
 
     const-wide/16 v2, 0x12c
 
     invoke-virtual {p0, v0, v2, v3}, Lcom/whatsapp/camera/ZoomOverlay;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 55
+    .line 40
     return-void
 .end method
 
@@ -311,23 +311,23 @@
     .locals 1
 
     .prologue
-    .line 46
+    .line 36
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/ZoomOverlay;->setVisibility(I)V
 
-    .line 53
-    iput p1, p0, Lcom/whatsapp/camera/ZoomOverlay;->d:F
+    .line 50
+    iput p1, p0, Lcom/whatsapp/camera/ZoomOverlay;->e:F
 
-    .line 18
+    .line 42
     invoke-virtual {p0}, Lcom/whatsapp/camera/ZoomOverlay;->invalidate()V
 
-    .line 22
-    iget-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->b:Ljava/lang/Runnable;
+    .line 11
+    iget-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/ZoomOverlay;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 31
+    .line 27
     return-void
 .end method
 
@@ -335,16 +335,16 @@
     .locals 0
 
     .prologue
-    .line 14
-    iput p1, p0, Lcom/whatsapp/camera/ZoomOverlay;->d:F
+    .line 54
+    iput p1, p0, Lcom/whatsapp/camera/ZoomOverlay;->e:F
 
-    .line 13
-    iput p2, p0, Lcom/whatsapp/camera/ZoomOverlay;->c:F
+    .line 3
+    iput p2, p0, Lcom/whatsapp/camera/ZoomOverlay;->b:F
 
-    .line 40
+    .line 49
     invoke-virtual {p0}, Lcom/whatsapp/camera/ZoomOverlay;->invalidate()V
 
-    .line 23
+    .line 39
     return-void
 .end method
 
@@ -352,34 +352,34 @@
     .locals 4
 
     .prologue
-    .line 30
+    .line 41
     invoke-virtual {p0}, Lcom/whatsapp/camera/ZoomOverlay;->getWidth()I
 
     move-result v0
 
     div-int/lit8 v0, v0, 0x2
 
-    .line 50
+    .line 18
     invoke-virtual {p0}, Lcom/whatsapp/camera/ZoomOverlay;->getHeight()I
 
     move-result v1
 
     div-int/lit8 v1, v1, 0x2
 
-    .line 54
+    .line 10
     invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
 
     move-result v0
 
-    .line 26
+    .line 37
     int-to-float v0, v0
 
     const v1, 0x3f666666
 
     mul-float/2addr v0, v1
 
-    .line 57
-    iget-object v1, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Landroid/text/TextPaint;
+    .line 35
+    iget-object v1, p0, Lcom/whatsapp/camera/ZoomOverlay;->c:Landroid/text/TextPaint;
 
     sget-object v2, Lcom/whatsapp/camera/ZoomOverlay;->z:[Ljava/lang/String;
 
@@ -391,7 +391,7 @@
 
     move-result v1
 
-    .line 10
+    .line 20
     div-float/2addr v0, v1
 
     return v0
@@ -401,14 +401,14 @@
     .locals 11
 
     .prologue
-    const v10, -0x66000001
+    const v9, -0x66000001
 
-    const/4 v9, 0x1
+    const/4 v10, 0x1
 
-    sget v2, Lcom/whatsapp/camera/CameraActivity;->s:I
+    sget-boolean v2, Lcom/whatsapp/camera/CameraActivity;->A:Z
 
-    .line 34
-    iget-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->e:Landroid/graphics/Paint;
+    .line 45
+    iget-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->d:Landroid/graphics/Paint;
 
     invoke-virtual {p0}, Lcom/whatsapp/camera/ZoomOverlay;->getContext()Landroid/content/Context;
 
@@ -426,45 +426,45 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 61
-    iget-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->e:Landroid/graphics/Paint;
+    .line 43
+    iget-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->d:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 25
-    iget-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->e:Landroid/graphics/Paint;
+    .line 22
+    iget-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->d:Landroid/graphics/Paint;
 
-    invoke-virtual {v0, v10}, Landroid/graphics/Paint;->setColor(I)V
+    invoke-virtual {v0, v9}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 27
+    .line 29
     invoke-virtual {p0}, Lcom/whatsapp/camera/ZoomOverlay;->getWidth()I
 
     move-result v0
 
     div-int/lit8 v3, v0, 0x2
 
-    .line 56
+    .line 34
     invoke-virtual {p0}, Lcom/whatsapp/camera/ZoomOverlay;->getHeight()I
 
     move-result v0
 
     div-int/lit8 v4, v0, 0x2
 
-    .line 47
+    .line 30
     invoke-static {v3, v4}, Ljava/lang/Math;->min(II)I
 
     move-result v0
 
-    .line 17
+    .line 1
     int-to-float v0, v0
 
     const v1, 0x3f666666
 
     mul-float/2addr v0, v1
 
-    .line 59
+    .line 44
     iget-object v1, p0, Lcom/whatsapp/camera/ZoomOverlay;->a:Landroid/graphics/RectF;
 
     int-to-float v5, v3
@@ -485,14 +485,14 @@
 
     invoke-virtual {v1, v5, v6, v7, v8}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 5
+    .line 53
     iget-object v1, p0, Lcom/whatsapp/camera/ZoomOverlay;->a:Landroid/graphics/RectF;
 
-    iget-object v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->e:Landroid/graphics/Paint;
+    iget-object v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->d:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v1, v5}, Landroid/graphics/Canvas;->drawOval(Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
-    .line 45
+    .line 32
     invoke-virtual {p0}, Lcom/whatsapp/camera/ZoomOverlay;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -503,29 +503,29 @@
 
     move-result v1
 
-    .line 49
-    iget-object v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Landroid/text/TextPaint;
+    .line 31
+    iget-object v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->c:Landroid/text/TextPaint;
 
     invoke-virtual {v5, v1}, Landroid/text/TextPaint;->setTextSize(F)V
 
-    .line 24
-    iget-object v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Landroid/text/TextPaint;
+    .line 56
+    iget-object v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->c:Landroid/text/TextPaint;
 
-    invoke-virtual {v5, v10}, Landroid/text/TextPaint;->setColor(I)V
+    invoke-virtual {v5, v9}, Landroid/text/TextPaint;->setColor(I)V
 
-    .line 16
-    iget-object v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Landroid/text/TextPaint;
+    .line 33
+    iget-object v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->c:Landroid/text/TextPaint;
 
     sget-object v6, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
 
     invoke-virtual {v5, v6}, Landroid/text/TextPaint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
-    .line 32
-    iget-object v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Landroid/text/TextPaint;
+    .line 52
+    iget-object v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->c:Landroid/text/TextPaint;
 
-    invoke-virtual {v5, v9}, Landroid/text/TextPaint;->setFakeBoldText(Z)V
+    invoke-virtual {v5, v10}, Landroid/text/TextPaint;->setFakeBoldText(Z)V
 
-    .line 33
+    .line 47
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -538,13 +538,15 @@
 
     sget-object v6, Lcom/whatsapp/camera/ZoomOverlay;->z:[Ljava/lang/String;
 
-    aget-object v6, v6, v9
+    const/4 v7, 0x2
 
-    new-array v7, v9, [Ljava/lang/Object;
+    aget-object v6, v6, v7
+
+    new-array v7, v10, [Ljava/lang/Object;
 
     const/4 v8, 0x0
 
-    iget v9, p0, Lcom/whatsapp/camera/ZoomOverlay;->c:F
+    iget v9, p0, Lcom/whatsapp/camera/ZoomOverlay;->b:F
 
     invoke-static {v9}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -574,24 +576,22 @@
 
     add-float/2addr v1, v7
 
-    iget-object v7, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Landroid/text/TextPaint;
+    iget-object v7, p0, Lcom/whatsapp/camera/ZoomOverlay;->c:Landroid/text/TextPaint;
 
     invoke-virtual {p1, v5, v6, v1, v7}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 28
-    iget-object v1, p0, Lcom/whatsapp/camera/ZoomOverlay;->f:Landroid/text/TextPaint;
+    .line 23
+    iget-object v1, p0, Lcom/whatsapp/camera/ZoomOverlay;->c:Landroid/text/TextPaint;
 
     sget-object v5, Lcom/whatsapp/camera/ZoomOverlay;->z:[Ljava/lang/String;
 
-    const/4 v6, 0x2
-
-    aget-object v5, v5, v6
+    aget-object v5, v5, v10
 
     invoke-virtual {v1, v5}, Landroid/text/TextPaint;->measureText(Ljava/lang/String;)F
 
     move-result v1
 
-    .line 52
+    .line 17
     iget-object v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->a:Landroid/graphics/RectF;
 
     int-to-float v6, v3
@@ -612,32 +612,32 @@
 
     invoke-virtual {v5, v6, v7, v8, v9}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 7
+    .line 8
     iget-object v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->a:Landroid/graphics/RectF;
 
-    iget-object v6, p0, Lcom/whatsapp/camera/ZoomOverlay;->e:Landroid/graphics/Paint;
+    iget-object v6, p0, Lcom/whatsapp/camera/ZoomOverlay;->d:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v5, v6}, Landroid/graphics/Canvas;->drawOval(Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
-    .line 15
-    iget v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->d:F
+    .line 55
+    iget v5, p0, Lcom/whatsapp/camera/ZoomOverlay;->e:F
 
     mul-float/2addr v1, v5
 
-    .line 43
+    .line 59
     cmpl-float v5, v1, v0
 
     if-lez v5, :cond_1
 
-    .line 12
+    .line 26
     :goto_0
-    iget-object v1, p0, Lcom/whatsapp/camera/ZoomOverlay;->e:Landroid/graphics/Paint;
+    iget-object v1, p0, Lcom/whatsapp/camera/ZoomOverlay;->d:Landroid/graphics/Paint;
 
     const v5, -0xcc4a1b
 
     invoke-virtual {v1, v5}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 58
+    .line 19
     iget-object v1, p0, Lcom/whatsapp/camera/ZoomOverlay;->a:Landroid/graphics/RectF;
 
     int-to-float v5, v3
@@ -658,21 +658,21 @@
 
     invoke-virtual {v1, v5, v6, v3, v0}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 19
+    .line 57
     iget-object v0, p0, Lcom/whatsapp/camera/ZoomOverlay;->a:Landroid/graphics/RectF;
 
-    iget-object v1, p0, Lcom/whatsapp/camera/ZoomOverlay;->e:Landroid/graphics/Paint;
+    iget-object v1, p0, Lcom/whatsapp/camera/ZoomOverlay;->d:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawOval(Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
-    .line 35
+    .line 16
     if-eqz v2, :cond_0
 
-    sget v0, Lcom/whatsapp/DialogToastActivity;->i:I
+    sget v0, Lcom/whatsapp/DialogToastActivity;->d:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lcom/whatsapp/DialogToastActivity;->i:I
+    sput v0, Lcom/whatsapp/DialogToastActivity;->d:I
 
     :cond_0
     return-void

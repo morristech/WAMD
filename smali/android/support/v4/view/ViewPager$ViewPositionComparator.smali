@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,43 +23,45 @@
     .locals 4
 
     .prologue
-    .line 6
+    .line 5
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     check-cast v0, Landroid/support/v4/view/ViewPager$LayoutParams;
 
-    .line 4
+    .line 3
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
     check-cast v1, Landroid/support/v4/view/ViewPager$LayoutParams;
 
-    .line 7
+    .line 6
     iget-boolean v2, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->isDecor:Z
 
     iget-boolean v3, v1, Landroid/support/v4/view/ViewPager$LayoutParams;->isDecor:Z
 
     if-eq v2, v3, :cond_1
 
-    .line 3
+    .line 4
     iget-boolean v0, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->isDecor:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
+    .line 7
     :goto_0
     return v0
 
+    .line 4
     :cond_0
     const/4 v0, -0x1
 
     goto :goto_0
 
-    .line 1
+    .line 7
     :cond_1
     iget v0, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->position:I
 
@@ -74,7 +76,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 1
     check-cast p1, Landroid/view/View;
 
     check-cast p2, Landroid/view/View;

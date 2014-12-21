@@ -71,8 +71,6 @@
     <string name="audio_note_tip">रिकार्ड करने के लिए दबाये रखें, भेजने के लिए छोड़ दें।</string>
     <string name="audio_note_tip_2">कृपया लंबे सन्देश को रिकॉर्ड करें</string>
     <string name="audio_note_top_mic_tip">अपने फ़ोन के माइक मे बोले</string>
-    <string name="barcode_scanner_dialog_body">इस अनुप्रयोग के लिए एक बारकोड स्कैनर आवश्यक हैl क्या आप स्थापित करना चाहेंगे?</string>
-    <string name="barcode_scanner_dialog_title">बारकोड स्कैनर स्थापित करें?</string>
     <string name="block">ब्लाक</string>
     <string name="block_ask">क्या आप इस संपर्क को ब्लॉक करना चाहते हैं?</string>
     <string name="block_list_desc_1">"किसी संपर्क को चयन करके बाधित करने के लिए दाहिने कोने में आइकन पर दबाए।
@@ -319,7 +317,6 @@
     <string name="eula_description">क्रॉस - प्लेटफॉर्म दुनिया भर में दोस्तों के साथ मोबाइल संदेश</string>
     <string name="eula_tablets_not_supported">टिप्पणी: टेबलेट्स वर्तमान में समर्थित नहीं हैंl</string>
     <string name="eula_terms_of_service">सेवा की शर्तें</string>
-    <string name="eula_title">WhatsApp में आपका स्वागत है!</string>
     <string name="existing_contact">मौजूदा</string>
     <string name="extended_service_expiration">आपकी सेवा %1$s तक बढ़ा दी गई हैंl</string>
     <string name="extension_active">"शिष्टाचार के तौर पर हमने आपकी सेवाएं %s तक बढ़ा दी हैंl
@@ -528,7 +525,6 @@ WhatsApp की स्थापना केवल एक ही डिवाइ
     <string name="menuitem_add">सम्मिलित</string>
     <string name="menuitem_contacts">संपर्क</string>
     <string name="menuitem_debug">डीबग</string>
-    <string name="menuitem_delete_qr">QR कोड मिटाएंl</string>
     <string name="menuitem_groupchat">नया समूह</string>
     <string name="menuitem_mute">मौन</string>
     <string name="menuitem_mute_off">मौन रद्द करें</string>
@@ -564,14 +560,10 @@ WhatsApp की स्थापना केवल एक ही डिवाइ
     <string name="msg_store_backup_failed">संदेश बैकअप करने में असमर्थ।</string>
     <string name="msg_store_backup_failed_try_again_later">संदेश संरक्षित करने में असमर्थ, कृपया बाद में पुन: प्रयास करें</string>
     <string name="msg_store_backup_found">बैकअप उपलब्ध</string>
-    <string name="msg_store_backup_found_registration">संदेश बैकअप पाया गया!</string>
     <string name="msg_store_backup_skipped">बेक-उप रोक दिया गया</string>
     <string name="msg_store_backup_skipped_no_media">संदेश बैकअप छोड़ दिया: मीडिया कार्ड अनुपलब्ध।</string>
     <string name="msg_store_backup_skipped_read_only_media">संदेश बैकअप छोड़ दिया: रीड-ओन्ली मीडिया कार्ड पाया।</string>
     <string name="msg_store_confirm">पुष्टि करे</string>
-    <string name="msg_store_creation_backup_message">आप बैकअप से अपने संदेश इतिहास बहाल करना चाहेंगे?</string>
-    <string name="msg_store_do_not_restore">पुन: स्थापित न करें</string>
-    <string name="msg_store_do_not_restore_no_thanks">नहीं, धन्यवाद</string>
     <string name="msg_store_error_found">एक त्रुटि हुई। कृपया WhatsApp को बंद कर पुनरारंभ करें।</string>
     <string name="msg_store_error_not_restored">क्षमा करें, हम आपके संदेश बैकअप बहाल करने में असमर्थ थे.</string>
     <string name="msg_store_last_confirmation_not_to_restore">संदेश खो जाएगा। क्या आप निश्चित है कि आप बेकप से अपने संदेश के इतिहास को पुन: स्थापित नहीं करना चाहते?</string>
@@ -598,9 +590,6 @@ WhatsApp की स्थापना केवल एक ही डिवाइ
     <string name="need_sd_card_shared_storage">कृपया USB भंडार बंद करें और फिर पुन: प्रयास करें।</string>
     <string name="network_required">आपको किसी भी नेटवर्क की पहुँच नहीं है।</string>
     <string name="network_usage_ask_reset_message">क्या आप सुनिश्चित हैं कि आप आंकड़े रीसेट करना चाहते हैं?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f जी बी</string>
-    <string name="network_usage_byte_count_kb">%1$.1f के बी</string>
-    <string name="network_usage_byte_count_mb">%1$.1f एम बी</string>
     <string name="network_usage_last_reset_time">आखरी रिसेट समय: %1$s</string>
     <string name="network_usage_media_bytes_received">मीडिया बाइट्स प्राप्त:</string>
     <string name="network_usage_media_bytes_sent">भेजी गयी मीडिया बाइट्स</string>
@@ -945,17 +934,8 @@ WhatsApp द्वारा भेजा गया"</string>
     <string name="software_expired_get_from_play">WhatsApp का यह संस्करण बहुत पुराना है और कार्यरत नहीं हैl कृपया नवीनतम संस्करण को डाउनलोड करने के लिए Google Play पर जाएंl</string>
     <string name="software_expired_get_from_play_with_date">WhatsApp का यह संस्करण &lt;b>%1$s&lt;/b> के दिन से प्रचलन से बाहर हो गया हैl नवीनतम संस्करण डाउनलोड करने के लिए कृप्या Google Play पर जाएँl&lt;br>&lt;br>आपके उपकरण की दिनाँक &lt;b>%2$s&lt;/b>है! अगर यह ग़लत है तो कृप्या अपने उपकरण की दिनाँक व्यवस्था सही करें और फिर WhatsApp को फिर से शुरू करें!</string>
     <string name="software_expired_with_date">WhatsApp का यह संस्करण &lt;b>%1$s&lt;/b> के दिन से प्रचलन से बाहर हो गया हैl नवीनतम संस्करण !&lt;br>&lt;br> को डाउनलोड करने के लिए “Download” बटन को दबाएl आपके उपकरण की दिनांक &lt;b>%2$s&lt;/b> है। अगर यह ग़लत है तो कृप्या अपने उपकरण की दिनांक सही करें और WhatsApp को फिर से शुरू करें।</string>
-    <string name="spam_generic">"आप WhatsApp द्वारा अस्थाई रूप से प्रतिबंधित हैं क्योंकि आपने हमारी सेवा की शर्तों का उलंघन किया है।
-आप WhatsApp पुन: समय में उपयोग कर पाएंगे:"</string>
     <string name="spam_learn_more">अधिक जानिए</string>
     <string name="spam_title">अस्थायी रूप से प्रतिबंधित</string>
-    <string name="spam_too_many_blocks">WhatsApp परअस्थायी रूप से प्रतिबंधित क्योंकि बहुत से लोगों नें आप पर रोक लगा दी है।</string>
-    <string name="spam_too_many_groups">"जिनके संपर्क पुस्तक में आप नहीं है, ऐसे लोगों के साथ कई समूह बनाने कि वजह से आपको अस्थायी रूप से WhatsApp से प्रतिबंधित किया जा रहा है ।
- _____ समय बाद आप WhatsApp फिर से उपयोग कर पाएंगे।"</string>
-    <string name="spam_too_many_messages">"आपको अस्थायी रुप से WhatsApp से प्रतिबंधित किया गया है क्योकि आप जिन लोगो कि संपर्क सूची में नही थे उन्हें बहुत संदेश भेजे हैं.
-आप WhatsApp को फिर से इस्तेमाल कर पाएँगे"</string>
-    <string name="spam_too_many_people">"आप अस्थायी रूप से WhatsApp से प्रतिबंधित क्योंकि आप नें एक ही संदेश बहुत से लोगों को भेजा है।
-आप पुनः WhatsApp का प्रयोग कर पाएँगे ः"</string>
     <string name="status">स्थिति</string>
     <string name="status_default_at_gym">जिम में हूँ</string>
     <string name="status_default_at_movies">सिनेमाघर मे हूँ</string>

@@ -72,8 +72,6 @@
     <string name="audio_note_tip">Задржи за снимање, отпушти за испраќање</string>
     <string name="audio_note_tip_2">Молам сними подолга порака</string>
     <string name="audio_note_top_mic_tip">Молиме збори на горниот микрофон од телефонот</string>
-    <string name="barcode_scanner_dialog_body">Оваа апликација бара баркод скенер. Дали сакаш да инсталираш скенер?</string>
-    <string name="barcode_scanner_dialog_title">Инсталирај Баркод скенер?</string>
     <string name="block">Блокирај</string>
     <string name="block_ask">Дали сигурно сакаш да го блокираш овој контакт?</string>
     <string name="block_list_desc_1">"Притисни на иконата во горниот десен агол за да избереш контакт за блокирање.
@@ -107,6 +105,8 @@
     <string name="camera_shortcut">WhatsApp Камера</string>
     <string name="camera_title">Испрати WhatsApp слика или видео</string>
     <string name="camera_video_preview_title">Испрати WhatsApp видео</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">За да воспоставиш WhatsApp повик, првин исклучи го Airplane mode.</string>
+    <string name="can_not_start_voip_call_in_phone_call">Не можеш да се јавиш преку WhatsApp доколку е во тек телефонски разговор.</string>
     <string name="cancel">Откажи</string>
     <string name="cannot_send_not_a_group_participant">Не можеш да испраќаш пораки до оваа група бидејќи повеќе не си учесник.</string>
     <string name="cannot_send_selected_file">Не може да се испрати овој фајл. Или имаш одбрано погрешен фајл или форматот не е подржан.</string>
@@ -329,7 +329,7 @@
     <string name="eula_description">Повеќе-платформска мобилна комуникација преку пораки со пријатели низ целиот свет</string>
     <string name="eula_tablets_not_supported">Забелешка: таблети во моментот не се подржани.</string>
     <string name="eula_terms_of_service">Услови за користење</string>
-    <string name="eula_title">Добредојде во WhatsApp!</string>
+    <string name="eula_title">Добредојде во WhatsApp</string>
     <string name="existing_contact">Постоечки</string>
     <string name="exit">Напушти</string>
     <string name="exit_group">Напушти група</string>
@@ -504,7 +504,6 @@
     <string name="insufficient_space_for_download_shared_storage">Не може да се симне бидејќи нема доволно простор на внатрешната меморија. Молиме избриши фајлови и обиди се повторно.</string>
     <string name="invalid_media_message_download">Не може да се симне фајлот од невалидна порака. Молиме пробај да ја пратиш пораката повторно.</string>
     <string name="invalid_message_forward">Пораката не може да се препрати на невалиден контакт.</string>
-    <string name="invalid_qr_code">Невалиден QR код</string>
     <string name="invalid_url_for_download">Не може да се симне. Молиме побарај да ти ја препратат пораката.</string>
     <string name="invite">Покани</string>
     <string name="invite_friends">Покани ги пријателите</string>
@@ -550,7 +549,6 @@ WhatsApp може да биде инсталиран само на еден ур
     <string name="menuitem_add">Додај</string>
     <string name="menuitem_contacts">Контакти</string>
     <string name="menuitem_debug">Дебагирај</string>
-    <string name="menuitem_delete_qr">Избриши QR код</string>
     <string name="menuitem_groupchat">Нова група</string>
     <string name="menuitem_list">Ново емитување</string>
     <string name="menuitem_mute">Молкни</string>
@@ -591,14 +589,15 @@ WhatsApp може да биде инсталиран само на еден ур
     <string name="msg_store_backup_failed">Не може да се направи архива на пораките.</string>
     <string name="msg_store_backup_failed_try_again_later">Не се архивираа пораките. Молиме обиди се подоцна.</string>
     <string name="msg_store_backup_found">Најдена е архива</string>
-    <string name="msg_store_backup_found_registration">Најдена е архива на пораки!</string>
+    <string name="msg_store_backup_found_registration">Најдена е архива на разговори</string>
+    <string name="msg_store_backup_found_title">Врати историја на разговори</string>
     <string name="msg_store_backup_skipped">Прескокнато архивирање</string>
     <string name="msg_store_backup_skipped_no_media">Архивирањето е прескокнато: Не е најдена мемориска картичка.</string>
     <string name="msg_store_backup_skipped_read_only_media">Архивирањето на пораките е прескокнато: На картичката е овозможено само да се чита.</string>
     <string name="msg_store_confirm">Потврди</string>
-    <string name="msg_store_creation_backup_message">Дали сакаш да ја вратиш твојата историја на пораки од архива?</string>
-    <string name="msg_store_do_not_restore">Не враќај</string>
-    <string name="msg_store_do_not_restore_no_thanks">Не, фала</string>
+    <string name="msg_store_creation_backup_message">Врати ја твојата историја на разговори од архивата. Доколку не ги вратиш сега, нема да можеш да ги вратиш повторно.</string>
+    <string name="msg_store_do_not_restore">Прескокни враќање</string>
+    <string name="msg_store_do_not_restore_no_thanks">Прескокни враќање</string>
     <string name="msg_store_error_found">Се појави грешка. Молиме рестартирајте го WhatsApp.</string>
     <string name="msg_store_error_not_restored">Извини, не беше возможно да се врати ниедна архива од твојата историја на пораки.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Пораките ќе бидат изгубени. Дали сигурно не сакаш да ја вратиш твојата историја на пораки од архивата?</string>
@@ -625,9 +624,6 @@ WhatsApp може да биде инсталиран само на еден ур
     <string name="need_sd_card_shared_storage">Молиме исклучи ја опцијата USB storage и обиди се повторно.</string>
     <string name="network_required">Во моментов немаш интернет пристап.</string>
     <string name="network_usage_ask_reset_message">Дали сигурно сакаш да ги ресетираш статистиките?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Последно ресетирање: %1$s</string>
     <string name="network_usage_media_bytes_received">Примено фајлови во бајти:</string>
     <string name="network_usage_media_bytes_sent">Испратено фајлови во бајти:</string>
@@ -638,6 +634,8 @@ WhatsApp може да биде инсталиран само на еден ур
     <string name="network_usage_reset">Ресетирај статистики</string>
     <string name="network_usage_total_bytes_received">Вкупно примено бајти:</string>
     <string name="network_usage_total_bytes_sent">Вкупно испратено бајти:</string>
+    <string name="network_usage_voip_calls_received">Дојдовни WhatsApp повици:</string>
+    <string name="network_usage_voip_calls_sent">Појдовни WhatsApp повици:</string>
     <string name="never">Никогаш</string>
     <string name="new_broadcast">Емитување</string>
     <string name="new_contact">Нов</string>
@@ -874,6 +872,7 @@ WhatsApp може да биде инсталиран само на еден ур
     <string name="send_location">Прати локација</string>
     <string name="send_payment_button">Прати линк за плаќање</string>
     <string name="send_payment_url_via">Прати линк за плаќање преку...</string>
+    <string name="send_this_location">Испрати ја оваа локација</string>
     <string name="send_your_current_location">Прати моментална локација</string>
     <string name="sending_video_to_contact">Испраќа видео на %s</string>
     <string name="sent_to_group">Испрати на “%s”</string>
@@ -986,17 +985,17 @@ WhatsApp може да биде инсталиран само на еден ур
     <string name="software_expired_get_from_play_with_date">Оваа верзија на WhatsApp стана застарена на &lt;b>%1$s&lt;/b>. Молиме оди на Google Play за да ја симнеш најновата верзија.&lt;br>&lt;br>Датумот на твојот уред е &lt;b>%2$s&lt;/b>. Доколку не е точен, молиме смени ги поставките за датум на твојот уред и рестартирај го WhatsApp.</string>
     <string name="software_expired_with_date">Оваа верзија на WhatsApp стана застарена на &lt;b>%1$s&lt;/b>. Притисни „Симни” за да ја земеш најновата верзија.&lt;br>&lt;br>Датумот на твојот уред е &lt;b>%2$s&lt;/b>. Доколку не е точен, молиме смени ги поставките за датум на твојот уред и рестартирај го WhatsApp.</string>
     <string name="spam_generic">"Привремено си блокиран од WhatsApp бидејќи ги имаш прекршено нашите услови за користење.
+
 Ќе можеш да го користиш WhatsApp повторно за:"</string>
     <string name="spam_generic_data_connection_missing">Осигурај се дека телефонот има активна конекција за податоци.</string>
     <string name="spam_generic_unknown_time_left">Привремено си блокиран од WhatsApp бидејќи може да ги имаш прекршено нашите услови за користење. Ќе можеш да го користиш WhatsApp наскоро.</string>
     <string name="spam_learn_more">Дознај повеќе</string>
     <string name="spam_title">Привремено блокиран</string>
-    <string name="spam_too_many_blocks">Привремено си блокиран од WhatsApp бидејќи премногу луѓе те имаат блокирано.</string>
     <string name="spam_too_many_groups">"Привремено си блокиран од WhatsApp бидејќи имаш создадено премногу групи со луѓе кои те немаат во нивниот именик.
+
 Ќе можеш да го користиш WhatsApp повторно за:"</string>
     <string name="spam_too_many_messages">"Привремено си блокиран од WhatsApp бидејќи имаш испратено премногу пораки до луѓе кои те немаат во нивниот именик.
-Ќе можеш да го користиш WhatsApp повторно за:"</string>
-    <string name="spam_too_many_people">"Привремено си блокиран од WhatsApp бидејќи имаш испратено иста порака до премногу луѓе.
+
 Ќе можеш да го користиш WhatsApp повторно за:"</string>
     <string name="status">Статус</string>
     <string name="status_default_at_gym">Во теретана</string>
@@ -1165,7 +1164,9 @@ WhatsApp Messenger е достапен за Android, iPhone, Nokia, Windows Phon
     <string name="view_list_media">Фајлови од листата</string>
     <string name="view_website">Види веб-страница</string>
     <string name="voip_activity_label">Гласовен повик</string>
+    <string name="voip_call_bluetooth_toggle_description">Вклучи/Исклучи Bluetooth</string>
     <string name="voip_call_end_button_description">Заврши гласовен повик</string>
+    <string name="voip_call_failed_no_network">Не може да се воспостави повик. Осигурај се дека телефонот има Интернет конекција и обиди се повторно.</string>
     <string name="voip_call_goto_chat_description">Види чет</string>
     <string name="voip_call_incoming">ДОЈДОВЕН</string>
     <string name="voip_call_label">WHATSAPP ПОВИК</string>
@@ -1218,5 +1219,4 @@ WhatsApp Messenger е достапен за Android, iPhone, Nokia, Windows Phon
     <string name="yesterday">Вчера</string>
     <string name="yesterday_at">вчера во %s</string>
     <string name="you">Ти</string>
-    <string name="voip_call_bluetooth_toggle_description">Вклучи/Исклучи Bluetooth</string>
 </resources>

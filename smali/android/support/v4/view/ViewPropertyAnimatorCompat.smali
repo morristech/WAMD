@@ -12,32 +12,32 @@
     .locals 2
 
     .prologue
-    .line 1
+    .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    .line 5
+    .line 1
     const/16 v1, 0x13
 
     if-lt v0, v1, :cond_0
 
-    .line 11
+    .line 5
     new-instance v0, Landroid/support/v4/view/ViewPropertyAnimatorCompat$KitKatViewPropertyAnimatorCompatImpl;
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewPropertyAnimatorCompat$KitKatViewPropertyAnimatorCompatImpl;-><init>()V
 
     sput-object v0, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->IMPL:Landroid/support/v4/view/ViewPropertyAnimatorCompat$ViewPropertyAnimatorCompatImpl;
 
-    .line 8
+    .line 4
     :goto_0
     return-void
 
-    .line 2
+    .line 7
     :cond_0
     const/16 v1, 0x12
 
     if-lt v0, v1, :cond_1
 
-    .line 3
+    .line 8
     new-instance v0, Landroid/support/v4/view/ViewPropertyAnimatorCompat$JBMr2ViewPropertyAnimatorCompatImpl;
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewPropertyAnimatorCompat$JBMr2ViewPropertyAnimatorCompatImpl;-><init>()V
@@ -46,13 +46,13 @@
 
     goto :goto_0
 
-    .line 4
+    .line 6
     :cond_1
     const/16 v1, 0x10
 
     if-lt v0, v1, :cond_2
 
-    .line 10
+    .line 9
     new-instance v0, Landroid/support/v4/view/ViewPropertyAnimatorCompat$JBViewPropertyAnimatorCompatImpl;
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewPropertyAnimatorCompat$JBViewPropertyAnimatorCompatImpl;-><init>()V
@@ -61,13 +61,13 @@
 
     goto :goto_0
 
-    .line 7
+    .line 11
     :cond_2
     const/16 v1, 0xe
 
     if-lt v0, v1, :cond_3
 
-    .line 9
+    .line 2
     new-instance v0, Landroid/support/v4/view/ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;-><init>()V
@@ -76,7 +76,7 @@
 
     goto :goto_0
 
-    .line 6
+    .line 10
     :cond_3
     new-instance v0, Landroid/support/v4/view/ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
 

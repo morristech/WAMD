@@ -1,74 +1,42 @@
-.class Lcom/whatsapp/adq;
-.super Ljava/lang/Object;
+.class public Lcom/whatsapp/adq;
+.super Lcom/whatsapp/ada;
 .source "adq.java"
-
-# interfaces
-.implements Landroid/view/View$OnClickListener;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/Conversation;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/Conversation;)V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/adq;->a:Lcom/whatsapp/Conversation;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 4
+    invoke-direct {p0}, Lcom/whatsapp/ada;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 3
+.method public a(I)I
+    .locals 1
 
     .prologue
-    const/16 v2, 0x8
+    .line 2
+    if-eqz p1, :cond_0
+
+    const/4 v0, 0x1
+
+    if-ne p1, v0, :cond_1
 
     .line 3
-    iget-object v0, p0, Lcom/whatsapp/adq;->a:Lcom/whatsapp/Conversation;
+    :cond_0
+    const/4 v0, 0x2
 
-    iget-object v0, v0, Lcom/whatsapp/Conversation;->q:Landroid/widget/ListView;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/widget/ListView;->onWindowFocusChanged(Z)V
-
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/adq;->a:Lcom/whatsapp/Conversation;
-
-    iget-object v0, v0, Lcom/whatsapp/Conversation;->q:Landroid/widget/ListView;
-
-    new-instance v1, Lcom/whatsapp/j5;
-
-    invoke-direct {v1, p0}, Lcom/whatsapp/j5;-><init>(Lcom/whatsapp/adq;)V
-
-    invoke-virtual {v0, v1}, Landroid/widget/ListView;->post(Ljava/lang/Runnable;)Z
-
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/adq;->a:Lcom/whatsapp/Conversation;
-
-    invoke-static {v0}, Lcom/whatsapp/Conversation;->U(Lcom/whatsapp/Conversation;)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
-
-    .line 6
-    iget-object v0, p0, Lcom/whatsapp/adq;->a:Lcom/whatsapp/Conversation;
-
-    invoke-static {v0}, Lcom/whatsapp/Conversation;->y(Lcom/whatsapp/Conversation;)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    :goto_0
+    return v0
 
     .line 1
-    return-void
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

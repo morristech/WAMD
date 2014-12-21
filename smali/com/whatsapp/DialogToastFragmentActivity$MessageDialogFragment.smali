@@ -9,7 +9,9 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 12
+    .locals 13
+
+    const/4 v8, 0x4
 
     const/4 v3, 0x2
 
@@ -17,11 +19,9 @@
 
     const/4 v1, 0x0
 
-    const/4 v0, 0x4
+    new-array v5, v8, [Ljava/lang/String;
 
-    new-array v5, v0, [Ljava/lang/String;
-
-    const-string v4, "$\n\u0018^A.\n"
+    const-string v4, "\u001c\u000ewE\u0013\u0016\u000e"
 
     const/4 v0, -0x1
 
@@ -36,20 +36,20 @@
 
     move-result-object v4
 
-    array-length v8, v4
+    array-length v9, v4
 
-    move v9, v8
+    move v10, v9
 
-    move v10, v1
+    move v11, v1
 
-    move-object v8, v4
+    move-object v9, v4
 
     :goto_1
-    if-gt v9, v10, :cond_0
+    if-gt v10, v11, :cond_0
 
     new-instance v4, Ljava/lang/String;
 
-    invoke-direct {v4, v8}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v4, v9}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v4}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -59,7 +59,7 @@
 
     aput-object v4, v6, v5
 
-    const-string v0, " \u000b"
+    const-string v0, "\u0018\u000f"
 
     move-object v4, v0
 
@@ -74,7 +74,7 @@
     :pswitch_0
     aput-object v4, v6, v5
 
-    const-string v0, "$\n\u0018^A.\n"
+    const-string v0, "\u001c\u000ewE\u0013\u0016\u000e"
 
     move-object v4, v0
 
@@ -91,7 +91,7 @@
 
     const/4 v4, 0x3
 
-    const-string v0, " \u000b"
+    const-string v0, "\u0018\u000f"
 
     move v5, v4
 
@@ -111,46 +111,48 @@
     return-void
 
     :cond_0
-    aget-char v11, v8, v10
+    aget-char v12, v9, v11
 
-    rem-int/lit8 v4, v10, 0x5
+    rem-int/lit8 v4, v11, 0x5
 
     packed-switch v4, :pswitch_data_1
 
-    const/16 v4, 0x20
+    const/16 v4, 0x72
 
     :goto_2
-    xor-int/2addr v4, v11
+    xor-int/2addr v4, v12
 
     int-to-char v4, v4
 
-    aput-char v4, v8, v10
+    aput-char v4, v9, v11
 
-    add-int/lit8 v4, v10, 0x1
+    add-int/lit8 v4, v11, 0x1
 
-    move v10, v4
+    move v11, v4
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v4, 0x49
+    const/16 v4, 0x71
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v4, 0x6f
-
-    goto :goto_2
-
-    :pswitch_5
     const/16 v4, 0x6b
 
     goto :goto_2
 
-    :pswitch_6
-    const/16 v4, 0x2d
+    :pswitch_5
+    move v4, v8
 
     goto :goto_2
+
+    :pswitch_6
+    const/16 v4, 0x36
+
+    goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -172,7 +174,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 19
     invoke-direct {p0}, Landroid/support/v4/app/DialogFragment;-><init>()V
 
     return-void
@@ -182,7 +184,7 @@
     .locals 1
 
     .prologue
-    .line 19
+    .line 14
     invoke-static {p0}, Lcom/whatsapp/DialogToastFragmentActivity$MessageDialogFragment;->b(I)Landroid/support/v4/app/DialogFragment;
 
     move-result-object v0
@@ -194,7 +196,7 @@
     .locals 1
 
     .prologue
-    .line 9
+    .line 1
     invoke-static {p0}, Lcom/whatsapp/DialogToastFragmentActivity$MessageDialogFragment;->b(Ljava/lang/String;)Landroid/support/v4/app/DialogFragment;
 
     move-result-object v0
@@ -206,17 +208,17 @@
     .locals 4
 
     .prologue
-    .line 16
+    .line 9
     new-instance v0, Lcom/whatsapp/DialogToastFragmentActivity$MessageDialogFragment;
 
     invoke-direct {v0}, Lcom/whatsapp/DialogToastFragmentActivity$MessageDialogFragment;-><init>()V
 
-    .line 11
+    .line 13
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 14
+    .line 7
     sget-object v2, Lcom/whatsapp/DialogToastFragmentActivity$MessageDialogFragment;->z:[Ljava/lang/String;
 
     const/4 v3, 0x3
@@ -225,10 +227,10 @@
 
     invoke-virtual {v1, v2, p0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 4
+    .line 16
     invoke-virtual {v0, v1}, Landroid/support/v4/app/DialogFragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 15
+    .line 3
     return-object v0
 .end method
 
@@ -236,29 +238,29 @@
     .locals 4
 
     .prologue
-    .line 22
+    .line 20
     new-instance v0, Lcom/whatsapp/DialogToastFragmentActivity$MessageDialogFragment;
 
     invoke-direct {v0}, Lcom/whatsapp/DialogToastFragmentActivity$MessageDialogFragment;-><init>()V
 
-    .line 20
+    .line 18
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 2
+    .line 8
     sget-object v2, Lcom/whatsapp/DialogToastFragmentActivity$MessageDialogFragment;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x0
+    const/4 v3, 0x2
 
     aget-object v2, v2, v3
 
     invoke-virtual {v1, v2, p0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
+    .line 12
     invoke-virtual {v0, v1}, Landroid/support/v4/app/DialogFragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 12
+    .line 15
     return-object v0
 .end method
 
@@ -283,17 +285,17 @@
 
     move-result v1
 
-    .line 18
+    .line 6
     if-nez v1, :cond_0
 
-    .line 21
+    .line 2
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastFragmentActivity$MessageDialogFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
     sget-object v2, Lcom/whatsapp/DialogToastFragmentActivity$MessageDialogFragment;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x2
+    const/4 v3, 0x0
 
     aget-object v2, v2, v3
 
@@ -301,17 +303,17 @@
 
     move-result-object v0
 
-    sget-boolean v2, Lcom/whatsapp/App;->aL:Z
+    sget v2, Lcom/whatsapp/App;->h:I
 
     if-eqz v2, :cond_1
 
-    .line 8
+    .line 21
     :cond_0
     invoke-virtual {p0, v1}, Lcom/whatsapp/DialogToastFragmentActivity$MessageDialogFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 13
+    .line 5
     :cond_1
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
@@ -321,7 +323,7 @@
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 3
+    .line 22
     invoke-virtual {v1, v0}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
@@ -331,18 +333,18 @@
 
     move-result-object v0
 
-    const v1, 0x7f0e02aa
+    const v1, 0x7f0e02b7
 
-    new-instance v2, Lcom/whatsapp/ve;
+    new-instance v2, Lcom/whatsapp/arg;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/ve;-><init>(Lcom/whatsapp/DialogToastFragmentActivity$MessageDialogFragment;)V
+    invoke-direct {v2, p0}, Lcom/whatsapp/arg;-><init>(Lcom/whatsapp/DialogToastFragmentActivity$MessageDialogFragment;)V
 
-    .line 5
+    .line 4
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 7
+    .line 11
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0

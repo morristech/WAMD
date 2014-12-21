@@ -123,7 +123,7 @@
         <item quantity="other">เหลืออีก %d</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">ท่านสามารถใช้งานได้แล้ว เราได้กู้ข้อความคืนจำนวน %,d ขัอความเรียบร้อยแล้ว</item>
+        <item quantity="other">%,d ข้อความถูกกู้คืน คุณดำเนินการต่อได้</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">กำลังส่งวิดีโอ %1$d ไฟล์ไปยัง %2$s</item>

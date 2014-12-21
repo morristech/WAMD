@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 6
+    .line 1
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupScrollListener;->this$0:Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -27,7 +27,7 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 2
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupScrollListener;-><init>(Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;)V
 
     return-void
@@ -39,7 +39,7 @@
     .locals 0
 
     .prologue
-    .line 7
+    .line 8
     return-void
 .end method
 
@@ -47,14 +47,14 @@
     .locals 2
 
     .prologue
-    .line 8
+    .line 7
     const/4 v0, 0x1
 
     if-ne p2, v0, :cond_0
 
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupScrollListener;->this$0:Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;
 
-    .line 5
+    .line 6
     invoke-static {v0}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;->access$1100(Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;)Z
 
     move-result v0
@@ -73,7 +73,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1
+    .line 5
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupScrollListener;->this$0:Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;
 
     invoke-static {v0}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;->access$1000(Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;)Landroid/os/Handler;
@@ -88,7 +88,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 3
+    .line 4
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupScrollListener;->this$0:Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;
 
     invoke-static {v0}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;->access$900(Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;)Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$ResizePopupRunnable;
@@ -97,7 +97,7 @@
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$ResizePopupRunnable;->run()V
 
-    .line 2
+    .line 3
     :cond_0
     return-void
 .end method

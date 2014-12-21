@@ -67,14 +67,6 @@
     <string name="audio_note_tip">押したまま録音、放して送信</string>
     <string name="audio_note_tip_2">もっと長いメッセージを録音してください</string>
     <string name="audio_note_top_mic_tip">端末上部のマイクに向かって話してください</string>
-    <string name="auth_client_needs_enabling_title">アプリではGoogle Play開発者サービスを有効にする必要があります。</string>
-    <string name="auth_client_needs_installation_title">アプリではGoogle Play開発者サービスをインストールする必要があります。</string>
-    <string name="auth_client_needs_update_title">アプリではGoogle Play開発者サービスをアップデートする必要があります。</string>
-    <string name="auth_client_play_services_err_notification_msg">Google Play開発者サービスのエラー</string>
-    <string name="auth_client_requested_by_msg">%1$sによるリクエスト</string>
-    <string name="auth_client_using_bad_version_title">アプリはGoogle Play開発者サービスの不適切なバージョンを使用しようとしました。</string>
-    <string name="barcode_scanner_dialog_body">このアプリケーションは、バーコードスキャナーのインストールを必要としています。インストールしますか?</string>
-    <string name="barcode_scanner_dialog_title">バーコードスキャナーをインストールしますか?</string>
     <string name="block">ブロック</string>
     <string name="block_ask">この連絡先をブロックしますか?</string>
     <string name="block_list_desc_1">"右上のアイコンをタップして、ブロックする連絡先を選択してください。
@@ -152,23 +144,32 @@
     <string name="color_red">赤</string>
     <string name="color_white">白</string>
     <string name="color_yellow">黄</string>
+    <string name="common_android_wear_notification_needs_update_text">Android Wearアプリの更新が必要です。</string>
+    <string name="common_android_wear_update_text">Android Wearアプリを使用するにはアプリの更新が必要です。</string>
+    <string name="common_android_wear_update_title">Android Wearの更新</string>
     <string name="common_google_play_services_enable_button">Play開発者サービスの有効化</string>
     <string name="common_google_play_services_enable_text">このアプリの実行には、Google Play開発者サービスの有効化が必要です。</string>
     <string name="common_google_play_services_enable_title">Play開発者サービスの有効化</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$sによるリクエスト</string>
     <string name="common_google_play_services_install_button">Play開発者サービスの入手</string>
     <string name="common_google_play_services_install_text_phone">このアプリの実行にはGoogle Play開発者サービスが必要ですが、お使いの携帯端末にはインストールされていません。</string>
     <string name="common_google_play_services_install_text_tablet">このアプリの実行にはGoogle Play開発者サービスが必要ですが、お使いのタブレットにはインストールされていません。</string>
     <string name="common_google_play_services_install_title">Play開発者サービスの入手</string>
     <string name="common_google_play_services_invalid_account_text">指定したアカウントはこの端末上に存在しません。別のアカウントを選択してください。</string>
     <string name="common_google_play_services_invalid_account_title">無効なアカウント</string>
+    <string name="common_google_play_services_needs_enabling_title">アプリではGoogle Play開発者サービスを有効にする必要があります</string>
     <string name="common_google_play_services_network_error_text">Google Play開発者サービスに接続するには、データ接続が必要です。</string>
     <string name="common_google_play_services_network_error_title">ネットワークエラー</string>
+    <string name="common_google_play_services_notification_needs_installation_title">アプリではGoogle Play開発者サービスをインストールする必要があります</string>
+    <string name="common_google_play_services_notification_needs_update_title">アプリではGoogle Play開発者サービスを更新する必要があります</string>
+    <string name="common_google_play_services_notification_ticker">Google Play開発者サービスのエラー</string>
     <string name="common_google_play_services_unknown_issue">Google Play開発者サービスで原因不明の問題が発生しました。</string>
     <string name="common_google_play_services_unsupported_text">一部のアプリが使用しているGoogle Play開発者サービスは、お使いの端末ではサポートされていません。詳しくは、端末メーカーまでお問い合わせください。</string>
     <string name="common_google_play_services_unsupported_title">Google Play開発者サービス</string>
     <string name="common_google_play_services_update_button">更新</string>
     <string name="common_google_play_services_update_text">このアプリの実行には、Google Play開発者サービスの更新が必要です。</string>
     <string name="common_google_play_services_update_title">Play開発者サービスの更新</string>
+    <string name="common_open_on_phone">端末で開く</string>
     <string name="common_signin_button_text">ログイン</string>
     <string name="common_signin_button_text_long">Googleでログイン</string>
     <string name="confirm_forward_msg">%sに転送しますか？</string>
@@ -338,7 +339,6 @@
     <string name="eula_agree">同意して続行</string>
     <string name="eula_description">世界中の友達とのクロスプラットフォームアプリ</string>
     <string name="eula_tablets_not_supported">注意：タブレットには対応しておりません。</string>
-    <string name="eula_title">WhatsAppへようこそ!</string>
     <string name="existing_contact">既存の連絡先に追加</string>
     <string name="extended_service_expiration">サービス有効期限が%1$sに延長されました。</string>
     <string name="extension_active">"日ごろ感謝をこめて、サービス有効期限を%sまで延長いたします。
@@ -538,7 +538,6 @@ WhatsAppはひとつの電話番号につきひとつの端末にしかインス
     <string name="menuitem_add">追加</string>
     <string name="menuitem_contacts">連絡先</string>
     <string name="menuitem_debug">デバッグ</string>
-    <string name="menuitem_delete_qr">QRコードを削除</string>
     <string name="menuitem_groupchat">新規グループ</string>
     <string name="menuitem_mute">消音</string>
     <string name="menuitem_mute_off">消音解除</string>
@@ -573,14 +572,10 @@ WhatsAppはひとつの電話番号につきひとつの端末にしかインス
     <string name="msg_store_backup_failed">メッセージのバックアップに失敗しました</string>
     <string name="msg_store_backup_failed_try_again_later">メッセージをバックアップすることができませんでした。しばらくしてから再度お試しください。</string>
     <string name="msg_store_backup_found">バックアップファイルが見つかりました。</string>
-    <string name="msg_store_backup_found_registration">チャット履歴のバックアップが見つかりました。</string>
     <string name="msg_store_backup_skipped">バックアップの作成をスキップしました</string>
     <string name="msg_store_backup_skipped_no_media">メディアカードが見つからないため、メッセージのバックアップの作成をスキップしました。</string>
     <string name="msg_store_backup_skipped_read_only_media">メディアカードが読み取り専用のため、メッセージのバックアップが省略されました。</string>
     <string name="msg_store_confirm">確認</string>
-    <string name="msg_store_creation_backup_message">チャット履歴をバックアップから復元しますか?</string>
-    <string name="msg_store_do_not_restore">復元しない</string>
-    <string name="msg_store_do_not_restore_no_thanks">いいえ</string>
     <string name="msg_store_error_found">エラーが発生しました。WhatsAppを再起動してください。</string>
     <string name="msg_store_error_not_restored">申し訳ございませんが、メッセージ履歴のバックアップを復元することができませんでした。</string>
     <string name="msg_store_last_confirmation_not_to_restore">これまでのメッセージが失われます。チャット履歴をバックアップから復元しなくてもよろしいですか?</string>
@@ -607,9 +602,6 @@ WhatsAppはひとつの電話番号につきひとつの端末にしかインス
     <string name="need_sd_card_shared_storage">USBストレージをオフにして再度お試しください。</string>
     <string name="network_required">インターネットに接続されていません。</string>
     <string name="network_usage_ask_reset_message">統計情報をリセットしてもよろしいですか?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">前回のリセット: %1$s</string>
     <string name="network_usage_media_bytes_received">受信メディアのバイト数:</string>
     <string name="network_usage_media_bytes_sent">送信メディアのバイト数:</string>
@@ -954,16 +946,7 @@ Sent by WhatsApp"</string>
     <string name="software_expired_get_from_play">このバージョンは古いため使用不可能です。Google Playから最新版をダウンロードしてください。</string>
     <string name="software_expired_get_from_play_with_date">このバージョンは&lt;b>%1$s&lt;/b>をもって旧バージョンとなりました。Google Playで最新バージョンをダウンロードしてください。&lt;br>&lt;br> ご利用の端末の日付は&lt;b>%2$s&lt;/b>です。正しくない場合は端末の日付設定を調整してからWhatsAppを再起動してください。</string>
     <string name="software_expired_with_date">このバージョンは&lt;b>%1$s&lt;/b>をもって旧バージョンとなりました。「ダウンロード」をタップして最新バージョンを入手してください。&lt;br>&lt;br> ご利用の端末の日付は&lt;b>%2$s&lt;/b>です。正しくない場合は端末の日付設定を調整してからWhatsAppを再起動してください。</string>
-    <string name="spam_generic">"利用規約に違反されたため、一時的にWhatsAppのご利用が規制されています。
-次の期間が過ぎてから再度WhatsAppのご利用が可能です："</string>
     <string name="spam_title">一時的にご利用が規制されています</string>
-    <string name="spam_too_many_blocks">ブロックされ過ぎてしまったため、一時的にWhatsAppのご利用が規制されています。</string>
-    <string name="spam_too_many_groups">"あなたの連絡先がアドレス帳に登録されていない人とのグループを作成しすぎたため、一時的にWhatsAppのご利用を規制されています。
-次の期間が過ぎてから再度WhatsAppのご利用が可能です："</string>
-    <string name="spam_too_many_messages">"あなたの連絡先がアドレス帳に登録されていない人にメッセージを送りすぎたため、一時的にWhatsAppのご利用が規制されています。
-次の期間が過ぎてから再度WhatsAppのご利用が可能です："</string>
-    <string name="spam_too_many_people">"同じメッセージを大勢に送りすぎたため、一時的にWhatsAppのご利用を規制されています。
-次の期間が過ぎてから再度WhatsAppのご利用が可能です："</string>
     <string name="status">ステータス</string>
     <string name="status_default_at_gym">ジムなう</string>
     <string name="status_default_at_movies">映画館なう</string>

@@ -3,20 +3,20 @@
 .source "nw.java"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/Conversation;
+.field final a:Lcom/whatsapp/ara;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/Conversation;)V
+.method constructor <init>(Lcom/whatsapp/ara;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/nw;->a:Lcom/whatsapp/Conversation;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/nw;->a:Lcom/whatsapp/ara;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,60 +25,42 @@
 
 
 # virtual methods
-.method public a(Lcom/whatsapp/protocol/ae;Lcom/whatsapp/protocol/ae;)I
-    .locals 4
-
-    .prologue
-    .line 7
-    iget-wide v0, p1, Lcom/whatsapp/protocol/ae;->n:J
-
-    iget-wide v2, p2, Lcom/whatsapp/protocol/ae;->n:J
-
-    cmp-long v0, v0, v2
-
-    if-nez v0, :cond_0
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 5
-    :goto_0
-    return v0
-
-    .line 6
-    :cond_0
-    iget-wide v0, p1, Lcom/whatsapp/protocol/ae;->n:J
-
-    iget-wide v2, p2, Lcom/whatsapp/protocol/ae;->n:J
-
-    cmp-long v0, v0, v2
-
-    if-gez v0, :cond_1
-
-    .line 3
-    const/4 v0, -0x1
-
-    goto :goto_0
-
-    .line 5
-    :cond_1
-    const/4 v0, 0x1
-
-    goto :goto_0
-.end method
-
-.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 1
+.method public onGlobalLayout()V
+    .locals 2
 
     .prologue
     .line 4
-    check-cast p1, Lcom/whatsapp/protocol/ae;
+    iget-object v0, p0, Lcom/whatsapp/nw;->a:Lcom/whatsapp/ara;
 
-    check-cast p2, Lcom/whatsapp/protocol/ae;
+    iget-object v0, v0, Lcom/whatsapp/ara;->a:Lcom/whatsapp/y3;
 
-    invoke-virtual {p0, p1, p2}, Lcom/whatsapp/nw;->a(Lcom/whatsapp/protocol/ae;Lcom/whatsapp/protocol/ae;)I
+    iget-object v0, v0, Lcom/whatsapp/y3;->b:Lcom/whatsapp/ConversationsFragment;
 
-    move-result v0
+    invoke-static {v0}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/ConversationsFragment;)Landroid/widget/ListView;
 
-    return v0
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/widget/ListView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeGlobalOnLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/nw;->a:Lcom/whatsapp/ara;
+
+    iget-object v0, v0, Lcom/whatsapp/ara;->a:Lcom/whatsapp/y3;
+
+    iget-object v0, v0, Lcom/whatsapp/y3;->b:Lcom/whatsapp/ConversationsFragment;
+
+    iget-object v1, p0, Lcom/whatsapp/nw;->a:Lcom/whatsapp/ara;
+
+    iget-object v1, v1, Lcom/whatsapp/ara;->a:Lcom/whatsapp/y3;
+
+    iget v1, v1, Lcom/whatsapp/y3;->a:I
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/ConversationsFragment;->c(I)V
+
+    .line 1
+    return-void
 .end method

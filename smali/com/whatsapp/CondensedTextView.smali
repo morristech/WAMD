@@ -14,15 +14,15 @@
     .locals 1
 
     .prologue
-    .line 31
+    .line 38
     invoke-direct {p0, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 39
+    .line 41
     const v0, 0x3f4ccccd
 
     iput v0, p0, Lcom/whatsapp/CondensedTextView;->a:F
 
-    .line 28
+    .line 26
     return-void
 .end method
 
@@ -30,15 +30,15 @@
     .locals 1
 
     .prologue
-    .line 41
+    .line 42
     invoke-direct {p0, p1, p2}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 13
+    .line 3
     const v0, 0x3f4ccccd
 
     iput v0, p0, Lcom/whatsapp/CondensedTextView;->a:F
 
-    .line 6
+    .line 30
     return-void
 .end method
 
@@ -46,15 +46,15 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 24
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 26
+    .line 37
     const v0, 0x3f4ccccd
 
     iput v0, p0, Lcom/whatsapp/CondensedTextView;->a:F
 
-    .line 42
+    .line 33
     return-void
 .end method
 
@@ -64,9 +64,9 @@
     .prologue
     const/high16 v5, 0x3f800000
 
-    sget-boolean v2, Lcom/whatsapp/App;->aL:Z
+    sget v2, Lcom/whatsapp/App;->h:I
 
-    .line 8
+    .line 2
     iget-object v0, p0, Lcom/whatsapp/CondensedTextView;->b:Landroid/text/TextPaint;
 
     if-eqz v0, :cond_0
@@ -89,7 +89,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 40
+    .line 39
     :cond_0
     new-instance v0, Landroid/text/TextPaint;
 
@@ -101,12 +101,12 @@
 
     iput-object v0, p0, Lcom/whatsapp/CondensedTextView;->b:Landroid/text/TextPaint;
 
-    .line 4
+    .line 12
     iget-object v0, p0, Lcom/whatsapp/CondensedTextView;->b:Landroid/text/TextPaint;
 
     invoke-virtual {v0, v5}, Landroid/text/TextPaint;->setTextScaleX(F)V
 
-    .line 27
+    .line 16
     :cond_1
     iget-object v0, p0, Lcom/whatsapp/CondensedTextView;->b:Landroid/text/TextPaint;
 
@@ -114,14 +114,14 @@
 
     move-result v0
 
-    .line 14
+    .line 44
     const/4 v1, 0x0
 
     cmpl-float v1, v0, v1
 
     if-lez v1, :cond_5
 
-    .line 33
+    .line 13
     invoke-virtual {p0}, Lcom/whatsapp/CondensedTextView;->getMeasuredWidth()I
 
     move-result v1
@@ -138,30 +138,30 @@
 
     sub-int v3, v1, v3
 
-    .line 10
+    .line 25
     if-lez v3, :cond_5
 
-    .line 29
+    .line 36
     int-to-float v1, v3
 
     div-float v0, v1, v0
 
-    .line 22
+    .line 9
     cmpg-float v1, v0, v5
 
     if-gez v1, :cond_4
 
-    .line 7
+    .line 14
     iget v1, p0, Lcom/whatsapp/CondensedTextView;->a:F
 
     invoke-static {v1, v0}, Ljava/lang/Math;->max(FF)F
 
     move-result v1
 
-    .line 24
+    .line 15
     invoke-virtual {p0, v1}, Lcom/whatsapp/CondensedTextView;->setTextScaleX(F)V
 
-    .line 30
+    .line 10
     invoke-virtual {p0}, Lcom/whatsapp/CondensedTextView;->getPaint()Landroid/text/TextPaint;
 
     move-result-object v0
@@ -170,7 +170,7 @@
 
     move-result v0
 
-    .line 37
+    .line 43
     :cond_2
     int-to-float v4, v3
 
@@ -184,15 +184,15 @@
 
     if-lez v0, :cond_3
 
-    .line 25
+    .line 11
     const v0, 0x3f7d70a4
 
     mul-float/2addr v1, v0
 
-    .line 34
+    .line 40
     invoke-virtual {p0, v1}, Lcom/whatsapp/CondensedTextView;->setTextScaleX(F)V
 
-    .line 17
+    .line 45
     invoke-virtual {p0}, Lcom/whatsapp/CondensedTextView;->getPaint()Landroid/text/TextPaint;
 
     move-result-object v0
@@ -203,21 +203,21 @@
 
     if-eqz v2, :cond_2
 
-    .line 45
+    .line 6
     :cond_3
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/CondensedTextView;->setSingleLine(Z)V
 
-    .line 35
+    .line 1
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/CondensedTextView;->setHorizontallyScrolling(Z)V
 
-    .line 21
+    .line 23
     if-eqz v2, :cond_5
 
-    .line 11
+    .line 17
     :cond_4
     invoke-virtual {p0}, Lcom/whatsapp/CondensedTextView;->getTextScaleX()F
 
@@ -227,10 +227,10 @@
 
     if-eqz v0, :cond_5
 
-    .line 23
+    .line 35
     invoke-virtual {p0, v5}, Lcom/whatsapp/CondensedTextView;->setTextScaleX(F)V
 
-    .line 1
+    .line 31
     :cond_5
     return-void
 .end method
@@ -241,15 +241,15 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 28
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->onSizeChanged(IIII)V
 
-    .line 3
+    .line 5
     if-ne p1, p3, :cond_0
 
     if-eq p2, p4, :cond_1
 
-    .line 19
+    .line 20
     :cond_0
     invoke-virtual {p0}, Lcom/whatsapp/CondensedTextView;->getText()Ljava/lang/CharSequence;
 
@@ -261,7 +261,7 @@
 
     invoke-direct {p0, v0}, Lcom/whatsapp/CondensedTextView;->a(Ljava/lang/String;)V
 
-    .line 43
+    .line 22
     :cond_1
     return-void
 .end method
@@ -270,10 +270,10 @@
     .locals 1
 
     .prologue
-    .line 32
+    .line 21
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->onTextChanged(Ljava/lang/CharSequence;III)V
 
-    .line 38
+    .line 32
     invoke-virtual {p0}, Lcom/whatsapp/CondensedTextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -284,7 +284,7 @@
 
     invoke-direct {p0, v0}, Lcom/whatsapp/CondensedTextView;->a(Ljava/lang/String;)V
 
-    .line 44
+    .line 27
     return-void
 .end method
 
@@ -292,17 +292,17 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 7
     invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
 
-    .line 9
+    .line 29
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Lcom/whatsapp/CondensedTextView;->a(Ljava/lang/String;)V
 
-    .line 36
+    .line 34
     return-void
 .end method
 
@@ -310,10 +310,10 @@
     .locals 2
 
     .prologue
-    .line 15
+    .line 18
     invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 20
+    .line 8
     iget-object v0, p0, Lcom/whatsapp/CondensedTextView;->b:Landroid/text/TextPaint;
 
     invoke-virtual {p0}, Lcom/whatsapp/CondensedTextView;->getPaint()Landroid/text/TextPaint;
@@ -326,7 +326,7 @@
 
     invoke-virtual {v0, v1}, Landroid/text/TextPaint;->setTextSize(F)V
 
-    .line 18
+    .line 19
     invoke-virtual {p0}, Lcom/whatsapp/CondensedTextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -337,6 +337,6 @@
 
     invoke-direct {p0, v0}, Lcom/whatsapp/CondensedTextView;->a(Ljava/lang/String;)V
 
-    .line 16
+    .line 4
     return-void
 .end method

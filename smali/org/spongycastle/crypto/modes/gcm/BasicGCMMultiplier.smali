@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 4
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/gcm/BasicGCMMultiplier;->H:[B
 
     invoke-static {p1, v0}, Lorg/spongycastle/crypto/modes/gcm/GCMUtil;->multiply([B[B)V
 
-    .line 4
+    .line 2
     return-void
 .end method

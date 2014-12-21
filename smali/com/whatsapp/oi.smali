@@ -1,6 +1,9 @@
 .class Lcom/whatsapp/oi;
-.super Lcom/whatsapp/util/at;
+.super Ljava/lang/Object;
 .source "oi.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
 
 # static fields
@@ -8,14 +11,14 @@
 
 
 # instance fields
-.field final b:Lcom/whatsapp/ConversationRowMedia;
+.field final a:Lcom/whatsapp/VerifySms;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "*fEWm=\'OVu\'kDXfijN]k(\'F\\q:fL\\\">n_Q\"\'h\u000bTg-nJ\u0019c=sJZj,c"
+    const-string v0, "m}dPAbk{J\u0008~|\u007fM"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -53,7 +56,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/4 v0, 0x2
+    const/16 v0, 0x27
 
     :goto_1
     xor-int/2addr v0, v4
@@ -69,17 +72,17 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x49
+    const/16 v0, 0x1b
 
     goto :goto_1
 
     :pswitch_1
-    const/4 v0, 0x7
+    const/16 v0, 0x18
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x2b
+    const/16 v0, 0x16
 
     goto :goto_1
 
@@ -97,72 +100,34 @@
     .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/whatsapp/ConversationRowMedia;)V
+.method constructor <init>(Lcom/whatsapp/VerifySms;)V
     .locals 0
 
     .prologue
-    .line 5
-    iput-object p1, p0, Lcom/whatsapp/oi;->b:Lcom/whatsapp/ConversationRowMedia;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/oi;->a:Lcom/whatsapp/VerifySms;
 
-    invoke-direct {p0}, Lcom/whatsapp/util/at;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/view/View;)V
-    .locals 3
+.method public onClick(Landroid/view/View;)V
+    .locals 1
 
     .prologue
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/oi;->b:Lcom/whatsapp/ConversationRowMedia;
-
-    iget-object v0, v0, Lcom/whatsapp/ConversationRowMedia;->C:Lcom/whatsapp/protocol/ae;
-
-    iget-object v0, v0, Lcom/whatsapp/protocol/ae;->u:Ljava/lang/String;
-
-    if-eqz v0, :cond_0
-
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/oi;->b:Lcom/whatsapp/ConversationRowMedia;
-
-    invoke-virtual {v0}, Lcom/whatsapp/ConversationRowMedia;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/Activity;
-
-    iget-object v1, p0, Lcom/whatsapp/oi;->b:Lcom/whatsapp/ConversationRowMedia;
-
-    iget-object v1, v1, Lcom/whatsapp/ConversationRowMedia;->C:Lcom/whatsapp/protocol/ae;
-
-    invoke-static {v0, v1}, Lcom/whatsapp/App;->a(Landroid/app/Activity;Lcom/whatsapp/protocol/ae;)V
-
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
-
-    if-eqz v0, :cond_1
-
     .line 2
-    :cond_0
     sget-object v0, Lcom/whatsapp/oi;->z:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 6
-    iget-object v0, p0, Lcom/whatsapp/oi;->b:Lcom/whatsapp/ConversationRowMedia;
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/oi;->a:Lcom/whatsapp/VerifySms;
 
-    invoke-virtual {v0}, Lcom/whatsapp/ConversationRowMedia;->getContext()Landroid/content/Context;
+    invoke-static {v0}, Lcom/whatsapp/VerifySms;->m(Lcom/whatsapp/VerifySms;)V
 
-    move-result-object v0
-
-    const v1, 0x7f0e0206
-
-    const/4 v2, 0x0
-
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
-
-    .line 4
-    :cond_1
+    .line 1
     return-void
 .end method

@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,7 +23,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 1
     new-instance v0, Landroid/support/v4/view/ViewPager$SavedState;
 
     invoke-direct {v0, p1, p2}, Landroid/support/v4/view/ViewPager$SavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
@@ -35,7 +35,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 2
     invoke-virtual {p0, p1, p2}, Landroid/support/v4/view/ViewPager$SavedState$1;->createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Landroid/support/v4/view/ViewPager$SavedState;
 
     move-result-object v0
@@ -47,7 +47,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 5
     new-array v0, p1, [Landroid/support/v4/view/ViewPager$SavedState;
 
     return-object v0
@@ -57,7 +57,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 3
     invoke-virtual {p0, p1}, Landroid/support/v4/view/ViewPager$SavedState$1;->newArray(I)[Landroid/support/v4/view/ViewPager$SavedState;
 
     move-result-object v0

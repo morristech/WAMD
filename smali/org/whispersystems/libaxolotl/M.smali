@@ -1,513 +1,1048 @@
-.class public abstract Lorg/whispersystems/libaxolotl/M;
-.super Ljava/lang/Object;
+.class public final Lorg/whispersystems/libaxolotl/M;
+.super Lcom/google/a1;
 .source "M.java"
+
+# interfaces
+.implements Lorg/whispersystems/libaxolotl/aG;
 
 
 # static fields
-.field public static a:I
+.field public static final ITERATION_FIELD_NUMBER:I = 0x1
 
-.field private static final z:[Ljava/lang/String;
+.field public static PARSER:Lcom/google/cU; = null
+
+.field public static final SEED_FIELD_NUMBER:I = 0x2
+
+.field private static final h:Lorg/whispersystems/libaxolotl/M;
+
+.field private static final serialVersionUID:J
+
+
+# instance fields
+.field private e:I
+
+.field private final f:Lcom/google/bI;
+
+.field private g:Lcom/google/cA;
+
+.field private i:B
+
+.field private j:I
+
+.field private k:I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 14
+    .locals 2
 
-    const/16 v9, 0xd
+    .prologue
+    .line 44
+    new-instance v0, Lorg/whispersystems/libaxolotl/aP;
 
-    const/4 v4, 0x3
+    invoke-direct {v0}, Lorg/whispersystems/libaxolotl/aP;-><init>()V
 
-    const/4 v3, 0x2
+    sput-object v0, Lorg/whispersystems/libaxolotl/M;->PARSER:Lcom/google/cU;
 
-    const/4 v2, 0x1
+    .line 43
+    new-instance v0, Lorg/whispersystems/libaxolotl/M;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
-    const/4 v0, 0x5
+    invoke-direct {v0, v1}, Lorg/whispersystems/libaxolotl/M;-><init>(Z)V
 
-    new-array v6, v0, [Ljava/lang/String;
+    sput-object v0, Lorg/whispersystems/libaxolotl/M;->h:Lorg/whispersystems/libaxolotl/M;
 
-    const-string v5, "XhNqbzh\u0005ih\u007fuLpc7&"
+    .line 3
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->h:Lorg/whispersystems/libaxolotl/M;
+
+    invoke-direct {v0}, Lorg/whispersystems/libaxolotl/M;->i()V
+
+    .line 10
+    return-void
+.end method
+
+.method private constructor <init>(Lcom/google/Q;)V
+    .locals 1
+
+    .prologue
+    const/4 v0, -0x1
+
+    .line 68
+    invoke-direct {p0, p1}, Lcom/google/a1;-><init>(Lcom/google/Q;)V
+
+    .line 75
+    iput-byte v0, p0, Lorg/whispersystems/libaxolotl/M;->i:B
+
+    .line 33
+    iput v0, p0, Lorg/whispersystems/libaxolotl/M;->e:I
+
+    .line 95
+    invoke-virtual {p1}, Lcom/google/Q;->a()Lcom/google/bI;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lorg/whispersystems/libaxolotl/M;->f:Lcom/google/bI;
+
+    .line 2
+    return-void
+.end method
+
+.method constructor <init>(Lcom/google/Q;Lorg/whispersystems/libaxolotl/e;)V
+    .locals 0
+
+    .prologue
+    .line 88
+    invoke-direct {p0, p1}, Lorg/whispersystems/libaxolotl/M;-><init>(Lcom/google/Q;)V
+
+    return-void
+.end method
+
+.method private constructor <init>(Lcom/google/ft;Lcom/google/o;)V
+    .locals 5
+
+    .prologue
+    const/4 v1, 0x1
 
     const/4 v0, -0x1
 
-    move-object v7, v6
+    sget v2, Lorg/whispersystems/libaxolotl/O;->g:I
 
-    move-object v8, v6
+    .line 18
+    invoke-direct {p0}, Lcom/google/a1;-><init>()V
 
-    move v6, v1
+    .line 7
+    iput-byte v0, p0, Lorg/whispersystems/libaxolotl/M;->i:B
 
+    .line 56
+    iput v0, p0, Lorg/whispersystems/libaxolotl/M;->e:I
+
+    .line 12
+    invoke-direct {p0}, Lorg/whispersystems/libaxolotl/M;->i()V
+
+    .line 80
+    invoke-static {}, Lcom/google/bI;->d()Lcom/google/gT;
+
+    move-result-object v3
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 45
+    :cond_0
+    if-nez v0, :cond_2
+
+    .line 107
+    :try_start_0
+    invoke-virtual {p1}, Lcom/google/ft;->l()I
+    :try_end_0
+    .catch Lcom/google/eM; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_4
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    move-result v4
+
+    .line 15
+    sparse-switch v4, :sswitch_data_0
+
+    .line 13
     :goto_0
-    invoke-virtual {v5}, Ljava/lang/String;->toCharArray()[C
+    :try_start_1
+    invoke-virtual {p0, p1, v3, p2, v4}, Lorg/whispersystems/libaxolotl/M;->a(Lcom/google/ft;Lcom/google/gT;Lcom/google/o;I)Z
+    :try_end_1
+    .catch Lcom/google/eM; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_4
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    move-result-object v5
+    move-result v4
 
-    array-length v10, v5
+    if-nez v4, :cond_1
 
-    move v11, v10
+    .line 90
+    if-eqz v2, :cond_3
 
-    move v12, v1
+    move v0, v1
 
-    move-object v10, v5
+    .line 89
+    :sswitch_0
+    :try_start_2
+    iget v4, p0, Lorg/whispersystems/libaxolotl/M;->j:I
 
+    or-int/lit8 v4, v4, 0x1
+
+    iput v4, p0, Lorg/whispersystems/libaxolotl/M;->j:I
+
+    .line 57
+    invoke-virtual {p1}, Lcom/google/ft;->n()I
+
+    move-result v4
+
+    iput v4, p0, Lorg/whispersystems/libaxolotl/M;->k:I
+    :try_end_2
+    .catch Lcom/google/eM; {:try_start_2 .. :try_end_2} :catch_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_4
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 37
+    if-eqz v2, :cond_1
+
+    .line 86
+    :sswitch_1
+    :try_start_3
+    iget v4, p0, Lorg/whispersystems/libaxolotl/M;->j:I
+
+    or-int/lit8 v4, v4, 0x2
+
+    iput v4, p0, Lorg/whispersystems/libaxolotl/M;->j:I
+
+    .line 24
+    invoke-virtual {p1}, Lcom/google/ft;->w()Lcom/google/cA;
+
+    move-result-object v4
+
+    iput-object v4, p0, Lorg/whispersystems/libaxolotl/M;->g:Lcom/google/cA;
+    :try_end_3
+    .catch Lcom/google/eM; {:try_start_3 .. :try_end_3} :catch_3
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_4
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 28
+    :cond_1
     :goto_1
-    if-gt v11, v12, :cond_0
+    if-eqz v2, :cond_0
 
-    new-instance v5, Ljava/lang/String;
+    .line 64
+    :cond_2
+    invoke-virtual {v3}, Lcom/google/gT;->g()Lcom/google/bI;
 
-    invoke-direct {v5, v10}, Ljava/lang/String;-><init>([C)V
+    move-result-object v0
 
-    invoke-virtual {v5}, Ljava/lang/String;->intern()Ljava/lang/String;
+    iput-object v0, p0, Lorg/whispersystems/libaxolotl/M;->f:Lcom/google/bI;
 
-    move-result-object v5
+    .line 51
+    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/M;->e()V
 
-    packed-switch v0, :pswitch_data_0
+    .line 60
+    return-void
 
-    aput-object v5, v7, v6
-
-    const-string v0, "EkD|^EG\u0017*;"
-
-    move-object v5, v0
-
-    move v6, v2
-
-    move-object v7, v8
+    .line 63
+    :sswitch_2
+    if-eqz v2, :cond_3
 
     move v0, v1
 
     goto :goto_0
 
-    :pswitch_0
-    aput-object v5, v7, v6
-
-    const-string v0, "EkD|^EG\u0017*;"
-
-    move-object v5, v0
-
-    move v6, v3
-
-    move-object v7, v8
-
-    move v0, v2
-
-    goto :goto_0
-
-    :pswitch_1
-    aput-object v5, v7, v6
-
-    const-string v0, "EkD|^EG\u0017*;"
-
-    move-object v5, v0
-
-    move v6, v4
-
-    move-object v7, v8
-
-    move v0, v3
-
-    goto :goto_0
-
-    :pswitch_2
-    aput-object v5, v7, v6
-
-    const/4 v5, 0x4
-
-    const-string v0, "EkD|^EG\u0017*;"
-
-    move v6, v5
-
-    move-object v7, v8
-
-    move-object v5, v0
-
-    move v0, v4
-
-    goto :goto_0
-
-    :pswitch_3
-    aput-object v5, v7, v6
-
-    sput-object v8, Lorg/whispersystems/libaxolotl/M;->z:[Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v13, v10, v12
-
-    rem-int/lit8 v5, v12, 0x5
-
-    packed-switch v5, :pswitch_data_1
-
-    move v5, v9
-
-    :goto_2
-    xor-int/2addr v5, v13
-
-    int-to-char v5, v5
-
-    aput-char v5, v10, v12
-
-    add-int/lit8 v5, v12, 0x1
-
-    move v12, v5
-
-    goto :goto_1
-
-    :pswitch_4
-    move v5, v9
-
-    goto :goto_2
-
-    :pswitch_5
-    const/4 v5, 0x6
-
-    goto :goto_2
-
-    :pswitch_6
-    const/16 v5, 0x25
-
-    goto :goto_2
-
-    :pswitch_7
-    const/16 v5, 0x1f
-
-    goto :goto_2
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-
-    :pswitch_data_1
-    .packed-switch 0x0
-        :pswitch_4
-        :pswitch_5
-        :pswitch_6
-        :pswitch_7
-    .end packed-switch
-.end method
-
-.method public constructor <init>()V
-    .locals 0
-
-    .prologue
-    .line 31
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static a(I)Lorg/whispersystems/libaxolotl/M;
-    .locals 4
-
-    .prologue
-    .line 3
-    packed-switch p0, :pswitch_data_0
-
-    .line 15
-    new-instance v0, Ljava/lang/AssertionError;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v2, Lorg/whispersystems/libaxolotl/M;->z:[Ljava/lang/String;
-
-    const/4 v3, 0x0
-
-    aget-object v2, v2, v3
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
-
-    throw v0
-
-    .line 25
-    :pswitch_0
-    new-instance v0, Lorg/whispersystems/libaxolotl/N;
-
-    invoke-direct {v0}, Lorg/whispersystems/libaxolotl/N;-><init>()V
-
-    .line 29
-    :goto_0
-    return-object v0
-
-    :pswitch_1
-    new-instance v0, Lorg/whispersystems/libaxolotl/O;
-
-    invoke-direct {v0}, Lorg/whispersystems/libaxolotl/O;-><init>()V
-
-    goto :goto_0
-
-    .line 3
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x2
-        :pswitch_0
-        :pswitch_1
-    .end packed-switch
-.end method
-
-.method private a([B[B)[B
-    .locals 4
-
-    .prologue
-    .line 17
-    :try_start_0
-    sget-object v0, Lorg/whispersystems/libaxolotl/M;->z:[Ljava/lang/String;
-
-    const/4 v1, 0x1
-
-    aget-object v0, v0, v1
-
-    invoke-static {v0}, Ljavax/crypto/Mac;->getInstance(Ljava/lang/String;)Ljavax/crypto/Mac;
-
-    move-result-object v0
-
-    .line 30
-    new-instance v1, Ljavax/crypto/spec/SecretKeySpec;
-
-    sget-object v2, Lorg/whispersystems/libaxolotl/M;->z:[Ljava/lang/String;
-
-    const/4 v3, 0x2
-
-    aget-object v2, v2, v3
-
-    invoke-direct {v1, p1, v2}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
-
-    invoke-virtual {v0, v1}, Ljavax/crypto/Mac;->init(Ljava/security/Key;)V
-
-    .line 23
-    invoke-virtual {v0, p2}, Ljavax/crypto/Mac;->doFinal([B)[B
-    :try_end_0
-    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/security/InvalidKeyException; {:try_start_0 .. :try_end_0} :catch_1
-
-    move-result-object v0
-
-    return-object v0
-
-    .line 7
+    .line 13
     :catch_0
+    move-exception v0
+
+    :try_start_4
+    throw v0
+    :try_end_4
+    .catch Lcom/google/eM; {:try_start_4 .. :try_end_4} :catch_1
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+
+    .line 39
+    :catch_1
     move-exception v0
 
     .line 34
-    :goto_0
-    new-instance v1, Ljava/lang/AssertionError;
+    :try_start_5
+    invoke-virtual {v0, p0}, Lcom/google/eM;->a(Lcom/google/gi;)Lcom/google/eM;
 
-    invoke-direct {v1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+    move-result-object v0
 
-    throw v1
+    throw v0
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 7
-    :catch_1
+    .line 5
+    :catchall_0
     move-exception v0
 
-    goto :goto_0
-.end method
-
-.method private a([B[BI)[B
-    .locals 9
-
-    .prologue
-    sget v2, Lorg/whispersystems/libaxolotl/M;->a:I
-
-    .line 32
-    int-to-double v0, p3
-
-    const-wide/high16 v4, 0x4040000000000000L
-
-    div-double/2addr v0, v4
-
-    :try_start_0
-    invoke-static {v0, v1}, Ljava/lang/Math;->ceil(D)D
-
-    move-result-wide v0
-
-    double-to-int v3, v0
-
-    .line 8
-    const/4 v0, 0x0
-
-    new-array v1, v0, [B
-
-    .line 16
-    new-instance v4, Ljava/io/ByteArrayOutputStream;
-
-    invoke-direct {v4}, Ljava/io/ByteArrayOutputStream;-><init>()V
-
-    .line 21
-    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/M;->a()I
-
-    move-result v0
-
-    :cond_0
-    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/M;->a()I
-
-    move-result v5
-
-    add-int/2addr v5, v3
-
-    if-ge v0, v5, :cond_2
-
-    .line 20
-    sget-object v5, Lorg/whispersystems/libaxolotl/M;->z:[Ljava/lang/String;
-
-    const/4 v6, 0x3
-
-    aget-object v5, v5, v6
-
-    invoke-static {v5}, Ljavax/crypto/Mac;->getInstance(Ljava/lang/String;)Ljavax/crypto/Mac;
-    :try_end_0
-    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/security/InvalidKeyException; {:try_start_0 .. :try_end_0} :catch_2
-
-    move-result-object v5
-
-    .line 22
-    :try_start_1
-    new-instance v6, Ljavax/crypto/spec/SecretKeySpec;
-
-    sget-object v7, Lorg/whispersystems/libaxolotl/M;->z:[Ljava/lang/String;
-
-    const/4 v8, 0x4
-
-    aget-object v7, v7, v8
-
-    invoke-direct {v6, p1, v7}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
-
-    invoke-virtual {v5, v6}, Ljavax/crypto/Mac;->init(Ljava/security/Key;)V
-
-    .line 27
-    invoke-virtual {v5, v1}, Ljavax/crypto/Mac;->update([B)V
-
-    .line 1
-    if-eqz p2, :cond_1
-
-    .line 9
-    invoke-virtual {v5, p2}, Ljavax/crypto/Mac;->update([B)V
-    :try_end_1
-    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_1 .. :try_end_1} :catch_0
-    .catch Ljava/security/InvalidKeyException; {:try_start_1 .. :try_end_1} :catch_2
-
-    .line 13
-    :cond_1
-    int-to-byte v1, v0
-
-    :try_start_2
-    invoke-virtual {v5, v1}, Ljavax/crypto/Mac;->update(B)V
-
-    .line 6
-    invoke-virtual {v5}, Ljavax/crypto/Mac;->doFinal()[B
+    invoke-virtual {v3}, Lcom/google/gT;->g()Lcom/google/bI;
 
     move-result-object v1
 
-    .line 14
-    array-length v5, v1
+    iput-object v1, p0, Lorg/whispersystems/libaxolotl/M;->f:Lcom/google/bI;
 
-    invoke-static {p3, v5}, Ljava/lang/Math;->min(II)I
+    .line 40
+    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/M;->e()V
 
-    move-result v5
+    throw v0
 
-    .line 5
-    const/4 v6, 0x0
+    .line 37
+    :catch_2
+    move-exception v0
 
-    invoke-virtual {v4, v1, v6, v5}, Ljava/io/ByteArrayOutputStream;->write([BII)V
+    :try_start_6
+    throw v0
+    :try_end_6
+    .catch Lcom/google/eM; {:try_start_6 .. :try_end_6} :catch_3
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_4
+    .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
-    .line 10
-    sub-int/2addr p3, v5
+    .line 24
+    :catch_3
+    move-exception v0
 
-    .line 2
-    add-int/lit8 v0, v0, 0x1
+    :try_start_7
+    throw v0
+    :try_end_7
+    .catch Lcom/google/eM; {:try_start_7 .. :try_end_7} :catch_1
+    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_4
+    .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
-    if-eqz v2, :cond_0
+    .line 103
+    :catch_4
+    move-exception v0
 
+    .line 16
+    :try_start_8
+    new-instance v1, Lcom/google/eM;
+
+    .line 62
+    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v1, v0}, Lcom/google/eM;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p0}, Lcom/google/eM;->a(Lcom/google/gi;)Lcom/google/eM;
+
+    move-result-object v0
+
+    throw v0
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_0
+
+    :cond_3
+    move v0, v1
+
+    goto :goto_1
+
+    .line 15
+    nop
+
+    :sswitch_data_0
+    .sparse-switch
+        0x0 -> :sswitch_2
+        0x8 -> :sswitch_0
+        0x12 -> :sswitch_1
+    .end sparse-switch
+.end method
+
+.method constructor <init>(Lcom/google/ft;Lcom/google/o;Lorg/whispersystems/libaxolotl/e;)V
+    .locals 0
+
+    .prologue
+    .line 105
+    invoke-direct {p0, p1, p2}, Lorg/whispersystems/libaxolotl/M;-><init>(Lcom/google/ft;Lcom/google/o;)V
+
+    return-void
+.end method
+
+.method private constructor <init>(Z)V
+    .locals 1
+
+    .prologue
+    const/4 v0, -0x1
+
+    .line 11
+    invoke-direct {p0}, Lcom/google/a1;-><init>()V
+
+    .line 35
+    iput-byte v0, p0, Lorg/whispersystems/libaxolotl/M;->i:B
+
+    .line 59
+    iput v0, p0, Lorg/whispersystems/libaxolotl/M;->e:I
+
+    .line 71
+    invoke-static {}, Lcom/google/bI;->a()Lcom/google/bI;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lorg/whispersystems/libaxolotl/M;->f:Lcom/google/bI;
+
+    return-void
+.end method
+
+.method static a(Lorg/whispersystems/libaxolotl/M;I)I
+    .locals 0
+
+    .prologue
+    .line 91
+    iput p1, p0, Lorg/whispersystems/libaxolotl/M;->k:I
+
+    return p1
+.end method
+
+.method static a(Lorg/whispersystems/libaxolotl/M;Lcom/google/cA;)Lcom/google/cA;
+    .locals 0
+
+    .prologue
+    .line 46
+    iput-object p1, p0, Lorg/whispersystems/libaxolotl/M;->g:Lcom/google/cA;
+
+    return-object p1
+.end method
+
+.method public static a(Lcom/google/cA;)Lorg/whispersystems/libaxolotl/M;
+    .locals 1
+
+    .prologue
+    .line 83
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->PARSER:Lcom/google/cU;
+
+    invoke-interface {v0, p0}, Lcom/google/cU;->a(Lcom/google/cA;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/whispersystems/libaxolotl/M;
+
+    return-object v0
+.end method
+
+.method public static a(Lcom/google/cA;Lcom/google/o;)Lorg/whispersystems/libaxolotl/M;
+    .locals 1
+
+    .prologue
     .line 19
-    :cond_2
-    invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->PARSER:Lcom/google/cU;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/cU;->b(Lcom/google/cA;Lcom/google/o;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/whispersystems/libaxolotl/M;
+
+    return-object v0
+.end method
+
+.method public static a(Lcom/google/ft;)Lorg/whispersystems/libaxolotl/M;
+    .locals 1
+
+    .prologue
+    .line 53
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->PARSER:Lcom/google/cU;
+
+    invoke-interface {v0, p0}, Lcom/google/cU;->a(Lcom/google/ft;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/whispersystems/libaxolotl/M;
+
+    return-object v0
+.end method
+
+.method public static a(Lcom/google/ft;Lcom/google/o;)Lorg/whispersystems/libaxolotl/M;
+    .locals 1
+
+    .prologue
+    .line 109
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->PARSER:Lcom/google/cU;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/cU;->a(Lcom/google/ft;Lcom/google/o;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/whispersystems/libaxolotl/M;
+
+    return-object v0
+.end method
+
+.method public static a(Ljava/io/InputStream;)Lorg/whispersystems/libaxolotl/M;
+    .locals 1
+
+    .prologue
+    .line 92
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->PARSER:Lcom/google/cU;
+
+    invoke-interface {v0, p0}, Lcom/google/cU;->b(Ljava/io/InputStream;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/whispersystems/libaxolotl/M;
+
+    return-object v0
+.end method
+
+.method public static a(Ljava/io/InputStream;Lcom/google/o;)Lorg/whispersystems/libaxolotl/M;
+    .locals 1
+
+    .prologue
+    .line 8
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->PARSER:Lcom/google/cU;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/cU;->a(Ljava/io/InputStream;Lcom/google/o;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/whispersystems/libaxolotl/M;
+
+    return-object v0
+.end method
+
+.method public static a([B)Lorg/whispersystems/libaxolotl/M;
+    .locals 1
+
+    .prologue
+    .line 21
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->PARSER:Lcom/google/cU;
+
+    invoke-interface {v0, p0}, Lcom/google/cU;->a([B)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/whispersystems/libaxolotl/M;
+
+    return-object v0
+.end method
+
+.method public static a([BLcom/google/o;)Lorg/whispersystems/libaxolotl/M;
+    .locals 1
+
+    .prologue
+    .line 99
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->PARSER:Lcom/google/cU;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/cU;->a([BLcom/google/o;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/whispersystems/libaxolotl/M;
+
+    return-object v0
+.end method
+
+.method public static a(Lorg/whispersystems/libaxolotl/M;)Lorg/whispersystems/libaxolotl/s;
+    .locals 1
+
+    .prologue
+    .line 94
+    invoke-static {}, Lorg/whispersystems/libaxolotl/M;->l()Lorg/whispersystems/libaxolotl/s;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Lorg/whispersystems/libaxolotl/s;->a(Lorg/whispersystems/libaxolotl/M;)Lorg/whispersystems/libaxolotl/s;
 
     move-result-object v0
 
     return-object v0
+.end method
 
-    .line 9
-    :catch_0
-    move-exception v0
+.method static b(Lorg/whispersystems/libaxolotl/M;I)I
+    .locals 0
 
-    throw v0
-    :try_end_2
-    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_2 .. :try_end_2} :catch_1
-    .catch Ljava/security/InvalidKeyException; {:try_start_2 .. :try_end_2} :catch_2
+    .prologue
+    .line 74
+    iput p1, p0, Lorg/whispersystems/libaxolotl/M;->j:I
 
-    .line 33
-    :catch_1
-    move-exception v0
+    return p1
+.end method
 
-    .line 4
-    :goto_0
-    new-instance v1, Ljava/lang/AssertionError;
+.method public static final b()Lcom/google/gs;
+    .locals 1
 
-    invoke-direct {v1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+    .prologue
+    .line 17
+    invoke-static {}, Lorg/whispersystems/libaxolotl/as;->j()Lcom/google/gs;
 
-    throw v1
+    move-result-object v0
 
-    .line 33
-    :catch_2
-    move-exception v0
+    return-object v0
+.end method
 
-    goto :goto_0
+.method public static b(Ljava/io/InputStream;)Lorg/whispersystems/libaxolotl/M;
+    .locals 1
+
+    .prologue
+    .line 55
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->PARSER:Lcom/google/cU;
+
+    invoke-interface {v0, p0}, Lcom/google/cU;->a(Ljava/io/InputStream;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/whispersystems/libaxolotl/M;
+
+    return-object v0
+.end method
+
+.method public static b(Ljava/io/InputStream;Lcom/google/o;)Lorg/whispersystems/libaxolotl/M;
+    .locals 1
+
+    .prologue
+    .line 108
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->PARSER:Lcom/google/cU;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/cU;->b(Ljava/io/InputStream;Lcom/google/o;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/whispersystems/libaxolotl/M;
+
+    return-object v0
+.end method
+
+.method public static e()Lorg/whispersystems/libaxolotl/M;
+    .locals 1
+
+    .prologue
+    .line 58
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->h:Lorg/whispersystems/libaxolotl/M;
+
+    return-object v0
+.end method
+
+.method static h()Z
+    .locals 1
+
+    .prologue
+    .line 36
+    sget-boolean v0, Lorg/whispersystems/libaxolotl/M;->d:Z
+
+    return v0
+.end method
+
+.method private i()V
+    .locals 1
+
+    .prologue
+    .line 98
+    const/4 v0, 0x0
+
+    iput v0, p0, Lorg/whispersystems/libaxolotl/M;->k:I
+
+    .line 84
+    sget-object v0, Lcom/google/cA;->b:Lcom/google/cA;
+
+    iput-object v0, p0, Lorg/whispersystems/libaxolotl/M;->g:Lcom/google/cA;
+
+    .line 70
+    return-void
+.end method
+
+.method public static l()Lorg/whispersystems/libaxolotl/s;
+    .locals 1
+
+    .prologue
+    .line 82
+    invoke-static {}, Lorg/whispersystems/libaxolotl/s;->h()Lorg/whispersystems/libaxolotl/s;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method protected abstract a()I
+.method public a()I
+    .locals 4
+
+    .prologue
+    const/4 v3, 0x2
+
+    const/4 v2, 0x1
+
+    .line 31
+    iget v0, p0, Lorg/whispersystems/libaxolotl/M;->e:I
+
+    .line 32
+    const/4 v1, -0x1
+
+    if-eq v0, v1, :cond_0
+
+    .line 96
+    :goto_0
+    return v0
+
+    .line 111
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 14
+    iget v1, p0, Lorg/whispersystems/libaxolotl/M;->j:I
+
+    and-int/lit8 v1, v1, 0x1
+
+    if-ne v1, v2, :cond_1
+
+    .line 6
+    iget v1, p0, Lorg/whispersystems/libaxolotl/M;->k:I
+
+    .line 73
+    invoke-static {v2, v1}, Lcom/google/fN;->d(II)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 30
+    :cond_1
+    iget v1, p0, Lorg/whispersystems/libaxolotl/M;->j:I
+
+    and-int/lit8 v1, v1, 0x2
+
+    if-ne v1, v3, :cond_2
+
+    .line 102
+    iget-object v1, p0, Lorg/whispersystems/libaxolotl/M;->g:Lcom/google/cA;
+
+    .line 52
+    invoke-static {v3, v1}, Lcom/google/fN;->c(ILcom/google/cA;)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 54
+    :cond_2
+    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/M;->a()Lcom/google/bI;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/google/bI;->a()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 77
+    iput v0, p0, Lorg/whispersystems/libaxolotl/M;->e:I
+
+    goto :goto_0
 .end method
 
-.method public a([B[B[BI)[B
+.method public final a()Lcom/google/bI;
     .locals 1
 
     .prologue
-    .line 24
-    invoke-direct {p0, p2, p1}, Lorg/whispersystems/libaxolotl/M;->a([B[B)[B
+    .line 20
+    iget-object v0, p0, Lorg/whispersystems/libaxolotl/M;->f:Lcom/google/bI;
 
-    move-result-object v0
+    return-object v0
+.end method
 
+.method public a()Lcom/google/cI;
+    .locals 1
+
+    .prologue
     .line 26
-    invoke-direct {p0, v0, p3, p4}, Lorg/whispersystems/libaxolotl/M;->a([B[BI)[B
+    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/M;->c()Lorg/whispersystems/libaxolotl/s;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public b([B[BI)[B
+.method protected a(Lcom/google/gq;)Lcom/google/cI;
     .locals 1
 
     .prologue
-    .line 11
-    const/16 v0, 0x20
+    .line 42
+    invoke-virtual {p0, p1}, Lorg/whispersystems/libaxolotl/M;->a(Lcom/google/gq;)Lorg/whispersystems/libaxolotl/s;
 
-    new-array v0, v0, [B
+    move-result-object v0
 
-    .line 18
-    invoke-virtual {p0, p1, v0, p2, p3}, Lorg/whispersystems/libaxolotl/M;->a([B[B[BI)[B
+    return-object v0
+.end method
+
+.method protected a(Lcom/google/gq;)Lorg/whispersystems/libaxolotl/s;
+    .locals 2
+
+    .prologue
+    .line 65
+    new-instance v0, Lorg/whispersystems/libaxolotl/s;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p1, v1}, Lorg/whispersystems/libaxolotl/s;-><init>(Lcom/google/gq;Lorg/whispersystems/libaxolotl/e;)V
+
+    .line 48
+    return-object v0
+.end method
+
+.method public a(Lcom/google/fN;)V
+    .locals 3
+
+    .prologue
+    const/4 v2, 0x2
+
+    const/4 v1, 0x1
+
+    .line 27
+    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/M;->a()I
+
+    .line 38
+    iget v0, p0, Lorg/whispersystems/libaxolotl/M;->j:I
+
+    and-int/lit8 v0, v0, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    .line 47
+    iget v0, p0, Lorg/whispersystems/libaxolotl/M;->k:I
+
+    invoke-virtual {p1, v1, v0}, Lcom/google/fN;->c(II)V
+
+    .line 67
+    :cond_0
+    iget v0, p0, Lorg/whispersystems/libaxolotl/M;->j:I
+
+    and-int/lit8 v0, v0, 0x2
+
+    if-ne v0, v2, :cond_1
+
+    .line 79
+    iget-object v0, p0, Lorg/whispersystems/libaxolotl/M;->g:Lcom/google/cA;
+
+    invoke-virtual {p1, v2, v0}, Lcom/google/fN;->b(ILcom/google/cA;)V
+
+    .line 78
+    :cond_1
+    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/M;->a()Lcom/google/bI;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/google/bI;->a(Lcom/google/fN;)V
+
+    .line 76
+    return-void
+.end method
+
+.method public b()Lcom/google/cU;
+    .locals 1
+
+    .prologue
+    .line 41
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->PARSER:Lcom/google/cU;
+
+    return-object v0
+.end method
+
+.method public c()Lcom/google/cI;
+    .locals 1
+
+    .prologue
+    .line 25
+    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/M;->g()Lorg/whispersystems/libaxolotl/s;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public c()Lcom/google/gi;
+    .locals 1
+
+    .prologue
+    .line 4
+    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/M;->f()Lorg/whispersystems/libaxolotl/M;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public c()Lorg/whispersystems/libaxolotl/s;
+    .locals 1
+
+    .prologue
+    .line 49
+    invoke-static {}, Lorg/whispersystems/libaxolotl/M;->l()Lorg/whispersystems/libaxolotl/s;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public d()I
+    .locals 1
+
+    .prologue
+    .line 66
+    iget v0, p0, Lorg/whispersystems/libaxolotl/M;->k:I
+
+    return v0
+.end method
+
+.method public d()Lcom/google/A;
+    .locals 1
+
+    .prologue
+    .line 93
+    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/M;->c()Lorg/whispersystems/libaxolotl/s;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public d()Lcom/google/c7;
+    .locals 1
+
+    .prologue
+    .line 72
+    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/M;->f()Lorg/whispersystems/libaxolotl/M;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected d()Lcom/google/gZ;
+    .locals 3
+
+    .prologue
+    .line 81
+    invoke-static {}, Lorg/whispersystems/libaxolotl/as;->a()Lcom/google/gZ;
+
+    move-result-object v0
+
+    const-class v1, Lorg/whispersystems/libaxolotl/M;
+
+    const-class v2, Lorg/whispersystems/libaxolotl/s;
+
+    .line 106
+    invoke-virtual {v0, v1, v2}, Lcom/google/gZ;->a(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/gZ;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final d()Z
+    .locals 3
+
+    .prologue
+    const/4 v0, 0x1
+
+    .line 104
+    iget-byte v1, p0, Lorg/whispersystems/libaxolotl/M;->i:B
+
+    .line 23
+    const/4 v2, -0x1
+
+    if-eq v1, v2, :cond_1
+
+    if-ne v1, v0, :cond_0
+
+    .line 101
+    :goto_0
+    return v0
+
+    .line 23
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    .line 69
+    :cond_1
+    iput-byte v0, p0, Lorg/whispersystems/libaxolotl/M;->i:B
+
+    goto :goto_0
+.end method
+
+.method public e()Lcom/google/A;
+    .locals 1
+
+    .prologue
+    .line 9
+    invoke-virtual {p0}, Lorg/whispersystems/libaxolotl/M;->g()Lorg/whispersystems/libaxolotl/s;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public f()Lorg/whispersystems/libaxolotl/M;
+    .locals 1
+
+    .prologue
+    .line 110
+    sget-object v0, Lorg/whispersystems/libaxolotl/M;->h:Lorg/whispersystems/libaxolotl/M;
+
+    return-object v0
+.end method
+
+.method public g()Lorg/whispersystems/libaxolotl/s;
+    .locals 1
+
+    .prologue
+    .line 85
+    invoke-static {p0}, Lorg/whispersystems/libaxolotl/M;->a(Lorg/whispersystems/libaxolotl/M;)Lorg/whispersystems/libaxolotl/s;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public j()Lcom/google/cA;
+    .locals 1
+
+    .prologue
+    .line 61
+    iget-object v0, p0, Lorg/whispersystems/libaxolotl/M;->g:Lcom/google/cA;
+
+    return-object v0
+.end method
+
+.method public k()Z
+    .locals 2
+
+    .prologue
+    const/4 v0, 0x1
+
+    .line 87
+    iget v1, p0, Lorg/whispersystems/libaxolotl/M;->j:I
+
+    and-int/lit8 v1, v1, 0x1
+
+    if-ne v1, v0, :cond_0
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public m()Z
+    .locals 2
+
+    .prologue
+    .line 97
+    iget v0, p0, Lorg/whispersystems/libaxolotl/M;->j:I
+
+    and-int/lit8 v0, v0, 0x2
+
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method protected writeReplace()Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 29
+    invoke-super {p0}, Lcom/google/a1;->writeReplace()Ljava/lang/Object;
 
     move-result-object v0
 

@@ -24,7 +24,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "M=\u0005\u000e\u000e[\'a"
+    const-string v2, "4V\u001cMf\"Lx"
 
     const/4 v0, -0x1
 
@@ -62,7 +62,7 @@
 
     aput-object v2, v5, v3
 
-    const-string v0, "z\u000fLo?y\u001dMbk,"
+    const-string v0, "\u0003dU,W\u0000vT!\u0003U"
 
     move-object v2, v0
 
@@ -79,7 +79,7 @@
 
     sput-object v6, Landroid/backport/util/Base64;->z:[Ljava/lang/String;
 
-    .line 17
+    .line 12
     :try_start_0
     const-class v0, Landroid/backport/util/Base64;
 
@@ -104,7 +104,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0x5d
+    const/16 v2, 0x35
 
     :goto_3
     xor-int/2addr v2, v10
@@ -120,26 +120,26 @@
     goto :goto_1
 
     :pswitch_1
-    const/16 v2, 0x18
+    const/16 v2, 0x61
 
     goto :goto_3
 
     :pswitch_2
-    const/16 v2, 0x6e
+    const/4 v2, 0x5
 
     goto :goto_3
 
     :pswitch_3
-    const/16 v2, 0x28
+    const/16 v2, 0x31
 
     goto :goto_3
 
     :pswitch_4
-    const/16 v2, 0x4f
+    const/16 v2, 0xc
 
     goto :goto_3
 
-    .line 17
+    .line 12
     :catch_0
     move-exception v0
 
@@ -151,6 +151,8 @@
     goto :goto_2
 
     .line 4294967295
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -169,7 +171,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -179,7 +181,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 29
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
     move-result-object v0
@@ -195,7 +197,7 @@
     .locals 2
 
     .prologue
-    .line 11
+    .line 28
     const/4 v0, 0x0
 
     array-length v1, p0
@@ -213,7 +215,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 9
+    .line 17
     new-instance v1, Landroid/backport/util/Base64$Decoder;
 
     mul-int/lit8 v0, p2, 0x3
@@ -224,7 +226,7 @@
 
     invoke-direct {v1, p3, v0}, Landroid/backport/util/Base64$Decoder;-><init>(I[B)V
 
-    .line 26
+    .line 11
     const/4 v0, 0x1
 
     :try_start_0
@@ -234,7 +236,7 @@
 
     if-nez v0, :cond_0
 
-    .line 19
+    .line 8
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     sget-object v1, Landroid/backport/util/Base64;->z:[Ljava/lang/String;
@@ -254,7 +256,7 @@
 
     throw v0
 
-    .line 16
+    .line 14
     :cond_0
     :try_start_1
     iget v0, v1, Landroid/backport/util/Base64$Decoder;->op:I
@@ -265,7 +267,7 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 18
+    .line 7
     iget-object v0, v1, Landroid/backport/util/Base64$Decoder;->output:[B
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
@@ -278,13 +280,13 @@
 
     throw v0
 
-    .line 23
+    .line 10
     :cond_1
     iget v0, v1, Landroid/backport/util/Base64$Decoder;->op:I
 
     new-array v0, v0, [B
 
-    .line 21
+    .line 25
     iget-object v2, v1, Landroid/backport/util/Base64$Decoder;->output:[B
 
     iget v1, v1, Landroid/backport/util/Base64$Decoder;->op:I
@@ -298,7 +300,7 @@
     .locals 2
 
     .prologue
-    .line 4
+    .line 3
     const/4 v0, 0x0
 
     array-length v1, p0
@@ -318,19 +320,19 @@
 
     sget-boolean v2, Landroid/backport/util/Base64;->a:Z
 
-    .line 24
+    .line 20
     new-instance v3, Landroid/backport/util/Base64$Encoder;
 
     const/4 v0, 0x0
 
     invoke-direct {v3, p3, v0}, Landroid/backport/util/Base64$Encoder;-><init>(I[B)V
 
-    .line 10
+    .line 22
     div-int/lit8 v0, p2, 0x3
 
     mul-int/lit8 v0, v0, 0x4
 
-    .line 6
+    .line 16
     :try_start_0
     iget-boolean v4, v3, Landroid/backport/util/Base64$Encoder;->do_padding:Z
     :try_end_0
@@ -338,7 +340,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 31
+    .line 21
     :try_start_1
     rem-int/lit8 v4, p2, 0x3
     :try_end_1
@@ -346,12 +348,12 @@
 
     if-lez v4, :cond_1
 
-    .line 1
+    .line 6
     add-int/lit8 v0, v0, 0x4
 
     if-eqz v2, :cond_1
 
-    .line 30
+    .line 24
     :cond_0
     :try_start_2
     rem-int/lit8 v4, p2, 0x3
@@ -363,7 +365,7 @@
     :cond_1
     move v2, v0
 
-    .line 20
+    .line 13
     :goto_0
     :try_start_3
     iget-boolean v0, v3, Landroid/backport/util/Base64$Encoder;->do_newline:Z
@@ -374,7 +376,7 @@
 
     if-lez p2, :cond_4
 
-    .line 25
+    .line 9
     add-int/lit8 v0, p2, -0x1
 
     :try_start_4
@@ -395,19 +397,19 @@
 
     add-int/2addr v0, v2
 
-    .line 12
+    .line 18
     :goto_2
     :try_start_5
     new-array v1, v0, [B
 
     iput-object v1, v3, Landroid/backport/util/Base64$Encoder;->output:[B
 
-    .line 13
+    .line 26
     const/4 v1, 0x1
 
     invoke-virtual {v3, p0, p1, p2, v1}, Landroid/backport/util/Base64$Encoder;->process([BIIZ)Z
 
-    .line 29
+    .line 30
     sget-boolean v1, Landroid/backport/util/Base64;->$assertionsDisabled:Z
     :try_end_5
     .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_a
@@ -432,7 +434,7 @@
 
     throw v0
 
-    .line 31
+    .line 21
     :catch_1
     move-exception v0
 
@@ -441,7 +443,7 @@
     :try_end_7
     .catch Ljava/lang/IllegalArgumentException; {:try_start_7 .. :try_end_7} :catch_2
 
-    .line 1
+    .line 6
     :catch_2
     move-exception v0
 
@@ -450,7 +452,7 @@
     :try_end_8
     .catch Ljava/lang/IllegalArgumentException; {:try_start_8 .. :try_end_8} :catch_3
 
-    .line 30
+    .line 24
     :catch_3
     move-exception v0
 
@@ -459,7 +461,7 @@
     :try_end_9
     .catch Ljava/lang/IllegalArgumentException; {:try_start_9 .. :try_end_9} :catch_4
 
-    .line 22
+    .line 27
     :catch_4
     move-exception v0
 
@@ -468,7 +470,7 @@
     :try_end_a
     .catch Ljava/lang/IllegalArgumentException; {:try_start_a .. :try_end_a} :catch_5
 
-    .line 7
+    .line 15
     :catch_5
     move-exception v0
 
@@ -477,23 +479,23 @@
     :try_end_b
     .catch Ljava/lang/IllegalArgumentException; {:try_start_b .. :try_end_b} :catch_6
 
-    .line 28
+    .line 4
     :catch_6
     move-exception v0
 
     throw v0
 
-    .line 22
+    .line 27
     :pswitch_0
     if-eqz v2, :cond_1
 
-    .line 7
+    .line 15
     :pswitch_1
     add-int/lit8 v0, v0, 0x2
 
     if-eqz v2, :cond_1
 
-    .line 28
+    .line 4
     :pswitch_2
     add-int/lit8 v0, v0, 0x3
 
@@ -501,7 +503,7 @@
 
     goto :goto_0
 
-    .line 20
+    .line 13
     :catch_7
     move-exception v0
 
@@ -510,7 +512,7 @@
     :try_end_c
     .catch Ljava/lang/IllegalArgumentException; {:try_start_c .. :try_end_c} :catch_8
 
-    .line 25
+    .line 9
     :catch_8
     move-exception v0
 
@@ -529,7 +531,7 @@
 
     goto :goto_1
 
-    .line 29
+    .line 30
     :catch_a
     move-exception v0
 
@@ -538,7 +540,7 @@
     :try_end_e
     .catch Ljava/lang/IllegalArgumentException; {:try_start_e .. :try_end_e} :catch_0
 
-    .line 15
+    .line 19
     :cond_3
     iget-object v0, v3, Landroid/backport/util/Base64$Encoder;->output:[B
 
@@ -549,7 +551,7 @@
 
     goto :goto_2
 
-    .line 30
+    .line 24
     nop
 
     :pswitch_data_0
@@ -564,7 +566,7 @@
     .locals 4
 
     .prologue
-    .line 14
+    .line 31
     :try_start_0
     new-instance v0, Ljava/lang/String;
 
@@ -584,11 +586,11 @@
 
     return-object v0
 
-    .line 27
+    .line 1
     :catch_0
     move-exception v0
 
-    .line 2
+    .line 5
     new-instance v1, Ljava/lang/AssertionError;
 
     invoke-direct {v1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V

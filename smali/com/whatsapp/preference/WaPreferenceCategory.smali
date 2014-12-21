@@ -8,10 +8,10 @@
     .locals 0
 
     .prologue
-    .line 7
+    .line 3
     invoke-direct {p0, p1}, Landroid/preference/PreferenceCategory;-><init>(Landroid/content/Context;)V
 
-    .line 3
+    .line 2
     return-void
 .end method
 
@@ -19,10 +19,10 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 1
     invoke-direct {p0, p1, p2}, Landroid/preference/PreferenceCategory;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 6
+    .line 5
     return-void
 .end method
 
@@ -30,7 +30,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 6
     invoke-direct {p0, p1, p2, p3}, Landroid/preference/PreferenceCategory;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
@@ -43,7 +43,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 7
     invoke-super {p0, p1}, Landroid/preference/PreferenceCategory;->onCreateView(Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0

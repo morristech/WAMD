@@ -1,199 +1,153 @@
-.class Lcom/whatsapp/alk;
+.class synthetic Lcom/whatsapp/alk;
 .super Ljava/lang/Object;
 .source "alk.java"
 
-# interfaces
-.implements Landroid/view/View$OnClickListener;
-
 
 # static fields
-.field private static final z:Ljava/lang/String;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/LocationPicker;
+.field static final a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
-
-    const-string v0, "=\u0019|,58\u0019q"
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    move v3, v2
-
-    move v2, v1
-
-    move-object v1, v0
-
-    :goto_0
-    if-gt v2, v3, :cond_0
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/alk;->z:Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v4, v1, v3
-
-    rem-int/lit8 v0, v3, 0x5
-
-    packed-switch v0, :pswitch_data_0
-
-    const/16 v0, 0x41
-
-    :goto_1
-    xor-int/2addr v0, v4
-
-    int-to-char v0, v0
-
-    aput-char v0, v1, v3
-
-    add-int/lit8 v0, v3, 0x1
-
-    move v3, v0
-
-    goto :goto_0
-
-    :pswitch_0
-    const/16 v0, 0x51
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v0, 0x76
-
-    goto :goto_1
-
-    :pswitch_2
-    const/16 v0, 0x1f
-
-    goto :goto_1
-
-    :pswitch_3
-    const/16 v0, 0x4d
-
-    goto :goto_1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-.end method
-
-.method constructor <init>(Lcom/whatsapp/LocationPicker;)V
-    .locals 0
-
-    .prologue
-    .line 7
-    iput-object p1, p0, Lcom/whatsapp/alk;->a:Lcom/whatsapp/LocationPicker;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public onClick(Landroid/view/View;)V
     .locals 3
 
     .prologue
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/alk;->a:Lcom/whatsapp/LocationPicker;
-
-    invoke-static {v0}, Lcom/whatsapp/LocationPicker;->h(Lcom/whatsapp/LocationPicker;)Lcom/google/android/maps/MyLocationOverlay;
+    .line 1
+    invoke-static {}, Lcom/whatsapp/Voip$CallState;->values()[Lcom/whatsapp/Voip$CallState;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/android/maps/MyLocationOverlay;->getLastFix()Landroid/location/Location;
+    array-length v0, v0
 
-    move-result-object v0
+    new-array v0, v0, [I
 
-    .line 6
-    if-eqz v0, :cond_0
+    sput-object v0, Lcom/whatsapp/alk;->a:[I
 
-    invoke-virtual {v0}, Landroid/location/Location;->getAccuracy()F
+    :try_start_0
+    sget-object v0, Lcom/whatsapp/alk;->a:[I
+
+    sget-object v1, Lcom/whatsapp/Voip$CallState;->ACTIVE:Lcom/whatsapp/Voip$CallState;
+
+    invoke-virtual {v1}, Lcom/whatsapp/Voip$CallState;->ordinal()I
 
     move-result v1
 
-    const/high16 v2, 0x43480000
+    const/4 v2, 0x1
 
-    cmpl-float v1, v1, v2
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_5
 
-    if-lez v1, :cond_0
+    :goto_0
+    :try_start_1
+    sget-object v0, Lcom/whatsapp/alk;->a:[I
 
-    .line 11
-    const/4 v0, 0x0
+    sget-object v1, Lcom/whatsapp/Voip$CallState;->CALLING:Lcom/whatsapp/Voip$CallState;
 
-    .line 3
-    :cond_0
-    iget-object v1, p0, Lcom/whatsapp/alk;->a:Lcom/whatsapp/LocationPicker;
+    invoke-virtual {v1}, Lcom/whatsapp/Voip$CallState;->ordinal()I
 
-    invoke-static {v1}, Lcom/whatsapp/LocationPicker;->g(Lcom/whatsapp/LocationPicker;)Ljava/lang/String;
+    move-result v1
 
-    move-result-object v1
+    const/4 v2, 0x2
 
-    if-eqz v1, :cond_1
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_4
 
-    .line 9
-    iget-object v1, p0, Lcom/whatsapp/alk;->a:Lcom/whatsapp/LocationPicker;
+    :goto_1
+    :try_start_2
+    sget-object v0, Lcom/whatsapp/alk;->a:[I
 
-    iget-object v2, p0, Lcom/whatsapp/alk;->a:Lcom/whatsapp/LocationPicker;
+    sget-object v1, Lcom/whatsapp/Voip$CallState;->ACCEPT_RECEIVED:Lcom/whatsapp/Voip$CallState;
 
-    invoke-static {v2}, Lcom/whatsapp/LocationPicker;->g(Lcom/whatsapp/LocationPicker;)Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/whatsapp/Voip$CallState;->ordinal()I
 
-    move-result-object v2
+    move-result v1
 
-    invoke-static {v1, v2, v0}, Lcom/whatsapp/App;->a(Landroid/content/Context;Ljava/lang/String;Landroid/location/Location;)V
+    const/4 v2, 0x3
 
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_3
 
-    if-eqz v1, :cond_2
+    :goto_2
+    :try_start_3
+    sget-object v0, Lcom/whatsapp/alk;->a:[I
 
-    .line 8
-    :cond_1
-    new-instance v1, Landroid/content/Intent;
+    sget-object v1, Lcom/whatsapp/Voip$CallState;->ACCEPT_SENT:Lcom/whatsapp/Voip$CallState;
 
-    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
+    invoke-virtual {v1}, Lcom/whatsapp/Voip$CallState;->ordinal()I
 
-    .line 1
-    sget-object v2, Lcom/whatsapp/alk;->z:Ljava/lang/String;
+    move-result v1
 
-    invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+    const/4 v2, 0x4
 
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/alk;->a:Lcom/whatsapp/LocationPicker;
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_2
 
-    const/4 v2, -0x1
+    :goto_3
+    :try_start_4
+    sget-object v0, Lcom/whatsapp/alk;->a:[I
 
-    invoke-virtual {v0, v2, v1}, Lcom/whatsapp/LocationPicker;->setResult(ILandroid/content/Intent;)V
+    sget-object v1, Lcom/whatsapp/Voip$CallState;->NONE:Lcom/whatsapp/Voip$CallState;
 
-    .line 2
-    :cond_2
-    iget-object v0, p0, Lcom/whatsapp/alk;->a:Lcom/whatsapp/LocationPicker;
+    invoke-virtual {v1}, Lcom/whatsapp/Voip$CallState;->ordinal()I
 
-    invoke-virtual {v0}, Lcom/whatsapp/LocationPicker;->finish()V
+    move-result v1
 
-    .line 10
+    const/4 v2, 0x5
+
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_1
+
+    :goto_4
+    :try_start_5
+    sget-object v0, Lcom/whatsapp/alk;->a:[I
+
+    sget-object v1, Lcom/whatsapp/Voip$CallState;->RECEIVED_CALL:Lcom/whatsapp/Voip$CallState;
+
+    invoke-virtual {v1}, Lcom/whatsapp/Voip$CallState;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x6
+
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_0
+
+    :goto_5
     return-void
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_5
+
+    :catch_1
+    move-exception v0
+
+    goto :goto_4
+
+    :catch_2
+    move-exception v0
+
+    goto :goto_3
+
+    :catch_3
+    move-exception v0
+
+    goto :goto_2
+
+    :catch_4
+    move-exception v0
+
+    goto :goto_1
+
+    :catch_5
+    move-exception v0
+
+    goto :goto_0
 .end method

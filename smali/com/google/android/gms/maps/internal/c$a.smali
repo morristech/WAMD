@@ -6,7 +6,7 @@
 
 
 # direct methods
-.method public static v(Landroid/os/IBinder;)Lcom/google/android/gms/maps/internal/c;
+.method public static aS(Landroid/os/IBinder;)Lcom/google/android/gms/maps/internal/c;
     .locals 2
 
     if-nez p0, :cond_0

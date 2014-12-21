@@ -11,13 +11,13 @@
 .method static constructor <clinit>()V
     .locals 12
 
-    const/16 v3, 0x65
+    const/16 v2, 0x2c
 
-    const/16 v1, 0x45
+    const/16 v3, 0x29
 
-    const/16 v4, 0x3d
+    const/16 v4, 0x23
 
-    const/16 v2, 0x8
+    const/16 v1, 0x20
 
     const/4 v6, 0x0
 
@@ -25,7 +25,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "\u000b\u001fm\u0001\u001d$ZX\'x\u0015\u001bz\u0004P \u000em\u0017\u001d6\nm\u0006\u001d2\u0013|\r\u001d$ZX\'xe\u0011m\u001c\u0013"
+    const-string v0, "nI\u0004M\u0003A\u000c1kfpM\u0013HNEX\u0004[\u0003S\\\u0004J\u0003WE\u0015A\u0003A\u000c1kf\u0000G\u0004P\r"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -54,7 +54,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "\u000b\u001fm\u0001\u001d$ZX\'x\u0015\u001bz\u0004P \u000em\u0017\u001d6\nm\u0006\u001d2\u0013|\r\u001d$ZX\'xe\u0011m\u001c\u0013"
+    const-string v0, "UB\nGLWBAMJGI\u0012]\u0003SO\tLNE\u000c\u0007FQ\u0000|#l\u0003pg\"z\u0016s\u001eALMC^\u0018YWIC\u000f\u0007"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -83,7 +83,7 @@
 
     const/4 v10, 0x2
 
-    const-string v0, "0\u0014c\u000bR2\u0014(\u0001T\"\u001f{\u0011\u001d6\u0019`\u0000P Zn\nOe*J \u001d\u00151K6\u0008\u0016H(\u0000S&\u0008q\u0015I,\u0015fK"
+    const-string v0, "UB\nGLWBA]ZPIAZ@HI\u000cL\u0003FC\u0013\tsbiALMC^\u0018YWIC\u000f\u0007"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -112,7 +112,7 @@
 
     const/4 v8, 0x3
 
-    const-string v0, "0\u0014c\u000bR2\u0014(\u0011D5\u001f(\u0016^-\u001fe\u0000\u001d#\u0015zEm\u0007?(\u0000S&\u0008q\u0015I,\u0015fK"
+    const-string v0, "nI\u0004M\u0003A\u000c1kfpM\u0013HNEX\u0004[\u0003S\\\u0004J\u0003WE\u0015A\u0003A\u000c1kf\u0000G\u0004P\r"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -171,12 +171,12 @@
     goto :goto_4
 
     :pswitch_1
-    const/16 v0, 0x7a
+    move v0, v2
 
     goto :goto_4
 
     :pswitch_2
-    move v0, v2
+    const/16 v0, 0x61
 
     goto :goto_4
 
@@ -213,12 +213,12 @@
     goto :goto_5
 
     :pswitch_5
-    const/16 v0, 0x7a
+    move v0, v2
 
     goto :goto_5
 
     :pswitch_6
-    move v0, v2
+    const/16 v0, 0x61
 
     goto :goto_5
 
@@ -255,12 +255,12 @@
     goto :goto_6
 
     :pswitch_9
-    const/16 v0, 0x7a
+    move v0, v2
 
     goto :goto_6
 
     :pswitch_a
-    move v0, v2
+    const/16 v0, 0x61
 
     goto :goto_6
 
@@ -297,12 +297,12 @@
     goto :goto_7
 
     :pswitch_d
-    const/16 v0, 0x7a
+    move v0, v2
 
     goto :goto_7
 
     :pswitch_e
-    move v0, v2
+    const/16 v0, 0x61
 
     goto :goto_7
 
@@ -348,7 +348,7 @@
     .locals 0
 
     .prologue
-    .line 19
+    .line 54
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -358,12 +358,12 @@
     .locals 2
 
     .prologue
-    .line 1
+    .line 34
     const/4 v0, 0x5
 
     if-ne p0, v0, :cond_0
 
-    .line 13
+    .line 19
     invoke-virtual {p1}, Ljavax/crypto/spec/PBEKeySpec;->getPassword()[C
 
     move-result-object v0
@@ -376,7 +376,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 49
+    .line 31
     :cond_0
     invoke-virtual {p1}, Ljavax/crypto/spec/PBEKeySpec;->getPassword()[C
 
@@ -386,7 +386,7 @@
 
     move-result-object v0
 
-    .line 62
+    .line 21
     :cond_1
     return-object v0
 .end method
@@ -395,22 +395,22 @@
     .locals 3
 
     .prologue
-    sget-boolean v1, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->a:Z
-
-    .line 25
     const/4 v0, 0x1
 
+    sget-boolean v1, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->a:Z
+
+    .line 46
     if-eq p0, v0, :cond_0
 
     const/4 v0, 0x5
 
     if-ne p0, v0, :cond_3
 
-    .line 57
+    .line 32
     :cond_0
     packed-switch p1, :pswitch_data_0
 
-    .line 60
+    .line 26
     :cond_1
     :pswitch_0
     :try_start_0
@@ -418,7 +418,7 @@
 
     sget-object v1, Lorg/spongycastle/jcajce/provider/symmetric/util/PBE$Util;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x2
+    const/4 v2, 0x1
 
     aget-object v1, v1, v2
 
@@ -433,7 +433,7 @@
 
     throw v0
 
-    .line 29
+    .line 23
     :pswitch_1
     new-instance v0, Lorg/spongycastle/crypto/generators/PKCS5S2ParametersGenerator;
 
@@ -443,7 +443,7 @@
 
     invoke-direct {v0, v2}, Lorg/spongycastle/crypto/generators/PKCS5S2ParametersGenerator;-><init>(Lorg/spongycastle/crypto/Digest;)V
 
-    .line 7
+    .line 43
     if-eqz v1, :cond_2
 
     .line 50
@@ -456,10 +456,10 @@
 
     invoke-direct {v0, v2}, Lorg/spongycastle/crypto/generators/PKCS5S2ParametersGenerator;-><init>(Lorg/spongycastle/crypto/Digest;)V
 
-    .line 27
+    .line 44
     if-eqz v1, :cond_2
 
-    .line 37
+    .line 15
     :pswitch_3
     new-instance v0, Lorg/spongycastle/crypto/generators/PKCS5S2ParametersGenerator;
 
@@ -469,20 +469,20 @@
 
     invoke-direct {v0, v2}, Lorg/spongycastle/crypto/generators/PKCS5S2ParametersGenerator;-><init>(Lorg/spongycastle/crypto/Digest;)V
 
-    .line 22
+    .line 61
     if-nez v1, :cond_1
 
-    .line 43
+    .line 49
     :cond_2
     return-object v0
 
-    .line 41
+    .line 24
     :cond_3
     new-instance v0, Ljava/lang/IllegalStateException;
 
     sget-object v1, Lorg/spongycastle/jcajce/provider/symmetric/util/PBE$Util;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x3
+    const/4 v2, 0x2
 
     aget-object v1, v1, v2
 
@@ -490,7 +490,7 @@
 
     throw v0
 
-    .line 57
+    .line 32
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -509,17 +509,17 @@
 
     sget-boolean v2, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->a:Z
 
-    .line 2
+    .line 18
     invoke-static {p1, p2}, Lorg/spongycastle/jcajce/provider/symmetric/util/PBE$Util;->makePBEGenerator(II)Lorg/spongycastle/crypto/PBEParametersGenerator;
 
     move-result-object v0
 
-    .line 30
+    .line 48
     invoke-static {p1, p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/PBE$Util;->convertPassword(ILjavax/crypto/spec/PBEKeySpec;)[B
 
     move-result-object v3
 
-    .line 8
+    .line 16
     invoke-virtual {p0}, Ljavax/crypto/spec/PBEKeySpec;->getSalt()[B
 
     move-result-object v4
@@ -530,28 +530,28 @@
 
     invoke-virtual {v0, v3, v4, v5}, Lorg/spongycastle/crypto/PBEParametersGenerator;->init([B[BI)V
 
-    .line 32
+    .line 53
     invoke-virtual {v0, p3}, Lorg/spongycastle/crypto/PBEParametersGenerator;->generateDerivedMacParameters(I)Lorg/spongycastle/crypto/CipherParameters;
 
     move-result-object v4
 
     move v0, v1
 
-    .line 53
+    .line 35
     :cond_0
     array-length v5, v3
 
     if-eq v0, v5, :cond_1
 
-    .line 48
+    .line 29
     aput-byte v1, v3, v0
 
-    .line 42
+    .line 58
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v2, :cond_0
 
-    .line 18
+    .line 40
     :cond_1
     return-object v4
 .end method
@@ -564,7 +564,7 @@
 
     sget-boolean v3, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->a:Z
 
-    .line 3
+    .line 1
     if-eqz p1, :cond_0
 
     :try_start_0
@@ -572,13 +572,13 @@
 
     if-nez v0, :cond_1
 
-    .line 34
+    .line 36
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     sget-object v1, Lorg/spongycastle/jcajce/provider/symmetric/util/PBE$Util;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     aget-object v1, v1, v2
 
@@ -593,11 +593,11 @@
 
     throw v0
 
-    .line 51
+    .line 5
     :cond_1
     check-cast p1, Ljavax/crypto/spec/PBEParameterSpec;
 
-    .line 38
+    .line 60
     invoke-virtual {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getType()I
 
     move-result v0
@@ -610,24 +610,24 @@
 
     move-result-object v1
 
-    .line 47
+    .line 7
     invoke-virtual {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getEncoded()[B
 
     move-result-object v0
 
-    .line 24
+    .line 30
     invoke-virtual {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->shouldTryWrongPKCS12()Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 54
+    .line 47
     const/4 v0, 0x2
 
     new-array v0, v0, [B
 
-    .line 56
+    .line 28
     :cond_2
     invoke-virtual {p1}, Ljavax/crypto/spec/PBEParameterSpec;->getSalt()[B
 
@@ -639,7 +639,7 @@
 
     invoke-virtual {v1, v0, v4, v5}, Lorg/spongycastle/crypto/PBEParametersGenerator;->init([B[BI)V
 
-    .line 31
+    .line 39
     invoke-virtual {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getKeySize()I
 
     move-result v4
@@ -650,21 +650,21 @@
 
     move v1, v2
 
-    .line 4
+    .line 2
     :cond_3
     array-length v5, v0
 
     if-eq v1, v5, :cond_4
 
-    .line 15
+    .line 13
     aput-byte v2, v0, v1
 
-    .line 26
+    .line 10
     add-int/lit8 v1, v1, 0x1
 
     if-eqz v3, :cond_3
 
-    .line 28
+    .line 55
     :cond_4
     return-object v4
 .end method
@@ -677,17 +677,17 @@
 
     sget-boolean v3, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->a:Z
 
-    .line 46
+    .line 25
     invoke-static {p1, p2}, Lorg/spongycastle/jcajce/provider/symmetric/util/PBE$Util;->makePBEGenerator(II)Lorg/spongycastle/crypto/PBEParametersGenerator;
 
     move-result-object v1
 
-    .line 39
+    .line 56
     invoke-static {p1, p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/PBE$Util;->convertPassword(ILjavax/crypto/spec/PBEKeySpec;)[B
 
     move-result-object v4
 
-    .line 12
+    .line 4
     invoke-virtual {p0}, Ljavax/crypto/spec/PBEKeySpec;->getSalt()[B
 
     move-result-object v0
@@ -698,17 +698,17 @@
 
     invoke-virtual {v1, v4, v0, v5}, Lorg/spongycastle/crypto/PBEParametersGenerator;->init([B[BI)V
 
-    .line 40
+    .line 17
     if-eqz p4, :cond_0
 
-    .line 36
+    .line 59
     invoke-virtual {v1, p3, p4}, Lorg/spongycastle/crypto/PBEParametersGenerator;->generateDerivedParameters(II)Lorg/spongycastle/crypto/CipherParameters;
 
     move-result-object v0
 
     if-eqz v3, :cond_1
 
-    .line 10
+    .line 33
     :cond_0
     invoke-virtual {v1, p3}, Lorg/spongycastle/crypto/PBEParametersGenerator;->generateDerivedParameters(I)Lorg/spongycastle/crypto/CipherParameters;
 
@@ -717,21 +717,21 @@
     :cond_1
     move v1, v2
 
-    .line 20
+    .line 42
     :cond_2
     array-length v5, v4
 
     if-eq v1, v5, :cond_3
 
-    .line 45
+    .line 14
     aput-byte v2, v4, v1
 
-    .line 58
+    .line 57
     add-int/lit8 v1, v1, 0x1
 
     if-eqz v3, :cond_2
 
-    .line 14
+    .line 11
     :cond_3
     return-object v0
 .end method
@@ -744,7 +744,7 @@
 
     sget-boolean v4, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->a:Z
 
-    .line 35
+    .line 38
     if-eqz p1, :cond_0
 
     :try_start_0
@@ -752,13 +752,13 @@
 
     if-nez v0, :cond_1
 
-    .line 21
+    .line 62
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     sget-object v1, Lorg/spongycastle/jcajce/provider/symmetric/util/PBE$Util;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x0
+    const/4 v2, 0x3
 
     aget-object v1, v1, v2
 
@@ -773,11 +773,11 @@
 
     throw v0
 
-    .line 16
+    .line 6
     :cond_1
     check-cast p1, Ljavax/crypto/spec/PBEParameterSpec;
 
-    .line 55
+    .line 12
     invoke-virtual {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getType()I
 
     move-result v0
@@ -790,24 +790,24 @@
 
     move-result-object v2
 
-    .line 6
+    .line 27
     invoke-virtual {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getEncoded()[B
 
     move-result-object v0
 
-    .line 59
+    .line 45
     invoke-virtual {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->shouldTryWrongPKCS12()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 23
+    .line 52
     const/4 v0, 0x2
 
     new-array v0, v0, [B
 
-    .line 5
+    .line 22
     :cond_2
     invoke-virtual {p1}, Ljavax/crypto/spec/PBEParameterSpec;->getSalt()[B
 
@@ -819,14 +819,14 @@
 
     invoke-virtual {v2, v0, v1, v5}, Lorg/spongycastle/crypto/PBEParametersGenerator;->init([B[BI)V
 
-    .line 44
+    .line 8
     invoke-virtual {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getIvSize()I
 
     move-result v1
 
     if-eqz v1, :cond_3
 
-    .line 17
+    .line 51
     invoke-virtual {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getKeySize()I
 
     move-result v1
@@ -841,7 +841,7 @@
 
     if-eqz v4, :cond_4
 
-    .line 52
+    .line 41
     :cond_3
     invoke-virtual {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getKeySize()I
 
@@ -854,21 +854,21 @@
     :cond_4
     move v2, v3
 
-    .line 11
+    .line 20
     :cond_5
     array-length v5, v0
 
     if-eq v2, v5, :cond_6
 
-    .line 9
+    .line 3
     aput-byte v3, v0, v2
 
-    .line 33
+    .line 37
     add-int/lit8 v2, v2, 0x1
 
     if-eqz v4, :cond_5
 
-    .line 61
+    .line 9
     :cond_6
     return-object v1
 .end method

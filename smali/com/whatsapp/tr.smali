@@ -3,20 +3,20 @@
 .source "tr.java"
 
 # interfaces
-.implements Lcom/actionbarsherlock/widget/SearchView$OnCloseListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/WebImagePicker;
+.field final a:Lcom/whatsapp/MediaView;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/WebImagePicker;)V
+.method constructor <init>(Lcom/whatsapp/MediaView;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/tr;->a:Lcom/whatsapp/WebImagePicker;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/tr;->a:Lcom/whatsapp/MediaView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,12 +25,15 @@
 
 
 # virtual methods
-.method public onClose()Z
+.method public run()V
     .locals 1
 
     .prologue
-    .line 1
-    const/4 v0, 0x1
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/tr;->a:Lcom/whatsapp/MediaView;
 
-    return v0
+    invoke-virtual {v0}, Lcom/whatsapp/MediaView;->finish()V
+
+    .line 1
+    return-void
 .end method

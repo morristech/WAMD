@@ -6,19 +6,8 @@
 .implements Ljava/lang/Runnable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroid/support/v4/app/FragmentManagerImpl;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
-.end annotation
-
-
 # instance fields
-.field final synthetic this$0:Landroid/support/v4/app/FragmentManagerImpl;
+.field final this$0:Landroid/support/v4/app/FragmentManagerImpl;
 
 
 # direct methods
@@ -26,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 451
+    .line 2
     iput-object p1, p0, Landroid/support/v4/app/FragmentManagerImpl$1;->this$0:Landroid/support/v4/app/FragmentManagerImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,11 +29,11 @@
     .locals 1
 
     .prologue
-    .line 454
+    .line 1
     iget-object v0, p0, Landroid/support/v4/app/FragmentManagerImpl$1;->this$0:Landroid/support/v4/app/FragmentManagerImpl;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentManagerImpl;->execPendingActions()Z
 
-    .line 455
+    .line 3
     return-void
 .end method

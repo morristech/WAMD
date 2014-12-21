@@ -3,24 +3,28 @@
 .source "xk.java"
 
 # interfaces
-.implements Lcom/actionbarsherlock/view/MenuItem$OnActionExpandListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/HomeActivity;
+.field final a:Lcom/whatsapp/amo;
 
-.field final b:Landroid/view/View;
+.field final b:I
+
+.field final c:Ljava/lang/Runnable;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/HomeActivity;Landroid/view/View;)V
+.method constructor <init>(Lcom/whatsapp/amo;ILjava/lang/Runnable;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/xk;->a:Lcom/whatsapp/HomeActivity;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/xk;->a:Lcom/whatsapp/amo;
 
-    iput-object p2, p0, Lcom/whatsapp/xk;->b:Landroid/view/View;
+    iput p2, p0, Lcom/whatsapp/xk;->b:I
+
+    iput-object p3, p0, Lcom/whatsapp/xk;->c:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,78 +33,35 @@
 
 
 # virtual methods
-.method public onMenuItemActionCollapse(Lcom/actionbarsherlock/view/MenuItem;)Z
-    .locals 3
+.method public run()V
+    .locals 2
 
     .prologue
-    const/4 v2, 0x1
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/xk;->a:Lcom/whatsapp/amo;
 
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/xk;->b:Landroid/view/View;
-
-    const-string v1, ""
-
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/hr;->a(Landroid/view/View;Ljava/lang/String;Z)V
-
-    .line 8
-    iget-object v0, p0, Lcom/whatsapp/xk;->a:Lcom/whatsapp/HomeActivity;
-
-    invoke-virtual {v0}, Lcom/whatsapp/HomeActivity;->supportInvalidateOptionsMenu()V
-
-    .line 9
-    return v2
-.end method
-
-.method public onMenuItemActionExpand(Lcom/actionbarsherlock/view/MenuItem;)Z
-    .locals 4
-
-    .prologue
-    const/4 v3, 0x1
-
-    const/4 v2, 0x0
-
-    .line 6
-    iget-object v0, p0, Lcom/whatsapp/xk;->a:Lcom/whatsapp/HomeActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/HomeActivity;->e(Lcom/whatsapp/HomeActivity;)Lcom/actionbarsherlock/view/Menu;
+    invoke-static {v0}, Lcom/whatsapp/amo;->b(Lcom/whatsapp/amo;)Ljava/util/HashMap;
 
     move-result-object v0
 
-    invoke-interface {v0, v3, v2}, Lcom/actionbarsherlock/view/Menu;->setGroupVisible(IZ)V
+    invoke-virtual {v0}, Ljava/util/HashMap;->size()I
 
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/xk;->a:Lcom/whatsapp/HomeActivity;
+    move-result v0
 
-    invoke-static {v0}, Lcom/whatsapp/HomeActivity;->e(Lcom/whatsapp/HomeActivity;)Lcom/actionbarsherlock/view/Menu;
+    iget v1, p0, Lcom/whatsapp/xk;->b:I
 
-    move-result-object v0
+    if-ne v0, v1, :cond_0
 
-    const/4 v1, 0x2
+    iget-object v0, p0, Lcom/whatsapp/xk;->c:Ljava/lang/Runnable;
 
-    invoke-interface {v0, v1, v2}, Lcom/actionbarsherlock/view/Menu;->setGroupVisible(IZ)V
+    if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lcom/whatsapp/xk;->a:Lcom/whatsapp/HomeActivity;
+    iget-object v0, p0, Lcom/whatsapp/xk;->c:Ljava/lang/Runnable;
 
-    invoke-static {v0}, Lcom/whatsapp/HomeActivity;->e(Lcom/whatsapp/HomeActivity;)Lcom/actionbarsherlock/view/Menu;
-
-    move-result-object v0
-
-    const/4 v1, 0x3
-
-    invoke-interface {v0, v1, v2}, Lcom/actionbarsherlock/view/Menu;->setGroupVisible(IZ)V
+    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
     .line 4
-    iget-object v0, p0, Lcom/whatsapp/xk;->a:Lcom/whatsapp/HomeActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/HomeActivity;->e(Lcom/whatsapp/HomeActivity;)Lcom/actionbarsherlock/view/Menu;
-
-    move-result-object v0
-
-    const/4 v1, 0x4
-
-    invoke-interface {v0, v1, v2}, Lcom/actionbarsherlock/view/Menu;->setGroupVisible(IZ)V
-
-    .line 5
-    return v3
+    :cond_0
+    return-void
 .end method

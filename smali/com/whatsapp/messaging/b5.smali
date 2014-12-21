@@ -1,17 +1,23 @@
-.class final Lcom/whatsapp/messaging/b5;
+.class Lcom/whatsapp/messaging/b5;
 .super Ljava/lang/Object;
 .source "b5.java"
 
 # interfaces
-.implements Landroid/os/Parcelable$Creator;
+.implements Landroid/os/Handler$Callback;
+
+
+# instance fields
+.field final a:Lcom/whatsapp/messaging/MessageService;
 
 
 # direct methods
-.method constructor <init>()V
+.method constructor <init>(Lcom/whatsapp/messaging/MessageService;)V
     .locals 0
 
     .prologue
-    .line 3
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/messaging/b5;->a:Lcom/whatsapp/messaging/MessageService;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -19,48 +25,37 @@
 
 
 # virtual methods
-.method public a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/bn;
-    .locals 1
+.method public handleMessage(Landroid/os/Message;)Z
+    .locals 3
 
     .prologue
+    const/4 v1, 0x1
+
     .line 1
-    new-instance v0, Lcom/whatsapp/messaging/bn;
+    iget-object v0, p0, Lcom/whatsapp/messaging/b5;->a:Lcom/whatsapp/messaging/MessageService;
 
-    invoke-direct {v0, p1}, Lcom/whatsapp/messaging/bn;-><init>(Landroid/os/Parcel;)V
+    iget v2, p1, Landroid/os/Message;->arg1:I
 
-    return-object v0
-.end method
+    invoke-static {v0, v2}, Lcom/whatsapp/messaging/MessageService;->a(Lcom/whatsapp/messaging/MessageService;I)V
 
-.method public a(I)[Lcom/whatsapp/messaging/bn;
-    .locals 1
-
-    .prologue
     .line 4
-    new-array v0, p1, [Lcom/whatsapp/messaging/bn;
+    iget-object v2, p0, Lcom/whatsapp/messaging/b5;->a:Lcom/whatsapp/messaging/MessageService;
 
-    return-object v0
-.end method
+    iget v0, p1, Landroid/os/Message;->arg2:I
 
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 1
+    if-eqz v0, :cond_0
 
-    .prologue
-    .line 5
-    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/b5;->a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/bn;
+    move v0, v1
 
-    move-result-object v0
+    :goto_0
+    invoke-static {v2, v0}, Lcom/whatsapp/messaging/MessageService;->b(Lcom/whatsapp/messaging/MessageService;Z)V
 
-    return-object v0
-.end method
+    .line 3
+    return v1
 
-.method public newArray(I)[Ljava/lang/Object;
-    .locals 1
+    .line 4
+    :cond_0
+    const/4 v0, 0x0
 
-    .prologue
-    .line 2
-    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/b5;->a(I)[Lcom/whatsapp/messaging/bn;
-
-    move-result-object v0
-
-    return-object v0
+    goto :goto_0
 .end method

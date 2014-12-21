@@ -12,10 +12,10 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 2
     invoke-direct {p0, p1}, Landroid/widget/HorizontalScrollView;-><init>(Landroid/content/Context;)V
 
-    .line 4
+    .line 10
     sget-boolean v0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->NEEDS_PROXY:Z
 
     if-eqz v0, :cond_0
@@ -27,10 +27,10 @@
     :goto_0
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineHorizontalScrollView;->mProxy:Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;
 
-    .line 14
+    .line 8
     return-void
 
-    .line 4
+    .line 10
     :cond_0
     const/4 v0, 0x0
 
@@ -48,17 +48,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 17
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineHorizontalScrollView;->mProxy:Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->getAlpha()F
 
     move-result v0
 
-    .line 17
     :goto_0
     return v0
 
+    .line 7
     :cond_0
     invoke-super {p0}, Landroid/widget/HorizontalScrollView;->getAlpha()F
 
@@ -71,25 +71,25 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 14
     sget-boolean v0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->NEEDS_PROXY:Z
 
     if-eqz v0, :cond_0
 
-    .line 13
+    .line 5
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineHorizontalScrollView;->mProxy:Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->setAlpha(F)V
 
-    sget-boolean v0, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout;->a:Z
+    sget v0, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout;->a:I
 
     if-eqz v0, :cond_1
 
-    .line 16
+    .line 13
     :cond_0
     invoke-super {p0, p1}, Landroid/widget/HorizontalScrollView;->setAlpha(F)V
 
-    .line 11
+    .line 6
     :cond_1
     return-void
 .end method
@@ -98,12 +98,12 @@
     .locals 1
 
     .prologue
-    .line 15
+    .line 11
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineHorizontalScrollView;->mProxy:Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;
 
     if-eqz v0, :cond_1
 
-    .line 7
+    .line 16
     const/16 v0, 0x8
 
     if-ne p1, v0, :cond_0
@@ -111,20 +111,20 @@
     .line 1
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineHorizontalScrollView;->clearAnimation()V
 
-    sget-boolean v0, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout;->a:Z
+    sget v0, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout;->a:I
 
     if-eqz v0, :cond_1
 
-    .line 9
+    .line 4
     :cond_0
     if-nez p1, :cond_1
 
-    .line 8
+    .line 15
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineHorizontalScrollView;->mProxy:Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineHorizontalScrollView;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 10
+    .line 9
     :cond_1
     invoke-super {p0, p1}, Landroid/widget/HorizontalScrollView;->setVisibility(I)V
 

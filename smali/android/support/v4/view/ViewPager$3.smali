@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 1
     iput-object p1, p0, Landroid/support/v4/view/ViewPager$3;->this$0:Landroid/support/v4/view/ViewPager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -29,7 +29,7 @@
     .locals 2
 
     .prologue
-    .line 2
+    .line 3
     iget-object v0, p0, Landroid/support/v4/view/ViewPager$3;->this$0:Landroid/support/v4/view/ViewPager;
 
     const/4 v1, 0x0
@@ -41,6 +41,6 @@
 
     invoke-virtual {v0}, Landroid/support/v4/view/ViewPager;->populate()V
 
-    .line 1
+    .line 2
     return-void
 .end method

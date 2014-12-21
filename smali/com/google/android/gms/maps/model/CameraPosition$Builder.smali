@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field private gR:Lcom/google/android/gms/maps/model/LatLng;
+.field private alN:Lcom/google/android/gms/maps/model/LatLng;
 
-.field private gS:F
+.field private alO:F
 
-.field private gT:F
+.field private alP:F
 
-.field private gU:F
+.field private alQ:F
 
 
 # direct methods
@@ -26,7 +26,7 @@
 .method public bearing(F)Lcom/google/android/gms/maps/model/CameraPosition$Builder;
     .locals 0
 
-    iput p1, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->gU:F
+    iput p1, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->alQ:F
 
     return-object p0
 .end method
@@ -36,13 +36,13 @@
 
     new-instance v0, Lcom/google/android/gms/maps/model/CameraPosition;
 
-    iget-object v1, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->gR:Lcom/google/android/gms/maps/model/LatLng;
+    iget-object v1, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->alN:Lcom/google/android/gms/maps/model/LatLng;
 
-    iget v2, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->gS:F
+    iget v2, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->alO:F
 
-    iget v3, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->gT:F
+    iget v3, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->alP:F
 
-    iget v4, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->gU:F
+    iget v4, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->alQ:F
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/google/android/gms/maps/model/CameraPosition;-><init>(Lcom/google/android/gms/maps/model/LatLng;FFF)V
 
@@ -52,7 +52,7 @@
 .method public target(Lcom/google/android/gms/maps/model/LatLng;)Lcom/google/android/gms/maps/model/CameraPosition$Builder;
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->gR:Lcom/google/android/gms/maps/model/LatLng;
+    iput-object p1, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->alN:Lcom/google/android/gms/maps/model/LatLng;
 
     return-object p0
 .end method
@@ -60,7 +60,7 @@
 .method public tilt(F)Lcom/google/android/gms/maps/model/CameraPosition$Builder;
     .locals 0
 
-    iput p1, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->gT:F
+    iput p1, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->alP:F
 
     return-object p0
 .end method
@@ -68,7 +68,7 @@
 .method public zoom(F)Lcom/google/android/gms/maps/model/CameraPosition$Builder;
     .locals 0
 
-    iput p1, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->gS:F
+    iput p1, p0, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->alO:F
 
     return-object p0
 .end method

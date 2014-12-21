@@ -17,7 +17,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "9|j"
+    const-string v2, "\u0006v7"
 
     const/4 v0, -0x1
 
@@ -57,7 +57,7 @@
 
     const/4 v2, 0x1
 
-    const-string v0, "9|j"
+    const-string v0, "\u0006v7"
 
     move v3, v2
 
@@ -83,7 +83,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0x7f
+    const/16 v2, 0x6b
 
     :goto_2
     xor-int/2addr v2, v9
@@ -99,22 +99,22 @@
     goto :goto_1
 
     :pswitch_1
-    const/16 v2, 0x53
+    const/16 v2, 0x6c
 
     goto :goto_2
 
     :pswitch_2
-    const/16 v2, 0x15
+    const/16 v2, 0x1f
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v2, 0xe
+    const/16 v2, 0x53
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v2, 0x4e
+    const/16 v2, 0x9
 
     goto :goto_2
 
@@ -136,7 +136,7 @@
     .locals 0
 
     .prologue
-    .line 20
+    .line 9
     invoke-direct {p0}, Landroid/support/v4/app/DialogFragment;-><init>()V
 
     return-void
@@ -146,17 +146,17 @@
     .locals 4
 
     .prologue
-    .line 14
+    .line 6
     new-instance v0, Lcom/whatsapp/VoipNotAllowedActivity$VoipNotAllowedDialogFragment;
 
     invoke-direct {v0}, Lcom/whatsapp/VoipNotAllowedActivity$VoipNotAllowedDialogFragment;-><init>()V
 
-    .line 10
+    .line 14
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 21
+    .line 22
     sget-object v2, Lcom/whatsapp/VoipNotAllowedActivity$VoipNotAllowedDialogFragment;->z:[Ljava/lang/String;
 
     const/4 v3, 0x1
@@ -165,10 +165,10 @@
 
     invoke-virtual {v1, v2, p0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
+    .line 20
     invoke-virtual {v0, v1}, Landroid/support/v4/app/DialogFragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 5
+    .line 15
     return-object v0
 .end method
 
@@ -176,7 +176,7 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 18
     invoke-static {p0}, Lcom/whatsapp/VoipNotAllowedActivity$VoipNotAllowedDialogFragment;->a(Ljava/lang/String;)Landroid/support/v4/app/DialogFragment;
 
     move-result-object v0
@@ -194,9 +194,9 @@
 
     const/4 v5, 0x0
 
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
+    sget v1, Lcom/whatsapp/App;->h:I
 
-    .line 8
+    .line 19
     invoke-virtual {p0}, Lcom/whatsapp/VoipNotAllowedActivity$VoipNotAllowedDialogFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
@@ -209,54 +209,54 @@
 
     move-result-object v0
 
-    .line 16
-    sget-object v2, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 21
+    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    invoke-virtual {v2, v0}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v2, v0}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v2
 
-    .line 22
-    iget-object v0, v2, Lcom/whatsapp/adg;->E:Lcom/whatsapp/ra;
+    .line 11
+    iget-object v0, v2, Lcom/whatsapp/tc;->K:Lcom/whatsapp/aij;
 
-    sget-object v3, Lcom/whatsapp/ra;->FORWARD:Lcom/whatsapp/ra;
+    sget-object v3, Lcom/whatsapp/aij;->FORWARD:Lcom/whatsapp/aij;
 
     if-eq v0, v3, :cond_0
 
-    sget-object v0, Lcom/whatsapp/t4;->c:Lcom/whatsapp/l3;
+    sget-object v0, Lcom/whatsapp/bw;->d:Lcom/whatsapp/_c;
 
-    iget-object v3, v2, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v3, v2, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    invoke-interface {v0, v3}, Lcom/whatsapp/l3;->a(Ljava/lang/String;)Z
+    invoke-interface {v0, v3}, Lcom/whatsapp/_c;->a(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 11
+    .line 10
     :cond_0
-    const v0, 0x7f0e047b
+    const v0, 0x7f0e048d
 
     if-eqz v1, :cond_3
 
-    .line 23
+    .line 17
     :cond_1
-    iget-object v0, v2, Lcom/whatsapp/adg;->E:Lcom/whatsapp/ra;
+    iget-object v0, v2, Lcom/whatsapp/tc;->K:Lcom/whatsapp/aij;
 
-    sget-object v3, Lcom/whatsapp/ra;->UPGRADE:Lcom/whatsapp/ra;
+    sget-object v3, Lcom/whatsapp/aij;->UPGRADE:Lcom/whatsapp/aij;
 
     if-ne v0, v3, :cond_2
 
-    .line 1
-    const v0, 0x7f0e047c
+    .line 5
+    const v0, 0x7f0e048e
 
     if-eqz v1, :cond_3
 
-    .line 12
+    .line 4
     :cond_2
-    const v0, 0x7f0e047d
+    const v0, 0x7f0e048f
 
-    .line 19
+    .line 16
     :cond_3
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
@@ -268,12 +268,12 @@
 
     new-array v3, v6, [Ljava/lang/Object;
 
-    .line 7
+    .line 8
     invoke-virtual {p0}, Lcom/whatsapp/VoipNotAllowedActivity$VoipNotAllowedDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v4
 
-    invoke-virtual {v2, v4}, Lcom/whatsapp/adg;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v2, v4}, Lcom/whatsapp/tc;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -287,23 +287,23 @@
 
     move-result-object v0
 
-    .line 15
+    .line 7
     invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0e02aa
+    const v1, 0x7f0e02b7
 
-    new-instance v2, Lcom/whatsapp/adb;
+    new-instance v2, Lcom/whatsapp/a1x;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/adb;-><init>(Lcom/whatsapp/VoipNotAllowedActivity$VoipNotAllowedDialogFragment;)V
+    invoke-direct {v2, p0}, Lcom/whatsapp/a1x;-><init>(Lcom/whatsapp/VoipNotAllowedActivity$VoipNotAllowedDialogFragment;)V
 
-    .line 6
+    .line 23
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 18
+    .line 1
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0
@@ -315,18 +315,18 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 2
     invoke-virtual {p0}, Lcom/whatsapp/VoipNotAllowedActivity$VoipNotAllowedDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 2
+    .line 12
     if-eqz v0, :cond_0
 
-    .line 9
+    .line 13
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
-    .line 13
+    .line 3
     :cond_0
     return-void
 .end method

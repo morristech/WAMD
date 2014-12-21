@@ -1,8 +1,39 @@
-.class public interface abstract Lcom/whatsapp/at;
+.class Lcom/whatsapp/at;
 .super Ljava/lang/Object;
 .source "at.java"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field final a:Lcom/whatsapp/HomeActivity;
+
+
+# direct methods
+.method constructor <init>(Lcom/whatsapp/HomeActivity;)V
+    .locals 0
+
+    .prologue
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/at;->a:Lcom/whatsapp/HomeActivity;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
 
 # virtual methods
-.method public abstract a(Lcom/google/android/maps/GeoPoint;II)V
+.method public run()V
+    .locals 1
+
+    .prologue
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/at;->a:Lcom/whatsapp/HomeActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/HomeActivity;->c(Lcom/whatsapp/HomeActivity;)V
+
+    .line 2
+    return-void
 .end method

@@ -1,74 +1,47 @@
-.class public Lde/greenrobot/event/e;
-.super Ljava/lang/Object;
+.class Lde/greenrobot/event/e;
+.super Ljava/lang/ThreadLocal;
 .source "e.java"
 
 
-# static fields
-.field private static final h:Ljava/util/concurrent/ExecutorService;
-
-
 # instance fields
-.field a:Ljava/util/List;
-
-.field b:Z
-
-.field c:Z
-
-.field d:Z
-
-.field e:Z
-
-.field f:Z
-
-.field g:Ljava/util/concurrent/ExecutorService;
-
-.field i:Z
+.field final a:Lde/greenrobot/event/h;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method constructor <init>(Lde/greenrobot/event/h;)V
+    .locals 0
 
     .prologue
     .line 2
-    invoke-static {}, Ljava/util/concurrent/Executors;->newCachedThreadPool()Ljava/util/concurrent/ExecutorService;
+    iput-object p1, p0, Lde/greenrobot/event/e;->a:Lde/greenrobot/event/h;
 
-    move-result-object v0
-
-    sput-object v0, Lde/greenrobot/event/e;->h:Ljava/util/concurrent/ExecutorService;
+    invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 
     return-void
 .end method
 
-.method constructor <init>()V
+
+# virtual methods
+.method protected a()Lde/greenrobot/event/a;
     .locals 1
 
     .prologue
-    const/4 v0, 0x1
-
-    .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 8
-    iput-boolean v0, p0, Lde/greenrobot/event/e;->i:Z
-
     .line 1
-    iput-boolean v0, p0, Lde/greenrobot/event/e;->f:Z
+    new-instance v0, Lde/greenrobot/event/a;
 
-    .line 6
-    iput-boolean v0, p0, Lde/greenrobot/event/e;->c:Z
+    invoke-direct {v0}, Lde/greenrobot/event/a;-><init>()V
 
-    .line 5
-    iput-boolean v0, p0, Lde/greenrobot/event/e;->e:Z
+    return-object v0
+.end method
 
+.method protected initialValue()Ljava/lang/Object;
+    .locals 1
+
+    .prologue
     .line 3
-    iput-boolean v0, p0, Lde/greenrobot/event/e;->b:Z
+    invoke-virtual {p0}, Lde/greenrobot/event/e;->a()Lde/greenrobot/event/a;
 
-    .line 9
-    sget-object v0, Lde/greenrobot/event/e;->h:Ljava/util/concurrent/ExecutorService;
+    move-result-object v0
 
-    iput-object v0, p0, Lde/greenrobot/event/e;->g:Ljava/util/concurrent/ExecutorService;
-
-    .line 4
-    return-void
+    return-object v0
 .end method

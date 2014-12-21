@@ -1,290 +1,384 @@
-.class public abstract Lcom/google/gP;
+.class public Lcom/google/gp;
 .super Ljava/lang/Object;
-.source "gP.java"
+.source "gp.java"
+
+# interfaces
+.implements Ljava/io/Externalizable;
 
 
 # static fields
-.field private static final z:Ljava/lang/String;
+.field private static final serialVersionUID:J = 0x1L
 
 
 # instance fields
-.field private final a:I
+.field private a:Ljava/lang/String;
 
-.field private final b:I
+.field private b:Ljava/lang/String;
+
+.field private c:Z
+
+.field private d:Ljava/lang/String;
+
+.field private e:Z
+
+.field private f:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
-
-    const/16 v1, 0x12
-
-    const-string v0, "l~{ajTc\u007f{$YxqwjKyg`)]6v}/K6|}>\u0018egb:Wdf28Wbsf#Wx2p3\u0018/\"2.]q`w/K8"
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    array-length v2, v0
-
-    const/4 v3, 0x0
-
-    move v4, v3
-
-    move v3, v2
-
-    move-object v2, v0
-
-    :goto_0
-    if-gt v3, v4, :cond_0
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v2}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/gP;->z:Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v5, v2, v4
-
-    rem-int/lit8 v0, v4, 0x5
-
-    packed-switch v0, :pswitch_data_0
-
-    const/16 v0, 0x4a
-
-    :goto_1
-    xor-int/2addr v0, v5
-
-    int-to-char v0, v0
-
-    aput-char v0, v2, v4
-
-    add-int/lit8 v0, v4, 0x1
-
-    move v4, v0
-
-    goto :goto_0
-
-    :pswitch_0
-    const/16 v0, 0x38
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v0, 0x16
-
-    goto :goto_1
-
-    :pswitch_2
-    move v0, v1
-
-    goto :goto_1
-
-    :pswitch_3
-    move v0, v1
-
-    goto :goto_1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-.end method
-
-.method protected constructor <init>(II)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .prologue
-    .line 11
+    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
-    iput p1, p0, Lcom/google/gP;->a:I
+    .line 15
+    const-string v0, ""
 
-    .line 20
-    iput p2, p0, Lcom/google/gP;->b:I
+    iput-object v0, p0, Lcom/google/gp;->a:Ljava/lang/String;
 
-    .line 8
+    .line 33
+    const-string v0, ""
+
+    iput-object v0, p0, Lcom/google/gp;->d:Ljava/lang/String;
+
+    .line 5
+    const-string v0, ""
+
+    iput-object v0, p0, Lcom/google/gp;->b:Ljava/lang/String;
+
+    .line 21
     return-void
+.end method
+
+.method public static d()Lcom/google/g_;
+    .locals 1
+
+    .prologue
+    .line 27
+    new-instance v0, Lcom/google/g_;
+
+    invoke-direct {v0}, Lcom/google/g_;-><init>()V
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
+.method public a(Lcom/google/gp;)Lcom/google/gp;
     .locals 1
 
     .prologue
     .line 23
-    iget v0, p0, Lcom/google/gP;->b:I
+    invoke-virtual {p1}, Lcom/google/gp;->f()Z
 
-    return v0
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 31
+    invoke-virtual {p1}, Lcom/google/gp;->e()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/google/gp;->b(Ljava/lang/String;)Lcom/google/gp;
+
+    .line 46
+    :cond_0
+    invoke-virtual {p1}, Lcom/google/gp;->a()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 11
+    invoke-virtual {p1}, Lcom/google/gp;->c()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/google/gp;->c(Ljava/lang/String;)Lcom/google/gp;
+
+    .line 38
+    :cond_1
+    invoke-virtual {p1}, Lcom/google/gp;->g()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 16
+    invoke-virtual {p1}, Lcom/google/gp;->b()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/google/gp;->a(Ljava/lang/String;)Lcom/google/gp;
+
+    .line 41
+    :cond_2
+    return-object p0
 .end method
 
-.method public abstract a(I[B)[B
-.end method
-
-.method public abstract b()[B
-.end method
-
-.method public final c()I
+.method public a(Ljava/lang/String;)Lcom/google/gp;
     .locals 1
 
     .prologue
-    .line 24
-    iget v0, p0, Lcom/google/gP;->a:I
+    .line 3
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/google/gp;->f:Z
+
+    .line 14
+    iput-object p1, p0, Lcom/google/gp;->b:Ljava/lang/String;
+
+    .line 47
+    return-object p0
+.end method
+
+.method public a()Z
+    .locals 1
+
+    .prologue
+    .line 36
+    iget-boolean v0, p0, Lcom/google/gp;->c:Z
 
     return v0
 .end method
 
-.method public d()Lcom/google/gP;
-    .locals 2
-
-    .prologue
-    .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    sget-object v1, Lcom/google/gP;->z:Ljava/lang/String;
-
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public e()Z
+.method public b(Ljava/lang/String;)Lcom/google/gp;
     .locals 1
 
     .prologue
     .line 26
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/google/gp;->e:Z
+
+    .line 32
+    iput-object p1, p0, Lcom/google/gp;->a:Ljava/lang/String;
+
+    .line 48
+    return-object p0
+.end method
+
+.method public b()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 45
+    iget-object v0, p0, Lcom/google/gp;->b:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public b(Lcom/google/gp;)Z
+    .locals 2
+
+    .prologue
+    .line 8
+    iget-object v0, p0, Lcom/google/gp;->a:Ljava/lang/String;
+
+    iget-object v1, p1, Lcom/google/gp;->a:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/google/gp;->d:Ljava/lang/String;
+
+    iget-object v1, p1, Lcom/google/gp;->d:Ljava/lang/String;
+
+    .line 29
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/google/gp;->b:Ljava/lang/String;
+
+    iget-object v1, p1, Lcom/google/gp;->b:Ljava/lang/String;
+
+    .line 4
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
     const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public c(Ljava/lang/String;)Lcom/google/gp;
+    .locals 1
+
+    .prologue
+    .line 13
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/google/gp;->c:Z
+
+    .line 24
+    iput-object p1, p0, Lcom/google/gp;->d:Ljava/lang/String;
+
+    .line 43
+    return-object p0
+.end method
+
+.method public c()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 44
+    iget-object v0, p0, Lcom/google/gp;->d:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public e()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 34
+    iget-object v0, p0, Lcom/google/gp;->a:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public f()Z
+    .locals 1
+
+    .prologue
+    .line 20
+    iget-boolean v0, p0, Lcom/google/gp;->e:Z
 
     return v0
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 8
+.method public g()Z
+    .locals 1
 
     .prologue
-    const/4 v1, 0x0
+    .line 37
+    iget-boolean v0, p0, Lcom/google/gp;->f:Z
 
-    sget v5, Lcom/google/dT;->c:I
+    return v0
+.end method
 
-    .line 2
-    iget v0, p0, Lcom/google/gP;->a:I
+.method public readExternal(Ljava/io/ObjectInput;)V
+    .locals 1
 
-    new-array v0, v0, [B
-
-    .line 7
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    iget v2, p0, Lcom/google/gP;->b:I
-
-    iget v3, p0, Lcom/google/gP;->a:I
-
-    add-int/lit8 v3, v3, 0x1
-
-    mul-int/2addr v2, v3
-
-    invoke-direct {v6, v2}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    move-object v2, v0
-
-    move v0, v1
-
+    .prologue
     .line 19
-    :cond_0
-    iget v3, p0, Lcom/google/gP;->b:I
+    invoke-interface {p1}, Ljava/io/ObjectInput;->readBoolean()Z
 
-    if-ge v0, v3, :cond_7
+    move-result v0
 
-    .line 17
-    invoke-virtual {p0, v0, v2}, Lcom/google/gP;->a(I[B)[B
+    if-eqz v0, :cond_0
 
-    move-result-object v2
-
-    move v3, v1
-
-    .line 9
-    :cond_1
-    iget v4, p0, Lcom/google/gP;->a:I
-
-    if-ge v3, v4, :cond_6
-
-    .line 3
-    aget-byte v4, v2, v3
-
-    and-int/lit16 v7, v4, 0xff
-
-    .line 22
-    const/16 v4, 0x40
-
-    if-ge v7, v4, :cond_2
-
-    .line 12
-    const/16 v4, 0x23
-
-    if-eqz v5, :cond_5
-
-    .line 10
-    :cond_2
-    const/16 v4, 0x80
-
-    if-ge v7, v4, :cond_3
-
-    .line 21
-    const/16 v4, 0x2b
-
-    if-eqz v5, :cond_5
-
-    .line 13
-    :cond_3
-    const/16 v4, 0xc0
-
-    if-ge v7, v4, :cond_4
-
-    .line 18
-    const/16 v4, 0x2e
-
-    if-eqz v5, :cond_5
-
-    .line 15
-    :cond_4
-    const/16 v4, 0x20
-
-    .line 4
-    :cond_5
-    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 6
-    add-int/lit8 v3, v3, 0x1
-
-    if-eqz v5, :cond_1
-
-    .line 16
-    :cond_6
-    const/16 v3, 0xa
-
-    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 5
-    add-int/lit8 v0, v0, 0x1
-
-    if-eqz v5, :cond_0
-
-    .line 25
-    :cond_7
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 35
+    invoke-interface {p1}, Ljava/io/ObjectInput;->readUTF()Ljava/lang/String;
 
     move-result-object v0
 
-    return-object v0
+    invoke-virtual {p0, v0}, Lcom/google/gp;->b(Ljava/lang/String;)Lcom/google/gp;
+
+    .line 22
+    :cond_0
+    invoke-interface {p1}, Ljava/io/ObjectInput;->readBoolean()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 28
+    invoke-interface {p1}, Ljava/io/ObjectInput;->readUTF()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/google/gp;->c(Ljava/lang/String;)Lcom/google/gp;
+
+    .line 25
+    :cond_1
+    invoke-interface {p1}, Ljava/io/ObjectInput;->readBoolean()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 7
+    invoke-interface {p1}, Ljava/io/ObjectInput;->readUTF()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/google/gp;->a(Ljava/lang/String;)Lcom/google/gp;
+
+    .line 40
+    :cond_2
+    return-void
+.end method
+
+.method public writeExternal(Ljava/io/ObjectOutput;)V
+    .locals 1
+
+    .prologue
+    .line 2
+    iget-boolean v0, p0, Lcom/google/gp;->e:Z
+
+    invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
+
+    .line 1
+    iget-boolean v0, p0, Lcom/google/gp;->e:Z
+
+    if-eqz v0, :cond_0
+
+    .line 10
+    iget-object v0, p0, Lcom/google/gp;->a:Ljava/lang/String;
+
+    invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeUTF(Ljava/lang/String;)V
+
+    .line 17
+    :cond_0
+    iget-boolean v0, p0, Lcom/google/gp;->c:Z
+
+    invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
+
+    .line 39
+    iget-boolean v0, p0, Lcom/google/gp;->c:Z
+
+    if-eqz v0, :cond_1
+
+    .line 9
+    iget-object v0, p0, Lcom/google/gp;->d:Ljava/lang/String;
+
+    invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeUTF(Ljava/lang/String;)V
+
+    .line 18
+    :cond_1
+    iget-boolean v0, p0, Lcom/google/gp;->f:Z
+
+    invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
+
+    .line 12
+    iget-boolean v0, p0, Lcom/google/gp;->f:Z
+
+    if-eqz v0, :cond_2
+
+    .line 30
+    iget-object v0, p0, Lcom/google/gp;->b:Ljava/lang/String;
+
+    invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeUTF(Ljava/lang/String;)V
+
+    .line 42
+    :cond_2
+    return-void
 .end method

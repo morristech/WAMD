@@ -3,24 +3,20 @@
 .source "al.java"
 
 # interfaces
-.implements Landroid/hardware/Camera$ShutterCallback;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/camera/CameraView;
-
-.field final b:Lcom/whatsapp/camera/af;
+.field final a:Lcom/whatsapp/camera/ShutterOverlay;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/camera/CameraView;Lcom/whatsapp/camera/af;)V
+.method constructor <init>(Lcom/whatsapp/camera/ShutterOverlay;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/camera/al;->a:Lcom/whatsapp/camera/CameraView;
-
-    iput-object p2, p0, Lcom/whatsapp/camera/al;->b:Lcom/whatsapp/camera/af;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/camera/al;->a:Lcom/whatsapp/camera/ShutterOverlay;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,15 +25,22 @@
 
 
 # virtual methods
-.method public onShutter()V
-    .locals 1
+.method public run()V
+    .locals 2
 
     .prologue
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/camera/al;->b:Lcom/whatsapp/camera/af;
+    iget-object v0, p0, Lcom/whatsapp/camera/al;->a:Lcom/whatsapp/camera/ShutterOverlay;
 
-    invoke-interface {v0}, Lcom/whatsapp/camera/af;->a()V
+    const/4 v1, 0x0
 
-    .line 3
+    invoke-static {v0, v1}, Lcom/whatsapp/camera/ShutterOverlay;->a(Lcom/whatsapp/camera/ShutterOverlay;Z)Z
+
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/camera/al;->a:Lcom/whatsapp/camera/ShutterOverlay;
+
+    invoke-virtual {v0}, Lcom/whatsapp/camera/ShutterOverlay;->invalidate()V
+
+    .line 4
     return-void
 .end method

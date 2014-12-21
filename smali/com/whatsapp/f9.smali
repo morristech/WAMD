@@ -1,77 +1,46 @@
 .class Lcom/whatsapp/f9;
-.super Ljava/lang/Object;
+.super Lcom/whatsapp/util/l;
 .source "f9.java"
-
-# interfaces
-.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/gp;
+.field final b:Lcom/whatsapp/WebSessionsActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/gp;)V
+.method constructor <init>(Lcom/whatsapp/WebSessionsActivity;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/f9;->a:Lcom/whatsapp/gp;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/f9;->b:Lcom/whatsapp/WebSessionsActivity;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcom/whatsapp/util/l;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 2
+.method public a(Landroid/view/View;)V
+    .locals 3
 
     .prologue
-    .line 6
-    iget-object v0, p0, Lcom/whatsapp/f9;->a:Lcom/whatsapp/gp;
+    .line 1
+    new-instance v0, Lcom/whatsapp/WebSessionsActivity$LogoutAllConfirmationDialogFragment;
 
-    const/4 v1, 0x0
+    invoke-direct {v0}, Lcom/whatsapp/WebSessionsActivity$LogoutAllConfirmationDialogFragment;-><init>()V
 
-    invoke-static {v0, v1}, Lcom/whatsapp/gp;->a(Lcom/whatsapp/gp;Z)Z
+    iget-object v1, p0, Lcom/whatsapp/f9;->b:Lcom/whatsapp/WebSessionsActivity;
 
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/f9;->a:Lcom/whatsapp/gp;
+    invoke-virtual {v1}, Lcom/whatsapp/WebSessionsActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
 
-    const/4 v1, 0x0
+    move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/whatsapp/gp;->a(Lcom/whatsapp/gp;Ljava/lang/String;)Ljava/lang/String;
+    const/4 v2, 0x0
 
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/f9;->a:Lcom/whatsapp/gp;
-
-    invoke-static {v0}, Lcom/whatsapp/gp;->d(Lcom/whatsapp/gp;)Landroid/app/Activity;
-
-    move-result-object v0
-
-    const/16 v1, 0x32
-
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {v0, v1, v2}, Lcom/whatsapp/WebSessionsActivity$LogoutAllConfirmationDialogFragment;->show(Landroid/support/v4/app/FragmentManager;Ljava/lang/String;)V
 
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/f9;->a:Lcom/whatsapp/gp;
-
-    invoke-static {v0}, Lcom/whatsapp/gp;->b(Lcom/whatsapp/gp;)Landroid/widget/EditText;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
-
-    move-result-object v0
-
-    invoke-static {v0}, Landroid/text/method/TextKeyListener;->clear(Landroid/text/Editable;)V
-
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/f9;->a:Lcom/whatsapp/gp;
-
-    invoke-virtual {v0}, Lcom/whatsapp/gp;->dismiss()V
-
-    .line 5
     return-void
 .end method

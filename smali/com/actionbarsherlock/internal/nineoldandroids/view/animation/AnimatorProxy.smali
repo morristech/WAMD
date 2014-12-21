@@ -36,7 +36,7 @@
     .locals 2
 
     .prologue
-    .line 48
+    .line 58
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xb
@@ -48,7 +48,7 @@
     :goto_0
     sput-boolean v0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->NEEDS_PROXY:Z
 
-    .line 43
+    .line 88
     new-instance v0, Ljava/util/WeakHashMap;
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
@@ -57,7 +57,7 @@
 
     return-void
 
-    .line 48
+    .line 58
     :cond_0
     const/4 v0, 0x0
 
@@ -70,33 +70,33 @@
     .prologue
     const/high16 v0, 0x3f800000
 
-    .line 82
+    .line 29
     invoke-direct {p0}, Landroid/view/animation/Animation;-><init>()V
 
-    .line 44
+    .line 28
     iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mAlpha:F
 
-    .line 53
+    .line 21
     iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mScaleX:F
 
-    .line 51
+    .line 94
     iput v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mScaleY:F
 
-    .line 18
+    .line 70
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mBefore:Landroid/graphics/RectF;
 
-    .line 47
+    .line 80
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mAfter:Landroid/graphics/RectF;
 
-    .line 77
+    .line 55
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
@@ -108,22 +108,22 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->setDuration(J)V
 
-    .line 86
+    .line 75
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->setFillAfter(Z)V
 
-    .line 83
+    .line 11
     invoke-virtual {p1, p0}, Landroid/view/View;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 64
+    .line 16
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mView:Ljava/lang/ref/WeakReference;
 
-    .line 100
+    .line 73
     return-void
 .end method
 
@@ -133,38 +133,38 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 21
+    .line 4
     invoke-virtual {p2}, Landroid/view/View;->getWidth()I
 
     move-result v0
 
     int-to-float v0, v0
 
-    .line 50
+    .line 43
     invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
     move-result v1
 
     int-to-float v1, v1
 
-    .line 6
+    .line 51
     invoke-virtual {p1, v2, v2, v0, v1}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 78
+    .line 41
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mTempMatrix:Landroid/graphics/Matrix;
 
-    .line 30
+    .line 47
     invoke-virtual {v0}, Landroid/graphics/Matrix;->reset()V
 
-    .line 20
+    .line 53
     invoke-direct {p0, v0, p2}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->transformMatrix(Landroid/graphics/Matrix;Landroid/view/View;)V
 
-    .line 37
+    .line 91
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mTempMatrix:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;)Z
 
-    .line 57
+    .line 72
     invoke-virtual {p2}, Landroid/view/View;->getLeft()I
 
     move-result v0
@@ -188,18 +188,18 @@
 
     if-gez v0, :cond_0
 
-    .line 5
+    .line 13
     iget v0, p1, Landroid/graphics/RectF;->right:F
 
-    .line 36
+    .line 57
     iget v1, p1, Landroid/graphics/RectF;->left:F
 
     iput v1, p1, Landroid/graphics/RectF;->right:F
 
-    .line 45
+    .line 78
     iput v0, p1, Landroid/graphics/RectF;->left:F
 
-    .line 56
+    .line 34
     :cond_0
     iget v0, p1, Landroid/graphics/RectF;->bottom:F
 
@@ -209,18 +209,18 @@
 
     if-gez v0, :cond_1
 
-    .line 92
+    .line 97
     iget v0, p1, Landroid/graphics/RectF;->top:F
 
-    .line 54
+    .line 90
     iget v1, p1, Landroid/graphics/RectF;->bottom:F
 
     iput v1, p1, Landroid/graphics/RectF;->top:F
 
-    .line 72
+    .line 98
     iput v0, p1, Landroid/graphics/RectF;->bottom:F
 
-    .line 19
+    .line 82
     :cond_1
     return-void
 .end method
@@ -229,7 +229,7 @@
     .locals 5
 
     .prologue
-    .line 93
+    .line 15
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mView:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -238,15 +238,15 @@
 
     check-cast v0, Landroid/view/View;
 
-    .line 75
+    .line 83
     if-nez v0, :cond_1
 
-    .line 62
+    .line 64
     :cond_0
     :goto_0
     return-void
 
-    .line 87
+    .line 99
     :cond_1
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -257,24 +257,24 @@
     .line 85
     if-eqz v1, :cond_0
 
-    .line 34
+    .line 3
     invoke-virtual {v0, p0}, Landroid/view/View;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 84
+    .line 89
     iget-object v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mAfter:Landroid/graphics/RectF;
 
-    .line 40
+    .line 2
     invoke-direct {p0, v2, v0}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->computeRect(Landroid/graphics/RectF;Landroid/view/View;)V
 
-    .line 16
+    .line 32
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mBefore:Landroid/graphics/RectF;
 
     invoke-virtual {v2, v0}, Landroid/graphics/RectF;->union(Landroid/graphics/RectF;)V
 
-    .line 24
+    .line 42
     iget v0, v2, Landroid/graphics/RectF;->left:F
 
-    .line 9
+    .line 66
     invoke-static {v0}, Landroid/util/FloatMath;->floor(F)F
 
     move-result v0
@@ -283,7 +283,7 @@
 
     iget v3, v2, Landroid/graphics/RectF;->top:F
 
-    .line 61
+    .line 20
     invoke-static {v3}, Landroid/util/FloatMath;->floor(F)F
 
     move-result v3
@@ -292,7 +292,7 @@
 
     iget v4, v2, Landroid/graphics/RectF;->right:F
 
-    .line 31
+    .line 24
     invoke-static {v4}, Landroid/util/FloatMath;->ceil(F)F
 
     move-result v4
@@ -301,14 +301,14 @@
 
     iget v2, v2, Landroid/graphics/RectF;->bottom:F
 
-    .line 14
+    .line 87
     invoke-static {v2}, Landroid/util/FloatMath;->ceil(F)F
 
     move-result v2
 
     float-to-int v2, v2
 
-    .line 23
+    .line 59
     invoke-virtual {v1, v0, v3, v4, v2}, Landroid/view/View;->invalidate(IIII)V
 
     goto :goto_0
@@ -318,7 +318,7 @@
     .locals 2
 
     .prologue
-    .line 89
+    .line 50
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mView:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -327,15 +327,15 @@
 
     check-cast v0, Landroid/view/View;
 
-    .line 25
+    .line 69
     if-eqz v0, :cond_0
 
-    .line 65
+    .line 54
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mBefore:Landroid/graphics/RectF;
 
     invoke-direct {p0, v1, v0}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->computeRect(Landroid/graphics/RectF;Landroid/view/View;)V
 
-    .line 88
+    .line 77
     :cond_0
     return-void
 .end method
@@ -348,27 +348,27 @@
 
     const/high16 v5, 0x3f800000
 
-    .line 11
+    .line 23
     invoke-virtual {p2}, Landroid/view/View;->getWidth()I
 
     move-result v0
 
     int-to-float v0, v0
 
-    .line 91
+    .line 22
     invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
     move-result v1
 
     int-to-float v1, v1
 
-    .line 63
+    .line 60
     iget v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mScaleX:F
 
-    .line 32
+    .line 40
     iget v3, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mScaleY:F
 
-    .line 52
+    .line 37
     cmpl-float v4, v2, v5
 
     if-nez v4, :cond_0
@@ -377,7 +377,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 68
+    .line 10
     :cond_0
     mul-float v4, v2, v0
 
@@ -385,24 +385,24 @@
 
     div-float/2addr v0, v6
 
-    .line 15
+    .line 9
     mul-float v4, v3, v1
 
     sub-float v1, v4, v1
 
     div-float/2addr v1, v6
 
-    .line 60
+    .line 52
     invoke-virtual {p1, v2, v3}, Landroid/graphics/Matrix;->postScale(FF)Z
 
-    .line 66
+    .line 79
     neg-float v0, v0
 
     neg-float v1, v1
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
-    .line 8
+    .line 81
     :cond_1
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mTranslationX:F
 
@@ -410,7 +410,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
-    .line 58
+    .line 36
     return-void
 .end method
 
@@ -425,7 +425,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 26
+    .line 30
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->PROXIES:Ljava/util/WeakHashMap;
 
     invoke-virtual {v0, p0}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -434,20 +434,20 @@
 
     check-cast v0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;
 
-    .line 39
+    .line 44
     if-nez v0, :cond_0
 
-    .line 55
+    .line 46
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;
 
     invoke-direct {v0, p0}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;-><init>(Landroid/view/View;)V
 
-    .line 2
+    .line 86
     sget-object v1, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->PROXIES:Ljava/util/WeakHashMap;
 
     invoke-virtual {v1, p0, v0}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 96
+    .line 93
     :cond_0
     :goto_0
     return-object v0
@@ -458,7 +458,7 @@
 
     invoke-direct {v0, p0}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;-><init>(Landroid/view/View;)V
 
-    sget-boolean v2, Lcom/actionbarsherlock/app/SherlockActivity;->a:Z
+    sget v2, Lcom/actionbarsherlock/app/SherlockActivity;->a:I
 
     if-eqz v2, :cond_0
 
@@ -477,7 +477,7 @@
     .prologue
     sget v1, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->a:I
 
-    .line 74
+    .line 19
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mView:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -486,48 +486,40 @@
 
     check-cast v0, Landroid/view/View;
 
-    .line 95
+    .line 62
     if-eqz v0, :cond_0
 
-    .line 42
+    .line 5
     iget v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mAlpha:F
 
     invoke-virtual {p2, v2}, Landroid/view/animation/Transformation;->setAlpha(F)V
 
-    .line 3
+    .line 12
     invoke-virtual {p2}, Landroid/view/animation/Transformation;->getMatrix()Landroid/graphics/Matrix;
 
     move-result-object v2
 
     invoke-direct {p0, v2, v0}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->transformMatrix(Landroid/graphics/Matrix;Landroid/view/View;)V
 
-    .line 98
+    .line 8
     :cond_0
     if-eqz v1, :cond_1
 
-    sget-boolean v0, Lcom/actionbarsherlock/app/SherlockActivity;->a:Z
+    sget v0, Lcom/actionbarsherlock/app/SherlockActivity;->a:I
 
-    if-eqz v0, :cond_2
+    add-int/lit8 v0, v0, 0x1
 
-    const/4 v0, 0x0
-
-    :goto_0
-    sput-boolean v0, Lcom/actionbarsherlock/app/SherlockActivity;->a:Z
+    sput v0, Lcom/actionbarsherlock/app/SherlockActivity;->a:I
 
     :cond_1
     return-void
-
-    :cond_2
-    const/4 v0, 0x1
-
-    goto :goto_0
 .end method
 
 .method public getAlpha()F
     .locals 1
 
     .prologue
-    .line 22
+    .line 92
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mAlpha:F
 
     return v0
@@ -537,7 +529,7 @@
     .locals 1
 
     .prologue
-    .line 67
+    .line 56
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mTranslationX:F
 
     return v0
@@ -547,7 +539,7 @@
     .locals 1
 
     .prologue
-    .line 80
+    .line 61
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mTranslationY:F
 
     return v0
@@ -557,7 +549,7 @@
     .locals 0
 
     .prologue
-    .line 79
+    .line 27
     return-void
 .end method
 
@@ -565,17 +557,17 @@
     .locals 1
 
     .prologue
-    .line 94
+    .line 74
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mAlpha:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
-    .line 73
+    .line 6
     iput p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mAlpha:F
 
-    .line 69
+    .line 71
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mView:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -584,13 +576,13 @@
 
     check-cast v0, Landroid/view/View;
 
-    .line 4
+    .line 14
     if-eqz v0, :cond_0
 
-    .line 81
+    .line 100
     invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
-    .line 46
+    .line 33
     :cond_0
     return-void
 .end method
@@ -599,23 +591,23 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 39
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mScaleY:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
-    .line 99
+    .line 67
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->prepareForUpdate()V
 
-    .line 97
+    .line 45
     iput p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mScaleY:F
 
-    .line 90
+    .line 7
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->invalidateAfterUpdate()V
 
-    .line 41
+    .line 95
     :cond_0
     return-void
 .end method
@@ -624,23 +616,23 @@
     .locals 1
 
     .prologue
-    .line 70
+    .line 65
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mTranslationX:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
-    .line 33
+    .line 31
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->prepareForUpdate()V
 
-    .line 28
+    .line 84
     iput p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mTranslationX:F
 
-    .line 59
+    .line 68
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->invalidateAfterUpdate()V
 
-    .line 27
+    .line 96
     :cond_0
     return-void
 .end method
@@ -649,23 +641,23 @@
     .locals 1
 
     .prologue
-    .line 13
+    .line 18
     iget v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mTranslationY:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
-    .line 29
+    .line 25
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->prepareForUpdate()V
 
-    .line 71
+    .line 17
     iput p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->mTranslationY:F
 
-    .line 35
+    .line 63
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy;->invalidateAfterUpdate()V
 
-    .line 17
+    .line 35
     :cond_0
     return-void
 .end method

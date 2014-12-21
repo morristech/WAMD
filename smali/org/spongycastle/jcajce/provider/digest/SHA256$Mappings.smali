@@ -14,13 +14,13 @@
     .locals 12
 
     .prologue
-    const/16 v4, 0x5d
+    const/16 v1, 0x5f
 
-    const/16 v1, 0x55
+    const/16 v3, 0x51
 
-    const/16 v2, 0x4c
+    const/16 v4, 0xc
 
-    const/16 v3, 0xc
+    const/4 v2, 0x5
 
     const/4 v6, 0x0
 
@@ -28,7 +28,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "\"0?\u007f<\u00080\u0008e:\n&8\"\u000e\'\u0014a>hY"
+    const-string v0, "{A8\u0001i,q"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -57,7 +57,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "K\u001d-\u007f5\"4/"
+    const-string v0, "\u000cM\u0010K>j3"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -86,7 +86,7 @@
 
     const/4 v10, 0x2
 
-    const-string v0, "K\u0011%k8\u001c!"
+    const-string v0, "\u001ei6HM3l0\u0015\"\u0012`\"\u0015m8`\u0015\u000fk:v%H_\u0017DcS:"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -115,7 +115,7 @@
 
     const/4 v10, 0x3
 
-    const-string v0, ".9+\"\u001c\u0003<-\u007fs\"0?\u007f<\u00080\u0008e:\n&8\"\u000e\'\u0014~9k"
+    const-string v0, "{M0\u0015d\u0012d2"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -144,7 +144,7 @@
 
     const/4 v10, 0x4
 
-    const-string v0, "<\u001d\r>hY"
+    const-string v0, "\u0012`\"\u0015m8`\u0015\u000fk:v%H_\u0017D|T9i"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -171,9 +171,7 @@
 
     aput-object v0, v9, v10
 
-    const/4 v10, 0x5
-
-    const-string v0, "<\u001d\r!oZc"
+    const-string v0, "{N4\u001fK:k4\u0014m+j#"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -198,11 +196,11 @@
 
     move-result-object v0
 
-    aput-object v0, v9, v10
+    aput-object v0, v9, v2
 
     const/4 v8, 0x6
 
-    const-string v0, "K\u001e)u\u001a\n;)~<\u001b:>"
+    const-string v0, "\u000cM\u0010T9i"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -231,7 +229,7 @@
 
     sput-object v9, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->z:[Ljava/lang/String;
 
-    .line 5
+    .line 6
     const-class v0, Lorg/spongycastle/jcajce/provider/digest/SHA256;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -266,22 +264,22 @@
     goto/16 :goto_0
 
     :pswitch_0
-    const/16 v0, 0x6f
-
-    goto :goto_7
-
-    :pswitch_1
     move v0, v1
 
     goto :goto_7
 
-    :pswitch_2
+    :pswitch_1
     move v0, v2
 
     goto :goto_7
 
-    :pswitch_3
+    :pswitch_2
     move v0, v3
+
+    goto :goto_7
+
+    :pswitch_3
+    const/16 v0, 0x66
 
     goto :goto_7
 
@@ -308,22 +306,22 @@
     goto/16 :goto_1
 
     :pswitch_4
-    const/16 v0, 0x6f
-
-    goto :goto_8
-
-    :pswitch_5
     move v0, v1
 
     goto :goto_8
 
-    :pswitch_6
+    :pswitch_5
     move v0, v2
 
     goto :goto_8
 
-    :pswitch_7
+    :pswitch_6
     move v0, v3
+
+    goto :goto_8
+
+    :pswitch_7
+    const/16 v0, 0x66
 
     goto :goto_8
 
@@ -350,22 +348,22 @@
     goto/16 :goto_2
 
     :pswitch_8
-    const/16 v0, 0x6f
-
-    goto :goto_9
-
-    :pswitch_9
     move v0, v1
 
     goto :goto_9
 
-    :pswitch_a
+    :pswitch_9
     move v0, v2
 
     goto :goto_9
 
-    :pswitch_b
+    :pswitch_a
     move v0, v3
+
+    goto :goto_9
+
+    :pswitch_b
+    const/16 v0, 0x66
 
     goto :goto_9
 
@@ -392,22 +390,22 @@
     goto/16 :goto_3
 
     :pswitch_c
-    const/16 v0, 0x6f
-
-    goto :goto_a
-
-    :pswitch_d
     move v0, v1
 
     goto :goto_a
 
-    :pswitch_e
+    :pswitch_d
     move v0, v2
 
     goto :goto_a
 
-    :pswitch_f
+    :pswitch_e
     move v0, v3
+
+    goto :goto_a
+
+    :pswitch_f
+    const/16 v0, 0x66
 
     goto :goto_a
 
@@ -434,27 +432,27 @@
     goto/16 :goto_4
 
     :pswitch_10
-    const/16 v0, 0x6f
-
-    goto :goto_b
-
-    :pswitch_11
     move v0, v1
 
     goto :goto_b
 
-    :pswitch_12
+    :pswitch_11
     move v0, v2
 
     goto :goto_b
 
-    :pswitch_13
+    :pswitch_12
     move v0, v3
 
     goto :goto_b
 
+    :pswitch_13
+    const/16 v0, 0x66
+
+    goto :goto_b
+
     :cond_5
-    aget-char v11, v5, v8
+    aget-char v10, v5, v8
 
     rem-int/lit8 v0, v8, 0x5
 
@@ -463,7 +461,7 @@
     move v0, v4
 
     :goto_c
-    xor-int/2addr v0, v11
+    xor-int/2addr v0, v10
 
     int-to-char v0, v0
 
@@ -476,22 +474,22 @@
     goto/16 :goto_5
 
     :pswitch_14
-    const/16 v0, 0x6f
-
-    goto :goto_c
-
-    :pswitch_15
     move v0, v1
 
     goto :goto_c
 
-    :pswitch_16
+    :pswitch_15
     move v0, v2
 
     goto :goto_c
 
-    :pswitch_17
+    :pswitch_16
     move v0, v3
+
+    goto :goto_c
+
+    :pswitch_17
+    const/16 v0, 0x66
 
     goto :goto_c
 
@@ -518,22 +516,22 @@
     goto/16 :goto_6
 
     :pswitch_18
-    const/16 v0, 0x6f
-
-    goto :goto_d
-
-    :pswitch_19
     move v0, v1
 
     goto :goto_d
 
-    :pswitch_1a
+    :pswitch_19
     move v0, v2
 
     goto :goto_d
 
-    :pswitch_1b
+    :pswitch_1a
     move v0, v3
+
+    goto :goto_d
+
+    :pswitch_1b
+    const/16 v0, 0x66
 
     goto :goto_d
 
@@ -598,10 +596,10 @@
     .locals 0
 
     .prologue
-    .line 6
+    .line 1
     invoke-direct {p0}, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;-><init>()V
 
-    .line 3
+    .line 7
     return-void
 .end method
 
@@ -611,55 +609,7 @@
     .locals 5
 
     .prologue
-    .line 2
-    sget-object v0, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->z:[Ljava/lang/String;
-
-    const/4 v1, 0x0
-
-    aget-object v0, v0, v1
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v2, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->PREFIX:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->z:[Ljava/lang/String;
-
-    const/4 v3, 0x2
-
-    aget-object v2, v2, v3
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-interface {p1, v0, v1}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
-
     .line 4
-    sget-object v0, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->z:[Ljava/lang/String;
-
-    const/4 v1, 0x3
-
-    aget-object v0, v0, v1
-
-    sget-object v1, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x5
-
-    aget-object v1, v1, v2
-
-    invoke-interface {p1, v0, v1}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 7
     sget-object v0, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->z:[Ljava/lang/String;
 
     const/4 v1, 0x4
@@ -678,7 +628,55 @@
 
     sget-object v2, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x1
+    const/4 v3, 0x0
+
+    aget-object v2, v2, v3
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {p1, v0, v1}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 3
+    sget-object v0, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->z:[Ljava/lang/String;
+
+    const/4 v1, 0x2
+
+    aget-object v0, v0, v1
+
+    sget-object v1, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x1
+
+    aget-object v1, v1, v2
+
+    invoke-interface {p1, v0, v1}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 5
+    sget-object v0, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->z:[Ljava/lang/String;
+
+    const/4 v1, 0x6
+
+    aget-object v0, v0, v1
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v2, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->PREFIX:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->z:[Ljava/lang/String;
+
+    const/4 v3, 0x3
 
     aget-object v2, v2, v3
 
@@ -702,7 +700,7 @@
 
     sget-object v3, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x6
+    const/4 v4, 0x5
 
     aget-object v3, v3, v4
 
@@ -716,6 +714,6 @@
 
     invoke-virtual {p0, p1, v0, v1, v2}, Lorg/spongycastle/jcajce/provider/digest/SHA256$Mappings;->addHMACAlgorithm(Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1
+    .line 2
     return-void
 .end method

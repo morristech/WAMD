@@ -11,13 +11,13 @@
 .method static constructor <clinit>()V
     .locals 12
 
-    const/16 v1, 0x2c
+    const/16 v1, 0x62
 
-    const/16 v4, 0x2a
+    const/16 v4, 0x46
 
-    const/16 v2, 0x20
+    const/16 v3, 0x45
 
-    const/16 v3, 0xd
+    const/16 v2, 0x3a
 
     const/4 v6, 0x0
 
@@ -25,7 +25,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "EN{/FED-\u001b~j\r<x\nOOi+ZCIc:"
+    const-string v0, "\u0001\u001eT+)\u0016__+%\r\u001b_e5\u0016\rS+!B\u000bUe$\u001b\u000b_e\'\u0010\r[<g"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -54,7 +54,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "EN{/FED-\u001b~j\r<x\nOOi+ZCIc:"
+    const-string v0, "\u000b\u0011L$*\u000b\u001b\u001a\u0010\u0012$R\u000bsf\u0001\u0010^ 6\r\u0016T1"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -83,7 +83,7 @@
 
     const/4 v8, 0x2
 
-    const-string v0, "OAc EX\u0000h ICDhnYXRd M\u000cTbnHUThnK^Rl7\u000b"
+    const-string v0, "\u000b\u0011L$*\u000b\u001b\u001a\u0010\u0012$R\u000bsf\u0001\u0010^ 6\r\u0016T1"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -142,17 +142,17 @@
     goto :goto_3
 
     :pswitch_1
-    move v0, v2
+    const/16 v0, 0x7f
 
     goto :goto_3
 
     :pswitch_2
-    move v0, v3
+    move v0, v2
 
     goto :goto_3
 
     :pswitch_3
-    const/16 v0, 0x4e
+    move v0, v3
 
     goto :goto_3
 
@@ -184,17 +184,17 @@
     goto :goto_4
 
     :pswitch_5
-    move v0, v2
+    const/16 v0, 0x7f
 
     goto :goto_4
 
     :pswitch_6
-    move v0, v3
+    move v0, v2
 
     goto :goto_4
 
     :pswitch_7
-    const/16 v0, 0x4e
+    move v0, v3
 
     goto :goto_4
 
@@ -226,17 +226,17 @@
     goto :goto_5
 
     :pswitch_9
-    move v0, v2
+    const/16 v0, 0x7f
 
     goto :goto_5
 
     :pswitch_a
-    move v0, v3
+    move v0, v2
 
     goto :goto_5
 
     :pswitch_b
-    const/16 v0, 0x4e
+    move v0, v3
 
     goto :goto_5
 
@@ -271,7 +271,7 @@
     .locals 0
 
     .prologue
-    .line 25
+    .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -281,25 +281,26 @@
     .locals 5
 
     .prologue
-    const/4 v0, 0x0
-
     sget-boolean v3, Lorg/spongycastle/util/Pack;->a:Z
 
-    .line 24
+    .line 10
+    const/4 v0, 0x0
+
+    .line 13
     :cond_0
     array-length v1, p0
 
     if-ge v0, v1, :cond_6
 
-    .line 9
+    .line 47
     aget-char v2, p0, v0
 
-    .line 6
+    .line 19
     const/16 v1, 0x80
 
     if-ge v2, v1, :cond_1
 
-    .line 13
+    .line 43
     :try_start_0
     invoke-virtual {p1, v2}, Ljava/io/OutputStream;->write(I)V
     :try_end_0
@@ -307,13 +308,13 @@
 
     if-eqz v3, :cond_5
 
-    .line 23
+    .line 38
     :cond_1
     const/16 v1, 0x800
 
     if-ge v2, v1, :cond_2
 
-    .line 40
+    .line 26
     shr-int/lit8 v1, v2, 0x6
 
     or-int/lit16 v1, v1, 0xc0
@@ -321,7 +322,7 @@
     :try_start_1
     invoke-virtual {p1, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 2
+    .line 12
     and-int/lit8 v1, v2, 0x3f
 
     or-int/lit16 v1, v1, 0x80
@@ -332,7 +333,7 @@
 
     if-eqz v3, :cond_5
 
-    .line 8
+    .line 21
     :cond_2
     const v1, 0xd800
 
@@ -342,7 +343,7 @@
 
     if-gt v2, v1, :cond_7
 
-    .line 27
+    .line 36
     add-int/lit8 v1, v0, 0x1
 
     :try_start_2
@@ -350,12 +351,12 @@
 
     if-lt v1, v4, :cond_3
 
-    .line 12
+    .line 30
     new-instance v0, Ljava/lang/IllegalStateException;
 
     sget-object v1, Lorg/spongycastle/util/Strings;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     aget-object v1, v1, v2
 
@@ -370,7 +371,7 @@
 
     throw v0
 
-    .line 23
+    .line 38
     :catch_1
     move-exception v0
 
@@ -379,7 +380,7 @@
     :try_end_3
     .catch Ljava/lang/IllegalStateException; {:try_start_3 .. :try_end_3} :catch_2
 
-    .line 2
+    .line 12
     :catch_2
     move-exception v0
 
@@ -388,7 +389,7 @@
     :try_end_4
     .catch Ljava/lang/IllegalStateException; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 8
+    .line 21
     :catch_3
     move-exception v0
 
@@ -405,7 +406,7 @@
     :try_end_6
     .catch Ljava/lang/IllegalStateException; {:try_start_6 .. :try_end_6} :catch_5
 
-    .line 27
+    .line 36
     :catch_5
     move-exception v0
 
@@ -414,24 +415,24 @@
     :try_end_7
     .catch Ljava/lang/IllegalStateException; {:try_start_7 .. :try_end_7} :catch_0
 
-    .line 42
+    .line 33
     :cond_3
     add-int/lit8 v0, v0, 0x1
 
     aget-char v1, p0, v0
 
-    .line 3
+    .line 4
     const v4, 0xdbff
 
     if-le v2, v4, :cond_4
 
-    .line 14
+    .line 6
     :try_start_8
     new-instance v0, Ljava/lang/IllegalStateException;
 
     sget-object v1, Lorg/spongycastle/util/Strings;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x2
 
     aget-object v1, v1, v2
 
@@ -446,7 +447,7 @@
 
     throw v0
 
-    .line 38
+    .line 7
     :cond_4
     and-int/lit16 v2, v2, 0x3ff
 
@@ -460,7 +461,7 @@
 
     add-int/2addr v2, v4
 
-    .line 33
+    .line 31
     shr-int/lit8 v4, v2, 0x12
 
     or-int/lit16 v4, v4, 0xf0
@@ -468,7 +469,7 @@
     :try_start_9
     invoke-virtual {p1, v4}, Ljava/io/OutputStream;->write(I)V
 
-    .line 45
+    .line 20
     shr-int/lit8 v4, v2, 0xc
 
     and-int/lit8 v4, v4, 0x3f
@@ -477,7 +478,7 @@
 
     invoke-virtual {p1, v4}, Ljava/io/OutputStream;->write(I)V
 
-    .line 47
+    .line 24
     shr-int/lit8 v4, v2, 0x6
 
     and-int/lit8 v4, v4, 0x3f
@@ -486,17 +487,17 @@
 
     invoke-virtual {p1, v4}, Ljava/io/OutputStream;->write(I)V
 
-    .line 32
+    .line 18
     and-int/lit8 v2, v2, 0x3f
 
     or-int/lit16 v2, v2, 0x80
 
     invoke-virtual {p1, v2}, Ljava/io/OutputStream;->write(I)V
 
-    .line 41
+    .line 46
     if-eqz v3, :cond_5
 
-    .line 39
+    .line 23
     :goto_0
     shr-int/lit8 v2, v1, 0xc
 
@@ -504,7 +505,7 @@
 
     invoke-virtual {p1, v2}, Ljava/io/OutputStream;->write(I)V
 
-    .line 11
+    .line 27
     shr-int/lit8 v2, v1, 0x6
 
     and-int/lit8 v2, v2, 0x3f
@@ -513,7 +514,7 @@
 
     invoke-virtual {p1, v2}, Ljava/io/OutputStream;->write(I)V
 
-    .line 44
+    .line 28
     and-int/lit8 v1, v1, 0x3f
 
     or-int/lit16 v1, v1, 0x80
@@ -522,18 +523,18 @@
     :try_end_9
     .catch Ljava/lang/IllegalStateException; {:try_start_9 .. :try_end_9} :catch_7
 
-    .line 19
+    .line 32
     :cond_5
     add-int/lit8 v0, v0, 0x1
 
-    .line 30
+    .line 16
     if-eqz v3, :cond_0
 
-    .line 28
+    .line 22
     :cond_6
     return-void
 
-    .line 44
+    .line 28
     :catch_7
     move-exception v0
 
@@ -549,34 +550,34 @@
     .locals 3
 
     .prologue
-    .line 22
+    .line 34
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 10
+    .line 40
     :try_start_0
     invoke-static {p0, v0}, Lorg/spongycastle/util/Strings;->toUTF8ByteArray([CLjava/io/OutputStream;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 20
+    .line 37
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object v0
 
     return-object v0
 
-    .line 37
+    .line 41
     :catch_0
     move-exception v0
 
-    .line 36
+    .line 2
     new-instance v0, Ljava/lang/IllegalStateException;
 
     sget-object v1, Lorg/spongycastle/util/Strings;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x2
+    const/4 v2, 0x0
 
     aget-object v1, v1, v2
 
@@ -593,23 +594,23 @@
 
     sget-boolean v2, Lorg/spongycastle/util/Pack;->a:Z
 
-    .line 15
+    .line 11
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v3
 
     move v1, v0
 
-    .line 18
+    .line 15
     :cond_0
     array-length v4, v3
 
     if-eq v0, v4, :cond_2
 
-    .line 43
+    .line 14
     aget-char v4, v3, v0
 
-    .line 35
+    .line 1
     const/16 v5, 0x61
 
     if-gt v5, v4, :cond_1
@@ -618,10 +619,10 @@
 
     if-lt v5, v4, :cond_1
 
-    .line 5
+    .line 45
     const/4 v1, 0x1
 
-    .line 29
+    .line 35
     add-int/lit8 v4, v4, -0x61
 
     add-int/lit8 v4, v4, 0x41
@@ -630,17 +631,17 @@
 
     aput-char v4, v3, v0
 
-    .line 34
+    .line 29
     :cond_1
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v2, :cond_0
 
-    .line 21
+    .line 5
     :cond_2
     if-eqz v1, :cond_3
 
-    .line 26
+    .line 25
     :try_start_0
     new-instance p0, Ljava/lang/String;
 
@@ -648,9 +649,11 @@
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 44
     :cond_3
     return-object p0
 
+    .line 25
     :catch_0
     move-exception v0
 

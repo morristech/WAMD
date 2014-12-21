@@ -23,7 +23,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 1
     check-cast p1, Landroid/support/v4/widget/DrawerLayoutImpl;
 
     .line 4
@@ -38,7 +38,7 @@
     :goto_0
     invoke-interface {p1, p2, v0}, Landroid/support/v4/widget/DrawerLayoutImpl;->setChildInsets(Ljava/lang/Object;Z)V
 
-    .line 1
+    .line 2
     invoke-virtual {p2}, Landroid/view/WindowInsets;->consumeSystemWindowInsets()Landroid/view/WindowInsets;
 
     move-result-object v0

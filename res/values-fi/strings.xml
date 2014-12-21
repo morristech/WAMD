@@ -71,14 +71,6 @@
     <string name="audio_note_tip">Nauhoita pitämällä pohjassa, lähetä irroittamalla</string>
     <string name="audio_note_tip_2">Ole hyvä ja nauhoita pidempi viesti</string>
     <string name="audio_note_top_mic_tip">Puhu puhelimen yläosassa olevaan mikrofoniin</string>
-    <string name="auth_client_needs_enabling_title">Ota käyttöön Google Play -palvelut, jotta sovellus toimii.</string>
-    <string name="auth_client_needs_installation_title">Asenna Google Play -palvelut, jotta sovellus toimii.</string>
-    <string name="auth_client_needs_update_title">Päivitä Google Play -palvelut, jotta sovellus toimii.</string>
-    <string name="auth_client_play_services_err_notification_msg">Virhe Google Play -palveluissa</string>
-    <string name="auth_client_requested_by_msg">Pyynnön teki %1$s</string>
-    <string name="auth_client_using_bad_version_title">Sovellus yritti käyttää virheellistä Google Play -palveluiden versiota</string>
-    <string name="barcode_scanner_dialog_body">Tämä sovellus tarvitsee viivakoodinlukijan. Asennetaanko?</string>
-    <string name="barcode_scanner_dialog_title">Asennetaanko viivakoodinlukija?</string>
     <string name="block">Estä</string>
     <string name="block_ask">Haluatko varmasti estää tämän yhteystiedon?</string>
     <string name="block_list_desc_1">"Napauta kuvaketta oikeassa yläkulmassa estääksesi yhteystiedon.
@@ -159,23 +151,32 @@ Jos sinulla on sekä uusi puhelin että uusi numero, vaihda ensin numerosi vanha
     <string name="color_red">Punainen</string>
     <string name="color_white">Valkoinen</string>
     <string name="color_yellow">Keltainen</string>
+    <string name="common_android_wear_notification_needs_update_text">Android Wear -sovellus täytyy päivittää toisen sovelluksen takia.</string>
+    <string name="common_android_wear_update_text">Tämä sovellus ei toimi, ellet päivitä Android Wear -sovellusta.</string>
+    <string name="common_android_wear_update_title">Päivitä Android Wear</string>
     <string name="common_google_play_services_enable_button">Ota Google Play -palv. käyttöön</string>
     <string name="common_google_play_services_enable_text">Tämä sovellus ei toimi, ellet ota Google Play -palveluita käyttöön.</string>
     <string name="common_google_play_services_enable_title">Ota Google Play -palvelut käyttöön</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Pyynnön teki %1$s</string>
     <string name="common_google_play_services_install_button">Asenna Google Play -palvelut</string>
     <string name="common_google_play_services_install_text_phone">Tämä sovellus ei toimi ilman Google Play -palveluita, jotka puuttuvat puhelimesta.</string>
     <string name="common_google_play_services_install_text_tablet">Tämä sovellus ei toimi ilman Google Play -palveluita, jotka puuttuvat tablet-laitteesta.</string>
     <string name="common_google_play_services_install_title">Asenna Google Play -palvelut</string>
     <string name="common_google_play_services_invalid_account_text">Kyseistä tiliä ei ole tällä laitteella. Valitse toinen tili.</string>
     <string name="common_google_play_services_invalid_account_title">Tili ei kelpaa</string>
+    <string name="common_google_play_services_needs_enabling_title">Ota käyttöön Google Play -palvelut, jotta sovellus toimii.</string>
     <string name="common_google_play_services_network_error_text">Google Play -palveluiden käyttöön tarvitaan tietoliikenneyhteys.</string>
     <string name="common_google_play_services_network_error_title">Verkkovirhe</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Asenna Google Play -palvelut, jotta sovellus toimii.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Päivitä Google Play -palvelut, jotta sovellus toimii.</string>
+    <string name="common_google_play_services_notification_ticker">Virhe Google Play -palveluissa</string>
     <string name="common_google_play_services_unknown_issue">Tuntematon ongelma käytettäessä Google Play -palveluita.</string>
     <string name="common_google_play_services_unsupported_text">Google Play -palveluita, joita osa sovelluksistasi käyttää, ei tueta laitteellasi. Pyydä ohjeita laitteen valmistajalta.</string>
     <string name="common_google_play_services_unsupported_title">Google Play -palvelut</string>
     <string name="common_google_play_services_update_button">Päivitä</string>
     <string name="common_google_play_services_update_text">Tämä sovellus ei toimi, ellet päivitä Google Play -palveluita.</string>
     <string name="common_google_play_services_update_title">Päivitä Google Play -palvelut</string>
+    <string name="common_open_on_phone">Avaa puhelimessa</string>
     <string name="common_signin_button_text">Kirjaudu</string>
     <string name="common_signin_button_text_long">Kirjaudu Google-tiliin</string>
     <string name="confirm_forward_msg">Välitetäänkö %s?</string>
@@ -352,7 +353,6 @@ Jäljellä: %1$s"</string>
     <string name="eula_description">Eri alustojen välistä mobiiliviestintää kavereiden kesken ympäri maailman.</string>
     <string name="eula_tablets_not_supported">Huomio: tabletit eivät ole vielä tuettuja.</string>
     <string name="eula_terms_of_service">Käyttöehdot</string>
-    <string name="eula_title">Tervetuloa WhatsAppiin!</string>
     <string name="existing_contact">Nykyiset</string>
     <string name="exit">Poistu</string>
     <string name="exit_group">Poistu ryhmästä</string>
@@ -527,7 +527,6 @@ Tilisi umpeutuu %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Ei voida ladata, koska sisäisessä muistissa ei ole tarpeeksi tilaa. Poista sisäisestä muistista tiedostoja ja yritä uudelleen.</string>
     <string name="invalid_media_message_download">Lataus ei onnistu epäkelvosta viestistä. Kokeile lähettää viesti uudelleen.</string>
     <string name="invalid_message_forward">Viestiä ei voi edelleenlähettää virheelliselle yhteystiedolle.</string>
-    <string name="invalid_qr_code">Kelpaamaton QR-koodi</string>
     <string name="invalid_url_for_download">Ei voida ladata. Pyydä tiedoston lähettämistä uudelleen.</string>
     <string name="invite">Kutsu</string>
     <string name="invite_friends">Kutsu ystäviäsi</string>
@@ -573,7 +572,6 @@ WhatsApp voidaan asentaa vain yhdelle laitteelle puhelinnumeroa kohti."</string>
     <string name="menuitem_add">Lisää</string>
     <string name="menuitem_contacts">Yhteystiedot</string>
     <string name="menuitem_debug">Virheenselvitys</string>
-    <string name="menuitem_delete_qr">Poista QR-koodi</string>
     <string name="menuitem_groupchat">Uusi ryhmä</string>
     <string name="menuitem_list">Uusi lähetyslista</string>
     <string name="menuitem_mute">Vaimenna</string>
@@ -614,14 +612,10 @@ WhatsApp voidaan asentaa vain yhdelle laitteelle puhelinnumeroa kohti."</string>
     <string name="msg_store_backup_failed">Viestien varmuuskopiointi epäonnistui</string>
     <string name="msg_store_backup_failed_try_again_later">Viestien varmuuskopiointi epäonnistui. Yritä myöhemmin uudelleen.</string>
     <string name="msg_store_backup_found">Varmuuskopio löydetty</string>
-    <string name="msg_store_backup_found_registration">Viestin varmuuskopio löydetty!</string>
     <string name="msg_store_backup_skipped">Varmuuskopiointi ohitettu</string>
     <string name="msg_store_backup_skipped_no_media">Viestien varmuuskopiointi ohitettu. Korttia ei löytynyt.</string>
     <string name="msg_store_backup_skipped_read_only_media">Viestin varmuuskopiointi epäonnistui: käytettävissä oleva muisti on vain luku -muodossa.</string>
     <string name="msg_store_confirm">Hyväksy</string>
-    <string name="msg_store_creation_backup_message">Haluaisitko palauttaa viestihistoriasi varmuuskopiosta?</string>
-    <string name="msg_store_do_not_restore">Älä palauta</string>
-    <string name="msg_store_do_not_restore_no_thanks">Ei kiitos</string>
     <string name="msg_store_error_found">Ongelma havaittu. Pysäytä ja käynnistä WhatsApp uudelleen.</string>
     <string name="msg_store_error_not_restored">Valitettavasti viestien palauttaminen varmuuskopioista epäonnistui.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Viestit menetetään. Oletko varma, ettet halua palauttaa viestihistoriaasi varmuuskopiosta?</string>
@@ -648,9 +642,6 @@ WhatsApp voidaan asentaa vain yhdelle laitteelle puhelinnumeroa kohti."</string>
     <string name="need_sd_card_shared_storage">Sulje USB-muisti ja yritä uudelleen.</string>
     <string name="network_required">Sinulla ei ole nyt verkkoyhteyttä.</string>
     <string name="network_usage_ask_reset_message">Haluatko varmasti nollata tilastot?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f Gt</string>
-    <string name="network_usage_byte_count_kb">%1$.1f Kt</string>
-    <string name="network_usage_byte_count_mb">%1$.1f Mt</string>
     <string name="network_usage_last_reset_time">Viimeksi nollattu: %1$s</string>
     <string name="network_usage_media_bytes_received">Vastaanotetut mediatavut:</string>
     <string name="network_usage_media_bytes_sent">Lähetetyt mediatavut:</string>
@@ -1005,19 +996,10 @@ Lähetetty WhatsAppilla"</string>
     <string name="software_expired_get_from_play">Tämä WhatsApp-versio on liian vanha eikä se enää toimi. Siirry Google Play -kauppaan ja lataa uusin versio.</string>
     <string name="software_expired_get_from_play_with_date">Tämä WhatsApp-versio on vanhentunut &lt;b>%1$s&lt;/b>. Mene Google Play -kauppaan ladataksesi uusimman version.&lt;br>&lt;br>Laitteesi päiväys on &lt;b>%2$s&lt;/b>. Jos tämä on väärin, mene laiteasetuksiin ja korjaa se sekä käynnistä WhatsApp uudelleen.</string>
     <string name="software_expired_with_date">Tämä WhatsApp-versio on vanhentunut &lt;b>%1$s&lt;/b>. Napauta “Lataa” saadaksesi viimeisimman version.&lt;br>&lt;br>Laitteesi päiväys on &lt;b>%2$s&lt;/b>. Jos tämä on väärin, mene laiteasetuksiin ja korjaa se sekä käynnistä WhatsApp uudelleen.</string>
-    <string name="spam_generic">"Sinut on tilapäisesti estetty WhatsAppista, koska olet saattanut rikkoa palvelun käyttöehtoja.
-Voit käyttää WhatsAppia uudelleen:"</string>
     <string name="spam_generic_data_connection_missing">Varmista, että puhelimesi datayhteys on käytössä.</string>
     <string name="spam_generic_unknown_time_left">Sinut on tilapäisesti estetty WhatsAppista, koska olet saattanut rikkoa käyttöehtojamme. Voit käyttää WhatsAppia pian uudelleen.</string>
     <string name="spam_learn_more">Lisätietoja</string>
     <string name="spam_title">Tilapäisesti estetty</string>
-    <string name="spam_too_many_blocks">Sinut on tilapäisesti estetty WhatsAppista, koska liian moni henkilö on estänyt sinut.</string>
-    <string name="spam_too_many_groups">"Sinut on tilapäisesti estetty WhatsAppista, koska olet luonut liian monta ryhmää, joissa on henkilöitä, joilla ei ole sinua osoitekirjassaan.
-Voit käyttää WhatsAppia uudelleen:"</string>
-    <string name="spam_too_many_messages">"Sinut on tilapäisesti estetty WhatsAppista, koska olet lähettänyt liian monta viestiä henkilöille, joilla ei ole sinua osoitekirjassaan.
-Voit käyttää WhatsAppia uudelleen:"</string>
-    <string name="spam_too_many_people">"Sinut on tilapäisesti estetty WhatsAppista, koska olet lähettänyt saman viestin liian monelle henkilölle.
-Voit käyttää WhatsAppia uudelleen:"</string>
     <string name="status">Tila</string>
     <string name="status_default_at_gym">Kuntosalilla</string>
     <string name="status_default_at_movies">Elokuvissa</string>

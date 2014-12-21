@@ -12,7 +12,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 5
     new-instance v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicLocale;
 
     invoke-direct {v0}, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicLocale;-><init>()V
@@ -26,12 +26,12 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 4
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;-><init>(Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;)V
 
-    .line 5
+    .line 2
     return-void
 .end method
 
@@ -43,7 +43,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 1
+    .line 3
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v1
@@ -52,7 +52,7 @@
 
     move-result v1
 
-    .line 2
+    .line 1
     if-ne v1, v0, :cond_0
 
     :goto_0

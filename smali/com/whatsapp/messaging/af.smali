@@ -1,284 +1,214 @@
-.class public interface abstract Lcom/whatsapp/messaging/af;
-.super Ljava/lang/Object;
+.class Lcom/whatsapp/messaging/af;
+.super Landroid/os/Handler;
 .source "af.java"
 
 
+# static fields
+.field private static final z:Ljava/lang/String;
+
+
+# instance fields
+.field final a:Lcom/whatsapp/messaging/l;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 5
+
+    const-string v0, "y\u007fo~@b}q`\nbfva\u0001.\u007fli\u001ddqzg\u001fu=qa\u0001d"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    move v2, v1
+
+    move-object v1, v0
+
+    :goto_0
+    if-gt v2, v3, :cond_0
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/whatsapp/messaging/af;->z:Ljava/lang/String;
+
+    return-void
+
+    :cond_0
+    aget-char v4, v1, v3
+
+    rem-int/lit8 v0, v3, 0x5
+
+    packed-switch v0, :pswitch_data_0
+
+    const/16 v0, 0x6f
+
+    :goto_1
+    xor-int/2addr v0, v4
+
+    int-to-char v0, v0
+
+    aput-char v0, v1, v3
+
+    add-int/lit8 v0, v3, 0x1
+
+    move v3, v0
+
+    goto :goto_0
+
+    :pswitch_0
+    const/4 v0, 0x1
+
+    goto :goto_1
+
+    :pswitch_1
+    const/16 v0, 0x12
+
+    goto :goto_1
+
+    :pswitch_2
+    const/16 v0, 0x1f
+
+    goto :goto_1
+
+    :pswitch_3
+    const/16 v0, 0xe
+
+    goto :goto_1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+    .end packed-switch
+.end method
+
+.method private constructor <init>(Lcom/whatsapp/messaging/l;)V
+    .locals 0
+
+    .prologue
+    .line 12
+    iput-object p1, p0, Lcom/whatsapp/messaging/af;->a:Lcom/whatsapp/messaging/l;
+
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
+
+    return-void
+.end method
+
+.method constructor <init>(Lcom/whatsapp/messaging/l;Lcom/whatsapp/messaging/a1;)V
+    .locals 0
+
+    .prologue
+    .line 11
+    invoke-direct {p0, p1}, Lcom/whatsapp/messaging/af;-><init>(Lcom/whatsapp/messaging/l;)V
+
+    return-void
+.end method
+
+
 # virtual methods
-.method public abstract A(Landroid/os/Bundle;)V
-.end method
-
-.method public abstract B(Landroid/os/Bundle;)V
-.end method
-
-.method public abstract a()V
-.end method
-
-.method public abstract a(Landroid/os/Bundle;)V
-.end method
-
-.method public abstract a(Landroid/util/Pair;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/_f;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/a0w;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/a25;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/a9;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/agt;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/jr;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/k2;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/messaging/a3;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/messaging/a_;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/messaging/al;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/messaging/ao;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/messaging/ap;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/messaging/b4;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/messaging/bf;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/messaging/bz;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/messaging/q;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/protocol/ae;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/protocol/c;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/sb;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/sq;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/vm;)V
-.end method
-
-.method public abstract a(Lcom/whatsapp/vu;)V
-.end method
-
-.method public abstract a(Ljava/lang/Runnable;)V
-.end method
-
-.method public abstract a(Ljava/lang/String;)V
-.end method
-
-.method public abstract a(Ljava/lang/String;I)V
-.end method
-
-.method public abstract a(Z)V
-.end method
-
-.method public abstract b()V
-.end method
-
-.method public abstract b(Landroid/os/Bundle;)V
-.end method
-
-.method public abstract b(Landroid/util/Pair;)V
-.end method
-
-.method public abstract b(Lcom/whatsapp/_f;)V
-.end method
-
-.method public abstract b(Lcom/whatsapp/messaging/b4;)V
-.end method
-
-.method public abstract b(Lcom/whatsapp/protocol/ae;)V
-.end method
-
-.method public abstract b(Ljava/lang/String;)V
-.end method
-
-.method public abstract b(Ljava/lang/String;I)V
-.end method
-
-.method public abstract b(Z)V
-.end method
-
-.method public abstract c()V
-.end method
-
-.method public abstract c(Landroid/os/Bundle;)V
-.end method
-
-.method public abstract c(Lcom/whatsapp/_f;)V
-.end method
-
-.method public abstract c(Lcom/whatsapp/messaging/b4;)V
-.end method
-
-.method public abstract c(Lcom/whatsapp/protocol/ae;)V
-.end method
-
-.method public abstract c(Ljava/lang/String;)V
-.end method
-
-.method public abstract d()V
-.end method
-
-.method public abstract d(Landroid/os/Bundle;)V
-.end method
-
-.method public abstract d(Lcom/whatsapp/_f;)V
-.end method
-
-.method public abstract d(Lcom/whatsapp/messaging/b4;)V
-.end method
-
-.method public abstract d(Lcom/whatsapp/protocol/ae;)V
-.end method
-
-.method public abstract d(Ljava/lang/String;)V
-.end method
-
-.method public abstract e()V
-.end method
-
-.method public abstract e(Landroid/os/Bundle;)V
-.end method
-
-.method public abstract e(Lcom/whatsapp/_f;)V
-.end method
-
-.method public abstract e(Lcom/whatsapp/messaging/b4;)V
-.end method
-
-.method public abstract e(Lcom/whatsapp/protocol/ae;)V
-.end method
-
-.method public abstract e(Ljava/lang/String;)V
-.end method
-
-.method public abstract f()V
-.end method
-
-.method public abstract f(Landroid/os/Bundle;)V
-.end method
-
-.method public abstract f(Lcom/whatsapp/_f;)V
-.end method
-
-.method public abstract f(Lcom/whatsapp/messaging/b4;)V
-.end method
+.method public a()V
+    .locals 1
 
-.method public abstract f(Ljava/lang/String;)V
-.end method
-
-.method public abstract g()V
-.end method
+    .prologue
+    .line 7
+    const/4 v0, 0x0
 
-.method public abstract g(Landroid/os/Bundle;)V
-.end method
+    invoke-virtual {p0, v0}, Lcom/whatsapp/messaging/af;->removeMessages(I)V
 
-.method public abstract g(Lcom/whatsapp/_f;)V
+    .line 8
+    return-void
 .end method
 
-.method public abstract g(Lcom/whatsapp/messaging/b4;)V
-.end method
+.method public a(Lcom/whatsapp/protocol/c9;J)V
+    .locals 2
 
-.method public abstract g(Ljava/lang/String;)V
-.end method
+    .prologue
+    .line 3
+    const/4 v0, 0x0
 
-.method public abstract h()V
-.end method
+    invoke-static {p0, v0, p1}, Landroid/os/Message;->obtain(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;
 
-.method public abstract h(Landroid/os/Bundle;)V
-.end method
+    move-result-object v0
 
-.method public abstract h(Lcom/whatsapp/_f;)V
-.end method
+    .line 9
+    invoke-virtual {p0, v0, p2, p3}, Lcom/whatsapp/messaging/af;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-.method public abstract i()V
+    .line 6
+    return-void
 .end method
 
-.method public abstract i(Landroid/os/Bundle;)V
-.end method
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 2
 
-.method public abstract i(Lcom/whatsapp/_f;)V
-.end method
+    .prologue
+    .line 10
+    iget v0, p1, Landroid/os/Message;->what:I
 
-.method public abstract j()V
-.end method
+    packed-switch v0, :pswitch_data_0
 
-.method public abstract j(Landroid/os/Bundle;)V
-.end method
+    .line 5
+    :cond_0
+    :goto_0
+    return-void
 
-.method public abstract k()V
-.end method
+    .line 1
+    :pswitch_0
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-.method public abstract k(Landroid/os/Bundle;)V
-.end method
+    check-cast v0, Lcom/whatsapp/protocol/c9;
 
-.method public abstract l(Landroid/os/Bundle;)V
-.end method
+    .line 2
+    iget v0, v0, Lcom/whatsapp/protocol/c9;->f:I
 
-.method public abstract m(Landroid/os/Bundle;)V
-.end method
+    const/4 v1, 0x4
 
-.method public abstract n(Landroid/os/Bundle;)V
-.end method
+    invoke-static {v0, v1}, Lcom/whatsapp/protocol/bw;->a(II)I
 
-.method public abstract o(Landroid/os/Bundle;)V
-.end method
+    move-result v0
 
-.method public abstract p(Landroid/os/Bundle;)V
-.end method
+    if-gez v0, :cond_0
 
-.method public abstract q(Landroid/os/Bundle;)V
-.end method
+    .line 14
+    sget-object v0, Lcom/whatsapp/messaging/af;->z:Ljava/lang/String;
 
-.method public abstract r(Landroid/os/Bundle;)V
-.end method
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
 
-.method public abstract s(Landroid/os/Bundle;)V
-.end method
+    .line 4
+    const/4 v0, 0x0
 
-.method public abstract t(Landroid/os/Bundle;)V
-.end method
+    invoke-virtual {p0, v0}, Lcom/whatsapp/messaging/af;->removeMessages(I)V
 
-.method public abstract u(Landroid/os/Bundle;)V
-.end method
+    .line 13
+    iget-object v0, p0, Lcom/whatsapp/messaging/af;->a:Lcom/whatsapp/messaging/l;
 
-.method public abstract v(Landroid/os/Bundle;)V
-.end method
+    const/4 v1, 0x1
 
-.method public abstract w(Landroid/os/Bundle;)V
-.end method
+    invoke-static {v0, v1}, Lcom/whatsapp/messaging/l;->a(Lcom/whatsapp/messaging/l;Z)V
 
-.method public abstract x(Landroid/os/Bundle;)V
-.end method
+    goto :goto_0
 
-.method public abstract y(Landroid/os/Bundle;)V
-.end method
+    .line 10
+    nop
 
-.method public abstract z(Landroid/os/Bundle;)V
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

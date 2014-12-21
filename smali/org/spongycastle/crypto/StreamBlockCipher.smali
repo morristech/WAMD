@@ -19,13 +19,13 @@
 .method static constructor <clinit>()V
     .locals 11
 
-    const/16 v1, 0x31
+    const/16 v1, 0x5a
 
-    const/16 v3, 0x22
+    const/16 v4, 0x58
 
-    const/16 v2, 0xe
+    const/16 v3, 0x1b
 
-    const/4 v4, 0x5
+    const/16 v2, 0x17
 
     const/4 v6, 0x0
 
@@ -33,7 +33,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "^\u0001zRpETlWcW\u0011|\u0002q^\u001b.Qm^\u0006z"
+    const-string v0, "5*ck-.\u007fun><:e;,507h05-c"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -62,7 +62,7 @@
 
     const/4 v8, 0x1
 
-    const-string v0, "X\u001a~Wq\u0011\u0016{DcT\u0006.Vj^T}Od]\u0018"
+    const-string v0, "31gn,z=b}>?-7o75\u007fdv963"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -121,7 +121,7 @@
     goto :goto_2
 
     :pswitch_1
-    const/16 v0, 0x74
+    const/16 v0, 0x5f
 
     goto :goto_2
 
@@ -163,7 +163,7 @@
     goto :goto_3
 
     :pswitch_5
-    const/16 v0, 0x74
+    const/16 v0, 0x5f
 
     goto :goto_3
 
@@ -176,8 +176,6 @@
     move v0, v3
 
     goto :goto_3
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -200,13 +198,13 @@
     .locals 0
 
     .prologue
-    .line 6
+    .line 11
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 9
+    .line 14
     iput-object p1, p0, Lorg/spongycastle/crypto/StreamBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
-    .line 15
+    .line 13
     return-void
 .end method
 
@@ -219,7 +217,7 @@
     .locals 1
 
     .prologue
-    .line 13
+    .line 12
     iget-object v0, p0, Lorg/spongycastle/crypto/StreamBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
     return-object v0
@@ -231,7 +229,7 @@
     .prologue
     sget-boolean v2, Lorg/spongycastle/crypto/DataLengthException;->a:Z
 
-    .line 7
+    .line 6
     add-int v0, p5, p3
 
     :try_start_0
@@ -239,7 +237,7 @@
 
     if-le v0, v1, :cond_0
 
-    .line 14
+    .line 7
     new-instance v0, Lorg/spongycastle/crypto/DataLengthException;
 
     sget-object v1, Lorg/spongycastle/crypto/StreamBlockCipher;->z:[Ljava/lang/String;
@@ -259,7 +257,7 @@
 
     throw v0
 
-    .line 1
+    .line 2
     :cond_0
     add-int v0, p2, p3
 
@@ -268,7 +266,7 @@
 
     if-le v0, v1, :cond_1
 
-    .line 4
+    .line 9
     new-instance v0, Lorg/spongycastle/crypto/DataLengthException;
 
     sget-object v1, Lorg/spongycastle/crypto/StreamBlockCipher;->z:[Ljava/lang/String;
@@ -288,15 +286,15 @@
 
     throw v0
 
-    .line 10
+    .line 15
     :cond_1
     add-int v3, p2, p3
 
-    .line 8
+    .line 5
     :goto_0
     if-ge p2, v3, :cond_2
 
-    .line 11
+    .line 4
     add-int/lit8 v0, p5, 0x1
 
     add-int/lit8 v1, p2, 0x1
@@ -327,7 +325,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 1
     invoke-virtual {p0, p1}, Lorg/spongycastle/crypto/StreamBlockCipher;->calculateByte(B)B
 
     move-result v0

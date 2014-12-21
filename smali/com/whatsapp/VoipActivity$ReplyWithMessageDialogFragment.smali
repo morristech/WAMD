@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 7
+    .line 4
     invoke-direct {p0}, Landroid/support/v4/app/DialogFragment;-><init>()V
 
     return-void
@@ -20,7 +20,7 @@
     .locals 3
 
     .prologue
-    .line 5
+    .line 6
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {p0}, Lcom/whatsapp/VoipActivity$ReplyWithMessageDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -29,7 +29,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 4
+    .line 5
     invoke-virtual {p0}, Lcom/whatsapp/VoipActivity$ReplyWithMessageDialogFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -41,9 +41,9 @@
     move-result-object v1
 
     .line 2
-    new-instance v2, Lcom/whatsapp/ad7;
+    new-instance v2, Lcom/whatsapp/aix;
 
-    invoke-direct {v2, p0, v1}, Lcom/whatsapp/ad7;-><init>(Lcom/whatsapp/VoipActivity$ReplyWithMessageDialogFragment;[Ljava/lang/String;)V
+    invoke-direct {v2, p0, v1}, Lcom/whatsapp/aix;-><init>(Lcom/whatsapp/VoipActivity$ReplyWithMessageDialogFragment;[Ljava/lang/String;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -52,11 +52,11 @@
 
     move-result-object v0
 
-    .line 3
+    .line 7
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
-    .line 6
+    .line 3
     return-object v0
 .end method

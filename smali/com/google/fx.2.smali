@@ -1,43 +1,72 @@
-.class final Lcom/google/fx;
-.super Lcom/google/fX;
+.class public abstract Lcom/google/fx;
+.super Ljava/lang/Object;
 .source "fx.java"
 
 
+# instance fields
+.field private final a:Lcom/google/f2;
+
+
 # direct methods
-.method constructor <init>()V
+.method protected constructor <init>(Lcom/google/f2;)V
     .locals 0
 
     .prologue
     .line 1
-    invoke-direct {p0}, Lcom/google/fX;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    iput-object p1, p0, Lcom/google/fx;->a:Lcom/google/f2;
+
+    .line 5
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/google/dP;Lcom/google/C;)Lcom/google/aZ;
-    .locals 2
-
-    .prologue
-    .line 2
-    new-instance v0, Lcom/google/aZ;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p1, p2, v1}, Lcom/google/aZ;-><init>(Lcom/google/dP;Lcom/google/C;Lcom/google/fY;)V
-
-    return-object v0
-.end method
-
-.method public a(Lcom/google/dP;Lcom/google/C;)Ljava/lang/Object;
+.method public final a()I
     .locals 1
 
     .prologue
     .line 3
-    invoke-virtual {p0, p1, p2}, Lcom/google/fx;->a(Lcom/google/dP;Lcom/google/C;)Lcom/google/aZ;
+    iget-object v0, p0, Lcom/google/fx;->a:Lcom/google/f2;
 
-    move-result-object v0
+    invoke-virtual {v0}, Lcom/google/f2;->e()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public abstract a(ILcom/google/fj;)Lcom/google/fj;
+.end method
+
+.method public abstract a(Lcom/google/f2;)Lcom/google/fx;
+.end method
+
+.method public abstract b()Lcom/google/d;
+.end method
+
+.method public final c()I
+    .locals 1
+
+    .prologue
+    .line 6
+    iget-object v0, p0, Lcom/google/fx;->a:Lcom/google/f2;
+
+    invoke-virtual {v0}, Lcom/google/f2;->d()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final d()Lcom/google/f2;
+    .locals 1
+
+    .prologue
+    .line 4
+    iget-object v0, p0, Lcom/google/fx;->a:Lcom/google/f2;
 
     return-object v0
 .end method

@@ -1,52 +1,80 @@
-.class public Lorg/whispersystems/libaxolotl/bM;
-.super Ljava/lang/Exception;
-.source "bM.java"
+.class public Lorg/whispersystems/libaxolotl/bm;
+.super Ljava/lang/Object;
+.source "bm.java"
 
 
-# static fields
-.field public static a:Z
+# instance fields
+.field private final a:Ljavax/crypto/spec/IvParameterSpec;
+
+.field private final b:Ljavax/crypto/spec/SecretKeySpec;
+
+.field private final c:Ljavax/crypto/spec/SecretKeySpec;
+
+.field private final d:I
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Ljavax/crypto/spec/SecretKeySpec;Ljavax/crypto/spec/SecretKeySpec;Ljavax/crypto/spec/IvParameterSpec;I)V
     .locals 0
 
     .prologue
-    .line 6
-    invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
+    .line 10
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
+    .line 8
+    iput-object p1, p0, Lorg/whispersystems/libaxolotl/bm;->b:Ljavax/crypto/spec/SecretKeySpec;
 
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
+    .line 3
+    iput-object p2, p0, Lorg/whispersystems/libaxolotl/bm;->c:Ljavax/crypto/spec/SecretKeySpec;
 
-    .prologue
-    .line 2
-    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+    .line 4
+    iput-object p3, p0, Lorg/whispersystems/libaxolotl/bm;->a:Ljavax/crypto/spec/IvParameterSpec;
+
+    .line 9
+    iput p4, p0, Lorg/whispersystems/libaxolotl/bm;->d:I
 
     .line 7
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-    .locals 0
 
-    .prologue
-    .line 3
-    invoke-direct {p0, p1, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 5
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/Throwable;)V
-    .locals 0
+# virtual methods
+.method public a()I
+    .locals 1
 
     .prologue
     .line 1
-    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/Throwable;)V
+    iget v0, p0, Lorg/whispersystems/libaxolotl/bm;->d:I
 
-    .line 4
-    return-void
+    return v0
+.end method
+
+.method public b()Ljavax/crypto/spec/SecretKeySpec;
+    .locals 1
+
+    .prologue
+    .line 6
+    iget-object v0, p0, Lorg/whispersystems/libaxolotl/bm;->b:Ljavax/crypto/spec/SecretKeySpec;
+
+    return-object v0
+.end method
+
+.method public c()Ljavax/crypto/spec/IvParameterSpec;
+    .locals 1
+
+    .prologue
+    .line 5
+    iget-object v0, p0, Lorg/whispersystems/libaxolotl/bm;->a:Ljavax/crypto/spec/IvParameterSpec;
+
+    return-object v0
+.end method
+
+.method public d()Ljavax/crypto/spec/SecretKeySpec;
+    .locals 1
+
+    .prologue
+    .line 2
+    iget-object v0, p0, Lorg/whispersystems/libaxolotl/bm;->c:Ljavax/crypto/spec/SecretKeySpec;
+
+    return-object v0
 .end method

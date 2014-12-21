@@ -16,7 +16,7 @@
     .locals 3
 
     .prologue
-    .line 2
+    .line 1
     iget-object v0, p0, Landroid/support/v4/widget/ResourceCursorAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     iget v1, p0, Landroid/support/v4/widget/ResourceCursorAdapter;->mDropDownLayout:I
@@ -34,7 +34,7 @@
     .locals 3
 
     .prologue
-    .line 1
+    .line 2
     iget-object v0, p0, Landroid/support/v4/widget/ResourceCursorAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     iget v1, p0, Landroid/support/v4/widget/ResourceCursorAdapter;->mLayout:I

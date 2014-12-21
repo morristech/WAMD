@@ -3,24 +3,20 @@
 .source "hl.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/VerifySms;
-
-.field final b:I
+.field final a:Lcom/whatsapp/af8;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/VerifySms;I)V
+.method constructor <init>(Lcom/whatsapp/af8;)V
     .locals 0
 
     .prologue
-    .line 4
-    iput-object p1, p0, Lcom/whatsapp/hl;->a:Lcom/whatsapp/VerifySms;
-
-    iput p2, p0, Lcom/whatsapp/hl;->b:I
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/hl;->a:Lcom/whatsapp/af8;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,22 +25,19 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
+.method public onClick(Landroid/view/View;)V
     .locals 2
 
     .prologue
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/hl;->a:Lcom/whatsapp/VerifySms;
-
-    iget v1, p0, Lcom/whatsapp/hl;->b:I
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/VerifySms;->removeDialog(I)V
-
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/hl;->a:Lcom/whatsapp/VerifySms;
+    iget-object v0, p0, Lcom/whatsapp/hl;->a:Lcom/whatsapp/af8;
 
-    invoke-static {v0}, Lcom/whatsapp/VerifySms;->i(Lcom/whatsapp/VerifySms;)V
+    iget-object v0, v0, Lcom/whatsapp/af8;->b:Lcom/whatsapp/SetStatus;
 
-    .line 1
+    const/16 v1, 0x32
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/SetStatus;->showDialog(I)V
+
+    .line 3
     return-void
 .end method

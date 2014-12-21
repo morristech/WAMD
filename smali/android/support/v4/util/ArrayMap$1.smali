@@ -12,7 +12,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 9
     iput-object p1, p0, Landroid/support/v4/util/ArrayMap$1;->this$0:Landroid/support/v4/util/ArrayMap;
 
     invoke-direct {p0}, Landroid/support/v4/util/MapCollections;-><init>()V
@@ -26,12 +26,12 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 8
     iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->this$0:Landroid/support/v4/util/ArrayMap;
 
     invoke-virtual {v0}, Landroid/support/v4/util/ArrayMap;->clear()V
 
-    .line 5
+    .line 4
     return-void
 .end method
 
@@ -39,7 +39,7 @@
     .locals 2
 
     .prologue
-    .line 11
+    .line 13
     iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->this$0:Landroid/support/v4/util/ArrayMap;
 
     iget-object v0, v0, Landroid/support/v4/util/ArrayMap;->mArray:[Ljava/lang/Object;
@@ -57,7 +57,7 @@
     .locals 1
 
     .prologue
-    .line 9
+    .line 7
     iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->this$0:Landroid/support/v4/util/ArrayMap;
 
     return-object v0
@@ -67,7 +67,7 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 3
     iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->this$0:Landroid/support/v4/util/ArrayMap;
 
     iget v0, v0, Landroid/support/v4/util/ArrayMap;->mSize:I
@@ -93,7 +93,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 11
     iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->this$0:Landroid/support/v4/util/ArrayMap;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/util/ArrayMap;->indexOfValue(Ljava/lang/Object;)I
@@ -107,12 +107,12 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 10
     iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->this$0:Landroid/support/v4/util/ArrayMap;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
+    .line 5
     return-void
 .end method
 
@@ -120,12 +120,12 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 1
     iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->this$0:Landroid/support/v4/util/ArrayMap;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/util/ArrayMap;->removeAt(I)Ljava/lang/Object;
 
-    .line 4
+    .line 2
     return-void
 .end method
 
@@ -133,7 +133,7 @@
     .locals 1
 
     .prologue
-    .line 13
+    .line 6
     iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->this$0:Landroid/support/v4/util/ArrayMap;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/util/ArrayMap;->setValueAt(ILjava/lang/Object;)Ljava/lang/Object;

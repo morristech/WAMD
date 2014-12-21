@@ -122,9 +122,6 @@ dịch vụ"</item>
     <plurals name="participants_remaining">
         <item quantity="other">Còn %d</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Tốt tồi. Chúng tôi vừa khôi phục %,d tin nhắn.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Đang gửi %1$d video cho %2$s</item>
     </plurals>

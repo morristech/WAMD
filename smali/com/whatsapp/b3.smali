@@ -3,20 +3,20 @@
 .source "b3.java"
 
 # interfaces
-.implements Landroid/widget/AdapterView$OnItemClickListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/CallsFragment;
+.field final a:Lcom/whatsapp/MediaView;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/CallsFragment;)V
+.method constructor <init>(Lcom/whatsapp/MediaView;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/b3;->a:Lcom/whatsapp/CallsFragment;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/b3;->a:Lcom/whatsapp/MediaView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,51 +25,32 @@
 
 
 # virtual methods
-.method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+.method public onClick(Landroid/view/View;)V
     .locals 2
 
     .prologue
-    .line 5
-    if-ltz p3, :cond_0
+    .line 2
+    iget-object v1, p0, Lcom/whatsapp/b3;->a:Lcom/whatsapp/MediaView;
 
-    iget-object v0, p0, Lcom/whatsapp/b3;->a:Lcom/whatsapp/CallsFragment;
+    iget-object v0, p0, Lcom/whatsapp/b3;->a:Lcom/whatsapp/MediaView;
 
-    invoke-static {v0}, Lcom/whatsapp/CallsFragment;->a(Lcom/whatsapp/CallsFragment;)Lcom/whatsapp/a1_;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/a1_;->getCount()I
+    invoke-static {v0}, Lcom/whatsapp/MediaView;->b(Lcom/whatsapp/MediaView;)Z
 
     move-result v0
 
-    if-ge p3, v0, :cond_0
+    if-nez v0, :cond_0
 
-    .line 6
-    iget-object v0, p0, Lcom/whatsapp/b3;->a:Lcom/whatsapp/CallsFragment;
+    const/4 v0, 0x1
 
-    invoke-static {v0}, Lcom/whatsapp/CallsFragment;->a(Lcom/whatsapp/CallsFragment;)Lcom/whatsapp/a1_;
+    :goto_0
+    invoke-static {v1, v0}, Lcom/whatsapp/MediaView;->b(Lcom/whatsapp/MediaView;Z)V
 
-    move-result-object v0
-
-    invoke-virtual {v0, p3}, Lcom/whatsapp/a1_;->a(I)Lcom/whatsapp/pc;
-
-    move-result-object v0
-
-    .line 4
-    invoke-virtual {v0}, Lcom/whatsapp/pc;->d()Lcom/whatsapp/adg;
-
-    move-result-object v0
+    .line 3
+    return-void
 
     .line 2
-    iget-object v1, p0, Lcom/whatsapp/b3;->a:Lcom/whatsapp/CallsFragment;
-
-    invoke-virtual {v1}, Lcom/whatsapp/CallsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lcom/whatsapp/App;->b(Lcom/whatsapp/adg;Landroid/app/Activity;)V
-
-    .line 1
     :cond_0
-    return-void
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

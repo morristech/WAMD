@@ -11,7 +11,7 @@
 
 
 # static fields
-.field public static a:Z
+.field public static a:I
 
 
 # instance fields
@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 79
+    .line 77
     invoke-direct {p0}, Landroid/app/ListActivity;-><init>()V
 
     return-void
@@ -35,14 +35,14 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 6
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1, p2}, Lcom/actionbarsherlock/ActionBarSherlock;->addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 15
+    .line 49
     return-void
 .end method
 
@@ -50,7 +50,7 @@
     .locals 1
 
     .prologue
-    .line 27
+    .line 13
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -61,10 +61,10 @@
 
     if-nez v0, :cond_0
 
-    .line 8
+    .line 41
     invoke-super {p0}, Landroid/app/ListActivity;->closeOptionsMenu()V
 
-    .line 70
+    .line 42
     :cond_0
     return-void
 .end method
@@ -73,7 +73,7 @@
     .locals 1
 
     .prologue
-    .line 53
+    .line 61
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -84,13 +84,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 64
+    .line 48
     const/4 v0, 0x1
 
     :goto_0
     return v0
 
-    .line 54
+    .line 32
     :cond_0
     invoke-super {p0, p1}, Landroid/app/ListActivity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -103,12 +103,12 @@
     .locals 1
 
     .prologue
-    .line 47
+    .line 55
     iget-object v0, p0, Lcom/actionbarsherlock/app/SherlockListActivity;->mSherlock:Lcom/actionbarsherlock/ActionBarSherlock;
 
     if-nez v0, :cond_0
 
-    .line 52
+    .line 20
     const/4 v0, 0x1
 
     invoke-static {p0, v0}, Lcom/actionbarsherlock/ActionBarSherlock;->wrap(Landroid/app/Activity;I)Lcom/actionbarsherlock/ActionBarSherlock;
@@ -117,7 +117,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/app/SherlockListActivity;->mSherlock:Lcom/actionbarsherlock/ActionBarSherlock;
 
-    .line 31
+    .line 71
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/app/SherlockListActivity;->mSherlock:Lcom/actionbarsherlock/ActionBarSherlock;
 
@@ -128,7 +128,7 @@
     .locals 1
 
     .prologue
-    .line 13
+    .line 68
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -144,14 +144,14 @@
     .locals 1
 
     .prologue
-    .line 21
+    .line 72
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchInvalidateOptionsMenu()V
 
-    .line 6
+    .line 45
     return-void
 .end method
 
@@ -167,7 +167,7 @@
     .locals 0
 
     .prologue
-    .line 68
+    .line 78
     return-void
 .end method
 
@@ -175,17 +175,17 @@
     .locals 1
 
     .prologue
-    .line 76
+    .line 52
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 41
+    .line 18
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 32
+    .line 12
     return-void
 .end method
 
@@ -193,7 +193,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 60
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -209,7 +209,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 65
     const/4 v0, 0x1
 
     return v0
@@ -219,18 +219,18 @@
     .locals 1
 
     .prologue
-    .line 74
+    .line 39
     if-nez p1, :cond_0
 
-    .line 62
+    .line 46
     invoke-virtual {p0, p2}, Lcom/actionbarsherlock/app/SherlockListActivity;->onCreateOptionsMenu(Lcom/actionbarsherlock/view/Menu;)Z
 
     move-result v0
 
+    .line 79
     :goto_0
     return v0
 
-    .line 55
     :cond_0
     const/4 v0, 0x0
 
@@ -241,17 +241,17 @@
     .locals 1
 
     .prologue
-    .line 59
+    .line 40
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchDestroy()V
 
-    .line 44
+    .line 70
     invoke-super {p0}, Landroid/app/ListActivity;->onDestroy()V
 
-    .line 18
+    .line 23
     return-void
 .end method
 
@@ -259,18 +259,18 @@
     .locals 1
 
     .prologue
-    .line 9
+    .line 64
     if-nez p1, :cond_0
 
-    .line 19
+    .line 21
     invoke-virtual {p0, p2}, Lcom/actionbarsherlock/app/SherlockListActivity;->onOptionsItemSelected(Lcom/actionbarsherlock/view/MenuItem;)Z
 
     move-result v0
 
-    .line 73
     :goto_0
     return v0
 
+    .line 15
     :cond_0
     const/4 v0, 0x0
 
@@ -281,7 +281,7 @@
     .locals 1
 
     .prologue
-    .line 78
+    .line 3
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -292,10 +292,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 29
+    .line 31
     const/4 v0, 0x1
 
-    .line 65
+    .line 35
     :goto_0
     return v0
 
@@ -311,7 +311,7 @@
     .locals 1
 
     .prologue
-    .line 60
+    .line 24
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -327,7 +327,7 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 9
     const/4 v0, 0x0
 
     return v0
@@ -337,17 +337,17 @@
     .locals 1
 
     .prologue
-    .line 51
+    .line 37
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1, p2}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchPanelClosed(ILandroid/view/Menu;)V
 
-    .line 4
+    .line 34
     invoke-super {p0, p1, p2}, Landroid/app/ListActivity;->onPanelClosed(ILandroid/view/Menu;)V
 
-    .line 71
+    .line 4
     return-void
 .end method
 
@@ -355,17 +355,17 @@
     .locals 1
 
     .prologue
-    .line 61
+    .line 25
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchPause()V
 
-    .line 23
+    .line 27
     invoke-super {p0}, Landroid/app/ListActivity;->onPause()V
 
-    .line 24
+    .line 53
     return-void
 .end method
 
@@ -373,17 +373,17 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 22
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchPostCreate(Landroid/os/Bundle;)V
 
-    .line 16
+    .line 74
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onPostCreate(Landroid/os/Bundle;)V
 
-    .line 1
+    .line 28
     return-void
 .end method
 
@@ -391,17 +391,17 @@
     .locals 1
 
     .prologue
-    .line 43
+    .line 75
     invoke-super {p0}, Landroid/app/ListActivity;->onPostResume()V
 
-    .line 39
+    .line 33
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchPostResume()V
 
-    .line 56
+    .line 44
     return-void
 .end method
 
@@ -409,7 +409,7 @@
     .locals 1
 
     .prologue
-    .line 28
+    .line 54
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -435,10 +435,10 @@
     .locals 1
 
     .prologue
-    .line 49
+    .line 51
     if-nez p1, :cond_0
 
-    .line 48
+    .line 36
     invoke-virtual {p0, p3}, Lcom/actionbarsherlock/app/SherlockListActivity;->onPrepareOptionsMenu(Lcom/actionbarsherlock/view/Menu;)Z
 
     move-result v0
@@ -446,7 +446,7 @@
     :goto_0
     return v0
 
-    .line 30
+    .line 29
     :cond_0
     const/4 v0, 0x0
 
@@ -457,17 +457,17 @@
     .locals 1
 
     .prologue
-    .line 42
+    .line 26
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
-    .line 67
+    .line 47
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchRestoreInstanceState(Landroid/os/Bundle;)V
 
-    .line 22
+    .line 2
     return-void
 .end method
 
@@ -475,17 +475,17 @@
     .locals 1
 
     .prologue
-    .line 46
+    .line 19
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 66
+    .line 38
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 72
+    .line 63
     return-void
 .end method
 
@@ -493,17 +493,17 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 30
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchStop()V
 
-    .line 75
+    .line 8
     invoke-super {p0}, Landroid/app/ListActivity;->onStop()V
 
-    .line 11
+    .line 56
     return-void
 .end method
 
@@ -511,17 +511,17 @@
     .locals 1
 
     .prologue
-    .line 69
+    .line 16
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1, p2}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchTitleChanged(Ljava/lang/CharSequence;I)V
 
-    .line 50
+    .line 76
     invoke-super {p0, p1, p2}, Landroid/app/ListActivity;->onTitleChanged(Ljava/lang/CharSequence;I)V
 
-    .line 33
+    .line 66
     return-void
 .end method
 
@@ -529,7 +529,7 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 5
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -540,10 +540,10 @@
 
     if-nez v0, :cond_0
 
-    .line 45
+    .line 10
     invoke-super {p0}, Landroid/app/ListActivity;->openOptionsMenu()V
 
-    .line 26
+    .line 50
     :cond_0
     return-void
 .end method
@@ -552,7 +552,7 @@
     .locals 3
 
     .prologue
-    .line 63
+    .line 62
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -561,7 +561,7 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/ActionBarSherlock;->requestFeature(I)Z
 
-    .line 38
+    .line 11
     return-void
 .end method
 
@@ -569,14 +569,14 @@
     .locals 1
 
     .prologue
-    .line 36
+    .line 1
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/ActionBarSherlock;->setContentView(I)V
 
-    .line 20
+    .line 59
     return-void
 .end method
 
@@ -584,14 +584,14 @@
     .locals 1
 
     .prologue
-    .line 35
+    .line 43
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/ActionBarSherlock;->setContentView(Landroid/view/View;)V
 
-    .line 37
+    .line 57
     return-void
 .end method
 
@@ -599,14 +599,14 @@
     .locals 1
 
     .prologue
-    .line 25
+    .line 73
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1, p2}, Lcom/actionbarsherlock/ActionBarSherlock;->setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 2
+    .line 14
     return-void
 .end method
 
@@ -614,14 +614,14 @@
     .locals 1
 
     .prologue
-    .line 77
+    .line 69
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/ActionBarSherlock;->setProgressBarIndeterminateVisibility(Z)V
 
-    .line 40
+    .line 17
     return-void
 .end method
 
@@ -629,7 +629,7 @@
     .locals 1
 
     .prologue
-    .line 34
+    .line 67
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0

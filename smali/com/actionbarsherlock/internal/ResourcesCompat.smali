@@ -19,7 +19,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "\u0013\u001cCQz1\u001c\u0008]z)\u001eM^{f\u0000MLz3\u0000KZ5\u000f6\u0008"
+    const-string v2, "[\u0011I\u001d1y\u0011\u0002\u001a0z\u001aE\u0016,.\rG\u00001{\rA\u0016~G;\u0002"
 
     const/4 v0, -0x1
 
@@ -59,7 +59,7 @@
 
     const/4 v2, 0x1
 
-    const-string v0, "\u0013\u001cCQz1\u001c\u0008V{2\u0017OZgf\u0000MLz3\u0000KZ5\u000f6\u0008"
+    const-string v0, "[\u0011I\u001d1y\u0011\u0002\u00111a\u0013G\u00120.\rG\u00001{\rA\u0016~G;\u0002"
 
     move v3, v2
 
@@ -85,7 +85,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0x15
+    const/16 v2, 0x5e
 
     :goto_2
     xor-int/2addr v2, v9
@@ -101,22 +101,22 @@
     goto :goto_1
 
     :pswitch_1
-    const/16 v2, 0x46
+    const/16 v2, 0xe
 
     goto :goto_2
 
     :pswitch_2
-    const/16 v2, 0x72
+    const/16 v2, 0x7f
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v2, 0x28
+    const/16 v2, 0x22
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v2, 0x3f
+    const/16 v2, 0x73
 
     goto :goto_2
 
@@ -140,11 +140,11 @@
     .prologue
     const/high16 v5, 0x43f00000
 
-    const/4 v2, 0x1
-
     const/4 v3, 0x0
 
-    .line 9
+    const/4 v2, 0x1
+
+    .line 29
     :try_start_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -152,7 +152,7 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 11
+    .line 32
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -163,17 +163,17 @@
 
     move-result v0
 
-    .line 35
+    .line 36
     :goto_0
     return v0
 
-    .line 11
+    .line 32
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 19
+    .line 11
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -183,7 +183,7 @@
 
     move-result-object v0
 
-    .line 4
+    .line 1
     iget v1, v0, Landroid/util/DisplayMetrics;->widthPixels:I
 
     int-to-float v1, v1
@@ -192,7 +192,7 @@
 
     div-float/2addr v1, v4
 
-    .line 18
+    .line 28
     iget v4, v0, Landroid/util/DisplayMetrics;->heightPixels:I
 
     int-to-float v4, v4
@@ -201,14 +201,14 @@
 
     div-float v0, v4, v0
 
-    .line 21
+    .line 34
     cmpg-float v4, v1, v0
 
     if-gez v4, :cond_1
 
     move v0, v1
 
-    .line 36
+    .line 13
     :cond_1
     :try_start_1
     sget v4, Lcom/actionbarsherlock/R$bool;->abs__action_bar_embed_tabs:I
@@ -217,17 +217,17 @@
 
     if-ne p1, v4, :cond_3
 
-    .line 23
+    .line 24
     cmpl-float v0, v1, v5
 
     if-ltz v0, :cond_2
 
     move v0, v2
 
-    .line 35
+    .line 5
     goto :goto_0
 
-    .line 23
+    .line 24
     :catch_1
     move-exception v0
 
@@ -236,7 +236,7 @@
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 35
+    .line 5
     :catch_2
     move-exception v0
 
@@ -245,10 +245,10 @@
     :cond_2
     move v0, v3
 
-    .line 20
+    .line 36
     goto :goto_0
 
-    .line 16
+    .line 23
     :cond_3
     :try_start_3
     sget v4, Lcom/actionbarsherlock/R$bool;->abs__split_action_bar_is_narrow:I
@@ -257,17 +257,17 @@
 
     if-ne p1, v4, :cond_5
 
-    .line 31
+    .line 35
     cmpl-float v0, v1, v5
 
     if-ltz v0, :cond_4
 
     move v0, v3
 
-    .line 15
+    .line 31
     goto :goto_0
 
-    .line 31
+    .line 35
     :catch_3
     move-exception v0
 
@@ -276,7 +276,7 @@
     :try_end_4
     .catch Ljava/lang/IllegalArgumentException; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 15
+    .line 31
     :catch_4
     move-exception v0
 
@@ -285,10 +285,10 @@
     :cond_4
     move v0, v2
 
-    .line 6
+    .line 18
     goto :goto_0
 
-    .line 1
+    .line 22
     :cond_5
     :try_start_5
     sget v4, Lcom/actionbarsherlock/R$bool;->abs__action_bar_expanded_action_views_exclusive:I
@@ -297,7 +297,7 @@
 
     if-ne p1, v4, :cond_7
 
-    .line 22
+    .line 14
     const/high16 v1, 0x44160000
 
     cmpl-float v0, v0, v1
@@ -306,10 +306,10 @@
 
     move v0, v3
 
-    .line 3
+    .line 20
     goto :goto_0
 
-    .line 22
+    .line 14
     :catch_5
     move-exception v0
 
@@ -318,7 +318,7 @@
     :try_end_6
     .catch Ljava/lang/IllegalArgumentException; {:try_start_6 .. :try_end_6} :catch_6
 
-    .line 3
+    .line 20
     :catch_6
     move-exception v0
 
@@ -327,10 +327,10 @@
     :cond_6
     move v0, v2
 
-    .line 28
+    .line 7
     goto :goto_0
 
-    .line 26
+    .line 19
     :cond_7
     :try_start_7
     sget v0, Lcom/actionbarsherlock/R$bool;->abs__config_allowActionMenuItemTextWithIcon:I
@@ -339,17 +339,17 @@
 
     if-ne p1, v0, :cond_9
 
-    .line 12
+    .line 6
     cmpl-float v0, v1, v5
 
     if-ltz v0, :cond_8
 
     move v0, v2
 
-    .line 25
+    .line 9
     goto :goto_0
 
-    .line 12
+    .line 6
     :catch_7
     move-exception v0
 
@@ -358,7 +358,7 @@
     :try_end_8
     .catch Ljava/lang/IllegalArgumentException; {:try_start_8 .. :try_end_8} :catch_8
 
-    .line 25
+    .line 9
     :catch_8
     move-exception v0
 
@@ -367,10 +367,10 @@
     :cond_8
     move v0, v3
 
-    .line 32
+    .line 16
     goto :goto_0
 
-    .line 10
+    .line 33
     :cond_9
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -378,9 +378,9 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v2, Lcom/actionbarsherlock/internal/ResourcesCompat;->z:[Ljava/lang/String;
+    sget-object v3, Lcom/actionbarsherlock/internal/ResourcesCompat;->z:[Ljava/lang/String;
 
-    aget-object v2, v2, v3
+    aget-object v2, v3, v2
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -403,7 +403,7 @@
     .locals 4
 
     .prologue
-    .line 5
+    .line 2
     :try_start_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -411,7 +411,7 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 8
+    .line 27
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -422,17 +422,15 @@
 
     move-result v0
 
-    .line 34
     :goto_0
     return v0
 
-    .line 8
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 24
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -442,7 +440,7 @@
 
     move-result-object v0
 
-    .line 17
+    .line 26
     iget v1, v0, Landroid/util/DisplayMetrics;->widthPixels:I
 
     int-to-float v1, v1
@@ -451,7 +449,7 @@
 
     div-float v0, v1, v0
 
-    .line 27
+    .line 4
     :try_start_1
     sget v1, Lcom/actionbarsherlock/R$integer;->abs__max_action_buttons:I
     :try_end_1
@@ -459,19 +457,19 @@
 
     if-ne p1, v1, :cond_4
 
-    .line 7
+    .line 12
     const/high16 v1, 0x44160000
 
     cmpl-float v1, v0, v1
 
     if-ltz v1, :cond_1
 
-    .line 33
+    .line 21
     const/4 v0, 0x5
 
     goto :goto_0
 
-    .line 7
+    .line 12
     :catch_1
     move-exception v0
 
@@ -480,13 +478,13 @@
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 33
+    .line 21
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 2
+    .line 8
     :cond_1
     const/high16 v1, 0x43fa0000
 
@@ -494,12 +492,12 @@
 
     if-ltz v1, :cond_2
 
-    .line 13
+    .line 25
     const/4 v0, 0x4
 
     goto :goto_0
 
-    .line 14
+    .line 10
     :cond_2
     const/high16 v1, 0x43b40000
 
@@ -507,18 +505,18 @@
 
     if-ltz v0, :cond_3
 
-    .line 30
+    .line 15
     const/4 v0, 0x3
 
     goto :goto_0
 
-    .line 34
+    .line 17
     :cond_3
     const/4 v0, 0x2
 
     goto :goto_0
 
-    .line 29
+    .line 30
     :cond_4
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -528,7 +526,7 @@
 
     sget-object v2, Lcom/actionbarsherlock/internal/ResourcesCompat;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x1
+    const/4 v3, 0x0
 
     aget-object v2, v2, v3
 

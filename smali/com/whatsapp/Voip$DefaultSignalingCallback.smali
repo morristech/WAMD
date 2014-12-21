@@ -20,7 +20,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "\u000b4D>"
+    const-string v2, "\rg9]"
 
     const/4 v0, -0x1
 
@@ -60,7 +60,7 @@
 
     const/4 v2, 0x1
 
-    const-string v0, "\u000b4D>"
+    const-string v0, "\rg9]"
 
     move v3, v2
 
@@ -86,7 +86,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0x10
+    const/16 v2, 0x32
 
     :goto_2
     xor-int/2addr v2, v9
@@ -102,22 +102,22 @@
     goto :goto_1
 
     :pswitch_1
-    const/16 v2, 0x64
+    const/16 v2, 0x62
 
     goto :goto_2
 
     :pswitch_2
-    const/16 v2, 0x44
+    const/16 v2, 0x17
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v2, 0x31
+    const/16 v2, 0x4c
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v2, 0x4d
+    const/16 v2, 0x2e
 
     goto :goto_2
 
@@ -139,7 +139,7 @@
     .locals 0
 
     .prologue
-    .line 19
+    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -151,15 +151,15 @@
     .locals 11
 
     .prologue
-    .line 26
+    .line 22
     const/4 v0, 0x1
 
-    invoke-static {p2, v0}, Lcom/whatsapp/protocol/ae;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/au;
+    invoke-static {p2, v0}, Lcom/whatsapp/protocol/c9;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/bb;
 
     move-result-object v0
 
-    .line 14
-    iget-object v0, v0, Lcom/whatsapp/protocol/au;->b:Ljava/lang/String;
+    .line 11
+    iget-object v0, v0, Lcom/whatsapp/protocol/bb;->a:Ljava/lang/String;
 
     move-object v1, p2
 
@@ -183,7 +183,7 @@
 
     invoke-static/range {v0 .. v10}, Lcom/whatsapp/App;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I[[B[I[B[B[BI)V
 
-    .line 27
+    .line 3
     return-void
 .end method
 
@@ -191,57 +191,15 @@
     .locals 9
 
     .prologue
-    .line 10
-    new-instance v0, Lcom/whatsapp/protocol/ae;
-
-    new-instance v1, Lcom/whatsapp/protocol/au;
-
-    const/4 v2, 0x1
-
-    invoke-static {p1}, Lcom/whatsapp/Voip;->b(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-direct {v1, p2, v2, v3}, Lcom/whatsapp/protocol/au;-><init>(Ljava/lang/String;ZLjava/lang/String;)V
-
-    invoke-direct {v0, v1}, Lcom/whatsapp/protocol/ae;-><init>(Lcom/whatsapp/protocol/au;)V
-
-    .line 21
-    invoke-static {}, Lcom/whatsapp/App;->aq()J
-
-    move-result-wide v2
-
-    iput-wide v2, v0, Lcom/whatsapp/protocol/ae;->n:J
-
-    .line 12
-    const/16 v1, 0x8
-
-    iput-byte v1, v0, Lcom/whatsapp/protocol/ae;->t:B
-
-    .line 16
-    const/4 v1, 0x0
-
-    iput v1, v0, Lcom/whatsapp/protocol/ae;->A:I
-
-    .line 18
-    const/4 v1, 0x6
-
-    iput v1, v0, Lcom/whatsapp/protocol/ae;->E:I
-
-    .line 22
-    sget-object v1, Lcom/whatsapp/App;->l:Lcom/whatsapp/a2v;
-
-    invoke-virtual {v1, v0}, Lcom/whatsapp/a2v;->f(Lcom/whatsapp/protocol/ae;)V
-
-    .line 28
+    .line 5
     const/4 v0, 0x1
 
-    invoke-static {p2, v0}, Lcom/whatsapp/protocol/ae;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/au;
+    invoke-static {p2, v0}, Lcom/whatsapp/protocol/c9;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/bb;
 
     move-result-object v0
 
-    .line 11
-    iget-object v0, v0, Lcom/whatsapp/protocol/au;->b:Ljava/lang/String;
+    .line 14
+    iget-object v0, v0, Lcom/whatsapp/protocol/bb;->a:Ljava/lang/String;
 
     const/4 v1, 0x2
 
@@ -287,10 +245,10 @@
 
     invoke-static/range {v0 .. v8}, Lcom/whatsapp/App;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;[I[[B[I[B[B)V
 
-    .line 7
+    .line 4
     return-void
 
-    .line 11
+    .line 14
     nop
 
     :array_0
@@ -304,19 +262,19 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 9
     const/4 v0, 0x1
 
-    invoke-static {p2, v0}, Lcom/whatsapp/protocol/ae;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/au;
+    invoke-static {p2, v0}, Lcom/whatsapp/protocol/c9;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/bb;
 
     move-result-object v0
 
     .line 8
-    iget-object v0, v0, Lcom/whatsapp/protocol/au;->b:Ljava/lang/String;
+    iget-object v0, v0, Lcom/whatsapp/protocol/bb;->a:Ljava/lang/String;
 
     invoke-static {v0, p2, p1, p3}, Lcom/whatsapp/App;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 15
+    .line 6
     return-void
 .end method
 
@@ -324,19 +282,19 @@
     .locals 1
 
     .prologue
-    .line 25
+    .line 13
     const/4 v0, 0x1
 
-    invoke-static {p2, v0}, Lcom/whatsapp/protocol/ae;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/au;
+    invoke-static {p2, v0}, Lcom/whatsapp/protocol/c9;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/bb;
 
     move-result-object v0
 
-    .line 20
-    iget-object v0, v0, Lcom/whatsapp/protocol/au;->b:Ljava/lang/String;
+    .line 17
+    iget-object v0, v0, Lcom/whatsapp/protocol/bb;->a:Ljava/lang/String;
 
     invoke-static {v0, p2, p1, p3, p4}, Lcom/whatsapp/App;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BI)V
 
-    .line 24
+    .line 1
     return-void
 .end method
 
@@ -344,19 +302,19 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 7
     const/4 v0, 0x1
 
-    invoke-static {p2, v0}, Lcom/whatsapp/protocol/ae;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/au;
+    invoke-static {p2, v0}, Lcom/whatsapp/protocol/c9;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/bb;
 
     move-result-object v0
 
-    .line 23
-    iget-object v0, v0, Lcom/whatsapp/protocol/au;->b:Ljava/lang/String;
+    .line 20
+    iget-object v0, v0, Lcom/whatsapp/protocol/bb;->a:Ljava/lang/String;
 
-    invoke-static {v0, p2, p1, p3, p4}, Lcom/whatsapp/App;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[[B[I)V
+    invoke-static {v0, p2, p1, p3, p4}, Lcom/whatsapp/App;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[[B[I)V
 
-    .line 17
+    .line 16
     return-void
 .end method
 
@@ -364,19 +322,19 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 21
     const/4 v0, 0x1
 
-    invoke-static {p2, v0}, Lcom/whatsapp/protocol/ae;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/au;
+    invoke-static {p2, v0}, Lcom/whatsapp/protocol/c9;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/bb;
 
     move-result-object v0
 
-    .line 9
-    iget-object v0, v0, Lcom/whatsapp/protocol/au;->b:Ljava/lang/String;
+    .line 19
+    iget-object v0, v0, Lcom/whatsapp/protocol/bb;->a:Ljava/lang/String;
 
     invoke-static {v0, p2, p1}, Lcom/whatsapp/App;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 10
     return-void
 .end method
 
@@ -384,18 +342,18 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 2
     const/4 v0, 0x1
 
-    invoke-static {p2, v0}, Lcom/whatsapp/protocol/ae;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/au;
+    invoke-static {p2, v0}, Lcom/whatsapp/protocol/c9;->a(Ljava/lang/String;Z)Lcom/whatsapp/protocol/bb;
 
     move-result-object v0
 
-    .line 13
-    iget-object v0, v0, Lcom/whatsapp/protocol/au;->b:Ljava/lang/String;
+    .line 18
+    iget-object v0, v0, Lcom/whatsapp/protocol/bb;->a:Ljava/lang/String;
 
-    invoke-static {v0, p2, p1, p3, p4}, Lcom/whatsapp/App;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[[B[I)V
+    invoke-static {v0, p2, p1, p3, p4}, Lcom/whatsapp/App;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[[B[I)V
 
-    .line 6
+    .line 12
     return-void
 .end method

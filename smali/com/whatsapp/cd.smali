@@ -3,32 +3,20 @@
 .source "cd.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Lcom/whatsapp/protocol/bx;
 
 
 # instance fields
-.field final a:[I
-
-.field final b:Ljava/lang/String;
-
-.field final c:Lcom/whatsapp/Conversation;
-
-.field final d:I
+.field final a:Lcom/whatsapp/DeleteAccount;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/Conversation;[ILjava/lang/String;I)V
+.method constructor <init>(Lcom/whatsapp/DeleteAccount;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/cd;->c:Lcom/whatsapp/Conversation;
-
-    iput-object p2, p0, Lcom/whatsapp/cd;->a:[I
-
-    iput-object p3, p0, Lcom/whatsapp/cd;->b:Ljava/lang/String;
-
-    iput p4, p0, Lcom/whatsapp/cd;->d:I
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/cd;->a:Lcom/whatsapp/DeleteAccount;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,22 +25,20 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 4
+.method public a(I)V
+    .locals 2
 
     .prologue
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/cd;->c:Lcom/whatsapp/Conversation;
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/cd;->a:Lcom/whatsapp/DeleteAccount;
 
-    iget-object v1, p0, Lcom/whatsapp/cd;->a:[I
+    invoke-static {v0}, Lcom/whatsapp/DeleteAccount;->c(Lcom/whatsapp/DeleteAccount;)Landroid/os/Handler;
 
-    aget v1, v1, p2
+    move-result-object v0
 
-    iget-object v2, p0, Lcom/whatsapp/cd;->b:Ljava/lang/String;
+    const/4 v1, 0x3
 
-    iget v3, p0, Lcom/whatsapp/cd;->d:I
-
-    invoke-static {v0, v1, v2, v3}, Lcom/whatsapp/Conversation;->a(Lcom/whatsapp/Conversation;ILjava/lang/String;I)Z
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     .line 1
     return-void

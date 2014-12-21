@@ -66,9 +66,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 12
-
-    const/4 v5, 0x2
+    .locals 11
 
     const/4 v2, 0x1
 
@@ -78,13 +76,13 @@
 
     new-array v4, v0, [Ljava/lang/String;
 
-    const-string v3, "_J?a\tMQ/w\u0015XK?x\tMN\'w\u000f_.Pe\u001eCU/w\u0005SC3b\u001fCL/\u007f\u0010SP?y\u001b \"\u0011X2,Q8y\u0001SC#i\u0017OV9y\u0018SL5`\u0013^\"\u0011D3,o\u0005B#mn\u001cOviz\u0013Z#\u007fk\u0006Sx"
+    const-string v3, "2W+\u0006$ L;\u001085V+\u001f$ S3\u0010\"23D\u00023.H;\u0010(>^\'\u00052.Q;\u0018=>M+\u001e6M?\u0005?\u001fAL,\u001e,>^7\u000e:\"K-\u001e5>Q!\u0007>3?\u0005#\u001eAr\u0011%\u000e\u0000s\u0008([\u0004g\u0007=\u000e\u0012v\u00124U"
 
     const/4 v0, -0x1
 
-    move-object v6, v4
+    move-object v5, v4
 
-    move-object v7, v4
+    move-object v6, v4
 
     move v4, v1
 
@@ -93,20 +91,20 @@
 
     move-result-object v3
 
-    array-length v8, v3
+    array-length v7, v3
 
-    move v9, v8
+    move v8, v7
 
-    move v10, v1
+    move v9, v1
 
-    move-object v8, v3
+    move-object v7, v3
 
     :goto_1
-    if-gt v9, v10, :cond_0
+    if-gt v8, v9, :cond_0
 
     new-instance v3, Ljava/lang/String;
 
-    invoke-direct {v3, v8}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v3, v7}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v3}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -114,85 +112,85 @@
 
     packed-switch v0, :pswitch_data_0
 
-    aput-object v3, v6, v4
+    aput-object v3, v5, v4
 
-    const-string v0, "Ag\u001eC\u001fxg\u001d\u007f;|n"
+    const-string v0, ",z\n$2\u0015z\t\u0018\u0016\u0011s"
 
     move-object v3, v0
 
     move v4, v2
 
-    move-object v6, v7
+    move-object v5, v6
 
     move v0, v1
 
     goto :goto_0
 
     :pswitch_0
-    aput-object v3, v6, v4
+    aput-object v3, v5, v4
 
-    const-string v0, "Oc\u001e\u0011\",d\u0019X2,c\u0013B?zk\u0004OvxmP^7bf\u001cSvel\u0004S8x9P_1bm\u0002_8k"
+    const/4 v3, 0x2
+
+    const-string v0, "\"~\nv\u000fAy\r?\u001fA~\u0007%\u0012\u0017v\u0010([\u0015pD9\u001a\u000f{\u00084[\u0008q\u00104\u0015\u0015$D8\u001c\u000fp\u00168\u0015\u0006"
+
+    move v4, v3
+
+    move-object v5, v6
 
     move-object v3, v0
-
-    move v4, v5
-
-    move-object v6, v7
 
     move v0, v2
 
     goto :goto_0
 
     :pswitch_1
-    aput-object v3, v6, v4
+    aput-object v3, v5, v4
 
-    sput-object v7, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->z:[Ljava/lang/String;
+    sput-object v6, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->z:[Ljava/lang/String;
 
     return-void
 
     :cond_0
-    aget-char v11, v8, v10
+    aget-char v10, v7, v9
 
-    rem-int/lit8 v3, v10, 0x5
+    rem-int/lit8 v3, v9, 0x5
 
     packed-switch v3, :pswitch_data_1
 
-    const/16 v3, 0x56
+    const/16 v3, 0x7b
 
     :goto_2
-    xor-int/2addr v3, v11
+    xor-int/2addr v3, v10
 
     int-to-char v3, v3
 
-    aput-char v3, v8, v10
+    aput-char v3, v7, v9
 
-    add-int/lit8 v3, v10, 0x1
+    add-int/lit8 v3, v9, 0x1
 
-    move v10, v3
+    move v9, v3
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v3, 0xc
+    const/16 v3, 0x61
 
     goto :goto_2
 
     :pswitch_3
-    move v3, v5
+    const/16 v3, 0x1f
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v3, 0x70
+    const/16 v3, 0x64
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v3, 0x36
+    const/16 v3, 0x51
 
     goto :goto_2
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -215,45 +213,45 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 126
+    .line 100
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 57
+    .line 168
     iput v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mIconResId:I
 
-    .line 132
+    .line 120
     const/16 v0, 0x10
 
     iput v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
-    .line 62
+    .line 30
     iput v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShowAsAction:I
 
-    .line 39
+    .line 143
     iput-boolean v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mIsActionViewExpanded:Z
 
-    .line 177
+    .line 49
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
-    .line 31
+    .line 71
     iput p3, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mId:I
 
-    .line 7
+    .line 80
     iput p2, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mGroup:I
 
-    .line 161
+    .line 18
     iput p4, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mCategoryOrder:I
 
-    .line 137
+    .line 34
     iput p5, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mOrdering:I
 
-    .line 181
+    .line 74
     iput-object p6, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mTitle:Ljava/lang/CharSequence;
 
-    .line 63
+    .line 24
     iput p7, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShowAsAction:I
 
-    .line 184
+    .line 128
     return-void
 .end method
 
@@ -265,7 +263,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 87
+    .line 15
     :try_start_0
     iget v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShowAsAction:I
     :try_end_0
@@ -275,18 +273,18 @@
 
     if-nez v1, :cond_1
 
-    .line 167
+    .line 180
     :cond_0
     :goto_0
     return v0
 
-    .line 120
+    .line 95
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 109
+    .line 138
     :cond_1
     :try_start_1
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mActionView:Landroid/view/View;
@@ -295,7 +293,7 @@
 
     if-nez v1, :cond_2
 
-    .line 167
+    .line 180
     const/4 v0, 0x1
 
     goto :goto_0
@@ -305,7 +303,7 @@
 
     throw v0
 
-    .line 179
+    .line 159
     :cond_2
     :try_start_2
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mOnActionExpandListener:Lcom/actionbarsherlock/view/MenuItem$OnActionExpandListener;
@@ -317,14 +315,14 @@
     :try_start_3
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mOnActionExpandListener:Lcom/actionbarsherlock/view/MenuItem$OnActionExpandListener;
 
-    .line 104
+    .line 165
     invoke-interface {v1, p0}, Lcom/actionbarsherlock/view/MenuItem$OnActionExpandListener;->onMenuItemActionCollapse(Lcom/actionbarsherlock/view/MenuItem;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 53
+    .line 54
     :cond_3
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
@@ -334,7 +332,7 @@
 
     goto :goto_0
 
-    .line 104
+    .line 165
     :catch_2
     move-exception v0
 
@@ -342,7 +340,7 @@
     :try_end_3
     .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 53
+    .line 54
     :catch_3
     move-exception v0
 
@@ -355,7 +353,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 171
+    .line 76
     :try_start_0
     iget v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShowAsAction:I
     :try_end_0
@@ -370,12 +368,12 @@
 
     if-nez v1, :cond_1
 
-    .line 70
+    .line 182
     :cond_0
     :goto_0
     return v0
 
-    .line 171
+    .line 76
     :catch_0
     move-exception v0
 
@@ -383,13 +381,13 @@
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 70
+    .line 182
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 6
+    .line 17
     :cond_1
     :try_start_2
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mOnActionExpandListener:Lcom/actionbarsherlock/view/MenuItem$OnActionExpandListener;
@@ -401,14 +399,14 @@
     :try_start_3
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mOnActionExpandListener:Lcom/actionbarsherlock/view/MenuItem$OnActionExpandListener;
 
-    .line 61
+    .line 98
     invoke-interface {v1, p0}, Lcom/actionbarsherlock/view/MenuItem$OnActionExpandListener;->onMenuItemActionExpand(Lcom/actionbarsherlock/view/MenuItem;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 2
+    .line 167
     :cond_2
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
@@ -418,7 +416,7 @@
 
     goto :goto_0
 
-    .line 61
+    .line 98
     :catch_2
     move-exception v0
 
@@ -426,7 +424,7 @@
     :try_end_3
     .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 2
+    .line 167
     :catch_3
     move-exception v0
 
@@ -437,7 +435,7 @@
     .locals 1
 
     .prologue
-    .line 116
+    .line 23
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mActionProvider:Lcom/actionbarsherlock/view/ActionProvider;
 
     return-object v0
@@ -447,35 +445,35 @@
     .locals 1
 
     .prologue
-    .line 91
+    .line 178
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mActionView:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
-    .line 133
+    .line 45
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mActionView:Landroid/view/View;
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 182
+    .line 176
     :goto_0
     return-object v0
 
-    .line 133
+    .line 45
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 148
+    .line 37
     :cond_0
     :try_start_1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mActionProvider:Lcom/actionbarsherlock/view/ActionProvider;
 
     if-eqz v0, :cond_1
 
-    .line 13
+    .line 109
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mActionProvider:Lcom/actionbarsherlock/view/ActionProvider;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/view/ActionProvider;->onCreateActionView()Landroid/view/View;
@@ -484,7 +482,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mActionView:Landroid/view/View;
 
-    .line 182
+    .line 176
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mActionView:Landroid/view/View;
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
@@ -496,7 +494,7 @@
 
     throw v0
 
-    .line 82
+    .line 132
     :cond_1
     const/4 v0, 0x0
 
@@ -507,7 +505,7 @@
     .locals 1
 
     .prologue
-    .line 49
+    .line 10
     iget-char v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShortcutAlphabeticChar:C
 
     return v0
@@ -517,7 +515,7 @@
     .locals 1
 
     .prologue
-    .line 88
+    .line 69
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mGroup:I
 
     return v0
@@ -527,35 +525,35 @@
     .locals 2
 
     .prologue
-    .line 75
+    .line 129
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mIconDrawable:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
-    .line 112
+    .line 140
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mIconDrawable:Landroid/graphics/drawable/Drawable;
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 160
+    .line 179
     :goto_0
     return-object v0
 
-    .line 112
+    .line 140
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 131
+    .line 59
     :cond_0
     :try_start_1
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mIconResId:I
 
     if-eqz v0, :cond_1
 
-    .line 86
+    .line 22
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->getResources()Landroid/content/res/Resources;
@@ -577,7 +575,7 @@
 
     throw v0
 
-    .line 160
+    .line 179
     :cond_1
     const/4 v0, 0x0
 
@@ -588,7 +586,7 @@
     .locals 1
 
     .prologue
-    .line 122
+    .line 27
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mIntent:Landroid/content/Intent;
 
     return-object v0
@@ -600,7 +598,7 @@
     .end annotation
 
     .prologue
-    .line 180
+    .line 154
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mId:I
 
     return v0
@@ -610,7 +608,7 @@
     .locals 1
 
     .prologue
-    .line 134
+    .line 123
     iget-char v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShortcutNumericChar:C
 
     return v0
@@ -620,7 +618,7 @@
     .locals 1
 
     .prologue
-    .line 172
+    .line 67
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mCategoryOrder:I
 
     return v0
@@ -630,7 +628,7 @@
     .locals 1
 
     .prologue
-    .line 164
+    .line 58
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mOrdering:I
 
     return v0
@@ -640,7 +638,7 @@
     .locals 1
 
     .prologue
-    .line 130
+    .line 14
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
@@ -672,33 +670,31 @@
     .locals 4
 
     .prologue
-    sget v0, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:I
+    sget-boolean v0, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:Z
 
-    .line 115
+    .line 33
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->getShortcut()C
 
     move-result v1
 
-    .line 97
+    .line 77
     if-nez v1, :cond_0
 
-    .line 64
+    .line 155
     :try_start_0
     const-string v0, ""
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 90
     :goto_0
     return-object v0
 
-    .line 64
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 139
+    .line 56
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -706,17 +702,17 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 19
+    .line 146
     sparse-switch v1, :sswitch_data_0
 
-    .line 5
+    .line 43
     :goto_1
     :try_start_1
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_3
 
-    .line 90
+    .line 4
     :cond_1
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -724,7 +720,7 @@
 
     goto :goto_0
 
-    .line 128
+    .line 72
     :sswitch_0
     :try_start_2
     sget-object v3, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->sEnterShortcutLabel:Ljava/lang/String;
@@ -733,10 +729,10 @@
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 185
+    .line 183
     if-eqz v0, :cond_1
 
-    .line 119
+    .line 35
     :sswitch_1
     :try_start_3
     sget-object v3, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->sDeleteShortcutLabel:Ljava/lang/String;
@@ -745,10 +741,10 @@
     :try_end_3
     .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_2
 
-    .line 20
+    .line 25
     if-eqz v0, :cond_1
 
-    .line 103
+    .line 31
     :sswitch_2
     :try_start_4
     sget-object v3, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->sSpaceShortcutLabel:Ljava/lang/String;
@@ -757,12 +753,12 @@
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 47
+    .line 85
     if-eqz v0, :cond_1
 
     goto :goto_1
 
-    .line 20
+    .line 25
     :catch_1
     move-exception v0
 
@@ -771,7 +767,7 @@
     :try_end_5
     .catch Landroid/content/ActivityNotFoundException; {:try_start_5 .. :try_end_5} :catch_2
 
-    .line 47
+    .line 85
     :catch_2
     move-exception v0
 
@@ -780,13 +776,13 @@
     :try_end_6
     .catch Landroid/content/ActivityNotFoundException; {:try_start_6 .. :try_end_6} :catch_3
 
-    .line 5
+    .line 43
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 19
+    .line 146
     nop
 
     :sswitch_data_0
@@ -801,7 +797,7 @@
     .locals 1
 
     .prologue
-    .line 48
+    .line 75
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mSubMenu:Lcom/actionbarsherlock/internal/view/menu/SubMenuBuilder;
 
     return-object v0
@@ -813,7 +809,7 @@
     .end annotation
 
     .prologue
-    .line 40
+    .line 57
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mTitle:Ljava/lang/CharSequence;
 
     return-object v0
@@ -823,7 +819,7 @@
     .locals 1
 
     .prologue
-    .line 154
+    .line 134
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mTitleCondensed:Ljava/lang/CharSequence;
 
@@ -851,7 +847,7 @@
     .locals 1
 
     .prologue
-    .line 127
+    .line 36
     if-eqz p1, :cond_0
 
     :try_start_0
@@ -861,24 +857,24 @@
 
     if-eqz v0, :cond_0
 
-    .line 159
+    .line 12
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->getTitleCondensed()Ljava/lang/CharSequence;
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 
-    .line 146
+    .line 113
     :goto_0
     return-object v0
 
-    .line 159
+    .line 12
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 146
+    .line 113
     :cond_0
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->getTitle()Ljava/lang/CharSequence;
 
@@ -891,7 +887,7 @@
     .locals 1
 
     .prologue
-    .line 89
+    .line 136
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShowAsAction:I
     :try_end_0
@@ -933,7 +929,7 @@
     .locals 1
 
     .prologue
-    .line 186
+    .line 97
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mSubMenu:Lcom/actionbarsherlock/internal/view/menu/SubMenuBuilder;
     :try_end_0
@@ -963,7 +959,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 18
+    .line 173
     :try_start_0
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mClickListener:Lcom/actionbarsherlock/view/MenuItem$OnMenuItemClickListener;
 
@@ -971,7 +967,7 @@
 
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mClickListener:Lcom/actionbarsherlock/view/MenuItem$OnMenuItemClickListener;
 
-    .line 136
+    .line 141
     invoke-interface {v1, p0}, Lcom/actionbarsherlock/view/MenuItem$OnMenuItemClickListener;->onMenuItemClick(Lcom/actionbarsherlock/view/MenuItem;)Z
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
@@ -980,12 +976,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 152
+    .line 125
     :cond_0
     :goto_0
     return v0
 
-    .line 136
+    .line 141
     :catch_0
     move-exception v0
 
@@ -994,13 +990,13 @@
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 94
+    .line 125
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 93
+    .line 20
     :cond_1
     :try_start_2
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
@@ -1019,13 +1015,13 @@
 
     if-nez v1, :cond_0
 
-    .line 38
+    .line 73
     :try_start_3
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mItemCallback:Ljava/lang/Runnable;
 
     if-eqz v1, :cond_2
 
-    .line 149
+    .line 151
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mItemCallback:Ljava/lang/Runnable;
 
     invoke-interface {v1}, Ljava/lang/Runnable;->run()V
@@ -1034,19 +1030,19 @@
 
     goto :goto_0
 
-    .line 152
+    .line 86
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 10
+    .line 90
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 156
+    .line 186
     :cond_2
     :try_start_4
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mIntent:Landroid/content/Intent;
@@ -1055,7 +1051,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 22
+    .line 181
     :try_start_5
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
@@ -1072,11 +1068,11 @@
 
     goto :goto_0
 
-    .line 117
+    .line 39
     :catch_4
     move-exception v1
 
-    .line 34
+    .line 8
     sget-object v2, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->z:[Ljava/lang/String;
 
     aget-object v2, v2, v0
@@ -1089,7 +1085,7 @@
 
     invoke-static {v2, v3, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 100
+    .line 150
     :cond_3
     :try_start_6
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mActionProvider:Lcom/actionbarsherlock/view/ActionProvider;
@@ -1109,19 +1105,19 @@
 
     if-nez v1, :cond_0
 
-    .line 151
+    .line 52
     :cond_4
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 27
+    .line 116
     :catch_5
     move-exception v0
 
     throw v0
 
-    .line 100
+    .line 150
     :catch_6
     move-exception v0
 
@@ -1130,7 +1126,7 @@
     :try_end_8
     .catch Landroid/content/ActivityNotFoundException; {:try_start_8 .. :try_end_8} :catch_7
 
-    .line 54
+    .line 107
     :catch_7
     move-exception v0
 
@@ -1141,7 +1137,7 @@
     .locals 2
 
     .prologue
-    .line 111
+    .line 145
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
     :try_end_0
@@ -1173,7 +1169,7 @@
     .locals 1
 
     .prologue
-    .line 73
+    .line 38
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mIsActionViewExpanded:Z
 
     return v0
@@ -1185,7 +1181,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 17
+    .line 32
     :try_start_0
     iget v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
     :try_end_0
@@ -1213,7 +1209,7 @@
     .locals 2
 
     .prologue
-    .line 99
+    .line 47
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
     :try_end_0
@@ -1245,7 +1241,7 @@
     .locals 1
 
     .prologue
-    .line 176
+    .line 50
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
     :try_end_0
@@ -1275,7 +1271,7 @@
     .locals 1
 
     .prologue
-    .line 98
+    .line 64
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
     :try_end_0
@@ -1305,7 +1301,7 @@
     .locals 1
 
     .prologue
-    .line 23
+    .line 162
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
     :try_end_0
@@ -1337,7 +1333,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 144
+    .line 121
     :try_start_0
     iget v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShowAsAction:I
     :try_end_0
@@ -1365,7 +1361,7 @@
     .locals 2
 
     .prologue
-    .line 96
+    .line 60
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShowAsAction:I
     :try_end_0
@@ -1397,22 +1393,22 @@
     .locals 2
 
     .prologue
-    .line 44
+    .line 137
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mActionView:Landroid/view/View;
 
-    .line 138
+    .line 130
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mActionProvider:Lcom/actionbarsherlock/view/ActionProvider;
 
-    .line 157
+    .line 28
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->onItemsChanged(Z)V
 
-    .line 50
+    .line 19
     return-object p0
 .end method
 
@@ -1420,7 +1416,7 @@
     .locals 3
 
     .prologue
-    .line 95
+    .line 160
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->getContext()Landroid/content/Context;
@@ -1432,7 +1428,7 @@
 
     move-result-object v1
 
-    .line 158
+    .line 131
     new-instance v2, Landroid/widget/LinearLayout;
 
     invoke-direct {v2, v0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
@@ -1445,7 +1441,7 @@
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->setActionView(Landroid/view/View;)Lcom/actionbarsherlock/view/MenuItem;
 
-    .line 169
+    .line 13
     return-object p0
 .end method
 
@@ -1453,18 +1449,18 @@
     .locals 2
 
     .prologue
-    .line 24
+    .line 83
     :try_start_0
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mActionView:Landroid/view/View;
 
-    .line 175
+    .line 46
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mActionProvider:Lcom/actionbarsherlock/view/ActionProvider;
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 83
+    .line 157
     if-eqz p1, :cond_0
 
     :try_start_1
@@ -1483,23 +1479,23 @@
 
     if-lez v0, :cond_0
 
-    .line 125
+    .line 96
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mId:I
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setId(I)V
     :try_end_2
     .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 153
+    .line 147
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     invoke-virtual {v0, p0}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->onItemActionRequestChanged(Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;)V
 
-    .line 77
+    .line 144
     return-object p0
 
-    .line 83
+    .line 157
     :catch_0
     move-exception v0
 
@@ -1516,7 +1512,7 @@
     :try_end_4
     .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_2
 
-    .line 125
+    .line 96
     :catch_2
     move-exception v0
 
@@ -1527,17 +1523,17 @@
     .locals 2
 
     .prologue
-    .line 123
+    .line 124
     iput-boolean p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mIsActionViewExpanded:Z
 
-    .line 71
+    .line 99
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->onItemsChanged(Z)V
 
-    .line 183
+    .line 5
     return-void
 .end method
 
@@ -1545,7 +1541,7 @@
     .locals 2
 
     .prologue
-    .line 65
+    .line 170
     :try_start_0
     iget-char v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShortcutAlphabeticChar:C
     :try_end_0
@@ -1553,17 +1549,17 @@
 
     if-ne v0, p1, :cond_0
 
-    .line 155
+    .line 175
     :goto_0
     return-object p0
 
-    .line 65
+    .line 170
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 9
+    .line 92
     :cond_0
     invoke-static {p1}, Ljava/lang/Character;->toLowerCase(C)C
 
@@ -1571,7 +1567,7 @@
 
     iput-char v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShortcutAlphabeticChar:C
 
-    .line 129
+    .line 7
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     const/4 v1, 0x0
@@ -1587,10 +1583,10 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 67
+    .line 3
     iget v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
-    .line 162
+    .line 42
     :try_start_0
     iget v2, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
     :try_end_0
@@ -1608,12 +1604,12 @@
     :try_start_1
     iput v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
-    .line 107
+    .line 48
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
     if-eq v1, v0, :cond_1
 
-    .line 15
+    .line 177
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     const/4 v1, 0x0
@@ -1622,17 +1618,17 @@
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 60
+    .line 51
     :cond_1
     return-object p0
 
-    .line 162
+    .line 42
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 15
+    .line 177
     :catch_1
     move-exception v0
 
@@ -1643,7 +1639,7 @@
     .locals 1
 
     .prologue
-    .line 101
+    .line 117
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
     :try_end_0
@@ -1653,25 +1649,25 @@
 
     if-eqz v0, :cond_0
 
-    .line 76
+    .line 172
     :try_start_1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     invoke-virtual {v0, p0}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->setExclusiveItemChecked(Lcom/actionbarsherlock/view/MenuItem;)V
 
-    sget v0, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:I
+    sget-boolean v0, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:Z
 
     if-eqz v0, :cond_1
 
-    .line 52
+    .line 91
     :cond_0
     invoke-virtual {p0, p1}, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->setCheckedInt(Z)V
 
-    .line 12
+    .line 68
     :cond_1
     return-object p0
 
-    .line 76
+    .line 172
     :catch_0
     move-exception v0
 
@@ -1679,7 +1675,7 @@
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 52
+    .line 91
     :catch_1
     move-exception v0
 
@@ -1692,10 +1688,10 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 72
+    .line 152
     iget v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
-    .line 140
+    .line 169
     :try_start_0
     iget v2, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
     :try_end_0
@@ -1713,12 +1709,12 @@
     :try_start_1
     iput v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
-    .line 32
+    .line 127
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
     if-eq v1, v0, :cond_1
 
-    .line 118
+    .line 101
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     const/4 v1, 0x0
@@ -1727,17 +1723,17 @@
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 8
+    .line 9
     :cond_1
     return-void
 
-    .line 140
+    .line 169
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 118
+    .line 101
     :catch_1
     move-exception v0
 
@@ -1748,10 +1744,10 @@
     .locals 2
 
     .prologue
-    .line 150
+    .line 122
     if-eqz p1, :cond_0
 
-    .line 124
+    .line 103
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
@@ -1759,11 +1755,11 @@
 
     iput v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
-    sget v0, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:I
+    sget-boolean v0, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:Z
 
     if-eqz v0, :cond_1
 
-    .line 51
+    .line 94
     :cond_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
@@ -1773,7 +1769,7 @@
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 85
+    .line 81
     :cond_1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
@@ -1781,10 +1777,10 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->onItemsChanged(Z)V
 
-    .line 135
+    .line 6
     return-object p0
 
-    .line 51
+    .line 94
     :catch_0
     move-exception v0
 
@@ -1795,7 +1791,7 @@
     .locals 2
 
     .prologue
-    .line 11
+    .line 21
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
     :try_end_0
@@ -1812,10 +1808,10 @@
 
     iput v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
-    .line 141
+    .line 161
     return-void
 
-    .line 11
+    .line 21
     :catch_0
     move-exception v0
 
@@ -1831,22 +1827,22 @@
     .locals 2
 
     .prologue
-    .line 55
+    .line 53
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mIconDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 58
+    .line 108
     iput p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mIconResId:I
 
-    .line 21
+    .line 40
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->onItemsChanged(Z)V
 
-    .line 92
+    .line 93
     return-object p0
 .end method
 
@@ -1856,18 +1852,18 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 80
+    .line 111
     iput v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mIconResId:I
 
-    .line 102
+    .line 62
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mIconDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 174
+    .line 82
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->onItemsChanged(Z)V
 
-    .line 145
+    .line 66
     return-object p0
 .end method
 
@@ -1875,10 +1871,10 @@
     .locals 1
 
     .prologue
-    .line 78
+    .line 148
     if-eqz p1, :cond_0
 
-    .line 16
+    .line 174
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
@@ -1886,11 +1882,11 @@
 
     iput v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
-    sget v0, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:I
+    sget-boolean v0, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:Z
 
     if-eqz v0, :cond_1
 
-    .line 74
+    .line 164
     :cond_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
@@ -1900,11 +1896,11 @@
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 105
+    .line 102
     :cond_1
     return-void
 
-    .line 74
+    .line 164
     :catch_0
     move-exception v0
 
@@ -1915,10 +1911,10 @@
     .locals 0
 
     .prologue
-    .line 143
+    .line 16
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenuInfo:Landroid/view/ContextMenu$ContextMenuInfo;
 
-    .line 68
+    .line 41
     return-void
 .end method
 
@@ -1926,7 +1922,7 @@
     .locals 2
 
     .prologue
-    .line 59
+    .line 118
     :try_start_0
     iget-char v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShortcutNumericChar:C
     :try_end_0
@@ -1934,19 +1930,21 @@
 
     if-ne v0, p1, :cond_0
 
+    .line 135
     :goto_0
     return-object p0
 
+    .line 118
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 168
+    .line 79
     :cond_0
     iput-char p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShortcutNumericChar:C
 
-    .line 29
+    .line 105
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     const/4 v1, 0x0
@@ -1960,10 +1958,10 @@
     .locals 0
 
     .prologue
-    .line 178
+    .line 163
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mOnActionExpandListener:Lcom/actionbarsherlock/view/MenuItem$OnActionExpandListener;
 
-    .line 166
+    .line 156
     return-object p0
 .end method
 
@@ -1971,10 +1969,10 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 149
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mClickListener:Lcom/actionbarsherlock/view/MenuItem$OnMenuItemClickListener;
 
-    .line 46
+    .line 2
     return-object p0
 .end method
 
@@ -1982,12 +1980,12 @@
     .locals 3
 
     .prologue
-    .line 110
+    .line 78
     and-int/lit8 v0, p1, 0x3
 
     packed-switch v0, :pswitch_data_0
 
-    .line 79
+    .line 139
     :cond_0
     :try_start_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -2009,27 +2007,27 @@
 
     throw v0
 
-    .line 43
+    .line 26
     :pswitch_0
     :try_start_1
-    sget v0, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:I
+    sget-boolean v0, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:Z
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
 
     if-nez v0, :cond_0
 
-    .line 165
+    .line 185
     iput p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShowAsAction:I
 
-    .line 121
+    .line 1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     invoke-virtual {v0, p0}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->onItemActionRequestChanged(Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;)V
 
-    .line 69
+    .line 119
     return-void
 
-    .line 110
+    .line 78
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -2042,17 +2040,17 @@
     .locals 1
 
     .prologue
-    .line 108
+    .line 70
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mSubMenu:Lcom/actionbarsherlock/internal/view/menu/SubMenuBuilder;
 
-    .line 42
+    .line 114
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v0
 
     invoke-virtual {p1, v0}, Lcom/actionbarsherlock/internal/view/menu/SubMenuBuilder;->setHeaderTitle(Ljava/lang/CharSequence;)Lcom/actionbarsherlock/view/SubMenu;
 
-    .line 81
+    .line 110
     return-void
 .end method
 
@@ -2060,7 +2058,7 @@
     .locals 1
 
     .prologue
-    .line 106
+    .line 11
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->getContext()Landroid/content/Context;
@@ -2082,34 +2080,34 @@
     .locals 2
 
     .prologue
-    .line 142
+    .line 166
     :try_start_0
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mTitle:Ljava/lang/CharSequence;
 
-    .line 163
+    .line 142
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->onItemsChanged(Z)V
 
-    .line 170
+    .line 106
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mSubMenu:Lcom/actionbarsherlock/internal/view/menu/SubMenuBuilder;
 
     if-eqz v0, :cond_0
 
-    .line 147
+    .line 88
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mSubMenu:Lcom/actionbarsherlock/internal/view/menu/SubMenuBuilder;
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/internal/view/menu/SubMenuBuilder;->setHeaderTitle(Ljava/lang/CharSequence;)Lcom/actionbarsherlock/view/SubMenu;
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 66
+    .line 126
     :cond_0
     return-object p0
 
-    .line 147
+    .line 88
     :catch_0
     move-exception v0
 
@@ -2120,16 +2118,16 @@
     .locals 2
 
     .prologue
-    .line 26
+    .line 61
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mTitleCondensed:Ljava/lang/CharSequence;
 
-    .line 30
+    .line 87
     if-nez p1, :cond_0
 
-    .line 41
+    .line 104
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mTitle:Ljava/lang/CharSequence;
 
-    .line 28
+    .line 63
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
@@ -2137,7 +2135,7 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->onItemsChanged(Z)V
 
-    .line 33
+    .line 65
     return-object p0
 .end method
 
@@ -2145,7 +2143,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 133
     :try_start_0
     invoke-virtual {p0, p1}, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->setVisibleInt(Z)Z
 
@@ -2159,11 +2157,11 @@
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 113
+    .line 55
     :cond_0
     return-object p0
 
-    .line 4
+    .line 133
     :catch_0
     move-exception v0
 
@@ -2176,10 +2174,10 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 25
+    .line 158
     iget v2, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
-    .line 114
+    .line 184
     :try_start_0
     iget v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
     :try_end_0
@@ -2197,7 +2195,7 @@
     :try_start_1
     iput v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
 
-    .line 1
+    .line 29
     iget v1, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mFlags:I
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
@@ -2209,7 +2207,7 @@
     :cond_0
     return v0
 
-    .line 114
+    .line 184
     :catch_0
     move-exception v0
 
@@ -2220,7 +2218,7 @@
 
     goto :goto_0
 
-    .line 1
+    .line 29
     :catch_1
     move-exception v0
 
@@ -2231,7 +2229,7 @@
     .locals 1
 
     .prologue
-    .line 56
+    .line 153
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->getOptionalIconsVisible()Z
@@ -2245,7 +2243,7 @@
     .locals 1
 
     .prologue
-    .line 35
+    .line 44
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
@@ -2291,7 +2289,7 @@
     .locals 2
 
     .prologue
-    .line 173
+    .line 89
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mShowAsAction:I
     :try_end_0
@@ -2323,7 +2321,7 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 171
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->mTitle:Ljava/lang/CharSequence;
 
     invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;

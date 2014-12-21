@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 1
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 
     return-void
@@ -20,7 +20,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 3
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$5;->initialValue()Ljava/util/ArrayList;
 
     move-result-object v0

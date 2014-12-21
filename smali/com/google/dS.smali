@@ -1,71 +1,255 @@
-.class public final Lcom/google/dS;
-.super Ljava/lang/Object;
+.class final enum Lcom/google/dS;
+.super Ljava/lang/Enum;
 .source "dS.java"
 
 
-# instance fields
-.field private a:[I
+# static fields
+.field public static final ALPHA:Lcom/google/dS;
 
-.field private b:Ljava/lang/String;
+.field public static final ISO_IEC_646:Lcom/google/dS;
 
-.field private c:I
+.field public static final NUMERIC:Lcom/google/dS;
 
-.field private d:Z
+.field private static final a:[Lcom/google/dS;
+
+.field private static final z:[Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
+.method static constructor <clinit>()V
+    .locals 13
+
+    .prologue
+    const/4 v12, 0x3
+
+    const/4 v5, 0x2
+
+    const/4 v2, 0x1
+
+    const/4 v1, 0x0
+
+    new-array v4, v12, [Ljava/lang/String;
+
+    const-string v3, "_/0\u0007\nX9"
+
+    const/4 v0, -0x1
+
+    move-object v6, v4
+
+    move-object v7, v4
+
+    move v4, v1
+
+    :goto_0
+    invoke-virtual {v3}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v3
+
+    array-length v8, v3
+
+    move v9, v8
+
+    move v10, v1
+
+    move-object v8, v3
+
+    :goto_1
+    if-gt v9, v10, :cond_0
+
+    new-instance v3, Ljava/lang/String;
+
+    invoke-direct {v3, v8}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v3}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v3
+
+    packed-switch v0, :pswitch_data_0
+
+    aput-object v3, v6, v4
+
+    const-string v0, "X)2\u001d\u0011T9\"tl\'"
+
+    move-object v3, v0
+
+    move v4, v2
+
+    move-object v6, v7
+
+    move v0, v1
+
+    goto :goto_0
+
+    :pswitch_0
+    aput-object v3, v6, v4
+
+    const-string v0, "P6-\n\u0019"
+
+    move-object v3, v0
+
+    move v4, v5
+
+    move-object v6, v7
+
+    move v0, v2
+
+    goto :goto_0
+
+    :pswitch_1
+    aput-object v3, v6, v4
+
+    sput-object v7, Lcom/google/dS;->z:[Ljava/lang/String;
+
+    .line 7
+    new-instance v0, Lcom/google/dS;
+
+    sget-object v3, Lcom/google/dS;->z:[Ljava/lang/String;
+
+    aget-object v3, v3, v1
+
+    invoke-direct {v0, v3, v1}, Lcom/google/dS;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/dS;->NUMERIC:Lcom/google/dS;
+
+    .line 6
+    new-instance v0, Lcom/google/dS;
+
+    sget-object v3, Lcom/google/dS;->z:[Ljava/lang/String;
+
+    aget-object v3, v3, v5
+
+    invoke-direct {v0, v3, v2}, Lcom/google/dS;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/dS;->ALPHA:Lcom/google/dS;
+
+    .line 1
+    new-instance v0, Lcom/google/dS;
+
+    sget-object v3, Lcom/google/dS;->z:[Ljava/lang/String;
+
+    aget-object v3, v3, v2
+
+    invoke-direct {v0, v3, v5}, Lcom/google/dS;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/dS;->ISO_IEC_646:Lcom/google/dS;
+
+    .line 4
+    new-array v0, v12, [Lcom/google/dS;
+
+    sget-object v3, Lcom/google/dS;->NUMERIC:Lcom/google/dS;
+
+    aput-object v3, v0, v1
+
+    sget-object v1, Lcom/google/dS;->ALPHA:Lcom/google/dS;
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/google/dS;->ISO_IEC_646:Lcom/google/dS;
+
+    aput-object v1, v0, v5
+
+    sput-object v0, Lcom/google/dS;->a:[Lcom/google/dS;
+
+    return-void
+
+    .line 4294967295
+    :cond_0
+    aget-char v11, v8, v10
+
+    rem-int/lit8 v3, v10, 0x5
+
+    packed-switch v3, :pswitch_data_1
+
+    const/16 v3, 0x58
+
+    :goto_2
+    xor-int/2addr v3, v11
+
+    int-to-char v3, v3
+
+    aput-char v3, v8, v10
+
+    add-int/lit8 v3, v10, 0x1
+
+    move v10, v3
+
+    goto :goto_1
+
+    :pswitch_2
+    const/16 v3, 0x11
+
+    goto :goto_2
+
+    :pswitch_3
+    const/16 v3, 0x7a
+
+    goto :goto_2
+
+    :pswitch_4
+    const/16 v3, 0x7d
+
+    goto :goto_2
+
+    :pswitch_5
+    const/16 v3, 0x42
+
+    goto :goto_2
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+        :pswitch_5
+    .end packed-switch
+.end method
+
+.method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
 
     .prologue
-    .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 5
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public a(I)V
-    .locals 0
+.method public static valueOf(Ljava/lang/String;)Lcom/google/dS;
+    .locals 1
 
     .prologue
     .line 3
-    iput p1, p0, Lcom/google/dS;->c:I
+    const-class v0, Lcom/google/dS;
 
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/dS;
+
+    return-object v0
+.end method
+
+.method public static values()[Lcom/google/dS;
+    .locals 1
+
+    .prologue
     .line 2
-    return-void
-.end method
+    sget-object v0, Lcom/google/dS;->a:[Lcom/google/dS;
 
-.method public a(Ljava/lang/String;)V
-    .locals 0
+    invoke-virtual {v0}, [Lcom/google/dS;->clone()Ljava/lang/Object;
 
-    .prologue
-    .line 8
-    iput-object p1, p0, Lcom/google/dS;->b:Ljava/lang/String;
+    move-result-object v0
 
-    .line 5
-    return-void
-.end method
+    check-cast v0, [Lcom/google/dS;
 
-.method public a(Z)V
-    .locals 0
-
-    .prologue
-    .line 9
-    iput-boolean p1, p0, Lcom/google/dS;->d:Z
-
-    .line 6
-    return-void
-.end method
-
-.method public a([I)V
-    .locals 0
-
-    .prologue
-    .line 4
-    iput-object p1, p0, Lcom/google/dS;->a:[I
-
-    .line 1
-    return-void
+    return-object v0
 .end method

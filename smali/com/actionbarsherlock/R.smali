@@ -4,4 +4,4 @@
 
 
 # static fields
-.field public static a:I
+.field public static a:Z

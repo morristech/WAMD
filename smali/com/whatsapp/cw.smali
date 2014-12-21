@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/Advanced;
+.field final a:Lcom/whatsapp/ViewSharedContactActivity;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "Y0=u}\r=7yo],&ud"
+    const-string v2, ":?h*225\"13/4b,s:2x125\u007fZ\u0011\u0018\u000c"
 
     const/4 v0, -0x1
 
@@ -64,7 +64,7 @@
 
     const/4 v2, 0x1
 
-    const-string v0, "Y=<n*H ,\u007fzY1 t"
+    const-string v0, "3%x(.a~#5<+\"\"?246`=s8>aw0:!\u007fg,f"
 
     move v3, v2
 
@@ -90,7 +90,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0xa
+    const/16 v2, 0x5d
 
     :goto_2
     xor-int/2addr v2, v9
@@ -106,22 +106,22 @@
     goto :goto_1
 
     :pswitch_1
-    const/16 v2, 0x2d
+    const/16 v2, 0x5b
 
     goto :goto_2
 
     :pswitch_2
-    const/16 v2, 0x58
+    const/16 v2, 0x51
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v2, 0x4f
+    const/16 v2, 0xc
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v2, 0x1a
+    const/16 v2, 0x58
 
     goto :goto_2
 
@@ -139,12 +139,12 @@
     .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/whatsapp/Advanced;)V
+.method constructor <init>(Lcom/whatsapp/ViewSharedContactActivity;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/cw;->a:Lcom/whatsapp/Advanced;
+    .line 7
+    iput-object p1, p0, Lcom/whatsapp/cw;->a:Lcom/whatsapp/ViewSharedContactActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -154,28 +154,81 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 3
+    .locals 4
 
     .prologue
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/cw;->a:Lcom/whatsapp/ViewSharedContactActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/ViewSharedContactActivity;->b(Lcom/whatsapp/ViewSharedContactActivity;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/cw;->a:Lcom/whatsapp/ViewSharedContactActivity;
+
+    invoke-static {v0, p1}, Lcom/whatsapp/ViewSharedContactActivity;->a(Lcom/whatsapp/ViewSharedContactActivity;Landroid/view/View;)V
+
+    .line 6
+    :goto_0
+    return-void
+
+    .line 9
+    :cond_0
+    invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lm;
+
+    check-cast v0, Lm;
+
+    iget-object v0, v0, Lm;->f:Ljava/lang/String;
+
+    .line 8
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v2, Lcom/whatsapp/cw;->z:[Ljava/lang/String;
+
+    const/4 v3, 0x1
+
+    aget-object v2, v2, v3
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
     .line 3
-    sget-object v0, Lcom/whatsapp/cw;->z:[Ljava/lang/String;
+    new-instance v1, Landroid/content/Intent;
 
-    const/4 v1, 0x0
+    sget-object v2, Lcom/whatsapp/cw;->z:[Ljava/lang/String;
 
-    aget-object v0, v0, v1
+    const/4 v3, 0x0
 
-    invoke-static {v0}, Lcom/whatsapp/App;->x(Ljava/lang/String;)V
+    aget-object v2, v2, v3
+
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    invoke-direct {v1, v2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
     .line 2
-    new-instance v0, Ljava/lang/RuntimeException;
+    iget-object v0, p0, Lcom/whatsapp/cw;->a:Lcom/whatsapp/ViewSharedContactActivity;
 
-    sget-object v1, Lcom/whatsapp/cw;->z:[Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/whatsapp/ViewSharedContactActivity;->startActivity(Landroid/content/Intent;)V
 
-    const/4 v2, 0x1
-
-    aget-object v1, v1, v2
-
-    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    goto :goto_0
 .end method

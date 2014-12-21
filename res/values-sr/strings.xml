@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Држи за снимање, отпусти за слање</string>
     <string name="audio_note_tip_2">Потребно је снимити дужу поруку</string>
     <string name="audio_note_top_mic_tip">Говорите у микрофон на врху телефона</string>
-    <string name="auth_client_needs_enabling_title">Апликација захтева да Google Play услуге буду омогућене.</string>
-    <string name="auth_client_needs_installation_title">Апликација захтева инсталирање Google Play услуга.</string>
-    <string name="auth_client_needs_update_title">Апликација захтева ажурирање Google Play услуга.</string>
-    <string name="auth_client_play_services_err_notification_msg">Грешка Google Play услуга</string>
-    <string name="auth_client_requested_by_msg">Захтева %1$s</string>
-    <string name="auth_client_using_bad_version_title">Апликација је покушала да користи лошу верзију Google Play услуга.</string>
-    <string name="barcode_scanner_dialog_body">Ова апликација захтева читач бар кода. Инсталирати читач?</string>
-    <string name="barcode_scanner_dialog_title">Инсталирати Читач Бар Кода?</string>
     <string name="block">Блокирај</string>
     <string name="block_ask">Сигурно желиш да блокираш овај контакт?</string>
     <string name="block_list_desc_1">"Додирни иконицу у горњем десном углу за одабир контакта који желиш да блокираш.
@@ -113,6 +105,8 @@
     <string name="camera_shortcut">WhatsApp Камера</string>
     <string name="camera_title">Пошаљи WhatsApp фотографију или видео</string>
     <string name="camera_video_preview_title">Пошаљи WhatsApp видео</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">Да пошаљеш WhatsApp позив, прво искључи режим рада у авиону</string>
+    <string name="can_not_start_voip_call_in_phone_call">Не можеш послати WhatsApp позив уколико већ имаш позив у току.</string>
     <string name="cancel">Откажи</string>
     <string name="cannot_send_not_a_group_participant">Не можеш послати поруке овој групи зато што више ниси учесник.</string>
     <string name="cannot_send_selected_file">Није могуће послати ову медијску датотеку. Или је изабрана датотека погрешна или њен формат није подржан.</string>
@@ -161,23 +155,32 @@
     <string name="color_red">Црвено</string>
     <string name="color_white">Бело</string>
     <string name="color_yellow">Жуто</string>
+    <string name="common_android_wear_notification_needs_update_text">Апликација захтева ажурирање апликације Android Wear.</string>
+    <string name="common_android_wear_update_text">Ова апликација не може да се покрене ако не ажурирате апликацију Android Wear.</string>
+    <string name="common_android_wear_update_title">Ажурирајте Android Wear</string>
     <string name="common_google_play_services_enable_button">Омогући Google Play услуге</string>
     <string name="common_google_play_services_enable_text">Ова апликација неће функционисати ако не омогућите Google Play услуге.</string>
     <string name="common_google_play_services_enable_title">Омогућавање Google Play услуга</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Захтева %1$s</string>
     <string name="common_google_play_services_install_button">Преузми Google Play услуге</string>
     <string name="common_google_play_services_install_text_phone">Ова апликација не може да се покрене без Google Play услуга, које недостају на телефону.</string>
     <string name="common_google_play_services_install_text_tablet">Ова апликација не може да се покрене без Google Play услуга, које недостају на таблету.</string>
     <string name="common_google_play_services_install_title">Преузимање Google Play услуга</string>
     <string name="common_google_play_services_invalid_account_text">Наведени налог не постоји на овом уређају. Одаберите други налог.</string>
     <string name="common_google_play_services_invalid_account_title">Неважећи налог</string>
+    <string name="common_google_play_services_needs_enabling_title">Апликација захтева да Google Play услуге буду омогућене.</string>
     <string name="common_google_play_services_network_error_text">За повезивање са Google Play услугама потребна је веза за пренос података.</string>
     <string name="common_google_play_services_network_error_title">Грешка на мрежи</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Апликација захтева инсталацију Google Play услуга.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Апликација захтева ажурирање Google Play услуга.</string>
+    <string name="common_google_play_services_notification_ticker">Грешка Google Play услуга</string>
     <string name="common_google_play_services_unknown_issue">Непознат проблем са Google Play услугама.</string>
     <string name="common_google_play_services_unsupported_text">Google Play услуге, које су потребне за функционисање неких од апликација, нису подржане на уређају. Контактирајте произвођача да бисте добили помоћ.</string>
     <string name="common_google_play_services_unsupported_title">Google Play услуге</string>
     <string name="common_google_play_services_update_button">Ажурирај</string>
     <string name="common_google_play_services_update_text">Ова апликација не може да се покрене ако не ажурирате Google Play услуге.</string>
     <string name="common_google_play_services_update_title">Ажурирање Google Play услуга</string>
+    <string name="common_open_on_phone">Отвори на телефону</string>
     <string name="common_signin_button_text">Пријави ме</string>
     <string name="common_signin_button_text_long">Пријави ме преко Google-а</string>
     <string name="confirm_forward_msg">Проследи за %s?</string>
@@ -354,7 +357,7 @@
     <string name="eula_description">Телефонско дописивање преко различитих платформи са пријатељима широм света</string>
     <string name="eula_tablets_not_supported">Напомена: таблети тренутно нису подржани</string>
     <string name="eula_terms_of_service">Услови коришћења Услуге</string>
-    <string name="eula_title">Добродошао/ла у WhatsApp!</string>
+    <string name="eula_title">Добродошао/ла у WhatsApp</string>
     <string name="existing_contact">Постојећи</string>
     <string name="exit">Излаз</string>
     <string name="exit_group">Изађи из групе</string>
@@ -529,7 +532,6 @@
     <string name="insufficient_space_for_download_shared_storage">Преузимање није могуће зато што нема довољно места на унутрашњој дељивој меморији. Обриши неке датотеке са унутрашње меморије и покушај поново.</string>
     <string name="invalid_media_message_download">Није могуће преузети медијски садржај сa поруке са грешком. Покушај поново da пошаљеш поруку.</string>
     <string name="invalid_message_forward">Порука не може бити прослеђена неважећем контакту.</string>
-    <string name="invalid_qr_code">Неважећи QR код</string>
     <string name="invalid_url_for_download">Преузимање није могуће. Пошаљи захтев за поновно слање.</string>
     <string name="invite">Препоручи</string>
     <string name="invite_friends">Препоручи</string>
@@ -575,7 +577,6 @@ WhatsApp може бити инсталиран на само једном ур�
     <string name="menuitem_add">Додај</string>
     <string name="menuitem_contacts">Контакти</string>
     <string name="menuitem_debug">Исправи</string>
-    <string name="menuitem_delete_qr">Обриши QR код</string>
     <string name="menuitem_groupchat">Нова група</string>
     <string name="menuitem_list">Ново емитовање</string>
     <string name="menuitem_mute">Утишај</string>
@@ -616,14 +617,15 @@ WhatsApp може бити инсталиран на само једном ур�
     <string name="msg_store_backup_failed">Није могуће направити копију порука</string>
     <string name="msg_store_backup_failed_try_again_later">Није могуће направити копију порука. Покушај поново касније.</string>
     <string name="msg_store_backup_found">Копија пронађена</string>
-    <string name="msg_store_backup_found_registration">Резервна копија порука пронађена!</string>
+    <string name="msg_store_backup_found_registration">Копија ћаскања пронађена</string>
+    <string name="msg_store_backup_found_title">Поврати историјат ћаскања</string>
     <string name="msg_store_backup_skipped">Копирање прескочено</string>
     <string name="msg_store_backup_skipped_no_media">Копирање поруке прескочено: Није пронађена меморијска картица.</string>
     <string name="msg_store_backup_skipped_read_only_media">Прављење резервне копије порука прескочено: Меморијска картица допушта само читање.</string>
     <string name="msg_store_confirm">Потврди</string>
-    <string name="msg_store_creation_backup_message">Желиш да повратиш историјат порука из резервне копије?</string>
-    <string name="msg_store_do_not_restore">Не ради повраћај</string>
-    <string name="msg_store_do_not_restore_no_thanks">Не хвала</string>
+    <string name="msg_store_creation_backup_message">Поврати свој историјат ћаскања из резервне копије. Ако не повратиш сада, нећеш моћи да повратиш касније.</string>
+    <string name="msg_store_do_not_restore">Прескочи повраћај</string>
+    <string name="msg_store_do_not_restore_no_thanks">Прескочи повраћај</string>
     <string name="msg_store_error_found">Дошло је до грешке. Потребно је затворити и поново покренути WhatsApp.</string>
     <string name="msg_store_error_not_restored">Жао нам је, није могуће урадити повраћај историјата порука из резервне копије.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Поруке ће бити изгубљене. Сигурно не желиш да повратиш историјат порука из резервне копије?</string>
@@ -650,9 +652,6 @@ WhatsApp може бити инсталиран на само једном ур�
     <string name="need_sd_card_shared_storage">Искључи USB меморију и покушај поново.</string>
     <string name="network_required">Тренутно немаш приступ ниједној мрежи.</string>
     <string name="network_usage_ask_reset_message">Сигурно желиш да ресетујеш статистику?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Последњи пут подешено: %1$s</string>
     <string name="network_usage_media_bytes_received">Примљено бајтова (медији):</string>
     <string name="network_usage_media_bytes_sent">Послато бајтова (медији):</string>
@@ -899,6 +898,7 @@ WhatsApp може бити инсталиран на само једном ур�
     <string name="send_location">Пошаљи локацију</string>
     <string name="send_payment_button">Пошаљи линк за плаћање услуге</string>
     <string name="send_payment_url_via">Пошаљи URL за плаћање услуге...</string>
+    <string name="send_this_location">Пошаљи ову локацију</string>
     <string name="send_your_current_location">Пошаљи своју тренутну локацију</string>
     <string name="sending_video_to_contact">Шаљем видео за %s</string>
     <string name="sent_to_group">Пошаљи за “%s”</string>
@@ -1010,19 +1010,13 @@ WhatsApp може бити инсталиран на само једном ур�
     <string name="software_expired_get_from_play">Ова верзија WhatsApp-a је застарела и више не функционише. Иди на Google Play и преузми најновију верзију.</string>
     <string name="software_expired_get_from_play_with_date">Ова верзија WhatsApp-а је постала застарела на дан &lt;b>%1$s&lt;/b>. Иди на Google Play ради преузимања најновије верзије.&lt;br>&lt;br>Датум на уређају је &lt;b>%2$s&lt;/b>. Уколико датум није тачан иди на подешавања датума и исправи датум на уређају и поново покрени WhatsApp.</string>
     <string name="software_expired_with_date">Ова верзија WhatsApp-а је постала застарела на дан &lt;b>%1$s&lt;/b>. Додирни “Преузимање” за преузимање најновије верзије.&lt;br>&lt;br>Датум на уређају је &lt;b>%2$s&lt;/b>. Уколико је датум нетачан исправи подешавање датума на уређају и поново покрени WhatsApp.</string>
-    <string name="spam_generic">"Привремено ти је забрањен WhatsApp јер су прекршени услови коришћења. 
- WhatsApp ће ти поново бити омогућен за:"</string>
+    <string name="spam_generic">"Привремено ти је онемогућен WhatsApp јер си можда прекршио/ла наше услове коришћења.
+
+Биће ти омогућено коришћење WhatsApp-а поново за:"</string>
     <string name="spam_generic_data_connection_missing">Провери да ли твој телефон има активан пренос података.</string>
     <string name="spam_generic_unknown_time_left">Привремено ти је забрањен WhatsApp јер си можда прекршио/ла наше услове коришћења. Биће ти омогућено коришћење WhatsApp-а ускоро.</string>
     <string name="spam_learn_more">Сазнај више</string>
     <string name="spam_title">Привремено забрањено</string>
-    <string name="spam_too_many_blocks">Привремено ти је онемогућен WhatsApp јер те је превише људи блокирало.</string>
-    <string name="spam_too_many_groups">"Привремено ти је онемогућен WhatsApp јер си направио/ла превише група са људима који те немају у именику.
- WhatsApp ће ти бити омогућен поново за:"</string>
-    <string name="spam_too_many_messages">"Привремено ти је онемогућен WhatsApp јер си послао/ла превише порука људима који те немају у именику.
- WhatsApp ће ти бити омогућен поново за:"</string>
-    <string name="spam_too_many_people">"Привремено ти је забрањен WhatsApp јер си послао/ла исту поруку превеликом броју корисника.
-WhatsApp ће ти поново бити омогућен за:"</string>
     <string name="status">Статус</string>
     <string name="status_default_at_gym">У теретани</string>
     <string name="status_default_at_movies">У биоскопу</string>
@@ -1190,7 +1184,9 @@ WhatsApp апликација се може скинути за Android, iPhone,
     <string name="view_list_media">Листа емитованих медија</string>
     <string name="view_website">Погледај интер.сајт</string>
     <string name="voip_activity_label">Говорни Позив</string>
+    <string name="voip_call_bluetooth_toggle_description">Дугме Bluetooth-а</string>
     <string name="voip_call_end_button_description">Заврши Говорни Позив</string>
+    <string name="voip_call_failed_no_network">Позив није послат. Провери да ли твој телефон има интернет везу и покушај поново.</string>
     <string name="voip_call_goto_chat_description">Види Ћаскање</string>
     <string name="voip_call_incoming">ДОЛАЗНИ ПОЗИВ</string>
     <string name="voip_call_label">WHATSAPP ПОЗИВ</string>
@@ -1243,5 +1239,4 @@ WhatsApp апликација се може скинути за Android, iPhone,
     <string name="yesterday">Јуче</string>
     <string name="yesterday_at">јуче у %s</string>
     <string name="you">Ти</string>
-    <string name="voip_call_bluetooth_toggle_description">Дугме Bluetooth-а</string>
 </resources>

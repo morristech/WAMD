@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Hoia all, et salvestada, lase lahti, et saata</string>
     <string name="audio_note_tip_2">Palun salvesta pikem teade</string>
     <string name="audio_note_top_mic_tip">Palun räägi telefoni ülaosas olevasse mikrofoni</string>
-    <string name="auth_client_needs_enabling_title">Rakenduse kasutamiseks peavad olema lubatud Google Play teenused.</string>
-    <string name="auth_client_needs_installation_title">Rakenduse kasutamiseks peavad olema installitud Google Play teenused.</string>
-    <string name="auth_client_needs_update_title">Rakenduse kasutamiseks tuleb värskendada Google Play teenuseid.</string>
-    <string name="auth_client_play_services_err_notification_msg">Viga Google Play teenustes</string>
-    <string name="auth_client_requested_by_msg">Päringu esitas: %1$s</string>
-    <string name="auth_client_using_bad_version_title">Rakendus püüdis kasutada Google Play teenuste sobimatut versiooni.</string>
-    <string name="barcode_scanner_dialog_body">See rakendus vajab vöötkoodi skännerit. Kas sa sooviksid mõne installida?</string>
-    <string name="barcode_scanner_dialog_title">Installida vöötkoodi skanner?</string>
     <string name="block">Blokeeri</string>
     <string name="block_ask">Oled kindel, et tahad selle kontakti blokeerida?</string>
     <string name="block_list_desc_1">"Puutu ikooni üleval paremas nurgas, et valida kontakt, keda blokeerida.
@@ -160,25 +152,6 @@ Kui sul on mõlemad, uus telefon ja uus number, muuda esimesena number oma vanas
     <string name="color_red">Punane</string>
     <string name="color_white">Valge</string>
     <string name="color_yellow">Kollane</string>
-    <string name="common_google_play_services_enable_button">Lubage Google Play teenused</string>
-    <string name="common_google_play_services_enable_text">See rakendus ei tööta, kui te ei luba Google Play teenuseid.</string>
-    <string name="common_google_play_services_enable_title">Lubage Google Play teenused</string>
-    <string name="common_google_play_services_install_button">Hankige Google Play teenused</string>
-    <string name="common_google_play_services_install_text_phone">Selle rakenduse käitamiseks on vaja Google Play teenuseid, mida teie telefonis pole.</string>
-    <string name="common_google_play_services_install_text_tablet">Selle rakenduse käitamiseks on vaja Google Play teenuseid, mida teie tahvelarvutis pole.</string>
-    <string name="common_google_play_services_install_title">Hankige Google Play teenused</string>
-    <string name="common_google_play_services_invalid_account_text">Määratud kontot pole selles seadmes olemas. Valige muu konto.</string>
-    <string name="common_google_play_services_invalid_account_title">Vale konto</string>
-    <string name="common_google_play_services_network_error_text">Google Play teenustega ühenduse loomiseks on vajalik andmesideühendus.</string>
-    <string name="common_google_play_services_network_error_title">Võrgu viga</string>
-    <string name="common_google_play_services_unknown_issue">Google Play teenuste tundmatu probleem.</string>
-    <string name="common_google_play_services_unsupported_text">Teie seade ei toeta Google Play teenuseid, millele mõni teie rakendustest toetub. Abi saamiseks võtke ühendust tootjaga.</string>
-    <string name="common_google_play_services_unsupported_title">Google Play teenused</string>
-    <string name="common_google_play_services_update_button">Värskenda</string>
-    <string name="common_google_play_services_update_text">Seda rakendust ei saa käitada, kui te ei värskenda Google Play teenuseid.</string>
-    <string name="common_google_play_services_update_title">Värskendage Google Play teenuseid</string>
-    <string name="common_signin_button_text">Logi sisse</string>
-    <string name="common_signin_button_text_long">"Logi sisse Google'iga"</string>
     <string name="confirm_forward_msg">Edasta kontaktile %s?</string>
     <string name="confirm_sharing_title">Kas jagada kontaktiga %s?</string>
     <string name="connectivity_self_help_instructions">Palun tee telefonile restart, kui on jätkuvalt probleeme ühendusega.</string>
@@ -349,7 +322,6 @@ Saadaval: %1$s"</string>
     <string name="eula_description">Ristplatvorm mobiilne sõnumisaatmine sõpradega üle kogu maailma</string>
     <string name="eula_tablets_not_supported">Märkus: tahvelarvutid ei ole hetkel toetatud.</string>
     <string name="eula_terms_of_service">Kasutamistingimused</string>
-    <string name="eula_title">"Tere tulemast WhatsApp'i!"</string>
     <string name="existing_contact">Olemasolev</string>
     <string name="exit">Välju</string>
     <string name="exit_group">Lahku grupist</string>
@@ -524,7 +496,6 @@ Sinu teenus aegub nüüd %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Ei saa alla laadida, sest sisemises massmälus ei ole piisavalt vaba ruumi. Palun kustuta sisemisest massmälust faile ja proovi uuesti.</string>
     <string name="invalid_media_message_download">Ei saa meediafaile alla laadida, kuna sõnum on vigane. Palun proovi sõnum uuesti saata.</string>
     <string name="invalid_message_forward">Sõnumit ei saa edastada ebakorrektsele kontaktile.</string>
-    <string name="invalid_qr_code">Kehtetu QR kood</string>
     <string name="invalid_url_for_download">Ei saa alla laadida. Palu, et see sulle uuesti saadetaks.</string>
     <string name="invite">Kutsu</string>
     <string name="invite_friends">Kutsu oma sõbrad</string>
@@ -570,7 +541,6 @@ WhatsApp'i on võimalik installeerida vaid ühele seadmele telefoninumbri kohta.
     <string name="menuitem_add">Lisa</string>
     <string name="menuitem_contacts">Kontaktid</string>
     <string name="menuitem_debug">Silumine</string>
-    <string name="menuitem_delete_qr">Kustuta QR kood</string>
     <string name="menuitem_groupchat">Uus grupp</string>
     <string name="menuitem_list">Uus edastus</string>
     <string name="menuitem_mute">Vaigista</string>
@@ -611,14 +581,10 @@ WhatsApp'i on võimalik installeerida vaid ühele seadmele telefoninumbri kohta.
     <string name="msg_store_backup_failed">Ei olnud võimalik sõnumeid varundada.</string>
     <string name="msg_store_backup_failed_try_again_later">Sõnumite varundamine ei õnnestunud. Palun proovi hiljem uuesti.</string>
     <string name="msg_store_backup_found">Leitud varundus</string>
-    <string name="msg_store_backup_found_registration">Sõnumite varundust ei leitud!</string>
     <string name="msg_store_backup_skipped">Varundamine jäi vahele</string>
     <string name="msg_store_backup_skipped_no_media">Sõnumite varundamine jäeti vahele: Puudub meedia kaart.</string>
     <string name="msg_store_backup_skipped_read_only_media">Sõnumite varundamine jäeti vahele: Leiti ainult lugemisõigusega meedia kaart.</string>
     <string name="msg_store_confirm">Kinnita</string>
-    <string name="msg_store_creation_backup_message">Kas tahaksid taastada oma sõnumite ajaloo varundusest?</string>
-    <string name="msg_store_do_not_restore">Ära taasta</string>
-    <string name="msg_store_do_not_restore_no_thanks">Ei, aitäh</string>
     <string name="msg_store_error_found">Tekkis veaolukord. Palun peata ja taaskäivita WhatsApp.</string>
     <string name="msg_store_error_not_restored">Kahjuks ei õnnestunud taastada ühtegi sinu sõnumite ajaloo varundust.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Sõnumid lähevad kaduma. Oled kindel, et ei taha taastada oma varundatud sõnumite ajalugu?</string>
@@ -645,9 +611,6 @@ WhatsApp'i on võimalik installeerida vaid ühele seadmele telefoninumbri kohta.
     <string name="need_sd_card_shared_storage">Palun lülita välja USB massmälu ja proovi uuesti,</string>
     <string name="network_required">Sul ei ole hetkel mingit ligipääsu võrgule.</string>
     <string name="network_usage_ask_reset_message">Oled kindel, et tahad nullida statistika?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Viimati nullitud: %1$s</string>
     <string name="network_usage_media_bytes_received">Vastuvõetud meedia baite:</string>
     <string name="network_usage_media_bytes_sent">Saadetud meedia baite:</string>
@@ -1000,19 +963,10 @@ Saatis WhatsApp"</string>
     <string name="software_expired_get_from_play">"See WhatsApp'i versioon on liiga vana ja ei tööta enam. Palun mine Google Play poodi ja laadi alla kõige värskem versioon."</string>
     <string name="software_expired_get_from_play_with_date">"See WhatsApp'i versioon aegus &lt;b>%1$s&lt;/b>. Palun mine Google Play poodi, et laadida alla kõige värskem versioon. &lt;br>&lt;br> Sinu seadme kuupäev on &lt;b>%2$s&lt;/b>. Kui see on vale, palun muuda oma seadme kuupäev õigeks ja seejärel taaskäivita WhatsApp."</string>
     <string name="software_expired_with_date">"See WhatsApp'i versioon aegus &lt;b>%1$s&lt;/b>. Puutu “Laadi alla”, et saada kõige värskem versioon. &lt;br>&lt;br> Sinu seadme kuupäev on &lt;b>%2$s&lt;/b>. Kui see on vale, palun muuda oma seadme kuupäev õigeks ja seejärel taaskäivita WhatsApp."</string>
-    <string name="spam_generic">"Sulle on ajutiselt keelatud ligipääs WhatsApp'ile, sest sa võid olla rikkunud meie teenuse kasutamise tingusi.
-Sa saad uuesti WhatsApp'i kasutada:"</string>
     <string name="spam_generic_data_connection_missing">Veendu, et sinu telefonil on aktiivne andmesideühendus.</string>
     <string name="spam_generic_unknown_time_left">"Sulle on ajutiselt keelatud ligipääs WhatsApp'ile, sest sa võid olla rikkunud meie teenuse kasutamise tingimusi. Varsti saad sa jälle WhatsApp'i kasutada."</string>
     <string name="spam_learn_more">Lisainfo</string>
     <string name="spam_title">Ajutiselt ligipääs keelatud</string>
-    <string name="spam_too_many_blocks">"Sulle on ajutiselt keelatud ligipääs WhatsApp'ile, sest liiga palju inimesi on sind blokeerinud."</string>
-    <string name="spam_too_many_groups">"Sulle on ajutiselt keelatud ligipääs WhatsApp'ile, sest sa lõid liiga palju gruppe inimestega, kellel ei ole sind oma aadressiraamatus.
-Sa saad uuesti WhatsApp'i kasutada:"</string>
-    <string name="spam_too_many_messages">"Sulle on ajutiselt keelatud ligipääs WhatsApp'ile, sest sa saatsid liiga palju sõnumeid inimestele, kellel ei ole sind oma aadressiraamatus.
-Sa saad uuesti WhatsApp'i kasutada:"</string>
-    <string name="spam_too_many_people">"Sulle on ajutiselt keelatud ligipääs WhatsApp'ile, sest sa saatsid sama sõnumi liiga paljudele inimesetele.
-Sa saad uuesti WhatsApp'i kasutada:"</string>
     <string name="status">Staatus</string>
     <string name="status_default_at_gym">Jõusaalis</string>
     <string name="status_default_at_movies">Kinos</string>
@@ -1180,6 +1134,7 @@ Palun proovi häälkinnitust."</string>
     <string name="view_list_media">Edastusnimekirja meedia</string>
     <string name="view_website">Vaata veebisaiti</string>
     <string name="voip_activity_label">Häälkõne</string>
+    <string name="voip_call_bluetooth_toggle_description">Lülita Bluetooth</string>
     <string name="voip_call_end_button_description">Lõpeta kõne</string>
     <string name="voip_call_goto_chat_description">Vaata vestlust</string>
     <string name="voip_call_incoming">SISSETULEV</string>
@@ -1229,5 +1184,4 @@ Palun unusta \"%1$s\" võrk või lülita Wi-Fi välja, et taastada võrguühendu
     <string name="yesterday">Eile</string>
     <string name="yesterday_at">eile kell %s</string>
     <string name="you">Sina</string>
-    <string name="voip_call_bluetooth_toggle_description">Lülita Bluetooth</string>
 </resources>

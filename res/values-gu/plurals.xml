@@ -164,10 +164,6 @@
         <item quantity="other">%2$d સંપર્કો તરફ થી %1$s વાર્તાલાપ</item>
         <item quantity="one">%2$d સંપર્ક તરફ થી %1$s વાર્તાલાપ</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">અમે હમણાં જ %,d સંદેશો પુનઃસ્થાપિત કર્યો છે.</item>
-        <item quantity="one">તમે આગળ વધી શકો છે.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">%2$s માટે %1$d વિડિઓ મોકલી રહ્યું છે</item>
         <item quantity="one">%2$s માટે %1$d વિડિઓ મોકલી રહ્યું છે</item>

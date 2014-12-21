@@ -14,15 +14,15 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
+    .line 3
     iput-object p1, p0, Landroid/support/v4/content/ModernAsyncTask$AsyncTaskResult;->mTask:Landroid/support/v4/content/ModernAsyncTask;
 
-    .line 4
+    .line 1
     iput-object p2, p0, Landroid/support/v4/content/ModernAsyncTask$AsyncTaskResult;->mData:[Ljava/lang/Object;
 
-    .line 1
+    .line 2
     return-void
 .end method

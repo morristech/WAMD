@@ -19,14 +19,14 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 4
+    .line 8
     new-instance v0, Landroid/support/v4/view/ViewConfigurationCompat$IcsViewConfigurationVersionImpl;
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewConfigurationCompat$IcsViewConfigurationVersionImpl;-><init>()V
 
     sput-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->IMPL:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
 
-    .line 1
+    .line 3
     :goto_0
     return-void
 
@@ -38,7 +38,7 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 3
+    .line 1
     new-instance v0, Landroid/support/v4/view/ViewConfigurationCompat$HoneycombViewConfigurationVersionImpl;
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewConfigurationCompat$HoneycombViewConfigurationVersionImpl;-><init>()V
@@ -55,7 +55,7 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 6
+    .line 9
     new-instance v0, Landroid/support/v4/view/ViewConfigurationCompat$FroyoViewConfigurationVersionImpl;
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewConfigurationCompat$FroyoViewConfigurationVersionImpl;-><init>()V
@@ -64,7 +64,7 @@
 
     goto :goto_0
 
-    .line 9
+    .line 4
     :cond_2
     new-instance v0, Landroid/support/v4/view/ViewConfigurationCompat$BaseViewConfigurationVersionImpl;
 
@@ -79,7 +79,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 6
     sget-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->IMPL:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;->getScaledPagingTouchSlop(Landroid/view/ViewConfiguration;)I

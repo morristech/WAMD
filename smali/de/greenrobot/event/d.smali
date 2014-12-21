@@ -1,104 +1,111 @@
-.class final Lde/greenrobot/event/d;
+.class synthetic Lde/greenrobot/event/d;
 .super Ljava/lang/Object;
 .source "d.java"
 
 
-# instance fields
-.field final a:Lde/greenrobot/event/l;
-
-.field final b:I
-
-.field volatile c:Z
-
-.field final d:Ljava/lang/Object;
+# static fields
+.field static final a:[I
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/Object;Lde/greenrobot/event/l;I)V
-    .locals 1
-
-    .prologue
-    .line 10
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 11
-    iput-object p1, p0, Lde/greenrobot/event/d;->d:Ljava/lang/Object;
-
-    .line 1
-    iput-object p2, p0, Lde/greenrobot/event/d;->a:Lde/greenrobot/event/l;
-
-    .line 6
-    iput p3, p0, Lde/greenrobot/event/d;->b:I
-
-    .line 2
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lde/greenrobot/event/d;->c:Z
-
-    .line 9
-    return-void
-.end method
-
-
-# virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method static constructor <clinit>()V
     .locals 3
 
     .prologue
-    const/4 v0, 0x0
+    .line 1
+    invoke-static {}, Lde/greenrobot/event/p;->values()[Lde/greenrobot/event/p;
 
-    .line 4
-    instance-of v1, p1, Lde/greenrobot/event/d;
+    move-result-object v0
 
-    if-eqz v1, :cond_0
+    array-length v0, v0
 
-    .line 3
-    check-cast p1, Lde/greenrobot/event/d;
+    new-array v0, v0, [I
 
-    .line 5
-    iget-object v1, p0, Lde/greenrobot/event/d;->d:Ljava/lang/Object;
+    sput-object v0, Lde/greenrobot/event/d;->a:[I
 
-    iget-object v2, p1, Lde/greenrobot/event/d;->d:Ljava/lang/Object;
+    :try_start_0
+    sget-object v0, Lde/greenrobot/event/d;->a:[I
 
-    if-ne v1, v2, :cond_0
+    sget-object v1, Lde/greenrobot/event/p;->PostThread:Lde/greenrobot/event/p;
 
-    iget-object v1, p0, Lde/greenrobot/event/d;->a:Lde/greenrobot/event/l;
-
-    iget-object v2, p1, Lde/greenrobot/event/d;->a:Lde/greenrobot/event/l;
-
-    invoke-virtual {v1, v2}, Lde/greenrobot/event/l;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1}, Lde/greenrobot/event/p;->ordinal()I
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    const/4 v2, 0x1
 
-    const/4 v0, 0x1
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_3
 
-    .line 8
-    :cond_0
-    return v0
-.end method
+    :goto_0
+    :try_start_1
+    sget-object v0, Lde/greenrobot/event/d;->a:[I
 
-.method public hashCode()I
-    .locals 2
+    sget-object v1, Lde/greenrobot/event/p;->MainThread:Lde/greenrobot/event/p;
 
-    .prologue
-    .line 7
-    iget-object v0, p0, Lde/greenrobot/event/d;->d:Ljava/lang/Object;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    move-result v0
-
-    iget-object v1, p0, Lde/greenrobot/event/d;->a:Lde/greenrobot/event/l;
-
-    iget-object v1, v1, Lde/greenrobot/event/l;->d:Ljava/lang/String;
-
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v1}, Lde/greenrobot/event/p;->ordinal()I
 
     move-result v1
 
-    add-int/2addr v0, v1
+    const/4 v2, 0x2
 
-    return v0
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_2
+
+    :goto_1
+    :try_start_2
+    sget-object v0, Lde/greenrobot/event/d;->a:[I
+
+    sget-object v1, Lde/greenrobot/event/p;->BackgroundThread:Lde/greenrobot/event/p;
+
+    invoke-virtual {v1}, Lde/greenrobot/event/p;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_1
+
+    :goto_2
+    :try_start_3
+    sget-object v0, Lde/greenrobot/event/d;->a:[I
+
+    sget-object v1, Lde/greenrobot/event/p;->Async:Lde/greenrobot/event/p;
+
+    invoke-virtual {v1}, Lde/greenrobot/event/p;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x4
+
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_0
+
+    :goto_3
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_3
+
+    :catch_1
+    move-exception v0
+
+    goto :goto_2
+
+    :catch_2
+    move-exception v0
+
+    goto :goto_1
+
+    :catch_3
+    move-exception v0
+
+    goto :goto_0
 .end method

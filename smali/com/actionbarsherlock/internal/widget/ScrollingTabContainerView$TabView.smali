@@ -20,10 +20,10 @@
     .locals 0
 
     .prologue
-    .line 12
+    .line 14
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 47
+    .line 22
     return-void
 .end method
 
@@ -33,13 +33,13 @@
     .locals 0
 
     .prologue
-    .line 25
+    .line 13
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mTab:Lcom/actionbarsherlock/app/ActionBar$Tab;
 
-    .line 7
+    .line 31
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->update()V
 
-    .line 51
+    .line 47
     return-void
 .end method
 
@@ -47,7 +47,7 @@
     .locals 1
 
     .prologue
-    .line 64
+    .line 25
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mTab:Lcom/actionbarsherlock/app/ActionBar$Tab;
 
     return-object v0
@@ -57,25 +57,25 @@
     .locals 1
 
     .prologue
-    .line 40
+    .line 41
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mParent:Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
 
-    .line 23
+    .line 5
     iput-object p2, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mTab:Lcom/actionbarsherlock/app/ActionBar$Tab;
 
-    .line 21
+    .line 44
     if-eqz p3, :cond_0
 
-    .line 63
+    .line 16
     const/16 v0, 0x13
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->setGravity(I)V
 
-    .line 41
+    .line 1
     :cond_0
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->update()V
 
-    .line 10
+    .line 18
     return-void
 .end method
 
@@ -83,10 +83,10 @@
     .locals 2
 
     .prologue
-    .line 11
+    .line 48
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
-    .line 43
+    .line 34
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mParent:Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
 
     iget v0, v0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;->mMaxTabWidth:I
@@ -103,7 +103,7 @@
 
     if-le v0, v1, :cond_0
 
-    .line 27
+    .line 46
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mParent:Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
 
     iget v0, v0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;->mMaxTabWidth:I
@@ -135,43 +135,43 @@
 
     const/4 v6, 0x0
 
-    sget-boolean v1, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v1, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
-    .line 55
+    .line 26
     iget-object v2, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mTab:Lcom/actionbarsherlock/app/ActionBar$Tab;
 
-    .line 54
+    .line 8
     invoke-virtual {v2}, Lcom/actionbarsherlock/app/ActionBar$Tab;->getCustomView()Landroid/view/View;
 
     move-result-object v3
 
-    .line 32
+    .line 24
     if-eqz v3, :cond_4
 
-    .line 33
+    .line 57
     invoke-virtual {v3}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
-    .line 60
+    .line 39
     if-eq v0, p0, :cond_1
 
-    .line 39
+    .line 29
     if-eqz v0, :cond_0
 
     check-cast v0, Landroid/view/ViewGroup;
 
     invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    .line 5
+    .line 37
     :cond_0
     invoke-virtual {p0, v3}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->addView(Landroid/view/View;)V
 
-    .line 62
+    .line 10
     :cond_1
     iput-object v3, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mCustomView:Landroid/view/View;
 
-    .line 42
+    .line 49
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mTextView:Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;
 
     if-eqz v0, :cond_2
@@ -180,60 +180,60 @@
 
     invoke-virtual {v0, v8}, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->setVisibility(I)V
 
-    .line 4
+    .line 59
     :cond_2
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mIconView:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_3
 
-    .line 53
+    .line 43
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mIconView:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v8}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 59
+    .line 64
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mIconView:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v6}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 22
+    .line 45
     :cond_3
     if-eqz v1, :cond_c
 
-    .line 19
+    .line 32
     :cond_4
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mCustomView:Landroid/view/View;
 
     if-eqz v0, :cond_5
 
-    .line 38
+    .line 35
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mCustomView:Landroid/view/View;
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->removeView(Landroid/view/View;)V
 
-    .line 48
+    .line 40
     iput-object v6, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mCustomView:Landroid/view/View;
 
-    .line 35
+    .line 27
     :cond_5
     invoke-virtual {v2}, Lcom/actionbarsherlock/app/ActionBar$Tab;->getIcon()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 2
+    .line 62
     invoke-virtual {v2}, Lcom/actionbarsherlock/app/ActionBar$Tab;->getText()Ljava/lang/CharSequence;
 
     move-result-object v3
 
-    .line 34
+    .line 55
     if-eqz v0, :cond_7
 
-    .line 50
+    .line 63
     iget-object v4, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mIconView:Landroid/widget/ImageView;
 
     if-nez v4, :cond_6
 
-    .line 49
+    .line 36
     new-instance v4, Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->getContext()Landroid/content/Context;
@@ -242,62 +242,62 @@
 
     invoke-direct {v4, v5}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 15
+    .line 9
     new-instance v5, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v5, v7, v7}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 26
+    .line 28
     iput v10, v5, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 20
+    .line 4
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 13
+    .line 23
     invoke-virtual {p0, v4, v9}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->addView(Landroid/view/View;I)V
 
-    .line 8
+    .line 38
     iput-object v4, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mIconView:Landroid/widget/ImageView;
 
-    .line 45
+    .line 19
     :cond_6
     iget-object v4, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mIconView:Landroid/widget/ImageView;
 
     invoke-virtual {v4, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 57
+    .line 53
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mIconView:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v9}, Landroid/widget/ImageView;->setVisibility(I)V
 
     if-eqz v1, :cond_8
 
-    .line 9
+    .line 54
     :cond_7
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mIconView:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_8
 
-    .line 56
+    .line 3
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mIconView:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v8}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 37
+    .line 20
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mIconView:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v6}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 1
+    .line 7
     :cond_8
     if-eqz v3, :cond_a
 
-    .line 17
+    .line 61
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mTextView:Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;
 
     if-nez v0, :cond_9
 
-    .line 31
+    .line 12
     new-instance v0, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;
 
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->getContext()Landroid/content/Context;
@@ -308,64 +308,64 @@
 
     invoke-direct {v0, v4, v6, v5}, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 14
+    .line 51
     sget-object v4, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
     invoke-virtual {v0, v4}, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
 
-    .line 36
+    .line 52
     new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v4, v7, v7}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 46
+    .line 2
     iput v10, v4, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 6
+    .line 60
     invoke-virtual {v0, v4}, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 30
+    .line 42
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->addView(Landroid/view/View;)V
 
-    .line 3
+    .line 11
     iput-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mTextView:Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;
 
-    .line 28
+    .line 30
     :cond_9
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mTextView:Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;
 
     invoke-virtual {v0, v3}, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->setTextCompat(Ljava/lang/CharSequence;)V
 
-    .line 18
+    .line 15
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mTextView:Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;
 
     invoke-virtual {v0, v9}, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->setVisibility(I)V
 
     if-eqz v1, :cond_b
 
-    .line 16
+    .line 50
     :cond_a
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mTextView:Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;
 
     if-eqz v0, :cond_b
 
-    .line 44
+    .line 6
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mTextView:Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;
 
     invoke-virtual {v0, v8}, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->setVisibility(I)V
 
-    .line 24
+    .line 33
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mTextView:Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;
 
     invoke-virtual {v0, v6}, Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 52
+    .line 17
     :cond_b
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mIconView:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_c
 
-    .line 29
+    .line 21
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView;->mIconView:Landroid/widget/ImageView;
 
     invoke-virtual {v2}, Lcom/actionbarsherlock/app/ActionBar$Tab;->getContentDescription()Ljava/lang/CharSequence;
@@ -374,7 +374,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 61
+    .line 56
     :cond_c
     return-void
 .end method

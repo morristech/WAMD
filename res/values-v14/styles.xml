@@ -7,7 +7,6 @@
         <item name="selectableItemBackground">?android:selectableItemBackground</item>
         <item name="dropDownListViewStyle">?android:dropDownListViewStyle</item>
         <item name="dropdownListPreferredItemHeight">48.0dip</item>
-        <item name="android:homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
     </style>
     <style name="Sherlock.__Theme.Light" parent="@android:style/Theme.Holo.Light" />
     <style name="TextAppearance.Sherlock.Light.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Holo.Widget.PopupMenu.Large" />
@@ -41,9 +40,7 @@
     <style name="Widget.Sherlock.ActionBar.TabView" parent="@android:style/Widget.Holo.ActionBar.TabView" />
     <style name="Widget.Sherlock.ActionButton" parent="@android:style/Widget.Holo.ActionButton" />
     <style name="Widget.Sherlock.ActionButton.CloseMode" parent="@android:style/Widget.Holo.ActionButton.CloseMode" />
-    <style name="Widget.Sherlock.ActionButton.Overflow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
-        <item name="android:src">@drawable/abs__ic_menu_moreoverflow_normal_holo_dark</item>
-    </style>
+    <style name="Widget.Sherlock.ActionButton.Overflow" parent="@android:style/Widget.Holo.ActionButton.Overflow" />
     <style name="Widget.Sherlock.ActionMode" parent="@android:style/Widget.Holo.ActionMode" />
     <style name="Widget.Sherlock.Light.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar" />
     <style name="Widget.Sherlock.Light.ActionBar.Solid" parent="@android:style/Widget.Holo.Light.ActionBar.Solid" />
@@ -56,9 +53,7 @@
     <style name="Widget.Sherlock.Light.ActionBar.TabView.Inverse" parent="@android:style/Widget.Holo.Light.ActionBar.TabView.Inverse" />
     <style name="Widget.Sherlock.Light.ActionButton" parent="@android:style/Widget.Holo.Light.ActionButton" />
     <style name="Widget.Sherlock.Light.ActionButton.CloseMode" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode" />
-    <style name="Widget.Sherlock.Light.ActionButton.Overflow" parent="@android:style/Widget.Holo.Light.ActionButton.Overflow">
-        <item name="android:src">@drawable/abs__ic_menu_moreoverflow_normal_holo_dark</item>
-    </style>
+    <style name="Widget.Sherlock.Light.ActionButton.Overflow" parent="@android:style/Widget.Holo.Light.ActionButton.Overflow" />
     <style name="Widget.Sherlock.Light.ActionMode" parent="@android:style/Widget.Holo.Light.ActionMode" />
     <style name="Widget.Sherlock.Light.ActionMode.Inverse" parent="@android:style/Widget.Holo.Light.ActionMode.Inverse" />
     <style name="Widget.Sherlock.Light.ListView.DropDown" parent="@android:style/Widget.Holo.Light.ListView.DropDown" />

@@ -49,13 +49,13 @@
     .locals 14
 
     .prologue
-    const/4 v5, 0x4
-
     const/4 v4, 0x3
 
     const/4 v3, 0x2
 
     const/4 v2, 0x1
+
+    const/4 v5, 0x6
 
     const/4 v1, 0x0
 
@@ -63,7 +63,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "b:o~\u0007Orn2\u0005H;~2\rNx{`\u0004\u00018\u007ff\u000bN1:t\u000cSuj`\u000cQ0hf\u001a\u0001"
+    const-string v6, "aIG"
 
     const/4 v0, -0x1
 
@@ -101,7 +101,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "\u00013u`C"
+    const-string v0, "<\u000c"
 
     move-object v6, v0
 
@@ -116,7 +116,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "\u0001x:"
+    const-string v0, "V^\\\u0011QtXJ7UjYV\u0012|i@W\u0004F"
 
     move-object v6, v0
 
@@ -131,7 +131,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "q\'ub\u0006S!cD\u0002M \u007fa+N9~w\u0011"
+    const-string v0, "V^\\\u0011QtXJ7UjYV\u0012|i@W\u0004F"
 
     move-object v6, v0
 
@@ -146,13 +146,15 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "q\'ub\u0006S!cD\u0002M \u007fa+N9~w\u0011"
+    const/4 v6, 0x4
 
-    move-object v6, v0
+    const-string v0, "<\u000c"
 
-    move v7, v5
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
 
     move v0, v4
 
@@ -161,9 +163,35 @@
     :pswitch_3
     aput-object v6, v8, v7
 
-    const/4 v6, 0x5
+    const/4 v7, 0x5
 
-    const-string v0, "U0h2\u0013S:jw\u0011U,:"
+    const-string v6, "V^\\\u0011QtXJ7UjYV\u0012|i@W\u0004F"
+
+    const/4 v0, 0x4
+
+    move-object v8, v9
+
+    goto :goto_0
+
+    :pswitch_4
+    aput-object v6, v8, v7
+
+    const-string v6, "ECF\rPh\u000bGARoBWAZi\u0001R\u0013S&AV\u0015\\iH\u0013\u0007[t\u000cC\u0013[vIA\u0015M&"
+
+    const/4 v0, 0x5
+
+    move v7, v5
+
+    move-object v8, v9
+
+    goto :goto_0
+
+    :pswitch_5
+    aput-object v6, v8, v7
+
+    const/4 v6, 0x7
+
+    const-string v0, "V^\\\u0011QtXJ7UjYV\u0012|i@W\u0004F"
 
     move v7, v6
 
@@ -175,38 +203,12 @@
 
     goto :goto_0
 
-    :pswitch_4
-    aput-object v6, v8, v7
-
-    const/4 v7, 0x6
-
-    const-string v6, "\u0001\"sf\u000b\u0001#{~\u0016Dunk\u0013Du"
-
-    const/4 v0, 0x5
-
-    move-object v8, v9
-
-    goto :goto_0
-
-    :pswitch_5
-    aput-object v6, v8, v7
-
-    const/4 v7, 0x7
-
-    const-string v6, "\u001bu"
-
-    const/4 v0, 0x6
-
-    move-object v8, v9
-
-    goto :goto_0
-
     :pswitch_6
     aput-object v6, v8, v7
 
     const/16 v7, 0x8
 
-    const-string v6, "b:o~\u0007Orn2\u0005H;~2"
+    const-string v6, "&\u0001\u0013"
 
     const/4 v0, 0x7
 
@@ -219,7 +221,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "q\'ub\u0006S!cD\u0002M \u007fa+N9~w\u0011"
+    const-string v6, "rIAADtCC\u0004FrU\u0013"
 
     const/16 v0, 0x8
 
@@ -232,7 +234,7 @@
 
     const/16 v7, 0xa
 
-    const-string v6, "q\'ub\u0006S!cD\u0002M \u007fa+N9~w\u0011"
+    const-string v6, "&J\\\u0013\u0014"
 
     const/16 v0, 0x9
 
@@ -245,7 +247,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, "\u001bu"
+    const-string v6, "&[Z\u0015\\&ZR\rAc\u000cG\u0018Dc\u000c"
 
     const/16 v0, 0xa
 
@@ -258,7 +260,7 @@
 
     const/16 v7, 0xc
 
-    const-string v6, "F0n"
+    const-string v6, "ECF\rPh\u000bGARoBWA"
 
     const/16 v0, 0xb
 
@@ -271,7 +273,7 @@
 
     const/16 v7, 0xd
 
-    const-string v6, "q\'ub\u0006S!cD\u0002M \u007fa+N9~w\u0011"
+    const-string v6, "V^\\\u0011QtXJ7UjYV\u0012|i@W\u0004F"
 
     const/16 v0, 0xc
 
@@ -284,7 +286,7 @@
 
     const/16 v7, 0xe
 
-    const-string v6, "q\'ub\u0006S!cD\u0002M \u007fa+N9~w\u0011"
+    const-string v6, "V^\\\u0011QtXJ7UjYV\u0012|i@W\u0004F"
 
     const/16 v0, 0xd
 
@@ -297,7 +299,7 @@
 
     const/16 v7, 0xf
 
-    const-string v6, "R0n"
+    const-string v6, "uIG"
 
     const/16 v0, 0xe
 
@@ -310,24 +312,22 @@
 
     sput-object v9, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
-    .line 7
+    .line 68
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/IntEvaluator;
 
     invoke-direct {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/IntEvaluator;-><init>()V
 
     sput-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->sIntEvaluator:Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;
 
-    .line 46
+    .line 82
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/FloatEvaluator;
 
     invoke-direct {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/FloatEvaluator;-><init>()V
 
     sput-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->sFloatEvaluator:Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;
 
-    .line 49
-    const/4 v0, 0x6
-
-    new-array v0, v0, [Ljava/lang/Class;
+    .line 72
+    new-array v0, v5, [Ljava/lang/Class;
 
     sget-object v6, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
@@ -345,9 +345,11 @@
 
     aput-object v6, v0, v4
 
-    const-class v6, Ljava/lang/Double;
+    const/4 v6, 0x4
 
-    aput-object v6, v0, v5
+    const-class v7, Ljava/lang/Double;
+
+    aput-object v7, v0, v6
 
     const/4 v6, 0x5
 
@@ -357,10 +359,8 @@
 
     sput-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->FLOAT_VARIANTS:[Ljava/lang/Class;
 
-    .line 79
-    const/4 v0, 0x6
-
-    new-array v0, v0, [Ljava/lang/Class;
+    .line 3
+    new-array v0, v5, [Ljava/lang/Class;
 
     sget-object v6, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
@@ -378,9 +378,11 @@
 
     aput-object v6, v0, v4
 
-    const-class v6, Ljava/lang/Float;
+    const/4 v6, 0x4
 
-    aput-object v6, v0, v5
+    const-class v7, Ljava/lang/Float;
+
+    aput-object v7, v0, v6
 
     const/4 v6, 0x5
 
@@ -390,14 +392,12 @@
 
     sput-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->INTEGER_VARIANTS:[Ljava/lang/Class;
 
-    .line 38
-    const/4 v0, 0x6
+    .line 71
+    new-array v0, v5, [Ljava/lang/Class;
 
-    new-array v0, v0, [Ljava/lang/Class;
+    sget-object v5, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
 
-    sget-object v6, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
-
-    aput-object v6, v0, v1
+    aput-object v5, v0, v1
 
     const-class v1, Ljava/lang/Double;
 
@@ -411,9 +411,11 @@
 
     aput-object v1, v0, v4
 
-    const-class v1, Ljava/lang/Float;
+    const/4 v1, 0x4
 
-    aput-object v1, v0, v5
+    const-class v2, Ljava/lang/Float;
+
+    aput-object v2, v0, v1
 
     const/4 v1, 0x5
 
@@ -423,14 +425,14 @@
 
     sput-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->DOUBLE_VARIANTS:[Ljava/lang/Class;
 
-    .line 10
+    .line 4
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->sSetterPropertyMap:Ljava/util/HashMap;
 
-    .line 34
+    .line 44
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -447,7 +449,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x63
+    const/16 v6, 0x34
 
     :goto_2
     xor-int/2addr v6, v13
@@ -463,22 +465,22 @@
     goto/16 :goto_1
 
     :pswitch_f
-    const/16 v6, 0x21
+    move v6, v5
 
     goto :goto_2
 
     :pswitch_10
-    const/16 v6, 0x55
+    const/16 v6, 0x2c
 
     goto :goto_2
 
     :pswitch_11
-    const/16 v6, 0x1a
+    const/16 v6, 0x33
 
     goto :goto_2
 
     :pswitch_12
-    const/16 v6, 0x12
+    const/16 v6, 0x61
 
     goto :goto_2
 
@@ -518,36 +520,36 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 119
+    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 114
+    .line 61
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mSetter:Ljava/lang/reflect/Method;
 
-    .line 19
+    .line 118
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mGetter:Ljava/lang/reflect/Method;
 
-    .line 80
+    .line 34
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mKeyframeSet:Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;
 
-    .line 26
+    .line 107
     new-instance v0, Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;-><init>()V
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mPropertyMapLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
-    .line 45
+    .line 41
     const/4 v0, 0x1
 
     new-array v0, v0, [Ljava/lang/Object;
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mTmpValueArray:[Ljava/lang/Object;
 
-    .line 55
+    .line 54
     iput-object p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mPropertyName:Ljava/lang/String;
 
-    .line 44
+    .line 106
     return-void
 .end method
 
@@ -555,7 +557,7 @@
     .locals 0
 
     .prologue
-    .line 47
+    .line 91
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -565,7 +567,7 @@
     .locals 3
 
     .prologue
-    .line 32
+    .line 43
     if-eqz p1, :cond_0
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
@@ -574,12 +576,12 @@
 
     if-nez v0, :cond_1
 
-    .line 58
+    .line 100
     :cond_0
     :goto_0
     return-object p0
 
-    .line 73
+    .line 11
     :cond_1
     const/4 v0, 0x0
 
@@ -591,14 +593,14 @@
 
     move-result v0
 
-    .line 84
+    .line 27
     const/4 v1, 0x1
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 58
+    .line 100
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -623,31 +625,31 @@
 .end method
 
 .method private getPropertyFunction(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Method;
-    .locals 10
+    .locals 9
 
     .prologue
     const/4 v1, 0x0
 
-    const/4 v9, 0x1
+    const/4 v7, 0x1
 
     const/4 v3, 0x0
 
-    sget v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 77
+    .line 49
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mPropertyName:Ljava/lang/String;
 
     invoke-static {p2, v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->getMethodName(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 63
+    .line 22
     const/4 v0, 0x0
 
-    .line 11
+    .line 18
     if-nez p3, :cond_0
 
-    .line 16
+    .line 21
     :try_start_0
     invoke-virtual {p1, v5, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     :try_end_0
@@ -655,48 +657,50 @@
 
     move-result-object v0
 
-    .line 78
+    .line 6
     :goto_0
     return-object v0
 
-    .line 48
+    .line 103
     :catch_0
     move-exception v0
 
-    .line 106
+    .line 108
     sget-object v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x4
+    const/4 v3, 0x7
 
-    aget-object v2, v2, v4
+    aget-object v2, v2, v3
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     move-result-object v4
 
-    sget-object v5, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v6, 0x2
+    move-result-object v3
 
-    aget-object v5, v5, v6
+    sget-object v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/16 v5, 0x8
 
-    move-result-object v4
+    aget-object v4, v4, v5
 
-    sget-object v5, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aget-object v3, v5, v3
+    move-result-object v3
 
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
+
+    const/4 v5, 0x6
+
+    aget-object v4, v4, v5
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -708,7 +712,7 @@
 
     sget-object v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
-    const/4 v5, 0x7
+    const/4 v5, 0x4
 
     aget-object v4, v4, v5
 
@@ -728,14 +732,14 @@
 
     move-object v0, v1
 
-    .line 20
+    .line 88
     goto :goto_0
 
-    .line 112
+    .line 114
     :cond_0
-    new-array v6, v9, [Ljava/lang/Class;
+    new-array v6, v7, [Ljava/lang/Class;
 
-    .line 15
+    .line 26
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mValueType:Ljava/lang/Class;
 
     const-class v2, Ljava/lang/Float;
@@ -746,12 +750,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 64
+    .line 98
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->FLOAT_VARIANTS:[Ljava/lang/Class;
 
     if-eqz v4, :cond_4
 
-    .line 40
+    .line 73
     :cond_1
     :try_start_1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mValueType:Ljava/lang/Class;
@@ -766,12 +770,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 43
+    .line 13
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->INTEGER_VARIANTS:[Ljava/lang/Class;
 
     if-eqz v4, :cond_4
 
-    .line 109
+    .line 8
     :cond_2
     :try_start_2
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mValueType:Ljava/lang/Class;
@@ -786,21 +790,21 @@
 
     if-eqz v0, :cond_3
 
-    .line 94
+    .line 96
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->DOUBLE_VARIANTS:[Ljava/lang/Class;
 
     if-eqz v4, :cond_4
 
-    .line 59
+    .line 12
     :cond_3
-    new-array v0, v9, [Ljava/lang/Class;
+    new-array v0, v7, [Ljava/lang/Class;
 
-    .line 86
+    .line 50
     iget-object v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mValueType:Ljava/lang/Class;
 
     aput-object v2, v0, v3
 
-    .line 107
+    .line 117
     :cond_4
     array-length v7, v0
 
@@ -811,42 +815,42 @@
 
     aget-object v8, v0, v2
 
-    .line 69
+    .line 99
     aput-object v8, v6, v3
 
-    .line 67
+    .line 101
     :try_start_3
     invoke-virtual {p1, v5, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v1
 
-    .line 93
+    .line 64
     iput-object v8, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mValueType:Ljava/lang/Class;
     :try_end_3
     .catch Ljava/lang/NoSuchMethodException; {:try_start_3 .. :try_end_3} :catch_3
 
     move-object v0, v1
 
-    .line 78
+    .line 5
     goto/16 :goto_0
 
-    .line 40
+    .line 73
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 109
+    .line 8
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 83
+    .line 80
     :catch_3
     move-exception v8
 
-    .line 6
+    .line 57
     add-int/lit8 v2, v2, 0x1
 
     if-eqz v4, :cond_5
@@ -854,10 +858,10 @@
     :cond_6
     move-object v0, v1
 
-    .line 100
+    .line 62
     sget-object v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x3
+    const/4 v2, 0x5
 
     aget-object v1, v1, v2
 
@@ -867,7 +871,7 @@
 
     sget-object v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x8
+    const/16 v4, 0xc
 
     aget-object v3, v3, v4
 
@@ -881,7 +885,7 @@
 
     sget-object v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x5
+    const/16 v4, 0x9
 
     aget-object v3, v3, v4
 
@@ -897,13 +901,15 @@
 
     sget-object v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
-    aget-object v3, v3, v9
+    const/16 v4, 0xa
+
+    aget-object v3, v3, v4
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 50
+    .line 25
     invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v3
@@ -914,7 +920,7 @@
 
     sget-object v3, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x6
+    const/16 v4, 0xb
 
     aget-object v3, v3, v4
 
@@ -932,7 +938,7 @@
 
     move-result-object v2
 
-    .line 28
+    .line 2
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
@@ -942,7 +948,7 @@
     .locals 1
 
     .prologue
-    .line 61
+    .line 10
     new-instance v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;
 
     invoke-direct {v0, p0, p1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;-><init>(Ljava/lang/String;[F)V
@@ -954,12 +960,12 @@
     .locals 3
 
     .prologue
-    .line 62
+    .line 9
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->sGetterPropertyMap:Ljava/util/HashMap;
 
     sget-object v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xc
+    const/4 v2, 0x0
 
     aget-object v1, v1, v2
 
@@ -971,7 +977,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mGetter:Ljava/lang/reflect/Method;
 
-    .line 1
+    .line 119
     return-void
 .end method
 
@@ -979,10 +985,10 @@
     .locals 3
 
     .prologue
-    .line 88
+    .line 105
     const/4 v1, 0x0
 
-    .line 104
+    .line 84
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mPropertyMapLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
@@ -992,17 +998,17 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;->lock()V
 
-    .line 110
+    .line 111
     invoke-virtual {p2, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/util/HashMap;
 
-    .line 68
+    .line 115
     if-eqz v0, :cond_0
 
-    .line 118
+    .line 86
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mPropertyName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1011,27 +1017,27 @@
 
     check-cast v1, Ljava/lang/reflect/Method;
 
-    .line 36
+    .line 24
     :cond_0
     if-nez v1, :cond_2
 
-    .line 27
+    .line 56
     invoke-direct {p0, p1, p3, p4}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->getPropertyFunction(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v1
 
-    .line 54
+    .line 19
     if-nez v0, :cond_1
 
-    .line 98
+    .line 51
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 82
+    .line 47
     invoke-virtual {p2, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 9
+    .line 83
     :cond_1
     iget-object v2, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mPropertyName:Ljava/lang/String;
 
@@ -1042,7 +1048,7 @@
     :cond_2
     move-object v0, v1
 
-    .line 3
+    .line 77
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mPropertyMapLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->writeLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;
@@ -1051,10 +1057,10 @@
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;->unlock()V
 
-    .line 21
+    .line 53
     return-object v0
 
-    .line 23
+    .line 95
     :catchall_0
     move-exception v0
 
@@ -1075,7 +1081,7 @@
     .locals 1
 
     .prologue
-    .line 113
+    .line 35
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mKeyframeSet:Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->getValue(F)Ljava/lang/Object;
@@ -1084,7 +1090,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mAnimatedValue:Ljava/lang/Object;
 
-    .line 115
+    .line 45
     return-void
 .end method
 
@@ -1092,7 +1098,7 @@
     .locals 2
 
     .prologue
-    .line 57
+    .line 81
     :try_start_0
     invoke-super {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
@@ -1100,12 +1106,12 @@
 
     check-cast v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
-    .line 85
+    .line 7
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mPropertyName:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mPropertyName:Ljava/lang/String;
 
-    .line 108
+    .line 1
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mKeyframeSet:Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;
 
     invoke-virtual {v1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->clone()Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;
@@ -1114,22 +1120,22 @@
 
     iput-object v1, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mKeyframeSet:Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;
 
-    .line 42
+    .line 30
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mEvaluator:Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;
 
     iput-object v1, v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mEvaluator:Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;
     :try_end_0
     .catch Ljava/lang/CloneNotSupportedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 60
+    .line 37
     :goto_0
     return-object v0
 
-    .line 117
+    .line 40
     :catch_0
     move-exception v0
 
-    .line 60
+    .line 28
     const/4 v0, 0x0
 
     goto :goto_0
@@ -1139,7 +1145,7 @@
     .locals 1
 
     .prologue
-    .line 101
+    .line 87
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->clone()Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;
 
     move-result-object v0
@@ -1151,7 +1157,7 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 94
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mAnimatedValue:Ljava/lang/Object;
 
     return-object v0
@@ -1161,7 +1167,7 @@
     .locals 1
 
     .prologue
-    .line 52
+    .line 31
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mPropertyName:Ljava/lang/String;
 
     return-object v0
@@ -1171,12 +1177,12 @@
     .locals 2
 
     .prologue
-    .line 31
+    .line 63
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mEvaluator:Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;
 
     if-nez v0, :cond_0
 
-    .line 81
+    .line 70
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mValueType:Ljava/lang/Class;
 
     const-class v1, Ljava/lang/Integer;
@@ -1188,24 +1194,24 @@
     :goto_0
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mEvaluator:Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;
 
-    .line 5
+    .line 69
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mEvaluator:Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;
 
     if-eqz v0, :cond_1
 
-    .line 18
+    .line 89
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mKeyframeSet:Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;
 
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mEvaluator:Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->setEvaluator(Lcom/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator;)V
 
-    .line 66
+    .line 38
     :cond_1
     return-void
 
-    .line 81
+    .line 70
     :cond_2
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mValueType:Ljava/lang/Class;
 
@@ -1227,12 +1233,12 @@
     .locals 3
 
     .prologue
-    .line 22
+    .line 97
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mSetter:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    .line 37
+    .line 32
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mTmpValueArray:[Ljava/lang/Object;
 
@@ -1244,7 +1250,7 @@
 
     aput-object v2, v0, v1
 
-    .line 74
+    .line 104
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mSetter:Ljava/lang/reflect/Method;
 
     iget-object v1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mTmpValueArray:[Ljava/lang/Object;
@@ -1254,19 +1260,19 @@
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 89
+    .line 39
     :cond_0
     :goto_0
     return-void
 
-    .line 53
+    .line 75
     :catch_0
     move-exception v0
 
-    .line 14
+    .line 55
     sget-object v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xa
+    const/4 v2, 0x2
 
     aget-object v1, v1, v2
 
@@ -1278,14 +1284,14 @@
 
     goto :goto_0
 
-    .line 30
+    .line 102
     :catch_1
     move-exception v0
 
-    .line 33
+    .line 85
     sget-object v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x9
+    const/4 v2, 0x3
 
     aget-object v1, v1, v2
 
@@ -1302,19 +1308,19 @@
     .locals 1
 
     .prologue
-    .line 41
+    .line 93
     sget-object v0, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mValueType:Ljava/lang/Class;
 
-    .line 24
+    .line 17
     invoke-static {p1}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;->ofFloat([F)Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mKeyframeSet:Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;
 
-    .line 95
+    .line 78
     return-void
 .end method
 
@@ -1322,10 +1328,10 @@
     .locals 0
 
     .prologue
-    .line 51
+    .line 112
     iput-object p1, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mPropertyName:Ljava/lang/String;
 
-    .line 91
+    .line 65
     return-void
 .end method
 
@@ -1333,7 +1339,7 @@
     .locals 3
 
     .prologue
-    .line 72
+    .line 15
     sget-object v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->sSetterPropertyMap:Ljava/util/HashMap;
 
     sget-object v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
@@ -1350,7 +1356,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mSetter:Ljava/lang/reflect/Method;
 
-    .line 35
+    .line 109
     return-void
 .end method
 
@@ -1358,25 +1364,25 @@
     .locals 6
 
     .prologue
-    sget v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 75
+    .line 14
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
 
-    .line 90
+    .line 59
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mSetter:Ljava/lang/reflect/Method;
 
     if-nez v0, :cond_0
 
-    .line 76
+    .line 110
     invoke-virtual {p0, v2}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->setupSetter(Ljava/lang/Class;)V
     :try_end_0
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 71
+    .line 76
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mKeyframeSet:Lcom/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet;
 
@@ -1399,7 +1405,7 @@
 
     check-cast v0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;
 
-    .line 111
+    .line 58
     :try_start_1
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Keyframe;->hasValue()Z
 
@@ -1407,20 +1413,20 @@
 
     if-nez v4, :cond_3
 
-    .line 116
+    .line 60
     iget-object v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mGetter:Ljava/lang/reflect/Method;
     :try_end_1
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_1 .. :try_end_1} :catch_1
 
     if-nez v4, :cond_2
 
-    .line 25
+    .line 67
     :try_start_2
     invoke-direct {p0, v2}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->setupGetter(Ljava/lang/Class;)V
     :try_end_2
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 65
+    .line 116
     :cond_2
     :try_start_3
     iget-object v4, p0, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->mGetter:Ljava/lang/reflect/Method;
@@ -1438,22 +1444,22 @@
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_3 .. :try_end_3} :catch_3
     .catch Ljava/lang/IllegalAccessException; {:try_start_3 .. :try_end_3} :catch_4
 
-    .line 102
+    .line 92
     :cond_3
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 97
+    .line 90
     :cond_4
     return-void
 
-    .line 76
+    .line 110
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 116
+    .line 60
     :catch_1
     move-exception v0
 
@@ -1462,17 +1468,17 @@
     :try_end_4
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_4 .. :try_end_4} :catch_2
 
-    .line 25
+    .line 67
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 39
+    .line 74
     :catch_3
     move-exception v0
 
-    .line 103
+    .line 46
     sget-object v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
     const/16 v5, 0xd
@@ -1487,11 +1493,11 @@
 
     goto :goto_0
 
-    .line 99
+    .line 79
     :catch_4
     move-exception v0
 
-    .line 92
+    .line 52
     sget-object v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
     const/16 v5, 0xe
@@ -1511,7 +1517,7 @@
     .locals 3
 
     .prologue
-    .line 70
+    .line 66
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1524,7 +1530,7 @@
 
     sget-object v1, Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xb
+    const/4 v2, 0x1
 
     aget-object v1, v1, v2
 

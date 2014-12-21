@@ -1,45 +1,100 @@
 .class Lcom/whatsapp/f5;
-.super Ljava/lang/Object;
+.super Landroid/graphics/drawable/Drawable;
 .source "f5.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ag1;
+.field final a:Lcom/whatsapp/ConversationRow;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ag1;)V
+.method constructor <init>(Lcom/whatsapp/ConversationRow;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/f5;->a:Lcom/whatsapp/ag1;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/f5;->a:Lcom/whatsapp/ConversationRow;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public draw(Landroid/graphics/Canvas;)V
+    .locals 0
+
+    .prologue
+    .line 2
+    return-void
+.end method
+
+.method public getOpacity()I
+    .locals 1
+
+    .prologue
+    .line 6
+    const/4 v0, -0x3
+
+    return v0
+.end method
+
+.method public isStateful()Z
+    .locals 1
 
     .prologue
     .line 3
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    const/4 v0, 0x1
 
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    return v0
+.end method
 
-    const v1, 0x7f0e0156
+.method protected onLevelChange(I)Z
+    .locals 1
 
-    const/4 v2, 0x1
+    .prologue
+    .line 1
+    const/4 v0, 0x1
 
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
+    return v0
+.end method
 
-    .line 2
+.method protected onStateChange([I)Z
+    .locals 1
+
+    .prologue
+    .line 9
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public setAlpha(I)V
+    .locals 0
+
+    .prologue
+    .line 10
     return-void
+.end method
+
+.method public setColorFilter(Landroid/graphics/ColorFilter;)V
+    .locals 0
+
+    .prologue
+    .line 8
+    return-void
+.end method
+
+.method public setState([I)Z
+    .locals 1
+
+    .prologue
+    .line 5
+    invoke-virtual {p0}, Lcom/whatsapp/f5;->invalidateSelf()V
+
+    .line 7
+    const/4 v0, 0x1
+
+    return v0
 .end method

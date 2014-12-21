@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field private final a:I
+.field private final a:[Ljava/lang/String;
 
-.field private final b:[Ljava/lang/String;
+.field private final b:I
 
 .field private final c:S
 
@@ -33,7 +33,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "\u0008\u0005[r\u0012\\\u0007Qn\\\u0012\u0005D7\u001e\u0019J\\x\u0012\u001b\u000fB7\u0008\u0014\u000b^7JOJRn\u0008\u0019\u0019"
+    const-string v6, "S`y$\u001b\u0007bs8UI`fa\u0017B/~.\u001b@j`a\u0001On|aC\u0014/p8\u0001B|"
 
     const/4 v0, -0x1
 
@@ -71,7 +71,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, ")>v:D"
+    const-string v0, "r[TlM"
 
     move-object v6, v0
 
@@ -86,7 +86,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, ")>v:D"
+    const-string v0, "Evf$\u0006\u0007faa\u001cIl},\u0005Kjf$"
 
     move-object v6, v0
 
@@ -101,7 +101,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "\u0008\u0005[r\u0012\\\u0007Qn\\\u0012\u0005D7\u001e\u0019J\\x\u0012\u001b\u000fB7\u0008\u0014\u000b^7JOJRn\u0008\u0019\u0019"
+    const-string v0, "Naa4\u0013Afq(\u0010I{2%\u0014Sn"
 
     move-object v6, v0
 
@@ -116,7 +116,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "\u001e\u0013Dr\u000f\\\u0003C7\u0015\u0012\t_z\u000c\u0010\u000fDr"
+    const-string v0, "Evf$\u0006\u0007bs8UI`fa\u0017B/|4\u0019K"
 
     move-object v6, v0
 
@@ -133,7 +133,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "\u0015\u0004Cb\u001a\u001a\u0003S~\u0019\u0012\u001e\u0010s\u001d\u0008\u000b"
+    const-string v0, "r[TlM"
 
     move v7, v6
 
@@ -150,7 +150,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "\u001e\u0013Dr\u000f\\\u0007Qn\\\u0012\u0005D7\u001e\u0019J^b\u0010\u0010"
+    const-string v6, "S`y$\u001b\u0007bs8UI`fa\u0017B/~.\u001b@j`a\u0001On|aC\u0014/p8\u0001B|"
 
     const/4 v0, 0x5
 
@@ -172,7 +172,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x7c
+    const/16 v6, 0x75
 
     :goto_2
     xor-int/2addr v6, v13
@@ -188,22 +188,22 @@
     goto :goto_1
 
     :pswitch_6
-    const/16 v6, 0x7c
+    const/16 v6, 0x27
 
     goto :goto_2
 
     :pswitch_7
-    const/16 v6, 0x6a
+    const/16 v6, 0xf
 
     goto :goto_2
 
     :pswitch_8
-    const/16 v6, 0x30
+    const/16 v6, 0x12
 
     goto :goto_2
 
     :pswitch_9
-    const/16 v6, 0x17
+    const/16 v6, 0x41
 
     goto :goto_2
 
@@ -230,19 +230,19 @@
     .locals 0
 
     .prologue
-    .line 34
+    .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 37
-    iput-object p1, p0, Lcom/whatsapp/util/dns/h;->b:[Ljava/lang/String;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/util/dns/h;->a:[Ljava/lang/String;
 
-    .line 53
+    .line 17
     iput-short p2, p0, Lcom/whatsapp/util/dns/h;->c:S
 
-    .line 20
-    iput p3, p0, Lcom/whatsapp/util/dns/h;->a:I
+    .line 57
+    iput p3, p0, Lcom/whatsapp/util/dns/h;->b:I
 
-    .line 56
+    .line 32
     return-void
 .end method
 
@@ -252,18 +252,18 @@
     .prologue
     const/4 v1, 0x0
 
-    sget v2, Lcom/whatsapp/util/dns/g;->c:I
+    sget v2, Lcom/whatsapp/util/dns/g;->b:I
 
-    .line 12
+    .line 28
     if-nez p0, :cond_0
 
-    .line 21
+    .line 44
     :try_start_0
     new-instance v0, Ljava/lang/NullPointerException;
 
     sget-object v1, Lcom/whatsapp/util/dns/h;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x6
+    const/4 v2, 0x4
 
     aget-object v1, v1, v2
 
@@ -278,7 +278,7 @@
 
     throw v0
 
-    .line 5
+    .line 12
     :cond_0
     :try_start_1
     array-length v0, p0
@@ -287,12 +287,12 @@
 
     if-ge v0, v3, :cond_1
 
-    .line 24
+    .line 49
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     sget-object v1, Lcom/whatsapp/util/dns/h;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x5
+    const/4 v2, 0x3
 
     aget-object v1, v1, v2
 
@@ -307,20 +307,20 @@
 
     throw v0
 
-    .line 36
+    .line 42
     :cond_1
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 41
+    .line 40
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     move v0, p1
 
-    .line 22
+    .line 29
     :cond_2
     aget-byte v5, p0, v0
 
@@ -332,17 +332,17 @@
 
     if-nez v5, :cond_6
 
-    .line 43
+    .line 41
     aget-byte v5, p0, v0
 
     and-int/lit8 v5, v5, 0x3f
 
     int-to-byte v5, v5
 
-    .line 49
+    .line 55
     add-int/lit8 v6, v0, 0x1
 
-    .line 51
+    .line 24
     :try_start_2
     array-length v0, p0
 
@@ -352,12 +352,12 @@
 
     if-ge v0, v7, :cond_3
 
-    .line 39
+    .line 51
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     sget-object v1, Lcom/whatsapp/util/dns/h;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x4
+    const/4 v2, 0x2
 
     aget-object v1, v1, v2
 
@@ -372,17 +372,17 @@
 
     throw v0
 
-    .line 38
+    .line 26
     :cond_3
     invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->setLength(I)V
 
     move v0, v1
 
-    .line 29
+    .line 23
     :cond_4
     if-ge v0, v5, :cond_5
 
-    .line 18
+    .line 25
     add-int v7, v6, v0
 
     aget-byte v7, p0, v7
@@ -391,39 +391,39 @@
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 17
+    .line 50
     add-int/lit8 v0, v0, 0x1
 
     int-to-byte v0, v0
 
     if-eqz v2, :cond_4
 
-    .line 58
+    .line 36
     :cond_5
     add-int v0, v6, v5
 
-    .line 31
+    .line 14
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 47
+    .line 10
     if-eqz v2, :cond_2
 
-    .line 11
+    .line 52
     :cond_6
     aget-byte v4, p0, v0
 
     if-nez v4, :cond_7
 
-    .line 4
+    .line 47
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v2, :cond_8
 
-    .line 59
+    .line 34
     :cond_7
     aget-byte v1, p0, v0
 
@@ -435,16 +435,16 @@
 
     aget-byte v2, p0, v2
 
-    invoke-static {v1, v2}, Lcom/whatsapp/util/dns/e;->a(BB)S
+    invoke-static {v1, v2}, Lcom/whatsapp/util/dns/b;->a(BB)S
 
     move-result v1
 
-    .line 42
+    .line 22
     add-int/lit8 v0, v0, 0x2
 
     move v2, v0
 
-    .line 55
+    .line 35
     :goto_0
     new-instance v4, Lcom/whatsapp/util/dns/h;
 
@@ -478,9 +478,9 @@
     .prologue
     const/4 v0, 0x0
 
-    sget v2, Lcom/whatsapp/util/dns/g;->c:I
+    sget v2, Lcom/whatsapp/util/dns/g;->b:I
 
-    .line 19
+    .line 37
     array-length v3, p0
 
     move v1, v0
@@ -490,11 +490,11 @@
 
     aget-object v4, p0, v1
 
-    .line 6
+    .line 5
     :try_start_0
     sget-object v5, Lcom/whatsapp/util/dns/h;->z:[Ljava/lang/String;
 
-    const/4 v6, 0x2
+    const/4 v6, 0x1
 
     aget-object v5, v5, v6
 
@@ -504,7 +504,7 @@
 
     move-result-object v4
 
-    .line 44
+    .line 1
     :try_start_1
     array-length v5, v4
 
@@ -512,12 +512,12 @@
 
     if-le v5, v6, :cond_1
 
-    .line 16
+    .line 58
     new-instance v0, Ljava/lang/IllegalStateException;
 
     sget-object v1, Lcom/whatsapp/util/dns/h;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x3
+    const/4 v2, 0x0
 
     aget-object v1, v1, v2
 
@@ -532,18 +532,18 @@
 
     throw v0
 
-    .line 57
+    .line 33
     :catch_1
     move-exception v0
 
-    .line 8
+    .line 7
     new-instance v1, Ljava/lang/Error;
 
     invoke-direct {v1, v0}, Ljava/lang/Error;-><init>(Ljava/lang/Throwable;)V
 
     throw v1
 
-    .line 26
+    .line 20
     :cond_1
     array-length v4, v4
 
@@ -551,25 +551,25 @@
 
     add-int/2addr v0, v4
 
-    .line 13
+    .line 2
     add-int/lit8 v1, v1, 0x1
 
     if-eqz v2, :cond_0
 
-    .line 35
+    .line 38
     :cond_2
     if-nez p1, :cond_3
 
-    .line 7
+    .line 15
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v2, :cond_4
 
-    .line 28
+    .line 21
     :cond_3
     add-int/lit8 v0, v0, 0x2
 
-    .line 27
+    .line 9
     :cond_4
     new-instance v1, Lcom/whatsapp/util/dns/h;
 
@@ -580,26 +580,16 @@
 
 
 # virtual methods
-.method a()S
-    .locals 1
-
-    .prologue
-    .line 30
-    iget-short v0, p0, Lcom/whatsapp/util/dns/h;->c:S
-
-    return v0
-.end method
-
 .method a(Ljava/io/OutputStream;)V
     .locals 7
 
     .prologue
     const/4 v0, 0x0
 
-    sget v1, Lcom/whatsapp/util/dns/g;->c:I
+    sget v1, Lcom/whatsapp/util/dns/g;->b:I
 
-    .line 9
-    iget-object v2, p0, Lcom/whatsapp/util/dns/h;->b:[Ljava/lang/String;
+    .line 30
+    iget-object v2, p0, Lcom/whatsapp/util/dns/h;->a:[Ljava/lang/String;
 
     array-length v3, v2
 
@@ -608,10 +598,10 @@
 
     aget-object v4, v2, v0
 
-    .line 40
+    .line 13
     sget-object v5, Lcom/whatsapp/util/dns/h;->z:[Ljava/lang/String;
 
-    const/4 v6, 0x1
+    const/4 v6, 0x5
 
     aget-object v5, v5, v6
 
@@ -619,7 +609,7 @@
 
     move-result-object v4
 
-    .line 32
+    .line 18
     :try_start_0
     array-length v5, v4
 
@@ -627,12 +617,12 @@
 
     if-le v5, v6, :cond_1
 
-    .line 48
+    .line 59
     new-instance v0, Ljava/lang/IllegalStateException;
 
     sget-object v1, Lcom/whatsapp/util/dns/h;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x0
+    const/4 v2, 0x6
 
     aget-object v1, v1, v2
 
@@ -647,21 +637,21 @@
 
     throw v0
 
-    .line 54
+    .line 43
     :cond_1
     array-length v5, v4
 
     invoke-virtual {p1, v5}, Ljava/io/OutputStream;->write(I)V
 
-    .line 2
+    .line 6
     invoke-virtual {p1, v4}, Ljava/io/OutputStream;->write([B)V
 
-    .line 50
+    .line 46
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 46
+    .line 31
     :cond_2
     :try_start_1
     iget-short v0, p0, Lcom/whatsapp/util/dns/h;->c:S
@@ -670,7 +660,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 14
+    .line 53
     :try_start_2
     iget-short v0, p0, Lcom/whatsapp/util/dns/h;->c:S
 
@@ -682,7 +672,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/OutputStream;->write(I)V
 
-    .line 45
+    .line 39
     iget-short v0, p0, Lcom/whatsapp/util/dns/h;->c:S
 
     and-int/lit16 v0, v0, 0xff
@@ -691,17 +681,17 @@
 
     if-eqz v1, :cond_4
 
-    .line 3
+    .line 45
     :cond_3
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Ljava/io/OutputStream;->write(I)V
 
-    .line 25
+    .line 4
     :cond_4
     return-void
 
-    .line 45
+    .line 39
     :catch_1
     move-exception v0
 
@@ -709,29 +699,39 @@
     :try_end_2
     .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 3
+    .line 45
     :catch_2
     move-exception v0
 
     throw v0
 .end method
 
-.method b()I
+.method a()[Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 52
-    iget v0, p0, Lcom/whatsapp/util/dns/h;->a:I
+    .line 19
+    iget-object v0, p0, Lcom/whatsapp/util/dns/h;->a:[Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method b()S
+    .locals 1
+
+    .prologue
+    .line 54
+    iget-short v0, p0, Lcom/whatsapp/util/dns/h;->c:S
 
     return v0
 .end method
 
-.method c()[Ljava/lang/String;
+.method c()I
     .locals 1
 
     .prologue
-    .line 33
-    iget-object v0, p0, Lcom/whatsapp/util/dns/h;->b:[Ljava/lang/String;
+    .line 48
+    iget v0, p0, Lcom/whatsapp/util/dns/h;->b:I
 
-    return-object v0
+    return v0
 .end method

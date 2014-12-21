@@ -72,14 +72,6 @@
     <string name="audio_note_tip">กดค้างเพื่อบันทึก ปล่อยเพื่อส่ง</string>
     <string name="audio_note_tip_2">กรุณาบันทึกข้อความยาวกว่านี้</string>
     <string name="audio_note_top_mic_tip">กรุณาพูดที่ส่วนไมโครโฟนด้านบนของโทรศัพท์ของคุณ</string>
-    <string name="auth_client_needs_enabling_title">แอปพลิเคชันหนึ่งจำเป็นต้องมีบริการ Google Play เพื่อเปิดใช้งาน</string>
-    <string name="auth_client_needs_installation_title">แอปพลิเคชันหนึ่งจำเป็นต้องมีการติดตั้งบริการ Google Play</string>
-    <string name="auth_client_needs_update_title">แอปพลิเคชันหนึ่งจำเป็นต้องมีการอัปเดตสำหรับบริการ Google Play</string>
-    <string name="auth_client_play_services_err_notification_msg">ข้อผิดพลาดของบริการ Google Play</string>
-    <string name="auth_client_requested_by_msg">ขอโดย %1$s</string>
-    <string name="auth_client_using_bad_version_title">แอปพลิเคชันหนึ่งพยายามใช้เวอร์ชันที่ไม่เหมาะสมของบริการ Google Play</string>
-    <string name="barcode_scanner_dialog_body">แอ็พพลิเคชั่นนี้จำเป็นต้องใช้ barcode scanner คุณต้องการติดตั้งเลยหรือไม่?</string>
-    <string name="barcode_scanner_dialog_title">ติดตั้ง Barcode Scanner หรือไม่?</string>
     <string name="block">บล็อค</string>
     <string name="block_ask">คุณแน่ใจหรือไม่ว่าต้องการบล็อครายชื่อติดต่อนี้?</string>
     <string name="block_list_desc_1">"แตะที่ไอคอนมุมขวาด้านบนเพื่อเลือกรายชื่อติดต่อที่ต้องการบล็อค
@@ -113,6 +105,8 @@
     <string name="camera_shortcut">กล้อง WhatsApp</string>
     <string name="camera_title">ส่งรูปหรือวิดีโอ WhatsApp</string>
     <string name="camera_video_preview_title">ส่งวิดีโอ WhatsApp</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">ในการโทร WhatsApp กรุณาปิดโหมดเครื่องบินก่อน</string>
+    <string name="can_not_start_voip_call_in_phone_call">คุณไม่สามารถโทรผ่าน WhatsApp ได้ถ้าหากคุณกำลังอยู่ในสายโทรศัพท์</string>
     <string name="cancel">ยกเลิก</string>
     <string name="cannot_send_not_a_group_participant">คุณไม่สามารถส่งข้อความไปยังกลุ่มนี้ได้เนื่องจากคุณไม่ใช่สมาชิกแล้ว</string>
     <string name="cannot_send_selected_file">ส่งไฟล์สื่อไม่สำเร็จ เพราะคุณเลือกไฟล์ผิดหรือใช้รูปแบบที่ไม่ถูกต้อง</string>
@@ -161,23 +155,32 @@
     <string name="color_red">สีแดง</string>
     <string name="color_white">สีขาว</string>
     <string name="color_yellow">สีเหลือง</string>
+    <string name="common_android_wear_notification_needs_update_text">แอปพลิเคชันรายการหนึ่งต้องการให้อัปเดตแอป Android Wear</string>
+    <string name="common_android_wear_update_text">แอปนี้จะไม่ทำงานจนกว่าคุณจะอัปเดตแอป Android Wear</string>
+    <string name="common_android_wear_update_title">อัปเดต Android Wear</string>
     <string name="common_google_play_services_enable_button">เปิดใช้งานบริการ Google Play</string>
     <string name="common_google_play_services_enable_text">แอปพลิเคชันนี้จะไม่ทำงานจนกว่าคุณจะเปิดใช้งานบริการ Google Play</string>
     <string name="common_google_play_services_enable_title">เปิดใช้งานบริการ Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">ขอโดย %1$s</string>
     <string name="common_google_play_services_install_button">รับบริการ Google Play</string>
     <string name="common_google_play_services_install_text_phone">แอปพลิเคชันนี้จะไม่ทำงานหากไม่มีบริการ Google Play ซึ่งไม่มีในโทรศัพท์ของคุณ</string>
     <string name="common_google_play_services_install_text_tablet">แอปพลิเคชันนี้จะไม่ทำงานหากไม่มีบริการ Google Play ซึ่งไม่มีในแท็บเล็ตของคุณ</string>
     <string name="common_google_play_services_install_title">รับบริการ Google Play</string>
     <string name="common_google_play_services_invalid_account_text">บัญชีที่ระบุไม่มีอยู่บนอุปกรณ์นี้ โปรดเลือกบัญชีอื่น</string>
     <string name="common_google_play_services_invalid_account_title">บัญชีไม่ถูกต้อง</string>
+    <string name="common_google_play_services_needs_enabling_title">แอปพลิเคชันหนึ่งจำเป็นต้องมีบริการ Google Play เพื่อเปิดใช้งาน</string>
     <string name="common_google_play_services_network_error_text">ต้องมีการเขื่อมต่อข้อมูลเพื่อเชื่อมต่อกับบริการ Google Play</string>
     <string name="common_google_play_services_network_error_title">ข้อผิดพลาดของเครือข่าย</string>
+    <string name="common_google_play_services_notification_needs_installation_title">แอปพลิเคชันหนึ่งจำเป็นต้องมีการติดตั้งบริการ Google Play</string>
+    <string name="common_google_play_services_notification_needs_update_title">แอปพลิเคชันหนึ่งจำเป็นต้องมีการอัปเดตสำหรับบริการ Google Play</string>
+    <string name="common_google_play_services_notification_ticker">ข้อผิดพลาดของบริการ Google Play</string>
     <string name="common_google_play_services_unknown_issue">ปัญหาที่ไม่รู้จักของบริการ Google Play</string>
     <string name="common_google_play_services_unsupported_text">บริการ Google Play ซึ่งใช้งานในบางแอปพลิเคชัน ไม่ได้รับการสนับสนุนโดยอุปกรณ์ของคุณ โปรดติดต่อผู้ผลิตเพื่อขอรับความช่วยเหลือ</string>
     <string name="common_google_play_services_unsupported_title">บริการ Google Play</string>
     <string name="common_google_play_services_update_button">อัปเดต</string>
     <string name="common_google_play_services_update_text">แอปพลิเคชันนี้จะไม่ทำงานจนกว่าคุณจะอัปเดตบริการ Google Play</string>
     <string name="common_google_play_services_update_title">อัปเดตบริการ Google Play</string>
+    <string name="common_open_on_phone">เปิดบนโทรศัพท์</string>
     <string name="common_signin_button_text">ลงชื่อใช้</string>
     <string name="common_signin_button_text_long">ลงชื่อเข้าใช้ด้วย Google</string>
     <string name="confirm_forward_msg">ส่งต่อไปยัง %s?</string>
@@ -356,7 +359,7 @@
     <string name="eula_description">การส่งข้อความผ่านมือถือแบบข้ามระบบกับเพื่อนๆ ทั่วโลก</string>
     <string name="eula_tablets_not_supported">หมายเหตุ: ขณะนี้ยังใช้แท็บเล็ตไม่ได้</string>
     <string name="eula_terms_of_service">เงื่อนไขการให้บริการ</string>
-    <string name="eula_title">ยินดีต้อนรับเข้าสู่ WhatsApp!</string>
+    <string name="eula_title">ยินดีต้อนรับสู่ WhatsApp</string>
     <string name="existing_contact">มีอยู่แล้ว</string>
     <string name="exit">ออก</string>
     <string name="exit_group">ออกจากกลุ่ม</string>
@@ -531,7 +534,6 @@
     <string name="insufficient_space_for_download_shared_storage">ดาวน์โหลดไม่ได้เพราะไม่มีที่ว่างเพียงพอบนพื้นที่เก็บข้อมูลร่วมภายใน กรุณาลบไฟล์ออกจากพื้นที่เก็บข้อมูลร่วมภายในของคุณแล้วลองอีกครั้ง</string>
     <string name="invalid_media_message_download">ไม่สามารถดาวน์โหลดสื่อจากข้อความที่ไม่ถูกต้อง กรุณาลองส่งข้อความอีกครั้ง</string>
     <string name="invalid_message_forward">ไม่สามารถส่งข้อความไปยังรายชื่อติดต่อที่ไม่ถูกต้องได้</string>
-    <string name="invalid_qr_code">QR code ไม่ถูกต้อง</string>
     <string name="invalid_url_for_download">ไม่สามารถดาวน์โหลดได้ กรุณาขอการส่งอีกครั้งหนึ่ง</string>
     <string name="invite">เชิญ</string>
     <string name="invite_friends">เชิญเพื่อนของคุณ</string>
@@ -577,7 +579,6 @@
     <string name="menuitem_add">เพิ่ม</string>
     <string name="menuitem_contacts">รายชื่อติดต่อ</string>
     <string name="menuitem_debug">ดีบัก</string>
-    <string name="menuitem_delete_qr">ลบ QR code</string>
     <string name="menuitem_groupchat">กลุ่มใหม่</string>
     <string name="menuitem_list">การกระจายใหม่</string>
     <string name="menuitem_mute">ปิดเสียง</string>
@@ -618,14 +619,15 @@
     <string name="msg_store_backup_failed">ไม่สามารถแบ็คอัพข้อความ</string>
     <string name="msg_store_backup_failed_try_again_later">ไม่สามารถสำรองข้อความได้ กรุณาลองอีกครั้งภายหลัง</string>
     <string name="msg_store_backup_found">พบข้อมูลสำรอง</string>
-    <string name="msg_store_backup_found_registration">พบข้อความสำรอง!</string>
+    <string name="msg_store_backup_found_registration">พบข้อมูลสำรองแชท</string>
+    <string name="msg_store_backup_found_title">กู้ประวัติแชทคืน</string>
     <string name="msg_store_backup_skipped">ข้ามการสำรองข้อมูลไป</string>
     <string name="msg_store_backup_skipped_no_media">ข้ามการสำรองข้อความ: ไม่พบการ์ดมีเดีย</string>
     <string name="msg_store_backup_skipped_read_only_media">ข้ามการสำรองข้อความ: พบการ์ดสื่อแบบอ่านได้อย่างเดียว</string>
     <string name="msg_store_confirm">ยืนยัน</string>
-    <string name="msg_store_creation_backup_message">คุณต้องการกู้ประวัติข้อความจากข้อมูลสำรองหรือไม่?</string>
-    <string name="msg_store_do_not_restore">อย่ากู้ข้อมูล</string>
-    <string name="msg_store_do_not_restore_no_thanks">ไม่ต้องการ</string>
+    <string name="msg_store_creation_backup_message">กู้ประวัติแชทคืนจากข้อมูลสำรอง ถ้าคุณไม่กู้คืนตอนนี้ คุณจะไม่สามารถกู้คืนได้ภายหลัง</string>
+    <string name="msg_store_do_not_restore">ข้ามการกู้คืน</string>
+    <string name="msg_store_do_not_restore_no_thanks">ข้ามการกู้คืน</string>
     <string name="msg_store_error_found">เกิดข้อผิดพลาดขึ้น กรุณาหยุดใช้และรีสตาร์ท WhatsApp</string>
     <string name="msg_store_error_not_restored">ขออภัย เราไม่สามารถกู้คืนข้อความใดๆ จากการสำรองประวัติข้อความของคุณได้</string>
     <string name="msg_store_last_confirmation_not_to_restore">ข้อความจะหายไป คุณแน่ใจหรือไม่ว่าคุณไม่ต้องการกู้ประวัติข้อความจากข้อมูลสำรอง?</string>
@@ -652,9 +654,6 @@
     <string name="need_sd_card_shared_storage">กรุณาปิดการเก็บข้อมูล USB และลองอีกครั้ง</string>
     <string name="network_required">คุณเข้าสู่เครือข่ายไม่ได้ในขณะนี้</string>
     <string name="network_usage_ask_reset_message">คุณแน่ใจหรือไม่ว่าต้องการรีเซ็ตสถิติ?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">เวลารีเซ็ตครั้งล่าสุด: %1$s</string>
     <string name="network_usage_media_bytes_received">จำนวนไบต์ของสื่อที่ได้รับ:</string>
     <string name="network_usage_media_bytes_sent">จำนวนไบต์ของสื่อที่ถูกส่ง:</string>
@@ -900,6 +899,7 @@
     <string name="send_location">ส่งตำแหน่ง</string>
     <string name="send_payment_button">ส่ง URL เพื่อชำระเงิน</string>
     <string name="send_payment_url_via">ส่ง URL การชำระเงินผ่านทาง...</string>
+    <string name="send_this_location">ส่งตำแหน่งนี้</string>
     <string name="send_your_current_location">ส่งตำแหน่งปัจจุบันของคุณ</string>
     <string name="sending_video_to_contact">กำลังส่งวิดีโอไปยัง %s</string>
     <string name="sent_to_group">ส่งไปยัง “%s”</string>
@@ -1012,17 +1012,17 @@
     <string name="software_expired_get_from_play_with_date">WhatsApp เวอร์ชั่นนี้เก่าและจะเลิกใช้งานเมื่อ &lt;b>%1$s&lt;/b> กรุณาไปที่ Google Play เพื่อดาวน์โหลดเวอร์ชั่นล่าสุด &lt;br>&lt;br>วันและเวลาตามมือถือของคุณคือ &lt;b>%2$s&lt;/b> ถ้าหากไม่ถูกต้องกรุณาแก้ไขการตั้งค่าวันเวลาของมือถือของคุณให้ถูกต้องแล้วปิดและเปิด WhatsApp ใหม่</string>
     <string name="software_expired_with_date">WhatsApp เวอร์ชั่นนี้เก่าและจะเลิกใช้งานเมื่อ &lt;b>%1$s&lt;/b> แตะ “Download” เพื่อดาวน์โหลดเวอร์ชั่นล่าสุด &lt;br>&lt;br>วันและเวลาตามมือถือของคุณคือ &lt;b>%2$s&lt;/b> ถ้าหากไม่ถูกต้องกรุณาแก้ไขการตั้งค่าวันเวลาของมือถือของคุณให้ถูกต้องแล้วปิดและเปิด WhatsApp ใหม่</string>
     <string name="spam_generic">"คุณถูกระงับการใช้งานบริการ WhatsApp ชั่วคราว เนื่องจากคุณละเมิดข้อตกลงเงื่อนไขการให้บริการของเรา
+
 คุณสามารถใช้ WhatsApp อีกครั้งได้ใน:"</string>
     <string name="spam_generic_data_connection_missing">ตรวจสอบว่าโทรศัพท์มือถือของคุณมีการเชื่อมต่อข้อมูลที่ใช้งานได้</string>
     <string name="spam_generic_unknown_time_left">คุณถูกระงับการใช้งานบริการ WhatsApp ชั่วคราว เนื่องจากคุณละเมิดข้อตกลงเงื่อนไขการให้บริการของเรา คุณจะสามารถใช้ WhatsApp ได้เร็วๆนี้</string>
     <string name="spam_learn_more">ศึกษาเพิ่มเติม</string>
     <string name="spam_title">ถูกระงับชั่วคราว</string>
-    <string name="spam_too_many_blocks">คุณถูกระงับการใช้งานบริการ WhatsApp ชั่วคราว เนื่องจากมีผู้ใช้จำนวนมากบล็อคคุณ</string>
     <string name="spam_too_many_groups">"คุณถูกระงับการใช้งานบริการ WhatsApp ชั่วคราว เนื่องจากคุณได้สร้างกลุ่มกับผู้ใช้ที่ไม่มีคุณอยู่ในสมุดที่อยู่ของพวกเขามากเกินไป
+
 คุณสามารถใช้ WhatsApp อีกครั้งได้ใน:"</string>
     <string name="spam_too_many_messages">"คุณถูกระงับการใช้งานบริการ WhatsApp ชั่วคราว เนื่องจากคุณ​ได้ส่งข้อความหลายข้อความมากเกินไป ไปยังผู้ใช้ที่ไม่มีคุณอยู่ในสมุดที่อยู่ของพวกเขา
-คุณสามารถใช้ WhatsApp อีกครั้งได้ใน:"</string>
-    <string name="spam_too_many_people">"คุณถูกระงับการใช้งานบริการ WhatsApp ชั่วคราว เนื่องจากคุณได้ส่งข้อความเดียวกันไปยังผู้ใช้หลายคนมากเกินไป
+
 คุณสามารถใช้ WhatsApp อีกครั้งได้ใน:"</string>
     <string name="status">สถานะ</string>
     <string name="status_default_at_gym">อยู่ที่โรงยิม</string>
@@ -1191,7 +1191,9 @@ WhatsApp Messenger ให้บริการสำหรับ Android, iPhone
     <string name="view_list_media">ไฟล์สื่อของรายการการกระจายข้อความ</string>
     <string name="view_website">ดูเว็บไซต์</string>
     <string name="voip_activity_label">การโทรด้วยเสียง</string>
+    <string name="voip_call_bluetooth_toggle_description">เปิดปิดบลูทูธ</string>
     <string name="voip_call_end_button_description">วางสาย</string>
+    <string name="voip_call_failed_no_network">ไม่สามารถโทรออกได้ กรุณาตรวจสอบให้แน่ใจว่าโทรศัพท์ของคุณเชื่อมต่อกับอินเตอร์เน็ต และลองอีกครั้ง</string>
     <string name="voip_call_goto_chat_description">ดูแชท</string>
     <string name="voip_call_incoming">สายเรียกเข้า</string>
     <string name="voip_call_label">การโทร WHATSAPP</string>
@@ -1244,5 +1246,4 @@ WhatsApp Messenger ให้บริการสำหรับ Android, iPhone
     <string name="yesterday">เมื่อวาน</string>
     <string name="yesterday_at">เมื่อวานเวลา %s</string>
     <string name="you">คุณ</string>
-    <string name="voip_call_bluetooth_toggle_description">เปิดปิดบลูทูธ</string>
 </resources>

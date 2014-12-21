@@ -3,20 +3,20 @@
 .source "o1.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/whatsapp/oh;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/au;
+.field final a:Lcom/whatsapp/ur;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/au;)V
+.method constructor <init>(Lcom/whatsapp/ur;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/o1;->a:Lcom/whatsapp/au;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/o1;->a:Lcom/whatsapp/ur;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,96 +25,48 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 7
+.method public a(Ljava/lang/String;)V
+    .locals 2
 
     .prologue
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/o1;->a:Lcom/whatsapp/au;
-
-    invoke-static {v0}, Lcom/whatsapp/au;->a(Lcom/whatsapp/au;)Lcom/whatsapp/App;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lcom/whatsapp/App;->a7:Lcom/whatsapp/q;
-
-    invoke-virtual {v0}, Lcom/whatsapp/q;->g()V
-
     .line 6
-    iget-object v0, p0, Lcom/whatsapp/o1;->a:Lcom/whatsapp/au;
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
 
-    invoke-static {v0}, Lcom/whatsapp/au;->a(Lcom/whatsapp/au;)Lcom/whatsapp/App;
+    move-result v0
 
-    move-result-object v0
+    if-nez v0, :cond_0
 
-    iget-object v0, v0, Lcom/whatsapp/App;->a7:Lcom/whatsapp/q;
-
-    invoke-virtual {v0}, Lcom/whatsapp/q;->b()I
-
-    move-result v3
-
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/o1;->a:Lcom/whatsapp/au;
-
-    invoke-static {v0}, Lcom/whatsapp/au;->a(Lcom/whatsapp/au;)Lcom/whatsapp/App;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lcom/whatsapp/App;->a7:Lcom/whatsapp/q;
-
-    invoke-virtual {v0}, Lcom/whatsapp/q;->d()[B
-
-    move-result-object v2
-
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/o1;->a:Lcom/whatsapp/au;
-
-    invoke-static {v0}, Lcom/whatsapp/au;->a(Lcom/whatsapp/au;)Lcom/whatsapp/App;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lcom/whatsapp/App;->a7:Lcom/whatsapp/q;
-
-    invoke-virtual {v0}, Lcom/whatsapp/q;->h()[Lcom/whatsapp/protocol/a0;
-
-    move-result-object v4
+    .line 2
+    :goto_0
+    return-void
 
     .line 7
-    iget-object v0, p0, Lcom/whatsapp/o1;->a:Lcom/whatsapp/au;
+    :cond_0
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    invoke-static {v0}, Lcom/whatsapp/au;->a(Lcom/whatsapp/au;)Lcom/whatsapp/App;
+    invoke-virtual {v0, p1}, Lcom/whatsapp/App;->f(Ljava/lang/String;)V
 
-    move-result-object v0
-
-    iget-object v0, v0, Lcom/whatsapp/App;->a7:Lcom/whatsapp/q;
-
-    invoke-virtual {v0}, Lcom/whatsapp/q;->f()Lcom/whatsapp/d9;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/d9;->a()Lcom/whatsapp/protocol/a0;
-
-    move-result-object v5
+    .line 5
+    invoke-static {p1}, Lcom/whatsapp/App;->k(Ljava/lang/String;)V
 
     .line 4
-    iget-object v0, p0, Lcom/whatsapp/o1;->a:Lcom/whatsapp/au;
+    iget-object v0, p0, Lcom/whatsapp/o1;->a:Lcom/whatsapp/ur;
 
-    invoke-static {v0}, Lcom/whatsapp/au;->a(Lcom/whatsapp/au;)Lcom/whatsapp/App;
+    iget-object v0, v0, Lcom/whatsapp/ur;->a:Lcom/whatsapp/ProfileInfoActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/ProfileInfoActivity;->d(Lcom/whatsapp/ProfileInfoActivity;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/whatsapp/App;->X()Landroid/os/Handler;
+    iget-object v1, p0, Lcom/whatsapp/o1;->a:Lcom/whatsapp/ur;
 
-    move-result-object v6
+    iget-object v1, v1, Lcom/whatsapp/ur;->a:Lcom/whatsapp/ProfileInfoActivity;
 
-    new-instance v0, Lcom/whatsapp/ap1;
+    invoke-static {p1, v1}, Lcom/whatsapp/util/f;->a(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/CharSequence;
 
-    move-object v1, p0
+    move-result-object v1
 
-    invoke-direct/range {v0 .. v5}, Lcom/whatsapp/ap1;-><init>(Lcom/whatsapp/o1;[BI[Lcom/whatsapp/protocol/a0;Lcom/whatsapp/protocol/a0;)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v6, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    .line 8
-    return-void
+    goto :goto_0
 .end method

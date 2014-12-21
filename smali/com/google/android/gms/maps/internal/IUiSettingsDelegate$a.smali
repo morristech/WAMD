@@ -6,7 +6,7 @@
 
 
 # direct methods
-.method public static M(Landroid/os/IBinder;)Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;
+.method public static bu(Landroid/os/IBinder;)Lcom/google/android/gms/maps/internal/IUiSettingsDelegate;
     .locals 2
 
     if-nez p0, :cond_0

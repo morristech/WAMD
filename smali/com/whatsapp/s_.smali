@@ -1,26 +1,22 @@
-.class Lcom/whatsapp/s_;
+.class final Lcom/whatsapp/s_;
 .super Ljava/lang/Object;
 .source "s_.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/whatsapp/_c;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ContactPicker;
-
-.field final b:Lcom/whatsapp/adg;
+.field final a:[Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ContactPicker;Lcom/whatsapp/adg;)V
+.method constructor <init>([Ljava/lang/String;)V
     .locals 0
 
     .prologue
-    .line 5
-    iput-object p1, p0, Lcom/whatsapp/s_;->a:Lcom/whatsapp/ContactPicker;
-
-    iput-object p2, p0, Lcom/whatsapp/s_;->b:Lcom/whatsapp/adg;
+    .line 8
+    iput-object p1, p0, Lcom/whatsapp/s_;->a:[Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,36 +25,52 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public a(Ljava/lang/String;)Z
+    .locals 6
 
     .prologue
-    .line 2
-    const-wide/16 v0, 0x12c
+    const/4 v0, 0x0
 
-    :try_start_0
-    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
+    sget v2, Lcom/whatsapp/App;->h:I
 
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/s_;->a:Lcom/whatsapp/ContactPicker;
+    if-nez p1, :cond_1
 
-    const/4 v1, 0x0
-
-    iget-object v2, p0, Lcom/whatsapp/s_;->b:Lcom/whatsapp/adg;
-
-    iget-object v2, v2, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/App;->a(Landroid/app/Activity;ZLjava/lang/String;)V
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 3
+    .line 7
+    :cond_0
     :goto_0
-    return-void
+    return v0
+
+    .line 2
+    :cond_1
+    iget-object v3, p0, Lcom/whatsapp/s_;->a:[Ljava/lang/String;
+
+    array-length v4, v3
+
+    move v1, v0
+
+    :cond_2
+    if-ge v1, v4, :cond_0
+
+    aget-object v5, v3, v1
 
     .line 4
-    :catch_0
-    move-exception v0
+    invoke-virtual {p1, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_3
+
+    .line 7
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    .line 3
+    :cond_3
+    add-int/lit8 v1, v1, 0x1
+
+    if-eqz v2, :cond_2
 
     goto :goto_0
 .end method

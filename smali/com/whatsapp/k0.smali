@@ -3,20 +3,20 @@
 .source "k0.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/aau;
+.field final a:Lcom/whatsapp/MultipleContactPicker;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/aau;)V
+.method constructor <init>(Lcom/whatsapp/MultipleContactPicker;)V
     .locals 0
 
     .prologue
-    .line 4
-    iput-object p1, p0, Lcom/whatsapp/k0;->a:Lcom/whatsapp/aau;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/k0;->a:Lcom/whatsapp/MultipleContactPicker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,48 +25,22 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public onClick(Landroid/view/View;)V
+    .locals 2
 
     .prologue
-    .line 5
-    const-wide/16 v0, 0x12c
+    .line 4
+    sget-object v0, Lcom/whatsapp/fieldstats/bp;->TELL_A_FRIEND:Lcom/whatsapp/fieldstats/bp;
 
-    :try_start_0
-    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
+    sget-object v1, Lcom/whatsapp/fieldstats/a3;->EMPTY_CONTACTS:Lcom/whatsapp/fieldstats/a3;
+
+    invoke-static {v0, v1}, Lcom/whatsapp/f3;->a(Lcom/whatsapp/fieldstats/bp;Lcom/whatsapp/fieldstats/a3;)V
 
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/k0;->a:Lcom/whatsapp/aau;
+    iget-object v0, p0, Lcom/whatsapp/k0;->a:Lcom/whatsapp/MultipleContactPicker;
 
-    iget-object v0, v0, Lcom/whatsapp/aau;->a:Lcom/whatsapp/Conversation;
-
-    iget-object v1, p0, Lcom/whatsapp/k0;->a:Lcom/whatsapp/aau;
-
-    iget-object v1, v1, Lcom/whatsapp/aau;->a:Lcom/whatsapp/Conversation;
-
-    invoke-static {v1}, Lcom/whatsapp/Conversation;->u(Lcom/whatsapp/Conversation;)Z
-
-    move-result v1
-
-    iget-object v2, p0, Lcom/whatsapp/k0;->a:Lcom/whatsapp/aau;
-
-    iget-object v2, v2, Lcom/whatsapp/aau;->a:Lcom/whatsapp/Conversation;
-
-    iget-object v2, v2, Lcom/whatsapp/Conversation;->z:Lcom/whatsapp/adg;
-
-    iget-object v2, v2, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/App;->a(Landroid/app/Activity;ZLjava/lang/String;)V
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-static {v0}, Lcom/whatsapp/App;->b(Landroid/app/Activity;)V
 
     .line 2
-    :goto_0
     return-void
-
-    .line 6
-    :catch_0
-    move-exception v0
-
-    goto :goto_0
 .end method

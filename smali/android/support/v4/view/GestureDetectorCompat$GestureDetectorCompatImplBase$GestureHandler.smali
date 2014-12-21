@@ -15,7 +15,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "\u0013ZPs.1Z\u001bp$5GZz$f"
+    const-string v0, "\u00151[\\\u001271\u0010_\u00183,QU\u0018`"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -53,7 +53,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x41
+    const/16 v0, 0x7d
 
     :goto_1
     xor-int/2addr v0, v4
@@ -69,22 +69,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x46
+    const/16 v0, 0x40
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x34
+    const/16 v0, 0x5f
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x3b
+    const/16 v0, 0x30
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x1d
+    const/16 v0, 0x32
 
     goto :goto_1
 
@@ -101,13 +101,13 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 7
     iput-object p1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->this$0:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
-    .line 13
+    .line 16
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 9
+    .line 10
     return-void
 .end method
 
@@ -115,17 +115,17 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 17
     iput-object p1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->this$0:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
-    .line 14
+    .line 12
     invoke-virtual {p2}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 16
+    .line 6
     return-void
 .end method
 
@@ -135,9 +135,9 @@
     .locals 3
 
     .prologue
-    sget v0, Landroid/support/v4/view/ViewPager;->a:I
+    sget-boolean v0, Landroid/support/v4/view/ViewPager;->a:Z
 
-    .line 12
+    .line 15
     :try_start_0
     iget v1, p1, Landroid/os/Message;->what:I
     :try_end_0
@@ -145,7 +145,7 @@
 
     packed-switch v1, :pswitch_data_0
 
-    .line 8
+    .line 2
     :cond_0
     :try_start_1
     new-instance v0, Ljava/lang/RuntimeException;
@@ -179,7 +179,7 @@
 
     throw v0
 
-    .line 17
+    .line 4
     :pswitch_0
     :try_start_2
     iget-object v1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->this$0:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
@@ -198,10 +198,10 @@
     :try_end_2
     .catch Ljava/lang/RuntimeException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 10
+    .line 11
     if-eqz v0, :cond_2
 
-    .line 3
+    .line 13
     :pswitch_1
     :try_start_3
     iget-object v1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->this$0:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
@@ -210,10 +210,10 @@
     :try_end_3
     .catch Ljava/lang/RuntimeException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 5
+    .line 14
     if-eqz v0, :cond_2
 
-    .line 15
+    .line 3
     :pswitch_2
     :try_start_4
     iget-object v1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->this$0:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
@@ -226,7 +226,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 4
+    .line 1
     :try_start_5
     iget-object v1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->this$0:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
@@ -238,7 +238,7 @@
 
     if-nez v1, :cond_1
 
-    .line 6
+    .line 9
     :try_start_6
     iget-object v1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->this$0:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
@@ -258,7 +258,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 7
+    .line 8
     :cond_1
     :try_start_7
     iget-object v1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->this$0:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
@@ -271,11 +271,11 @@
 
     if-nez v0, :cond_0
 
-    .line 11
+    .line 5
     :cond_2
     return-void
 
-    .line 10
+    .line 11
     :catch_1
     move-exception v0
 
@@ -284,7 +284,7 @@
     :try_end_8
     .catch Ljava/lang/RuntimeException; {:try_start_8 .. :try_end_8} :catch_2
 
-    .line 5
+    .line 14
     :catch_2
     move-exception v0
 
@@ -293,7 +293,7 @@
     :try_end_9
     .catch Ljava/lang/RuntimeException; {:try_start_9 .. :try_end_9} :catch_3
 
-    .line 15
+    .line 3
     :catch_3
     move-exception v0
 
@@ -302,7 +302,7 @@
     :try_end_a
     .catch Ljava/lang/RuntimeException; {:try_start_a .. :try_end_a} :catch_4
 
-    .line 4
+    .line 1
     :catch_4
     move-exception v0
 
@@ -311,7 +311,7 @@
     :try_end_b
     .catch Ljava/lang/RuntimeException; {:try_start_b .. :try_end_b} :catch_5
 
-    .line 6
+    .line 9
     :catch_5
     move-exception v0
 
@@ -320,7 +320,7 @@
     :try_end_c
     .catch Ljava/lang/RuntimeException; {:try_start_c .. :try_end_c} :catch_6
 
-    .line 7
+    .line 8
     :catch_6
     move-exception v0
 
@@ -329,7 +329,7 @@
     :try_end_d
     .catch Ljava/lang/RuntimeException; {:try_start_d .. :try_end_d} :catch_0
 
-    .line 12
+    .line 15
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

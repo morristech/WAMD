@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Kayıt için basılı tutun, göndermek için bırakın</string>
     <string name="audio_note_tip_2">Lütfen daha uzun bir mesaj kaydedin</string>
     <string name="audio_note_top_mic_tip">Lütfen telefonunuzdaki mikrofona konuşun</string>
-    <string name="auth_client_needs_enabling_title">"Bir uygulama, Google Play Hizmetleri'nin etkin olmasını gerektiriyor."</string>
-    <string name="auth_client_needs_installation_title">"Bir uygulama, Google Play Hizmetleri'nin yüklenmesini gerektiriyor."</string>
-    <string name="auth_client_needs_update_title">Bir uygulama, Google Play Hizmetleri için bir güncelleme gerektiriyor.</string>
-    <string name="auth_client_play_services_err_notification_msg">Google Play hizmetleri hatası</string>
-    <string name="auth_client_requested_by_msg">İstekte bulunan: %1$s</string>
-    <string name="auth_client_using_bad_version_title">"Bir uygulama, Google Play Hizmetleri'nin bozuk bir sürümünü kullanmayı denedi."</string>
-    <string name="barcode_scanner_dialog_body">Bu uygulama barkod tarayıcı gerektirmektedir. Yüklemek ister misiniz?</string>
-    <string name="barcode_scanner_dialog_title">Barkod Tarayıcı yüklensin mi?</string>
     <string name="block">Engelle</string>
     <string name="block_ask">Bu kişiyi engellemek istediğinizden emin misiniz?</string>
     <string name="block_list_desc_1">"Kişi engellemek için sağ üst köşedeki simgeye dokunun.
@@ -113,6 +105,8 @@ Sadece adres defterinde %s kayıtlı kişiler toplu mesajınızı alacak."</stri
     <string name="camera_shortcut">WhatsApp Kamerası</string>
     <string name="camera_title">"WhatsApp'a fotoğraf veya video gönder"</string>
     <string name="camera_video_preview_title">WhatsApp videosu gönder</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">WhatsApp araması yapmak için, önce Uçak modunu kapatın.</string>
+    <string name="can_not_start_voip_call_in_phone_call">Telefon görüşmesi yaparken aynı anda WhatsApp araması yapamazsınız.</string>
     <string name="cancel">İptal</string>
     <string name="cannot_send_not_a_group_participant">Bu gruba mesaj gönderemezsiniz çünkü artık bir katılımcısı değilsiniz.</string>
     <string name="cannot_send_selected_file">Bu medya dosyasını gönderemezsiniz. Ya yanlış bir dosyayı seçtiniz ya da dosya biçim desteklenmiyor.</string>
@@ -161,23 +155,32 @@ Eğer hem telefonunuz hem de numaranız yeniyse, lütfen öncelikle eski telefon
     <string name="color_red">Kırmızı</string>
     <string name="color_white">Beyaz</string>
     <string name="color_yellow">Sarı</string>
+    <string name="common_android_wear_notification_needs_update_text">Bir uygulama, Android Wear uygulamasında güncelleme yapılmasını gerektiriyor.</string>
+    <string name="common_android_wear_update_text">Android Wear uygulaması güncelleninceye kadar bu uygulama çalışmayacak.</string>
+    <string name="common_android_wear_update_title">"Android Wear'ı Güncelle"</string>
     <string name="common_google_play_services_enable_button">Google Play hizmetlerini etkinleştir</string>
     <string name="common_google_play_services_enable_text">Bu uygulama, Google Play Hizmetleri etkinleştirilmeden çalışmaz</string>
     <string name="common_google_play_services_enable_title">Google Play hizmetlerini etkinleştir</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">İstekte bulunan: %1$s</string>
     <string name="common_google_play_services_install_button">Google Play hizmetlerini edin</string>
     <string name="common_google_play_services_install_text_phone">Google Play Hizmetleri telefonunuzda yok ve bu uygulama Google Play Hizmetleri olmadan çalışmaz.</string>
     <string name="common_google_play_services_install_text_tablet">Google Play Hizmetleri tabletinizde yok ve bu uygulama Google Play Hizmetleri olmadan çalışmaz.</string>
     <string name="common_google_play_services_install_title">Google Play hizmetlerini edinin</string>
     <string name="common_google_play_services_invalid_account_text">Belirtilen hesap bu cihazda mevcut değil. Lütfen farklı bir hesap seçin.</string>
     <string name="common_google_play_services_invalid_account_title">Geçersiz Hesap</string>
+    <string name="common_google_play_services_needs_enabling_title">"Bir uygulama, Google Play Hizmetleri'nin etkin olmasını gerektiriyor."</string>
     <string name="common_google_play_services_network_error_text">Google Play hizmetlerine bağlanmak için bir veri bağlantısı gerekiyor.</string>
     <string name="common_google_play_services_network_error_title">Ağ Hatası</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Bir uygulama, Google Play hizmetlerinin yüklenmesini gerektiriyor.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Bir uygulama, Google Play Hizmetleri için bir güncelleme gerektiriyor.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Hizmetleri hatası</string>
     <string name="common_google_play_services_unknown_issue">Google Play hizmetleriyle ilgili bilinmeyen sorun.</string>
     <string name="common_google_play_services_unsupported_text">Cihazınız, uygulamalarınızdan bazıları için gerekli olan Google Play hizmetlerini desteklemiyor. Lütfen yardım için üreticiyle iletişim kurun.</string>
     <string name="common_google_play_services_unsupported_title">Google Play hizmetleri</string>
     <string name="common_google_play_services_update_button">Güncelle</string>
     <string name="common_google_play_services_update_text">Bu uygulama Google Play Hizmetleri güncellenmeden çalışmaz.</string>
     <string name="common_google_play_services_update_title">Google Play hizmetlerini güncelle</string>
+    <string name="common_open_on_phone">Telefonda aç</string>
     <string name="common_signin_button_text">Oturum aç</string>
     <string name="common_signin_button_text_long">"Google'da oturum aç"</string>
     <string name="confirm_forward_msg">%s kişisine ilet?</string>
@@ -354,7 +357,7 @@ Kullanılabilir alan: %1$s"</string>
     <string name="eula_description">Dünyanın her yerindeki arkadaşlarınla platformlar arası mobil mesajlaşma</string>
     <string name="eula_tablets_not_supported">Not: tabletler şu anda desteklenmiyor.</string>
     <string name="eula_terms_of_service">Hizmet Şartları</string>
-    <string name="eula_title">"WhatsApp'a Hoş geldiniz!"</string>
+    <string name="eula_title">"WhatsApp'a Hoşgeldiniz"</string>
     <string name="existing_contact">Var olan</string>
     <string name="exit">Çık</string>
     <string name="exit_group">Gruptan çık</string>
@@ -529,7 +532,6 @@ Hesabınızda düzenleme yaptık.
     <string name="insufficient_space_for_download_shared_storage">Paylaşılan dahili bellekte yeterli alan olmadığı için indirilemiyor. Lütfen paylaşılan dahili bellekteki dosyaları kaldırın ve yeniden deneyin.</string>
     <string name="invalid_media_message_download">Geçersiz bir mesajdan medya indiremezsiniz. Lütfen mesajı yeniden göndermeyi deneyin.</string>
     <string name="invalid_message_forward">Mesaj geçersiz bir kişiye iletilemez.</string>
-    <string name="invalid_qr_code">Geçersiz QR kodu</string>
     <string name="invalid_url_for_download">İndirilemiyor. Lütfen tekrar gönderilmesini isteyin.</string>
     <string name="invite">Davet et</string>
     <string name="invite_friends">Arkadaşlarınızı davet edin</string>
@@ -575,7 +577,6 @@ WhatsApp tek telefon numarasıyla tek bir cihazda kullanılabilir."</string>
     <string name="menuitem_add">Ekle</string>
     <string name="menuitem_contacts">Kişiler</string>
     <string name="menuitem_debug">Hata ayıklama</string>
-    <string name="menuitem_delete_qr">QR kodu sil</string>
     <string name="menuitem_groupchat">Yeni grup</string>
     <string name="menuitem_list">Yeni yayın</string>
     <string name="menuitem_mute">Sessiz</string>
@@ -616,14 +617,15 @@ WhatsApp tek telefon numarasıyla tek bir cihazda kullanılabilir."</string>
     <string name="msg_store_backup_failed">Mesajlar yedeklenemiyor</string>
     <string name="msg_store_backup_failed_try_again_later">Mesajlar yedeklenemiyor. Lütfen daha sonra tekrar deneyin.</string>
     <string name="msg_store_backup_found">Yedek bulundu</string>
-    <string name="msg_store_backup_found_registration">Mesaj yedeği bulundu!</string>
+    <string name="msg_store_backup_found_registration">Sohbet yedeği bulundu</string>
+    <string name="msg_store_backup_found_title">Sohbet geçmişini geri yükle</string>
     <string name="msg_store_backup_skipped">Yedekleme atlandı</string>
     <string name="msg_store_backup_skipped_no_media">Mesaj yedeklemesi atlandı: SD kart bulunamadı.</string>
     <string name="msg_store_backup_skipped_read_only_media">Mesaj yedeklemesi atlandı: Salt okunur SD kartı bulundu.</string>
     <string name="msg_store_confirm">Onayla</string>
-    <string name="msg_store_creation_backup_message">Mesaj geçmişini yedekten geri yüklemek ister misiniz?</string>
-    <string name="msg_store_do_not_restore">Geri yüklemeyin</string>
-    <string name="msg_store_do_not_restore_no_thanks">Hayır, teşekkürler</string>
+    <string name="msg_store_creation_backup_message">Sohbet geçmişinizi yedekten geri yükleyin. Eğer şimdi geri yüklemezseniz, daha sonra geri yüklemeniz mümkün olmaz.</string>
+    <string name="msg_store_do_not_restore">Geri yüklemeyi atla</string>
+    <string name="msg_store_do_not_restore_no_thanks">Geri yüklemeyi atla</string>
     <string name="msg_store_error_found">"Bir hata oluştu. Lütfen durun ve WhatsApp'ı yeniden başlatın."</string>
     <string name="msg_store_error_not_restored">Maalesef mesaj geçmişi yedeğinizin hiçbirisi yeniden yüklenemiyor.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Mesajlarınız kalıcı olarak silinecektir. Mesaj geçmişinizi yedekten geri yüklemek istemediğinize emin misiniz?</string>
@@ -650,9 +652,6 @@ WhatsApp tek telefon numarasıyla tek bir cihazda kullanılabilir."</string>
     <string name="need_sd_card_shared_storage">Lütfen USB depolamayı kapatın ve yeniden deneyin.</string>
     <string name="network_required">Şu anda herhangi bir şebeke erişiminiz yoktur.</string>
     <string name="network_usage_ask_reset_message">İstatistikleri sıfırlamak istediğinizden emin misiniz?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Son sıfırlama tarihi: %1$s</string>
     <string name="network_usage_media_bytes_received">Alınan medya baytları:</string>
     <string name="network_usage_media_bytes_sent">Gönderilen medya baytları:</string>
@@ -899,6 +898,7 @@ Lütfen size yolladığımız kodu girin.
     <string name="send_location">Konum gönder</string>
     <string name="send_payment_button">Ödeme linkini gönder</string>
     <string name="send_payment_url_via">... ile ödeme linkini gönder</string>
+    <string name="send_this_location">Bu konumu gönder</string>
     <string name="send_your_current_location">Şu anki konumu gönder</string>
     <string name="sending_video_to_contact">Video %s kişisine gönderiliyor</string>
     <string name="sent_to_group">Gönder: “%s”</string>
@@ -1010,19 +1010,19 @@ WhatsApp tarafından gönderildi"</string>
     <string name="software_expired_get_from_play">"Bu WhatsApp sürümü çok eski ve artık çalışmıyor. Lütfen Google Play'e gidip son sürümü indirin."</string>
     <string name="software_expired_get_from_play_with_date">"Bu WhatsApp sürümünün kullanımı &lt;b>%1$s&lt;/b> tarihinde dolmuştur. Lütfen en son sürümü indirmek için Google Play'e gidin.&lt;br>&lt;br>Cihazınızın tarihi &lt;b>%2$s&lt;/b>. Eğer bu tarih yanlışsa lütfen cihazınızın tarih ayarlarını düzeltip WhatsApp'ı yeniden başlatın."</string>
     <string name="software_expired_with_date">"WhatsApp'ın bu sürümünün kullanımı &lt;b>%1$s&lt;/b> tarihinde dolmuştur. En son sürümü.&lt;br>&lt;br>indirmek için “İndir”e dokunun. Cihazınızın tarihi &lt;b>%2$s&lt;/b>. Eğer bu tarih yanlışsa lütfen cihazınızın tarih ayarlarını düzeltip WhatsApp'ı yeniden başlatın."</string>
-    <string name="spam_generic">"Hizmet şartlarımızı ihlal etmiş olabileceğiniz için WhatsApp'ta geçici olarak engellendiniz.
-WhatsApp'ı tekrar kullanabilmeniz için gereken süre:"</string>
+    <string name="spam_generic">"Hizmet şartlarımızı ihlal etmiş olabileceğiniz için WhatsApp'ta geçici olarak engellendiniz. 
+
+WhatsApp'ı tekrar kullanabileceğiniz zaman:"</string>
     <string name="spam_generic_data_connection_missing">Telefonunuzda aktif bir veri bağlantısı olduğundan emin olun.</string>
     <string name="spam_generic_unknown_time_left">"Hizmet şartlarımızı ihlal etmiş olabileceğiniz için WhatsApp'ta geçici olarak engellendiniz. Kısa bir süre sonra WhatsApp kullanmaya başlayabilirsiniz."</string>
     <string name="spam_learn_more">Daha fazla bilgi</string>
     <string name="spam_title">Geçici olarak engellendiniz</string>
-    <string name="spam_too_many_blocks">"Birçok kişi sizi engellediği için WhatsApp'ta geçici olarak engellendiniz."</string>
-    <string name="spam_too_many_groups">"Adres defterinde numaranız kayıtlı olmayan kişilerle çok fazla grup oluşturduğunuz için WhatsApp'ta geçici olarak engellendiniz.
-WhatsApp'ı tekrar kullanabilmeniz için gereken süre:"</string>
-    <string name="spam_too_many_messages">"Adres defterinde numaranız kayıtlı olmayan kişilere çok fazla mesaj gönderdiğiniz için WhatsApp'ta geçici olarak engellendiniz.
-WhatsApp'ı tekrar kullanabilmeniz için gereken süre:"</string>
-    <string name="spam_too_many_people">"Aynı mesajı çok fazla kişiye gönderdiğiniz için WhatsApp'ta geçici olarak engellendiniz.
-WhatsApp'ı tekrar kullanabilmeniz için gereken süre:"</string>
+    <string name="spam_too_many_groups">"Adres defterlerinde numaranız kayıtlı olmayan kişilerle çok fazla grup oluşturduğunuz için WhatsApp'ta geçici olarak engellendiniz.
+
+WhatsApp'ı tekrar kullanabileceğiniz zaman:"</string>
+    <string name="spam_too_many_messages">"Adres defterlerinde numaranız kayıtlı olmayan kişilere çok fazla mesaj gönderdiğiniz için WhatsApp'ta geçici olarak engellendiniz.
+
+WhatsApp'ı tekrar kullanabileceğiniz zaman:"</string>
     <string name="status">Durum</string>
     <string name="status_default_at_gym">Spor salonunda</string>
     <string name="status_default_at_movies">Sinemada</string>
@@ -1190,7 +1190,9 @@ Lütfen ses doğrulamasını deneyin."</string>
     <string name="view_list_media">Toplu mesaj liste medyası</string>
     <string name="view_website">Web sitesini görüntüle</string>
     <string name="voip_activity_label">Sesli Arama</string>
+    <string name="voip_call_bluetooth_toggle_description">Bluetooth Aç/Kapat</string>
     <string name="voip_call_end_button_description">Sesli Aramayı Bitir</string>
+    <string name="voip_call_failed_no_network">Arama yapılamadı. Telefonunuzun İnternete bağlı olduğundan emin olup tekrar deneyin.</string>
     <string name="voip_call_goto_chat_description">Sohbeti Göster</string>
     <string name="voip_call_incoming">GELEN</string>
     <string name="voip_call_label">WHATSAPP ÇAĞRISI</string>
@@ -1199,7 +1201,7 @@ Lütfen ses doğrulamasını deneyin."</string>
     <string name="voip_call_recording_ended">VoIP arama kaydı sonlandı</string>
     <string name="voip_call_recording_failed">VoIP arama kaydı başarısız</string>
     <string name="voip_call_recording_started">VoIP arama kaydı başladı</string>
-    <string name="voip_call_speakerphone_toggle_description">Hoparlöre Geçiş</string>
+    <string name="voip_call_speakerphone_toggle_description">Hoparlör Aç/Kapa</string>
     <string name="voip_call_start_button_description">Sesli Aramayı Başlat</string>
     <string name="voip_debug_remove_all_recordings">Tüm Kayıtları Kaldır</string>
     <string name="voip_debug_removed_all_recordings">Tüm kayıtlar kaldırıldı.</string>

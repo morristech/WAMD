@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 1
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/ActionBarView$2;->this$0:Lcom/actionbarsherlock/internal/widget/ActionBarView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -29,7 +29,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 2
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ActionBarView$2;->this$0:Lcom/actionbarsherlock/internal/widget/ActionBarView;
 
     invoke-static {v0}, Lcom/actionbarsherlock/internal/widget/ActionBarView;->access$100(Lcom/actionbarsherlock/internal/widget/ActionBarView;)Lcom/actionbarsherlock/internal/widget/ActionBarView$ExpandedActionViewMenuPresenter;
@@ -38,13 +38,13 @@
 
     iget-object v0, v0, Lcom/actionbarsherlock/internal/widget/ActionBarView$ExpandedActionViewMenuPresenter;->mCurrentExpandedItem:Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;
 
-    .line 5
+    .line 4
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 3
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;->collapseActionView()Z
 
-    .line 1
+    .line 5
     :cond_0
     return-void
 .end method

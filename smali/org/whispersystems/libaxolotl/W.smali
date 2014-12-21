@@ -4,14 +4,5 @@
 
 
 # virtual methods
-.method public abstract a()Lorg/whispersystems/libaxolotl/bP;
-.end method
-
-.method public abstract a(JLorg/whispersystems/libaxolotl/af;)V
-.end method
-
-.method public abstract b()I
-.end method
-
-.method public abstract b(JLorg/whispersystems/libaxolotl/af;)Z
+.method public abstract a()Ljava/lang/Object;
 .end method

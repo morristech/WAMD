@@ -8,7 +8,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 7
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getMovementGranularities()I
@@ -36,7 +36,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 1
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isVisibleToUser()Z
@@ -50,12 +50,12 @@
     .locals 0
 
     .prologue
-    .line 7
+    .line 9
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setAccessibilityFocused(Z)V
 
-    .line 4
+    .line 2
     return-void
 .end method
 
@@ -63,12 +63,12 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 8
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setMovementGranularities(I)V
 
-    .line 1
+    .line 4
     return-void
 .end method
 
@@ -76,11 +76,11 @@
     .locals 0
 
     .prologue
-    .line 9
+    .line 5
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setVisibleToUser(Z)V
 
-    .line 5
+    .line 3
     return-void
 .end method

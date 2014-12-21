@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="wamd_version_code">6</string>
-    <string name="wamd_sub_version_code">S</string>
-    <string name="wamd_menuitem_updater">Updater</string>
     <string name="abs__action_bar_home_description">Navigate home</string>
     <string name="abs__action_bar_up_description">Navigate up</string>
     <string name="abs__action_menu_overflow_description">More options</string>
@@ -93,14 +90,6 @@
     <string name="audio_note_tip">Hold to record, release to send</string>
     <string name="audio_note_tip_2">Please record a longer message</string>
     <string name="audio_note_top_mic_tip">Please speak to the microphone on top of your phone</string>
-    <string name="auth_client_needs_enabling_title">An application requires Google Play Services to be enabled.</string>
-    <string name="auth_client_needs_installation_title">An application requires installation of Google Play Services.</string>
-    <string name="auth_client_needs_update_title">An application requires an update for Google Play Services.</string>
-    <string name="auth_client_play_services_err_notification_msg">Google Play services error</string>
-    <string name="auth_client_requested_by_msg">Requested by %1$s</string>
-    <string name="auth_client_using_bad_version_title">An application attempted to use a bad version of Google Play Services.</string>
-    <string name="barcode_scanner_dialog_body">This application requires a barcode scanner. Would you like to install one?</string>
-    <string name="barcode_scanner_dialog_title">Install Barcode Scanner?</string>
     <string name="block">Block</string>
     <string name="block_ask">Are you sure you want to block this contact?</string>
     <string name="block_list_desc_1">"Tap on the icon in the top right corner to select a contact to block.
@@ -134,6 +123,8 @@ Only contacts with %s in their address book will receive your broadcast messages
     <string name="camera_shortcut">WhatsApp Camera</string>
     <string name="camera_title">Send WhatsApp photo or video</string>
     <string name="camera_video_preview_title">Send WhatsApp video</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">To place a WhatsApp call, first turn off Airplane mode.</string>
+    <string name="can_not_start_voip_call_in_phone_call">"You cannot place a WhatsApp call if you're already on a phone call."</string>
     <string name="cancel">Cancel</string>
     <string name="cannot_send_not_a_group_participant">"You can't send messages to this group because you're no longer a participant."</string>
     <string name="cannot_send_selected_file">"Can't send this media file. Either you picked the wrong file or the format is not supported."</string>
@@ -182,27 +173,37 @@ If you have both a new phone and a new number, first change your number on your 
     <string name="color_red">Red</string>
     <string name="color_white">White</string>
     <string name="color_yellow">Yellow</string>
+    <string name="common_android_wear_notification_needs_update_text">An application requires an update to the Android Wear app.</string>
+    <string name="common_android_wear_update_text">"This app won't run unless you update the Android Wear app."</string>
+    <string name="common_android_wear_update_title">Update Android Wear</string>
     <string name="common_google_play_services_enable_button">Enable Google Play services</string>
     <string name="common_google_play_services_enable_text">"This app won't work unless you enable Google Play services."</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Requested by %1$s</string>
     <string name="common_google_play_services_install_button">Get Google Play services</string>
     <string name="common_google_play_services_install_text_phone">"This app won't run without Google Play services, which are missing from your phone."</string>
     <string name="common_google_play_services_install_text_tablet">"This app won't run without Google Play services, which are missing from your tablet."</string>
     <string name="common_google_play_services_install_title">Get Google Play services</string>
     <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
     <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_needs_enabling_title">An application requires Google Play services to be enabled.</string>
     <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
     <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_notification_needs_installation_title">An application requires installation of Google Play services.</string>
+    <string name="common_google_play_services_notification_needs_update_title">An application requires an update for Google Play services.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
     <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
     <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</string>
     <string name="common_google_play_services_unsupported_title">Google Play services</string>
     <string name="common_google_play_services_update_button">Update</string>
     <string name="common_google_play_services_update_text">"This app won't run unless you update Google Play services."</string>
     <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="confirm_forward_msg">Forward to %s?</string>
     <string name="confirm_sharing_title">Share with %s?</string>
+    <string name="confirmation_delete_all_qr">Are you sure you want to log out from all computers?</string>
     <string name="connectivity_self_help_instructions">Please reboot your phone if your connection problem persists.</string>
     <string name="contact">Contact</string>
     <string name="contact1">Contact us</string>
@@ -265,13 +266,14 @@ If you have both a new phone and a new number, first change your number on your 
     <string name="conversations_most_recent_voice">Voice note</string>
     <string name="copy">Copy</string>
     <string name="copyright1">"© 2010-2014 WhatsApp Inc.
-Modified by /u/Vextil (Joaquin Cuitiño)."</string>
+All rights reserved."</string>
     <string name="corrupt_installation_contact_support_prompt">"If you tried the steps above and you're still seeing this problem, &lt;a href=\"contact-support\">contact support&lt;/a>."</string>
     <string name="corrupt_installation_description">WhatsApp has a problem and it needs to be installed again. Tap on the button below to go to the Play Store, uninstall WhatsApp, and install it again.</string>
     <string name="corrupt_installation_description_website_distribution">WhatsApp has a problem and it needs to be installed again. Tap on the button below to uninstall WhatsApp. Visit &lt;a href=\"%s\">whatsapp.com&lt;/a> afterwards to download and reinstall WhatsApp.</string>
     <string name="create">Create</string>
     <string name="crop">Crop</string>
     <string name="current_status">Your current status</string>
+    <string name="currently_logged_into">Logged in computers</string>
     <string name="custom_rom_detected">You have a custom ROM installed. Custom ROMs can cause problems with WhatsApp Messenger and are unsupported by our customer service team.</string>
     <string name="custom_rom_info">Custom ROMs have been known to cause problems with keyboard input methods, cloud to device (C2DM) notifications as well as timely and accurate message delivery. Further, many custom ROMs are bundled with task killing properties that cause the same problems as a 3rd party task killer. Please understand that custom ROMs are not supported by WhatsApp and that you use them at your own risk.</string>
     <string name="default_wallpaper">Default</string>
@@ -294,6 +296,7 @@ Modified by /u/Vextil (Joaquin Cuitiño)."</string>
     <string name="delete_all_confirm">Are you sure you want to delete all your statuses?</string>
     <string name="delete_all_messages">Clear conversation</string>
     <string name="delete_all_messages_ask">Are you sure you want to clear ALL messages in this conversation?</string>
+    <string name="delete_all_qr">Log out from all computers</string>
     <string name="delete_broadcasts">Delete all broadcasts</string>
     <string name="delete_chat">Delete conversation</string>
     <string name="delete_chat_tip">Tap and hold on a chat for more options</string>
@@ -377,7 +380,7 @@ Available: %1$s"</string>
     <string name="eula_description">Cross-platform mobile messaging with friends all over the world</string>
     <string name="eula_tablets_not_supported">Note: tablets are currently not supported.</string>
     <string name="eula_terms_of_service">Terms of Service</string>
-    <string name="eula_title">Welcome to WhatsApp!</string>
+    <string name="eula_title">Welcome to WhatsApp</string>
     <string name="existing_contact">Existing</string>
     <string name="exit">Exit</string>
     <string name="exit_group">Exit group</string>
@@ -552,7 +555,7 @@ Your service now expires on %s."</string>
     <string name="insufficient_space_for_download_shared_storage">"Cannot download because there isn't enough space left on your internal shared storage. Please remove files from your internal shared storage and try again."</string>
     <string name="invalid_media_message_download">Cannot download media from invalid message. Please try sending the message again.</string>
     <string name="invalid_message_forward">"Message can't be forwarded to an invalid contact."</string>
-    <string name="invalid_qr_code">Invalid QR code</string>
+    <string name="invalid_qr_code">"Couldn't scan the QR code. Try scanning again."</string>
     <string name="invalid_url_for_download">Cannot download. Please ask that it be resent to you.</string>
     <string name="invite">Invite</string>
     <string name="invite_friends">Invite your friends</string>
@@ -577,10 +580,12 @@ WhatsApp service"</string>
     <string name="location_data_provided_by_fousquare">Location data provided by %s</string>
     <string name="location_i_of_n">%1$d OF %2$d</string>
     <string name="location_just_now">just now</string>
+    <string name="location_not_available">Location is not available</string>
     <string name="location_sharing_off">OFF</string>
     <string name="location_sharing_on">ON</string>
     <string name="location_speed_kmh">%s km/h</string>
     <string name="location_speed_mph">%s mph</string>
+    <string name="log_out">Log out</string>
     <string name="login_failure_expired">Your WhatsApp service has expired. Purchase service?</string>
     <string name="login_failure_password">"Connection failed! Please reverify your number.
 
@@ -601,7 +606,6 @@ WhatsApp can only be installed on one device per phone number."</string>
     <string name="menuitem_add">Add</string>
     <string name="menuitem_contacts">Contacts</string>
     <string name="menuitem_debug">Debug</string>
-    <string name="menuitem_delete_qr">Delete QR code</string>
     <string name="menuitem_groupchat">New group</string>
     <string name="menuitem_list">New broadcast</string>
     <string name="menuitem_mute">Mute</string>
@@ -613,6 +617,7 @@ WhatsApp can only be installed on one device per phone number."</string>
     <string name="menuitem_scan_qr">Scan QR code</string>
     <string name="menuitem_settings">Settings</string>
     <string name="menuitem_status">Status</string>
+    <string name="menuitem_whatsapp_web">WhatsApp Web</string>
     <string name="message_cannot_forward_call">Cannot forward call logs</string>
     <string name="message_cannot_forward_unfinished_upload">Cannot forward this message until the server has received it.</string>
     <string name="message_contact">Message contact</string>
@@ -642,14 +647,15 @@ WhatsApp can only be installed on one device per phone number."</string>
     <string name="msg_store_backup_failed">Unable to back up messages</string>
     <string name="msg_store_backup_failed_try_again_later">Unable to back up messages. Please try again later.</string>
     <string name="msg_store_backup_found">Backup found</string>
-    <string name="msg_store_backup_found_registration">Message backup found!</string>
+    <string name="msg_store_backup_found_registration">Chat backup found</string>
+    <string name="msg_store_backup_found_title">Restore chat history</string>
     <string name="msg_store_backup_skipped">Backup skipped</string>
     <string name="msg_store_backup_skipped_no_media">Message backup skipped: No media card found.</string>
     <string name="msg_store_backup_skipped_read_only_media">Message backup skipped: Read-only media card found.</string>
     <string name="msg_store_confirm">Confirm</string>
-    <string name="msg_store_creation_backup_message">Would you like to restore your message history from backup?</string>
-    <string name="msg_store_do_not_restore">"Don't restore"</string>
-    <string name="msg_store_do_not_restore_no_thanks">No thanks</string>
+    <string name="msg_store_creation_backup_message">"Restore your chat history from backup. If you don't restore now, you won't be able to restore later."</string>
+    <string name="msg_store_do_not_restore">Skip restore</string>
+    <string name="msg_store_do_not_restore_no_thanks">Skip restore</string>
     <string name="msg_store_error_found">An error occurred. Please stop and restart WhatsApp.</string>
     <string name="msg_store_error_not_restored">Sorry, we were unable to restore any of your message history backups.</string>
     <string name="msg_store_last_confirmation_not_to_restore">"Messages will be lost. Are you sure you don't want to restore your message history from backup?"</string>
@@ -676,9 +682,9 @@ WhatsApp can only be installed on one device per phone number."</string>
     <string name="need_sd_card_shared_storage">Please turn off USB storage and try again.</string>
     <string name="network_required">"You don't have any network access now."</string>
     <string name="network_usage_ask_reset_message">Are you sure you want to reset statistics?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
+    <string name="network_usage_byte_count_gb">%1$.1fGB</string>
+    <string name="network_usage_byte_count_kb">%1$.1fKB</string>
+    <string name="network_usage_byte_count_mb">%1$.1fMB</string>
     <string name="network_usage_last_reset_time">Last reset time: %1$s</string>
     <string name="network_usage_media_bytes_received">Media bytes received:</string>
     <string name="network_usage_media_bytes_sent">Media bytes sent:</string>
@@ -689,6 +695,10 @@ WhatsApp can only be installed on one device per phone number."</string>
     <string name="network_usage_reset">Reset Statistics</string>
     <string name="network_usage_total_bytes_received">Total bytes received:</string>
     <string name="network_usage_total_bytes_sent">Total bytes sent:</string>
+    <string name="network_usage_voip_call_bytes_received">WhatsApp call bytes received:</string>
+    <string name="network_usage_voip_call_bytes_sent">WhatsApp call bytes sent:</string>
+    <string name="network_usage_voip_calls_received">Incoming WhatsApp calls:</string>
+    <string name="network_usage_voip_calls_sent">Outgoing WhatsApp calls:</string>
     <string name="never">Never</string>
     <string name="new_broadcast">New broadcast</string>
     <string name="new_contact">New</string>
@@ -785,7 +795,8 @@ WhatsApp can only be installed on one device per phone number."</string>
     <string name="profile_photo_reminder">Reminder: you have not set your profile photo yet. Please set your profile photo.</string>
     <string name="profile_photo_updated">Profile photo updated</string>
     <string name="purchase">Purchase</string>
-    <string name="qr_code_hint">Go to %s on your computer and scan the QR code</string>
+    <string name="qr_code_hint">Visit %s on your computer and scan the QR code</string>
+    <string name="qr_code_hint_2">Visit %s on your computer</string>
     <string name="read_only_media_message">Read-only SD card found.</string>
     <string name="read_only_media_message_shared_storage">Read-only internal shared storage found.</string>
     <string name="received_lifetime_service">Lifetime service has been added to your account.</string>
@@ -929,6 +940,7 @@ Try again after %1$s."</string>
     <string name="send_location">Send location</string>
     <string name="send_payment_button">Send payment URL</string>
     <string name="send_payment_url_via">Send payment URL via...</string>
+    <string name="send_this_location">Send this location</string>
     <string name="send_your_current_location">Send your current location</string>
     <string name="sending_video_to_contact">Sending video to %s</string>
     <string name="sent_to_group">Send to “%s”</string>
@@ -1041,17 +1053,23 @@ Sent by WhatsApp"</string>
     <string name="software_expired_get_from_play_with_date">"This version of WhatsApp became obsolete on &lt;b>%1$s&lt;/b>. Please go to Google Play to download the latest version.&lt;br>&lt;br>Your device's date is &lt;b>%2$s&lt;/b>. If this is incorrect please correct your device's date settings then restart WhatsApp."</string>
     <string name="software_expired_with_date">"This version of WhatsApp became obsolete on &lt;b>%1$s&lt;/b>. Tap “Download” to get the latest version.&lt;br>&lt;br>Your device's date is &lt;b>%2$s&lt;/b>. If this is incorrect please correct your device's date settings then restart WhatsApp."</string>
     <string name="spam_generic">"You're temporarily banned from WhatsApp because you may have violated our terms of service.
+
 You'll be able to use WhatsApp again in:"</string>
     <string name="spam_generic_data_connection_missing">Make sure your phone has an active data connection.</string>
     <string name="spam_generic_unknown_time_left">"You're temporarily banned from WhatsApp because you may have violated our terms of service. You'll be able to use WhatsApp soon."</string>
     <string name="spam_learn_more">Learn more</string>
     <string name="spam_title">Temporarily banned</string>
-    <string name="spam_too_many_blocks">"You're temporarily banned from WhatsApp because too many people blocked you."</string>
+    <string name="spam_too_many_blocks">"You're temporarily banned from WhatsApp because too many people blocked you.
+
+You'll be able to use WhatsApp again in:"</string>
     <string name="spam_too_many_groups">"You're temporarily banned from WhatsApp because you created too many groups with people who don't have you in their address books.
+
 You'll be able to use WhatsApp again in:"</string>
     <string name="spam_too_many_messages">"You're temporarily banned from WhatsApp because you sent too many messages to people who don't have you in their address books.
+
 You'll be able to use WhatsApp again in:"</string>
     <string name="spam_too_many_people">"You're temporarily banned from WhatsApp because you sent the same message to too many people.
+
 You'll be able to use WhatsApp again in:"</string>
     <string name="status">Status</string>
     <string name="status_default_at_gym">At the gym</string>
@@ -1155,6 +1173,7 @@ Get it now from %s and say good-bye to SMS!"</string>
     <string name="tell_a_friend_via">Tell a friend via...</string>
     <string name="tell_friends">Tell friends about WhatsApp</string>
     <string name="time_at">%1$s at %2$s</string>
+    <string name="timeout_qr_code">"Couldn't log in. Check your phone’s Internet connection and scan the QR code again."</string>
     <string name="title">WhatsApp Messenger</string>
     <string name="today">Today</string>
     <string name="today_at">today at %s</string>
@@ -1199,7 +1218,7 @@ Please try voice verification."</string>
     <string name="verify_voice_enter_code">Enter code</string>
     <string name="verify_voice_header">Voice verification</string>
     <string name="verify_voice_tap_call_first">Please tap ‘%s’ first.</string>
-    <string name="version_prefix">Version (MD 1.3.0b)</string>
+    <string name="version_prefix">Version</string>
     <string name="vibrate_length_default">Default</string>
     <string name="vibrate_length_long">Long</string>
     <string name="vibrate_length_off">Off</string>
@@ -1220,7 +1239,9 @@ Please try voice verification."</string>
     <string name="view_list_media">Broadcast list media</string>
     <string name="view_website">View website</string>
     <string name="voip_activity_label">Voice Call</string>
+    <string name="voip_call_bluetooth_toggle_description">Toggle Bluetooth</string>
     <string name="voip_call_end_button_description">End Voice Call</string>
+    <string name="voip_call_failed_no_network">"Couldn't place call. Make sure your phone has an Internet connection and try again."</string>
     <string name="voip_call_goto_chat_description">View Chat</string>
     <string name="voip_call_incoming">INCOMING</string>
     <string name="voip_call_label">WHATSAPP CALL</string>
@@ -1253,6 +1274,12 @@ Your contact must have WhatsApp installed in order to chat in WhatsApp.
 If this was done automatically, it is likely that WhatsApp is the default messaging app.
 Press \"SMS\" to send a normal SMS to this contact, press \"Invite\" to send an invitation, or press \"Reset\" to restore default messaging app setting."</string>
     <string name="watch">Watch</string>
+    <string name="web_session_active">Currently active</string>
+    <string name="web_session_description_place_browser_os">"Started in %1$s
+%2$s"</string>
+    <string name="web_session_last_date">Last active %s</string>
+    <string name="web_session_last_today_at">Last active today at %s</string>
+    <string name="web_session_last_yesterday_at">Last active yesterday at %s</string>
     <string name="week">Last week</string>
     <string name="welcome">Welcome!</string>
     <string name="welcome_ask_your_friends">None of your contacts are using WhatsApp. Use the button below to invite them.</string>
@@ -1261,6 +1288,7 @@ Press \"SMS\" to send a normal SMS to this contact, press \"Invite\" to send an 
     <string name="welcome_chats_message">To start messaging contacts who have WhatsApp, tap on the \"New message\" icon at the top of your screen.</string>
     <string name="whatsapp_contacts">Select contact</string>
     <string name="whatsapp_recorder">WhatsApp Recorder</string>
+    <string name="whatsapp_web">WhatsApp Web</string>
     <string name="why_dont_sell_adds">"Why we don't sell ads"</string>
     <string name="wifi_blocked_explanation">"WhatsApp is unable to send and receive messages using the currently connected Wi-Fi network.
 

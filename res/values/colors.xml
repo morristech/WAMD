@@ -9,6 +9,7 @@
     <color name="abs__bright_foreground_inverse_holo_dark">@color/abs__bright_foreground_holo_light</color>
     <color name="abs__bright_foreground_inverse_holo_light">@color/abs__bright_foreground_holo_dark</color>
     <color name="abs__holo_blue_light">#ff33b5e5</color>
+    <color name="accent">#ff075e54</color>
     <color name="archived">#ff92a3a3</color>
     <color name="background_tab_pressed">#6633b5e5</color>
     <color name="black">#ff000000</color>
@@ -44,6 +45,8 @@
     <color name="list_item_sub_title">#89000000</color>
     <color name="list_item_title">#dd000000</color>
     <color name="notice_text">#ff517cd3</color>
+    <color name="primary">#ff075e54</color>
+    <color name="primary_dark">#ff054d44</color>
     <color name="red">#ff8b0000</color>
     <color name="row_1">#fff6f6f6</color>
     <color name="row_2">#ffe5e5e5</color>

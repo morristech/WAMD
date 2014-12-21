@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Tieni premuto per registrare, rilascia per inviare</string>
     <string name="audio_note_tip_2">Si prega di registrare un messaggio più lungo</string>
     <string name="audio_note_top_mic_tip">Per favore parla al microfono sulla parte superiore del tuo telefono</string>
-    <string name="auth_client_needs_enabling_title">"Un'applicazione richiede l'attivazione di Google Play Services."</string>
-    <string name="auth_client_needs_installation_title">"Un'applicazione richiede l'installazione di Google Play Services."</string>
-    <string name="auth_client_needs_update_title">"Un'applicazione richiede un aggiornamento di Google Play Services."</string>
-    <string name="auth_client_play_services_err_notification_msg">Errore Google Play Services</string>
-    <string name="auth_client_requested_by_msg">Richiesta da %1$s</string>
-    <string name="auth_client_using_bad_version_title">"Un'app ha tentato di usare una versione non valida di Play Services."</string>
-    <string name="barcode_scanner_dialog_body">Questa applicazione richiede un lettore di codici a barre. Vorresti installarne uno?</string>
-    <string name="barcode_scanner_dialog_title">Installare Lettore di Codici a Barre?</string>
     <string name="block">Blocca</string>
     <string name="block_ask">Sei sicuro di voler bloccare questo contatto?</string>
     <string name="block_list_desc_1">"Tocca l'icona in alto a destra per selezionare un contatto da bloccare.
@@ -113,6 +105,8 @@ Solo i contatti con %s nella loro rubrica riceveranno i tuoi messaggi broadcast.
     <string name="camera_shortcut">Fotocamera WhatsApp</string>
     <string name="camera_title">Invia foto o video su WhatsApp</string>
     <string name="camera_video_preview_title">Invia video con WhatsApp</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">Per effettuare una chiamata con WhatsApp è necessario disattivare la modalità Aereo.</string>
+    <string name="can_not_start_voip_call_in_phone_call">"Non puoi effettuare una telefonata con WhatsApp se sei già impegnato in un'altra conversazione telefonica."</string>
     <string name="cancel">Annulla</string>
     <string name="cannot_send_not_a_group_participant">Non puoi inviare messaggi a questo gruppo perché non ne fai più parte.</string>
     <string name="cannot_send_selected_file">Impossibile inviare il file multimediale. O hai scelto il file sbagliato o il formato non è supportato.</string>
@@ -161,23 +155,32 @@ Se hai un nuovo telefono e un nuovo numero, cambia prima il tuo numero sul tuo v
     <string name="color_red">Rosso</string>
     <string name="color_white">Bianco</string>
     <string name="color_yellow">Giallo</string>
+    <string name="common_android_wear_notification_needs_update_text">"Un'applicazione richiede l'aggiornamento dell'app Android Wear."</string>
+    <string name="common_android_wear_update_text">Questa app funzionerà solo dopo avere aggiornato Android Wear.</string>
+    <string name="common_android_wear_update_title">Aggiorna Android Wear</string>
     <string name="common_google_play_services_enable_button">Attiva Google Play Services</string>
     <string name="common_google_play_services_enable_text">"L'app non funzionerà se non attivi Google Play Services."</string>
     <string name="common_google_play_services_enable_title">Attiva Google Play Services</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Richiesta da %1$s</string>
     <string name="common_google_play_services_install_button">Installa Google Play Services</string>
     <string name="common_google_play_services_install_text_phone">"L'app non funzionerà senza Google Play Services, non presente sul tuo telefono."</string>
     <string name="common_google_play_services_install_text_tablet">"L'app non funzionerà senza Google Play Services, non presente sul tuo tablet."</string>
     <string name="common_google_play_services_install_title">Installa Google Play Services</string>
     <string name="common_google_play_services_invalid_account_text">"L'account specificato non esiste su questo dispositivo. Scegli un altro account."</string>
     <string name="common_google_play_services_invalid_account_title">Account non valido</string>
+    <string name="common_google_play_services_needs_enabling_title">"Un'applicazione richiede l'attivazione di Google Play Services."</string>
     <string name="common_google_play_services_network_error_text">È necessaria una connessione dati per connettersi a Google Play Services.</string>
     <string name="common_google_play_services_network_error_title">Errore di rete</string>
+    <string name="common_google_play_services_notification_needs_installation_title">"Un'applicazione richiede l'installazione di Google Play Services."</string>
+    <string name="common_google_play_services_notification_needs_update_title">"Un'applicazione richiede un aggiornamento di Google Play Services."</string>
+    <string name="common_google_play_services_notification_ticker">Errore Google Play Services</string>
     <string name="common_google_play_services_unknown_issue">Problema sconosciuto con Google Play Services.</string>
     <string name="common_google_play_services_unsupported_text">La piattaforma Google Play Services, su cui sono basate alcune delle tue applicazioni, non è supportata dal dispositivo in uso. Per assistenza, contatta il produttore.</string>
     <string name="common_google_play_services_unsupported_title">Google Play Services</string>
     <string name="common_google_play_services_update_button">Aggiorna</string>
     <string name="common_google_play_services_update_text">"L'app non funzionerà se non aggiorni Google Play Services."</string>
     <string name="common_google_play_services_update_title">Aggiorna Google Play Services</string>
+    <string name="common_open_on_phone">Apri sul telefono</string>
     <string name="common_signin_button_text">Accedi</string>
     <string name="common_signin_button_text_long">Accedi con Google</string>
     <string name="confirm_forward_msg">Inoltrare a %s?</string>
@@ -225,8 +228,8 @@ Se hai un nuovo telefono e un nuovo numero, cambia prima il tuo numero sul tuo v
     <string name="conversation_cannot_download_media_read_only_media_card_shared_storage">Impossibile scaricare perché la memoria interna condivisa è di sola lettura.</string>
     <string name="conversation_contact_online">online</string>
     <string name="conversation_download_audio">Scarica audio</string>
-    <string name="conversation_is_composing">sta scrivendo ...</string>
-    <string name="conversation_is_recording">registrando audio...</string>
+    <string name="conversation_is_composing">sta scrivendo...</string>
+    <string name="conversation_is_recording">sta registrando audio...</string>
     <string name="conversation_last_seen">ultimo accesso</string>
     <string name="conversation_menu_forward">Inoltra</string>
     <string name="conversation_name_is_composing">%s sta scrivendo...</string>
@@ -279,9 +282,9 @@ Se hai un nuovo telefono e un nuovo numero, cambia prima il tuo numero sul tuo v
     <string name="delete_contact_dialog_title">Elimina la chat con “%s”?</string>
     <string name="delete_group">Elimina gruppo</string>
     <string name="delete_group_dialog_title">Elimina “%s” gruppo?</string>
-    <string name="delete_list">Elimina lista Broadcast</string>
+    <string name="delete_list">Elimina lista broadcast</string>
     <string name="delete_list_dialog_title">Cancellare la lista di broadcast “%s”?</string>
-    <string name="delete_list_unnamed_dialog_title">Elimina lista Broadcast?</string>
+    <string name="delete_list_unnamed_dialog_title">Eliminare la lista broadcast?</string>
     <string name="delete_media">Elimina questo contenuto dal telefono</string>
     <string name="delete_status">Cancella stato</string>
     <string name="describe_problem_contact_support">"Contatta l'assistenza"</string>
@@ -354,7 +357,7 @@ Disponibile: %1$s"</string>
     <string name="eula_description">Messaggistica mobile su piattaforme diverse con amici in tutto il mondo</string>
     <string name="eula_tablets_not_supported">Nota: i tablet non sono attualmente supportati.</string>
     <string name="eula_terms_of_service">Termini del servizio</string>
-    <string name="eula_title">Benvenuto su WhatsApp!</string>
+    <string name="eula_title">Benvenuto su WhatsApp</string>
     <string name="existing_contact">Esistente</string>
     <string name="exit">Esci</string>
     <string name="exit_group">Esci dal gruppo</string>
@@ -476,7 +479,7 @@ Il servizio scadrà il %s."</string>
     <string name="group_icon_updated">Icona di gruppo aggiornata</string>
     <string name="group_info">Info sul gruppo</string>
     <string name="group_locations">Posizioni recenti</string>
-    <string name="group_name_hint">"Digita qui l'oggetto..."</string>
+    <string name="group_name_hint">"Scrivi qui l'oggetto del gruppo..."</string>
     <string name="group_name_shortcut_was_removed">"Non fai più parte del gruppo '%s'"</string>
     <string name="group_participant_added_name">%s è stato aggiunto</string>
     <string name="group_participant_added_you">Sei stato aggiunto</string>
@@ -529,7 +532,6 @@ Il servizio scadrà il %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Impossibile scaricare perché lo spazio disponibile sulla memoria interna condivisa non è sufficiente. Rimuovi file dalla memoria interna condivisa e riprova.</string>
     <string name="invalid_media_message_download">Non è possibile scaricare i media da un messaggio incompleto. Riprova inviando nuovamente il messaggio.</string>
     <string name="invalid_message_forward">Il messaggio non può essere inoltrato a un contatto non valido.</string>
-    <string name="invalid_qr_code">Codice QR errato</string>
     <string name="invalid_url_for_download">Non è possibile scaricare. Chiedi per piacere di fartelo rimandare.</string>
     <string name="invite">Invita</string>
     <string name="invite_friends">Invita i tuoi amici</string>
@@ -575,7 +577,6 @@ WhatsApp può essere installato solo su un singolo dispositivo per ogni numero t
     <string name="menuitem_add">Aggiungi</string>
     <string name="menuitem_contacts">Contatti</string>
     <string name="menuitem_debug">Debug</string>
-    <string name="menuitem_delete_qr">Elimina codice QR</string>
     <string name="menuitem_groupchat">Nuovo gruppo</string>
     <string name="menuitem_list">Nuovo broadcast</string>
     <string name="menuitem_mute">Silenzia audio</string>
@@ -589,7 +590,7 @@ WhatsApp può essere installato solo su un singolo dispositivo per ogni numero t
     <string name="menuitem_status">Stato</string>
     <string name="message_cannot_forward_call">Impossibile inoltrare i registri chiamate</string>
     <string name="message_cannot_forward_unfinished_upload">Non posso inoltrare il messaggio finché il server non lo ha ricevuto.</string>
-    <string name="message_contact">Contatto del messaggio</string>
+    <string name="message_contact">Invia un messaggio al contatto</string>
     <string name="message_contact_name">Messaggio %1$s</string>
     <string name="message_copied">Messaggio copiato</string>
     <string name="message_deleted">Messaggio eliminato</string>
@@ -616,14 +617,15 @@ WhatsApp può essere installato solo su un singolo dispositivo per ogni numero t
     <string name="msg_store_backup_failed">Impossibile eseguire il backup dei messaggi</string>
     <string name="msg_store_backup_failed_try_again_later">Impossibile effettuare il backup dei messaggi. Riprova più tardi.</string>
     <string name="msg_store_backup_found">Trovato backup</string>
-    <string name="msg_store_backup_found_registration">Backup messaggi trovato!</string>
+    <string name="msg_store_backup_found_registration">Trovato backup delle chat</string>
+    <string name="msg_store_backup_found_title">Ripristina cronologia chat</string>
     <string name="msg_store_backup_skipped">Backup ignorato</string>
     <string name="msg_store_backup_skipped_no_media">Backup messaggi non eseguito: nessuna media card trovata.</string>
     <string name="msg_store_backup_skipped_read_only_media">Backup messaggi non eseguito: trovata scheda di memoria di sola lettura.</string>
     <string name="msg_store_confirm">Conferma</string>
-    <string name="msg_store_creation_backup_message">Vuoi ripristinare la cronologia dei messaggi dal backup?</string>
-    <string name="msg_store_do_not_restore">Non ripristinare</string>
-    <string name="msg_store_do_not_restore_no_thanks">No, grazie</string>
+    <string name="msg_store_creation_backup_message">Ripristina la cronologia chat dal backup. Se non effettui il ripristino ora, non potrai più farlo in seguito.</string>
+    <string name="msg_store_do_not_restore">Ignora ripristino</string>
+    <string name="msg_store_do_not_restore_no_thanks">Ignora ripristino</string>
     <string name="msg_store_error_found">Si è verificato un errore. Arresta e riavvia WhatsApp.</string>
     <string name="msg_store_error_not_restored">Spiacenti, non siamo stati in grado di ripristinare la tua cronologia messaggi dal backup.</string>
     <string name="msg_store_last_confirmation_not_to_restore">I messaggi andranno persi. Sei sicuro di non voler ripristinare la cronologia dei messaggi dal backup?</string>
@@ -650,9 +652,6 @@ WhatsApp può essere installato solo su un singolo dispositivo per ogni numero t
     <string name="need_sd_card_shared_storage">Disattiva la memoria USB e riprova.</string>
     <string name="network_required">Non hai accesso alla rete.</string>
     <string name="network_usage_ask_reset_message">Sei sicuro di voler azzerare le statistiche?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Ultimo azzeramento: %1$s</string>
     <string name="network_usage_media_bytes_received">Byte multimediali ricevuti:</string>
     <string name="network_usage_media_bytes_sent">Byte multimediali inviati:</string>
@@ -897,8 +896,9 @@ Riprova tra %1$s."</string>
     <string name="send_contact">Invia contatto</string>
     <string name="send_conversation_via">Invia conversazione via...</string>
     <string name="send_location">Invia posizione</string>
-    <string name="send_payment_button">Invio URL per pagamento</string>
+    <string name="send_payment_button">Invia URL per pagamento</string>
     <string name="send_payment_url_via">Invia URL per il pagamento via...</string>
+    <string name="send_this_location">Invia questa posizione</string>
     <string name="send_your_current_location">Invia la tua posizione attuale</string>
     <string name="sending_video_to_contact">Invio video a %s</string>
     <string name="sent_to_group">Invia a “%s”</string>
@@ -1010,19 +1010,19 @@ Inviato da WhatsApp"</string>
     <string name="software_expired_get_from_play">"Questa versione di WhatsApp è vecchia e non è più funzionante. Vai su Google Play per scaricare l'ultima versione."</string>
     <string name="software_expired_get_from_play_with_date">"La tua versione di WhatsApp è obsoleta &lt;b>%1$s&lt;/b>. Vai sul Google Play per scaricare l'ultima versione.&lt;br>&lt;br> La data del tuo dispositivo è &lt;b>%2$s&lt;/b>. Nel caso fosse errata, correggila e riavvia WhatsApp."</string>
     <string name="software_expired_with_date">"Questa versione di WhatsApp è vecchia il &lt;b>%1$s&lt;/b>. Seleziona “Scarica” per ottenere l'ultima versione.&lt;br>&lt;br>La data del tuo dispositivo è &lt;b>%2$s&lt;/b>. Nel caso fosse errata, correggila e riavvia WhatsApp."</string>
-    <string name="spam_generic">"Sei stato momentaneamente sospeso da WhatsApp perché potresti aver violato le condizioni d'uso del servizio. 
-Sarai in grado di utilizzare nuovamente WhatsApp tra:"</string>
+    <string name="spam_generic">"Sei stato temporaneamente sospeso da WhatsApp perché potresti aver violato i nostri termini del servizio.
+
+Potrai nuovamente usare WhatsApp tra:"</string>
     <string name="spam_generic_data_connection_missing">Assicurati che il tuo telefono abbia una connessione dati attiva.</string>
     <string name="spam_generic_unknown_time_left">Sei stato temporaneamente sospeso da WhatsApp perché potresti aver violato i nostri termini del servizio. Potrai utilizzare di nuovo WhatsApp a breve.</string>
     <string name="spam_learn_more">Ulteriori info</string>
     <string name="spam_title">Sospeso temporaneamente</string>
-    <string name="spam_too_many_blocks">Sei stato sospeso temporaneamente da WhatsApp perché troppe persone ti hanno bloccato.</string>
-    <string name="spam_too_many_groups">"Sei stato temporaneamente sospeso da WhatsApp perché hai creato troppi gruppi con persone che non hanno il tuo numero all'interno della loro rubrica. 
-Sarai in grado di utilizzare nuovamente WhatsApp tra:"</string>
-    <string name="spam_too_many_messages">"Sei stato temporaneamente sospeso da WhatsApp perché hai mandato troppi messaggi a delle persone che non hanno il tuo numero all'interno della loro rubrica. 
-Sai di nuovo in grado di utilizzare nuovamente WhatsApp tra:"</string>
-    <string name="spam_too_many_people">"Sei stato temporaneamente sospeso da WhatsApp perché hai inviato lo stesso messaggio a troppe persone. 
-Sarai in grado di utilizzare nuovamente WhatsApp tra:"</string>
+    <string name="spam_too_many_groups">"Sei stato temporaneamente sospeso da WhatsApp perché hai creato troppi gruppi con persone che non ti hanno inserito nella loro rubrica.
+
+ Potrai usare di nuovo WhatsApp tra:"</string>
+    <string name="spam_too_many_messages">"Sei temporaneamente sospeso da WhatsApp perché hai spedito troppi messaggi a persone che non ti hanno nella loro rubrica.
+
+Potrai usare di nuovo WhatsApp tra:"</string>
     <string name="status">Stato</string>
     <string name="status_default_at_gym">In palestra</string>
     <string name="status_default_at_movies">Al cinema</string>
@@ -1136,7 +1136,7 @@ Scaricalo ora da %s e dì addio agli SMS!"</string>
     <string name="unarchive_all_chats">Ripristina tutte le conversazioni</string>
     <string name="unarchive_all_chats_ask">Sei sicuro di voler ripristinare TUTTE le conversazioni?</string>
     <string name="unarchive_broadcast">Ripristina lista broadcast</string>
-    <string name="unarchive_conversation">Recupera la conversazione</string>
+    <string name="unarchive_conversation">Ripristina la conversazione</string>
     <string name="unblock">Sblocca</string>
     <string name="unblock_before_messaging">Sblocca il contatto prima di inviare un messaggio.</string>
     <string name="unblock_timeout">Impossibile sbloccare un contatto ora, riprova più tardi!</string>
@@ -1190,7 +1190,9 @@ Siediti e rilassati. Ti informeremo non appena terminata la verifica."</string>
     <string name="view_list_media">Elenco dei media broadcast</string>
     <string name="view_website">Mostra sito web</string>
     <string name="voip_activity_label">Chiamata vocale</string>
+    <string name="voip_call_bluetooth_toggle_description">Attiva Bluetooth</string>
     <string name="voip_call_end_button_description">Termina chiamata vocale</string>
+    <string name="voip_call_failed_no_network">Impossibile effettuare la chiamata. Assicurati che il tuo telefono sia connesso a Internet e riprova.</string>
     <string name="voip_call_goto_chat_description">Vedi Chat</string>
     <string name="voip_call_incoming">Chiamata in arrivo</string>
     <string name="voip_call_label">CHIAMATA WHATSAPP</string>
@@ -1243,5 +1245,4 @@ Elimina la rete \"%1$s\" o disabilita il Wi-Fi per ripristinare la connettività
     <string name="yesterday">Ieri</string>
     <string name="yesterday_at">ieri alle %s</string>
     <string name="you">tu</string>
-    <string name="voip_call_bluetooth_toggle_description">Attiva Bluetooth</string>
 </resources>

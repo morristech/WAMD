@@ -4,21 +4,21 @@
 
 
 # static fields
-.field public static final b:Ljava/lang/String;
+.field public static final c:Ljava/lang/String;
 
-.field public static final f:Ljava/lang/String;
+.field public static final g:Ljava/lang/String;
 
 .field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field private c:Lcom/whatsapp/apd;
+.field private b:Landroid/widget/EditText;
 
-.field private d:Landroid/widget/ImageButton;
+.field private d:Landroid/text/TextWatcher;
 
-.field private e:Landroid/text/TextWatcher;
+.field private e:Lcom/whatsapp/ob;
 
-.field private g:Landroid/widget/EditText;
+.field private f:Landroid/widget/ImageButton;
 
 
 # direct methods
@@ -26,13 +26,13 @@
     .locals 14
 
     .prologue
-    const/16 v9, 0x28
+    const/16 v8, 0x9
 
-    const/16 v8, 0x10
-
-    const/4 v1, -0x1
+    const/4 v9, 0x7
 
     const/4 v3, 0x1
+
+    const/4 v1, -0x1
 
     const/4 v2, 0x0
 
@@ -40,7 +40,7 @@
 
     new-array v4, v0, [Ljava/lang/String;
 
-    const-string v0, "sGtC\u001ebQqD\t{Ms\u0002\tbM`Y\u000f"
+    const-string v0, "\u0001frK8\u0010pwL/\tlu\n(\u0007zsW#\u001b"
 
     move v5, v2
 
@@ -80,7 +80,7 @@
 
     aput-object v4, v6, v5
 
-    const-string v0, "sGtC\u001ebQqD\t{Ms\u0002\u0005~KsH\u000bdM!_\u000fsMh[\u000ft\u0008Hb/hKd]\u001eyGo\r\u000cbGl\r)\u007f]oY\u0018ixiB\u0004uaoK\u0005"
+    const-string v0, "\u0001frK8\u0010pwL/\tlu\n#\u000cju@-\u0016l\'W)\u0001lnS)\u0006)Nj\t\u001ajbU8\u000bfi\u0005*\u0010fj\u0005\u000f\r|iQ>\u001bYoJ\"\u0007@iC#"
 
     move-object v4, v0
 
@@ -97,7 +97,7 @@
 
     const/4 v4, 0x2
 
-    const-string v0, "sGtC\u001ebQqD\t{Ms\u0002\u000eu[u_\u0005i"
+    const-string v0, "\u0001frK8\u0010pwL/\tlu\n/\u0010lfQ)"
 
     move v5, v4
 
@@ -114,22 +114,22 @@
 
     sput-object v7, Lcom/whatsapp/CountryPicker;->z:[Ljava/lang/String;
 
-    .line 44
+    .line 43
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-class v4, Lcom/whatsapp/CountryPicker;
+    const-class v3, Lcom/whatsapp/CountryPicker;
 
-    invoke-virtual {v4}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v3
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v3
 
-    const-string v0, ">mYy8QwBb?^|St5Y{N"
+    const-string v0, "LL_q\u001e#VDj\u0019,]U|\u0013+ZH"
 
     .line 4294967295
     :goto_2
@@ -137,20 +137,20 @@
 
     move-result-object v0
 
-    array-length v5, v0
+    array-length v4, v0
 
-    move v6, v5
+    move v5, v4
 
-    move v7, v2
+    move v6, v2
 
-    move-object v5, v0
+    move-object v4, v0
 
     :goto_3
-    if-gt v6, v7, :cond_1
+    if-gt v5, v6, :cond_1
 
     new-instance v0, Ljava/lang/String;
 
-    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v0, v4}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -158,8 +158,8 @@
 
     packed-switch v1, :pswitch_data_1
 
-    .line 44
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 43
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -167,9 +167,9 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/whatsapp/CountryPicker;->b:Ljava/lang/String;
+    sput-object v0, Lcom/whatsapp/CountryPicker;->c:Ljava/lang/String;
 
-    .line 33
+    .line 32
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -184,9 +184,9 @@
 
     move-result-object v1
 
-    const-string v0, ">mYy8QwBb?^|St5TaR}&Qq^c+]m"
+    const-string v0, "LL_q\u001e#VDj\u0019,]U|\u0013&@Tu\u0000#PXk\r/L"
 
-    move-object v4, v1
+    move-object v3, v1
 
     move v1, v2
 
@@ -200,7 +200,7 @@
 
     packed-switch v4, :pswitch_data_2
 
-    const/16 v4, 0x6a
+    const/16 v4, 0x4c
 
     :goto_4
     xor-int/2addr v4, v13
@@ -216,70 +216,70 @@
     goto :goto_1
 
     :pswitch_2
-    move v4, v8
+    const/16 v4, 0x62
 
     goto :goto_4
 
     :pswitch_3
-    move v4, v9
+    move v4, v8
 
     goto :goto_4
 
     :pswitch_4
-    move v4, v3
+    move v4, v9
 
     goto :goto_4
 
     :pswitch_5
-    const/16 v4, 0x2d
+    const/16 v4, 0x25
 
     goto :goto_4
 
     :cond_1
-    aget-char v10, v5, v7
+    aget-char v7, v4, v6
 
-    rem-int/lit8 v0, v7, 0x5
+    rem-int/lit8 v0, v6, 0x5
 
     packed-switch v0, :pswitch_data_3
 
-    const/16 v0, 0x6a
+    const/16 v0, 0x4c
 
     :goto_5
-    xor-int/2addr v0, v10
+    xor-int/2addr v0, v7
 
     int-to-char v0, v0
 
-    aput-char v0, v5, v7
+    aput-char v0, v4, v6
 
-    add-int/lit8 v0, v7, 0x1
+    add-int/lit8 v0, v6, 0x1
 
-    move v7, v0
+    move v6, v0
 
     goto :goto_3
 
     :pswitch_6
-    move v0, v8
+    const/16 v0, 0x62
 
     goto :goto_5
 
     :pswitch_7
-    move v0, v9
+    move v0, v8
 
     goto :goto_5
 
     :pswitch_8
-    move v0, v3
+    move v0, v9
 
     goto :goto_5
 
     :pswitch_9
-    const/16 v0, 0x2d
+    const/16 v0, 0x25
 
     goto :goto_5
 
-    .line 33
+    .line 32
     :pswitch_a
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -287,11 +287,13 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/whatsapp/CountryPicker;->f:Ljava/lang/String;
+    sput-object v0, Lcom/whatsapp/CountryPicker;->g:Ljava/lang/String;
 
     return-void
 
     .line 4294967295
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -324,26 +326,26 @@
     .locals 1
 
     .prologue
-    .line 40
+    .line 28
     invoke-direct {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;-><init>()V
 
-    .line 31
-    new-instance v0, Lcom/whatsapp/to;
+    .line 13
+    new-instance v0, Lcom/whatsapp/ato;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/to;-><init>(Lcom/whatsapp/CountryPicker;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/ato;-><init>(Lcom/whatsapp/CountryPicker;)V
 
-    iput-object v0, p0, Lcom/whatsapp/CountryPicker;->e:Landroid/text/TextWatcher;
+    iput-object v0, p0, Lcom/whatsapp/CountryPicker;->d:Landroid/text/TextWatcher;
 
-    .line 14
+    .line 15
     return-void
 .end method
 
-.method static a(Lcom/whatsapp/CountryPicker;)Lcom/whatsapp/apd;
+.method static a(Lcom/whatsapp/CountryPicker;)Lcom/whatsapp/ob;
     .locals 1
 
     .prologue
-    .line 34
-    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->c:Lcom/whatsapp/apd;
+    .line 52
+    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->e:Lcom/whatsapp/ob;
 
     return-object v0
 .end method
@@ -352,8 +354,8 @@
     .locals 1
 
     .prologue
-    .line 37
-    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->g:Landroid/widget/EditText;
+    .line 50
+    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->b:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -362,8 +364,8 @@
     .locals 1
 
     .prologue
-    .line 49
-    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->d:Landroid/widget/ImageButton;
+    .line 7
+    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->f:Landroid/widget/ImageButton;
 
     return-object v0
 .end method
@@ -374,7 +376,7 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 29
     :try_start_0
     invoke-super {p0, p1}, Lcom/actionbarsherlock/app/SherlockListActivity;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     :try_end_0
@@ -382,15 +384,14 @@
 
     move-result v0
 
-    .line 38
     :goto_0
     return v0
 
-    .line 21
+    .line 30
     :catch_0
     move-exception v0
 
-    .line 38
+    .line 27
     const/4 v0, 0x0
 
     goto :goto_0
@@ -400,9 +401,9 @@
     .locals 2
 
     .prologue
-    .line 53
+    .line 14
     :try_start_0
-    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->g:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->b:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -416,27 +417,27 @@
 
     if-nez v0, :cond_0
 
-    .line 12
+    .line 4
     :try_start_1
-    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->g:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->b:Landroid/widget/EditText;
 
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 43
+    .line 53
     :cond_0
     invoke-super {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->onBackPressed()V
 
-    .line 13
+    .line 36
     :cond_1
     return-void
 
-    .line 12
+    .line 4
     :catch_0
     move-exception v0
 
@@ -444,7 +445,7 @@
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 43
+    .line 53
     :catch_1
     move-exception v0
 
@@ -452,45 +453,45 @@
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
-    .locals 10
+    .locals 9
 
     .prologue
-    const/4 v9, 0x0
-
     const/4 v8, 0x1
 
-    sget-boolean v6, Lcom/whatsapp/App;->aL:Z
+    sget v6, Lcom/whatsapp/App;->h:I
 
-    .line 22
+    .line 18
     sget-object v0, Lcom/whatsapp/CountryPicker;->z:[Ljava/lang/String;
 
-    aget-object v0, v0, v9
+    const/4 v1, 0x2
+
+    aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 46
+    .line 2
     invoke-super {p0, p1}, Lcom/actionbarsherlock/app/SherlockListActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 9
+    .line 1
     invoke-virtual {p0}, Lcom/whatsapp/CountryPicker;->getSupportActionBar()Lcom/actionbarsherlock/app/ActionBar;
 
     move-result-object v0
 
     invoke-virtual {v0, v8}, Lcom/actionbarsherlock/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
-    .line 50
+    .line 31
     const v0, 0x7f030059
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/CountryPicker;->setContentView(I)V
 
-    .line 45
+    .line 24
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 42
+    .line 51
     :try_start_0
-    invoke-static {}, Lcom/whatsapp/azu;->a()Ljava/util/ArrayList;
+    invoke-static {}, Lcom/whatsapp/gi;->a()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -509,56 +510,58 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/whatsapp/i9;
+    check-cast v0, Lcom/whatsapp/xa;
 
-    .line 48
-    new-instance v2, Lcom/whatsapp/w4;
+    .line 21
+    new-instance v2, Lcom/whatsapp/sb;
 
-    iget-object v4, v0, Lcom/whatsapp/i9;->k:Ljava/lang/String;
+    iget-object v4, v0, Lcom/whatsapp/xa;->h:Ljava/lang/String;
 
-    iget v5, v0, Lcom/whatsapp/i9;->g:I
+    iget v5, v0, Lcom/whatsapp/xa;->l:I
 
     invoke-static {v5}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v5
 
-    iget-object v7, v0, Lcom/whatsapp/i9;->j:Ljava/lang/String;
+    iget-object v7, v0, Lcom/whatsapp/xa;->k:Ljava/lang/String;
 
-    iget-object v0, v0, Lcom/whatsapp/i9;->b:Ljava/lang/String;
+    iget-object v0, v0, Lcom/whatsapp/xa;->b:Ljava/lang/String;
 
-    invoke-direct {v2, v4, v5, v7, v0}, Lcom/whatsapp/w4;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v2, v4, v5, v7, v0}, Lcom/whatsapp/sb;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 52
+    .line 41
     if-eqz v6, :cond_0
 
-    .line 30
+    .line 3
     :cond_1
     :goto_0
     invoke-virtual {p0}, Lcom/whatsapp/CountryPicker;->getListView()Landroid/widget/ListView;
 
     move-result-object v7
 
-    .line 2
+    .line 10
     invoke-virtual {p0}, Lcom/whatsapp/CountryPicker;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v0
 
     const v1, 0x7f03008b
 
-    invoke-virtual {v0, v1, v7, v9}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v7, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object v1
 
-    .line 16
+    .line 35
     :try_start_1
     invoke-virtual {v7, v1}, Landroid/widget/ListView;->addHeaderView(Landroid/view/View;)V
 
-    .line 8
-    const v0, 0x7f0b0244
+    .line 47
+    const v0, 0x7f0b024d
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -566,22 +569,22 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/whatsapp/CountryPicker;->g:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/whatsapp/CountryPicker;->b:Landroid/widget/EditText;
 
-    .line 47
-    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->g:Landroid/widget/EditText;
+    .line 20
+    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->b:Landroid/widget/EditText;
 
-    iget-object v2, p0, Lcom/whatsapp/CountryPicker;->e:Landroid/text/TextWatcher;
+    iget-object v2, p0, Lcom/whatsapp/CountryPicker;->d:Landroid/text/TextWatcher;
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 25
-    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->g:Landroid/widget/EditText;
+    .line 16
+    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->b:Landroid/widget/EditText;
 
-    invoke-static {v0}, Lcom/whatsapp/ad_;->a(Landroid/widget/TextView;)V
+    invoke-static {v0}, Lcom/whatsapp/t3;->a(Landroid/widget/TextView;)V
 
-    .line 18
-    const v0, 0x7f0b0245
+    .line 48
+    const v0, 0x7f0b024e
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -589,19 +592,19 @@
 
     check-cast v0, Landroid/widget/ImageButton;
 
-    iput-object v0, p0, Lcom/whatsapp/CountryPicker;->d:Landroid/widget/ImageButton;
+    iput-object v0, p0, Lcom/whatsapp/CountryPicker;->f:Landroid/widget/ImageButton;
 
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->d:Landroid/widget/ImageButton;
+    .line 33
+    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->f:Landroid/widget/ImageButton;
 
-    new-instance v1, Lcom/whatsapp/f_;
+    new-instance v1, Lcom/whatsapp/oy;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/f_;-><init>(Lcom/whatsapp/CountryPicker;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/oy;-><init>(Lcom/whatsapp/CountryPicker;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 11
-    new-instance v0, Lcom/whatsapp/apd;
+    .line 49
+    new-instance v0, Lcom/whatsapp/ob;
 
     const v2, 0x7f03005a
 
@@ -609,7 +612,7 @@
 
     move-result-object v1
 
-    sget-object v4, Lcom/whatsapp/CountryPicker;->b:Ljava/lang/String;
+    sget-object v4, Lcom/whatsapp/CountryPicker;->c:Ljava/lang/String;
 
     invoke-virtual {v1, v4}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
@@ -619,7 +622,7 @@
 
     move-result-object v1
 
-    sget-object v5, Lcom/whatsapp/CountryPicker;->f:Ljava/lang/String;
+    sget-object v5, Lcom/whatsapp/CountryPicker;->g:Ljava/lang/String;
 
     invoke-virtual {v1, v5}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
@@ -627,33 +630,33 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/whatsapp/apd;-><init>(Landroid/content/Context;ILjava/util/List;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/whatsapp/ob;-><init>(Landroid/content/Context;ILjava/util/List;Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/whatsapp/CountryPicker;->c:Lcom/whatsapp/apd;
+    iput-object v0, p0, Lcom/whatsapp/CountryPicker;->e:Lcom/whatsapp/ob;
 
-    .line 32
-    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->c:Lcom/whatsapp/apd;
+    .line 38
+    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->e:Lcom/whatsapp/ob;
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/CountryPicker;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 5
-    new-instance v0, Lcom/whatsapp/af2;
+    .line 8
+    new-instance v0, Lcom/whatsapp/aiy;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/af2;-><init>(Lcom/whatsapp/CountryPicker;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/aiy;-><init>(Lcom/whatsapp/CountryPicker;)V
 
     invoke-virtual {v7, v0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 20
+    .line 5
     const/4 v0, 0x1
 
     invoke-virtual {v7, v0}, Landroid/widget/ListView;->setFastScrollEnabled(Z)V
 
-    .line 51
+    .line 34
     const/4 v0, 0x1
 
     invoke-virtual {v7, v0}, Landroid/widget/ListView;->setScrollbarFadingEnabled(Z)V
 
-    .line 36
+    .line 6
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
@@ -662,48 +665,48 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 35
+    .line 39
     const/4 v0, 0x1
 
     :try_start_2
     invoke-virtual {v7, v0}, Landroid/widget/ListView;->setFastScrollAlwaysVisible(Z)V
 
-    .line 6
+    .line 19
     const/high16 v0, 0x2000000
 
     invoke-virtual {v7, v0}, Landroid/widget/ListView;->setScrollBarStyle(I)V
 
     if-eqz v6, :cond_3
 
-    .line 29
+    .line 37
     :cond_2
-    const v0, 0x7f02062a
+    const v0, 0x7f020637
 
     invoke-virtual {v7, v0}, Landroid/widget/ListView;->setSelector(I)V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 26
+    .line 46
     :cond_3
     return-void
 
-    .line 7
+    .line 25
     :catch_0
     move-exception v0
 
-    .line 19
+    .line 12
     sget-object v0, Lcom/whatsapp/CountryPicker;->z:[Ljava/lang/String;
 
     aget-object v0, v0, v8
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 28
+    .line 17
     invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
 
     goto/16 :goto_0
 
-    .line 6
+    .line 19
     :catch_1
     move-exception v0
 
@@ -712,7 +715,7 @@
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
 
-    .line 29
+    .line 37
     :catch_2
     move-exception v0
 
@@ -723,26 +726,26 @@
     .locals 2
 
     .prologue
-    .line 41
+    .line 11
     sget-object v0, Lcom/whatsapp/CountryPicker;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x2
+    const/4 v1, 0x0
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 15
-    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->g:Landroid/widget/EditText;
+    .line 22
+    iget-object v0, p0, Lcom/whatsapp/CountryPicker;->b:Landroid/widget/EditText;
 
-    iget-object v1, p0, Lcom/whatsapp/CountryPicker;->e:Landroid/text/TextWatcher;
+    iget-object v1, p0, Lcom/whatsapp/CountryPicker;->d:Landroid/text/TextWatcher;
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->removeTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 24
+    .line 9
     invoke-super {p0}, Lcom/actionbarsherlock/app/SherlockListActivity;->onDestroy()V
 
-    .line 1
+    .line 23
     return-void
 .end method
 
@@ -750,7 +753,7 @@
     .locals 2
 
     .prologue
-    .line 39
+    .line 42
     :try_start_0
     invoke-interface {p1}, Lcom/actionbarsherlock/view/MenuItem;->getItemId()I
 
@@ -760,23 +763,25 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 23
+    .line 40
     invoke-virtual {p0}, Lcom/whatsapp/CountryPicker;->finish()V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 27
+    .line 26
     const/4 v0, 0x1
 
+    .line 44
     :goto_0
     return v0
 
+    .line 26
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 3
+    .line 44
     :cond_0
     const/4 v0, 0x0
 

@@ -1,1031 +1,2015 @@
-.class public final Lcom/google/eq;
-.super Lcom/google/eS;
+.class public enum Lcom/google/eq;
+.super Ljava/lang/Enum;
 .source "eq.java"
 
-# interfaces
-.implements Lcom/google/c2;
+
+# static fields
+.field public static final BOOL:Lcom/google/eq;
+
+.field public static final BYTES:Lcom/google/eq;
+
+.field public static final DOUBLE:Lcom/google/eq;
+
+.field public static final ENUM:Lcom/google/eq;
+
+.field public static final FIXED32:Lcom/google/eq;
+
+.field public static final FIXED64:Lcom/google/eq;
+
+.field public static final FLOAT:Lcom/google/eq;
+
+.field public static final GROUP:Lcom/google/eq;
+
+.field public static final INT32:Lcom/google/eq;
+
+.field public static final INT64:Lcom/google/eq;
+
+.field public static final MESSAGE:Lcom/google/eq;
+
+.field public static final SFIXED32:Lcom/google/eq;
+
+.field public static final SFIXED64:Lcom/google/eq;
+
+.field public static final SINT32:Lcom/google/eq;
+
+.field public static final SINT64:Lcom/google/eq;
+
+.field public static final STRING:Lcom/google/eq;
+
+.field public static final UINT32:Lcom/google/eq;
+
+.field public static final UINT64:Lcom/google/eq;
+
+.field private static final c:[Lcom/google/eq;
+
+.field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field private f:Lcom/google/cW;
+.field private final a:Lcom/google/b;
 
-.field private g:Z
-
-.field private h:Ljava/util/List;
-
-.field private i:I
+.field private final b:I
 
 
 # direct methods
-.method private constructor <init>()V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 12
 
     .prologue
-    .line 110
-    invoke-direct {p0}, Lcom/google/eS;-><init>()V
+    const/16 v1, 0x5f
 
-    .line 71
-    const/4 v0, 0x1
+    const/16 v4, 0x38
 
-    iput-boolean v0, p0, Lcom/google/eq;->g:Z
+    const/16 v2, 0x37
 
-    .line 84
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+    const/16 v3, 0x10
+
+    const/4 v8, 0x0
+
+    const/16 v0, 0x12
+
+    new-array v9, v0, [Ljava/lang/String;
+
+    const-string v0, "\u001bx=Rt\u001a"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/eq;->h:Ljava/util/List;
+    array-length v5, v0
 
-    .line 67
-    invoke-direct {p0}, Lcom/google/eq;->a()V
+    move v6, v5
 
-    .line 51
-    return-void
-.end method
+    move v7, v8
 
-.method private constructor <init>(Lcom/google/dO;)V
-    .locals 1
-
-    .prologue
-    .line 114
-    invoke-direct {p0, p1}, Lcom/google/eS;-><init>(Lcom/google/dO;)V
-
-    .line 81
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/google/eq;->g:Z
-
-    .line 26
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/google/eq;->h:Ljava/util/List;
-
-    .line 99
-    invoke-direct {p0}, Lcom/google/eq;->a()V
-
-    .line 31
-    return-void
-.end method
-
-.method constructor <init>(Lcom/google/dO;Lcom/google/fY;)V
-    .locals 0
-
-    .prologue
-    .line 57
-    invoke-direct {p0, p1}, Lcom/google/eq;-><init>(Lcom/google/dO;)V
-
-    return-void
-.end method
-
-.method private a()V
-    .locals 1
-
-    .prologue
-    .line 100
-    sget-boolean v0, Lcom/google/aV;->d:Z
-
-    if-eqz v0, :cond_0
-
-    .line 43
-    invoke-direct {p0}, Lcom/google/eq;->c()Lcom/google/cW;
-
-    .line 11
-    :cond_0
-    return-void
-.end method
-
-.method private c()Lcom/google/cW;
-    .locals 5
-
-    .prologue
-    .line 38
-    iget-object v0, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    if-nez v0, :cond_0
-
-    .line 24
-    new-instance v1, Lcom/google/cW;
-
-    iget-object v2, p0, Lcom/google/eq;->h:Ljava/util/List;
-
-    iget v0, p0, Lcom/google/eq;->i:I
-
-    and-int/lit8 v0, v0, 0x2
-
-    const/4 v3, 0x2
-
-    if-ne v0, v3, :cond_1
-
-    const/4 v0, 0x1
+    move-object v5, v0
 
     :goto_0
-    invoke-virtual {p0}, Lcom/google/eq;->c()Lcom/google/dO;
+    if-gt v6, v7, :cond_0
 
-    move-result-object v3
+    new-instance v0, Ljava/lang/String;
 
-    invoke-virtual {p0}, Lcom/google/eq;->f()Z
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
 
-    move-result v4
-
-    invoke-direct {v1, v2, v0, v3, v4}, Lcom/google/cW;-><init>(Ljava/util/List;ZLcom/google/dO;Z)V
-
-    iput-object v1, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    .line 77
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/google/eq;->h:Ljava/util/List;
-
-    .line 61
-    :cond_0
-    iget-object v0, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    return-object v0
-
-    .line 24
-    :cond_1
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method private static f()Lcom/google/eq;
-    .locals 1
-
-    .prologue
-    .line 25
-    new-instance v0, Lcom/google/eq;
-
-    invoke-direct {v0}, Lcom/google/eq;-><init>()V
-
-    return-object v0
-.end method
-
-.method static h()Lcom/google/eq;
-    .locals 1
-
-    .prologue
-    .line 111
-    invoke-static {}, Lcom/google/eq;->f()Lcom/google/eq;
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    aput-object v0, v9, v8
 
-.method private j()V
-    .locals 2
+    const/4 v10, 0x1
 
-    .prologue
-    .line 60
-    iget v0, p0, Lcom/google/eq;->i:I
+    const-string v0, "\u0018e\'Eh"
 
-    and-int/lit8 v0, v0, 0x2
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_1
+    if-gt v6, v7, :cond_1
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/4 v10, 0x2
+
+    const-string v0, "\u000cq!H}\u001b\u0004Z"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_2
+    if-gt v6, v7, :cond_2
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/4 v10, 0x3
+
+    const-string v0, "\u0019~0U|i\u0003"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_3
+    if-gt v6, v7, :cond_3
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/4 v10, 0x4
+
+    const-string v0, "\u000cc:Yv\u0018"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_4
+    if-gt v6, v7, :cond_4
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/4 v10, 0x5
+
+    const-string v0, "\u001dx\'\\"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_5
+    if-gt v6, v7, :cond_5
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/4 v10, 0x6
+
+    const-string v0, "\n~&D\u000bm"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_6
+    if-gt v6, v7, :cond_6
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/4 v10, 0x7
+
+    const-string v0, "\u0019~0U|l\u0005"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_7
+    if-gt v6, v7, :cond_7
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/16 v10, 0x8
+
+    const-string v0, "\u000c~&D\u000ek"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_8
+    if-gt v6, v7, :cond_8
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/16 v10, 0x9
+
+    const-string v0, "\u001dn<Uk"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_9
+    if-gt v6, v7, :cond_9
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/16 v10, 0xa
+
+    const-string v0, "\u0016y<#\n"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_a
+    if-gt v6, v7, :cond_a
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/16 v10, 0xb
+
+    const-string v0, "\u001ay=]"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_b
+    if-gt v6, v7, :cond_b
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/16 v10, 0xc
+
+    const-string v0, "\u0012r;Cy\u0018r"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_c
+    if-gt v6, v7, :cond_c
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/16 v10, 0xd
+
+    const-string v0, "\u000cq!H}\u001b\u0001\\"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_d
+    if-gt v6, v7, :cond_d
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/16 v10, 0xe
+
+    const-string v0, "\u0016y<&\u000c"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_e
+    if-gt v6, v7, :cond_e
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const/16 v10, 0xf
+
+    const-string v0, "\n~&D\u000ek"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_f
+    if-gt v6, v7, :cond_f
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    const-string v0, "\u000c~&D\u000bm"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_10
+    if-gt v6, v7, :cond_10
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v3
+
+    const/16 v10, 0x11
+
+    const-string v0, "\u0019{\'Ql"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v5, v0
+
+    move v6, v5
+
+    move v7, v8
+
+    move-object v5, v0
+
+    :goto_11
+    if-gt v6, v7, :cond_11
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v5}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v9, v10
+
+    sput-object v9, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    .line 9
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    aget-object v1, v1, v8
+
+    sget-object v2, Lcom/google/b;->DOUBLE:Lcom/google/b;
+
+    const/4 v4, 0x1
+
+    invoke-direct {v0, v1, v8, v2, v4}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->DOUBLE:Lcom/google/eq;
+
+    .line 12
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/16 v2, 0x11
+
+    aget-object v1, v1, v2
+
+    const/4 v2, 0x1
+
+    sget-object v4, Lcom/google/b;->FLOAT:Lcom/google/b;
+
+    const/4 v5, 0x5
+
+    invoke-direct {v0, v1, v2, v4, v5}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->FLOAT:Lcom/google/eq;
+
+    .line 14
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/16 v2, 0xe
+
+    aget-object v1, v1, v2
+
+    const/4 v2, 0x2
+
+    sget-object v4, Lcom/google/b;->LONG:Lcom/google/b;
+
+    invoke-direct {v0, v1, v2, v4, v8}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->INT64:Lcom/google/eq;
+
+    .line 27
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/16 v2, 0xf
+
+    aget-object v1, v1, v2
+
+    const/4 v2, 0x3
+
+    sget-object v4, Lcom/google/b;->LONG:Lcom/google/b;
+
+    invoke-direct {v0, v1, v2, v4, v8}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->UINT64:Lcom/google/eq;
+
+    .line 10
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/16 v2, 0xa
+
+    aget-object v1, v1, v2
+
+    const/4 v2, 0x4
+
+    sget-object v4, Lcom/google/b;->INT:Lcom/google/b;
+
+    invoke-direct {v0, v1, v2, v4, v8}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->INT32:Lcom/google/eq;
+
+    .line 28
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x3
+
+    aget-object v1, v1, v2
+
+    const/4 v2, 0x5
+
+    sget-object v4, Lcom/google/b;->LONG:Lcom/google/b;
+
+    const/4 v5, 0x1
+
+    invoke-direct {v0, v1, v2, v4, v5}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->FIXED64:Lcom/google/eq;
+
+    .line 15
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x7
+
+    aget-object v1, v1, v2
+
+    const/4 v2, 0x6
+
+    sget-object v4, Lcom/google/b;->INT:Lcom/google/b;
+
+    const/4 v5, 0x5
+
+    invoke-direct {v0, v1, v2, v4, v5}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->FIXED32:Lcom/google/eq;
+
+    .line 18
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x5
+
+    aget-object v1, v1, v2
+
+    const/4 v2, 0x7
+
+    sget-object v4, Lcom/google/b;->BOOLEAN:Lcom/google/b;
+
+    invoke-direct {v0, v1, v2, v4, v8}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->BOOL:Lcom/google/eq;
+
+    .line 16
+    new-instance v0, Lcom/google/eT;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x4
+
+    aget-object v1, v1, v2
+
+    const/16 v2, 0x8
+
+    sget-object v4, Lcom/google/b;->STRING:Lcom/google/b;
+
+    const/4 v5, 0x2
+
+    invoke-direct {v0, v1, v2, v4, v5}, Lcom/google/eT;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->STRING:Lcom/google/eq;
+
+    .line 23
+    new-instance v0, Lcom/google/e3;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x1
+
+    aget-object v1, v1, v2
+
+    const/16 v2, 0x9
+
+    sget-object v4, Lcom/google/b;->MESSAGE:Lcom/google/b;
+
+    const/4 v5, 0x3
+
+    invoke-direct {v0, v1, v2, v4, v5}, Lcom/google/e3;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->GROUP:Lcom/google/eq;
+
+    .line 13
+    new-instance v0, Lcom/google/eU;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/16 v2, 0xc
+
+    aget-object v1, v1, v2
+
+    const/16 v2, 0xa
+
+    sget-object v4, Lcom/google/b;->MESSAGE:Lcom/google/b;
+
+    const/4 v5, 0x2
+
+    invoke-direct {v0, v1, v2, v4, v5}, Lcom/google/eU;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->MESSAGE:Lcom/google/eq;
+
+    .line 8
+    new-instance v0, Lcom/google/eB;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/16 v2, 0x9
+
+    aget-object v1, v1, v2
+
+    const/16 v2, 0xb
+
+    sget-object v4, Lcom/google/b;->BYTE_STRING:Lcom/google/b;
+
+    const/4 v5, 0x2
+
+    invoke-direct {v0, v1, v2, v4, v5}, Lcom/google/eB;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->BYTES:Lcom/google/eq;
+
+    .line 26
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x6
+
+    aget-object v1, v1, v2
+
+    const/16 v2, 0xc
+
+    sget-object v4, Lcom/google/b;->INT:Lcom/google/b;
+
+    invoke-direct {v0, v1, v2, v4, v8}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->UINT32:Lcom/google/eq;
+
+    .line 3
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/16 v2, 0xb
+
+    aget-object v1, v1, v2
+
+    const/16 v2, 0xd
+
+    sget-object v4, Lcom/google/b;->ENUM:Lcom/google/b;
+
+    invoke-direct {v0, v1, v2, v4, v8}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->ENUM:Lcom/google/eq;
+
+    .line 21
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x2
+
+    aget-object v1, v1, v2
+
+    const/16 v2, 0xe
+
+    sget-object v4, Lcom/google/b;->INT:Lcom/google/b;
+
+    const/4 v5, 0x5
+
+    invoke-direct {v0, v1, v2, v4, v5}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->SFIXED32:Lcom/google/eq;
+
+    .line 20
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/16 v2, 0xd
+
+    aget-object v1, v1, v2
+
+    const/16 v2, 0xf
+
+    sget-object v4, Lcom/google/b;->LONG:Lcom/google/b;
+
+    const/4 v5, 0x1
+
+    invoke-direct {v0, v1, v2, v4, v5}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->SFIXED64:Lcom/google/eq;
+
+    .line 11
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    aget-object v1, v1, v3
+
+    sget-object v2, Lcom/google/b;->INT:Lcom/google/b;
+
+    invoke-direct {v0, v1, v3, v2, v8}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->SINT32:Lcom/google/eq;
+
+    .line 6
+    new-instance v0, Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->z:[Ljava/lang/String;
+
+    const/16 v2, 0x8
+
+    aget-object v1, v1, v2
+
+    const/16 v2, 0x11
+
+    sget-object v4, Lcom/google/b;->LONG:Lcom/google/b;
+
+    invoke-direct {v0, v1, v2, v4, v8}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    sput-object v0, Lcom/google/eq;->SINT64:Lcom/google/eq;
+
+    .line 5
+    const/16 v0, 0x12
+
+    new-array v0, v0, [Lcom/google/eq;
+
+    sget-object v1, Lcom/google/eq;->DOUBLE:Lcom/google/eq;
+
+    aput-object v1, v0, v8
+
+    const/4 v1, 0x1
+
+    sget-object v2, Lcom/google/eq;->FLOAT:Lcom/google/eq;
+
+    aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    if-eq v0, v1, :cond_0
+    sget-object v2, Lcom/google/eq;->INT64:Lcom/google/eq;
 
-    .line 98
-    new-instance v0, Ljava/util/ArrayList;
+    aput-object v2, v0, v1
 
-    iget-object v1, p0, Lcom/google/eq;->h:Ljava/util/List;
+    const/4 v1, 0x3
 
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    sget-object v2, Lcom/google/eq;->UINT64:Lcom/google/eq;
 
-    iput-object v0, p0, Lcom/google/eq;->h:Ljava/util/List;
+    aput-object v2, v0, v1
 
-    .line 95
-    iget v0, p0, Lcom/google/eq;->i:I
+    const/4 v1, 0x4
 
-    or-int/lit8 v0, v0, 0x2
+    sget-object v2, Lcom/google/eq;->INT32:Lcom/google/eq;
 
-    iput v0, p0, Lcom/google/eq;->i:I
+    aput-object v2, v0, v1
 
-    .line 14
-    :cond_0
+    const/4 v1, 0x5
+
+    sget-object v2, Lcom/google/eq;->FIXED64:Lcom/google/eq;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x6
+
+    sget-object v2, Lcom/google/eq;->FIXED32:Lcom/google/eq;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x7
+
+    sget-object v2, Lcom/google/eq;->BOOL:Lcom/google/eq;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x8
+
+    sget-object v2, Lcom/google/eq;->STRING:Lcom/google/eq;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x9
+
+    sget-object v2, Lcom/google/eq;->GROUP:Lcom/google/eq;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xa
+
+    sget-object v2, Lcom/google/eq;->MESSAGE:Lcom/google/eq;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xb
+
+    sget-object v2, Lcom/google/eq;->BYTES:Lcom/google/eq;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xc
+
+    sget-object v2, Lcom/google/eq;->UINT32:Lcom/google/eq;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xd
+
+    sget-object v2, Lcom/google/eq;->ENUM:Lcom/google/eq;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xe
+
+    sget-object v2, Lcom/google/eq;->SFIXED32:Lcom/google/eq;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xf
+
+    sget-object v2, Lcom/google/eq;->SFIXED64:Lcom/google/eq;
+
+    aput-object v2, v0, v1
+
+    sget-object v1, Lcom/google/eq;->SINT32:Lcom/google/eq;
+
+    aput-object v1, v0, v3
+
+    const/16 v1, 0x11
+
+    sget-object v2, Lcom/google/eq;->SINT64:Lcom/google/eq;
+
+    aput-object v2, v0, v1
+
+    sput-object v0, Lcom/google/eq;->c:[Lcom/google/eq;
+
     return-void
+
+    .line 4294967295
+    :cond_0
+    aget-char v10, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_0
+
+    move v0, v4
+
+    :goto_12
+    xor-int/2addr v0, v10
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_0
+
+    :pswitch_0
+    move v0, v1
+
+    goto :goto_12
+
+    :pswitch_1
+    move v0, v2
+
+    goto :goto_12
+
+    :pswitch_2
+    const/16 v0, 0x68
+
+    goto :goto_12
+
+    :pswitch_3
+    move v0, v3
+
+    goto :goto_12
+
+    :cond_1
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_1
+
+    move v0, v4
+
+    :goto_13
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_1
+
+    :pswitch_4
+    move v0, v1
+
+    goto :goto_13
+
+    :pswitch_5
+    move v0, v2
+
+    goto :goto_13
+
+    :pswitch_6
+    const/16 v0, 0x68
+
+    goto :goto_13
+
+    :pswitch_7
+    move v0, v3
+
+    goto :goto_13
+
+    :cond_2
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_2
+
+    move v0, v4
+
+    :goto_14
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_2
+
+    :pswitch_8
+    move v0, v1
+
+    goto :goto_14
+
+    :pswitch_9
+    move v0, v2
+
+    goto :goto_14
+
+    :pswitch_a
+    const/16 v0, 0x68
+
+    goto :goto_14
+
+    :pswitch_b
+    move v0, v3
+
+    goto :goto_14
+
+    :cond_3
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_3
+
+    move v0, v4
+
+    :goto_15
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_3
+
+    :pswitch_c
+    move v0, v1
+
+    goto :goto_15
+
+    :pswitch_d
+    move v0, v2
+
+    goto :goto_15
+
+    :pswitch_e
+    const/16 v0, 0x68
+
+    goto :goto_15
+
+    :pswitch_f
+    move v0, v3
+
+    goto :goto_15
+
+    :cond_4
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_4
+
+    move v0, v4
+
+    :goto_16
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_4
+
+    :pswitch_10
+    move v0, v1
+
+    goto :goto_16
+
+    :pswitch_11
+    move v0, v2
+
+    goto :goto_16
+
+    :pswitch_12
+    const/16 v0, 0x68
+
+    goto :goto_16
+
+    :pswitch_13
+    move v0, v3
+
+    goto :goto_16
+
+    :cond_5
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_5
+
+    move v0, v4
+
+    :goto_17
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_5
+
+    :pswitch_14
+    move v0, v1
+
+    goto :goto_17
+
+    :pswitch_15
+    move v0, v2
+
+    goto :goto_17
+
+    :pswitch_16
+    const/16 v0, 0x68
+
+    goto :goto_17
+
+    :pswitch_17
+    move v0, v3
+
+    goto :goto_17
+
+    :cond_6
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_6
+
+    move v0, v4
+
+    :goto_18
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_6
+
+    :pswitch_18
+    move v0, v1
+
+    goto :goto_18
+
+    :pswitch_19
+    move v0, v2
+
+    goto :goto_18
+
+    :pswitch_1a
+    const/16 v0, 0x68
+
+    goto :goto_18
+
+    :pswitch_1b
+    move v0, v3
+
+    goto :goto_18
+
+    :cond_7
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_7
+
+    move v0, v4
+
+    :goto_19
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_7
+
+    :pswitch_1c
+    move v0, v1
+
+    goto :goto_19
+
+    :pswitch_1d
+    move v0, v2
+
+    goto :goto_19
+
+    :pswitch_1e
+    const/16 v0, 0x68
+
+    goto :goto_19
+
+    :pswitch_1f
+    move v0, v3
+
+    goto :goto_19
+
+    :cond_8
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_8
+
+    move v0, v4
+
+    :goto_1a
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_8
+
+    :pswitch_20
+    move v0, v1
+
+    goto :goto_1a
+
+    :pswitch_21
+    move v0, v2
+
+    goto :goto_1a
+
+    :pswitch_22
+    const/16 v0, 0x68
+
+    goto :goto_1a
+
+    :pswitch_23
+    move v0, v3
+
+    goto :goto_1a
+
+    :cond_9
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_9
+
+    move v0, v4
+
+    :goto_1b
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_9
+
+    :pswitch_24
+    move v0, v1
+
+    goto :goto_1b
+
+    :pswitch_25
+    move v0, v2
+
+    goto :goto_1b
+
+    :pswitch_26
+    const/16 v0, 0x68
+
+    goto :goto_1b
+
+    :pswitch_27
+    move v0, v3
+
+    goto :goto_1b
+
+    :cond_a
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_a
+
+    move v0, v4
+
+    :goto_1c
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_a
+
+    :pswitch_28
+    move v0, v1
+
+    goto :goto_1c
+
+    :pswitch_29
+    move v0, v2
+
+    goto :goto_1c
+
+    :pswitch_2a
+    const/16 v0, 0x68
+
+    goto :goto_1c
+
+    :pswitch_2b
+    move v0, v3
+
+    goto :goto_1c
+
+    :cond_b
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_b
+
+    move v0, v4
+
+    :goto_1d
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_b
+
+    :pswitch_2c
+    move v0, v1
+
+    goto :goto_1d
+
+    :pswitch_2d
+    move v0, v2
+
+    goto :goto_1d
+
+    :pswitch_2e
+    const/16 v0, 0x68
+
+    goto :goto_1d
+
+    :pswitch_2f
+    move v0, v3
+
+    goto :goto_1d
+
+    :cond_c
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_c
+
+    move v0, v4
+
+    :goto_1e
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_c
+
+    :pswitch_30
+    move v0, v1
+
+    goto :goto_1e
+
+    :pswitch_31
+    move v0, v2
+
+    goto :goto_1e
+
+    :pswitch_32
+    const/16 v0, 0x68
+
+    goto :goto_1e
+
+    :pswitch_33
+    move v0, v3
+
+    goto :goto_1e
+
+    :cond_d
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_d
+
+    move v0, v4
+
+    :goto_1f
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_d
+
+    :pswitch_34
+    move v0, v1
+
+    goto :goto_1f
+
+    :pswitch_35
+    move v0, v2
+
+    goto :goto_1f
+
+    :pswitch_36
+    const/16 v0, 0x68
+
+    goto :goto_1f
+
+    :pswitch_37
+    move v0, v3
+
+    goto :goto_1f
+
+    :cond_e
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_e
+
+    move v0, v4
+
+    :goto_20
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_e
+
+    :pswitch_38
+    move v0, v1
+
+    goto :goto_20
+
+    :pswitch_39
+    move v0, v2
+
+    goto :goto_20
+
+    :pswitch_3a
+    const/16 v0, 0x68
+
+    goto :goto_20
+
+    :pswitch_3b
+    move v0, v3
+
+    goto :goto_20
+
+    :cond_f
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_f
+
+    move v0, v4
+
+    :goto_21
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_f
+
+    :pswitch_3c
+    move v0, v1
+
+    goto :goto_21
+
+    :pswitch_3d
+    move v0, v2
+
+    goto :goto_21
+
+    :pswitch_3e
+    const/16 v0, 0x68
+
+    goto :goto_21
+
+    :pswitch_3f
+    move v0, v3
+
+    goto :goto_21
+
+    :cond_10
+    aget-char v10, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_10
+
+    move v0, v4
+
+    :goto_22
+    xor-int/2addr v0, v10
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_10
+
+    :pswitch_40
+    move v0, v1
+
+    goto :goto_22
+
+    :pswitch_41
+    move v0, v2
+
+    goto :goto_22
+
+    :pswitch_42
+    const/16 v0, 0x68
+
+    goto :goto_22
+
+    :pswitch_43
+    move v0, v3
+
+    goto :goto_22
+
+    :cond_11
+    aget-char v11, v5, v7
+
+    rem-int/lit8 v0, v7, 0x5
+
+    packed-switch v0, :pswitch_data_11
+
+    move v0, v4
+
+    :goto_23
+    xor-int/2addr v0, v11
+
+    int-to-char v0, v0
+
+    aput-char v0, v5, v7
+
+    add-int/lit8 v0, v7, 0x1
+
+    move v7, v0
+
+    goto/16 :goto_11
+
+    :pswitch_44
+    move v0, v1
+
+    goto :goto_23
+
+    :pswitch_45
+    move v0, v2
+
+    goto :goto_23
+
+    :pswitch_46
+    const/16 v0, 0x68
+
+    goto :goto_23
+
+    :pswitch_47
+    move v0, v3
+
+    goto :goto_23
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_4
+        :pswitch_5
+        :pswitch_6
+        :pswitch_7
+    .end packed-switch
+
+    :pswitch_data_2
+    .packed-switch 0x0
+        :pswitch_8
+        :pswitch_9
+        :pswitch_a
+        :pswitch_b
+    .end packed-switch
+
+    :pswitch_data_3
+    .packed-switch 0x0
+        :pswitch_c
+        :pswitch_d
+        :pswitch_e
+        :pswitch_f
+    .end packed-switch
+
+    :pswitch_data_4
+    .packed-switch 0x0
+        :pswitch_10
+        :pswitch_11
+        :pswitch_12
+        :pswitch_13
+    .end packed-switch
+
+    :pswitch_data_5
+    .packed-switch 0x0
+        :pswitch_14
+        :pswitch_15
+        :pswitch_16
+        :pswitch_17
+    .end packed-switch
+
+    :pswitch_data_6
+    .packed-switch 0x0
+        :pswitch_18
+        :pswitch_19
+        :pswitch_1a
+        :pswitch_1b
+    .end packed-switch
+
+    :pswitch_data_7
+    .packed-switch 0x0
+        :pswitch_1c
+        :pswitch_1d
+        :pswitch_1e
+        :pswitch_1f
+    .end packed-switch
+
+    :pswitch_data_8
+    .packed-switch 0x0
+        :pswitch_20
+        :pswitch_21
+        :pswitch_22
+        :pswitch_23
+    .end packed-switch
+
+    :pswitch_data_9
+    .packed-switch 0x0
+        :pswitch_24
+        :pswitch_25
+        :pswitch_26
+        :pswitch_27
+    .end packed-switch
+
+    :pswitch_data_a
+    .packed-switch 0x0
+        :pswitch_28
+        :pswitch_29
+        :pswitch_2a
+        :pswitch_2b
+    .end packed-switch
+
+    :pswitch_data_b
+    .packed-switch 0x0
+        :pswitch_2c
+        :pswitch_2d
+        :pswitch_2e
+        :pswitch_2f
+    .end packed-switch
+
+    :pswitch_data_c
+    .packed-switch 0x0
+        :pswitch_30
+        :pswitch_31
+        :pswitch_32
+        :pswitch_33
+    .end packed-switch
+
+    :pswitch_data_d
+    .packed-switch 0x0
+        :pswitch_34
+        :pswitch_35
+        :pswitch_36
+        :pswitch_37
+    .end packed-switch
+
+    :pswitch_data_e
+    .packed-switch 0x0
+        :pswitch_38
+        :pswitch_39
+        :pswitch_3a
+        :pswitch_3b
+    .end packed-switch
+
+    :pswitch_data_f
+    .packed-switch 0x0
+        :pswitch_3c
+        :pswitch_3d
+        :pswitch_3e
+        :pswitch_3f
+    .end packed-switch
+
+    :pswitch_data_10
+    .packed-switch 0x0
+        :pswitch_40
+        :pswitch_41
+        :pswitch_42
+        :pswitch_43
+    .end packed-switch
+
+    :pswitch_data_11
+    .packed-switch 0x0
+        :pswitch_44
+        :pswitch_45
+        :pswitch_46
+        :pswitch_47
+    .end packed-switch
+.end method
+
+.method private constructor <init>(Ljava/lang/String;ILcom/google/b;I)V
+    .locals 0
+
+    .prologue
+    .line 24
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 1
+    iput-object p3, p0, Lcom/google/eq;->a:Lcom/google/b;
+
+    .line 2
+    iput p4, p0, Lcom/google/eq;->b:I
+
+    .line 19
+    return-void
+.end method
+
+.method constructor <init>(Ljava/lang/String;ILcom/google/b;ILcom/google/e;)V
+    .locals 0
+
+    .prologue
+    .line 25
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/eq;-><init>(Ljava/lang/String;ILcom/google/b;I)V
+
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lcom/google/eq;
+    .locals 1
+
+    .prologue
+    .line 17
+    const-class v0, Lcom/google/eq;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/eq;
+
+    return-object v0
+.end method
+
+.method public static values()[Lcom/google/eq;
+    .locals 1
+
+    .prologue
+    .line 22
+    sget-object v0, Lcom/google/eq;->c:[Lcom/google/eq;
+
+    invoke-virtual {v0}, [Lcom/google/eq;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Lcom/google/eq;
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public a()Lcom/google/aO;
+.method public getJavaType()Lcom/google/b;
     .locals 1
 
     .prologue
-    .line 87
-    invoke-virtual {p0}, Lcom/google/eq;->i()Lcom/google/aw;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public a(I)Lcom/google/ar;
-    .locals 1
-
-    .prologue
-    .line 59
-    iget-object v0, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    if-nez v0, :cond_0
-
-    .line 19
-    iget-object v0, p0, Lcom/google/eq;->h:Ljava/util/List;
-
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/google/ar;
-
-    :goto_0
-    return-object v0
-
-    .line 7
-    :cond_0
-    iget-object v0, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    invoke-virtual {v0, p1}, Lcom/google/cW;->a(I)Lcom/google/aV;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/google/ar;
-
-    goto :goto_0
-.end method
-
-.method public a(Lcom/google/dP;Lcom/google/C;)Lcom/google/b3;
-    .locals 1
-
-    .prologue
-    .line 13
-    invoke-virtual {p0, p1, p2}, Lcom/google/eq;->a(Lcom/google/dP;Lcom/google/C;)Lcom/google/eq;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public a(Lcom/google/aO;)Lcom/google/bb;
-    .locals 1
-
-    .prologue
-    .line 66
-    invoke-virtual {p0, p1}, Lcom/google/eq;->a(Lcom/google/aO;)Lcom/google/eq;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method protected a()Lcom/google/dK;
-    .locals 3
-
-    .prologue
-    .line 91
-    invoke-static {}, Lcom/google/dM;->C()Lcom/google/dK;
-
-    move-result-object v0
-
-    const-class v1, Lcom/google/aw;
-
-    const-class v2, Lcom/google/eq;
-
-    invoke-virtual {v0, v1, v2}, Lcom/google/dK;->a(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/dK;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public a()Lcom/google/e5;
-    .locals 1
-
-    .prologue
-    .line 90
-    invoke-virtual {p0}, Lcom/google/eq;->e()Lcom/google/eq;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public a(Lcom/google/dP;Lcom/google/C;)Lcom/google/e5;
-    .locals 1
-
-    .prologue
-    .line 28
-    invoke-virtual {p0, p1, p2}, Lcom/google/eq;->a(Lcom/google/dP;Lcom/google/C;)Lcom/google/eq;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public a()Lcom/google/eE;
-    .locals 1
-
-    .prologue
-    .line 92
-    invoke-virtual {p0}, Lcom/google/eq;->i()Lcom/google/aw;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public a()Lcom/google/eH;
-    .locals 1
-
-    .prologue
-    .line 64
-    invoke-virtual {p0}, Lcom/google/eq;->e()Lcom/google/eq;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public a(Lcom/google/aO;)Lcom/google/eH;
-    .locals 1
-
-    .prologue
-    .line 106
-    invoke-virtual {p0, p1}, Lcom/google/eq;->a(Lcom/google/aO;)Lcom/google/eq;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public a(Lcom/google/dP;Lcom/google/C;)Lcom/google/eH;
-    .locals 1
-
-    .prologue
-    .line 40
-    invoke-virtual {p0, p1, p2}, Lcom/google/eq;->a(Lcom/google/dP;Lcom/google/C;)Lcom/google/eq;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public a()Lcom/google/eS;
-    .locals 1
-
-    .prologue
-    .line 65
-    invoke-virtual {p0}, Lcom/google/eq;->e()Lcom/google/eq;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public a(Lcom/google/aO;)Lcom/google/eq;
-    .locals 1
-
-    .prologue
-    .line 8
-    instance-of v0, p1, Lcom/google/aw;
-
-    if-eqz v0, :cond_0
-
-    .line 35
-    check-cast p1, Lcom/google/aw;
-
-    invoke-virtual {p0, p1}, Lcom/google/eq;->a(Lcom/google/aw;)Lcom/google/eq;
-
-    move-result-object p0
-
-    .line 47
-    :goto_0
-    return-object p0
-
-    .line 83
-    :cond_0
-    invoke-super {p0, p1}, Lcom/google/eS;->a(Lcom/google/aO;)Lcom/google/eH;
-
-    goto :goto_0
-.end method
-
-.method public a(Lcom/google/aw;)Lcom/google/eq;
-    .locals 4
-
-    .prologue
-    const/4 v0, 0x0
-
-    sget v1, Lcom/google/a8;->b:I
-
-    .line 116
-    invoke-static {}, Lcom/google/aw;->e()Lcom/google/aw;
-
-    move-result-object v2
-
-    if-ne p1, v2, :cond_0
-
-    :goto_0
-    return-object p0
-
-    .line 53
-    :cond_0
-    invoke-virtual {p1}, Lcom/google/aw;->h()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    .line 115
-    invoke-virtual {p1}, Lcom/google/aw;->k()Z
-
-    move-result v2
-
-    invoke-virtual {p0, v2}, Lcom/google/eq;->a(Z)Lcom/google/eq;
-
-    .line 108
-    :cond_1
-    iget-object v2, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    if-nez v2, :cond_4
-
-    .line 89
-    invoke-static {p1}, Lcom/google/aw;->a(Lcom/google/aw;)Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Ljava/util/List;->isEmpty()Z
-
-    move-result v2
-
-    if-nez v2, :cond_7
-
-    .line 34
-    iget-object v2, p0, Lcom/google/eq;->h:Ljava/util/List;
-
-    invoke-interface {v2}, Ljava/util/List;->isEmpty()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    .line 105
-    invoke-static {p1}, Lcom/google/aw;->a(Lcom/google/aw;)Ljava/util/List;
-
-    move-result-object v2
-
-    iput-object v2, p0, Lcom/google/eq;->h:Ljava/util/List;
-
-    .line 36
-    iget v2, p0, Lcom/google/eq;->i:I
-
-    and-int/lit8 v2, v2, -0x3
-
-    iput v2, p0, Lcom/google/eq;->i:I
-
-    if-eqz v1, :cond_3
-
-    .line 5
-    :cond_2
-    invoke-direct {p0}, Lcom/google/eq;->j()V
-
-    .line 80
-    iget-object v2, p0, Lcom/google/eq;->h:Ljava/util/List;
-
-    invoke-static {p1}, Lcom/google/aw;->a(Lcom/google/aw;)Ljava/util/List;
-
-    move-result-object v3
-
-    invoke-interface {v2, v3}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
-
-    .line 94
-    :cond_3
-    invoke-virtual {p0}, Lcom/google/eq;->b()V
-
-    if-eqz v1, :cond_7
-
-    .line 70
-    :cond_4
-    invoke-static {p1}, Lcom/google/aw;->a(Lcom/google/aw;)Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Ljava/util/List;->isEmpty()Z
-
-    move-result v2
-
-    if-nez v2, :cond_7
-
-    .line 69
-    iget-object v2, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    invoke-virtual {v2}, Lcom/google/cW;->b()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_6
-
-    .line 56
-    iget-object v2, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    invoke-virtual {v2}, Lcom/google/cW;->g()V
-
-    .line 52
-    iput-object v0, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    .line 32
-    invoke-static {p1}, Lcom/google/aw;->a(Lcom/google/aw;)Ljava/util/List;
-
-    move-result-object v2
-
-    iput-object v2, p0, Lcom/google/eq;->h:Ljava/util/List;
-
-    .line 12
-    iget v2, p0, Lcom/google/eq;->i:I
-
-    and-int/lit8 v2, v2, -0x3
-
-    iput v2, p0, Lcom/google/eq;->i:I
-
-    .line 74
-    sget-boolean v2, Lcom/google/aV;->d:Z
-
-    if-eqz v2, :cond_5
-
-    invoke-direct {p0}, Lcom/google/eq;->c()Lcom/google/cW;
-
-    move-result-object v0
-
-    :cond_5
-    iput-object v0, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    if-eqz v1, :cond_7
-
-    .line 1
-    :cond_6
-    iget-object v0, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    invoke-static {p1}, Lcom/google/aw;->a(Lcom/google/aw;)Ljava/util/List;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/google/cW;->a(Ljava/lang/Iterable;)Lcom/google/cW;
-
-    .line 97
-    :cond_7
-    invoke-virtual {p0, p1}, Lcom/google/eq;->a(Lcom/google/aJ;)V
-
-    .line 72
-    invoke-virtual {p1}, Lcom/google/aw;->d()Lcom/google/d1;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lcom/google/eq;->a(Lcom/google/d1;)Lcom/google/eG;
-
-    goto/16 :goto_0
-.end method
-
-.method public a(Lcom/google/dP;Lcom/google/C;)Lcom/google/eq;
-    .locals 4
-
-    .prologue
-    .line 18
-    const/4 v2, 0x0
-
-    .line 54
-    :try_start_0
-    sget-object v0, Lcom/google/aw;->n:Lcom/google/g6;
-
-    invoke-interface {v0, p1, p2}, Lcom/google/g6;->a(Lcom/google/dP;Lcom/google/C;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/google/aw;
-    :try_end_0
-    .catch Lcom/google/bM; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    .line 88
-    if-eqz v0, :cond_0
-
-    .line 62
-    :try_start_1
-    invoke-virtual {p0, v0}, Lcom/google/eq;->a(Lcom/google/aw;)Lcom/google/eq;
-    :try_end_1
-    .catch Lcom/google/bM; {:try_start_1 .. :try_end_1} :catch_2
-
-    .line 103
-    :cond_0
-    return-object p0
-
-    .line 48
-    :catch_0
-    move-exception v0
-
-    move-object v1, v0
-
-    .line 101
-    :try_start_2
-    invoke-virtual {v1}, Lcom/google/bM;->a()Lcom/google/eE;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/google/aw;
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    .line 46
-    :try_start_3
-    throw v1
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    .line 88
-    :catchall_0
-    move-exception v1
-
-    move-object v3, v1
-
-    move-object v1, v0
-
-    move-object v0, v3
-
-    :goto_0
-    if-eqz v1, :cond_1
-
-    .line 62
-    :try_start_4
-    invoke-virtual {p0, v1}, Lcom/google/eq;->a(Lcom/google/aw;)Lcom/google/eq;
-    :try_end_4
-    .catch Lcom/google/bM; {:try_start_4 .. :try_end_4} :catch_1
-
-    .line 88
-    :cond_1
-    throw v0
-
-    .line 62
-    :catch_1
-    move-exception v0
-
-    throw v0
-
-    :catch_2
-    move-exception v0
-
-    throw v0
-
-    .line 88
-    :catchall_1
-    move-exception v0
-
-    move-object v1, v2
-
-    goto :goto_0
-.end method
-
-.method public a(Z)Lcom/google/eq;
-    .locals 1
-
-    .prologue
-    .line 82
-    iget v0, p0, Lcom/google/eq;->i:I
-
-    or-int/lit8 v0, v0, 0x1
-
-    iput v0, p0, Lcom/google/eq;->i:I
-
     .line 4
-    iput-boolean p1, p0, Lcom/google/eq;->g:Z
-
-    .line 50
-    invoke-virtual {p0}, Lcom/google/eq;->b()V
-
-    .line 76
-    return-object p0
-.end method
-
-.method public b()Lcom/google/aO;
-    .locals 1
-
-    .prologue
-    .line 73
-    invoke-virtual {p0}, Lcom/google/eq;->b()Lcom/google/aw;
-
-    move-result-object v0
+    iget-object v0, p0, Lcom/google/eq;->a:Lcom/google/b;
 
     return-object v0
 .end method
 
-.method public b()Lcom/google/aw;
+.method public getWireType()I
     .locals 1
 
     .prologue
-    .line 78
-    invoke-static {}, Lcom/google/aw;->e()Lcom/google/aw;
+    .line 7
+    iget v0, p0, Lcom/google/eq;->b:I
 
-    move-result-object v0
-
-    return-object v0
+    return v0
 .end method
 
-.method public b()Lcom/google/eE;
+.method public isPackable()Z
     .locals 1
-
-    .prologue
-    .line 33
-    invoke-virtual {p0}, Lcom/google/eq;->d()Lcom/google/aw;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public b()Lcom/google/g7;
-    .locals 1
-
-    .prologue
-    .line 102
-    invoke-static {}, Lcom/google/dM;->J()Lcom/google/g7;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public c()Lcom/google/aO;
-    .locals 1
-
-    .prologue
-    .line 30
-    invoke-virtual {p0}, Lcom/google/eq;->d()Lcom/google/aw;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public c()Lcom/google/eE;
-    .locals 1
-
-    .prologue
-    .line 86
-    invoke-virtual {p0}, Lcom/google/eq;->b()Lcom/google/aw;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public clone()Ljava/lang/Object;
-    .locals 1
-
-    .prologue
-    .line 112
-    invoke-virtual {p0}, Lcom/google/eq;->e()Lcom/google/eq;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public d()Lcom/google/aw;
-    .locals 2
 
     .prologue
     .line 29
-    invoke-virtual {p0}, Lcom/google/eq;->i()Lcom/google/aw;
-
-    move-result-object v0
-
-    .line 49
-    invoke-virtual {v0}, Lcom/google/aw;->d()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 37
-    invoke-static {v0}, Lcom/google/eq;->b(Lcom/google/aO;)Lcom/google/gh;
-
-    move-result-object v0
-
-    throw v0
-
-    .line 21
-    :cond_0
-    return-object v0
-.end method
-
-.method public final d()Z
-    .locals 4
-
-    .prologue
-    const/4 v1, 0x0
-
-    sget v2, Lcom/google/a8;->b:I
-
-    move v0, v1
-
-    .line 22
-    :cond_0
-    invoke-virtual {p0}, Lcom/google/eq;->g()I
-
-    move-result v3
-
-    if-ge v0, v3, :cond_3
-
-    .line 75
-    invoke-virtual {p0, v0}, Lcom/google/eq;->a(I)Lcom/google/ar;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/google/ar;->d()Z
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    .line 58
-    :cond_1
-    :goto_0
-    return v1
-
-    .line 16
-    :cond_2
-    add-int/lit8 v0, v0, 0x1
-
-    if-eqz v2, :cond_0
-
-    .line 42
-    :cond_3
-    invoke-virtual {p0}, Lcom/google/eq;->c()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 45
-    const/4 v1, 0x1
-
-    goto :goto_0
-.end method
-
-.method public e()Lcom/google/eq;
-    .locals 2
-
-    .prologue
-    .line 79
-    invoke-static {}, Lcom/google/eq;->f()Lcom/google/eq;
-
-    move-result-object v0
-
-    invoke-virtual {p0}, Lcom/google/eq;->i()Lcom/google/aw;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/google/eq;->a(Lcom/google/aw;)Lcom/google/eq;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public g()I
-    .locals 1
-
-    .prologue
-    .line 44
-    iget-object v0, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    if-nez v0, :cond_0
-
-    .line 113
-    iget-object v0, p0, Lcom/google/eq;->h:Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    :goto_0
-    return v0
-
-    .line 104
-    :cond_0
-    iget-object v0, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    invoke-virtual {v0}, Lcom/google/cW;->a()I
-
-    move-result v0
-
-    goto :goto_0
-.end method
-
-.method public h()Lcom/google/eG;
-    .locals 1
-
-    .prologue
-    .line 55
-    invoke-virtual {p0}, Lcom/google/eq;->e()Lcom/google/eq;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public i()Lcom/google/aw;
-    .locals 4
-
-    .prologue
     const/4 v0, 0x1
 
-    .line 109
-    new-instance v2, Lcom/google/aw;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v2, p0, v1}, Lcom/google/aw;-><init>(Lcom/google/eS;Lcom/google/fY;)V
-
-    .line 93
-    iget v3, p0, Lcom/google/eq;->i:I
-
-    .line 10
-    const/4 v1, 0x0
-
-    .line 6
-    and-int/lit8 v3, v3, 0x1
-
-    if-ne v3, v0, :cond_3
-
-    .line 41
-    :goto_0
-    iget-boolean v1, p0, Lcom/google/eq;->g:Z
-
-    invoke-static {v2, v1}, Lcom/google/aw;->a(Lcom/google/aw;Z)Z
-
-    .line 23
-    iget-object v1, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    if-nez v1, :cond_1
-
-    .line 2
-    iget v1, p0, Lcom/google/eq;->i:I
-
-    and-int/lit8 v1, v1, 0x2
-
-    const/4 v3, 0x2
-
-    if-ne v1, v3, :cond_0
-
-    .line 107
-    iget-object v1, p0, Lcom/google/eq;->h:Ljava/util/List;
-
-    invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/google/eq;->h:Ljava/util/List;
-
-    .line 3
-    iget v1, p0, Lcom/google/eq;->i:I
-
-    and-int/lit8 v1, v1, -0x3
-
-    iput v1, p0, Lcom/google/eq;->i:I
-
-    .line 39
-    :cond_0
-    iget-object v1, p0, Lcom/google/eq;->h:Ljava/util/List;
-
-    invoke-static {v2, v1}, Lcom/google/aw;->a(Lcom/google/aw;Ljava/util/List;)Ljava/util/List;
-
-    sget v1, Lcom/google/a8;->b:I
-
-    if-eqz v1, :cond_2
-
-    .line 96
-    :cond_1
-    iget-object v1, p0, Lcom/google/eq;->f:Lcom/google/cW;
-
-    invoke-virtual {v1}, Lcom/google/cW;->c()Ljava/util/List;
-
-    move-result-object v1
-
-    invoke-static {v2, v1}, Lcom/google/aw;->a(Lcom/google/aw;Ljava/util/List;)Ljava/util/List;
-
-    .line 63
-    :cond_2
-    invoke-static {v2, v0}, Lcom/google/aw;->a(Lcom/google/aw;I)I
-
-    .line 27
-    invoke-virtual {p0}, Lcom/google/eq;->d()V
-
-    .line 20
-    return-object v2
-
-    :cond_3
-    move v0, v1
-
-    goto :goto_0
+    return v0
 .end method

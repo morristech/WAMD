@@ -12,26 +12,26 @@
     .locals 2
 
     .prologue
-    .line 2
+    .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    .line 6
+    .line 2
     const/16 v1, 0xe
 
     if-lt v0, v1, :cond_0
 
-    .line 5
+    .line 1
     new-instance v0, Landroid/support/v4/text/ICUCompat$ICUCompatImplIcs;
 
     invoke-direct {v0}, Landroid/support/v4/text/ICUCompat$ICUCompatImplIcs;-><init>()V
 
     sput-object v0, Landroid/support/v4/text/ICUCompat;->IMPL:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
 
-    .line 4
+    .line 6
     :goto_0
     return-void
 
-    .line 7
+    .line 5
     :cond_0
     new-instance v0, Landroid/support/v4/text/ICUCompat$ICUCompatImplBase;
 
@@ -46,7 +46,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 7
     sget-object v0, Landroid/support/v4/text/ICUCompat;->IMPL:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/text/ICUCompat$ICUCompatImpl;->addLikelySubtags(Ljava/lang/String;)Ljava/lang/String;
@@ -60,7 +60,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 4
     sget-object v0, Landroid/support/v4/text/ICUCompat;->IMPL:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/text/ICUCompat$ICUCompatImpl;->getScript(Ljava/lang/String;)Ljava/lang/String;

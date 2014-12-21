@@ -1,13 +1,13 @@
-.class final Lcom/whatsapp/util/s;
+.class public Lcom/whatsapp/util/s;
 .super Ljava/lang/Object;
 .source "s.java"
 
 # interfaces
-.implements Lcom/whatsapp/util/v;
+.implements Lcom/whatsapp/util/ao;
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
@@ -19,50 +19,37 @@
 
 
 # virtual methods
-.method public a(Landroid/graphics/drawable/Drawable;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
-    .locals 4
+.method public a()I
+    .locals 2
 
     .prologue
-    const/4 v3, 0x0
-
-    .line 6
     .line 2
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    const/high16 v0, 0x42b00000
 
-    move-result-object v0
-
-    invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
-
-    move-result v1
-
-    int-to-float v1, v1
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/se;->b(F)F
-
-    move-result v0
-
-    float-to-int v0, v0
-
-    .line 3
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
     move-result-object v1
 
-    invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
+    iget v1, v1, Lcom/whatsapp/art;->u:F
 
-    move-result v2
+    mul-float/2addr v0, v1
 
-    int-to-float v2, v2
+    float-to-int v0, v0
 
-    invoke-virtual {v1, v2}, Lcom/whatsapp/se;->b(F)F
+    return v0
+.end method
 
-    move-result v1
+.method public a(Landroid/widget/ImageView;Landroid/graphics/Bitmap;Lcom/whatsapp/protocol/c9;)V
+    .locals 0
 
-    float-to-int v1, v1
-
-    .line 4
-    invoke-virtual {p1, v3, v3, v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+    .prologue
+    .line 3
+    if-eqz p2, :cond_0
 
     .line 5
-    return-object p1
+    invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+
+    .line 4
+    :cond_0
+    return-void
 .end method

@@ -14,10 +14,10 @@
     .prologue
     sget-boolean v0, Landroid/support/v4/app/NotificationCompatApi21$Builder;->a:Z
 
-    .line 4
+    .line 5
     invoke-direct {p0}, Landroid/text/method/SingleLineTransformationMethod;-><init>()V
 
-    .line 1
+    .line 4
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -30,7 +30,7 @@
 
     iput-object v1, p0, Landroid/support/v4/view/PagerTitleStripIcs$SingleLineAllCapsTransform;->mLocale:Ljava/util/Locale;
 
-    .line 3
+    .line 2
     sget v1, Landroid/support/v4/app/RemoteInputCompatBase$RemoteInput;->a:I
 
     if-eqz v1, :cond_0
@@ -59,12 +59,12 @@
     .prologue
     sget-boolean v1, Landroid/support/v4/app/NotificationCompatApi21$Builder;->a:Z
 
-    .line 5
+    .line 3
     invoke-super {p0, p1, p2}, Landroid/text/method/SingleLineTransformationMethod;->getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    .line 2
+    .line 1
     if-eqz v0, :cond_1
 
     invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;

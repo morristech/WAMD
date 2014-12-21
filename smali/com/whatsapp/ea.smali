@@ -1,53 +1,40 @@
 .class Lcom/whatsapp/ea;
-.super Ljava/lang/Object;
+.super Lorg/apache/http/entity/EntityTemplate;
 .source "ea.java"
-
-# interfaces
-.implements Landroid/widget/AdapterView$OnItemClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ListChatInfo;
+.field final a:Lcom/whatsapp/af;
+
+.field b:J
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ListChatInfo;)V
-    .locals 0
+.method public constructor <init>(Lcom/whatsapp/af;Lorg/apache/http/entity/ContentProducer;J)V
+    .locals 1
 
     .prologue
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/ea;->a:Lcom/whatsapp/af;
+
     .line 4
-    iput-object p1, p0, Lcom/whatsapp/ea;->a:Lcom/whatsapp/ListChatInfo;
+    invoke-direct {p0, p2}, Lorg/apache/http/entity/EntityTemplate;-><init>(Lorg/apache/http/entity/ContentProducer;)V
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 5
+    iput-wide p3, p0, Lcom/whatsapp/ea;->b:J
 
+    .line 2
     return-void
 .end method
 
 
 # virtual methods
-.method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+.method public getContentLength()J
     .locals 2
 
     .prologue
-    .line 2
-    invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/whatsapp/adg;
-
-    .line 5
-    if-eqz v0, :cond_0
-
     .line 3
-    iget-object v1, p0, Lcom/whatsapp/ea;->a:Lcom/whatsapp/ListChatInfo;
+    iget-wide v0, p0, Lcom/whatsapp/ea;->b:J
 
-    invoke-static {v1, v0}, Lcom/whatsapp/ListChatInfo;->b(Lcom/whatsapp/ListChatInfo;Lcom/whatsapp/adg;)Lcom/whatsapp/adg;
-
-    .line 6
-    invoke-virtual {p2}, Landroid/view/View;->showContextMenu()Z
-
-    .line 1
-    :cond_0
-    return-void
+    return-wide v0
 .end method

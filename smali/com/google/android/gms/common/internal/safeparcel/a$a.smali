@@ -6,7 +6,7 @@
 .method public constructor <init>(Ljava/lang/String;Landroid/os/Parcel;)V
     .locals 3
 
-    sget v0, Lcom/google/android/gms/common/internal/safeparcel/b;->a:I
+    sget-boolean v0, Lcom/google/android/gms/common/internal/safeparcel/b;->a:Z
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -50,14 +50,22 @@
 
     invoke-direct {p0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    sget v1, Lcom/google/android/gms/dynamic/b$a;->a:I
+    sget-boolean v1, Lcom/google/android/gms/internal/jx;->a:Z
 
     if-eqz v1, :cond_0
 
-    add-int/lit8 v0, v0, 0x1
+    if-eqz v0, :cond_1
 
-    sput v0, Lcom/google/android/gms/common/internal/safeparcel/b;->a:I
+    const/4 v0, 0x0
+
+    :goto_0
+    sput-boolean v0, Lcom/google/android/gms/common/internal/safeparcel/b;->a:Z
 
     :cond_0
     return-void
+
+    :cond_1
+    const/4 v0, 0x1
+
+    goto :goto_0
 .end method

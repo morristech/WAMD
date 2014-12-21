@@ -12,17 +12,17 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1
+    .line 8
     invoke-static {}, Lcom/whatsapp/VideoFrameConverter;->create()I
 
     move-result v0
 
     iput v0, p0, Lcom/whatsapp/VideoFrameConverter;->a:I
 
-    .line 8
+    .line 2
     return-void
 .end method
 
@@ -52,7 +52,7 @@
 
     invoke-static {v0}, Lcom/whatsapp/VideoFrameConverter;->release(I)V
 
-    .line 5
+    .line 7
     return-void
 .end method
 
@@ -60,7 +60,7 @@
     .locals 11
 
     .prologue
-    .line 4
+    .line 5
     iget v0, p0, Lcom/whatsapp/VideoFrameConverter;->a:I
 
     move v1, p1
@@ -85,7 +85,7 @@
 
     invoke-static/range {v0 .. v10}, Lcom/whatsapp/VideoFrameConverter;->configure(IIIIIIIIIII)V
 
-    .line 6
+    .line 1
     return-void
 .end method
 
@@ -93,7 +93,7 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 4
     iget v0, p0, Lcom/whatsapp/VideoFrameConverter;->a:I
 
     invoke-static {v0, p1, p2}, Lcom/whatsapp/VideoFrameConverter;->convertFrame(ILjava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)V

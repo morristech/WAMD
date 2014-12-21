@@ -6,17 +6,23 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/google/android/gms/dynamic/b;Lcom/google/android/gms/maps/GoogleMapOptions;)Lcom/google/android/gms/maps/internal/IMapViewDelegate;
+.method public abstract a(Lcom/google/android/gms/dynamic/d;Lcom/google/android/gms/maps/GoogleMapOptions;)Lcom/google/android/gms/maps/internal/IMapViewDelegate;
 .end method
 
-.method public abstract a(Lcom/google/android/gms/dynamic/b;I)V
+.method public abstract a(Lcom/google/android/gms/dynamic/d;Lcom/google/android/gms/maps/StreetViewPanoramaOptions;)Lcom/google/android/gms/maps/internal/IStreetViewPanoramaViewDelegate;
 .end method
 
-.method public abstract bk()Lcom/google/android/gms/maps/internal/ICameraUpdateFactoryDelegate;
+.method public abstract a(Lcom/google/android/gms/dynamic/d;I)V
 .end method
 
-.method public abstract bl()Lcom/google/android/gms/maps/model/internal/a;
+.method public abstract j(Lcom/google/android/gms/dynamic/d;)Lcom/google/android/gms/maps/internal/IMapFragmentDelegate;
 .end method
 
-.method public abstract d(Lcom/google/android/gms/dynamic/b;)Lcom/google/android/gms/maps/internal/IMapFragmentDelegate;
+.method public abstract k(Lcom/google/android/gms/dynamic/d;)Lcom/google/android/gms/maps/internal/IStreetViewPanoramaFragmentDelegate;
+.end method
+
+.method public abstract nW()Lcom/google/android/gms/maps/internal/ICameraUpdateFactoryDelegate;
+.end method
+
+.method public abstract nX()Lcom/google/android/gms/maps/model/internal/g;
 .end method

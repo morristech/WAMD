@@ -18,23 +18,23 @@
     .locals 1
 
     .prologue
-    .line 28
+    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12
+    .line 2
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mAdapter:Landroid/widget/SpinnerAdapter;
 
-    .line 2
+    .line 24
     instance-of v0, p1, Landroid/widget/ListAdapter;
 
     if-eqz v0, :cond_0
 
-    .line 5
+    .line 10
     check-cast p1, Landroid/widget/ListAdapter;
 
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mListAdapter:Landroid/widget/ListAdapter;
 
-    .line 9
+    .line 18
     :cond_0
     return-void
 .end method
@@ -48,18 +48,18 @@
     .line 27
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mListAdapter:Landroid/widget/ListAdapter;
 
-    .line 8
+    .line 16
     if-eqz v0, :cond_0
 
-    .line 22
+    .line 15
     invoke-interface {v0}, Landroid/widget/ListAdapter;->areAllItemsEnabled()Z
 
     move-result v0
 
+    .line 17
     :goto_0
     return v0
 
-    .line 11
     :cond_0
     const/4 v0, 0x1
 
@@ -70,7 +70,7 @@
     .locals 1
 
     .prologue
-    .line 20
+    .line 21
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mAdapter:Landroid/widget/SpinnerAdapter;
 
     if-nez v0, :cond_0
@@ -94,22 +94,22 @@
     .locals 1
 
     .prologue
-    .line 29
+    .line 8
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mAdapter:Landroid/widget/SpinnerAdapter;
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x0
 
-    .line 4
+    .line 23
     :goto_0
     return-object v0
 
-    .line 29
+    .line 8
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mAdapter:Landroid/widget/SpinnerAdapter;
 
-    .line 4
+    .line 23
     invoke-interface {v0, p1, p2, p3}, Landroid/widget/SpinnerAdapter;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
@@ -121,7 +121,7 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 14
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mAdapter:Landroid/widget/SpinnerAdapter;
 
     if-nez v0, :cond_0
@@ -145,7 +145,7 @@
     .locals 2
 
     .prologue
-    .line 26
+    .line 6
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mAdapter:Landroid/widget/SpinnerAdapter;
 
     if-nez v0, :cond_0
@@ -169,7 +169,7 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 28
     const/4 v0, 0x0
 
     return v0
@@ -179,7 +179,7 @@
     .locals 1
 
     .prologue
-    .line 16
+    .line 13
     invoke-virtual {p0, p1, p2, p3}, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
@@ -191,7 +191,7 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 4
     const/4 v0, 0x1
 
     return v0
@@ -201,7 +201,7 @@
     .locals 1
 
     .prologue
-    .line 15
+    .line 19
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mAdapter:Landroid/widget/SpinnerAdapter;
 
     if-eqz v0, :cond_0
@@ -229,7 +229,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 25
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->getCount()I
 
     move-result v0
@@ -251,18 +251,18 @@
     .locals 1
 
     .prologue
-    .line 13
+    .line 3
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mListAdapter:Landroid/widget/ListAdapter;
 
-    .line 25
+    .line 11
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 9
     invoke-interface {v0, p1}, Landroid/widget/ListAdapter;->isEnabled(I)Z
 
     move-result v0
 
-    .line 18
+    .line 26
     :goto_0
     return v0
 
@@ -276,17 +276,17 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 5
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mAdapter:Landroid/widget/SpinnerAdapter;
 
     if-eqz v0, :cond_0
 
-    .line 23
+    .line 7
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mAdapter:Landroid/widget/SpinnerAdapter;
 
     invoke-interface {v0, p1}, Landroid/widget/SpinnerAdapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
 
-    .line 19
+    .line 22
     :cond_0
     return-void
 .end method
@@ -295,17 +295,17 @@
     .locals 1
 
     .prologue
-    .line 24
+    .line 1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mAdapter:Landroid/widget/SpinnerAdapter;
 
     if-eqz v0, :cond_0
 
-    .line 21
+    .line 12
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;->mAdapter:Landroid/widget/SpinnerAdapter;
 
     invoke-interface {v0, p1}, Landroid/widget/SpinnerAdapter;->unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
 
-    .line 10
+    .line 29
     :cond_0
     return-void
 .end method

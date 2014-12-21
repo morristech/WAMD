@@ -16,15 +16,15 @@
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
     .line 2
-    new-instance v0, Lcom/whatsapp/accountsync/g;
+    new-instance v0, Lcom/whatsapp/accountsync/e;
 
     const/4 v1, 0x1
 
-    invoke-direct {v0, p0, p0, v1}, Lcom/whatsapp/accountsync/g;-><init>(Lcom/whatsapp/accountsync/ContactsSyncAdapterService;Landroid/content/Context;Z)V
+    invoke-direct {v0, p0, p0, v1}, Lcom/whatsapp/accountsync/e;-><init>(Lcom/whatsapp/accountsync/ContactsSyncAdapterService;Landroid/content/Context;Z)V
 
     iput-object v0, p0, Lcom/whatsapp/accountsync/ContactsSyncAdapterService;->a:Landroid/content/AbstractThreadedSyncAdapter;
 
-    .line 4
+    .line 3
     return-void
 .end method
 
@@ -34,7 +34,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 4
     iget-object v0, p0, Lcom/whatsapp/accountsync/ContactsSyncAdapterService;->a:Landroid/content/AbstractThreadedSyncAdapter;
 
     invoke-virtual {v0}, Landroid/content/AbstractThreadedSyncAdapter;->getSyncAdapterBinder()Landroid/os/IBinder;

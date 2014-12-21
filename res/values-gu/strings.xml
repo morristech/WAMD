@@ -70,8 +70,6 @@
     <string name="audio_note_tip">રેકોર્ડ કરવા માટે દબાવી રાખો, મોકલવા માટે છોડી દો</string>
     <string name="audio_note_tip_2">લાંબા સમય સુધી સંદેશ રેકોર્ડ કરો</string>
     <string name="audio_note_top_mic_tip">કૃપા કરી તમારા ફોનની ટોચ ઉપર આપેલ માઇક્રોફોનમાં બોલો</string>
-    <string name="barcode_scanner_dialog_body">આ એપ્લિકેશન માટે બારકોડ સ્કેનર જરૂરી છે. તમે એક ઇન્સ્ટોલ કરવામાંગો છો?</string>
-    <string name="barcode_scanner_dialog_title">બારકોડ સ્કેનર ઇન્સ્ટોલ કરીએ?</string>
     <string name="block">રોકવું</string>
     <string name="block_ask">શું તમે ખરેખર આ સંપર્ક અટકાવવા માંગો છો ?</string>
     <string name="block_list_desc_1">"એક સંપર્ક અવરોધિત કરવા માટે ટોચ ખૂણે ચિહ્ન પર ટેપ કરો.
@@ -319,7 +317,6 @@
     <string name="eula_description">ક્રોસ પ્લેટફોર્મ વિશ્વના તમામ મિત્રો સાથે મોબાઇલ મેસેજિંગ</string>
     <string name="eula_tablets_not_supported">નોંધ: tablets ને હમણાં સમર્થન નથી.</string>
     <string name="eula_terms_of_service">સેવાની શરતો</string>
-    <string name="eula_title">WhatsApp માં તમારું સ્વાગત છે</string>
     <string name="existing_contact">હયાત</string>
     <string name="exit">છોડો</string>
     <string name="exit_group">સમૂહમાંથી નીકળો</string>
@@ -491,7 +488,6 @@
     <string name="insufficient_space_for_download_shared_storage">ડાઉનલોડ કરી શકાશે નહિ કારણ કે તમારી આંતરિક વહેચેલ સંગ્રહમાં જગ્યા નથી. તમારી આંતરિક વહેચેલ જગ્યા માંથી થોડીક ફાઈલો કાઢી નાખો અને ફરી પ્રયત્ન કરો</string>
     <string name="invalid_media_message_download">અમાન્ય સંદેશ માંથી મીડિયા ડાઉનલોડ શકય નથી. મેસેજ ફરી મોકલવાનો પ્રયાસ કરો.</string>
     <string name="invalid_message_forward">સંદેશ અમાન્ય સંપર્ક પર મોકલી ના શકાય.</string>
-    <string name="invalid_qr_code">QR કોડ અમાન્ય છે</string>
     <string name="invalid_url_for_download">ડાઉનલોડ કરી શકાતી નથી. પૂછો કે તે તમને ફરીથી મોકલી શકાય છે.</string>
     <string name="invite">આમંત્રણ</string>
     <string name="invite_friends">તમારા મિત્રો ને આમંત્રીત કરો</string>
@@ -537,7 +533,6 @@
     <string name="menuitem_add">ઉમેરો</string>
     <string name="menuitem_contacts">સંપર્કો</string>
     <string name="menuitem_debug">ડીબગ</string>
-    <string name="menuitem_delete_qr">QR કોડ કાઢી નાખો</string>
     <string name="menuitem_groupchat">નવું ગ્રૂપ</string>
     <string name="menuitem_list">નવું પ્રસારણ</string>
     <string name="menuitem_mute">મ્યૂટ કરો</string>
@@ -575,14 +570,10 @@
     <string name="msg_store_backup_failed">સંદેશા બેકઅપ કરવા માટે અક્ષમ</string>
     <string name="msg_store_backup_failed_try_again_later">મેસેજનું બેકઅપ લઇ શકાયું નથી. થોડી વાર પછી ફરી પ્રયત્ન કરો.</string>
     <string name="msg_store_backup_found">બેકઅપ મળ્યાં</string>
-    <string name="msg_store_backup_found_registration">સંદેશ બેકઅપ મળ્યાં</string>
     <string name="msg_store_backup_skipped">બેકઅપ છોડ્યું</string>
     <string name="msg_store_backup_skipped_no_media">સંદેશ બેકઅપ છોડ્યું: કોઈ મીડિયા કાર્ડ મળ્યા નથી.</string>
     <string name="msg_store_backup_skipped_read_only_media">સંદેશ બેકઅપ છોડ્યું: રીડ માત્ર મીડિયા કાર્ડ મળ્યા નથી.</string>
     <string name="msg_store_confirm">ખાતરી કરો</string>
-    <string name="msg_store_creation_backup_message">શું તમે બેકઅપ માંથી તમારા સંદેશ નો ઇતિહાસ પુનઃસ્થાપિત કરવા માંગો છો?</string>
-    <string name="msg_store_do_not_restore">પૂર્વવત કરશો નહીં</string>
-    <string name="msg_store_do_not_restore_no_thanks">ના, આભાર</string>
     <string name="msg_store_error_found">એક ત્રુટિ થઇ છે. મહેરબાની કરીને WhatsApp બંધ કરીને ફરી ચાલુ કરો.</string>
     <string name="msg_store_error_not_restored">માફ કરશો, તમારા કોઈપણ સંદેશ ઇતિહાસ બેકઅપ ને પુનઃસ્થાપિત કરવા અમે અસક્ષમ છીએ.</string>
     <string name="msg_store_last_confirmation_not_to_restore">સંદેશ નષ્ટ થઇ જશે. શું તમે ખરેખર તમે બેકઅપમાંથી તમારો સંદેશ ઇતિહાસ પુનઃસ્થાપિત કરવા નથી માંગતા?</string>
@@ -609,9 +600,6 @@
     <string name="need_sd_card_shared_storage">મહેરબાની કરી USB સંગ્રહ બંધ કરો અને ફરી પ્રયાસ કરો.</string>
     <string name="network_required">તમે કોઈપણ નેટવર્ક વપરાશ હાલમાં નથી.</string>
     <string name="network_usage_ask_reset_message">શું તમે ખરેખર આંકડા ફરીથી સેટ કરવા માંગો છો?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">છેલ્લો રીસેટ સમય:%1$s</string>
     <string name="network_usage_media_bytes_received">મીડિયા બાઇટ્સ પ્રાપ્ત થઈ છે:</string>
     <string name="network_usage_media_bytes_sent">મીડિયા બાઇટ્સ મોકલેલા છે.</string>
@@ -957,15 +945,8 @@ WhatsApp દ્વારા મોકલાયેલ"</string>
     <string name="software_expired_get_from_play">WhatsApp ની આ આવ્રુતિ બહૂ જૂની છે અને હ​વે કામ નથી કરતી. ક્રુપયા Google Play મા જઈને સહુથી ન​વી આવ્રતિ ડાઊનલોડ કરો.</string>
     <string name="software_expired_get_from_play_with_date">WhatsApp નું આ વર્ઝન જુનું છે, &lt;b>%1$s&lt;/b>. મહેરબાની કરી Google Play પર જઈ નવું વર્ઝન ડાઉનલોડ કરો..&lt;br>&lt;br>તમારા મોબાઈલની તારીખ &lt;b>%2$s&lt;/b>.છે, જે ખોટી હોય તો તારીખ સુધારી WhatsApp રીસ્ટાર્ટ કરો.</string>
     <string name="software_expired_with_date">WhatsApp વર્જ્ન જુનુ છે &lt;b>%1$s&lt;/b>. નવુ મેળવવા “Download” દબાવો.&lt;br>&lt;br> તમારી તારીખ &lt;b>%2$s&lt;/b>. છે જે ખોટી છે .સુધારો પછી WhatsApp ચાલુ કરો.</string>
-    <string name="spam_generic">"તમને WhatsApp ઉપર કામચલાઉ પ્રતિબંધિત કરવામાં આવ્યા છે કારણ કે તમે અમારી સેવાની શરતો નું ઉલ્લંઘન કર્યુ હોઈ શકે.
-તમે WhatsApp નો ફરી ઉપયોગ કરી શકશો:"</string>
     <string name="spam_learn_more">વધારે જાણો</string>
     <string name="spam_title">મર્યાદિત સમય માટે પ્રતિબંધિત</string>
-    <string name="spam_too_many_blocks">WhatsApp પર આપને થોડા સમય માટે પ્રતિબંધિત કરેલ છે, કારણકે ઘણા લોકોએ આપને પ્રતિબંધિત કરેલ છે.</string>
-    <string name="spam_too_many_messages">"તમને WhatsApp ઉપર કામચલાઉ પ્રતિબંધિત કરવામાં આવ્યા છે કારણ કે તમે એવા લોકોને ઘણા સંદેશા મોકલ્યા છે જેમની એડ્રેસ બુકમાં તમે નથી. 
-તમે WhatsApp નો ફરી ઉપયોગ કરી શકશો:"</string>
-    <string name="spam_too_many_people">"આપને થોડા સમય માટે WhatsApp પર પ્રતિબંધિત કરેલ છે. કારણકે આપે એક જ સંદેશો વધારે પડતા લોકોને મોકલેલ છે.
- આપ WhatsApp ફરીથી વાપરી શકશો :"</string>
     <string name="status">સ્થિતિ</string>
     <string name="status_default_at_gym">વ્યાયામશાળામાં છું.</string>
     <string name="status_default_at_movies">ફિલ્મ જોવું છું.</string>

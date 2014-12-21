@@ -13,7 +13,9 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 10
+    .locals 11
+
+    const/16 v6, 0x39
 
     const/4 v1, 0x0
 
@@ -21,7 +23,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "w\u0008\r< {\u0008\u0007~\":\u0017\u0012}$q\u0014\u0013< u\u0017\u0010a"
+    const-string v2, "DV\u0013g^HV\u0019%\\\tI\u000c&ZBJ\rg^FI\u000e:"
 
     const/4 v0, -0x1
 
@@ -36,20 +38,20 @@
 
     move-result-object v2
 
-    array-length v6, v2
+    array-length v7, v2
 
-    move v7, v6
+    move v8, v7
 
-    move v8, v1
+    move v9, v1
 
-    move-object v6, v2
+    move-object v7, v2
 
     :goto_1
-    if-gt v7, v8, :cond_0
+    if-gt v8, v9, :cond_0
 
     new-instance v2, Ljava/lang/String;
 
-    invoke-direct {v2, v6}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v2, v7}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v2}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -61,7 +63,7 @@
 
     const/4 v2, 0x1
 
-    const-string v0, "u\u0017\u0010=%u\u0004\u000bu5{\u0012\u000evjp\u0006\u0014shq\t\u0001p+q\u0003@"
+    const-string v0, "FI\u000ef[FZ\u0015.KHL\u0010-\u0014CX\n(\u0016BW\u001f+UB]^"
 
     move v3, v2
 
@@ -81,44 +83,44 @@
     return-void
 
     :cond_0
-    aget-char v9, v6, v8
+    aget-char v10, v7, v9
 
-    rem-int/lit8 v2, v8, 0x5
+    rem-int/lit8 v2, v9, 0x5
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0x47
+    move v2, v6
 
     :goto_2
-    xor-int/2addr v2, v9
+    xor-int/2addr v2, v10
 
     int-to-char v2, v2
 
-    aput-char v2, v6, v8
+    aput-char v2, v7, v9
 
-    add-int/lit8 v2, v8, 0x1
+    add-int/lit8 v2, v9, 0x1
 
-    move v8, v2
+    move v9, v2
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v2, 0x14
+    const/16 v2, 0x27
 
     goto :goto_2
 
     :pswitch_2
-    const/16 v2, 0x67
+    move v2, v6
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v2, 0x60
+    const/16 v2, 0x7e
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v2, 0x12
+    const/16 v2, 0x49
 
     goto :goto_2
 
@@ -140,7 +142,7 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 2
     iput-object p1, p0, Lcom/whatsapp/App$23;->a:Lcom/whatsapp/App;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -156,14 +158,14 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 7
-    sget-object v0, Lcom/whatsapp/App;->aR:Landroid/net/ConnectivityManager;
+    .line 4
+    sget-object v0, Lcom/whatsapp/App;->aC:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getBackgroundDataSetting()Z
 
     move-result v0
 
-    .line 2
+    .line 5
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -186,16 +188,16 @@
 
     invoke-static {v1}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 8
+    .line 7
     if-nez v0, :cond_0
 
-    .line 5
+    .line 8
     invoke-static {p1, v3}, Lcom/whatsapp/App;->a(Landroid/content/Context;Z)V
 
-    .line 1
-    invoke-static {p1}, Lcom/whatsapp/App;->g(Landroid/content/Context;)V
-
     .line 3
+    invoke-static {p1}, Lcom/whatsapp/App;->w(Landroid/content/Context;)V
+
+    .line 6
     :cond_0
     sget-object v0, Lcom/whatsapp/App$23;->z:[Ljava/lang/String;
 
@@ -203,8 +205,8 @@
 
     aget-object v0, v0, v1
 
-    invoke-static {v0}, Lcom/whatsapp/App;->m(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/whatsapp/App;->a(Ljava/lang/String;)V
 
-    .line 6
+    .line 1
     return-void
 .end method

@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 1
     iput-object p1, p0, Lcom/actionbarsherlock/widget/SearchView$9;->this$0:Lcom/actionbarsherlock/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -34,7 +34,7 @@
 
     invoke-static {v0}, Lcom/actionbarsherlock/widget/SearchView;->access$1000(Lcom/actionbarsherlock/widget/SearchView;)V
 
-    .line 1
+    .line 2
     const/4 v0, 0x1
 
     return v0

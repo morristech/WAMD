@@ -1,26 +1,34 @@
-.class Lcom/whatsapp/a1y;
+.class final Lcom/whatsapp/a1y;
 .super Ljava/lang/Object;
 .source "a1y.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/dc;
+.field final a:Z
 
-.field final b:I
+.field final b:Ljava/lang/String;
+
+.field final c:Z
+
+.field final d:Z
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/dc;I)V
+.method constructor <init>(ZLjava/lang/String;ZZ)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/a1y;->a:Lcom/whatsapp/dc;
+    .line 3
+    iput-boolean p1, p0, Lcom/whatsapp/a1y;->c:Z
 
-    iput p2, p0, Lcom/whatsapp/a1y;->b:I
+    iput-object p2, p0, Lcom/whatsapp/a1y;->b:Ljava/lang/String;
+
+    iput-boolean p3, p0, Lcom/whatsapp/a1y;->a:Z
+
+    iput-boolean p4, p0, Lcom/whatsapp/a1y;->d:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,32 +37,63 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+.method public run()V
+    .locals 4
 
     .prologue
     .line 4
-    iget-object v0, p0, Lcom/whatsapp/a1y;->a:Lcom/whatsapp/dc;
+    iget-boolean v0, p0, Lcom/whatsapp/a1y;->c:Z
 
-    invoke-static {v0}, Lcom/whatsapp/dc;->b(Lcom/whatsapp/dc;)Landroid/app/Activity;
+    if-eqz v0, :cond_0
 
-    move-result-object v0
+    .line 1
+    invoke-static {}, Lcom/whatsapp/App;->aC()Ljava/lang/Object;
 
-    iget v1, p0, Lcom/whatsapp/a1y;->b:I
+    move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->removeDialog(I)V
+    monitor-enter v1
+
+    .line 6
+    :try_start_0
+    iget-object v0, p0, Lcom/whatsapp/a1y;->b:Ljava/lang/String;
+
+    iget-boolean v2, p0, Lcom/whatsapp/a1y;->a:Z
+
+    iget-boolean v3, p0, Lcom/whatsapp/a1y;->d:Z
+
+    invoke-static {v0, v2, v3}, Lcom/whatsapp/App;->a(Ljava/lang/String;ZZ)V
+
+    .line 5
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    sget v0, Lcom/whatsapp/App;->h:I
+
+    if-eqz v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/a1y;->a:Lcom/whatsapp/dc;
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/a1y;->b:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/whatsapp/dc;->b(Lcom/whatsapp/dc;)Landroid/app/Activity;
+    iget-boolean v1, p0, Lcom/whatsapp/a1y;->a:Z
 
-    move-result-object v0
+    iget-boolean v2, p0, Lcom/whatsapp/a1y;->d:Z
 
-    const/16 v1, 0x6a
+    invoke-static {v0, v1, v2}, Lcom/whatsapp/App;->a(Ljava/lang/String;ZZ)V
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->showDialog(I)V
-
-    .line 3
+    .line 7
+    :cond_1
     return-void
+
+    .line 5
+    :catchall_0
+    move-exception v0
+
+    :try_start_1
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v0
 .end method

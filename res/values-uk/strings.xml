@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Утримати для запису, відпустити для надсилання</string>
     <string name="audio_note_tip_2">Будь ласка, запишіть довше повідомлення</string>
     <string name="audio_note_top_mic_tip">Будь ласка, говоріть у мікрофон зверху вашого телефону</string>
-    <string name="auth_client_needs_enabling_title">Щоб програма працювала, потрібно ввімкнути Сервіси Google Play.</string>
-    <string name="auth_client_needs_installation_title">Щоб програма працювала, потрібно встановити Сервіси Google Play.</string>
-    <string name="auth_client_needs_update_title">Щоб програма працювала, потрібно оновити Сервіси Google Play.</string>
-    <string name="auth_client_play_services_err_notification_msg">Помилка Сервісів Google Play</string>
-    <string name="auth_client_requested_by_msg">Запит від програми %1$s</string>
-    <string name="auth_client_using_bad_version_title">Програма спробувала застосувати хибну версію Сервісів Google Play.</string>
-    <string name="barcode_scanner_dialog_body">Ця програма потребує сканер штрих-кодів. Бажаєте його встановити?</string>
-    <string name="barcode_scanner_dialog_title">Встановити сканер штрих-кодів?</string>
     <string name="block">Блокувати</string>
     <string name="block_ask">Ви впевнені, що бажаєте заблокувати цей контакт?</string>
     <string name="block_list_desc_1">"Торкніться іконки у верхньому правому куті щоб вибрати контакт для блокування.
@@ -113,6 +105,8 @@
     <string name="camera_shortcut">Камера WhatsApp</string>
     <string name="camera_title">Надіслати фото або відео WhatsApp</string>
     <string name="camera_video_preview_title">Надіслати відео WhatsApp</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">Щоб зателефонувати з WhatsApp, спочатку вимкніть режим польоту.</string>
+    <string name="can_not_start_voip_call_in_phone_call">Ви не зможете зателефонувати з WhatsApp, якщо вже розмовляєте по телефону.</string>
     <string name="cancel">Скасувати</string>
     <string name="cannot_send_not_a_group_participant">Ви більше не можете надсилати повідомлення у цій групі, тому що ви більше не є її учасником.</string>
     <string name="cannot_send_selected_file">Неможливо надіслати цей файл медіа. Обраний файл або хибний, або непідтримуваного формату.</string>
@@ -161,23 +155,32 @@
     <string name="color_red">Червоний</string>
     <string name="color_white">Білий</string>
     <string name="color_yellow">Жовтий</string>
-    <string name="common_google_play_services_enable_button">Увімкнути Google Play Послуги</string>
-    <string name="common_google_play_services_enable_text">Ця програма не працюватиме, поки ви не ввімкнете Google Play Послуги.</string>
-    <string name="common_google_play_services_enable_title">Увімкнути Google Play Послуги</string>
-    <string name="common_google_play_services_install_button">Установити Google Play Послуги</string>
+    <string name="common_android_wear_notification_needs_update_text">Для роботи додатка потрібно оновити Android Wear.</string>
+    <string name="common_android_wear_update_text">Цей додаток запуститься, лише коли ви оновите Android Wear.</string>
+    <string name="common_android_wear_update_title">Оновити Android Wear</string>
+    <string name="common_google_play_services_enable_button">Увімкнути сервіси Google Play</string>
+    <string name="common_google_play_services_enable_text">Цей додаток не працюватиме, доки ви не ввімкнете сервіси Google Play.</string>
+    <string name="common_google_play_services_enable_title">Увімкніть сервіси Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Запит від додатка %1$s</string>
+    <string name="common_google_play_services_install_button">Установити сервіси Google Play</string>
     <string name="common_google_play_services_install_text_phone">Ця програма не запуститься без Google Play Послуг, яких немає у вашому телефоні.</string>
     <string name="common_google_play_services_install_text_tablet">Ця програма не запуститься без Google Play Послуг, яких немає на вашому планшетному ПК.</string>
-    <string name="common_google_play_services_install_title">Установити Google Play Послуги</string>
+    <string name="common_google_play_services_install_title">Установіть сервіси Google Play</string>
     <string name="common_google_play_services_invalid_account_text">Указаний обліковий запис не існує на цьому пристрої. Виберіть інший обліковий запис.</string>
     <string name="common_google_play_services_invalid_account_title">Недійсний обліковий запис</string>
+    <string name="common_google_play_services_needs_enabling_title">Щоб додаток працював, потрібно ввімкнути сервіси Google Play.</string>
     <string name="common_google_play_services_network_error_text">Для під’єднання до сервісів Google Play потрібне з’єднання з мережею.</string>
     <string name="common_google_play_services_network_error_title">Помилка мережі</string>
-    <string name="common_google_play_services_unknown_issue">Google Play Послуги – невідома проблема.</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Щоб додаток працював, потрібно встановити сервіси Google Play.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Щоб додаток працював, потрібно оновити сервіси Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Помилка сервісів Google Play</string>
+    <string name="common_google_play_services_unknown_issue">Невідома проблема із сервісами Google Play.</string>
     <string name="common_google_play_services_unsupported_text">Ваш пристрій не підтримує Сервіси Google Play, від яких залежить робота деяких програм. Зверніться по допомогу до виробника.</string>
     <string name="common_google_play_services_unsupported_title">Сервіси Google Play</string>
     <string name="common_google_play_services_update_button">Оновити</string>
-    <string name="common_google_play_services_update_text">Ця програма не запуститься, поки ви не оновите Google Play Послуги.</string>
-    <string name="common_google_play_services_update_title">Оновити Google Play Послуги</string>
+    <string name="common_google_play_services_update_text">Цей додаток не запуститься, доки ви не оновите сервіси Google Play.</string>
+    <string name="common_google_play_services_update_title">Оновіть сервіси Google Play</string>
+    <string name="common_open_on_phone">Відкрити на телефоні</string>
     <string name="common_signin_button_text">Увійти</string>
     <string name="common_signin_button_text_long">Увійти в обл.запис Google</string>
     <string name="confirm_forward_msg">Переслати до %s?</string>
@@ -354,7 +357,7 @@
     <string name="eula_description">Обмін повідомленнями між різними платформами з друзями по всьому світі.</string>
     <string name="eula_tablets_not_supported">Примітка: планшети в даний час не підтримуються.</string>
     <string name="eula_terms_of_service">Умови обслуговування</string>
-    <string name="eula_title">Вітаємо у WhatsApp!</string>
+    <string name="eula_title">Вітаємо у WhatsApp</string>
     <string name="existing_contact">Наявний</string>
     <string name="exit">Вийти</string>
     <string name="exit_group">Вийти з групи</string>
@@ -529,7 +532,6 @@
     <string name="insufficient_space_for_download_shared_storage">"Неможливо завантажити через відсутність місця у внутрішній спільній пам'яті. Будь ласка, видаліть деякі файли з внутрішньої пам'яті і спробуйте знову."</string>
     <string name="invalid_media_message_download">Неможливо завантажити медіа з помилкового повідомлення. Будь ласка, спробуйте відправити повідомлення знову.</string>
     <string name="invalid_message_forward">Повідомлення неможливо переслати на недійсний контакт.</string>
-    <string name="invalid_qr_code">Недійсний QR-код</string>
     <string name="invalid_url_for_download">Неможливо завантажити. Будь ласка, попросіть надіслати його повторно.</string>
     <string name="invite">Запроси</string>
     <string name="invite_friends">Запросити друзів</string>
@@ -575,7 +577,6 @@ WhatsApp може бути встановлено лише на один при�
     <string name="menuitem_add">Додати</string>
     <string name="menuitem_contacts">Контакти</string>
     <string name="menuitem_debug">Відладка</string>
-    <string name="menuitem_delete_qr">Видалити QR-код</string>
     <string name="menuitem_groupchat">Нова група</string>
     <string name="menuitem_list">Нове розсилання</string>
     <string name="menuitem_mute">Без звуку</string>
@@ -616,14 +617,15 @@ WhatsApp може бути встановлено лише на один при�
     <string name="msg_store_backup_failed">Неможливо резервувати повідомлення</string>
     <string name="msg_store_backup_failed_try_again_later">Неможливо резервувати повідомлення. Будь ласка, згодом спробуйте знову.</string>
     <string name="msg_store_backup_found">Є резервна копія</string>
-    <string name="msg_store_backup_found_registration">Є резервна копія повідомлень!</string>
+    <string name="msg_store_backup_found_registration">Є резервна копія бесід</string>
+    <string name="msg_store_backup_found_title">Відновити історію бесід</string>
     <string name="msg_store_backup_skipped">Резервування пропущено</string>
     <string name="msg_store_backup_skipped_no_media">"Резервне копіювання повідомлень пропущено: не знайдено картки пам'яті."</string>
     <string name="msg_store_backup_skipped_read_only_media">"Резервне копіювання повідомлень пропущено: картка пам'яті доступна лиш для читання."</string>
     <string name="msg_store_confirm">Підтвердити</string>
-    <string name="msg_store_creation_backup_message">Бажаєте відновити історію повідомлень з резервної копії?</string>
+    <string name="msg_store_creation_backup_message">Відновити історію бесід з резервної копії. Якщо не відновити зараз, ви не зможете відновити пізніше.</string>
     <string name="msg_store_do_not_restore">Не відновлювати</string>
-    <string name="msg_store_do_not_restore_no_thanks">Ні, дякую</string>
+    <string name="msg_store_do_not_restore_no_thanks">Не відновлювати</string>
     <string name="msg_store_error_found">Сталася помилка. Будь ласка, зупиніть та перезавантажте WhatsApp.</string>
     <string name="msg_store_error_not_restored">Вибачте, ми не змогли відновити жодної з резервних копій історії ваших повідомлень.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Повідомлення буде втрачено. Впевнені, що не бажаєте відновити історію ваших повідомлень з резервної копії?</string>
@@ -650,9 +652,6 @@ WhatsApp може бути встановлено лише на один при�
     <string name="need_sd_card_shared_storage">Будь ласка, вимкніть сховище USB і спробуйте знову</string>
     <string name="network_required">Наразі ви не маєте доступу до мережі.</string>
     <string name="network_usage_ask_reset_message">Ви впевнені, що бажаєте обнулити статистику?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f ГБ</string>
-    <string name="network_usage_byte_count_kb">%1$.1f КБ</string>
-    <string name="network_usage_byte_count_mb">%1$.1f МБ</string>
     <string name="network_usage_last_reset_time">Останнє обнулення: %1$s</string>
     <string name="network_usage_media_bytes_received">Отримано байт медіа:</string>
     <string name="network_usage_media_bytes_sent">Надіслано байт медіа:</string>
@@ -899,6 +898,7 @@ WhatsApp може бути встановлено лише на один при�
     <string name="send_location">Надіслати місце</string>
     <string name="send_payment_button">Надіслати посилання оплати</string>
     <string name="send_payment_url_via">Надіслати посилання для оплати через..</string>
+    <string name="send_this_location">Надіслати це місце</string>
     <string name="send_your_current_location">Надіслати поточне місцезнаходження</string>
     <string name="sending_video_to_contact">Надсилання відео до %s</string>
     <string name="sent_to_group">Надіслати до “%s”</string>
@@ -1011,17 +1011,17 @@ WhatsApp може бути встановлено лише на один при�
     <string name="software_expired_get_from_play_with_date">Ця версія WhatsApp стала застарілою &lt;b>%1$s&lt;/b>. Будь ласка, перейдіть до Google Play, щоб завантажити найновішу версію.&lt;br>&lt;br>Дата Вашого пристрою &lt;b>%2$s&lt;/b>. Якщо вона невірна, будь ласка, виправте налаштування дати Вашого пристрою і перезапустіть WhatsApp.</string>
     <string name="software_expired_with_date">Ця версія WhatsApp стала застарілою &lt;b>%1$s&lt;/b>. Натисніть “Завантажити”, щоб отримати найновішу версію.&lt;br>&lt;br>Дата Вашого пристрою &lt;b>%2$s&lt;/b>. Якщо вона невірна, будь ласка, виправте налаштування дати Вашого пристрою і перезапустіть WhatsApp.</string>
     <string name="spam_generic">"Вам тимчасово заблоковано WhatsApp через можливе порушення вами наших умов обслуговування.
+
 Ви зможете знову користуватись WhatsApp через:"</string>
     <string name="spam_generic_data_connection_missing">Переконайтесь, що ваш телефон підключений до Інтернету.</string>
     <string name="spam_generic_unknown_time_left">Вам тимчасово заблоковано WhatsApp через можливе порушення вами наших умов обслуговування. Згодом ви зможете знову користуватись WhatsApp.</string>
     <string name="spam_learn_more">Дізнатись більше</string>
     <string name="spam_title">Тимчасово заблоковано</string>
-    <string name="spam_too_many_blocks">Вам тимчасово заблоковано WhatsApp тому, що забагато людей вас заблокувало.</string>
     <string name="spam_too_many_groups">"Вам тимчасово заблоковано WhatsApp тому, що ви створили забагато груп з контактами, у яких немає вашого номеру в їхніх адресних книгах.
+
 Ви зможете знову користуватись WhatsApp через:"</string>
     <string name="spam_too_many_messages">"Вам тимчасово заблоковано WhatsApp тому, що ви надіслали забагато повідомлень контактам, у яких немає вашого номеру в їхніх адресних книгах.
-Ви зможете знову користуватись WhatsApp через:"</string>
-    <string name="spam_too_many_people">"Вам тимчасово заблоковано WhatsApp тому, що ви надіслати однакові повідомлення великій кількості контактів.
+
 Ви зможете знову користуватись WhatsApp через:"</string>
     <string name="status">Статус</string>
     <string name="status_default_at_gym">В спортзалі</string>
@@ -1190,7 +1190,9 @@ WhatsApp доступний для Android, iPhone, Nokia, Windows Phone та Bl
     <string name="view_list_media">Медіа списку розсилання</string>
     <string name="view_website">Переглянути сайт</string>
     <string name="voip_activity_label">Мовний виклик</string>
+    <string name="voip_call_bluetooth_toggle_description">Перемкнути Bluetooth</string>
     <string name="voip_call_end_button_description">Завершити виклик</string>
+    <string name="voip_call_failed_no_network">Не вдалося здійснити виклик. Переконайтесь, що ваш телефон підключений до Інтернету і спробуйте знову.</string>
     <string name="voip_call_goto_chat_description">Перегляд бесіди</string>
     <string name="voip_call_incoming">ВХІДНИЙ</string>
     <string name="voip_call_label">ВИКЛИК WHATSAPP</string>
@@ -1243,5 +1245,4 @@ WhatsApp доступний для Android, iPhone, Nokia, Windows Phone та Bl
     <string name="yesterday">Вчора</string>
     <string name="yesterday_at">вчора о %s</string>
     <string name="you">Ви</string>
-    <string name="voip_call_bluetooth_toggle_description">Перемкнути Bluetooth</string>
 </resources>

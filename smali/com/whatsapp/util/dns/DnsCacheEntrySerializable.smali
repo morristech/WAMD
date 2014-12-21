@@ -40,7 +40,7 @@
 
     new-array v6, v0, [Ljava/lang/String;
 
-    const-string v5, "\u000cw[v\u001f+qMp\u0010<kQf\u001b:pIY\u00172xJY\u001bgiIG\r-_IY\u0012*xK^78J\\G\u0017&~\u0007\u0010\r"
+    const-string v5, "o\u001bcw\u0010H\u001duq\u001f_\u0007ig\u0014Y\u001cqX\u0018Q\u0014rX\u0014\u0004\u0005qF\u0002N3qX\u001dI\u0014s_8[&dF\u0018E\u0012?\u0011\u0002"
 
     const/4 v0, -0x1
 
@@ -78,7 +78,7 @@
 
     aput-object v5, v7, v6
 
-    const-string v0, "\u000cw[v\u001f+qMp\u0010<kQf\u001b:pIY\u00172xJY\u001bgiIG\r-_IY\u0012*xK^78J\\G\u0017&~\u0007\u0010\r"
+    const-string v0, "o\u001bcw\u0010H\u001duq\u001f_\u0007ig\u0014Y\u001cqX\u0018Q\u0014rX\u0014\u0004\u0005qF\u0002N3qX\u001dI\u0014s_8[&dF\u0018E\u0012?\u0011\u0002"
 
     move-object v5, v0
 
@@ -93,7 +93,7 @@
     :pswitch_0
     aput-object v5, v7, v6
 
-    const-string v0, "\u0014e"
+    const-string v0, "o\u001bcw\u0010H\u001duq\u001f_\u0007ig\u0014Y\u001cqX\u0018Q\u0014rX\u0014\u0004\u0005qF\u0002N3qX\u001dI\u0014s_8[&dF\u0018E\u0012?\u0011\u0002"
 
     move-object v5, v0
 
@@ -108,7 +108,7 @@
     :pswitch_1
     aput-object v5, v7, v6
 
-    const-string v0, "\u000cw[v\u001f+qMp\u0010<kQf\u001b:pIY\u00172xJY\u001bgiIG\r-_IY\u0012*xK^78J\\G\u0017&~\u0007\u0010\r"
+    const-string v0, "w\t"
 
     move-object v5, v0
 
@@ -125,7 +125,7 @@
 
     const/4 v5, 0x4
 
-    const-string v0, "mj\u0012\u0010\u001ah\\pe7\u001a\\\u0012\u0015[<z"
+    const-string v0, "\u000e\u0006*\u0011\u0015\u000b0Hd8y0*\u0014T_\u0016"
 
     move v6, v5
 
@@ -151,7 +151,7 @@
 
     packed-switch v5, :pswitch_data_1
 
-    const/16 v5, 0x7e
+    const/16 v5, 0x71
 
     :goto_2
     xor-int/2addr v5, v12
@@ -167,22 +167,22 @@
     goto :goto_1
 
     :pswitch_4
-    const/16 v5, 0x48
+    const/16 v5, 0x2b
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v5, 0x19
+    const/16 v5, 0x75
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v5, 0x28
+    const/16 v5, 0x10
 
     goto :goto_2
 
     :pswitch_7
-    const/16 v5, 0x35
+    const/16 v5, 0x34
 
     goto :goto_2
 
@@ -209,7 +209,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 43
+    .line 7
     const/4 v3, 0x0
 
     move-object v0, p0
@@ -222,7 +222,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;-><init>(Ljava/lang/Long;Ljava/net/InetAddress;Ljava/lang/Short;ZZ)V
 
-    .line 3
+    .line 47
     return-void
 .end method
 
@@ -230,35 +230,33 @@
     .locals 0
 
     .prologue
-    .line 24
+    .line 49
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 19
+    .line 50
     iput-object p1, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->expirationTime:Ljava/lang/Long;
 
-    .line 41
+    .line 29
     iput-object p2, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->inetAddress:Ljava/net/InetAddress;
 
-    .line 17
+    .line 38
     iput-object p3, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->portNumber:Ljava/lang/Short;
 
-    .line 33
+    .line 34
     iput-boolean p4, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->secureSocket:Z
 
-    .line 1
+    .line 39
     iput-boolean p5, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->forceOverride:Z
 
-    .line 31
+    .line 48
     return-void
 .end method
 
 .method public static parseFallbackIpString(Ljava/lang/String;)Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;
-    .locals 14
+    .locals 13
 
     .prologue
-    const/4 v13, 0x3
-
-    const/4 v1, 0x2
+    const/4 v1, 0x3
 
     const/4 v6, 0x0
 
@@ -266,16 +264,16 @@
 
     const/4 v7, 0x0
 
-    .line 7
+    .line 1
     if-nez p0, :cond_0
 
     move-object v0, v6
 
-    .line 48
+    .line 52
     :goto_0
     return-object v0
 
-    .line 21
+    .line 18
     :cond_0
     sget-object v0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->z:[Ljava/lang/String;
 
@@ -287,7 +285,7 @@
 
     move-result-object v0
 
-    .line 5
+    .line 13
     :try_start_0
     array-length v1, v0
 
@@ -295,10 +293,10 @@
 
     if-eq v1, v2, :cond_1
 
-    .line 4
+    .line 45
     sget-object v0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x2
 
     aget-object v0, v0, v1
 
@@ -312,13 +310,13 @@
 
     aput-object p0, v2, v3
 
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;[Ljava/lang/Object;)V
+    invoke-static {v0, v1, v2}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;[Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-object v0, v6
 
-    .line 48
+    .line 32
     goto :goto_0
 
     :catch_0
@@ -326,7 +324,7 @@
 
     throw v0
 
-    .line 29
+    .line 53
     :cond_1
     const/4 v1, 0x0
 
@@ -337,7 +335,7 @@
 
     move-result-object v2
 
-    .line 8
+    .line 19
     const/4 v1, 0x1
 
     aget-object v1, v0, v1
@@ -346,7 +344,7 @@
 
     move-result v3
 
-    .line 53
+    .line 3
     const/4 v1, 0x2
 
     aget-object v1, v0, v1
@@ -355,7 +353,7 @@
 
     move-result-wide v8
 
-    .line 52
+    .line 20
     const/4 v1, 0x3
 
     aget-object v1, v0, v1
@@ -364,7 +362,7 @@
 
     move-result-wide v10
 
-    .line 10
+    .line 42
     const/4 v1, 0x4
 
     aget-object v1, v0, v1
@@ -373,7 +371,7 @@
 
     move-result v4
 
-    .line 34
+    .line 44
     const/4 v1, 0x5
 
     aget-object v0, v0, v1
@@ -382,7 +380,7 @@
 
     move-result v5
 
-    .line 36
+    .line 41
     new-instance v0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;
 
     add-long/2addr v8, v10
@@ -406,32 +404,32 @@
 
     goto :goto_0
 
-    .line 15
+    .line 16
     :catch_1
     move-exception v0
 
-    .line 39
+    .line 46
     sget-object v1, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->z:[Ljava/lang/String;
 
-    aget-object v1, v1, v13
+    aget-object v1, v1, v7
 
     new-array v2, v12, [Ljava/lang/Object;
 
     aput-object p0, v2, v7
 
-    invoke-static {v1, v0, v2}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;[Ljava/lang/Object;)V
+    invoke-static {v1, v0, v2}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;[Ljava/lang/Object;)V
 
     :goto_1
     move-object v0, v6
 
-    .line 47
+    .line 10
     goto :goto_0
 
-    .line 20
+    .line 25
     :catch_2
     move-exception v0
 
-    .line 6
+    .line 17
     sget-object v1, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->z:[Ljava/lang/String;
 
     aget-object v1, v1, v12
@@ -440,7 +438,7 @@
 
     aput-object p0, v2, v7
 
-    invoke-static {v1, v0, v2}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;[Ljava/lang/Object;)V
+    invoke-static {v1, v0, v2}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;[Ljava/lang/Object;)V
 
     goto :goto_1
 .end method
@@ -453,7 +451,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 2
+    .line 51
     if-eqz p1, :cond_0
 
     :try_start_0
@@ -463,22 +461,22 @@
 
     if-nez v1, :cond_1
 
-    .line 51
+    .line 14
     :cond_0
     :goto_0
     return v0
 
-    .line 13
+    .line 8
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 22
+    .line 9
     :cond_1
     check-cast p1, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;
 
-    .line 11
+    .line 37
     :try_start_1
     iget-object v1, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->expirationTime:Ljava/lang/Long;
 
@@ -561,7 +559,7 @@
 
     iget-object v2, p1, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->portNumber:Ljava/lang/Short;
 
-    .line 51
+    .line 14
     invoke-virtual {v1, v2}, Ljava/lang/Short;->equals(Ljava/lang/Object;)Z
     :try_end_9
     .catch Ljava/lang/NumberFormatException; {:try_start_9 .. :try_end_9} :catch_9
@@ -575,7 +573,7 @@
 
     goto :goto_0
 
-    .line 11
+    .line 37
     :catch_1
     move-exception v0
 
@@ -633,7 +631,7 @@
     :try_end_10
     .catch Ljava/lang/NumberFormatException; {:try_start_10 .. :try_end_10} :catch_8
 
-    .line 51
+    .line 14
     :catch_8
     move-exception v0
 
@@ -652,7 +650,7 @@
     .locals 1
 
     .prologue
-    .line 28
+    .line 27
     iget-object v0, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->expirationTime:Ljava/lang/Long;
 
     return-object v0
@@ -662,7 +660,7 @@
     .locals 1
 
     .prologue
-    .line 46
+    .line 31
     iget-object v0, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->inetAddress:Ljava/net/InetAddress;
 
     return-object v0
@@ -672,7 +670,7 @@
     .locals 3
 
     .prologue
-    .line 49
+    .line 40
     :try_start_0
     iget-object v0, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->inetAddress:Ljava/net/InetAddress;
     :try_end_0
@@ -685,15 +683,14 @@
 
     if-nez v0, :cond_1
 
-    .line 16
+    .line 36
     :cond_0
     const/4 v0, 0x0
 
-    .line 32
     :goto_0
     return-object v0
 
-    .line 49
+    .line 40
     :catch_0
     move-exception v0
 
@@ -701,13 +698,13 @@
     :try_end_1
     .catch Ljava/lang/NumberFormatException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 16
+    .line 36
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 32
+    .line 26
     :cond_1
     new-instance v0, Ljava/net/InetSocketAddress;
 
@@ -728,7 +725,7 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 4
     iget-object v0, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->portNumber:Ljava/lang/Short;
 
     return-object v0
@@ -740,8 +737,8 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 26
-    .line 9
+    .line 12
+    .line 33
     :try_start_0
     iget-object v0, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->expirationTime:Ljava/lang/Long;
 
@@ -758,10 +755,10 @@
     :goto_0
     add-int/lit8 v0, v0, 0x29
 
-    .line 50
+    .line 35
     mul-int/lit8 v2, v0, 0x29
 
-    .line 37
+    .line 6
     :try_start_1
     iget-object v0, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->inetAddress:Ljava/net/InetAddress;
 
@@ -778,10 +775,10 @@
     :goto_1
     add-int/2addr v0, v2
 
-    .line 45
+    .line 5
     mul-int/lit8 v0, v0, 0x29
 
-    .line 18
+    .line 24
     :try_start_2
     iget-object v2, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->portNumber:Ljava/lang/Short;
 
@@ -798,10 +795,10 @@
     :cond_0
     add-int/2addr v0, v1
 
-    .line 38
+    .line 28
     return v0
 
-    .line 9
+    .line 33
     :catch_0
     move-exception v0
 
@@ -812,7 +809,7 @@
 
     goto :goto_0
 
-    .line 37
+    .line 6
     :catch_1
     move-exception v0
 
@@ -823,7 +820,7 @@
 
     goto :goto_1
 
-    .line 18
+    .line 24
     :catch_2
     move-exception v0
 
@@ -834,7 +831,7 @@
     .locals 4
 
     .prologue
-    .line 25
+    .line 43
     :try_start_0
     iget-object v0, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->expirationTime:Ljava/lang/Long;
     :try_end_0
@@ -884,7 +881,7 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 11
     iget-boolean v0, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->forceOverride:Z
 
     return v0
@@ -894,7 +891,7 @@
     .locals 1
 
     .prologue
-    .line 23
+    .line 2
     iget-boolean v0, p0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->secureSocket:Z
 
     return v0
@@ -904,7 +901,7 @@
     .locals 4
 
     .prologue
-    .line 40
+    .line 23
     sget-object v0, Lcom/whatsapp/util/dns/DnsCacheEntrySerializable;->z:[Ljava/lang/String;
 
     const/4 v1, 0x4

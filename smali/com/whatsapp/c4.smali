@@ -3,20 +3,20 @@
 .source "c4.java"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroid/preference/Preference$OnPreferenceClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/atv;
+.field final a:Lcom/whatsapp/SettingsChat;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/atv;)V
+.method constructor <init>(Lcom/whatsapp/SettingsChat;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/c4;->a:Lcom/whatsapp/atv;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/c4;->a:Lcom/whatsapp/SettingsChat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,19 +25,19 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
+.method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 2
 
     .prologue
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/c4;->a:Lcom/whatsapp/atv;
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/c4;->a:Lcom/whatsapp/SettingsChat;
 
-    iget-object v0, v0, Lcom/whatsapp/atv;->a:Lcom/whatsapp/SetStatus;
+    const/4 v1, 0x5
 
-    const/16 v1, 0x32
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/SetStatus;->showDialog(I)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/SettingsChat;->showDialog(I)V
 
     .line 1
-    return-void
+    const/4 v0, 0x1
+
+    return v0
 .end method

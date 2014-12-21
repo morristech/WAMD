@@ -1,50 +1,120 @@
-.class Lcom/whatsapp/util/bt;
-.super Ljava/lang/Object;
+.class final Lcom/whatsapp/util/bt;
+.super Ljava/io/OutputStream;
 .source "bt.java"
-
-# interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/util/FloatingChildLayout;
+.field final b:Ljava/io/OutputStream;
+
+.field final c:Ljava/io/OutputStream;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/util/FloatingChildLayout;)V
+.method public constructor <init>(Ljava/io/OutputStream;Ljava/io/OutputStream;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/util/bt;->a:Lcom/whatsapp/util/FloatingChildLayout;
+    .line 5
+    invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 13
+    iput-object p1, p0, Lcom/whatsapp/util/bt;->b:Ljava/io/OutputStream;
 
+    .line 15
+    iput-object p2, p0, Lcom/whatsapp/util/bt;->c:Ljava/io/OutputStream;
+
+    .line 7
     return-void
 .end method
 
 
 # virtual methods
-.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-    .locals 2
+.method public close()V
+    .locals 1
 
     .prologue
-    .line 1
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+    .line 19
+    iget-object v0, p0, Lcom/whatsapp/util/bt;->b:Ljava/io/OutputStream;
 
-    move-result-object v0
+    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
-    check-cast v0, Ljava/lang/Integer;
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/util/bt;->c:Ljava/io/OutputStream;
 
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    move-result v0
+    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
     .line 4
-    iget-object v1, p0, Lcom/whatsapp/util/bt;->a:Lcom/whatsapp/util/FloatingChildLayout;
+    return-void
+.end method
 
-    invoke-virtual {v1, v0}, Lcom/whatsapp/util/FloatingChildLayout;->setBackgroundColorAlpha(I)V
+.method public flush()V
+    .locals 1
 
+    .prologue
+    .line 8
+    iget-object v0, p0, Lcom/whatsapp/util/bt;->b:Ljava/io/OutputStream;
+
+    invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
+
+    .line 16
+    iget-object v0, p0, Lcom/whatsapp/util/bt;->c:Ljava/io/OutputStream;
+
+    invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
+
+    .line 3
+    return-void
+.end method
+
+.method public write(I)V
+    .locals 1
+
+    .prologue
     .line 2
+    iget-object v0, p0, Lcom/whatsapp/util/bt;->b:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
+
+    .line 9
+    iget-object v0, p0, Lcom/whatsapp/util/bt;->c:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
+
+    .line 10
+    return-void
+.end method
+
+.method public write([B)V
+    .locals 1
+
+    .prologue
+    .line 17
+    iget-object v0, p0, Lcom/whatsapp/util/bt;->b:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write([B)V
+
+    .line 12
+    iget-object v0, p0, Lcom/whatsapp/util/bt;->c:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write([B)V
+
+    .line 11
+    return-void
+.end method
+
+.method public write([BII)V
+    .locals 1
+
+    .prologue
+    .line 14
+    iget-object v0, p0, Lcom/whatsapp/util/bt;->b:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
+
+    .line 18
+    iget-object v0, p0, Lcom/whatsapp/util/bt;->c:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
+
+    .line 1
     return-void
 .end method

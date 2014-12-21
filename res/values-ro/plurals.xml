@@ -215,9 +215,9 @@ rămase"</item>
         <item quantity="few">%d rămase</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Puteți continua. %,d de mesaje au fost recuperate.</item>
-        <item quantity="one">Puteți continua. %,d mesaj a fost recuperat.</item>
-        <item quantity="few">Puteți continua. %,d mesaje au fost recuperate.</item>
+        <item quantity="other">%,d de mesaje recuperate. Puteți continua.</item>
+        <item quantity="one">%,d mesaj recuperat. Puteți continua.</item>
+        <item quantity="few">%,d mesaje recuperate. Puteți continua.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Se trimit %1$d de fișiere video către %2$s</item>

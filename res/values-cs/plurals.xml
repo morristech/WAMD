@@ -215,9 +215,9 @@ předplatného služby."</item>
         <item quantity="few">Zbývají %d</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Akce byla úspěšně dokončena. Obnovili jsme %,d zpráv.</item>
-        <item quantity="one">Akce byla úspěšně dokončena. Obnovili jsme %,d zprávu.</item>
-        <item quantity="few">Akce byla úspěšně dokončena. Obnovili jsme %,d zprávy.</item>
+        <item quantity="other">Obnoveno %,d zpráv. Můžete pokračovat.</item>
+        <item quantity="one">Obnovena %,d zpráva. Můžete pokračovat.</item>
+        <item quantity="few">Obnoveny %,d zprávy. Můžete pokračovat.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Odesílá se %1$d videí pro %2$s</item>

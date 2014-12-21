@@ -20,38 +20,38 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 3
+    .line 6
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton;->this$0:Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter;
 
-    .line 7
+    .line 4
     const/4 v0, 0x0
 
     sget v1, Lcom/actionbarsherlock/R$attr;->actionOverflowButtonStyle:I
 
     invoke-direct {p0, p2, v0, v1}, Landroid/widget/ImageButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 19
+    .line 29
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton;->mListeners:Ljava/util/Set;
 
-    .line 12
+    .line 22
     invoke-virtual {p0, v2}, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton;->setClickable(Z)V
 
-    .line 26
+    .line 7
     invoke-virtual {p0, v2}, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton;->setFocusable(Z)V
 
-    .line 20
+    .line 23
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton;->setVisibility(I)V
 
-    .line 4
+    .line 8
     invoke-virtual {p0, v2}, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton;->setEnabled(Z)V
 
-    .line 14
+    .line 16
     return-void
 .end method
 
@@ -61,12 +61,12 @@
     .locals 1
 
     .prologue
-    .line 23
+    .line 28
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton;->mListeners:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 18
+    .line 27
     return-void
 .end method
 
@@ -74,7 +74,7 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 24
     const/4 v0, 0x0
 
     return v0
@@ -84,7 +84,7 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 26
     const/4 v0, 0x0
 
     return v0
@@ -94,9 +94,9 @@
     .locals 3
 
     .prologue
-    sget v1, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:I
+    sget-boolean v1, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:Z
 
-    .line 30
+    .line 19
     invoke-super {p0}, Landroid/widget/ImageButton;->onAttachedToWindow()V
 
     .line 2
@@ -119,13 +119,13 @@
 
     check-cast v0, Lcom/actionbarsherlock/internal/view/View_OnAttachStateChangeListener;
 
-    .line 29
+    .line 30
     invoke-interface {v0, p0}, Lcom/actionbarsherlock/internal/view/View_OnAttachStateChangeListener;->onViewAttachedToWindow(Landroid/view/View;)V
 
-    .line 5
+    .line 12
     if-eqz v1, :cond_0
 
-    .line 28
+    .line 3
     :cond_1
     return-void
 .end method
@@ -134,12 +134,12 @@
     .locals 3
 
     .prologue
-    sget v1, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:I
+    sget-boolean v1, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:Z
 
-    .line 25
+    .line 10
     invoke-super {p0}, Landroid/widget/ImageButton;->onDetachedFromWindow()V
 
-    .line 21
+    .line 20
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton;->mListeners:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
@@ -159,13 +159,13 @@
 
     check-cast v0, Lcom/actionbarsherlock/internal/view/View_OnAttachStateChangeListener;
 
-    .line 22
+    .line 11
     invoke-interface {v0, p0}, Lcom/actionbarsherlock/internal/view/View_OnAttachStateChangeListener;->onViewDetachedFromWindow(Landroid/view/View;)V
 
-    .line 13
+    .line 15
     if-eqz v1, :cond_0
 
-    .line 15
+    .line 14
     :cond_1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton;->this$0:Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter;
 
@@ -183,7 +183,7 @@
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowPopup;->dismiss()V
 
-    .line 24
+    .line 25
     :cond_2
     return-void
 .end method
@@ -194,14 +194,14 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 9
+    .line 5
     invoke-super {p0}, Landroid/widget/ImageButton;->performClick()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 10
+    .line 18
     :goto_0
     return v1
 
@@ -211,7 +211,7 @@
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton;->playSoundEffect(I)V
 
-    .line 16
+    .line 21
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton;->this$0:Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter;->showOverflowMenu()Z
@@ -223,11 +223,11 @@
     .locals 1
 
     .prologue
-    .line 27
+    .line 9
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton;->mListeners:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    .line 17
+    .line 13
     return-void
 .end method

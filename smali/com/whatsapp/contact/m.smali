@@ -40,7 +40,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "\u0011A\u000ft"
+    const-string v6, "\u001fsU\u0015*"
 
     const/4 v0, -0x1
 
@@ -78,7 +78,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "&a&Jj"
+    const-string v0, "-Ne)\u0018+B"
 
     move-object v6, v0
 
@@ -93,7 +93,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "\u0013Q\u000flR"
+    const-string v0, "\nc\\\u00132"
 
     move-object v6, v0
 
@@ -108,7 +108,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "1a/T"
+    const-string v0, "\u0008s\\\u000b"
 
     move-object v6, v0
 
@@ -123,7 +123,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "\u0006A\u0006jJ"
+    const-string v0, "*C|3\u0012"
 
     move-object v6, v0
 
@@ -140,7 +140,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "\u0014\\\u0016vX\u0012P"
+    const-string v0, "\rnE\t8\u000bb"
 
     move v7, v6
 
@@ -157,7 +157,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "4|6Vx2p"
+    const-string v6, "(S|+"
 
     const/4 v0, 0x5
 
@@ -170,7 +170,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "3q/Lr"
+    const-string v6, "?Su5\n"
 
     const/4 v0, 0x6
 
@@ -183,22 +183,39 @@
 
     sput-object v9, Lcom/whatsapp/contact/m;->z:[Ljava/lang/String;
 
-    .line 2
+    .line 10
     new-instance v0, Lcom/whatsapp/contact/m;
 
     sget-object v6, Lcom/whatsapp/contact/m;->z:[Ljava/lang/String;
 
-    aget-object v6, v6, v4
+    const/4 v7, 0x6
+
+    aget-object v6, v6, v7
 
     sget-object v7, Lcom/whatsapp/contact/m;->z:[Ljava/lang/String;
 
-    aget-object v7, v7, v1
+    aget-object v7, v7, v4
 
     invoke-direct {v0, v6, v1, v7}, Lcom/whatsapp/contact/m;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lcom/whatsapp/contact/m;->FULL:Lcom/whatsapp/contact/m;
 
-    .line 1
+    .line 2
+    new-instance v0, Lcom/whatsapp/contact/m;
+
+    sget-object v6, Lcom/whatsapp/contact/m;->z:[Ljava/lang/String;
+
+    aget-object v6, v6, v5
+
+    sget-object v7, Lcom/whatsapp/contact/m;->z:[Ljava/lang/String;
+
+    aget-object v7, v7, v3
+
+    invoke-direct {v0, v6, v2, v7}, Lcom/whatsapp/contact/m;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v0, Lcom/whatsapp/contact/m;->DELTA:Lcom/whatsapp/contact/m;
+
+    .line 11
     new-instance v0, Lcom/whatsapp/contact/m;
 
     sget-object v6, Lcom/whatsapp/contact/m;->z:[Ljava/lang/String;
@@ -209,35 +226,18 @@
 
     sget-object v7, Lcom/whatsapp/contact/m;->z:[Ljava/lang/String;
 
-    aget-object v7, v7, v3
-
-    invoke-direct {v0, v6, v2, v7}, Lcom/whatsapp/contact/m;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    sput-object v0, Lcom/whatsapp/contact/m;->DELTA:Lcom/whatsapp/contact/m;
-
-    .line 7
-    new-instance v0, Lcom/whatsapp/contact/m;
-
-    sget-object v6, Lcom/whatsapp/contact/m;->z:[Ljava/lang/String;
-
-    aget-object v6, v6, v2
-
-    sget-object v7, Lcom/whatsapp/contact/m;->z:[Ljava/lang/String;
-
-    aget-object v7, v7, v5
+    aget-object v7, v7, v1
 
     invoke-direct {v0, v6, v3, v7}, Lcom/whatsapp/contact/m;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lcom/whatsapp/contact/m;->QUERY:Lcom/whatsapp/contact/m;
 
-    .line 8
+    .line 6
     new-instance v0, Lcom/whatsapp/contact/m;
 
     sget-object v6, Lcom/whatsapp/contact/m;->z:[Ljava/lang/String;
 
-    const/4 v7, 0x6
-
-    aget-object v6, v6, v7
+    aget-object v6, v6, v2
 
     sget-object v7, Lcom/whatsapp/contact/m;->z:[Ljava/lang/String;
 
@@ -280,7 +280,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x33
+    const/16 v6, 0x53
 
     :goto_2
     xor-int/2addr v6, v13
@@ -296,26 +296,24 @@
     goto/16 :goto_1
 
     :pswitch_7
-    const/16 v6, 0x77
+    const/16 v6, 0x6e
 
     goto :goto_2
 
     :pswitch_8
-    const/16 v6, 0x34
+    const/4 v6, 0x6
 
     goto :goto_2
 
     :pswitch_9
-    const/16 v6, 0x63
+    const/16 v6, 0x30
 
     goto :goto_2
 
     :pswitch_a
-    const/16 v6, 0x18
+    const/16 v6, 0x67
 
     goto :goto_2
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -341,13 +339,13 @@
     .locals 0
 
     .prologue
-    .line 10
+    .line 4
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 3
+    .line 9
     iput-object p3, p0, Lcom/whatsapp/contact/m;->a:Ljava/lang/String;
 
-    .line 6
+    .line 7
     return-void
 .end method
 
@@ -355,7 +353,7 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 8
     const-class v0, Lcom/whatsapp/contact/m;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -371,7 +369,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 3
     sget-object v0, Lcom/whatsapp/contact/m;->b:[Lcom/whatsapp/contact/m;
 
     invoke-virtual {v0}, [Lcom/whatsapp/contact/m;->clone()Ljava/lang/Object;
@@ -389,7 +387,7 @@
     .locals 1
 
     .prologue
-    .line 9
+    .line 1
     iget-object v0, p0, Lcom/whatsapp/contact/m;->a:Ljava/lang/String;
 
     return-object v0

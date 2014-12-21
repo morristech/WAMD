@@ -25,7 +25,7 @@
 
     new-array v5, v0, [Ljava/lang/String;
 
-    const-string v4, "G%#\u0016\u001b\u0000~$\u0005IJ<6\u0015\u000fN?3\u0014NF5y\u0005NB~6\u0016J\u0000#2\u0015\u000eN?3\u0014NF5"
+    const-string v4, "~Pjg\u001d9\u000bmtOsI\u007fd\twJzeH\u007f@0tH{\u000b\u007fgL9V{d\u0008wJzeH\u007f@"
 
     const/4 v0, -0x1
 
@@ -63,7 +63,7 @@
 
     aput-object v4, v6, v5
 
-    const-string v0, "F28\u0008"
+    const-string v0, "\u007fGqy"
 
     move-object v4, v0
 
@@ -78,7 +78,7 @@
     :pswitch_0
     aput-object v4, v6, v5
 
-    const-string v0, "F28\u0008"
+    const-string v0, "~Pjg\u001d9\u000bmtOsI\u007fd\twJzeH\u007f@0tH{\u000b\u007fgL9V{d\u0008wJzeH\u007f@"
 
     move-object v4, v0
 
@@ -95,7 +95,7 @@
 
     const/4 v4, 0x3
 
-    const-string v0, "G%#\u0016\u001b\u0000~$\u0005IJ<6\u0015\u000fN?3\u0014NF5y\u0005NB~6\u0016J\u0000#2\u0015\u000eN?3\u0014NF5"
+    const-string v0, "\u007fGqy"
 
     move v5, v4
 
@@ -121,7 +121,7 @@
 
     packed-switch v4, :pswitch_data_1
 
-    const/16 v4, 0x21
+    const/16 v4, 0x27
 
     :goto_2
     xor-int/2addr v4, v11
@@ -137,22 +137,22 @@
     goto :goto_1
 
     :pswitch_3
-    const/16 v4, 0x2f
+    const/16 v4, 0x16
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v4, 0x51
+    const/16 v4, 0x24
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v4, 0x57
+    const/16 v4, 0x1e
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v4, 0x66
+    const/16 v4, 0x17
 
     goto :goto_2
 
@@ -176,23 +176,21 @@
     .locals 0
 
     .prologue
-    .line 6
+    .line 30
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    .line 27
+    .line 21
     return-void
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 4
+    .locals 3
 
     .prologue
-    const/4 v3, 0x0
-
-    .line 7
+    .line 26
     invoke-direct {p0, p1, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 13
+    .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xb
@@ -201,7 +199,51 @@
 
     if-eqz p2, :cond_0
 
-    .line 17
+    .line 2
+    sget-object v0, Lcom/whatsapp/preference/WaPreference;->z:[Ljava/lang/String;
+
+    const/4 v1, 0x2
+
+    aget-object v0, v0, v1
+
+    sget-object v1, Lcom/whatsapp/preference/WaPreference;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x3
+
+    aget-object v1, v1, v2
+
+    const/4 v2, 0x0
+
+    invoke-interface {p2, v0, v1, v2}, Landroid/util/AttributeSet;->getAttributeResourceValue(Ljava/lang/String;Ljava/lang/String;I)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/whatsapp/preference/WaPreference;->a:I
+
+    .line 4
+    :cond_0
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 4
+
+    .prologue
+    const/4 v3, 0x0
+
+    .line 9
+    invoke-direct {p0, p1, p2, p3}, Landroid/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    .line 14
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0xb
+
+    if-ge v0, v1, :cond_0
+
+    if-eqz p2, :cond_0
+
+    .line 22
     sget-object v0, Lcom/whatsapp/preference/WaPreference;->z:[Ljava/lang/String;
 
     aget-object v0, v0, v3
@@ -218,49 +260,7 @@
 
     iput v0, p0, Lcom/whatsapp/preference/WaPreference;->a:I
 
-    .line 4
-    :cond_0
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 3
-
-    .prologue
-    .line 3
-    invoke-direct {p0, p1, p2, p3}, Landroid/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-
-    .line 14
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0xb
-
-    if-ge v0, v1, :cond_0
-
-    if-eqz p2, :cond_0
-
-    .line 26
-    sget-object v0, Lcom/whatsapp/preference/WaPreference;->z:[Ljava/lang/String;
-
-    const/4 v1, 0x3
-
-    aget-object v0, v0, v1
-
-    sget-object v1, Lcom/whatsapp/preference/WaPreference;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x2
-
-    aget-object v1, v1, v2
-
-    const/4 v2, 0x0
-
-    invoke-interface {p2, v0, v1, v2}, Landroid/util/AttributeSet;->getAttributeResourceValue(Ljava/lang/String;Ljava/lang/String;I)I
-
-    move-result v0
-
-    iput v0, p0, Lcom/whatsapp/preference/WaPreference;->a:I
-
-    .line 18
+    .line 23
     :cond_0
     return-void
 .end method
@@ -271,11 +271,11 @@
     .prologue
     const/4 v1, -0x1
 
-    .line 23
-    invoke-static {p0}, Lcom/whatsapp/ad_;->a(Landroid/view/View;)V
+    .line 7
+    invoke-static {p0}, Lcom/whatsapp/t3;->a(Landroid/view/View;)V
 
-    .line 1
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 8
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
 
     move-result v0
 
@@ -288,7 +288,7 @@
 
     move-result-object v0
 
-    .line 9
+    .line 27
     if-eqz v0, :cond_0
 
     .line 11
@@ -298,7 +298,7 @@
 
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
 
-    .line 25
+    .line 10
     :cond_0
     const v0, 0x1020010
 
@@ -306,17 +306,17 @@
 
     move-result-object v0
 
-    .line 21
+    .line 29
     if-eqz v0, :cond_1
 
-    .line 22
+    .line 6
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
 
-    .line 19
+    .line 20
     :cond_1
     return-object p0
 .end method
@@ -329,54 +329,54 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 15
+    .line 13
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
-    .line 24
+    .line 19
     iget v0, p0, Lcom/whatsapp/preference/WaPreference;->a:I
 
     if-eqz v0, :cond_2
 
-    .line 2
+    .line 24
     const v0, 0x1020016
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 29
+    .line 16
     if-eqz v0, :cond_2
 
     instance-of v1, v0, Landroid/widget/TextView;
 
     if-eqz v1, :cond_2
 
-    .line 10
+    .line 17
     check-cast v0, Landroid/widget/TextView;
 
-    .line 30
-    invoke-static {}, Lcom/whatsapp/App;->a9()Z
+    .line 18
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 5
+    .line 1
     iget v1, p0, Lcom/whatsapp/preference/WaPreference;->a:I
 
     invoke-virtual {v0, v1, v2, v2, v2}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
-    sget-boolean v1, Lcom/whatsapp/preference/WaListPreference;->a:Z
+    sget v1, Lcom/whatsapp/preference/WaListPreference;->a:I
 
     if-eqz v1, :cond_1
 
-    .line 8
+    .line 15
     :cond_0
     iget v1, p0, Lcom/whatsapp/preference/WaPreference;->a:I
 
     invoke-virtual {v0, v2, v2, v1, v2}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
-    .line 12
+    .line 5
     :cond_1
     invoke-virtual {p0}, Lcom/whatsapp/preference/WaPreference;->getContext()Landroid/content/Context;
 
@@ -394,7 +394,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setCompoundDrawablePadding(I)V
 
-    .line 20
+    .line 12
     :cond_2
     return-void
 .end method
@@ -403,7 +403,7 @@
     .locals 1
 
     .prologue
-    .line 16
+    .line 25
     invoke-super {p0, p1}, Landroid/preference/Preference;->onCreateView(Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0

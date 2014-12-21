@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -19,26 +19,26 @@
 
 
 # virtual methods
-.method public a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/ba;
+.method public a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/bk;
     .locals 2
 
     .prologue
-    .line 1
-    new-instance v0, Lcom/whatsapp/messaging/ba;
+    .line 4
+    new-instance v0, Lcom/whatsapp/messaging/bk;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Lcom/whatsapp/messaging/ba;-><init>(Landroid/os/Parcel;Lcom/whatsapp/messaging/am;)V
+    invoke-direct {v0, p1, v1}, Lcom/whatsapp/messaging/bk;-><init>(Landroid/os/Parcel;Lcom/whatsapp/messaging/b7;)V
 
     return-object v0
 .end method
 
-.method public a(I)[Lcom/whatsapp/messaging/ba;
+.method public a(I)[Lcom/whatsapp/messaging/bk;
     .locals 1
 
     .prologue
-    .line 4
-    new-array v0, p1, [Lcom/whatsapp/messaging/ba;
+    .line 1
+    new-array v0, p1, [Lcom/whatsapp/messaging/bk;
 
     return-object v0
 .end method
@@ -47,8 +47,8 @@
     .locals 1
 
     .prologue
-    .line 3
-    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/v;->a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/ba;
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/v;->a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/bk;
 
     move-result-object v0
 
@@ -59,8 +59,8 @@
     .locals 1
 
     .prologue
-    .line 2
-    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/v;->a(I)[Lcom/whatsapp/messaging/ba;
+    .line 5
+    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/v;->a(I)[Lcom/whatsapp/messaging/bk;
 
     move-result-object v0
 

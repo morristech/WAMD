@@ -16,25 +16,25 @@
     .locals 2
 
     .prologue
-    .line 12
+    .line 10
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 
     if-lt v0, v1, :cond_0
 
-    .line 4
+    .line 5
     new-instance v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderKitKatImpl;
 
     invoke-direct {v0}, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderKitKatImpl;-><init>()V
 
     sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
 
-    .line 2
+    .line 17
     :goto_0
     return-void
 
-    .line 3
+    .line 15
     :cond_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -42,7 +42,7 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 16
+    .line 6
     new-instance v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl;
 
     invoke-direct {v0}, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl;-><init>()V
@@ -51,7 +51,7 @@
 
     goto :goto_0
 
-    .line 13
+    .line 3
     :cond_1
     new-instance v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderStubImpl;
 
@@ -66,10 +66,10 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7
+    .line 2
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;->newAccessibilityNodeProviderBridge(Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;)Ljava/lang/Object;
@@ -86,13 +86,13 @@
     .locals 0
 
     .prologue
-    .line 6
+    .line 12
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8
+    .line 11
     iput-object p1, p0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->mProvider:Ljava/lang/Object;
 
-    .line 1
+    .line 8
     return-void
 .end method
 
@@ -102,7 +102,7 @@
     .locals 1
 
     .prologue
-    .line 15
+    .line 1
     const/4 v0, 0x0
 
     return-object v0
@@ -112,7 +112,7 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 4
     const/4 v0, 0x0
 
     return-object v0
@@ -122,7 +122,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 13
     const/4 v0, 0x0
 
     return-object v0
@@ -132,7 +132,7 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 16
     iget-object v0, p0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->mProvider:Ljava/lang/Object;
 
     return-object v0
@@ -142,7 +142,7 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 14
     const/4 v0, 0x0
 
     return v0

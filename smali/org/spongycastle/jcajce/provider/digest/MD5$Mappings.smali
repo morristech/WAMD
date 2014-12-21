@@ -14,13 +14,13 @@
     .locals 12
 
     .prologue
-    const/16 v1, 0x57
+    const/16 v3, 0x60
 
-    const/16 v2, 0x4e
+    const/16 v1, 0x3b
 
-    const/16 v4, 0x3f
+    const/16 v2, 0x38
 
-    const/16 v3, 0x13
+    const/16 v4, 0x9
 
     const/4 v6, 0x0
 
@@ -28,7 +28,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "\u001a\n&"
+    const-string v0, "v7\r"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -57,7 +57,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "s\u0005vF$2 vM\u0002#!a"
+    const-string v0, "\u001f8]\u0019N^\u001d]\u0012hO\u001cJ"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -86,7 +86,7 @@
 
     const/4 v10, 0x2
 
-    const-string v0, "\u001a+`L\u00020+WV\u00042=g\u0011.\u0013{"
+    const-string v0, "\u001f7Q\u0007lH\u0007"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -115,7 +115,7 @@
 
     const/4 v10, 0x3
 
-    const-string v0, "s\nzX\u0006$:"
+    const-string v0, "v\u0016K\u0013h\\\u0016|\tn^\u0000LND\u007fF"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -144,7 +144,7 @@
 
     const/4 v8, 0x4
 
-    const-string v0, "s\u0006rL\u000b\u001a/p"
+    const-string v0, "\u001f;Y\u0013av\u0012["
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -173,7 +173,7 @@
 
     sput-object v9, Lorg/spongycastle/jcajce/provider/digest/MD5$Mappings;->z:[Ljava/lang/String;
 
-    .line 4
+    .line 1
     const-class v0, Lorg/spongycastle/jcajce/provider/digest/MD5;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -192,7 +192,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x63
+    move v0, v4
 
     :goto_5
     xor-int/2addr v0, v10
@@ -213,17 +213,17 @@
     goto :goto_5
 
     :pswitch_1
-    move v0, v2
+    const/16 v0, 0x73
 
     goto :goto_5
 
     :pswitch_2
-    move v0, v3
+    move v0, v2
 
     goto :goto_5
 
     :pswitch_3
-    move v0, v4
+    move v0, v3
 
     goto :goto_5
 
@@ -234,7 +234,7 @@
 
     packed-switch v0, :pswitch_data_1
 
-    const/16 v0, 0x63
+    move v0, v4
 
     :goto_6
     xor-int/2addr v0, v11
@@ -255,17 +255,17 @@
     goto :goto_6
 
     :pswitch_5
-    move v0, v2
+    const/16 v0, 0x73
 
     goto :goto_6
 
     :pswitch_6
-    move v0, v3
+    move v0, v2
 
     goto :goto_6
 
     :pswitch_7
-    move v0, v4
+    move v0, v3
 
     goto :goto_6
 
@@ -276,7 +276,7 @@
 
     packed-switch v0, :pswitch_data_2
 
-    const/16 v0, 0x63
+    move v0, v4
 
     :goto_7
     xor-int/2addr v0, v11
@@ -297,17 +297,17 @@
     goto :goto_7
 
     :pswitch_9
-    move v0, v2
+    const/16 v0, 0x73
 
     goto :goto_7
 
     :pswitch_a
-    move v0, v3
+    move v0, v2
 
     goto :goto_7
 
     :pswitch_b
-    move v0, v4
+    move v0, v3
 
     goto :goto_7
 
@@ -318,7 +318,7 @@
 
     packed-switch v0, :pswitch_data_3
 
-    const/16 v0, 0x63
+    move v0, v4
 
     :goto_8
     xor-int/2addr v0, v11
@@ -339,17 +339,17 @@
     goto :goto_8
 
     :pswitch_d
-    move v0, v2
+    const/16 v0, 0x73
 
     goto :goto_8
 
     :pswitch_e
-    move v0, v3
+    move v0, v2
 
     goto :goto_8
 
     :pswitch_f
-    move v0, v4
+    move v0, v3
 
     goto :goto_8
 
@@ -360,7 +360,7 @@
 
     packed-switch v0, :pswitch_data_4
 
-    const/16 v0, 0x63
+    move v0, v4
 
     :goto_9
     xor-int/2addr v0, v10
@@ -381,17 +381,17 @@
     goto :goto_9
 
     :pswitch_11
-    move v0, v2
+    const/16 v0, 0x73
 
     goto :goto_9
 
     :pswitch_12
-    move v0, v3
+    move v0, v2
 
     goto :goto_9
 
     :pswitch_13
-    move v0, v4
+    move v0, v3
 
     goto :goto_9
 
@@ -440,10 +440,10 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 4
     invoke-direct {p0}, Lorg/spongycastle/jcajce/provider/digest/DigestAlgorithmProvider;-><init>()V
 
-    .line 1
+    .line 3
     return-void
 .end method
 
@@ -456,7 +456,7 @@
     .line 6
     sget-object v0, Lorg/spongycastle/jcajce/provider/digest/MD5$Mappings;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x2
+    const/4 v1, 0x3
 
     aget-object v0, v0, v1
 
@@ -472,7 +472,7 @@
 
     sget-object v2, Lorg/spongycastle/jcajce/provider/digest/MD5$Mappings;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x3
+    const/4 v3, 0x2
 
     aget-object v2, v2, v3
 
@@ -543,6 +543,6 @@
 
     invoke-virtual {p0, p1, v0, v1, v2}, Lorg/spongycastle/jcajce/provider/digest/MD5$Mappings;->addHMACAlgorithm(Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
+    .line 2
     return-void
 .end method

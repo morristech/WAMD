@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 2
     invoke-direct {p0}, Landroid/support/v4/view/KeyEventCompat$EclairKeyEventVersionImpl;-><init>()V
 
     return-void
@@ -20,7 +20,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 4
     invoke-static {p1, p2}, Landroid/support/v4/view/KeyEventCompatHoneycomb;->metaStateHasModifiers(II)Z
 
     move-result v0
@@ -32,7 +32,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 1
     invoke-static {p1}, Landroid/support/v4/view/KeyEventCompatHoneycomb;->metaStateHasNoModifiers(I)Z
 
     move-result v0
@@ -44,7 +44,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 3
     invoke-static {p1}, Landroid/support/v4/view/KeyEventCompatHoneycomb;->normalizeMetaState(I)I
 
     move-result v0

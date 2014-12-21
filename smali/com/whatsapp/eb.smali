@@ -1,145 +1,125 @@
 .class Lcom/whatsapp/eb;
-.super Ljava/lang/Object;
+.super Lcom/whatsapp/util/l;
 .source "eb.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# static fields
-.field private static final z:Ljava/lang/String;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/a8f;
+.field final b:Lcom/whatsapp/ConversationRowMedia;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    const-string v0, "{Zp\u000b_b]qNOu[hNBz"
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    move v3, v2
-
-    move v2, v1
-
-    move-object v1, v0
-
-    :goto_0
-    if-gt v2, v3, :cond_0
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/eb;->z:Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v4, v1, v3
-
-    rem-int/lit8 v0, v3, 0x5
-
-    packed-switch v0, :pswitch_data_0
-
-    const/16 v0, 0x2d
-
-    :goto_1
-    xor-int/2addr v0, v4
-
-    int-to-char v0, v0
-
-    aput-char v0, v1, v3
-
-    add-int/lit8 v0, v3, 0x1
-
-    move v3, v0
-
-    goto :goto_0
-
-    :pswitch_0
-    const/16 v0, 0x14
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v0, 0x38
-
-    goto :goto_1
-
-    :pswitch_2
-    const/4 v0, 0x3
-
-    goto :goto_1
-
-    :pswitch_3
-    const/16 v0, 0x6e
-
-    goto :goto_1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-.end method
-
-.method constructor <init>(Lcom/whatsapp/a8f;)V
+.method constructor <init>(Lcom/whatsapp/ConversationRowMedia;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/eb;->a:Lcom/whatsapp/a8f;
+    .line 8
+    iput-object p1, p0, Lcom/whatsapp/eb;->b:Lcom/whatsapp/ConversationRowMedia;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcom/whatsapp/util/l;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 4
+.method public a(Landroid/view/View;)V
+    .locals 3
 
     .prologue
-    .line 2
-    sget-object v0, Lcom/whatsapp/eb;->z:Ljava/lang/String;
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/eb;->b:Lcom/whatsapp/ConversationRowMedia;
 
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+    iget-object v0, v0, Lcom/whatsapp/ConversationRowMedia;->y:Lcom/whatsapp/protocol/c9;
 
-    .line 3
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    iget-object v0, v0, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    invoke-virtual {v0}, Lcom/whatsapp/App;->getContentResolver()Landroid/content/ContentResolver;
+    iget-boolean v0, v0, Lcom/whatsapp/protocol/bb;->c:Z
+
+    if-eqz v0, :cond_4
+
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/eb;->b:Lcom/whatsapp/ConversationRowMedia;
+
+    iget-object v0, v0, Lcom/whatsapp/ConversationRowMedia;->y:Lcom/whatsapp/protocol/c9;
+
+    iget v0, v0, Lcom/whatsapp/protocol/c9;->f:I
+
+    const/4 v1, 0x2
+
+    invoke-static {v0, v1}, Lcom/whatsapp/protocol/bw;->a(II)I
+
+    move-result v0
+
+    if-ltz v0, :cond_1
+
+    .line 7
+    iget-object v0, p0, Lcom/whatsapp/eb;->b:Lcom/whatsapp/ConversationRowMedia;
+
+    invoke-virtual {v0}, Lcom/whatsapp/ConversationRowMedia;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    sget-object v1, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
+    const v1, 0x7f0e018d
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/whatsapp/eb;->a:Lcom/whatsapp/a8f;
+    invoke-static {v0, v1, v2}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
+    .line 11
+    :cond_0
+    :goto_0
+    return-void
 
     .line 4
-    return-void
+    :cond_1
+    iget-object v0, p0, Lcom/whatsapp/eb;->b:Lcom/whatsapp/ConversationRowMedia;
+
+    iget-object v0, v0, Lcom/whatsapp/ConversationRowMedia;->y:Lcom/whatsapp/protocol/c9;
+
+    iget-object v0, v0, Lcom/whatsapp/protocol/c9;->i:Ljava/lang/Object;
+
+    check-cast v0, Lcom/whatsapp/MediaData;
+
+    .line 10
+    iget-object v1, v0, Lcom/whatsapp/MediaData;->transcoder:Lcom/whatsapp/afu;
+
+    if-eqz v1, :cond_2
+
+    .line 1
+    iget-object v1, v0, Lcom/whatsapp/MediaData;->transcoder:Lcom/whatsapp/afu;
+
+    invoke-virtual {v1}, Lcom/whatsapp/afu;->i()V
+
+    .line 9
+    :cond_2
+    iget-object v1, v0, Lcom/whatsapp/MediaData;->uploader:Lcom/whatsapp/bv;
+
+    if-eqz v1, :cond_3
+
+    .line 13
+    iget-object v0, v0, Lcom/whatsapp/MediaData;->uploader:Lcom/whatsapp/bv;
+
+    invoke-virtual {v0}, Lcom/whatsapp/bv;->k()V
+
+    .line 12
+    :cond_3
+    sget v0, Lcom/whatsapp/App;->h:I
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    :cond_4
+    iget-object v0, p0, Lcom/whatsapp/eb;->b:Lcom/whatsapp/ConversationRowMedia;
+
+    iget-object v0, v0, Lcom/whatsapp/ConversationRowMedia;->y:Lcom/whatsapp/protocol/c9;
+
+    iget-object v0, v0, Lcom/whatsapp/protocol/c9;->i:Ljava/lang/Object;
+
+    check-cast v0, Lcom/whatsapp/MediaData;
+
+    iget-object v0, v0, Lcom/whatsapp/MediaData;->downloader:Lcom/whatsapp/u0;
+
+    invoke-virtual {v0}, Lcom/whatsapp/u0;->a()V
+
+    goto :goto_0
 .end method

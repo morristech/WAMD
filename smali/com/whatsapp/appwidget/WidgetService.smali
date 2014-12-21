@@ -14,7 +14,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 2
     invoke-direct {p0}, Landroid/widget/RemoteViewsService;-><init>()V
 
     return-void
@@ -26,14 +26,14 @@
     .locals 2
 
     .prologue
-    .line 2
-    new-instance v0, Lcom/whatsapp/appwidget/e;
+    .line 1
+    new-instance v0, Lcom/whatsapp/appwidget/g;
 
     invoke-virtual {p0}, Lcom/whatsapp/appwidget/WidgetService;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/whatsapp/appwidget/e;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/whatsapp/appwidget/g;-><init>(Landroid/content/Context;)V
 
     return-object v0
 .end method

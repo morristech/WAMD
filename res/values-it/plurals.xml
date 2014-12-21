@@ -70,11 +70,11 @@ rimanente"</item>
     </plurals>
     <plurals name="group_participant_demoted_names">
         <item quantity="other">%s non sono più amministratori</item>
-        <item quantity="one">%s non è più amministratore</item>
+        <item quantity="one">%s non è più un amministratore</item>
     </plurals>
     <plurals name="group_participant_promoted_names">
         <item quantity="other">%s ora sono amministratori</item>
-        <item quantity="one">%s ora è amministratore</item>
+        <item quantity="one">%s ora è un amministratore</item>
     </plurals>
     <plurals name="hours">
         <item quantity="other">%d ore</item>
@@ -169,8 +169,8 @@ rimanente"</item>
         <item quantity="one">%d rimanente</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Fatto. Abbiamo ripristinato %,d messaggi.</item>
-        <item quantity="one">Fatto. Abbiamo ripristinato %,d messaggio.</item>
+        <item quantity="other">%,d messaggi ripristinati. Puoi procedere.</item>
+        <item quantity="one">%,d messaggio ripristinato. Puoi procedere.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Invio video %1$d a %2$s</item>
@@ -217,7 +217,7 @@ rimanente"</item>
         <item quantity="one">Hai creato la lista di broadcast “%1$s” con %2$d destinatario</item>
     </plurals>
     <plurals name="you_created_list_unnamed">
-        <item quantity="other">Hai creato una lista di broadcast con %d destinatari</item>
-        <item quantity="one">Hai creato una lista di broadcast con %d destinatario</item>
+        <item quantity="other">Hai creato una lista broadcast con %d destinatari</item>
+        <item quantity="one">Hai creato una lista broadcast con %d destinatario</item>
     </plurals>
 </resources>

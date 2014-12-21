@@ -31,6 +31,9 @@
 .method public abstract callInterrupted()V
 .end method
 
+.method public abstract callOfferAckedWithRelayInfo()V
+.end method
+
 .method public abstract callOfferNacked()V
 .end method
 
@@ -91,7 +94,10 @@
 .method public abstract p2pTransportStartFailed()V
 .end method
 
-.method public abstract packetTransferTimeout()V
+.method public abstract packetRxTimeout()V
+.end method
+
+.method public abstract packetTxTimeout()V
 .end method
 
 .method public abstract relayCreateSuccess()V

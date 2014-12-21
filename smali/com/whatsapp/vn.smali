@@ -1,89 +1,82 @@
 .class Lcom/whatsapp/vn;
-.super Lcom/whatsapp/vu;
+.super Ljava/lang/Object;
 .source "vn.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final d:Lcom/whatsapp/_5;
+.field final a:Ljava/lang/String;
+
+.field final b:Lcom/whatsapp/yn;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/_5;Ljava/lang/String;)V
+.method constructor <init>(Lcom/whatsapp/yn;Ljava/lang/String;)V
     .locals 0
 
     .prologue
-    .line 9
-    iput-object p1, p0, Lcom/whatsapp/vn;->d:Lcom/whatsapp/_5;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/vn;->b:Lcom/whatsapp/yn;
 
-    invoke-direct {p0, p2}, Lcom/whatsapp/vu;-><init>(Ljava/lang/String;)V
+    iput-object p2, p0, Lcom/whatsapp/vn;->a:Ljava/lang/String;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
-    .locals 1
+.method public run()V
+    .locals 4
 
     .prologue
     .line 2
-    invoke-super {p0}, Lcom/whatsapp/vu;->a()V
+    iget-object v0, p0, Lcom/whatsapp/vn;->a:Ljava/lang/String;
 
-    .line 6
-    iget-object v0, p0, Lcom/whatsapp/vn;->d:Lcom/whatsapp/_5;
+    invoke-static {v0}, Lcom/whatsapp/a9j;->a(Ljava/lang/String;)J
 
-    iget-object v0, v0, Lcom/whatsapp/_5;->a:Lcom/whatsapp/GroupChatInfo;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatInfo;->q(Lcom/whatsapp/GroupChatInfo;)V
-
-    .line 3
-    return-void
-.end method
-
-.method public a(I)V
-    .locals 1
-
-    .prologue
-    .line 4
-    invoke-super {p0, p1}, Lcom/whatsapp/vu;->a(I)V
-
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/vn;->d:Lcom/whatsapp/_5;
-
-    iget-object v0, v0, Lcom/whatsapp/_5;->a:Lcom/whatsapp/GroupChatInfo;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatInfo;->q(Lcom/whatsapp/GroupChatInfo;)V
-
-    .line 11
-    return-void
-.end method
-
-.method public run()V
-    .locals 2
-
-    .prologue
-    .line 10
-    invoke-super {p0}, Lcom/whatsapp/vu;->run()V
-
-    .line 8
-    sget-object v0, Lcom/whatsapp/afm;->f:Lcom/whatsapp/afm;
-
-    iget-object v1, p0, Lcom/whatsapp/vn;->d:Lcom/whatsapp/_5;
-
-    iget-object v1, v1, Lcom/whatsapp/_5;->a:Lcom/whatsapp/GroupChatInfo;
-
-    invoke-static {v1}, Lcom/whatsapp/GroupChatInfo;->h(Lcom/whatsapp/GroupChatInfo;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/afm;->a(Ljava/lang/String;)V
+    move-result-wide v0
 
     .line 5
-    iget-object v0, p0, Lcom/whatsapp/vn;->d:Lcom/whatsapp/_5;
+    iget-object v2, p0, Lcom/whatsapp/vn;->b:Lcom/whatsapp/yn;
 
-    iget-object v0, v0, Lcom/whatsapp/_5;->a:Lcom/whatsapp/GroupChatInfo;
+    invoke-static {v2}, Lcom/whatsapp/yn;->a(Lcom/whatsapp/yn;)Lcom/whatsapp/App;
 
-    invoke-static {v0}, Lcom/whatsapp/GroupChatInfo;->q(Lcom/whatsapp/GroupChatInfo;)V
+    move-result-object v2
+
+    iget-object v2, v2, Lcom/whatsapp/App;->ay:Lcom/whatsapp/a9j;
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v2, v0, v1, v3}, Lcom/whatsapp/a9j;->a(JLorg/whispersystems/libaxolotl/f;)V
+
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/vn;->b:Lcom/whatsapp/yn;
+
+    invoke-static {v0}, Lcom/whatsapp/yn;->a(Lcom/whatsapp/yn;)Lcom/whatsapp/App;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/whatsapp/App;->aO()Landroid/os/Handler;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/whatsapp/a5c;
+
+    sget-object v2, Lcom/whatsapp/App;->au:Lcom/whatsapp/amo;
+
+    iget-object v3, p0, Lcom/whatsapp/vn;->a:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Lcom/whatsapp/amo;->p(Ljava/lang/String;)Z
+
+    move-result v2
+
+    invoke-direct {v1, p0, v2}, Lcom/whatsapp/a5c;-><init>(Lcom/whatsapp/vn;Z)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 1
     return-void

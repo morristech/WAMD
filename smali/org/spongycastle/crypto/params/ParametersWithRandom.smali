@@ -17,14 +17,14 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 7
     new-instance v0, Ljava/security/SecureRandom;
 
     invoke-direct {v0}, Ljava/security/SecureRandom;-><init>()V
 
     invoke-direct {p0, p1, v0}, Lorg/spongycastle/crypto/params/ParametersWithRandom;-><init>(Lorg/spongycastle/crypto/CipherParameters;Ljava/security/SecureRandom;)V
 
-    .line 7
+    .line 8
     return-void
 .end method
 
@@ -32,13 +32,13 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 5
     iput-object p2, p0, Lorg/spongycastle/crypto/params/ParametersWithRandom;->random:Ljava/security/SecureRandom;
 
-    .line 2
+    .line 3
     iput-object p1, p0, Lorg/spongycastle/crypto/params/ParametersWithRandom;->parameters:Lorg/spongycastle/crypto/CipherParameters;
 
     .line 6
@@ -61,7 +61,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 2
     iget-object v0, p0, Lorg/spongycastle/crypto/params/ParametersWithRandom;->random:Ljava/security/SecureRandom;
 
     return-object v0

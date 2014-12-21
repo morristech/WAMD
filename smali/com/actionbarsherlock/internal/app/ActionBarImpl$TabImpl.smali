@@ -24,12 +24,12 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 13
     iput-object p1, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->this$0:Lcom/actionbarsherlock/internal/app/ActionBarImpl;
 
     invoke-direct {p0}, Lcom/actionbarsherlock/app/ActionBar$Tab;-><init>()V
 
-    .line 8
+    .line 14
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->mPosition:I
@@ -43,7 +43,7 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->mCallback:Lcom/actionbarsherlock/app/ActionBar$TabListener;
 
     return-object v0
@@ -53,7 +53,7 @@
     .locals 1
 
     .prologue
-    .line 9
+    .line 17
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->mContentDesc:Ljava/lang/CharSequence;
 
     return-object v0
@@ -63,7 +63,7 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 4
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->mCustomView:Landroid/view/View;
 
     return-object v0
@@ -73,7 +73,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 6
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->mIcon:Landroid/graphics/drawable/Drawable;
 
     return-object v0
@@ -83,7 +83,7 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 2
     iget v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->mPosition:I
 
     return v0
@@ -93,7 +93,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 12
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->mText:Ljava/lang/CharSequence;
 
     return-object v0
@@ -103,12 +103,12 @@
     .locals 1
 
     .prologue
-    .line 19
+    .line 9
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->this$0:Lcom/actionbarsherlock/internal/app/ActionBarImpl;
 
     invoke-virtual {v0, p0}, Lcom/actionbarsherlock/internal/app/ActionBarImpl;->selectTab(Lcom/actionbarsherlock/app/ActionBar$Tab;)V
 
-    .line 2
+    .line 10
     return-void
 .end method
 
@@ -116,7 +116,7 @@
     .locals 1
 
     .prologue
-    .line 16
+    .line 19
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->this$0:Lcom/actionbarsherlock/internal/app/ActionBarImpl;
 
     invoke-static {v0}, Lcom/actionbarsherlock/internal/app/ActionBarImpl;->access$700(Lcom/actionbarsherlock/internal/app/ActionBarImpl;)Landroid/content/Context;
@@ -142,15 +142,15 @@
     .locals 2
 
     .prologue
-    .line 17
+    .line 16
     iput-object p1, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->mIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 18
+    .line 15
     iget v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->mPosition:I
 
     if-ltz v0, :cond_0
 
-    .line 7
+    .line 8
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->this$0:Lcom/actionbarsherlock/internal/app/ActionBarImpl;
 
     invoke-static {v0}, Lcom/actionbarsherlock/internal/app/ActionBarImpl;->access$800(Lcom/actionbarsherlock/internal/app/ActionBarImpl;)Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
@@ -161,7 +161,7 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;->updateTab(I)V
 
-    .line 12
+    .line 18
     :cond_0
     return-object p0
 .end method
@@ -170,10 +170,10 @@
     .locals 0
 
     .prologue
-    .line 13
+    .line 3
     iput p1, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->mPosition:I
 
-    .line 1
+    .line 7
     return-void
 .end method
 
@@ -181,9 +181,9 @@
     .locals 0
 
     .prologue
-    .line 15
+    .line 5
     iput-object p1, p0, Lcom/actionbarsherlock/internal/app/ActionBarImpl$TabImpl;->mCallback:Lcom/actionbarsherlock/app/ActionBar$TabListener;
 
-    .line 6
+    .line 11
     return-object p0
 .end method

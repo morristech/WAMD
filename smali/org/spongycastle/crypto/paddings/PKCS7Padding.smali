@@ -14,21 +14,21 @@
 .method static constructor <clinit>()V
     .locals 12
 
-    const/16 v1, 0x67
+    const/16 v3, 0x4e
 
-    const/16 v3, 0x43
+    const/16 v1, 0x3d
 
-    const/16 v4, 0x29
+    const/16 v2, 0xf
+
+    const/16 v4, 0xc
 
     const/4 v6, 0x0
-
-    const/16 v2, 0xd
 
     const/4 v0, 0x3
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "\u0017l\'\to\u000bb B-\u0004b1[x\u0017y&M"
+    const-string v0, "\u0018\\knn\u0004Rl%,\u000bR}<y\u0018Ij*"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -57,7 +57,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "\u0017l\'\to\u000bb B-\u0004b1[x\u0017y&M"
+    const-string v0, "\u0018\\knn\u0004Rl%,\u000bR}<y\u0018Ij*"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -86,7 +86,7 @@
 
     const/4 v8, 0x2
 
-    const-string v0, "7F\u0000z:"
+    const-string v0, "8vL\u001d;"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -124,7 +124,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    move v0, v2
+    move v0, v4
 
     :goto_3
     xor-int/2addr v0, v10
@@ -140,22 +140,22 @@
     goto :goto_0
 
     :pswitch_0
-    move v0, v1
+    const/16 v0, 0x68
 
     goto :goto_3
 
     :pswitch_1
-    move v0, v2
+    move v0, v1
 
     goto :goto_3
 
     :pswitch_2
-    move v0, v3
+    move v0, v2
 
     goto :goto_3
 
     :pswitch_3
-    move v0, v4
+    move v0, v3
 
     goto :goto_3
 
@@ -166,7 +166,7 @@
 
     packed-switch v0, :pswitch_data_1
 
-    move v0, v2
+    move v0, v4
 
     :goto_4
     xor-int/2addr v0, v11
@@ -182,22 +182,22 @@
     goto :goto_1
 
     :pswitch_4
-    move v0, v1
+    const/16 v0, 0x68
 
     goto :goto_4
 
     :pswitch_5
-    move v0, v2
+    move v0, v1
 
     goto :goto_4
 
     :pswitch_6
-    move v0, v3
+    move v0, v2
 
     goto :goto_4
 
     :pswitch_7
-    move v0, v4
+    move v0, v3
 
     goto :goto_4
 
@@ -208,7 +208,7 @@
 
     packed-switch v0, :pswitch_data_2
 
-    move v0, v2
+    move v0, v4
 
     :goto_5
     xor-int/2addr v0, v10
@@ -224,24 +224,26 @@
     goto :goto_2
 
     :pswitch_8
-    move v0, v1
+    const/16 v0, 0x68
 
     goto :goto_5
 
     :pswitch_9
-    move v0, v2
+    move v0, v1
 
     goto :goto_5
 
     :pswitch_a
-    move v0, v3
+    move v0, v2
 
     goto :goto_5
 
     :pswitch_b
-    move v0, v4
+    move v0, v3
 
     goto :goto_5
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -272,7 +274,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -293,7 +295,7 @@
 
     int-to-byte v1, v1
 
-    .line 5
+    .line 15
     :cond_0
     array-length v2, p1
 
@@ -302,12 +304,12 @@
     .line 9
     aput-byte v1, p1, p2
 
-    .line 6
+    .line 5
     add-int/lit8 p2, p2, 0x1
 
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 7
     :cond_1
     return v1
 .end method
@@ -316,7 +318,7 @@
     .locals 2
 
     .prologue
-    .line 15
+    .line 3
     sget-object v0, Lorg/spongycastle/crypto/paddings/PKCS7Padding;->z:[Ljava/lang/String;
 
     const/4 v1, 0x2
@@ -330,7 +332,7 @@
     .locals 0
 
     .prologue
-    .line 10
+    .line 4
     return-void
 .end method
 
@@ -342,7 +344,7 @@
 
     sget-boolean v1, Lorg/spongycastle/crypto/paddings/PaddedBufferedBlockCipher;->a:Z
 
-    .line 12
+    .line 2
     array-length v2, p1
 
     add-int/lit8 v2, v2, -0x1
@@ -351,14 +353,14 @@
 
     and-int/lit16 v2, v2, 0xff
 
-    .line 7
+    .line 11
     array-length v3, p1
 
     if-gt v2, v3, :cond_0
 
     if-nez v2, :cond_1
 
-    .line 1
+    .line 10
     :cond_0
     new-instance v1, Lorg/spongycastle/crypto/InvalidCipherTextException;
 
@@ -370,11 +372,11 @@
 
     throw v1
 
-    .line 11
+    .line 8
     :cond_1
     if-gt v0, v2, :cond_3
 
-    .line 16
+    .line 1
     array-length v3, p1
 
     sub-int/2addr v3, v0
@@ -383,7 +385,7 @@
 
     if-eq v3, v2, :cond_2
 
-    .line 4
+    .line 12
     new-instance v0, Lorg/spongycastle/crypto/InvalidCipherTextException;
 
     sget-object v1, Lorg/spongycastle/crypto/paddings/PKCS7Padding;->z:[Ljava/lang/String;
@@ -396,7 +398,7 @@
 
     throw v0
 
-    .line 8
+    .line 16
     :cond_2
     add-int/lit8 v0, v0, 0x1
 

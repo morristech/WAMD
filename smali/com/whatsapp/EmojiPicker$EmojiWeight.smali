@@ -21,13 +21,13 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
+    .line 1
     iput p1, p0, Lcom/whatsapp/EmojiPicker$EmojiWeight;->code:I
 
-    .line 1
+    .line 4
     iput p2, p0, Lcom/whatsapp/EmojiPicker$EmojiWeight;->weight:F
 
     .line 2

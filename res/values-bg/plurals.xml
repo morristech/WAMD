@@ -168,10 +168,6 @@
         <item quantity="other">%d остават</item>
         <item quantity="one">%d остава</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Готово. Възстановихме %,d съобщения.</item>
-        <item quantity="one">Готово. Възстановихме %,d съобщение.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Изпращане на %1$d видеа до %2$s</item>
         <item quantity="one">Изпращане на %1$d видео до %2$s</item>

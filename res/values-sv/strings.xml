@@ -71,14 +71,6 @@
     <string name="audio_note_tip">Tryck och håll kvar för att spela in, släpp för att skicka</string>
     <string name="audio_note_tip_2">Vänligen spela in ett längre meddelande</string>
     <string name="audio_note_top_mic_tip">Vänligen tala i mikrofonen på ovansidan av din telefon</string>
-    <string name="auth_client_needs_enabling_title">Google Play Tjänster måste aktiveras för en att app ska fungera.</string>
-    <string name="auth_client_needs_installation_title">Google Play Tjänster måste installeras för att en app ska fungera.</string>
-    <string name="auth_client_needs_update_title">Google Play Tjänster måste uppdateras för en app ska fungera.</string>
-    <string name="auth_client_play_services_err_notification_msg">Fel på Google Play Tjänster</string>
-    <string name="auth_client_requested_by_msg">Begärdes av %1$s</string>
-    <string name="auth_client_using_bad_version_title">En olämplig version av Google Play Tjänster anropades av en app.</string>
-    <string name="barcode_scanner_dialog_body">Den här applikationen behöver en streckkodsläsare. Vill du installera en?</string>
-    <string name="barcode_scanner_dialog_title">Installera streckkodläsaren?</string>
     <string name="block">Blockera</string>
     <string name="block_ask">Är du säker på att du vill blockera kontakten?</string>
     <string name="block_list_desc_1">"Tryck på symbolen i höger övre hörnet för att välja kontakten du vill blockera.
@@ -159,23 +151,32 @@ Har du både ny telefon och nytt nummer ska du först ändra nummer på din gaml
     <string name="color_red">Rött</string>
     <string name="color_white">Vit</string>
     <string name="color_yellow">Gul</string>
+    <string name="common_android_wear_notification_needs_update_text">En app kräver att appen Android Wear uppdateras.</string>
+    <string name="common_android_wear_update_text">Om du inte uppdaterar appen Android Wear kan den här appen inte köras.</string>
+    <string name="common_android_wear_update_title">Uppdatera Android Wear</string>
     <string name="common_google_play_services_enable_button">Aktivera Google Play Tjänster</string>
     <string name="common_google_play_services_enable_text">Du måste aktivera Google Play Tjänster för att den här appen ska fungera.</string>
     <string name="common_google_play_services_enable_title">Aktivera Google Play Tjänster</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Begärdes av %1$s</string>
     <string name="common_google_play_services_install_button">Hämta Google Play Tjänster</string>
     <string name="common_google_play_services_install_text_phone">Den här appen kan inte köras utan Google Play Tjänster, som saknas på mobilen.</string>
     <string name="common_google_play_services_install_text_tablet">Den här appen kan inte köras utan Google Play Tjänster, som saknas på surfplattan.</string>
     <string name="common_google_play_services_install_title">Hämta Google Play Tjänster</string>
     <string name="common_google_play_services_invalid_account_text">Det angivna kontot finns inte på den här enheten. Välj ett annat konto.</string>
     <string name="common_google_play_services_invalid_account_title">Ogiltigt konto</string>
+    <string name="common_google_play_services_needs_enabling_title">Google Play-tjänster måste aktiveras för att en app ska fungera.</string>
     <string name="common_google_play_services_network_error_text">En dataanslutning krävs för att ansluta till Google Plays tjänster.</string>
     <string name="common_google_play_services_network_error_title">Nätverksfel</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Google Play-tjänster måste installeras för att en app ska fungera.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Google Play-tjänster måste uppdateras för en app ska fungera.</string>
+    <string name="common_google_play_services_notification_ticker">Fel på Google Play-tjänster</string>
     <string name="common_google_play_services_unknown_issue">Okänt problem med Google Play Tjänster</string>
     <string name="common_google_play_services_unsupported_text">Några av dina appar använder Google Play-tjänster som inte stöds av din enhet. Kontakta tillverkaren om du vill ha hjälp.</string>
     <string name="common_google_play_services_unsupported_title">Google Play-tjänster</string>
     <string name="common_google_play_services_update_button">Uppdatera</string>
     <string name="common_google_play_services_update_text">Du måste uppdatera Google Play Tjänster innan du kan köra den här appen.</string>
     <string name="common_google_play_services_update_title">Uppdatera Google Play Tjänster</string>
+    <string name="common_open_on_phone">Öppna på mobilen</string>
     <string name="common_signin_button_text">Logga in</string>
     <string name="common_signin_button_text_long">Logga in med Google</string>
     <string name="confirm_forward_msg">Vidarebefordra till %s?</string>
@@ -352,7 +353,6 @@ Tillgängligt: %1$s"</string>
     <string name="eula_description">Mobil meddelandetjänst på flera plattformar till vänner över hela världen</string>
     <string name="eula_tablets_not_supported">Notera: surfplattor stöds inte för närvarande.</string>
     <string name="eula_terms_of_service">Användarvillkor</string>
-    <string name="eula_title">Välkommen till WhatsApp!</string>
     <string name="existing_contact">Befintliga</string>
     <string name="exit">Lämna</string>
     <string name="exit_group">Lämna grupp</string>
@@ -527,7 +527,6 @@ Din tjänst löper nu ut %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Kunde inte hämta eftersom det inte finns tillräckligt med utrymme i din interna delade lagring. Ta bort filer från den interna delade lagringen och försök igen.</string>
     <string name="invalid_media_message_download">Kan inte hämta media från ett ogiltigt meddelande. Försök skicka meddelandet igen.</string>
     <string name="invalid_message_forward">Meddelandet kan inte vidarebefordras till en ogiltig kontakt.</string>
-    <string name="invalid_qr_code">Ogiltig QR-kod</string>
     <string name="invalid_url_for_download">Kan inte hämta. Be om att den skickas på nytt.</string>
     <string name="invite">Bjud in</string>
     <string name="invite_friends">Bjud in vänner</string>
@@ -573,7 +572,6 @@ WhatsApp kan bara vara installerat på en enhet per telefonnummer."</string>
     <string name="menuitem_add">Lägg till</string>
     <string name="menuitem_contacts">Kontakter</string>
     <string name="menuitem_debug">Felsök</string>
-    <string name="menuitem_delete_qr">Ta bort QR-koden</string>
     <string name="menuitem_groupchat">Ny grupp</string>
     <string name="menuitem_list">Nytt massutskick</string>
     <string name="menuitem_mute">Ljud av</string>
@@ -614,14 +612,10 @@ WhatsApp kan bara vara installerat på en enhet per telefonnummer."</string>
     <string name="msg_store_backup_failed">Kunde inte säkerhetskopiera meddelanden</string>
     <string name="msg_store_backup_failed_try_again_later">Kan inte säkerhetskopiera meddelanden. Försök igen senare.</string>
     <string name="msg_store_backup_found">Hittade säkerhetskopia</string>
-    <string name="msg_store_backup_found_registration">Säkerhetskopia hittad!</string>
     <string name="msg_store_backup_skipped">Hoppade över säkerhetskopiering</string>
     <string name="msg_store_backup_skipped_no_media">Har ej säkerhetskopierat meddelanden: Hittade inget minneskort.</string>
     <string name="msg_store_backup_skipped_read_only_media">Har ej säkerhetskopierat meddelanden: Minneskortet är skrivskyddat.</string>
     <string name="msg_store_confirm">Bekräfta</string>
-    <string name="msg_store_creation_backup_message">Vill du återskapa meddelandehistoriken från en säkerhetskopia?</string>
-    <string name="msg_store_do_not_restore">Återställ inte</string>
-    <string name="msg_store_do_not_restore_no_thanks">Nej tack</string>
     <string name="msg_store_error_found">Ett fel har inträffat. Vänligen stoppa och starta om WhatsApp</string>
     <string name="msg_store_error_not_restored">Tyvärr kunde vi inte återställa någon av dina säkerhetskopior på din meddelandehistorik.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Meddelanden kommer att gå förlorade. Är du säker på att du inte vill återskapa meddelandehistoriken från en säkerhetskopia?</string>
@@ -648,9 +642,6 @@ WhatsApp kan bara vara installerat på en enhet per telefonnummer."</string>
     <string name="need_sd_card_shared_storage">Stäng av USB-lagringen och försök igen.</string>
     <string name="network_required">För närvarande saknas nätverksförbindelse.</string>
     <string name="network_usage_ask_reset_message">Vill du återställa statistiken?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Återställd senast: %1$s</string>
     <string name="network_usage_media_bytes_received">Mottagna bytes (media):</string>
     <string name="network_usage_media_bytes_sent">Skickade bytes (media):</string>
@@ -1006,17 +997,17 @@ Skickat med WhatsApp"</string>
     <string name="software_expired_get_from_play_with_date">Den här versionen av WhatsApp blev ersatt &lt;b>%1$s&lt;/b>. Vänligen öppna Google Play för att hämta den senaste versionen.&lt;br>&lt;br>Din enhets datum är &lt;b>%2$s&lt;/b>. Om datumet är fel kan du ändra det i datuminställningar på enheten och sedan starta om WhatsApp.</string>
     <string name="software_expired_with_date">Den här versionen av WhatsApp blev ersatt &lt;b>%1$s&lt;/b>. Tryck på “Hämta” för att ladda ner den senaste versionen.&lt;br>&lt;br>Din enhets datum är &lt;b>%2$s&lt;/b>. Om datumet är fel kan du ändra det i datuminställningar på enheten och sedan starta om WhatsApp.</string>
     <string name="spam_generic">"Du är tillfälligt avstängd från WhatsApp eftersom du har brutit mot tjänstens användarvillkor.
+
 Du kommer att kunna använda WhatsApp igen om:"</string>
     <string name="spam_generic_data_connection_missing">Kontrollera att din telefon har en aktiv anslutning till Internet</string>
     <string name="spam_generic_unknown_time_left">Du är tillfälligt avstängd från WhatsApp eftersom du kan ha brutit mot användarvillkoren. Du kommer att kunna använda WhatsApp snart igen.</string>
     <string name="spam_learn_more">Läs mer</string>
     <string name="spam_title">Tillfälligt avstängd</string>
-    <string name="spam_too_many_blocks">Du är tillfälligt avstängd från WhatsApp eftersom för många användare har blockerat dig.</string>
-    <string name="spam_too_many_groups">"Du är tillfälligt avstängd från WhatsApp eftersom du har skapat för många grupper med personer som inte har dig i sina kontakter.
+    <string name="spam_too_many_groups">"Du är tillfälligt avstängd från WhatsApp för att ha skapat för många grupper med användare som inte har dig i sina kontakter.
+
 Du kommer att kunna använda WhatsApp igen om:"</string>
-    <string name="spam_too_many_messages">"Du är tillfälligt avstängd från WhatsApp eftersom du har skickat för många meddelanden till personer som inte har dig bland sina kontakter.
-Du kommer att kunna använda WhatsApp igen om:"</string>
-    <string name="spam_too_many_people">"Du är tillfälligt avstängd från WhatsApp eftersom du har skickat samma meddelande till för många personer.
+    <string name="spam_too_many_messages">"Du är tillfälligt avstängd från WhatsApp eftersom du har skickat för många meddelanden till användare som inte har dig bland sina kontakter.
+
 Du kommer att kunna använda WhatsApp igen om:"</string>
     <string name="status">Status</string>
     <string name="status_default_at_gym">På gymmet</string>

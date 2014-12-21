@@ -1,17 +1,27 @@
-.class final Lcom/whatsapp/fo;
+.class Lcom/whatsapp/fo;
 .super Ljava/lang/Object;
 .source "fo.java"
 
 # interfaces
-.implements Landroid/os/Parcelable$Creator;
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field final a:Landroid/graphics/Bitmap;
+
+.field final b:Lcom/whatsapp/_x;
 
 
 # direct methods
-.method constructor <init>()V
+.method constructor <init>(Lcom/whatsapp/_x;Landroid/graphics/Bitmap;)V
     .locals 0
 
     .prologue
     .line 1
+    iput-object p1, p0, Lcom/whatsapp/fo;->b:Lcom/whatsapp/_x;
+
+    iput-object p2, p0, Lcom/whatsapp/fo;->a:Landroid/graphics/Bitmap;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -19,50 +29,51 @@
 
 
 # virtual methods
-.method public a(Landroid/os/Parcel;)Lcom/whatsapp/gs;
-    .locals 2
-
-    .prologue
-    .line 4
-    new-instance v0, Lcom/whatsapp/gs;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p1, v1}, Lcom/whatsapp/gs;-><init>(Landroid/os/Parcel;Lcom/whatsapp/da;)V
-
-    return-object v0
-.end method
-
-.method public a(I)[Lcom/whatsapp/gs;
-    .locals 1
-
-    .prologue
-    .line 5
-    new-array v0, p1, [Lcom/whatsapp/gs;
-
-    return-object v0
-.end method
-
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 1
+.method public run()V
+    .locals 4
 
     .prologue
     .line 3
-    invoke-virtual {p0, p1}, Lcom/whatsapp/fo;->a(Landroid/os/Parcel;)Lcom/whatsapp/gs;
+    iget-object v0, p0, Lcom/whatsapp/fo;->b:Lcom/whatsapp/_x;
+
+    iget-object v0, v0, Lcom/whatsapp/_x;->b:Lcom/whatsapp/VideoPreviewActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/VideoPreviewActivity;->c(Lcom/whatsapp/VideoPreviewActivity;)Lcom/whatsapp/VideoView;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    invoke-virtual {v0}, Lcom/whatsapp/VideoView;->isPlaying()Z
 
-.method public newArray(I)[Ljava/lang/Object;
-    .locals 1
+    move-result v0
 
-    .prologue
+    if-nez v0, :cond_0
+
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/fo;->b:Lcom/whatsapp/_x;
+
+    iget-object v0, v0, Lcom/whatsapp/_x;->b:Lcom/whatsapp/VideoPreviewActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/VideoPreviewActivity;->c(Lcom/whatsapp/VideoPreviewActivity;)Lcom/whatsapp/VideoView;
+
+    move-result-object v0
+
+    new-instance v1, Landroid/graphics/drawable/BitmapDrawable;
+
+    iget-object v2, p0, Lcom/whatsapp/fo;->b:Lcom/whatsapp/_x;
+
+    iget-object v2, v2, Lcom/whatsapp/_x;->b:Lcom/whatsapp/VideoPreviewActivity;
+
+    invoke-virtual {v2}, Lcom/whatsapp/VideoPreviewActivity;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/whatsapp/fo;->a:Landroid/graphics/Bitmap;
+
+    invoke-direct {v1, v2, v3}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/VideoView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+
     .line 2
-    invoke-virtual {p0, p1}, Lcom/whatsapp/fo;->a(I)[Lcom/whatsapp/gs;
-
-    move-result-object v0
-
-    return-object v0
+    :cond_0
+    return-void
 .end method

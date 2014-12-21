@@ -1,56 +1,39 @@
-.class final Lcom/whatsapp/c2;
-.super Ljava/lang/Thread;
+.class Lcom/whatsapp/c2;
+.super Ljava/lang/Object;
 .source "c2.java"
 
-
-# annotations
-.annotation build Landroid/annotation/SuppressLint;
-    value = {
-        "HandlerLeak"
-    }
-.end annotation
+# interfaces
+.implements Lcom/whatsapp/oh;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/a2v;
-
-.field public b:Landroid/os/Handler;
+.field final a:Lcom/whatsapp/GroupChatInfo;
 
 
 # direct methods
-.method public constructor <init>(Lcom/whatsapp/a2v;Ljava/lang/String;)V
+.method constructor <init>(Lcom/whatsapp/GroupChatInfo;)V
     .locals 0
 
     .prologue
     .line 2
-    iput-object p1, p0, Lcom/whatsapp/c2;->a:Lcom/whatsapp/a2v;
+    iput-object p1, p0, Lcom/whatsapp/c2;->a:Lcom/whatsapp/GroupChatInfo;
 
-    .line 6
-    invoke-direct {p0, p2}, Ljava/lang/Thread;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
+.method public a(Ljava/lang/String;)V
     .locals 1
 
     .prologue
     .line 3
-    invoke-static {}, Landroid/os/Looper;->prepare()V
+    iget-object v0, p0, Lcom/whatsapp/c2;->a:Lcom/whatsapp/GroupChatInfo;
 
-    .line 5
-    new-instance v0, Lcom/whatsapp/qa;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/qa;-><init>(Lcom/whatsapp/c2;)V
-
-    iput-object v0, p0, Lcom/whatsapp/c2;->b:Landroid/os/Handler;
+    invoke-static {v0, p1}, Lcom/whatsapp/GroupChatInfo;->b(Lcom/whatsapp/GroupChatInfo;Ljava/lang/String;)V
 
     .line 1
-    invoke-static {}, Landroid/os/Looper;->loop()V
-
-    .line 4
     return-void
 .end method

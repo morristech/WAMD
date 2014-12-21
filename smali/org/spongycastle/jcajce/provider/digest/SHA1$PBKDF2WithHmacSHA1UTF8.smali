@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "X_n%\":JL\u0015\u000c@pD\u00027@\\\u0014"
+    const-string v0, "\u000b\u001a)g\ti\u000f\u000bW\'\u00135\u0003@\u001c\u0013\u0019S"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x64
+    const/16 v0, 0x4f
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,22 +65,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x8
+    const/16 v0, 0x5b
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x1d
+    const/16 v0, 0x58
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x25
+    const/16 v0, 0x62
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x61
+    const/16 v0, 0x23
 
     goto :goto_1
 

@@ -1,52 +1,44 @@
-.class Lcom/google/bS;
+.class final Lcom/google/bS;
 .super Ljava/lang/Object;
 .source "bS.java"
 
-
-# static fields
-.field private static final a:Ljava/util/Iterator;
-
-.field private static final b:Ljava/lang/Iterable;
+# interfaces
+.implements Lcom/google/fv;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method constructor <init>()V
+    .locals 0
 
     .prologue
     .line 1
-    new-instance v0, Lcom/google/E;
-
-    invoke-direct {v0}, Lcom/google/E;-><init>()V
-
-    sput-object v0, Lcom/google/bS;->a:Ljava/util/Iterator;
-
-    .line 2
-    new-instance v0, Lcom/google/eY;
-
-    invoke-direct {v0}, Lcom/google/eY;-><init>()V
-
-    sput-object v0, Lcom/google/bS;->b:Ljava/lang/Iterable;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method static a()Ljava/lang/Iterable;
+
+# virtual methods
+.method public a(I)Lcom/google/dF;
     .locals 1
 
     .prologue
     .line 3
-    sget-object v0, Lcom/google/bS;->b:Ljava/lang/Iterable;
+    invoke-static {p1}, Lcom/google/dF;->valueOf(I)Lcom/google/dF;
+
+    move-result-object v0
 
     return-object v0
 .end method
 
-.method static b()Ljava/util/Iterator;
+.method public a(I)Lcom/google/h;
     .locals 1
 
     .prologue
-    .line 4
-    sget-object v0, Lcom/google/bS;->a:Ljava/util/Iterator;
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/google/bS;->a(I)Lcom/google/dF;
+
+    move-result-object v0
 
     return-object v0
 .end method

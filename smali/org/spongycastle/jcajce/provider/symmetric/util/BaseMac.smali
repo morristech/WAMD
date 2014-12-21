@@ -20,13 +20,13 @@
 .method static constructor <clinit>()V
     .locals 12
 
-    const/16 v1, 0x7a
+    const/16 v2, 0x3c
 
-    const/16 v2, 0x72
+    const/16 v3, 0x30
 
-    const/16 v3, 0x3c
+    const/16 v1, 0x14
 
-    const/16 v4, 0x2b
+    const/16 v4, 0xc
 
     const/4 v6, 0x0
 
@@ -34,7 +34,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, "\u0011\u0017\u0004\u001cB\tR\u0013IG\u0016"
+    const-string v0, "\u001cqE\u0010e\u00044RE`\u001b"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -63,7 +63,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "\u000f\u001c\u0016RD\r\u001c]LJ\u0008\u0013\u0010Y_\u001f\u0000]HR\n\u0017S"
+    const-string v0, "\u0002zW^c\u0000z\u001c@m\u0005uQUx\u0012f\u001cDu\u0007q\u0012"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -92,7 +92,7 @@
 
     const/4 v8, 0x2
 
-    const-string v0, "*08\u001cY\u001f\u0003\u0008UY\u001f\u0001]li?R\r]Y\u001b\u001f\u0018HN\u0008\u0001]HDZ\u0010\u0018\u001cX\u001f\u0006S"
+    const-string v0, "\'Vy\u0010~\u0012eIY~\u0012g\u001c`N24LQ~\u0016yYDi\u0005g\u001cDcWvY\u0010\u007f\u0012`\u0012"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -146,17 +146,17 @@
     goto :goto_0
 
     :pswitch_0
-    move v0, v1
+    const/16 v0, 0x77
 
     goto :goto_3
 
     :pswitch_1
-    move v0, v2
+    move v0, v1
 
     goto :goto_3
 
     :pswitch_2
-    const/16 v0, 0x7d
+    move v0, v2
 
     goto :goto_3
 
@@ -188,17 +188,17 @@
     goto :goto_1
 
     :pswitch_4
-    move v0, v1
+    const/16 v0, 0x77
 
     goto :goto_4
 
     :pswitch_5
-    move v0, v2
+    move v0, v1
 
     goto :goto_4
 
     :pswitch_6
-    const/16 v0, 0x7d
+    move v0, v2
 
     goto :goto_4
 
@@ -230,17 +230,17 @@
     goto :goto_2
 
     :pswitch_8
-    move v0, v1
+    const/16 v0, 0x77
 
     goto :goto_5
 
     :pswitch_9
-    move v0, v2
+    move v0, v1
 
     goto :goto_5
 
     :pswitch_a
-    const/16 v0, 0x7d
+    move v0, v2
 
     goto :goto_5
 
@@ -280,13 +280,13 @@
     .locals 0
 
     .prologue
-    .line 16
+    .line 4
     invoke-direct {p0}, Ljavax/crypto/MacSpi;-><init>()V
 
-    .line 3
+    .line 14
     iput-object p1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->macEngine:Lorg/spongycastle/crypto/Mac;
 
-    .line 30
+    .line 23
     return-void
 .end method
 
@@ -296,21 +296,21 @@
     .locals 3
 
     .prologue
-    .line 14
+    .line 2
     invoke-virtual {p0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->engineGetMacLength()I
 
     move-result v0
 
     new-array v0, v0, [B
 
-    .line 25
+    .line 27
     iget-object v1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->macEngine:Lorg/spongycastle/crypto/Mac;
 
     const/4 v2, 0x0
 
     invoke-interface {v1, v0, v2}, Lorg/spongycastle/crypto/Mac;->doFinal([BI)I
 
-    .line 29
+    .line 10
     return-object v0
 .end method
 
@@ -318,7 +318,7 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 8
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->macEngine:Lorg/spongycastle/crypto/Mac;
 
     invoke-interface {v0}, Lorg/spongycastle/crypto/Mac;->getMacSize()I
@@ -334,10 +334,10 @@
     .prologue
     sget-boolean v2, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->a:Z
 
-    .line 9
+    .line 25
     if-nez p1, :cond_0
 
-    .line 23
+    .line 26
     new-instance v0, Ljava/security/InvalidKeyException;
 
     sget-object v1, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->z:[Ljava/lang/String;
@@ -350,7 +350,7 @@
 
     throw v0
 
-    .line 5
+    .line 11
     :cond_0
     instance-of v0, p1, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
@@ -358,37 +358,37 @@
 
     move-object v0, p1
 
-    .line 26
+    .line 28
     check-cast v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    .line 10
+    .line 3
     invoke-virtual {v0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getParam()Lorg/spongycastle/crypto/CipherParameters;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
-    .line 12
+    .line 5
     invoke-virtual {v0}, Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;->getParam()Lorg/spongycastle/crypto/CipherParameters;
 
     move-result-object v1
 
     if-eqz v2, :cond_3
 
-    .line 28
+    .line 13
     :cond_1
     instance-of v1, p2, Ljavax/crypto/spec/PBEParameterSpec;
 
     if-eqz v1, :cond_2
 
-    .line 18
+    .line 6
     invoke-static {v0, p2}, Lorg/spongycastle/jcajce/provider/symmetric/util/PBE$Util;->makePBEMacParameters(Lorg/spongycastle/jcajce/provider/symmetric/util/BCPBEKey;Ljava/security/spec/AlgorithmParameterSpec;)Lorg/spongycastle/crypto/CipherParameters;
 
     move-result-object v0
 
     if-eqz v2, :cond_4
 
-    .line 1
+    .line 21
     :cond_2
     new-instance v0, Ljava/security/InvalidAlgorithmParameterException;
 
@@ -405,17 +405,17 @@
     :cond_3
     move-object v0, v1
 
-    .line 8
+    .line 30
     :cond_4
     if-eqz v2, :cond_9
 
-    .line 2
+    .line 7
     :cond_5
     instance-of v0, p2, Ljavax/crypto/spec/IvParameterSpec;
 
     if-eqz v0, :cond_6
 
-    .line 19
+    .line 29
     new-instance v1, Lorg/spongycastle/crypto/params/ParametersWithIV;
 
     new-instance v3, Lorg/spongycastle/crypto/params/KeyParameter;
@@ -438,11 +438,11 @@
 
     if-eqz v2, :cond_8
 
-    .line 20
+    .line 22
     :cond_6
     if-nez p2, :cond_7
 
-    .line 13
+    .line 16
     new-instance v0, Lorg/spongycastle/crypto/params/KeyParameter;
 
     invoke-interface {p1}, Ljava/security/Key;->getEncoded()[B
@@ -453,7 +453,7 @@
 
     if-eqz v2, :cond_9
 
-    .line 11
+    .line 24
     :cond_7
     new-instance v0, Ljava/security/InvalidAlgorithmParameterException;
 
@@ -470,13 +470,13 @@
     :cond_8
     move-object v0, v1
 
-    .line 7
+    .line 15
     :cond_9
     iget-object v1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->macEngine:Lorg/spongycastle/crypto/Mac;
 
     invoke-interface {v1, v0}, Lorg/spongycastle/crypto/Mac;->init(Lorg/spongycastle/crypto/CipherParameters;)V
 
-    .line 21
+    .line 12
     return-void
 .end method
 
@@ -484,12 +484,12 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 9
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->macEngine:Lorg/spongycastle/crypto/Mac;
 
     invoke-interface {v0}, Lorg/spongycastle/crypto/Mac;->reset()V
 
-    .line 24
+    .line 19
     return-void
 .end method
 
@@ -497,12 +497,12 @@
     .locals 1
 
     .prologue
-    .line 22
+    .line 17
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->macEngine:Lorg/spongycastle/crypto/Mac;
 
     invoke-interface {v0, p1}, Lorg/spongycastle/crypto/Mac;->update(B)V
 
-    .line 15
+    .line 1
     return-void
 .end method
 
@@ -510,11 +510,11 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 18
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseMac;->macEngine:Lorg/spongycastle/crypto/Mac;
 
     invoke-interface {v0, p1, p2, p3}, Lorg/spongycastle/crypto/Mac;->update([BII)V
 
-    .line 27
+    .line 20
     return-void
 .end method

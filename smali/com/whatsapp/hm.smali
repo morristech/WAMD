@@ -1,8 +1,8 @@
-.class public interface abstract Lcom/whatsapp/hm;
+.class interface abstract Lcom/whatsapp/hm;
 .super Ljava/lang/Object;
 .source "hm.java"
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/String;)V
+.method public abstract a(Ljava/lang/CharSequence;)V
 .end method

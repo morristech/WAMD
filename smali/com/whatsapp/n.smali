@@ -1,176 +1,108 @@
 .class Lcom/whatsapp/n;
-.super Ljava/lang/Object;
+.super Lcom/whatsapp/g;
 .source "n.java"
-
-# interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
-
-
-# static fields
-.field private static final z:Ljava/lang/String;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ListChatInfo;
+.field final a:Lcom/whatsapp/GroupChatRecentLocationsActivity;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    const-string v0, ";_{E34^iE3>Xn^C8Xk]\u00054]W]\t6@mv\u001e8Cx"
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    move v3, v2
-
-    move v2, v1
-
-    move-object v1, v0
-
-    :goto_0
-    if-gt v2, v3, :cond_0
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/n;->z:Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v4, v1, v3
-
-    rem-int/lit8 v0, v3, 0x5
-
-    packed-switch v0, :pswitch_data_0
-
-    const/16 v0, 0x6c
-
-    :goto_1
-    xor-int/2addr v0, v4
-
-    int-to-char v0, v0
-
-    aput-char v0, v1, v3
-
-    add-int/lit8 v0, v3, 0x1
-
-    move v3, v0
-
-    goto :goto_0
-
-    :pswitch_0
-    const/16 v0, 0x57
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v0, 0x36
-
-    goto :goto_1
-
-    :pswitch_2
-    const/16 v0, 0x8
-
-    goto :goto_1
-
-    :pswitch_3
-    const/16 v0, 0x31
-
-    goto :goto_1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-.end method
-
-.method constructor <init>(Lcom/whatsapp/ListChatInfo;)V
+.method constructor <init>(Lcom/whatsapp/GroupChatRecentLocationsActivity;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/n;->a:Lcom/whatsapp/ListChatInfo;
+    .line 5
+    iput-object p1, p0, Lcom/whatsapp/n;->a:Lcom/whatsapp/GroupChatRecentLocationsActivity;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcom/whatsapp/g;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 3
+.method public b(Lcom/whatsapp/protocol/c9;I)V
+    .locals 2
 
     .prologue
-    .line 4
-    sget-object v0, Lcom/whatsapp/n;->z:Ljava/lang/String;
-
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-
     .line 7
-    iget-object v0, p0, Lcom/whatsapp/n;->a:Lcom/whatsapp/ListChatInfo;
+    if-eqz p1, :cond_1
 
-    invoke-static {v0}, Lcom/whatsapp/ListChatInfo;->f(Lcom/whatsapp/ListChatInfo;)Lcom/whatsapp/adg;
+    iget-object v0, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    move-result-object v0
+    iget-object v0, v0, Lcom/whatsapp/protocol/bb;->b:Ljava/lang/String;
 
-    iget-object v0, v0, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/whatsapp/n;->a:Lcom/whatsapp/GroupChatRecentLocationsActivity;
 
-    invoke-static {v0}, Lcom/whatsapp/App;->y(Ljava/lang/String;)V
-
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/n;->a:Lcom/whatsapp/ListChatInfo;
-
-    invoke-static {v0}, Lcom/whatsapp/ListChatInfo;->f(Lcom/whatsapp/ListChatInfo;)Lcom/whatsapp/adg;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    invoke-static {v0}, Lcom/whatsapp/App;->A(Ljava/lang/String;)V
-
-    .line 1
-    new-instance v0, Landroid/content/Intent;
-
-    sget-object v1, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    invoke-virtual {v1}, Lcom/whatsapp/App;->getApplicationContext()Landroid/content/Context;
+    invoke-static {v1}, Lcom/whatsapp/GroupChatRecentLocationsActivity;->l(Lcom/whatsapp/GroupChatRecentLocationsActivity;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {}, Lcom/whatsapp/Main;->g()Ljava/lang/Class;
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result-object v2
+    move-result v0
 
-    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    if-eqz v0, :cond_1
 
-    const/high16 v1, 0x24000000
+    iget-object v0, p1, Lcom/whatsapp/protocol/c9;->L:Lcom/whatsapp/protocol/bb;
 
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    iget-boolean v0, v0, Lcom/whatsapp/protocol/bb;->c:Z
+
+    if-nez v0, :cond_1
+
+    iget-byte v0, p1, Lcom/whatsapp/protocol/c9;->b:B
+
+    const/4 v1, 0x5
+
+    if-ne v0, v1, :cond_1
+
+    .line 8
+    iget-object v0, p0, Lcom/whatsapp/n;->a:Lcom/whatsapp/GroupChatRecentLocationsActivity;
+
+    iget-object v1, p1, Lcom/whatsapp/protocol/c9;->D:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lcom/whatsapp/GroupChatRecentLocationsActivity;->a(Lcom/whatsapp/GroupChatRecentLocationsActivity;Ljava/lang/String;)Lcom/whatsapp/protocol/c9;
 
     move-result-object v0
 
-    .line 5
-    iget-object v1, p0, Lcom/whatsapp/n;->a:Lcom/whatsapp/ListChatInfo;
+    .line 1
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v1, v0}, Lcom/whatsapp/ListChatInfo;->startActivity(Landroid/content/Intent;)V
+    .line 3
+    iget-object v1, p0, Lcom/whatsapp/n;->a:Lcom/whatsapp/GroupChatRecentLocationsActivity;
+
+    invoke-static {v1}, Lcom/whatsapp/GroupChatRecentLocationsActivity;->e(Lcom/whatsapp/GroupChatRecentLocationsActivity;)Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+
+    .line 4
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/n;->a:Lcom/whatsapp/GroupChatRecentLocationsActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/GroupChatRecentLocationsActivity;->e(Lcom/whatsapp/GroupChatRecentLocationsActivity;)Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/n;->a:Lcom/whatsapp/GroupChatRecentLocationsActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/GroupChatRecentLocationsActivity;->b(Lcom/whatsapp/GroupChatRecentLocationsActivity;)V
+
+    .line 9
+    iget-object v0, p0, Lcom/whatsapp/n;->a:Lcom/whatsapp/GroupChatRecentLocationsActivity;
+
+    invoke-static {v0}, Lcom/whatsapp/GroupChatRecentLocationsActivity;->a(Lcom/whatsapp/GroupChatRecentLocationsActivity;)Lcom/whatsapp/m6;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/whatsapp/m6;->a()V
 
     .line 6
+    :cond_1
     return-void
 .end method

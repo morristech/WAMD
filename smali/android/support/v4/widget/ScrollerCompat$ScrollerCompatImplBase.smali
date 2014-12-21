@@ -23,12 +23,12 @@
     .locals 0
 
     .prologue
-    .line 11
+    .line 8
     check-cast p1, Landroid/widget/Scroller;
 
     invoke-virtual {p1}, Landroid/widget/Scroller;->abortAnimation()V
 
-    .line 12
+    .line 4
     return-void
 .end method
 
@@ -36,10 +36,10 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 11
     check-cast p1, Landroid/widget/Scroller;
 
-    .line 2
+    .line 10
     invoke-virtual {p1}, Landroid/widget/Scroller;->computeScrollOffset()Z
 
     move-result v0
@@ -51,7 +51,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 7
     if-eqz p2, :cond_0
 
     new-instance v0, Landroid/widget/Scroller;
@@ -73,7 +73,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 12
     check-cast p1, Landroid/widget/Scroller;
 
     invoke-virtual {p1}, Landroid/widget/Scroller;->getCurrX()I
@@ -87,7 +87,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 3
     check-cast p1, Landroid/widget/Scroller;
 
     invoke-virtual {p1}, Landroid/widget/Scroller;->getCurrY()I
@@ -101,7 +101,7 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 2
     check-cast p1, Landroid/widget/Scroller;
 
     invoke-virtual {p1}, Landroid/widget/Scroller;->getFinalX()I
@@ -115,7 +115,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 5
     check-cast p1, Landroid/widget/Scroller;
 
     invoke-virtual {p1}, Landroid/widget/Scroller;->getFinalY()I
@@ -129,7 +129,7 @@
     .locals 6
 
     .prologue
-    .line 3
+    .line 9
     move-object v0, p1
 
     check-cast v0, Landroid/widget/Scroller;
@@ -146,6 +146,6 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/widget/Scroller;->startScroll(IIIII)V
 
-    .line 9
+    .line 1
     return-void
 .end method

@@ -12,10 +12,10 @@
     .locals 2
 
     .prologue
-    .line 5
+    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
+    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
@@ -29,7 +29,7 @@
 
     iput-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat;->mImpl:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImpl;
 
-    sget v0, Landroid/support/v4/view/ViewPager;->a:I
+    sget-boolean v0, Landroid/support/v4/view/ViewPager;->a:Z
 
     if-eqz v0, :cond_1
 
@@ -41,7 +41,7 @@
 
     iput-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat;->mImpl:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImpl;
 
-    .line 2
+    .line 3
     :cond_1
     return-void
 .end method
@@ -52,7 +52,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 5
     iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat;->mImpl:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImpl;
 
     invoke-interface {v0, p1}, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImpl;->onTouchEvent(Landroid/view/MotionEvent;)Z

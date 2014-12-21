@@ -23,20 +23,20 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
+    .line 4
     iput-object p1, p0, Lcom/whatsapp/App$Me;->cc:Ljava/lang/String;
 
-    .line 2
+    .line 5
     iput-object p2, p0, Lcom/whatsapp/App$Me;->number:Ljava/lang/String;
 
-    .line 4
+    .line 1
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/whatsapp/App$Me;->jabber_id:Ljava/lang/String;
 
-    .line 3
+    .line 2
     return-void
 .end method

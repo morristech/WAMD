@@ -6,9 +6,16 @@
     <attr name="height" format="dimension" />
     <attr name="subtitleTextStyle" format="reference" />
     <attr name="titleTextStyle" format="reference" />
-    <attr name="mapType">
-        <enum name="hybrid" value="4" />
+    <attr name="imageAspectRatioAdjust">
+        <enum name="adjust_height" value="2" />
+        <enum name="adjust_width" value="1" />
         <enum name="none" value="0" />
+    </attr>
+    <attr name="imageAspectRatio" format="float" />
+    <attr name="circleCrop" format="boolean" />
+    <attr name="mapType">
+        <enum name="none" value="0" />
+        <enum name="hybrid" value="4" />
         <enum name="normal" value="1" />
         <enum name="satellite" value="2" />
         <enum name="terrain" value="3" />
@@ -18,6 +25,7 @@
     <attr name="cameraTargetLng" format="float" />
     <attr name="cameraTilt" format="float" />
     <attr name="cameraZoom" format="float" />
+    <attr name="liteMode" format="boolean" />
     <attr name="uiCompass" format="boolean" />
     <attr name="uiRotateGestures" format="boolean" />
     <attr name="uiScrollGestures" format="boolean" />
@@ -26,6 +34,7 @@
     <attr name="uiZoomGestures" format="boolean" />
     <attr name="useViewLifecycle" format="boolean" />
     <attr name="zOrderOnTop" format="boolean" />
+    <attr name="uiMapToolbar" format="boolean" />
     <attr name="pstsIndicatorColor" format="color" />
     <attr name="pstsUnderlineColor" format="color" />
     <attr name="pstsDividerColor" format="color" />

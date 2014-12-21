@@ -8,15 +8,15 @@
 
 
 # instance fields
-.field private a:I
+.field private a:Landroid/view/GestureDetector;
 
-.field private b:Lcom/google/android/maps/GeoPoint;
+.field private b:I
 
-.field private c:Landroid/view/GestureDetector;
+.field private c:I
 
-.field private d:Lcom/whatsapp/at;
+.field private d:Lcom/google/android/maps/GeoPoint;
 
-.field private e:I
+.field private e:Lcom/whatsapp/ad1;
 
 
 # direct methods
@@ -26,8 +26,8 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 55
-    const v0, 0x7f0e022e
+    .line 12
+    const v0, 0x7f0e0236
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -35,23 +35,23 @@
 
     invoke-direct {p0, p1, v0}, Lcom/google/android/maps/MapView;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 13
+    .line 51
     new-instance v0, Lcom/google/android/maps/GeoPoint;
 
     invoke-direct {v0, v1, v1}, Lcom/google/android/maps/GeoPoint;-><init>(II)V
 
-    iput-object v0, p0, Lcom/whatsapp/GoogleMapView;->b:Lcom/google/android/maps/GeoPoint;
+    iput-object v0, p0, Lcom/whatsapp/GoogleMapView;->d:Lcom/google/android/maps/GeoPoint;
 
-    .line 21
-    iput v1, p0, Lcom/whatsapp/GoogleMapView;->e:I
+    .line 61
+    iput v1, p0, Lcom/whatsapp/GoogleMapView;->b:I
 
-    .line 25
-    iput v1, p0, Lcom/whatsapp/GoogleMapView;->a:I
+    .line 30
+    iput v1, p0, Lcom/whatsapp/GoogleMapView;->c:I
 
-    .line 22
-    invoke-direct {p0}, Lcom/whatsapp/GoogleMapView;->a()V
+    .line 44
+    invoke-direct {p0}, Lcom/whatsapp/GoogleMapView;->c()V
 
-    .line 38
+    .line 9
     return-void
 .end method
 
@@ -61,26 +61,26 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 26
+    .line 8
     invoke-direct {p0, p1, p2}, Lcom/google/android/maps/MapView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 57
+    .line 13
     new-instance v0, Lcom/google/android/maps/GeoPoint;
 
     invoke-direct {v0, v1, v1}, Lcom/google/android/maps/GeoPoint;-><init>(II)V
 
-    iput-object v0, p0, Lcom/whatsapp/GoogleMapView;->b:Lcom/google/android/maps/GeoPoint;
+    iput-object v0, p0, Lcom/whatsapp/GoogleMapView;->d:Lcom/google/android/maps/GeoPoint;
 
-    .line 6
-    iput v1, p0, Lcom/whatsapp/GoogleMapView;->e:I
+    .line 48
+    iput v1, p0, Lcom/whatsapp/GoogleMapView;->b:I
 
-    .line 14
-    iput v1, p0, Lcom/whatsapp/GoogleMapView;->a:I
+    .line 55
+    iput v1, p0, Lcom/whatsapp/GoogleMapView;->c:I
 
-    .line 10
-    invoke-direct {p0}, Lcom/whatsapp/GoogleMapView;->a()V
+    .line 41
+    invoke-direct {p0}, Lcom/whatsapp/GoogleMapView;->c()V
 
-    .line 4
+    .line 64
     return-void
 .end method
 
@@ -90,66 +90,27 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 63
+    .line 35
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/maps/MapView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 20
+    .line 59
     new-instance v0, Lcom/google/android/maps/GeoPoint;
 
     invoke-direct {v0, v1, v1}, Lcom/google/android/maps/GeoPoint;-><init>(II)V
 
-    iput-object v0, p0, Lcom/whatsapp/GoogleMapView;->b:Lcom/google/android/maps/GeoPoint;
-
-    .line 19
-    iput v1, p0, Lcom/whatsapp/GoogleMapView;->e:I
+    iput-object v0, p0, Lcom/whatsapp/GoogleMapView;->d:Lcom/google/android/maps/GeoPoint;
 
     .line 65
-    iput v1, p0, Lcom/whatsapp/GoogleMapView;->a:I
+    iput v1, p0, Lcom/whatsapp/GoogleMapView;->b:I
 
-    .line 5
-    invoke-direct {p0}, Lcom/whatsapp/GoogleMapView;->a()V
+    .line 58
+    iput v1, p0, Lcom/whatsapp/GoogleMapView;->c:I
 
-    .line 7
+    .line 36
+    invoke-direct {p0}, Lcom/whatsapp/GoogleMapView;->c()V
+
+    .line 16
     return-void
-.end method
-
-.method public static a(Lcom/google/android/maps/GeoPoint;)Landroid/location/Location;
-    .locals 6
-
-    .prologue
-    const-wide v4, 0x412e848000000000L
-
-    .line 3
-    new-instance v0, Landroid/location/Location;
-
-    const-string v1, ""
-
-    invoke-direct {v0, v1}, Landroid/location/Location;-><init>(Ljava/lang/String;)V
-
-    .line 8
-    invoke-virtual {p0}, Lcom/google/android/maps/GeoPoint;->getLatitudeE6()I
-
-    move-result v1
-
-    int-to-double v2, v1
-
-    div-double/2addr v2, v4
-
-    invoke-virtual {v0, v2, v3}, Landroid/location/Location;->setLatitude(D)V
-
-    .line 30
-    invoke-virtual {p0}, Lcom/google/android/maps/GeoPoint;->getLongitudeE6()I
-
-    move-result v1
-
-    int-to-double v2, v1
-
-    div-double/2addr v2, v4
-
-    invoke-virtual {v0, v2, v3}, Landroid/location/Location;->setLongitude(D)V
-
-    .line 39
-    return-object v0
 .end method
 
 .method public static a(Landroid/location/Location;)Lcom/google/android/maps/GeoPoint;
@@ -158,7 +119,7 @@
     .prologue
     const-wide v4, 0x412e848000000000L
 
-    .line 43
+    .line 45
     new-instance v0, Lcom/google/android/maps/GeoPoint;
 
     invoke-virtual {p0}, Landroid/location/Location;->getLatitude()D
@@ -182,44 +143,83 @@
     return-object v0
 .end method
 
-.method private a()V
+.method public static b(Lcom/google/android/maps/GeoPoint;)Landroid/location/Location;
+    .locals 6
+
+    .prologue
+    const-wide v4, 0x412e848000000000L
+
+    .line 25
+    new-instance v0, Landroid/location/Location;
+
+    const-string v1, ""
+
+    invoke-direct {v0, v1}, Landroid/location/Location;-><init>(Ljava/lang/String;)V
+
+    .line 60
+    invoke-virtual {p0}, Lcom/google/android/maps/GeoPoint;->getLatitudeE6()I
+
+    move-result v1
+
+    int-to-double v2, v1
+
+    div-double/2addr v2, v4
+
+    invoke-virtual {v0, v2, v3}, Landroid/location/Location;->setLatitude(D)V
+
+    .line 49
+    invoke-virtual {p0}, Lcom/google/android/maps/GeoPoint;->getLongitudeE6()I
+
+    move-result v1
+
+    int-to-double v2, v1
+
+    div-double/2addr v2, v4
+
+    invoke-virtual {v0, v2, v3}, Landroid/location/Location;->setLongitude(D)V
+
+    .line 31
+    return-object v0
+.end method
+
+.method private c()V
     .locals 1
 
     .prologue
-    .line 64
+    .line 2
     new-instance v0, Landroid/view/GestureDetector;
 
     invoke-direct {v0, p0}, Landroid/view/GestureDetector;-><init>(Landroid/view/GestureDetector$OnGestureListener;)V
 
-    iput-object v0, p0, Lcom/whatsapp/GoogleMapView;->c:Landroid/view/GestureDetector;
+    iput-object v0, p0, Lcom/whatsapp/GoogleMapView;->a:Landroid/view/GestureDetector;
 
-    .line 56
-    iget-object v0, p0, Lcom/whatsapp/GoogleMapView;->c:Landroid/view/GestureDetector;
+    .line 24
+    iget-object v0, p0, Lcom/whatsapp/GoogleMapView;->a:Landroid/view/GestureDetector;
 
     invoke-virtual {v0, p0}, Landroid/view/GestureDetector;->setOnDoubleTapListener(Landroid/view/GestureDetector$OnDoubleTapListener;)V
 
-    .line 40
+    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public b()I
+.method public a()I
     .locals 5
 
     .prologue
     const/4 v4, 0x0
 
-    .line 60
+    .line 15
     invoke-virtual {p0}, Lcom/whatsapp/GoogleMapView;->getMapCenter()Lcom/google/android/maps/GeoPoint;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/whatsapp/GoogleMapView;->a(Lcom/google/android/maps/GeoPoint;)Landroid/location/Location;
+    invoke-static {v0}, Lcom/whatsapp/GoogleMapView;->b(Lcom/google/android/maps/GeoPoint;)Landroid/location/Location;
 
     move-result-object v0
 
-    .line 32
+    .line 22
     invoke-virtual {p0}, Lcom/whatsapp/GoogleMapView;->getProjection()Lcom/google/android/maps/Projection;
 
     move-result-object v1
@@ -234,11 +234,11 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/whatsapp/GoogleMapView;->a(Lcom/google/android/maps/GeoPoint;)Landroid/location/Location;
+    invoke-static {v1}, Lcom/whatsapp/GoogleMapView;->b(Lcom/google/android/maps/GeoPoint;)Landroid/location/Location;
 
     move-result-object v1
 
-    .line 58
+    .line 39
     invoke-virtual {p0}, Lcom/whatsapp/GoogleMapView;->getProjection()Lcom/google/android/maps/Projection;
 
     move-result-object v2
@@ -253,11 +253,11 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/whatsapp/GoogleMapView;->a(Lcom/google/android/maps/GeoPoint;)Landroid/location/Location;
+    invoke-static {v2}, Lcom/whatsapp/GoogleMapView;->b(Lcom/google/android/maps/GeoPoint;)Landroid/location/Location;
 
     move-result-object v2
 
-    .line 18
+    .line 28
     invoke-virtual {v0, v1}, Landroid/location/Location;->distanceTo(Landroid/location/Location;)F
 
     move-result v1
@@ -275,18 +275,18 @@
     return v0
 .end method
 
-.method public b(Lcom/google/android/maps/GeoPoint;)V
+.method public a(Lcom/google/android/maps/GeoPoint;)V
     .locals 1
 
     .prologue
-    .line 34
+    .line 23
     if-nez p1, :cond_0
 
-    .line 53
+    .line 42
     :goto_0
     return-void
 
-    .line 48
+    .line 47
     :cond_0
     :try_start_0
     invoke-virtual {p0}, Lcom/whatsapp/GoogleMapView;->getController()Lcom/google/android/maps/MapController;
@@ -299,11 +299,11 @@
 
     goto :goto_0
 
-    .line 17
+    .line 32
     :catch_0
     move-exception v0
 
-    .line 16
+    .line 6
     :try_start_1
     invoke-virtual {p0}, Lcom/whatsapp/GoogleMapView;->getController()Lcom/google/android/maps/MapController;
 
@@ -315,23 +315,23 @@
 
     goto :goto_0
 
-    .line 27
+    .line 62
     :catch_1
     move-exception v0
 
     goto :goto_0
 .end method
 
-.method public c()Landroid/location/Location;
+.method public b()Landroid/location/Location;
     .locals 1
 
     .prologue
-    .line 33
+    .line 50
     invoke-virtual {p0}, Lcom/whatsapp/GoogleMapView;->getMapCenter()Lcom/google/android/maps/GeoPoint;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/whatsapp/GoogleMapView;->a(Lcom/google/android/maps/GeoPoint;)Landroid/location/Location;
+    invoke-static {v0}, Lcom/whatsapp/GoogleMapView;->b(Lcom/google/android/maps/GeoPoint;)Landroid/location/Location;
 
     move-result-object v0
 
@@ -342,15 +342,15 @@
     .locals 4
 
     .prologue
-    .line 52
+    .line 53
     invoke-super {p0, p1}, Lcom/google/android/maps/MapView;->dispatchDraw(Landroid/graphics/Canvas;)V
 
-    .line 49
-    iget-object v0, p0, Lcom/whatsapp/GoogleMapView;->d:Lcom/whatsapp/at;
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/GoogleMapView;->e:Lcom/whatsapp/ad1;
 
     if-eqz v0, :cond_1
 
-    .line 12
+    .line 27
     invoke-virtual {p0}, Lcom/whatsapp/GoogleMapView;->getMapCenter()Lcom/google/android/maps/GeoPoint;
 
     move-result-object v0
@@ -360,13 +360,13 @@
 
     move-result v1
 
-    .line 42
+    .line 38
     invoke-virtual {p0}, Lcom/whatsapp/GoogleMapView;->getLongitudeSpan()I
 
     move-result v2
 
-    .line 59
-    iget-object v3, p0, Lcom/whatsapp/GoogleMapView;->b:Lcom/google/android/maps/GeoPoint;
+    .line 40
+    iget-object v3, p0, Lcom/whatsapp/GoogleMapView;->d:Lcom/google/android/maps/GeoPoint;
 
     invoke-virtual {v3, v0}, Lcom/google/android/maps/GeoPoint;->equals(Ljava/lang/Object;)Z
 
@@ -374,30 +374,30 @@
 
     if-eqz v3, :cond_0
 
-    iget v3, p0, Lcom/whatsapp/GoogleMapView;->e:I
+    iget v3, p0, Lcom/whatsapp/GoogleMapView;->b:I
 
     if-ne v3, v1, :cond_0
 
-    iget v3, p0, Lcom/whatsapp/GoogleMapView;->a:I
+    iget v3, p0, Lcom/whatsapp/GoogleMapView;->c:I
 
     if-eq v3, v2, :cond_1
 
-    .line 61
+    .line 57
     :cond_0
-    iput-object v0, p0, Lcom/whatsapp/GoogleMapView;->b:Lcom/google/android/maps/GeoPoint;
+    iput-object v0, p0, Lcom/whatsapp/GoogleMapView;->d:Lcom/google/android/maps/GeoPoint;
 
-    .line 66
-    iput v1, p0, Lcom/whatsapp/GoogleMapView;->e:I
+    .line 54
+    iput v1, p0, Lcom/whatsapp/GoogleMapView;->b:I
 
-    .line 15
-    iput v2, p0, Lcom/whatsapp/GoogleMapView;->a:I
+    .line 63
+    iput v2, p0, Lcom/whatsapp/GoogleMapView;->c:I
 
-    .line 41
-    iget-object v3, p0, Lcom/whatsapp/GoogleMapView;->d:Lcom/whatsapp/at;
+    .line 7
+    iget-object v3, p0, Lcom/whatsapp/GoogleMapView;->e:Lcom/whatsapp/ad1;
 
-    invoke-interface {v3, v0, v1, v2}, Lcom/whatsapp/at;->a(Lcom/google/android/maps/GeoPoint;II)V
+    invoke-interface {v3, v0, v1, v2}, Lcom/whatsapp/ad1;->a(Lcom/google/android/maps/GeoPoint;II)V
 
-    .line 62
+    .line 52
     :cond_1
     return-void
 .end method
@@ -406,12 +406,12 @@
     .locals 1
 
     .prologue
-    .line 23
-    iget-object v0, p0, Lcom/whatsapp/GoogleMapView;->c:Landroid/view/GestureDetector;
+    .line 19
+    iget-object v0, p0, Lcom/whatsapp/GoogleMapView;->a:Landroid/view/GestureDetector;
 
     invoke-virtual {v0, p1}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
-    .line 2
+    .line 20
     invoke-super {p0, p1}, Lcom/google/android/maps/MapView;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v0
@@ -423,10 +423,10 @@
     .locals 0
 
     .prologue
-    .line 35
+    .line 29
     invoke-super {p0}, Lcom/google/android/maps/MapView;->onDetachedFromWindow()V
 
-    .line 29
+    .line 66
     return-void
 .end method
 
@@ -434,7 +434,7 @@
     .locals 3
 
     .prologue
-    .line 28
+    .line 33
     invoke-virtual {p0}, Lcom/whatsapp/GoogleMapView;->getController()Lcom/google/android/maps/MapController;
 
     move-result-object v0
@@ -462,7 +462,7 @@
     .locals 1
 
     .prologue
-    .line 51
+    .line 17
     const/4 v0, 0x0
 
     return v0
@@ -472,7 +472,7 @@
     .locals 1
 
     .prologue
-    .line 37
+    .line 3
     const/4 v0, 0x0
 
     return v0
@@ -482,7 +482,7 @@
     .locals 1
 
     .prologue
-    .line 36
+    .line 34
     const/4 v0, 0x0
 
     return v0
@@ -492,7 +492,7 @@
     .locals 0
 
     .prologue
-    .line 46
+    .line 11
     return-void
 .end method
 
@@ -500,7 +500,7 @@
     .locals 1
 
     .prologue
-    .line 31
+    .line 4
     const/4 v0, 0x0
 
     return v0
@@ -510,7 +510,7 @@
     .locals 0
 
     .prologue
-    .line 11
+    .line 14
     return-void
 .end method
 
@@ -518,7 +518,7 @@
     .locals 1
 
     .prologue
-    .line 50
+    .line 56
     const/4 v0, 0x0
 
     return v0
@@ -528,19 +528,19 @@
     .locals 1
 
     .prologue
-    .line 24
+    .line 18
     const/4 v0, 0x0
 
     return v0
 .end method
 
-.method public setMapListener(Lcom/whatsapp/at;)V
+.method public setMapListener(Lcom/whatsapp/ad1;)V
     .locals 0
 
     .prologue
-    .line 44
-    iput-object p1, p0, Lcom/whatsapp/GoogleMapView;->d:Lcom/whatsapp/at;
+    .line 43
+    iput-object p1, p0, Lcom/whatsapp/GoogleMapView;->e:Lcom/whatsapp/ad1;
 
-    .line 9
+    .line 46
     return-void
 .end method

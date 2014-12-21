@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "*4h"
+    const-string v0, "f\u0008i"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x6d
+    const/16 v0, 0x76
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,22 +65,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x40
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v0, 0x5d
-
-    goto :goto_1
-
-    :pswitch_2
     const/16 v0, 0xc
 
     goto :goto_1
 
+    :pswitch_1
+    const/16 v0, 0x61
+
+    goto :goto_1
+
+    :pswitch_2
+    const/16 v0, 0xd
+
+    goto :goto_1
+
     :pswitch_3
-    const/16 v0, 0x2b
+    const/16 v0, 0x3f
 
     goto :goto_1
 
@@ -111,8 +111,8 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 11
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 10
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment$DeleteBroadcastListDialogFragment;->getArguments()Landroid/os/Bundle;
 
@@ -124,12 +124,12 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v0, v1}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v1
 
-    .line 8
-    iget-object v0, v1, Lcom/whatsapp/adg;->y:Ljava/lang/String;
+    .line 7
+    iget-object v0, v1, Lcom/whatsapp/tc;->v:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -137,20 +137,20 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
-    const v0, 0x7f0e0123
+    .line 8
+    const v0, 0x7f0e0129
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationsFragment$DeleteBroadcastListDialogFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    sget-boolean v2, Lcom/whatsapp/App;->aL:Z
+    sget v2, Lcom/whatsapp/App;->h:I
 
     if-eqz v2, :cond_1
 
-    .line 10
+    .line 9
     :cond_0
-    const v0, 0x7f0e0122
+    const v0, 0x7f0e0128
 
     new-array v2, v5, [Ljava/lang/Object;
 
@@ -160,7 +160,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v1, v4}, Lcom/whatsapp/adg;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v1, v4}, Lcom/whatsapp/tc;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -170,7 +170,7 @@
 
     move-result-object v0
 
-    .line 5
+    .line 4
     :cond_1
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
@@ -180,7 +180,7 @@
 
     invoke-direct {v2, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 6
+    .line 1
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment$DeleteBroadcastListDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v3
@@ -189,7 +189,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lcom/whatsapp/util/ab;->c(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/CharSequence;
+    invoke-static {v0, v3}, Lcom/whatsapp/util/f;->a(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -197,34 +197,34 @@
 
     move-result-object v0
 
-    .line 7
+    .line 5
     invoke-virtual {v0, v5}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v2, 0x7f0e0080
+    const v2, 0x7f0e007a
 
-    new-instance v3, Lcom/whatsapp/aza;
+    new-instance v3, Lcom/whatsapp/s9;
 
-    invoke-direct {v3, p0}, Lcom/whatsapp/aza;-><init>(Lcom/whatsapp/ConversationsFragment$DeleteBroadcastListDialogFragment;)V
+    invoke-direct {v3, p0}, Lcom/whatsapp/s9;-><init>(Lcom/whatsapp/ConversationsFragment$DeleteBroadcastListDialogFragment;)V
 
-    .line 9
+    .line 6
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v2, 0x7f0e0106
+    const v2, 0x7f0e010b
 
-    new-instance v3, Lcom/whatsapp/at1;
+    new-instance v3, Lcom/whatsapp/a_x;
 
-    invoke-direct {v3, p0, v1}, Lcom/whatsapp/at1;-><init>(Lcom/whatsapp/ConversationsFragment$DeleteBroadcastListDialogFragment;Lcom/whatsapp/adg;)V
+    invoke-direct {v3, p0, v1}, Lcom/whatsapp/a_x;-><init>(Lcom/whatsapp/ConversationsFragment$DeleteBroadcastListDialogFragment;Lcom/whatsapp/tc;)V
 
-    .line 4
+    .line 11
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 1
+    .line 3
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0

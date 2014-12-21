@@ -1,89 +1,85 @@
-.class final Lcom/google/dz;
-.super Lcom/google/dk;
+.class abstract Lcom/google/dz;
+.super Lcom/google/dM;
 .source "dz.java"
 
 
-# instance fields
-.field private final b:Z
-
-.field private final c:Ljava/lang/String;
-
-.field private final d:I
-
-
 # direct methods
-.method constructor <init>(ILjava/lang/String;)V
-    .locals 1
+.method constructor <init>(Lcom/google/fj;)V
+    .locals 0
 
     .prologue
-    const/4 v0, 0x0
-
-    .line 10
-    invoke-direct {p0, p1}, Lcom/google/dk;-><init>(I)V
-
     .line 2
-    iput-object p2, p0, Lcom/google/dz;->c:Ljava/lang/String;
-
-    .line 8
-    iput-boolean v0, p0, Lcom/google/dz;->b:Z
-
-    .line 7
-    iput v0, p0, Lcom/google/dz;->d:I
-
-    .line 13
-    return-void
-.end method
-
-.method constructor <init>(ILjava/lang/String;I)V
-    .locals 1
-
-    .prologue
-    .line 1
-    invoke-direct {p0, p1}, Lcom/google/dk;-><init>(I)V
+    invoke-direct {p0, p1}, Lcom/google/dM;-><init>(Lcom/google/fj;)V
 
     .line 6
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/google/dz;->b:Z
-
-    .line 12
-    iput p3, p0, Lcom/google/dz;->d:I
-
-    .line 5
-    iput-object p2, p0, Lcom/google/dz;->c:Ljava/lang/String;
-
-    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method b()I
-    .locals 1
-
-    .prologue
-    .line 4
-    iget v0, p0, Lcom/google/dz;->d:I
-
-    return v0
+.method protected abstract a(I)I
 .end method
 
-.method c()Ljava/lang/String;
-    .locals 1
+.method protected final b(Ljava/lang/StringBuilder;II)V
+    .locals 5
 
     .prologue
+    sget v2, Lcom/google/dX;->b:I
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/dz;->c()Lcom/google/fc;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p2, p3}, Lcom/google/fc;->a(II)I
+
+    move-result v0
+
     .line 11
-    iget-object v0, p0, Lcom/google/dz;->c:Ljava/lang/String;
+    invoke-virtual {p0, p1, v0}, Lcom/google/dz;->c(Ljava/lang/StringBuilder;I)V
 
-    return-object v0
+    .line 12
+    invoke-virtual {p0, v0}, Lcom/google/dz;->a(I)I
+
+    move-result v3
+
+    .line 3
+    const v1, 0x186a0
+
+    .line 10
+    const/4 v0, 0x0
+
+    :cond_0
+    const/4 v4, 0x5
+
+    if-ge v0, v4, :cond_2
+
+    .line 13
+    div-int v4, v3, v1
+
+    if-nez v4, :cond_1
+
+    .line 9
+    const/16 v4, 0x30
+
+    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 4
+    :cond_1
+    div-int/lit8 v1, v1, 0xa
+
+    .line 7
+    add-int/lit8 v0, v0, 0x1
+
+    if-eqz v2, :cond_0
+
+    .line 5
+    :cond_2
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 8
+    return-void
 .end method
 
-.method d()Z
-    .locals 1
-
-    .prologue
-    .line 3
-    iget-boolean v0, p0, Lcom/google/dz;->b:Z
-
-    return v0
+.method protected abstract c(Ljava/lang/StringBuilder;I)V
 .end method

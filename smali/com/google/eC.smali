@@ -1,314 +1,212 @@
-.class public final Lcom/google/eC;
+.class abstract Lcom/google/eC;
 .super Ljava/lang/Object;
 .source "eC.java"
 
 
+# static fields
+.field private static final a:[Lcom/google/eC;
+
+
 # direct methods
-.method private static a(II)I
+.method static constructor <clinit>()V
+    .locals 4
+
+    .prologue
+    const/4 v3, 0x0
+
+    .line 6
+    const/16 v0, 0x8
+
+    new-array v0, v0, [Lcom/google/eC;
+
+    const/4 v1, 0x0
+
+    new-instance v2, Lcom/google/eV;
+
+    invoke-direct {v2, v3}, Lcom/google/eV;-><init>(Lcom/google/db;)V
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    new-instance v2, Lcom/google/eG;
+
+    invoke-direct {v2, v3}, Lcom/google/eG;-><init>(Lcom/google/db;)V
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    new-instance v2, Lcom/google/eK;
+
+    invoke-direct {v2, v3}, Lcom/google/eK;-><init>(Lcom/google/db;)V
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x3
+
+    new-instance v2, Lcom/google/e6;
+
+    invoke-direct {v2, v3}, Lcom/google/e6;-><init>(Lcom/google/db;)V
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x4
+
+    new-instance v2, Lcom/google/e0;
+
+    invoke-direct {v2, v3}, Lcom/google/e0;-><init>(Lcom/google/db;)V
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x5
+
+    new-instance v2, Lcom/google/eW;
+
+    invoke-direct {v2, v3}, Lcom/google/eW;-><init>(Lcom/google/db;)V
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x6
+
+    new-instance v2, Lcom/google/ea;
+
+    invoke-direct {v2, v3}, Lcom/google/ea;-><init>(Lcom/google/db;)V
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x7
+
+    new-instance v2, Lcom/google/ee;
+
+    invoke-direct {v2, v3}, Lcom/google/ee;-><init>(Lcom/google/db;)V
+
+    aput-object v2, v0, v1
+
+    sput-object v0, Lcom/google/eC;->a:[Lcom/google/eC;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 14
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 12
+    return-void
+.end method
+
+.method constructor <init>(Lcom/google/db;)V
+    .locals 0
+
+    .prologue
+    .line 13
+    invoke-direct {p0}, Lcom/google/eC;-><init>()V
+
+    return-void
+.end method
+
+.method static a(I)Lcom/google/eC;
+    .locals 1
+
+    .prologue
+    .line 4
+    if-ltz p0, :cond_0
+
+    const/4 v0, 0x7
+
+    if-le p0, v0, :cond_1
+
+    .line 10
+    :cond_0
+    :try_start_0
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    invoke-direct {v0}, Ljava/lang/IllegalArgumentException;-><init>()V
+
+    throw v0
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    move-exception v0
+
+    throw v0
+
+    .line 8
+    :cond_1
+    sget-object v0, Lcom/google/eC;->a:[Lcom/google/eC;
+
+    aget-object v0, v0, p0
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method final a(Lcom/google/d;I)V
     .locals 5
 
     .prologue
-    const/4 v1, 0x1
-
-    sget v3, Lcom/google/gF;->b:I
-
-    .line 3
-    sub-int v0, p0, p1
-
-    if-le v0, p1, :cond_0
-
-    .line 39
-    sub-int v0, p0, p1
-
-    if-eqz v3, :cond_1
-
-    .line 21
-    :cond_0
-    sub-int v0, p0, p1
-
-    move v4, v0
-
-    move v0, p1
-
-    move p1, v4
-
-    :cond_1
-    move v2, v1
-
-    .line 14
-    :cond_2
-    if-le p0, v0, :cond_4
-
-    .line 17
-    mul-int/2addr v2, p0
-
-    .line 20
-    if-gt v1, p1, :cond_3
-
-    .line 23
-    div-int/2addr v2, v1
-
-    .line 38
-    add-int/lit8 v1, v1, 0x1
-
-    .line 37
-    :cond_3
-    add-int/lit8 p0, p0, -0x1
-
-    if-eqz v3, :cond_2
-
-    :cond_4
-    move v0, v2
-
-    .line 11
-    :cond_5
-    if-gt v1, p1, :cond_6
-
-    .line 31
-    div-int/2addr v0, v1
-
-    .line 6
-    add-int/lit8 v1, v1, 0x1
-
-    if-eqz v3, :cond_5
-
-    .line 1
-    :cond_6
-    return v0
-.end method
-
-.method public static a([IIZ)I
-    .locals 13
-
-    .prologue
-    sget v8, Lcom/google/gF;->b:I
-
-    .line 15
-    array-length v9, p0
-
-    .line 2
     const/4 v1, 0x0
 
-    .line 44
-    array-length v2, p0
+    sget-boolean v3, Lcom/google/bH;->e:Z
 
-    const/4 v0, 0x0
+    move v2, v1
 
-    move v12, v0
+    .line 3
+    :goto_0
+    if-ge v2, p2, :cond_3
 
     move v0, v1
 
-    move v1, v12
-
+    .line 9
     :cond_0
-    if-ge v1, v2, :cond_1
+    if-ge v0, p2, :cond_2
 
-    aget v3, p0, v1
-
-    .line 27
-    add-int/2addr v0, v3
-
-    .line 8
-    add-int/lit8 v1, v1, 0x1
-
-    if-eqz v8, :cond_0
-
-    .line 41
-    :cond_1
-    const/4 v3, 0x0
-
-    .line 30
-    const/4 v2, 0x0
-
-    .line 7
-    const/4 v1, 0x0
-
-    move v6, v1
-
-    move v7, v0
-
-    move v1, v2
-
-    move v2, v3
-
-    :goto_0
-    add-int/lit8 v0, v9, -0x1
-
-    if-ge v6, v0, :cond_9
-
-    .line 12
-    const/4 v0, 0x1
-
-    const/4 v3, 0x1
-
-    shl-int/2addr v3, v6
-
-    or-int/2addr v1, v3
-
-    .line 18
-    :cond_2
-    aget v3, p0, v6
-
-    if-ge v0, v3, :cond_8
-
-    .line 40
-    sub-int v3, v7, v0
-
-    add-int/lit8 v3, v3, -0x1
-
-    sub-int v4, v9, v6
-
-    add-int/lit8 v4, v4, -0x2
-
-    invoke-static {v3, v4}, Lcom/google/eC;->a(II)I
-
-    move-result v3
-
-    .line 29
-    if-eqz p2, :cond_3
-
-    if-nez v1, :cond_3
-
-    sub-int v4, v7, v0
-
-    sub-int v5, v9, v6
-
-    add-int/lit8 v5, v5, -0x1
-
-    sub-int/2addr v4, v5
-
-    sub-int v5, v9, v6
-
-    add-int/lit8 v5, v5, -0x1
-
-    if-lt v4, v5, :cond_3
-
-    .line 5
-    sub-int v4, v7, v0
-
-    sub-int v5, v9, v6
-
-    sub-int/2addr v4, v5
-
-    sub-int v5, v9, v6
-
-    add-int/lit8 v5, v5, -0x2
-
-    invoke-static {v4, v5}, Lcom/google/eC;->a(II)I
+    .line 1
+    :try_start_0
+    invoke-virtual {p0, v2, v0}, Lcom/google/eC;->a(II)Z
 
     move-result v4
 
-    sub-int/2addr v3, v4
+    if-eqz v4, :cond_1
 
-    .line 34
-    :cond_3
-    sub-int v4, v9, v6
+    .line 7
+    invoke-virtual {p1, v0, v2}, Lcom/google/d;->c(II)V
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    add-int/lit8 v4, v4, -0x1
-
-    const/4 v5, 0x1
-
-    if-le v4, v5, :cond_6
-
-    .line 33
-    const/4 v5, 0x0
-
-    .line 36
-    sub-int v4, v7, v0
-
-    sub-int v10, v9, v6
-
-    add-int/lit8 v10, v10, -0x2
-
-    sub-int/2addr v4, v10
-
-    move v12, v4
-
-    move v4, v5
-
-    move v5, v12
-
-    .line 24
-    :cond_4
-    if-le v5, p1, :cond_5
-
-    .line 42
-    sub-int v10, v7, v0
-
-    sub-int/2addr v10, v5
-
-    add-int/lit8 v10, v10, -0x1
-
-    sub-int v11, v9, v6
-
-    add-int/lit8 v11, v11, -0x3
-
-    invoke-static {v10, v11}, Lcom/google/eC;->a(II)I
-
-    move-result v10
-
-    add-int/2addr v4, v10
-
-    .line 9
-    add-int/lit8 v5, v5, -0x1
-
-    if-eqz v8, :cond_4
-
-    .line 32
-    :cond_5
-    add-int/lit8 v5, v9, -0x1
-
-    sub-int/2addr v5, v6
-
-    mul-int/2addr v4, v5
-
-    sub-int/2addr v3, v4
-
-    .line 16
-    if-eqz v8, :cond_7
-
-    :cond_6
-    sub-int v4, v7, v0
-
-    if-le v4, p1, :cond_7
-
-    .line 26
-    add-int/lit8 v3, v3, -0x1
-
-    .line 35
-    :cond_7
-    add-int/2addr v2, v3
-
-    .line 13
+    .line 11
+    :cond_1
     add-int/lit8 v0, v0, 0x1
 
-    const/4 v3, 0x1
+    if-eqz v3, :cond_0
 
-    shl-int/2addr v3, v6
+    .line 2
+    :cond_2
+    add-int/lit8 v0, v2, 0x1
 
-    xor-int/lit8 v3, v3, -0x1
+    if-eqz v3, :cond_4
 
-    and-int/2addr v1, v3
+    .line 5
+    :cond_3
+    return-void
 
-    if-eqz v8, :cond_2
+    .line 7
+    :catch_0
+    move-exception v0
 
-    .line 25
-    :cond_8
-    sub-int v3, v7, v0
+    throw v0
 
-    .line 22
-    add-int/lit8 v0, v6, 0x1
-
-    if-eqz v8, :cond_a
-
-    .line 10
-    :cond_9
-    return v2
-
-    :cond_a
-    move v6, v0
-
-    move v7, v3
+    :cond_4
+    move v2, v0
 
     goto :goto_0
+.end method
+
+.method abstract a(II)Z
 .end method

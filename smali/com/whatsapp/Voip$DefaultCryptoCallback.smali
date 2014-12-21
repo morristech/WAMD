@@ -37,7 +37,7 @@
 
     new-array v6, v0, [Ljava/lang/String;
 
-    const-string v5, "eq\u00125zjv\u0002)ybkA3lm|\u0004`zcmA3ear\u00044ne|A+yu?L~<iq\u0002/xi{A,ybx\u0015(<$"
+    const-string v5, "\'\u000c\n\u001d:}\\\u001d\r\u007f.M\n\u000fsbM\u001e\u0002\u007f.\u0004"
 
     const/4 v0, -0x1
 
@@ -75,7 +75,7 @@
 
     aput-object v5, v8, v6
 
-    const-string v0, "%?\u00173<\u007fo\u0000#y,~\u0017!u`~\u0003,y,7"
+    const-string v0, "gB\u000f\u001b|hE\u001f\u0007\u007f`X\\\u001djoO\u0019N|a^\\\u001dccA\u0019\u001ahgO\\\u0005\u007fw\u000cQP:kB\u001f\u0001~kH\\\u0002\u007f`K\u0008\u0006:&"
 
     move-object v5, v0
 
@@ -90,7 +90,7 @@
     :pswitch_0
     aput-object v5, v8, v6
 
-    const-string v0, "eq\u00125zjv\u0002)ybkA3lm|\u0004`zcmA0ins\u0008#<gz\u0018`12?\u0004.\u007fc{\u0004$<`z\u000f\'hd?I"
+    const-string v0, "gB\u000f\u001b|hE\u001f\u0007\u007f`X\\\u001djoO\u0019N|a^\\\u001eol@\u0015\r:eI\u0005N70\u000c\u0019\u0000yaH\u0019\n:bI\u0012\tnf\u000cT"
 
     move-object v5, v0
 
@@ -105,7 +105,7 @@
     :pswitch_1
     aput-object v5, v8, v6
 
-    const-string v0, "%?\u00173<\u007fo\u0000#y,~\u0017!u`~\u0003,y,7"
+    const-string v0, "\'\u000c\n\u001d:}\\\u001d\r\u007f.M\n\u000fsbM\u001e\u0002\u007f.\u0004"
 
     move-object v5, v0
 
@@ -120,7 +120,7 @@
     :pswitch_2
     aput-object v5, v8, v6
 
-    const-string v0, "JY\'\u0006ZJY\'\u0006ZJY\'\u0006ZJ\\XpZH^ r.=)Y\u0003.?+\"t_:)Sx^4/%\u0003-O[Pr%<-U\u0005,4\' v+O\\Vt,>/#\u0002YM)R\u0002-?&#r.9.U\u0001,4(XxY?+QtXHZ\'y)=&#s_H, t/=]Rp.N/ vXJ-T\u0006-8,VtZI.Ru*H)%u-O-UuY8\'T\u0002);)Wr)I($\u0003*J+U\u0003(>ZX\u0001*?($\u0004*N/#\u0006Z9\\#vZ8/W\u0002+I[$\u0005/4)#\u0006^9^Yy%J^T\u0001Y5YSt-=(\"t^=Y$v(5-Yv*9.$\u0003Y8*#sXO-Qp+O]Y\u0001-:,#\u0006,9&Y\u0004]8\'Rv-O*T\u0004/5^Wy-:,\'\u0001$J[St_J*\'x/:*T\u0004.?[\"\u0001/M[Xv-O)S\u0006/9)Sp$9*S\u0002^5Z%u.5/Vw,5)Xv*H)Vp_?*U\u0005(M]\"y$<+\'q+8)\"p$O^Ss+?-V\u0006ZJY\'\u0006ZJY\'\u0006ZJY\'\u0006"
+    const-string v0, "Hj:(\\Hj:(\\Hj:(\\HoE^\\Jm=\\(?\u001aD-(=\u0018?ZY8\u001aNVX6\u001c8-+MhM\\#>\u001eH+*6\u0014=X-MoKZ*<\u001c>,_O\u001aO,+=\u0015>\\(;\u001dH/*6\u001bEV_=\u0018LZ^Ji:W/?\u0015>]YJ\u001f=Z)?nO^(L\u001c=X^H\u001eI(+:\u001fKZ\\K\u001dO[,J\u001a8[+M\u001eH[_:\u0014I,/9\u001aJ\\/K\u001b9-,H\u0018H-.<iE/,=\u001b9*,L\u001c>(\\;o>X\\:\u001cJ,-Kh9+)6\u001a>(X;mDW#HmI/_7jNZ+?\u001b?ZX?j9X.7\u001eDX,;\u001d9-_:\u0019>]^M\u001eL^-MnD/+8\u001f>(*;\u0015D*[:\u0014OX+M\u0019I*)7mJW+8\u001f:/\"HhNZYH\u0019:V)8\u0019I*(=h?/)OhEX+M\u001aN();\u001aN^\";\u0019N,X7i8[(7\u001cKY*7\u001aEX,J\u001aK^Y=\u0019H+.On?W\">\u0018:_-:\u001a?^\"MmN]-=\u001eK(\\Hj:(\\Hj:(\\Hj:("
 
     move-object v5, v0
 
@@ -150,7 +150,7 @@
 
     sput-object v0, Lcom/whatsapp/Voip$DefaultCryptoCallback;->P:Ljava/math/BigInteger;
 
-    .line 4
+    .line 36
     const-wide/16 v0, 0x2
 
     invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
@@ -169,7 +169,7 @@
 
     packed-switch v5, :pswitch_data_1
 
-    const/16 v5, 0x1c
+    const/16 v5, 0x1a
 
     :goto_2
     xor-int/2addr v5, v13
@@ -185,22 +185,22 @@
     goto :goto_1
 
     :pswitch_4
-    const/16 v5, 0xc
+    const/16 v5, 0xe
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v5, 0x1f
+    const/16 v5, 0x2c
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v5, 0x61
+    const/16 v5, 0x7c
 
     goto :goto_2
 
     :pswitch_7
-    const/16 v5, 0x40
+    const/16 v5, 0x6e
 
     goto :goto_2
 
@@ -227,10 +227,10 @@
     .locals 1
 
     .prologue
-    .line 15
+    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 49
+    .line 23
     new-instance v0, Ljava/security/SecureRandom;
 
     invoke-direct {v0}, Ljava/security/SecureRandom;-><init>()V
@@ -248,27 +248,27 @@
     .prologue
     const/4 v1, 0x0
 
-    sget-boolean v4, Lcom/whatsapp/App;->aL:Z
+    sget v4, Lcom/whatsapp/App;->h:I
 
-    .line 12
+    .line 4
     const/16 v0, 0xc1
 
     new-array v0, v0, [B
 
-    .line 46
+    .line 17
     iget-object v2, p0, Lcom/whatsapp/Voip$DefaultCryptoCallback;->secureRandom:Ljava/security/SecureRandom;
 
     invoke-virtual {v2, v0}, Ljava/security/SecureRandom;->nextBytes([B)V
 
-    .line 37
+    .line 42
     aput-byte v1, v0, v1
 
-    .line 33
+    .line 34
     new-instance v3, Ljava/math/BigInteger;
 
     invoke-direct {v3, v0}, Ljava/math/BigInteger;-><init>([B)V
 
-    .line 25
+    .line 53
     sget-object v0, Lcom/whatsapp/Voip$DefaultCryptoCallback;->G:Ljava/math/BigInteger;
 
     sget-object v2, Lcom/whatsapp/Voip$DefaultCryptoCallback;->P:Ljava/math/BigInteger;
@@ -277,12 +277,12 @@
 
     move-result-object v0
 
-    .line 31
+    .line 26
     invoke-virtual {v0}, Ljava/math/BigInteger;->toByteArray()[B
 
     move-result-object v5
 
-    .line 16
+    .line 11
     array-length v0, v5
 
     array-length v2, p1
@@ -291,7 +291,7 @@
 
     move v0, v1
 
-    .line 3
+    .line 32
     :cond_0
     array-length v2, v5
 
@@ -301,12 +301,12 @@
 
     if-ge v0, v2, :cond_2
 
-    .line 19
+    .line 21
     aget-byte v2, v5, v0
 
     if-eqz v2, :cond_1
 
-    .line 50
+    .line 12
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -355,20 +355,19 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 21
+    .line 47
     const/4 v0, 0x0
 
-    .line 44
     :goto_0
     return-object v0
 
-    .line 43
+    .line 39
     :cond_1
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v4, :cond_0
 
-    .line 48
+    .line 2
     :cond_2
     array-length v0, v5
 
@@ -378,7 +377,7 @@
 
     if-eqz v4, :cond_4
 
-    .line 30
+    .line 18
     :goto_1
     array-length v2, v5
 
@@ -388,7 +387,7 @@
 
     move v2, v1
 
-    .line 47
+    .line 25
     :cond_3
     array-length v6, p1
 
@@ -398,15 +397,15 @@
 
     if-ge v2, v6, :cond_4
 
-    .line 6
+    .line 33
     aput-byte v1, p1, v2
 
-    .line 2
+    .line 40
     add-int/lit8 v2, v2, 0x1
 
     if-eqz v4, :cond_3
 
-    .line 10
+    .line 29
     :cond_4
     array-length v2, p1
 
@@ -414,7 +413,7 @@
 
     sub-int/2addr v2, v4
 
-    .line 42
+    .line 50
     invoke-static {v2, v1}, Ljava/lang/Math;->max(II)I
 
     move-result v1
@@ -423,17 +422,17 @@
 
     array-length v4, v5
 
-    .line 35
+    .line 38
     invoke-static {v2, v4}, Ljava/lang/Math;->min(II)I
 
     move-result v2
 
-    .line 5
+    .line 7
     invoke-static {v5, v0, p1, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     move-object v0, v3
 
-    .line 44
+    .line 24
     goto :goto_0
 
     :cond_5
@@ -450,49 +449,49 @@
 
     const/4 v1, 0x0
 
-    sget-boolean v4, Lcom/whatsapp/App;->aL:Z
+    sget v4, Lcom/whatsapp/App;->h:I
 
-    .line 20
+    .line 52
     aget-byte v0, p2, v1
 
     if-eqz v0, :cond_0
 
-    .line 39
+    .line 1
     array-length v0, p2
 
     add-int/lit8 v0, v0, 0x1
 
     new-array v0, v0, [B
 
-    .line 27
+    .line 55
     aput-byte v1, v0, v1
 
-    .line 36
+    .line 43
     array-length v2, p2
 
     invoke-static {p2, v1, v0, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     move-object p2, v0
 
-    .line 11
+    .line 51
     :cond_0
     new-instance v0, Ljava/math/BigInteger;
 
     invoke-direct {v0, p2}, Ljava/math/BigInteger;-><init>([B)V
 
-    .line 53
+    .line 31
     sget-object v2, Lcom/whatsapp/Voip$DefaultCryptoCallback;->P:Ljava/math/BigInteger;
 
     invoke-virtual {v0, p1, v2}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v0
 
-    .line 52
+    .line 35
     invoke-virtual {v0}, Ljava/math/BigInteger;->toByteArray()[B
 
     move-result-object v5
 
-    .line 41
+    .line 8
     array-length v0, v5
 
     array-length v2, p3
@@ -501,7 +500,7 @@
 
     move v0, v1
 
-    .line 8
+    .line 44
     :cond_1
     array-length v2, v5
 
@@ -511,19 +510,19 @@
 
     if-ge v0, v2, :cond_3
 
-    .line 17
+    .line 16
     aget-byte v2, v5, v0
 
     if-eqz v2, :cond_2
 
-    .line 1
+    .line 22
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v2, Lcom/whatsapp/Voip$DefaultCryptoCallback;->z:[Ljava/lang/String;
 
-    aget-object v2, v2, v1
+    aget-object v2, v2, v3
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -537,7 +536,7 @@
 
     sget-object v2, Lcom/whatsapp/Voip$DefaultCryptoCallback;->z:[Ljava/lang/String;
 
-    aget-object v2, v2, v3
+    aget-object v2, v2, v1
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -561,17 +560,17 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 38
+    .line 49
     :goto_0
     return v1
 
-    .line 45
+    .line 5
     :cond_2
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v4, :cond_1
 
-    .line 55
+    .line 10
     :cond_3
     array-length v0, v5
 
@@ -581,7 +580,7 @@
 
     if-eqz v4, :cond_5
 
-    .line 9
+    .line 28
     :goto_1
     array-length v2, v5
 
@@ -591,7 +590,7 @@
 
     move v2, v1
 
-    .line 23
+    .line 41
     :cond_4
     array-length v6, p3
 
@@ -601,15 +600,15 @@
 
     if-ge v2, v6, :cond_5
 
-    .line 24
+    .line 54
     aput-byte v1, p3, v2
 
-    .line 26
+    .line 19
     add-int/lit8 v2, v2, 0x1
 
     if-eqz v4, :cond_4
 
-    .line 40
+    .line 9
     :cond_5
     array-length v2, p3
 
@@ -617,7 +616,7 @@
 
     sub-int/2addr v2, v4
 
-    .line 32
+    .line 6
     invoke-static {v2, v1}, Ljava/lang/Math;->max(II)I
 
     move-result v1
@@ -626,17 +625,17 @@
 
     array-length v4, v5
 
-    .line 7
+    .line 46
     invoke-static {v2, v4}, Ljava/lang/Math;->min(II)I
 
     move-result v2
 
-    .line 51
+    .line 30
     invoke-static {v5, v0, p3, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     move v1, v3
 
-    .line 38
+    .line 49
     goto :goto_0
 
     :cond_6
@@ -649,14 +648,14 @@
     .locals 2
 
     .prologue
-    .line 28
+    .line 3
     new-array v0, p1, [B
 
-    .line 18
+    .line 37
     iget-object v1, p0, Lcom/whatsapp/Voip$DefaultCryptoCallback;->secureRandom:Ljava/security/SecureRandom;
 
     invoke-virtual {v1, v0}, Ljava/security/SecureRandom;->nextBytes([B)V
 
-    .line 22
+    .line 13
     return-object v0
 .end method

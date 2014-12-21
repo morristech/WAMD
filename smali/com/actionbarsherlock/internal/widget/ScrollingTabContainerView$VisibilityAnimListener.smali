@@ -19,12 +19,12 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 9
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$VisibilityAnimListener;->this$0:Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 10
+    .line 7
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$VisibilityAnimListener;->mCanceled:Z
@@ -38,12 +38,12 @@
     .locals 1
 
     .prologue
-    .line 13
+    .line 5
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$VisibilityAnimListener;->mCanceled:Z
 
-    .line 12
+    .line 8
     return-void
 .end method
 
@@ -51,15 +51,16 @@
     .locals 2
 
     .prologue
-    .line 9
+    .line 2
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$VisibilityAnimListener;->mCanceled:Z
 
     if-eqz v0, :cond_0
 
+    .line 14
     :goto_0
     return-void
 
-    .line 8
+    .line 4
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$VisibilityAnimListener;->this$0:Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
 
@@ -67,7 +68,7 @@
 
     iput-object v1, v0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;->mVisibilityAnim:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;
 
-    .line 14
+    .line 15
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$VisibilityAnimListener;->this$0:Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
 
     iget v1, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$VisibilityAnimListener;->mFinalVisibility:I
@@ -81,7 +82,7 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 3
     return-void
 .end method
 
@@ -91,7 +92,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 15
+    .line 11
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$VisibilityAnimListener;->this$0:Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;->setVisibility(I)V
@@ -101,10 +102,10 @@
 
     iput-object p1, v0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;->mVisibilityAnim:Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;
 
-    .line 2
+    .line 1
     iput-boolean v1, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$VisibilityAnimListener;->mCanceled:Z
 
-    .line 5
+    .line 13
     return-void
 .end method
 
@@ -112,9 +113,9 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 10
     iput p1, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$VisibilityAnimListener;->mFinalVisibility:I
 
-    .line 1
+    .line 12
     return-object p0
 .end method

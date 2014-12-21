@@ -2,57 +2,49 @@
 .super Ljava/lang/Object;
 .source "c.java"
 
-# interfaces
-.implements Lorg/whispersystems/libaxolotl/ecc/d;
-
 
 # instance fields
-.field private final a:[B
+.field private final a:Lorg/whispersystems/libaxolotl/ecc/b;
+
+.field private final b:Lorg/whispersystems/libaxolotl/ecc/e;
 
 
 # direct methods
-.method constructor <init>([B)V
+.method public constructor <init>(Lorg/whispersystems/libaxolotl/ecc/e;Lorg/whispersystems/libaxolotl/ecc/b;)V
     .locals 0
 
     .prologue
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lorg/whispersystems/libaxolotl/ecc/c;->a:[B
+    .line 3
+    iput-object p1, p0, Lorg/whispersystems/libaxolotl/ecc/c;->b:Lorg/whispersystems/libaxolotl/ecc/e;
 
-    .line 5
+    .line 2
+    iput-object p2, p0, Lorg/whispersystems/libaxolotl/ecc/c;->a:Lorg/whispersystems/libaxolotl/ecc/b;
+
+    .line 4
     return-void
 .end method
 
 
 # virtual methods
-.method public a()[B
-    .locals 1
-
-    .prologue
-    .line 3
-    iget-object v0, p0, Lorg/whispersystems/libaxolotl/ecc/c;->a:[B
-
-    return-object v0
-.end method
-
-.method public b()I
-    .locals 1
-
-    .prologue
-    .line 4
-    const/4 v0, 0x5
-
-    return v0
-.end method
-
-.method public b()[B
+.method public a()Lorg/whispersystems/libaxolotl/ecc/b;
     .locals 1
 
     .prologue
     .line 6
-    iget-object v0, p0, Lorg/whispersystems/libaxolotl/ecc/c;->a:[B
+    iget-object v0, p0, Lorg/whispersystems/libaxolotl/ecc/c;->a:Lorg/whispersystems/libaxolotl/ecc/b;
+
+    return-object v0
+.end method
+
+.method public b()Lorg/whispersystems/libaxolotl/ecc/e;
+    .locals 1
+
+    .prologue
+    .line 5
+    iget-object v0, p0, Lorg/whispersystems/libaxolotl/ecc/c;->b:Lorg/whispersystems/libaxolotl/ecc/e;
 
     return-object v0
 .end method

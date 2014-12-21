@@ -40,13 +40,13 @@
 .method static constructor <clinit>()V
     .locals 14
 
-    const/4 v4, 0x3
-
     const/4 v3, 0x2
 
     const/4 v2, 0x1
 
-    const/16 v5, 0x1c
+    const/16 v5, 0xd
+
+    const/16 v4, 0x9
 
     const/4 v1, 0x0
 
@@ -54,7 +54,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "o\u0013\u00074\\o\u0012?5U}\u0001\u0013"
+    const-string v6, "CWrYl~W\'Yjh\u00184D|c\\rMf\u007f\u0002r"
 
     const/4 v0, -0x1
 
@@ -92,7 +92,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "o\u0013\u00074\\o\u0012?\'\\d\u0012?b"
+    const-string v0, "^Q<Leh\u0018\"J}e\u0018!Nn`]<_)dKrEfy\u00183\u000b{hK=^{n]rbM7\u0018"
 
     move-object v6, v0
 
@@ -107,7 +107,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "o\u0013\u00074\\o\u0012?:Zs\u0008?b"
+    const-string v0, "@W N)yP3E)yO=\u000bylL:\u000bzh_?NgyKh\u000b"
 
     move-object v6, v0
 
@@ -122,13 +122,15 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "y\u0014\u0012<K<\u0005\u00082W{\u000f\u000e4\u0019\u007f\u0013\u0012 VnF\u0001=]<\u0005\u00010Qu\u0008\u0007sZs\n\u0015>Wo"
+    const/4 v6, 0x3
 
-    move-object v6, v0
+    const-string v0, "CWr[hnS3Ll-^=^gi\u00184D{-Y\'_abJ;_p7\u0018"
 
-    move v7, v4
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
 
     move v0, v3
 
@@ -137,17 +139,13 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const/4 v6, 0x4
+    const/4 v7, 0x4
 
-    const-string v0, "H\u0014\t6]<\u0012\u000fsZt\u0007\u000e4\\<\u0005\u0015!Js\u0014@2_h\u0003\u0012sXx\u0007\u0010\'\\nF\u00172J<\u0005\u000c<Jy\u0002N"
+    const-string v6, "CWrJ|yP=Y`yAh\u000b"
 
-    move v7, v6
+    const/4 v0, 0x3
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v4
 
     goto :goto_0
 
@@ -156,7 +154,7 @@
 
     const/4 v7, 0x5
 
-    const-string v6, "O\u0013\u00074\\o\u0012\t<Wo\'\u00042Ih\u0003\u0012"
+    const-string v6, "CWr[hyPh\u000b"
 
     const/4 v0, 0x4
 
@@ -169,7 +167,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "o\u0013\u00074\\o\u0012?\'\\d\u0012?a"
+    const-string v6, "KY;Gli\u0018&D)bH7E)"
 
     const/4 v0, 0x5
 
@@ -182,7 +180,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "o\u0013\u00074\\o\u0012?\'\\d\u0012?afi\u0014\u000c"
+    const-string v6, "^M5Ll~L;Dg~y6Jyy] "
 
     const/4 v0, 0x6
 
@@ -195,7 +193,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "o\u0013\u00074\\o\u0012?:Zs\u0008?a"
+    const-string v6, "lV6Yfd\\|Yl~W\'Yjh"
 
     const/4 v0, 0x7
 
@@ -206,11 +204,11 @@
     :pswitch_7
     aput-object v6, v8, v7
 
-    const/16 v7, 0x9
-
-    const-string v6, "O\u0013\u00074\\o\u0012\t<Wo\'\u00042Ih\u0003\u0012"
+    const-string v6, "HJ D{-[>DzdV5\u000b`nW<\u000bzyJ7Jd-^=Y)"
 
     const/16 v0, 0x8
+
+    move v7, v4
 
     move-object v8, v9
 
@@ -219,13 +217,17 @@
     :pswitch_8
     aput-object v6, v8, v7
 
-    const/16 v7, 0xa
+    const/16 v6, 0xa
 
-    const-string v6, "o\u0003\u0001!Zt9\u0013&^{\u0003\u0013\'fm\u0013\u0005!@"
+    const-string v0, "HJ D{-[>DzdV5\u000b`nW<\u000bzyJ7Jd-^=Y)"
 
-    const/16 v0, 0x9
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v4
 
     goto :goto_0
 
@@ -234,7 +236,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, "p\u000f\r:M"
+    const-string v6, "^M5Ll~L;Dg~y6Jyy] "
 
     const/16 v0, 0xa
 
@@ -247,7 +249,7 @@
 
     const/16 v7, 0xc
 
-    const-string v6, "\u007f\t\u000e\'\\r\u0012"
+    const-string v6, "D[=E)cW&\u000bobM<O3-"
 
     const/16 v0, 0xb
 
@@ -258,11 +260,11 @@
     :pswitch_b
     aput-object v6, v8, v7
 
-    const/16 v7, 0xd
-
-    const-string v6, "U\u0005\u000f=\u0019n\u0003\u0013<Ln\u0005\u0005sWs\u0012@5Vi\u0008\u0004i\u0019"
+    const-string v6, "!\u0018"
 
     const/16 v0, 0xc
+
+    move v7, v5
 
     move-object v8, v9
 
@@ -271,13 +273,17 @@
     :pswitch_c
     aput-object v6, v8, v7
 
-    const/16 v7, 0xe
+    const/16 v6, 0xe
 
-    const-string v6, "}\u0008\u0004!Vu\u0002N!\\o\t\u0015!Zy\\O|"
+    const-string v0, "_]!D|\u007f[7\u000bmb]!\u000bgbLrNqdK&\u0011)"
 
-    const/16 v0, 0xd
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v5
 
     goto/16 :goto_0
 
@@ -286,7 +292,7 @@
 
     const/16 v7, 0xf
 
-    const-string v6, "O\u0013\u00074\\o\u0012\t<Wo\'\u00042Ih\u0003\u0012"
+    const-string v6, "^M5Ll~L;Dg~y6Jyy] "
 
     const/16 v0, 0xe
 
@@ -299,7 +305,7 @@
 
     const/16 v7, 0x10
 
-    const-string v6, "Q\t\u00126\u0019h\u000e\u0001=\u0019h\u0011\u000fsI}\u0012\u0008sJy\u0001\r6Wh\u0015Zs"
+    const-string v6, "^]3Yje\u0018!^nj]!_`bV!\u000bjxJ!D{-L:Ylz\u00187SjhH&Bfc\u0016"
 
     const/16 v0, 0xf
 
@@ -312,7 +318,7 @@
 
     const/16 v7, 0x11
 
-    const-string v6, "R\t@!\\o\t\u0015!ZyF\u0006<Lr\u0002@5Vn\\@"
+    const-string v6, "^M5Ll~L;Dg~y6Jyy] "
 
     const/16 v0, 0x10
 
@@ -325,7 +331,7 @@
 
     const/16 v7, 0x12
 
-    const-string v6, "R\t@#X\u007f\r\u00014\\<\u0000\u000f&WxF\u0006<K<\u0007\u0015\'Qs\u0014\t\'@&F"
+    const-string v6, "lV6Yfd\\|Yl~W\'Yjh\u0002}\u0004"
 
     const/16 v0, 0x11
 
@@ -338,7 +344,7 @@
 
     const/16 v7, 0x13
 
-    const-string v6, "R\t@#Xh\u000eZs"
+    const-string v6, "^M5Ll~L;Dg~y6Jyy] "
 
     const/16 v0, 0x12
 
@@ -351,7 +357,7 @@
 
     const/16 v7, 0x14
 
-    const-string v6, "R\t@2Lh\u000e\u000f!Ph\u001fZs"
+    const-string v6, "D[=E)\u007f]!D|\u007f[7\u000bgbLrMfxV6\u0011)"
 
     const/16 v0, 0x13
 
@@ -364,7 +370,7 @@
 
     const/16 v7, 0x15
 
-    const-string v6, "O\u000f\u000e4UyF\u00102MtF\u00136^q\u0003\u000e\'\u0019u\u0015@=VhF\u0001sKy\u0015\u000f&K\u007f\u0003@\u001a}&F"
+    const-string v6, "~M5Ll~L\rBjbV\r\u0019"
 
     const/16 v0, 0x14
 
@@ -377,7 +383,7 @@
 
     const/16 v7, 0x16
 
-    const-string v6, "O\u0013\u00074\\o\u0012\t<Wo\'\u00042Ih\u0003\u0012"
+    const-string v6, "hJ D{-[:JgjQ<L)nM Xf\u007f\u00183Em-[3HadV5\u000bjbT\'Fg~"
 
     const/16 v0, 0x15
 
@@ -390,7 +396,7 @@
 
     const/16 v7, 0x17
 
-    const-string v6, "U\u0005\u000f=\u0019r\t\u0014s_s\u0013\u000e7\u0003<"
+    const-string v6, "~M5Ll~L\r_luL\r\u001a"
 
     const/16 v0, 0x16
 
@@ -403,7 +409,7 @@
 
     const/16 v7, 0x18
 
-    const-string v6, "}\u0008\u0004!Vu\u0002N!\\o\t\u0015!Zy"
+    const-string v6, "~M5Ll~L\rBjbV\r\u001a"
 
     const/16 v0, 0x17
 
@@ -416,7 +422,7 @@
 
     const/16 v7, 0x19
 
-    const-string v6, "Z\u0007\t?\\xF\u0014<\u0019s\u0016\u0005=\u0019"
+    const-string v6, "^M5Ll~L;Dg~y6Jyy] "
 
     const/16 v0, 0x18
 
@@ -429,7 +435,7 @@
 
     const/16 v7, 0x1a
 
-    const-string v6, "O\u0013\u00074\\o\u0012\t<Wo\'\u00042Ih\u0003\u0012"
+    const-string v6, "~M5Ll~L\r_luL\r\u0019VxJ>"
 
     const/16 v0, 0x19
 
@@ -442,7 +448,7 @@
 
     const/16 v7, 0x1b
 
-    const-string v6, "0F"
+    const-string v6, "~M5Ll~L\rMel_!"
 
     const/16 v0, 0x1a
 
@@ -453,11 +459,11 @@
     :pswitch_1a
     aput-object v6, v8, v7
 
-    const-string v6, "Y\u0014\u0012<K<\u0005\u000c<Ju\u0008\u0007sP\u007f\t\u000esJh\u0014\u00052T<\u0000\u000f!\u0019"
+    const/16 v7, 0x1c
+
+    const-string v6, "^M5Ll~L;Dg~y6Jyy] "
 
     const/16 v0, 0x1b
-
-    move v7, v5
 
     move-object v8, v9
 
@@ -466,17 +472,13 @@
     :pswitch_1b
     aput-object v6, v8, v7
 
-    const/16 v6, 0x1d
+    const/16 v7, 0x1d
 
-    const-string v0, "O\u0013\u00074\\o\u0012\t<Wo\'\u00042Ih\u0003\u0012"
+    const-string v6, "~M5Ll~L\r_luL\r\u0019"
 
-    move v7, v6
+    const/16 v0, 0x1c
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v5
 
     goto/16 :goto_0
 
@@ -485,7 +487,7 @@
 
     const/16 v7, 0x1e
 
-    const-string v6, "N\u0003\u0013<Ln\u0005\u0005s]s\u0003\u0013sWs\u0012@6Au\u0015\u0014i\u0019"
+    const-string v6, "YJ;Nm-L=\u000bjeY<Ll-[\'YzbJrJoy] \u000bhiY\"_l\u007f\u0018%Jz-[>Dzh\\|"
 
     const/16 v0, 0x1d
 
@@ -498,7 +500,7 @@
 
     const/16 v7, 0x1f
 
-    const-string v6, "Y\u0014\u0012<K<\u0005\u000c<Ju\u0008\u0007sP\u007f\t\u000esJh\u0014\u00052T<\u0000\u000f!\u0019"
+    const-string v6, "xV7Syh[&Nm-] Yf\u007f\u0018 N}\u007fQ7]`c_r]haQ6\u000bjbT\'Fg-^ Dd-[\'YzbJ~\u000bmd\\r_ah\u0018 NdbL7\u000by\u007fW1Nz~\u00186Bl2"
 
     const/16 v0, 0x1e
 
@@ -511,7 +513,7 @@
 
     const/16 v7, 0x20
 
-    const-string v6, "i\u0008\u0005+Iy\u0005\u00146]<\u0003\u0012!VnF\u00126Mn\u000f\u0005%Pr\u0001@%Xp\u000f\u0004sZs\n\u0015>W<\u0000\u0012<T<\u0005\u0015!Js\u0014Ls]u\u0002@\'QyF\u00126Ts\u0012\u0005sIn\t\u00036JoF\u0004:\\#"
+    const-string v6, "^M5Ll~L;Dg~y6Jyy] "
 
     const/16 v0, 0x1f
 
@@ -524,7 +526,7 @@
 
     const/16 v7, 0x21
 
-    const-string v6, "O\u0013\u00074\\o\u0012\t<Wo\'\u00042Ih\u0003\u0012"
+    const-string v6, "~M5Ll~L\rBgy]<_V|M7Yp"
 
     const/16 v0, 0x20
 
@@ -537,7 +539,7 @@
 
     const/16 v7, 0x22
 
-    const-string v6, "u\u0008?#Ks\u0001\u00126Jo"
+    const-string v6, "^M5Ll~L;Dg~y6Jyy] "
 
     const/16 v0, 0x21
 
@@ -550,7 +552,7 @@
 
     const/16 v7, 0x23
 
-    const-string v6, "o\u0013\u00074\\o\u0012?:Wh\u0003\u000e\'fm\u0013\u0005!@"
+    const-string v6, "^]3Yje\u0018!^nj]!_`bV!\u000bxx] R)yP N~-Y<\u000blu[7[}dW<\u0005"
 
     const/16 v0, 0x22
 
@@ -563,7 +565,7 @@
 
     const/16 v7, 0x24
 
-    const-string v6, "O\u0013\u00074\\o\u0012\t<Wo\'\u00042Ih\u0003\u0012"
+    const-string v6, "dV\r[{b_ Nz~"
 
     const/16 v0, 0x23
 
@@ -576,7 +578,7 @@
 
     const/16 v7, 0x25
 
-    const-string v6, "O\u0003\u0001!ZtF\u0013&^{\u0003\u0013\'Ps\u0008\u0013sZi\u0014\u0013<K<\u0012\u0008!\\kF\u0005+Zy\u0016\u0014:VrH"
+    const-string v6, "aQ?B}"
 
     const/16 v0, 0x24
 
@@ -589,7 +591,7 @@
 
     const/16 v7, 0x26
 
-    const-string v6, "O\u0013\u00074\\o\u0012\t<Wo\'\u00042Ih\u0003\u0012"
+    const-string v6, "nW<_lcL"
 
     const/16 v0, 0x25
 
@@ -602,7 +604,7 @@
 
     const/16 v7, 0x27
 
-    const-string v6, "O\u0003\u0001!ZtF\u0013&^{\u0003\u0013\'Ps\u0008\u0013sHi\u0003\u0012*\u0019h\u000e\u00126N<\u0007\u000es\\d\u0005\u0005#Mu\t\u000e}"
+    const-string v6, "~]3Yjeg!^nj]!_V|M7Yp"
 
     const/16 v0, 0x26
 
@@ -624,7 +626,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x39
+    move v6, v4
 
     :goto_2
     xor-int/2addr v6, v13
@@ -645,19 +647,21 @@
     goto :goto_2
 
     :pswitch_28
-    const/16 v6, 0x66
+    const/16 v6, 0x38
 
     goto :goto_2
 
     :pswitch_29
-    const/16 v6, 0x60
+    const/16 v6, 0x52
 
     goto :goto_2
 
     :pswitch_2a
-    const/16 v6, 0x53
+    const/16 v6, 0x2b
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -715,7 +719,7 @@
     .locals 1
 
     .prologue
-    .line 90
+    .line 214
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mOutsideDrawablesCache:Ljava/util/WeakHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -724,16 +728,16 @@
 
     check-cast v0, Landroid/graphics/drawable/Drawable$ConstantState;
 
-    .line 105
+    .line 139
     if-nez v0, :cond_0
 
-    .line 215
+    .line 19
     const/4 v0, 0x0
 
+    .line 42
     :goto_0
     return-object v0
 
-    .line 205
     :cond_0
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable$ConstantState;->newDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -750,17 +754,17 @@
 
     const/4 v2, 0x0
 
-    .line 31
+    .line 200
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mUrlColor:Landroid/content/res/ColorStateList;
 
     if-nez v0, :cond_0
 
-    .line 164
+    .line 155
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
-    .line 43
+    .line 163
     iget-object v3, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
@@ -773,7 +777,7 @@
 
     invoke-virtual {v3, v4, v0, v5}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
-    .line 37
+    .line 85
     iget-object v3, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -788,13 +792,13 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mUrlColor:Landroid/content/res/ColorStateList;
 
-    .line 162
+    .line 93
     :cond_0
     new-instance v6, Landroid/text/SpannableString;
 
     invoke-direct {v6, p1}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 9
+    .line 71
     new-instance v0, Landroid/text/style/TextAppearanceSpan;
 
     iget-object v4, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mUrlColor:Landroid/content/res/ColorStateList;
@@ -805,17 +809,17 @@
 
     invoke-direct/range {v0 .. v5}, Landroid/text/style/TextAppearanceSpan;-><init>(Ljava/lang/String;IILandroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;)V
 
-    .line 108
+    .line 196
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v1
 
     const/16 v3, 0x21
 
-    .line 68
+    .line 96
     invoke-virtual {v6, v0, v2, v1, v3}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
-    .line 199
+    .line 189
     return-object v6
 .end method
 
@@ -823,12 +827,12 @@
     .locals 1
 
     .prologue
-    .line 51
+    .line 26
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 161
+    .line 87
     invoke-static {p0, v0}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->getStringOrNull(Landroid/database/Cursor;I)Ljava/lang/String;
 
     move-result-object v0
@@ -840,7 +844,7 @@
     .locals 1
 
     .prologue
-    .line 218
+    .line 119
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -860,16 +864,16 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 2
+    .line 24
     :try_start_0
     invoke-virtual {p1}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 214
+    .line 17
     sget-object v2, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x18
+    const/16 v3, 0x8
 
     aget-object v2, v2, v3
 
@@ -881,7 +885,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 98
+    .line 130
     :try_start_1
     invoke-virtual {p0, p1}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->getTheDrawable(Landroid/net/Uri;)Landroid/graphics/drawable/Drawable;
     :try_end_1
@@ -890,15 +894,14 @@
 
     move-result-object v0
 
-    .line 125
     :goto_0
     return-object v0
 
-    .line 102
+    .line 172
     :catch_0
     move-exception v0
 
-    .line 153
+    .line 135
     :try_start_2
     new-instance v0, Ljava/io/FileNotFoundException;
 
@@ -908,7 +911,7 @@
 
     sget-object v3, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x1e
+    const/16 v4, 0xe
 
     aget-object v3, v3, v4
 
@@ -930,14 +933,14 @@
     :try_end_2
     .catch Ljava/io/FileNotFoundException; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 148
+    .line 145
     :catch_1
     move-exception v0
 
-    .line 207
+    .line 199
     sget-object v2, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x1a
+    const/16 v3, 0xb
 
     aget-object v2, v2, v3
 
@@ -947,7 +950,7 @@
 
     sget-object v4, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x17
+    const/16 v5, 0xc
 
     aget-object v4, v4, v5
 
@@ -961,7 +964,7 @@
 
     sget-object v4, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x1b
+    const/16 v5, 0xd
 
     aget-object v4, v4, v5
 
@@ -985,10 +988,10 @@
 
     move-object v0, v1
 
-    .line 44
+    .line 107
     goto :goto_0
 
-    .line 19
+    .line 4
     :cond_0
     :try_start_3
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mProviderContext:Landroid/content/Context;
@@ -1003,10 +1006,10 @@
 
     move-result-object v2
 
-    .line 5
+    .line 67
     if-nez v2, :cond_1
 
-    .line 211
+    .line 212
     :try_start_4
     new-instance v0, Ljava/io/FileNotFoundException;
 
@@ -1016,7 +1019,7 @@
 
     sget-object v3, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x19
+    const/4 v4, 0x6
 
     aget-object v3, v3, v4
 
@@ -1047,7 +1050,7 @@
     :try_end_5
     .catch Ljava/io/FileNotFoundException; {:try_start_5 .. :try_end_5} :catch_1
 
-    .line 59
+    .line 30
     :cond_1
     const/4 v0, 0x0
 
@@ -1058,7 +1061,7 @@
 
     move-result-object v0
 
-    .line 103
+    .line 195
     :try_start_7
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_7
@@ -1067,15 +1070,15 @@
 
     goto/16 :goto_0
 
-    .line 36
+    .line 84
     :catch_3
     move-exception v2
 
-    .line 66
+    .line 95
     :try_start_8
     sget-object v3, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x1d
+    const/4 v4, 0x7
 
     aget-object v3, v3, v4
 
@@ -1085,7 +1088,7 @@
 
     sget-object v5, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v6, 0x1c
+    const/16 v6, 0x9
 
     aget-object v5, v5, v6
 
@@ -1107,30 +1110,30 @@
 
     goto/16 :goto_0
 
-    .line 17
+    .line 191
     :catchall_0
     move-exception v0
 
-    .line 107
+    .line 209
     :try_start_9
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_9
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_4
     .catch Ljava/io/FileNotFoundException; {:try_start_9 .. :try_end_9} :catch_1
 
-    .line 30
+    .line 186
     :goto_1
     :try_start_a
     throw v0
 
-    .line 60
+    .line 152
     :catch_4
     move-exception v2
 
-    .line 174
+    .line 203
     sget-object v3, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x16
+    const/16 v4, 0xf
 
     aget-object v3, v3, v4
 
@@ -1140,7 +1143,7 @@
 
     sget-object v5, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v6, 0x1f
+    const/16 v6, 0xa
 
     aget-object v5, v5, v6
 
@@ -1169,7 +1172,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 35
+    .line 201
     if-eqz p1, :cond_0
 
     :try_start_0
@@ -1193,12 +1196,12 @@
     :cond_0
     move-object v0, v1
 
-    .line 201
+    .line 167
     :cond_1
     :goto_0
     return-object v0
 
-    .line 35
+    .line 201
     :catch_0
     move-exception v0
 
@@ -1214,27 +1217,27 @@
     :try_end_2
     .catch Ljava/lang/NumberFormatException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 145
+    .line 28
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 50
+    .line 127
     :cond_2
     :try_start_3
     invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v2
 
-    .line 74
+    .line 68
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v3, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v4, 0xe
+    const/16 v4, 0x12
 
     aget-object v3, v3, v4
 
@@ -1244,7 +1247,7 @@
 
     iget-object v3, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mProviderContext:Landroid/content/Context;
 
-    .line 128
+    .line 44
     invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v3
@@ -1267,15 +1270,15 @@
 
     move-result-object v3
 
-    .line 198
+    .line 216
     invoke-direct {p0, v3}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->checkIconCache(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 41
+    .line 45
     if-nez v0, :cond_1
 
-    .line 16
+    .line 134
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mProviderContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1286,7 +1289,7 @@
 
     move-result-object v0
 
-    .line 4
+    .line 160
     invoke-direct {p0, v3, v0}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->storeInIconCache(Ljava/lang/String;Landroid/graphics/drawable/Drawable;)V
     :try_end_3
     .catch Ljava/lang/NumberFormatException; {:try_start_3 .. :try_end_3} :catch_3
@@ -1294,41 +1297,41 @@
 
     goto :goto_0
 
-    .line 91
+    .line 143
     :catch_3
     move-exception v0
 
-    .line 175
+    .line 197
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->checkIconCache(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 64
+    .line 57
     if-nez v0, :cond_1
 
-    .line 210
+    .line 79
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 20
+    .line 190
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->getDrawable(Landroid/net/Uri;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 147
+    .line 100
     invoke-direct {p0, p1, v0}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->storeInIconCache(Ljava/lang/String;Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_0
 
-    .line 118
+    .line 103
     :catch_4
     move-exception v0
 
-    .line 55
+    .line 121
     sget-object v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xf
+    const/16 v2, 0x13
 
     aget-object v0, v0, v2
 
@@ -1338,7 +1341,7 @@
 
     sget-object v3, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v4, 0xd
+    const/16 v4, 0x14
 
     aget-object v3, v3, v4
 
@@ -1358,7 +1361,7 @@
 
     move-object v0, v1
 
-    .line 185
+    .line 48
     goto :goto_0
 .end method
 
@@ -1366,7 +1369,7 @@
     .locals 2
 
     .prologue
-    .line 111
+    .line 92
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mIconName1Col:I
     :try_end_0
@@ -1376,21 +1379,21 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 63
+    .line 43
     const/4 v0, 0x0
 
-    .line 150
+    .line 206
     :cond_0
     :goto_0
     return-object v0
 
-    .line 63
+    .line 43
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 62
+    .line 177
     :cond_1
     iget v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mIconName1Col:I
 
@@ -1398,15 +1401,15 @@
 
     move-result-object v0
 
-    .line 48
+    .line 54
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->getDrawableFromResourceValue(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 119
+    .line 9
     if-nez v0, :cond_0
 
-    .line 94
+    .line 31
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->getDefaultIcon1(Landroid/database/Cursor;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -1418,7 +1421,7 @@
     .locals 2
 
     .prologue
-    .line 204
+    .line 115
     :try_start_0
     iget v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mIconName2Col:I
     :try_end_0
@@ -1428,20 +1431,18 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 127
+    .line 207
     const/4 v0, 0x0
 
-    .line 209
     :goto_0
     return-object v0
 
-    .line 127
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 206
+    .line 88
     :cond_0
     iget v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mIconName2Col:I
 
@@ -1449,7 +1450,7 @@
 
     move-result-object v0
 
-    .line 209
+    .line 109
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->getDrawableFromResourceValue(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -1463,16 +1464,15 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 186
+    .line 218
     const/4 v1, -0x1
 
     if-ne p1, v1, :cond_0
 
-    .line 202
+    .line 146
     :goto_0
     return-object v0
 
-    .line 182
     :cond_0
     :try_start_0
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -1483,20 +1483,20 @@
 
     goto :goto_0
 
-    .line 200
+    .line 144
     :catch_0
     move-exception v1
 
-    .line 77
+    .line 183
     sget-object v2, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x21
+    const/16 v3, 0x20
 
     aget-object v2, v2, v3
 
     sget-object v3, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x20
+    const/16 v4, 0x1f
 
     aget-object v3, v3, v4
 
@@ -1509,48 +1509,48 @@
     .locals 2
 
     .prologue
-    .line 203
+    .line 204
     :try_start_0
     invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 100
+    .line 217
     if-nez p2, :cond_0
 
-    .line 65
+    .line 27
     :try_start_1
     invoke-virtual {p1, p3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    sget-boolean v0, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    sget v0, Lcom/actionbarsherlock/widget/SearchView;->a:I
 
     if-eqz v0, :cond_1
 
-    .line 156
+    .line 149
     :cond_0
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 104
+    .line 89
     const/4 v0, 0x0
 
     const/4 v1, 0x0
 
     invoke-virtual {p2, v0, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
-    .line 208
+    .line 170
     const/4 v0, 0x1
 
     const/4 v1, 0x0
 
     invoke-virtual {p2, v0, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
-    .line 11
+    .line 60
     :cond_1
     return-void
 
-    .line 65
+    .line 27
     :catch_0
     move-exception v0
 
@@ -1558,7 +1558,7 @@
     :try_end_1
     .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 208
+    .line 170
     :catch_1
     move-exception v0
 
@@ -1569,11 +1569,11 @@
     .locals 1
 
     .prologue
-    .line 42
+    .line 132
     :try_start_0
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 40
+    .line 116
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1582,27 +1582,27 @@
 
     if-eqz v0, :cond_0
 
-    .line 79
+    .line 113
     const/16 v0, 0x8
 
     :try_start_1
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    sget-boolean v0, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    sget v0, Lcom/actionbarsherlock/widget/SearchView;->a:I
 
     if-eqz v0, :cond_1
 
-    .line 192
+    .line 117
     :cond_0
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 110
+    .line 55
     :cond_1
     return-void
 
-    .line 79
+    .line 113
     :catch_0
     move-exception v0
 
@@ -1610,7 +1610,7 @@
     :try_end_1
     .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 192
+    .line 117
     :catch_1
     move-exception v0
 
@@ -1621,10 +1621,10 @@
     .locals 2
 
     .prologue
-    .line 138
+    .line 56
     if-eqz p2, :cond_0
 
-    .line 73
+    .line 33
     :try_start_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mOutsideDrawablesCache:Ljava/util/WeakHashMap;
 
@@ -1636,11 +1636,11 @@
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 82
+    .line 75
     :cond_0
     return-void
 
-    .line 73
+    .line 33
     :catch_0
     move-exception v0
 
@@ -1651,7 +1651,7 @@
     .locals 3
 
     .prologue
-    .line 85
+    .line 147
     if-eqz p1, :cond_1
 
     :try_start_0
@@ -1661,18 +1661,18 @@
 
     move-result-object v0
 
-    .line 146
+    .line 47
     :goto_0
     if-eqz v0, :cond_0
 
     :try_start_1
     sget-object v1, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x22
+    const/16 v2, 0x24
 
     aget-object v1, v1, v2
 
-    .line 69
+    .line 53
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
     :try_end_1
     .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_1
@@ -1681,11 +1681,11 @@
 
     if-eqz v0, :cond_0
 
-    .line 115
+    .line 211
     :cond_0
     return-void
 
-    .line 85
+    .line 147
     :catch_0
     move-exception v0
 
@@ -1696,7 +1696,7 @@
 
     goto :goto_0
 
-    .line 115
+    .line 112
     :catch_1
     move-exception v0
 
@@ -1715,69 +1715,69 @@
 
     const/4 v1, 0x0
 
-    sget-boolean v3, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    sget v3, Lcom/actionbarsherlock/widget/SearchView;->a:I
 
-    .line 122
+    .line 210
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;
 
-    .line 81
+    .line 208
     iget v2, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mFlagsCol:I
 
     const/4 v4, -0x1
 
     if-eq v2, v4, :cond_0
 
-    .line 15
+    .line 16
     iget v1, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mFlagsCol:I
 
     invoke-interface {p3, v1}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v1
 
-    .line 167
+    .line 125
     :cond_0
     iget-object v2, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mText1:Landroid/widget/TextView;
 
     if-eqz v2, :cond_1
 
-    .line 197
+    .line 148
     iget v2, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mText1Col:I
 
     invoke-static {p3, v2}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->getStringOrNull(Landroid/database/Cursor;I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 45
+    .line 41
     iget-object v4, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mText1:Landroid/widget/TextView;
 
     invoke-direct {p0, v4, v2}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->setViewText(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
 
-    .line 141
+    .line 185
     :cond_1
     iget-object v2, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mText2:Landroid/widget/TextView;
 
     if-eqz v2, :cond_4
 
-    .line 95
+    .line 34
     iget v2, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mText2UrlCol:I
 
     invoke-static {p3, v2}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->getStringOrNull(Landroid/database/Cursor;I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 84
+    .line 20
     if-eqz v2, :cond_a
 
-    .line 155
+    .line 156
     invoke-direct {p0, v2}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->formatUrl(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    .line 137
+    .line 131
     :goto_0
     :try_start_0
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -1788,7 +1788,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 97
+    .line 13
     :try_start_1
     iget-object v4, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mText1:Landroid/widget/TextView;
     :try_end_1
@@ -1796,7 +1796,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 6
+    .line 141
     :try_start_2
     iget-object v4, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mText1:Landroid/widget/TextView;
 
@@ -1804,7 +1804,7 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setSingleLine(Z)V
 
-    .line 27
+    .line 176
     iget-object v4, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mText1:Landroid/widget/TextView;
 
     const/4 v5, 0x2
@@ -1815,21 +1815,21 @@
 
     if-eqz v3, :cond_3
 
-    .line 14
+    .line 198
     :cond_2
     :try_start_3
     iget-object v4, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mText1:Landroid/widget/TextView;
 
     if-eqz v4, :cond_3
 
-    .line 21
+    .line 108
     iget-object v4, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mText1:Landroid/widget/TextView;
 
     const/4 v5, 0x1
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setSingleLine(Z)V
 
-    .line 92
+    .line 81
     iget-object v4, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mText1:Landroid/widget/TextView;
 
     const/4 v5, 0x1
@@ -1838,20 +1838,20 @@
     :try_end_3
     .catch Ljava/lang/RuntimeException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 75
+    .line 192
     :cond_3
     iget-object v4, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mText2:Landroid/widget/TextView;
 
     invoke-direct {p0, v4, v2}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->setViewText(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
 
-    .line 131
+    .line 136
     :cond_4
     :try_start_4
     iget-object v2, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mIcon1:Landroid/widget/ImageView;
 
     if-eqz v2, :cond_5
 
-    .line 32
+    .line 15
     iget-object v2, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mIcon1:Landroid/widget/ImageView;
 
     invoke-direct {p0, p3}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->getIcon1(Landroid/database/Cursor;)Landroid/graphics/drawable/Drawable;
@@ -1864,14 +1864,14 @@
     :try_end_4
     .catch Ljava/lang/RuntimeException; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 124
+    .line 188
     :cond_5
     :try_start_5
     iget-object v2, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mIcon2:Landroid/widget/ImageView;
 
     if-eqz v2, :cond_6
 
-    .line 213
+    .line 18
     iget-object v2, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mIcon2:Landroid/widget/ImageView;
 
     invoke-direct {p0, p3}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->getIcon2(Landroid/database/Cursor;)Landroid/graphics/drawable/Drawable;
@@ -1884,7 +1884,7 @@
     :try_end_5
     .catch Ljava/lang/RuntimeException; {:try_start_5 .. :try_end_5} :catch_5
 
-    .line 163
+    .line 126
     :cond_6
     :try_start_6
     iget v2, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mQueryRefinement:I
@@ -1904,7 +1904,7 @@
 
     if-eqz v1, :cond_8
 
-    .line 216
+    .line 77
     :cond_7
     :try_start_8
     iget-object v1, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mIconRefine:Landroid/widget/ImageView;
@@ -1913,7 +1913,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 71
+    .line 63
     iget-object v1, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mIconRefine:Landroid/widget/ImageView;
 
     iget-object v2, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mText1:Landroid/widget/TextView;
@@ -1924,14 +1924,14 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
-    .line 166
+    .line 120
     iget-object v1, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mIconRefine:Landroid/widget/ImageView;
 
     invoke-virtual {v1, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     if-eqz v3, :cond_9
 
-    .line 61
+    .line 181
     :cond_8
     iget-object v0, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mIconRefine:Landroid/widget/ImageView;
 
@@ -1941,11 +1941,11 @@
     :try_end_8
     .catch Ljava/lang/RuntimeException; {:try_start_8 .. :try_end_8} :catch_9
 
-    .line 12
+    .line 2
     :cond_9
     return-void
 
-    .line 176
+    .line 90
     :cond_a
     iget v2, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mText2Col:I
 
@@ -1955,7 +1955,7 @@
 
     goto :goto_0
 
-    .line 97
+    .line 13
     :catch_0
     move-exception v0
 
@@ -1964,7 +1964,7 @@
     :try_end_9
     .catch Ljava/lang/RuntimeException; {:try_start_9 .. :try_end_9} :catch_1
 
-    .line 27
+    .line 176
     :catch_1
     move-exception v0
 
@@ -1973,7 +1973,7 @@
     :try_end_a
     .catch Ljava/lang/RuntimeException; {:try_start_a .. :try_end_a} :catch_2
 
-    .line 14
+    .line 198
     :catch_2
     move-exception v0
 
@@ -1982,25 +1982,25 @@
     :try_end_b
     .catch Ljava/lang/RuntimeException; {:try_start_b .. :try_end_b} :catch_3
 
-    .line 92
+    .line 81
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 32
+    .line 15
     :catch_4
     move-exception v0
 
     throw v0
 
-    .line 213
+    .line 18
     :catch_5
     move-exception v0
 
     throw v0
 
-    .line 163
+    .line 126
     :catch_6
     move-exception v0
 
@@ -2017,7 +2017,7 @@
     :try_end_d
     .catch Ljava/lang/RuntimeException; {:try_start_d .. :try_end_d} :catch_8
 
-    .line 166
+    .line 120
     :catch_8
     move-exception v0
 
@@ -2026,7 +2026,7 @@
     :try_end_e
     .catch Ljava/lang/RuntimeException; {:try_start_e .. :try_end_e} :catch_9
 
-    .line 61
+    .line 181
     :catch_9
     move-exception v0
 
@@ -2037,22 +2037,22 @@
     .locals 4
 
     .prologue
-    .line 22
+    .line 153
     :try_start_0
     iget-boolean v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mClosed:Z
 
     if-eqz v0, :cond_1
 
-    .line 168
+    .line 82
     sget-object v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x5
+    const/16 v1, 0x1c
 
     aget-object v0, v0, v1
 
     sget-object v1, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x4
+    const/16 v2, 0x1e
 
     aget-object v1, v1, v2
 
@@ -2060,18 +2060,18 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 38
+    .line 151
     if-eqz p1, :cond_0
 
     :try_start_1
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
-    .line 179
+    .line 184
     :cond_0
     :goto_0
     return-void
 
-    .line 38
+    .line 151
     :catch_0
     move-exception v0
 
@@ -2084,18 +2084,18 @@
 
     throw v0
 
-    .line 188
+    .line 193
     :cond_1
     :try_start_2
     invoke-super {p0, p1}, Landroid/support/v4/widget/ResourceCursorAdapter;->changeCursor(Landroid/database/Cursor;)V
 
-    .line 193
+    .line 80
     if-eqz p1, :cond_0
 
-    .line 151
+    .line 154
     sget-object v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x1
+    const/16 v1, 0x17
 
     aget-object v0, v0, v1
 
@@ -2105,10 +2105,10 @@
 
     iput v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mText1Col:I
 
-    .line 140
+    .line 187
     sget-object v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x6
+    const/16 v1, 0x1d
 
     aget-object v0, v0, v1
 
@@ -2118,10 +2118,10 @@
 
     iput v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mText2Col:I
 
-    .line 78
+    .line 140
     sget-object v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x7
+    const/16 v1, 0x1a
 
     aget-object v0, v0, v1
 
@@ -2131,10 +2131,10 @@
 
     iput v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mText2UrlCol:I
 
-    .line 130
+    .line 46
     sget-object v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x2
+    const/16 v1, 0x18
 
     aget-object v0, v0, v1
 
@@ -2144,10 +2144,10 @@
 
     iput v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mIconName1Col:I
 
-    .line 196
+    .line 94
     sget-object v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x8
+    const/16 v1, 0x15
 
     aget-object v0, v0, v1
 
@@ -2157,10 +2157,10 @@
 
     iput v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mIconName2Col:I
 
-    .line 29
+    .line 142
     sget-object v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x0
+    const/16 v1, 0x1b
 
     aget-object v0, v0, v1
 
@@ -2174,20 +2174,20 @@
 
     goto :goto_0
 
-    .line 190
+    .line 23
     :catch_2
     move-exception v0
 
-    .line 191
+    .line 72
     sget-object v1, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x9
+    const/16 v2, 0x19
 
     aget-object v1, v1, v2
 
     sget-object v2, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x3
+    const/16 v3, 0x16
 
     aget-object v2, v2, v3
 
@@ -2202,19 +2202,19 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 154
+    .line 98
     if-nez p1, :cond_1
 
-    .line 123
+    .line 215
     :cond_0
     :goto_0
     return-object v0
 
-    .line 7
+    .line 99
     :cond_1
     sget-object v1, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x23
+    const/16 v2, 0x21
 
     aget-object v1, v1, v2
 
@@ -2222,12 +2222,12 @@
 
     move-result-object v1
 
-    .line 54
+    .line 162
     if-eqz v1, :cond_0
 
     move-object v0, v1
 
-    .line 25
+    .line 8
     goto :goto_0
 .end method
 
@@ -2237,56 +2237,56 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 183
+    .line 37
     new-instance v0, Landroid/net/Uri$Builder;
 
     invoke-direct {v0}, Landroid/net/Uri$Builder;-><init>()V
 
     sget-object v1, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0xc
+    const/16 v3, 0x26
 
     aget-object v1, v1, v3
 
-    .line 121
+    .line 173
     invoke-virtual {v0, v1}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     move-result-object v0
 
     const-string v1, ""
 
-    .line 178
+    .line 205
     invoke-virtual {v0, v1}, Landroid/net/Uri$Builder;->query(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     move-result-object v0
 
     const-string v1, ""
 
-    .line 93
+    .line 174
     invoke-virtual {v0, v1}, Landroid/net/Uri$Builder;->fragment(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     move-result-object v0
 
-    .line 8
+    .line 14
     :try_start_0
     sget-object v1, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0xa
+    const/16 v3, 0x27
 
     aget-object v1, v1, v3
 
     invoke-virtual {v0, v1}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 113
+    .line 49
     invoke-virtual {v0, p1}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 149
+    .line 11
     if-lez p2, :cond_0
 
-    .line 184
+    .line 25
     sget-object v1, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0xb
+    const/16 v3, 0x25
 
     aget-object v1, v1, v3
 
@@ -2298,13 +2298,13 @@
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 136
+    .line 166
     :cond_0
     invoke-virtual {v0}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 129
+    .line 102
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2323,7 +2323,7 @@
 
     return-object v0
 
-    .line 184
+    .line 25
     :catch_0
     move-exception v0
 
@@ -2334,16 +2334,18 @@
     .locals 7
 
     .prologue
-    const/4 v6, 0x1
+    const/4 v6, 0x2
 
-    const/4 v5, 0x0
+    const/4 v5, 0x1
 
-    .line 132
+    const/4 v4, 0x0
+
+    .line 101
     invoke-virtual {p1}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 83
+    .line 168
     :try_start_0
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2351,7 +2353,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 72
+    .line 59
     new-instance v0, Ljava/io/FileNotFoundException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2360,7 +2362,7 @@
 
     sget-object v2, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x14
+    const/4 v3, 0x4
 
     aget-object v2, v2, v3
 
@@ -2387,7 +2389,7 @@
 
     throw v0
 
-    .line 120
+    .line 150
     :cond_0
     :try_start_1
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mContext:Landroid/content/Context;
@@ -2402,15 +2404,15 @@
 
     move-result-object v3
 
-    .line 143
+    .line 65
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v1
 
-    .line 52
+    .line 73
     if-nez v1, :cond_1
 
-    .line 159
+    .line 32
     :try_start_2
     new-instance v0, Ljava/io/FileNotFoundException;
 
@@ -2420,7 +2422,7 @@
 
     sget-object v2, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x13
+    const/4 v3, 0x5
 
     aget-object v2, v2, v3
 
@@ -2447,11 +2449,11 @@
 
     throw v0
 
-    .line 180
+    .line 38
     :catch_2
     move-exception v0
 
-    .line 181
+    .line 104
     new-instance v0, Ljava/io/FileNotFoundException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2460,7 +2462,7 @@
 
     sget-object v2, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x12
+    const/4 v3, 0x3
 
     aget-object v2, v2, v3
 
@@ -2480,16 +2482,16 @@
 
     throw v0
 
-    .line 34
+    .line 169
     :cond_1
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v0
 
-    .line 117
-    if-ne v0, v6, :cond_3
+    .line 138
+    if-ne v0, v5, :cond_3
 
-    .line 157
+    .line 50
     const/4 v0, 0x0
 
     :try_start_3
@@ -2505,11 +2507,11 @@
 
     move-result v0
 
-    .line 217
+    .line 110
     :cond_2
     if-nez v0, :cond_5
 
-    .line 187
+    .line 36
     :try_start_4
     new-instance v0, Ljava/io/FileNotFoundException;
 
@@ -2519,7 +2521,7 @@
 
     sget-object v2, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x11
+    const/4 v3, 0x0
 
     aget-object v2, v2, v3
 
@@ -2546,11 +2548,11 @@
 
     throw v0
 
-    .line 3
+    .line 91
     :catch_4
     move-exception v0
 
-    .line 169
+    .line 128
     new-instance v0, Ljava/io/FileNotFoundException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2559,9 +2561,7 @@
 
     sget-object v2, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x15
-
-    aget-object v2, v2, v3
+    aget-object v2, v2, v5
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2579,20 +2579,18 @@
 
     throw v0
 
-    .line 58
+    .line 70
     :cond_3
-    const/4 v4, 0x2
+    if-ne v0, v6, :cond_4
 
-    if-ne v0, v4, :cond_4
-
-    .line 18
-    invoke-interface {v1, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 182
+    invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -2603,11 +2601,11 @@
     move-result v0
 
     :try_start_5
-    sget-boolean v1, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    sget v1, Lcom/actionbarsherlock/widget/SearchView;->a:I
 
     if-eqz v1, :cond_2
 
-    .line 173
+    .line 12
     :cond_4
     new-instance v0, Ljava/io/FileNotFoundException;
 
@@ -2617,7 +2615,7 @@
 
     sget-object v2, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x10
+    const/4 v3, 0x2
 
     aget-object v2, v2, v3
 
@@ -2644,7 +2642,7 @@
 
     throw v0
 
-    .line 152
+    .line 58
     :cond_5
     invoke-virtual {v3, v0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2657,7 +2655,7 @@
     .locals 4
 
     .prologue
-    .line 57
+    .line 1
     :try_start_0
     invoke-super {p0, p1, p2, p3}, Landroid/support/v4/widget/ResourceCursorAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     :try_end_0
@@ -2665,29 +2663,30 @@
 
     move-result-object v0
 
+    .line 5
     :goto_0
     return-object v0
 
-    .line 133
+    .line 21
     :catch_0
     move-exception v2
 
-    .line 39
+    .line 171
     sget-object v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x24
+    const/16 v1, 0x11
 
     aget-object v0, v0, v1
 
     sget-object v1, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x25
+    const/16 v3, 0x10
 
     aget-object v1, v1, v3
 
     invoke-static {v0, v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 89
+    .line 76
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
@@ -2696,20 +2695,20 @@
 
     move-result-object v1
 
-    .line 10
+    .line 114
     if-eqz v1, :cond_0
 
-    .line 26
+    .line 161
     invoke-virtual {v1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;
 
-    .line 24
+    .line 61
     iget-object v0, v0, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;->mText1:Landroid/widget/TextView;
 
-    .line 134
+    .line 213
     invoke-virtual {v2}, Ljava/lang/RuntimeException;->toString()Ljava/lang/String;
 
     move-result-object v2
@@ -2719,7 +2718,7 @@
     :cond_0
     move-object v0, v1
 
-    .line 47
+    .line 5
     goto :goto_0
 .end method
 
@@ -2727,7 +2726,7 @@
     .locals 1
 
     .prologue
-    .line 165
+    .line 129
     const/4 v0, 0x0
 
     return v0
@@ -2737,19 +2736,19 @@
     .locals 2
 
     .prologue
-    .line 170
+    .line 133
     invoke-super {p0, p1, p2, p3}, Landroid/support/v4/widget/ResourceCursorAdapter;->newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
-    .line 135
+    .line 158
     new-instance v1, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;
 
     invoke-direct {v1, v0}, Lcom/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache;-><init>(Landroid/view/View;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 109
+    .line 62
     return-object v0
 .end method
 
@@ -2757,17 +2756,17 @@
     .locals 1
 
     .prologue
-    .line 160
+    .line 51
     invoke-super {p0}, Landroid/support/v4/widget/ResourceCursorAdapter;->notifyDataSetChanged()V
 
-    .line 86
+    .line 164
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->getCursor()Landroid/database/Cursor;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->updateSpinnerState(Landroid/database/Cursor;)V
 
-    .line 195
+    .line 29
     return-void
 .end method
 
@@ -2775,17 +2774,17 @@
     .locals 1
 
     .prologue
-    .line 13
+    .line 86
     invoke-super {p0}, Landroid/support/v4/widget/ResourceCursorAdapter;->notifyDataSetInvalidated()V
 
-    .line 177
+    .line 97
     invoke-virtual {p0}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->getCursor()Landroid/database/Cursor;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->updateSpinnerState(Landroid/database/Cursor;)V
 
-    .line 101
+    .line 52
     return-void
 .end method
 
@@ -2793,18 +2792,18 @@
     .locals 2
 
     .prologue
-    .line 212
+    .line 118
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 126
+    .line 178
     :try_start_0
     instance-of v1, v0, Ljava/lang/CharSequence;
 
     if-eqz v1, :cond_0
 
-    .line 87
+    .line 10
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mSearchView:Lcom/actionbarsherlock/widget/SearchView;
 
     check-cast v0, Ljava/lang/CharSequence;
@@ -2813,11 +2812,11 @@
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 88
+    .line 3
     :cond_0
     return-void
 
-    .line 87
+    .line 10
     :catch_0
     move-exception v0
 
@@ -2830,7 +2829,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 112
+    .line 159
     if-nez p1, :cond_1
 
     :try_start_0
@@ -2838,7 +2837,7 @@
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 144
+    .line 122
     :goto_0
     :try_start_1
     iget-object v2, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mSearchView:Lcom/actionbarsherlock/widget/SearchView;
@@ -2851,7 +2850,7 @@
 
     iget-object v2, p0, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->mSearchView:Lcom/actionbarsherlock/widget/SearchView;
 
-    .line 189
+    .line 35
     invoke-virtual {v2}, Lcom/actionbarsherlock/widget/SearchView;->getWindowVisibility()I
     :try_end_1
     .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_1
@@ -2863,11 +2862,11 @@
     :cond_0
     move-object v0, v1
 
-    .line 194
+    .line 105
     :goto_1
     return-object v0
 
-    .line 112
+    .line 159
     :catch_0
     move-exception v0
 
@@ -2880,7 +2879,7 @@
 
     goto :goto_0
 
-    .line 189
+    .line 35
     :catch_1
     move-exception v0
 
@@ -2889,13 +2888,13 @@
     :try_end_2
     .catch Ljava/lang/RuntimeException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 194
+    .line 69
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 158
+    .line 202
     :cond_2
     const/16 v2, 0x32
 
@@ -2904,30 +2903,30 @@
 
     move-result-object v0
 
-    .line 67
+    .line 66
     if-eqz v0, :cond_3
 
-    .line 46
+    .line 180
     invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
     :try_end_3
     .catch Ljava/lang/RuntimeException; {:try_start_3 .. :try_end_3} :catch_3
 
     goto :goto_1
 
-    .line 49
+    .line 124
     :catch_3
     move-exception v0
 
-    .line 28
+    .line 179
     sget-object v2, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x26
+    const/16 v3, 0x22
 
     aget-object v2, v2, v3
 
     sget-object v3, Lcom/actionbarsherlock/widget/SuggestionsAdapter;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x27
+    const/16 v4, 0x23
 
     aget-object v3, v3, v4
 
@@ -2936,6 +2935,6 @@
     :cond_3
     move-object v0, v1
 
-    .line 33
+    .line 39
     goto :goto_1
 .end method

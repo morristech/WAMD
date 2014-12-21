@@ -29,7 +29,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "P$0b\u001eX.zy\u001fE/:d_P) y\u001e_d\u0007S#t\u000f\u001aO>w\u000c"
+    const-string v6, ",FP(T\u0011iM.Z-@A(X\t@P6]\u0010FI(UB"
 
     const/4 v0, -0x1
 
@@ -67,7 +67,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "P:$?\u0002R81u\u001f\u001e%2v"
+    const-string v0, "\u001eKF?^\u0016A\u000c$_\u000b@L9\u001f\u001eFV$^\u0011\u000bq\u000ec:`l\u0012~1"
 
     move-object v6, v0
 
@@ -82,7 +82,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "P:$?\u0002R81u\u001f\u001e%:"
+    const-string v0, "\u001eURbB\u001cWG(_PJD+"
 
     move-object v6, v0
 
@@ -97,7 +97,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "P$0b\u001eX.zy\u001fE/:d_P) y\u001e_d\u0007S#t\u000f\u001aO>\u007f"
+    const-string v0, "\u001eURbB\u001cWG(_PJL"
 
     move-object v6, v0
 
@@ -112,7 +112,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "b)&u\u0014_\u0006;s\u001ac/7u\u0018G/&k\u001d^)?u\u0015\u000c"
+    const-string v0, "\u001eKF?^\u0016A\u000c$_\u000b@L9\u001f\u001eFV$^\u0011\u000bq\u000ec:`l\u0012~9c"
 
     move-object v6, v0
 
@@ -129,7 +129,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "P$0b\u001eX.zy\u001fE/:d_P) y\u001e_d\u0007S#t\u000f\u001aO>\u007f"
+    const-string v0, "\u001eKF?^\u0016A\u000c$_\u000b@L9\u001f\u001eFV$^\u0011\u000bq\u000ec:`l\u0012~1"
 
     move v7, v6
 
@@ -146,7 +146,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "P$0b\u001eX.zy\u001fE/:d_P) y\u001e_d\u0007S#t\u000f\u001aO>w\u000c"
+    const-string v6, "\u000fJU(C"
 
     const/4 v0, 0x5
 
@@ -159,7 +159,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "A%#u\u0003"
+    const-string v6, "\u001eKF?^\u0016A\u000c$_\u000b@L9\u001f\u001eFV$^\u0011\u000bq\u000ec:`l\u0012~9c"
 
     const/4 v0, 0x6
 
@@ -181,7 +181,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x71
+    const/16 v6, 0x31
 
     :goto_2
     xor-int/2addr v6, v13
@@ -197,22 +197,22 @@
     goto :goto_1
 
     :pswitch_7
-    const/16 v6, 0x31
+    const/16 v6, 0x7f
 
     goto :goto_2
 
     :pswitch_8
-    const/16 v6, 0x4a
+    const/16 v6, 0x25
 
     goto :goto_2
 
     :pswitch_9
-    const/16 v6, 0x54
+    const/16 v6, 0x22
 
     goto :goto_2
 
     :pswitch_a
-    const/16 v6, 0x10
+    const/16 v6, 0x4d
 
     goto :goto_2
 
@@ -242,7 +242,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 4
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -254,21 +254,21 @@
     .locals 3
 
     .prologue
-    .line 16
+    .line 5
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 19
+    .line 1
     sget-object v1, Lcom/whatsapp/ScreenLockReceiver;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x6
+    const/4 v2, 0x7
 
     aget-object v1, v1, v2
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 11
+    .line 12
     sget-object v1, Lcom/whatsapp/ScreenLockReceiver;->z:[Ljava/lang/String;
 
     const/4 v2, 0x5
@@ -277,13 +277,13 @@
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 7
+    .line 16
     invoke-virtual {p1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 4
+    .line 15
     sget-object v0, Lcom/whatsapp/ScreenLockReceiver;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x7
+    const/4 v1, 0x6
 
     aget-object v0, v0, v1
 
@@ -293,7 +293,7 @@
 
     check-cast v0, Landroid/os/PowerManager;
 
-    .line 9
+    .line 18
     invoke-virtual {v0}, Landroid/os/PowerManager;->isScreenOn()Z
 
     move-result v0
@@ -305,23 +305,23 @@
     :goto_0
     iput-boolean v0, p0, Lcom/whatsapp/ScreenLockReceiver;->a:Z
 
-    .line 13
-    invoke-static {}, Lde/greenrobot/event/f;->b()Lde/greenrobot/event/f;
+    .line 19
+    invoke-static {}, Lde/greenrobot/event/h;->b()Lde/greenrobot/event/h;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/ep;
+    new-instance v1, Lcom/whatsapp/of;
 
     iget-boolean v2, p0, Lcom/whatsapp/ScreenLockReceiver;->a:Z
 
-    invoke-direct {v1, v2}, Lcom/whatsapp/ep;-><init>(Z)V
+    invoke-direct {v1, v2}, Lcom/whatsapp/of;-><init>(Z)V
 
-    invoke-virtual {v0, v1}, Lde/greenrobot/event/f;->a(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Lde/greenrobot/event/h;->c(Ljava/lang/Object;)V
 
-    .line 6
+    .line 7
     return-void
 
-    .line 9
+    .line 18
     :cond_0
     const/4 v0, 0x0
 
@@ -332,58 +332,22 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 11
     iget-boolean v0, p0, Lcom/whatsapp/ScreenLockReceiver;->a:Z
 
     return v0
 .end method
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 6
+    .locals 5
 
     .prologue
-    const/4 v5, 0x1
+    const/4 v4, 0x1
 
-    const/4 v4, 0x0
-
-    .line 8
+    .line 17
     iget-boolean v0, p0, Lcom/whatsapp/ScreenLockReceiver;->a:Z
 
-    .line 1
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
-
-    move-result-object v1
-
-    sget-object v2, Lcom/whatsapp/ScreenLockReceiver;->z:[Ljava/lang/String;
-
-    const/4 v3, 0x3
-
-    aget-object v2, v2, v3
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 12
-    sget-object v1, Lcom/whatsapp/ScreenLockReceiver;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x2
-
-    aget-object v1, v1, v2
-
-    invoke-static {v1}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-
-    .line 14
-    iput-boolean v4, p0, Lcom/whatsapp/ScreenLockReceiver;->a:Z
-
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
-
-    if-eqz v1, :cond_1
-
-    .line 20
-    :cond_0
+    .line 3
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v1
@@ -396,38 +360,76 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_0
 
-    .line 21
+    .line 9
     sget-object v1, Lcom/whatsapp/ScreenLockReceiver;->z:[Ljava/lang/String;
 
-    aget-object v1, v1, v5
+    const/4 v2, 0x3
+
+    aget-object v1, v1, v2
 
     invoke-static {v1}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 15
-    iput-boolean v5, p0, Lcom/whatsapp/ScreenLockReceiver;->a:Z
+    .line 21
+    const/4 v1, 0x0
 
-    .line 3
+    iput-boolean v1, p0, Lcom/whatsapp/ScreenLockReceiver;->a:Z
+
+    sget v1, Lcom/whatsapp/App;->h:I
+
+    if-eqz v1, :cond_1
+
+    .line 6
+    :cond_0
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v1
+
+    sget-object v2, Lcom/whatsapp/ScreenLockReceiver;->z:[Ljava/lang/String;
+
+    const/4 v3, 0x4
+
+    aget-object v2, v2, v3
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 20
+    sget-object v1, Lcom/whatsapp/ScreenLockReceiver;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x2
+
+    aget-object v1, v1, v2
+
+    invoke-static {v1}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    .line 13
+    iput-boolean v4, p0, Lcom/whatsapp/ScreenLockReceiver;->a:Z
+
+    .line 8
     :cond_1
     iget-boolean v1, p0, Lcom/whatsapp/ScreenLockReceiver;->a:Z
 
     if-eq v1, v0, :cond_2
 
-    .line 10
-    invoke-static {}, Lde/greenrobot/event/f;->b()Lde/greenrobot/event/f;
+    .line 2
+    invoke-static {}, Lde/greenrobot/event/h;->b()Lde/greenrobot/event/h;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/ep;
+    new-instance v1, Lcom/whatsapp/of;
 
     iget-boolean v2, p0, Lcom/whatsapp/ScreenLockReceiver;->a:Z
 
-    invoke-direct {v1, v2}, Lcom/whatsapp/ep;-><init>(Z)V
+    invoke-direct {v1, v2}, Lcom/whatsapp/of;-><init>(Z)V
 
-    invoke-virtual {v0, v1}, Lde/greenrobot/event/f;->a(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Lde/greenrobot/event/h;->c(Ljava/lang/Object;)V
 
-    .line 18
+    .line 10
     :cond_2
     return-void
 .end method
@@ -436,14 +438,14 @@
     .locals 3
 
     .prologue
-    .line 5
+    .line 14
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v1, Lcom/whatsapp/ScreenLockReceiver;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x4
+    const/4 v2, 0x0
 
     aget-object v1, v1, v2
 

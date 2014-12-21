@@ -3,20 +3,24 @@
 .source "mu.java"
 
 # interfaces
-.implements Landroid/support/v4/view/ViewPager$PageTransformer;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/PhotoViewPager;
+.field final a:Lcom/whatsapp/n5;
+
+.field final b:Lcom/whatsapp/g7;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/PhotoViewPager;)V
+.method constructor <init>(Lcom/whatsapp/g7;Lcom/whatsapp/n5;)V
     .locals 0
 
     .prologue
-    .line 12
-    iput-object p1, p0, Lcom/whatsapp/mu;->a:Lcom/whatsapp/PhotoViewPager;
+    .line 7
+    iput-object p1, p0, Lcom/whatsapp/mu;->b:Lcom/whatsapp/g7;
+
+    iput-object p2, p0, Lcom/whatsapp/mu;->a:Lcom/whatsapp/n5;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,81 +29,77 @@
 
 
 # virtual methods
-.method public transformPage(Landroid/view/View;F)V
-    .locals 4
+.method public onClick(Landroid/view/View;)V
+    .locals 3
 
     .prologue
-    const/4 v3, 0x0
+    .line 5
+    invoke-static {}, Lcom/whatsapp/App;->t()Z
 
-    const/high16 v2, 0x3f800000
+    move-result v0
+
+    if-eqz v0, :cond_0
 
     .line 6
-    cmpg-float v0, p2, v3
+    iget-object v0, p0, Lcom/whatsapp/mu;->a:Lcom/whatsapp/n5;
 
-    if-ltz v0, :cond_0
+    invoke-static {v0}, Lcom/whatsapp/n5;->a(Lcom/whatsapp/n5;)I
 
-    cmpl-float v0, p2, v2
+    move-result v0
 
-    if-ltz v0, :cond_1
+    invoke-static {v0}, Lcom/whatsapp/g7;->a(I)I
 
-    .line 2
+    sget v0, Lcom/whatsapp/App;->h:I
+
+    if-eqz v0, :cond_1
+
+    .line 1
     :cond_0
-    invoke-virtual {p1, v3}, Landroid/view/View;->setTranslationX(F)V
+    iget-object v0, p0, Lcom/whatsapp/mu;->b:Lcom/whatsapp/g7;
 
-    .line 9
-    invoke-virtual {p1, v2}, Landroid/view/View;->setAlpha(F)V
+    invoke-static {v0}, Lcom/whatsapp/g7;->f(Lcom/whatsapp/g7;)[Lcom/whatsapp/ry;
 
-    .line 8
-    invoke-virtual {p1, v2}, Landroid/view/View;->setScaleX(F)V
+    move-result-object v0
 
-    .line 5
-    invoke-virtual {p1, v2}, Landroid/view/View;->setScaleY(F)V
+    array-length v0, v0
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    add-int/lit8 v0, v0, -0x1
 
-    if-eqz v0, :cond_2
+    iget-object v1, p0, Lcom/whatsapp/mu;->a:Lcom/whatsapp/n5;
 
-    .line 3
-    :cond_1
-    neg-float v0, p2
-
-    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
+    invoke-static {v1}, Lcom/whatsapp/n5;->a(Lcom/whatsapp/n5;)I
 
     move-result v1
 
-    int-to-float v1, v1
+    sub-int/2addr v0, v1
 
-    mul-float/2addr v0, v1
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationX(F)V
-
-    .line 11
-    sub-float v0, v2, p2
-
-    invoke-static {v3, v0}, Ljava/lang/Math;->max(FF)F
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->setAlpha(F)V
-
-    .line 1
-    const v0, 0x3e99999a
-
-    mul-float/2addr v0, p2
-
-    sub-float v0, v2, v0
-
-    invoke-static {v3, v0}, Ljava/lang/Math;->max(FF)F
-
-    move-result v0
-
-    .line 10
-    invoke-virtual {p1, v0}, Landroid/view/View;->setScaleX(F)V
-
-    .line 7
-    invoke-virtual {p1, v0}, Landroid/view/View;->setScaleY(F)V
+    invoke-static {v0}, Lcom/whatsapp/g7;->a(I)I
 
     .line 4
-    :cond_2
+    :cond_1
+    iget-object v0, p0, Lcom/whatsapp/mu;->b:Lcom/whatsapp/g7;
+
+    invoke-static {v0}, Lcom/whatsapp/g7;->d(Lcom/whatsapp/g7;)Landroid/support/v4/view/ViewPager;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/whatsapp/g7;->c()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Landroid/support/v4/view/ViewPager;->setCurrentItem(IZ)V
+
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/mu;->b:Lcom/whatsapp/g7;
+
+    invoke-static {}, Lcom/whatsapp/g7;->c()I
+
+    move-result v1
+
+    invoke-static {v0, v1}, Lcom/whatsapp/g7;->a(Lcom/whatsapp/g7;I)V
+
+    .line 2
     return-void
 .end method

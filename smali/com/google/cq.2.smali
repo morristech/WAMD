@@ -1,51 +1,44 @@
-.class final Lcom/google/cq;
-.super Lcom/google/c1;
+.class public final Lcom/google/cq;
+.super Lcom/google/cD;
 .source "cq.java"
 
 
+# static fields
+.field private static final b:Lcom/google/cq;
+
+
 # direct methods
-.method private constructor <init>()V
+.method static constructor <clinit>()V
     .locals 1
 
     .prologue
-    .line 2
-    const/4 v0, 0x0
+    .line 3
+    new-instance v0, Lcom/google/cq;
 
-    invoke-direct {p0, v0}, Lcom/google/c1;-><init>(Lcom/google/fK;)V
+    invoke-direct {v0}, Lcom/google/cq;-><init>()V
+
+    sput-object v0, Lcom/google/cq;->b:Lcom/google/cq;
 
     return-void
 .end method
 
-.method constructor <init>(Lcom/google/fK;)V
+.method private constructor <init>()V
     .locals 0
 
     .prologue
-    .line 3
-    invoke-direct {p0}, Lcom/google/cq;-><init>()V
+    .line 2
+    invoke-direct {p0}, Lcom/google/cD;-><init>()V
 
+    .line 4
     return-void
 .end method
 
-
-# virtual methods
-.method a(II)Z
+.method public static a()Lcom/google/cq;
     .locals 1
 
     .prologue
     .line 1
-    add-int v0, p1, p2
+    sget-object v0, Lcom/google/cq;->b:Lcom/google/cq;
 
-    rem-int/lit8 v0, v0, 0x3
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
+    return-object v0
 .end method

@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "mZ\u0019FNa\\\u0015O\u000eb\u0015\u0007L\u0007qB\u0015Q\u0004(T\u0016L\u0014q\u0018\u0000LL`M\u0004J\u0013`"
+    const-string v0, "]\u001d\u001727Q\u001b\u001b;wRR\t8~A\u0005\u001b%}\u0018\u0013\u00188mA_\u000e85P\n\n>jP"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x61
+    const/16 v0, 0x18
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,26 +65,24 @@
     goto :goto_0
 
     :pswitch_0
-    const/4 v0, 0x5
-
-    goto :goto_1
-
-    :pswitch_1
     const/16 v0, 0x35
 
     goto :goto_1
 
+    :pswitch_1
+    const/16 v0, 0x72
+
+    goto :goto_1
+
     :pswitch_2
-    const/16 v0, 0x74
+    const/16 v0, 0x7a
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x23
+    const/16 v0, 0x57
 
     goto :goto_1
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -99,7 +97,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 3
     invoke-direct {p0}, Landroid/support/v4/app/DialogFragment;-><init>()V
 
     return-void
@@ -111,17 +109,17 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 2
     sget-object v0, Lcom/whatsapp/HomeActivity$SoftwareAboutToExpireDialogFragment;->z:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 3
+    .line 1
     invoke-virtual {p0}, Lcom/whatsapp/HomeActivity$SoftwareAboutToExpireDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/whatsapp/ej;->a(Landroid/app/Activity;)Landroid/app/Dialog;
+    invoke-static {v0}, Lcom/whatsapp/amu;->a(Landroid/app/Activity;)Landroid/app/Dialog;
 
     move-result-object v0
 

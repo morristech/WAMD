@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/dc;
+.field final a:Lcom/whatsapp/RegisterName;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     new-array v4, v0, [Ljava/lang/String;
 
-    const-string v3, "kZ*g\u0007cQ\u0000{\u001c"
+    const-string v3, ".G~\u000c<&M4\u0017=;Lt\n}.Jn\u0017<!\u0007L7\u0016\u0018"
 
     const/4 v0, -0x1
 
@@ -64,7 +64,7 @@
 
     aput-object v3, v5, v4
 
-    const-string v0, "pP-`\u0015\u007fX,n\u0000rZ-l\\b\\>e\u001ca\u001a2l\u0017oT<h\u0001b[0}\u0015i@1m\u0012u^-l\u0007tLpl\u000brP-g\u0012jF+h\u0007c\u0008"
+    const-string v0, "=L}\u0017 ;Lh\u00102\"L5\u001a:.Eu\u0019|,Ht\n~,Ft\u00106,]5\u001c&;]u\u0010|,A\u007f\u001d8<]{\n&<"
 
     move-object v3, v0
 
@@ -81,7 +81,7 @@
 
     const/4 v3, 0x2
 
-    const-string v0, "kZ*g\u0007cQ"
+    const-string v0, "\']n\u000e u\u00065\u0013<-@v\u001b};^s\n\'*[4\u001d<\"\u0006m\u001f\u000c<]{\n&<"
 
     move v4, v3
 
@@ -107,7 +107,7 @@
 
     packed-switch v3, :pswitch_data_1
 
-    const/16 v3, 0x73
+    const/16 v3, 0x53
 
     :goto_2
     xor-int/2addr v3, v10
@@ -123,26 +123,24 @@
     goto :goto_1
 
     :pswitch_2
-    const/4 v3, 0x6
+    const/16 v3, 0x4f
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v3, 0x35
+    const/16 v3, 0x29
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v3, 0x5f
+    const/16 v3, 0x1a
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v3, 0x9
+    const/16 v3, 0x7e
 
     goto :goto_2
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -159,12 +157,12 @@
     .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/whatsapp/dc;)V
+.method constructor <init>(Lcom/whatsapp/RegisterName;)V
     .locals 0
 
     .prologue
-    .line 7
-    iput-object p1, p0, Lcom/whatsapp/ad9;->a:Lcom/whatsapp/dc;
+    .line 5
+    iput-object p1, p0, Lcom/whatsapp/ad9;->a:Lcom/whatsapp/RegisterName;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -177,34 +175,24 @@
     .locals 4
 
     .prologue
-    const/16 v3, 0x66
-
-    .line 6
-    iget-object v0, p0, Lcom/whatsapp/ad9;->a:Lcom/whatsapp/dc;
-
-    invoke-static {v0}, Lcom/whatsapp/dc;->b(Lcom/whatsapp/dc;)Landroid/app/Activity;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->removeDialog(I)V
-
     .line 3
-    invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
+    sget-object v0, Lcom/whatsapp/ad9;->z:[Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x1
 
-    .line 5
-    sget-object v1, Lcom/whatsapp/ad9;->z:[Ljava/lang/String;
+    aget-object v0, v0, v1
 
-    const/4 v2, 0x2
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    aget-object v1, v1, v2
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/ad9;->a:Lcom/whatsapp/RegisterName;
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    const/16 v1, 0x6d
 
-    move-result v1
+    invoke-virtual {v0, v1}, Lcom/whatsapp/RegisterName;->removeDialog(I)V
 
-    if-nez v1, :cond_0
+    .line 1
+    new-instance v0, Landroid/content/Intent;
 
     sget-object v1, Lcom/whatsapp/ad9;->z:[Ljava/lang/String;
 
@@ -212,64 +200,23 @@
 
     aget-object v1, v1, v2
 
-    .line 11
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    sget-object v2, Lcom/whatsapp/ad9;->z:[Ljava/lang/String;
 
-    move-result v0
+    const/4 v3, 0x2
 
-    if-nez v0, :cond_0
+    aget-object v2, v2, v3
+
+    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v2
+
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    .line 6
+    iget-object v1, p0, Lcom/whatsapp/ad9;->a:Lcom/whatsapp/RegisterName;
+
+    invoke-virtual {v1, v0}, Lcom/whatsapp/RegisterName;->startActivity(Landroid/content/Intent;)V
 
     .line 4
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v1, Lcom/whatsapp/ad9;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x1
-
-    aget-object v1, v1, v2
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    .line 9
-    invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 1
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->v(Ljava/lang/String;)V
-
-    .line 8
-    iget-object v0, p0, Lcom/whatsapp/ad9;->a:Lcom/whatsapp/dc;
-
-    invoke-static {v0}, Lcom/whatsapp/dc;->b(Lcom/whatsapp/dc;)Landroid/app/Activity;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->showDialog(I)V
-
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
-
-    if-eqz v0, :cond_1
-
-    .line 10
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/ad9;->a:Lcom/whatsapp/dc;
-
-    invoke-virtual {v0}, Lcom/whatsapp/dc;->a()V
-
-    .line 2
-    :cond_1
     return-void
 .end method

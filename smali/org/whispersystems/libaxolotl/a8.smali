@@ -1,27 +1,27 @@
 .class public Lorg/whispersystems/libaxolotl/a8;
-.super Ljava/lang/Exception;
+.super Lorg/whispersystems/libaxolotl/ae;
 .source "a8.java"
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 1
-    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+    .line 2
+    invoke-direct {p0}, Lorg/whispersystems/libaxolotl/ae;-><init>()V
 
-    .line 4
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/Throwable;)V
-    .locals 0
+
+# virtual methods
+.method protected a()I
+    .locals 1
 
     .prologue
-    .line 3
-    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/Throwable;)V
+    .line 1
+    const/4 v0, 0x0
 
-    .line 2
-    return-void
+    return v0
 .end method

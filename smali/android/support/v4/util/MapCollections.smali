@@ -16,10 +16,10 @@
     .locals 0
 
     .prologue
-    .line 33
+    .line 29
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 37
+    .line 53
     return-void
 .end method
 
@@ -27,12 +27,12 @@
     .locals 2
 
     .prologue
-    .line 35
+    .line 50
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 27
+    .line 25
     :cond_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -40,7 +40,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 53
+    .line 9
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
@@ -51,10 +51,10 @@
 
     if-nez v1, :cond_0
 
-    .line 38
+    .line 24
     const/4 v0, 0x0
 
-    .line 49
+    .line 51
     :goto_0
     return v0
 
@@ -72,26 +72,26 @@
 
     const/4 v1, 0x0
 
-    .line 1
+    .line 18
     if-ne p0, p1, :cond_1
 
     move v1, v0
 
-    .line 51
+    .line 40
     :cond_0
     :goto_0
     return v1
 
-    .line 15
+    .line 19
     :cond_1
     instance-of v2, p1, Ljava/util/Set;
 
     if-eqz v2, :cond_0
 
-    .line 19
+    .line 45
     check-cast p1, Ljava/util/Set;
 
-    .line 51
+    .line 40
     :try_start_0
     invoke-interface {p0}, Ljava/util/Set;->size()I
 
@@ -135,7 +135,7 @@
     .catch Ljava/lang/NullPointerException; {:try_start_2 .. :try_end_2} :catch_2
     .catch Ljava/lang/ClassCastException; {:try_start_2 .. :try_end_2} :catch_3
 
-    .line 46
+    .line 52
     :catch_2
     move-exception v0
 
@@ -144,10 +144,10 @@
     :cond_2
     move v0, v1
 
-    .line 51
+    .line 40
     goto :goto_1
 
-    .line 18
+    .line 39
     :catch_3
     move-exception v0
 
@@ -158,19 +158,19 @@
     .locals 4
 
     .prologue
-    sget v0, Landroid/support/v4/util/LruCache;->a:I
+    sget-boolean v0, Landroid/support/v4/util/LruCache;->a:Z
 
-    .line 17
+    .line 35
     invoke-interface {p0}, Ljava/util/Map;->size()I
 
     move-result v1
 
-    .line 11
+    .line 36
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
 
-    .line 20
+    .line 21
     :cond_0
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
@@ -178,7 +178,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 22
+    .line 46
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v3
@@ -187,7 +187,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 6
+    .line 3
     :cond_1
     :try_start_0
     invoke-interface {p0}, Ljava/util/Map;->size()I
@@ -218,14 +218,14 @@
     .locals 4
 
     .prologue
-    sget v0, Landroid/support/v4/util/LruCache;->a:I
+    sget-boolean v0, Landroid/support/v4/util/LruCache;->a:Z
 
     .line 34
     invoke-interface {p0}, Ljava/util/Map;->size()I
 
     move-result v1
 
-    .line 29
+    .line 13
     invoke-interface {p0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v2
@@ -234,7 +234,7 @@
 
     move-result-object v2
 
-    .line 9
+    .line 42
     :cond_0
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
@@ -242,7 +242,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 4
+    .line 43
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v3
@@ -253,12 +253,12 @@
 
     if-nez v3, :cond_0
 
-    .line 41
+    .line 1
     invoke-interface {v2}, Ljava/util/Iterator;->remove()V
 
     if-eqz v0, :cond_0
 
-    .line 12
+    .line 17
     :cond_1
     :try_start_0
     invoke-interface {p0}, Ljava/util/Map;->size()I
@@ -318,13 +318,13 @@
     .locals 1
 
     .prologue
-    .line 24
+    .line 27
     :try_start_0
     iget-object v0, p0, Landroid/support/v4/util/MapCollections;->mEntrySet:Landroid/support/v4/util/MapCollections$EntrySet;
 
     if-nez v0, :cond_0
 
-    .line 31
+    .line 15
     new-instance v0, Landroid/support/v4/util/MapCollections$EntrySet;
 
     invoke-direct {v0, p0}, Landroid/support/v4/util/MapCollections$EntrySet;-><init>(Landroid/support/v4/util/MapCollections;)V
@@ -333,13 +333,13 @@
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 44
+    .line 32
     :cond_0
     iget-object v0, p0, Landroid/support/v4/util/MapCollections;->mEntrySet:Landroid/support/v4/util/MapCollections$EntrySet;
 
     return-object v0
 
-    .line 31
+    .line 15
     :catch_0
     move-exception v0
 
@@ -350,13 +350,13 @@
     .locals 1
 
     .prologue
-    .line 23
+    .line 48
     :try_start_0
     iget-object v0, p0, Landroid/support/v4/util/MapCollections;->mKeySet:Landroid/support/v4/util/MapCollections$KeySet;
 
     if-nez v0, :cond_0
 
-    .line 3
+    .line 30
     new-instance v0, Landroid/support/v4/util/MapCollections$KeySet;
 
     invoke-direct {v0, p0}, Landroid/support/v4/util/MapCollections$KeySet;-><init>(Landroid/support/v4/util/MapCollections;)V
@@ -365,13 +365,13 @@
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 30
+    .line 4
     :cond_0
     iget-object v0, p0, Landroid/support/v4/util/MapCollections;->mKeySet:Landroid/support/v4/util/MapCollections$KeySet;
 
     return-object v0
 
-    .line 3
+    .line 30
     :catch_0
     move-exception v0
 
@@ -382,13 +382,13 @@
     .locals 1
 
     .prologue
-    .line 40
+    .line 44
     :try_start_0
     iget-object v0, p0, Landroid/support/v4/util/MapCollections;->mValues:Landroid/support/v4/util/MapCollections$ValuesCollection;
 
     if-nez v0, :cond_0
 
-    .line 52
+    .line 26
     new-instance v0, Landroid/support/v4/util/MapCollections$ValuesCollection;
 
     invoke-direct {v0, p0}, Landroid/support/v4/util/MapCollections$ValuesCollection;-><init>(Landroid/support/v4/util/MapCollections;)V
@@ -397,13 +397,13 @@
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 16
+    .line 22
     :cond_0
     iget-object v0, p0, Landroid/support/v4/util/MapCollections;->mValues:Landroid/support/v4/util/MapCollections$ValuesCollection;
 
     return-object v0
 
-    .line 52
+    .line 26
     :catch_0
     move-exception v0
 
@@ -414,35 +414,35 @@
     .locals 5
 
     .prologue
-    sget v1, Landroid/support/v4/util/LruCache;->a:I
+    sget-boolean v1, Landroid/support/v4/util/LruCache;->a:Z
 
-    .line 10
+    .line 49
     invoke-virtual {p0}, Landroid/support/v4/util/MapCollections;->colGetSize()I
 
     move-result v2
 
-    .line 2
+    .line 12
     new-array v3, v2, [Ljava/lang/Object;
 
-    .line 28
+    .line 33
     const/4 v0, 0x0
 
     :cond_0
     if-ge v0, v2, :cond_1
 
-    .line 47
+    .line 23
     invoke-virtual {p0, v0, p1}, Landroid/support/v4/util/MapCollections;->colGetEntry(II)Ljava/lang/Object;
 
     move-result-object v4
 
     aput-object v4, v3, v0
 
-    .line 13
+    .line 47
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 32
+    .line 41
     :cond_1
     return-object v3
 .end method
@@ -451,19 +451,19 @@
     .locals 5
 
     .prologue
-    sget v2, Landroid/support/v4/util/LruCache;->a:I
+    sget-boolean v2, Landroid/support/v4/util/LruCache;->a:Z
 
-    .line 21
+    .line 31
     invoke-virtual {p0}, Landroid/support/v4/util/MapCollections;->colGetSize()I
 
     move-result v3
 
-    .line 39
+    .line 38
     array-length v0, p1
 
     if-ge v0, v3, :cond_3
 
-    .line 25
+    .line 6
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -480,33 +480,33 @@
 
     check-cast v0, [Ljava/lang/Object;
 
-    .line 42
+    .line 28
     :goto_0
     const/4 v1, 0x0
 
     :cond_0
     if-ge v1, v3, :cond_1
 
-    .line 50
+    .line 11
     invoke-virtual {p0, v1, p2}, Landroid/support/v4/util/MapCollections;->colGetEntry(II)Ljava/lang/Object;
 
     move-result-object v4
 
     aput-object v4, v0, v1
 
-    .line 26
+    .line 20
     add-int/lit8 v1, v1, 0x1
 
     if-eqz v2, :cond_0
 
-    .line 36
+    .line 7
     :cond_1
     :try_start_0
     array-length v1, v0
 
     if-le v1, v3, :cond_2
 
-    .line 43
+    .line 10
     const/4 v1, 0x0
 
     aput-object v1, v0, v3
@@ -517,7 +517,7 @@
     :cond_2
     return-object v0
 
-    .line 43
+    .line 10
     :catch_0
     move-exception v0
 

@@ -1,141 +1,79 @@
-.class Lcom/whatsapp/adw;
-.super Ljava/lang/Object;
+.class public Lcom/whatsapp/adw;
+.super Lcom/whatsapp/ada;
 .source "adw.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/Conversation;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/Conversation;)V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/adw;->a:Lcom/whatsapp/Conversation;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 4
+    invoke-direct {p0}, Lcom/whatsapp/ada;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 9
+.method public a(I)I
+    .locals 2
 
     .prologue
-    const/4 v2, 0x0
+    const/4 v1, 0x2
 
-    const/16 v3, 0x8
-
-    const/4 v1, 0x1
-
-    .line 11
-    iget-object v0, p0, Lcom/whatsapp/adw;->a:Lcom/whatsapp/Conversation;
-
-    invoke-static {v0}, Lcom/whatsapp/Conversation;->U(Lcom/whatsapp/Conversation;)Landroid/view/View;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/adw;->a:Lcom/whatsapp/Conversation;
-
-    invoke-static {v0}, Lcom/whatsapp/Conversation;->U(Lcom/whatsapp/Conversation;)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
-
-    .line 5
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/adw;->a:Lcom/whatsapp/Conversation;
-
-    invoke-static {v0}, Lcom/whatsapp/Conversation;->y(Lcom/whatsapp/Conversation;)Landroid/view/View;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/adw;->a:Lcom/whatsapp/Conversation;
-
-    invoke-static {v0}, Lcom/whatsapp/Conversation;->y(Lcom/whatsapp/Conversation;)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
-
-    .line 3
-    :cond_1
-    iget-object v0, p0, Lcom/whatsapp/adw;->a:Lcom/whatsapp/Conversation;
-
-    invoke-static {v0}, Lcom/whatsapp/Conversation;->I(Lcom/whatsapp/Conversation;)Landroid/widget/TextView;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    .line 9
-    iget-object v0, p0, Lcom/whatsapp/adw;->a:Lcom/whatsapp/Conversation;
-
-    invoke-static {v0}, Lcom/whatsapp/Conversation;->I(Lcom/whatsapp/Conversation;)Landroid/widget/TextView;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/widget/TextView;->getVisibility()I
-
-    move-result v0
-
-    if-eq v0, v3, :cond_2
-
-    .line 10
-    iget-object v0, p0, Lcom/whatsapp/adw;->a:Lcom/whatsapp/Conversation;
-
-    invoke-static {v0}, Lcom/whatsapp/Conversation;->I(Lcom/whatsapp/Conversation;)Landroid/widget/TextView;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 12
-    new-instance v0, Landroid/view/animation/TranslateAnimation;
-
-    const/high16 v8, -0x40800000
-
-    move v3, v1
-
-    move v4, v2
-
-    move v5, v1
-
-    move v6, v2
-
-    move v7, v1
-
-    invoke-direct/range {v0 .. v8}, Landroid/view/animation/TranslateAnimation;-><init>(IFIFIFIF)V
+    const/4 v0, 0x1
 
     .line 8
-    const-wide/16 v2, 0xc8
+    if-nez p1, :cond_0
 
-    invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
+    .line 10
+    :goto_0
+    return v0
+
+    .line 11
+    :cond_0
+    if-ne p1, v0, :cond_1
+
+    move v0, v1
+
+    .line 10
+    goto :goto_0
+
+    .line 12
+    :cond_1
+    if-ne p1, v1, :cond_2
 
     .line 1
-    iget-object v1, p0, Lcom/whatsapp/adw;->a:Lcom/whatsapp/Conversation;
+    const/4 v0, 0x4
 
-    invoke-static {v1}, Lcom/whatsapp/Conversation;->I(Lcom/whatsapp/Conversation;)Landroid/widget/TextView;
+    goto :goto_0
 
-    move-result-object v1
+    .line 2
+    :cond_2
+    const/4 v0, 0x3
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->startAnimation(Landroid/view/animation/Animation;)V
+    if-ne p1, v0, :cond_3
+
+    .line 7
+    const/16 v0, 0x8
+
+    goto :goto_0
+
+    .line 5
+    :cond_3
+    const/4 v0, 0x6
+
+    if-ne p1, v0, :cond_4
+
+    .line 3
+    const/16 v0, 0x10
+
+    goto :goto_0
 
     .line 6
-    :cond_2
-    return-void
+    :cond_4
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

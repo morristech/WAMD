@@ -2,9 +2,6 @@
 .super Ljava/lang/Object;
 
 
-# virtual methods
-.method public abstract onConnected(Landroid/os/Bundle;)V
-.end method
-
-.method public abstract onDisconnected()V
-.end method
+# annotations
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation

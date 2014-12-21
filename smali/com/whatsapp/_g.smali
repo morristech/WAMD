@@ -1,140 +1,341 @@
 .class Lcom/whatsapp/_g;
-.super Lcom/whatsapp/_f;
+.super Landroid/view/GestureDetector$SimpleOnGestureListener;
 .source "_g.java"
 
 
-# static fields
-.field private static final z:Ljava/lang/String;
-
-
 # instance fields
-.field final j:Lcom/whatsapp/mz;
+.field final a:Lcom/whatsapp/GalleryView;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    const-string v0, "ASyHnMSyHdE@\u007fHgR|h\u0004bILg8eEWV\u0000dOVyGuRFh\u0013s\u0000D{\u0008cP\u0003](Ro\u0003h\u0003r\u0000S`\u0004bUQl"
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    move v3, v2
-
-    move v2, v1
-
-    move-object v1, v0
-
-    :goto_0
-    if-gt v2, v3, :cond_0
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/_g;->z:Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v4, v1, v3
-
-    rem-int/lit8 v0, v3, 0x5
-
-    packed-switch v0, :pswitch_data_0
-
-    const/16 v0, 0x16
-
-    :goto_1
-    xor-int/2addr v0, v4
-
-    int-to-char v0, v0
-
-    aput-char v0, v1, v3
-
-    add-int/lit8 v0, v3, 0x1
-
-    move v3, v0
-
-    goto :goto_0
-
-    :pswitch_0
-    const/16 v0, 0x20
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v0, 0x23
-
-    goto :goto_1
-
-    :pswitch_2
-    const/16 v0, 0x9
-
-    goto :goto_1
-
-    :pswitch_3
-    const/16 v0, 0x67
-
-    goto :goto_1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-.end method
-
-.method constructor <init>(Lcom/whatsapp/mz;Ljava/lang/String;Ljava/lang/String;Ljava/util/Vector;ILcom/whatsapp/protocol/az;)V
-    .locals 6
+.method constructor <init>(Lcom/whatsapp/GalleryView;)V
+    .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/_g;->j:Lcom/whatsapp/mz;
+    .line 8
+    iput-object p1, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
 
-    move-object v0, p0
-
-    move-object v1, p2
-
-    move-object v2, p3
-
-    move-object v3, p4
-
-    move v4, p5
-
-    move-object v5, p6
-
-    invoke-direct/range {v0 .. v5}, Lcom/whatsapp/_f;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Vector;ILcom/whatsapp/protocol/az;)V
+    invoke-direct {p0}, Landroid/view/GestureDetector$SimpleOnGestureListener;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/lang/String;)V
-    .locals 1
+.method public onFling(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
+    .locals 6
 
     .prologue
-    .line 1
-    sget-object v0, Lcom/whatsapp/_g;->z:Ljava/lang/String;
+    const/4 v1, 0x0
 
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+    const/high16 v5, 0x43480000
+
+    const/high16 v4, 0x42f00000
+
+    const/4 v2, 0x1
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
+
+    move-result v0
+
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
+
+    move-result v3
+
+    sub-float/2addr v0, v3
+
+    invoke-static {v0}, Ljava/lang/Math;->abs(F)F
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_4
+
+    move-result v0
+
+    const/high16 v3, 0x437a0000
+
+    cmpl-float v0, v0, v3
+
+    if-lez v0, :cond_0
+
+    move v0, v1
+
+    .line 15
+    :goto_0
+    return v0
+
+    .line 12
+    :cond_0
+    :try_start_1
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
+
+    move-result v0
+
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
+
+    move-result v3
+
+    sub-float/2addr v0, v3
+
+    cmpl-float v0, v0, v4
+
+    if-lez v0, :cond_2
+
+    invoke-static {p3}, Ljava/lang/Math;->abs(F)F
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    move-result v0
+
+    cmpl-float v0, v0, v5
+
+    if-lez v0, :cond_2
+
+    .line 2
+    :try_start_2
+    iget-object v0, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
+
+    invoke-static {v0}, Lcom/whatsapp/GalleryView;->b(Lcom/whatsapp/GalleryView;)I
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
+
+    move-result v0
+
+    if-eq v0, v2, :cond_1
+
+    :try_start_3
+    iget-object v0, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
+
+    iget-object v3, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
+
+    invoke-static {v3}, Lcom/whatsapp/GalleryView;->a(Lcom/whatsapp/GalleryView;)I
+
+    move-result v3
+
+    invoke-virtual {v0, v3}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/whatsapp/TouchImageView;
+
+    iget-boolean v0, v0, Lcom/whatsapp/TouchImageView;->y:Z
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
+
+    if-nez v0, :cond_1
+
+    .line 7
+    :try_start_4
+    iget-object v0, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
+
+    invoke-static {v0}, Lcom/whatsapp/GalleryView;->a(Lcom/whatsapp/GalleryView;)I
+
+    move-result v0
+
+    iget-object v3, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
+
+    invoke-virtual {v3}, Lcom/whatsapp/GalleryView;->getChildCount()I
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
+
+    move-result v3
+
+    add-int/lit8 v3, v3, -0x1
+
+    if-ge v0, v3, :cond_1
+
+    .line 11
+    :try_start_5
+    iget-object v0, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
+
+    iget-object v3, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
+
+    invoke-static {v3}, Lcom/whatsapp/GalleryView;->a(Lcom/whatsapp/GalleryView;)I
+
+    move-result v3
+
+    add-int/lit8 v3, v3, 0x1
+
+    invoke-virtual {v0, v3}, Lcom/whatsapp/GalleryView;->a(I)V
+    :try_end_5
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_4
+
+    move v0, v2
+
+    .line 5
+    goto :goto_0
+
+    .line 12
+    :catch_0
+    move-exception v0
+
+    :try_start_6
+    throw v0
+    :try_end_6
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_1
+
+    .line 2
+    :catch_1
+    move-exception v0
+
+    :try_start_7
+    throw v0
+    :try_end_7
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_2
+
+    :catch_2
+    move-exception v0
+
+    :try_start_8
+    throw v0
+    :try_end_8
+    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_3
+
+    .line 7
+    :catch_3
+    move-exception v0
+
+    :try_start_9
+    throw v0
+    :try_end_9
+    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_4
+
+    .line 16
+    :catch_4
+    move-exception v0
+
+    :cond_1
+    move v0, v1
+
+    .line 10
+    goto :goto_0
 
     .line 4
-    invoke-super {p0, p1}, Lcom/whatsapp/_f;->a(Ljava/lang/String;)V
+    :cond_2
+    :try_start_a
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
 
-    .line 3
-    return-void
+    move-result v0
+
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
+
+    move-result v3
+
+    sub-float/2addr v0, v3
+
+    cmpl-float v0, v0, v4
+
+    if-lez v0, :cond_1
+
+    .line 17
+    invoke-static {p3}, Ljava/lang/Math;->abs(F)F
+    :try_end_a
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_5
+
+    move-result v0
+
+    cmpl-float v0, v0, v5
+
+    if-lez v0, :cond_1
+
+    .line 14
+    :try_start_b
+    iget-object v0, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
+
+    invoke-static {v0}, Lcom/whatsapp/GalleryView;->b(Lcom/whatsapp/GalleryView;)I
+    :try_end_b
+    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_6
+
+    move-result v0
+
+    if-eq v0, v2, :cond_1
+
+    :try_start_c
+    iget-object v0, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
+
+    iget-object v3, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
+
+    invoke-static {v3}, Lcom/whatsapp/GalleryView;->a(Lcom/whatsapp/GalleryView;)I
+
+    move-result v3
+
+    invoke-virtual {v0, v3}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/whatsapp/TouchImageView;
+
+    iget-boolean v0, v0, Lcom/whatsapp/TouchImageView;->y:Z
+    :try_end_c
+    .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_7
+
+    if-nez v0, :cond_1
+
+    .line 9
+    :try_start_d
+    iget-object v0, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
+
+    invoke-static {v0}, Lcom/whatsapp/GalleryView;->a(Lcom/whatsapp/GalleryView;)I
+    :try_end_d
+    .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_8
+
+    move-result v0
+
+    if-lez v0, :cond_1
+
+    .line 13
+    :try_start_e
+    iget-object v0, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
+
+    iget-object v3, p0, Lcom/whatsapp/_g;->a:Lcom/whatsapp/GalleryView;
+
+    invoke-static {v3}, Lcom/whatsapp/GalleryView;->a(Lcom/whatsapp/GalleryView;)I
+
+    move-result v3
+
+    add-int/lit8 v3, v3, -0x1
+
+    invoke-virtual {v0, v3}, Lcom/whatsapp/GalleryView;->a(I)V
+    :try_end_e
+    .catch Ljava/lang/Exception; {:try_start_e .. :try_end_e} :catch_4
+
+    move v0, v2
+
+    .line 15
+    goto/16 :goto_0
+
+    .line 17
+    :catch_5
+    move-exception v0
+
+    :try_start_f
+    throw v0
+    :try_end_f
+    .catch Ljava/lang/Exception; {:try_start_f .. :try_end_f} :catch_6
+
+    .line 14
+    :catch_6
+    move-exception v0
+
+    :try_start_10
+    throw v0
+    :try_end_10
+    .catch Ljava/lang/Exception; {:try_start_10 .. :try_end_10} :catch_7
+
+    :catch_7
+    move-exception v0
+
+    :try_start_11
+    throw v0
+    :try_end_11
+    .catch Ljava/lang/Exception; {:try_start_11 .. :try_end_11} :catch_8
+
+    .line 9
+    :catch_8
+    move-exception v0
+
+    :try_start_12
+    throw v0
+    :try_end_12
+    .catch Ljava/lang/Exception; {:try_start_12 .. :try_end_12} :catch_4
 .end method

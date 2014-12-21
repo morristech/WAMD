@@ -71,14 +71,6 @@
     <string name="audio_note_tip">按住录音, 松开发送</string>
     <string name="audio_note_tip_2">录音时间太短，请重试</string>
     <string name="audio_note_top_mic_tip">请对着手机上端的麦克风说话</string>
-    <string name="auth_client_needs_enabling_title">某个应用要求启用 Google Play 服务。</string>
-    <string name="auth_client_needs_installation_title">某个应用要求安装 Google Play 服务。</string>
-    <string name="auth_client_needs_update_title">某个应用要求更新 Google Play 服务。</string>
-    <string name="auth_client_play_services_err_notification_msg">Google Play 服务出错</string>
-    <string name="auth_client_requested_by_msg">由“%1$s”发出</string>
-    <string name="auth_client_using_bad_version_title">某个应用尝试使用的 Google Play 服务版本有误。</string>
-    <string name="barcode_scanner_dialog_body">这个应用程序需要条码扫描器. 您想要安装吗?</string>
-    <string name="barcode_scanner_dialog_title">是否安装条码扫描器？</string>
     <string name="block">封锁</string>
     <string name="block_ask">您确定要封锁此联系人吗？</string>
     <string name="block_list_desc_1">"点击右上方图标以选择想封锁的联系人。 
@@ -159,25 +151,34 @@
     <string name="color_red">红色</string>
     <string name="color_white">白色</string>
     <string name="color_yellow">黄色</string>
-    <string name="common_google_play_services_enable_button">启用 Google Play 服务</string>
-    <string name="common_google_play_services_enable_text">您必须先启用 Google Play 服务才能运行此应用。</string>
-    <string name="common_google_play_services_enable_title">启用 Google Play 服务</string>
-    <string name="common_google_play_services_install_button">获取 Google Play 服务</string>
-    <string name="common_google_play_services_install_text_phone">您的手机中没有 Google Play 服务，您必须先安装该服务才能运行此应用。</string>
-    <string name="common_google_play_services_install_text_tablet">您的平板电脑中没有 Google Play 服务，您必须先安装该服务才能运行此应用。</string>
-    <string name="common_google_play_services_install_title">获取 Google Play 服务</string>
+    <string name="common_android_wear_notification_needs_update_text">某个应用需要更新Android Wear应用才能正常运行。</string>
+    <string name="common_android_wear_update_text">只有更新Android Wear应用后，此应用才能正常运行。</string>
+    <string name="common_android_wear_update_title">更新Android Wear</string>
+    <string name="common_google_play_services_enable_button">启用Google Play服务</string>
+    <string name="common_google_play_services_enable_text">您必须先启用Google Play服务才能运行此应用。</string>
+    <string name="common_google_play_services_enable_title">启用Google Play服务</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s发出的请求</string>
+    <string name="common_google_play_services_install_button">获取Google Play服务</string>
+    <string name="common_google_play_services_install_text_phone">您的手机中没有Google Play服务，您必须先安装该服务才能运行此应用。</string>
+    <string name="common_google_play_services_install_text_tablet">您的平板电脑中没有Google Play服务，您必须先安装该服务才能运行此应用。</string>
+    <string name="common_google_play_services_install_title">获取Google Play服务</string>
     <string name="common_google_play_services_invalid_account_text">此设备上不存在指定的帐户，请选择其他帐户。</string>
     <string name="common_google_play_services_invalid_account_title">无效帐户</string>
-    <string name="common_google_play_services_network_error_text">您必须有数据网络连接才能接入 Google Play 服务。</string>
+    <string name="common_google_play_services_needs_enabling_title">启用Google Play服务后才能运行应用。</string>
+    <string name="common_google_play_services_network_error_text">您必须有数据网络连接才能接入Google Play服务。</string>
     <string name="common_google_play_services_network_error_title">网络错误</string>
-    <string name="common_google_play_services_unknown_issue">Google Play 服务出现未知问题。</string>
-    <string name="common_google_play_services_unsupported_text">您的设备不支持部分应用所依赖的 Google Play 服务。请与设备制造商联系，以寻求帮助。</string>
-    <string name="common_google_play_services_unsupported_title">Google Play 服务</string>
+    <string name="common_google_play_services_notification_needs_installation_title">安装Google Play服务后才能运行应用。</string>
+    <string name="common_google_play_services_notification_needs_update_title">更新Google Play服务后才能运行应用。</string>
+    <string name="common_google_play_services_notification_ticker">Google Play服务出错</string>
+    <string name="common_google_play_services_unknown_issue">Google Play服务出现未知问题。</string>
+    <string name="common_google_play_services_unsupported_text">您的设备不支持部分应用所依赖的Google Play服务。请与设备制造商联系，以寻求帮助。</string>
+    <string name="common_google_play_services_unsupported_title">Google Play服务</string>
     <string name="common_google_play_services_update_button">更新</string>
-    <string name="common_google_play_services_update_text">您必须先更新 Google Play 服务才能运行此应用。</string>
-    <string name="common_google_play_services_update_title">更新 Google Play 服务</string>
+    <string name="common_google_play_services_update_text">您必须先更新Google Play服务才能运行此应用。</string>
+    <string name="common_google_play_services_update_title">更新Google Play服务</string>
+    <string name="common_open_on_phone">在手机上打开</string>
     <string name="common_signin_button_text">登录</string>
-    <string name="common_signin_button_text_long">使用 Google 帐户登录</string>
+    <string name="common_signin_button_text_long">使用Google帐户登录</string>
     <string name="confirm_forward_msg">转发给 %s?</string>
     <string name="confirm_sharing_title">同%s分享？</string>
     <string name="connectivity_self_help_instructions">如果仍然无法连接，请重新启动设备。</string>
@@ -352,7 +353,6 @@
     <string name="eula_description">与世界各地的朋友使用跨平台的移动通讯</string>
     <string name="eula_tablets_not_supported">注：目前不支持平板电脑。</string>
     <string name="eula_terms_of_service">服务条款</string>
-    <string name="eula_title">欢迎使用WhatsApp!</string>
     <string name="existing_contact">已存在</string>
     <string name="exit">退出</string>
     <string name="exit_group">退出群组</string>
@@ -477,7 +477,7 @@
     <string name="group_name_hint">在此输入群组主题...</string>
     <string name="group_name_shortcut_was_removed">"您已不再是群组 '%s' 的成员"</string>
     <string name="group_participant_added_name">%s 已加入</string>
-    <string name="group_participant_added_you">您被添加了</string>
+    <string name="group_participant_added_you">您被加到群组</string>
     <string name="group_participant_changed_number">%1$s 已从 %2$s 更改为 %3$s</string>
     <string name="group_participant_changed_number_unknown_name">%1$s 已更改为 %2$s</string>
     <string name="group_participant_demoted_you">您已不是群组管理员</string>
@@ -527,7 +527,6 @@
     <string name="insufficient_space_for_download_shared_storage">您的内部共享存储器中没有足够的空间所以无法下载。请删除一些文件，并再试一次。</string>
     <string name="invalid_media_message_download">无法在无效的消息中下载媒体。请尝试再次发送该信息。</string>
     <string name="invalid_message_forward">消息无法发送给无效联系人</string>
-    <string name="invalid_qr_code">无效的二维码</string>
     <string name="invalid_url_for_download">下载失败.请要求再次发送.</string>
     <string name="invite">邀请</string>
     <string name="invite_friends">邀请您的好友</string>
@@ -573,7 +572,6 @@ WhatsApp服务"</string>
     <string name="menuitem_add">添加</string>
     <string name="menuitem_contacts">联系人</string>
     <string name="menuitem_debug">调试</string>
-    <string name="menuitem_delete_qr">删除 QR 二维码</string>
     <string name="menuitem_groupchat">新建群组</string>
     <string name="menuitem_list">添加广播</string>
     <string name="menuitem_mute">静音</string>
@@ -614,14 +612,10 @@ WhatsApp服务"</string>
     <string name="msg_store_backup_failed">无法备份消息</string>
     <string name="msg_store_backup_failed_try_again_later">无法建立信息备份。请稍后再试。</string>
     <string name="msg_store_backup_found">找到您的备份</string>
-    <string name="msg_store_backup_found_registration">发现信息备份</string>
     <string name="msg_store_backup_skipped">跳过执行备份</string>
     <string name="msg_store_backup_skipped_no_media">无法执行备份：没有SD卡</string>
     <string name="msg_store_backup_skipped_read_only_media">无法执行备份：媒体卡状态为只读。</string>
     <string name="msg_store_confirm">确认</string>
-    <string name="msg_store_creation_backup_message">您想从备份恢复您的对话记录吗？</string>
-    <string name="msg_store_do_not_restore">不要恢复</string>
-    <string name="msg_store_do_not_restore_no_thanks">不保存</string>
     <string name="msg_store_error_found">发生错误。请重新启动WhatsApp。</string>
     <string name="msg_store_error_not_restored">对不起，我们无法恢复任何您的对话记录备份。</string>
     <string name="msg_store_last_confirmation_not_to_restore">如果不执行备份还原，您将不会看到之前的所有对话纪录。您确定要这样做吗？</string>
@@ -648,9 +642,6 @@ WhatsApp服务"</string>
     <string name="need_sd_card_shared_storage">请关闭USB存储设备，并再试一次。</string>
     <string name="network_required">您目前没有连线上网。</string>
     <string name="network_usage_ask_reset_message">您确定您要重设统计数据吗？</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">最后重置时间： %1$s</string>
     <string name="network_usage_media_bytes_received">多媒体下载（字节）：</string>
     <string name="network_usage_media_bytes_sent">多媒体送出（字节）：</string>
@@ -1006,19 +997,19 @@ WhatsApp服务"</string>
     <string name="software_expired_get_from_play">这个版本的WhatsApp太久而且已经不再运作.请到Google Play 下载最新版本.</string>
     <string name="software_expired_get_from_play_with_date">自 &lt;b>%1$s&lt;/b>起已不再支援此WhatsApp版本。请到Google Play下载最新版本。&lt;br>&lt;br>您装置上的日期是&lt;b>%2$s&lt;/b>。假使此日期不正确，请更正您的装置日期设定虽后重新启动WhatsApp。</string>
     <string name="software_expired_with_date">于&lt;b>%1$s&lt;/b> 起已不再支援此一版本之WhatsApp。请点“下载”以取得最新之版本。 &lt;br>&lt;br>您目前装置上的日期是&lt;b>%2$s&lt;/b>。假使此一日期并不正确，则请更正您装置上的系统日期后再重新启动WhatsApp。</string>
-    <string name="spam_generic">"因为您可能违反了我们的服务条款，您的帐号已被 WhatsApp 暂时停用。
-您将可以在这个时间后再次使用 WhatsApp："</string>
+    <string name="spam_generic">"由于您抵触了我们的服务条款，您的帐号已被 WhatsApp 暂时停用。 
+ 
+您将可以在这个时间后再次使用WhatsApp："</string>
     <string name="spam_generic_data_connection_missing">请确定您的手机有良好的数据网络连接。</string>
     <string name="spam_generic_unknown_time_left">因为您可能违反了我们的服务条款，您的帐号已被 WhatsApp 暂时停用。您很快就能重新使用 WhatsApp。</string>
     <string name="spam_learn_more">了解更多</string>
     <string name="spam_title">暂停使用</string>
-    <string name="spam_too_many_blocks">由于很多用戶将您封锁，您的帐号已被 WhatsApp 暂时停用。</string>
-    <string name="spam_too_many_groups">"由于您建立了太多的群组，并且该群组中的成员没有储存您的号码在通讯录中，所以您的 WhatsApp 被暂时停用。 
+    <string name="spam_too_many_groups">"由于您建立了太多的群组，并且该群组中的成员没有您的号码在通讯录中，所以您的 WhatsApp 被暂时停用。 
+ 
 您将可以在这个时间后再次使用WhatsApp："</string>
-    <string name="spam_too_many_messages">"由于您发送了过多的信息给没有保存您在通讯录内的用户，所以您的帐号被 WhatsApp 暂时停用。 
-您将可以在这个时间后再次使用 WhatsApp："</string>
-    <string name="spam_too_many_people">"由于您发送了过多相同的信息给太多用户，所以您的帐号被 WhatsApp 暂时停用。 
-您将可以在这个时间后再次使用 WhatsApp："</string>
+    <string name="spam_too_many_messages">"由于您向太多未添加您为联络人的用户发送信息，您的帐号已被 WhatsApp 暂时停用。 
+ 
+您将可以在这个时间后再次使用WhatsApp："</string>
     <string name="status">自定状态</string>
     <string name="status_default_at_gym">在健身房</string>
     <string name="status_default_at_movies">在看电影</string>

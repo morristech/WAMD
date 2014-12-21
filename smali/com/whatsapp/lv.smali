@@ -1,25 +1,24 @@
-.class final Lcom/whatsapp/lv;
-.super Ljava/lang/Thread;
+.class Lcom/whatsapp/lv;
+.super Ljava/lang/Object;
 .source "lv.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field final a:Lcom/whatsapp/mx;
 
 
 # direct methods
-.method private constructor <init>()V
+.method constructor <init>(Lcom/whatsapp/mx;)V
     .locals 0
 
     .prologue
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/lv;->a:Lcom/whatsapp/mx;
 
-    return-void
-.end method
-
-.method constructor <init>(Lcom/whatsapp/ac2;)V
-    .locals 0
-
-    .prologue
-    .line 3
-    invoke-direct {p0}, Lcom/whatsapp/lv;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -27,31 +26,14 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 1
 
     .prologue
-    .line 2
-    const-wide/16 v0, 0x7d0
-
-    :try_start_0
-    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 6
+    .line 1
     :goto_0
-    invoke-static {}, Landroid/os/Process;->myPid()I
+    const/high16 v0, 0x100000
 
-    move-result v0
-
-    invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
-
-    .line 5
-    return-void
-
-    .line 4
-    :catch_0
-    move-exception v0
+    new-array v0, v0, [B
 
     goto :goto_0
 .end method

@@ -4,84 +4,84 @@
 
 
 # static fields
-.field private static final O:[Ljava/lang/String;
+.field public static A:Z
 
-.field public static s:I
+.field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field private A:Landroid/view/View;
+.field private B:Landroid/widget/TextView;
 
-.field private B:Lcom/whatsapp/adg;
+.field private C:Lcom/whatsapp/PhotoView;
 
-.field private C:Lcom/whatsapp/camera/AutofocusOverlay;
+.field private D:Landroid/os/Handler;
 
-.field private D:Lcom/whatsapp/camera/ShutterOverlay;
+.field private E:Landroid/view/View;
 
-.field private E:Lcom/whatsapp/a11;
+.field private F:Landroid/widget/ImageView;
 
-.field private F:Landroid/view/View;
-
-.field private G:Landroid/widget/TextView;
+.field private G:Landroid/widget/ImageButton;
 
 .field private H:Landroid/view/ViewGroup;
 
-.field private I:Landroid/widget/ProgressBar;
+.field private I:Ljava/io/File;
 
-.field private J:Landroid/widget/TextView;
+.field private J:Landroid/widget/ImageButton;
 
-.field private K:Ljava/io/File;
+.field private K:Landroid/net/Uri;
 
-.field private L:Landroid/widget/ImageButton;
+.field private L:Landroid/view/View;
 
 .field private M:I
 
-.field private N:Landroid/widget/ImageButton;
+.field private N:Landroid/graphics/Rect;
 
-.field private j:Lcom/whatsapp/camera/ZoomOverlay;
+.field private O:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
-.field private k:Lcom/whatsapp/camera/CameraView;
+.field private j:Lcom/whatsapp/camera/AutofocusOverlay;
 
-.field private l:Landroid/net/Uri;
+.field private k:Lcom/whatsapp/i2;
 
-.field private m:Ljava/io/File;
+.field private l:Lcom/whatsapp/camera/ShutterOverlay;
 
-.field private n:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+.field private m:Lcom/whatsapp/ConversationTextEntry;
 
-.field private o:Landroid/view/View;
+.field private n:Landroid/view/View;
 
-.field private p:Lcom/whatsapp/PhotoView;
+.field private o:Lcom/whatsapp/camera/CameraView;
 
-.field private q:Landroid/view/View;
+.field private p:Ljava/io/File;
+
+.field private q:Landroid/widget/ProgressBar;
 
 .field private r:Landroid/view/View;
 
-.field private t:Landroid/graphics/Rect;
+.field private s:Landroid/widget/TextView;
 
-.field private u:J
+.field private t:Landroid/view/View;
 
-.field private v:Lcom/whatsapp/ConversationTextEntry;
+.field private u:Lcom/whatsapp/camera/ZoomOverlay;
 
-.field private w:Z
+.field private v:Z
 
-.field private x:Landroid/os/Handler;
+.field private w:Landroid/view/View;
 
-.field private y:Landroid/widget/ImageView;
+.field private x:J
 
-.field private z:Landroid/view/View;
+.field private y:Lcom/whatsapp/tc;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 14
 
+    const/4 v5, 0x4
+
+    const/4 v4, 0x3
+
     const/4 v3, 0x2
 
     const/4 v2, 0x1
-
-    const/16 v5, 0x16
-
-    const/16 v4, 0xb
 
     const/4 v1, 0x0
 
@@ -89,7 +89,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "u;VOyw;X^b`3OS$b;POjx>HOer*RI\u007fc(^"
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u0011# HN\u0014>%_U\u000161NO\u00102"
 
     const/4 v0, -0x1
 
@@ -127,7 +127,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "u;VOyw;X^b`3OS$e.ZX\u007f`3_Odu;K^~d?"
+    const-string v0, "L:1\u000e"
 
     move-object v6, v0
 
@@ -142,7 +142,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "87K\u001e"
+    const-string v0, "\u0014>%_U\u0012%$LS\u0007 n]_\u0016!(^_\r#)OW\u0000"
 
     move-object v6, v0
 
@@ -157,15 +157,13 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const/4 v6, 0x3
-
-    const-string v0, "p6RZ&~"
-
-    move v7, v6
-
-    move-object v8, v9
+    const-string v0, "\u0014>%_U\u0012%$LS\u0007 n]_\u0016!(^_\r#)OW\u0000"
 
     move-object v6, v0
+
+    move v7, v4
+
+    move-object v8, v9
 
     move v0, v3
 
@@ -174,26 +172,32 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const/4 v7, 0x4
+    const-string v0, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u001125OJ\u0014>%_U\u0012%$LS\u0007 "
 
-    const-string v6, "p6RZ&~"
+    move-object v6, v0
 
-    const/4 v0, 0x3
+    move v7, v5
 
     move-object v8, v9
+
+    move v0, v4
 
     goto :goto_0
 
     :pswitch_3
     aput-object v6, v8, v7
 
-    const/4 v7, 0x5
+    const/4 v6, 0x5
 
-    const-string v6, "d?X^"
+    const-string v0, "\u00039%HU\u000b3oST\u00162/N\u0014\u0007/5H[L$)UH\u001644N\u0014+\u0014\u000ete0\u0012\u0012uo0\u0014\u0004"
 
-    const/4 v0, 0x4
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v5
 
     goto :goto_0
 
@@ -202,7 +206,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "u;VOyw"
+    const-string v6, "\u00039%HU\u000b3oST\u00162/N\u0014\u0007/5H[L$)UH\u001644N\u0014,\u0016\u000c\u007f"
 
     const/4 v0, 0x5
 
@@ -215,7 +219,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "u;VOyw;X^b`3OS$e?O_{f(^\\bs-\u0015D~z6YC\u007f{;K"
+    const-string v6, "\u00039%HU\u000b3oST\u00162/N\u0014\u0007/5H[L$)UH\u001644N\u0014+\u0019\u0015\u007ft6"
 
     const/4 v0, 0x6
 
@@ -228,7 +232,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "u;VOyw;X^b`3OS$e?O_{f(^\\bs-"
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u000622NH\r."
 
     const/4 v0, 0x7
 
@@ -241,7 +245,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "u;VOyw;X^b`3OS$e?O_{`3_Odf(^\\bs-"
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u001022N[\u0010#"
 
     const/16 v0, 0x8
 
@@ -254,7 +258,7 @@
 
     const/16 v7, 0xa
 
-    const-string v6, "`3_Odf(^\\bs-\u0014Mnb,RNny.S_ft"
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u00166*_[\u000c32_T\u0006\'(YN\u0017%$"
 
     const/16 v0, 0x9
 
@@ -265,11 +269,11 @@
     :pswitch_9
     aput-object v6, v8, v7
 
-    const-string v6, "`3_Odf(^\\bs-\u0014Mnb,RNny.S_ft"
+    const/16 v7, 0xb
+
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u001125OJ\u0012%$LS\u0007 oTO\u000e;#SN\u000f61"
 
     const/16 v0, 0xa
-
-    move v7, v4
 
     move-object v8, v9
 
@@ -278,17 +282,13 @@
     :pswitch_a
     aput-object v6, v8, v7
 
-    const/16 v6, 0xc
+    const/16 v7, 0xc
 
-    const-string v0, "u;VOyw;X^b`3OS$e?O_{f(^\\bs-\u0015D~z6YC\u007f{;K"
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u001125OJ\u0012?.NU\u0012%$LS\u0007 "
 
-    move v7, v6
+    const/16 v0, 0xb
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v4
 
     goto/16 :goto_0
 
@@ -297,7 +297,7 @@
 
     const/16 v7, 0xd
 
-    const-string v6, "u;VOyw;X^b`3OS$e?O_{f(^\\bs-"
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u001125OJ\u0012%$LS\u0007 "
 
     const/16 v0, 0xc
 
@@ -310,7 +310,7 @@
 
     const/16 v7, 0xe
 
-    const-string v6, "u;VOyw;X^b`3OS$e?O_{f2T^df(^\\bs-"
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u0001%$[N\u0007x/U\u0017\u000f2lUHO:2]I\u001683_\u0017\u00065"
 
     const/16 v0, 0xd
 
@@ -323,7 +323,7 @@
 
     const/16 v7, 0xf
 
-    const-string v6, "y4"
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u0001%$[N\u0007"
 
     const/16 v0, 0xe
 
@@ -336,7 +336,7 @@
 
     const/16 v7, 0x10
 
-    const-string v6, "y<]"
+    const-string v6, "\u0012%$LS\u0007 "
 
     const/16 v0, 0xf
 
@@ -349,7 +349,7 @@
 
     const/16 v7, 0x11
 
-    const-string v6, "u;VOyw;X^b`3OS$r?H^yy#"
+    const-string v6, "\u00039%HU\u000b3oST\u00162/N\u0014\u000345SU\u000cy\u0002h\u007f#\u0003\u0004ei*\u0018\u0013ny7\u0003"
 
     const/16 v0, 0x10
 
@@ -362,7 +362,7 @@
 
     const/16 v7, 0x12
 
-    const-string v6, "~;K^bu\u0005]Onr8ZI`I?UKiz?_"
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u001a\u000084TY\u0007w5U\u001a\u000f6(T"
 
     const/16 v0, 0x11
 
@@ -375,7 +375,7 @@
 
     const/16 v7, 0x13
 
-    const-string v6, "u;VOyw;X^b`3OS$e.TZ}\u007f>^Ehw*O_ysz"
+    const-string v6, "\u0008>%"
 
     const/16 v0, 0x12
 
@@ -388,7 +388,7 @@
 
     const/16 v7, 0x14
 
-    const-string v6, "`3_Od9p"
+    const-string v6, "\u00035.HN\u000b9&\u001a^\u00172aNUB9 NS\u00142aVS\u0000% HS\u0007$aWS\u0011$(T]"
 
     const/16 v0, 0x13
 
@@ -401,7 +401,7 @@
 
     const/16 v7, 0x15
 
-    const-string v6, "e1RZTf(^\\bs-"
+    const-string v6, "\n61NS\u0001\u0008\'__\u00065 YQ=2/[X\u000e2%"
 
     const/16 v0, 0x14
 
@@ -412,11 +412,11 @@
     :pswitch_14
     aput-object v6, v8, v7
 
-    const-string v6, "u;VOyw;X^b`3OS$e.TZ}\u007f>^Ehw*O_ys"
+    const/16 v7, 0x16
+
+    const-string v6, ",8aIJ\u00034$"
 
     const/16 v0, 0x15
-
-    move v7, v5
 
     move-object v8, v9
 
@@ -425,17 +425,13 @@
     :pswitch_15
     aput-object v6, v8, v7
 
-    const/16 v6, 0x17
+    const/16 v7, 0x17
 
-    const-string v0, "w4_Xd\u007f>\u0015Ceb?U^%s\"OXj8\toxNW\u0017"
+    const-string v6, "\u0014>#H[\u001683"
 
-    move v7, v6
+    const/16 v0, 0x16
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v5
 
     goto/16 :goto_0
 
@@ -444,7 +440,7 @@
 
     const/16 v7, 0x18
 
-    const-string v6, "u;VOyw;X^b`3OS$e.TZ}\u007f>^Ehw*O_ysz"
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u0011#.JL\u000b3$UY\u0003\'5OH\u0007"
 
     const/16 v0, 0x17
 
@@ -457,7 +453,7 @@
 
     const/16 v7, 0x19
 
-    const-string v6, "`3YXjb5I"
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u0011#.JL\u000b3$UY\u0003\'5OH\u0007w"
 
     const/16 v0, 0x18
 
@@ -470,7 +466,7 @@
 
     const/16 v7, 0x1a
 
-    const-string v6, "X5\u001bY{w9^"
+    const-string v6, "\u00039%HU\u000b3oST\u00162/N\u0014\u0007/5H[L\u0004\u0015h\u007f#\u001a"
 
     const/16 v0, 0x19
 
@@ -483,7 +479,7 @@
 
     const/16 v7, 0x1b
 
-    const-string v6, "u;VOyw;X^b`3OS+t5NDhszOE+{;RD"
+    const-string v6, "\u0014>%_UM}"
 
     const/16 v0, 0x1a
 
@@ -496,7 +492,7 @@
 
     const/16 v7, 0x1c
 
-    const-string v6, "u;VOyw;X^b`3OS$u(^K\u007fsuUE&{?\u0016Ey;7HMxb5IO&r8"
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u0011#.JL\u000b3$UY\u0003\'5OH\u0007w"
 
     const/16 v0, 0x1b
 
@@ -509,7 +505,7 @@
 
     const/16 v7, 0x1d
 
-    const-string v6, "u;VOyw;X^b`3OS$u(^K\u007fs"
+    const-string v6, "\u0011<(Je\u0012%$LS\u0007 "
 
     const/16 v0, 0x1c
 
@@ -522,7 +518,7 @@
 
     const/16 v7, 0x1e
 
-    const-string v6, "|3_"
+    const-string v6, "\r1\'"
 
     const/16 v0, 0x1d
 
@@ -535,7 +531,7 @@
 
     const/16 v7, 0x1f
 
-    const-string v6, "w4_Xd\u007f>\u0015Ceb?U^%w9OCdxtxxNW\u000e~uX^\u0015i~HC\u000e"
+    const-string v6, "\r9"
 
     const/16 v0, 0x1e
 
@@ -548,7 +544,7 @@
 
     const/16 v7, 0x20
 
-    const-string v6, "f(^\\bs-"
+    const-string v6, "\u00102\"N"
 
     const/16 v0, 0x1f
 
@@ -561,7 +557,7 @@
 
     const/16 v7, 0x21
 
-    const-string v6, "w8TX\u007f\u007f4\\\noc?\u001b^d64Z^b`?\u001bFbt(ZXbs)\u001bGbe)RDl"
+    const-string v6, "\u0004;(J\u0017\n"
 
     const/16 v0, 0x20
 
@@ -574,7 +570,7 @@
 
     const/16 v7, 0x22
 
-    const-string v6, "u;VOyw;X^b`3OS$d?H^jd."
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u001125OJ\u0012%$LS\u0007 "
 
     const/16 v0, 0x21
 
@@ -587,7 +583,7 @@
 
     const/16 v7, 0x23
 
-    const-string v6, "w4_Xd\u007f>\u0015Ceb?U^%s\"OXj8)SEyb9N^%_\u0019tdTD\u001fhe^D\u0019~"
+    const-string v6, "\u0004;(J\u0017\n"
 
     const/16 v0, 0x22
 
@@ -600,7 +596,7 @@
 
     const/16 v7, 0x24
 
-    const-string v6, "w4_Xd\u007f>\u0015Ceb?U^%s\"OXj8)SEyb9N^%X\u001bvo"
+    const-string v6, "\u00016,_H\u0003"
 
     const/16 v0, 0x23
 
@@ -613,7 +609,7 @@
 
     const/16 v7, 0x25
 
-    const-string v6, "w4_Xd\u007f>\u0015Ceb?U^%s\"OXj8)SEyb9N^%_\u0014ooEB"
+    const-string v6, "\u00016,_H\u00036\"NS\u0014>5C\u0015\u001125OJ\u0012%$LS\u0007 oTO\u000e;#SN\u000f61"
 
     const/16 v0, 0x24
 
@@ -624,7 +620,7 @@
     :pswitch_24
     aput-object v6, v8, v7
 
-    sput-object v9, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sput-object v9, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
     return-void
 
@@ -635,7 +631,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    move v6, v4
+    const/16 v6, 0x3a
 
     :goto_2
     xor-int/2addr v6, v13
@@ -651,22 +647,22 @@
     goto/16 :goto_1
 
     :pswitch_25
-    move v6, v5
+    const/16 v6, 0x62
 
     goto :goto_2
 
     :pswitch_26
-    const/16 v6, 0x5a
+    const/16 v6, 0x57
 
     goto :goto_2
 
     :pswitch_27
-    const/16 v6, 0x3b
+    const/16 v6, 0x41
 
     goto :goto_2
 
     :pswitch_28
-    const/16 v6, 0x2a
+    const/16 v6, 0x3a
 
     goto :goto_2
 
@@ -726,27 +722,27 @@
     .locals 1
 
     .prologue
-    .line 123
+    .line 315
     invoke-direct {p0}, Lcom/whatsapp/DialogToastActivity;-><init>()V
 
-    .line 40
+    .line 179
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Z
+    iput-boolean v0, p0, Lcom/whatsapp/camera/CameraActivity;->v:Z
 
-    .line 126
-    new-instance v0, Lcom/whatsapp/camera/a;
+    .line 63
+    new-instance v0, Lcom/whatsapp/camera/p;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/camera/a;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/camera/p;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->x:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->D:Landroid/os/Handler;
 
-    .line 76
-    new-instance v0, Lcom/whatsapp/camera/c;
+    .line 264
+    new-instance v0, Lcom/whatsapp/camera/i;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/camera/c;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/camera/i;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->n:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->O:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
     return-void
 .end method
@@ -755,26 +751,28 @@
     .locals 0
 
     .prologue
-    .line 201
+    .line 212
     iput p1, p0, Lcom/whatsapp/camera/CameraActivity;->M:I
 
     return p1
 .end method
 
-.method static a(Lcom/whatsapp/camera/CameraActivity;)Landroid/widget/ImageView;
+.method static a(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/PhotoView;
     .locals 1
 
     .prologue
-    .line 54
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Landroid/widget/ImageView;
+    .line 39
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->C:Lcom/whatsapp/PhotoView;
 
     return-object v0
 .end method
 
 .method private a()V
-    .locals 6
+    .locals 7
 
     .prologue
+    const/16 v6, 0x9
+
     const/4 v5, 0x0
 
     const/4 v4, 0x1
@@ -783,98 +781,94 @@
 
     const/16 v2, 0x8
 
-    .line 204
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    .line 46
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x22
-
-    aget-object v0, v0, v1
+    aget-object v0, v0, v6
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 349
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Lcom/whatsapp/adg;
+    .line 113
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Lcom/whatsapp/tc;
 
     if-nez v0, :cond_0
 
-    .line 330
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->J:Landroid/widget/TextView;
+    .line 138
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Landroid/widget/TextView;
 
-    const v1, 0x7f0e007e
+    const v1, 0x7f0e0076
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 325
+    .line 24
     :cond_0
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->F:Landroid/widget/ImageView;
 
-    const v1, 0x7f0200dc
+    const v1, 0x7f0200e2
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 323
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->F:Landroid/view/View;
+    .line 50
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->t:Landroid/view/View;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 131
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Landroid/view/View;
+    .line 313
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->n:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 68
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->q:Landroid/view/View;
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
-
-    .line 39
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->z:Landroid/view/View;
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
-
-    .line 96
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->H:Landroid/view/ViewGroup;
-
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/camera/CameraView;
-
-    invoke-virtual {v0, v1, v3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
-
-    .line 286
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Landroid/widget/ImageView;
-
-    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setEnabled(Z)V
-
-    .line 103
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->A:Landroid/view/View;
-
-    invoke-virtual {v0, v4}, Landroid/view/View;->setEnabled(Z)V
-
-    .line 83
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/widget/ImageButton;
-
-    invoke-virtual {v0, v4}, Landroid/widget/ImageButton;->setEnabled(Z)V
-
-    .line 107
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/TextView;
-
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 258
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->I:Landroid/widget/ProgressBar;
-
-    invoke-virtual {v0, v2}, Landroid/widget/ProgressBar;->setVisibility(I)V
-
-    .line 108
+    .line 318
     iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->r:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 87
+    .line 236
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/view/View;
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 265
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->H:Landroid/view/ViewGroup;
+
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->o:Lcom/whatsapp/camera/CameraView;
+
+    invoke-virtual {v0, v1, v3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
+
+    .line 47
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->F:Landroid/widget/ImageView;
+
+    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setEnabled(Z)V
+
+    .line 214
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Landroid/view/View;
+
+    invoke-virtual {v0, v4}, Landroid/view/View;->setEnabled(Z)V
+
+    .line 234
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/ImageButton;
+
+    invoke-virtual {v0, v4}, Landroid/widget/ImageButton;->setEnabled(Z)V
+
+    .line 89
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->s:Landroid/widget/TextView;
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 134
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->q:Landroid/widget/ProgressBar;
+
+    invoke-virtual {v0, v2}, Landroid/widget/ProgressBar;->setVisibility(I)V
+
+    .line 34
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->E:Landroid/view/View;
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 216
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0x9
-
-    if-lt v0, v1, :cond_1
+    if-lt v0, v6, :cond_1
 
     invoke-static {}, Landroid/hardware/Camera;->getNumberOfCameras()I
 
@@ -882,35 +876,35 @@
 
     if-gt v0, v4, :cond_2
 
-    .line 192
+    .line 75
     :cond_1
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->A:Landroid/view/View;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
-    sget v0, Lcom/whatsapp/camera/CameraActivity;->s:I
+    sget-boolean v0, Lcom/whatsapp/camera/CameraActivity;->A:Z
 
     if-eqz v0, :cond_3
 
-    .line 344
+    .line 257
     :cond_2
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->A:Landroid/view/View;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Landroid/view/View;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 238
+    .line 347
     :cond_3
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/widget/ImageButton;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/ImageButton;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 169
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->r:Landroid/view/View;
+    .line 23
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->E:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 214
-    const v0, 0x7f0b00e7
+    .line 221
+    const v0, 0x7f0b00e9
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -918,51 +912,51 @@
 
     check-cast v0, Lcom/whatsapp/VideoView;
 
-    .line 155
+    .line 220
     invoke-virtual {v0, v2}, Lcom/whatsapp/VideoView;->setVisibility(I)V
 
-    .line 37
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
+    .line 205
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
 
     if-eqz v0, :cond_4
 
-    .line 301
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
+    .line 210
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
-    .line 284
-    iput-object v5, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
+    .line 12
+    iput-object v5, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
 
-    .line 48
+    .line 263
     :cond_4
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->m:Ljava/io/File;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->p:Ljava/io/File;
 
     if-eqz v0, :cond_5
 
-    .line 195
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->m:Ljava/io/File;
+    .line 278
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->p:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
-    .line 144
-    iput-object v5, p0, Lcom/whatsapp/camera/CameraActivity;->m:Ljava/io/File;
+    .line 112
+    iput-object v5, p0, Lcom/whatsapp/camera/CameraActivity;->p:Ljava/io/File;
 
-    .line 196
+    .line 166
     :cond_5
     iput v3, p0, Lcom/whatsapp/camera/CameraActivity;->M:I
 
-    .line 247
-    iput-object v5, p0, Lcom/whatsapp/camera/CameraActivity;->t:Landroid/graphics/Rect;
+    .line 338
+    iput-object v5, p0, Lcom/whatsapp/camera/CameraActivity;->N:Landroid/graphics/Rect;
 
-    .line 63
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->p:Lcom/whatsapp/PhotoView;
+    .line 17
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->C:Lcom/whatsapp/PhotoView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1, v3}, Lcom/whatsapp/PhotoView;->setRotation(FZ)V
 
-    .line 78
+    .line 307
     return-void
 .end method
 
@@ -970,7 +964,7 @@
     .locals 8
 
     .prologue
-    const v7, 0x7f0e007b
+    const v7, 0x7f0e0073
 
     const/16 v6, 0x8
 
@@ -978,35 +972,35 @@
 
     const/4 v4, 0x0
 
-    .line 334
+    .line 251
     :try_start_0
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0xe
+    const/16 v1, 0xc
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 318
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Lcom/whatsapp/adg;
+    .line 117
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Lcom/whatsapp/tc;
 
     if-nez v0, :cond_0
 
-    .line 43
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->J:Landroid/widget/TextView;
+    .line 132
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Landroid/widget/TextView;
 
-    const v1, 0x7f0e007c
+    const v1, 0x7f0e0074
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
     :try_end_0
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 224
+    .line 97
     :cond_0
-    iput-object p1, p0, Lcom/whatsapp/camera/CameraActivity;->l:Landroid/net/Uri;
+    iput-object p1, p0, Lcom/whatsapp/camera/CameraActivity;->K:Landroid/net/Uri;
 
-    .line 167
+    .line 273
     new-instance v0, Ljava/io/File;
 
     invoke-virtual {p1}, Landroid/net/Uri;->getPath()Ljava/lang/String;
@@ -1015,184 +1009,184 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->m:Ljava/io/File;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->p:Ljava/io/File;
 
-    .line 223
+    .line 180
     const/4 v1, 0x0
 
-    .line 8
+    .line 237
     :try_start_1
-    invoke-static {p1}, Lcom/whatsapp/util/bo;->c(Landroid/net/Uri;)Landroid/graphics/Bitmap;
+    invoke-static {p1}, Lcom/whatsapp/util/ac;->d(Landroid/net/Uri;)Landroid/graphics/Bitmap;
     :try_end_1
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_3
-    .catch Lcom/whatsapp/util/ag; {:try_start_1 .. :try_end_1} :catch_4
+    .catch Lcom/whatsapp/util/ay; {:try_start_1 .. :try_end_1} :catch_4
 
     move-result-object v0
 
-    .line 275
+    .line 162
     :goto_0
     if-nez v0, :cond_1
 
-    .line 328
+    .line 49
     :try_start_2
-    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xc
+    const/16 v2, 0xb
 
     aget-object v1, v1, v2
 
     invoke-static {v1}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 326
-    const v1, 0x7f0e007b
+    .line 41
+    const v1, 0x7f0e0073
 
     const/4 v2, 0x1
 
-    invoke-static {p0, v1, v2}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
+    invoke-static {p0, v1, v2}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
 
-    .line 92
+    .line 66
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->finish()V
     :try_end_2
     .catch Ljava/lang/OutOfMemoryError; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 300
+    .line 195
     :cond_1
     iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->H:Landroid/view/ViewGroup;
 
-    iget-object v2, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/camera/CameraView;
+    iget-object v2, p0, Lcom/whatsapp/camera/CameraActivity;->o:Lcom/whatsapp/camera/CameraView;
 
     invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    .line 212
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->o:Landroid/view/View;
+    .line 344
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->n:Landroid/view/View;
 
     invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
 
-    .line 86
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->q:Landroid/view/View;
+    .line 156
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->r:Landroid/view/View;
 
     invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
 
-    .line 255
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->z:Landroid/view/View;
+    .line 296
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/view/View;
 
     invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
 
-    .line 237
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->F:Landroid/view/View;
+    .line 287
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->t:Landroid/view/View;
 
     invoke-virtual {v1, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 73
-    const v1, 0x7f0b00e6
+    .line 65
+    const v1, 0x7f0b00e8
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 249
+    .line 96
     invoke-virtual {v1, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 115
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->p:Lcom/whatsapp/PhotoView;
+    .line 161
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->C:Lcom/whatsapp/PhotoView;
 
     invoke-virtual {v1, v4}, Lcom/whatsapp/PhotoView;->setVisibility(I)V
 
-    .line 148
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->p:Lcom/whatsapp/PhotoView;
-
-    invoke-virtual {v1, v5}, Lcom/whatsapp/PhotoView;->b(Z)V
-
     .line 157
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->p:Lcom/whatsapp/PhotoView;
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->C:Lcom/whatsapp/PhotoView;
+
+    invoke-virtual {v1, v5}, Lcom/whatsapp/PhotoView;->a(Z)V
+
+    .line 29
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->C:Lcom/whatsapp/PhotoView;
 
     invoke-virtual {v1, v0}, Lcom/whatsapp/PhotoView;->a(Landroid/graphics/Bitmap;)V
 
-    .line 210
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->q:Landroid/view/View;
+    .line 111
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->r:Landroid/view/View;
 
-    new-instance v1, Lcom/whatsapp/camera/h;
+    new-instance v1, Lcom/whatsapp/camera/b;
 
-    invoke-direct {v1, p0, p1}, Lcom/whatsapp/camera/h;-><init>(Lcom/whatsapp/camera/CameraActivity;Landroid/net/Uri;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 22
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->z:Landroid/view/View;
-
-    new-instance v1, Lcom/whatsapp/camera/ap;
-
-    invoke-direct {v1, p0}, Lcom/whatsapp/camera/ap;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v1, p0, p1}, Lcom/whatsapp/camera/b;-><init>(Lcom/whatsapp/camera/CameraActivity;Landroid/net/Uri;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 47
-    const v0, 0x7f0b00ef
+    .line 211
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/view/View;
+
+    new-instance v1, Lcom/whatsapp/camera/m;
+
+    invoke-direct {v1, p0}, Lcom/whatsapp/camera/m;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 56
+    const v0, 0x7f0b00f1
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/camera/i;
+    new-instance v1, Lcom/whatsapp/camera/c;
 
-    invoke-direct {v1, p0, p1}, Lcom/whatsapp/camera/i;-><init>(Lcom/whatsapp/camera/CameraActivity;Landroid/net/Uri;)V
+    invoke-direct {v1, p0, p1}, Lcom/whatsapp/camera/c;-><init>(Lcom/whatsapp/camera/CameraActivity;Landroid/net/Uri;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 135
-    const v0, 0x7f0b00f0
+    .line 53
+    const v0, 0x7f0b00f2
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/camera/j;
+    new-instance v1, Lcom/whatsapp/camera/d;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/camera/j;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/camera/d;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 219
+    .line 262
     return-void
 
-    .line 43
+    .line 132
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 281
+    .line 242
     :catch_1
     move-exception v0
 
-    .line 160
+    .line 86
     :goto_1
-    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
     const/16 v3, 0xd
 
     aget-object v2, v2, v3
 
-    invoke-static {v2, v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v0}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 61
-    invoke-static {p0, v7, v5}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
+    .line 258
+    invoke-static {p0, v7, v5}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
 
-    .line 327
+    .line 3
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->finish()V
 
     move-object v0, v1
 
     goto/16 :goto_0
 
-    .line 92
+    .line 66
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 281
+    .line 242
     :catch_3
     move-exception v0
 
@@ -1208,7 +1202,7 @@
     .locals 0
 
     .prologue
-    .line 216
+    .line 280
     invoke-direct {p0, p1}, Lcom/whatsapp/camera/CameraActivity;->a(Landroid/net/Uri;)V
 
     return-void
@@ -1218,7 +1212,7 @@
     .locals 0
 
     .prologue
-    .line 89
+    .line 310
     invoke-direct {p0, p1}, Lcom/whatsapp/camera/CameraActivity;->a(Ljava/lang/String;)V
 
     return-void
@@ -1228,7 +1222,7 @@
     .locals 0
 
     .prologue
-    .line 67
+    .line 261
     invoke-direct {p0, p1}, Lcom/whatsapp/camera/CameraActivity;->a(Z)V
 
     return-void
@@ -1238,7 +1232,7 @@
     .locals 0
 
     .prologue
-    .line 149
+    .line 252
     invoke-direct {p0, p1, p2}, Lcom/whatsapp/camera/CameraActivity;->a(ZLandroid/view/View;)V
 
     return-void
@@ -1248,12 +1242,12 @@
     .locals 3
 
     .prologue
-    sget v0, Lcom/whatsapp/camera/CameraActivity;->s:I
+    sget-boolean v0, Lcom/whatsapp/camera/CameraActivity;->A:Z
 
-    .line 116
-    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    .line 231
+    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x10
+    const/16 v2, 0x1e
 
     aget-object v1, v1, v2
 
@@ -1263,20 +1257,20 @@
 
     if-eqz v1, :cond_0
 
-    .line 52
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/widget/ImageButton;
+    .line 227
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/ImageButton;
 
-    const v2, 0x7f0200c2
+    const v2, 0x7f0200c5
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setImageResource(I)V
 
     if-eqz v0, :cond_2
 
-    .line 302
+    .line 346
     :cond_0
-    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xf
+    const/16 v2, 0x1f
 
     aget-object v1, v1, v2
 
@@ -1286,24 +1280,24 @@
 
     if-eqz v1, :cond_1
 
-    .line 199
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/widget/ImageButton;
+    .line 193
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/ImageButton;
 
-    const v2, 0x7f0200c3
+    const v2, 0x7f0200c6
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setImageResource(I)V
 
     if-eqz v0, :cond_2
 
-    .line 94
+    .line 255
     :cond_1
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/widget/ImageButton;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/ImageButton;
 
-    const v1, 0x7f0200c1
+    const v1, 0x7f0200c4
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setImageResource(I)V
 
-    .line 4
+    .line 228
     :cond_2
     return-void
 .end method
@@ -1312,16 +1306,16 @@
     .locals 5
 
     .prologue
-    sget v1, Lcom/whatsapp/camera/CameraActivity;->s:I
+    sget-boolean v1, Lcom/whatsapp/camera/CameraActivity;->A:Z
 
-    .line 292
+    .line 196
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x18
+    const/16 v3, 0x1c
 
     aget-object v2, v2, v3
 
@@ -1339,25 +1333,25 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 293
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/camera/CameraView;
+    .line 201
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Lcom/whatsapp/camera/CameraView;
 
-    invoke-virtual {v0}, Lcom/whatsapp/camera/CameraView;->a()V
+    invoke-virtual {v0}, Lcom/whatsapp/camera/CameraView;->d()V
 
-    .line 98
+    .line 70
     const/4 v0, -0x1
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->setRequestedOrientation(I)V
 
-    .line 29
+    .line 218
     :try_start_0
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x12
+    const/16 v3, 0x15
 
     aget-object v2, v2, v3
 
@@ -1367,10 +1361,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 171
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    .line 149
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x19
+    const/16 v2, 0x17
 
     aget-object v0, v0, v2
 
@@ -1380,76 +1374,76 @@
 
     check-cast v0, Landroid/os/Vibrator;
 
-    .line 34
+    .line 202
     const-wide/16 v2, 0x4b
 
     invoke-virtual {v0, v2, v3}, Landroid/os/Vibrator;->vibrate(J)V
     :try_end_0
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 25
+    .line 57
     :cond_0
     :goto_0
     if-eqz p1, :cond_3
 
-    .line 88
+    .line 322
     :try_start_1
-    iget-boolean v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Z
+    iget-boolean v0, p0, Lcom/whatsapp/camera/CameraActivity;->v:Z
     :try_end_1
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
     if-eqz v0, :cond_1
 
-    .line 176
+    .line 32
     :try_start_2
-    invoke-direct {p0}, Lcom/whatsapp/camera/CameraActivity;->b()V
+    invoke-direct {p0}, Lcom/whatsapp/camera/CameraActivity;->g()V
     :try_end_2
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
     if-eqz v1, :cond_4
 
-    .line 125
+    .line 121
     :cond_1
     :try_start_3
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Lcom/whatsapp/adg;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Lcom/whatsapp/tc;
     :try_end_3
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_3 .. :try_end_3} :catch_3
 
     if-eqz v0, :cond_2
 
-    .line 14
+    .line 334
     :try_start_4
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Lcom/whatsapp/adg;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Lcom/whatsapp/tc;
 
-    iget-object v0, v0, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v0, v0, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
+    iget-object v2, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
 
     const/4 v3, 0x3
 
     const/4 v4, 0x0
 
-    invoke-static {p0, v0, v2, v3, v4}, Lcom/whatsapp/util/bo;->a(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;BZ)Z
+    invoke-static {p0, v0, v2, v3, v4}, Lcom/whatsapp/util/ac;->a(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;BZ)Z
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_5
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 109
+    .line 160
     :goto_1
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
 
     invoke-static {v0}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/whatsapp/util/bo;->a(Landroid/content/Context;Landroid/net/Uri;)V
+    invoke-static {p0, v0}, Lcom/whatsapp/util/ac;->a(Landroid/content/Context;Landroid/net/Uri;)V
 
-    .line 272
+    .line 107
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->finish()V
 
     if-eqz v1, :cond_4
 
-    .line 100
+    .line 293
     :cond_2
     new-instance v0, Landroid/content/Intent;
 
@@ -1461,24 +1455,24 @@
 
     invoke-direct {v0, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 179
+    .line 183
     :try_start_5
-    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x14
+    const/16 v3, 0x1b
 
     aget-object v2, v2, v3
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 150
-    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    .line 329
+    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x17
+    const/16 v3, 0x1a
 
     aget-object v2, v2, v3
 
-    iget-object v3, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
+    iget-object v3, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
 
     invoke-static {v3}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
 
@@ -1486,10 +1480,10 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 69
-    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    .line 229
+    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x15
+    const/16 v3, 0x1d
 
     aget-object v2, v2, v3
 
@@ -1497,55 +1491,55 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 253
+    .line 143
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 190
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
+    .line 185
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
 
     invoke-static {v0}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/whatsapp/util/bo;->a(Landroid/content/Context;Landroid/net/Uri;)V
+    invoke-static {p0, v0}, Lcom/whatsapp/util/ac;->a(Landroid/content/Context;Landroid/net/Uri;)V
 
-    .line 305
+    .line 30
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->finish()V
 
-    .line 217
+    .line 15
     if-eqz v1, :cond_4
 
     .line 194
     :cond_3
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
-    .line 136
+    .line 170
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->finish()V
     :try_end_5
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_5 .. :try_end_5} :catch_9
 
-    .line 15
+    .line 327
     :cond_4
     return-void
 
-    .line 182
+    .line 284
     :catch_0
     move-exception v0
 
-    .line 315
-    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    .line 102
+    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x16
+    const/16 v3, 0x18
 
     aget-object v2, v2, v3
 
-    invoke-static {v2, v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v0}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 88
+    .line 322
     :catch_1
     move-exception v0
 
@@ -1554,7 +1548,7 @@
     :try_end_6
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_6 .. :try_end_6} :catch_2
 
-    .line 176
+    .line 32
     :catch_2
     move-exception v0
 
@@ -1563,7 +1557,7 @@
     :try_end_7
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_7 .. :try_end_7} :catch_3
 
-    .line 125
+    .line 121
     :catch_3
     move-exception v0
 
@@ -1572,17 +1566,17 @@
     :try_end_8
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_8 .. :try_end_8} :catch_4
 
-    .line 178
+    .line 115
     :catch_4
     move-exception v0
 
     throw v0
 
-    .line 64
+    .line 174
     :catch_5
     move-exception v0
 
-    .line 21
+    .line 309
     :try_start_9
     invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
     :try_end_9
@@ -1597,9 +1591,9 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v3, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x1a
+    const/16 v4, 0x16
 
     aget-object v3, v3, v4
 
@@ -1611,41 +1605,41 @@
 
     if-eqz v2, :cond_5
 
-    .line 51
-    const v2, 0x7f0e0156
+    .line 169
+    const v2, 0x7f0e015c
 
     :try_start_b
     invoke-virtual {p0, v2}, Lcom/whatsapp/camera/CameraActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {p0, v2}, Lcom/whatsapp/App;->a(Lcom/whatsapp/hy;Ljava/lang/String;)V
+    invoke-static {p0, v2}, Lcom/whatsapp/App;->a(Lcom/whatsapp/ad4;Ljava/lang/String;)V
 
     if-eqz v1, :cond_6
 
-    .line 290
+    .line 136
     :cond_5
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->getBaseContext()Landroid/content/Context;
 
     move-result-object v2
 
-    const v3, 0x7f0e03bb
+    const v3, 0x7f0e03ca
 
     const/4 v4, 0x0
 
-    invoke-static {v2, v3, v4}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
+    invoke-static {v2, v3, v4}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
     :try_end_b
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_b .. :try_end_b} :catch_8
 
-    .line 13
+    .line 283
     :cond_6
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v3, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x13
+    const/16 v4, 0x19
 
     aget-object v3, v3, v4
 
@@ -1669,7 +1663,7 @@
 
     goto/16 :goto_1
 
-    .line 21
+    .line 309
     :catch_6
     move-exception v0
 
@@ -1678,7 +1672,7 @@
     :try_end_c
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_c .. :try_end_c} :catch_7
 
-    .line 51
+    .line 169
     :catch_7
     move-exception v0
 
@@ -1687,13 +1681,13 @@
     :try_end_d
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_d .. :try_end_d} :catch_8
 
-    .line 290
+    .line 136
     :catch_8
     move-exception v0
 
     throw v0
 
-    .line 136
+    .line 170
     :catch_9
     move-exception v0
 
@@ -1712,7 +1706,7 @@
 
     const/4 v1, 0x0
 
-    .line 329
+    .line 146
     if-eqz p1, :cond_0
 
     invoke-virtual {p2}, Landroid/view/View;->getVisibility()I
@@ -1721,28 +1715,28 @@
 
     if-eqz v0, :cond_0
 
-    .line 251
+    .line 125
     const/4 v0, 0x0
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 146
+    .line 59
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
     invoke-direct {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
-    .line 205
+    .line 187
     invoke-virtual {v0, v4, v5}, Landroid/view/animation/Animation;->setDuration(J)V
 
-    .line 174
+    .line 106
     invoke-virtual {p2, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 59
-    sget v0, Lcom/whatsapp/camera/CameraActivity;->s:I
+    .line 175
+    sget-boolean v0, Lcom/whatsapp/camera/CameraActivity;->A:Z
 
     if-eqz v0, :cond_1
 
-    .line 222
+    .line 286
     :cond_0
     if-nez p1, :cond_1
 
@@ -1752,36 +1746,448 @@
 
     if-eq v0, v3, :cond_1
 
-    .line 257
+    .line 135
     invoke-virtual {p2, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 269
+    .line 301
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
     invoke-direct {v0, v2, v1}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
-    .line 106
+    .line 336
     invoke-virtual {v0, v4, v5}, Landroid/view/animation/Animation;->setDuration(J)V
 
-    .line 276
+    .line 189
     invoke-virtual {p2, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 2
+    .line 348
     :cond_1
     return-void
 .end method
 
-.method static b(Lcom/whatsapp/camera/CameraActivity;)J
+.method private b()Landroid/content/Intent;
+    .locals 4
+
+    .prologue
+    .line 233
+    new-instance v0, Landroid/content/Intent;
+
+    const-class v1, Lcom/whatsapp/camera/CameraActivity;
+
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 105
+    const/high16 v1, 0x10000000
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 181
+    const/high16 v1, 0x4000000
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 5
+    const/high16 v1, 0x800000
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 256
+    const/high16 v1, 0x40000000
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 222
+    new-instance v1, Landroid/content/Intent;
+
+    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
+
+    .line 45
+    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
+
+    const/4 v3, 0x7
+
+    aget-object v2, v2, v3
+
+    invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    .line 208
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x6
+
+    aget-object v0, v0, v2
+
+    const v2, 0x7f0e0075
+
+    invoke-virtual {p0, v2}, Lcom/whatsapp/camera/CameraActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 311
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x5
+
+    aget-object v0, v0, v2
+
+    const v2, 0x7f02058e
+
+    .line 83
+    invoke-static {p0, v2}, Landroid/content/Intent$ShortcutIconResource;->fromContext(Landroid/content/Context;I)Landroid/content/Intent$ShortcutIconResource;
+
+    move-result-object v2
+
+    .line 7
+    invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    .line 94
+    return-object v1
+.end method
+
+.method static b(Lcom/whatsapp/camera/CameraActivity;)Landroid/widget/ImageButton;
+    .locals 1
+
+    .prologue
+    .line 275
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->J:Landroid/widget/ImageButton;
+
+    return-object v0
+.end method
+
+.method static c(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/tc;
+    .locals 1
+
+    .prologue
+    .line 52
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Lcom/whatsapp/tc;
+
+    return-object v0
+.end method
+
+.method private c()V
+    .locals 6
+
+    .prologue
+    const/16 v5, 0x8
+
+    const/4 v4, 0x1
+
+    const/4 v3, 0x0
+
+    sget-boolean v0, Lcom/whatsapp/camera/CameraActivity;->A:Z
+
+    .line 60
+    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
+
+    aget-object v1, v1, v3
+
+    invoke-static {v1}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    .line 186
+    const/4 v1, 0x3
+
+    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
+
+    aget-object v2, v2, v4
+
+    invoke-static {p0, v1, v2}, Lcom/whatsapp/util/ac;->a(Landroid/content/Context;BLjava/lang/String;)Ljava/io/File;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
+
+    .line 272
+    invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->getWindowManager()Landroid/view/WindowManager;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/view/Display;->getOrientation()I
+
+    move-result v1
+
+    .line 271
+    invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v2
+
+    iget v2, v2, Landroid/content/res/Configuration;->orientation:I
+
+    packed-switch v2, :pswitch_data_0
+
+    .line 331
+    :cond_0
+    :goto_0
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Lcom/whatsapp/camera/CameraView;
+
+    invoke-virtual {v0, v4}, Lcom/whatsapp/camera/CameraView;->setKeepScreenOn(Z)V
+
+    .line 61
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Lcom/whatsapp/camera/CameraView;
+
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/camera/CameraView;->a(Ljava/io/File;)V
+
+    .line 100
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->D:Landroid/os/Handler;
+
+    invoke-virtual {v0, v3}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+
+    .line 173
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->s:Landroid/widget/TextView;
+
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 285
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->q:Landroid/widget/ProgressBar;
+
+    invoke-virtual {v0, v3}, Landroid/widget/ProgressBar;->setVisibility(I)V
+
+    .line 127
+    iget-boolean v0, p0, Lcom/whatsapp/camera/CameraActivity;->v:Z
+
+    if-nez v0, :cond_1
+
+    .line 104
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->E:Landroid/view/View;
+
+    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+
+    .line 51
+    :cond_1
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Landroid/view/View;
+
+    invoke-virtual {v0, v5}, Landroid/view/View;->setVisibility(I)V
+
+    .line 357
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/ImageButton;
+
+    invoke-virtual {v0, v5}, Landroid/widget/ImageButton;->setVisibility(I)V
+
+    .line 98
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lcom/whatsapp/camera/CameraActivity;->x:J
+
+    .line 304
+    iget-boolean v0, p0, Lcom/whatsapp/camera/CameraActivity;->v:Z
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Lcom/whatsapp/tc;
+
+    if-nez v0, :cond_2
+
+    .line 91
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Landroid/widget/TextView;
+
+    const-string v1, ""
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 151
+    :cond_2
+    return-void
+
+    .line 239
+    :pswitch_0
+    if-eqz v1, :cond_3
+
+    if-ne v1, v4, :cond_4
+
+    .line 358
+    :cond_3
+    invoke-virtual {p0, v4}, Lcom/whatsapp/camera/CameraActivity;->setRequestedOrientation(I)V
+
+    if-eqz v0, :cond_0
+
+    .line 20
+    :cond_4
+    const/16 v2, 0x9
+
+    invoke-virtual {p0, v2}, Lcom/whatsapp/camera/CameraActivity;->setRequestedOrientation(I)V
+
+    .line 340
+    if-eqz v0, :cond_0
+
+    .line 172
+    :pswitch_1
+    if-eqz v1, :cond_5
+
+    if-ne v1, v4, :cond_6
+
+    .line 28
+    :cond_5
+    invoke-virtual {p0, v3}, Lcom/whatsapp/camera/CameraActivity;->setRequestedOrientation(I)V
+
+    if-eqz v0, :cond_0
+
+    .line 203
+    :cond_6
+    invoke-virtual {p0, v5}, Lcom/whatsapp/camera/CameraActivity;->setRequestedOrientation(I)V
+
+    goto :goto_0
+
+    .line 271
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method
+
+.method static d(Lcom/whatsapp/camera/CameraActivity;)V
+    .locals 0
+
+    .prologue
+    .line 164
+    invoke-direct {p0}, Lcom/whatsapp/camera/CameraActivity;->e()V
+
+    return-void
+.end method
+
+.method private e()V
     .locals 2
 
     .prologue
-    .line 198
-    iget-wide v0, p0, Lcom/whatsapp/camera/CameraActivity;->u:J
+    .line 276
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Lcom/whatsapp/camera/CameraView;
 
-    return-wide v0
+    invoke-virtual {v0}, Lcom/whatsapp/camera/CameraView;->f()Ljava/util/List;
+
+    move-result-object v0
+
+    .line 163
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-gt v0, v1, :cond_1
+
+    .line 182
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/ImageButton;
+
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setVisibility(I)V
+
+    sget-boolean v0, Lcom/whatsapp/camera/CameraActivity;->A:Z
+
+    if-eqz v0, :cond_2
+
+    .line 266
+    :cond_1
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/ImageButton;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setVisibility(I)V
+
+    .line 14
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Lcom/whatsapp/camera/CameraView;
+
+    invoke-virtual {v0}, Lcom/whatsapp/camera/CameraView;->g()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->a(Ljava/lang/String;)V
+
+    .line 246
+    :cond_2
+    return-void
 .end method
 
-.method private b()V
+.method static e(Lcom/whatsapp/camera/CameraActivity;)V
+    .locals 0
+
+    .prologue
+    .line 4
+    invoke-direct {p0}, Lcom/whatsapp/camera/CameraActivity;->f()V
+
+    return-void
+.end method
+
+.method private f()V
+    .locals 3
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 78
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
+
+    const/16 v1, 0xa
+
+    aget-object v0, v0, v1
+
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    .line 312
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->F:Landroid/widget/ImageView;
+
+    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setEnabled(Z)V
+
+    .line 206
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Landroid/view/View;
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setEnabled(Z)V
+
+    .line 21
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/ImageButton;
+
+    invoke-virtual {v0, v2}, Landroid/widget/ImageButton;->setEnabled(Z)V
+
+    .line 224
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Lcom/whatsapp/camera/CameraView;
+
+    new-instance v1, Lcom/whatsapp/camera/u;
+
+    invoke-direct {v1, p0}, Lcom/whatsapp/camera/u;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/camera/CameraView;->a(Lcom/whatsapp/camera/y;)V
+
+    .line 316
+    return-void
+.end method
+
+.method static f(Lcom/whatsapp/camera/CameraActivity;)V
+    .locals 0
+
+    .prologue
+    .line 306
+    invoke-direct {p0}, Lcom/whatsapp/camera/CameraActivity;->a()V
+
+    return-void
+.end method
+
+.method static g(Lcom/whatsapp/camera/CameraActivity;)Landroid/widget/ImageView;
+    .locals 1
+
+    .prologue
+    .line 43
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->F:Landroid/widget/ImageView;
+
+    return-object v0
+.end method
+
+.method private g()V
     .locals 12
 
     .prologue
@@ -1791,75 +2197,75 @@
 
     const/4 v9, 0x0
 
-    .line 267
+    .line 268
     :try_start_0
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x9
+    const/4 v1, 0x4
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 358
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Lcom/whatsapp/adg;
+    .line 321
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Lcom/whatsapp/tc;
 
     if-nez v0, :cond_0
 
-    .line 341
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->J:Landroid/widget/TextView;
+    .line 118
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Landroid/widget/TextView;
 
-    const v1, 0x7f0e007f
+    const v1, 0x7f0e0077
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1
+    .line 44
     :cond_0
     iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->H:Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/camera/CameraView;
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->o:Lcom/whatsapp/camera/CameraView;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    .line 60
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->F:Landroid/view/View;
+    .line 101
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->t:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 188
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Landroid/view/View;
+    .line 282
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->n:Landroid/view/View;
 
     invoke-virtual {v0, v9}, Landroid/view/View;->setVisibility(I)V
 
-    .line 165
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->q:Landroid/view/View;
+    .line 197
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->r:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 348
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->z:Landroid/view/View;
+    .line 328
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 218
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->p:Lcom/whatsapp/PhotoView;
+    .line 72
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->C:Lcom/whatsapp/PhotoView;
 
     invoke-virtual {v0, v2}, Lcom/whatsapp/PhotoView;->setVisibility(I)V
 
-    .line 99
-    const v0, 0x7f0b00e6
+    .line 350
+    const v0, 0x7f0b00e8
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v6
 
-    .line 20
+    .line 133
     invoke-virtual {v6, v9}, Landroid/view/View;->setVisibility(I)V
 
-    .line 266
-    const v0, 0x7f0b00e7
+    .line 303
+    const v0, 0x7f0b00e9
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -1867,11 +2273,11 @@
 
     check-cast v0, Lcom/whatsapp/VideoView;
 
-    .line 294
+    .line 128
     invoke-virtual {v0, v9}, Lcom/whatsapp/VideoView;->setVisibility(I)V
 
-    .line 70
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
+    .line 42
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -1879,31 +2285,31 @@
 
     invoke-virtual {v0, v1}, Lcom/whatsapp/VideoView;->setVideoPath(Ljava/lang/String;)V
 
-    .line 197
+    .line 207
     invoke-virtual {v0}, Lcom/whatsapp/VideoView;->requestFocus()Z
 
-    .line 49
+    .line 171
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/whatsapp/VideoView;->seekTo(I)V
 
-    .line 350
+    .line 199
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    iget-wide v4, p0, Lcom/whatsapp/camera/CameraActivity;->u:J
+    iget-wide v4, p0, Lcom/whatsapp/camera/CameraActivity;->x:J
 
     sub-long/2addr v2, v4
 
-    .line 209
+    .line 82
     new-instance v7, Landroid/media/MediaMetadataRetriever;
 
     invoke-direct {v7}, Landroid/media/MediaMetadataRetriever;-><init>()V
 
-    .line 128
+    .line 342
     :try_start_1
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -1911,7 +2317,7 @@
 
     invoke-virtual {v7, v1}, Landroid/media/MediaMetadataRetriever;->setDataSource(Ljava/lang/String;)V
 
-    .line 309
+    .line 198
     const/16 v1, 0x9
 
     invoke-virtual {v7, v1}, Landroid/media/MediaMetadataRetriever;->extractMetadata(I)Ljava/lang/String;
@@ -1922,7 +2328,7 @@
 
     move-result-wide v2
 
-    .line 151
+    .line 139
     const-wide/16 v4, 0x0
 
     invoke-virtual {v7, v4, v5}, Landroid/media/MediaMetadataRetriever;->getFrameAtTime(J)Landroid/graphics/Bitmap;
@@ -1934,11 +2340,11 @@
 
     move-wide v4, v2
 
-    .line 352
+    .line 325
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 55
+    .line 87
     :try_start_2
     new-instance v2, Landroid/graphics/drawable/BitmapDrawable;
 
@@ -1952,45 +2358,45 @@
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
 
-    .line 342
+    .line 317
     :cond_1
     invoke-virtual {v7}, Landroid/media/MediaMetadataRetriever;->release()V
 
-    .line 72
-    const v1, 0x7f0b00e8
+    .line 335
+    const v1, 0x7f0b00ea
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v7
 
-    .line 101
-    const v1, 0x7f0b00ef
+    .line 37
+    const v1, 0x7f0b00f1
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    new-instance v2, Lcom/whatsapp/camera/k;
+    new-instance v2, Lcom/whatsapp/camera/e;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/camera/k;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v2, p0}, Lcom/whatsapp/camera/e;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 127
-    const v1, 0x7f0b00f0
+    .line 119
+    const v1, 0x7f0b00f2
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    new-instance v2, Lcom/whatsapp/camera/l;
+    new-instance v2, Lcom/whatsapp/camera/f;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/camera/l;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v2, p0}, Lcom/whatsapp/camera/f;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 30
-    const v1, 0x7f0b00eb
+    .line 223
+    const v1, 0x7f0b00ed
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -1998,19 +2404,19 @@
 
     check-cast v1, Landroid/widget/SeekBar;
 
-    .line 154
+    .line 38
     invoke-virtual {v1, v9}, Landroid/widget/SeekBar;->setProgress(I)V
 
-    .line 314
+    .line 215
     long-to-int v2, v4
 
     invoke-virtual {v1, v2}, Landroid/widget/SeekBar;->setMax(I)V
 
-    .line 153
+    .line 355
     invoke-virtual {v1, v9}, Landroid/widget/SeekBar;->setVisibility(I)V
 
-    .line 227
-    const v2, 0x7f0b00ea
+    .line 26
+    const v2, 0x7f0b00ec
 
     invoke-virtual {p0, v2}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -2018,8 +2424,8 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    .line 77
-    const v3, 0x7f0b00ec
+    .line 16
+    const v3, 0x7f0b00ee
 
     invoke-virtual {p0, v3}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -2027,14 +2433,14 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    .line 38
+    .line 176
     invoke-static {v10, v11}, Landroid/text/format/DateUtils;->formatElapsedTime(J)Ljava/lang/String;
 
     move-result-object v8
 
     invoke-virtual {v2, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 152
+    .line 209
     const-wide/16 v8, 0x3e8
 
     div-long/2addr v4, v8
@@ -2045,50 +2451,50 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 35
-    new-instance v3, Lcom/whatsapp/camera/av;
+    .line 108
+    new-instance v3, Lcom/whatsapp/camera/a5;
 
-    invoke-direct {v3, p0, v0, v2}, Lcom/whatsapp/camera/av;-><init>(Lcom/whatsapp/camera/CameraActivity;Lcom/whatsapp/VideoView;Landroid/widget/TextView;)V
+    invoke-direct {v3, p0, v0, v2}, Lcom/whatsapp/camera/a5;-><init>(Lcom/whatsapp/camera/CameraActivity;Lcom/whatsapp/VideoView;Landroid/widget/TextView;)V
 
     invoke-virtual {v1, v3}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
-    .line 321
-    new-instance v2, Lcom/whatsapp/camera/t;
+    .line 254
+    new-instance v2, Lcom/whatsapp/camera/ai;
 
-    invoke-direct {v2, p0, v0, v1, v7}, Lcom/whatsapp/camera/t;-><init>(Lcom/whatsapp/camera/CameraActivity;Lcom/whatsapp/VideoView;Landroid/widget/SeekBar;Landroid/view/View;)V
+    invoke-direct {v2, p0, v0, v1, v7}, Lcom/whatsapp/camera/ai;-><init>(Lcom/whatsapp/camera/CameraActivity;Lcom/whatsapp/VideoView;Landroid/widget/SeekBar;Landroid/view/View;)V
 
-    .line 233
-    new-instance v1, Lcom/whatsapp/camera/q;
+    .line 84
+    new-instance v1, Lcom/whatsapp/camera/ar;
 
-    invoke-direct {v1, p0, v0, v7, v2}, Lcom/whatsapp/camera/q;-><init>(Lcom/whatsapp/camera/CameraActivity;Lcom/whatsapp/VideoView;Landroid/view/View;Ljava/lang/Runnable;)V
+    invoke-direct {v1, p0, v0, v7, v2}, Lcom/whatsapp/camera/ar;-><init>(Lcom/whatsapp/camera/CameraActivity;Lcom/whatsapp/VideoView;Landroid/view/View;Ljava/lang/Runnable;)V
 
-    .line 85
+    .line 337
     invoke-virtual {v6, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 130
+    .line 33
     invoke-virtual {v7, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 45
+    .line 277
     return-void
 
-    .line 341
+    .line 118
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 31
+    .line 93
     :catch_1
     move-exception v1
 
-    .line 23
+    .line 73
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v5, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v5, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v8, 0xa
+    const/4 v8, 0x2
 
     aget-object v5, v5, v8
 
@@ -2110,34 +2516,34 @@
 
     invoke-static {v1}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 10
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
+    .line 36
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/whatsapp/util/bo;->b(Ljava/lang/String;)Landroid/graphics/Bitmap;
+    invoke-static {v1}, Lcom/whatsapp/util/ac;->b(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
     move-wide v4, v2
 
-    .line 235
+    .line 159
     goto/16 :goto_0
 
-    .line 172
+    .line 69
     :catch_2
     move-exception v1
 
-    .line 93
+    .line 154
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v5, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v5, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v8, 0xb
+    const/4 v8, 0x3
 
     aget-object v5, v5, v8
 
@@ -2159,14 +2565,14 @@
 
     invoke-static {v1}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 240
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
+    .line 110
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/whatsapp/util/bo;->b(Ljava/lang/String;)Landroid/graphics/Bitmap;
+    invoke-static {v1}, Lcom/whatsapp/util/ac;->b(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
@@ -2174,593 +2580,179 @@
 
     goto/16 :goto_0
 
-    .line 55
+    .line 87
     :catch_3
     move-exception v0
 
     throw v0
 .end method
 
-.method private c()Landroid/content/Intent;
-    .locals 4
+.method static h(Lcom/whatsapp/camera/CameraActivity;)J
+    .locals 2
 
     .prologue
-    .line 180
-    new-instance v0, Landroid/content/Intent;
+    .line 230
+    iget-wide v0, p0, Lcom/whatsapp/camera/CameraActivity;->x:J
 
-    const-class v1, Lcom/whatsapp/camera/CameraActivity;
-
-    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    .line 261
-    const/high16 v1, 0x10000000
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
-
-    .line 241
-    const/high16 v1, 0x4000000
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
-
-    .line 173
-    const/high16 v1, 0x800000
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
-
-    .line 221
-    const/high16 v1, 0x40000000
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
-
-    .line 62
-    new-instance v1, Landroid/content/Intent;
-
-    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
-
-    .line 308
-    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
-
-    const/16 v3, 0x25
-
-    aget-object v2, v2, v3
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
-
-    .line 312
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
-
-    const/16 v2, 0x24
-
-    aget-object v0, v0, v2
-
-    const v2, 0x7f0e007d
-
-    invoke-virtual {p0, v2}, Lcom/whatsapp/camera/CameraActivity;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 16
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
-
-    const/16 v2, 0x23
-
-    aget-object v0, v0, v2
-
-    const v2, 0x7f020585
-
-    .line 296
-    invoke-static {p0, v2}, Landroid/content/Intent$ShortcutIconResource;->fromContext(Landroid/content/Context;I)Landroid/content/Intent$ShortcutIconResource;
-
-    move-result-object v2
-
-    .line 110
-    invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
-
-    .line 143
-    return-object v1
+    return-wide v0
 .end method
 
-.method static c(Lcom/whatsapp/camera/CameraActivity;)Z
+.method static i(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/camera/ZoomOverlay;
     .locals 1
 
     .prologue
-    .line 56
-    iget-boolean v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Z
-
-    return v0
-.end method
-
-.method static d(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/camera/ZoomOverlay;
-    .locals 1
-
-    .prologue
-    .line 206
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->j:Lcom/whatsapp/camera/ZoomOverlay;
+    .line 267
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->u:Lcom/whatsapp/camera/ZoomOverlay;
 
     return-object v0
 .end method
 
-.method private d()V
-    .locals 2
+.method static j(Lcom/whatsapp/camera/CameraActivity;)Landroid/widget/ProgressBar;
+    .locals 1
 
     .prologue
-    .line 234
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/camera/CameraView;
+    .line 351
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->q:Landroid/widget/ProgressBar;
 
-    invoke-virtual {v0}, Lcom/whatsapp/camera/CameraView;->j()Ljava/util/List;
+    return-object v0
+.end method
 
-    move-result-object v0
+.method static k(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/camera/AutofocusOverlay;
+    .locals 1
 
-    .line 333
-    if-eqz v0, :cond_0
+    .prologue
+    .line 22
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->j:Lcom/whatsapp/camera/AutofocusOverlay;
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    return-object v0
+.end method
 
-    move-result v0
+.method static l(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/camera/CameraView;
+    .locals 1
 
-    const/4 v1, 0x1
-
-    if-gt v0, v1, :cond_1
-
-    .line 95
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/widget/ImageButton;
-
-    const/16 v1, 0x8
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setVisibility(I)V
-
-    sget v0, Lcom/whatsapp/camera/CameraActivity;->s:I
-
-    if-eqz v0, :cond_2
-
+    .prologue
     .line 158
-    :cond_1
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/widget/ImageButton;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setVisibility(I)V
-
-    .line 336
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/camera/CameraView;
-
-    invoke-virtual {v0}, Lcom/whatsapp/camera/CameraView;->n()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->a(Ljava/lang/String;)V
-
-    .line 57
-    :cond_2
-    return-void
-.end method
-
-.method static e(Lcom/whatsapp/camera/CameraActivity;)Landroid/view/View;
-    .locals 1
-
-    .prologue
-    .line 303
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Landroid/view/View;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Lcom/whatsapp/camera/CameraView;
 
     return-object v0
 .end method
 
-.method private e()V
-    .locals 2
-
-    .prologue
-    const/4 v1, 0x0
-
-    .line 75
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
-
-    aget-object v0, v0, v1
-
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-
-    .line 259
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Landroid/widget/ImageView;
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setEnabled(Z)V
-
-    .line 279
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->A:Landroid/view/View;
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
-
-    .line 175
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/widget/ImageButton;
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setEnabled(Z)V
-
-    .line 120
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/camera/CameraView;
-
-    new-instance v1, Lcom/whatsapp/camera/f;
-
-    invoke-direct {v1, p0}, Lcom/whatsapp/camera/f;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/camera/CameraView;->a(Lcom/whatsapp/camera/af;)V
-
-    .line 287
-    return-void
-.end method
-
-.method static f(Lcom/whatsapp/camera/CameraActivity;)Ljava/io/File;
+.method static m(Lcom/whatsapp/camera/CameraActivity;)Landroid/graphics/Rect;
     .locals 1
 
     .prologue
-    .line 105
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
+    .line 62
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->N:Landroid/graphics/Rect;
 
     return-object v0
 .end method
 
-.method private f()V
-    .locals 7
-
-    .prologue
-    const/16 v6, 0x8
-
-    const/4 v5, 0x1
-
-    const/4 v4, 0x0
-
-    sget v0, Lcom/whatsapp/camera/CameraActivity;->s:I
-
-    .line 213
-    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
-
-    aget-object v1, v1, v5
-
-    invoke-static {v1}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-
-    .line 27
-    const/4 v1, 0x3
-
-    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
-
-    const/4 v3, 0x2
-
-    aget-object v2, v2, v3
-
-    invoke-static {p0, v1, v2}, Lcom/whatsapp/util/bo;->a(Landroid/content/Context;BLjava/lang/String;)Ljava/io/File;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
-
-    .line 335
-    invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->getWindowManager()Landroid/view/WindowManager;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/view/Display;->getOrientation()I
-
-    move-result v1
-
-    .line 282
-    invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v2
-
-    iget v2, v2, Landroid/content/res/Configuration;->orientation:I
-
-    packed-switch v2, :pswitch_data_0
-
-    .line 307
-    :cond_0
-    :goto_0
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/camera/CameraView;
-
-    invoke-virtual {v0, v5}, Lcom/whatsapp/camera/CameraView;->setKeepScreenOn(Z)V
-
-    .line 132
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/camera/CameraView;
-
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->K:Ljava/io/File;
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/camera/CameraView;->a(Ljava/io/File;)V
-
-    .line 177
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->x:Landroid/os/Handler;
-
-    invoke-virtual {v0, v4}, Landroid/os/Handler;->sendEmptyMessage(I)Z
-
-    .line 122
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/TextView;
-
-    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 236
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->I:Landroid/widget/ProgressBar;
-
-    invoke-virtual {v0, v4}, Landroid/widget/ProgressBar;->setVisibility(I)V
-
-    .line 147
-    iget-boolean v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Z
-
-    if-nez v0, :cond_1
-
-    .line 339
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->r:Landroid/view/View;
-
-    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
-
-    .line 274
-    :cond_1
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->A:Landroid/view/View;
-
-    invoke-virtual {v0, v6}, Landroid/view/View;->setVisibility(I)V
-
-    .line 207
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/widget/ImageButton;
-
-    invoke-virtual {v0, v6}, Landroid/widget/ImageButton;->setVisibility(I)V
-
-    .line 343
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v0
-
-    iput-wide v0, p0, Lcom/whatsapp/camera/CameraActivity;->u:J
-
-    .line 225
-    iget-boolean v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Z
-
-    if-eqz v0, :cond_2
-
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Lcom/whatsapp/adg;
-
-    if-nez v0, :cond_2
-
-    .line 226
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->J:Landroid/widget/TextView;
-
-    const-string v1, ""
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 263
-    :cond_2
-    return-void
-
-    .line 316
-    :pswitch_0
-    if-eqz v1, :cond_3
-
-    if-ne v1, v5, :cond_4
-
-    .line 337
-    :cond_3
-    invoke-virtual {p0, v5}, Lcom/whatsapp/camera/CameraActivity;->setRequestedOrientation(I)V
-
-    if-eqz v0, :cond_0
-
-    .line 191
-    :cond_4
-    const/16 v2, 0x9
-
-    invoke-virtual {p0, v2}, Lcom/whatsapp/camera/CameraActivity;->setRequestedOrientation(I)V
-
-    .line 298
-    if-eqz v0, :cond_0
-
-    .line 271
-    :pswitch_1
-    if-eqz v1, :cond_5
-
-    if-ne v1, v5, :cond_6
-
-    .line 114
-    :cond_5
-    invoke-virtual {p0, v4}, Lcom/whatsapp/camera/CameraActivity;->setRequestedOrientation(I)V
-
-    if-eqz v0, :cond_0
-
-    .line 347
-    :cond_6
-    invoke-virtual {p0, v6}, Lcom/whatsapp/camera/CameraActivity;->setRequestedOrientation(I)V
-
-    goto :goto_0
-
-    .line 282
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-        :pswitch_1
-    .end packed-switch
-.end method
-
-.method static g(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/adg;
+.method static n(Lcom/whatsapp/camera/CameraActivity;)Ljava/io/File;
     .locals 1
 
     .prologue
-    .line 137
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Lcom/whatsapp/adg;
+    .line 295
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->I:Ljava/io/File;
 
     return-object v0
 .end method
 
-.method static h(Lcom/whatsapp/camera/CameraActivity;)Landroid/view/View;
+.method static o(Lcom/whatsapp/camera/CameraActivity;)Landroid/widget/TextView;
     .locals 1
 
     .prologue
-    .line 19
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->r:Landroid/view/View;
+    .line 244
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->s:Landroid/widget/TextView;
 
     return-object v0
 .end method
 
-.method static i(Lcom/whatsapp/camera/CameraActivity;)V
-    .locals 0
-
-    .prologue
-    .line 145
-    invoke-direct {p0}, Lcom/whatsapp/camera/CameraActivity;->a()V
-
-    return-void
-.end method
-
-.method static j(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/a11;
+.method static p(Lcom/whatsapp/camera/CameraActivity;)Landroid/view/View;
     .locals 1
 
     .prologue
-    .line 265
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->E:Lcom/whatsapp/a11;
+    .line 150
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->E:Landroid/view/View;
 
     return-object v0
 .end method
 
-.method static k(Lcom/whatsapp/camera/CameraActivity;)Landroid/widget/ImageButton;
+.method static q(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/camera/ShutterOverlay;
     .locals 1
 
     .prologue
-    .line 91
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->N:Landroid/widget/ImageButton;
+    .line 356
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->l:Lcom/whatsapp/camera/ShutterOverlay;
 
     return-object v0
 .end method
 
-.method static l(Lcom/whatsapp/camera/CameraActivity;)Landroid/widget/TextView;
+.method static r(Lcom/whatsapp/camera/CameraActivity;)I
     .locals 1
 
     .prologue
-    .line 288
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/TextView;
-
-    return-object v0
-.end method
-
-.method static m(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/camera/AutofocusOverlay;
-    .locals 1
-
-    .prologue
-    .line 345
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->C:Lcom/whatsapp/camera/AutofocusOverlay;
-
-    return-object v0
-.end method
-
-.method static n(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/PhotoView;
-    .locals 1
-
-    .prologue
-    .line 50
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->p:Lcom/whatsapp/PhotoView;
-
-    return-object v0
-.end method
-
-.method static o(Lcom/whatsapp/camera/CameraActivity;)Landroid/widget/ProgressBar;
-    .locals 1
-
-    .prologue
-    .line 231
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->I:Landroid/widget/ProgressBar;
-
-    return-object v0
-.end method
-
-.method static p(Lcom/whatsapp/camera/CameraActivity;)I
-    .locals 1
-
-    .prologue
-    .line 71
+    .line 35
     iget v0, p0, Lcom/whatsapp/camera/CameraActivity;->M:I
 
     return v0
-.end method
-
-.method static q(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/ConversationTextEntry;
-    .locals 1
-
-    .prologue
-    .line 141
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->v:Lcom/whatsapp/ConversationTextEntry;
-
-    return-object v0
-.end method
-
-.method static r(Lcom/whatsapp/camera/CameraActivity;)V
-    .locals 0
-
-    .prologue
-    .line 117
-    invoke-direct {p0}, Lcom/whatsapp/camera/CameraActivity;->e()V
-
-    return-void
 .end method
 
 .method static s(Lcom/whatsapp/camera/CameraActivity;)V
     .locals 0
 
     .prologue
-    .line 280
-    invoke-direct {p0}, Lcom/whatsapp/camera/CameraActivity;->f()V
+    .line 123
+    invoke-direct {p0}, Lcom/whatsapp/camera/CameraActivity;->c()V
 
     return-void
 .end method
 
-.method static t(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/camera/ShutterOverlay;
+.method static t(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/ConversationTextEntry;
     .locals 1
 
     .prologue
-    .line 351
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->D:Lcom/whatsapp/camera/ShutterOverlay;
+    .line 333
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->m:Lcom/whatsapp/ConversationTextEntry;
 
     return-object v0
 .end method
 
-.method static u(Lcom/whatsapp/camera/CameraActivity;)Landroid/os/Handler;
+.method static u(Lcom/whatsapp/camera/CameraActivity;)Z
     .locals 1
 
     .prologue
-    .line 104
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->x:Landroid/os/Handler;
+    .line 71
+    iget-boolean v0, p0, Lcom/whatsapp/camera/CameraActivity;->v:Z
+
+    return v0
+.end method
+
+.method static v(Lcom/whatsapp/camera/CameraActivity;)Landroid/os/Handler;
+    .locals 1
+
+    .prologue
+    .line 290
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->D:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method static v(Lcom/whatsapp/camera/CameraActivity;)V
-    .locals 0
-
-    .prologue
-    .line 81
-    invoke-direct {p0}, Lcom/whatsapp/camera/CameraActivity;->d()V
-
-    return-void
-.end method
-
-.method static w(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/camera/CameraView;
+.method static w(Lcom/whatsapp/camera/CameraActivity;)Landroid/view/View;
     .locals 1
 
     .prologue
-    .line 185
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/camera/CameraView;
+    .line 80
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->n:Landroid/view/View;
 
     return-object v0
 .end method
 
-.method static x(Lcom/whatsapp/camera/CameraActivity;)Landroid/graphics/Rect;
+.method static x(Lcom/whatsapp/camera/CameraActivity;)Lcom/whatsapp/i2;
     .locals 1
 
     .prologue
-    .line 168
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->t:Landroid/graphics/Rect;
+    .line 294
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/i2;
 
     return-object v0
 .end method
@@ -2771,32 +2763,32 @@
     .locals 6
 
     .prologue
-    const v5, 0x7f0e007b
+    const v5, 0x7f0e0073
 
     const/4 v4, 0x1
 
-    .line 90
+    .line 269
     packed-switch p1, :pswitch_data_0
 
-    .line 285
+    .line 204
     :cond_0
     :goto_0
     return-void
 
-    .line 277
+    .line 243
     :pswitch_0
     const/4 v0, -0x1
 
     if-ne p2, v0, :cond_0
 
-    .line 245
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    .line 167
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x6
+    const/16 v1, 0x24
 
     aget-object v0, v0, v1
 
-    invoke-static {v0}, Lcom/whatsapp/App;->c(Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v0}, Lcom/whatsapp/App;->b(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
@@ -2804,12 +2796,12 @@
 
     move-result-object v0
 
-    .line 44
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->l:Landroid/net/Uri;
+    .line 90
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->K:Landroid/net/Uri;
 
-    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v2, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x3
+    const/16 v3, 0x21
 
     aget-object v2, v2, v3
 
@@ -2819,14 +2811,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 324
+    .line 64
     invoke-virtual {v0}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
 
     move-result-object v0
 
-    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x4
+    const/16 v2, 0x23
 
     aget-object v1, v1, v2
 
@@ -2840,71 +2832,71 @@
 
     move-result-object v0
 
-    .line 181
+    .line 200
     :cond_1
     :try_start_0
-    invoke-static {v0}, Lcom/whatsapp/util/bo;->c(Landroid/net/Uri;)Landroid/graphics/Bitmap;
+    invoke-static {v0}, Lcom/whatsapp/util/ac;->d(Landroid/net/Uri;)Landroid/graphics/Bitmap;
     :try_end_0
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Lcom/whatsapp/util/ag; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Lcom/whatsapp/util/ay; {:try_start_0 .. :try_end_0} :catch_3
 
     move-result-object v1
 
-    .line 297
+    .line 232
     if-nez v1, :cond_2
 
-    .line 310
+    .line 302
     :try_start_1
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x7
+    const/16 v1, 0x25
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 320
-    const v0, 0x7f0e007b
+    .line 192
+    const v0, 0x7f0e0073
 
     const/4 v1, 0x1
 
-    invoke-static {p0, v0, v1}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
+    invoke-static {p0, v0, v1}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
     :try_end_1
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_0
 
     goto :goto_0
 
-    .line 285
+    .line 116
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 354
+    .line 274
     :catch_1
     move-exception v0
 
-    .line 200
+    .line 58
     :goto_1
-    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x8
+    const/16 v2, 0x22
 
     aget-object v1, v1, v2
 
-    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 184
-    invoke-static {p0, v5, v4}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
+    .line 354
+    invoke-static {p0, v5, v4}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
 
     goto :goto_0
 
-    .line 289
+    .line 145
     :cond_2
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x5
+    const/16 v2, 0x20
 
     aget-object v0, v0, v2
 
@@ -2914,16 +2906,16 @@
 
     check-cast v0, Landroid/graphics/Rect;
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->t:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->N:Landroid/graphics/Rect;
 
-    .line 36
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->p:Lcom/whatsapp/PhotoView;
+    .line 341
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->C:Lcom/whatsapp/PhotoView;
 
     invoke-virtual {v0, v1}, Lcom/whatsapp/PhotoView;->a(Landroid/graphics/Bitmap;)V
 
     goto :goto_0
 
-    .line 354
+    .line 274
     :catch_2
     move-exception v0
 
@@ -2934,9 +2926,7 @@
 
     goto :goto_1
 
-    .line 90
-    nop
-
+    .line 269
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -2947,8 +2937,8 @@
     .locals 1
 
     .prologue
-    .line 338
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Landroid/view/View;
+    .line 299
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->n:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
 
@@ -2956,14 +2946,14 @@
 
     if-nez v0, :cond_0
 
-    .line 229
+    .line 6
     invoke-direct {p0}, Lcom/whatsapp/camera/CameraActivity;->a()V
 
-    .line 322
+    .line 122
     :goto_0
     return-void
 
-    .line 28
+    .line 249
     :cond_0
     invoke-super {p0}, Lcom/whatsapp/DialogToastActivity;->onBackPressed()V
 
@@ -2984,35 +2974,35 @@
 
     const/4 v6, 0x1
 
-    sget v2, Lcom/whatsapp/camera/CameraActivity;->s:I
+    sget-boolean v2, Lcom/whatsapp/camera/CameraActivity;->A:Z
 
-    .line 33
+    .line 168
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 159
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    .line 54
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x1d
+    const/16 v1, 0xf
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 264
-    sget-object v0, Lcom/whatsapp/App;->P:Lcom/whatsapp/App$Me;
+    .line 178
+    sget-object v0, Lcom/whatsapp/App;->C:Lcom/whatsapp/App$Me;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/whatsapp/App;->l:Lcom/whatsapp/a2v;
+    sget-object v0, Lcom/whatsapp/App;->au:Lcom/whatsapp/amo;
 
-    invoke-virtual {v0}, Lcom/whatsapp/a2v;->x()Z
+    invoke-virtual {v0}, Lcom/whatsapp/amo;->w()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 170
-    invoke-static {p0}, Lcom/whatsapp/App;->a(Landroid/content/Context;)I
+    .line 235
+    invoke-static {p0}, Lcom/whatsapp/App;->f(Landroid/content/Context;)I
 
     move-result v0
 
@@ -3020,43 +3010,43 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 166
+    .line 281
     :cond_0
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x1c
+    const/16 v1, 0xe
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 111
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    .line 259
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x1b
+    const/16 v1, 0x12
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/App;->x(Ljava/lang/String;)V
 
-    .line 32
+    .line 76
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/whatsapp/Main;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 138
+    .line 126
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 291
+    .line 137
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->finish()V
 
-    .line 355
+    .line 292
     :goto_0
     return-void
 
-    .line 140
+    .line 165
     :cond_1
     const/4 v0, 0x0
 
@@ -3066,25 +3056,25 @@
 
     if-nez v0, :cond_2
 
-    .line 203
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    .line 153
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x21
+    const/16 v1, 0x14
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 353
+    .line 226
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->finish()V
 
     goto :goto_0
 
-    .line 215
+    .line 240
     :cond_2
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x1f
+    const/16 v1, 0x11
 
     aget-object v0, v0, v1
 
@@ -3102,25 +3092,25 @@
 
     if-eqz v0, :cond_3
 
-    .line 252
-    invoke-direct {p0}, Lcom/whatsapp/camera/CameraActivity;->c()Landroid/content/Intent;
+    .line 11
+    invoke-direct {p0}, Lcom/whatsapp/camera/CameraActivity;->b()Landroid/content/Intent;
 
     move-result-object v0
 
     invoke-virtual {p0, v7, v0}, Lcom/whatsapp/camera/CameraActivity;->setResult(ILandroid/content/Intent;)V
 
-    .line 254
+    .line 124
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->finish()V
 
     goto :goto_0
 
-    .line 230
+    .line 177
     :cond_3
-    invoke-static {}, Lcom/whatsapp/App;->a5()J
+    invoke-static {}, Lcom/whatsapp/App;->I()J
 
     move-result-wide v0
 
-    sget v3, Lcom/whatsapp/t4;->e:I
+    sget v3, Lcom/whatsapp/bw;->k:I
 
     mul-int/lit16 v3, v3, 0x400
 
@@ -3132,23 +3122,23 @@
 
     if-gez v0, :cond_4
 
-    .line 97
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 241
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    const v1, 0x7f0e0156
+    const v1, 0x7f0e015c
 
-    invoke-static {v0, v1, v6}, Lcom/whatsapp/App;->b(Landroid/content/Context;II)V
+    invoke-static {v0, v1, v6}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
 
-    .line 340
+    .line 320
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->finish()V
 
     goto :goto_0
 
-    .line 311
+    .line 330
     :cond_4
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->getWindow()Landroid/view/Window;
 
@@ -3156,7 +3146,7 @@
 
     invoke-virtual {v0, v10, v10}, Landroid/view/Window;->setFlags(II)V
 
-    .line 129
+    .line 260
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -3165,7 +3155,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->clearFlags(I)V
 
-    .line 331
+    .line 190
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -3178,12 +3168,12 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 5
+    .line 129
     new-instance v0, Lcom/whatsapp/camera/CameraLayout;
 
     invoke-direct {v0, p0}, Lcom/whatsapp/camera/CameraLayout;-><init>(Landroid/content/Context;)V
 
-    .line 299
+    .line 92
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v1
@@ -3194,19 +3184,19 @@
 
     const v3, 0x7f03002a
 
-    invoke-static {v1, v3, v0, v6}, Lcom/whatsapp/ad_;->a(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-static {v1, v3, v0, v6}, Lcom/whatsapp/t3;->a(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    .line 250
+    .line 109
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->setContentView(Landroid/view/View;)V
 
-    .line 3
+    .line 297
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x20
+    const/16 v3, 0x10
 
     aget-object v1, v1, v3
 
@@ -3214,16 +3204,16 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Z
+    iput-boolean v0, p0, Lcom/whatsapp/camera/CameraActivity;->v:Z
 
-    .line 356
+    .line 339
     invoke-virtual {p0}, Lcom/whatsapp/camera/CameraActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    sget-object v1, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x1e
+    const/16 v3, 0x13
 
     aget-object v1, v1, v3
 
@@ -3231,44 +3221,44 @@
 
     move-result-object v0
 
-    .line 74
+    .line 217
     if-eqz v0, :cond_7
 
-    .line 12
-    sget-object v1, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 323
+    sget-object v1, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    invoke-virtual {v1, v0}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v1, v0}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Lcom/whatsapp/adg;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Lcom/whatsapp/tc;
 
-    .line 18
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Lcom/whatsapp/adg;
+    .line 291
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Lcom/whatsapp/tc;
 
-    invoke-virtual {v0}, Lcom/whatsapp/adg;->t()Z
+    invoke-virtual {v0}, Lcom/whatsapp/tc;->i()Z
 
     move-result v0
 
     if-nez v0, :cond_5
 
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Lcom/whatsapp/adg;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Lcom/whatsapp/tc;
 
-    invoke-virtual {v0}, Lcom/whatsapp/adg;->q()Z
+    invoke-virtual {v0}, Lcom/whatsapp/tc;->p()Z
 
     move-result v0
 
     if-eqz v0, :cond_6
 
-    .line 164
+    .line 8
     :cond_5
-    const v0, 0x7f0e0369
+    const v0, 0x7f0e0378
 
     new-array v1, v6, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lcom/whatsapp/camera/CameraActivity;->B:Lcom/whatsapp/adg;
+    iget-object v3, p0, Lcom/whatsapp/camera/CameraActivity;->y:Lcom/whatsapp/tc;
 
-    invoke-virtual {v3, p0}, Lcom/whatsapp/adg;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v3, p0}, Lcom/whatsapp/tc;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -3282,21 +3272,21 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/whatsapp/util/ab;->c(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/CharSequence;
+    invoke-static {v0, v1}, Lcom/whatsapp/util/f;->a(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     if-eqz v2, :cond_d
 
-    .line 119
+    .line 88
     :cond_6
-    const v0, 0x7f0e036a
+    const v0, 0x7f0e0379
 
     new-array v1, v6, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lcom/whatsapp/camera/CameraActivity;->B:Lcom/whatsapp/adg;
+    iget-object v3, p0, Lcom/whatsapp/camera/CameraActivity;->y:Lcom/whatsapp/tc;
 
-    invoke-virtual {v3, p0}, Lcom/whatsapp/adg;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v3, p0}, Lcom/whatsapp/tc;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -3308,9 +3298,9 @@
 
     if-eqz v2, :cond_c
 
-    .line 208
+    .line 85
     :cond_7
-    const v0, 0x7f0e007e
+    const v0, 0x7f0e0076
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->getString(I)Ljava/lang/String;
 
@@ -3318,9 +3308,9 @@
 
     move-object v1, v0
 
-    .line 239
+    .line 120
     :goto_1
-    const v0, 0x7f0b00f1
+    const v0, 0x7f0b00f3
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -3328,33 +3318,33 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->J:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Landroid/widget/TextView;
 
-    .line 9
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->J:Landroid/widget/TextView;
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->B:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 24
-    const v0, 0x7f0b00e4
+    .line 319
+    const v0, 0x7f0b00e6
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Landroid/view/View;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->n:Landroid/view/View;
 
-    .line 262
-    const v0, 0x7f0b00de
+    .line 248
+    const v0, 0x7f0b00e0
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->F:Landroid/view/View;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->t:Landroid/view/View;
 
-    .line 357
-    const v0, 0x7f0b00e5
+    .line 343
+    const v0, 0x7f0b00e7
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -3362,10 +3352,10 @@
 
     check-cast v0, Lcom/whatsapp/PhotoView;
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->p:Lcom/whatsapp/PhotoView;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->C:Lcom/whatsapp/PhotoView;
 
-    .line 332
-    const v0, 0x7f0b00e0
+    .line 1
+    const v0, 0x7f0b00e2
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -3373,19 +3363,19 @@
 
     check-cast v0, Lcom/whatsapp/camera/CameraView;
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/camera/CameraView;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Lcom/whatsapp/camera/CameraView;
 
-    .line 163
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/camera/CameraView;
+    .line 314
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Lcom/whatsapp/camera/CameraView;
 
-    new-instance v1, Lcom/whatsapp/camera/x;
+    new-instance v1, Lcom/whatsapp/camera/w;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/camera/x;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/camera/w;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/camera/CameraView;->setCameraCallback(Lcom/whatsapp/camera/p;)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/camera/CameraView;->setCameraCallback(Lcom/whatsapp/camera/o;)V
 
-    .line 53
-    const v0, 0x7f0b00df
+    .line 326
+    const v0, 0x7f0b00e1
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -3395,60 +3385,60 @@
 
     iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->H:Landroid/view/ViewGroup;
 
-    .line 248
+    .line 79
     new-instance v0, Lcom/whatsapp/camera/AutofocusOverlay;
 
     invoke-direct {v0, p0}, Lcom/whatsapp/camera/AutofocusOverlay;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->C:Lcom/whatsapp/camera/AutofocusOverlay;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->j:Lcom/whatsapp/camera/AutofocusOverlay;
 
-    .line 220
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->C:Lcom/whatsapp/camera/AutofocusOverlay;
+    .line 40
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->j:Lcom/whatsapp/camera/AutofocusOverlay;
 
     invoke-virtual {v0, v8}, Lcom/whatsapp/camera/AutofocusOverlay;->setVisibility(I)V
 
-    .line 79
+    .line 238
     iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->H:Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->C:Lcom/whatsapp/camera/AutofocusOverlay;
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->j:Lcom/whatsapp/camera/AutofocusOverlay;
 
     invoke-virtual {v0, v1, v7, v7}, Landroid/view/ViewGroup;->addView(Landroid/view/View;II)V
 
-    .line 317
+    .line 324
     new-instance v0, Lcom/whatsapp/camera/ZoomOverlay;
 
     invoke-direct {v0, p0}, Lcom/whatsapp/camera/ZoomOverlay;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->j:Lcom/whatsapp/camera/ZoomOverlay;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->u:Lcom/whatsapp/camera/ZoomOverlay;
 
-    .line 186
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->j:Lcom/whatsapp/camera/ZoomOverlay;
+    .line 349
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->u:Lcom/whatsapp/camera/ZoomOverlay;
 
     invoke-virtual {v0, v8}, Lcom/whatsapp/camera/ZoomOverlay;->setVisibility(I)V
 
-    .line 41
+    .line 300
     iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->H:Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->j:Lcom/whatsapp/camera/ZoomOverlay;
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->u:Lcom/whatsapp/camera/ZoomOverlay;
 
     invoke-virtual {v0, v1, v7, v7}, Landroid/view/ViewGroup;->addView(Landroid/view/View;II)V
 
-    .line 133
+    .line 353
     new-instance v0, Lcom/whatsapp/camera/ShutterOverlay;
 
     invoke-direct {v0, p0}, Lcom/whatsapp/camera/ShutterOverlay;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->D:Lcom/whatsapp/camera/ShutterOverlay;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->l:Lcom/whatsapp/camera/ShutterOverlay;
 
-    .line 228
+    .line 27
     iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->H:Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->D:Lcom/whatsapp/camera/ShutterOverlay;
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->l:Lcom/whatsapp/camera/ShutterOverlay;
 
     invoke-virtual {v0, v1, v7, v7}, Landroid/view/ViewGroup;->addView(Landroid/view/View;II)V
 
-    .line 82
-    const v0, 0x7f0b00f4
+    .line 68
+    const v0, 0x7f0b00f6
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -3456,10 +3446,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->s:Landroid/widget/TextView;
 
-    .line 193
-    const v0, 0x7f0b00f5
+    .line 18
+    const v0, 0x7f0b00f7
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -3467,34 +3457,34 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->I:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->q:Landroid/widget/ProgressBar;
 
-    .line 346
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->I:Landroid/widget/ProgressBar;
+    .line 142
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->q:Landroid/widget/ProgressBar;
 
     const/16 v1, 0x64
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setMax(I)V
 
-    .line 232
-    const v0, 0x7f0b00f6
+    .line 298
+    const v0, 0x7f0b00f8
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->r:Landroid/view/View;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->E:Landroid/view/View;
 
-    .line 7
-    const v0, 0x7f0b00e2
+    .line 147
+    const v0, 0x7f0b00e4
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->A:Landroid/view/View;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Landroid/view/View;
 
-    .line 268
+    .line 250
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x9
@@ -3507,27 +3497,27 @@
 
     if-gt v0, v6, :cond_9
 
-    .line 118
+    .line 152
     :cond_8
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->A:Landroid/view/View;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Landroid/view/View;
 
     invoke-virtual {v0, v8}, Landroid/view/View;->setVisibility(I)V
 
     if-eqz v2, :cond_a
 
-    .line 26
+    .line 10
     :cond_9
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->A:Landroid/view/View;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->w:Landroid/view/View;
 
-    new-instance v1, Lcom/whatsapp/camera/a1;
+    new-instance v1, Lcom/whatsapp/camera/a9;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/camera/a1;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/camera/a9;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 113
+    .line 130
     :cond_a
-    const v0, 0x7f0b00e3
+    const v0, 0x7f0b00e5
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -3535,19 +3525,19 @@
 
     check-cast v0, Landroid/widget/ImageButton;
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/widget/ImageButton;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/ImageButton;
 
-    .line 244
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/widget/ImageButton;
+    .line 99
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->G:Landroid/widget/ImageButton;
 
-    new-instance v1, Lcom/whatsapp/camera/e;
+    new-instance v1, Lcom/whatsapp/camera/z;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/camera/e;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/camera/z;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 80
-    const v0, 0x7f0b00e1
+    .line 31
+    const v0, 0x7f0b00e3
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -3555,43 +3545,43 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->F:Landroid/widget/ImageView;
 
-    .line 202
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Landroid/widget/ImageView;
+    .line 352
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->F:Landroid/widget/ImageView;
 
-    new-instance v1, Lcom/whatsapp/camera/m;
+    new-instance v1, Lcom/whatsapp/camera/g;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/camera/m;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/camera/g;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 242
+    .line 13
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     if-lt v0, v8, :cond_b
 
-    .line 187
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Landroid/widget/ImageView;
+    .line 245
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->F:Landroid/widget/ImageView;
 
-    new-instance v1, Lcom/whatsapp/camera/r;
+    new-instance v1, Lcom/whatsapp/camera/l;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/camera/r;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/camera/l;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 260
+    .line 305
     :cond_b
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->y:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->F:Landroid/widget/ImageView;
 
-    new-instance v1, Lcom/whatsapp/camera/ac;
+    new-instance v1, Lcom/whatsapp/camera/k;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/camera/ac;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/camera/k;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 6
-    const v0, 0x7f0b0165
+    .line 155
+    const v0, 0x7f0b0167
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -3599,19 +3589,19 @@
 
     check-cast v0, Landroid/widget/ImageButton;
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->N:Landroid/widget/ImageButton;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->J:Landroid/widget/ImageButton;
 
-    .line 161
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->N:Landroid/widget/ImageButton;
+    .line 141
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->J:Landroid/widget/ImageButton;
 
-    new-instance v1, Lcom/whatsapp/camera/g;
+    new-instance v1, Lcom/whatsapp/camera/a_;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/camera/g;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/camera/a_;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 273
-    const v0, 0x7f0b0181
+    .line 332
+    const v0, 0x7f0b0183
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -3619,39 +3609,39 @@
 
     check-cast v0, Lcom/whatsapp/ConversationTextEntry;
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->v:Lcom/whatsapp/ConversationTextEntry;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->m:Lcom/whatsapp/ConversationTextEntry;
 
-    .line 256
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->v:Lcom/whatsapp/ConversationTextEntry;
+    .line 144
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->m:Lcom/whatsapp/ConversationTextEntry;
 
     invoke-virtual {v0, v6}, Lcom/whatsapp/ConversationTextEntry;->setInputEnterDone(Z)V
 
-    .line 139
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->v:Lcom/whatsapp/ConversationTextEntry;
+    .line 48
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->m:Lcom/whatsapp/ConversationTextEntry;
 
     new-array v1, v6, [Landroid/text/InputFilter;
 
-    new-instance v2, Lcom/whatsapp/fg;
+    new-instance v2, Lcom/whatsapp/g3;
 
     const/16 v3, 0xa0
 
-    invoke-direct {v2, v3}, Lcom/whatsapp/fg;-><init>(I)V
+    invoke-direct {v2, v3}, Lcom/whatsapp/g3;-><init>(I)V
 
     aput-object v2, v1, v9
 
     invoke-virtual {v0, v1}, Lcom/whatsapp/ConversationTextEntry;->setFilters([Landroid/text/InputFilter;)V
 
-    .line 58
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->v:Lcom/whatsapp/ConversationTextEntry;
+    .line 253
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->m:Lcom/whatsapp/ConversationTextEntry;
 
-    new-instance v1, Lcom/whatsapp/camera/y;
+    new-instance v1, Lcom/whatsapp/camera/n;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/camera/y;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/camera/n;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
     invoke-virtual {v0, v1}, Lcom/whatsapp/ConversationTextEntry;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
-    .line 319
-    const v0, 0x7f0b0223
+    .line 279
+    const v0, 0x7f0b022c
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
@@ -3659,57 +3649,57 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 84
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->v:Lcom/whatsapp/ConversationTextEntry;
+    .line 213
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->m:Lcom/whatsapp/ConversationTextEntry;
 
-    new-instance v2, Lcom/whatsapp/camera/o;
+    new-instance v2, Lcom/whatsapp/camera/a1;
 
-    invoke-direct {v2, p0, v0}, Lcom/whatsapp/camera/o;-><init>(Lcom/whatsapp/camera/CameraActivity;Landroid/widget/TextView;)V
+    invoke-direct {v2, p0, v0}, Lcom/whatsapp/camera/a1;-><init>(Lcom/whatsapp/camera/CameraActivity;Landroid/widget/TextView;)V
 
     invoke-virtual {v1, v2}, Lcom/whatsapp/ConversationTextEntry;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 189
-    new-instance v0, Lcom/whatsapp/camera/a0;
+    .line 270
+    new-instance v0, Lcom/whatsapp/camera/h;
 
-    invoke-direct {v0, p0, p0}, Lcom/whatsapp/camera/a0;-><init>(Lcom/whatsapp/camera/CameraActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/whatsapp/camera/h;-><init>(Lcom/whatsapp/camera/CameraActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->E:Lcom/whatsapp/a11;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/i2;
 
-    .line 183
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->E:Lcom/whatsapp/a11;
+    .line 25
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/i2;
 
-    new-instance v1, Lcom/whatsapp/camera/w;
+    new-instance v1, Lcom/whatsapp/camera/af;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/camera/w;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/camera/af;-><init>(Lcom/whatsapp/camera/CameraActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/a11;->a(Lcom/whatsapp/s;)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/i2;->a(Lcom/whatsapp/_1;)V
 
-    .line 283
-    const v0, 0x7f0b00f2
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->q:Landroid/view/View;
-
-    .line 102
-    const v0, 0x7f0b00f3
+    .line 74
+    const v0, 0x7f0b00f4
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->z:Landroid/view/View;
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->r:Landroid/view/View;
 
-    .line 306
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Landroid/view/View;
+    .line 288
+    const v0, 0x7f0b00f5
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->L:Landroid/view/View;
+
+    .line 148
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->n:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->n:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->O:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
@@ -3730,35 +3720,35 @@
     .locals 2
 
     .prologue
-    .line 295
-    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->O:[Ljava/lang/String;
+    .line 81
+    sget-object v0, Lcom/whatsapp/camera/CameraActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x11
+    const/16 v1, 0x8
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 46
+    .line 247
     invoke-super {p0}, Lcom/whatsapp/DialogToastActivity;->onDestroy()V
 
-    .line 65
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Landroid/view/View;
+    .line 9
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->n:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
-    .line 134
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Landroid/view/View;
+    .line 191
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->n:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->n:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+    iget-object v1, p0, Lcom/whatsapp/camera/CameraActivity;->O:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeGlobalOnLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 304
+    .line 308
     :cond_0
     return-void
 .end method
@@ -3767,24 +3757,24 @@
     .locals 4
 
     .prologue
-    .line 211
+    .line 188
     invoke-super {p0}, Lcom/whatsapp/DialogToastActivity;->onPause()V
 
-    .line 112
-    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->k:Lcom/whatsapp/camera/CameraView;
+    .line 184
+    iget-object v0, p0, Lcom/whatsapp/camera/CameraActivity;->o:Lcom/whatsapp/camera/CameraView;
 
-    invoke-virtual {v0}, Lcom/whatsapp/camera/CameraView;->h()Z
+    invoke-virtual {v0}, Lcom/whatsapp/camera/CameraView;->e()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 142
+    .line 225
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/whatsapp/camera/CameraActivity;->u:J
+    iget-wide v2, p0, Lcom/whatsapp/camera/CameraActivity;->x:J
 
     sub-long/2addr v0, v2
 
@@ -3799,11 +3789,11 @@
     :goto_0
     invoke-direct {p0, v0}, Lcom/whatsapp/camera/CameraActivity;->a(Z)V
 
-    .line 11
+    .line 114
     :cond_0
     return-void
 
-    .line 142
+    .line 225
     :cond_1
     const/4 v0, 0x0
 

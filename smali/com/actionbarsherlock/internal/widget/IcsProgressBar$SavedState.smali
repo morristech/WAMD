@@ -18,7 +18,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 2
     new-instance v0, Lcom/actionbarsherlock/internal/widget/IcsProgressBar$SavedState$1;
 
     invoke-direct {v0}, Lcom/actionbarsherlock/internal/widget/IcsProgressBar$SavedState$1;-><init>()V
@@ -32,7 +32,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 6
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
     .line 7
@@ -42,14 +42,14 @@
 
     iput v0, p0, Lcom/actionbarsherlock/internal/widget/IcsProgressBar$SavedState;->progress:I
 
-    .line 5
+    .line 11
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/actionbarsherlock/internal/widget/IcsProgressBar$SavedState;->secondaryProgress:I
 
-    .line 12
+    .line 8
     return-void
 .end method
 
@@ -57,7 +57,7 @@
     .locals 0
 
     .prologue
-    .line 8
+    .line 10
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/internal/widget/IcsProgressBar$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -67,10 +67,10 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 4
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
-    .line 6
+    .line 3
     return-void
 .end method
 
@@ -80,19 +80,19 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 12
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 4
+    .line 9
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsProgressBar$SavedState;->progress:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 10
+    .line 1
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsProgressBar$SavedState;->secondaryProgress:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 9
+    .line 5
     return-void
 .end method

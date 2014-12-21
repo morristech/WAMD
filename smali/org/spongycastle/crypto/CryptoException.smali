@@ -12,10 +12,10 @@
     .locals 0
 
     .prologue
-    .line 8
+    .line 4
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
 
-    .line 2
+    .line 3
     return-void
 .end method
 
@@ -23,10 +23,10 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 7
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
-    .line 6
+    .line 5
     return-void
 .end method
 
@@ -34,13 +34,13 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 6
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
-    .line 4
+    .line 8
     iput-object p2, p0, Lorg/spongycastle/crypto/CryptoException;->cause:Ljava/lang/Throwable;
 
-    .line 7
+    .line 1
     return-void
 .end method
 
@@ -50,7 +50,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 2
     iget-object v0, p0, Lorg/spongycastle/crypto/CryptoException;->cause:Ljava/lang/Throwable;
 
     return-object v0

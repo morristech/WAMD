@@ -6,5 +6,5 @@
 
 
 # virtual methods
-.method public abstract onMapClick(Lcom/google/android/gms/maps/model/LatLng;)V
+.method public abstract e(Lcom/google/android/gms/maps/model/internal/l;)V
 .end method

@@ -69,8 +69,6 @@
     <string name="audio_note_tip">Hold inne for å ta opp, slipp for å sende</string>
     <string name="audio_note_tip_2">Vennligst ta opp en lengre beskjed</string>
     <string name="audio_note_top_mic_tip">Vennligst snakk inn i mikrofonen øverst på telefonen din</string>
-    <string name="barcode_scanner_dialog_body">Denne applikasjonen krever en strekkodeleser. Ønsker du å installere en?</string>
-    <string name="barcode_scanner_dialog_title">Installer en strekkodeleser?</string>
     <string name="block">Blokker</string>
     <string name="block_ask">Er du sikker på at du ønsker å blokkere denne kontakten?</string>
     <string name="block_list_desc_1">"Trykk på ikonet i hjørnet øverst til høyre for å blokkere en kontakt. 
@@ -316,7 +314,6 @@ Tilgjengelig: %1$s"</string>
     <string name="eula_description">Plattformuavhengig meldingjeneste med venner over hele verden</string>
     <string name="eula_tablets_not_supported">Merk: Tablet-PC er ikke støttet på det nåværende tidspunkt.</string>
     <string name="eula_terms_of_service">Regler og Vilkår</string>
-    <string name="eula_title">Velkommen til WhatsApp!</string>
     <string name="existing_contact">Eksisterende</string>
     <string name="exit">Avslutt</string>
     <string name="exit_group">Forlat gruppen</string>
@@ -518,7 +515,6 @@ WhatsApp kan bare installeres på én enhet per mobilnummer."</string>
     <string name="menuitem_add">Legg til</string>
     <string name="menuitem_contacts">Kontakter</string>
     <string name="menuitem_debug">gå til debug meny</string>
-    <string name="menuitem_delete_qr">Slett QR kode</string>
     <string name="menuitem_groupchat">Ny gruppe</string>
     <string name="menuitem_mute">Demp</string>
     <string name="menuitem_mute_off">Slå av lydløs</string>
@@ -557,14 +553,10 @@ WhatsApp kan bare installeres på én enhet per mobilnummer."</string>
     <string name="msg_store_backup_failed">Kan ikke sikkerhetskopiere meldinger</string>
     <string name="msg_store_backup_failed_try_again_later">Kunne ikke sikkerhetskopiere meldinger. Vennligst prøv igjen senere.</string>
     <string name="msg_store_backup_found">Sikkerhetskopi funnet</string>
-    <string name="msg_store_backup_found_registration">Fant sikkerhetskopi av meldinger!</string>
     <string name="msg_store_backup_skipped">Sikkerhetskopi hoppet over</string>
     <string name="msg_store_backup_skipped_no_media">Meldings backup hoppet over: Ingen media kort funnet.</string>
     <string name="msg_store_backup_skipped_read_only_media">Meldings backup hoppet over: Kortet tillater kun lesing.</string>
     <string name="msg_store_confirm">Bekreft</string>
-    <string name="msg_store_creation_backup_message">Vil du gjenopprette din meldingshistorikk fra backup?</string>
-    <string name="msg_store_do_not_restore">Ikke gjenopprett</string>
-    <string name="msg_store_do_not_restore_no_thanks">Nei takk</string>
     <string name="msg_store_error_found">En feil har oppstått. Vær vennlig å stoppe og starte WhatsApp.</string>
     <string name="msg_store_error_not_restored">Beklager, vi kunne ikke gjenopprette meldingshistorien din.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Meldinger vil bli tapt. Er du sikker på at du ikke vil gjenopprette din meldings historikk fra backup?</string>
@@ -591,9 +583,6 @@ WhatsApp kan bare installeres på én enhet per mobilnummer."</string>
     <string name="need_sd_card_shared_storage">Vennligst slå av USB lagring og prøv igjen.</string>
     <string name="network_required">Du har ikke nettverkstilgang i øyeblikket.</string>
     <string name="network_usage_ask_reset_message">Er du sikker på at du vil nullstille statistikken?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Sist nullstilt: %1$s</string>
     <string name="network_usage_media_bytes_received">Media bytes mottatt:</string>
     <string name="network_usage_media_bytes_sent">Media bytes sendt:</string>
@@ -937,8 +926,6 @@ Sendt fra WhatsApp"</string>
     <string name="software_expired_get_from_play_with_date">Denne versjonen av WhatsApp er utdatert fra og med &lt;b>%1$s&lt;/b>. Vennligst gå til Google Play for å laste ned den nyeste versjonen.&lt;br>&lt;br> Dato på din telefon er &lt;b>%2$s&lt;/b>. Om dette er feil, vennligst rett innstillinger for tid og dato, deretter restart WhatsApp.</string>
     <string name="software_expired_with_date">Denne versjonen av WhatsApp ble utdatert fra og med &lt;b>%1$s&lt;/b>. Trykk på “Last ned” for å få nyeste versjon.&lt;br>&lt;br>Datoen på din telefon er: &lt;b>%2$s&lt;/b>. Om ikke dette stemmer, vennligst rett på denne innstillingen og deretter start WhatsApp på nytt.</string>
     <string name="spam_learn_more">Finn ut mer</string>
-    <string name="spam_too_many_messages">"Du har midlertidig blitt utestengt fra WhatsApp siden du sendte for mange meldinger til folk som ikke har deg i addresseboken sin. 
-Du kan bruke WhatsApp igjen om:"</string>
     <string name="status">Status</string>
     <string name="status_default_at_gym">På treningsstudioet</string>
     <string name="status_default_at_movies">Er på kino</string>

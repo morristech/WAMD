@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "\u001aD+#7\u001a_,;;\rR"
+    const-string v0, "|u:\u0004@|n=\u001cLkc"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x52
+    const/16 v0, 0x25
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,22 +65,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x79
+    const/16 v0, 0x1f
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x2b
+    const/16 v0, 0x1a
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x45
+    const/16 v0, 0x54
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x4d
+    const/16 v0, 0x6a
 
     goto :goto_1
 
@@ -97,7 +97,7 @@
     .locals 0
 
     .prologue
-    .line 9
+    .line 3
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -111,18 +111,18 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 2
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 9
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     if-eqz v0, :cond_0
 
     .line 6
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    invoke-static {v0, v1}, Lcom/whatsapp/App;->b(Landroid/content/Context;I)V
+    invoke-static {v0, v1}, Lcom/whatsapp/App;->c(Landroid/content/Context;I)V
 
-    .line 7
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 2
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     sget-object v2, Lcom/whatsapp/BootReceiver;->z:Ljava/lang/String;
 
@@ -137,8 +137,8 @@
 
     move-result v0
 
-    .line 3
-    sget-object v2, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 4
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
     if-nez v0, :cond_2
 
@@ -147,11 +147,11 @@
     :goto_0
     invoke-static {v2, v0}, Lcom/whatsapp/App;->a(Landroid/content/Context;Z)V
 
-    .line 5
+    .line 8
     :cond_0
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    invoke-static {v0}, Lcom/whatsapp/App;->a(Landroid/content/Context;)I
+    invoke-static {v0}, Lcom/whatsapp/App;->f(Landroid/content/Context;)I
 
     move-result v0
 
@@ -159,20 +159,20 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 8
+    .line 7
     invoke-static {}, Landroid/os/Process;->myPid()I
 
     move-result v0
 
     invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
 
-    .line 4
+    .line 5
     :cond_1
     return-void
 
     :cond_2
     move v0, v1
 
-    .line 3
+    .line 4
     goto :goto_0
 .end method

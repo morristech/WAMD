@@ -8,12 +8,12 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 2
     check-cast p0, Landroid/widget/OverScroller;
 
     invoke-virtual {p0}, Landroid/widget/OverScroller;->abortAnimation()V
 
-    .line 1
+    .line 10
     return-void
 .end method
 
@@ -21,7 +21,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 1
     check-cast p0, Landroid/widget/OverScroller;
 
     invoke-virtual {p0}, Landroid/widget/OverScroller;->computeScrollOffset()Z
@@ -35,7 +35,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 5
     if-eqz p1, :cond_0
 
     new-instance v0, Landroid/widget/OverScroller;
@@ -57,7 +57,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 9
     check-cast p0, Landroid/widget/OverScroller;
 
     invoke-virtual {p0}, Landroid/widget/OverScroller;->getCurrX()I
@@ -71,7 +71,7 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 4
     check-cast p0, Landroid/widget/OverScroller;
 
     invoke-virtual {p0}, Landroid/widget/OverScroller;->getCurrY()I
@@ -85,7 +85,7 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 8
     check-cast p0, Landroid/widget/OverScroller;
 
     invoke-virtual {p0}, Landroid/widget/OverScroller;->getFinalX()I
@@ -113,7 +113,7 @@
     .locals 6
 
     .prologue
-    .line 5
+    .line 7
     move-object v0, p0
 
     check-cast v0, Landroid/widget/OverScroller;
@@ -130,6 +130,6 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/widget/OverScroller;->startScroll(IIIII)V
 
-    .line 9
+    .line 3
     return-void
 .end method

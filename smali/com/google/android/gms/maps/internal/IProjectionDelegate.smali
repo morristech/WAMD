@@ -9,5 +9,5 @@
 .method public abstract getVisibleRegion()Lcom/google/android/gms/maps/model/VisibleRegion;
 .end method
 
-.method public abstract toScreenLocation(Lcom/google/android/gms/maps/model/LatLng;)Lcom/google/android/gms/dynamic/b;
+.method public abstract toScreenLocation(Lcom/google/android/gms/maps/model/LatLng;)Lcom/google/android/gms/dynamic/d;
 .end method

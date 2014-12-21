@@ -3,20 +3,24 @@
 .source "z9.java"
 
 # interfaces
-.implements Landroid/preference/Preference$OnPreferenceClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/SettingsContacts;
+.field final a:Lcom/whatsapp/xp;
+
+.field final b:Ljava/util/ArrayList;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/SettingsContacts;)V
+.method constructor <init>(Lcom/whatsapp/xp;Ljava/util/ArrayList;)V
     .locals 0
 
     .prologue
     .line 2
-    iput-object p1, p0, Lcom/whatsapp/z9;->a:Lcom/whatsapp/SettingsContacts;
+    iput-object p1, p0, Lcom/whatsapp/z9;->a:Lcom/whatsapp/xp;
+
+    iput-object p2, p0, Lcom/whatsapp/z9;->b:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,24 +29,29 @@
 
 
 # virtual methods
-.method public onPreferenceClick(Landroid/preference/Preference;)Z
+.method public run()V
     .locals 2
 
     .prologue
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/z9;->a:Lcom/whatsapp/xp;
+
+    invoke-virtual {v0}, Lcom/whatsapp/xp;->isCancelled()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
     .line 1
-    sget-object v0, Lcom/whatsapp/adr;->TELL_A_FRIEND:Lcom/whatsapp/adr;
+    iget-object v0, p0, Lcom/whatsapp/z9;->a:Lcom/whatsapp/xp;
 
-    sget-object v1, Lcom/whatsapp/afl;->SETTINGS_CONTACTS:Lcom/whatsapp/afl;
+    iget-object v0, v0, Lcom/whatsapp/xp;->a:Lcom/whatsapp/GroupChatInfo;
 
-    invoke-static {v0, v1}, Lcom/whatsapp/a1s;->a(Lcom/whatsapp/adr;Lcom/whatsapp/afl;)V
+    iget-object v1, p0, Lcom/whatsapp/z9;->b:Ljava/util/ArrayList;
+
+    invoke-static {v0, v1}, Lcom/whatsapp/GroupChatInfo;->a(Lcom/whatsapp/GroupChatInfo;Ljava/util/ArrayList;)V
 
     .line 4
-    iget-object v0, p0, Lcom/whatsapp/z9;->a:Lcom/whatsapp/SettingsContacts;
-
-    invoke-static {v0}, Lcom/whatsapp/App;->b(Landroid/app/Activity;)V
-
-    .line 3
-    const/4 v0, 0x1
-
-    return v0
+    :cond_0
+    return-void
 .end method

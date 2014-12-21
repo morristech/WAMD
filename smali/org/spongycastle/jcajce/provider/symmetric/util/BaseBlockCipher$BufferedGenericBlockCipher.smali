@@ -18,7 +18,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "\u0010*-}G\"K\u00072Zq\u0018\u001c-^>\u0019\u001d8Jq\u0002\u0007}Z9\u000eI>[#\u0019\u000c3Zq\u0006\u00069K\u007f"
+    const-string v0, "\u0007]\u0018k\u00055<2$\u0018fo);\u001c)n(.\u0008fu2k\u0018.y|(\u00194n9%\u0018fq3/\th"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -56,7 +56,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x2e
+    const/16 v0, 0x6c
 
     :goto_1
     xor-int/2addr v0, v4
@@ -72,22 +72,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x51
+    const/16 v0, 0x46
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x6b
+    const/16 v0, 0x1c
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x69
+    const/16 v0, 0x5c
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x5d
+    const/16 v0, 0x4b
 
     goto :goto_1
 
@@ -104,17 +104,17 @@
     .locals 1
 
     .prologue
-    .line 13
+    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 22
+    .line 20
     new-instance v0, Lorg/spongycastle/crypto/paddings/PaddedBufferedBlockCipher;
 
     invoke-direct {v0, p1}, Lorg/spongycastle/crypto/paddings/PaddedBufferedBlockCipher;-><init>(Lorg/spongycastle/crypto/BlockCipher;)V
 
     iput-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$BufferedGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/BufferedBlockCipher;
 
-    .line 18
+    .line 9
     return-void
 .end method
 
@@ -122,17 +122,17 @@
     .locals 1
 
     .prologue
-    .line 9
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
+    .line 10
     new-instance v0, Lorg/spongycastle/crypto/paddings/PaddedBufferedBlockCipher;
 
     invoke-direct {v0, p1, p2}, Lorg/spongycastle/crypto/paddings/PaddedBufferedBlockCipher;-><init>(Lorg/spongycastle/crypto/BlockCipher;Lorg/spongycastle/crypto/paddings/BlockCipherPadding;)V
 
     iput-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$BufferedGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/BufferedBlockCipher;
 
-    .line 6
+    .line 19
     return-void
 .end method
 
@@ -140,13 +140,13 @@
     .locals 0
 
     .prologue
-    .line 15
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7
+    .line 22
     iput-object p1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$BufferedGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/BufferedBlockCipher;
 
-    .line 8
+    .line 16
     return-void
 .end method
 
@@ -156,7 +156,7 @@
     .locals 2
 
     .prologue
-    .line 10
+    .line 3
     :try_start_0
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$BufferedGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/BufferedBlockCipher;
 
@@ -168,11 +168,11 @@
 
     return v0
 
-    .line 3
+    .line 15
     :catch_0
     move-exception v0
 
-    .line 2
+    .line 18
     new-instance v1, Ljavax/crypto/BadPaddingException;
 
     invoke-virtual {v0}, Lorg/spongycastle/crypto/InvalidCipherTextException;->getMessage()Ljava/lang/String;
@@ -188,7 +188,7 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 11
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$BufferedGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/BufferedBlockCipher;
 
     invoke-virtual {v0}, Lorg/spongycastle/crypto/BufferedBlockCipher;->getUnderlyingCipher()Lorg/spongycastle/crypto/BlockCipher;
@@ -206,7 +206,7 @@
     .locals 1
 
     .prologue
-    .line 16
+    .line 14
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$BufferedGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/BufferedBlockCipher;
 
     invoke-virtual {v0, p1}, Lorg/spongycastle/crypto/BufferedBlockCipher;->getOutputSize(I)I
@@ -220,7 +220,7 @@
     .locals 1
 
     .prologue
-    .line 19
+    .line 12
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$BufferedGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/BufferedBlockCipher;
 
     invoke-virtual {v0}, Lorg/spongycastle/crypto/BufferedBlockCipher;->getUnderlyingCipher()Lorg/spongycastle/crypto/BlockCipher;
@@ -234,7 +234,7 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 1
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$BufferedGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/BufferedBlockCipher;
 
     invoke-virtual {v0, p1}, Lorg/spongycastle/crypto/BufferedBlockCipher;->getUpdateOutputSize(I)I
@@ -248,12 +248,12 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 4
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$BufferedGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/BufferedBlockCipher;
 
     invoke-virtual {v0, p1, p2}, Lorg/spongycastle/crypto/BufferedBlockCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
 
-    .line 20
+    .line 17
     return-void
 .end method
 
@@ -261,7 +261,7 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 8
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$BufferedGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/BufferedBlockCipher;
 
     invoke-virtual {v0, p1, p2, p3}, Lorg/spongycastle/crypto/BufferedBlockCipher;->processByte(B[BI)I
@@ -275,7 +275,7 @@
     .locals 6
 
     .prologue
-    .line 5
+    .line 21
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$BufferedGenericBlockCipher;->cipher:Lorg/spongycastle/crypto/BufferedBlockCipher;
 
     move-object v1, p1
@@ -299,7 +299,7 @@
     .locals 2
 
     .prologue
-    .line 14
+    .line 13
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     sget-object v1, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseBlockCipher$BufferedGenericBlockCipher;->z:Ljava/lang/String;
@@ -313,7 +313,7 @@
     .locals 1
 
     .prologue
-    .line 21
+    .line 7
     const/4 v0, 0x1
 
     return v0

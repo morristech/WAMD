@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 1
     invoke-direct {p0}, Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatStubImpl;-><init>()V
 
     return-void
@@ -20,9 +20,9 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 2
     invoke-static {p1, p2}, Landroid/support/v4/view/ViewGroupCompatHC;->setMotionEventSplittingEnabled(Landroid/view/ViewGroup;Z)V
 
-    .line 2
+    .line 3
     return-void
 .end method

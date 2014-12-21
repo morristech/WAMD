@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +28,7 @@
 
     move-result v0
 
-    .line 2
+    .line 4
     invoke-virtual {p3}, Ljava/lang/Number;->floatValue()F
 
     move-result v1
@@ -50,7 +50,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 2
     check-cast p2, Ljava/lang/Number;
 
     check-cast p3, Ljava/lang/Number;

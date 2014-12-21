@@ -52,6 +52,7 @@
     <string name="android_wear_see_you_soon">До скоро виждане</string>
     <string name="android_wear_thanks">Благодаря</string>
     <string name="android_wear_yes">Да</string>
+    <string name="answer_the_call">Отговори</string>
     <string name="archive_all_chats">Скрий всички разговори</string>
     <string name="archive_all_chats_ask">Сигурни ли сте, че желаете да скриете ВСИЧКИ разговори?</string>
     <string name="archive_broadcast">Скрий списъка</string>
@@ -71,14 +72,6 @@
     <string name="audio_note_tip">Задръж за запис, пусни за изпращане</string>
     <string name="audio_note_tip_2">Моля запишете по-дълго съобщение</string>
     <string name="audio_note_top_mic_tip">Моля, говорете близо до микрофона разположен в горната част на вашия телефон</string>
-    <string name="auth_client_needs_enabling_title">Приложение изисква активирането на услугите за Google Play.</string>
-    <string name="auth_client_needs_installation_title">Приложение изисква инсталирането на услугите за Google Play.</string>
-    <string name="auth_client_needs_update_title">Приложение изисква актуализирането на услугите за Google Play.</string>
-    <string name="auth_client_play_services_err_notification_msg">Грешка в услугите за Google Play</string>
-    <string name="auth_client_requested_by_msg">Заявено от %1$s</string>
-    <string name="auth_client_using_bad_version_title">Приложение опита да ползва неправилна версия на услуг. за Google Play.</string>
-    <string name="barcode_scanner_dialog_body">Това приложение изисква баркод скенер. Желаете ли да инсталирате?</string>
-    <string name="barcode_scanner_dialog_title">Инсталирай Баркод Скенер?</string>
     <string name="block">Блокирай</string>
     <string name="block_ask">Наистина ли искате до блокирате този абонат?</string>
     <string name="block_list_desc_1">"Натиснете върху иконката в горният десен ъгъл, за да изберете абонат за блокиране.
@@ -141,6 +134,7 @@
     <string name="clear_all_chats_ask">Наистина ли искате да изчистите всички съобщения от всички разговори?</string>
     <string name="clear_call_log">Изчисти дневника с повиквания</string>
     <string name="clear_call_log_ask">Искате ли да изчистите дневника с повиквания?</string>
+    <string name="clear_single_log">Премахни от дневника</string>
     <string name="clock_wrong">Датата на телефона е неточна! Моля, настройте коректно часа и опитайте отново.</string>
     <string name="clock_wrong_report_current_date_time">"Дата и час на телефона: 
 %1$s 
@@ -159,23 +153,32 @@
     <string name="color_red">Червен</string>
     <string name="color_white">Бял</string>
     <string name="color_yellow">Жълт</string>
+    <string name="common_android_wear_notification_needs_update_text">Приложение изисква актуализиране на Android Wear.</string>
+    <string name="common_android_wear_update_text">Това приложение няма да стартира, освен ако не актуализирате Android Wear.</string>
+    <string name="common_android_wear_update_title">Актуализиране на Android Wear</string>
     <string name="common_google_play_services_enable_button">Услуги за Google Play: Актив.</string>
     <string name="common_google_play_services_enable_text">Това приложение няма да работи, освен ако не активирате услугите за Google Play.</string>
     <string name="common_google_play_services_enable_title">Активиране на услугите за Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Заявено от %1$s</string>
     <string name="common_google_play_services_install_button">Услуги за Google Play: Изтегл.</string>
     <string name="common_google_play_services_install_text_phone">Това приложение няма да се изпълнява без услугите за Google Play, които липсват в телефона ви.</string>
     <string name="common_google_play_services_install_text_tablet">Това приложение няма да се изпълнява без услугите за Google Play, които липсват в таблета ви.</string>
     <string name="common_google_play_services_install_title">Изтегляне на услугите за Google Play</string>
     <string name="common_google_play_services_invalid_account_text">Посоченият профил не съществува на това устройство. Моля, изберете друг.</string>
     <string name="common_google_play_services_invalid_account_title">Невалиден профил</string>
+    <string name="common_google_play_services_needs_enabling_title">Приложение изисква активирането на услугите за Google Play.</string>
     <string name="common_google_play_services_network_error_text">За свързване с услугите за Google Play се изисква връзка за данни.</string>
     <string name="common_google_play_services_network_error_title">Грешка в мрежата</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Приложение изисква инсталирането на услугите за Google Play.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Приложение изисква актуализирането на услугите за Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Грешка в услугите за Google Play</string>
     <string name="common_google_play_services_unknown_issue">Неизвестен проблем с услугите за Google Play.</string>
     <string name="common_google_play_services_unsupported_text">Услугите за Google Play, на които разчитат някои от приложенията ви, не се поддържат от устройството ви. Моля, свържете се с производителя за помощ.</string>
     <string name="common_google_play_services_unsupported_title">Услуги за Google Play</string>
     <string name="common_google_play_services_update_button">Актуализиране</string>
     <string name="common_google_play_services_update_text">Това приложение няма да се изпълнява, освен ако не актуализирате услугите за Google Play.</string>
     <string name="common_google_play_services_update_title">Актуализиране на услугите за Google Play</string>
+    <string name="common_open_on_phone">Отваряне в телефона</string>
     <string name="common_signin_button_text">Вход</string>
     <string name="common_signin_button_text_long">Вход с Google</string>
     <string name="confirm_forward_msg">Препрати до %s?</string>
@@ -352,7 +355,6 @@ Available: %1$s"</string>
     <string name="eula_description">Междуплатформени чат съобщения с приятели по целия свят</string>
     <string name="eula_tablets_not_supported">Бележка: Таблетите не се поддържат все още.</string>
     <string name="eula_terms_of_service">Условия за ползване</string>
-    <string name="eula_title">Добре дошли в WhatsApp!</string>
     <string name="existing_contact">Добавени</string>
     <string name="exit">Изход</string>
     <string name="exit_group">Напусни чата</string>
@@ -527,7 +529,6 @@ WhatsApp услугата ви изтича на %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Неуспешно изтегляне поради недостатъчно свободно място на вътрешната памет.</string>
     <string name="invalid_media_message_download">Изтеглянето е невъзможно, защото има проблем със съобщението. Опитайте да изпратите съобщението отново.</string>
     <string name="invalid_message_forward">Съобщението не може да бъде препратено към невалиден абонат.</string>
-    <string name="invalid_qr_code">Невалиден QR код</string>
     <string name="invalid_url_for_download">Изтеглянето е невъзможно. Моля, поискайте файлът да бъде изпратен отново.</string>
     <string name="invite">Покани</string>
     <string name="invite_friends">Покани своите приятели</string>
@@ -573,7 +574,6 @@ WhatsApp може да се инсталира само на едно устро
     <string name="menuitem_add">Добави</string>
     <string name="menuitem_contacts">Абонати</string>
     <string name="menuitem_debug">Поправяне</string>
-    <string name="menuitem_delete_qr">Изтрий QR код</string>
     <string name="menuitem_groupchat">Нов чат</string>
     <string name="menuitem_list">Нов списък</string>
     <string name="menuitem_mute">Тих режим</string>
@@ -614,14 +614,10 @@ WhatsApp може да се инсталира само на едно устро
     <string name="msg_store_backup_failed">Неуспешно архивиране на чат хронологията</string>
     <string name="msg_store_backup_failed_try_again_later">Съобщенията не могат да бъдат архивирани. Моля, опитайте отново по-късно.</string>
     <string name="msg_store_backup_found">Намерен е архив</string>
-    <string name="msg_store_backup_found_registration">Намерено е резервно копие с чат хронологията!</string>
     <string name="msg_store_backup_skipped">Пропуснато резервно копие</string>
     <string name="msg_store_backup_skipped_no_media">Архивирането на съобщенията е неуспешно: Не е открита карта памет.</string>
     <string name="msg_store_backup_skipped_read_only_media">Създаването на резервно копие на съобщенията е неуспешно: Картата памет е достъпна само за четене.</string>
     <string name="msg_store_confirm">Потвърди</string>
-    <string name="msg_store_creation_backup_message">Желаете ли да възстановите хронологията на съобщенията от архив?</string>
-    <string name="msg_store_do_not_restore">Не възстановявай</string>
-    <string name="msg_store_do_not_restore_no_thanks">Не</string>
     <string name="msg_store_error_found">Възникна грешка. Затворете и рестартирайте WhatsApp.</string>
     <string name="msg_store_error_not_restored">Съжаляваме, но не успяхме да възстановим чат хронологията от архива.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Съобщенията ще бъдат изтрити. Сигурни ли сте, че не искате да възстановите хронологията на съобщенията от архив?</string>
@@ -648,9 +644,6 @@ WhatsApp може да се инсталира само на едно устро
     <string name="need_sd_card_shared_storage">Моля, изключете USB режима на работа и опитайте отново.</string>
     <string name="network_required">В момента нямате достъп до мрежа.</string>
     <string name="network_usage_ask_reset_message">Искате ли да бъде нулирана статистиката?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Последно нулиране: %1$s</string>
     <string name="network_usage_media_bytes_received">Получени файлове:</string>
     <string name="network_usage_media_bytes_sent">Изпратени файлове:</string>
@@ -691,6 +684,7 @@ WhatsApp може да се инсталира само на едно устро
     <string name="notes">Промени</string>
     <string name="notification_ticker_header">Съобщение от %s</string>
     <string name="ok">OK</string>
+    <string name="ongoing_call">Текущ разговор</string>
     <string name="outgoing_call">Изходящо обаждане</string>
     <string name="overlay_reregister">Повторно потвърждение</string>
     <string name="participant_adding">Добавяне...</string>
@@ -862,6 +856,7 @@ WhatsApp може да се инсталира само на едно устро
     <string name="register_wait_message">Моля, изчакайте</string>
     <string name="register_xmpp_title">Свързване...</string>
     <string name="registration_cellular_network_required">Необходима е интернет връзка, чрез мрежата на мобилния оператор за да активирате WhatsApp.</string>
+    <string name="reject_the_call">Отхвърли</string>
     <string name="remove">Премахни</string>
     <string name="remove_contact_name_from_group">Премахни %1$s от груповия чат</string>
     <string name="remove_contact_name_from_list">Премахване на %1$s от списъка</string>
@@ -971,6 +966,8 @@ WhatsApp може да се инсталира само на едно устро
     <string name="settings_privacy_last_seen">Последно видян</string>
     <string name="settings_privacy_message">Ако изключите услугата Последно Онлайн, няма да виждате кога останалите абонати са били на линия.</string>
     <string name="settings_privacy_profile_photo">Профилна снимка</string>
+    <string name="settings_privacy_read_receipts">Статус прочетено</string>
+    <string name="settings_privacy_read_receipts_message">Ако изключите статус прочетено, вие също няма да виждате дали другите участници са прочели съобщенията. Статус прочетено е винаги публичен при групов чат.</string>
     <string name="settings_privacy_status">Статус</string>
     <string name="settings_profile_info">Профил</string>
     <string name="settings_push_name_summary">Това не са потребителско име или парола за достъп. Това име ще се вижда от твоите WhatsApp абонати.</string>
@@ -1004,18 +1001,18 @@ WhatsApp може да се инсталира само на едно устро
     <string name="software_expired_get_from_play">Тази версия на WhatsApp е остаряла и вече не се поддържа. Посетете Google Play и изтеглете последната налична версия.</string>
     <string name="software_expired_get_from_play_with_date">Тази версия на WhatsApp ще бъде обновена на &lt;b>%1$s&lt;/b>. Посетете Google Play, за да изтеглите най-актуалната версия.&lt;br>&lt;br>Датата на вашето устройство е &lt;b>%2$s&lt;/b>. Ако датата е грешна, моля коригирайте я и рестартирайте WhatsApp.</string>
     <string name="software_expired_with_date">Тази версия на WhatsApp ще бъде обновена на &lt;b>%1$s&lt;/b>. Избери “Изтегли” за да получиш най-актуалната версия.&lt;br>&lt;br>Датата на вашето устройство е &lt;b>%2$s&lt;/b>. Ако датата е грешна, моля коригирайте я и рестартирайте WhatsApp.</string>
-    <string name="spam_generic">"Временно достъпът ви до WhatsApp е ограничен, защото може да сте нарушили нашите условия за ползване.
+    <string name="spam_generic">"Временно достъпът ви до WhatsApp е ограничен, защото е възможно да сте нарушили нашите условия за ползване на услугата.
+
 Ще може да използвате WhatsApp отново след:"</string>
     <string name="spam_generic_data_connection_missing">Уверете се, че телефонът има активна интернет връзка.</string>
     <string name="spam_generic_unknown_time_left">Временно достъпът ви до WhatsApp е ограничен, защото може да сте нарушили нашите условия за ползване. Ще може да използвате WhatsApp отново скоро.</string>
     <string name="spam_learn_more">Научи повече</string>
     <string name="spam_title">Временно ограничен достъп</string>
-    <string name="spam_too_many_blocks">Временно достъпът ви до WhatsApp е ограничен, защото твърде много хора са ви блокирали.</string>
-    <string name="spam_too_many_groups">"Временно достъпът ви до WhatsApp е ограничен, защото сте създали твърде много групови чатове с хора, които нямат вашия телефонен номер в WhatsApp.
+    <string name="spam_too_many_groups">"Временно достъпът ви до WhatsApp е ограничен, защото сте създали твърде много груповите чатове с хора, които нямат вашия телефонен номер в WhatsApp.
+
 Ще може да използвате WhatsApp отново след:"</string>
-    <string name="spam_too_many_messages">"Временно достъпът ви до WhatsApp е ограничен, защото сте изпратили твърде много съобщения до хора, които нямат вашия номер в WhatsApp.
-Ще може да използвате WhatsApp отново след:"</string>
-    <string name="spam_too_many_people">"Временно достъпът ви до WhatsApp е ограничен, защото сте изпратили еднакво съобщение до твърде много хора.
+    <string name="spam_too_many_messages">"Временно достъпът ви до WhatsApp е ограничен, защото сте изпратили твърде много съобщения до хора, които нямат вашия телефонен номер в WhatsApp.
+
 Ще може да използвате WhatsApp отново след:"</string>
     <string name="status">Статус</string>
     <string name="status_default_at_gym">На фитнес</string>
@@ -1184,6 +1181,7 @@ WhatsApp е наличен за Android, iPhone, Nokia, Windows Phone и BlackBe
     <string name="view_list_media">Изпратени файлове в списъка</string>
     <string name="view_website">Виж сайта</string>
     <string name="voip_activity_label">Гласово повикване</string>
+    <string name="voip_call_bluetooth_toggle_description">Превключване на Bluetooth</string>
     <string name="voip_call_end_button_description">Край на повикването</string>
     <string name="voip_call_goto_chat_description">Виж чата</string>
     <string name="voip_call_incoming">ВХОДЯЩО</string>

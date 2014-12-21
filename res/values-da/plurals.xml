@@ -169,8 +169,8 @@ tilbage"</item>
         <item quantity="one">%d mangler</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Du kan nu fortsætte. Vi har lige gendannet %,d beskeder.</item>
-        <item quantity="one">Du kan nu fortsætte. Vi har lige gendannet %,d besked.</item>
+        <item quantity="other">%,d beskeder gendannet. Du kan nu fortsætte.</item>
+        <item quantity="one">%,d besked gendannet. Du kan nu fortsætte.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Sender %1$d videoer til %2$s</item>

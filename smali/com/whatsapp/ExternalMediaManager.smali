@@ -11,11 +11,11 @@
 .method static constructor <clinit>()V
     .locals 13
 
-    const/4 v4, 0x3
-
     const/4 v3, 0x2
 
     const/4 v2, 0x1
+
+    const/4 v4, 0x3
 
     const/4 v1, 0x0
 
@@ -23,7 +23,7 @@
 
     new-array v6, v0, [Ljava/lang/String;
 
-    const-string v5, "0$=\tg;=%3x08 \r: 2(\u001at<0(\u000ey0|"
+    const-string v5, "\u0014{9N&\u001fb!t9\u0014g$J{\u0010u,B8\u0010a!N"
 
     const/4 v0, -0x1
 
@@ -61,7 +61,7 @@
 
     aput-object v5, v7, v6
 
-    const-string v0, "0$=\tg;=%3x08 \r:\'9(\u00088:2%\u0015"
+    const-string v0, "\u001cl8E \u0014g"
 
     move-object v5, v0
 
@@ -76,7 +76,7 @@
     :pswitch_0
     aput-object v5, v7, v6
 
-    const-string v0, "0$=\tg;=%3x08 \r:4*(\u0005y4>%\t"
+    const-string v0, "\u001cl8E \u0014g\u0012Y;"
 
     move-object v5, v0
 
@@ -91,7 +91,7 @@
     :pswitch_1
     aput-object v5, v7, v6
 
-    const-string v0, "83<\u0002a08"
+    const-string v0, "\u0014{9N&\u001fb!t9\u0014g$J{\u0004m,]5\u0018o,I8\u0014#"
 
     move-object v5, v0
 
@@ -108,7 +108,7 @@
 
     const/4 v5, 0x4
 
-    const-string v0, "83<\u0002a08\u0016\u001ez"
+    const-string v0, "\u0014{9N&\u001fb!t9\u0014g$J{\u0003f,Oy\u001em!R"
 
     move v6, v5
 
@@ -134,7 +134,7 @@
 
     packed-switch v5, :pswitch_data_1
 
-    const/16 v5, 0x15
+    const/16 v5, 0x54
 
     :goto_2
     xor-int/2addr v5, v12
@@ -150,24 +150,26 @@
     goto :goto_1
 
     :pswitch_4
-    const/16 v5, 0x55
+    const/16 v5, 0x71
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v5, 0x5c
+    move v5, v4
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v5, 0x49
+    const/16 v5, 0x4d
 
     goto :goto_2
 
     :pswitch_7
-    const/16 v5, 0x6c
+    const/16 v5, 0x2b
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -190,10 +192,10 @@
     .locals 0
 
     .prologue
-    .line 7
+    .line 23
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
-    .line 21
+    .line 2
     return-void
 .end method
 
@@ -201,32 +203,32 @@
     .locals 3
 
     .prologue
-    .line 18
+    .line 21
     monitor-enter p0
 
     :try_start_0
-    sget-boolean v0, Lcom/whatsapp/App;->u:Z
+    sget-boolean v0, Lcom/whatsapp/App;->aw:Z
 
     if-nez v0, :cond_0
 
-    .line 26
+    .line 20
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/whatsapp/App;->u:Z
-
-    .line 15
-    const/4 v0, 0x1
-
-    sput-boolean v0, Lcom/whatsapp/App;->k:Z
+    sput-boolean v0, Lcom/whatsapp/App;->aw:Z
 
     .line 10
+    const/4 v0, 0x1
+
+    sput-boolean v0, Lcom/whatsapp/App;->aD:Z
+
+    .line 29
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v1, Lcom/whatsapp/ExternalMediaManager;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x0
+    const/4 v2, 0x3
 
     aget-object v1, v1, v2
 
@@ -250,8 +252,64 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 13
+    .line 1
     :cond_0
+    monitor-exit p0
+
+    return-void
+
+    .line 21
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
+.method private declared-synchronized b()V
+    .locals 2
+
+    .prologue
+    .line 18
+    monitor-enter p0
+
+    :try_start_0
+    sget-boolean v0, Lcom/whatsapp/App;->aw:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/whatsapp/App;->aD:Z
+
+    if-eqz v0, :cond_1
+
+    .line 5
+    :cond_0
+    const/4 v0, 0x0
+
+    sput-boolean v0, Lcom/whatsapp/App;->aw:Z
+
+    .line 26
+    const/4 v0, 0x0
+
+    sput-boolean v0, Lcom/whatsapp/App;->aD:Z
+
+    .line 11
+    sget-object v0, Lcom/whatsapp/ExternalMediaManager;->z:[Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    aget-object v0, v0, v1
+
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    .line 12
+    invoke-static {p0}, Lcom/whatsapp/App;->n(Landroid/content/Context;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 14
+    :cond_1
     monitor-exit p0
 
     return-void
@@ -265,110 +323,54 @@
     throw v0
 .end method
 
-.method private declared-synchronized b()V
-    .locals 2
-
-    .prologue
-    .line 24
-    monitor-enter p0
-
-    :try_start_0
-    sget-boolean v0, Lcom/whatsapp/App;->u:Z
-
-    if-nez v0, :cond_0
-
-    sget-boolean v0, Lcom/whatsapp/App;->k:Z
-
-    if-eqz v0, :cond_1
-
-    .line 1
-    :cond_0
-    const/4 v0, 0x0
-
-    sput-boolean v0, Lcom/whatsapp/App;->u:Z
-
-    .line 19
-    const/4 v0, 0x0
-
-    sput-boolean v0, Lcom/whatsapp/App;->k:Z
-
-    .line 2
-    sget-object v0, Lcom/whatsapp/ExternalMediaManager;->z:[Ljava/lang/String;
-
-    const/4 v1, 0x2
-
-    aget-object v0, v0, v1
-
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-
-    .line 9
-    invoke-static {p0}, Lcom/whatsapp/App;->t(Landroid/content/Context;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 12
-    :cond_1
-    monitor-exit p0
-
-    return-void
-
-    .line 24
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
 .method private declared-synchronized c()V
     .locals 2
 
     .prologue
-    .line 17
+    .line 3
     monitor-enter p0
 
     :try_start_0
-    sget-boolean v0, Lcom/whatsapp/App;->u:Z
+    sget-boolean v0, Lcom/whatsapp/App;->aw:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/whatsapp/App;->k:Z
+    sget-boolean v0, Lcom/whatsapp/App;->aD:Z
 
     if-nez v0, :cond_1
 
-    .line 23
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/whatsapp/App;->u:Z
+    sput-boolean v0, Lcom/whatsapp/App;->aw:Z
 
-    .line 25
+    .line 6
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/whatsapp/App;->k:Z
+    sput-boolean v0, Lcom/whatsapp/App;->aD:Z
 
-    .line 22
+    .line 9
     sget-object v0, Lcom/whatsapp/ExternalMediaManager;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x4
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 5
-    invoke-static {p0}, Lcom/whatsapp/App;->t(Landroid/content/Context;)V
+    .line 4
+    invoke-static {p0}, Lcom/whatsapp/App;->n(Landroid/content/Context;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 14
+    .line 24
     :cond_1
     monitor-exit p0
 
     return-void
 
-    .line 17
+    .line 3
     :catchall_0
     move-exception v0
 
@@ -383,27 +385,29 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 28
     const/4 v0, 0x0
 
     return-object v0
 .end method
 
 .method public onStartCommand(Landroid/content/Intent;II)I
-    .locals 4
+    .locals 5
 
     .prologue
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    const/4 v4, 0x2
 
-    .line 20
+    sget v0, Lcom/whatsapp/App;->h:I
+
+    .line 22
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 27
+    .line 13
     sget-object v2, Lcom/whatsapp/ExternalMediaManager;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x3
+    const/4 v3, 0x1
 
     aget-object v2, v2, v3
 
@@ -413,21 +417,19 @@
 
     if-eqz v2, :cond_0
 
-    .line 29
+    .line 16
     invoke-direct {p0}, Lcom/whatsapp/ExternalMediaManager;->b()V
 
-    .line 3
-    invoke-static {}, Lcom/whatsapp/util/bo;->b()V
+    .line 25
+    invoke-static {}, Lcom/whatsapp/util/ac;->a()V
 
     if-eqz v0, :cond_2
 
-    .line 8
+    .line 27
     :cond_0
     sget-object v2, Lcom/whatsapp/ExternalMediaManager;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x4
-
-    aget-object v2, v2, v3
+    aget-object v2, v2, v4
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -435,21 +437,19 @@
 
     if-eqz v1, :cond_1
 
-    .line 11
+    .line 8
     invoke-direct {p0}, Lcom/whatsapp/ExternalMediaManager;->c()V
 
-    .line 16
-    invoke-static {}, Lcom/whatsapp/util/bo;->b()V
+    .line 19
+    invoke-static {}, Lcom/whatsapp/util/ac;->a()V
 
     if-eqz v0, :cond_2
 
-    .line 4
+    .line 17
     :cond_1
     invoke-direct {p0}, Lcom/whatsapp/ExternalMediaManager;->a()V
 
-    .line 28
+    .line 15
     :cond_2
-    const/4 v0, 0x2
-
-    return v0
+    return v4
 .end method

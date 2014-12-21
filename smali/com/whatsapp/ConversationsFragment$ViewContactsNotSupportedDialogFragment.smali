@@ -29,24 +29,24 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0e0463
+    const v1, 0x7f0e0473
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0e02aa
+    const v1, 0x7f0e02b7
 
-    new-instance v2, Lcom/whatsapp/a0m;
+    new-instance v2, Lcom/whatsapp/hj;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/a0m;-><init>(Lcom/whatsapp/ConversationsFragment$ViewContactsNotSupportedDialogFragment;)V
+    invoke-direct {v2, p0}, Lcom/whatsapp/hj;-><init>(Lcom/whatsapp/ConversationsFragment$ViewContactsNotSupportedDialogFragment;)V
 
-    .line 1
+    .line 4
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 4
+    .line 1
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0

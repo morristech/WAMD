@@ -168,10 +168,6 @@ restantes"</item>
         <item quantity="other">%d restantes</item>
         <item quantity="one">%d restante</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Você está pronto para continuar. Nós restauramos %d, mensagens.</item>
-        <item quantity="one">Você está pronto para continuar. Nós restauramos %d, mensagem.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Enviando %1$d vídeos para %2$s</item>
         <item quantity="one">Enviando %1$d vídeo para %2$s</item>

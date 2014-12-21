@@ -12,15 +12,15 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 8
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/view/ActionProvider;-><init>(Landroid/content/Context;)V
 
-    .line 2
+    .line 7
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/ActionProviderWrapper;->mProvider:Lcom/actionbarsherlock/view/ActionProvider;
 
-    .line 7
+    .line 5
     return-void
 .end method
 
@@ -30,7 +30,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 2
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/ActionProviderWrapper;->mProvider:Lcom/actionbarsherlock/view/ActionProvider;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/view/ActionProvider;->hasSubMenu()Z
@@ -44,7 +44,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 6
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/ActionProviderWrapper;->mProvider:Lcom/actionbarsherlock/view/ActionProvider;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/view/ActionProvider;->onCreateActionView()Landroid/view/View;
@@ -58,7 +58,7 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 3
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/ActionProviderWrapper;->mProvider:Lcom/actionbarsherlock/view/ActionProvider;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/view/ActionProvider;->onPerformDefaultAction()Z
@@ -72,7 +72,7 @@
     .locals 2
 
     .prologue
-    .line 9
+    .line 4
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/ActionProviderWrapper;->mProvider:Lcom/actionbarsherlock/view/ActionProvider;
 
     new-instance v1, Lcom/actionbarsherlock/internal/view/menu/SubMenuWrapper;
@@ -81,7 +81,7 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/view/ActionProvider;->onPrepareSubMenu(Lcom/actionbarsherlock/view/SubMenu;)V
 
-    .line 8
+    .line 1
     return-void
 .end method
 
@@ -89,7 +89,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 9
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/ActionProviderWrapper;->mProvider:Lcom/actionbarsherlock/view/ActionProvider;
 
     return-object v0

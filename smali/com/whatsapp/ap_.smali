@@ -3,113 +3,24 @@
 .source "ap_.java"
 
 # interfaces
-.implements Lcom/whatsapp/protocol/f;
-
-
-# static fields
-.field private static final z:Ljava/lang/String;
+.implements Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field final a:Lcom/whatsapp/MediaView$MediaViewPager;
 
-.field final b:Lcom/whatsapp/aam;
+.field final b:Lcom/whatsapp/MediaView;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    const-string v0, "\u0004ct\"M%d)4U4>40Q"
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    move v3, v2
-
-    move v2, v1
-
-    move-object v1, v0
-
-    :goto_0
-    if-gt v2, v3, :cond_0
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/ap_;->z:Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v4, v1, v3
-
-    rem-int/lit8 v0, v3, 0x5
-
-    packed-switch v0, :pswitch_data_0
-
-    const/16 v0, 0x25
-
-    :goto_1
-    xor-int/2addr v0, v4
-
-    int-to-char v0, v0
-
-    aput-char v0, v1, v3
-
-    add-int/lit8 v0, v3, 0x1
-
-    move v3, v0
-
-    goto :goto_0
-
-    :pswitch_0
-    const/16 v0, 0x44
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v0, 0x10
-
-    goto :goto_1
-
-    :pswitch_2
-    const/16 v0, 0x5a
-
-    goto :goto_1
-
-    :pswitch_3
-    const/16 v0, 0x55
-
-    goto :goto_1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-.end method
-
-.method constructor <init>(Lcom/whatsapp/aam;Ljava/lang/String;)V
+.method constructor <init>(Lcom/whatsapp/MediaView$MediaViewPager;Lcom/whatsapp/MediaView;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/ap_;->b:Lcom/whatsapp/aam;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/ap_;->a:Lcom/whatsapp/MediaView$MediaViewPager;
 
-    iput-object p2, p0, Lcom/whatsapp/ap_;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/whatsapp/ap_;->b:Lcom/whatsapp/MediaView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -118,40 +29,33 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/String;)V
-    .locals 2
+.method public onPageScrollStateChanged(I)V
+    .locals 0
 
     .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/ap_;->a:Ljava/lang/String;
-
-    sput-object v0, Lcom/whatsapp/App;->x:Ljava/lang/String;
-
     .line 3
-    new-instance v0, Ljava/lang/StringBuilder;
+    return-void
+.end method
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+.method public onPageScrolled(IFI)V
+    .locals 0
 
-    invoke-static {}, Lcom/whatsapp/App;->y()Ljava/lang/String;
+    .prologue
+    .line 5
+    return-void
+.end method
 
-    move-result-object v1
+.method public onPageSelected(I)V
+    .locals 1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .prologue
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/ap_;->a:Lcom/whatsapp/MediaView$MediaViewPager;
 
-    move-result-object v0
+    iget-object v0, v0, Lcom/whatsapp/MediaView$MediaViewPager;->g:Lcom/whatsapp/MediaView;
 
-    sget-object v1, Lcom/whatsapp/ap_;->z:Ljava/lang/String;
+    invoke-static {v0, p1}, Lcom/whatsapp/MediaView;->e(Lcom/whatsapp/MediaView;I)V
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/whatsapp/App;->l(Ljava/lang/String;)V
-
-    .line 4
+    .line 1
     return-void
 .end method

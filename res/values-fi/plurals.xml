@@ -168,10 +168,6 @@ jäljellä"</item>
         <item quantity="other">%d jäljellä</item>
         <item quantity="one">%d jäljellä</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Valmista tuli. Palautimme %,d viestiä.</item>
-        <item quantity="one">Valmista tuli. Palautimme %,d viestin.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Lähetetään %1$d videota henkilölle %2$s</item>
         <item quantity="one">Lähetetään %1$d video henkilölle %2$s</item>

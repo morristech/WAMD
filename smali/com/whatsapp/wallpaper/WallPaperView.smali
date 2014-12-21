@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field private a:Z
+.field private a:Landroid/graphics/Bitmap;
 
-.field private b:Landroid/graphics/Bitmap;
+.field private b:Landroid/graphics/Rect;
 
-.field private c:Landroid/graphics/Rect;
+.field private c:Z
 
-.field private d:Lcom/whatsapp/wallpaper/q;
+.field private d:Lcom/whatsapp/wallpaper/f;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     new-array v5, v0, [Ljava/lang/String;
 
-    const-string v4, "?\u0016jnN:I"
+    const-string v4, "AoZ"
 
     const/4 v0, -0x1
 
@@ -69,7 +69,7 @@
 
     aput-object v4, v6, v5
 
-    const-string v0, "m\u000f."
+    const-string v0, "AoZ"
 
     move-object v4, v0
 
@@ -84,7 +84,7 @@
     :pswitch_0
     aput-object v4, v6, v5
 
-    const-string v0, "m\u000f."
+    const-string v0, "\u0013v\u001e+d\u0016)"
 
     move-object v4, v0
 
@@ -101,7 +101,7 @@
 
     const/4 v4, 0x3
 
-    const-string v0, "?\u0016jnN:SmtN#\u0014kx\u0015"
+    const-string v0, "\u0013v\u001e+d\u00163\u00191d\u000ft\u001f=?"
 
     move v5, v4
 
@@ -127,7 +127,7 @@
 
     packed-switch v4, :pswitch_data_1
 
-    const/16 v4, 0x2f
+    const/4 v4, 0x5
 
     :goto_2
     xor-int/2addr v4, v11
@@ -143,24 +143,26 @@
     goto :goto_1
 
     :pswitch_3
-    const/16 v4, 0x4d
+    const/16 v4, 0x61
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v4, 0x73
+    const/16 v4, 0x13
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v4, 0xe
+    const/16 v4, 0x7a
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v4, 0x1c
+    const/16 v4, 0x59
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -182,15 +184,15 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 33
     invoke-direct {p0, p1, p2}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 22
+    .line 11
     sget-object v0, Landroid/widget/ImageView$ScaleType;->MATRIX:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/wallpaper/WallPaperView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 2
+    .line 42
     return-void
 .end method
 
@@ -202,32 +204,32 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 27
+    .line 8
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->a:Z
+    iput-boolean v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->c:Z
 
-    .line 7
+    .line 37
     invoke-virtual {p0, v1}, Lcom/whatsapp/wallpaper/WallPaperView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 16
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->b:Landroid/graphics/Bitmap;
+    .line 38
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->a:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_0
 
-    .line 10
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->b:Landroid/graphics/Bitmap;
+    .line 17
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->a:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 3
+    .line 12
     :cond_0
-    iput-object v1, p0, Lcom/whatsapp/wallpaper/WallPaperView;->b:Landroid/graphics/Bitmap;
+    iput-object v1, p0, Lcom/whatsapp/wallpaper/WallPaperView;->a:Landroid/graphics/Bitmap;
 
-    .line 31
+    .line 4
     invoke-virtual {p0}, Lcom/whatsapp/wallpaper/WallPaperView;->invalidate()V
 
-    .line 18
+    .line 25
     return-void
 .end method
 
@@ -244,99 +246,24 @@
 
     move-result v3
 
-    .line 24
+    .line 10
     invoke-virtual {p0}, Lcom/whatsapp/wallpaper/WallPaperView;->getMeasuredHeight()I
 
     move-result v4
 
-    .line 13
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->c:Landroid/graphics/Rect;
+    .line 16
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->b:Landroid/graphics/Rect;
 
     if-nez v0, :cond_6
 
-    .line 44
+    .line 28
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v5, Lcom/whatsapp/wallpaper/WallPaperView;->z:[Ljava/lang/String;
-
-    aget-object v5, v5, v2
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     sget-object v5, Lcom/whatsapp/wallpaper/WallPaperView;->z:[Ljava/lang/String;
 
     const/4 v6, 0x2
-
-    aget-object v5, v5, v6
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-
-    .line 6
-    new-instance v0, Landroid/graphics/Rect;
-
-    invoke-direct {v0, v2, v2, v3, v4}, Landroid/graphics/Rect;-><init>(IIII)V
-
-    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->c:Landroid/graphics/Rect;
-
-    .line 33
-    sget-boolean v0, Lcom/whatsapp/wallpaper/ImageViewTouchBase;->b:Z
-
-    if-eqz v0, :cond_1
-
-    move v0, v1
-
-    .line 38
-    :goto_0
-    iget-object v5, p0, Lcom/whatsapp/wallpaper/WallPaperView;->c:Landroid/graphics/Rect;
-
-    invoke-virtual {v5}, Landroid/graphics/Rect;->width()I
-
-    move-result v5
-
-    if-ne v5, v3, :cond_0
-
-    iget-object v5, p0, Lcom/whatsapp/wallpaper/WallPaperView;->c:Landroid/graphics/Rect;
-
-    invoke-virtual {v5}, Landroid/graphics/Rect;->height()I
-
-    move-result v5
-
-    if-eq v5, v4, :cond_5
-
-    .line 25
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->c:Landroid/graphics/Rect;
-
-    invoke-virtual {v0, v2, v2, v3, v4}, Landroid/graphics/Rect;->set(IIII)V
-
-    .line 17
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v5, Lcom/whatsapp/wallpaper/WallPaperView;->z:[Ljava/lang/String;
-
-    const/4 v6, 0x3
 
     aget-object v5, v5, v6
 
@@ -366,15 +293,90 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 32
+    .line 22
+    new-instance v0, Landroid/graphics/Rect;
+
+    invoke-direct {v0, v2, v2, v3, v4}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->b:Landroid/graphics/Rect;
+
+    .line 23
+    sget-boolean v0, Lcom/whatsapp/wallpaper/ImageViewTouchBase;->m:Z
+
+    if-eqz v0, :cond_1
+
+    move v0, v1
+
+    .line 9
+    :goto_0
+    iget-object v5, p0, Lcom/whatsapp/wallpaper/WallPaperView;->b:Landroid/graphics/Rect;
+
+    invoke-virtual {v5}, Landroid/graphics/Rect;->width()I
+
+    move-result v5
+
+    if-ne v5, v3, :cond_0
+
+    iget-object v5, p0, Lcom/whatsapp/wallpaper/WallPaperView;->b:Landroid/graphics/Rect;
+
+    invoke-virtual {v5}, Landroid/graphics/Rect;->height()I
+
+    move-result v5
+
+    if-eq v5, v4, :cond_5
+
+    .line 24
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->b:Landroid/graphics/Rect;
+
+    invoke-virtual {v0, v2, v2, v3, v4}, Landroid/graphics/Rect;->set(IIII)V
+
+    .line 14
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v5, Lcom/whatsapp/wallpaper/WallPaperView;->z:[Ljava/lang/String;
+
+    const/4 v6, 0x3
+
+    aget-object v5, v5, v6
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    sget-object v5, Lcom/whatsapp/wallpaper/WallPaperView;->z:[Ljava/lang/String;
+
+    aget-object v5, v5, v2
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    .line 35
     :cond_1
     :goto_1
     invoke-super {p0, p1}, Landroid/widget/ImageView;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 41
+    .line 6
     if-nez v1, :cond_2
 
-    iget-boolean v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->a:Z
+    iget-boolean v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->c:Z
 
     if-eqz v0, :cond_4
 
@@ -383,26 +385,26 @@
 
     if-lez v3, :cond_4
 
-    .line 35
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->d:Lcom/whatsapp/wallpaper/q;
+    .line 21
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->d:Lcom/whatsapp/wallpaper/f;
 
     if-eqz v0, :cond_3
 
-    .line 15
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->d:Lcom/whatsapp/wallpaper/q;
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->d:Lcom/whatsapp/wallpaper/f;
 
-    invoke-interface {v0, v3, v4}, Lcom/whatsapp/wallpaper/q;->a(II)V
+    invoke-interface {v0, v3, v4}, Lcom/whatsapp/wallpaper/f;->a(II)V
 
-    .line 20
+    .line 3
     :cond_3
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->b:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->a:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_4
 
-    .line 39
-    iput-boolean v2, p0, Lcom/whatsapp/wallpaper/WallPaperView;->a:Z
+    .line 2
+    iput-boolean v2, p0, Lcom/whatsapp/wallpaper/WallPaperView;->c:Z
 
-    .line 37
+    .line 13
     :cond_4
     return-void
 
@@ -421,26 +423,26 @@
     .locals 1
 
     .prologue
-    .line 36
+    .line 41
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->a:Z
+    iput-boolean v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->c:Z
 
-    .line 30
+    .line 1
     check-cast p1, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {p1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->b:Landroid/graphics/Bitmap;
+    iput-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->a:Landroid/graphics/Bitmap;
 
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->b:Landroid/graphics/Bitmap;
+    .line 36
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/WallPaperView;->a:Landroid/graphics/Bitmap;
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/wallpaper/WallPaperView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 34
+    .line 18
     invoke-virtual {p0}, Lcom/whatsapp/wallpaper/WallPaperView;->invalidate()V
 
     .line 26
@@ -453,20 +455,20 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 23
+    .line 31
     invoke-virtual {p0}, Lcom/whatsapp/wallpaper/WallPaperView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 12
+    .line 34
     if-eqz v0, :cond_0
 
-    .line 9
+    .line 20
     invoke-virtual {p0}, Lcom/whatsapp/wallpaper/WallPaperView;->getImageMatrix()Landroid/graphics/Matrix;
 
     move-result-object v1
 
-    .line 28
+    .line 44
     sub-int v2, p3, p1
 
     int-to-float v2, v2
@@ -479,7 +481,7 @@
 
     div-float/2addr v2, v3
 
-    .line 8
+    .line 19
     sub-int v3, p4, p2
 
     int-to-float v3, v3
@@ -492,18 +494,18 @@
 
     div-float v0, v3, v0
 
-    .line 40
+    .line 29
     invoke-static {v2, v0}, Ljava/lang/Math;->max(FF)F
 
     move-result v0
 
-    .line 5
+    .line 32
     invoke-virtual {v1, v0, v0, v4, v4}, Landroid/graphics/Matrix;->setScale(FFFF)V
 
-    .line 14
+    .line 30
     invoke-virtual {p0, v1}, Lcom/whatsapp/wallpaper/WallPaperView;->setImageMatrix(Landroid/graphics/Matrix;)V
 
-    .line 21
+    .line 15
     :cond_0
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/ImageView;->setFrame(IIII)Z
 
@@ -512,13 +514,13 @@
     return v0
 .end method
 
-.method public setOnSizeChangedListener(Lcom/whatsapp/wallpaper/q;)V
+.method public setOnSizeChangedListener(Lcom/whatsapp/wallpaper/f;)V
     .locals 0
 
     .prologue
-    .line 19
-    iput-object p1, p0, Lcom/whatsapp/wallpaper/WallPaperView;->d:Lcom/whatsapp/wallpaper/q;
+    .line 7
+    iput-object p1, p0, Lcom/whatsapp/wallpaper/WallPaperView;->d:Lcom/whatsapp/wallpaper/f;
 
-    .line 29
+    .line 39
     return-void
 .end method

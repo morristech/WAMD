@@ -11,66 +11,64 @@
 
 
 # instance fields
-.field A:Landroid/view/SurfaceHolder$Callback;
+.field private A:Landroid/net/Uri;
 
-.field a:Landroid/media/MediaPlayer$OnPreparedListener;
+.field private a:Landroid/media/MediaPlayer$OnErrorListener;
 
-.field private b:Z
+.field private b:I
 
-.field private c:Landroid/net/Uri;
+.field private c:I
 
-.field private d:I
+.field private d:Landroid/media/MediaPlayer$OnInfoListener;
 
 .field private e:I
 
-.field private f:I
+.field private f:Z
 
-.field private g:Landroid/view/SurfaceHolder;
+.field private g:I
 
-.field private h:Landroid/media/MediaPlayer$OnErrorListener;
+.field private h:Z
 
-.field private i:Landroid/media/MediaPlayer$OnCompletionListener;
+.field private i:Ljava/lang/String;
 
-.field private j:I
+.field private j:Ljava/util/Map;
 
-.field private k:Landroid/media/MediaPlayer$OnErrorListener;
+.field private k:Landroid/media/MediaPlayer$OnBufferingUpdateListener;
 
-.field private l:Z
+.field l:Landroid/view/SurfaceHolder$Callback;
 
-.field private m:I
+.field private m:Landroid/media/MediaPlayer$OnPreparedListener;
 
-.field private n:I
+.field n:Landroid/media/MediaPlayer$OnPreparedListener;
 
-.field private o:I
+.field private o:Landroid/media/MediaPlayer$OnErrorListener;
 
-.field private p:Ljava/util/Map;
+.field private p:Landroid/view/SurfaceHolder;
 
-.field private q:I
+.field private q:Landroid/media/MediaPlayer;
 
-.field private r:Landroid/media/MediaPlayer$OnPreparedListener;
+.field private r:Landroid/media/MediaPlayer$OnCompletionListener;
 
-.field private s:Ljava/lang/String;
+.field private s:I
 
-.field t:Landroid/media/MediaPlayer$OnVideoSizeChangedListener;
+.field private t:I
 
-.field private u:Landroid/media/MediaPlayer$OnInfoListener;
+.field private u:I
 
-.field private v:Landroid/media/MediaPlayer;
+.field private v:Z
 
-.field private w:I
+.field private w:Landroid/media/MediaPlayer$OnCompletionListener;
 
-.field private x:Landroid/media/MediaPlayer$OnCompletionListener;
+.field x:Landroid/media/MediaPlayer$OnVideoSizeChangedListener;
 
-.field private y:Z
+.field private y:I
 
-.field private z:Landroid/media/MediaPlayer$OnBufferingUpdateListener;
+.field private z:I
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 14
-
-    const/4 v5, 0x4
 
     const/4 v4, 0x3
 
@@ -78,13 +76,15 @@
 
     const/4 v2, 0x1
 
+    const/4 v5, 0x5
+
     const/4 v1, 0x0
 
     const/4 v0, 0x7
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "P)+Tc"
+    const-string v6, "SBK\r9SBJ\u001f"
 
     const/4 v0, -0x1
 
@@ -122,7 +122,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "C\'3\tgN,,HoDf3RuI+pJsS!=TcR>7DcC\'3JgN,"
+    const-string v0, "uJZ\u001b3"
 
     move-object v6, v0
 
@@ -137,7 +137,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "C\'3JgN,"
+    const-string v0, "fDB\u00057kO"
 
     move-object v6, v0
 
@@ -152,7 +152,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "V!:BiV!;P)\u0000\u001d0FdL-~Si\u0000\'.Bh\u0000+1IrE&*\u001d&"
+    const-string v0, "sBK\r9sBJ\u001fy%~A\t4iN\u000f\u001c9%D_\r8%H@\u0006\"`E[Rv"
 
     move-object v6, v0
 
@@ -167,13 +167,15 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "V!:BiV!;P)\u0000\u001d0FdL-~Si\u0000\'.Bh\u0000+1IrE&*\u001d&"
+    const/4 v6, 0x4
 
-    move-object v6, v0
+    const-string v0, "sBK\r9sBJ\u001fy%~A\t4iN\u000f\u001c9%D_\r8%H@\u0006\"`E[Rv"
 
-    move v7, v5
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
 
     move v0, v4
 
@@ -182,9 +184,22 @@
     :pswitch_3
     aput-object v6, v8, v7
 
-    const/4 v6, 0x5
+    const-string v6, "fDBF7kO]\u0007?a\u0005B\u001d%lH\u0001\u0005#vBL\u001b3w]F\u000b3fDB\u00057kO"
 
-    const-string v0, "v!:Biv!;P"
+    const/4 v0, 0x4
+
+    move v7, v5
+
+    move-object v8, v9
+
+    goto :goto_0
+
+    :pswitch_4
+    aput-object v6, v8, v7
+
+    const/4 v6, 0x6
+
+    const-string v0, "SBK\r9SBJ\u001f"
 
     move v7, v6
 
@@ -193,19 +208,6 @@
     move-object v6, v0
 
     move v0, v5
-
-    goto :goto_0
-
-    :pswitch_4
-    aput-object v6, v8, v7
-
-    const/4 v7, 0x6
-
-    const-string v6, "v!:Biv!;P"
-
-    const/4 v0, 0x5
-
-    move-object v8, v9
 
     goto :goto_0
 
@@ -223,7 +225,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/4 v6, 0x6
+    const/16 v6, 0x56
 
     :goto_2
     xor-int/2addr v6, v13
@@ -239,26 +241,24 @@
     goto :goto_1
 
     :pswitch_6
-    const/16 v6, 0x20
+    move v6, v5
 
     goto :goto_2
 
     :pswitch_7
-    const/16 v6, 0x48
+    const/16 v6, 0x2b
 
     goto :goto_2
 
     :pswitch_8
-    const/16 v6, 0x5e
+    const/16 v6, 0x2f
 
     goto :goto_2
 
     :pswitch_9
-    const/16 v6, 0x27
+    const/16 v6, 0x68
 
     goto :goto_2
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -280,83 +280,81 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;)V
-    .locals 4
+    .locals 3
 
     .prologue
-    const/4 v3, 0x0
-
     const/4 v2, 0x0
 
-    .line 99
+    const/4 v1, 0x0
+
+    .line 107
     invoke-direct {p0, p1}, Landroid/view/SurfaceView;-><init>(Landroid/content/Context;)V
 
-    .line 101
+    .line 134
     sget-object v0, Lcom/whatsapp/VideoView;->B:[Ljava/lang/String;
-
-    const/4 v1, 0x6
 
     aget-object v0, v0, v1
 
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->s:Ljava/lang/String;
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->i:Ljava/lang/String;
+
+    .line 15
+    iput v1, p0, Lcom/whatsapp/VideoView;->z:I
+
+    .line 16
+    iput v1, p0, Lcom/whatsapp/VideoView;->y:I
+
+    .line 21
+    iput-object v2, p0, Lcom/whatsapp/VideoView;->p:Landroid/view/SurfaceHolder;
+
+    .line 164
+    iput-object v2, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
+
+    .line 188
+    new-instance v0, Lcom/whatsapp/ug;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/ug;-><init>(Lcom/whatsapp/VideoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->x:Landroid/media/MediaPlayer$OnVideoSizeChangedListener;
+
+    .line 94
+    new-instance v0, Lcom/whatsapp/w0;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/w0;-><init>(Lcom/whatsapp/VideoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->n:Landroid/media/MediaPlayer$OnPreparedListener;
+
+    .line 159
+    new-instance v0, Lcom/whatsapp/ot;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/ot;-><init>(Lcom/whatsapp/VideoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->w:Landroid/media/MediaPlayer$OnCompletionListener;
+
+    .line 79
+    new-instance v0, Lcom/whatsapp/atp;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/atp;-><init>(Lcom/whatsapp/VideoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->a:Landroid/media/MediaPlayer$OnErrorListener;
+
+    .line 84
+    new-instance v0, Lcom/whatsapp/a05;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/a05;-><init>(Lcom/whatsapp/VideoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->k:Landroid/media/MediaPlayer$OnBufferingUpdateListener;
 
     .line 8
-    iput v2, p0, Lcom/whatsapp/VideoView;->o:I
+    new-instance v0, Lcom/whatsapp/afr;
 
-    .line 177
-    iput v2, p0, Lcom/whatsapp/VideoView;->f:I
+    invoke-direct {v0, p0}, Lcom/whatsapp/afr;-><init>(Lcom/whatsapp/VideoView;)V
 
-    .line 129
-    iput-object v3, p0, Lcom/whatsapp/VideoView;->g:Landroid/view/SurfaceHolder;
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->l:Landroid/view/SurfaceHolder$Callback;
 
-    .line 200
-    iput-object v3, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
-
-    .line 91
-    new-instance v0, Lcom/whatsapp/b_;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/b_;-><init>(Lcom/whatsapp/VideoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->t:Landroid/media/MediaPlayer$OnVideoSizeChangedListener;
-
-    .line 162
-    new-instance v0, Lcom/whatsapp/ia;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/ia;-><init>(Lcom/whatsapp/VideoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->a:Landroid/media/MediaPlayer$OnPreparedListener;
-
-    .line 4
-    new-instance v0, Lcom/whatsapp/vh;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/vh;-><init>(Lcom/whatsapp/VideoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->i:Landroid/media/MediaPlayer$OnCompletionListener;
-
-    .line 10
-    new-instance v0, Lcom/whatsapp/fu;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/fu;-><init>(Lcom/whatsapp/VideoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->k:Landroid/media/MediaPlayer$OnErrorListener;
-
-    .line 25
-    new-instance v0, Lcom/whatsapp/rr;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/rr;-><init>(Lcom/whatsapp/VideoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->z:Landroid/media/MediaPlayer$OnBufferingUpdateListener;
-
-    .line 151
-    new-instance v0, Lcom/whatsapp/oc;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/oc;-><init>(Lcom/whatsapp/VideoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->A:Landroid/view/SurfaceHolder$Callback;
-
-    .line 59
+    .line 137
     invoke-direct {p0}, Lcom/whatsapp/VideoView;->b()V
 
-    .line 22
+    .line 83
     return-void
 .end method
 
@@ -364,15 +362,15 @@
     .locals 1
 
     .prologue
-    .line 125
+    .line 47
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, p2, v0}, Lcom/whatsapp/VideoView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 11
+    .line 36
     invoke-direct {p0}, Lcom/whatsapp/VideoView;->b()V
 
-    .line 75
+    .line 102
     return-void
 .end method
 
@@ -384,105 +382,105 @@
 
     const/4 v2, 0x0
 
-    .line 174
+    .line 63
     invoke-direct {p0, p1, p2, p3}, Landroid/view/SurfaceView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 42
+    .line 62
     sget-object v0, Lcom/whatsapp/VideoView;->B:[Ljava/lang/String;
 
-    const/4 v1, 0x5
+    const/4 v1, 0x6
 
     aget-object v0, v0, v1
 
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->s:Ljava/lang/String;
-
-    .line 27
-    iput v2, p0, Lcom/whatsapp/VideoView;->o:I
-
-    .line 2
-    iput v2, p0, Lcom/whatsapp/VideoView;->f:I
-
-    .line 178
-    iput-object v3, p0, Lcom/whatsapp/VideoView;->g:Landroid/view/SurfaceHolder;
-
-    .line 12
-    iput-object v3, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
-
-    .line 112
-    new-instance v0, Lcom/whatsapp/b_;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/b_;-><init>(Lcom/whatsapp/VideoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->t:Landroid/media/MediaPlayer$OnVideoSizeChangedListener;
-
-    .line 51
-    new-instance v0, Lcom/whatsapp/ia;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/ia;-><init>(Lcom/whatsapp/VideoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->a:Landroid/media/MediaPlayer$OnPreparedListener;
-
-    .line 64
-    new-instance v0, Lcom/whatsapp/vh;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/vh;-><init>(Lcom/whatsapp/VideoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->i:Landroid/media/MediaPlayer$OnCompletionListener;
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->i:Ljava/lang/String;
 
     .line 29
-    new-instance v0, Lcom/whatsapp/fu;
-
-    invoke-direct {v0, p0}, Lcom/whatsapp/fu;-><init>(Lcom/whatsapp/VideoView;)V
-
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->k:Landroid/media/MediaPlayer$OnErrorListener;
+    iput v2, p0, Lcom/whatsapp/VideoView;->z:I
 
     .line 110
-    new-instance v0, Lcom/whatsapp/rr;
+    iput v2, p0, Lcom/whatsapp/VideoView;->y:I
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/rr;-><init>(Lcom/whatsapp/VideoView;)V
+    .line 4
+    iput-object v3, p0, Lcom/whatsapp/VideoView;->p:Landroid/view/SurfaceHolder;
 
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->z:Landroid/media/MediaPlayer$OnBufferingUpdateListener;
+    .line 37
+    iput-object v3, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    .line 190
-    new-instance v0, Lcom/whatsapp/oc;
+    .line 173
+    new-instance v0, Lcom/whatsapp/ug;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/oc;-><init>(Lcom/whatsapp/VideoView;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/ug;-><init>(Lcom/whatsapp/VideoView;)V
 
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->A:Landroid/view/SurfaceHolder$Callback;
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->x:Landroid/media/MediaPlayer$OnVideoSizeChangedListener;
 
-    .line 159
+    .line 147
+    new-instance v0, Lcom/whatsapp/w0;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/w0;-><init>(Lcom/whatsapp/VideoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->n:Landroid/media/MediaPlayer$OnPreparedListener;
+
+    .line 44
+    new-instance v0, Lcom/whatsapp/ot;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/ot;-><init>(Lcom/whatsapp/VideoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->w:Landroid/media/MediaPlayer$OnCompletionListener;
+
+    .line 196
+    new-instance v0, Lcom/whatsapp/atp;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/atp;-><init>(Lcom/whatsapp/VideoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->a:Landroid/media/MediaPlayer$OnErrorListener;
+
+    .line 67
+    new-instance v0, Lcom/whatsapp/a05;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/a05;-><init>(Lcom/whatsapp/VideoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->k:Landroid/media/MediaPlayer$OnBufferingUpdateListener;
+
+    .line 140
+    new-instance v0, Lcom/whatsapp/afr;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/afr;-><init>(Lcom/whatsapp/VideoView;)V
+
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->l:Landroid/view/SurfaceHolder$Callback;
+
+    .line 43
     invoke-direct {p0}, Lcom/whatsapp/VideoView;->b()V
 
-    .line 69
+    .line 151
     return-void
+.end method
+
+.method static a(Lcom/whatsapp/VideoView;)I
+    .locals 1
+
+    .prologue
+    .line 177
+    iget v0, p0, Lcom/whatsapp/VideoView;->y:I
+
+    return v0
 .end method
 
 .method static a(Lcom/whatsapp/VideoView;I)I
     .locals 0
 
     .prologue
-    .line 14
-    iput p1, p0, Lcom/whatsapp/VideoView;->f:I
+    .line 113
+    iput p1, p0, Lcom/whatsapp/VideoView;->e:I
 
     return p1
-.end method
-
-.method static a(Lcom/whatsapp/VideoView;)Landroid/media/MediaPlayer;
-    .locals 1
-
-    .prologue
-    .line 118
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
-
-    return-object v0
 .end method
 
 .method static a(Lcom/whatsapp/VideoView;Landroid/view/SurfaceHolder;)Landroid/view/SurfaceHolder;
     .locals 0
 
     .prologue
-    .line 186
-    iput-object p1, p0, Lcom/whatsapp/VideoView;->g:Landroid/view/SurfaceHolder;
+    .line 30
+    iput-object p1, p0, Lcom/whatsapp/VideoView;->p:Landroid/view/SurfaceHolder;
 
     return-object p1
 .end method
@@ -493,30 +491,30 @@
     .prologue
     const/4 v7, 0x3
 
-    const/4 v6, -0x1
+    const/4 v6, 0x0
 
-    const/4 v5, 0x1
+    const/4 v5, -0x1
 
-    const/4 v4, 0x0
+    const/4 v4, 0x1
 
-    .line 86
+    .line 28
     :try_start_0
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->c:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->A:Landroid/net/Uri;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->g:Landroid/view/SurfaceHolder;
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->p:Landroid/view/SurfaceHolder;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-nez v0, :cond_1
 
-    .line 142
+    .line 197
     :cond_0
     :goto_0
     return-void
 
-    .line 86
+    .line 28
     :catch_0
     move-exception v0
 
@@ -525,23 +523,25 @@
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 5
+    .line 119
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 24
+    .line 25
     :cond_1
     new-instance v0, Landroid/content/Intent;
 
     sget-object v1, Lcom/whatsapp/VideoView;->B:[Ljava/lang/String;
 
-    aget-object v1, v1, v5
+    const/4 v2, 0x5
+
+    aget-object v1, v1, v2
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 26
+    .line 127
     sget-object v1, Lcom/whatsapp/VideoView;->B:[Ljava/lang/String;
 
     const/4 v2, 0x2
@@ -554,45 +554,45 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 44
+    .line 32
     invoke-virtual {p0}, Lcom/whatsapp/VideoView;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 163
-    invoke-direct {p0, v4}, Lcom/whatsapp/VideoView;->a(Z)V
+    .line 166
+    invoke-direct {p0, v6}, Lcom/whatsapp/VideoView;->a(Z)V
 
-    .line 23
+    .line 74
     :try_start_2
     new-instance v0, Landroid/media/MediaPlayer;
 
     invoke-direct {v0}, Landroid/media/MediaPlayer;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    .line 97
-    iget v0, p0, Lcom/whatsapp/VideoView;->q:I
+    .line 130
+    iget v0, p0, Lcom/whatsapp/VideoView;->b:I
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_5
 
     if-eqz v0, :cond_2
 
-    .line 138
+    .line 146
     :try_start_3
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    iget v1, p0, Lcom/whatsapp/VideoView;->q:I
+    iget v1, p0, Lcom/whatsapp/VideoView;->b:I
 
     invoke-virtual {v0, v1}, Landroid/media/MediaPlayer;->setAudioSessionId(I)V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_3
 
-    .line 141
+    .line 145
     :cond_2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
     :try_end_3
@@ -603,122 +603,122 @@
 
     if-lt v0, v1, :cond_3
 
-    .line 34
+    .line 89
     :try_start_4
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->getAudioSessionId()I
 
     move-result v0
 
-    iput v0, p0, Lcom/whatsapp/VideoView;->q:I
+    iput v0, p0, Lcom/whatsapp/VideoView;->b:I
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_4
     .catch Ljava/lang/IllegalArgumentException; {:try_start_4 .. :try_end_4} :catch_5
 
-    .line 67
+    .line 185
     :cond_3
     :try_start_5
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    iget-object v1, p0, Lcom/whatsapp/VideoView;->a:Landroid/media/MediaPlayer$OnPreparedListener;
+    iget-object v1, p0, Lcom/whatsapp/VideoView;->n:Landroid/media/MediaPlayer$OnPreparedListener;
 
     invoke-virtual {v0, v1}, Landroid/media/MediaPlayer;->setOnPreparedListener(Landroid/media/MediaPlayer$OnPreparedListener;)V
 
-    .line 87
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 49
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    iget-object v1, p0, Lcom/whatsapp/VideoView;->t:Landroid/media/MediaPlayer$OnVideoSizeChangedListener;
+    iget-object v1, p0, Lcom/whatsapp/VideoView;->x:Landroid/media/MediaPlayer$OnVideoSizeChangedListener;
 
     invoke-virtual {v0, v1}, Landroid/media/MediaPlayer;->setOnVideoSizeChangedListener(Landroid/media/MediaPlayer$OnVideoSizeChangedListener;)V
 
-    .line 124
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 97
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    iget-object v1, p0, Lcom/whatsapp/VideoView;->i:Landroid/media/MediaPlayer$OnCompletionListener;
+    iget-object v1, p0, Lcom/whatsapp/VideoView;->w:Landroid/media/MediaPlayer$OnCompletionListener;
 
     invoke-virtual {v0, v1}, Landroid/media/MediaPlayer;->setOnCompletionListener(Landroid/media/MediaPlayer$OnCompletionListener;)V
 
-    .line 30
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 156
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    iget-object v1, p0, Lcom/whatsapp/VideoView;->k:Landroid/media/MediaPlayer$OnErrorListener;
+    iget-object v1, p0, Lcom/whatsapp/VideoView;->a:Landroid/media/MediaPlayer$OnErrorListener;
 
     invoke-virtual {v0, v1}, Landroid/media/MediaPlayer;->setOnErrorListener(Landroid/media/MediaPlayer$OnErrorListener;)V
 
-    .line 89
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 182
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    iget-object v1, p0, Lcom/whatsapp/VideoView;->u:Landroid/media/MediaPlayer$OnInfoListener;
+    iget-object v1, p0, Lcom/whatsapp/VideoView;->d:Landroid/media/MediaPlayer$OnInfoListener;
 
     invoke-virtual {v0, v1}, Landroid/media/MediaPlayer;->setOnInfoListener(Landroid/media/MediaPlayer$OnInfoListener;)V
 
-    .line 189
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 192
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    iget-object v1, p0, Lcom/whatsapp/VideoView;->z:Landroid/media/MediaPlayer$OnBufferingUpdateListener;
+    iget-object v1, p0, Lcom/whatsapp/VideoView;->k:Landroid/media/MediaPlayer$OnBufferingUpdateListener;
 
     invoke-virtual {v0, v1}, Landroid/media/MediaPlayer;->setOnBufferingUpdateListener(Landroid/media/MediaPlayer$OnBufferingUpdateListener;)V
 
-    .line 128
+    .line 77
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/whatsapp/VideoView;->w:I
+    iput v0, p0, Lcom/whatsapp/VideoView;->s:I
 
-    .line 165
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 10
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     invoke-virtual {p0}, Lcom/whatsapp/VideoView;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/whatsapp/VideoView;->c:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/whatsapp/VideoView;->A:Landroid/net/Uri;
 
-    iget-object v3, p0, Lcom/whatsapp/VideoView;->p:Ljava/util/Map;
+    iget-object v3, p0, Lcom/whatsapp/VideoView;->j:Ljava/util/Map;
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/media/MediaPlayer;->setDataSource(Landroid/content/Context;Landroid/net/Uri;Ljava/util/Map;)V
 
-    .line 160
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 108
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    iget-object v1, p0, Lcom/whatsapp/VideoView;->g:Landroid/view/SurfaceHolder;
+    iget-object v1, p0, Lcom/whatsapp/VideoView;->p:Landroid/view/SurfaceHolder;
 
     invoke-virtual {v0, v1}, Landroid/media/MediaPlayer;->setDisplay(Landroid/view/SurfaceHolder;)V
 
-    .line 105
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 149
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     const/4 v1, 0x3
 
     invoke-virtual {v0, v1}, Landroid/media/MediaPlayer;->setAudioStreamType(I)V
 
-    .line 32
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 122
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/media/MediaPlayer;->setScreenOnWhilePlaying(Z)V
 
-    .line 31
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 186
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->prepareAsync()V
 
-    .line 130
+    .line 143
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/whatsapp/VideoView;->o:I
+    iput v0, p0, Lcom/whatsapp/VideoView;->z:I
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_5
 
     goto/16 :goto_0
 
-    .line 90
+    .line 53
     :catch_2
     move-exception v0
 
-    .line 197
+    .line 120
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -733,7 +733,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/whatsapp/VideoView;->c:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/whatsapp/VideoView;->A:Landroid/net/Uri;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -743,24 +743,24 @@
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 93
-    iput v6, p0, Lcom/whatsapp/VideoView;->o:I
+    .line 51
+    iput v5, p0, Lcom/whatsapp/VideoView;->z:I
 
-    .line 1
-    iput v6, p0, Lcom/whatsapp/VideoView;->f:I
+    .line 85
+    iput v5, p0, Lcom/whatsapp/VideoView;->y:I
 
-    .line 122
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->k:Landroid/media/MediaPlayer$OnErrorListener;
+    .line 118
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->a:Landroid/media/MediaPlayer$OnErrorListener;
 
-    iget-object v1, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iget-object v1, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    invoke-interface {v0, v1, v5, v4}, Landroid/media/MediaPlayer$OnErrorListener;->onError(Landroid/media/MediaPlayer;II)Z
+    invoke-interface {v0, v1, v4, v6}, Landroid/media/MediaPlayer$OnErrorListener;->onError(Landroid/media/MediaPlayer;II)Z
 
     goto/16 :goto_0
 
-    .line 141
+    .line 145
     :catch_3
     move-exception v0
 
@@ -770,7 +770,7 @@
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_4
     .catch Ljava/lang/IllegalArgumentException; {:try_start_6 .. :try_end_6} :catch_5
 
-    .line 34
+    .line 89
     :catch_4
     move-exception v0
 
@@ -780,11 +780,11 @@
     .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_7 .. :try_end_7} :catch_5
 
-    .line 65
+    .line 168
     :catch_5
     move-exception v0
 
-    .line 9
+    .line 5
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -797,7 +797,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/whatsapp/VideoView;->c:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/whatsapp/VideoView;->A:Landroid/net/Uri;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -807,70 +807,80 @@
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 76
-    iput v6, p0, Lcom/whatsapp/VideoView;->o:I
+    .line 138
+    iput v5, p0, Lcom/whatsapp/VideoView;->z:I
 
-    .line 187
-    iput v6, p0, Lcom/whatsapp/VideoView;->f:I
+    .line 91
+    iput v5, p0, Lcom/whatsapp/VideoView;->y:I
 
-    .line 170
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->k:Landroid/media/MediaPlayer$OnErrorListener;
+    .line 88
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->a:Landroid/media/MediaPlayer$OnErrorListener;
 
-    iget-object v1, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iget-object v1, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    invoke-interface {v0, v1, v5, v4}, Landroid/media/MediaPlayer$OnErrorListener;->onError(Landroid/media/MediaPlayer;II)Z
+    invoke-interface {v0, v1, v4, v6}, Landroid/media/MediaPlayer$OnErrorListener;->onError(Landroid/media/MediaPlayer;II)Z
 
     goto/16 :goto_0
+.end method
+
+.method static a(Lcom/whatsapp/VideoView;Z)V
+    .locals 0
+
+    .prologue
+    .line 135
+    invoke-direct {p0, p1}, Lcom/whatsapp/VideoView;->a(Z)V
+
+    return-void
 .end method
 
 .method private a(Z)V
     .locals 1
 
     .prologue
-    .line 121
+    .line 105
     :try_start_0
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-eqz v0, :cond_0
 
-    .line 140
+    .line 14
     :try_start_1
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->reset()V
 
-    .line 191
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 150
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->release()V
 
-    .line 167
+    .line 165
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iput-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    .line 153
+    .line 171
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/whatsapp/VideoView;->o:I
+    iput v0, p0, Lcom/whatsapp/VideoView;->z:I
 
-    .line 83
+    .line 35
     if-eqz p1, :cond_0
 
-    .line 109
+    .line 114
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/whatsapp/VideoView;->f:I
+    iput v0, p0, Lcom/whatsapp/VideoView;->y:I
 
-    .line 15
+    .line 65
     :cond_0
     return-void
 
-    .line 83
+    .line 35
     :catch_0
     move-exception v0
 
@@ -878,41 +888,31 @@
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 109
+    .line 114
     :catch_1
     move-exception v0
 
     throw v0
 .end method
 
-.method static a(Lcom/whatsapp/VideoView;Z)Z
-    .locals 0
-
-    .prologue
-    .line 13
-    iput-boolean p1, p0, Lcom/whatsapp/VideoView;->l:Z
-
-    return p1
-.end method
-
-.method static b(Lcom/whatsapp/VideoView;)I
-    .locals 1
-
-    .prologue
-    .line 78
-    iget v0, p0, Lcom/whatsapp/VideoView;->f:I
-
-    return v0
-.end method
-
 .method static b(Lcom/whatsapp/VideoView;I)I
     .locals 0
 
     .prologue
-    .line 175
-    iput p1, p0, Lcom/whatsapp/VideoView;->w:I
+    .line 180
+    iput p1, p0, Lcom/whatsapp/VideoView;->s:I
 
     return p1
+.end method
+
+.method static b(Lcom/whatsapp/VideoView;)Landroid/media/MediaPlayer$OnCompletionListener;
+    .locals 1
+
+    .prologue
+    .line 64
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->r:Landroid/media/MediaPlayer$OnCompletionListener;
+
+    return-object v0
 .end method
 
 .method private b()V
@@ -923,22 +923,22 @@
 
     const/4 v2, 0x0
 
-    .line 132
-    iput v2, p0, Lcom/whatsapp/VideoView;->m:I
+    .line 59
+    iput v2, p0, Lcom/whatsapp/VideoView;->u:I
 
-    .line 62
-    iput v2, p0, Lcom/whatsapp/VideoView;->n:I
+    .line 86
+    iput v2, p0, Lcom/whatsapp/VideoView;->e:I
 
-    .line 181
+    .line 34
     invoke-virtual {p0}, Lcom/whatsapp/VideoView;->getHolder()Landroid/view/SurfaceHolder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/VideoView;->A:Landroid/view/SurfaceHolder$Callback;
+    iget-object v1, p0, Lcom/whatsapp/VideoView;->l:Landroid/view/SurfaceHolder$Callback;
 
     invoke-interface {v0, v1}, Landroid/view/SurfaceHolder;->addCallback(Landroid/view/SurfaceHolder$Callback;)V
 
-    .line 168
+    .line 128
     invoke-virtual {p0}, Lcom/whatsapp/VideoView;->getHolder()Landroid/view/SurfaceHolder;
 
     move-result-object v0
@@ -947,22 +947,22 @@
 
     invoke-interface {v0, v1}, Landroid/view/SurfaceHolder;->setType(I)V
 
-    .line 72
+    .line 163
     invoke-virtual {p0, v3}, Lcom/whatsapp/VideoView;->setFocusable(Z)V
 
-    .line 188
+    .line 131
     invoke-virtual {p0, v3}, Lcom/whatsapp/VideoView;->setFocusableInTouchMode(Z)V
 
-    .line 3
+    .line 95
     invoke-virtual {p0}, Lcom/whatsapp/VideoView;->requestFocus()Z
 
-    .line 161
-    iput v2, p0, Lcom/whatsapp/VideoView;->o:I
+    .line 167
+    iput v2, p0, Lcom/whatsapp/VideoView;->z:I
 
-    .line 111
-    iput v2, p0, Lcom/whatsapp/VideoView;->f:I
+    .line 92
+    iput v2, p0, Lcom/whatsapp/VideoView;->y:I
 
-    .line 100
+    .line 12
     return-void
 .end method
 
@@ -970,8 +970,8 @@
     .locals 0
 
     .prologue
-    .line 143
-    iput-boolean p1, p0, Lcom/whatsapp/VideoView;->b:Z
+    .line 199
+    iput-boolean p1, p0, Lcom/whatsapp/VideoView;->v:Z
 
     return p1
 .end method
@@ -980,8 +980,8 @@
     .locals 0
 
     .prologue
-    .line 18
-    iput p1, p0, Lcom/whatsapp/VideoView;->n:I
+    .line 48
+    iput p1, p0, Lcom/whatsapp/VideoView;->z:I
 
     return p1
 .end method
@@ -990,40 +990,40 @@
     .locals 0
 
     .prologue
-    .line 36
+    .line 54
     invoke-direct {p0}, Lcom/whatsapp/VideoView;->a()V
 
     return-void
 .end method
 
-.method static c(Lcom/whatsapp/VideoView;Z)V
+.method static c(Lcom/whatsapp/VideoView;Z)Z
     .locals 0
 
     .prologue
-    .line 35
-    invoke-direct {p0, p1}, Lcom/whatsapp/VideoView;->a(Z)V
+    .line 18
+    iput-boolean p1, p0, Lcom/whatsapp/VideoView;->h:Z
 
-    return-void
+    return p1
+.end method
+
+.method static d(Lcom/whatsapp/VideoView;)I
+    .locals 1
+
+    .prologue
+    .line 158
+    iget v0, p0, Lcom/whatsapp/VideoView;->t:I
+
+    return v0
 .end method
 
 .method static d(Lcom/whatsapp/VideoView;I)I
     .locals 0
 
     .prologue
-    .line 47
-    iput p1, p0, Lcom/whatsapp/VideoView;->m:I
+    .line 111
+    iput p1, p0, Lcom/whatsapp/VideoView;->u:I
 
     return p1
-.end method
-
-.method static d(Lcom/whatsapp/VideoView;)Landroid/media/MediaPlayer$OnCompletionListener;
-    .locals 1
-
-    .prologue
-    .line 74
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->x:Landroid/media/MediaPlayer$OnCompletionListener;
-
-    return-object v0
 .end method
 
 .method private d()Z
@@ -1032,16 +1032,16 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 152
+    .line 27
     :try_start_0
-    iget-object v1, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iget-object v1, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-eqz v1, :cond_0
 
     :try_start_1
-    iget v1, p0, Lcom/whatsapp/VideoView;->o:I
+    iget v1, p0, Lcom/whatsapp/VideoView;->z:I
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -1050,14 +1050,14 @@
     if-eq v1, v2, :cond_0
 
     :try_start_2
-    iget v1, p0, Lcom/whatsapp/VideoView;->o:I
+    iget v1, p0, Lcom/whatsapp/VideoView;->z:I
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
 
     if-eqz v1, :cond_0
 
     :try_start_3
-    iget v1, p0, Lcom/whatsapp/VideoView;->o:I
+    iget v1, p0, Lcom/whatsapp/VideoView;->z:I
     :try_end_3
     .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_3
 
@@ -1105,8 +1105,8 @@
     .locals 0
 
     .prologue
-    .line 156
-    iput-boolean p1, p0, Lcom/whatsapp/VideoView;->y:Z
+    .line 93
+    iput-boolean p1, p0, Lcom/whatsapp/VideoView;->f:Z
 
     return p1
 .end method
@@ -1115,8 +1115,8 @@
     .locals 0
 
     .prologue
-    .line 37
-    iput p1, p0, Lcom/whatsapp/VideoView;->d:I
+    .line 103
+    iput p1, p0, Lcom/whatsapp/VideoView;->c:I
 
     return p1
 .end method
@@ -1125,8 +1125,8 @@
     .locals 1
 
     .prologue
-    .line 104
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->h:Landroid/media/MediaPlayer$OnErrorListener;
+    .line 187
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->o:Landroid/media/MediaPlayer$OnErrorListener;
 
     return-object v0
 .end method
@@ -1135,8 +1135,8 @@
     .locals 1
 
     .prologue
-    .line 119
-    iget v0, p0, Lcom/whatsapp/VideoView;->d:I
+    .line 198
+    iget v0, p0, Lcom/whatsapp/VideoView;->u:I
 
     return v0
 .end method
@@ -1145,8 +1145,8 @@
     .locals 0
 
     .prologue
-    .line 68
-    iput p1, p0, Lcom/whatsapp/VideoView;->o:I
+    .line 104
+    iput p1, p0, Lcom/whatsapp/VideoView;->y:I
 
     return p1
 .end method
@@ -1155,8 +1155,8 @@
     .locals 1
 
     .prologue
-    .line 164
-    iget v0, p0, Lcom/whatsapp/VideoView;->n:I
+    .line 193
+    iget v0, p0, Lcom/whatsapp/VideoView;->c:I
 
     return v0
 .end method
@@ -1165,8 +1165,8 @@
     .locals 0
 
     .prologue
-    .line 179
-    iput p1, p0, Lcom/whatsapp/VideoView;->e:I
+    .line 133
+    iput p1, p0, Lcom/whatsapp/VideoView;->t:I
 
     return p1
 .end method
@@ -1175,8 +1175,8 @@
     .locals 1
 
     .prologue
-    .line 145
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->r:Landroid/media/MediaPlayer$OnPreparedListener;
+    .line 157
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->m:Landroid/media/MediaPlayer$OnPreparedListener;
 
     return-object v0
 .end method
@@ -1185,27 +1185,27 @@
     .locals 1
 
     .prologue
-    .line 116
-    iget v0, p0, Lcom/whatsapp/VideoView;->m:I
+    .line 9
+    iget v0, p0, Lcom/whatsapp/VideoView;->g:I
 
     return v0
 .end method
 
-.method static j(Lcom/whatsapp/VideoView;)I
+.method static j(Lcom/whatsapp/VideoView;)Landroid/media/MediaPlayer;
     .locals 1
 
     .prologue
-    .line 147
-    iget v0, p0, Lcom/whatsapp/VideoView;->j:I
+    .line 194
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
-    return v0
+    return-object v0
 .end method
 
 .method static k(Lcom/whatsapp/VideoView;)I
     .locals 1
 
     .prologue
-    .line 98
+    .line 189
     iget v0, p0, Lcom/whatsapp/VideoView;->e:I
 
     return v0
@@ -1217,12 +1217,12 @@
     .locals 1
 
     .prologue
-    .line 80
+    .line 96
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/whatsapp/VideoView;->a(Z)V
 
-    .line 46
+    .line 2
     return-void
 .end method
 
@@ -1230,8 +1230,8 @@
     .locals 1
 
     .prologue
-    .line 85
-    iget-boolean v0, p0, Lcom/whatsapp/VideoView;->l:Z
+    .line 58
+    iget-boolean v0, p0, Lcom/whatsapp/VideoView;->h:Z
 
     return v0
 .end method
@@ -1240,8 +1240,8 @@
     .locals 1
 
     .prologue
-    .line 55
-    iget-boolean v0, p0, Lcom/whatsapp/VideoView;->y:Z
+    .line 81
+    iget-boolean v0, p0, Lcom/whatsapp/VideoView;->f:Z
 
     return v0
 .end method
@@ -1250,8 +1250,8 @@
     .locals 1
 
     .prologue
-    .line 135
-    iget-boolean v0, p0, Lcom/whatsapp/VideoView;->b:Z
+    .line 52
+    iget-boolean v0, p0, Lcom/whatsapp/VideoView;->v:Z
 
     return v0
 .end method
@@ -1260,29 +1260,29 @@
     .locals 2
 
     .prologue
-    .line 195
-    iget v0, p0, Lcom/whatsapp/VideoView;->q:I
+    .line 57
+    iget v0, p0, Lcom/whatsapp/VideoView;->b:I
 
     if-nez v0, :cond_0
 
-    .line 16
+    .line 170
     new-instance v0, Landroid/media/MediaPlayer;
 
     invoke-direct {v0}, Landroid/media/MediaPlayer;-><init>()V
 
-    .line 40
+    .line 116
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->getAudioSessionId()I
 
     move-result v1
 
-    iput v1, p0, Lcom/whatsapp/VideoView;->q:I
+    iput v1, p0, Lcom/whatsapp/VideoView;->b:I
 
-    .line 53
+    .line 75
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->release()V
 
-    .line 81
+    .line 98
     :cond_0
-    iget v0, p0, Lcom/whatsapp/VideoView;->q:I
+    iget v0, p0, Lcom/whatsapp/VideoView;->b:I
 
     return v0
 .end method
@@ -1291,28 +1291,26 @@
     .locals 1
 
     .prologue
-    .line 183
+    .line 160
     :try_start_0
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     if-eqz v0, :cond_0
 
-    .line 79
-    iget v0, p0, Lcom/whatsapp/VideoView;->w:I
+    .line 200
+    iget v0, p0, Lcom/whatsapp/VideoView;->s:I
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 103
     :goto_0
     return v0
 
-    .line 79
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 103
+    .line 1
     :cond_0
     const/4 v0, 0x0
 
@@ -1323,7 +1321,7 @@
     .locals 1
 
     .prologue
-    .line 127
+    .line 70
     :try_start_0
     invoke-direct {p0}, Lcom/whatsapp/VideoView;->d()Z
 
@@ -1331,8 +1329,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 6
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 178
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->getCurrentPosition()I
     :try_end_0
@@ -1340,17 +1338,15 @@
 
     move-result v0
 
-    .line 107
     :goto_0
     return v0
 
-    .line 6
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 107
+    .line 129
     :cond_0
     const/4 v0, 0x0
 
@@ -1361,7 +1357,7 @@
     .locals 1
 
     .prologue
-    .line 169
+    .line 124
     :try_start_0
     invoke-direct {p0}, Lcom/whatsapp/VideoView;->d()Z
 
@@ -1369,8 +1365,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 194
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 142
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->getDuration()I
     :try_end_0
@@ -1386,7 +1382,7 @@
 
     throw v0
 
-    .line 17
+    .line 46
     :cond_0
     const/4 v0, -0x1
 
@@ -1397,7 +1393,7 @@
     .locals 1
 
     .prologue
-    .line 48
+    .line 73
     :try_start_0
     invoke-direct {p0}, Lcom/whatsapp/VideoView;->d()Z
     :try_end_0
@@ -1408,7 +1404,7 @@
     if-eqz v0, :cond_0
 
     :try_start_1
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->isPlaying()Z
 
@@ -1443,10 +1439,10 @@
     .locals 1
 
     .prologue
-    .line 157
+    .line 56
     invoke-super {p0, p1}, Landroid/view/SurfaceView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
-    .line 58
+    .line 112
     const-class v0, Lcom/whatsapp/VideoView;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -1455,7 +1451,7 @@
 
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityEvent;->setClassName(Ljava/lang/CharSequence;)V
 
-    .line 88
+    .line 148
     return-void
 .end method
 
@@ -1463,10 +1459,10 @@
     .locals 1
 
     .prologue
-    .line 184
+    .line 181
     invoke-super {p0, p1}, Landroid/view/SurfaceView;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
-    .line 43
+    .line 66
     const-class v0, Lcom/whatsapp/VideoView;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -1475,7 +1471,7 @@
 
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClassName(Ljava/lang/CharSequence;)V
 
-    .line 84
+    .line 80
     return-void
 .end method
 
@@ -1487,76 +1483,76 @@
 
     const/high16 v8, -0x80000000
 
-    sget-boolean v4, Lcom/whatsapp/App;->aL:Z
+    sget v4, Lcom/whatsapp/App;->h:I
 
-    .line 154
-    iget v0, p0, Lcom/whatsapp/VideoView;->m:I
+    .line 20
+    iget v0, p0, Lcom/whatsapp/VideoView;->u:I
 
     invoke-static {v0, p1}, Lcom/whatsapp/VideoView;->getDefaultSize(II)I
 
     move-result v1
 
-    .line 146
-    iget v0, p0, Lcom/whatsapp/VideoView;->n:I
+    .line 90
+    iget v0, p0, Lcom/whatsapp/VideoView;->e:I
 
     invoke-static {v0, p2}, Lcom/whatsapp/VideoView;->getDefaultSize(II)I
 
     move-result v0
 
-    .line 136
+    .line 153
     :try_start_0
-    iget v2, p0, Lcom/whatsapp/VideoView;->m:I
+    iget v2, p0, Lcom/whatsapp/VideoView;->u:I
 
     if-lez v2, :cond_3
 
-    iget v2, p0, Lcom/whatsapp/VideoView;->n:I
+    iget v2, p0, Lcom/whatsapp/VideoView;->e:I
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-lez v2, :cond_3
 
-    .line 71
+    .line 132
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v5
 
-    .line 198
+    .line 100
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v3
 
-    .line 123
+    .line 41
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v6
 
-    .line 134
+    .line 39
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v0
 
-    .line 108
+    .line 72
     if-ne v5, v9, :cond_0
 
     if-ne v6, v9, :cond_0
 
-    .line 19
-    iget v1, p0, Lcom/whatsapp/VideoView;->m:I
+    .line 183
+    iget v1, p0, Lcom/whatsapp/VideoView;->u:I
 
     mul-int/2addr v1, v0
 
-    iget v2, p0, Lcom/whatsapp/VideoView;->n:I
+    iget v2, p0, Lcom/whatsapp/VideoView;->e:I
 
     mul-int/2addr v2, v3
 
     if-ge v1, v2, :cond_9
 
-    .line 137
-    iget v1, p0, Lcom/whatsapp/VideoView;->m:I
+    .line 69
+    iget v1, p0, Lcom/whatsapp/VideoView;->u:I
 
     mul-int/2addr v1, v0
 
-    iget v2, p0, Lcom/whatsapp/VideoView;->n:I
+    iget v2, p0, Lcom/whatsapp/VideoView;->e:I
 
     div-int/2addr v1, v2
 
@@ -1564,14 +1560,14 @@
 
     move v2, v1
 
-    .line 173
+    .line 45
     :goto_0
     :try_start_1
-    iget v1, p0, Lcom/whatsapp/VideoView;->m:I
+    iget v1, p0, Lcom/whatsapp/VideoView;->u:I
 
     mul-int/2addr v1, v0
 
-    iget v7, p0, Lcom/whatsapp/VideoView;->n:I
+    iget v7, p0, Lcom/whatsapp/VideoView;->e:I
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -1579,112 +1575,112 @@
 
     if-le v1, v7, :cond_8
 
-    .line 7
-    iget v1, p0, Lcom/whatsapp/VideoView;->n:I
+    .line 144
+    iget v1, p0, Lcom/whatsapp/VideoView;->e:I
 
     mul-int/2addr v1, v2
 
-    iget v7, p0, Lcom/whatsapp/VideoView;->m:I
+    iget v7, p0, Lcom/whatsapp/VideoView;->u:I
 
     div-int/2addr v1, v7
 
     if-eqz v4, :cond_7
 
-    .line 180
+    .line 7
     :cond_0
     if-ne v5, v9, :cond_1
 
-    .line 63
-    iget v1, p0, Lcom/whatsapp/VideoView;->n:I
+    .line 26
+    iget v1, p0, Lcom/whatsapp/VideoView;->e:I
 
     mul-int/2addr v1, v3
 
-    iget v2, p0, Lcom/whatsapp/VideoView;->m:I
+    iget v2, p0, Lcom/whatsapp/VideoView;->u:I
 
     div-int/2addr v1, v2
 
-    .line 52
+    .line 154
     if-ne v6, v8, :cond_6
 
     if-le v1, v0, :cond_6
 
-    .line 192
+    .line 117
     if-eqz v4, :cond_5
 
-    .line 38
+    .line 136
     :cond_1
     if-ne v6, v9, :cond_2
 
-    .line 60
-    iget v1, p0, Lcom/whatsapp/VideoView;->m:I
+    .line 61
+    iget v1, p0, Lcom/whatsapp/VideoView;->u:I
 
     mul-int/2addr v1, v0
 
-    iget v2, p0, Lcom/whatsapp/VideoView;->n:I
+    iget v2, p0, Lcom/whatsapp/VideoView;->e:I
 
     div-int/2addr v1, v2
 
-    .line 41
+    .line 101
     if-ne v5, v8, :cond_3
 
     if-le v1, v3, :cond_3
 
-    .line 94
+    .line 78
     if-eqz v4, :cond_5
 
-    .line 149
+    .line 50
     :cond_2
-    iget v2, p0, Lcom/whatsapp/VideoView;->m:I
+    iget v2, p0, Lcom/whatsapp/VideoView;->u:I
 
-    .line 193
-    iget v1, p0, Lcom/whatsapp/VideoView;->n:I
+    .line 190
+    iget v1, p0, Lcom/whatsapp/VideoView;->e:I
 
-    .line 61
+    .line 161
     if-ne v6, v8, :cond_4
 
     if-le v1, v0, :cond_4
 
-    .line 106
-    iget v1, p0, Lcom/whatsapp/VideoView;->m:I
+    .line 71
+    iget v1, p0, Lcom/whatsapp/VideoView;->u:I
 
     mul-int/2addr v1, v0
 
-    iget v2, p0, Lcom/whatsapp/VideoView;->n:I
+    iget v2, p0, Lcom/whatsapp/VideoView;->e:I
 
     div-int/2addr v1, v2
 
-    .line 155
+    .line 3
     :goto_1
     if-ne v5, v8, :cond_3
 
     if-le v1, v3, :cond_3
 
-    .line 139
-    iget v0, p0, Lcom/whatsapp/VideoView;->n:I
+    .line 176
+    iget v0, p0, Lcom/whatsapp/VideoView;->e:I
 
     mul-int/2addr v0, v3
 
-    iget v1, p0, Lcom/whatsapp/VideoView;->m:I
+    iget v1, p0, Lcom/whatsapp/VideoView;->u:I
 
     div-int/2addr v0, v1
 
     move v1, v3
 
-    .line 158
+    .line 11
     :cond_3
     :goto_2
     invoke-virtual {p0, v1, v0}, Lcom/whatsapp/VideoView;->setMeasuredDimension(II)V
 
-    .line 133
+    .line 82
     return-void
 
-    .line 136
+    .line 153
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 173
+    .line 45
     :catch_1
     move-exception v0
 
@@ -1733,7 +1729,7 @@
     .prologue
     const/4 v1, 0x4
 
-    .line 171
+    .line 174
     :try_start_0
     invoke-direct {p0}, Lcom/whatsapp/VideoView;->d()Z
     :try_end_0
@@ -1743,9 +1739,9 @@
 
     if-eqz v0, :cond_0
 
-    .line 50
+    .line 76
     :try_start_1
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->isPlaying()Z
 
@@ -1753,26 +1749,26 @@
 
     if-eqz v0, :cond_0
 
-    .line 199
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 195
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->pause()V
 
-    .line 95
+    .line 139
     const/4 v0, 0x4
 
-    iput v0, p0, Lcom/whatsapp/VideoView;->o:I
+    iput v0, p0, Lcom/whatsapp/VideoView;->z:I
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 148
+    .line 179
     :cond_0
-    iput v1, p0, Lcom/whatsapp/VideoView;->f:I
+    iput v1, p0, Lcom/whatsapp/VideoView;->y:I
 
-    .line 70
+    .line 191
     return-void
 
-    .line 50
+    .line 76
     :catch_0
     move-exception v0
 
@@ -1781,7 +1777,7 @@
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 95
+    .line 139
     :catch_1
     move-exception v0
 
@@ -1792,7 +1788,7 @@
     .locals 1
 
     .prologue
-    .line 131
+    .line 141
     :try_start_0
     invoke-direct {p0}, Lcom/whatsapp/VideoView;->d()Z
     :try_end_0
@@ -1802,30 +1798,30 @@
 
     if-eqz v0, :cond_0
 
-    .line 166
+    .line 33
     :try_start_1
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, p1}, Landroid/media/MediaPlayer;->seekTo(I)V
 
-    .line 28
+    .line 87
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/whatsapp/VideoView;->j:I
+    iput v0, p0, Lcom/whatsapp/VideoView;->g:I
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 54
+    .line 38
     :cond_0
-    iput p1, p0, Lcom/whatsapp/VideoView;->j:I
+    iput p1, p0, Lcom/whatsapp/VideoView;->g:I
 
-    .line 73
+    .line 175
     :cond_1
     return-void
 
-    .line 28
+    .line 87
     :catch_0
     move-exception v0
 
@@ -1833,7 +1829,7 @@
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 54
+    .line 38
     :catch_1
     move-exception v0
 
@@ -1844,10 +1840,10 @@
     .locals 0
 
     .prologue
-    .line 39
-    iput-object p1, p0, Lcom/whatsapp/VideoView;->r:Landroid/media/MediaPlayer$OnPreparedListener;
+    .line 126
+    iput-object p1, p0, Lcom/whatsapp/VideoView;->m:Landroid/media/MediaPlayer$OnPreparedListener;
 
-    .line 113
+    .line 155
     return-void
 .end method
 
@@ -1855,14 +1851,14 @@
     .locals 1
 
     .prologue
-    .line 176
+    .line 68
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/VideoView;->setVideoURI(Landroid/net/Uri;)V
 
-    .line 126
+    .line 172
     return-void
 .end method
 
@@ -1870,12 +1866,12 @@
     .locals 1
 
     .prologue
-    .line 172
+    .line 184
     const/4 v0, 0x0
 
     invoke-virtual {p0, p1, v0}, Lcom/whatsapp/VideoView;->setVideoURI(Landroid/net/Uri;Ljava/util/Map;)V
 
-    .line 82
+    .line 169
     return-void
 .end method
 
@@ -1883,27 +1879,27 @@
     .locals 1
 
     .prologue
-    .line 102
-    iput-object p1, p0, Lcom/whatsapp/VideoView;->c:Landroid/net/Uri;
+    .line 106
+    iput-object p1, p0, Lcom/whatsapp/VideoView;->A:Landroid/net/Uri;
 
-    .line 45
-    iput-object p2, p0, Lcom/whatsapp/VideoView;->p:Ljava/util/Map;
+    .line 60
+    iput-object p2, p0, Lcom/whatsapp/VideoView;->j:Ljava/util/Map;
 
-    .line 21
+    .line 109
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/whatsapp/VideoView;->j:I
+    iput v0, p0, Lcom/whatsapp/VideoView;->g:I
 
-    .line 77
+    .line 40
     invoke-direct {p0}, Lcom/whatsapp/VideoView;->a()V
 
-    .line 182
+    .line 99
     invoke-virtual {p0}, Lcom/whatsapp/VideoView;->requestLayout()V
 
-    .line 150
+    .line 24
     invoke-virtual {p0}, Lcom/whatsapp/VideoView;->invalidate()V
 
-    .line 57
+    .line 152
     return-void
 .end method
 
@@ -1913,7 +1909,7 @@
     .prologue
     const/4 v1, 0x3
 
-    .line 185
+    .line 125
     :try_start_0
     invoke-direct {p0}, Lcom/whatsapp/VideoView;->d()Z
 
@@ -1921,26 +1917,26 @@
 
     if-eqz v0, :cond_0
 
-    .line 33
-    iget-object v0, p0, Lcom/whatsapp/VideoView;->v:Landroid/media/MediaPlayer;
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/VideoView;->q:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->start()V
 
-    .line 115
+    .line 55
     const/4 v0, 0x3
 
-    iput v0, p0, Lcom/whatsapp/VideoView;->o:I
+    iput v0, p0, Lcom/whatsapp/VideoView;->z:I
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 117
+    .line 162
     :cond_0
-    iput v1, p0, Lcom/whatsapp/VideoView;->f:I
+    iput v1, p0, Lcom/whatsapp/VideoView;->y:I
 
-    .line 96
+    .line 17
     return-void
 
-    .line 115
+    .line 55
     :catch_0
     move-exception v0
 

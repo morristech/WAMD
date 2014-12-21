@@ -24,11 +24,11 @@
 
     const/4 v1, 0x0
 
-    const/16 v0, 0xc
+    const/16 v0, 0x10
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "ZB\u0002\n(FL)\u00084U@\u0013\"5QT\u0013\t"
+    const-string v6, "QU[ KM[p\"W^WJ\u0008RPY_\u0008G^\\C\u0008FFDJ${LUA#"
 
     const/4 v0, -0x1
 
@@ -66,7 +66,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "ZB\u0002\n(FL)\u00084U@\u0013\"*QC\u001f\u001c\u0018V^\u0002\u00184kU\u0013\u001e\"]Q\u0013\u0019"
+    const-string v0, "QU[ KM[p\"W^WJ\u0008IZC\\6CZCp$AQD"
 
     move-object v6, v0
 
@@ -81,7 +81,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "ZB\u0002\n(FL)\u00084U@\u0013\"5QT\u0013\t"
+    const-string v0, "QU[ KM[p\"W^WJ\u0008IZC\\6CZoM.PZCp%A\\UF!A["
 
     move-object v6, v0
 
@@ -96,7 +96,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "ZB\u0002\n(FL)\u00084U@\u0013\"*QT\u0005\u001c Qx\u0014\u00043QT)\u000e\"ZS"
+    const-string v0, "QU[ KM[p\"W^WJ\u0008RPY_\u0008G^\\C\u0008FFDJ${MUL2MIUK"
 
     move-object v6, v0
 
@@ -111,7 +111,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "ZB\u0002\n(FL)\u00084U@\u0013\"*QT\u0005\u001c Qx\u0014\u00043QT)\u000f\"WB\u001f\u000b\"P"
+    const-string v0, "QU[ KM[p\"W^WJ\u0008IZC\\6CZCp%A\\UF!A["
 
     move-object v6, v0
 
@@ -128,7 +128,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "ZB\u0002\n(FL)\u00084U@\u0013\"*QC\u001f\u001c\u0018V^\u0002\u00184kT\u0013\u00133"
+    const-string v0, "QU[ KM[p\"W^WJ\u0008PPDN;{]I[2W`BJ4AVFJ3"
 
     move v7, v6
 
@@ -145,7 +145,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "ZB\u0002\n(FL)\u00084U@\u0013\"*QT\u0005\u001c QT)\u000f\"WB\u001f\u000b\"P"
+    const-string v6, "QU[ KM[p\"W^WJ\u0008IZTF6{]I[2W`CJ9P"
 
     const/4 v0, 0x5
 
@@ -158,7 +158,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "ZB\u0002\n(FL)\u00084U@\u0013\"5QT\u0013\t"
+    const-string v6, "QU[ KM[p\"W^WJ\u0008IZTF6{]I[2W`BJ4AVFJ3"
 
     const/4 v0, 0x6
 
@@ -171,7 +171,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "ZB\u0002\n(FL)\u00084U@\u0013\"3[S\u0017\u0011\u0018V^\u0002\u00184kU\u0013\u001e\"]Q\u0013\u0019"
+    const-string v6, "QU[ KM[p\"W^WJ\u0008RPY_\u0008G^\\C${MUL2MIUK"
 
     const/4 v0, 0x7
 
@@ -184,7 +184,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "ZB\u0002\n(FL)\u00084U@\u0013\"*QT\u0005\u001c QT)\u000e\"ZS"
+    const-string v6, "QU[ KM[p\"W^WJ\u0008RPY_\u0008G^\\C${LUA#"
 
     const/16 v0, 0x8
 
@@ -197,7 +197,7 @@
 
     const/16 v7, 0xa
 
-    const-string v6, "ZB\u0002\n(FL)\u00084U@\u0013\"3[S\u0017\u0011\u0018V^\u0002\u00184kT\u0013\u00133"
+    const-string v6, "QU[ KM[p\"W^WJ\u0008VZCJ#"
 
     const/16 v0, 0x9
 
@@ -210,7 +210,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, "M^\u000f\u0004jyj;P#P\u0007>5}YJL\u000e4"
+    const-string v6, "QU[ KM[p\"W^WJ\u0008VZCJ#"
 
     const/16 v0, 0xa
 
@@ -221,14 +221,66 @@
     :pswitch_a
     aput-object v6, v8, v7
 
+    const/16 v7, 0xc
+
+    const-string v6, "QU[ KM[p\"W^WJ\u0008IZC\\6CZoM.PZCp$AQD"
+
+    const/16 v0, 0xb
+
+    move-object v8, v9
+
+    goto/16 :goto_0
+
+    :pswitch_b
+    aput-object v6, v8, v7
+
+    const/16 v7, 0xd
+
+    const-string v6, "QU[ KM[p\"W^WJ\u0008PPDN;{]I[2W`CJ9P"
+
+    const/16 v0, 0xc
+
+    move-object v8, v9
+
+    goto/16 :goto_0
+
+    :pswitch_c
+    aput-object v6, v8, v7
+
+    const/16 v7, 0xe
+
+    const-string v6, "QU[ KM[p\"W^WJ\u0008VZCJ#"
+
+    const/16 v0, 0xd
+
+    move-object v8, v9
+
+    goto/16 :goto_0
+
+    :pswitch_d
+    aput-object v6, v8, v7
+
+    const/16 v7, 0xf
+
+    const-string v6, "FIV.\tr}bz@[\u0010g\u001f\u001eR]\u0015$W"
+
+    const/16 v0, 0xe
+
+    move-object v8, v9
+
+    goto/16 :goto_0
+
+    :pswitch_e
+    aput-object v6, v8, v7
+
     sput-object v9, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
 
-    .line 35
+    .line 12
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xb
+    const/16 v2, 0xf
 
     aget-object v1, v1, v2
 
@@ -246,7 +298,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x47
+    const/16 v6, 0x24
 
     :goto_2
     xor-int/2addr v6, v13
@@ -261,23 +313,23 @@
 
     goto/16 :goto_1
 
-    :pswitch_b
-    const/16 v6, 0x34
+    :pswitch_f
+    const/16 v6, 0x3f
 
     goto :goto_2
 
-    :pswitch_c
-    const/16 v6, 0x27
+    :pswitch_10
+    const/16 v6, 0x30
 
     goto :goto_2
 
-    :pswitch_d
-    const/16 v6, 0x76
+    :pswitch_11
+    const/16 v6, 0x2f
 
     goto :goto_2
 
-    :pswitch_e
-    const/16 v6, 0x7d
+    :pswitch_12
+    const/16 v6, 0x57
 
     goto :goto_2
 
@@ -294,14 +346,18 @@
         :pswitch_8
         :pswitch_9
         :pswitch_a
-    .end packed-switch
-
-    :pswitch_data_1
-    .packed-switch 0x0
         :pswitch_b
         :pswitch_c
         :pswitch_d
         :pswitch_e
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_f
+        :pswitch_10
+        :pswitch_11
+        :pswitch_12
     .end packed-switch
 .end method
 
@@ -309,7 +365,7 @@
     .locals 0
 
     .prologue
-    .line 44
+    .line 31
     invoke-direct {p0}, Lcom/whatsapp/DialogToastPreferenceActivity;-><init>()V
 
     return-void
@@ -319,54 +375,54 @@
     .locals 9
 
     .prologue
-    const v8, 0x7f0e0283
+    const v8, 0x7f0e028c
+
+    const v5, 0x7f0d0022
 
     const v4, 0x7f0d0021
 
-    const/4 v7, 0x0
+    const/4 v7, 0x1
 
-    const/4 v6, 0x1
+    const/4 v6, 0x0
 
-    .line 24
-    sget-object v0, Lcom/whatsapp/z_;->b:Lcom/whatsapp/Statistics$Data;
+    .line 43
+    sget-object v0, Lcom/whatsapp/s6;->a:Lcom/whatsapp/Statistics$Data;
 
-    .line 39
+    .line 3
     if-eqz v0, :cond_1
-
-    .line 19
-    sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
-
-    const/16 v2, 0x9
-
-    aget-object v1, v1, v2
-
-    .line 18
-    invoke-virtual {v0}, Lcom/whatsapp/Statistics$Data;->getTotalMessagesSent()J
-
-    move-result-wide v2
-
-    .line 29
-    invoke-direct {p0, v1, v4, v2, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;IJ)V
 
     .line 13
     sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x6
+    aget-object v1, v1, v7
+
+    .line 30
+    invoke-virtual {v0}, Lcom/whatsapp/Statistics$Data;->getTotalMessagesSent()J
+
+    move-result-wide v2
+
+    .line 23
+    invoke-direct {p0, v1, v4, v2, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;IJ)V
+
+    .line 46
+    sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x4
 
     aget-object v1, v1, v2
 
-    .line 12
+    .line 16
     invoke-virtual {v0}, Lcom/whatsapp/Statistics$Data;->getTotalMessagesReceived()J
 
     move-result-wide v2
 
-    .line 53
+    .line 35
     invoke-direct {p0, v1, v4, v2, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;IJ)V
 
-    .line 28
+    .line 48
     sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x5
+    const/4 v2, 0x6
 
     aget-object v1, v1, v2
 
@@ -376,10 +432,12 @@
 
     invoke-direct {p0, v1, v2, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;J)V
 
-    .line 14
+    .line 29
     sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
 
-    aget-object v1, v1, v6
+    const/4 v2, 0x7
+
+    aget-object v1, v1, v2
 
     invoke-virtual {v0}, Lcom/whatsapp/Statistics$Data;->getMediaBytesReceived()J
 
@@ -387,10 +445,10 @@
 
     invoke-direct {p0, v1, v2, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;J)V
 
-    .line 17
+    .line 1
     sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x3
+    const/16 v2, 0xc
 
     aget-object v1, v1, v2
 
@@ -400,10 +458,10 @@
 
     invoke-direct {p0, v1, v2, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;J)V
 
-    .line 8
+    .line 25
     sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x4
+    const/4 v2, 0x2
 
     aget-object v1, v1, v2
 
@@ -413,10 +471,64 @@
 
     invoke-direct {p0, v1, v2, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;J)V
 
-    .line 40
+    .line 37
     sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xa
+    const/16 v2, 0x9
+
+    aget-object v1, v1, v2
+
+    .line 62
+    invoke-virtual {v0}, Lcom/whatsapp/Statistics$Data;->getOutgoingVoipCalls()J
+
+    move-result-wide v2
+
+    .line 19
+    invoke-direct {p0, v1, v5, v2, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;IJ)V
+
+    .line 36
+    sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
+
+    const/16 v2, 0x8
+
+    aget-object v1, v1, v2
+
+    .line 24
+    invoke-virtual {v0}, Lcom/whatsapp/Statistics$Data;->getIncomingVoipCalls()J
+
+    move-result-wide v2
+
+    .line 26
+    invoke-direct {p0, v1, v5, v2, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;IJ)V
+
+    .line 33
+    sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
+
+    aget-object v1, v1, v6
+
+    invoke-virtual {v0}, Lcom/whatsapp/Statistics$Data;->getVoipBytesSent()J
+
+    move-result-wide v2
+
+    invoke-direct {p0, v1, v2, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;J)V
+
+    .line 28
+    sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x3
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0}, Lcom/whatsapp/Statistics$Data;->getVoipBytesReceived()J
+
+    move-result-wide v2
+
+    invoke-direct {p0, v1, v2, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;J)V
+
+    .line 21
+    sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
+
+    const/16 v2, 0xd
 
     aget-object v1, v1, v2
 
@@ -426,10 +538,10 @@
 
     invoke-direct {p0, v1, v2, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;J)V
 
-    .line 6
+    .line 15
     sget-object v1, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x8
+    const/4 v2, 0x5
 
     aget-object v1, v1, v2
 
@@ -439,26 +551,26 @@
 
     invoke-direct {p0, v1, v2, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;J)V
 
-    .line 46
+    .line 4
     invoke-virtual {v0}, Lcom/whatsapp/Statistics$Data;->getLastReset()J
 
     move-result-wide v0
 
-    .line 27
+    .line 7
     const-wide/high16 v2, -0x8000000000000000L
 
     cmp-long v2, v0, v2
 
     if-eqz v2, :cond_0
 
-    .line 32
+    .line 47
     sget-object v2, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x7
+    const/16 v3, 0xb
 
     aget-object v2, v2, v3
 
-    new-array v3, v6, [Ljava/lang/Object;
+    new-array v3, v7, [Ljava/lang/Object;
 
     sget-object v4, Lcom/whatsapp/SettingsNetworkUsage;->h:Ljava/text/SimpleDateFormat;
 
@@ -466,43 +578,43 @@
 
     invoke-direct {v5, v0, v1}, Ljava/util/Date;-><init>(J)V
 
-    .line 23
+    .line 38
     invoke-virtual {v4, v5}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v0
 
-    aput-object v0, v3, v7
+    aput-object v0, v3, v6
 
-    .line 21
+    .line 63
     invoke-direct {p0, v2, v8, v3}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;I[Ljava/lang/Object;)V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 7
+    .line 10
     :cond_0
     sget-object v0, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x2
+    const/16 v1, 0xa
 
     aget-object v0, v0, v1
 
-    new-array v1, v6, [Ljava/lang/Object;
+    new-array v1, v7, [Ljava/lang/Object;
 
-    const v2, 0x7f0e028d
+    const v2, 0x7f0e029a
 
-    .line 50
+    .line 45
     invoke-virtual {p0, v2}, Lcom/whatsapp/SettingsNetworkUsage;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    aput-object v2, v1, v7
+    aput-object v2, v1, v6
 
-    .line 31
+    .line 6
     invoke-direct {p0, v0, v8, v1}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;I[Ljava/lang/Object;)V
 
-    .line 56
+    .line 64
     :cond_1
     return-void
 .end method
@@ -511,7 +623,7 @@
     .locals 0
 
     .prologue
-    .line 25
+    .line 9
     invoke-direct {p0}, Lcom/whatsapp/SettingsNetworkUsage;->a()V
 
     return-void
@@ -521,17 +633,17 @@
     .locals 5
 
     .prologue
-    .line 45
+    .line 32
     invoke-virtual {p0, p1}, Lcom/whatsapp/SettingsNetworkUsage;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    sget-object v1, Lcom/whatsapp/App;->aF:Lcom/whatsapp/a1e;
+    sget-object v1, Lcom/whatsapp/App;->aR:Lcom/whatsapp/o2;
 
     long-to-int v2, p3
 
-    .line 51
-    invoke-virtual {v1, p2, v2}, Lcom/whatsapp/a1e;->a(II)Ljava/lang/String;
+    .line 14
+    invoke-virtual {v1, p2, v2}, Lcom/whatsapp/o2;->a(II)Ljava/lang/String;
 
     move-result-object v1
 
@@ -551,10 +663,10 @@
 
     move-result-object v1
 
-    .line 16
+    .line 22
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 9
+    .line 55
     return-void
 .end method
 
@@ -562,7 +674,7 @@
     .locals 2
 
     .prologue
-    .line 41
+    .line 56
     invoke-virtual {p0, p1}, Lcom/whatsapp/SettingsNetworkUsage;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
@@ -577,7 +689,7 @@
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 38
+    .line 49
     return-void
 .end method
 
@@ -589,14 +701,14 @@
 
     const/4 v1, 0x0
 
-    sget-boolean v4, Lcom/whatsapp/App;->aL:Z
+    sget v4, Lcom/whatsapp/App;->h:I
 
-    .line 5
+    .line 39
     long-to-double v2, p2
 
     move v0, v1
 
-    .line 48
+    .line 41
     :cond_0
     const/4 v5, 0x3
 
@@ -606,15 +718,15 @@
 
     if-lez v5, :cond_1
 
-    .line 26
+    .line 52
     div-double/2addr v2, v6
 
-    .line 49
+    .line 57
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v4, :cond_0
 
-    .line 2
+    .line 58
     :cond_1
     packed-switch v0, :pswitch_data_0
 
@@ -635,11 +747,11 @@
 
     invoke-direct {p0, p1, v0, v4}, Lcom/whatsapp/SettingsNetworkUsage;->a(Ljava/lang/String;I[Ljava/lang/Object;)V
 
-    .line 55
+    .line 60
     :goto_1
     return-void
 
-    .line 43
+    .line 20
     :pswitch_0
     const v0, 0x7f0d0020
 
@@ -647,27 +759,27 @@
 
     goto :goto_1
 
-    .line 20
+    .line 44
     :pswitch_1
-    const v0, 0x7f0e0281
+    const v0, 0x7f0e028a
 
-    .line 34
+    .line 27
     if-eqz v4, :cond_2
 
-    .line 36
+    .line 53
     :pswitch_2
-    const v0, 0x7f0e0282
+    const v0, 0x7f0e028b
 
-    .line 4
+    .line 51
     if-eqz v4, :cond_2
 
-    .line 3
+    .line 61
     :pswitch_3
-    const v0, 0x7f0e0280
+    const v0, 0x7f0e0289
 
     goto :goto_0
 
-    .line 2
+    .line 58
     nop
 
     :pswitch_data_0
@@ -688,15 +800,15 @@
     .line 54
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastPreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 42
+    .line 8
     const v0, 0x7f05000a
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsNetworkUsage;->addPreferencesFromResource(I)V
 
-    .line 52
+    .line 2
     sget-object v0, Lcom/whatsapp/SettingsNetworkUsage;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x0
+    const/16 v1, 0xe
 
     aget-object v0, v0, v1
 
@@ -706,14 +818,14 @@
 
     check-cast v0, Lcom/whatsapp/preference/WaDialogPreference;
 
-    new-instance v1, Lcom/whatsapp/zz;
+    new-instance v1, Lcom/whatsapp/ny;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/zz;-><init>(Lcom/whatsapp/SettingsNetworkUsage;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/ny;-><init>(Lcom/whatsapp/SettingsNetworkUsage;)V
 
-    .line 33
+    .line 5
     invoke-virtual {v0, v1}, Lcom/whatsapp/preference/WaDialogPreference;->a(Landroid/content/DialogInterface$OnClickListener;)V
 
-    .line 22
+    .line 17
     return-void
 .end method
 
@@ -721,12 +833,12 @@
     .locals 0
 
     .prologue
-    .line 15
+    .line 59
     invoke-super {p0}, Lcom/whatsapp/DialogToastPreferenceActivity;->onResume()V
 
-    .line 10
+    .line 42
     invoke-direct {p0}, Lcom/whatsapp/SettingsNetworkUsage;->a()V
 
-    .line 30
+    .line 18
     return-void
 .end method

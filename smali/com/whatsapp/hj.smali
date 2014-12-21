@@ -3,20 +3,20 @@
 .source "hj.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/de;
+.field final a:Lcom/whatsapp/ConversationsFragment$ViewContactsNotSupportedDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/de;)V
+.method constructor <init>(Lcom/whatsapp/ConversationsFragment$ViewContactsNotSupportedDialogFragment;)V
     .locals 0
 
     .prologue
-    .line 4
-    iput-object p1, p0, Lcom/whatsapp/hj;->a:Lcom/whatsapp/de;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/hj;->a:Lcom/whatsapp/ConversationsFragment$ViewContactsNotSupportedDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,34 +25,15 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 1
 
     .prologue
-    .line 5
-    const-wide/16 v0, 0x12c
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/hj;->a:Lcom/whatsapp/ConversationsFragment$ViewContactsNotSupportedDialogFragment;
 
-    :try_start_0
-    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
+    invoke-virtual {v0}, Lcom/whatsapp/ConversationsFragment$ViewContactsNotSupportedDialogFragment;->dismiss()V
 
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/hj;->a:Lcom/whatsapp/de;
-
-    iget-object v0, v0, Lcom/whatsapp/de;->a:Lcom/whatsapp/adg;
-
-    iget-object v0, v0, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    invoke-static {v0}, Lcom/whatsapp/App;->d(Ljava/lang/String;)V
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 1
-    :goto_0
     return-void
-
-    .line 3
-    :catch_0
-    move-exception v0
-
-    goto :goto_0
 .end method

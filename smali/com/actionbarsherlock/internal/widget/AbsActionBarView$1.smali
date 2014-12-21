@@ -29,11 +29,11 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/AbsActionBarView$1;->this$0:Lcom/actionbarsherlock/internal/widget/AbsActionBarView;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->showOverflowMenu()Z
 
-    .line 1
+    .line 2
     return-void
 .end method

@@ -3,20 +3,20 @@
 .source "alo.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/media/MediaPlayer$OnPreparedListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/dc;
+.field final a:Lcom/whatsapp/VideoPreviewActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/dc;)V
+.method constructor <init>(Lcom/whatsapp/VideoPreviewActivity;)V
     .locals 0
 
     .prologue
-    .line 4
-    iput-object p1, p0, Lcom/whatsapp/alo;->a:Lcom/whatsapp/dc;
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/alo;->a:Lcom/whatsapp/VideoPreviewActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,32 +25,23 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
+.method public onPrepared(Landroid/media/MediaPlayer;)V
     .locals 2
 
     .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/alo;->a:Lcom/whatsapp/dc;
-
-    invoke-static {v0}, Lcom/whatsapp/dc;->b(Lcom/whatsapp/dc;)Landroid/app/Activity;
-
-    move-result-object v0
-
-    const/16 v1, 0x69
-
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->removeDialog(I)V
-
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/alo;->a:Lcom/whatsapp/dc;
-
-    invoke-static {v0}, Lcom/whatsapp/dc;->b(Lcom/whatsapp/dc;)Landroid/app/Activity;
-
-    move-result-object v0
-
-    const/16 v1, 0x6a
-
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->showDialog(I)V
-
     .line 3
+    iget-object v0, p0, Lcom/whatsapp/alo;->a:Lcom/whatsapp/VideoPreviewActivity;
+
+    const v1, 0x7f0b02c2
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/VideoPreviewActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 1
     return-void
 .end method

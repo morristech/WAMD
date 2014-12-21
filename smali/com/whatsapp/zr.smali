@@ -1,95 +1,166 @@
-.class Lcom/whatsapp/zr;
+.class final Lcom/whatsapp/zr;
 .super Ljava/lang/Object;
 .source "zr.java"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
 
 # instance fields
-.field final a:Lcom/whatsapp/protocol/ae;
+.field private final a:Ljava/lang/String;
 
-.field final b:Lcom/whatsapp/z1;
+.field private final b:[B
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/z1;Lcom/whatsapp/protocol/ae;)V
+.method public constructor <init>(Ljava/lang/String;[B)V
     .locals 0
 
     .prologue
-    .line 4
-    iput-object p1, p0, Lcom/whatsapp/zr;->b:Lcom/whatsapp/z1;
-
-    iput-object p2, p0, Lcom/whatsapp/zr;->a:Lcom/whatsapp/protocol/ae;
-
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 5
+    iput-object p1, p0, Lcom/whatsapp/zr;->a:Ljava/lang/String;
+
+    .line 10
+    iput-object p2, p0, Lcom/whatsapp/zr;->b:[B
+
+    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .prologue
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    .line 19
+    if-ne p0, p1, :cond_1
+
+    .line 23
+    :cond_0
+    :goto_0
+    return v0
+
+    .line 15
+    :cond_1
+    if-nez p1, :cond_2
+
+    move v0, v1
+
+    .line 23
+    goto :goto_0
+
+    .line 4
+    :cond_2
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v3
+
+    if-eq v2, v3, :cond_3
+
+    move v0, v1
+
+    .line 3
+    goto :goto_0
+
+    .line 24
+    :cond_3
+    check-cast p1, Lcom/whatsapp/zr;
+
+    .line 11
+    iget-object v2, p0, Lcom/whatsapp/zr;->b:[B
+
+    iget-object v3, p1, Lcom/whatsapp/zr;->b:[B
+
+    invoke-static {v2, v3}, Ljava/util/Arrays;->equals([B[B)Z
+
+    move-result v2
+
+    if-nez v2, :cond_4
+
+    move v0, v1
+
+    .line 8
+    goto :goto_0
+
+    .line 16
+    :cond_4
+    iget-object v2, p0, Lcom/whatsapp/zr;->a:Ljava/lang/String;
+
+    if-nez v2, :cond_5
+
+    .line 7
+    iget-object v2, p1, Lcom/whatsapp/zr;->a:Ljava/lang/String;
+
+    if-eqz v2, :cond_0
+
+    move v0, v1
+
+    .line 1
+    goto :goto_0
+
+    .line 20
+    :cond_5
+    iget-object v2, p0, Lcom/whatsapp/zr;->a:Ljava/lang/String;
+
+    iget-object v3, p1, Lcom/whatsapp/zr;->a:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    move v0, v1
+
+    .line 6
+    goto :goto_0
+.end method
+
+.method public hashCode()I
     .locals 2
 
     .prologue
-    .line 6
-    iget-object v0, p0, Lcom/whatsapp/zr;->a:Lcom/whatsapp/protocol/ae;
+    .line 13
+    .line 14
+    iget-object v0, p0, Lcom/whatsapp/zr;->b:[B
 
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/whatsapp/zr;->a:Lcom/whatsapp/protocol/ae;
-
-    iget-object v0, v0, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
-
-    iget-object v0, v0, Lcom/whatsapp/protocol/au;->b:Ljava/lang/String;
-
-    iget-object v1, p0, Lcom/whatsapp/zr;->b:Lcom/whatsapp/z1;
-
-    iget-object v1, v1, Lcom/whatsapp/z1;->a:Lcom/whatsapp/MessageDetailsActivity;
-
-    .line 1
-    invoke-static {v1}, Lcom/whatsapp/MessageDetailsActivity;->a(Lcom/whatsapp/MessageDetailsActivity;)Lcom/whatsapp/protocol/ae;
-
-    move-result-object v1
-
-    iget-object v1, v1, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
-
-    iget-object v1, v1, Lcom/whatsapp/protocol/au;->b:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([B)I
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    add-int/lit8 v0, v0, 0x1f
 
-    iget-object v0, p0, Lcom/whatsapp/zr;->a:Lcom/whatsapp/protocol/ae;
+    .line 18
+    mul-int/lit8 v1, v0, 0x1f
 
-    iget-object v0, v0, Lcom/whatsapp/protocol/ae;->F:Lcom/whatsapp/protocol/au;
+    iget-object v0, p0, Lcom/whatsapp/zr;->a:Ljava/lang/String;
 
-    iget-boolean v0, v0, Lcom/whatsapp/protocol/au;->c:Z
+    if-nez v0, :cond_0
 
-    if-eqz v0, :cond_0
+    const/4 v0, 0x0
 
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/zr;->b:Lcom/whatsapp/z1;
+    :goto_0
+    add-int/2addr v0, v1
 
-    iget-object v0, v0, Lcom/whatsapp/z1;->a:Lcom/whatsapp/MessageDetailsActivity;
+    .line 9
+    return v0
 
-    invoke-static {v0}, Lcom/whatsapp/MessageDetailsActivity;->h(Lcom/whatsapp/MessageDetailsActivity;)V
-
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/zr;->b:Lcom/whatsapp/z1;
-
-    iget-object v0, v0, Lcom/whatsapp/z1;->a:Lcom/whatsapp/MessageDetailsActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/MessageDetailsActivity;->c(Lcom/whatsapp/MessageDetailsActivity;)Lcom/whatsapp/ConversationRow;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/ConversationRow;->f()V
-
-    .line 3
+    .line 18
     :cond_0
-    return-void
+    iget-object v0, p0, Lcom/whatsapp/zr;->a:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    goto :goto_0
 .end method

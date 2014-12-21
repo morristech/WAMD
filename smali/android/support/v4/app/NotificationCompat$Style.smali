@@ -3,17 +3,6 @@
 .source "NotificationCompat.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroid/support/v4/app/NotificationCompat;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x409
-    name = "Style"
-.end annotation
-
-
 # instance fields
 .field mBigContentTitle:Ljava/lang/CharSequence;
 
@@ -29,10 +18,10 @@
     .locals 1
 
     .prologue
-    .line 1522
+    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1526
+    .line 5
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Landroid/support/v4/app/NotificationCompat$Style;->mSummaryTextSet:Z
@@ -42,55 +31,29 @@
 
 
 # virtual methods
-.method public build()Landroid/app/Notification;
-    .locals 2
-
-    .prologue
-    .line 1538
-    const/4 v0, 0x0
-
-    .line 1539
-    .local v0, "notification":Landroid/app/Notification;
-    iget-object v1, p0, Landroid/support/v4/app/NotificationCompat$Style;->mBuilder:Landroid/support/v4/app/NotificationCompat$Builder;
-
-    if-eqz v1, :cond_0
-
-    .line 1540
-    iget-object v1, p0, Landroid/support/v4/app/NotificationCompat$Style;->mBuilder:Landroid/support/v4/app/NotificationCompat$Builder;
-
-    invoke-virtual {v1}, Landroid/support/v4/app/NotificationCompat$Builder;->build()Landroid/app/Notification;
-
-    move-result-object v0
-
-    .line 1542
-    :cond_0
-    return-object v0
-.end method
-
 .method public setBuilder(Landroid/support/v4/app/NotificationCompat$Builder;)V
     .locals 1
-    .param p1, "builder"    # Landroid/support/v4/app/NotificationCompat$Builder;
 
     .prologue
-    .line 1529
+    .line 2
     iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Style;->mBuilder:Landroid/support/v4/app/NotificationCompat$Builder;
 
     if-eq v0, p1, :cond_0
 
-    .line 1530
+    .line 4
     iput-object p1, p0, Landroid/support/v4/app/NotificationCompat$Style;->mBuilder:Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 1531
+    .line 1
     iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Style;->mBuilder:Landroid/support/v4/app/NotificationCompat$Builder;
 
     if-eqz v0, :cond_0
 
-    .line 1532
+    .line 6
     iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Style;->mBuilder:Landroid/support/v4/app/NotificationCompat$Builder;
 
     invoke-virtual {v0, p0}, Landroid/support/v4/app/NotificationCompat$Builder;->setStyle(Landroid/support/v4/app/NotificationCompat$Style;)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    .line 1535
+    .line 3
     :cond_0
     return-void
 .end method

@@ -3,20 +3,24 @@
 .source "mt.java"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/g8;
+.field final a:Lcom/whatsapp/q;
+
+.field final b:Lcom/whatsapp/tc;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/g8;)V
+.method constructor <init>(Lcom/whatsapp/q;Lcom/whatsapp/tc;)V
     .locals 0
 
     .prologue
     .line 2
-    iput-object p1, p0, Lcom/whatsapp/mt;->a:Lcom/whatsapp/g8;
+    iput-object p1, p0, Lcom/whatsapp/mt;->a:Lcom/whatsapp/q;
+
+    iput-object p2, p0, Lcom/whatsapp/mt;->b:Lcom/whatsapp/tc;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,15 +29,17 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 1
+.method public run()V
+    .locals 2
 
     .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/mt;->a:Lcom/whatsapp/g8;
-
-    invoke-virtual {v0}, Lcom/whatsapp/g8;->d()V
-
     .line 3
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
+
+    iget-object v1, p0, Lcom/whatsapp/mt;->b:Lcom/whatsapp/tc;
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/et;->m(Lcom/whatsapp/tc;)V
+
+    .line 1
     return-void
 .end method

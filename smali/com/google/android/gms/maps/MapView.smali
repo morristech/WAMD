@@ -2,10 +2,14 @@
 .super Landroid/widget/FrameLayout;
 
 
-# instance fields
-.field private final gD:Lcom/google/android/gms/maps/MapView$b;
+# static fields
+.field public static a:I
 
-.field private gz:Lcom/google/android/gms/maps/GoogleMap;
+
+# instance fields
+.field private akS:Lcom/google/android/gms/maps/GoogleMap;
+
+.field private final akY:Lcom/google/android/gms/maps/MapView$b;
 
 
 # direct methods
@@ -20,7 +24,7 @@
 
     invoke-direct {v0, p0, p1, v1}, Lcom/google/android/gms/maps/MapView$b;-><init>(Landroid/view/ViewGroup;Landroid/content/Context;Lcom/google/android/gms/maps/GoogleMapOptions;)V
 
-    iput-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iput-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
     return-void
 .end method
@@ -38,7 +42,7 @@
 
     invoke-direct {v0, p0, p1, v1}, Lcom/google/android/gms/maps/MapView$b;-><init>(Landroid/view/ViewGroup;Landroid/content/Context;Lcom/google/android/gms/maps/GoogleMapOptions;)V
 
-    iput-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iput-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
     return-void
 .end method
@@ -56,7 +60,7 @@
 
     invoke-direct {v0, p0, p1, v1}, Lcom/google/android/gms/maps/MapView$b;-><init>(Landroid/view/ViewGroup;Landroid/content/Context;Lcom/google/android/gms/maps/GoogleMapOptions;)V
 
-    iput-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iput-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
     return-void
 .end method
@@ -70,7 +74,7 @@
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/android/gms/maps/MapView$b;-><init>(Landroid/view/ViewGroup;Landroid/content/Context;Lcom/google/android/gms/maps/GoogleMapOptions;)V
 
-    iput-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iput-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
     return-void
 .end method
@@ -79,13 +83,15 @@
 # virtual methods
 .method public final getMap()Lcom/google/android/gms/maps/GoogleMap;
     .locals 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gz:Lcom/google/android/gms/maps/GoogleMap;
+    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->akS:Lcom/google/android/gms/maps/GoogleMap;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gz:Lcom/google/android/gms/maps/GoogleMap;
+    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->akS:Lcom/google/android/gms/maps/GoogleMap;
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -99,13 +105,13 @@
 
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
-    invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$b;->bi()V
+    invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$b;->nO()V
 
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
-    invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$b;->at()Lcom/google/android/gms/dynamic/LifecycleDelegate;
+    invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$b;->je()Lcom/google/android/gms/dynamic/LifecycleDelegate;
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -126,15 +132,15 @@
     :try_start_2
     new-instance v1, Lcom/google/android/gms/maps/GoogleMap;
 
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
-    invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$b;->at()Lcom/google/android/gms/dynamic/LifecycleDelegate;
+    invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$b;->je()Lcom/google/android/gms/dynamic/LifecycleDelegate;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/android/gms/maps/MapView$a;
 
-    invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$a;->bj()Lcom/google/android/gms/maps/internal/IMapViewDelegate;
+    invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$a;->nP()Lcom/google/android/gms/maps/internal/IMapViewDelegate;
 
     move-result-object v0
 
@@ -144,11 +150,11 @@
 
     invoke-direct {v1, v0}, Lcom/google/android/gms/maps/GoogleMap;-><init>(Lcom/google/android/gms/maps/internal/IGoogleMapDelegate;)V
 
-    iput-object v1, p0, Lcom/google/android/gms/maps/MapView;->gz:Lcom/google/android/gms/maps/GoogleMap;
+    iput-object v1, p0, Lcom/google/android/gms/maps/MapView;->akS:Lcom/google/android/gms/maps/GoogleMap;
     :try_end_2
     .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_2
 
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gz:Lcom/google/android/gms/maps/GoogleMap;
+    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->akS:Lcom/google/android/gms/maps/GoogleMap;
 
     goto :goto_0
 
@@ -166,21 +172,19 @@
     .locals 1
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
     invoke-virtual {v0, p1}, Lcom/google/android/gms/maps/MapView$b;->onCreate(Landroid/os/Bundle;)V
 
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
-    invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$b;->at()Lcom/google/android/gms/dynamic/LifecycleDelegate;
+    invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$b;->je()Lcom/google/android/gms/dynamic/LifecycleDelegate;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
-
-    invoke-virtual {v0, p0}, Lcom/google/android/gms/maps/MapView$b;->a(Landroid/widget/FrameLayout;)V
+    invoke-static {p0}, Lcom/google/android/gms/dynamic/a;->b(Landroid/widget/FrameLayout;)V
     :try_end_0
     .catch Lcom/google/android/gms/maps/model/RuntimeRemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -196,7 +200,7 @@
 .method public final onDestroy()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
     invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$b;->onDestroy()V
 
@@ -206,7 +210,7 @@
 .method public final onLowMemory()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
     invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$b;->onLowMemory()V
 
@@ -216,7 +220,7 @@
 .method public final onPause()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
     invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$b;->onPause()V
 
@@ -226,7 +230,7 @@
 .method public final onResume()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
     invoke-virtual {v0}, Lcom/google/android/gms/maps/MapView$b;->onResume()V
 
@@ -236,7 +240,7 @@
 .method public final onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->gD:Lcom/google/android/gms/maps/MapView$b;
+    iget-object v0, p0, Lcom/google/android/gms/maps/MapView;->akY:Lcom/google/android/gms/maps/MapView$b;
 
     invoke-virtual {v0, p1}, Lcom/google/android/gms/maps/MapView$b;->onSaveInstanceState(Landroid/os/Bundle;)V
 

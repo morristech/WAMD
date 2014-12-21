@@ -3,32 +3,20 @@
 .source "ds.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/hardware/SensorEventListener;
 
 
 # instance fields
-.field final a:Landroid/graphics/Bitmap;
-
-.field final b:Lcom/whatsapp/a2s;
-
-.field final c:I
-
-.field final d:Lcom/whatsapp/PhotoView;
+.field final a:Lcom/whatsapp/yk;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/a2s;ILcom/whatsapp/PhotoView;Landroid/graphics/Bitmap;)V
+.method constructor <init>(Lcom/whatsapp/yk;)V
     .locals 0
 
     .prologue
-    .line 10
-    iput-object p1, p0, Lcom/whatsapp/ds;->b:Lcom/whatsapp/a2s;
-
-    iput p2, p0, Lcom/whatsapp/ds;->c:I
-
-    iput-object p3, p0, Lcom/whatsapp/ds;->d:Lcom/whatsapp/PhotoView;
-
-    iput-object p4, p0, Lcom/whatsapp/ds;->a:Landroid/graphics/Bitmap;
+    .line 11
+    iput-object p1, p0, Lcom/whatsapp/ds;->a:Lcom/whatsapp/yk;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,82 +25,98 @@
 
 
 # virtual methods
-.method public run()V
+.method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
+    .locals 0
+
+    .prologue
+    .line 8
+    return-void
+.end method
+
+.method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 4
 
     .prologue
     const/4 v3, 0x0
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
-    .line 3
-    iget v1, p0, Lcom/whatsapp/ds;->c:I
+    .line 10
+    sget-object v1, Lcom/whatsapp/yk;->p:Lcom/whatsapp/yk;
 
-    packed-switch v1, :pswitch_data_0
-
-    .line 8
-    :goto_0
-    :pswitch_0
-    iget-object v0, p0, Lcom/whatsapp/ds;->d:Lcom/whatsapp/PhotoView;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1, v3}, Lcom/whatsapp/PhotoView;->setRotation(FZ)V
-
-    .line 5
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/ds;->d:Lcom/whatsapp/PhotoView;
-
-    iget-object v1, p0, Lcom/whatsapp/ds;->a:Landroid/graphics/Bitmap;
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/PhotoView;->a(Landroid/graphics/Bitmap;)V
+    if-nez v1, :cond_0
 
     .line 9
-    return-void
+    iget-object v1, p0, Lcom/whatsapp/ds;->a:Lcom/whatsapp/yk;
 
-    .line 6
-    :pswitch_1
-    iget-object v1, p0, Lcom/whatsapp/ds;->d:Lcom/whatsapp/PhotoView;
-
-    const/high16 v2, 0x42b40000
-
-    invoke-virtual {v1, v2, v3}, Lcom/whatsapp/PhotoView;->setRotation(FZ)V
-
-    .line 4
-    if-eqz v0, :cond_0
+    invoke-virtual {v1, v3}, Lcom/whatsapp/yk;->a(Z)V
 
     .line 7
-    :pswitch_2
-    iget-object v1, p0, Lcom/whatsapp/ds;->d:Lcom/whatsapp/PhotoView;
+    iget-object v1, p0, Lcom/whatsapp/ds;->a:Lcom/whatsapp/yk;
 
-    const/high16 v2, 0x43340000
+    invoke-static {v1}, Lcom/whatsapp/yk;->a(Lcom/whatsapp/yk;)V
 
-    invoke-virtual {v1, v2, v3}, Lcom/whatsapp/PhotoView;->setRotation(FZ)V
+    if-eqz v0, :cond_4
+
+    .line 4
+    :cond_0
+    sget-object v1, Lcom/whatsapp/yk;->p:Lcom/whatsapp/yk;
+
+    iget-object v2, p0, Lcom/whatsapp/ds;->a:Lcom/whatsapp/yk;
+
+    if-eq v1, v2, :cond_1
 
     .line 2
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Lcom/whatsapp/ds;->a:Lcom/whatsapp/yk;
 
-    .line 11
-    :pswitch_3
-    iget-object v1, p0, Lcom/whatsapp/ds;->d:Lcom/whatsapp/PhotoView;
+    invoke-static {v1}, Lcom/whatsapp/yk;->a(Lcom/whatsapp/yk;)V
 
-    const/high16 v2, 0x43870000
+    if-eqz v0, :cond_4
 
-    invoke-virtual {v1, v2, v3}, Lcom/whatsapp/PhotoView;->setRotation(FZ)V
+    .line 5
+    :cond_1
+    iget-object v1, p1, Landroid/hardware/SensorEvent;->values:[F
 
-    .line 1
-    if-eqz v0, :cond_0
-
-    goto :goto_0
+    aget v1, v1, v3
 
     .line 3
-    :pswitch_data_0
-    .packed-switch 0x3
-        :pswitch_2
-        :pswitch_0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_0
-        :pswitch_3
-    .end packed-switch
+    const/high16 v2, 0x40a00000
+
+    cmpl-float v2, v1, v2
+
+    if-gez v2, :cond_2
+
+    iget-object v2, p0, Lcom/whatsapp/ds;->a:Lcom/whatsapp/yk;
+
+    invoke-static {v2}, Lcom/whatsapp/yk;->b(Lcom/whatsapp/yk;)Landroid/hardware/Sensor;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/hardware/Sensor;->getMaximumRange()F
+
+    move-result v2
+
+    cmpl-float v1, v1, v2
+
+    if-nez v1, :cond_3
+
+    .line 6
+    :cond_2
+    iget-object v1, p0, Lcom/whatsapp/ds;->a:Lcom/whatsapp/yk;
+
+    invoke-virtual {v1, v3}, Lcom/whatsapp/yk;->a(Z)V
+
+    if-eqz v0, :cond_4
+
+    .line 12
+    :cond_3
+    iget-object v0, p0, Lcom/whatsapp/ds;->a:Lcom/whatsapp/yk;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/yk;->a(Z)V
+
+    .line 1
+    :cond_4
+    return-void
 .end method

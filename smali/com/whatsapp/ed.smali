@@ -1,26 +1,39 @@
-.class public abstract Lcom/whatsapp/ed;
-.super Landroid/text/style/CharacterStyle;
+.class Lcom/whatsapp/ed;
+.super Ljava/lang/Object;
 .source "ed.java"
 
 # interfaces
-.implements Landroid/text/style/UpdateAppearance;
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field final a:Lcom/whatsapp/DeviceInfoAlarmBroadcastReceiver;
 
 
 # direct methods
-.method public constructor <init>()V
+.method constructor <init>(Lcom/whatsapp/DeviceInfoAlarmBroadcastReceiver;)V
     .locals 0
 
     .prologue
     .line 1
-    invoke-direct {p0}, Landroid/text/style/CharacterStyle;-><init>()V
+    iput-object p1, p0, Lcom/whatsapp/ed;->a:Lcom/whatsapp/DeviceInfoAlarmBroadcastReceiver;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a(Landroid/view/View;Landroid/view/MotionEvent;)Z
-.end method
+.method public run()V
+    .locals 1
 
-.method public abstract updateDrawState(Landroid/text/TextPaint;)V
+    .prologue
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/ed;->a:Lcom/whatsapp/DeviceInfoAlarmBroadcastReceiver;
+
+    invoke-static {v0}, Lcom/whatsapp/DeviceInfoAlarmBroadcastReceiver;->a(Lcom/whatsapp/DeviceInfoAlarmBroadcastReceiver;)V
+
+    .line 3
+    return-void
 .end method

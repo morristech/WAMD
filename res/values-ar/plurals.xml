@@ -353,12 +353,12 @@
         <item quantity="many">مُتَبقي %d</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">يمكنك البدء باستعمال واتساب. فقد أعدنا %,d من الرسائل.</item>
-        <item quantity="zero">يمكنك البدء باستعمال واتساب. فقد أعدنا %,d من الرسائل.</item>
-        <item quantity="one">يمكنك البدء باستعمال واتساب. فقد أعدنا %,d من الرسائل.</item>
-        <item quantity="two">يمكنك البدء باستعمال واتساب. فقد أعدنا %,d من الرسائل.</item>
-        <item quantity="few">يمكنك البدء باستعمال واتساب. فقد أعدنا %,d من الرسائل.</item>
-        <item quantity="many">يمكنك البدء باستعمال واتساب. فقد أعدنا %,d من الرسائل.</item>
+        <item quantity="other">تمت استعادة %,d من الرسائل. يمكنك استعمال التطبيق الآن.</item>
+        <item quantity="zero">تمت استعادة %,d من الرسائل. يمكنك استعمال التطبيق الآن.</item>
+        <item quantity="one">تمت استعادة %,d من الرسائل. يمكنك استعمال التطبيق الآن.</item>
+        <item quantity="two">تمت استعادة %,d من الرسائل. يمكنك استعمال التطبيق الآن.</item>
+        <item quantity="few">تمت استعادة %,d من الرسائل. يمكنك استعمال التطبيق الآن.</item>
+        <item quantity="many">تمت استعادة %,d من الرسائل. يمكنك استعمال التطبيق الآن.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">يتم إرسال %1$d فيديو إلى %2$s</item>

@@ -15,7 +15,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 2
     new-instance v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;
 
     invoke-direct {v0}, Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;-><init>()V
@@ -29,10 +29,10 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
+    .line 3
     return-void
 .end method
 
@@ -44,7 +44,7 @@
     .prologue
     const/4 v1, 0x2
 
-    sget-boolean v2, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->a:Z
+    sget v2, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->a:I
 
     .line 8
     add-int v3, p2, p3
@@ -56,7 +56,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 2
+    .line 6
     invoke-interface {p1, p2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v0
@@ -69,12 +69,12 @@
 
     move-result v0
 
-    .line 7
+    .line 5
     add-int/lit8 p2, p2, 0x1
 
     if-eqz v2, :cond_0
 
-    .line 4
+    .line 1
     :cond_1
     return v0
 .end method

@@ -44,7 +44,7 @@
     <string name="amazon_home_hero_widget_title">الرسائل غير المقروءة</string>
     <string name="android_wear_cant_talk">عذراً، لا أستطيع التكلم الآن</string>
     <string name="android_wear_haha">هههههه</string>
-    <string name="android_wear_lol">ههه</string>
+    <string name="android_wear_lol">لول</string>
     <string name="android_wear_nice">رائع</string>
     <string name="android_wear_no">لا</string>
     <string name="android_wear_ok">حسناً</string>
@@ -72,14 +72,6 @@
     <string name="audio_note_tip">اضغط للتسجيل، اترك للإرسال</string>
     <string name="audio_note_tip_2">الرجاء تسجيل رسالة أطول</string>
     <string name="audio_note_top_mic_tip">الرجاء التحدث عبر الميكروفون في أعلى هاتفك</string>
-    <string name="auth_client_needs_enabling_title">يتطلب أحد التطبيقات تمكين خدمات Google Play.</string>
-    <string name="auth_client_needs_installation_title">يتطلب أحد التطبيقات تثبيت خدمات Google Play.</string>
-    <string name="auth_client_needs_update_title">يتطلب أحد التطبيقات تحديث خدمات Google Play.</string>
-    <string name="auth_client_play_services_err_notification_msg">خطأ في خدمات Google Play</string>
-    <string name="auth_client_requested_by_msg">تم الطلب عن طريق %1$s</string>
-    <string name="auth_client_using_bad_version_title">يحاول أحد التطبيقات استخدام إصدار غير صالح من خدمات Google Play.</string>
-    <string name="barcode_scanner_dialog_body">يتطلب هذا التطبيق قارئ الباركود. هل تود تثبيت واحد؟</string>
-    <string name="barcode_scanner_dialog_title">تثبيت ماسح الباركود ؟</string>
     <string name="block">حظر</string>
     <string name="block_ask">هل تريد حقـاً حظر جهة الاتصال هذه؟</string>
     <string name="block_list_desc_1">"انقر على الأيقونة في الزاوية اليسرى من أعلى الشاشة لتحديد جهة اتصال تريد حظرها.
@@ -114,6 +106,8 @@
     <string name="camera_shortcut">كاميرا واتساب</string>
     <string name="camera_title">ارسل صورة أو فيديو عبر واتساب</string>
     <string name="camera_video_preview_title">إرسال فيديو عبر واتساب</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">لإجراء مكالمة عبر واتساب، عليك أولاً إيقاف نمط وضع الطائرة.</string>
+    <string name="can_not_start_voip_call_in_phone_call">لا يمكنك إجراء مكالمة عبر واتساب إذا كنت تجري مكالمة أخرى عبر هاتفك في الوقت نفسه.</string>
     <string name="cancel">إلغاء</string>
     <string name="cannot_send_not_a_group_participant">لا يمكنك إرسال رسائل لهذه المجموعة لأنك لم تعد مشاركاً فيها.</string>
     <string name="cannot_send_selected_file">تعذر إرسال ملف الوسائط. إما أنك اخترت الملف الخطأ، أو أن النظام لا يدعم تنسيق الملف.</string>
@@ -162,25 +156,34 @@
     <string name="color_red">أحمر</string>
     <string name="color_white">أبيض</string>
     <string name="color_yellow">أصفر</string>
-    <string name="common_google_play_services_enable_button">تمكين خدمات Google Play</string>
-    <string name="common_google_play_services_enable_text">لن يعمل هذا التطبيق ما لم يتم تمكين خدمات Google Play.</string>
-    <string name="common_google_play_services_enable_title">تمكين خدمات Google Play</string>
-    <string name="common_google_play_services_install_button">الحصول على خدمات Google Play</string>
-    <string name="common_google_play_services_install_text_phone">لن يتم تشغيل هذا التطبيق بدون خدمات Google Play، والتي لا تتوفر في هاتفك.</string>
-    <string name="common_google_play_services_install_text_tablet">لن يتم تشغيل هذا التطبيق بدون خدمات Google Play، والتي لا تتوفر في جهازك اللوحي.</string>
-    <string name="common_google_play_services_install_title">الحصول على خدمات Google Play</string>
+    <string name="common_android_wear_notification_needs_update_text">‏يتطلب أحد التطبيقات تحديثًا لتطبيق Android Wear.</string>
+    <string name="common_android_wear_update_text">‏لن يتم تشغيل هذا التطبيق ما لم تحدِّث تطبيق Android Wear.</string>
+    <string name="common_android_wear_update_title">‏تحديث Android Wear</string>
+    <string name="common_google_play_services_enable_button">‏تمكين خدمات Google Play</string>
+    <string name="common_google_play_services_enable_text">‏لن يعمل هذا التطبيق ما لم يتم تمكين خدمات Google Play.</string>
+    <string name="common_google_play_services_enable_title">‏تمكين خدمات Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">تم الطلب عن طريق %1$s</string>
+    <string name="common_google_play_services_install_button">‏الحصول على خدمات Google Play</string>
+    <string name="common_google_play_services_install_text_phone">‏لن يتم تشغيل هذا التطبيق بدون خدمات Google Play، والتي لا تتوفر في هاتفك.</string>
+    <string name="common_google_play_services_install_text_tablet">‏لن يتم تشغيل هذا التطبيق بدون خدمات Google Play، والتي لا تتوفر في جهازك اللوحي.</string>
+    <string name="common_google_play_services_install_title">‏الحصول على خدمات Google Play</string>
     <string name="common_google_play_services_invalid_account_text">الحساب الذي تمّ تحديده غير موجود على الجهاز. يُرجى اختيار حساب آخر.</string>
     <string name="common_google_play_services_invalid_account_title">حساب غير صالح</string>
-    <string name="common_google_play_services_network_error_text">يتطلب الاتصال بخدمات Google Play وجود اتصال بيانات.</string>
+    <string name="common_google_play_services_needs_enabling_title">‏يتطلب أحد التطبيقات تمكين خدمات Google Play.</string>
+    <string name="common_google_play_services_network_error_text">‏يتطلب الاتصال بخدمات Google Play وجود اتصال بيانات.</string>
     <string name="common_google_play_services_network_error_title">خطأ في الشبكة</string>
-    <string name="common_google_play_services_unknown_issue">حدثت مشكلة غير معروفة في خدمات Google Play.</string>
-    <string name="common_google_play_services_unsupported_text">خدمات Google Play التي تستجيب لها بعض تطبيقاتك لا تعمل على جهازك. يُرجى الاتصال بجهة التصنيع للحصول على المساعدة.</string>
-    <string name="common_google_play_services_unsupported_title">خدمات Google Play</string>
+    <string name="common_google_play_services_notification_needs_installation_title">‏يتطلب أحد التطبيقات تثبيت خدمات Google Play.</string>
+    <string name="common_google_play_services_notification_needs_update_title">‏يتطلب أحد التطبيقات تحديث خدمات Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">‏خطأ في خدمات Google Play</string>
+    <string name="common_google_play_services_unknown_issue">‏حدثت مشكلة غير معروفة في خدمات Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">‏خدمات Google Play التي تستجيب لها بعض تطبيقاتك لا تعمل على جهازك. يُرجى الاتصال بجهة التصنيع للحصول على المساعدة.</string>
+    <string name="common_google_play_services_unsupported_title">‏خدمات Google Play</string>
     <string name="common_google_play_services_update_button">تحديث</string>
-    <string name="common_google_play_services_update_text">لن يتم تشغيل هذا التطبيق ما لم تحدِّث خدمات Google Play.</string>
-    <string name="common_google_play_services_update_title">تحديث خدمات Google Play</string>
+    <string name="common_google_play_services_update_text">‏لن يتم تشغيل هذا التطبيق ما لم تحدِّث خدمات Google Play.</string>
+    <string name="common_google_play_services_update_title">‏تحديث خدمات Google Play</string>
+    <string name="common_open_on_phone">فتح على الهاتف</string>
     <string name="common_signin_button_text">تسجيل الدخول</string>
-    <string name="common_signin_button_text_long">تسجيل الدخول باستخدام Google</string>
+    <string name="common_signin_button_text_long">‏تسجيل الدخول باستخدام Google</string>
     <string name="confirm_forward_msg">إعادة توجيه إلى %s؟</string>
     <string name="confirm_sharing_title">مشاركة مع %s؟</string>
     <string name="connectivity_self_help_instructions">يرجى إعادة تشغيل هاتفك، إذا استمرت مشكلة الاتصال.</string>
@@ -354,7 +357,7 @@
     <string name="eula_description">نقدم لك وسيلة للتحدث مع الأصدقاء في جميع أنحاء العالم عبر برنامج محادثة يعمل على أجهزة محمول وأنظمة تشغيل هواتف متنوعة.</string>
     <string name="eula_tablets_not_supported">ملاحظة: الأجهزة اللوحية غير مدعومة.</string>
     <string name="eula_terms_of_service">شروط الخدمة</string>
-    <string name="eula_title">أهلاً بك في واتساب!</string>
+    <string name="eula_title">أهلاً بك في واتساب</string>
     <string name="existing_contact">موجودة مسبقاً</string>
     <string name="exit">الخروج</string>
     <string name="exit_group">الخروج من المجموعة</string>
@@ -530,7 +533,6 @@
     <string name="insufficient_space_for_download_shared_storage">تعذر التنزيل لعدم توفر مساحة كافية على الذاكرة الداخلية. يرجى حذف بعض الملفات من الذاكرة ثم المحاولة مجدداً.</string>
     <string name="invalid_media_message_download">تعذر تنزيل الوسائط من رسالة غير متوفرة. الرجاء محاولة إرسال الرسالة مرة أخرى.</string>
     <string name="invalid_message_forward">لا يمكن إعادة توجيه الرسالة إلى جهة اتصال غير صحيحة.</string>
-    <string name="invalid_qr_code">الكود المربع غير صحيح</string>
     <string name="invalid_url_for_download">تعذر التنزيل. الرجاء طلب إعادة إرسال الملف لك من جديد.</string>
     <string name="invite">دعوة</string>
     <string name="invite_friends">قم بدعوة أصدقائك</string>
@@ -576,7 +578,6 @@
     <string name="menuitem_add">إضافة</string>
     <string name="menuitem_contacts">جهات الاتصال</string>
     <string name="menuitem_debug">إصلاح</string>
-    <string name="menuitem_delete_qr">حذف الكود المربّع</string>
     <string name="menuitem_groupchat">مجموعة جديدة</string>
     <string name="menuitem_list">رسالة جماعية جديدة</string>
     <string name="menuitem_mute">كتم الصوت</string>
@@ -617,14 +618,15 @@
     <string name="msg_store_backup_failed">تعذر إنشاء نسخ احتياطي للرسائل</string>
     <string name="msg_store_backup_failed_try_again_later">تعذر إجراء نسخ احتياطي للرسائل. الرجاء المحاولة لاحقاً.</string>
     <string name="msg_store_backup_found">تم العثور على نسخة احتياطية</string>
-    <string name="msg_store_backup_found_registration">تم العثور على نسخ احتياطي لرسائلك!</string>
+    <string name="msg_store_backup_found_registration">تم العثور على نسخة احتياطية لدردشاتك</string>
+    <string name="msg_store_backup_found_title">استعادة سجلات الدردشة</string>
     <string name="msg_store_backup_skipped">تم تخطي النسخ الاحتياطي</string>
     <string name="msg_store_backup_skipped_no_media">تم تخطي عملية النسخ الاحتياطي: لم يتم العثور على بطاقة وسائط.</string>
     <string name="msg_store_backup_skipped_read_only_media">تم تخطي عملية النسخ الاحتياطي: بطاقة الوسائط محددة بالقراءة فقط.</string>
     <string name="msg_store_confirm">تأكيد</string>
-    <string name="msg_store_creation_backup_message">هل تريد استعادة سجلات الدردشة من النسخ الاحتياطي؟</string>
-    <string name="msg_store_do_not_restore">لا تستعيد</string>
-    <string name="msg_store_do_not_restore_no_thanks">لا شكراً</string>
+    <string name="msg_store_creation_backup_message">استَعِد سجل الدردشات من النسخ الاحتياطي. إن لم تستعد دردشاتك الآن لن تتمكن من استعادتها لاحقاً.</string>
+    <string name="msg_store_do_not_restore">تخطي الاستعادة</string>
+    <string name="msg_store_do_not_restore_no_thanks">تخطي الاستعادة</string>
     <string name="msg_store_error_found">حدث خطأ. يرجى التوقف وإعادة تشغيل واتساب.</string>
     <string name="msg_store_error_not_restored">عذراً، لم نتمكن من استعادة أي من سجلات الدردشة من النسخة الاحتياطية.</string>
     <string name="msg_store_last_confirmation_not_to_restore">سوف تفقد دردشاتك. هل أنت متأكد من أنك لا تريد استعادة سجلات الدردشة من النسخة الاحتياطية؟</string>
@@ -651,9 +653,6 @@
     <string name="need_sd_card_shared_storage">يرجى إيقاف ذاكرة USB ثم إعادة المحاولة.</string>
     <string name="network_required">ليس لديك اتصال بأي شبكة في الوقت الحالي.</string>
     <string name="network_usage_ask_reset_message">هل تريد حقاً إعادة تعيين الإحصاءات؟</string>
-    <string name="network_usage_byte_count_gb">%1$.1f جيجابايت</string>
-    <string name="network_usage_byte_count_kb">%1$.1f كيلوبايت</string>
-    <string name="network_usage_byte_count_mb">%1$.1f ميجابايت</string>
     <string name="network_usage_last_reset_time">تاريخ إعادة تعيين الإحصاءات السابقة: %1$s</string>
     <string name="network_usage_media_bytes_received">حجم الوسائط الواردة:</string>
     <string name="network_usage_media_bytes_sent">حجم الوسائط الصادرة:</string>
@@ -900,6 +899,7 @@
     <string name="send_location">إرسال الموقع</string>
     <string name="send_payment_button">إرسال رابط الدفع عبر البريد</string>
     <string name="send_payment_url_via">إرسال رابط الدفع عبر...</string>
+    <string name="send_this_location">إرسال هذا الموقع</string>
     <string name="send_your_current_location">إرسال موقعك الحالي</string>
     <string name="sending_video_to_contact">إرسال فيديو إلى %s</string>
     <string name="sent_to_group">إرسال إلى \"%s\"</string>
@@ -1012,17 +1012,17 @@
     <string name="software_expired_get_from_play_with_date">أصبح هذا الإصدار من واتساب قديماً ولم يعد بالإمكان استخدامه بعد تاريخ&lt;b>%1$s&lt;/b>. الرجاء تنزيل أحدث إصدار من متجر PLay. &lt;br>&lt;br> الرجاء الانتباه إلى أن تاريخ جهازك هو &lt;b>%2$s&lt;/b>. إذا كان هذا التاريخ غير صحيح يرجى حينها تصحيحه في إعدادات جهازك ومن ثم إعادة تشغيل واتساب.</string>
     <string name="software_expired_with_date">أصبح هذا الإصدار من واتساب قديماً ولم يعد بالإمكان استخدامه بعد تاريخ&lt;b>%1$s&lt;/b>. انقر على \"تنزيل\" للحصول على أحدث إصدار.&lt;br>&lt;br>الرجاء الانتباه إلى أن تاريخ جهازك هو &lt;b>%2$s&lt;/b>. إذا كان هذا التاريخ غير صحيح يرجى حينها تصحيحه في إعدادات جهازك ومن ثم إعادة تشغيل واتساب.</string>
     <string name="spam_generic">"تم حظرك مؤقتاً من استخدام واتساب لأنك ربما خالفت شروط الخدمة. 
+
 ستتمكن من استخدام واتساب من جديد بعد:"</string>
     <string name="spam_generic_data_connection_missing">تأكد أن هاتفك متصل حقاً بالإنترنت من خلال البيانات الخلوية.</string>
     <string name="spam_generic_unknown_time_left">تم حظرك مؤقتاً من استخدام واتساب لأنك ربما خالفت شروط الخدمة. ستتمكن من استخدام واتساب من جديد قريباً.</string>
     <string name="spam_learn_more">معرفة المزيد</string>
     <string name="spam_title">الحساب محظور مؤقتاً</string>
-    <string name="spam_too_many_blocks">تم حظرك مؤقتاً من استخدام واتساب لأن عدداً كبيراً من الأشخاص قد حظرك.</string>
     <string name="spam_too_many_groups">"تم حظرك مؤقتاً من استخدام واتساب لأنك أنشأت عدداً كبيراً من المجموعات تتضمن أشخاصاً لم يحفظوا رقمك في قائمة جهات الاتصال لديهم. 
+
 ستتمكن من استخدام واتساب من جديد بعد:"</string>
     <string name="spam_too_many_messages">"تم حظرك مؤقتاً من استخدام واتساب لأنك أرسلت عدداً كبيراً من الرسائل إلى أشخاص لم يحفظوا رقمك في قائمة جهات الاتصال لديهم. 
-ستتمكن من استخدام واتساب من جديد بعد:"</string>
-    <string name="spam_too_many_people">"تم حظرك مؤقتاً من استخدام واتساب لأنك أرسلت نفس الرسالة إلى عدد كبير من الأشخاص. 
+
 ستتمكن من استخدام واتساب من جديد بعد:"</string>
     <string name="status">الحالة</string>
     <string name="status_default_at_gym">في النادي الرياضي</string>
@@ -1191,7 +1191,9 @@
     <string name="view_list_media">وسائط قائمة الرسالة الجماعية</string>
     <string name="view_website">عرض الموقع الإلكتروني</string>
     <string name="voip_activity_label">مكالمة صوتية</string>
+    <string name="voip_call_bluetooth_toggle_description">تشغيل البلوتوث</string>
     <string name="voip_call_end_button_description">إنهاء المكالمة الصوتية</string>
+    <string name="voip_call_failed_no_network">تعذر إجراء المكالمة. تأكد أن هاتفك متصل بالإنترنت وحاول مجدداً.</string>
     <string name="voip_call_goto_chat_description">رؤية الدردشة</string>
     <string name="voip_call_incoming">واردة</string>
     <string name="voip_call_label">مكالمة واتساب</string>
@@ -1244,5 +1246,4 @@
     <string name="yesterday">أمس</string>
     <string name="yesterday_at">الأمس عند %s</string>
     <string name="you">أنت</string>
-    <string name="voip_call_bluetooth_toggle_description">تشغيل البلوتوث</string>
 </resources>

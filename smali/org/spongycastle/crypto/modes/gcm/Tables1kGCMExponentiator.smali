@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 20
+    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,17 +25,17 @@
     .locals 3
 
     .prologue
-    .line 17
+    .line 25
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/gcm/Tables1kGCMExponentiator;->lookupPowX2:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
     move-result v1
 
-    .line 9
+    .line 1
     if-gt v1, p1, :cond_1
 
-    .line 1
+    .line 2
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/gcm/Tables1kGCMExponentiator;->lookupPowX2:Ljava/util/Vector;
 
     add-int/lit8 v2, v1, -0x1
@@ -48,26 +48,26 @@
 
     check-cast v0, [I
 
-    .line 18
+    .line 4
     :cond_0
     invoke-static {v0}, Lorg/spongycastle/util/Arrays;->clone([I)[I
 
     move-result-object v0
 
-    .line 11
+    .line 18
     invoke-static {v0, v0}, Lorg/spongycastle/crypto/modes/gcm/GCMUtil;->multiply([I[I)V
 
-    .line 2
+    .line 7
     iget-object v2, p0, Lorg/spongycastle/crypto/modes/gcm/Tables1kGCMExponentiator;->lookupPowX2:Ljava/util/Vector;
 
     invoke-virtual {v2, v0}, Ljava/util/Vector;->addElement(Ljava/lang/Object;)V
 
-    .line 16
+    .line 3
     add-int/lit8 v1, v1, 0x1
 
     if-le v1, p1, :cond_0
 
-    .line 3
+    .line 9
     :cond_1
     return-void
 .end method
@@ -80,25 +80,25 @@
     .prologue
     const-wide/16 v6, 0x0
 
-    sget v2, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->a:I
+    sget-boolean v2, Lorg/spongycastle/crypto/modes/gcm/Tables8kGCMMultiplier;->a:Z
 
-    .line 23
+    .line 17
     invoke-static {}, Lorg/spongycastle/crypto/modes/gcm/GCMUtil;->oneAsInts()[I
 
     move-result-object v3
 
-    .line 21
+    .line 15
     const/4 v0, 0x0
 
     move v1, v0
 
-    .line 6
+    .line 20
     :goto_0
     cmp-long v0, p1, v6
 
     if-lez v0, :cond_1
 
-    .line 13
+    .line 16
     const-wide/16 v4, 0x1
 
     and-long/2addr v4, p1
@@ -110,7 +110,7 @@
     .line 19
     invoke-direct {p0, v1}, Lorg/spongycastle/crypto/modes/gcm/Tables1kGCMExponentiator;->ensureAvailable(I)V
 
-    .line 10
+    .line 13
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/gcm/Tables1kGCMExponentiator;->lookupPowX2:Ljava/util/Vector;
 
     invoke-virtual {v0, v1}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
@@ -123,7 +123,7 @@
 
     invoke-static {v3, v0}, Lorg/spongycastle/crypto/modes/gcm/GCMUtil;->multiply([I[I)V
 
-    .line 15
+    .line 21
     :cond_0
     add-int/lit8 v0, v1, 0x1
 
@@ -134,11 +134,11 @@
 
     if-eqz v2, :cond_2
 
-    .line 5
+    .line 24
     :cond_1
     invoke-static {v3, p3}, Lorg/spongycastle/crypto/modes/gcm/GCMUtil;->asBytes([I[B)V
 
-    .line 12
+    .line 22
     return-void
 
     :cond_2
@@ -151,12 +151,12 @@
     .locals 3
 
     .prologue
-    .line 24
+    .line 5
     invoke-static {p1}, Lorg/spongycastle/crypto/modes/gcm/GCMUtil;->asInts([B)[I
 
     move-result-object v1
 
-    .line 14
+    .line 12
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/gcm/Tables1kGCMExponentiator;->lookupPowX2:Ljava/util/Vector;
 
     if-eqz v0, :cond_0
@@ -179,11 +179,11 @@
 
     if-eqz v0, :cond_0
 
-    .line 25
+    .line 23
     :goto_0
     return-void
 
-    .line 7
+    .line 6
     :cond_0
     new-instance v0, Ljava/util/Vector;
 
@@ -193,7 +193,7 @@
 
     iput-object v0, p0, Lorg/spongycastle/crypto/modes/gcm/Tables1kGCMExponentiator;->lookupPowX2:Ljava/util/Vector;
 
-    .line 22
+    .line 11
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/gcm/Tables1kGCMExponentiator;->lookupPowX2:Ljava/util/Vector;
 
     invoke-virtual {v0, v1}, Ljava/util/Vector;->addElement(Ljava/lang/Object;)V

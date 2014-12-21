@@ -14,13 +14,13 @@
     .locals 14
 
     .prologue
-    const/4 v5, 0x4
-
     const/4 v4, 0x3
 
     const/4 v3, 0x2
 
     const/4 v2, 0x1
+
+    const/16 v5, 0x9
 
     const/4 v1, 0x0
 
@@ -28,7 +28,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "\u0003^[ 5F[A&+\u0003\u000c]*4\u0012EG(g\nEK=&\u0014U\t:4\u0007N@#.\u0012U"
+    const-string v6, "\u0005a\u0002\'\r\u0013y\u0013?\u0017\u0010e\u000c2\u001a\u0017{L?\u0011\u0013m\u0006!\u000c\u001d{"
 
     const/4 v0, -0x1
 
@@ -66,7 +66,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "\u0011DH;4\u0007\\Y#.\u0004@F.#\u0003^\u0006#(\u0007HL=5\t^"
+    const-string v0, "\u0017{\u0011<\u000cR~\u000b:\u0012\u0017)\u00176\r\u0006`\r4^\u001e`\u0001!\u001f\u0000pC&\r\u0013k\n?\u0017\u0006p"
 
     move-object v6, v0
 
@@ -81,7 +81,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "\u001e\u0014\u001f"
+    const-string v0, "\u001e`\u0001"
 
     move-object v6, v0
 
@@ -96,7 +96,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "\u000bEY<"
+    const-string v0, "\n1U"
 
     move-object v6, v0
 
@@ -111,13 +111,15 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "\u0007^D*&\u0004E"
+    const/4 v6, 0x4
 
-    move-object v6, v0
+    const-string v0, "\u0005a\u0002\'\r\u0013y\u0013?\u0017\u0010e\u000c2\u001a\u0017{L0\u0012\u001dz\u0006)\u0018"
 
-    move v7, v5
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
 
     move v0, v4
 
@@ -126,17 +128,13 @@
     :pswitch_3
     aput-object v6, v8, v7
 
-    const/4 v6, 0x5
+    const/4 v7, 0x5
 
-    const-string v0, "\u0007^D*&\u0004E\u00049p\u0007"
+    const-string v6, "\\z\u000c"
 
-    move v7, v6
+    const/4 v0, 0x4
 
     move-object v8, v9
-
-    move-object v6, v0
-
-    move v0, v5
 
     goto :goto_0
 
@@ -145,7 +143,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "\u0011DH;4\u0007\\Y#.\u0004@F.#\u0003^\u0006,+\t_L5!"
+    const-string v6, "]e\n1"
 
     const/4 v0, 0x5
 
@@ -158,7 +156,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "H_F"
+    const-string v6, "\u0013{\u000e6\u001f\u0010`"
 
     const/4 v0, 0x6
 
@@ -171,7 +169,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "\u001e\u0014\u001f"
+    const-string v6, "\n1U"
 
     const/4 v0, 0x7
 
@@ -182,11 +180,11 @@
     :pswitch_7
     aput-object v6, v8, v7
 
-    const/16 v7, 0x9
-
-    const-string v6, "H_F"
+    const-string v6, "\u001f`\u0013 "
 
     const/16 v0, 0x8
+
+    move v7, v5
 
     move-object v8, v9
 
@@ -195,13 +193,17 @@
     :pswitch_8
     aput-object v6, v8, v7
 
-    const/16 v7, 0xa
+    const/16 v6, 0xa
 
-    const-string v6, "\u0011DH;4\u0007\\Y#.\u0004@F.#\u0003^\u0006,+\t_L5!"
+    const-string v0, "\\z\u000c"
 
-    const/16 v0, 0x9
+    move v7, v6
 
     move-object v8, v9
+
+    move-object v6, v0
+
+    move v0, v5
 
     goto :goto_0
 
@@ -210,7 +212,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, "\nEK`"
+    const-string v6, "\u001f`\u0013 "
 
     const/16 v0, 0xa
 
@@ -223,7 +225,7 @@
 
     const/16 v7, 0xc
 
-    const-string v6, "\u0007^D*&\u0004E\u00049p"
+    const-string v6, "\u0005a\u0002\'\r\u0013y\u0013?\u0017\u0010e\u000c2\u001a\u0017{L0\u0012\u001dz\u0006)\u0018"
 
     const/16 v0, 0xb
 
@@ -236,7 +238,7 @@
 
     const/16 v7, 0xd
 
-    const-string v6, "I@@-"
+    const-string v6, "\u0013{\u000e6\u001f\u0010`N%I"
 
     const/16 v0, 0xc
 
@@ -249,7 +251,7 @@
 
     const/16 v7, 0xe
 
-    const-string v6, "\u0007^D*&\u0004E"
+    const-string v6, "\u0013{\u000e6\u001f\u0010`N%I\u0013"
 
     const/16 v0, 0xd
 
@@ -262,7 +264,7 @@
 
     const/16 v7, 0xf
 
-    const-string v6, "\u000bEY<"
+    const-string v6, "\u0013{\u000e6\u001f\u0010`"
 
     const/16 v0, 0xe
 
@@ -275,7 +277,7 @@
 
     const/16 v7, 0x10
 
-    const-string v6, "\nEK"
+    const-string v6, "\u0005a\u0002\'\r\u0013y\u0013?\u0017\u0010e\u000c2\u001a\u0017{L:\u0011\u0017{\u0011<\u000c"
 
     const/16 v0, 0xf
 
@@ -288,7 +290,7 @@
 
     const/16 v7, 0x11
 
-    const-string v6, "\u0011DH;4\u0007\\Y#.\u0004@F.#\u0003^\u0006&(\u0003^[ 5"
+    const-string v6, "\u001e`\u0001|"
 
     const/16 v0, 0x10
 
@@ -301,7 +303,7 @@
 
     const/16 v7, 0x12
 
-    const-string v6, "\u0011DH;4\u0007\\Y"
+    const-string v6, "\u001bg\u0010\'\u001f\u001eeC7\u0017\u0000l\u0000\'^\u0014{\u000c>^\u0013y\u0008s\t\u001d{\u00086\u001aI)\u00116\n\u0017z\u0017:\u0010\u0015)\u000f:\u001c\u0000h\u0011*^\u0007z\u00021\u0017\u001e`\u0017*"
 
     const/16 v0, 0x11
 
@@ -314,7 +316,7 @@
 
     const/16 v7, 0x13
 
-    const-string v6, "\u0013BH-+\u0003\u000c] g\u0013_Lo+\tMM*#F@@-5\u0007^@*4]\u000c]=>\u000fBNo.\u0008_].+\n\u000cM&5\u0003O]o!\u0014CDo&\u0016G"
+    const-string v6, "\u0005a\u0002\'\r\u0013y\u0013"
 
     const/16 v0, 0x12
 
@@ -327,7 +329,7 @@
 
     const/16 v7, 0x14
 
-    const-string v6, "\u0011DH;4\u0007\\Y"
+    const-string v6, "\u0011|\u0011%\u001b@<VbG"
 
     const/16 v0, 0x13
 
@@ -340,7 +342,7 @@
 
     const/16 v7, 0x15
 
-    const-string v6, "\u0017OF\""
+    const-string v6, "\u0003j\u000c>"
 
     const/16 v0, 0x14
 
@@ -353,7 +355,7 @@
 
     const/16 v7, 0x16
 
-    const-string v6, "\u0013BH-+\u0003\u000c] g\u0013_Lo+\u000fN[.5\u000fIZo#\u0003_Y&3\u0003\u000cZ:$\u0005IZ<!\u0013@\t&)\u0015XH#+FH@=\"\u0005XE6g\u0000^F\"g\u0007\\B"
+    const-string v6, "\u0011|\u0011%\u001b@<VbG"
 
     const/16 v0, 0x15
 
@@ -366,7 +368,7 @@
 
     const/16 v7, 0x17
 
-    const-string v6, "\u0013BH-+\u0003\u000c] g\u0013_Lo3\u000eI\t#.\u0004^H=.\u0003_\t+\"\u0015\\@;\"F_\\,$\u0003_Z)2\n\u000cE &\u0002"
+    const-string v6, "\u001e`\u0001!\u001f\u0000pC&\r\u0013k\n?\u0017\u0006pC \n\u001be\u000fs\u001c\u0000f\u00086\u0010I)\u0017;\u000c\u001d~\n=\u0019R}\u000cs\u001d\u001d{\u0011&\u000e\u0006)\n=\r\u0006h\u000f?\u001f\u0006`\u000c=^\u0013j\u0017:\u0008\u001b}\u001a"
 
     const/16 v0, 0x16
 
@@ -379,7 +381,7 @@
 
     const/16 v7, 0x18
 
-    const-string v6, "\u0017OF\""
+    const-string v6, "\u0007g\u00021\u0012\u0017)\u0017<^\u0007z\u0006s\n\u001alC?\u0017\u0010{\u0002!\u0017\u0017zC7\u001b\u0001y\n\'\u001bRz\u00160\u001d\u0017z\u00105\u000b\u001e)\u000f<\u001f\u0016"
 
     const/16 v0, 0x17
 
@@ -392,7 +394,7 @@
 
     const/16 v7, 0x19
 
-    const-string v6, "\nEK=&\u0014U\t:4\u0007N@#.\u0012U\t<3\u000f@Eo%\u0014CB*)]\u000c]\'5\t[@! FXFo$\t^[:7\u0012\u000c@!4\u0012ME#&\u0012EF!g\u0007O]&1\u000fXP"
+    const-string v6, "\u001bg\u0010\'\u001f\u001ee\u0002\'\u0017\u001dgC:\rRj\u000c!\u000c\u0007y\u0017h^\u001ch\u0017:\u0008\u0017)\u000f:\u001c\u0000h\u0011:\u001b\u0001)\u0002!\u001bRd\n \r\u001bg\u0004"
 
     const/16 v0, 0x18
 
@@ -405,7 +407,7 @@
 
     const/16 v7, 0x1a
 
-    const-string v6, "\u0005Y[9\"T\u0019\u001c~~"
+    const-string v6, "\u0007g\u00021\u0012\u0017)\u0017<^\u0007z\u0006s\u0012\u001bk\u00112\u000c\u001bl\u0010s\u001a\u0017z\u0013:\n\u0017)\u0010&\u001d\u0011l\u0010 \u0018\u0007eC:\u0010\u0001}\u0002?\u0012Rm\n!\u001b\u0011}\u000f*^\u0014{\u000c>^\u0013y\u0008"
 
     const/16 v0, 0x19
 
@@ -418,7 +420,7 @@
 
     const/16 v7, 0x1b
 
-    const-string v6, "\u0005Y[9\"T\u0019\u001c~~"
+    const-string v6, "\u0003j\u000c>"
 
     const/16 v0, 0x1a
 
@@ -431,7 +433,7 @@
 
     const/16 v7, 0x1c
 
-    const-string v6, "\u000fBZ;&\n@H;.\tB\t&4FOF=5\u0013\\]tg\u0008M]&1\u0003\u000cE&%\u0014M[&\"\u0015\u000cH=\"FA@<4\u000fBN"
+    const-string v6, "\u0005a\u0002\'\r\u0013y\u0013"
 
     const/16 v0, 0x1b
 
@@ -444,7 +446,7 @@
 
     const/16 v7, 0x1d
 
-    const-string v6, "\u000fBZ;&\n@\t+.\u0014IJ;g\u0000^F\"g\u0007\\Bo0\t^B*#]\u000c[*3\u0003_]&)\u0001\u000cE&%\u0014M[6g\u0013_H-.\nE]6"
+    const-string v6, "\u0007g\u00021\u0012\u0017)\u0017<^\u0007z\u0006s\u0012\u001dh\u00076\u001aRe\n1\u000c\u0013{\n6\rI)\u0017!\u0007\u001bg\u0004s\u0017\u001cz\u00172\u0012\u001e)\u0007:\u000c\u0017j\u0017s\u0018\u0000f\u000es\u001f\u0002b"
 
     const/16 v0, 0x1c
 
@@ -457,7 +459,7 @@
 
     sput-object v9, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    .line 22
+    .line 21
     const/4 v0, 0x0
 
     sput-object v0, Lcom/whatsapp/util/WhatsAppLibLoader;->a:Ljava/lang/Boolean;
@@ -472,7 +474,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x47
+    const/16 v6, 0x7e
 
     :goto_2
     xor-int/2addr v6, v13
@@ -488,24 +490,26 @@
     goto/16 :goto_1
 
     :pswitch_1d
-    const/16 v6, 0x66
+    const/16 v6, 0x72
 
     goto :goto_2
 
     :pswitch_1e
-    const/16 v6, 0x2c
+    move v6, v5
 
     goto :goto_2
 
     :pswitch_1f
-    const/16 v6, 0x29
+    const/16 v6, 0x63
 
     goto :goto_2
 
     :pswitch_20
-    const/16 v6, 0x4f
+    const/16 v6, 0x53
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -555,14 +559,14 @@
     .prologue
     const/4 v3, 0x0
 
-    sget v4, Lcom/whatsapp/util/Log;->c:I
+    sget-boolean v4, Lcom/whatsapp/util/Log;->k:Z
 
-    .line 39
+    .line 42
     sget-object v0, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
 
     sget-object v1, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xc
+    const/16 v2, 0xd
 
     aget-object v1, v1, v2
 
@@ -572,23 +576,23 @@
 
     if-eqz v0, :cond_0
 
-    .line 33
+    .line 72
     sget-object v0, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x5
+    const/16 v1, 0xe
 
     aget-object v0, v0, v1
 
     if-eqz v4, :cond_4
 
-    .line 19
+    .line 63
     :cond_0
     :try_start_0
     sget-object v0, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
 
     sget-object v1, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xe
+    const/4 v2, 0x7
 
     aget-object v1, v1, v2
 
@@ -600,23 +604,23 @@
 
     if-eqz v0, :cond_1
 
-    .line 7
+    .line 57
     sget-object v0, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x4
+    const/16 v1, 0xf
 
     aget-object v0, v0, v1
 
     if-eqz v4, :cond_4
 
-    .line 23
+    .line 22
     :cond_1
     :try_start_1
     sget-object v0, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
 
     sget-object v1, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x2
+    const/4 v2, 0x3
 
     aget-object v1, v1, v2
 
@@ -628,7 +632,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 53
+    .line 75
     sget-object v0, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
     const/16 v1, 0x8
@@ -637,14 +641,14 @@
 
     if-eqz v4, :cond_4
 
-    .line 29
+    .line 20
     :cond_2
     :try_start_2
     sget-object v0, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
 
     sget-object v1, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xf
+    const/16 v2, 0xb
 
     aget-object v1, v1, v2
 
@@ -656,16 +660,16 @@
 
     if-eqz v0, :cond_3
 
-    .line 75
+    .line 79
     sget-object v0, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x3
+    const/16 v1, 0x9
 
     aget-object v0, v0, v1
 
     if-eqz v4, :cond_4
 
-    .line 43
+    .line 33
     :cond_3
     :try_start_3
     throw p1
@@ -677,29 +681,29 @@
 
     throw v0
 
-    .line 19
+    .line 63
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 23
+    .line 22
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 29
+    .line 20
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 74
+    .line 17
     :cond_4
     const/4 v2, 0x0
 
-    .line 61
+    .line 9
     :try_start_4
     new-instance v1, Ljava/util/zip/ZipFile;
 
@@ -716,7 +720,7 @@
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_b
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    .line 78
+    .line 3
     :try_start_5
     array-length v5, p2
 
@@ -727,7 +731,7 @@
 
     aget-object v3, p2, v2
 
-    .line 54
+    .line 71
     new-instance v6, Ljava/io/File;
 
     invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
@@ -740,7 +744,7 @@
 
     sget-object v9, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v10, 0x10
+    const/4 v10, 0x2
 
     aget-object v9, v9, v10
 
@@ -754,7 +758,7 @@
 
     sget-object v9, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/4 v10, 0x7
+    const/16 v10, 0xa
 
     aget-object v9, v9, v10
 
@@ -768,14 +772,14 @@
 
     invoke-direct {v6, v7, v8}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 57
+    .line 39
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v8, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v9, 0xb
+    const/16 v9, 0x11
 
     aget-object v8, v8, v9
 
@@ -789,7 +793,7 @@
 
     sget-object v8, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v9, 0xd
+    const/4 v9, 0x6
 
     aget-object v8, v8, v9
 
@@ -803,7 +807,7 @@
 
     sget-object v7, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v8, 0x9
+    const/4 v8, 0x5
 
     aget-object v7, v7, v8
 
@@ -819,21 +823,21 @@
 
     move-result-object v3
 
-    .line 82
+    .line 35
     if-nez v3, :cond_6
 
-    .line 31
+    .line 84
     :cond_6
     invoke-virtual {v1, v3}, Ljava/util/zip/ZipFile;->getInputStream(Ljava/util/zip/ZipEntry;)Ljava/io/InputStream;
 
     move-result-object v3
 
-    .line 24
+    .line 61
     new-instance v7, Ljava/io/FileOutputStream;
 
     invoke-direct {v7, v6}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    .line 68
+    .line 52
     const/16 v8, 0x400
 
     new-array v8, v8, [B
@@ -841,7 +845,7 @@
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 8
+    .line 5
     :cond_7
     :try_start_6
     invoke-virtual {v3, v8}, Ljava/io/InputStream;->read([B)I
@@ -850,7 +854,7 @@
 
     if-lez v9, :cond_8
 
-    .line 21
+    .line 53
     const/4 v10, 0x0
 
     invoke-virtual {v7, v8, v10, v9}, Ljava/io/FileOutputStream;->write([BII)V
@@ -859,29 +863,29 @@
 
     if-eqz v4, :cond_7
 
-    .line 50
+    .line 67
     :cond_8
     if-eqz v3, :cond_9
 
-    .line 1
+    .line 46
     :try_start_7
     invoke-virtual {v3}, Ljava/io/InputStream;->close()V
     :try_end_7
     .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_4
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
-    .line 47
+    .line 56
     :cond_9
     if-eqz v7, :cond_a
 
-    .line 36
+    .line 6
     :try_start_8
     invoke-virtual {v7}, Ljava/io/FileOutputStream;->close()V
     :try_end_8
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_6
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
-    .line 56
+    .line 16
     :cond_a
     :try_start_9
     invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
@@ -893,27 +897,27 @@
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_5
     .catchall {:try_start_9 .. :try_end_9} :catchall_0
 
-    .line 15
+    .line 31
     add-int/lit8 v2, v2, 0x1
 
     if-eqz v4, :cond_5
 
-    .line 12
+    .line 26
     :cond_b
     if-eqz v1, :cond_c
 
-    .line 81
+    .line 62
     :try_start_a
     invoke-virtual {v1}, Ljava/util/zip/ZipFile;->close()V
     :try_end_a
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_9
 
-    .line 52
+    .line 34
     :cond_c
     :goto_0
     return-void
 
-    .line 1
+    .line 46
     :catch_4
     move-exception v0
 
@@ -923,45 +927,45 @@
     .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_5
     .catchall {:try_start_b .. :try_end_b} :catchall_0
 
-    .line 79
+    .line 15
     :catch_5
     move-exception v0
 
-    .line 3
+    .line 51
     :goto_1
     :try_start_c
     sget-object v2, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x11
+    const/16 v3, 0x10
 
     aget-object v2, v2, v3
 
-    invoke-static {v2, v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v0}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 67
+    .line 25
     throw p1
     :try_end_c
     .catchall {:try_start_c .. :try_end_c} :catchall_0
 
-    .line 14
+    .line 29
     :catchall_0
     move-exception v0
 
     :goto_2
     if-eqz v1, :cond_d
 
-    .line 80
+    .line 70
     :try_start_d
     invoke-virtual {v1}, Ljava/util/zip/ZipFile;->close()V
     :try_end_d
     .catch Ljava/io/IOException; {:try_start_d .. :try_end_d} :catch_a
 
-    .line 45
+    .line 81
     :cond_d
     :goto_3
     throw v0
 
-    .line 36
+    .line 6
     :catch_6
     move-exception v0
 
@@ -971,24 +975,24 @@
     .catch Ljava/io/IOException; {:try_start_e .. :try_end_e} :catch_5
     .catchall {:try_start_e .. :try_end_e} :catchall_0
 
-    .line 48
+    .line 55
     :catchall_1
     move-exception v0
 
     if-eqz v3, :cond_e
 
-    .line 72
+    .line 32
     :try_start_f
     invoke-virtual {v3}, Ljava/io/InputStream;->close()V
     :try_end_f
     .catch Ljava/io/IOException; {:try_start_f .. :try_end_f} :catch_7
     .catchall {:try_start_f .. :try_end_f} :catchall_0
 
-    .line 55
+    .line 68
     :cond_e
     if-eqz v7, :cond_f
 
-    .line 26
+    .line 1
     :try_start_10
     invoke-virtual {v7}, Ljava/io/FileOutputStream;->close()V
     :try_end_10
@@ -999,13 +1003,13 @@
     :try_start_11
     throw v0
 
-    .line 72
+    .line 32
     :catch_7
     move-exception v0
 
     throw v0
 
-    .line 26
+    .line 1
     :catch_8
     move-exception v0
 
@@ -1014,37 +1018,37 @@
     .catch Ljava/io/IOException; {:try_start_11 .. :try_end_11} :catch_5
     .catchall {:try_start_11 .. :try_end_11} :catchall_0
 
-    .line 20
+    .line 28
     :catch_9
     move-exception v0
 
-    .line 30
+    .line 10
     sget-object v1, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xa
+    const/16 v2, 0xc
 
     aget-object v1, v1, v2
 
-    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 65
+    .line 59
     :catch_a
     move-exception v1
 
-    .line 71
+    .line 8
     sget-object v2, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x6
+    const/4 v3, 0x4
 
     aget-object v2, v2, v3
 
-    invoke-static {v2, v1}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v1}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_3
 
-    .line 14
+    .line 29
     :catchall_2
     move-exception v0
 
@@ -1052,7 +1056,7 @@
 
     goto :goto_2
 
-    .line 79
+    .line 15
     :catch_b
     move-exception v0
 
@@ -1061,100 +1065,64 @@
     goto :goto_1
 .end method
 
-.method private static a(Landroid/content/Context;[Ljava/lang/String;)V
-    .locals 4
+.method static a(Landroid/content/Context;[Ljava/lang/String;)V
+    .locals 0
 
     .prologue
-    sget v1, Lcom/whatsapp/util/Log;->c:I
+    .line 24
+    invoke-static {p0, p1}, Lcom/whatsapp/util/WhatsAppLibLoader;->b(Landroid/content/Context;[Ljava/lang/String;)V
 
-    .line 44
-    :try_start_0
-    array-length v2, p1
-
-    const/4 v0, 0x0
-
-    :cond_0
-    if-ge v0, v2, :cond_1
-
-    aget-object v3, p1, v0
-
-    .line 37
-    invoke-static {v3}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
-    :try_end_0
-    .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 84
-    add-int/lit8 v0, v0, 0x1
-
-    if-eqz v1, :cond_0
-
-    .line 73
-    :cond_1
-    :goto_0
     return-void
-
-    .line 28
-    :catch_0
-    move-exception v0
-
-    .line 35
-    sget-object v1, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x1
-
-    aget-object v1, v1, v2
-
-    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 11
-    invoke-static {p0, v0, p1}, Lcom/whatsapp/util/WhatsAppLibLoader;->a(Landroid/content/Context;Ljava/lang/UnsatisfiedLinkError;[Ljava/lang/String;)V
-
-    goto :goto_0
 .end method
 
 .method private static a()Z
     .locals 3
 
     .prologue
-    const/4 v2, 0x3
+    const/4 v1, 0x3
 
-    const/4 v0, 0x0
+    .line 37
+    new-array v0, v1, [B
 
-    .line 58
-    new-array v1, v2, [B
-
-    .line 4
+    .line 64
     :try_start_0
-    invoke-static {v1}, Lcom/whatsapp/util/WhatsAppLibLoader;->testLibraryUsable([B)V
+    invoke-static {v0}, Lcom/whatsapp/util/WhatsAppLibLoader;->testLibraryUsable([B)V
     :try_end_0
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 83
-    new-array v0, v2, [B
+    .line 77
+    new-array v1, v1, [B
 
-    fill-array-data v0, :array_0
+    fill-array-data v1, :array_0
 
-    invoke-static {v0, v1}, Ljava/util/Arrays;->equals([B[B)Z
+    invoke-static {v1, v0}, Ljava/util/Arrays;->equals([B[B)Z
 
     move-result v0
 
     :goto_0
     return v0
 
-    .line 40
+    .line 80
     :catch_0
-    move-exception v1
+    move-exception v0
 
-    .line 46
-    sget-object v2, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
+    .line 11
+    sget-object v1, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    aget-object v2, v2, v0
+    const/4 v2, 0x1
 
-    invoke-static {v2, v1}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    aget-object v1, v1, v2
+
+    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 47
+    const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 83
+    .line 77
+    nop
+
     :array_0
     .array-data 1
         0x1ft
@@ -1171,7 +1139,7 @@
 
     const/4 v1, 0x0
 
-    .line 16
+    .line 7
     const-class v2, Lcom/whatsapp/util/WhatsAppLibLoader;
 
     monitor-enter v2
@@ -1181,12 +1149,12 @@
 
     if-nez v3, :cond_2
 
-    .line 70
+    .line 18
     sget-object v3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     sput-object v3, Lcom/whatsapp/util/WhatsAppLibLoader;->a:Ljava/lang/Boolean;
 
-    .line 77
+    .line 12
     const/4 v3, 0x3
 
     new-array v3, v3, [Ljava/lang/String;
@@ -1205,7 +1173,7 @@
 
     sget-object v5, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v6, 0x12
+    const/16 v6, 0x13
 
     aget-object v5, v5, v6
 
@@ -1215,27 +1183,27 @@
 
     sget-object v5, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v6, 0x1a
+    const/16 v6, 0x14
 
     aget-object v5, v5, v6
 
     aput-object v5, v3, v4
 
-    invoke-static {p0, v3}, Lcom/whatsapp/util/WhatsAppLibLoader;->a(Landroid/content/Context;[Ljava/lang/String;)V
+    invoke-static {p0, v3}, Lcom/whatsapp/util/WhatsAppLibLoader;->b(Landroid/content/Context;[Ljava/lang/String;)V
 
-    .line 76
+    .line 60
     sget-object v3, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     sput-object v3, Lcom/whatsapp/util/WhatsAppLibLoader;->a:Ljava/lang/Boolean;
 
-    .line 49
-    new-instance v3, Lcom/whatsapp/util/bn;
+    .line 83
+    new-instance v3, Lcom/whatsapp/util/k;
 
-    invoke-direct {v3, p0}, Lcom/whatsapp/util/bn;-><init>(Landroid/content/Context;)V
+    invoke-direct {v3, p0}, Lcom/whatsapp/util/k;-><init>(Landroid/content/Context;)V
 
-    sput-object v3, Lorg/whispersystems/libaxolotl/a;->a:Lorg/whispersystems/libaxolotl/aU;
+    sput-object v3, Lorg/whispersystems/libaxolotl/aw;->a:Lorg/whispersystems/libaxolotl/Y;
 
-    .line 27
+    .line 14
     invoke-static {}, Lcom/whatsapp/util/WhatsAppLibLoader;->a()Z
     :try_end_0
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_0 .. :try_end_0} :catch_2
@@ -1245,22 +1213,22 @@
 
     if-nez v3, :cond_1
 
-    .line 59
+    .line 30
     :try_start_1
     sget-object v3, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x13
+    const/16 v4, 0x1d
 
     aget-object v3, v3, v4
 
     invoke-static {v3}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
 
-    .line 5
+    .line 54
     new-instance v3, Ljava/lang/UnsatisfiedLinkError;
 
     sget-object v4, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v5, 0x17
+    const/16 v5, 0x18
 
     aget-object v4, v4, v5
 
@@ -1274,7 +1242,7 @@
 
     sget-object v6, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x18
+    const/16 v7, 0x1b
 
     aget-object v6, v6, v7
 
@@ -1284,7 +1252,7 @@
 
     sget-object v6, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x14
+    const/16 v7, 0x1c
 
     aget-object v6, v6, v7
 
@@ -1294,7 +1262,7 @@
 
     sget-object v6, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v7, 0x1b
+    const/16 v7, 0x16
 
     aget-object v6, v6, v7
 
@@ -1302,16 +1270,16 @@
 
     invoke-static {p0, v3, v4}, Lcom/whatsapp/util/WhatsAppLibLoader;->a(Landroid/content/Context;Ljava/lang/UnsatisfiedLinkError;[Ljava/lang/String;)V
 
-    .line 66
+    .line 50
     sget-object v3, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x1d
+    const/16 v4, 0x12
 
     aget-object v3, v3, v4
 
     invoke-static {v3}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 2
+    .line 41
     invoke-static {}, Lcom/whatsapp/util/WhatsAppLibLoader;->a()Z
     :try_end_1
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_1 .. :try_end_1} :catch_3
@@ -1321,22 +1289,22 @@
 
     if-nez v3, :cond_1
 
-    .line 17
+    .line 74
     :try_start_2
     sget-object v0, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x19
+    const/16 v3, 0x17
 
     aget-object v0, v0, v3
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
 
-    .line 42
+    .line 36
     new-instance v0, Ljava/lang/UnsatisfiedLinkError;
 
     sget-object v3, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x16
+    const/16 v4, 0x1a
 
     aget-object v3, v3, v4
 
@@ -1356,31 +1324,31 @@
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_3 .. :try_end_3} :catch_1
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 60
+    .line 45
     :catch_1
     move-exception v0
 
-    .line 51
+    .line 49
     :try_start_4
     sget-object v3, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
 
-    const/16 v4, 0x1c
+    const/16 v4, 0x19
 
     aget-object v3, v3, v4
 
-    invoke-static {v3, v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v0}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 63
+    .line 48
     if-eqz p0, :cond_0
 
-    .line 6
+    .line 69
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    new-instance v3, Lcom/whatsapp/util/c;
+    new-instance v3, Lcom/whatsapp/util/o;
 
-    invoke-direct {v3, p0}, Lcom/whatsapp/util/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v3, p0}, Lcom/whatsapp/util/o;-><init>(Landroid/content/Context;)V
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
     :try_end_4
@@ -1390,13 +1358,13 @@
     :cond_0
     move v0, v1
 
-    .line 10
+    .line 38
     :cond_1
     monitor-exit v2
 
     return v0
 
-    .line 27
+    .line 14
     :catch_2
     move-exception v0
 
@@ -1406,7 +1374,7 @@
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_5 .. :try_end_5} :catch_3
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 2
+    .line 41
     :catch_3
     move-exception v0
 
@@ -1416,7 +1384,7 @@
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_6 .. :try_end_6} :catch_0
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
-    .line 16
+    .line 7
     :catchall_0
     move-exception v0
 
@@ -1424,7 +1392,7 @@
 
     throw v0
 
-    .line 69
+    .line 78
     :cond_2
     :try_start_7
     sget-object v3, Lcom/whatsapp/util/WhatsAppLibLoader;->a:Ljava/lang/Boolean;
@@ -1435,7 +1403,7 @@
 
     if-nez v3, :cond_1
 
-    .line 64
+    .line 73
     new-instance v0, Ljava/lang/UnsatisfiedLinkError;
 
     invoke-direct {v0}, Ljava/lang/UnsatisfiedLinkError;-><init>()V
@@ -1454,7 +1422,7 @@
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_8 .. :try_end_8} :catch_1
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
-    .line 6
+    .line 69
     :catch_5
     move-exception v0
 
@@ -1464,14 +1432,55 @@
     .catchall {:try_start_9 .. :try_end_9} :catchall_0
 .end method
 
-.method static b(Landroid/content/Context;[Ljava/lang/String;)V
-    .locals 0
+.method private static b(Landroid/content/Context;[Ljava/lang/String;)V
+    .locals 5
 
     .prologue
-    .line 18
-    invoke-static {p0, p1}, Lcom/whatsapp/util/WhatsAppLibLoader;->a(Landroid/content/Context;[Ljava/lang/String;)V
+    const/4 v1, 0x0
 
+    sget-boolean v2, Lcom/whatsapp/util/Log;->k:Z
+
+    .line 43
+    :try_start_0
+    array-length v3, p1
+
+    move v0, v1
+
+    :cond_0
+    if-ge v0, v3, :cond_1
+
+    aget-object v4, p1, v0
+
+    .line 13
+    invoke-static {v4}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 44
+    add-int/lit8 v0, v0, 0x1
+
+    if-eqz v2, :cond_0
+
+    .line 23
+    :cond_1
+    :goto_0
     return-void
+
+    .line 65
+    :catch_0
+    move-exception v0
+
+    .line 82
+    sget-object v2, Lcom/whatsapp/util/WhatsAppLibLoader;->z:[Ljava/lang/String;
+
+    aget-object v1, v2, v1
+
+    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 19
+    invoke-static {p0, v0, p1}, Lcom/whatsapp/util/WhatsAppLibLoader;->a(Landroid/content/Context;Ljava/lang/UnsatisfiedLinkError;[Ljava/lang/String;)V
+
+    goto :goto_0
 .end method
 
 .method private static native testLibraryUsable([B)V

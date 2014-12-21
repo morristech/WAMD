@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ProfilePhotoReminder;
+.field final a:Lcom/whatsapp/WebImagePicker;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ProfilePhotoReminder;)V
+.method constructor <init>(Lcom/whatsapp/WebImagePicker;)V
     .locals 0
 
     .prologue
-    .line 4
-    iput-object p1, p0, Lcom/whatsapp/j3;->a:Lcom/whatsapp/ProfilePhotoReminder;
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/j3;->a:Lcom/whatsapp/WebImagePicker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,22 +26,13 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 3
+    .locals 1
 
     .prologue
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/j3;->a:Lcom/whatsapp/ProfilePhotoReminder;
+    iget-object v0, p0, Lcom/whatsapp/j3;->a:Lcom/whatsapp/WebImagePicker;
 
-    .line 2
-    invoke-static {v0}, Lcom/whatsapp/ProfilePhotoReminder;->a(Lcom/whatsapp/ProfilePhotoReminder;)Lcom/whatsapp/adg;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/whatsapp/j3;->a:Lcom/whatsapp/ProfilePhotoReminder;
-
-    const/16 v2, 0xc
-
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/kl;->a(Lcom/whatsapp/adg;Landroid/app/Activity;I)V
+    invoke-static {v0}, Lcom/whatsapp/WebImagePicker;->f(Lcom/whatsapp/WebImagePicker;)V
 
     .line 3
     return-void

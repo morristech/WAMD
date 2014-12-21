@@ -168,10 +168,13 @@
     <style name="FullScreenDialogTitle">
         <item name="android:textSize">18.0dip</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:gravity">center</item>
+        <item name="android:gravity">center_vertical</item>
         <item name="android:background">@drawable/actionbar_background</item>
+        <item name="android:paddingLeft">@dimen/undo_bar_margin_left</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">48.0dip</item>
+        <item name="android:drawableLeft">@drawable/actionbar_logo</item>
+        <item name="android:drawablePadding">5.0dip</item>
     </style>
     <style name="List">
         <item name="android:scrollbarStyle">insideOverlay</item>
@@ -516,8 +519,6 @@
         <item name="actionBarTabTextStyle">@style/ActionBarTabTextStyle</item>
         <item name="actionOverflowButtonStyle">@style/ActionBarCondensedOverflowButtonStyle</item>
         <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
-        <item name="actionBarSize">56dp</item>
-        <item name="android:actionBarSize">56dp</item> 
     </style>
     <style name="Theme.App.Black" parent="@style/Theme.App">
         <item name="android:windowBackground">@android:color/black</item>

@@ -3,20 +3,20 @@
 .source "n1.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnCancelListener;
+.implements Landroid/widget/PopupWindow$OnDismissListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/EULA;
+.field final a:Lcom/whatsapp/Conversation;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/EULA;)V
+.method constructor <init>(Lcom/whatsapp/Conversation;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/n1;->a:Lcom/whatsapp/EULA;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/n1;->a:Lcom/whatsapp/Conversation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,24 +25,21 @@
 
 
 # virtual methods
-.method public onCancel(Landroid/content/DialogInterface;)V
+.method public onDismiss()V
     .locals 2
 
     .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/n1;->a:Lcom/whatsapp/EULA;
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/n1;->a:Lcom/whatsapp/Conversation;
 
-    const/4 v1, 0x5
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->G(Lcom/whatsapp/Conversation;)Landroid/view/ViewGroup;
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/EULA;->removeDialog(I)V
+    move-result-object v0
+
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     .line 3
-    iget-object v0, p0, Lcom/whatsapp/n1;->a:Lcom/whatsapp/EULA;
-
-    const/4 v1, 0x6
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/EULA;->showDialog(I)V
-
-    .line 4
     return-void
 .end method

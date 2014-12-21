@@ -168,10 +168,6 @@ lõpuni %d kuu"</item>
         <item quantity="other">%d jäänud</item>
         <item quantity="one">%d jäänud</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Oled valmis alustama. Me taastasime %,d sõnumit.</item>
-        <item quantity="one">Oled valmis alustama. Me taastasime %,d sõnumi.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">%1$d video saatmine kontaktile %2$s</item>
         <item quantity="one">%1$d video saatmine kontaktile %2$s</item>

@@ -20,7 +20,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 3
     invoke-static {p1}, Landroid/support/v4/view/ViewCompatEclairMr1;->isOpaque(Landroid/view/View;)Z
 
     move-result v0
@@ -32,9 +32,9 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 1
     invoke-static {p1, p2}, Landroid/support/v4/view/ViewCompatEclairMr1;->setChildrenDrawingOrderEnabled(Landroid/view/ViewGroup;Z)V
 
-    .line 1
+    .line 2
     return-void
 .end method

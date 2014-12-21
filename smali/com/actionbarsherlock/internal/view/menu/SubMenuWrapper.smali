@@ -17,18 +17,18 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 9
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/internal/view/menu/MenuWrapper;-><init>(Landroid/view/Menu;)V
 
-    .line 7
+    .line 5
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/SubMenuWrapper;->mItem:Lcom/actionbarsherlock/view/MenuItem;
 
-    .line 4
+    .line 7
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/SubMenuWrapper;->mNativeSubMenu:Landroid/view/SubMenu;
 
-    .line 3
+    .line 4
     return-void
 .end method
 
@@ -38,7 +38,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/SubMenuWrapper;->mNativeSubMenu:Landroid/view/SubMenu;
 
     invoke-interface {v0}, Landroid/view/SubMenu;->clearHeader()V
@@ -51,12 +51,12 @@
     .locals 2
 
     .prologue
-    .line 2
+    .line 8
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/SubMenuWrapper;->mItem:Lcom/actionbarsherlock/view/MenuItem;
 
     if-nez v0, :cond_0
 
-    .line 5
+    .line 2
     new-instance v0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;
 
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/SubMenuWrapper;->mNativeSubMenu:Landroid/view/SubMenu;
@@ -69,7 +69,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/SubMenuWrapper;->mItem:Lcom/actionbarsherlock/view/MenuItem;
 
-    .line 9
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/SubMenuWrapper;->mItem:Lcom/actionbarsherlock/view/MenuItem;
 

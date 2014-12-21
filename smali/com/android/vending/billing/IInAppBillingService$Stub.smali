@@ -16,7 +16,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "F uMKK+j\u000cCAan\u0006DA&v\u0004\u0004G&t\u000fCK(6*cK\u000eh\u0013hL#t\nDB\u001c}\u0011\\L,}"
+    const-string v0, "\u001apg7w\u0017{xv\u007f\u001d1||x\u001dvd~8\u001bvfu\u007f\u0017x$P_\u0017^ziT\u0010sfpx\u001eLok`\u0010|o"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -54,7 +54,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x2a
+    const/16 v0, 0x16
 
     :goto_1
     xor-int/2addr v0, v4
@@ -70,22 +70,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x25
+    const/16 v0, 0x79
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x4f
+    const/16 v0, 0x1f
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x18
+    const/16 v0, 0xa
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x63
+    const/16 v0, 0x19
 
     goto :goto_1
 
@@ -102,16 +102,16 @@
     .locals 2
 
     .prologue
-    .line 5
+    .line 6
     if-nez p0, :cond_0
 
-    .line 6
+    .line 4
     const/4 v0, 0x0
 
     :goto_0
     return-object v0
 
-    .line 1
+    .line 3
     :cond_0
     sget-object v0, Lcom/android/vending/billing/IInAppBillingService$Stub;->z:Ljava/lang/String;
 
@@ -119,19 +119,19 @@
 
     move-result-object v0
 
-    .line 2
+    .line 5
     if-eqz v0, :cond_1
 
     instance-of v1, v0, Lcom/android/vending/billing/IInAppBillingService;
 
     if-eqz v1, :cond_1
 
-    .line 4
+    .line 2
     check-cast v0, Lcom/android/vending/billing/IInAppBillingService;
 
     goto :goto_0
 
-    .line 3
+    .line 1
     :cond_1
     new-instance v0, Lcom/android/vending/billing/IInAppBillingService$Stub$Proxy;
 

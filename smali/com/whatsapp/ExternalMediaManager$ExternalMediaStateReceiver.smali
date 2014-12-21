@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 2
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -20,7 +20,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 1
     const-class v0, Lcom/whatsapp/ExternalMediaManager;
 
     invoke-virtual {p2, p1, v0}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
@@ -29,6 +29,6 @@
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    .line 2
+    .line 3
     return-void
 .end method

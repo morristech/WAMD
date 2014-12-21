@@ -1,267 +1,155 @@
 .class Lcom/whatsapp/u9;
-.super Lcom/whatsapp/ui;
+.super Ljava/lang/Object;
 .source "u9.java"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+
+
+# static fields
+.field private static final z:Ljava/lang/String;
 
 
 # instance fields
-.field p:Z
+.field final a:Lcom/whatsapp/tc;
 
-.field final q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
+.field final b:Lcom/whatsapp/ConversationsFragment$DeleteContactDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/GroupChatLiveLocationsActivity;)V
+.method static constructor <clinit>()V
+    .locals 5
+
+    const-string v0, "Sk6\u001d_Bw9\u001fS_j+D^Uh=\u001f_\u001dg7\u0005NQg,"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    move v2, v1
+
+    move-object v1, v0
+
+    :goto_0
+    if-gt v2, v3, :cond_0
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/whatsapp/u9;->z:Ljava/lang/String;
+
+    return-void
+
+    :cond_0
+    aget-char v4, v1, v3
+
+    rem-int/lit8 v0, v3, 0x5
+
+    packed-switch v0, :pswitch_data_0
+
+    const/16 v0, 0x3a
+
+    :goto_1
+    xor-int/2addr v0, v4
+
+    int-to-char v0, v0
+
+    aput-char v0, v1, v3
+
+    add-int/lit8 v0, v3, 0x1
+
+    move v3, v0
+
+    goto :goto_0
+
+    :pswitch_0
+    const/16 v0, 0x30
+
+    goto :goto_1
+
+    :pswitch_1
+    const/4 v0, 0x4
+
+    goto :goto_1
+
+    :pswitch_2
+    const/16 v0, 0x58
+
+    goto :goto_1
+
+    :pswitch_3
+    const/16 v0, 0x6b
+
+    goto :goto_1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+    .end packed-switch
+.end method
+
+.method constructor <init>(Lcom/whatsapp/ConversationsFragment$DeleteContactDialogFragment;Lcom/whatsapp/tc;)V
     .locals 0
 
     .prologue
-    .line 19
-    iput-object p1, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
+    .line 5
+    iput-object p1, p0, Lcom/whatsapp/u9;->b:Lcom/whatsapp/ConversationsFragment$DeleteContactDialogFragment;
 
-    invoke-direct {p0}, Lcom/whatsapp/ui;-><init>()V
+    iput-object p2, p0, Lcom/whatsapp/u9;->a:Lcom/whatsapp/tc;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/whatsapp/protocol/c;Z)V
-    .locals 7
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 1
 
     .prologue
-    const/16 v6, 0x11
+    .line 3
+    sget-object v0, Lcom/whatsapp/u9;->z:Ljava/lang/String;
 
-    const-wide v4, 0x412e848000000000L
-
-    .line 18
-    iget-object v0, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v0, p1}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->a(Lcom/whatsapp/GroupChatLiveLocationsActivity;Lcom/whatsapp/protocol/c;)Lcom/whatsapp/protocol/c;
-
-    .line 8
-    new-instance v0, Lcom/google/android/maps/GeoPoint;
-
-    iget-wide v2, p1, Lcom/whatsapp/protocol/c;->b:D
-
-    mul-double/2addr v2, v4
-
-    double-to-int v1, v2
-
-    iget-wide v2, p1, Lcom/whatsapp/protocol/c;->d:D
-
-    mul-double/2addr v2, v4
-
-    double-to-int v2, v2
-
-    invoke-direct {v0, v1, v2}, Lcom/google/android/maps/GeoPoint;-><init>(II)V
-
-    .line 5
-    iget-object v1, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v1}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->a(Lcom/whatsapp/GroupChatLiveLocationsActivity;)Lcom/whatsapp/GoogleMapView;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/whatsapp/GoogleMapView;->getController()Lcom/google/android/maps/MapController;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Lcom/google/android/maps/MapController;->animateTo(Lcom/google/android/maps/GeoPoint;)V
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
     .line 6
-    if-eqz p2, :cond_0
+    iget-object v0, p0, Lcom/whatsapp/u9;->a:Lcom/whatsapp/tc;
 
-    iget-object v0, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
+    iget-object v0, v0, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->a(Lcom/whatsapp/GroupChatLiveLocationsActivity;)Lcom/whatsapp/GoogleMapView;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/GoogleMapView;->getZoomLevel()I
-
-    move-result v0
-
-    if-ge v0, v6, :cond_0
+    invoke-static {v0}, Lcom/whatsapp/App;->t(Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->a(Lcom/whatsapp/GroupChatLiveLocationsActivity;)Lcom/whatsapp/GoogleMapView;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/GoogleMapView;->getController()Lcom/google/android/maps/MapController;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v6}, Lcom/google/android/maps/MapController;->setZoom(I)I
-
-    .line 23
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->e(Lcom/whatsapp/GroupChatLiveLocationsActivity;)V
-
-    .line 14
-    return-void
-.end method
-
-.method public c()Landroid/location/Location;
-    .locals 6
-
-    .prologue
-    const-wide v4, 0x412e848000000000L
-
-    .line 17
-    new-instance v0, Landroid/location/Location;
-
-    const-string v1, ""
-
-    invoke-direct {v0, v1}, Landroid/location/Location;-><init>(Ljava/lang/String;)V
-
-    .line 4
-    iget-object v1, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v1}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->f(Lcom/whatsapp/GroupChatLiveLocationsActivity;)Lcom/google/android/maps/MyLocationOverlay;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/google/android/maps/MyLocationOverlay;->getMyLocation()Lcom/google/android/maps/GeoPoint;
-
-    move-result-object v1
-
-    .line 16
-    if-eqz v1, :cond_0
-
-    .line 12
-    invoke-virtual {v1}, Lcom/google/android/maps/GeoPoint;->getLatitudeE6()I
-
-    move-result v2
-
-    int-to-double v2, v2
-
-    div-double/2addr v2, v4
-
-    invoke-virtual {v0, v2, v3}, Landroid/location/Location;->setLatitude(D)V
-
-    .line 11
-    invoke-virtual {v1}, Lcom/google/android/maps/GeoPoint;->getLongitudeE6()I
-
-    move-result v1
-
-    int-to-double v2, v1
-
-    div-double/2addr v2, v4
-
-    invoke-virtual {v0, v2, v3}, Landroid/location/Location;->setLongitude(D)V
-
-    .line 24
-    :cond_0
-    return-object v0
-.end method
-
-.method public g()V
-    .locals 6
-
-    .prologue
-    const-wide v4, 0x412e848000000000L
-
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->e(Lcom/whatsapp/GroupChatLiveLocationsActivity;)V
-
-    .line 15
-    iget-object v0, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->c(Lcom/whatsapp/GroupChatLiveLocationsActivity;)Lcom/whatsapp/av3;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/av3;->a()V
-
-    .line 13
-    iget-boolean v0, p0, Lcom/whatsapp/u9;->p:Z
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->b(Lcom/whatsapp/GroupChatLiveLocationsActivity;)Lcom/whatsapp/ui;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lcom/whatsapp/ui;->f:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
+    invoke-static {}, Lcom/whatsapp/ConversationsFragment;->f()I
 
     move-result v0
 
-    if-nez v0, :cond_0
+    add-int/lit8 v0, v0, 0x1
 
-    .line 3
-    const/4 v0, 0x1
+    invoke-static {v0}, Lcom/whatsapp/ConversationsFragment;->d(I)V
 
-    iput-boolean v0, p0, Lcom/whatsapp/u9;->p:Z
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/u9;->b:Lcom/whatsapp/ConversationsFragment$DeleteContactDialogFragment;
 
-    .line 20
-    iget-object v0, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
+    invoke-virtual {v0}, Lcom/whatsapp/ConversationsFragment$DeleteContactDialogFragment;->dismiss()V
 
-    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->h(Lcom/whatsapp/GroupChatLiveLocationsActivity;)V
-
-    .line 9
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->g(Lcom/whatsapp/GroupChatLiveLocationsActivity;)Lcom/whatsapp/protocol/c;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    .line 7
-    new-instance v0, Lcom/google/android/maps/GeoPoint;
-
-    iget-object v1, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v1}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->g(Lcom/whatsapp/GroupChatLiveLocationsActivity;)Lcom/whatsapp/protocol/c;
-
-    move-result-object v1
-
-    iget-wide v2, v1, Lcom/whatsapp/protocol/c;->b:D
-
-    mul-double/2addr v2, v4
-
-    double-to-int v1, v2
-
-    iget-object v2, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    .line 22
-    invoke-static {v2}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->g(Lcom/whatsapp/GroupChatLiveLocationsActivity;)Lcom/whatsapp/protocol/c;
-
-    move-result-object v2
-
-    iget-wide v2, v2, Lcom/whatsapp/protocol/c;->d:D
-
-    mul-double/2addr v2, v4
-
-    double-to-int v2, v2
-
-    invoke-direct {v0, v1, v2}, Lcom/google/android/maps/GeoPoint;-><init>(II)V
-
-    .line 10
-    iget-object v1, p0, Lcom/whatsapp/u9;->q:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v1}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->a(Lcom/whatsapp/GroupChatLiveLocationsActivity;)Lcom/whatsapp/GoogleMapView;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/whatsapp/GoogleMapView;->getController()Lcom/google/android/maps/MapController;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Lcom/google/android/maps/MapController;->animateTo(Lcom/google/android/maps/GeoPoint;)V
-
-    .line 21
-    :cond_1
+    .line 4
     return-void
 .end method

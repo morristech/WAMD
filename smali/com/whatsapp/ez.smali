@@ -1,40 +1,40 @@
-.class final Lcom/whatsapp/ez;
-.super Ljava/lang/Object;
+.class Lcom/whatsapp/ez;
+.super Lcom/whatsapp/util/l;
 .source "ez.java"
 
-# interfaces
-.implements Landroid/os/Handler$Callback;
+
+# instance fields
+.field final b:Lcom/whatsapp/ConversationRowMedia;
 
 
 # direct methods
-.method constructor <init>()V
+.method constructor <init>(Lcom/whatsapp/ConversationRowMedia;)V
     .locals 0
 
     .prologue
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/ez;->b:Lcom/whatsapp/ConversationRowMedia;
+
+    invoke-direct {p0}, Lcom/whatsapp/util/l;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public handleMessage(Landroid/os/Message;)Z
-    .locals 1
+.method public a(Landroid/view/View;)V
+    .locals 2
 
     .prologue
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/ez;->b:Lcom/whatsapp/ConversationRowMedia;
+
+    iget-object v1, p0, Lcom/whatsapp/ez;->b:Lcom/whatsapp/ConversationRowMedia;
+
+    iget-object v1, v1, Lcom/whatsapp/ConversationRowMedia;->y:Lcom/whatsapp/protocol/c9;
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/ConversationRowMedia;->b(Lcom/whatsapp/protocol/c9;)V
+
     .line 3
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    invoke-static {v0}, Lcom/whatsapp/contact/b;->c(Landroid/content/Context;)V
-
-    .line 4
-    sget-object v0, Lcom/whatsapp/contact/i;->BACKGROUND_FULL:Lcom/whatsapp/contact/i;
-
-    invoke-static {v0}, Lcom/whatsapp/App;->a(Lcom/whatsapp/contact/i;)V
-
-    .line 2
-    const/4 v0, 0x1
-
-    return v0
+    return-void
 .end method

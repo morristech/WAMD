@@ -18,7 +18,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "n`BtxXcWudhj"
+    const-string v0, "x+MG\u007fN(XFc~!"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -56,7 +56,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0xc
+    const/16 v0, 0xb
 
     :goto_1
     xor-int/2addr v0, v4
@@ -72,22 +72,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/4 v0, 0x7
+    const/16 v0, 0x11
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0xe
+    const/16 v0, 0x45
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x32
+    const/16 v0, 0x3d
 
     goto :goto_1
 
     :pswitch_3
-    const/4 v0, 0x1
+    const/16 v0, 0x32
 
     goto :goto_1
 
@@ -104,7 +104,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 1
     iput-object p1, p0, Lcom/actionbarsherlock/widget/SearchView$1;->this$0:Lcom/actionbarsherlock/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -121,7 +121,7 @@
     .line 2
     iget-object v0, p0, Lcom/actionbarsherlock/widget/SearchView$1;->this$0:Lcom/actionbarsherlock/widget/SearchView;
 
-    .line 5
+    .line 6
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/SearchView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -134,17 +134,17 @@
 
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
-    .line 6
+    .line 4
     if-eqz v0, :cond_0
 
-    .line 1
+    .line 5
     iget-object v1, p0, Lcom/actionbarsherlock/widget/SearchView$1;->this$0:Lcom/actionbarsherlock/widget/SearchView;
 
     const/4 v2, 0x0
 
     invoke-static {v1, v0, v2}, Lcom/actionbarsherlock/widget/SearchView;->access$000(Landroid/view/View;Landroid/view/inputmethod/InputMethodManager;I)V
 
-    .line 4
+    .line 3
     :cond_0
     return-void
 .end method

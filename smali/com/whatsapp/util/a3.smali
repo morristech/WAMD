@@ -3,466 +3,471 @@
 .source "a3.java"
 
 
+# static fields
+.field private static final z:[Ljava/lang/String;
+
+
 # direct methods
-.method private static a(FFF)F
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 13
 
-    .prologue
-    .line 33
-    cmpg-float v0, p0, p1
+    const/4 v6, 0x3
 
-    if-gez v0, :cond_0
+    const/4 v3, 0x2
+
+    const/4 v2, 0x1
+
+    const/4 v1, 0x0
+
+    const/4 v0, 0x4
+
+    new-array v5, v0, [Ljava/lang/String;
+
+    const-string v4, "5\u0002y"
+
+    const/4 v0, -0x1
+
+    move-object v7, v5
+
+    move-object v8, v5
+
+    move v5, v1
 
     :goto_0
-    return p1
+    invoke-virtual {v4}, Ljava/lang/String;->toCharArray()[C
 
-    :cond_0
-    cmpl-float v0, p0, p2
+    move-result-object v4
 
-    if-lez v0, :cond_1
+    array-length v9, v4
 
-    move p1, p2
-
-    goto :goto_0
-
-    :cond_1
-    move p1, p0
-
-    goto :goto_0
-.end method
-
-.method public static a(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
-    .locals 9
-
-    .prologue
-    const/4 v2, 0x0
-
-    .line 46
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v0
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v1
-
-    mul-int/2addr v0, v1
-
-    new-array v1, v0, [I
-
-    .line 25
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v3
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v6
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v7
-
-    move-object v0, p0
-
-    move v4, v2
-
-    move v5, v2
-
-    invoke-virtual/range {v0 .. v7}, Landroid/graphics/Bitmap;->getPixels([IIIIIII)V
-
-    .line 2
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v0
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v3
-
-    mul-int/2addr v0, v3
-
-    new-array v4, v0, [I
-
-    .line 36
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v5
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v6
-
-    move-object v3, v1
-
-    move v7, p1
-
-    move v8, p2
-
-    invoke-static/range {v3 .. v8}, Lcom/whatsapp/util/a3;->a([I[IIIII)V
-
-    .line 13
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v0
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v3
-
-    sget-object v4, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
-
-    invoke-static {v0, v3, v4}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
-
-    move-result-object v0
-
-    .line 45
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v3
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v6
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v7
-
-    move v4, v2
-
-    move v5, v2
-
-    invoke-virtual/range {v0 .. v7}, Landroid/graphics/Bitmap;->setPixels([IIIIIII)V
-
-    .line 22
-    return-object v0
-.end method
-
-.method private static a([I[IIII)V
-    .locals 17
-
-    .prologue
-    sget v12, Lcom/whatsapp/util/Log;->c:I
-
-    .line 16
-    add-int/lit8 v5, p2, -0x1
-
-    .line 21
-    mul-int/lit8 v1, p4, 0x2
-
-    add-int/lit8 v2, v1, 0x1
-
-    .line 3
-    mul-int/lit16 v1, v2, 0x100
-
-    new-array v13, v1, [I
-
-    .line 40
-    const/4 v1, 0x0
-
-    :cond_0
-    mul-int/lit16 v3, v2, 0x100
-
-    if-ge v1, v3, :cond_1
-
-    .line 24
-    div-int v3, v1, v2
-
-    aput v3, v13, v1
-
-    .line 38
-    add-int/lit8 v1, v1, 0x1
-
-    if-eqz v12, :cond_0
-
-    .line 6
-    :cond_1
-    const/4 v1, 0x0
-
-    .line 26
-    const/4 v10, 0x0
+    move v10, v9
 
     move v11, v1
 
-    :goto_0
-    move/from16 v0, p3
-
-    if-ge v10, v0, :cond_6
-
-    .line 20
-    const/4 v6, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v3, 0x0
-
-    const/4 v2, 0x0
-
-    .line 18
-    move/from16 v0, p4
-
-    neg-int v1, v0
-
-    move/from16 v16, v1
-
-    move v1, v2
-
-    move v2, v3
-
-    move v3, v4
-
-    move v4, v6
-
-    move/from16 v6, v16
-
-    :cond_2
-    move/from16 v0, p4
-
-    if-gt v6, v0, :cond_3
-
-    .line 9
-    int-to-float v7, v6
-
-    const/4 v8, 0x0
-
-    add-int/lit8 v9, p2, -0x1
-
-    int-to-float v9, v9
-
-    invoke-static {v7, v8, v9}, Lcom/whatsapp/util/a3;->a(FFF)F
-
-    move-result v7
-
-    float-to-int v7, v7
-
-    add-int/2addr v7, v11
-
-    aget v7, p0, v7
-
-    .line 32
-    shr-int/lit8 v8, v7, 0x18
-
-    and-int/lit16 v8, v8, 0xff
-
-    add-int/2addr v4, v8
-
-    .line 39
-    shr-int/lit8 v8, v7, 0x10
-
-    and-int/lit16 v8, v8, 0xff
-
-    add-int/2addr v3, v8
-
-    .line 30
-    shr-int/lit8 v8, v7, 0x8
-
-    and-int/lit16 v8, v8, 0xff
-
-    add-int/2addr v2, v8
-
-    .line 42
-    and-int/lit16 v7, v7, 0xff
-
-    add-int/2addr v1, v7
-
-    .line 4
-    add-int/lit8 v6, v6, 0x1
-
-    if-eqz v12, :cond_2
-
-    .line 43
-    :cond_3
-    const/4 v6, 0x0
-
-    move v7, v3
-
-    move v8, v4
-
-    move v9, v10
-
-    move v3, v6
-
-    move v4, v1
-
-    move v6, v2
+    move-object v9, v4
 
     :goto_1
-    move/from16 v0, p2
+    if-gt v10, v11, :cond_0
 
-    if-ge v3, v0, :cond_5
+    new-instance v4, Ljava/lang/String;
 
-    .line 49
-    aget v1, v13, v8
+    invoke-direct {v4, v9}, Ljava/lang/String;-><init>([C)V
 
-    shl-int/lit8 v1, v1, 0x18
+    invoke-virtual {v4}, Ljava/lang/String;->intern()Ljava/lang/String;
 
-    aget v2, v13, v7
+    move-result-object v4
 
-    shl-int/lit8 v2, v2, 0x10
+    packed-switch v0, :pswitch_data_0
 
-    or-int/2addr v1, v2
+    aput-object v4, v7, v5
 
-    aget v2, v13, v6
+    const-string v0, "5\u0002y"
 
-    shl-int/lit8 v2, v2, 0x8
+    move-object v4, v0
 
-    or-int/2addr v1, v2
+    move v5, v2
 
-    aget v2, v13, v4
+    move-object v7, v8
 
-    or-int/2addr v1, v2
+    move v0, v1
 
-    aput v1, p1, v9
+    goto :goto_0
 
-    .line 28
-    add-int v1, v3, p4
+    :pswitch_0
+    aput-object v4, v7, v5
 
-    add-int/lit8 v1, v1, 0x1
+    const-string v0, "5\u0002y"
 
-    .line 48
-    if-le v1, v5, :cond_9
+    move-object v4, v0
 
-    move v2, v5
+    move v5, v3
 
-    .line 44
-    :goto_2
-    sub-int v1, v3, p4
+    move-object v7, v8
 
-    .line 29
-    if-gez v1, :cond_4
+    move v0, v2
 
-    .line 23
-    const/4 v1, 0x0
+    goto :goto_0
 
-    .line 8
-    :cond_4
-    add-int/2addr v2, v11
+    :pswitch_1
+    aput-object v4, v7, v5
 
-    aget v2, p0, v2
+    const-string v0, "5\u0002y"
 
-    .line 41
-    add-int/2addr v1, v11
+    move-object v4, v0
 
-    aget v1, p0, v1
+    move v5, v6
 
-    .line 17
-    shr-int/lit8 v14, v2, 0x18
+    move-object v7, v8
 
-    and-int/lit16 v14, v14, 0xff
+    move v0, v3
 
-    shr-int/lit8 v15, v1, 0x18
+    goto :goto_0
 
-    and-int/lit16 v15, v15, 0xff
+    :pswitch_2
+    aput-object v4, v7, v5
 
-    sub-int/2addr v14, v15
+    sput-object v8, Lcom/whatsapp/util/a3;->z:[Ljava/lang/String;
 
-    add-int/2addr v8, v14
-
-    .line 31
-    const/high16 v14, 0xff0000
-
-    and-int/2addr v14, v2
-
-    const/high16 v15, 0xff0000
-
-    and-int/2addr v15, v1
-
-    sub-int/2addr v14, v15
-
-    shr-int/lit8 v14, v14, 0x10
-
-    add-int/2addr v7, v14
-
-    .line 10
-    const v14, 0xff00
-
-    and-int/2addr v14, v2
-
-    const v15, 0xff00
-
-    and-int/2addr v15, v1
-
-    sub-int/2addr v14, v15
-
-    shr-int/lit8 v14, v14, 0x8
-
-    add-int/2addr v6, v14
-
-    .line 12
-    and-int/lit16 v2, v2, 0xff
-
-    and-int/lit16 v1, v1, 0xff
-
-    sub-int v1, v2, v1
-
-    add-int v2, v4, v1
-
-    .line 37
-    add-int v4, v9, p3
-
-    .line 5
-    add-int/lit8 v1, v3, 0x1
-
-    if-eqz v12, :cond_8
-
-    .line 34
-    :cond_5
-    add-int v1, v11, p2
-
-    .line 1
-    add-int/lit8 v10, v10, 0x1
-
-    if-eqz v12, :cond_7
-
-    .line 19
-    :cond_6
     return-void
 
-    :cond_7
-    move v11, v1
+    :cond_0
+    aget-char v12, v9, v11
 
-    goto/16 :goto_0
+    rem-int/lit8 v4, v11, 0x5
 
-    :cond_8
-    move v3, v1
+    packed-switch v4, :pswitch_data_1
 
-    move v9, v4
+    const/16 v4, 0x2a
 
-    move v4, v2
+    :goto_2
+    xor-int/2addr v4, v12
+
+    int-to-char v4, v4
+
+    aput-char v4, v9, v11
+
+    add-int/lit8 v4, v11, 0x1
+
+    move v11, v4
 
     goto :goto_1
 
-    :cond_9
-    move v2, v1
+    :pswitch_3
+    const/16 v4, 0x1b
+
+    goto :goto_2
+
+    :pswitch_4
+    const/16 v4, 0x65
+
+    goto :goto_2
+
+    :pswitch_5
+    move v4, v6
+
+    goto :goto_2
+
+    :pswitch_6
+    const/16 v4, 0x3c
+
+    goto :goto_2
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_4
+        :pswitch_5
+        :pswitch_6
+    .end packed-switch
+.end method
+
+.method public static a(Ljava/io/File;)Ljava/io/File;
+    .locals 2
+
+    .prologue
+    .line 27
+    sget-object v0, Lcom/whatsapp/util/a3;->z:[Ljava/lang/String;
+
+    const/4 v1, 0x1
+
+    aget-object v0, v0, v1
+
+    invoke-static {p0, v0}, Lcom/whatsapp/util/a1;->a(Ljava/io/File;Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static a(Ljava/io/File;I)Ljava/util/ArrayList;
+    .locals 2
+
+    .prologue
+    .line 15
+    sget-object v0, Lcom/whatsapp/util/a3;->z:[Ljava/lang/String;
+
+    const/4 v1, 0x3
+
+    aget-object v0, v0, v1
+
+    invoke-static {p0, p1, v0}, Lcom/whatsapp/util/a1;->b(Ljava/io/File;ILjava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static a(Ljava/io/File;Ljava/io/File;)Z
+    .locals 1
+
+    .prologue
+    .line 28
+    invoke-static {p0, p1}, Lcom/whatsapp/util/a1;->b(Ljava/io/File;Ljava/io/File;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public static b(Ljava/io/File;Ljava/io/File;)Ljava/io/File;
+    .locals 5
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-virtual {p1}, Ljava/io/File;->exists()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    .line 17
+    new-instance v0, Ljava/util/Date;
+
+    invoke-direct {v0}, Ljava/util/Date;-><init>()V
+
+    sget-object v2, Lcom/whatsapp/util/a3;->z:[Ljava/lang/String;
+
+    const/4 v3, 0x0
+
+    aget-object v2, v2, v3
+
+    invoke-static {p0, v0, v2}, Lcom/whatsapp/util/a1;->a(Ljava/io/File;Ljava/util/Date;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 24
+    new-instance v0, Ljava/io/File;
+
+    invoke-virtual {p0}, Ljava/io/File;->getParentFile()Ljava/io/File;
+
+    move-result-object v3
+
+    invoke-direct {v0, v3, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 22
+    :try_start_0
+    new-instance v2, Ljava/io/FileOutputStream;
+
+    const/4 v3, 0x1
+
+    invoke-direct {v2, v0, v3}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
+
+    .line 8
+    new-instance v3, Ljava/util/zip/GZIPOutputStream;
+
+    invoke-direct {v3, v2}, Ljava/util/zip/GZIPOutputStream;-><init>(Ljava/io/OutputStream;)V
+
+    .line 31
+    new-instance v2, Ljava/io/FileInputStream;
+
+    invoke-direct {v2, p1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    .line 9
+    invoke-static {v3}, Ljava/nio/channels/Channels;->newChannel(Ljava/io/OutputStream;)Ljava/nio/channels/WritableByteChannel;
+    :try_end_0
+    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    move-result-object v3
+
+    .line 10
+    :try_start_1
+    invoke-virtual {v2}, Ljava/io/FileInputStream;->getChannel()Ljava/nio/channels/FileChannel;
+    :try_end_1
+    .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_7
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    move-result-object v2
+
+    .line 25
+    :try_start_2
+    invoke-static {v2, v3}, Lcom/whatsapp/util/a1;->a(Ljava/nio/channels/FileChannel;Ljava/nio/channels/WritableByteChannel;)V
+    :try_end_2
+    .catch Ljava/io/FileNotFoundException; {:try_start_2 .. :try_end_2} :catch_8
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+
+    .line 29
+    if-eqz v2, :cond_0
+
+    .line 21
+    invoke-virtual {v2}, Ljava/nio/channels/FileChannel;->close()V
+
+    .line 23
+    :cond_0
+    if-eqz v3, :cond_1
+
+    .line 30
+    :try_start_3
+    invoke-interface {v3}, Ljava/nio/channels/WritableByteChannel;->close()V
+    :try_end_3
+    .catch Ljava/io/FileNotFoundException; {:try_start_3 .. :try_end_3} :catch_0
+
+    .line 12
+    :cond_1
+    :goto_0
+    :try_start_4
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+    :try_end_4
+    .catch Ljava/io/FileNotFoundException; {:try_start_4 .. :try_end_4} :catch_6
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    .line 18
+    :goto_1
+    return-object v0
+
+    .line 30
+    :catch_0
+    move-exception v0
+
+    throw v0
+
+    .line 1
+    :catch_1
+    move-exception v2
+
+    move-object v2, v1
+
+    move-object v3, v1
+
+    .line 6
+    :goto_2
+    if-eqz v2, :cond_2
+
+    .line 3
+    :try_start_5
+    invoke-virtual {v2}, Ljava/nio/channels/FileChannel;->close()V
+    :try_end_5
+    .catch Ljava/io/FileNotFoundException; {:try_start_5 .. :try_end_5} :catch_3
+
+    .line 26
+    :cond_2
+    if-eqz v3, :cond_1
+
+    .line 14
+    :try_start_6
+    invoke-interface {v3}, Ljava/nio/channels/WritableByteChannel;->close()V
+    :try_end_6
+    .catch Ljava/io/FileNotFoundException; {:try_start_6 .. :try_end_6} :catch_2
+
+    goto :goto_0
+
+    :catch_2
+    move-exception v0
+
+    throw v0
+
+    .line 3
+    :catch_3
+    move-exception v0
+
+    throw v0
+
+    .line 5
+    :catchall_0
+    move-exception v0
+
+    move-object v3, v1
+
+    :goto_3
+    if-eqz v1, :cond_3
+
+    .line 20
+    :try_start_7
+    invoke-virtual {v1}, Ljava/nio/channels/FileChannel;->close()V
+    :try_end_7
+    .catch Ljava/io/FileNotFoundException; {:try_start_7 .. :try_end_7} :catch_4
+
+    .line 19
+    :cond_3
+    if-eqz v3, :cond_4
+
+    .line 13
+    :try_start_8
+    invoke-interface {v3}, Ljava/nio/channels/WritableByteChannel;->close()V
+    :try_end_8
+    .catch Ljava/io/FileNotFoundException; {:try_start_8 .. :try_end_8} :catch_5
+
+    :cond_4
+    throw v0
+
+    .line 20
+    :catch_4
+    move-exception v0
+
+    throw v0
+
+    .line 13
+    :catch_5
+    move-exception v0
+
+    throw v0
+
+    .line 18
+    :catch_6
+    move-exception v0
+
+    throw v0
+
+    :cond_5
+    move-object v0, v1
+
+    .line 11
+    goto :goto_1
+
+    .line 5
+    :catchall_1
+    move-exception v0
+
+    goto :goto_3
+
+    :catchall_2
+    move-exception v0
+
+    move-object v1, v2
+
+    goto :goto_3
+
+    .line 1
+    :catch_7
+    move-exception v2
+
+    move-object v2, v1
+
+    goto :goto_2
+
+    :catch_8
+    move-exception v4
 
     goto :goto_2
 .end method
 
-.method public static a([I[IIIII)V
+.method public static b(Ljava/io/File;I)V
     .locals 2
 
     .prologue
-    sget v1, Lcom/whatsapp/util/Log;->c:I
+    .line 32
+    sget-object v0, Lcom/whatsapp/util/a3;->z:[Ljava/lang/String;
+
+    const/4 v1, 0x2
+
+    aget-object v0, v0, v1
+
+    invoke-static {p0, p1, v0}, Lcom/whatsapp/util/a1;->a(Ljava/io/File;ILjava/lang/String;)V
 
     .line 7
-    const/4 v0, 0x0
-
-    :cond_0
-    if-ge v0, p5, :cond_1
-
-    .line 47
-    invoke-static {p0, p1, p2, p3, p4}, Lcom/whatsapp/util/a3;->a([I[IIII)V
-
-    .line 27
-    invoke-static {p1, p0, p3, p2, p4}, Lcom/whatsapp/util/a3;->a([I[IIII)V
-
-    .line 11
-    add-int/lit8 v0, v0, 0x1
-
-    if-eqz v1, :cond_0
-
-    .line 35
-    :cond_1
     return-void
 .end method

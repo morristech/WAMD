@@ -1,140 +1,195 @@
-.class Lcom/whatsapp/p7;
+.class synthetic Lcom/whatsapp/p7;
 .super Ljava/lang/Object;
 .source "p7.java"
 
-# interfaces
-.implements Landroid/view/View$OnClickListener;
-
 
 # static fields
-.field private static final z:Ljava/lang/String;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/Advanced;
+.field static final a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
-
-    const-string v0, ",\u00042^:,\u0008)\u000c."
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    move v3, v2
-
-    move v2, v1
-
-    move-object v1, v0
-
-    :goto_0
-    if-gt v2, v3, :cond_0
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/p7;->z:Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v4, v1, v3
-
-    rem-int/lit8 v0, v3, 0x5
-
-    packed-switch v0, :pswitch_data_0
-
-    const/16 v0, 0x57
-
-    :goto_1
-    xor-int/2addr v0, v4
-
-    int-to-char v0, v0
-
-    aput-char v0, v1, v3
-
-    add-int/lit8 v0, v3, 0x1
-
-    move v3, v0
-
-    goto :goto_0
-
-    :pswitch_0
-    const/16 v0, 0x49
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v0, 0x65
-
-    goto :goto_1
-
-    :pswitch_2
-    const/16 v0, 0x46
-
-    goto :goto_1
-
-    :pswitch_3
-    const/16 v0, 0x7e
-
-    goto :goto_1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-.end method
-
-.method constructor <init>(Lcom/whatsapp/Advanced;)V
-    .locals 0
+    .locals 3
 
     .prologue
     .line 1
-    iput-object p1, p0, Lcom/whatsapp/p7;->a:Lcom/whatsapp/Advanced;
+    invoke-static {}, Lcom/whatsapp/wo;->values()[Lcom/whatsapp/wo;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
 
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Lcom/whatsapp/p7;->a:[I
+
+    :try_start_0
+    sget-object v0, Lcom/whatsapp/p7;->a:[I
+
+    sget-object v1, Lcom/whatsapp/wo;->SUCCESS:Lcom/whatsapp/wo;
+
+    invoke-virtual {v1}, Lcom/whatsapp/wo;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_7
+
+    :goto_0
+    :try_start_1
+    sget-object v0, Lcom/whatsapp/p7;->a:[I
+
+    sget-object v1, Lcom/whatsapp/wo;->FAILED_INSUFFICIENT_SPACE:Lcom/whatsapp/wo;
+
+    invoke-virtual {v1}, Lcom/whatsapp/wo;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_6
+
+    :goto_1
+    :try_start_2
+    sget-object v0, Lcom/whatsapp/p7;->a:[I
+
+    sget-object v1, Lcom/whatsapp/wo;->FAILED_TOO_OLD:Lcom/whatsapp/wo;
+
+    invoke-virtual {v1}, Lcom/whatsapp/wo;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_5
+
+    :goto_2
+    :try_start_3
+    sget-object v0, Lcom/whatsapp/p7;->a:[I
+
+    sget-object v1, Lcom/whatsapp/wo;->FAILED_CANNOT_RESUME:Lcom/whatsapp/wo;
+
+    invoke-virtual {v1}, Lcom/whatsapp/wo;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x4
+
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_4
+
+    :goto_3
+    :try_start_4
+    sget-object v0, Lcom/whatsapp/p7;->a:[I
+
+    sget-object v1, Lcom/whatsapp/wo;->FAILED_HASH_MISMATCH:Lcom/whatsapp/wo;
+
+    invoke-virtual {v1}, Lcom/whatsapp/wo;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x5
+
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_3
+
+    :goto_4
+    :try_start_5
+    sget-object v0, Lcom/whatsapp/p7;->a:[I
+
+    sget-object v1, Lcom/whatsapp/wo;->FAILED_INVALID_URL:Lcom/whatsapp/wo;
+
+    invoke-virtual {v1}, Lcom/whatsapp/wo;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x6
+
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_2
+
+    :goto_5
+    :try_start_6
+    sget-object v0, Lcom/whatsapp/p7;->a:[I
+
+    sget-object v1, Lcom/whatsapp/wo;->FAILED_OUTPUT_STREAM:Lcom/whatsapp/wo;
+
+    invoke-virtual {v1}, Lcom/whatsapp/wo;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x7
+
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_1
+
+    :goto_6
+    :try_start_7
+    sget-object v0, Lcom/whatsapp/p7;->a:[I
+
+    sget-object v1, Lcom/whatsapp/wo;->CANCEL:Lcom/whatsapp/wo;
+
+    invoke-virtual {v1}, Lcom/whatsapp/wo;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x8
+
+    aput v2, v0, v1
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_0
+
+    :goto_7
     return-void
-.end method
 
+    :catch_0
+    move-exception v0
 
-# virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 2
+    goto :goto_7
 
-    .prologue
-    .line 5
-    sget-object v0, Lcom/whatsapp/p7;->z:Ljava/lang/String;
+    :catch_1
+    move-exception v0
 
-    invoke-static {v0}, Lcom/whatsapp/App;->x(Ljava/lang/String;)V
+    goto :goto_6
 
-    .line 4
-    new-instance v0, Ljava/lang/Thread;
+    :catch_2
+    move-exception v0
 
-    new-instance v1, Lcom/whatsapp/s5;
+    goto :goto_5
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/s5;-><init>(Lcom/whatsapp/p7;)V
+    :catch_3
+    move-exception v0
 
-    invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+    goto :goto_4
 
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    :catch_4
+    move-exception v0
 
-    .line 2
-    return-void
+    goto :goto_3
+
+    :catch_5
+    move-exception v0
+
+    goto :goto_2
+
+    :catch_6
+    move-exception v0
+
+    goto :goto_1
+
+    :catch_7
+    move-exception v0
+
+    goto :goto_0
 .end method

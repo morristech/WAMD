@@ -11,7 +11,7 @@
     .line 6
     invoke-direct {p0, p1}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;)V
 
-    .line 5
+    .line 7
     return-void
 .end method
 
@@ -19,10 +19,10 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 4
     invoke-direct {p0, p1, p2}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 4
+    .line 1
     return-void
 .end method
 
@@ -30,10 +30,10 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 2
     invoke-direct {p0, p1, p2, p3}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 7
+    .line 3
     return-void
 .end method
 
@@ -43,7 +43,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 5
     invoke-super {p0, p1}, Landroid/preference/CheckBoxPreference;->onCreateView(Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0

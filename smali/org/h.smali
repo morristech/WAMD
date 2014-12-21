@@ -3,4 +3,4 @@
 .source "h.java"
 
 # interfaces
-.implements Lorg/k;
+.implements Lorg/c;

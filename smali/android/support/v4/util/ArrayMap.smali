@@ -15,10 +15,10 @@
     .locals 0
 
     .prologue
-    .line 8
+    .line 2
     invoke-direct {p0}, Landroid/support/v4/util/SimpleArrayMap;-><init>()V
 
-    .line 7
+    .line 1
     return-void
 .end method
 
@@ -26,12 +26,12 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 11
     iget-object v0, p0, Landroid/support/v4/util/ArrayMap;->mCollections:Landroid/support/v4/util/MapCollections;
 
     if-nez v0, :cond_0
 
-    .line 6
+    .line 4
     new-instance v0, Landroid/support/v4/util/ArrayMap$1;
 
     invoke-direct {v0, p0}, Landroid/support/v4/util/ArrayMap$1;-><init>(Landroid/support/v4/util/ArrayMap;)V
@@ -51,7 +51,7 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 5
     invoke-direct {p0}, Landroid/support/v4/util/ArrayMap;->getCollection()Landroid/support/v4/util/MapCollections;
 
     move-result-object v0
@@ -67,7 +67,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 3
     invoke-direct {p0}, Landroid/support/v4/util/ArrayMap;->getCollection()Landroid/support/v4/util/MapCollections;
 
     move-result-object v0
@@ -83,9 +83,9 @@
     .locals 4
 
     .prologue
-    sget v1, Landroid/support/v4/util/LruCache;->a:I
+    sget-boolean v1, Landroid/support/v4/util/LruCache;->a:Z
 
-    .line 1
+    .line 14
     iget v0, p0, Landroid/support/v4/util/ArrayMap;->mSize:I
 
     invoke-interface {p1}, Ljava/util/Map;->size()I
@@ -96,7 +96,7 @@
 
     invoke-virtual {p0, v0}, Landroid/support/v4/util/ArrayMap;->ensureCapacity(I)V
 
-    .line 2
+    .line 6
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -129,10 +129,10 @@
 
     invoke-virtual {p0, v3, v0}, Landroid/support/v4/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 14
+    .line 10
     if-eqz v1, :cond_0
 
-    .line 11
+    .line 7
     :cond_1
     return-void
 .end method
@@ -141,7 +141,7 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 8
     invoke-static {p0, p1}, Landroid/support/v4/util/MapCollections;->retainAllHelper(Ljava/util/Map;Ljava/util/Collection;)Z
 
     move-result v0
@@ -153,7 +153,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 12
     invoke-direct {p0}, Landroid/support/v4/util/ArrayMap;->getCollection()Landroid/support/v4/util/MapCollections;
 
     move-result-object v0

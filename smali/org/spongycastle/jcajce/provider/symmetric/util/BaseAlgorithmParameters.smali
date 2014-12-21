@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, ":\u0017JY%>\u000bY\u000c<4EJI<\u000b\u0004_M%>\u0011H^\u001b+\u0000N\u000c%.\u0016Y\u000c&4\u0011\rN-{\u000bX@$"
+    const-string v0, "\u0011\u0014\u0004,\u0003\u0015\u0008\u0017y\u001a\u001fF\u0004<\u001a \u0007\u00118\u0003\u0015\u0012\u0006+=\u0000\u0003\u0000y\u0003\u0005\u0015\u0017y\u0000\u001f\u0012C;\u000bP\u0008\u00165\u0002"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x48
+    const/16 v0, 0x6e
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,22 +65,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x5b
+    const/16 v0, 0x70
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x65
+    const/16 v0, 0x66
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x2d
+    const/16 v0, 0x63
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x2c
+    const/16 v0, 0x59
 
     goto :goto_1
 
@@ -112,7 +112,7 @@
     .line 2
     if-nez p1, :cond_0
 
-    .line 3
+    .line 4
     :try_start_0
     new-instance v0, Ljava/lang/NullPointerException;
 
@@ -129,7 +129,7 @@
 
     throw v0
 
-    .line 4
+    .line 3
     :cond_0
     invoke-virtual {p0, p1}, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseAlgorithmParameters;->localEngineGetParameterSpec(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;
 

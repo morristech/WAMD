@@ -15,13 +15,13 @@
 .method static constructor <clinit>()V
     .locals 14
 
+    const/4 v5, 0x4
+
     const/4 v4, 0x3
 
     const/4 v3, 0x2
 
     const/4 v2, 0x1
-
-    const/4 v5, 0x5
 
     const/4 v1, 0x0
 
@@ -29,7 +29,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "Jh|wpBb6lq_cvq1JellpE(UDVe"
+    const-string v6, "~\u0014S7Jv\u001e\u0019,Kk\u001fY1\u000b~\u0019C,JqTz\u0004lQ"
 
     const/4 v0, -0x1
 
@@ -67,7 +67,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "Jh|wpBb6lq_cvq1Hgl`xDta+WdK]"
+    const-string v0, "~\u0014S7Jv\u001e\u0019,Kk\u001fY1\u000b|\u001bC Bp\u0008NkmP7r"
 
     move-object v6, v0
 
@@ -82,7 +82,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "Xvyfzec}azOOvGf_ck"
+    const-string v0, "l\nV&@Q\u001fR!@{3Y\u0007\\k\u001fD"
 
     move-object v6, v0
 
@@ -97,7 +97,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "\u000bMZ"
+    const-string v0, "?1u"
 
     move-object v6, v0
 
@@ -112,15 +112,13 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const/4 v6, 0x4
-
-    const-string v0, "\u000bAZ"
-
-    move v7, v6
-
-    move-object v8, v9
+    const-string v0, "?=u"
 
     move-object v6, v0
+
+    move v7, v5
+
+    move-object v8, v9
 
     move v0, v4
 
@@ -129,22 +127,9 @@
     :pswitch_3
     aput-object v6, v8, v7
 
-    const-string v6, "fokvvEa8lq_cvq?N~lw~\u000buhd|NH}`{NbQk]Rr}v"
+    const/4 v6, 0x5
 
-    const/4 v0, 0x4
-
-    move v7, v5
-
-    move-object v8, v9
-
-    goto :goto_0
-
-    :pswitch_4
-    aput-object v6, v8, v7
-
-    const/4 v6, 0x6
-
-    const-string v0, "\u000bKZ"
+    const-string v0, "?7u"
 
     move v7, v6
 
@@ -153,6 +138,19 @@
     move-object v6, v0
 
     move v0, v5
+
+    goto :goto_0
+
+    :pswitch_4
+    aput-object v6, v8, v7
+
+    const/4 v7, 0x6
+
+    const-string v6, "R\u0013D6Lq\u001d\u0017,Kk\u001fY1\u0005z\u0002C7D?\tG$Fz4R Az\u001e~+gf\u000eR6"
+
+    const/4 v0, 0x5
+
+    move-object v8, v9
 
     goto :goto_0
 
@@ -170,7 +168,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x1f
+    const/16 v6, 0x25
 
     :goto_2
     xor-int/2addr v6, v13
@@ -186,26 +184,24 @@
     goto :goto_1
 
     :pswitch_6
-    const/16 v6, 0x2b
+    const/16 v6, 0x1f
 
     goto :goto_2
 
     :pswitch_7
-    const/4 v6, 0x6
+    const/16 v6, 0x7a
 
     goto :goto_2
 
     :pswitch_8
-    const/16 v6, 0x18
+    const/16 v6, 0x37
 
     goto :goto_2
 
     :pswitch_9
-    move v6, v5
+    const/16 v6, 0x45
 
     goto :goto_2
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -244,22 +240,22 @@
 
     const-wide/32 v4, 0x100000
 
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
+    sget v1, Lcom/whatsapp/App;->h:I
 
-    .line 5
+    .line 22
     const-wide/16 v2, -0x1
 
     cmp-long v0, p1, v2
 
     if-nez v0, :cond_0
 
-    .line 29
+    .line 18
     :try_start_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     sget-object v1, Lcom/whatsapp/InsufficientStorageSpaceActivity;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x5
+    const/4 v2, 0x6
 
     aget-object v1, v1, v2
 
@@ -274,13 +270,13 @@
 
     throw v0
 
-    .line 26
+    .line 2
     :cond_0
     cmp-long v0, p1, v4
 
     if-gez v0, :cond_1
 
-    .line 23
+    .line 6
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -309,13 +305,13 @@
 
     if-eqz v1, :cond_3
 
-    .line 17
+    .line 12
     :cond_1
     cmp-long v0, p1, v6
 
     if-gez v0, :cond_2
 
-    .line 6
+    .line 28
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -328,7 +324,7 @@
 
     sget-object v2, Lcom/whatsapp/InsufficientStorageSpaceActivity;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x6
+    const/4 v3, 0x5
 
     aget-object v2, v2, v3
 
@@ -342,7 +338,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 14
+    .line 3
     :cond_2
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -368,7 +364,7 @@
 
     move-result-object v0
 
-    .line 13
+    .line 7
     :cond_3
     return-object v0
 .end method
@@ -379,7 +375,7 @@
     .locals 3
 
     .prologue
-    .line 27
+    .line 15
     new-instance v0, Landroid/content/Intent;
 
     sget-object v1, Lcom/whatsapp/InsufficientStorageSpaceActivity;->z:[Ljava/lang/String;
@@ -390,7 +386,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 16
+    .line 1
     sget-object v1, Lcom/whatsapp/InsufficientStorageSpaceActivity;->z:[Ljava/lang/String;
 
     const/4 v2, 0x1
@@ -399,15 +395,15 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 7
+    .line 24
     const/high16 v1, 0x10000000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 15
+    .line 23
     invoke-virtual {p0, v0}, Lcom/whatsapp/InsufficientStorageSpaceActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 25
+    .line 8
     return-void
 .end method
 
@@ -415,16 +411,16 @@
     .locals 6
 
     .prologue
-    .line 2
+    .line 21
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 22
+    .line 17
     const v0, 0x7f03001c
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/InsufficientStorageSpaceActivity;->setContentView(I)V
 
-    .line 21
-    const v0, 0x7f0b0084
+    .line 5
+    const v0, 0x7f0b0086
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/InsufficientStorageSpaceActivity;->findViewById(I)Landroid/view/View;
 
@@ -432,8 +428,8 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 24
-    const v1, 0x7f0b0083
+    .line 16
+    const v1, 0x7f0b0085
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/InsufficientStorageSpaceActivity;->findViewById(I)Landroid/view/View;
 
@@ -441,7 +437,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 9
+    .line 26
     invoke-virtual {p0}, Lcom/whatsapp/InsufficientStorageSpaceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
@@ -460,21 +456,21 @@
 
     iput-wide v2, p0, Lcom/whatsapp/InsufficientStorageSpaceActivity;->j:J
 
-    .line 28
-    const v2, 0x7f0e0202
+    .line 19
+    const v2, 0x7f0e0208
 
     invoke-virtual {p0, v2}, Lcom/whatsapp/InsufficientStorageSpaceActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 4
+    .line 9
     iget-wide v4, p0, Lcom/whatsapp/InsufficientStorageSpaceActivity;->j:J
 
     invoke-direct {p0, v4, v5}, Lcom/whatsapp/InsufficientStorageSpaceActivity;->a(J)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 3
+    .line 25
     const/4 v4, 0x1
 
     new-array v4, v4, [Ljava/lang/Object;
@@ -489,14 +485,14 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 19
-    new-instance v1, Lcom/whatsapp/qb;
+    .line 14
+    new-instance v1, Lcom/whatsapp/a73;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/qb;-><init>(Lcom/whatsapp/InsufficientStorageSpaceActivity;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/a73;-><init>(Lcom/whatsapp/InsufficientStorageSpaceActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 8
+    .line 10
     return-void
 .end method
 
@@ -504,15 +500,15 @@
     .locals 4
 
     .prologue
-    .line 10
+    .line 4
     invoke-super {p0}, Lcom/whatsapp/DialogToastActivity;->onResume()V
 
-    .line 1
-    invoke-static {}, Lcom/whatsapp/App;->aK()J
+    .line 20
+    invoke-static {}, Lcom/whatsapp/App;->aJ()J
 
     move-result-wide v0
 
-    .line 20
+    .line 29
     :try_start_0
     iget-wide v2, p0, Lcom/whatsapp/InsufficientStorageSpaceActivity;->j:J
 
@@ -520,16 +516,16 @@
 
     if-lez v0, :cond_0
 
-    .line 18
+    .line 27
     invoke-virtual {p0}, Lcom/whatsapp/InsufficientStorageSpaceActivity;->finish()V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 12
+    .line 13
     :cond_0
     return-void
 
-    .line 18
+    .line 27
     :catch_0
     move-exception v0
 

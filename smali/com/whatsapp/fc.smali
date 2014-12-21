@@ -3,20 +3,20 @@
 .source "fc.java"
 
 # interfaces
-.implements Lcom/whatsapp/util/x;
+.implements Landroid/hardware/SensorEventListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ConversationRowImage;
+.field final a:Lcom/whatsapp/GoogleMapView2;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ConversationRowImage;)V
+.method constructor <init>(Lcom/whatsapp/GoogleMapView2;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/ConversationRowImage;
+    .line 40
+    iput-object p1, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,73 +25,552 @@
 
 
 # virtual methods
-.method public a()I
-    .locals 2
+.method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
+    .locals 0
 
     .prologue
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/ConversationRowImage;
+    .line 17
+    return-void
+.end method
 
-    invoke-virtual {v0}, Lcom/whatsapp/ConversationRowImage;->getContext()Landroid/content/Context;
+.method public onSensorChanged(Landroid/hardware/SensorEvent;)V
+    .locals 13
+
+    .prologue
+    const/4 v2, 0x3
+
+    const/4 v12, 0x2
+
+    const/4 v11, 0x0
+
+    const/4 v5, 0x0
+
+    const/high16 v10, 0x43b40000
+
+    sget v7, Lcom/whatsapp/App;->h:I
+
+    .line 46
+    iget-object v0, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-virtual {v0}, Lcom/whatsapp/GoogleMapView2;->getMap()Lcom/google/android/gms/maps/GoogleMap;
 
     move-result-object v0
 
-    check-cast v0, Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/google/android/gms/maps/GoogleMap;->getMyLocation()Landroid/location/Location;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    move-result-object v8
+
+    .line 24
+    if-nez v8, :cond_1
+
+    .line 9
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 36
+    :cond_1
+    :try_start_0
+    iget-object v0, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-static {v0}, Lcom/whatsapp/GoogleMapView2;->g(Lcom/whatsapp/GoogleMapView2;)[F
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+    iget-object v1, p1, Landroid/hardware/SensorEvent;->values:[F
+
+    invoke-static {v0, v1}, Landroid/hardware/SensorManager;->getRotationMatrixFromVector([F[F)V
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 13
+    :cond_2
+    :goto_1
+    iget-object v0, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-static {v0}, Lcom/whatsapp/GoogleMapView2;->b(Lcom/whatsapp/GoogleMapView2;)Landroid/view/Display;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/Display;->getRotation()I
+
+    move-result v9
+
+    .line 18
+    :try_start_1
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v0
+
+    invoke-virtual {v8}, Landroid/location/Location;->getTime()J
+    :try_end_1
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_2
+
+    move-result-wide v2
+
+    sub-long/2addr v0, v2
+
+    const-wide/16 v2, 0x1388
+
+    cmp-long v0, v0, v2
+
+    if-gez v0, :cond_3
+
+    :try_start_2
+    invoke-virtual {v8}, Landroid/location/Location;->hasBearing()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    .line 43
+    invoke-virtual {v8}, Landroid/location/Location;->getSpeed()F
+    :try_end_2
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_3
+
+    move-result v0
+
+    float-to-double v0, v0
+
+    const-wide v2, 0x3fec9c4da9003eeaL
+
+    cmpl-double v0, v0, v2
+
+    if-lez v0, :cond_3
+
+    .line 21
+    invoke-virtual {v8}, Landroid/location/Location;->getBearing()F
+
+    move-result v0
+
+    if-eqz v7, :cond_5
+
+    .line 41
+    :cond_3
+    iget-object v0, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-static {v0}, Lcom/whatsapp/GoogleMapView2;->g(Lcom/whatsapp/GoogleMapView2;)[F
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-static {v1}, Lcom/whatsapp/GoogleMapView2;->h(Lcom/whatsapp/GoogleMapView2;)[F
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/hardware/SensorManager;->getOrientation([F[F)[F
+
+    .line 35
+    iget-object v0, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-static {v0}, Lcom/whatsapp/GoogleMapView2;->h(Lcom/whatsapp/GoogleMapView2;)[F
+
+    move-result-object v0
+
+    aget v0, v0, v5
+
+    float-to-double v0, v0
+
+    invoke-static {v0, v1}, Ljava/lang/Math;->toDegrees(D)D
+
+    move-result-wide v0
+
+    double-to-float v0, v0
+
+    .line 16
+    packed-switch v9, :pswitch_data_0
+
+    .line 19
+    :cond_4
+    :goto_2
+    cmpg-float v1, v0, v11
+
+    if-gez v1, :cond_9
+
+    .line 30
+    add-float/2addr v0, v10
+
+    move v6, v0
+
+    .line 15
+    :goto_3
+    new-instance v0, Landroid/hardware/GeomagneticField;
+
+    invoke-virtual {v8}, Landroid/location/Location;->getLatitude()D
+
+    move-result-wide v2
+
+    double-to-float v1, v2
+
+    .line 10
+    invoke-virtual {v8}, Landroid/location/Location;->getLongitude()D
+
+    move-result-wide v2
+
+    double-to-float v2, v2
+
+    .line 8
+    invoke-virtual {v8}, Landroid/location/Location;->getAltitude()D
+
+    move-result-wide v4
+
+    double-to-float v3, v4
+
+    invoke-virtual {v8}, Landroid/location/Location;->getTime()J
+
+    move-result-wide v4
+
+    invoke-direct/range {v0 .. v5}, Landroid/hardware/GeomagneticField;-><init>(FFFJ)V
+
+    .line 47
+    invoke-virtual {v0}, Landroid/hardware/GeomagneticField;->getDeclination()F
+
+    move-result v0
+
+    add-float/2addr v0, v6
+
+    .line 26
+    cmpl-float v1, v0, v10
+
+    if-ltz v1, :cond_5
+
+    .line 39
+    sub-float/2addr v0, v10
+
+    .line 5
+    :cond_5
+    :try_start_3
+    iget-object v1, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    iget-object v2, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    iget-object v3, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-static {v3}, Lcom/whatsapp/GoogleMapView2;->f(Lcom/whatsapp/GoogleMapView2;)F
+
+    move-result v3
+
+    invoke-static {v2, v0, v3}, Lcom/whatsapp/GoogleMapView2;->a(Lcom/whatsapp/GoogleMapView2;FF)F
+
+    move-result v0
+
+    invoke-static {v1, v0}, Lcom/whatsapp/GoogleMapView2;->b(Lcom/whatsapp/GoogleMapView2;F)F
+    :try_end_3
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_4
+
+    .line 3
+    if-eqz v9, :cond_6
+
+    if-ne v9, v12, :cond_7
+
+    .line 12
+    :cond_6
+    :try_start_4
+    iget-object v0, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    iget-object v1, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-static {v1}, Lcom/whatsapp/GoogleMapView2;->h(Lcom/whatsapp/GoogleMapView2;)[F
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    aget v1, v1, v2
+
+    float-to-double v2, v1
+
+    invoke-static {v2, v3}, Ljava/lang/Math;->toDegrees(D)D
+
+    move-result-wide v2
+
+    invoke-static {v2, v3}, Ljava/lang/Math;->abs(D)D
+
+    move-result-wide v2
+
+    double-to-float v1, v2
+
+    invoke-static {v0, v1}, Lcom/whatsapp/GoogleMapView2;->a(Lcom/whatsapp/GoogleMapView2;F)F
+
+    if-eqz v7, :cond_8
+
+    .line 31
+    :cond_7
+    iget-object v0, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    iget-object v1, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-static {v1}, Lcom/whatsapp/GoogleMapView2;->h(Lcom/whatsapp/GoogleMapView2;)[F
+
+    move-result-object v1
+
+    const/4 v2, 0x2
+
+    aget v1, v1, v2
+
+    float-to-double v2, v1
+
+    invoke-static {v2, v3}, Ljava/lang/Math;->toDegrees(D)D
+
+    move-result-wide v2
+
+    invoke-static {v2, v3}, Ljava/lang/Math;->abs(D)D
+
+    move-result-wide v2
+
+    double-to-float v1, v2
+
+    invoke-static {v0, v1}, Lcom/whatsapp/GoogleMapView2;->a(Lcom/whatsapp/GoogleMapView2;F)F
+    :try_end_4
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_4 .. :try_end_4} :catch_6
+
+    .line 25
+    :cond_8
+    iget-object v0, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-static {v0}, Lcom/whatsapp/GoogleMapView2;->e(Lcom/whatsapp/GoogleMapView2;)I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 14
+    new-instance v0, Lcom/google/android/gms/maps/model/LatLng;
+
+    invoke-virtual {v8}, Landroid/location/Location;->getLatitude()D
+
+    move-result-wide v2
+
+    invoke-virtual {v8}, Landroid/location/Location;->getLongitude()D
+
+    move-result-wide v4
+
+    invoke-direct {v0, v2, v3, v4, v5}, Lcom/google/android/gms/maps/model/LatLng;-><init>(DD)V
+
+    .line 37
+    const-wide/high16 v2, 0x4049000000000000L
+
+    iget-object v1, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-static {v1}, Lcom/whatsapp/GoogleMapView2;->f(Lcom/whatsapp/GoogleMapView2;)F
+
+    move-result v1
+
+    float-to-double v4, v1
+
+    invoke-static {v0, v2, v3, v4, v5}, Lcom/whatsapp/GoogleMapView2;->a(Lcom/google/android/gms/maps/model/LatLng;DD)Lcom/google/android/gms/maps/model/LatLng;
 
     move-result-object v0
 
     .line 7
-    invoke-virtual {v0}, Landroid/view/View;->getWidth()I
+    invoke-static {}, Lcom/google/android/gms/maps/model/CameraPosition;->builder()Lcom/google/android/gms/maps/model/CameraPosition$Builder;
 
-    move-result v1
+    move-result-object v1
 
-    invoke-virtual {v0}, Landroid/view/View;->getHeight()I
+    iget-object v2, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
 
-    move-result v0
+    .line 45
+    invoke-static {v2}, Lcom/whatsapp/GoogleMapView2;->c(Lcom/whatsapp/GoogleMapView2;)F
 
-    invoke-static {v1, v0}, Ljava/lang/Math;->min(II)I
+    move-result v2
 
-    move-result v0
+    const/high16 v3, 0x42870000
 
-    mul-int/lit8 v0, v0, 0x46
+    invoke-static {v2, v11, v3}, Lcom/whatsapp/GoogleMapView2;->a(FFF)F
 
-    div-int/lit8 v0, v0, 0x64
+    move-result v2
 
-    return v0
-.end method
+    invoke-virtual {v1, v2}, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->tilt(F)Lcom/google/android/gms/maps/model/CameraPosition$Builder;
 
-.method public a(Landroid/widget/ImageView;Landroid/graphics/Bitmap;Lcom/whatsapp/protocol/ae;)V
-    .locals 1
+    move-result-object v1
 
-    .prologue
-    .line 5
-    if-eqz p2, :cond_0
+    iget-object v2, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
 
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/ConversationRowImage;
+    .line 23
+    invoke-static {v2}, Lcom/whatsapp/GoogleMapView2;->f(Lcom/whatsapp/GoogleMapView2;)F
 
-    invoke-static {v0}, Lcom/whatsapp/ConversationRowImage;->a(Lcom/whatsapp/ConversationRowImage;)Lcom/whatsapp/ConversationRowImage$RowImageView;
+    move-result v2
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->bearing(F)Lcom/google/android/gms/maps/model/CameraPosition$Builder;
 
-    invoke-static {v0, p2}, Lcom/whatsapp/ConversationRowImage$RowImageView;->a(Lcom/whatsapp/ConversationRowImage$RowImageView;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+    move-result-object v1
 
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/ConversationRowImage;
-
-    invoke-static {v0}, Lcom/whatsapp/ConversationRowImage;->a(Lcom/whatsapp/ConversationRowImage;)Lcom/whatsapp/ConversationRowImage$RowImageView;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/ConversationRowImage$RowImageView;->invalidate()V
+    iget-object v2, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
 
     .line 6
-    :cond_0
-    return-void
+    invoke-static {v2}, Lcom/whatsapp/GoogleMapView2;->d(Lcom/whatsapp/GoogleMapView2;)F
+
+    move-result v2
+
+    const/high16 v3, 0x41700000
+
+    invoke-static {v2, v3}, Ljava/lang/Math;->max(FF)F
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->zoom(F)Lcom/google/android/gms/maps/model/CameraPosition$Builder;
+
+    move-result-object v1
+
+    .line 34
+    invoke-virtual {v1, v0}, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->target(Lcom/google/android/gms/maps/model/LatLng;)Lcom/google/android/gms/maps/model/CameraPosition$Builder;
+
+    move-result-object v0
+
+    .line 42
+    invoke-virtual {v0}, Lcom/google/android/gms/maps/model/CameraPosition$Builder;->build()Lcom/google/android/gms/maps/model/CameraPosition;
+
+    move-result-object v0
+
+    .line 29
+    iget-object v1, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-virtual {v1}, Lcom/whatsapp/GoogleMapView2;->getMap()Lcom/google/android/gms/maps/GoogleMap;
+
+    move-result-object v1
+
+    invoke-static {v0}, Lcom/google/android/gms/maps/CameraUpdateFactory;->newCameraPosition(Lcom/google/android/gms/maps/model/CameraPosition;)Lcom/google/android/gms/maps/CameraUpdate;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Lcom/google/android/gms/maps/GoogleMap;->moveCamera(Lcom/google/android/gms/maps/CameraUpdate;)V
+
+    goto/16 :goto_0
+
+    .line 11
+    :catch_0
+    move-exception v0
+
+    .line 27
+    :try_start_5
+    iget-object v0, p1, Landroid/hardware/SensorEvent;->values:[F
+
+    array-length v0, v0
+
+    if-le v0, v2, :cond_2
+
+    .line 20
+    iget-object v0, p1, Landroid/hardware/SensorEvent;->values:[F
+
+    const/4 v1, 0x0
+
+    iget-object v2, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-static {v2}, Lcom/whatsapp/GoogleMapView2;->a(Lcom/whatsapp/GoogleMapView2;)[F
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x3
+
+    invoke-static {v0, v1, v2, v3, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 33
+    iget-object v0, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-static {v0}, Lcom/whatsapp/GoogleMapView2;->g(Lcom/whatsapp/GoogleMapView2;)[F
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/whatsapp/fc;->a:Lcom/whatsapp/GoogleMapView2;
+
+    invoke-static {v1}, Lcom/whatsapp/GoogleMapView2;->a(Lcom/whatsapp/GoogleMapView2;)[F
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/hardware/SensorManager;->getRotationMatrixFromVector([F[F)V
+    :try_end_5
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_1
+
+    goto/16 :goto_1
+
+    :catch_1
+    move-exception v0
+
+    throw v0
+
+    .line 18
+    :catch_2
+    move-exception v0
+
+    :try_start_6
+    throw v0
+    :try_end_6
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_6 .. :try_end_6} :catch_3
+
+    .line 43
+    :catch_3
+    move-exception v0
+
+    throw v0
+
+    .line 32
+    :pswitch_0
+    if-eqz v7, :cond_4
+
+    .line 44
+    :pswitch_1
+    const/high16 v1, 0x42b40000
+
+    add-float/2addr v0, v1
+
+    .line 38
+    if-eqz v7, :cond_4
+
+    .line 1
+    :pswitch_2
+    const/high16 v1, 0x43340000
+
+    add-float/2addr v0, v1
+
+    .line 28
+    if-eqz v7, :cond_4
+
+    .line 22
+    :pswitch_3
+    const/high16 v1, 0x43870000
+
+    add-float/2addr v0, v1
+
+    goto/16 :goto_2
+
+    .line 3
+    :catch_4
+    move-exception v0
+
+    :try_start_7
+    throw v0
+    :try_end_7
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_7 .. :try_end_7} :catch_5
+
+    .line 12
+    :catch_5
+    move-exception v0
+
+    :try_start_8
+    throw v0
+    :try_end_8
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_8 .. :try_end_8} :catch_6
+
+    .line 31
+    :catch_6
+    move-exception v0
+
+    throw v0
+
+    :cond_9
+    move v6, v0
+
+    goto/16 :goto_3
+
+    .line 16
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+    .end packed-switch
 .end method

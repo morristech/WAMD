@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 31
+    .line 51
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
@@ -18,7 +18,7 @@
     .locals 0
 
     .prologue
-    .line 21
+    .line 37
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$AnimationHandler;-><init>()V
 
     return-void
@@ -30,12 +30,12 @@
     .locals 14
 
     .prologue
-    sget v7, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:I
+    sget-boolean v7, Lcom/actionbarsherlock/internal/nineoldandroids/animation/Animator;->a:Z
 
-    .line 29
+    .line 39
     const/4 v3, 0x1
 
-    .line 34
+    .line 22
     invoke-static {}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->access$000()Ljava/lang/ThreadLocal;
 
     move-result-object v0
@@ -46,7 +46,7 @@
 
     check-cast v0, Ljava/util/ArrayList;
 
-    .line 35
+    .line 7
     invoke-static {}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->access$100()Ljava/lang/ThreadLocal;
 
     move-result-object v1
@@ -57,17 +57,17 @@
 
     check-cast v1, Ljava/util/ArrayList;
 
-    .line 56
+    .line 2
     iget v2, p1, Landroid/os/Message;->what:I
 
     packed-switch v2, :pswitch_data_0
 
-    .line 25
+    .line 27
     :cond_0
     :goto_0
     return-void
 
-    .line 4
+    .line 29
     :pswitch_0
     invoke-static {}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->access$200()Ljava/lang/ThreadLocal;
 
@@ -79,7 +79,7 @@
 
     check-cast v2, Ljava/util/ArrayList;
 
-    .line 12
+    .line 17
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v4
@@ -92,13 +92,13 @@
 
     if-lez v4, :cond_17
 
-    .line 58
+    .line 30
     :cond_1
     const/4 v3, 0x0
 
     move v5, v3
 
-    .line 20
+    .line 42
     :cond_2
     :goto_1
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
@@ -107,22 +107,22 @@
 
     if-lez v3, :cond_6
 
-    .line 5
+    .line 13
     invoke-virtual {v2}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Ljava/util/ArrayList;
 
-    .line 28
+    .line 38
     invoke-virtual {v2}, Ljava/util/ArrayList;->clear()V
 
-    .line 47
+    .line 50
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
     move-result v8
 
-    .line 19
+    .line 14
     const/4 v4, 0x0
 
     move v6, v4
@@ -130,14 +130,14 @@
     :goto_2
     if-ge v6, v8, :cond_5
 
-    .line 3
+    .line 57
     invoke-virtual {v3, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;
 
-    .line 48
+    .line 15
     invoke-static {v4}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->access$300(Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;)J
 
     move-result-wide v10
@@ -148,33 +148,33 @@
 
     if-nez v9, :cond_3
 
-    .line 54
+    .line 53
     invoke-static {v4}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->access$400(Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;)V
 
     if-eqz v7, :cond_4
 
-    .line 51
+    .line 18
     :cond_3
     invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 37
+    .line 58
     :cond_4
     add-int/lit8 v4, v6, 0x1
 
     if-eqz v7, :cond_16
 
-    .line 15
+    .line 60
     :cond_5
     if-eqz v7, :cond_2
 
-    .line 33
+    .line 9
     :cond_6
     :goto_3
     invoke-static {}, Landroid/view/animation/AnimationUtils;->currentAnimationTimeMillis()J
 
     move-result-wide v8
 
-    .line 32
+    .line 44
     invoke-static {}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->access$500()Ljava/lang/ThreadLocal;
 
     move-result-object v2
@@ -185,7 +185,7 @@
 
     check-cast v2, Ljava/util/ArrayList;
 
-    .line 41
+    .line 4
     invoke-static {}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->access$600()Ljava/lang/ThreadLocal;
 
     move-result-object v3
@@ -196,12 +196,12 @@
 
     check-cast v3, Ljava/util/ArrayList;
 
-    .line 59
+    .line 12
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v10
 
-    .line 6
+    .line 40
     const/4 v4, 0x0
 
     move v6, v4
@@ -209,39 +209,39 @@
     :goto_4
     if-ge v6, v10, :cond_8
 
-    .line 9
+    .line 21
     invoke-virtual {v1, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;
 
-    .line 55
+    .line 19
     invoke-static {v4, v8, v9}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->access$700(Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;J)Z
 
     move-result v11
 
     if-eqz v11, :cond_7
 
-    .line 26
+    .line 28
     invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 17
+    .line 20
     :cond_7
     add-int/lit8 v4, v6, 0x1
 
     if-eqz v7, :cond_15
 
-    .line 39
+    .line 54
     :cond_8
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
     move-result v10
 
-    .line 40
+    .line 1
     if-lez v10, :cond_a
 
-    .line 42
+    .line 59
     const/4 v4, 0x0
 
     move v6, v4
@@ -249,64 +249,64 @@
     :goto_5
     if-ge v6, v10, :cond_9
 
-    .line 14
+    .line 47
     invoke-virtual {v2, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;
 
-    .line 18
+    .line 25
     invoke-static {v4}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->access$400(Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;)V
 
-    .line 60
+    .line 5
     const/4 v11, 0x1
 
     invoke-static {v4, v11}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->access$802(Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;Z)Z
 
-    .line 23
+    .line 52
     invoke-virtual {v1, v4}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 52
+    .line 8
     add-int/lit8 v4, v6, 0x1
 
     if-eqz v7, :cond_14
 
-    .line 44
+    .line 34
     :cond_9
     invoke-virtual {v2}, Ljava/util/ArrayList;->clear()V
 
-    .line 36
+    .line 49
     :cond_a
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v6
 
-    .line 57
+    .line 24
     const/4 v4, 0x0
 
-    .line 16
+    .line 31
     :goto_6
     if-ge v4, v6, :cond_e
 
-    .line 49
+    .line 41
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;
 
-    .line 50
+    .line 33
     invoke-virtual {v2, v8, v9}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->animationFrame(J)Z
 
     move-result v10
 
     if-eqz v10, :cond_b
 
-    .line 11
+    .line 43
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 22
+    .line 45
     :cond_b
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -314,25 +314,25 @@
 
     if-ne v10, v6, :cond_c
 
-    .line 46
+    .line 11
     add-int/lit8 v4, v4, 0x1
 
     if-eqz v7, :cond_d
 
-    .line 2
+    .line 3
     :cond_c
     add-int/lit8 v6, v6, -0x1
 
-    .line 7
+    .line 16
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     :cond_d
     move v2, v6
 
-    .line 30
+    .line 6
     if-eqz v7, :cond_13
 
-    .line 53
+    .line 35
     :cond_e
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -340,7 +340,7 @@
 
     if-lez v2, :cond_10
 
-    .line 45
+    .line 32
     const/4 v2, 0x0
 
     move v4, v2
@@ -352,7 +352,7 @@
 
     if-ge v4, v2, :cond_f
 
-    .line 13
+    .line 46
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -361,16 +361,16 @@
 
     invoke-static {v2}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;->access$900(Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator;)V
 
-    .line 8
+    .line 56
     add-int/lit8 v2, v4, 0x1
 
     if-eqz v7, :cond_12
 
-    .line 1
+    .line 10
     :cond_f
     invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
 
-    .line 10
+    .line 26
     :cond_10
     if-eqz v5, :cond_0
 
@@ -386,7 +386,7 @@
 
     if-nez v0, :cond_0
 
-    .line 24
+    .line 55
     :cond_11
     const/4 v0, 0x1
 
@@ -396,7 +396,7 @@
 
     move-result-wide v4
 
-    .line 43
+    .line 36
     invoke-static {}, Landroid/view/animation/AnimationUtils;->currentAnimationTimeMillis()J
 
     move-result-wide v6
@@ -405,7 +405,7 @@
 
     sub-long/2addr v4, v6
 
-    .line 27
+    .line 48
     invoke-static {v2, v3, v4, v5}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide v2
@@ -449,7 +449,7 @@
 
     goto/16 :goto_3
 
-    .line 56
+    .line 2
     nop
 
     :pswitch_data_0

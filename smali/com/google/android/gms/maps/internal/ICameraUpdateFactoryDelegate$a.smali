@@ -6,7 +6,7 @@
 
 
 # direct methods
-.method public static t(Landroid/os/IBinder;)Lcom/google/android/gms/maps/internal/ICameraUpdateFactoryDelegate;
+.method public static aQ(Landroid/os/IBinder;)Lcom/google/android/gms/maps/internal/ICameraUpdateFactoryDelegate;
     .locals 2
 
     if-nez p0, :cond_0

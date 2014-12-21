@@ -1,38 +1,68 @@
-.class public final Lcom/whatsapp/messaging/a2;
+.class final Lcom/whatsapp/messaging/a2;
 .super Ljava/lang/Object;
 .source "a2.java"
 
-
-# instance fields
-.field public final a:Lcom/whatsapp/protocol/au;
-
-.field public final b:J
-
-.field public final c:[B
-
-.field public final d:I
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # direct methods
-.method public constructor <init>(Lcom/whatsapp/protocol/au;[BIJ)V
+.method constructor <init>()V
     .locals 0
 
     .prologue
-    .line 4
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/messaging/a2;->a:Lcom/whatsapp/protocol/au;
-
-    .line 2
-    iput-object p2, p0, Lcom/whatsapp/messaging/a2;->c:[B
-
-    .line 1
-    iput p3, p0, Lcom/whatsapp/messaging/a2;->d:I
-
-    .line 5
-    iput-wide p4, p0, Lcom/whatsapp/messaging/a2;->b:J
-
-    .line 6
     return-void
+.end method
+
+
+# virtual methods
+.method public a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/a4;
+    .locals 2
+
+    .prologue
+    .line 2
+    new-instance v0, Lcom/whatsapp/messaging/a4;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p1, v1}, Lcom/whatsapp/messaging/a4;-><init>(Landroid/os/Parcel;Lcom/whatsapp/messaging/b7;)V
+
+    return-object v0
+.end method
+
+.method public a(I)[Lcom/whatsapp/messaging/a4;
+    .locals 1
+
+    .prologue
+    .line 5
+    new-array v0, p1, [Lcom/whatsapp/messaging/a4;
+
+    return-object v0
+.end method
+
+.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 4
+    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/a2;->a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/a4;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public newArray(I)[Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/a2;->a(I)[Lcom/whatsapp/messaging/a4;
+
+    move-result-object v0
+
+    return-object v0
 .end method

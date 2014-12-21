@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "n($"
+    const-string v0, "s\\R"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x53
+    const/16 v0, 0x74
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,26 +65,24 @@
     goto :goto_0
 
     :pswitch_0
-    const/4 v0, 0x4
+    const/16 v0, 0x19
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x41
+    const/16 v0, 0x35
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x40
+    const/16 v0, 0x36
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x73
+    const/16 v0, 0x57
 
     goto :goto_1
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -99,7 +97,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 9
     invoke-direct {p0}, Landroid/support/v4/app/DialogFragment;-><init>()V
 
     return-void
@@ -113,8 +111,8 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 8
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 5
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment$DeleteGroupDialogFragment;->getArguments()Landroid/os/Bundle;
 
@@ -126,12 +124,12 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    invoke-virtual {v0, v1}, Lcom/whatsapp/et;->c(Ljava/lang/String;)Lcom/whatsapp/tc;
 
     move-result-object v0
 
-    .line 6
-    const v1, 0x7f0e0120
+    .line 2
+    const v1, 0x7f0e0126
 
     new-array v2, v5, [Ljava/lang/Object;
 
@@ -141,7 +139,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v4}, Lcom/whatsapp/adg;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v0, v4}, Lcom/whatsapp/tc;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -151,7 +149,7 @@
 
     move-result-object v1
 
-    .line 2
+    .line 6
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {p0}, Lcom/whatsapp/ConversationsFragment$DeleteGroupDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -169,7 +167,7 @@
 
     move-result-object v3
 
-    invoke-static {v1, v3}, Lcom/whatsapp/util/ab;->c(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/CharSequence;
+    invoke-static {v1, v3}, Lcom/whatsapp/util/f;->a(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -177,34 +175,34 @@
 
     move-result-object v1
 
-    .line 9
+    .line 1
     invoke-virtual {v1, v5}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f0e0080
+    const v2, 0x7f0e007a
 
-    new-instance v3, Lcom/whatsapp/ata;
+    new-instance v3, Lcom/whatsapp/apd;
 
-    invoke-direct {v3, p0}, Lcom/whatsapp/ata;-><init>(Lcom/whatsapp/ConversationsFragment$DeleteGroupDialogFragment;)V
+    invoke-direct {v3, p0}, Lcom/whatsapp/apd;-><init>(Lcom/whatsapp/ConversationsFragment$DeleteGroupDialogFragment;)V
 
-    .line 1
+    .line 4
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f0e0106
+    const v2, 0x7f0e010b
 
-    new-instance v3, Lcom/whatsapp/pk;
+    new-instance v3, Lcom/whatsapp/ij;
 
-    invoke-direct {v3, p0, v0}, Lcom/whatsapp/pk;-><init>(Lcom/whatsapp/ConversationsFragment$DeleteGroupDialogFragment;Lcom/whatsapp/adg;)V
+    invoke-direct {v3, p0, v0}, Lcom/whatsapp/ij;-><init>(Lcom/whatsapp/ConversationsFragment$DeleteGroupDialogFragment;Lcom/whatsapp/tc;)V
 
-    .line 5
+    .line 3
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 4
+    .line 8
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0

@@ -3,119 +3,172 @@
 .source "bl.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/whatsapp/util/at;
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private a:Landroid/graphics/Paint;
 
-.field private b:Landroid/widget/ImageView;
-
-.field private c:Landroid/graphics/Bitmap;
-
-.field final d:Lcom/whatsapp/util/ae;
+.field private b:F
 
 
 # direct methods
-.method public constructor <init>(Lcom/whatsapp/util/ae;Landroid/graphics/Bitmap;Landroid/widget/ImageView;Ljava/lang/String;)V
-    .locals 0
+.method public constructor <init>(Landroid/graphics/Paint;F)V
+    .locals 1
 
     .prologue
-    .line 7
-    iput-object p1, p0, Lcom/whatsapp/util/bl;->d:Lcom/whatsapp/util/ae;
-
+    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8
-    iput-object p2, p0, Lcom/whatsapp/util/bl;->c:Landroid/graphics/Bitmap;
+    .line 9
+    const/high16 v0, 0x3f800000
 
-    .line 12
-    iput-object p3, p0, Lcom/whatsapp/util/bl;->b:Landroid/widget/ImageView;
+    iput v0, p0, Lcom/whatsapp/util/bl;->b:F
 
-    .line 5
-    iput-object p4, p0, Lcom/whatsapp/util/bl;->a:Ljava/lang/String;
+    .line 18
+    iput-object p1, p0, Lcom/whatsapp/util/bl;->a:Landroid/graphics/Paint;
 
-    .line 1
+    .line 2
+    iput p2, p0, Lcom/whatsapp/util/bl;->b:F
+
+    .line 7
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public a(Landroid/graphics/drawable/Drawable;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
+    .locals 7
 
     .prologue
-    sget v0, Lcom/whatsapp/util/Log;->c:I
+    const/high16 v6, 0x3f000000
 
-    .line 11
-    iget-object v1, p0, Lcom/whatsapp/util/bl;->b:Landroid/widget/ImageView;
+    const/4 v2, 0x0
 
-    invoke-virtual {v1}, Landroid/widget/ImageView;->getTag()Ljava/lang/Object;
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/util/bl;->a:Landroid/graphics/Paint;
 
-    move-result-object v1
+    invoke-virtual {v0}, Landroid/graphics/Paint;->getFontMetrics()Landroid/graphics/Paint$FontMetrics;
 
-    if-eqz v1, :cond_2
+    move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/util/bl;->b:Landroid/widget/ImageView;
+    .line 5
+    if-eqz v0, :cond_1
 
-    invoke-virtual {v1}, Landroid/widget/ImageView;->getTag()Ljava/lang/Object;
+    .line 3
+    iget v0, v0, Landroid/graphics/Paint$FontMetrics;->descent:F
 
-    move-result-object v1
+    iget v1, p0, Lcom/whatsapp/util/bl;->b:F
 
-    iget-object v2, p0, Lcom/whatsapp/util/bl;->a:Ljava/lang/String;
+    const/high16 v3, 0x3f800000
 
-    invoke-virtual {v1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    sub-float/2addr v1, v3
 
-    move-result v1
+    iget-object v3, p0, Lcom/whatsapp/util/bl;->a:Landroid/graphics/Paint;
 
-    if-eqz v1, :cond_2
+    invoke-virtual {v3}, Landroid/graphics/Paint;->getTextSize()F
 
-    .line 6
-    iget-object v1, p0, Lcom/whatsapp/util/bl;->c:Landroid/graphics/Bitmap;
+    move-result v3
+
+    mul-float/2addr v1, v3
+
+    sub-float/2addr v0, v1
+
+    const/high16 v1, 0x40000000
+
+    div-float/2addr v0, v1
+
+    add-float/2addr v0, v6
+
+    float-to-int v0, v0
+
+    .line 12
+    invoke-static {v0, v2}, Ljava/lang/Math;->max(II)I
+
+    move-result v5
+
+    .line 16
+    new-instance v0, Landroid/graphics/drawable/InsetDrawable;
+
+    neg-int v3, v5
+
+    move-object v1, p1
+
+    move v4, v2
+
+    invoke-direct/range {v0 .. v5}, Landroid/graphics/drawable/InsetDrawable;-><init>(Landroid/graphics/drawable/Drawable;IIII)V
+
+    .line 17
+    iget v1, p0, Lcom/whatsapp/util/bl;->b:F
+
+    iget-object v3, p0, Lcom/whatsapp/util/bl;->a:Landroid/graphics/Paint;
+
+    invoke-virtual {v3}, Landroid/graphics/Paint;->getTextSize()F
+
+    move-result v3
+
+    mul-float/2addr v1, v3
+
+    const v3, 0x3f8ccccd
+
+    mul-float/2addr v1, v3
+
+    add-float/2addr v1, v6
+
+    float-to-int v1, v1
+
+    .line 4
+    invoke-virtual {v0, v2, v2, v1, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 15
+    sget-boolean v1, Lcom/whatsapp/util/Log;->k:Z
 
     if-eqz v1, :cond_0
 
     .line 10
-    iget-object v1, p0, Lcom/whatsapp/util/bl;->b:Landroid/widget/ImageView;
+    :goto_0
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
-    iget-object v2, p0, Lcom/whatsapp/util/bl;->c:Landroid/graphics/Bitmap;
+    move-result-object v1
 
-    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
-    if-eqz v0, :cond_2
+    move-result v3
 
-    .line 9
-    :cond_0
-    iget-object v1, p0, Lcom/whatsapp/util/bl;->d:Lcom/whatsapp/util/ae;
+    int-to-float v3, v3
 
-    invoke-static {v1}, Lcom/whatsapp/util/ae;->a(Lcom/whatsapp/util/ae;)I
+    invoke-virtual {v1, v3}, Lcom/whatsapp/art;->b(F)F
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    float-to-int v1, v1
 
-    .line 2
-    iget-object v1, p0, Lcom/whatsapp/util/bl;->b:Landroid/widget/ImageView;
+    .line 14
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
-    iget-object v2, p0, Lcom/whatsapp/util/bl;->d:Lcom/whatsapp/util/ae;
+    move-result-object v3
 
-    invoke-static {v2}, Lcom/whatsapp/util/ae;->a(Lcom/whatsapp/util/ae;)I
+    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
-    move-result v2
+    move-result v4
 
-    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
+    int-to-float v4, v4
 
-    if-eqz v0, :cond_2
+    invoke-virtual {v3, v4}, Lcom/whatsapp/art;->b(F)F
 
-    .line 3
+    move-result v3
+
+    float-to-int v3, v3
+
+    .line 13
+    invoke-virtual {v0, v2, v2, v1, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 11
+    :cond_0
+    return-object v0
+
     :cond_1
-    iget-object v0, p0, Lcom/whatsapp/util/bl;->b:Landroid/widget/ImageView;
+    move-object v0, p1
 
-    const/16 v1, 0x8
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 4
-    :cond_2
-    return-void
+    goto :goto_0
 .end method

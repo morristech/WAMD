@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "H_oZ<NFm"
+    const-string v0, "Wb/,jQt/"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x12
+    const/16 v0, 0x44
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,22 +65,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x7a
+    const/16 v0, 0x65
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x71
+    const/16 v0, 0x4c
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x5e
+    const/16 v0, 0x1e
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x6b
+    const/16 v0, 0x1d
 
     goto :goto_1
 
@@ -97,7 +97,7 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 6
     invoke-direct {p0}, Lcom/whatsapp/DialogToastActivity;-><init>()V
 
     return-void
@@ -109,16 +109,16 @@
     .locals 3
 
     .prologue
-    .line 2
+    .line 5
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 4
+    .line 7
     const/high16 v0, 0x7f030000
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/About;->setContentView(I)V
 
-    .line 6
-    const v0, 0x7f0b0030
+    .line 1
+    const v0, 0x7f0b0032
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/About;->findViewById(I)Landroid/view/View;
 
@@ -126,14 +126,14 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 1
-    const v1, 0x7f0e0455
+    .line 3
+    const v1, 0x7f0e0465
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/About;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 3
+    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -160,6 +160,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 7
+    .line 2
     return-void
 .end method

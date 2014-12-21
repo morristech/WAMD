@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, ";I\u000b!S7O\u0007(\u00134\u0006\u0015+\u001a\'Q\u00076\u0019~C\u001e4\u0015!C\u0002"
+    const-string v0, "4&\u0013#&8 \u001f*f;i\r)o(>\u001f4lq,\u00066`.,\u001a"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x7c
+    const/16 v0, 0x9
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,22 +65,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x53
+    const/16 v0, 0x5c
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x26
+    const/16 v0, 0x49
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x66
+    const/16 v0, 0x7e
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x44
+    const/16 v0, 0x46
 
     goto :goto_1
 
@@ -97,7 +97,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 5
     invoke-direct {p0}, Landroid/support/v4/app/DialogFragment;-><init>()V
 
     return-void
@@ -109,17 +109,17 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 2
     sget-object v0, Lcom/whatsapp/DialogToastFragmentActivity$SoftwareExpiredDialogFragment;->z:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
 
-    .line 6
+    .line 7
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastFragmentActivity$SoftwareExpiredDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/whatsapp/zy;->d(Landroid/app/Activity;)Landroid/app/Dialog;
+    invoke-static {v0}, Lcom/whatsapp/u_;->e(Landroid/app/Activity;)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -130,18 +130,18 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 6
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastFragmentActivity$SoftwareExpiredDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 1
+    .line 3
     if-eqz v0, :cond_0
 
-    .line 7
+    .line 1
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentActivity;->finish()V
 
-    .line 3
+    .line 4
     :cond_0
     return-void
 .end method

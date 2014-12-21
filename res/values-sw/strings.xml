@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Shikilia kunakili, achilia ili utume</string>
     <string name="audio_note_tip_2">Tafadhali rekodi ujumbe mrefu zaidi</string>
     <string name="audio_note_top_mic_tip">Tafadhali ongelea kwenye mikrofoni juu ya simu yako</string>
-    <string name="auth_client_needs_enabling_title">Programu inahitaji Huduma za Google Play ili kuwashwa.</string>
-    <string name="auth_client_needs_installation_title">Programu inahitaji usakinishaji wa Huduma za Google Play.</string>
-    <string name="auth_client_needs_update_title">Programu inahitaji sasisho la Huduma za Google Play.</string>
-    <string name="auth_client_play_services_err_notification_msg">Hitilafu kwenye Huduma za Google Play</string>
-    <string name="auth_client_requested_by_msg">Imeombwa na %1$s</string>
-    <string name="auth_client_using_bad_version_title">Programu ilijaribu kutumia toleo baya la Huduma za Google Play.</string>
-    <string name="barcode_scanner_dialog_body">Programu hii inahitaji kikaguzi cha msimbofito. Ungependa kusakinisha kimoja?</string>
-    <string name="barcode_scanner_dialog_title">Sakinisha kikaguzi cha Msimbofito?</string>
     <string name="block">Zuia</string>
     <string name="block_ask">Una uhakika unataka kuzuia anwani hii?</string>
     <string name="block_list_desc_1">"Gusa kwenye ikoni iliyopo kona ya juu kulia kuchagua muwasiliani wa kuzuia.
@@ -161,23 +153,32 @@ Kama una simu mpya na namba mpya, cha kwanza badili namba yako kwenye simu ya za
     <string name="color_red">Nyekundu</string>
     <string name="color_white">Nyeupe</string>
     <string name="color_yellow">Njano</string>
+    <string name="common_android_wear_notification_needs_update_text">Programu inahitaji sasisho kwa programu ya Android Wear.</string>
+    <string name="common_android_wear_update_text">Programu hii haitaendeshwa usiposasisha programu ya Android Wear.</string>
+    <string name="common_android_wear_update_title">Sasisha Android Wear</string>
     <string name="common_google_play_services_enable_button">Wezesha huduma za Google Play</string>
     <string name="common_google_play_services_enable_text">Programu hii haitafanya kazi mpaka utakapowezesha huduma za Google Play.</string>
     <string name="common_google_play_services_enable_title">Wezesha huduma za Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Imeombwa na %1$s</string>
     <string name="common_google_play_services_install_button">Pata huduma za Google Play</string>
     <string name="common_google_play_services_install_text_phone">Programu hii haiwezi kuendeshwa bila huduma za Google Play, ambazo hazipo kwenye simu yako.</string>
-    <string name="common_google_play_services_install_text_tablet">Programu hii haiwezi kuendeshwa bila huduma za Google Play, ambazo hazipo kwenye kompyuta yako ndogo.</string>
+    <string name="common_google_play_services_install_text_tablet">Programu hii haiwezi kufanya kazi bila huduma za Google Play, ambazo hazipatikani kwenye kompyuta kibao yako.</string>
     <string name="common_google_play_services_install_title">Pata huduma za Google Play</string>
     <string name="common_google_play_services_invalid_account_text">Akaunti iliyobainishwa haipo kwenye kifaa hiki. Tafadhali chagua akaunti tofauti.</string>
     <string name="common_google_play_services_invalid_account_title">Akaunti Batili</string>
+    <string name="common_google_play_services_needs_enabling_title">Programu inahitaji huduma za Google Play ili iwashwe.</string>
     <string name="common_google_play_services_network_error_text">Muunganisho wa data unahitajika ili kuunganisha kwenye huduma za Google Play.</string>
     <string name="common_google_play_services_network_error_title">Hitilafu ya Mtandao</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Programu inahitaji usakinishaji wa huduma za Google Play.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Programu inahitaji toleo jipya la huduma za Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Hitilafu kwenye huduma za Google Play</string>
     <string name="common_google_play_services_unknown_issue">Suala lisilojulikana na huduma za Google Play.</string>
     <string name="common_google_play_services_unsupported_text">Huduma za Google Play, ambazo baadhi ya programu zako zinategemea, si linganifu na kifaa chako. Tafadhali wasiliana na mtengenezaji kwa usaidizi.</string>
     <string name="common_google_play_services_unsupported_title">Huduma za Google Play</string>
     <string name="common_google_play_services_update_button">Sasisha</string>
     <string name="common_google_play_services_update_text">Programu hii haiwezi kuendeshwa mpaka utakaposasisha huduma za Google Play.</string>
     <string name="common_google_play_services_update_title">Sasisha huduma za Google Play</string>
+    <string name="common_open_on_phone">Fungua kwenye simu</string>
     <string name="common_signin_button_text">Ingia</string>
     <string name="common_signin_button_text_long">Ingia ukitumia Google</string>
     <string name="confirm_forward_msg">Peleka kwa %s?</string>
@@ -354,7 +355,6 @@ Kiasi kilichopo: %1$s"</string>
     <string name="eula_description">Mawasiliano na marafiki kote ulimwenguni kwenye jukwaa lolote.</string>
     <string name="eula_tablets_not_supported">Dondoo: tablet kwa sasa hazitumii huduma hii</string>
     <string name="eula_terms_of_service">Masharti ya Huduma</string>
-    <string name="eula_title">Karibu kwenye WhatsApp!</string>
     <string name="existing_contact">Iliyopo</string>
     <string name="exit">Toka</string>
     <string name="exit_group">Toka kundini</string>
@@ -529,7 +529,6 @@ huduma yako ita isha tarehe %s"</string>
     <string name="insufficient_space_for_download_shared_storage">Haiwezekani kudownload kwa vile hakuna nafasi ya kutosha katika kumbukumbu ya ndani ya simu. Tafadhali ondoa baadhi ya vitu kutoka kumbukumbu ya ndani na jaribu tena.</string>
     <string name="invalid_media_message_download">Haiwezi kupakua media kutoka kwenye ujumbe usiofahamika. Tafadhali jaribu kutuma ujumbe tena.</string>
     <string name="invalid_message_forward">Ujumbe hauwezi kutumwa kwa muwasiliani asiyejulikana</string>
-    <string name="invalid_qr_code">Msimbo wa QR batili</string>
     <string name="invalid_url_for_download">Haiwezi kupakua. Tafadhali omba itatumwa tena kwako.</string>
     <string name="invite">Alika</string>
     <string name="invite_friends">Alika marafiki zako</string>
@@ -575,7 +574,6 @@ WhatsApp inaweza kuingizwa kwenye kifaa kimoja kwa namba ya simu moja."</string>
     <string name="menuitem_add">Ongeza</string>
     <string name="menuitem_contacts">Wawasiliani</string>
     <string name="menuitem_debug">Kosoa</string>
-    <string name="menuitem_delete_qr">Ondoa msimbo wa QR</string>
     <string name="menuitem_groupchat">Kikundi kipya</string>
     <string name="menuitem_list">Tangazo jipya</string>
     <string name="menuitem_mute">Tuliza</string>
@@ -616,14 +614,10 @@ WhatsApp inaweza kuingizwa kwenye kifaa kimoja kwa namba ya simu moja."</string>
     <string name="msg_store_backup_failed">Imeshindikana kufanya mbadala wa jumbe</string>
     <string name="msg_store_backup_failed_try_again_later">Imeshindwa kuhifadhi mbadala wa jumbe. Tafadhali jaribu tena baadaye.</string>
     <string name="msg_store_backup_found">Mbadala umepatikana</string>
-    <string name="msg_store_backup_found_registration">Hifadhi-mbadala ya ujumbe imepatikana!</string>
     <string name="msg_store_backup_skipped">Mbadala umerukwa</string>
     <string name="msg_store_backup_skipped_no_media">Uhifadhi-mbadala wa ujumbe umerukwa: Hakuna kadi ya media inayopatikana.</string>
     <string name="msg_store_backup_skipped_read_only_media">Uhifadhi-mbadala wa ujumbe umerukwa: Kadi ya media ya kusoma-tu imepatikana.</string>
     <string name="msg_store_confirm">Thibitisha</string>
-    <string name="msg_store_creation_backup_message">Ungependa kurejesha historia ya ujumbe kutoka kwenye hifadhi-mbadala?</string>
-    <string name="msg_store_do_not_restore">Usirejeshe</string>
-    <string name="msg_store_do_not_restore_no_thanks">La asante</string>
     <string name="msg_store_error_found">Dosari imetokea. Tafadhali acha na anzisha WhatsApp.</string>
     <string name="msg_store_error_not_restored">Samahani, tumeshindwa kurejesha mbadala wako wa historia ya ujumbe.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Jumbe zitapotea. Unauhakika huhitaji kurejesha historia ya ujumbe kutoka kwenye mbadala?</string>
@@ -650,9 +644,6 @@ WhatsApp inaweza kuingizwa kwenye kifaa kimoja kwa namba ya simu moja."</string>
     <string name="need_sd_card_shared_storage">Tafadhali zima kihifadhi cha USB na ujaribu tena.</string>
     <string name="network_required">Hauna huduma yoyote ya mtandao kwa sasa.</string>
     <string name="network_usage_ask_reset_message">Una uhakika unataka kuanzisha upya takwimu?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">KB %1$.1f</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Mwisho upya wakati: %1$s</string>
     <string name="network_usage_media_bytes_received">Mimego ya media iliyopokelewa:</string>
     <string name="network_usage_media_bytes_sent">Mimego ya media iliyotumwa:</string>
@@ -1010,19 +1001,19 @@ inaisha muda wake leo!"</string>
     <string name="software_expired_get_from_play">Toleo hili la WhatsApp ni la zamani mno na halitumiki tena. Tafadhali nenda Google Play na upakue toleo jipya.</string>
     <string name="software_expired_get_from_play_with_date">Toleo hili la WhatsApp limeacha kutumika tarehe &lt;b>%1$s&lt;/b>. Tafadhali tembelea Google Play kupakua toleo jipya.&lt;br>&lt;br>Tarehe ya kifaa chako ni &lt;b>%2$s&lt;/b>. Kama hii si sahihi tafadhali sahihisha mipangilio ya tarehe ya kifaa chako kisha anzisha tena WhatsApp.</string>
     <string name="software_expired_with_date">Toleo hili la WhatsApp halitumiki tena tangu &lt;b>%1$s&lt;/b>. Gusa “Download” kupata toleo jipya .&lt;br>&lt;br>Tarehe ya kifaa chako ni &lt;b>%2$s&lt;/b>. Kama hii si sahihi tafadhali sahihisha mipangilio ya tarehe ya kifaa chako kisha anzisha tena WhatsApp.</string>
-    <string name="spam_generic">"Umezuiliwa kutumia WhatsApp kwa muda kwa sababu umekiuka masharti ya huduma.
- Utaweza kutumia tena WhatsApp ndani ya:"</string>
+    <string name="spam_generic">"Umezuiliwa kutumia WhatsApp kwa muda kwa sababu umekiuka masharti ya huduma yetu.
+
+ Utaweza kutumia WhatsApp tena ndani ya:"</string>
     <string name="spam_generic_data_connection_missing">Hakikisha simu yako ina muunganisho wa data ulio hai.</string>
     <string name="spam_generic_unknown_time_left">Umezuiliwa kutumia WhatsApp kwa muda kwa sababu inaweza ikawa umekiuka masharti ya huduma zetu. Utaweza kutumia tena WhatsApp karibuni.</string>
     <string name="spam_learn_more">Jifunze zaidi</string>
     <string name="spam_title">Umezuiliwa kwa muda</string>
-    <string name="spam_too_many_blocks">Umezuiliwa kutumia WhatsApp kwa muda kwa sababu watu wengi wamekuzuia wewe.</string>
-    <string name="spam_too_many_groups">"Umezuiliwa kutumia WhatsApp kwa muda kwa sababu umeunda vikundi vingi na watu wasio na mawasiliano yako kwenye vitabu vyao vya anwani. 
+    <string name="spam_too_many_groups">"Umezuiliwa kwa muda kutumia WhatsApp kwa sababu umetengeneza vikundi vingi vyenye watu wasio na mawasiliano yako kwenye vitabu vyao vya anwani.
+
 Utaweza kutumia WhatsApp tena ndani ya:"</string>
-    <string name="spam_too_many_messages">"Umezuiliwa kutumia WhatsApp kwa muda kwa sababu umetuma ujumbe kwa watu wasio na anwani yako kwenye vitabu vyao vya anwani. 
- Utaweza kutumia WhatsApp tena ndani ya:"</string>
-    <string name="spam_too_many_people">"Umezuiliwa kutumia WhatsApp kwa muda kwa sababu umetuma ujumbe unaofanana kwa watu wengi sana. 
-Utaweza kutumia WhatsApp tena ndani ya:"</string>
+    <string name="spam_too_many_messages">"Umezuiliwa kutumia WhatsApp kwa muda kwa sababu umetuma jumbe nyingi sana kwa watu wasio na mawasiliano yako kwenye vitabu vyao vya anwani.
+
+Utaweza kutumia tena WhatsApp ndani ya:"</string>
     <string name="status">Hadhi</string>
     <string name="status_default_at_gym">Nipo mazoezini</string>
     <string name="status_default_at_movies">Nipo sinema</string>
@@ -1190,6 +1181,7 @@ Tafadhali thibitisha kwa sauti."</string>
     <string name="view_list_media">Orodha ya media za tangazo</string>
     <string name="view_website">Tazama tovuti</string>
     <string name="voip_activity_label">Mwito Sauti</string>
+    <string name="voip_call_bluetooth_toggle_description">Washa/Zima Bluetooth</string>
     <string name="voip_call_end_button_description">Kata Mwito Sauti</string>
     <string name="voip_call_goto_chat_description">Tazama Soga</string>
     <string name="voip_call_incoming">INAINGIA</string>

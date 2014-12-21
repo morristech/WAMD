@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.whatsapp" platformBuildVersionCode="21" platformBuildVersionName="5.0-1521886">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.whatsapp" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -38,19 +38,22 @@
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
     <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
     <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.whatsapp.permission.BROADCAST"/>
     <uses-permission android:name="com.whatsapp.permission.C2D_MESSAGE"/>
     <uses-permission android:name="com.whatsapp.permission.MAPS_RECEIVE"/>
     <uses-permission android:name="com.whatsapp.permission.VOIP_CALL"/>
+    <permission android:name="com.whatsapp.permission.BROADCAST" android:protectionLevel="signature"/>
     <permission android:name="com.whatsapp.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
     <permission android:name="com.whatsapp.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
     <permission android:name="com.whatsapp.permission.VOIP_CALL" android:protectionLevel="signature"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
     <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
     <uses-feature android:name="android.hardware.camera" android:required="false"/>
     <application android:allowBackup="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.whatsapp.App" android:theme="@style/Theme.App">
         <uses-library android:name="com.google.android.maps" android:required="false"/>
         <uses-library android:name="com.sec.android.app.multiwindow" android:required="false"/>
         <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/maps_v2_key"/>
-        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:label="Updater" android:launchMode="singleTask" android:name="com.whatsapp.Vextil.UpdaterActivity"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="false" android:name="com.whatsapp.Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -278,6 +281,7 @@
         <activity android:launchMode="singleTop" android:name="com.whatsapp.IncorrectAppReleaseVersionActivity"/>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.whatsapp.SpamWarningActivity" android:screenOrientation="portrait"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:label="@string/scan_qr_code" android:name="com.whatsapp.qrcode.QrCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:label="@string/whatsapp_web" android:name="com.whatsapp.WebSessionsActivity" android:theme="@style/Theme.App.Gray"/>
         <receiver android:enabled="true" android:name="com.whatsapp.BootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
@@ -341,6 +345,7 @@
             </intent-filter>
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info"/>
         </receiver>
+        <receiver android:exported="false" android:name="com.whatsapp.notification.MessageNotificationDismissedReceiver"/>
         <service android:name="com.whatsapp.appwidget.WidgetService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
         <provider android:authorities="com.whatsapp.provider.contact" android:exported="false" android:name="com.whatsapp.contact.ContactProvider"/>
         <provider android:authorities="com.whatsapp.provider.media" android:exported="false" android:multiprocess="true" android:name="com.whatsapp.MediaProvider"/>

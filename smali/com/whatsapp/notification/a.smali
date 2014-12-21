@@ -7,20 +7,16 @@
 
 
 # instance fields
-.field final a:Landroid/widget/ImageButton;
-
-.field final b:Lcom/whatsapp/notification/PopupNotification;
+.field final a:Lcom/whatsapp/notification/PopupNotification;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/notification/PopupNotification;Landroid/widget/ImageButton;)V
+.method constructor <init>(Lcom/whatsapp/notification/PopupNotification;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/notification/a;->b:Lcom/whatsapp/notification/PopupNotification;
-
-    iput-object p2, p0, Lcom/whatsapp/notification/a;->a:Landroid/widget/ImageButton;
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/notification/a;->a:Lcom/whatsapp/notification/PopupNotification;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,20 +26,24 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 2
+    .locals 1
 
     .prologue
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/notification/a;->b:Lcom/whatsapp/notification/PopupNotification;
+    sget-object v0, Lcom/whatsapp/App;->L:Landroid/media/AsyncPlayer;
 
-    invoke-static {v0}, Lcom/whatsapp/notification/PopupNotification;->b(Lcom/whatsapp/notification/PopupNotification;)Lcom/whatsapp/a09;
+    invoke-virtual {v0}, Landroid/media/AsyncPlayer;->stop()V
 
-    move-result-object v0
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/notification/a;->a:Lcom/whatsapp/notification/PopupNotification;
 
-    iget-object v1, p0, Lcom/whatsapp/notification/a;->a:Landroid/widget/ImageButton;
+    invoke-static {v0}, Lcom/whatsapp/notification/PopupNotification;->q(Lcom/whatsapp/notification/PopupNotification;)V
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/a09;->a(Landroid/view/View;)V
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/notification/a;->a:Lcom/whatsapp/notification/PopupNotification;
 
-    .line 2
+    invoke-virtual {v0}, Lcom/whatsapp/notification/PopupNotification;->finish()V
+
+    .line 5
     return-void
 .end method

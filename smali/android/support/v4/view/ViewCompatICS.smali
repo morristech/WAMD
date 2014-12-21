@@ -8,7 +8,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 2
     invoke-virtual {p0, p1}, Landroid/view/View;->canScrollHorizontally(I)Z
 
     move-result v0
@@ -20,7 +20,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 3
     invoke-virtual {p0, p1}, Landroid/view/View;->canScrollVertically(I)Z
 
     move-result v0
@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 4
     check-cast p1, Landroid/view/View$AccessibilityDelegate;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V

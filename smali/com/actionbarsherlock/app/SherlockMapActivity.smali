@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 28
+    .line 31
     invoke-direct {p0}, Lcom/google/android/maps/MapActivity;-><init>()V
 
     return-void
@@ -31,14 +31,14 @@
     .locals 1
 
     .prologue
-    .line 50
+    .line 47
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1, p2}, Lcom/actionbarsherlock/ActionBarSherlock;->addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 33
+    .line 40
     return-void
 .end method
 
@@ -46,7 +46,7 @@
     .locals 1
 
     .prologue
-    .line 21
+    .line 49
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -57,10 +57,10 @@
 
     if-nez v0, :cond_0
 
-    .line 46
+    .line 4
     invoke-super {p0}, Lcom/google/android/maps/MapActivity;->closeOptionsMenu()V
 
-    .line 44
+    .line 45
     :cond_0
     return-void
 .end method
@@ -69,7 +69,7 @@
     .locals 1
 
     .prologue
-    .line 54
+    .line 28
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -80,13 +80,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
+    .line 74
     const/4 v0, 0x1
 
-    .line 10
     :goto_0
     return v0
 
+    .line 70
     :cond_0
     invoke-super {p0, p1}, Lcom/google/android/maps/MapActivity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -99,12 +99,12 @@
     .locals 1
 
     .prologue
-    .line 32
+    .line 13
     iget-object v0, p0, Lcom/actionbarsherlock/app/SherlockMapActivity;->mSherlock:Lcom/actionbarsherlock/ActionBarSherlock;
 
     if-nez v0, :cond_0
 
-    .line 56
+    .line 22
     const/4 v0, 0x1
 
     invoke-static {p0, v0}, Lcom/actionbarsherlock/ActionBarSherlock;->wrap(Landroid/app/Activity;I)Lcom/actionbarsherlock/ActionBarSherlock;
@@ -113,7 +113,7 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/app/SherlockMapActivity;->mSherlock:Lcom/actionbarsherlock/ActionBarSherlock;
 
-    .line 42
+    .line 56
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/app/SherlockMapActivity;->mSherlock:Lcom/actionbarsherlock/ActionBarSherlock;
 
@@ -124,7 +124,7 @@
     .locals 1
 
     .prologue
-    .line 65
+    .line 43
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -140,14 +140,14 @@
     .locals 1
 
     .prologue
-    .line 60
+    .line 38
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchInvalidateOptionsMenu()V
 
-    .line 40
+    .line 65
     return-void
 .end method
 
@@ -155,7 +155,7 @@
     .locals 0
 
     .prologue
-    .line 67
+    .line 7
     return-void
 .end method
 
@@ -163,7 +163,7 @@
     .locals 0
 
     .prologue
-    .line 35
+    .line 57
     return-void
 .end method
 
@@ -171,17 +171,17 @@
     .locals 1
 
     .prologue
-    .line 37
+    .line 5
     invoke-super {p0, p1}, Lcom/google/android/maps/MapActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 1
+    .line 3
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 62
+    .line 14
     return-void
 .end method
 
@@ -189,7 +189,7 @@
     .locals 1
 
     .prologue
-    .line 47
+    .line 10
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -205,7 +205,7 @@
     .locals 1
 
     .prologue
-    .line 66
+    .line 73
     const/4 v0, 0x1
 
     return v0
@@ -215,15 +215,15 @@
     .locals 1
 
     .prologue
-    .line 23
+    .line 63
     if-nez p1, :cond_0
 
-    .line 17
+    .line 23
     invoke-virtual {p0, p2}, Lcom/actionbarsherlock/app/SherlockMapActivity;->onCreateOptionsMenu(Lcom/actionbarsherlock/view/Menu;)Z
 
     move-result v0
 
-    .line 41
+    .line 46
     :goto_0
     return v0
 
@@ -237,17 +237,17 @@
     .locals 1
 
     .prologue
-    .line 61
+    .line 33
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchDestroy()V
 
-    .line 74
+    .line 61
     invoke-super {p0}, Lcom/google/android/maps/MapActivity;->onDestroy()V
 
-    .line 9
+    .line 39
     return-void
 .end method
 
@@ -255,18 +255,18 @@
     .locals 1
 
     .prologue
-    .line 26
+    .line 27
     if-nez p1, :cond_0
 
-    .line 22
+    .line 52
     invoke-virtual {p0, p2}, Lcom/actionbarsherlock/app/SherlockMapActivity;->onOptionsItemSelected(Lcom/actionbarsherlock/view/MenuItem;)Z
 
     move-result v0
 
-    .line 52
     :goto_0
     return v0
 
+    .line 34
     :cond_0
     const/4 v0, 0x0
 
@@ -277,7 +277,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 19
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -288,13 +288,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 12
+    .line 69
     const/4 v0, 0x1
 
     :goto_0
     return v0
 
-    .line 2
+    .line 41
     :cond_0
     invoke-super {p0, p1, p2}, Lcom/google/android/maps/MapActivity;->onMenuOpened(ILandroid/view/Menu;)Z
 
@@ -307,7 +307,7 @@
     .locals 1
 
     .prologue
-    .line 55
+    .line 60
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -323,7 +323,7 @@
     .locals 1
 
     .prologue
-    .line 58
+    .line 35
     const/4 v0, 0x0
 
     return v0
@@ -333,17 +333,17 @@
     .locals 1
 
     .prologue
-    .line 18
+    .line 12
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1, p2}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchPanelClosed(ILandroid/view/Menu;)V
 
-    .line 13
+    .line 42
     invoke-super {p0, p1, p2}, Lcom/google/android/maps/MapActivity;->onPanelClosed(ILandroid/view/Menu;)V
 
-    .line 20
+    .line 58
     return-void
 .end method
 
@@ -351,17 +351,17 @@
     .locals 1
 
     .prologue
-    .line 15
+    .line 11
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchPause()V
 
-    .line 64
+    .line 20
     invoke-super {p0}, Lcom/google/android/maps/MapActivity;->onPause()V
 
-    .line 34
+    .line 17
     return-void
 .end method
 
@@ -369,17 +369,17 @@
     .locals 1
 
     .prologue
-    .line 71
+    .line 8
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchPostCreate(Landroid/os/Bundle;)V
 
-    .line 7
+    .line 21
     invoke-super {p0, p1}, Lcom/google/android/maps/MapActivity;->onPostCreate(Landroid/os/Bundle;)V
 
-    .line 48
+    .line 62
     return-void
 .end method
 
@@ -387,17 +387,17 @@
     .locals 1
 
     .prologue
-    .line 69
+    .line 1
     invoke-super {p0}, Lcom/google/android/maps/MapActivity;->onPostResume()V
 
-    .line 31
+    .line 51
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchPostResume()V
 
-    .line 63
+    .line 24
     return-void
 .end method
 
@@ -405,7 +405,7 @@
     .locals 1
 
     .prologue
-    .line 36
+    .line 67
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -421,7 +421,7 @@
     .locals 1
 
     .prologue
-    .line 30
+    .line 29
     const/4 v0, 0x1
 
     return v0
@@ -431,15 +431,15 @@
     .locals 1
 
     .prologue
-    .line 24
+    .line 6
     if-nez p1, :cond_0
 
-    .line 38
+    .line 18
     invoke-virtual {p0, p3}, Lcom/actionbarsherlock/app/SherlockMapActivity;->onPrepareOptionsMenu(Lcom/actionbarsherlock/view/Menu;)Z
 
     move-result v0
 
-    .line 73
+    .line 59
     :goto_0
     return v0
 
@@ -453,17 +453,17 @@
     .locals 1
 
     .prologue
-    .line 49
+    .line 32
     invoke-super {p0, p1}, Lcom/google/android/maps/MapActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
-    .line 16
+    .line 26
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchRestoreInstanceState(Landroid/os/Bundle;)V
 
-    .line 25
+    .line 37
     return-void
 .end method
 
@@ -471,17 +471,17 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 15
     invoke-super {p0, p1}, Lcom/google/android/maps/MapActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 39
+    .line 50
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 70
+    .line 30
     return-void
 .end method
 
@@ -489,17 +489,17 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 55
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchStop()V
 
-    .line 53
+    .line 9
     invoke-super {p0}, Lcom/google/android/maps/MapActivity;->onStop()V
 
-    .line 72
+    .line 64
     return-void
 .end method
 
@@ -507,17 +507,17 @@
     .locals 1
 
     .prologue
-    .line 45
+    .line 72
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1, p2}, Lcom/actionbarsherlock/ActionBarSherlock;->dispatchTitleChanged(Ljava/lang/CharSequence;I)V
 
-    .line 14
+    .line 53
     invoke-super {p0, p1, p2}, Lcom/google/android/maps/MapActivity;->onTitleChanged(Ljava/lang/CharSequence;I)V
 
-    .line 27
+    .line 68
     return-void
 .end method
 
@@ -525,7 +525,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 16
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
@@ -536,10 +536,10 @@
 
     if-nez v0, :cond_0
 
-    .line 19
+    .line 48
     invoke-super {p0}, Lcom/google/android/maps/MapActivity;->openOptionsMenu()V
 
-    .line 51
+    .line 36
     :cond_0
     return-void
 .end method
@@ -548,14 +548,14 @@
     .locals 1
 
     .prologue
-    .line 29
+    .line 2
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/ActionBarSherlock;->setContentView(I)V
 
-    .line 57
+    .line 54
     return-void
 .end method
 
@@ -563,14 +563,14 @@
     .locals 1
 
     .prologue
-    .line 68
+    .line 71
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/actionbarsherlock/ActionBarSherlock;->setContentView(Landroid/view/View;)V
 
-    .line 6
+    .line 66
     return-void
 .end method
 
@@ -578,13 +578,13 @@
     .locals 1
 
     .prologue
-    .line 43
+    .line 25
     invoke-virtual {p0}, Lcom/actionbarsherlock/app/SherlockMapActivity;->getSherlock()Lcom/actionbarsherlock/ActionBarSherlock;
 
     move-result-object v0
 
     invoke-virtual {v0, p1, p2}, Lcom/actionbarsherlock/ActionBarSherlock;->setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 59
+    .line 44
     return-void
 .end method

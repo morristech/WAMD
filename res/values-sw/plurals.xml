@@ -168,10 +168,6 @@ wa huduma
         <item quantity="other">Zimebaki %d</item>
         <item quantity="one">Imebaki %d</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Waweza endelea. Tumerejesha jumbe %,d.</item>
-        <item quantity="one">Waweza endelea. Tumerejesha ujumbe %,d.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Inatuma video %1$d kwa %2$s</item>
         <item quantity="one">Inatuma video %1$d kwa %2$s</item>

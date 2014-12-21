@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Apăsați pentru a înregistra, dați drumul pt. a trimite</string>
     <string name="audio_note_tip_2">Vă rugăm înregistrați un mesaj mai lung</string>
     <string name="audio_note_top_mic_tip">Vă rugăm vorbiți la microfonul de sus al telefonului</string>
-    <string name="auth_client_needs_enabling_title">O aplicație necesită activarea Serviciilor Google Play.</string>
-    <string name="auth_client_needs_installation_title">O aplicație necesită instalarea Serviciilor Google Play.</string>
-    <string name="auth_client_needs_update_title">O aplicație necesită o actualizare pentru Servicii Google Play.</string>
-    <string name="auth_client_play_services_err_notification_msg">Eroare Servicii Google Play</string>
-    <string name="auth_client_requested_by_msg">Solicitată de %1$s</string>
-    <string name="auth_client_using_bad_version_title">Aplicația a încercat să utilizeze o vers. Servicii Google Play greșită</string>
-    <string name="barcode_scanner_dialog_body">Această aplicație necesită un cititor de coduri de bare / barcode scanner. Doriți să instalați unul?</string>
-    <string name="barcode_scanner_dialog_title">Vreți să instalați Citittorul de coduri de bare /Barcode Scanner?</string>
     <string name="block">Blocați</string>
     <string name="block_ask">Sunteți sigur(ă) că doriți să blocați acest contact?</string>
     <string name="block_list_desc_1">"Apăsați pe iconița din dreapta sus pentru a alege un contact pe care doriți să îl blocați.
@@ -113,6 +105,8 @@ Doar contactele cu %s în agendă vor primi mesajele difuzate de dvs."</string>
     <string name="camera_shortcut">Camera WhatsApp</string>
     <string name="camera_title">Trimiteți o fotografie sau un fișier video prin WhatsApp</string>
     <string name="camera_video_preview_title">Trimiteți un fișier video prin WhatsApp</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">Pentru a efectua un apel WhatsApp, mai întâi închideți opțiunea Mod Avion.</string>
+    <string name="can_not_start_voip_call_in_phone_call">Nu puteți efectua un apel WhatsApp dacă deja sunteți angajat(ă) într-o altă convorbire.</string>
     <string name="cancel">Anulați</string>
     <string name="cannot_send_not_a_group_participant">Nu poţi trimite mesaje acestui grup deoarece nu mai eşti participant.</string>
     <string name="cannot_send_selected_file">Nu se poate trimite acest fișier media. Fie, ați selectat un fișier greșit, sau formatul selectat nu este admis.</string>
@@ -161,23 +155,32 @@ Dacă aveți și număr și telefon nou, schimbați mai întâi numărul pe vech
     <string name="color_red">Roșu</string>
     <string name="color_white">Alb</string>
     <string name="color_yellow">Galben</string>
+    <string name="common_android_wear_notification_needs_update_text">O aplicație necesită actualizarea aplicației Android Wear.</string>
+    <string name="common_android_wear_update_text">Această aplicație nu va rula dacă nu actualizați aplicația Android Wear.</string>
+    <string name="common_android_wear_update_title">Actualizați Android Wear</string>
     <string name="common_google_play_services_enable_button">Activaţi Servicii Google Play</string>
     <string name="common_google_play_services_enable_text">Această aplicaţie nu va funcţiona decât dacă activaţi Servicii Google Play.</string>
     <string name="common_google_play_services_enable_title">Activaţi Servicii Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Solicitată de %1$s</string>
     <string name="common_google_play_services_install_button">Obţineţi Servicii Google Play</string>
     <string name="common_google_play_services_install_text_phone">Această aplicaţie nu poate rula fără Servicii Google Play, care lipsesc de pe telefon.</string>
     <string name="common_google_play_services_install_text_tablet">Această aplicaţie nu poate rula fără Servicii Google Play, care lipsesc de pe tabletă.</string>
     <string name="common_google_play_services_install_title">Descărcaţi Servicii Google Play</string>
     <string name="common_google_play_services_invalid_account_text">Contul menționat nu există pe acest dispozitiv. Alegeți alt cont.</string>
     <string name="common_google_play_services_invalid_account_title">Cont nevalid</string>
+    <string name="common_google_play_services_needs_enabling_title">O aplicație necesită activarea serviciilor Google Play.</string>
     <string name="common_google_play_services_network_error_text">Este necesară o conexiune de date pentru a vă conecta la serviciile Google Play.</string>
     <string name="common_google_play_services_network_error_title">Eroare de reţea</string>
+    <string name="common_google_play_services_notification_needs_installation_title">O aplicație necesită instalarea serviciilor Google Play.</string>
+    <string name="common_google_play_services_notification_needs_update_title">O aplicație necesită o actualizare pentru serviciile Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Eroare a serviciilor Google Play</string>
     <string name="common_google_play_services_unknown_issue">Problemă necunoscută privind Servicii Google Play.</string>
     <string name="common_google_play_services_unsupported_text">Gadgetul nu acceptă serviciile Google Play, pe care se bazează unele dintre aplicații. Pentru asistență, contactați producătorul gadgetului.</string>
     <string name="common_google_play_services_unsupported_title">Servicii Google Play</string>
     <string name="common_google_play_services_update_button">Actualizaţi</string>
     <string name="common_google_play_services_update_text">Această aplicaţie nu poate rula decât dacă actualizaţi Servicii Google Play.</string>
     <string name="common_google_play_services_update_title">Actualizaţi Servicii Google Play</string>
+    <string name="common_open_on_phone">Deschideți pe telefon</string>
     <string name="common_signin_button_text">Conectați</string>
     <string name="common_signin_button_text_long">Conectați-vă cu Google</string>
     <string name="confirm_forward_msg">Redirecționați către %s?</string>
@@ -354,7 +357,7 @@ Memorie disponibila: %1$s"</string>
     <string name="eula_description">Mesagerie mobilă către prieteni din întreaga lume indiferent de platformă.</string>
     <string name="eula_tablets_not_supported">Notă: Tabletele nu sunt admise momentan.</string>
     <string name="eula_terms_of_service">Condiții de utilizare</string>
-    <string name="eula_title">Bine ați venit pe WhatsApp!</string>
+    <string name="eula_title">Bine ați venit pe WhatsApp</string>
     <string name="existing_contact">Existent</string>
     <string name="exit">Ieșire</string>
     <string name="exit_group">Ieșire grup</string>
@@ -529,7 +532,6 @@ Serviciul expiră în data de %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Nu se poate descărca deoarece nu dispuneți de suficient spațiu pe memoria internă. Vă rugăm să eliminați fișiere de pe memoria internă și să reîncercați.</string>
     <string name="invalid_media_message_download">Nu se poate descărca conținut media dintr-un mesaj invalid. Vă rugăm să încercați să-l trimiteți din nou.</string>
     <string name="invalid_message_forward">Mesajul nu poate fi redirecționat către un contact invalid.</string>
-    <string name="invalid_qr_code">Cod QR invalid</string>
     <string name="invalid_url_for_download">Nu se poate descărca. Vă rugăm să solicitați retrimiterea.</string>
     <string name="invite">Invitați</string>
     <string name="invite_friends">Invitați-vă prietenii</string>
@@ -575,7 +577,6 @@ WhatsApp poate fi instalat pe un singur dispozitiv per număr de telefon."</stri
     <string name="menuitem_add">Adăugați</string>
     <string name="menuitem_contacts">Contacte</string>
     <string name="menuitem_debug">Depanare</string>
-    <string name="menuitem_delete_qr">Ștergeți codul QR</string>
     <string name="menuitem_groupchat">Grup nou</string>
     <string name="menuitem_list">Difuzare nouă</string>
     <string name="menuitem_mute">Dezactivați sunet</string>
@@ -616,14 +617,15 @@ WhatsApp poate fi instalat pe un singur dispozitiv per număr de telefon."</stri
     <string name="msg_store_backup_failed">Eroare salvare mesaje.</string>
     <string name="msg_store_backup_failed_try_again_later">Imposibil de salvat copia de rezervă a mesajelor. Vă rugăm încercați mai târziu.</string>
     <string name="msg_store_backup_found">Backup găsit</string>
-    <string name="msg_store_backup_found_registration">Backup mesaje disponibil!</string>
+    <string name="msg_store_backup_found_registration">Backup conversație găsit</string>
+    <string name="msg_store_backup_found_title">Recuperați istoric conversație</string>
     <string name="msg_store_backup_skipped">Backup omis</string>
     <string name="msg_store_backup_skipped_no_media">Backup-ul mesajelor a fost omis: Nici un card media nu a fost găsit.</string>
     <string name="msg_store_backup_skipped_read_only_media">Backup mesaje a fost omis: Cardul media a fost setat doar pentru citire.</string>
     <string name="msg_store_confirm">Confirmați</string>
-    <string name="msg_store_creation_backup_message">Doriți să recuperați istoricul mesajelor din backup?</string>
+    <string name="msg_store_creation_backup_message">Recuperați istoricul conversației din backup. În cazul în care nu veți alege să nu recuperați acum, nu veți mai avea posibilitatea să recuperați mai târziu.</string>
     <string name="msg_store_do_not_restore">Nu recuperați</string>
-    <string name="msg_store_do_not_restore_no_thanks">Nu, mulțumesc.</string>
+    <string name="msg_store_do_not_restore_no_thanks">Nu recuperați</string>
     <string name="msg_store_error_found">Am întâmpinat o eroare. Vă rugăm închideți și reporniți WhatsApp.</string>
     <string name="msg_store_error_not_restored">Ne pare rău, nu am putut recupera niciun backup al istoricului mesajelor.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Veți pierde toate mesajele. Sunteți sigur(ă) că nu doriți să recuperați istoria mesajelor din backup?</string>
@@ -650,9 +652,6 @@ WhatsApp poate fi instalat pe un singur dispozitiv per număr de telefon."</stri
     <string name="need_sd_card_shared_storage">Vă rugăm să opriți stocarea USB și încercați din nou.</string>
     <string name="network_required">Momentan nu aveți o conexiune la internet.</string>
     <string name="network_usage_ask_reset_message">Sunteți sigur(ă) că doriți să resetați statisticile?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Ultima resetare: %1$s</string>
     <string name="network_usage_media_bytes_received">Bytes media primiți:</string>
     <string name="network_usage_media_bytes_sent">Bytes media trimiși:</string>
@@ -899,6 +898,7 @@ Vă rugăm să introduceți codul primit.
     <string name="send_location">Trimite locația</string>
     <string name="send_payment_button">Trimiteți URL-ul de plată</string>
     <string name="send_payment_url_via">Trimiteți URL-ul de plată prin...</string>
+    <string name="send_this_location">Trimiteți această locație</string>
     <string name="send_your_current_location">Trimiteți locația curentă</string>
     <string name="sending_video_to_contact">Se trimite fișier video către %s</string>
     <string name="sent_to_group">Trimiteți către “%s”</string>
@@ -1010,19 +1010,19 @@ Trimis prin WhatsApp"</string>
     <string name="software_expired_get_from_play">Această versiune de WhatsApp este prea veche și nu mai funcționează. Vă rugăm să descărcați cea mai recentă versiune din Google Play.</string>
     <string name="software_expired_get_from_play_with_date">Această versiune a aplicației WhatsApp a fost scoasă din uz pe &lt;b>%1$s&lt;/b>. Accesați Google Play pentru a descărca ultima versiune.&lt;br>&lt;br> Data dispozitivului dvs. este &lt;b>%2$s&lt;/b>. Daca aceasta este incorectă, vă rugăm să modificați data curentă din setările dispozitivului și să reporniți WhatsApp.</string>
     <string name="software_expired_with_date">Această versiune a aplicației WhatsApp a fost scoasă din uz pe &lt;b>%1$s&lt;/b>. Apăsați pe “Descărcați” pentru a obține cea mai recentă versiune.&lt;br>&lt;br> Data dispozitivului dvs. este &lt;b>%2$s&lt;/b>. Dacă aceasta este incorectă, vă rugăm să modificați data curentă din setările dispozitivului și să reporniți WhatsApp.</string>
-    <string name="spam_generic">"Momentan, contul dvs. WhatsApp a fost blocat deoarece ați încălcat condițiile noastre de utilizare.
- Veți putea folosi WhatsApp din nou în:"</string>
+    <string name="spam_generic">"Nu mai puteți folosi serviciul WhatsApp pentru moment deoarece ați încălcat condițiile noastre de utilizare.
+
+Veți putea refolosi WhatsApp în:"</string>
     <string name="spam_generic_data_connection_missing">Asigurați-vă că aveți un plan de date activ.</string>
     <string name="spam_generic_unknown_time_left">Momentan, contul dvs. WhatsApp este blocat deoarece ați încălcat condițiile noastre de utiliare. Veți putea utiliza WhatsApp în curând.</string>
     <string name="spam_learn_more">Citiți mai multe</string>
     <string name="spam_title">Blocat temporar</string>
-    <string name="spam_too_many_blocks">Momentan, contul dvs. pe WhatsApp a fost blocat deoarece ați fost blocat de prea multe persoane.</string>
-    <string name="spam_too_many_groups">"Momentan, contul dvs. pe WhatsApp a fost blocat deoarece ați creat prea multe grupuri cu persoane care nu au numărul dvs. salvat în agenda lor telefonică.
+    <string name="spam_too_many_groups">"Momentan, contul dvs. pe WhatsApp a fost blocat deoarece ați creat prea multe grupuri cu persoane care nu vă au în agenda telefonică.
+
 Veți putea folosi WhatsApp din nou în:"</string>
-    <string name="spam_too_many_messages">"Momentan, contul dvs. WhatsApp a fost blocat deoarece ați trimis prea multe mesaje la persoane care nu au numărul dvs. salvat în agenda lor telefonică.
+    <string name="spam_too_many_messages">"Momentan, contul dvs. pe WhatsApp a fost blocat deoarece ați trimis prea multe mesaje la persoane care nu vă au în agenda telefonică.
+
 Veți putea folosi WhatsApp din nou în:"</string>
-    <string name="spam_too_many_people">"Momentan, contul dvs. WhatsApp este blocat deoarece ați trimis același mesaj la prea multe persoane. 
- Veți putea folosi WhatsApp din nou în:"</string>
     <string name="status">Stare</string>
     <string name="status_default_at_gym">La sală</string>
     <string name="status_default_at_movies">La film</string>
@@ -1190,7 +1190,9 @@ Descărcați-l acuma de pe %s și spuneți adio la SMS!"</string>
     <string name="view_list_media">Media din lista de difuzare</string>
     <string name="view_website">Vizitați pagina de web</string>
     <string name="voip_activity_label">Apel Vocal</string>
+    <string name="voip_call_bluetooth_toggle_description">Comutare Bluetooth</string>
     <string name="voip_call_end_button_description">Terminați Apelul Vocal</string>
+    <string name="voip_call_failed_no_network">Nu s-a putut efectua apelul. Asigurați-vă că sunteți conectat la internet și apoi încercați din nou.</string>
     <string name="voip_call_goto_chat_description">Vedeți Conversație</string>
     <string name="voip_call_incoming">INTRARE APEL</string>
     <string name="voip_call_label">APEL WHATSAPP</string>
@@ -1243,5 +1245,4 @@ Dezactivați Wi-Fi pentru a recupera conexiunea cu rețeaua."</string>
     <string name="yesterday">Ieri</string>
     <string name="yesterday_at">ieri la %s</string>
     <string name="you">Dvs.</string>
-    <string name="voip_call_bluetooth_toggle_description">Comutare Bluetooth</string>
 </resources>

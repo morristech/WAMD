@@ -20,7 +20,7 @@
     .prologue
     const/4 v4, 0x0
 
-    const-string v0, "|\nV~1`"
+    const-string v0, "LH\u001c|\u0016P"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -47,7 +47,7 @@
 
     sput-object v0, Lcom/whatsapp/MinimumHeightImageButton;->z:Ljava/lang/String;
 
-    .line 4
+    .line 11
     sput v4, Lcom/whatsapp/MinimumHeightImageButton;->b:I
 
     return-void
@@ -60,7 +60,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x59
+    const/16 v0, 0x7e
 
     :goto_1
     xor-int/2addr v0, v5
@@ -76,22 +76,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x14
+    const/16 v0, 0x24
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x6f
+    const/16 v0, 0x2d
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x3f
+    const/16 v0, 0x75
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x19
+    const/16 v0, 0x1b
 
     goto :goto_1
 
@@ -110,17 +110,17 @@
     .prologue
     const/4 v1, 0x0
 
-    sget-boolean v2, Lcom/whatsapp/App;->aL:Z
+    sget v2, Lcom/whatsapp/App;->h:I
 
-    .line 11
+    .line 5
     invoke-direct {p0, p1, p2}, Landroid/widget/ImageButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 13
+    .line 16
     iput-object p1, p0, Lcom/whatsapp/MinimumHeightImageButton;->a:Landroid/content/Context;
 
     move v0, v1
 
-    .line 3
+    .line 17
     :cond_0
     invoke-interface {p2}, Landroid/util/AttributeSet;->getAttributeCount()I
 
@@ -128,7 +128,7 @@
 
     if-ge v0, v3, :cond_2
 
-    .line 16
+    .line 2
     invoke-interface {p2, v0}, Landroid/util/AttributeSet;->getAttributeName(I)Ljava/lang/String;
 
     move-result-object v3
@@ -141,12 +141,12 @@
 
     if-eqz v3, :cond_1
 
-    .line 12
+    .line 9
     invoke-interface {p2, v0}, Landroid/util/AttributeSet;->getAttributeValue(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 1
+    .line 3
     const-string v4, "."
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
@@ -163,12 +163,12 @@
 
     int-to-float v3, v3
 
-    .line 14
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    .line 4
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
     move-result-object v4
 
-    iget v4, v4, Lcom/whatsapp/se;->B:F
+    iget v4, v4, Lcom/whatsapp/art;->u:F
 
     mul-float/2addr v3, v4
 
@@ -176,16 +176,16 @@
 
     sput v3, Lcom/whatsapp/MinimumHeightImageButton;->b:I
 
-    .line 7
+    .line 1
     if-eqz v2, :cond_2
 
-    .line 9
+    .line 13
     :cond_1
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v2, :cond_0
 
-    .line 17
+    .line 14
     :cond_2
     return-void
 .end method
@@ -196,7 +196,7 @@
     .locals 3
 
     .prologue
-    .line 8
+    .line 15
     invoke-virtual {p0}, Lcom/whatsapp/MinimumHeightImageButton;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -207,16 +207,16 @@
 
     int-to-float v0, v0
 
-    .line 2
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    .line 6
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
     move-result-object v1
 
-    iget v1, v1, Lcom/whatsapp/se;->o:F
+    iget v1, v1, Lcom/whatsapp/art;->f:F
 
     add-float/2addr v0, v1
 
-    .line 15
+    .line 10
     invoke-virtual {p0}, Lcom/whatsapp/MinimumHeightImageButton;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
@@ -227,16 +227,16 @@
 
     int-to-float v1, v1
 
-    .line 6
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    .line 7
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
     move-result-object v2
 
-    iget v2, v2, Lcom/whatsapp/se;->o:F
+    iget v2, v2, Lcom/whatsapp/art;->f:F
 
     add-float/2addr v1, v2
 
-    .line 10
+    .line 8
     float-to-int v1, v1
 
     sget v2, Lcom/whatsapp/MinimumHeightImageButton;->b:I
@@ -256,6 +256,6 @@
 
     invoke-virtual {p0, v1, v0}, Lcom/whatsapp/MinimumHeightImageButton;->setMeasuredDimension(II)V
 
-    .line 5
+    .line 12
     return-void
 .end method

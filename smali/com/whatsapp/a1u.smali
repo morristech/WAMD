@@ -1,4 +1,4 @@
-.class final Lcom/whatsapp/a1u;
+.class Lcom/whatsapp/a1u;
 .super Ljava/lang/Object;
 .source "a1u.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final a:Landroid/app/Activity;
+.field final a:Lcom/whatsapp/ContactPicker;
 
 
 # direct methods
-.method constructor <init>(Landroid/app/Activity;)V
+.method constructor <init>(Lcom/whatsapp/ContactPicker;)V
     .locals 0
 
     .prologue
     .line 1
-    iput-object p1, p0, Lcom/whatsapp/a1u;->a:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/whatsapp/a1u;->a:Lcom/whatsapp/ContactPicker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,18 +29,13 @@
     .locals 2
 
     .prologue
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/a1u;->a:Landroid/app/Activity;
-
-    const/16 v1, 0x77
-
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->removeDialog(I)V
-
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/a1u;->a:Landroid/app/Activity;
-
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
-
     .line 2
+    iget-object v0, p0, Lcom/whatsapp/a1u;->a:Lcom/whatsapp/ContactPicker;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/ContactPicker;->removeDialog(I)V
+
+    .line 3
     return-void
 .end method

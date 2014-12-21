@@ -8,7 +8,7 @@
     .locals 2
 
     .prologue
-    .line 6
+    .line 9
     invoke-static {}, Landroid/animation/ValueAnimator;->getFrameDelay()J
 
     move-result-wide v0
@@ -32,7 +32,7 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 2
     invoke-virtual {p0}, Landroid/view/View;->getScaleX()F
 
     move-result v0
@@ -44,10 +44,10 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 5
     invoke-virtual {p0, p1, p2}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
 
-    .line 9
+    .line 6
     return-void
 .end method
 
@@ -58,7 +58,7 @@
     .line 3
     invoke-virtual {p0, p1}, Landroid/view/View;->setScaleX(F)V
 
-    .line 5
+    .line 8
     return-void
 .end method
 
@@ -69,6 +69,6 @@
     .line 1
     invoke-virtual {p0, p1}, Landroid/view/View;->setScaleY(F)V
 
-    .line 8
+    .line 7
     return-void
 .end method

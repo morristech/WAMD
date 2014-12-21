@@ -29,11 +29,11 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 3
     iget-object v0, p0, Landroid/support/v4/widget/DrawerLayout$ViewDragCallback$1;->this$1:Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;
 
     invoke-static {v0}, Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;->access$000(Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;)V
 
-    .line 3
+    .line 1
     return-void
 .end method

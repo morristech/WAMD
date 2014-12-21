@@ -3,28 +3,20 @@
 .source "e9.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/whatsapp/protocol/ca;
 
 
 # instance fields
-.field final a:Landroid/location/Location;
-
-.field final b:Z
-
-.field final c:Lcom/whatsapp/a0d;
+.field final a:Lcom/whatsapp/DeleteAccount;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/a0d;ZLandroid/location/Location;)V
+.method constructor <init>(Lcom/whatsapp/DeleteAccount;)V
     .locals 0
 
     .prologue
-    .line 5
-    iput-object p1, p0, Lcom/whatsapp/e9;->c:Lcom/whatsapp/a0d;
-
-    iput-boolean p2, p0, Lcom/whatsapp/e9;->b:Z
-
-    iput-object p3, p0, Lcom/whatsapp/e9;->a:Landroid/location/Location;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/e9;->a:Lcom/whatsapp/DeleteAccount;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,78 +25,49 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 5
+.method public a(Ljava/lang/String;)V
+    .locals 2
 
     .prologue
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/e9;->c:Lcom/whatsapp/a0d;
+    sget-object v0, Lcom/whatsapp/App;->C:Lcom/whatsapp/App$Me;
 
-    iget-object v0, v0, Lcom/whatsapp/a0d;->i:Lcom/whatsapp/LocationPicker;
+    iget-object v0, v0, Lcom/whatsapp/App$Me;->jabber_id:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/whatsapp/LocationPicker;->p(Lcom/whatsapp/LocationPicker;)Lcom/whatsapp/ym;
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result-object v0
+    move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/whatsapp/e9;->b:Z
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/e9;->a:Lcom/whatsapp/DeleteAccount;
 
-    if-eqz v0, :cond_1
-
-    .line 6
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/e9;->c:Lcom/whatsapp/a0d;
-
-    iget-object v0, v0, Lcom/whatsapp/a0d;->i:Lcom/whatsapp/LocationPicker;
-
-    invoke-static {v0}, Lcom/whatsapp/LocationPicker;->d(Lcom/whatsapp/LocationPicker;)Lcom/whatsapp/GoogleMapView;
+    invoke-static {v0}, Lcom/whatsapp/DeleteAccount;->c(Lcom/whatsapp/DeleteAccount;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/e9;->c:Lcom/whatsapp/a0d;
+    const/4 v1, 0x1
 
-    iget-object v1, v1, Lcom/whatsapp/a0d;->i:Lcom/whatsapp/LocationPicker;
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    invoke-static {v1}, Lcom/whatsapp/LocationPicker;->h(Lcom/whatsapp/LocationPicker;)Lcom/google/android/maps/MyLocationOverlay;
+    sget v0, Lcom/whatsapp/App;->h:I
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/google/android/maps/MyLocationOverlay;->getMyLocation()Lcom/google/android/maps/GeoPoint;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/GoogleMapView;->b(Lcom/google/android/maps/GeoPoint;)V
-
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/e9;->a:Landroid/location/Location;
-
-    invoke-virtual {v0}, Landroid/location/Location;->getAccuracy()F
-
-    move-result v0
-
-    float-to-int v0, v0
-
-    const/16 v1, 0x64
-
-    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
-
-    move-result v0
+    if-eqz v0, :cond_1
 
     .line 3
-    iget-object v1, p0, Lcom/whatsapp/e9;->c:Lcom/whatsapp/a0d;
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/e9;->a:Lcom/whatsapp/DeleteAccount;
 
-    iget-object v1, v1, Lcom/whatsapp/a0d;->i:Lcom/whatsapp/LocationPicker;
+    invoke-static {v0}, Lcom/whatsapp/DeleteAccount;->c(Lcom/whatsapp/DeleteAccount;)Landroid/os/Handler;
 
-    iget-object v2, p0, Lcom/whatsapp/e9;->a:Landroid/location/Location;
+    move-result-object v0
 
-    const/4 v3, 0x0
+    const/4 v1, 0x2
 
-    const/4 v4, 0x1
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    invoke-static {v1, v2, v0, v3, v4}, Lcom/whatsapp/LocationPicker;->a(Lcom/whatsapp/LocationPicker;Landroid/location/Location;ILjava/lang/String;Z)V
-
-    .line 2
+    .line 5
     :cond_1
     return-void
 .end method

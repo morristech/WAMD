@@ -49,7 +49,7 @@
     .locals 1
 
     .prologue
-    .line 87
+    .line 79
     const/16 v0, 0x50
 
     new-array v0, v0, [J
@@ -149,32 +149,32 @@
     .locals 1
 
     .prologue
-    .line 28
+    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 54
+    .line 64
     const/16 v0, 0x8
 
     new-array v0, v0, [B
 
     iput-object v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
 
-    .line 105
+    .line 99
     const/16 v0, 0x50
 
     new-array v0, v0, [J
 
     iput-object v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
-    .line 78
+    .line 25
     const/4 v0, 0x0
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBufOff:I
 
-    .line 40
+    .line 147
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/LongDigest;->reset()V
 
-    .line 171
+    .line 153
     return-void
 .end method
 
@@ -182,27 +182,27 @@
     .locals 1
 
     .prologue
-    .line 117
+    .line 162
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 98
+    .line 27
     const/16 v0, 0x8
 
     new-array v0, v0, [B
 
     iput-object v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
 
-    .line 139
+    .line 26
     const/16 v0, 0x50
 
     new-array v0, v0, [J
 
     iput-object v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
-    .line 111
+    .line 34
     invoke-virtual {p0, p1}, Lorg/spongycastle/crypto/digests/LongDigest;->copyIn(Lorg/spongycastle/crypto/digests/LongDigest;)V
 
-    .line 127
+    .line 16
     return-void
 .end method
 
@@ -210,7 +210,7 @@
     .locals 5
 
     .prologue
-    .line 1
+    .line 18
     and-long v0, p1, p3
 
     const-wide/16 v2, -0x1
@@ -228,7 +228,7 @@
     .locals 5
 
     .prologue
-    .line 160
+    .line 174
     and-long v0, p1, p3
 
     and-long v2, p1, p5
@@ -246,7 +246,7 @@
     .locals 7
 
     .prologue
-    .line 95
+    .line 31
     const/16 v0, 0x3f
 
     shl-long v0, p1, v0
@@ -282,7 +282,7 @@
     .locals 7
 
     .prologue
-    .line 32
+    .line 145
     const/16 v0, 0x2d
 
     shl-long v0, p1, v0
@@ -318,7 +318,7 @@
     .locals 7
 
     .prologue
-    .line 38
+    .line 29
     const/16 v0, 0x24
 
     shl-long v0, p1, v0
@@ -360,7 +360,7 @@
     .locals 7
 
     .prologue
-    .line 57
+    .line 142
     const/16 v0, 0x32
 
     shl-long v0, p1, v0
@@ -404,14 +404,14 @@
     .prologue
     const-wide v6, 0x1fffffffffffffffL
 
-    .line 159
+    .line 46
     iget-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount1:J
 
     cmp-long v0, v0, v6
 
     if-lez v0, :cond_0
 
-    .line 135
+    .line 137
     iget-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount2:J
 
     iget-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount1:J
@@ -424,14 +424,14 @@
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount2:J
 
-    .line 80
+    .line 144
     iget-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount1:J
 
     and-long/2addr v0, v6
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount1:J
 
-    .line 79
+    .line 103
     :cond_0
     return-void
 .end method
@@ -444,7 +444,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 138
+    .line 96
     iget-object v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
 
     iget-object v1, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
@@ -455,62 +455,62 @@
 
     invoke-static {v0, v3, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 146
+    .line 15
     iget v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->xBufOff:I
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBufOff:I
 
-    .line 82
+    .line 66
     iget-wide v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount1:J
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount1:J
 
-    .line 25
+    .line 6
     iget-wide v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount2:J
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount2:J
 
-    .line 99
+    .line 110
     iget-wide v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->H1:J
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H1:J
 
-    .line 163
+    .line 172
     iget-wide v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->H2:J
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H2:J
 
-    .line 164
+    .line 91
     iget-wide v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->H3:J
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H3:J
 
-    .line 18
+    .line 50
     iget-wide v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->H4:J
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H4:J
 
-    .line 10
+    .line 56
     iget-wide v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->H5:J
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H5:J
 
-    .line 129
+    .line 166
     iget-wide v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->H6:J
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H6:J
 
-    .line 34
+    .line 72
     iget-wide v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->H7:J
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H7:J
 
-    .line 46
+    .line 98
     iget-wide v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->H8:J
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H8:J
 
-    .line 155
+    .line 112
     iget-object v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
     iget-object v1, p0, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
@@ -521,12 +521,12 @@
 
     invoke-static {v0, v3, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 19
+    .line 12
     iget v0, p1, Lorg/spongycastle/crypto/digests/LongDigest;->wOff:I
 
     iput v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->wOff:I
 
-    .line 64
+    .line 116
     return-void
 .end method
 
@@ -536,10 +536,10 @@
     .prologue
     sget v0, Lorg/spongycastle/crypto/digests/GeneralDigest;->a:I
 
-    .line 137
+    .line 70
     invoke-direct {p0}, Lorg/spongycastle/crypto/digests/LongDigest;->adjustByteCounts()V
 
-    .line 7
+    .line 74
     iget-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount1:J
 
     const/4 v1, 0x3
@@ -549,32 +549,32 @@
     .line 68
     iget-wide v4, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount2:J
 
-    .line 45
+    .line 94
     const/16 v1, -0x80
 
     invoke-virtual {p0, v1}, Lorg/spongycastle/crypto/digests/LongDigest;->update(B)V
 
-    .line 97
+    .line 169
     :cond_0
     iget v1, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBufOff:I
 
     if-eqz v1, :cond_1
 
-    .line 110
+    .line 89
     const/4 v1, 0x0
 
     invoke-virtual {p0, v1}, Lorg/spongycastle/crypto/digests/LongDigest;->update(B)V
 
     if-eqz v0, :cond_0
 
-    .line 74
+    .line 173
     :cond_1
     invoke-virtual {p0, v2, v3, v4, v5}, Lorg/spongycastle/crypto/digests/LongDigest;->processLength(JJ)V
 
-    .line 104
+    .line 13
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/LongDigest;->processBlock()V
 
-    .line 165
+    .line 120
     return-void
 .end method
 
@@ -582,7 +582,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 125
     const/16 v0, 0x80
 
     return v0
@@ -592,7 +592,7 @@
     .locals 1
 
     .prologue
-    .line 143
+    .line 36
     iget v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->wOff:I
 
     mul-int/lit8 v0, v0, 0x8
@@ -610,104 +610,104 @@
 
     sget v1, Lorg/spongycastle/crypto/digests/GeneralDigest;->a:I
 
-    .line 141
+    .line 117
     iget-object v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
 
     iget v3, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBufOff:I
 
     invoke-static {v2, v0, p1, v0, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 157
+    .line 83
     iget v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBufOff:I
 
     const/16 v3, 0x8
 
     invoke-static {v2, p1, v3}, Lorg/spongycastle/util/Pack;->intToBigEndian(I[BI)V
 
-    .line 94
+    .line 48
     iget-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount1:J
 
     const/16 v4, 0xc
 
     invoke-static {v2, v3, p1, v4}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 170
+    .line 135
     iget-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount2:J
 
     const/16 v4, 0x14
 
     invoke-static {v2, v3, p1, v4}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 128
+    .line 19
     iget-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H1:J
 
     const/16 v4, 0x1c
 
     invoke-static {v2, v3, p1, v4}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 106
+    .line 3
     iget-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H2:J
 
     const/16 v4, 0x24
 
     invoke-static {v2, v3, p1, v4}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 63
+    .line 102
     iget-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H3:J
 
     const/16 v4, 0x2c
 
     invoke-static {v2, v3, p1, v4}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 112
+    .line 10
     iget-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H4:J
 
     const/16 v4, 0x34
 
     invoke-static {v2, v3, p1, v4}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 120
+    .line 97
     iget-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H5:J
 
     const/16 v4, 0x3c
 
     invoke-static {v2, v3, p1, v4}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 102
+    .line 93
     iget-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H6:J
 
     const/16 v4, 0x44
 
     invoke-static {v2, v3, p1, v4}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 153
+    .line 61
     iget-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H7:J
 
     const/16 v4, 0x4c
 
     invoke-static {v2, v3, p1, v4}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 140
+    .line 101
     iget-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H8:J
 
     const/16 v4, 0x54
 
     invoke-static {v2, v3, p1, v4}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 154
+    .line 86
     iget v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->wOff:I
 
     const/16 v3, 0x5c
 
     invoke-static {v2, p1, v3}, Lorg/spongycastle/util/Pack;->intToBigEndian(I[BI)V
 
-    .line 126
+    .line 132
     :cond_0
     iget v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->wOff:I
 
     if-ge v0, v2, :cond_1
 
-    .line 103
+    .line 165
     iget-object v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
     aget-wide v2, v2, v0
@@ -718,12 +718,12 @@
 
     invoke-static {v2, v3, p1, v4}, Lorg/spongycastle/util/Pack;->longToBigEndian(J[BI)V
 
-    .line 152
+    .line 62
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 88
+    .line 51
     :cond_1
     return-void
 .end method
@@ -734,10 +734,10 @@
     .prologue
     sget v29, Lorg/spongycastle/crypto/digests/GeneralDigest;->a:I
 
-    .line 124
+    .line 8
     invoke-direct/range {p0 .. p0}, Lorg/spongycastle/crypto/digests/LongDigest;->adjustByteCounts()V
 
-    .line 92
+    .line 109
     const/16 v4, 0x10
 
     :cond_0
@@ -745,7 +745,7 @@
 
     if-gt v4, v5, :cond_1
 
-    .line 162
+    .line 113
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
@@ -802,62 +802,62 @@
 
     aput-wide v6, v5, v4
 
-    .line 116
+    .line 69
     add-int/lit8 v4, v4, 0x1
 
     if-eqz v29, :cond_0
 
-    .line 118
+    .line 100
     :cond_1
     move-object/from16 v0, p0
 
     iget-wide v14, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H1:J
 
-    .line 121
+    .line 81
     move-object/from16 v0, p0
 
     iget-wide v0, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H2:J
 
     move-wide/from16 v16, v0
 
-    .line 101
+    .line 57
     move-object/from16 v0, p0
 
     iget-wide v0, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H3:J
 
     move-wide/from16 v18, v0
 
-    .line 13
+    .line 41
     move-object/from16 v0, p0
 
     iget-wide v0, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H4:J
 
     move-wide/from16 v22, v0
 
-    .line 2
+    .line 49
     move-object/from16 v0, p0
 
     iget-wide v6, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H5:J
 
-    .line 72
+    .line 150
     move-object/from16 v0, p0
 
     iget-wide v8, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H6:J
 
-    .line 15
+    .line 95
     move-object/from16 v0, p0
 
     iget-wide v10, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H7:J
 
-    .line 69
+    .line 115
     move-object/from16 v0, p0
 
     iget-wide v12, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H8:J
 
-    .line 166
+    .line 84
     const/4 v5, 0x0
 
-    .line 36
+    .line 170
     const/4 v4, 0x0
 
     move/from16 v28, v4
@@ -871,7 +871,7 @@
 
     if-ge v0, v5, :cond_5
 
-    .line 168
+    .line 155
     move-object/from16 v0, p0
 
     invoke-direct {v0, v6, v7}, Lorg/spongycastle/crypto/digests/LongDigest;->Sum1(J)J
@@ -904,10 +904,10 @@
 
     add-long/2addr v4, v12
 
-    .line 158
+    .line 143
     add-long v22, v22, v4
 
-    .line 29
+    .line 126
     move-object/from16 v0, p0
 
     invoke-direct {v0, v14, v15}, Lorg/spongycastle/crypto/digests/LongDigest;->Sum0(J)J
@@ -924,7 +924,7 @@
 
     add-long/2addr v12, v4
 
-    .line 113
+    .line 159
     move-object/from16 v0, p0
 
     move-wide/from16 v1, v22
@@ -965,10 +965,10 @@
 
     add-long/2addr v4, v10
 
-    .line 133
+    .line 21
     add-long v20, v18, v4
 
-    .line 132
+    .line 114
     move-object/from16 v0, p0
 
     invoke-direct {v0, v12, v13}, Lorg/spongycastle/crypto/digests/LongDigest;->Sum0(J)J
@@ -985,7 +985,7 @@
 
     add-long/2addr v10, v4
 
-    .line 119
+    .line 59
     move-object/from16 v0, p0
 
     move-wide/from16 v1, v20
@@ -1024,10 +1024,10 @@
 
     add-long/2addr v4, v8
 
-    .line 173
+    .line 33
     add-long v18, v16, v4
 
-    .line 81
+    .line 92
     move-object/from16 v0, p0
 
     invoke-direct {v0, v10, v11}, Lorg/spongycastle/crypto/digests/LongDigest;->Sum0(J)J
@@ -1044,7 +1044,7 @@
 
     add-long/2addr v8, v4
 
-    .line 47
+    .line 28
     move-object/from16 v0, p0
 
     move-wide/from16 v1, v18
@@ -1081,10 +1081,10 @@
 
     add-long/2addr v4, v6
 
-    .line 50
+    .line 39
     add-long v16, v14, v4
 
-    .line 62
+    .line 122
     move-object/from16 v0, p0
 
     invoke-direct {v0, v8, v9}, Lorg/spongycastle/crypto/digests/LongDigest;->Sum0(J)J
@@ -1101,7 +1101,7 @@
 
     add-long/2addr v6, v4
 
-    .line 3
+    .line 141
     move-object/from16 v0, p0
 
     move-wide/from16 v1, v16
@@ -1136,10 +1136,10 @@
 
     add-long v22, v22, v4
 
-    .line 33
+    .line 44
     add-long v14, v12, v22
 
-    .line 21
+    .line 9
     move-object/from16 v0, p0
 
     invoke-direct {v0, v6, v7}, Lorg/spongycastle/crypto/digests/LongDigest;->Sum0(J)J
@@ -1156,7 +1156,7 @@
 
     add-long v22, v22, v4
 
-    .line 122
+    .line 140
     move-object/from16 v0, p0
 
     invoke-direct {v0, v14, v15}, Lorg/spongycastle/crypto/digests/LongDigest;->Sum1(J)J
@@ -1189,10 +1189,10 @@
 
     add-long v4, v4, v20
 
-    .line 91
+    .line 108
     add-long v12, v10, v4
 
-    .line 109
+    .line 45
     move-object/from16 v0, p0
 
     move-wide/from16 v1, v22
@@ -1215,7 +1215,7 @@
 
     add-long v20, v4, v10
 
-    .line 149
+    .line 152
     move-object/from16 v0, p0
 
     invoke-direct {v0, v12, v13}, Lorg/spongycastle/crypto/digests/LongDigest;->Sum1(J)J
@@ -1248,10 +1248,10 @@
 
     add-long v4, v4, v18
 
-    .line 23
+    .line 134
     add-long v10, v8, v4
 
-    .line 22
+    .line 80
     move-object/from16 v0, p0
 
     move-wide/from16 v1, v20
@@ -1272,7 +1272,7 @@
 
     add-long v18, v4, v8
 
-    .line 73
+    .line 54
     move-object/from16 v0, p0
 
     invoke-direct {v0, v10, v11}, Lorg/spongycastle/crypto/digests/LongDigest;->Sum1(J)J
@@ -1305,10 +1305,10 @@
 
     add-long v4, v4, v16
 
-    .line 58
+    .line 87
     add-long/2addr v6, v4
 
-    .line 30
+    .line 35
     move-object/from16 v0, p0
 
     move-wide/from16 v1, v18
@@ -1327,12 +1327,12 @@
 
     add-long v4, v4, v16
 
-    .line 4
+    .line 85
     add-int/lit8 v8, v28, 0x1
 
     if-eqz v29, :cond_4
 
-    .line 144
+    .line 11
     :goto_1
     move-object/from16 v0, p0
 
@@ -1355,7 +1355,7 @@
 
     iput-wide v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H2:J
 
-    .line 42
+    .line 129
     move-object/from16 v0, p0
 
     iget-wide v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H3:J
@@ -1366,7 +1366,7 @@
 
     iput-wide v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H3:J
 
-    .line 108
+    .line 88
     move-object/from16 v0, p0
 
     iget-wide v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H4:J
@@ -1377,7 +1377,7 @@
 
     iput-wide v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H4:J
 
-    .line 89
+    .line 47
     move-object/from16 v0, p0
 
     iget-wide v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H5:J
@@ -1388,7 +1388,7 @@
 
     iput-wide v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H5:J
 
-    .line 9
+    .line 121
     move-object/from16 v0, p0
 
     iget-wide v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H6:J
@@ -1399,7 +1399,7 @@
 
     iput-wide v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H6:J
 
-    .line 145
+    .line 65
     move-object/from16 v0, p0
 
     iget-wide v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H7:J
@@ -1410,7 +1410,7 @@
 
     iput-wide v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H7:J
 
-    .line 39
+    .line 55
     move-object/from16 v0, p0
 
     iget-wide v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H8:J
@@ -1421,14 +1421,14 @@
 
     iput-wide v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->H8:J
 
-    .line 24
+    .line 43
     const/4 v4, 0x0
 
     move-object/from16 v0, p0
 
     iput v4, v0, Lorg/spongycastle/crypto/digests/LongDigest;->wOff:I
 
-    .line 44
+    .line 32
     const/4 v4, 0x0
 
     :cond_2
@@ -1436,7 +1436,7 @@
 
     if-ge v4, v5, :cond_3
 
-    .line 142
+    .line 130
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
@@ -1445,12 +1445,12 @@
 
     aput-wide v6, v5, v4
 
-    .line 17
+    .line 63
     add-int/lit8 v4, v4, 0x1
 
     if-eqz v29, :cond_2
 
-    .line 60
+    .line 40
     :cond_3
     return-void
 
@@ -1497,28 +1497,28 @@
     .prologue
     const/16 v1, 0xe
 
-    .line 100
+    .line 158
     iget v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->wOff:I
 
     if-le v0, v1, :cond_0
 
-    .line 107
+    .line 67
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/LongDigest;->processBlock()V
 
-    .line 83
+    .line 14
     :cond_0
     iget-object v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
     aput-wide p3, v0, v1
 
-    .line 90
+    .line 105
     iget-object v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
     const/16 v1, 0xf
 
     aput-wide p1, v0, v1
 
-    .line 136
+    .line 171
     return-void
 .end method
 
@@ -1526,7 +1526,7 @@
     .locals 4
 
     .prologue
-    .line 8
+    .line 24
     iget-object v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
     iget v1, p0, Lorg/spongycastle/crypto/digests/LongDigest;->wOff:I
@@ -1537,7 +1537,7 @@
 
     aput-wide v2, v0, v1
 
-    .line 12
+    .line 5
     iget v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->wOff:I
 
     add-int/lit8 v0, v0, 0x1
@@ -1548,10 +1548,10 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 151
+    .line 38
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/LongDigest;->processBlock()V
 
-    .line 147
+    .line 22
     :cond_0
     return-void
 .end method
@@ -1566,18 +1566,18 @@
 
     sget v2, Lorg/spongycastle/crypto/digests/GeneralDigest;->a:I
 
-    .line 134
+    .line 1
     iput-wide v4, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount1:J
 
-    .line 16
+    .line 17
     iput-wide v4, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount2:J
 
-    .line 85
+    .line 149
     iput v1, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBufOff:I
 
     move v0, v1
 
-    .line 49
+    .line 160
     :cond_0
     iget-object v3, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
 
@@ -1585,21 +1585,21 @@
 
     if-ge v0, v3, :cond_1
 
-    .line 96
+    .line 124
     iget-object v3, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
 
     aput-byte v1, v3, v0
 
-    .line 76
+    .line 78
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v2, :cond_0
 
-    .line 37
+    .line 154
     :cond_1
     iput v1, p0, Lorg/spongycastle/crypto/digests/LongDigest;->wOff:I
 
-    .line 43
+    .line 127
     :cond_2
     iget-object v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
@@ -1607,17 +1607,17 @@
 
     if-eq v1, v0, :cond_3
 
-    .line 93
+    .line 138
     iget-object v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
     aput-wide v4, v0, v1
 
-    .line 67
+    .line 23
     add-int/lit8 v1, v1, 0x1
 
     if-eqz v2, :cond_2
 
-    .line 130
+    .line 136
     :cond_3
     return-void
 .end method
@@ -1630,7 +1630,7 @@
 
     sget v1, Lorg/spongycastle/crypto/digests/GeneralDigest;->a:I
 
-    .line 14
+    .line 128
     const/16 v2, 0x8
 
     invoke-static {p1, v2}, Lorg/spongycastle/util/Pack;->bigEndianToInt([BI)I
@@ -1639,14 +1639,14 @@
 
     iput v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBufOff:I
 
-    .line 123
+    .line 131
     iget-object v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
 
     iget v3, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBufOff:I
 
     invoke-static {p1, v0, v2, v0, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 26
+    .line 58
     const/16 v2, 0xc
 
     invoke-static {p1, v2}, Lorg/spongycastle/util/Pack;->bigEndianToLong([BI)J
@@ -1655,7 +1655,7 @@
 
     iput-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount1:J
 
-    .line 71
+    .line 156
     const/16 v2, 0x14
 
     invoke-static {p1, v2}, Lorg/spongycastle/util/Pack;->bigEndianToLong([BI)J
@@ -1664,7 +1664,7 @@
 
     iput-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount2:J
 
-    .line 172
+    .line 106
     const/16 v2, 0x1c
 
     invoke-static {p1, v2}, Lorg/spongycastle/util/Pack;->bigEndianToLong([BI)J
@@ -1673,7 +1673,7 @@
 
     iput-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H1:J
 
-    .line 86
+    .line 42
     const/16 v2, 0x24
 
     invoke-static {p1, v2}, Lorg/spongycastle/util/Pack;->bigEndianToLong([BI)J
@@ -1682,7 +1682,7 @@
 
     iput-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H2:J
 
-    .line 35
+    .line 164
     const/16 v2, 0x2c
 
     invoke-static {p1, v2}, Lorg/spongycastle/util/Pack;->bigEndianToLong([BI)J
@@ -1691,7 +1691,7 @@
 
     iput-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H3:J
 
-    .line 6
+    .line 148
     const/16 v2, 0x34
 
     invoke-static {p1, v2}, Lorg/spongycastle/util/Pack;->bigEndianToLong([BI)J
@@ -1700,7 +1700,7 @@
 
     iput-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H4:J
 
-    .line 61
+    .line 118
     const/16 v2, 0x3c
 
     invoke-static {p1, v2}, Lorg/spongycastle/util/Pack;->bigEndianToLong([BI)J
@@ -1709,7 +1709,7 @@
 
     iput-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H5:J
 
-    .line 75
+    .line 60
     const/16 v2, 0x44
 
     invoke-static {p1, v2}, Lorg/spongycastle/util/Pack;->bigEndianToLong([BI)J
@@ -1718,7 +1718,7 @@
 
     iput-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H6:J
 
-    .line 41
+    .line 151
     const/16 v2, 0x4c
 
     invoke-static {p1, v2}, Lorg/spongycastle/util/Pack;->bigEndianToLong([BI)J
@@ -1727,7 +1727,7 @@
 
     iput-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H7:J
 
-    .line 59
+    .line 73
     const/16 v2, 0x54
 
     invoke-static {p1, v2}, Lorg/spongycastle/util/Pack;->bigEndianToLong([BI)J
@@ -1736,7 +1736,7 @@
 
     iput-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->H8:J
 
-    .line 148
+    .line 139
     const/16 v2, 0x5c
 
     invoke-static {p1, v2}, Lorg/spongycastle/util/Pack;->bigEndianToInt([BI)I
@@ -1745,13 +1745,13 @@
 
     iput v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->wOff:I
 
-    .line 48
+    .line 7
     :cond_0
     iget v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->wOff:I
 
     if-ge v0, v2, :cond_1
 
-    .line 114
+    .line 37
     iget-object v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
     mul-int/lit8 v3, v0, 0x8
@@ -1764,12 +1764,12 @@
 
     aput-wide v4, v2, v0
 
-    .line 52
+    .line 107
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 51
+    .line 119
     :cond_1
     return-void
 .end method
@@ -1780,7 +1780,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 169
+    .line 76
     iget-object v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
 
     iget v1, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBufOff:I
@@ -1791,7 +1791,7 @@
 
     aput-byte p1, v0, v1
 
-    .line 167
+    .line 90
     iget v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBufOff:I
 
     iget-object v1, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
@@ -1800,15 +1800,15 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 31
+    .line 4
     iget-object v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
 
     invoke-virtual {p0, v0, v3}, Lorg/spongycastle/crypto/digests/LongDigest;->processWord([BI)V
 
-    .line 56
+    .line 2
     iput v3, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBufOff:I
 
-    .line 150
+    .line 123
     :cond_0
     iget-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount1:J
 
@@ -1818,7 +1818,7 @@
 
     iput-wide v0, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount1:J
 
-    .line 156
+    .line 157
     return-void
 .end method
 
@@ -1828,7 +1828,7 @@
     .prologue
     sget v0, Lorg/spongycastle/crypto/digests/GeneralDigest;->a:I
 
-    .line 20
+    .line 53
     :cond_0
     iget v1, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBufOff:I
 
@@ -1836,20 +1836,20 @@
 
     if-lez p3, :cond_1
 
-    .line 11
+    .line 77
     aget-byte v1, p1, p2
 
     invoke-virtual {p0, v1}, Lorg/spongycastle/crypto/digests/LongDigest;->update(B)V
 
-    .line 115
+    .line 30
     add-int/lit8 p2, p2, 0x1
 
-    .line 65
+    .line 111
     add-int/lit8 p3, p3, -0x1
 
     if-eqz v0, :cond_0
 
-    .line 125
+    .line 167
     :cond_1
     iget-object v1, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
 
@@ -1857,24 +1857,24 @@
 
     if-le p3, v1, :cond_2
 
-    .line 53
+    .line 133
     invoke-virtual {p0, p1, p2}, Lorg/spongycastle/crypto/digests/LongDigest;->processWord([BI)V
 
-    .line 27
+    .line 104
     iget-object v1, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
 
     array-length v1, v1
 
     add-int/2addr p2, v1
 
-    .line 66
+    .line 168
     iget-object v1, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
 
     array-length v1, v1
 
     sub-int/2addr p3, v1
 
-    .line 77
+    .line 163
     iget-wide v2, p0, Lorg/spongycastle/crypto/digests/LongDigest;->byteCount1:J
 
     iget-object v1, p0, Lorg/spongycastle/crypto/digests/LongDigest;->xBuf:[B
@@ -1889,24 +1889,24 @@
 
     if-eqz v0, :cond_1
 
-    .line 70
+    .line 146
     :cond_2
     if-lez p3, :cond_3
 
-    .line 174
+    .line 71
     aget-byte v1, p1, p2
 
     invoke-virtual {p0, v1}, Lorg/spongycastle/crypto/digests/LongDigest;->update(B)V
 
-    .line 55
+    .line 52
     add-int/lit8 p2, p2, 0x1
 
-    .line 131
+    .line 75
     add-int/lit8 p3, p3, -0x1
 
     if-eqz v0, :cond_2
 
-    .line 84
+    .line 82
     :cond_3
     return-void
 .end method

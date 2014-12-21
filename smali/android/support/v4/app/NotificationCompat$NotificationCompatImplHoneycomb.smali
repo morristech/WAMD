@@ -3,23 +3,12 @@
 .source "NotificationCompat.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroid/support/v4/app/NotificationCompat;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
-    name = "NotificationCompatImplHoneycomb"
-.end annotation
-
-
 # direct methods
 .method constructor <init>()V
     .locals 0
 
     .prologue
-    .line 539
+    .line 1
     invoke-direct {p0}, Landroid/support/v4/app/NotificationCompat$NotificationCompatImplBase;-><init>()V
 
     return-void
@@ -29,10 +18,9 @@
 # virtual methods
 .method public build(Landroid/support/v4/app/NotificationCompat$Builder;)Landroid/app/Notification;
     .locals 10
-    .param p1, "b"    # Landroid/support/v4/app/NotificationCompat$Builder;
 
     .prologue
-    .line 542
+    .line 2
     iget-object v0, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mContext:Landroid/content/Context;
 
     iget-object v1, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;

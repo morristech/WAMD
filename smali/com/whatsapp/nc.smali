@@ -1,87 +1,63 @@
-.class public Lcom/whatsapp/nc;
-.super Ljava/io/FilterOutputStream;
+.class Lcom/whatsapp/nc;
+.super Ljava/lang/Object;
 .source "nc.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
 .field final a:I
 
+.field final b:Lcom/whatsapp/amo;
+
+.field final c:Ljava/lang/String;
+
+.field final d:Lcom/whatsapp/protocol/c9;
+
+.field final e:J
+
 
 # direct methods
-.method public constructor <init>(Ljava/io/OutputStream;I)V
-    .locals 0
+.method constructor <init>(Lcom/whatsapp/amo;Lcom/whatsapp/protocol/c9;Ljava/lang/String;IJ)V
+    .locals 1
 
     .prologue
-    .line 4
-    invoke-direct {p0, p1}, Ljava/io/FilterOutputStream;-><init>(Ljava/io/OutputStream;)V
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/nc;->b:Lcom/whatsapp/amo;
 
-    .line 10
-    iput p2, p0, Lcom/whatsapp/nc;->a:I
+    iput-object p2, p0, Lcom/whatsapp/nc;->d:Lcom/whatsapp/protocol/c9;
 
-    .line 11
+    iput-object p3, p0, Lcom/whatsapp/nc;->c:Ljava/lang/String;
+
+    iput p4, p0, Lcom/whatsapp/nc;->a:I
+
+    iput-wide p5, p0, Lcom/whatsapp/nc;->e:J
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public write(I)V
-    .locals 3
+.method public run()V
+    .locals 6
 
     .prologue
-    .line 5
-    const-wide/16 v0, 0x1
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/nc;->b:Lcom/whatsapp/amo;
 
-    iget v2, p0, Lcom/whatsapp/nc;->a:I
+    iget-object v1, p0, Lcom/whatsapp/nc;->d:Lcom/whatsapp/protocol/c9;
 
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/z_;->a(JI)V
+    iget-object v2, p0, Lcom/whatsapp/nc;->c:Ljava/lang/String;
 
-    .line 12
-    iget-object v0, p0, Lcom/whatsapp/nc;->out:Ljava/io/OutputStream;
+    iget v3, p0, Lcom/whatsapp/nc;->a:I
 
-    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
+    iget-wide v4, p0, Lcom/whatsapp/nc;->e:J
+
+    invoke-static/range {v0 .. v5}, Lcom/whatsapp/amo;->a(Lcom/whatsapp/amo;Lcom/whatsapp/protocol/c9;Ljava/lang/String;IJ)V
 
     .line 1
-    return-void
-.end method
-
-.method public write([B)V
-    .locals 3
-
-    .prologue
-    .line 3
-    array-length v0, p1
-
-    int-to-long v0, v0
-
-    iget v2, p0, Lcom/whatsapp/nc;->a:I
-
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/z_;->a(JI)V
-
-    .line 9
-    iget-object v0, p0, Lcom/whatsapp/nc;->out:Ljava/io/OutputStream;
-
-    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write([B)V
-
-    .line 2
-    return-void
-.end method
-
-.method public write([BII)V
-    .locals 3
-
-    .prologue
-    .line 6
-    int-to-long v0, p3
-
-    iget v2, p0, Lcom/whatsapp/nc;->a:I
-
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/z_;->a(JI)V
-
-    .line 8
-    iget-object v0, p0, Lcom/whatsapp/nc;->out:Ljava/io/OutputStream;
-
-    invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
-
-    .line 7
     return-void
 .end method

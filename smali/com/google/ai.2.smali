@@ -1,5 +1,5 @@
 .class public final Lcom/google/ai;
-.super Lcom/google/a8;
+.super Lcom/google/am;
 .source "ai.java"
 
 
@@ -8,20 +8,20 @@
 
 
 # instance fields
-.field private final d:Lcom/google/br;
+.field private final d:Lcom/google/bI;
 
 .field private e:I
 
-.field private final f:Lcom/google/g7;
+.field private final f:Lcom/google/gs;
 
-.field private final g:Lcom/google/d1;
+.field private final g:Lcom/google/cw;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, ":})i{8q?fm\u0015d8jm\\p#`l\\z#q?\u0011u8fw\\y)vl\u001ds)%k\u0005d)+"
+    const-string v0, "\u0005U-a\u0014\u0007Y;n\u0002*L<b\u0002cX\'h\u0003cR\'yP.]<n\u0018cQ-~\u0003\"[--\u0004:L-#"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -59,7 +59,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x1f
+    const/16 v0, 0x70
 
     :goto_1
     xor-int/2addr v0, v4
@@ -75,26 +75,24 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x7c
+    const/16 v0, 0x43
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x14
+    const/16 v0, 0x3c
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x4c
+    const/16 v0, 0x48
 
     goto :goto_1
 
     :pswitch_3
-    const/4 v0, 0x5
+    const/16 v0, 0xd
 
     goto :goto_1
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -105,80 +103,80 @@
     .end packed-switch
 .end method
 
-.method private constructor <init>(Lcom/google/g7;Lcom/google/br;Lcom/google/d1;)V
+.method private constructor <init>(Lcom/google/gs;Lcom/google/cw;Lcom/google/bI;)V
     .locals 1
 
     .prologue
-    .line 58
-    invoke-direct {p0}, Lcom/google/a8;-><init>()V
+    .line 8
+    invoke-direct {p0}, Lcom/google/am;-><init>()V
 
-    .line 44
+    .line 4
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/google/ai;->e:I
 
-    .line 10
-    iput-object p1, p0, Lcom/google/ai;->f:Lcom/google/g7;
+    .line 58
+    iput-object p1, p0, Lcom/google/ai;->f:Lcom/google/gs;
 
-    .line 18
-    iput-object p2, p0, Lcom/google/ai;->d:Lcom/google/br;
+    .line 3
+    iput-object p2, p0, Lcom/google/ai;->g:Lcom/google/cw;
 
-    .line 28
-    iput-object p3, p0, Lcom/google/ai;->g:Lcom/google/d1;
+    .line 39
+    iput-object p3, p0, Lcom/google/ai;->d:Lcom/google/bI;
 
-    .line 54
+    .line 60
     return-void
 .end method
 
-.method constructor <init>(Lcom/google/g7;Lcom/google/br;Lcom/google/d1;Lcom/google/fN;)V
+.method constructor <init>(Lcom/google/gs;Lcom/google/cw;Lcom/google/bI;Lcom/google/dE;)V
     .locals 0
 
     .prologue
-    .line 14
-    invoke-direct {p0, p1, p2, p3}, Lcom/google/ai;-><init>(Lcom/google/g7;Lcom/google/br;Lcom/google/d1;)V
+    .line 42
+    invoke-direct {p0, p1, p2, p3}, Lcom/google/ai;-><init>(Lcom/google/gs;Lcom/google/cw;Lcom/google/bI;)V
 
     return-void
 .end method
 
-.method public static a(Lcom/google/g7;)Lcom/google/ep;
+.method public static a(Lcom/google/gs;)Lcom/google/P;
     .locals 2
 
     .prologue
-    .line 49
-    new-instance v0, Lcom/google/ep;
+    .line 52
+    new-instance v0, Lcom/google/P;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/google/ep;-><init>(Lcom/google/g7;Lcom/google/fN;)V
+    invoke-direct {v0, p0, v1}, Lcom/google/P;-><init>(Lcom/google/gs;Lcom/google/dE;)V
 
     return-object v0
 .end method
 
-.method static a(Lcom/google/ai;)Lcom/google/g7;
+.method static a(Lcom/google/ai;)Lcom/google/bI;
     .locals 1
 
     .prologue
-    .line 4
-    iget-object v0, p0, Lcom/google/ai;->f:Lcom/google/g7;
+    .line 28
+    iget-object v0, p0, Lcom/google/ai;->d:Lcom/google/bI;
 
     return-object v0
 .end method
 
-.method private a(Lcom/google/e9;)V
+.method private a(Lcom/google/bh;)V
     .locals 2
 
     .prologue
-    .line 21
+    .line 62
     :try_start_0
-    invoke-virtual {p1}, Lcom/google/e9;->k()Lcom/google/g7;
+    invoke-virtual {p1}, Lcom/google/bh;->d()Lcom/google/gs;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/ai;->f:Lcom/google/g7;
+    iget-object v1, p0, Lcom/google/ai;->f:Lcom/google/gs;
 
     if-eq v0, v1, :cond_0
 
-    .line 6
+    .line 27
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     sget-object v1, Lcom/google/ai;->z:Ljava/lang/String;
@@ -194,61 +192,61 @@
 
     throw v0
 
-    .line 38
+    .line 53
     :cond_0
     return-void
 .end method
 
-.method static a(Lcom/google/g7;Lcom/google/br;)Z
+.method static a(Lcom/google/gs;Lcom/google/cw;)Z
     .locals 1
 
     .prologue
-    .line 42
-    invoke-static {p0, p1}, Lcom/google/ai;->b(Lcom/google/g7;Lcom/google/br;)Z
+    .line 5
+    invoke-static {p0, p1}, Lcom/google/ai;->b(Lcom/google/gs;Lcom/google/cw;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public static b(Lcom/google/g7;)Lcom/google/ai;
+.method public static b(Lcom/google/gs;)Lcom/google/ai;
     .locals 3
 
     .prologue
-    .line 55
+    .line 57
     new-instance v0, Lcom/google/ai;
 
-    invoke-static {}, Lcom/google/br;->i()Lcom/google/br;
+    invoke-static {}, Lcom/google/cw;->e()Lcom/google/cw;
 
     move-result-object v1
 
-    invoke-static {}, Lcom/google/d1;->f()Lcom/google/d1;
+    invoke-static {}, Lcom/google/bI;->a()Lcom/google/bI;
 
     move-result-object v2
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/google/ai;-><init>(Lcom/google/g7;Lcom/google/br;Lcom/google/d1;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/google/ai;-><init>(Lcom/google/gs;Lcom/google/cw;Lcom/google/bI;)V
 
     return-object v0
 .end method
 
-.method static b(Lcom/google/ai;)Lcom/google/br;
+.method static b(Lcom/google/ai;)Lcom/google/cw;
     .locals 1
 
     .prologue
-    .line 46
-    iget-object v0, p0, Lcom/google/ai;->d:Lcom/google/br;
+    .line 34
+    iget-object v0, p0, Lcom/google/ai;->g:Lcom/google/cw;
 
     return-object v0
 .end method
 
-.method private static b(Lcom/google/g7;Lcom/google/br;)Z
+.method private static b(Lcom/google/gs;Lcom/google/cw;)Z
     .locals 4
 
     .prologue
-    sget v1, Lcom/google/a8;->b:I
+    sget-boolean v1, Lcom/google/am;->b:Z
 
-    .line 11
-    invoke-virtual {p0}, Lcom/google/g7;->b()Ljava/util/List;
+    .line 23
+    invoke-virtual {p0}, Lcom/google/gs;->d()Ljava/util/List;
 
     move-result-object v0
 
@@ -267,11 +265,11 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/e9;
+    check-cast v0, Lcom/google/bh;
 
-    .line 26
+    .line 48
     :try_start_0
-    invoke-virtual {v0}, Lcom/google/e9;->a()Z
+    invoke-virtual {v0}, Lcom/google/bh;->m()Z
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -279,21 +277,21 @@
 
     if-eqz v3, :cond_1
 
-    .line 48
+    .line 10
     :try_start_1
-    invoke-virtual {p1, v0}, Lcom/google/br;->a(Lcom/google/g1;)Z
+    invoke-virtual {p1, v0}, Lcom/google/cw;->b(Lcom/google/dK;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 36
+    .line 55
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 48
+    .line 10
     :catch_0
     move-exception v0
 
@@ -301,31 +299,31 @@
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 36
+    .line 55
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 35
+    .line 56
     :cond_1
     if-eqz v1, :cond_0
 
-    .line 5
+    .line 7
     :cond_2
-    invoke-virtual {p1}, Lcom/google/br;->f()Z
+    invoke-virtual {p1}, Lcom/google/cw;->f()Z
 
     move-result v0
 
     goto :goto_0
 .end method
 
-.method static c(Lcom/google/ai;)Lcom/google/d1;
+.method static c(Lcom/google/ai;)Lcom/google/gs;
     .locals 1
 
     .prologue
-    .line 16
-    iget-object v0, p0, Lcom/google/ai;->g:Lcom/google/d1;
+    .line 31
+    iget-object v0, p0, Lcom/google/ai;->f:Lcom/google/gs;
 
     return-object v0
 .end method
@@ -336,117 +334,136 @@
     .locals 2
 
     .prologue
-    .line 24
+    .line 35
     iget v0, p0, Lcom/google/ai;->e:I
 
-    .line 43
+    .line 47
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 57
     :goto_0
     return v0
 
-    .line 2
+    .line 19
     :cond_0
-    iget-object v0, p0, Lcom/google/ai;->f:Lcom/google/g7;
+    iget-object v0, p0, Lcom/google/ai;->f:Lcom/google/gs;
 
-    invoke-virtual {v0}, Lcom/google/g7;->d()Lcom/google/ab;
+    invoke-virtual {v0}, Lcom/google/gs;->e()Lcom/google/aO;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/ab;->l()Z
+    invoke-virtual {v0}, Lcom/google/aO;->f()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 29
-    iget-object v0, p0, Lcom/google/ai;->d:Lcom/google/br;
+    .line 37
+    iget-object v0, p0, Lcom/google/ai;->g:Lcom/google/cw;
 
-    invoke-virtual {v0}, Lcom/google/br;->e()I
+    invoke-virtual {v0}, Lcom/google/cw;->i()I
 
     move-result v0
 
-    .line 59
-    iget-object v1, p0, Lcom/google/ai;->g:Lcom/google/d1;
+    .line 45
+    iget-object v1, p0, Lcom/google/ai;->d:Lcom/google/bI;
 
-    invoke-virtual {v1}, Lcom/google/d1;->b()I
+    invoke-virtual {v1}, Lcom/google/bI;->c()I
 
     move-result v1
 
     add-int/2addr v0, v1
 
-    sget v1, Lcom/google/a8;->b:I
+    sget-boolean v1, Lcom/google/am;->b:Z
 
     if-eqz v1, :cond_2
 
-    .line 20
+    .line 30
     :cond_1
-    iget-object v0, p0, Lcom/google/ai;->d:Lcom/google/br;
+    iget-object v0, p0, Lcom/google/ai;->g:Lcom/google/cw;
 
-    invoke-virtual {v0}, Lcom/google/br;->b()I
+    invoke-virtual {v0}, Lcom/google/cw;->j()I
 
     move-result v0
 
-    .line 40
-    iget-object v1, p0, Lcom/google/ai;->g:Lcom/google/d1;
+    .line 49
+    iget-object v1, p0, Lcom/google/ai;->d:Lcom/google/bI;
 
-    invoke-virtual {v1}, Lcom/google/d1;->a()I
+    invoke-virtual {v1}, Lcom/google/bI;->a()I
 
     move-result v1
 
     add-int/2addr v0, v1
 
-    .line 56
+    .line 16
     :cond_2
     iput v0, p0, Lcom/google/ai;->e:I
 
     goto :goto_0
 .end method
 
-.method public a()Lcom/google/bb;
+.method public a()Lcom/google/P;
+    .locals 3
+
+    .prologue
+    .line 43
+    new-instance v0, Lcom/google/P;
+
+    iget-object v1, p0, Lcom/google/ai;->f:Lcom/google/gs;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lcom/google/P;-><init>(Lcom/google/gs;Lcom/google/dE;)V
+
+    return-object v0
+.end method
+
+.method public a()Lcom/google/bI;
     .locals 1
 
     .prologue
-    .line 27
-    invoke-virtual {p0}, Lcom/google/ai;->a()Lcom/google/ep;
+    .line 1
+    iget-object v0, p0, Lcom/google/ai;->d:Lcom/google/bI;
+
+    return-object v0
+.end method
+
+.method public a()Lcom/google/cI;
+    .locals 1
+
+    .prologue
+    .line 36
+    invoke-virtual {p0}, Lcom/google/ai;->a()Lcom/google/P;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public a()Lcom/google/ep;
+.method public a()Lcom/google/gs;
     .locals 1
 
     .prologue
-    .line 13
-    invoke-virtual {p0}, Lcom/google/ai;->c()Lcom/google/ep;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Lcom/google/ep;->a(Lcom/google/aO;)Lcom/google/ep;
-
-    move-result-object v0
+    .line 24
+    iget-object v0, p0, Lcom/google/ai;->f:Lcom/google/gs;
 
     return-object v0
 .end method
 
-.method public a(Lcom/google/e_;)V
+.method public a(Lcom/google/fN;)V
     .locals 1
 
     .prologue
-    .line 53
+    .line 51
     :try_start_0
-    iget-object v0, p0, Lcom/google/ai;->f:Lcom/google/g7;
+    iget-object v0, p0, Lcom/google/ai;->f:Lcom/google/gs;
 
-    invoke-virtual {v0}, Lcom/google/g7;->d()Lcom/google/ab;
+    invoke-virtual {v0}, Lcom/google/gs;->e()Lcom/google/aO;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/ab;->l()Z
+    invoke-virtual {v0}, Lcom/google/aO;->f()Z
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -454,37 +471,37 @@
 
     if-eqz v0, :cond_0
 
-    .line 31
+    .line 40
     :try_start_1
-    iget-object v0, p0, Lcom/google/ai;->d:Lcom/google/br;
+    iget-object v0, p0, Lcom/google/ai;->g:Lcom/google/cw;
 
-    invoke-virtual {v0, p1}, Lcom/google/br;->a(Lcom/google/e_;)V
+    invoke-virtual {v0, p1}, Lcom/google/cw;->b(Lcom/google/fN;)V
 
-    .line 34
-    iget-object v0, p0, Lcom/google/ai;->g:Lcom/google/d1;
+    .line 59
+    iget-object v0, p0, Lcom/google/ai;->d:Lcom/google/bI;
 
-    invoke-virtual {v0, p1}, Lcom/google/d1;->b(Lcom/google/e_;)V
+    invoke-virtual {v0, p1}, Lcom/google/bI;->b(Lcom/google/fN;)V
 
-    sget v0, Lcom/google/a8;->b:I
+    sget-boolean v0, Lcom/google/am;->b:Z
 
     if-eqz v0, :cond_1
 
-    .line 62
+    .line 61
     :cond_0
-    iget-object v0, p0, Lcom/google/ai;->d:Lcom/google/br;
+    iget-object v0, p0, Lcom/google/ai;->g:Lcom/google/cw;
 
-    invoke-virtual {v0, p1}, Lcom/google/br;->b(Lcom/google/e_;)V
+    invoke-virtual {v0, p1}, Lcom/google/cw;->a(Lcom/google/fN;)V
 
-    .line 52
-    iget-object v0, p0, Lcom/google/ai;->g:Lcom/google/d1;
+    .line 41
+    iget-object v0, p0, Lcom/google/ai;->d:Lcom/google/bI;
 
-    invoke-virtual {v0, p1}, Lcom/google/d1;->a(Lcom/google/e_;)V
+    invoke-virtual {v0, p1}, Lcom/google/bI;->a(Lcom/google/fN;)V
 
-    .line 51
+    .line 33
     :cond_1
     return-void
 
-    .line 34
+    .line 59
     :catch_0
     move-exception v0
 
@@ -492,100 +509,80 @@
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 52
+    .line 41
     :catch_1
     move-exception v0
 
     throw v0
 .end method
 
-.method public a(Lcom/google/e9;)Z
+.method public a(Lcom/google/bh;)Z
     .locals 1
 
     .prologue
-    .line 37
-    invoke-direct {p0, p1}, Lcom/google/ai;->a(Lcom/google/e9;)V
+    .line 46
+    invoke-direct {p0, p1}, Lcom/google/ai;->a(Lcom/google/bh;)V
 
-    .line 3
-    iget-object v0, p0, Lcom/google/ai;->d:Lcom/google/br;
+    .line 14
+    iget-object v0, p0, Lcom/google/ai;->g:Lcom/google/cw;
 
-    invoke-virtual {v0, p1}, Lcom/google/br;->a(Lcom/google/g1;)Z
+    invoke-virtual {v0, p1}, Lcom/google/cw;->b(Lcom/google/dK;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public b()Lcom/google/aO;
+.method public b()Lcom/google/P;
     .locals 1
 
     .prologue
-    .line 41
-    invoke-virtual {p0}, Lcom/google/ai;->b()Lcom/google/ai;
+    .line 38
+    invoke-virtual {p0}, Lcom/google/ai;->a()Lcom/google/P;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Lcom/google/P;->a(Lcom/google/c7;)Lcom/google/P;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public b()Lcom/google/ai;
+.method public b()Lcom/google/cU;
     .locals 1
 
     .prologue
-    .line 33
-    iget-object v0, p0, Lcom/google/ai;->f:Lcom/google/g7;
+    .line 44
+    new-instance v0, Lcom/google/dE;
 
-    invoke-static {v0}, Lcom/google/ai;->b(Lcom/google/g7;)Lcom/google/ai;
-
-    move-result-object v0
+    invoke-direct {v0, p0}, Lcom/google/dE;-><init>(Lcom/google/ai;)V
 
     return-object v0
 .end method
 
-.method public b()Lcom/google/g6;
-    .locals 1
-
-    .prologue
-    .line 25
-    new-instance v0, Lcom/google/fN;
-
-    invoke-direct {v0, p0}, Lcom/google/fN;-><init>(Lcom/google/ai;)V
-
-    return-object v0
-.end method
-
-.method public b()Lcom/google/g7;
-    .locals 1
-
-    .prologue
-    .line 17
-    iget-object v0, p0, Lcom/google/ai;->f:Lcom/google/g7;
-
-    return-object v0
-.end method
-
-.method public b(Lcom/google/e9;)Ljava/lang/Object;
+.method public b(Lcom/google/bh;)Ljava/lang/Object;
     .locals 3
 
     .prologue
-    sget v1, Lcom/google/a8;->b:I
+    sget-boolean v1, Lcom/google/am;->b:Z
 
-    .line 47
-    invoke-direct {p0, p1}, Lcom/google/ai;->a(Lcom/google/e9;)V
+    .line 13
+    invoke-direct {p0, p1}, Lcom/google/ai;->a(Lcom/google/bh;)V
 
-    .line 1
-    iget-object v0, p0, Lcom/google/ai;->d:Lcom/google/br;
+    .line 20
+    iget-object v0, p0, Lcom/google/ai;->g:Lcom/google/cw;
 
-    invoke-virtual {v0, p1}, Lcom/google/br;->c(Lcom/google/g1;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Lcom/google/cw;->a(Lcom/google/dK;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 9
+    .line 15
     if-nez v0, :cond_2
 
-    .line 23
+    .line 18
     :try_start_0
-    invoke-virtual {p1}, Lcom/google/e9;->d()Z
+    invoke-virtual {p1}, Lcom/google/bh;->d()Z
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -593,144 +590,132 @@
 
     if-eqz v0, :cond_0
 
-    .line 39
+    .line 9
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
     if-eqz v1, :cond_2
 
-    .line 45
+    .line 12
     :cond_0
     :try_start_1
-    invoke-virtual {p1}, Lcom/google/e9;->e()Lcom/google/db;
+    invoke-virtual {p1}, Lcom/google/bh;->o()Lcom/google/fa;
 
     move-result-object v0
 
-    sget-object v2, Lcom/google/db;->MESSAGE:Lcom/google/db;
+    sget-object v2, Lcom/google/fa;->MESSAGE:Lcom/google/fa;
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
     if-ne v0, v2, :cond_1
 
-    .line 15
-    invoke-virtual {p1}, Lcom/google/e9;->f()Lcom/google/g7;
+    .line 17
+    invoke-virtual {p1}, Lcom/google/bh;->n()Lcom/google/gs;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/ai;->b(Lcom/google/g7;)Lcom/google/ai;
+    invoke-static {v0}, Lcom/google/ai;->b(Lcom/google/gs;)Lcom/google/ai;
 
     move-result-object v0
 
     if-eqz v1, :cond_2
 
-    .line 22
+    .line 26
     :cond_1
-    invoke-virtual {p1}, Lcom/google/e9;->g()Ljava/lang/Object;
+    invoke-virtual {p1}, Lcom/google/bh;->i()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 30
+    .line 32
     :cond_2
     return-object v0
 
-    .line 23
+    .line 18
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 45
+    .line 12
     :catch_1
     move-exception v0
 
     throw v0
 .end method
 
-.method public c()Lcom/google/b3;
+.method public b()Ljava/util/Map;
     .locals 1
 
     .prologue
-    .line 12
-    invoke-virtual {p0}, Lcom/google/ai;->c()Lcom/google/ep;
+    .line 25
+    iget-object v0, p0, Lcom/google/ai;->g:Lcom/google/cw;
+
+    invoke-virtual {v0}, Lcom/google/cw;->g()Ljava/util/Map;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public c()Lcom/google/bb;
+.method public c()Lcom/google/ai;
     .locals 1
 
     .prologue
-    .line 60
-    invoke-virtual {p0}, Lcom/google/ai;->c()Lcom/google/ep;
+    .line 29
+    iget-object v0, p0, Lcom/google/ai;->f:Lcom/google/gs;
+
+    invoke-static {v0}, Lcom/google/ai;->b(Lcom/google/gs;)Lcom/google/ai;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public c()Lcom/google/eE;
+.method public c()Lcom/google/cI;
     .locals 1
 
     .prologue
-    .line 8
-    invoke-virtual {p0}, Lcom/google/ai;->b()Lcom/google/ai;
+    .line 54
+    invoke-virtual {p0}, Lcom/google/ai;->b()Lcom/google/P;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public c()Lcom/google/ep;
-    .locals 3
-
-    .prologue
-    .line 61
-    new-instance v0, Lcom/google/ep;
-
-    iget-object v1, p0, Lcom/google/ai;->f:Lcom/google/g7;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2}, Lcom/google/ep;-><init>(Lcom/google/g7;Lcom/google/fN;)V
-
-    return-object v0
-.end method
-
-.method public c()Ljava/util/Map;
+.method public c()Lcom/google/gi;
     .locals 1
 
     .prologue
-    .line 7
-    iget-object v0, p0, Lcom/google/ai;->d:Lcom/google/br;
-
-    invoke-virtual {v0}, Lcom/google/br;->c()Ljava/util/Map;
+    .line 21
+    invoke-virtual {p0}, Lcom/google/ai;->c()Lcom/google/ai;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public d()Lcom/google/b3;
+.method public d()Lcom/google/A;
     .locals 1
 
     .prologue
-    .line 32
-    invoke-virtual {p0}, Lcom/google/ai;->a()Lcom/google/ep;
+    .line 11
+    invoke-virtual {p0}, Lcom/google/ai;->a()Lcom/google/P;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public d()Lcom/google/d1;
+.method public d()Lcom/google/c7;
     .locals 1
 
     .prologue
-    .line 19
-    iget-object v0, p0, Lcom/google/ai;->g:Lcom/google/d1;
+    .line 6
+    invoke-virtual {p0}, Lcom/google/ai;->c()Lcom/google/ai;
+
+    move-result-object v0
 
     return-object v0
 .end method
@@ -739,14 +724,26 @@
     .locals 2
 
     .prologue
-    .line 50
-    iget-object v0, p0, Lcom/google/ai;->f:Lcom/google/g7;
+    .line 2
+    iget-object v0, p0, Lcom/google/ai;->f:Lcom/google/gs;
 
-    iget-object v1, p0, Lcom/google/ai;->d:Lcom/google/br;
+    iget-object v1, p0, Lcom/google/ai;->g:Lcom/google/cw;
 
-    invoke-static {v0, v1}, Lcom/google/ai;->b(Lcom/google/g7;Lcom/google/br;)Z
+    invoke-static {v0, v1}, Lcom/google/ai;->b(Lcom/google/gs;Lcom/google/cw;)Z
 
     move-result v0
 
     return v0
+.end method
+
+.method public e()Lcom/google/A;
+    .locals 1
+
+    .prologue
+    .line 50
+    invoke-virtual {p0}, Lcom/google/ai;->b()Lcom/google/P;
+
+    move-result-object v0
+
+    return-object v0
 .end method

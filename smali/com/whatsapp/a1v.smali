@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/VoipActivity;
+.field final a:Lcom/whatsapp/ari;
 
 .field final b:I
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/VoipActivity;I)V
+.method constructor <init>(Lcom/whatsapp/ari;I)V
     .locals 0
 
     .prologue
     .line 1
-    iput-object p1, p0, Lcom/whatsapp/a1v;->a:Lcom/whatsapp/VoipActivity;
+    iput-object p1, p0, Lcom/whatsapp/a1v;->a:Lcom/whatsapp/ari;
 
     iput p2, p0, Lcom/whatsapp/a1v;->b:I
 
@@ -30,28 +30,39 @@
 
 # virtual methods
 .method public run()V
-    .locals 3
+    .locals 2
 
     .prologue
-    .line 3
-    sget v0, Lcom/whatsapp/App;->G:I
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/a1v;->a:Lcom/whatsapp/ari;
 
-    const/4 v1, 0x3
+    invoke-virtual {v0}, Lcom/whatsapp/ari;->isCancelled()Z
 
-    if-ne v0, v1, :cond_0
+    move-result v0
+
+    if-nez v0, :cond_0
 
     .line 4
-    iget-object v0, p0, Lcom/whatsapp/a1v;->a:Lcom/whatsapp/VoipActivity;
+    iget-object v0, p0, Lcom/whatsapp/a1v;->a:Lcom/whatsapp/ari;
 
-    invoke-virtual {v0}, Lcom/whatsapp/VoipActivity;->getApplicationContext()Landroid/content/Context;
+    iget-object v0, v0, Lcom/whatsapp/ari;->a:Lcom/whatsapp/ContactInfo;
+
+    const v1, 0x7f0b0123
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/ContactInfo;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 3
     iget v1, p0, Lcom/whatsapp/a1v;->b:I
 
-    const/4 v2, 0x1
+    invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 2
     :cond_0

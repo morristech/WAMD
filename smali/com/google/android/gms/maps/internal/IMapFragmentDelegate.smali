@@ -6,10 +6,13 @@
 
 
 # virtual methods
+.method public abstract getMapAsync(Lcom/google/android/gms/maps/internal/m;)V
+.end method
+
 .method public abstract onCreate(Landroid/os/Bundle;)V
 .end method
 
-.method public abstract onCreateView(Lcom/google/android/gms/dynamic/b;Lcom/google/android/gms/dynamic/b;Landroid/os/Bundle;)Lcom/google/android/gms/dynamic/b;
+.method public abstract onCreateView(Lcom/google/android/gms/dynamic/d;Lcom/google/android/gms/dynamic/d;Landroid/os/Bundle;)Lcom/google/android/gms/dynamic/d;
 .end method
 
 .method public abstract onDestroy()V
@@ -18,7 +21,7 @@
 .method public abstract onDestroyView()V
 .end method
 
-.method public abstract onInflate(Lcom/google/android/gms/dynamic/b;Lcom/google/android/gms/maps/GoogleMapOptions;Landroid/os/Bundle;)V
+.method public abstract onInflate(Lcom/google/android/gms/dynamic/d;Lcom/google/android/gms/maps/GoogleMapOptions;Landroid/os/Bundle;)V
 .end method
 
 .method public abstract onLowMemory()V

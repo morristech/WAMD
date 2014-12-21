@@ -26,7 +26,7 @@
     .locals 1
 
     .prologue
-    .line 104
+    .line 8
     const/4 v0, 0x4
 
     new-array v0, v0, [I
@@ -54,24 +54,24 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 20
+    .line 58
     invoke-direct {p0, p1, p2}, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 22
+    .line 18
     sget-object v0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->R_styleable_LinearLayout:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
-    .line 60
+    .line 52
     invoke-virtual {v0, v2}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
     invoke-virtual {p0, v1}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->setDividerDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 150
+    .line 139
     const/4 v1, 0x2
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -80,7 +80,7 @@
 
     iput v1, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mShowDividers:I
 
-    .line 27
+    .line 146
     const/4 v1, 0x3
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
@@ -89,7 +89,7 @@
 
     iput v1, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDividerPadding:I
 
-    .line 112
+    .line 98
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -98,10 +98,10 @@
 
     iput-boolean v1, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mUseLargestChild:Z
 
-    .line 39
+    .line 101
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 10
+    .line 122
     return-void
 .end method
 
@@ -113,9 +113,9 @@
 
     const/4 v2, 0x0
 
-    sget-boolean v4, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v4, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
-    .line 106
+    .line 96
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildCount()I
 
     move-result v5
@@ -124,16 +124,16 @@
 
     move v0, v2
 
-    .line 38
+    .line 131
     :cond_0
     if-ge v1, v5, :cond_1
 
-    .line 111
+    .line 119
     invoke-virtual {p0, v1}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 62
+    .line 140
     invoke-virtual {v3}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v3
@@ -142,7 +142,7 @@
 
     move-result v0
 
-    .line 55
+    .line 161
     add-int/lit8 v1, v1, 0x1
 
     if-eqz v4, :cond_0
@@ -152,16 +152,16 @@
 
     move v3, v2
 
-    .line 169
+    .line 67
     :goto_0
     if-ge v3, v5, :cond_6
 
-    .line 110
+    .line 89
     invoke-virtual {p0, v3}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v6
 
-    .line 63
+    .line 115
     if-eqz v6, :cond_5
 
     invoke-virtual {v6}, Landroid/view/View;->getVisibility()I
@@ -172,10 +172,10 @@
 
     if-ne v0, v7, :cond_2
 
-    .line 32
+    .line 19
     if-eqz v4, :cond_5
 
-    .line 33
+    .line 112
     :cond_2
     invoke-virtual {v6}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -183,22 +183,22 @@
 
     check-cast v0, Landroid/widget/LinearLayout$LayoutParams;
 
-    .line 163
+    .line 123
     iget v7, v0, Landroid/widget/LinearLayout$LayoutParams;->weight:F
 
-    .line 127
+    .line 15
     const/4 v8, 0x0
 
     cmpl-float v7, v7, v8
 
     if-lez v7, :cond_3
 
-    .line 51
+    .line 147
     invoke-static {v1, v9}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v7
 
-    .line 98
+    .line 86
     invoke-virtual {v6}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v8
@@ -207,15 +207,15 @@
 
     move-result v8
 
-    .line 145
+    .line 102
     invoke-virtual {v6, v7, v8}, Landroid/view/View;->measure(II)V
 
-    .line 8
+    .line 132
     add-int/2addr v2, v1
 
     if-eqz v4, :cond_4
 
-    .line 100
+    .line 42
     :cond_3
     invoke-virtual {v6}, Landroid/view/View;->getMeasuredWidth()I
 
@@ -223,7 +223,7 @@
 
     add-int/2addr v2, v6
 
-    .line 42
+    .line 106
     :cond_4
     iget v6, v0, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
@@ -233,13 +233,13 @@
 
     add-int/2addr v2, v0
 
-    .line 165
+    .line 14
     :cond_5
     add-int/lit8 v0, v3, 0x1
 
     if-eqz v4, :cond_7
 
-    .line 133
+    .line 39
     :cond_6
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getPaddingLeft()I
 
@@ -253,14 +253,14 @@
 
     add-int/2addr v0, v2
 
-    .line 146
+    .line 75
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getMeasuredHeight()I
 
     move-result v1
 
     invoke-virtual {p0, v0, v1}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->setMeasuredDimension(II)V
 
-    .line 155
+    .line 2
     return-void
 
     :cond_7
@@ -277,9 +277,9 @@
 
     const/4 v2, 0x0
 
-    sget-boolean v4, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v4, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
-    .line 168
+    .line 145
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildCount()I
 
     move-result v5
@@ -288,16 +288,16 @@
 
     move v0, v2
 
-    .line 132
+    .line 133
     :cond_0
     if-ge v1, v5, :cond_1
 
-    .line 12
+    .line 93
     invoke-virtual {p0, v1}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 154
+    .line 79
     invoke-virtual {v3}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v3
@@ -306,7 +306,7 @@
 
     move-result v0
 
-    .line 7
+    .line 68
     add-int/lit8 v1, v1, 0x1
 
     if-eqz v4, :cond_0
@@ -316,16 +316,16 @@
 
     move v3, v2
 
-    .line 83
+    .line 26
     :goto_0
     if-ge v3, v5, :cond_6
 
-    .line 125
+    .line 23
     invoke-virtual {p0, v3}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v6
 
-    .line 4
+    .line 154
     if-eqz v6, :cond_5
 
     invoke-virtual {v6}, Landroid/view/View;->getVisibility()I
@@ -336,10 +336,10 @@
 
     if-ne v0, v7, :cond_2
 
-    .line 94
+    .line 11
     if-eqz v4, :cond_5
 
-    .line 140
+    .line 85
     :cond_2
     invoke-virtual {v6}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -347,17 +347,17 @@
 
     check-cast v0, Landroid/widget/LinearLayout$LayoutParams;
 
-    .line 86
+    .line 138
     iget v7, v0, Landroid/widget/LinearLayout$LayoutParams;->weight:F
 
-    .line 73
+    .line 155
     const/4 v8, 0x0
 
     cmpl-float v7, v7, v8
 
     if-lez v7, :cond_3
 
-    .line 2
+    .line 107
     invoke-virtual {v6}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v7
@@ -366,20 +366,20 @@
 
     move-result v7
 
-    .line 88
+    .line 9
     invoke-static {v1, v9}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v8
 
-    .line 144
+    .line 167
     invoke-virtual {v6, v7, v8}, Landroid/view/View;->measure(II)V
 
-    .line 48
+    .line 57
     add-int/2addr v2, v1
 
     if-eqz v4, :cond_4
 
-    .line 103
+    .line 99
     :cond_3
     invoke-virtual {v6}, Landroid/view/View;->getMeasuredHeight()I
 
@@ -387,7 +387,7 @@
 
     add-int/2addr v2, v6
 
-    .line 167
+    .line 17
     :cond_4
     iget v6, v0, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
@@ -397,13 +397,13 @@
 
     add-int/2addr v2, v0
 
-    .line 162
+    .line 166
     :cond_5
     add-int/lit8 v0, v3, 0x1
 
     if-eqz v4, :cond_7
 
-    .line 148
+    .line 170
     :cond_6
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getPaddingLeft()I
 
@@ -417,14 +417,14 @@
 
     add-int/2addr v0, v2
 
-    .line 41
+    .line 150
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getMeasuredWidth()I
 
     move-result v1
 
     invoke-virtual {p0, v1, v0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->setMeasuredDimension(II)V
 
-    .line 66
+    .line 13
     return-void
 
     :cond_7
@@ -439,14 +439,14 @@
     .locals 6
 
     .prologue
-    sget-boolean v2, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v2, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
-    .line 87
+    .line 164
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildCount()I
 
     move-result v3
 
-    .line 14
+    .line 64
     const/4 v0, 0x0
 
     move v1, v0
@@ -454,12 +454,12 @@
     :goto_0
     if-ge v1, v3, :cond_1
 
-    .line 13
+    .line 1
     invoke-virtual {p0, v1}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
 
-    .line 26
+    .line 110
     if-eqz v4, :cond_0
 
     invoke-virtual {v4}, Landroid/view/View;->getVisibility()I
@@ -470,21 +470,21 @@
 
     if-eq v0, v5, :cond_0
 
-    .line 47
+    .line 153
     invoke-virtual {p0, v1}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->hasDividerBeforeChildAt(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 21
+    .line 37
     invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/LinearLayout$LayoutParams;
 
-    .line 56
+    .line 80
     invoke-virtual {v4}, Landroid/view/View;->getLeft()I
 
     move-result v4
@@ -493,16 +493,16 @@
 
     sub-int v0, v4, v0
 
-    .line 89
+    .line 158
     invoke-virtual {p0, p1, v0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->drawVerticalDivider(Landroid/graphics/Canvas;I)V
 
-    .line 147
+    .line 25
     :cond_0
     add-int/lit8 v0, v1, 0x1
 
     if-eqz v2, :cond_5
 
-    .line 170
+    .line 105
     :cond_1
     invoke-virtual {p0, v3}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->hasDividerBeforeChildAt(I)Z
 
@@ -510,17 +510,17 @@
 
     if-eqz v0, :cond_4
 
-    .line 23
+    .line 71
     add-int/lit8 v0, v3, -0x1
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 65
+    .line 47
     if-nez v1, :cond_2
 
-    .line 161
+    .line 143
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getWidth()I
 
     move-result v0
@@ -537,17 +537,17 @@
 
     if-eqz v2, :cond_3
 
-    .line 25
+    .line 109
     :cond_2
     invoke-virtual {v1}, Landroid/view/View;->getRight()I
 
     move-result v0
 
-    .line 61
+    .line 127
     :cond_3
     invoke-virtual {p0, p1, v0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->drawVerticalDivider(Landroid/graphics/Canvas;I)V
 
-    .line 37
+    .line 90
     :cond_4
     return-void
 
@@ -561,14 +561,14 @@
     .locals 6
 
     .prologue
-    sget-boolean v2, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v2, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
-    .line 141
+    .line 160
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildCount()I
 
     move-result v3
 
-    .line 134
+    .line 31
     const/4 v0, 0x0
 
     move v1, v0
@@ -576,12 +576,12 @@
     :goto_0
     if-ge v1, v3, :cond_1
 
-    .line 122
+    .line 44
     invoke-virtual {p0, v1}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
 
-    .line 36
+    .line 74
     if-eqz v4, :cond_0
 
     invoke-virtual {v4}, Landroid/view/View;->getVisibility()I
@@ -592,21 +592,21 @@
 
     if-eq v0, v5, :cond_0
 
-    .line 31
+    .line 126
     invoke-virtual {p0, v1}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->hasDividerBeforeChildAt(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 149
+    .line 104
     invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/LinearLayout$LayoutParams;
 
-    .line 44
+    .line 21
     invoke-virtual {v4}, Landroid/view/View;->getTop()I
 
     move-result v4
@@ -615,16 +615,16 @@
 
     sub-int v0, v4, v0
 
-    .line 24
+    .line 128
     invoke-virtual {p0, p1, v0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->drawHorizontalDivider(Landroid/graphics/Canvas;I)V
 
-    .line 101
+    .line 103
     :cond_0
     add-int/lit8 v0, v1, 0x1
 
     if-eqz v2, :cond_5
 
-    .line 124
+    .line 59
     :cond_1
     invoke-virtual {p0, v3}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->hasDividerBeforeChildAt(I)Z
 
@@ -632,17 +632,17 @@
 
     if-eqz v0, :cond_4
 
-    .line 97
+    .line 27
     add-int/lit8 v0, v3, -0x1
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 91
+    .line 156
     if-nez v1, :cond_2
 
-    .line 71
+    .line 78
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getHeight()I
 
     move-result v0
@@ -659,17 +659,17 @@
 
     if-eqz v2, :cond_3
 
-    .line 131
+    .line 7
     :cond_2
     invoke-virtual {v1}, Landroid/view/View;->getBottom()I
 
     move-result v0
 
-    .line 49
+    .line 141
     :cond_3
     invoke-virtual {p0, p1, v0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->drawHorizontalDivider(Landroid/graphics/Canvas;I)V
 
-    .line 164
+    .line 94
     :cond_4
     return-void
 
@@ -683,7 +683,7 @@
     .locals 4
 
     .prologue
-    .line 28
+    .line 82
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDivider:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getPaddingLeft()I
@@ -694,7 +694,7 @@
 
     add-int/2addr v1, v2
 
-    .line 156
+    .line 38
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getWidth()I
 
     move-result v2
@@ -713,15 +713,15 @@
 
     add-int/2addr v3, p2
 
-    .line 151
+    .line 24
     invoke-virtual {v0, v1, p2, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 138
+    .line 73
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDivider:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 80
+    .line 41
     return-void
 .end method
 
@@ -729,7 +729,7 @@
     .locals 5
 
     .prologue
-    .line 54
+    .line 149
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDivider:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getPaddingTop()I
@@ -744,7 +744,7 @@
 
     add-int/2addr v2, p2
 
-    .line 69
+    .line 6
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getHeight()I
 
     move-result v3
@@ -759,15 +759,15 @@
 
     sub-int/2addr v3, v4
 
-    .line 128
+    .line 97
     invoke-virtual {v0, p2, v1, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 152
+    .line 116
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDivider:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 153
+    .line 32
     return-void
 .end method
 
@@ -775,7 +775,7 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 36
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDividerPadding:I
 
     return v0
@@ -785,7 +785,7 @@
     .locals 1
 
     .prologue
-    .line 96
+    .line 162
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mShowDividers:I
 
     return v0
@@ -799,19 +799,19 @@
 
     const/4 v1, 0x0
 
-    sget-boolean v3, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v3, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
-    .line 113
+    .line 10
     if-nez p1, :cond_2
 
-    .line 105
+    .line 53
     iget v2, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mShowDividers:I
 
     and-int/lit8 v2, v2, 0x1
 
     if-eqz v2, :cond_1
 
-    .line 143
+    .line 168
     :cond_0
     :goto_0
     return v0
@@ -819,10 +819,10 @@
     :cond_1
     move v0, v1
 
-    .line 105
+    .line 53
     goto :goto_0
 
-    .line 136
+    .line 34
     :cond_2
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildCount()I
 
@@ -830,7 +830,7 @@
 
     if-ne p1, v2, :cond_3
 
-    .line 143
+    .line 124
     iget v2, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mShowDividers:I
 
     and-int/lit8 v2, v2, 0x4
@@ -841,7 +841,7 @@
 
     goto :goto_0
 
-    .line 43
+    .line 84
     :cond_3
     iget v2, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mShowDividers:I
 
@@ -849,13 +849,13 @@
 
     if-eqz v2, :cond_7
 
-    .line 114
+    .line 45
     add-int/lit8 v2, p1, -0x1
 
     :cond_4
     if-ltz v2, :cond_6
 
-    .line 35
+    .line 3
     invoke-virtual {p0, v2}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
@@ -868,12 +868,12 @@
 
     if-eq v4, v5, :cond_5
 
-    .line 18
+    .line 88
     if-eqz v3, :cond_0
 
     move v1, v0
 
-    .line 117
+    .line 136
     :cond_5
     add-int/lit8 v2, v2, -0x1
 
@@ -887,7 +887,7 @@
     :cond_7
     move v0, v1
 
-    .line 108
+    .line 168
     goto :goto_0
 .end method
 
@@ -895,7 +895,7 @@
     .locals 1
 
     .prologue
-    .line 72
+    .line 148
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mUseLargestChild:Z
 
     return v0
@@ -907,87 +907,87 @@
     .prologue
     const/4 v6, 0x1
 
-    sget-boolean v1, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v1, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
-    .line 50
+    .line 157
     invoke-virtual {p0, p1}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->indexOfChild(Landroid/view/View;)I
 
     move-result v2
 
-    .line 107
+    .line 65
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getOrientation()I
 
     move-result v3
 
-    .line 93
+    .line 151
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/LinearLayout$LayoutParams;
 
-    .line 77
+    .line 48
     invoke-virtual {p0, v2}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->hasDividerBeforeChildAt(I)Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    .line 68
+    .line 134
     if-ne v3, v6, :cond_0
 
-    .line 79
+    .line 20
     iget v4, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDividerHeight:I
 
     iput v4, v0, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
     if-eqz v1, :cond_1
 
-    .line 59
+    .line 121
     :cond_0
     iget v4, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDividerWidth:I
 
     iput v4, v0, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 121
+    .line 12
     :cond_1
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getChildCount()I
 
     move-result v4
 
-    .line 9
+    .line 66
     add-int/lit8 v5, v4, -0x1
 
     if-ne v2, v5, :cond_3
 
-    .line 158
+    .line 130
     invoke-virtual {p0, v4}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->hasDividerBeforeChildAt(I)Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 129
+    .line 55
     if-ne v3, v6, :cond_2
 
-    .line 116
+    .line 83
     iget v2, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDividerHeight:I
 
     iput v2, v0, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
     if-eqz v1, :cond_3
 
-    .line 15
+    .line 56
     :cond_2
     iget v1, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDividerWidth:I
 
     iput v1, v0, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 115
+    .line 69
     :cond_3
     invoke-super/range {p0 .. p5}, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout;->measureChildWithMargins(Landroid/view/View;IIII)V
 
-    .line 84
+    .line 108
     return-void
 .end method
 
@@ -995,12 +995,12 @@
     .locals 2
 
     .prologue
-    .line 137
+    .line 46
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDivider:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_1
 
-    .line 17
+    .line 129
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getOrientation()I
 
     move-result v0
@@ -1009,22 +1009,22 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 3
+    .line 113
     invoke-virtual {p0, p1}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->drawDividersVertical(Landroid/graphics/Canvas;)V
 
-    sget-boolean v0, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v0, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
     if-eqz v0, :cond_1
 
-    .line 78
+    .line 4
     :cond_0
     invoke-virtual {p0, p1}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->drawDividersHorizontal(Landroid/graphics/Canvas;)V
 
-    .line 11
+    .line 22
     :cond_1
     invoke-super {p0, p1}, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 1
+    .line 95
     return-void
 .end method
 
@@ -1032,43 +1032,43 @@
     .locals 1
 
     .prologue
-    .line 166
+    .line 114
     invoke-super {p0, p1, p2}, Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout;->onMeasure(II)V
 
-    .line 139
+    .line 49
     iget-boolean v0, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mUseLargestChild:Z
 
     if-eqz v0, :cond_0
 
-    .line 45
+    .line 92
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->getOrientation()I
 
     move-result v0
 
-    .line 118
+    .line 30
     packed-switch v0, :pswitch_data_0
 
-    .line 85
+    .line 111
     :cond_0
     :goto_0
     return-void
 
-    .line 16
+    .line 51
     :pswitch_0
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->useLargestChildHorizontal()V
 
-    .line 70
-    sget-boolean v0, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    .line 118
+    sget v0, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
     if-eqz v0, :cond_0
 
-    .line 102
+    .line 70
     :pswitch_1
     invoke-direct {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->useLargestChildVertical()V
 
     goto :goto_0
 
-    .line 118
+    .line 30
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -1082,48 +1082,48 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 157
+    .line 60
     iget-object v1, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDivider:Landroid/graphics/drawable/Drawable;
 
     if-ne p1, v1, :cond_0
 
-    .line 142
+    .line 35
     :goto_0
     return-void
 
-    .line 160
+    .line 28
     :cond_0
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDivider:Landroid/graphics/drawable/Drawable;
 
-    .line 34
+    .line 62
     if-eqz p1, :cond_1
 
-    .line 5
+    .line 76
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v1
 
     iput v1, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDividerWidth:I
 
-    .line 92
+    .line 43
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v1
 
     iput v1, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDividerHeight:I
 
-    sget-boolean v1, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v1, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
     if-eqz v1, :cond_2
 
-    .line 67
+    .line 142
     :cond_1
     iput v0, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDividerWidth:I
 
-    .line 109
+    .line 61
     iput v0, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDividerHeight:I
 
-    .line 159
+    .line 169
     :cond_2
     if-nez p1, :cond_3
 
@@ -1132,7 +1132,7 @@
     :cond_3
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->setWillNotDraw(Z)V
 
-    .line 75
+    .line 137
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->requestLayout()V
 
     goto :goto_0
@@ -1142,10 +1142,10 @@
     .locals 0
 
     .prologue
-    .line 74
+    .line 87
     iput p1, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mDividerPadding:I
 
-    .line 46
+    .line 91
     return-void
 .end method
 
@@ -1153,10 +1153,10 @@
     .locals 0
 
     .prologue
-    .line 6
+    .line 33
     iput-boolean p1, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mUseLargestChild:Z
 
-    .line 82
+    .line 81
     return-void
 .end method
 
@@ -1164,21 +1164,21 @@
     .locals 1
 
     .prologue
-    .line 29
+    .line 117
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mShowDividers:I
 
     if-eq p1, v0, :cond_0
 
-    .line 81
+    .line 40
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->requestLayout()V
 
-    .line 99
+    .line 163
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->invalidate()V
 
-    .line 76
+    .line 72
     :cond_0
     iput p1, p0, Lcom/actionbarsherlock/internal/widget/IcsLinearLayout;->mShowDividers:I
 
-    .line 30
+    .line 29
     return-void
 .end method

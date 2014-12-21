@@ -3,40 +3,42 @@
 .source "ProfilePhotoReminder.java"
 
 # interfaces
-.implements Lcom/whatsapp/o7;
+.implements Lcom/whatsapp/by;
 
 
 # static fields
-.field public static k:Z
+.field public static q:Z
 
 .field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field private j:Landroid/graphics/Bitmap;
+.field private j:Landroid/widget/ImageView;
 
-.field private l:Landroid/view/View;
+.field private k:Landroid/os/Handler;
 
-.field private m:Lcom/whatsapp/s;
+.field private l:Landroid/graphics/Bitmap;
 
-.field private n:Ljava/lang/Runnable;
+.field private m:Lcom/whatsapp/atu;
 
-.field private o:Landroid/widget/TextView;
+.field private n:Landroid/view/View;
 
-.field private p:Landroid/widget/EditText;
+.field private o:Landroid/widget/EditText;
 
-.field private q:Lcom/whatsapp/a09;
+.field private p:Lcom/whatsapp/tc;
 
-.field private r:Landroid/widget/ImageView;
+.field private r:Landroid/widget/TextView;
 
-.field private s:Lcom/whatsapp/adg;
+.field private s:Ljava/lang/Runnable;
 
-.field private t:Landroid/os/Handler;
+.field private t:Lcom/whatsapp/_1;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 14
+
+    const/4 v5, 0x4
 
     const/4 v4, 0x3
 
@@ -44,15 +46,13 @@
 
     const/4 v2, 0x1
 
-    const/4 v5, 0x4
-
     const/4 v1, 0x0
 
     const/4 v0, 0x7
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "fz-v$|l\u0006"
+    const-string v6, "c&lQ3y0G"
 
     const/4 v0, -0x1
 
@@ -90,7 +90,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "\u007f{\u001db(cl\u0002l.{f\u0000a,fg\u0016a3 j\u0000a {l]j.\"d\u0017"
+    const-string v0, "z\'\\E?f0CK9~:AF;c;WF$%1VP\"x:J"
 
     move-object v6, v0
 
@@ -105,7 +105,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "lf\u001cr$}z\u0013p(`g\u0001$#`|\u001cg$/}\u001d$,n`\u001c"
+    const-string v0, "z\'\\E?f0CK9~:AF;c;WF$%&D\u000e3r%ZQ3n"
 
     move-object v6, v0
 
@@ -120,7 +120,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "\u007f{\u001db(cl\u0002l.{f\u0000a,fg\u0016a3 z\u0005)$wy\u001bv$k"
+    const-string v0, "z\'\\E?f0CK9~:AF;c;WF$%6AF7~0"
 
     move-object v6, v0
 
@@ -135,7 +135,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "\u007f{\u001db(cl\u0002l.{f\u0000a,fg\u0016a3 j\u0000a {l"
+    const-string v0, "i:]U3x&RW?e;@\u00034e ]@3*!\\\u0003;k<]"
 
     move-object v6, v0
 
@@ -152,7 +152,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "\u007f{\u001db(cl\u0002l.{f\u0000a,fg\u0016a3 j\u001ek\"d$\u0005v.an"
+    const-string v0, "z\'\\E?f0CK9~:AF;c;WF$%6_L5axDQ9d2"
 
     move v7, v6
 
@@ -169,7 +169,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "\u007f{\u001db(cl\u0002l.{f\u0000a,fg\u0016a3 m\u0017w5}f\u000b"
+    const-string v6, "z\'\\E?f0CK9~:AF;c;WF$%6AF7~0\u001cM9\'8V"
 
     const/4 v0, 0x5
 
@@ -191,7 +191,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x41
+    const/16 v6, 0x56
 
     :goto_2
     xor-int/2addr v6, v13
@@ -207,26 +207,24 @@
     goto :goto_1
 
     :pswitch_6
-    const/16 v6, 0xf
+    const/16 v6, 0xa
 
     goto :goto_2
 
     :pswitch_7
-    const/16 v6, 0x9
+    const/16 v6, 0x55
 
     goto :goto_2
 
     :pswitch_8
-    const/16 v6, 0x72
+    const/16 v6, 0x33
 
     goto :goto_2
 
     :pswitch_9
-    move v6, v5
+    const/16 v6, 0x23
 
     goto :goto_2
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -251,25 +249,25 @@
     .locals 1
 
     .prologue
-    .line 64
+    .line 90
     invoke-direct {p0}, Lcom/whatsapp/DialogToastActivity;-><init>()V
 
-    .line 84
-    new-instance v0, Lcom/whatsapp/ah;
+    .line 72
+    new-instance v0, Lcom/whatsapp/arv;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/ah;-><init>(Lcom/whatsapp/ProfilePhotoReminder;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/arv;-><init>(Lcom/whatsapp/ProfilePhotoReminder;)V
 
-    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->m:Lcom/whatsapp/s;
+    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->t:Lcom/whatsapp/_1;
 
     return-void
 .end method
 
-.method static a(Lcom/whatsapp/ProfilePhotoReminder;)Lcom/whatsapp/adg;
+.method static a(Lcom/whatsapp/ProfilePhotoReminder;)Lcom/whatsapp/tc;
     .locals 1
 
     .prologue
-    .line 33
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
+    .line 56
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
 
     return-object v0
 .end method
@@ -278,12 +276,12 @@
     .locals 1
 
     .prologue
-    .line 37
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->r:Landroid/widget/ImageView;
+    .line 22
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->j:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 12
+    .line 39
     return-void
 .end method
 
@@ -291,8 +289,8 @@
     .locals 1
 
     .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Landroid/widget/EditText;
+    .line 46
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->o:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -305,206 +303,206 @@
 
     const/4 v4, 0x0
 
-    .line 105
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->l:Landroid/view/View;
+    .line 49
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->n:Landroid/view/View;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 22
+    .line 44
     invoke-virtual {p0}, Lcom/whatsapp/ProfilePhotoReminder;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x7f0a0052
+    const v1, 0x7f0a0054
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v1
 
-    .line 81
+    .line 18
     invoke-virtual {p0}, Lcom/whatsapp/ProfilePhotoReminder;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v2, 0x7f0a0051
+    const v2, 0x7f0a0053
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
     move-result v2
 
-    .line 83
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
+    .line 71
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
 
-    iget-object v0, v0, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v0, v0, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/whatsapp/sq;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/whatsapp/ak;->a(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 18
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->r:Landroid/widget/ImageView;
+    .line 92
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->j:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setEnabled(Z)V
 
-    .line 70
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->l:Landroid/view/View;
+    .line 89
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->n:Landroid/view/View;
 
     invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
 
-    .line 49
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->j:Landroid/graphics/Bitmap;
+    .line 103
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->l:Landroid/graphics/Bitmap;
 
     if-nez v0, :cond_0
 
-    .line 65
+    .line 58
     sget-object v0, Landroid/graphics/Bitmap$Config;->ALPHA_8:Landroid/graphics/Bitmap$Config;
 
     invoke-static {v1, v1, v0}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->j:Landroid/graphics/Bitmap;
+    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->l:Landroid/graphics/Bitmap;
 
-    .line 87
+    .line 32
     :cond_0
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->j:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->l:Landroid/graphics/Bitmap;
 
-    .line 82
+    .line 8
     :cond_1
     :goto_0
     invoke-direct {p0, v0}, Lcom/whatsapp/ProfilePhotoReminder;->a(Landroid/graphics/Bitmap;)V
 
-    .line 47
+    .line 53
     return-void
 
-    .line 76
+    .line 83
     :cond_2
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->r:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->j:Landroid/widget/ImageView;
 
     const/4 v3, 0x1
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setEnabled(Z)V
 
-    .line 63
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->l:Landroid/view/View;
+    .line 40
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->n:Landroid/view/View;
 
     invoke-virtual {v0, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 43
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
+    .line 86
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
 
-    invoke-virtual {v0, v1, v2, v4}, Lcom/whatsapp/adg;->a(IFZ)Landroid/graphics/Bitmap;
+    invoke-virtual {v0, v1, v2, v4}, Lcom/whatsapp/tc;->a(IFZ)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 53
+    .line 3
     if-nez v0, :cond_1
 
+    .line 43
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
+
+    iget v0, v0, Lcom/whatsapp/tc;->f:I
+
+    if-nez v0, :cond_4
+
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
+
+    iget v0, v0, Lcom/whatsapp/tc;->k:I
+
+    if-nez v0, :cond_4
+
     .line 75
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
-
-    iget v0, v0, Lcom/whatsapp/adg;->k:I
-
-    if-nez v0, :cond_4
-
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
-
-    iget v0, v0, Lcom/whatsapp/adg;->u:I
-
-    if-nez v0, :cond_4
-
-    .line 36
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->l:Landroid/view/View;
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->n:Landroid/view/View;
 
     invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
 
-    .line 78
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->t:Landroid/os/Handler;
+    .line 84
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->k:Landroid/os/Handler;
 
     if-nez v0, :cond_3
 
-    .line 101
+    .line 29
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->t:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->k:Landroid/os/Handler;
 
-    .line 77
-    new-instance v0, Lcom/whatsapp/sx;
+    .line 94
+    new-instance v0, Lcom/whatsapp/tq;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/sx;-><init>(Lcom/whatsapp/ProfilePhotoReminder;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/tq;-><init>(Lcom/whatsapp/ProfilePhotoReminder;)V
 
-    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->n:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Ljava/lang/Runnable;
 
-    .line 2
+    .line 1
     :cond_3
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->t:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->k:Landroid/os/Handler;
 
-    iget-object v3, p0, Lcom/whatsapp/ProfilePhotoReminder;->n:Ljava/lang/Runnable;
+    iget-object v3, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 11
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->t:Landroid/os/Handler;
+    .line 33
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->k:Landroid/os/Handler;
 
-    iget-object v3, p0, Lcom/whatsapp/ProfilePhotoReminder;->n:Ljava/lang/Runnable;
+    iget-object v3, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Ljava/lang/Runnable;
 
     const-wide/16 v4, 0x7530
 
     invoke-virtual {v0, v3, v4, v5}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_5
 
-    .line 8
+    .line 52
     :cond_4
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->l:Landroid/view/View;
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->n:Landroid/view/View;
 
     invoke-virtual {v0, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 21
+    .line 13
     :cond_5
-    const v0, 0x7f02008f
+    const v0, 0x7f020092
 
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/adg;->a(IIF)Landroid/graphics/Bitmap;
+    invoke-static {v0, v1, v2}, Lcom/whatsapp/tc;->a(IIF)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method static c(Lcom/whatsapp/ProfilePhotoReminder;)Lcom/whatsapp/a09;
+.method static c(Lcom/whatsapp/ProfilePhotoReminder;)Landroid/view/View;
     .locals 1
 
     .prologue
-    .line 69
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->q:Lcom/whatsapp/a09;
+    .line 14
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->n:Landroid/view/View;
 
     return-object v0
 .end method
 
-.method static d(Lcom/whatsapp/ProfilePhotoReminder;)Landroid/view/View;
+.method static d(Lcom/whatsapp/ProfilePhotoReminder;)Landroid/widget/TextView;
     .locals 1
 
     .prologue
-    .line 103
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->l:Landroid/view/View;
+    .line 97
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->r:Landroid/widget/TextView;
 
     return-object v0
 .end method
 
-.method static e(Lcom/whatsapp/ProfilePhotoReminder;)Landroid/widget/TextView;
+.method static e(Lcom/whatsapp/ProfilePhotoReminder;)Lcom/whatsapp/atu;
     .locals 1
 
     .prologue
-    .line 26
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->o:Landroid/widget/TextView;
+    .line 104
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->m:Lcom/whatsapp/atu;
 
     return-object v0
 .end method
@@ -515,7 +513,7 @@
     .locals 0
 
     .prologue
-    .line 71
+    .line 5
     return-void
 .end method
 
@@ -523,7 +521,7 @@
     .locals 0
 
     .prologue
-    .line 95
+    .line 96
     return-void
 .end method
 
@@ -531,30 +529,22 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 9
     return-void
 .end method
 
 .method public b(Ljava/lang/String;)V
-    .locals 0
-
-    .prologue
-    .line 97
-    return-void
-.end method
-
-.method public c(Ljava/lang/String;)V
     .locals 1
 
     .prologue
-    .line 67
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
 
-    iget-object v0, v0, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    iget-object v0, v0, Lcom/whatsapp/tc;->b:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -562,20 +552,28 @@
 
     if-eqz v0, :cond_0
 
-    .line 98
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 28
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    invoke-virtual {v0}, Lcom/whatsapp/d_;->g()Lcom/whatsapp/ada;
+    invoke-virtual {v0}, Lcom/whatsapp/et;->g()Lcom/whatsapp/tb;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
+    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
 
-    .line 7
+    .line 59
     invoke-direct {p0}, Lcom/whatsapp/ProfilePhotoReminder;->b()V
 
-    .line 38
+    .line 64
     :cond_0
+    return-void
+.end method
+
+.method public c(Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 34
     return-void
 .end method
 
@@ -583,7 +581,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 76
     return-void
 .end method
 
@@ -595,21 +593,21 @@
 
     const/4 v3, 0x0
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
-    .line 9
+    .line 101
     packed-switch p1, :pswitch_data_0
 
-    .line 42
+    .line 51
     :cond_0
     :goto_0
     return-void
 
-    .line 27
+    .line 57
     :pswitch_0
     if-ne p2, v4, :cond_0
 
-    .line 51
+    .line 91
     if-eqz p3, :cond_1
 
     sget-object v1, Lcom/whatsapp/ProfilePhotoReminder;->z:[Ljava/lang/String;
@@ -622,67 +620,67 @@
 
     if-eqz v1, :cond_1
 
-    .line 91
-    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->l:Landroid/view/View;
+    .line 48
+    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->n:Landroid/view/View;
 
     invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 79
-    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
+    .line 60
+    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
 
-    invoke-static {v1, p0}, Lcom/whatsapp/kl;->b(Lcom/whatsapp/adg;Landroid/app/Activity;)V
+    invoke-static {v1, p0}, Lcom/whatsapp/vj;->b(Lcom/whatsapp/tc;Landroid/app/Activity;)V
 
     if-eqz v0, :cond_0
 
-    .line 24
+    .line 77
     :cond_1
-    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
+    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
 
     const/16 v2, 0xd
 
-    invoke-static {p3, v1, p0, v2, p0}, Lcom/whatsapp/kl;->a(Landroid/content/Intent;Lcom/whatsapp/adg;Landroid/app/Activity;ILcom/whatsapp/hy;)V
+    invoke-static {p3, v1, p0, v2, p0}, Lcom/whatsapp/vj;->a(Landroid/content/Intent;Lcom/whatsapp/tc;Landroid/app/Activity;ILcom/whatsapp/ad4;)V
 
     if-eqz v0, :cond_0
 
-    .line 56
+    .line 65
     :pswitch_1
-    invoke-static {}, Lcom/whatsapp/kl;->a()Ljava/io/File;
+    invoke-static {}, Lcom/whatsapp/vj;->c()Ljava/io/File;
 
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
-    .line 40
+    .line 63
     if-ne p2, v4, :cond_2
 
-    .line 52
-    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
+    .line 42
+    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
 
-    invoke-static {v1, p0}, Lcom/whatsapp/kl;->a(Lcom/whatsapp/adg;Landroid/app/Activity;)Z
+    invoke-static {v1, p0}, Lcom/whatsapp/vj;->a(Lcom/whatsapp/tc;Landroid/app/Activity;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 99
-    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->l:Landroid/view/View;
+    .line 70
+    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->n:Landroid/view/View;
 
     invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
 
     if-eqz v0, :cond_0
 
-    .line 85
+    .line 7
     :cond_2
     if-nez p2, :cond_0
 
     if-eqz p3, :cond_0
 
-    .line 46
-    invoke-static {p3, p0}, Lcom/whatsapp/kl;->a(Landroid/content/Intent;Lcom/whatsapp/hy;)V
+    .line 19
+    invoke-static {p3, p0}, Lcom/whatsapp/vj;->a(Landroid/content/Intent;Lcom/whatsapp/ad4;)V
 
     goto :goto_0
 
-    .line 9
+    .line 101
     nop
 
     :pswitch_data_0
@@ -696,15 +694,15 @@
     .locals 1
 
     .prologue
-    .line 19
+    .line 80
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 92
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->q:Lcom/whatsapp/a09;
+    .line 25
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->m:Lcom/whatsapp/atu;
 
-    invoke-virtual {v0, p1}, Lcom/whatsapp/a09;->a(Landroid/content/res/Configuration;)V
+    invoke-virtual {v0, p1}, Lcom/whatsapp/atu;->a(Landroid/content/res/Configuration;)V
 
-    .line 55
+    .line 41
     return-void
 .end method
 
@@ -716,10 +714,10 @@
 
     const/4 v3, 0x1
 
-    .line 96
+    .line 20
     sget-object v0, Lcom/whatsapp/ProfilePhotoReminder;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x4
+    const/4 v1, 0x3
 
     aget-object v0, v0, v1
 
@@ -728,68 +726,70 @@
     .line 10
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 68
+    .line 61
     invoke-virtual {p0}, Lcom/whatsapp/ProfilePhotoReminder;->getSupportActionBar()Lcom/actionbarsherlock/app/ActionBar;
 
     move-result-object v0
 
     invoke-virtual {v0, v3}, Lcom/actionbarsherlock/app/ActionBar;->setDisplayShowCustomEnabled(Z)V
 
-    .line 34
+    .line 102
     const v0, 0x7f030097
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ProfilePhotoReminder;->setContentView(I)V
 
-    .line 86
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 30
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    invoke-virtual {v0}, Lcom/whatsapp/d_;->g()Lcom/whatsapp/ada;
+    invoke-virtual {v0}, Lcom/whatsapp/et;->g()Lcom/whatsapp/tb;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
+    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
 
-    .line 41
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
+    .line 105
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
 
     if-nez v0, :cond_0
 
-    .line 29
+    .line 87
     sget-object v0, Lcom/whatsapp/ProfilePhotoReminder;->z:[Ljava/lang/String;
 
-    aget-object v0, v0, v3
+    const/4 v1, 0x6
+
+    aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 15
+    .line 50
     sget-object v0, Lcom/whatsapp/ProfilePhotoReminder;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x2
+    const/4 v1, 0x4
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/App;->x(Ljava/lang/String;)V
 
-    .line 74
+    .line 73
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/whatsapp/Main;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 20
+    .line 88
     invoke-virtual {p0, v0}, Lcom/whatsapp/ProfilePhotoReminder;->startActivity(Landroid/content/Intent;)V
 
-    .line 93
+    .line 67
     invoke-virtual {p0}, Lcom/whatsapp/ProfilePhotoReminder;->finish()V
 
-    .line 17
+    .line 100
     :goto_0
     return-void
 
-    .line 30
+    .line 82
     :cond_0
-    const v0, 0x7f0b026f
+    const v0, 0x7f0b0278
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ProfilePhotoReminder;->findViewById(I)Landroid/view/View;
 
@@ -797,10 +797,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->o:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->r:Landroid/widget/TextView;
 
-    .line 48
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->o:Landroid/widget/TextView;
+    .line 54
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->r:Landroid/widget/TextView;
 
     invoke-static {v4}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -808,35 +808,35 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 58
-    const v0, 0x7f0b01be
+    .line 38
+    const v0, 0x7f0b01c0
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ProfilePhotoReminder;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    new-instance v1, Lcom/whatsapp/x9;
+    new-instance v1, Lcom/whatsapp/ve;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/x9;-><init>(Lcom/whatsapp/ProfilePhotoReminder;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/ve;-><init>(Lcom/whatsapp/ProfilePhotoReminder;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 59
-    new-instance v0, Lcom/whatsapp/a09;
+    .line 27
+    new-instance v0, Lcom/whatsapp/atu;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/a09;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/atu;-><init>(Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->q:Lcom/whatsapp/a09;
+    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->m:Lcom/whatsapp/atu;
 
-    .line 62
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->q:Lcom/whatsapp/a09;
+    .line 85
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->m:Lcom/whatsapp/atu;
 
-    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->m:Lcom/whatsapp/s;
+    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->t:Lcom/whatsapp/_1;
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/a09;->a(Lcom/whatsapp/s;)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/atu;->a(Lcom/whatsapp/_1;)V
 
-    .line 32
-    const v0, 0x7f0b024e
+    .line 16
+    const v0, 0x7f0b0257
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ProfilePhotoReminder;->findViewById(I)Landroid/view/View;
 
@@ -844,49 +844,49 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->r:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->j:Landroid/widget/ImageView;
 
-    .line 35
-    new-instance v0, Lcom/whatsapp/j3;
+    .line 93
+    new-instance v0, Lcom/whatsapp/hb;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/j3;-><init>(Lcom/whatsapp/ProfilePhotoReminder;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/hb;-><init>(Lcom/whatsapp/ProfilePhotoReminder;)V
 
-    .line 102
-    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->r:Landroid/widget/ImageView;
+    .line 95
+    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->j:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 25
+    .line 55
     invoke-virtual {p0}, Lcom/whatsapp/ProfilePhotoReminder;->getSupportActionBar()Lcom/actionbarsherlock/app/ActionBar;
 
     move-result-object v0
 
-    const v1, 0x7f0e0293
+    const v1, 0x7f0e02a0
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/ProfilePhotoReminder;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    new-instance v2, Lcom/whatsapp/ags;
+    new-instance v2, Lcom/whatsapp/oq;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/ags;-><init>(Lcom/whatsapp/ProfilePhotoReminder;)V
+    invoke-direct {v2, p0}, Lcom/whatsapp/oq;-><init>(Lcom/whatsapp/ProfilePhotoReminder;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/whatsapp/a2m;->a(Landroid/app/Activity;Lcom/actionbarsherlock/app/ActionBar;Ljava/lang/String;Landroid/view/View$OnClickListener;)Landroid/view/View;
+    invoke-static {p0, v0, v1, v2}, Lcom/whatsapp/jh;->a(Landroid/app/Activity;Lcom/actionbarsherlock/app/ActionBar;Ljava/lang/String;Landroid/view/View$OnClickListener;)Landroid/view/View;
 
-    .line 31
-    const v0, 0x7f0b0150
+    .line 2
+    const v0, 0x7f0b0152
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ProfilePhotoReminder;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->l:Landroid/view/View;
+    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->n:Landroid/view/View;
 
-    .line 94
+    .line 23
     invoke-direct {p0}, Lcom/whatsapp/ProfilePhotoReminder;->b()V
 
     .line 45
-    const v0, 0x7f0b026c
+    const v0, 0x7f0b0275
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ProfilePhotoReminder;->findViewById(I)Landroid/view/View;
 
@@ -894,19 +894,19 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->o:Landroid/widget/EditText;
 
-    .line 54
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Landroid/widget/EditText;
+    .line 66
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->o:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/whatsapp/sg;
+    new-instance v1, Lcom/whatsapp/a90;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/sg;-><init>(Lcom/whatsapp/ProfilePhotoReminder;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/a90;-><init>(Lcom/whatsapp/ProfilePhotoReminder;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 39
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Landroid/widget/EditText;
+    .line 98
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->o:Landroid/widget/EditText;
 
     new-array v1, v3, [Landroid/text/InputFilter;
 
@@ -918,28 +918,28 @@
 
     aput-object v3, v1, v2
 
-    .line 100
+    .line 68
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
-    .line 23
-    invoke-static {p0}, Lcom/whatsapp/App;->i(Landroid/content/Context;)Ljava/lang/String;
+    .line 47
+    invoke-static {p0}, Lcom/whatsapp/App;->m(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 90
-    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Landroid/widget/EditText;
+    .line 31
+    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->o:Landroid/widget/EditText;
 
     invoke-virtual {v1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 14
-    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Landroid/widget/EditText;
+    .line 35
+    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->o:Landroid/widget/EditText;
 
-    invoke-static {v1, v0}, Lcom/whatsapp/ad_;->a(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
+    invoke-static {v1, v0}, Lcom/whatsapp/t3;->a(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
 
-    .line 28
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Landroid/widget/EditText;
+    .line 26
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->o:Landroid/widget/EditText;
 
-    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->o:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->length()I
 
@@ -947,16 +947,16 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setSelection(I)V
 
-    .line 44
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    .line 11
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    invoke-virtual {v0}, Lcom/whatsapp/App;->aD()Z
+    invoke-virtual {v0}, Lcom/whatsapp/App;->ac()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 60
+    .line 69
     sget-object v0, Lcom/whatsapp/ProfilePhotoReminder;->z:[Ljava/lang/String;
 
     const/4 v1, 0x5
@@ -965,40 +965,40 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
 
-    .line 72
+    .line 4
     const/16 v0, 0x71
 
     invoke-static {p0, v0}, Lcom/whatsapp/Conversations;->a(Landroid/app/Activity;I)V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_2
 
-    .line 66
+    .line 21
     :cond_1
-    invoke-static {}, Lcom/whatsapp/App;->a0()Z
+    invoke-static {}, Lcom/whatsapp/App;->P()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 57
+    .line 37
     sget-object v0, Lcom/whatsapp/ProfilePhotoReminder;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x3
+    const/4 v1, 0x2
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
 
-    .line 73
+    .line 24
     const/16 v0, 0x72
 
     invoke-static {p0, v0}, Lcom/whatsapp/Conversations;->a(Landroid/app/Activity;I)V
 
-    .line 104
+    .line 81
     :cond_2
-    invoke-static {p0}, Lcom/whatsapp/App;->b(Lcom/whatsapp/o7;)V
+    invoke-static {p0}, Lcom/whatsapp/App;->b(Lcom/whatsapp/by;)V
 
     goto/16 :goto_0
 .end method
@@ -1007,40 +1007,40 @@
     .locals 2
 
     .prologue
-    .line 6
+    .line 12
     invoke-super {p0}, Lcom/whatsapp/DialogToastActivity;->onDestroy()V
 
-    .line 50
+    .line 62
     sget-object v0, Lcom/whatsapp/ProfilePhotoReminder;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x6
+    const/4 v1, 0x1
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 13
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Lcom/whatsapp/adg;
+    .line 36
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->p:Lcom/whatsapp/tc;
 
     if-eqz v0, :cond_0
 
-    .line 61
-    invoke-static {p0}, Lcom/whatsapp/App;->a(Lcom/whatsapp/o7;)V
+    .line 78
+    invoke-static {p0}, Lcom/whatsapp/App;->a(Lcom/whatsapp/by;)V
 
-    .line 80
+    .line 15
     :cond_0
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->t:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->k:Landroid/os/Handler;
 
     if-eqz v0, :cond_1
 
-    .line 88
-    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->t:Landroid/os/Handler;
+    .line 74
+    iget-object v0, p0, Lcom/whatsapp/ProfilePhotoReminder;->k:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->n:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/whatsapp/ProfilePhotoReminder;->s:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 89
+    .line 17
     :cond_1
     return-void
 .end method

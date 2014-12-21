@@ -1,55 +1,155 @@
-.class public Lorg/l;
-.super Ljava/lang/Exception;
+.class Lorg/l;
+.super Ljava/lang/Object;
 .source "l.java"
 
 
 # static fields
-.field public static a:I = 0x0
-
-.field private static final serialVersionUID:J = 0x1L
+.field private static final z:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
+
+    const-string v0, "0#fGo\u0010)0sQ5muH`\u0016)yHdCm~IwY,0Pb\u0015$t\u0006g\u0010*yR#Q?qBj\u0001m!\u0010*Cm"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    move v2, v1
+
+    move-object v1, v0
+
+    :goto_0
+    if-gt v2, v3, :cond_0
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/l;->z:Ljava/lang/String;
+
+    return-void
+
+    :cond_0
+    aget-char v4, v1, v3
+
+    rem-int/lit8 v0, v3, 0x5
+
+    packed-switch v0, :pswitch_data_0
+
+    const/4 v0, 0x3
+
+    :goto_1
+    xor-int/2addr v0, v4
+
+    int-to-char v0, v0
+
+    aput-char v0, v1, v3
+
+    add-int/lit8 v0, v3, 0x1
+
+    move v3, v0
+
+    goto :goto_0
+
+    :pswitch_0
+    const/16 v0, 0x79
+
+    goto :goto_1
+
+    :pswitch_1
+    const/16 v0, 0x4d
+
+    goto :goto_1
+
+    :pswitch_2
+    const/16 v0, 0x10
+
+    goto :goto_1
+
+    :pswitch_3
+    const/16 v0, 0x26
+
+    goto :goto_1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+    .end packed-switch
+.end method
+
+.method static a(B)I
+    .locals 3
 
     .prologue
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
+    sget v0, Lorg/d;->b:I
 
     .line 4
-    return-void
-.end method
+    int-to-char v1, p0
 
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
+    const/16 v2, 0x10
 
-    .prologue
-    .line 7
-    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ljava/lang/Character;->digit(CI)I
 
-    .line 2
-    return-void
-.end method
+    move-result v1
 
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-    .locals 0
+    .line 3
+    const/4 v2, -0x1
 
-    .prologue
-    .line 6
-    invoke-direct {p0, p1, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    if-ne v1, v2, :cond_0
 
     .line 1
-    return-void
-.end method
+    new-instance v0, Lorg/i;
 
-.method public constructor <init>(Ljava/lang/Throwable;)V
-    .locals 0
+    new-instance v1, Ljava/lang/StringBuffer;
 
-    .prologue
-    .line 5
-    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {v1}, Ljava/lang/StringBuffer;-><init>()V
 
-    .line 8
-    return-void
+    sget-object v2, Lorg/l;->z:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lorg/i;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 2
+    :cond_0
+    if-eqz v0, :cond_1
+
+    sget v0, Lorg/i;->a:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    sput v0, Lorg/i;->a:I
+
+    :cond_1
+    return v1
 .end method

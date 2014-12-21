@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Prem per enregistrar,deixa per enviar</string>
     <string name="audio_note_tip_2">Enregistra un missatge més llarg</string>
     <string name="audio_note_top_mic_tip">Parla al micròfon de la part superior del teu telèfon</string>
-    <string name="auth_client_needs_enabling_title">"Una aplicació requereix que s'activin els serveis de Google Play."</string>
-    <string name="auth_client_needs_installation_title">"Una aplicació requereix que s'instal·lin els serveis de Google Play."</string>
-    <string name="auth_client_needs_update_title">"Una aplicació requereix que s'actualitzin els serveis de Google Play."</string>
-    <string name="auth_client_play_services_err_notification_msg">Error dels serveis de Google Play</string>
-    <string name="auth_client_requested_by_msg">Sol·licitada per %1$s</string>
-    <string name="auth_client_using_bad_version_title">Una aplic. ha intentat utilitzar una versió errònia de serveis de Play.</string>
-    <string name="barcode_scanner_dialog_body">Aquesta aplicació necessita un escàner de codi de barres. Vols instal·lar-ne una?</string>
-    <string name="barcode_scanner_dialog_title">Vols instal·lar escàner de codi de barres?</string>
     <string name="block">Bloquejar</string>
     <string name="block_ask">Estàs segur que vols bloquejar aquest contacte?</string>
     <string name="block_list_desc_1">"Prem la icona de la cantonada superior dreta per seleccionar un contacte a bloquejar.
@@ -113,6 +105,8 @@ Només els contactes amb %s a la seva llibreta d'adreces rebran els teus missatg
     <string name="camera_shortcut">Càmera via WhatsApp</string>
     <string name="camera_title">Enviar vídeo o foto via WhatsApp</string>
     <string name="camera_video_preview_title">Enviar vídeo via WhatsApp</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">Per fer una trucada via WhatsApp, primer has de sortir del mode avió.</string>
+    <string name="can_not_start_voip_call_in_phone_call">"No pots fer una trucada via WhatsApp si ja n'estàs fent una altra."</string>
     <string name="cancel">Cancel·lar</string>
     <string name="cannot_send_not_a_group_participant">"No pots enviar missatges a aquest grup perquè ja no n'ets membre."</string>
     <string name="cannot_send_selected_file">No es pot enviar aquest fitxer. O bé has triat un fitxer incorrecte o bé el format no és compatible.</string>
@@ -161,23 +155,32 @@ Si tens nou telèfon i nou número primer canvia el número al teu telèfon anti
     <string name="color_red">Vermell</string>
     <string name="color_white">Blanc</string>
     <string name="color_yellow">Groc</string>
+    <string name="common_android_wear_notification_needs_update_text">"Una aplicació necessita que s'actualitzi l'aplicació Android Wear."</string>
+    <string name="common_android_wear_update_text">"Aquesta aplicació no s'executarà fins que no actualitzis l'aplicació Android Wear."</string>
+    <string name="common_android_wear_update_title">Actualitza Android Wear</string>
     <string name="common_google_play_services_enable_button">Activa els serveis de Google Play</string>
     <string name="common_google_play_services_enable_text">Aquesta aplicació no funcionarà si no actives els serveis de Google Play.</string>
     <string name="common_google_play_services_enable_title">Activa els serveis de Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Sol·licitada per %1$s</string>
     <string name="common_google_play_services_install_button">Baixa els serveis de Google Play</string>
     <string name="common_google_play_services_install_text_phone">"Aquesta aplicació no s'executarà si el telèfon no té instal·lats els serveis de  Google Play."</string>
     <string name="common_google_play_services_install_text_tablet">Aquesta aplicació no funcionarà si la tauleta no té instal·lats els serveis de Google Play.</string>
     <string name="common_google_play_services_install_title">Baixa els serveis de Google Play</string>
     <string name="common_google_play_services_invalid_account_text">El compte especificat no existeix en aquest dispositiu. Tria un compte diferent.</string>
     <string name="common_google_play_services_invalid_account_title">Compte no vàlid</string>
+    <string name="common_google_play_services_needs_enabling_title">"Una aplicació requereix que s'activin els serveis de Google Play."</string>
     <string name="common_google_play_services_network_error_text">Es requereix una connexió de dades per connectar amb els serveis de Google Play.</string>
     <string name="common_google_play_services_network_error_title">Error de xarxa</string>
+    <string name="common_google_play_services_notification_needs_installation_title">"Una aplicació requereix que s'instal·lin els serveis de Google Play."</string>
+    <string name="common_google_play_services_notification_needs_update_title">"Una aplicació requereix que s'actualitzin els serveis de Google Play."</string>
+    <string name="common_google_play_services_notification_ticker">Error dels serveis de Google Play</string>
     <string name="common_google_play_services_unknown_issue">Error desconegut relacionat amb els serveis de Google Play.</string>
     <string name="common_google_play_services_unsupported_text">El teu dispositiu no és compatible amb els serveis de Google Play, en què es basen les teves aplicacions. Per obtenir assistència, contacta amb el fabricant.</string>
     <string name="common_google_play_services_unsupported_title">Serveis de Google Play</string>
     <string name="common_google_play_services_update_button">Actualitza</string>
     <string name="common_google_play_services_update_text">"Aquesta aplicació no s'executarà si no actualitzes els serveis de Google Play."</string>
     <string name="common_google_play_services_update_title">Actualitza els serveis de Google Play</string>
+    <string name="common_open_on_phone">Obre al telèfon</string>
     <string name="common_signin_button_text">Inicia sessió</string>
     <string name="common_signin_button_text_long">Inicia sessió amb Google</string>
     <string name="confirm_forward_msg">Vols reenviar-ho a %s?</string>
@@ -354,7 +357,7 @@ Disponible: %1$s"</string>
     <string name="eula_description">"Missatgeria mòbil multiplataforma amb amics d'arreu del món"</string>
     <string name="eula_tablets_not_supported">"Nota: Pel moment, l'aplicació no funciona amb tauletes."</string>
     <string name="eula_terms_of_service">Termes del servei</string>
-    <string name="eula_title">Benvingut a WhatsApp!</string>
+    <string name="eula_title">Benvingut a WhatsApp</string>
     <string name="existing_contact">Existent</string>
     <string name="exit">Sortir</string>
     <string name="exit_group">Sortir del grup</string>
@@ -529,7 +532,6 @@ El servei ara expira el %s."</string>
     <string name="insufficient_space_for_download_shared_storage">"No es pot baixar perquè no hi ha prou espai lliure a l'emmagatzematge intern compartit. Esborra fitxers i torna-ho a provar."</string>
     <string name="invalid_media_message_download">"No es poden baixar fitxers des d'un missatge no vàlid. Prova a tornar a enviar el missatge."</string>
     <string name="invalid_message_forward">No es pot reenviar el missatge a contactes no vàlids.</string>
-    <string name="invalid_qr_code">Codi QR no vàlid</string>
     <string name="invalid_url_for_download">"No es pot baixar. Demana que t'ho reenvïn."</string>
     <string name="invite">Convidar</string>
     <string name="invite_friends">Convida als teus amics</string>
@@ -575,7 +577,6 @@ WhatsApp només es pot fer servir en un dispositiu per número de telèfon."</st
     <string name="menuitem_add">Afegir</string>
     <string name="menuitem_contacts">Contactes</string>
     <string name="menuitem_debug">Depurar</string>
-    <string name="menuitem_delete_qr">Esborrar codi QR</string>
     <string name="menuitem_groupchat">Grup nou</string>
     <string name="menuitem_list">Nova difusió</string>
     <string name="menuitem_mute">Silenciar</string>
@@ -616,14 +617,15 @@ WhatsApp només es pot fer servir en un dispositiu per número de telèfon."</st
     <string name="msg_store_backup_failed">"No s'ha pogut fer còpia dels missatges"</string>
     <string name="msg_store_backup_failed_try_again_later">No es pot fer una còpia de seguretat dels missatges.Torna-ho a provar més tard.</string>
     <string name="msg_store_backup_found">Còpia de seguretat trobada</string>
-    <string name="msg_store_backup_found_registration">"S'ha trobat una còpia de seguretat dels missatges!"</string>
+    <string name="msg_store_backup_found_registration">Còpia seg. dels xats trobada</string>
+    <string name="msg_store_backup_found_title">Recuperar historial de xat</string>
     <string name="msg_store_backup_skipped">Còpia de seguretat omesa</string>
     <string name="msg_store_backup_skipped_no_media">"S'ha omès la còpia de seguretat de missatges: no s'ha trobat cap targeta multimèdia."</string>
     <string name="msg_store_backup_skipped_read_only_media">"S'ha omès la còpia de seguretat de missatges. La targeta trobada és només de lectura."</string>
     <string name="msg_store_confirm">Confirmar</string>
-    <string name="msg_store_creation_backup_message">"Vols recuperar l'historial de missatges des de la còpia de seguretat?"</string>
-    <string name="msg_store_do_not_restore">No recuperar</string>
-    <string name="msg_store_do_not_restore_no_thanks">No, gràcies</string>
+    <string name="msg_store_creation_backup_message">"Recupera l'historial de xat des de la còpia de seguretat. Si no ho fas,després no podràs."</string>
+    <string name="msg_store_do_not_restore">Saltar recuperació</string>
+    <string name="msg_store_do_not_restore_no_thanks">Saltar recuperació</string>
     <string name="msg_store_error_found">"S'ha produït un error. Tanca i reinicia WhatsApp."</string>
     <string name="msg_store_error_not_restored">No hem pogut recuperar cap de les teves còpies de seguretat dels historials.</string>
     <string name="msg_store_last_confirmation_not_to_restore">"Els missatges es perdran. Segur que no vols recuperar l'historial de missatges des de la còpia de seguretat?"</string>
@@ -650,9 +652,6 @@ WhatsApp només es pot fer servir en un dispositiu per número de telèfon."</st
     <string name="need_sd_card_shared_storage">"Desactiva l'emmagatzematge USB i torna-ho a provar."</string>
     <string name="network_required">En aquest moment no teniu accés a cap xarxa.</string>
     <string name="network_usage_ask_reset_message">Estàs segur que vols reiniciar estadístiques?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">"Hora d'últim reinici: %1$s"</string>
     <string name="network_usage_media_bytes_received">Bytes multimèdia rebuts:</string>
     <string name="network_usage_media_bytes_sent">Bytes multimèdia enviats:</string>
@@ -899,6 +898,7 @@ Comprova amb el teu proveïdor de telefonia mòbil si pots rebre trucades i SMS.
     <string name="send_location">"Envia l'ubicació"</string>
     <string name="send_payment_button">Enviar URL de pagament</string>
     <string name="send_payment_url_via">Enviar URL de pagament via...</string>
+    <string name="send_this_location">Enviar aquesta ubicació</string>
     <string name="send_your_current_location">Envia la teva ubicació actual</string>
     <string name="sending_video_to_contact">Enviant vídeo a %s</string>
     <string name="sent_to_group">Enviar a “%s”</string>
@@ -1010,19 +1010,19 @@ Enviat via WhatsApp"</string>
     <string name="software_expired_get_from_play">"Aquesta versió de WhatsApp és massa antiga i ja no funciona. Vés a Google Play i baixa't la darrera versió."</string>
     <string name="software_expired_get_from_play_with_date">"Aquesta versió de WhatsApp s'ha fet obsoleta el &lt;b>%1$s&lt;/b>. Vés a Google Play per baixar-te la darrera. &lt;br>&lt;br> La data del teu dispositiu és &lt;b>%2$s&lt;/b>. Si no és correcta corregeix-la i reinicia Whatsapp."</string>
     <string name="software_expired_with_date">"Aquesta versió de WhatsApp s'ha fet obsoleta el &lt;b>%1$s&lt;/b>. Prem “Baixar” per tenir la darrera.&lt;br>&lt;br>La data del teu dispositiu és &lt;b>%2$s&lt;/b>. Si això no és correcte corregeix-la i reinicia WhatsApp."</string>
-    <string name="spam_generic">"Estàs temporalment bloquejat a WhatsApp perquè pots haver violat els nostres termes de servei.
-Pots tornar a fer servir WhatsApp de nou en:"</string>
+    <string name="spam_generic">"Estàs temporalment bloquejat de WhatsApp perquè potser has violat els nostres termes del servei.
+
+Podràs tornar a utilitzar WhatsApp en:"</string>
     <string name="spam_generic_data_connection_missing">"Assegura't de tenir una connexió de dades activa al telèfon"</string>
     <string name="spam_generic_unknown_time_left">Estàs temporalment banejat de WhatsApp: perquè has violat masses vegades els nostres termes de servei. Aviat podràs tornar a fer servir WhatsApp.</string>
     <string name="spam_learn_more">"Aprendre'n més"</string>
     <string name="spam_title">Temporalment bloquejat</string>
-    <string name="spam_too_many_blocks">"Estàs temporalment bloquejat de WhatsApp perquè massa gent t'ha bloquejat."</string>
-    <string name="spam_too_many_groups">"Estàs temporalment bloquejat a WhatsApp perquè has creat massa grups amb gent que no et té a la seva agenda.
-Podràs fer servir WhatsApp de nou en:"</string>
-    <string name="spam_too_many_messages">"Estàs temporalment bloquejat a WhatsApp perquè has enviat massa missatges a gent que no et tenia a l'agenda.
-Pots tornar a fer servir WhatsApp de nou en:"</string>
-    <string name="spam_too_many_people">"Estàs temporalment bloquejat a WhatsApp perquè has enviat el mateix missatge a massa gent.
-Pots tornar a fer servir WhatsApp de nou en:"</string>
+    <string name="spam_too_many_groups">"Estàs temporalment bloquejat de WhatsApp perquè has creat massa grups amb gents que no et tenen a l'agenda.
+
+Podràs tornar a utilitzar WhatsApp en:"</string>
+    <string name="spam_too_many_messages">"Estàs temporalment bloquejat de WhatsApp perquè has enviat massa missatges a gent que no et tenen a les seves agendes.
+
+Podràs tornar a utilitzar WhatsApp en:"</string>
     <string name="status">Estat</string>
     <string name="status_default_at_gym">Al gimnàs</string>
     <string name="status_default_at_movies">Al cinema</string>
@@ -1190,7 +1190,9 @@ Prova amb la verificació via veu."</string>
     <string name="view_list_media">Arxius de la llista de difusió</string>
     <string name="view_website">Veure el lloc web</string>
     <string name="voip_activity_label">Trucada</string>
+    <string name="voip_call_bluetooth_toggle_description">Bluetooth Sí/No</string>
     <string name="voip_call_end_button_description">Finalitzar trucada</string>
+    <string name="voip_call_failed_no_network">"No es pot fer la trucada. Assegura't que el teu móbil té connexió a Internet i torna-ho a provar."</string>
     <string name="voip_call_goto_chat_description">Veure xat</string>
     <string name="voip_call_incoming">ET TRUQUEN</string>
     <string name="voip_call_label">TRUCADA WHATSAPP</string>
@@ -1243,5 +1245,4 @@ Oblida \"%1$s\" o deshabilita el Wi-Fi per restablir la connexió."</string>
     <string name="yesterday">Ahir</string>
     <string name="yesterday_at">ahir a les %s</string>
     <string name="you">Tu</string>
-    <string name="voip_call_bluetooth_toggle_description">Bluetooth Sí/No</string>
 </resources>

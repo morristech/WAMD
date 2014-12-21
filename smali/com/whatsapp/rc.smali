@@ -1,235 +1,90 @@
-.class final Lcom/whatsapp/rc;
-.super Landroid/os/AsyncTask;
+.class synthetic Lcom/whatsapp/rc;
+.super Ljava/lang/Object;
 .source "rc.java"
 
 
 # static fields
-.field private static final z:Ljava/lang/String;
+.field static final a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
-
-    const-string v0, "]w)(G\\s&.GZ}++ZK\u007fj)VUw1$\\W?&\"^I~ 9V"
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    move v3, v2
-
-    move v2, v1
-
-    move-object v1, v0
-
-    :goto_0
-    if-gt v2, v3, :cond_0
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/rc;->z:Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v4, v1, v3
-
-    rem-int/lit8 v0, v3, 0x5
-
-    packed-switch v0, :pswitch_data_0
-
-    const/16 v0, 0x33
-
-    :goto_1
-    xor-int/2addr v0, v4
-
-    int-to-char v0, v0
-
-    aput-char v0, v1, v3
-
-    add-int/lit8 v0, v3, 0x1
-
-    move v3, v0
-
-    goto :goto_0
-
-    :pswitch_0
-    const/16 v0, 0x39
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v0, 0x12
-
-    goto :goto_1
-
-    :pswitch_2
-    const/16 v0, 0x45
-
-    goto :goto_1
-
-    :pswitch_3
-    const/16 v0, 0x4d
-
-    goto :goto_1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-.end method
-
-.method constructor <init>()V
-    .locals 0
-
-    .prologue
-    .line 11
-    invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method protected a([Ljava/lang/Void;)Ljava/lang/Void;
-    .locals 2
-
-    .prologue
-    .line 4
-    const-wide/16 v0, 0x5dc
-
-    :try_start_0
-    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 9
-    :goto_0
-    const/4 v0, 0x0
-
-    return-object v0
-
-    .line 3
-    :catch_0
-    move-exception v0
-
-    goto :goto_0
-.end method
-
-.method protected a(Ljava/lang/Void;)V
     .locals 3
 
     .prologue
+    .line 1
+    invoke-static {}, Lcom/whatsapp/amf;->values()[Lcom/whatsapp/amf;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Lcom/whatsapp/rc;->a:[I
+
+    :try_start_0
+    sget-object v0, Lcom/whatsapp/rc;->a:[I
+
+    sget-object v1, Lcom/whatsapp/amf;->PAYMENT_COMPLETED:Lcom/whatsapp/amf;
+
+    invoke-virtual {v1}, Lcom/whatsapp/amf;->ordinal()I
+
+    move-result v1
+
     const/4 v2, 0x1
 
-    .line 10
-    invoke-static {}, Lcom/whatsapp/App;->aB()V
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_2
 
-    .line 12
-    invoke-static {}, Lcom/whatsapp/DeleteAccountConfirmation;->a()V
+    :goto_0
+    :try_start_1
+    sget-object v0, Lcom/whatsapp/rc;->a:[I
 
-    .line 19
-    sget-object v0, Lcom/whatsapp/App;->l:Lcom/whatsapp/a2v;
+    sget-object v1, Lcom/whatsapp/amf;->WHATSAPP_INITIATED:Lcom/whatsapp/amf;
 
-    invoke-virtual {v0}, Lcom/whatsapp/a2v;->c()V
+    invoke-virtual {v1}, Lcom/whatsapp/amf;->ordinal()I
 
-    .line 15
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
+    move-result v1
 
-    const v1, 0x7f0e0108
+    const/4 v2, 0x2
 
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 18
-    invoke-static {}, Lcom/whatsapp/DeleteAccountConfirmation;->b()Lcom/whatsapp/DeleteAccountConfirmation;
+    :goto_1
+    :try_start_2
+    sget-object v0, Lcom/whatsapp/rc;->a:[I
 
-    move-result-object v0
+    sget-object v1, Lcom/whatsapp/amf;->EXTENSION_REQUESTED:Lcom/whatsapp/amf;
 
-    if-eqz v0, :cond_0
+    invoke-virtual {v1}, Lcom/whatsapp/amf;->ordinal()I
 
-    .line 8
-    invoke-static {}, Lcom/whatsapp/DeleteAccountConfirmation;->b()Lcom/whatsapp/DeleteAccountConfirmation;
+    move-result v1
 
-    move-result-object v0
+    const/4 v2, 0x3
 
-    invoke-virtual {v0, v2}, Lcom/whatsapp/DeleteAccountConfirmation;->removeDialog(I)V
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_0
 
-    .line 7
-    new-instance v0, Landroid/content/Intent;
-
-    invoke-static {}, Lcom/whatsapp/DeleteAccountConfirmation;->b()Lcom/whatsapp/DeleteAccountConfirmation;
-
-    move-result-object v1
-
-    const-class v2, Lcom/whatsapp/EULA;
-
-    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    .line 13
-    const v1, 0x8000
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
-
-    .line 17
-    invoke-static {}, Lcom/whatsapp/DeleteAccountConfirmation;->b()Lcom/whatsapp/DeleteAccountConfirmation;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Lcom/whatsapp/DeleteAccountConfirmation;->startActivity(Landroid/content/Intent;)V
-
-    .line 1
-    invoke-static {}, Lcom/whatsapp/DeleteAccountConfirmation;->b()Lcom/whatsapp/DeleteAccountConfirmation;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/DeleteAccountConfirmation;->finish()V
-
-    .line 16
-    :cond_0
-    sget-object v0, Lcom/whatsapp/rc;->z:Ljava/lang/String;
-
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-
-    .line 5
+    :goto_2
     return-void
-.end method
 
-.method protected doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    :catch_0
+    move-exception v0
 
-    .prologue
-    .line 2
-    check-cast p1, [Ljava/lang/Void;
+    goto :goto_2
 
-    invoke-virtual {p0, p1}, Lcom/whatsapp/rc;->a([Ljava/lang/Void;)Ljava/lang/Void;
+    :catch_1
+    move-exception v0
 
-    move-result-object v0
+    goto :goto_1
 
-    return-object v0
-.end method
+    :catch_2
+    move-exception v0
 
-.method protected onPostExecute(Ljava/lang/Object;)V
-    .locals 0
-
-    .prologue
-    .line 14
-    check-cast p1, Ljava/lang/Void;
-
-    invoke-virtual {p0, p1}, Lcom/whatsapp/rc;->a(Ljava/lang/Void;)V
-
-    return-void
+    goto :goto_0
 .end method

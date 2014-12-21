@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field private final y:I
+.field private final Eo:I
 
 
 # direct methods
@@ -14,18 +14,26 @@
 
     invoke-direct {p0, p2, p3}, Lcom/google/android/gms/auth/UserRecoverableAuthException;-><init>(Ljava/lang/String;Landroid/content/Intent;)V
 
-    iput p1, p0, Lcom/google/android/gms/auth/GooglePlayServicesAvailabilityException;->y:I
+    iput p1, p0, Lcom/google/android/gms/auth/GooglePlayServicesAvailabilityException;->Eo:I
 
     if-eqz v0, :cond_0
 
-    sget v0, Lcom/google/android/gms/dynamic/b$a;->a:I
+    sget-boolean v0, Lcom/google/android/gms/internal/jx;->a:Z
 
-    add-int/lit8 v0, v0, 0x1
+    if-eqz v0, :cond_1
 
-    sput v0, Lcom/google/android/gms/dynamic/b$a;->a:I
+    const/4 v0, 0x0
+
+    :goto_0
+    sput-boolean v0, Lcom/google/android/gms/internal/jx;->a:Z
 
     :cond_0
     return-void
+
+    :cond_1
+    const/4 v0, 0x1
+
+    goto :goto_0
 .end method
 
 
@@ -33,7 +41,7 @@
 .method public getConnectionStatusCode()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/auth/GooglePlayServicesAvailabilityException;->y:I
+    iget v0, p0, Lcom/google/android/gms/auth/GooglePlayServicesAvailabilityException;->Eo:I
 
     return v0
 .end method

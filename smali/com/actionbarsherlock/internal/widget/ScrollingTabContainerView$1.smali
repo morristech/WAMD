@@ -17,7 +17,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 3
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$1;->this$0:Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
 
     iput-object p2, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$1;->val$tabView:Landroid/view/View;
@@ -58,20 +58,20 @@
 
     sub-int/2addr v0, v1
 
-    .line 3
+    .line 2
     iget-object v1, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$1;->this$0:Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v0, v2}, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;->smoothScrollTo(II)V
 
-    .line 2
+    .line 5
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView$1;->this$0:Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;
 
     const/4 v1, 0x0
 
     iput-object v1, v0, Lcom/actionbarsherlock/internal/widget/ScrollingTabContainerView;->mTabSelector:Ljava/lang/Runnable;
 
-    .line 5
+    .line 1
     return-void
 .end method

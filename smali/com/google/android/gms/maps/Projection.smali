@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field private final gJ:Lcom/google/android/gms/maps/internal/IProjectionDelegate;
+.field private final alf:Lcom/google/android/gms/maps/internal/IProjectionDelegate;
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/gms/maps/Projection;->gJ:Lcom/google/android/gms/maps/internal/IProjectionDelegate;
+    iput-object p1, p0, Lcom/google/android/gms/maps/Projection;->alf:Lcom/google/android/gms/maps/internal/IProjectionDelegate;
 
     return-void
 .end method
@@ -23,7 +23,7 @@
     .locals 2
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/maps/Projection;->gJ:Lcom/google/android/gms/maps/internal/IProjectionDelegate;
+    iget-object v0, p0, Lcom/google/android/gms/maps/Projection;->alf:Lcom/google/android/gms/maps/internal/IProjectionDelegate;
 
     invoke-interface {v0}, Lcom/google/android/gms/maps/internal/IProjectionDelegate;->getVisibleRegion()Lcom/google/android/gms/maps/model/VisibleRegion;
     :try_end_0
@@ -47,13 +47,13 @@
     .locals 2
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/maps/Projection;->gJ:Lcom/google/android/gms/maps/internal/IProjectionDelegate;
+    iget-object v0, p0, Lcom/google/android/gms/maps/Projection;->alf:Lcom/google/android/gms/maps/internal/IProjectionDelegate;
 
-    invoke-interface {v0, p1}, Lcom/google/android/gms/maps/internal/IProjectionDelegate;->toScreenLocation(Lcom/google/android/gms/maps/model/LatLng;)Lcom/google/android/gms/dynamic/b;
+    invoke-interface {v0, p1}, Lcom/google/android/gms/maps/internal/IProjectionDelegate;->toScreenLocation(Lcom/google/android/gms/maps/model/LatLng;)Lcom/google/android/gms/dynamic/d;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/android/gms/dynamic/c;->a(Lcom/google/android/gms/dynamic/b;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/google/android/gms/dynamic/e;->f(Lcom/google/android/gms/dynamic/d;)Ljava/lang/Object;
 
     move-result-object v0
 

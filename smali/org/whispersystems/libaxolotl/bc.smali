@@ -1,3 +1,3 @@
-.class public interface abstract Lorg/whispersystems/libaxolotl/bc;
+.class synthetic Lorg/whispersystems/libaxolotl/bC;
 .super Ljava/lang/Object;
-.source "bc.java"
+.source "bC.java"

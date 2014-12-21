@@ -24,14 +24,14 @@
     .prologue
     const/16 v1, 0x100
 
-    .line 86
+    .line 61
     new-array v0, v1, [I
 
     fill-array-data v0, :array_0
 
     sput-object v0, Landroid/backport/util/Base64$Decoder;->DECODE:[I
 
-    .line 38
+    .line 25
     new-array v0, v1, [I
 
     fill-array-data v0, :array_1
@@ -40,7 +40,7 @@
 
     return-void
 
-    .line 86
+    .line 61
     nop
 
     :array_0
@@ -303,7 +303,7 @@
         -0x1
     .end array-data
 
-    .line 38
+    .line 25
     :array_1
     .array-data 4
         -0x1
@@ -571,13 +571,13 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 59
+    .line 13
     invoke-direct {p0}, Landroid/backport/util/Base64$Coder;-><init>()V
 
-    .line 77
+    .line 16
     iput-object p2, p0, Landroid/backport/util/Base64$Decoder;->output:[B
 
-    .line 15
+    .line 68
     and-int/lit8 v0, p1, 0x8
 
     if-nez v0, :cond_0
@@ -590,13 +590,13 @@
     .line 58
     iput v1, p0, Landroid/backport/util/Base64$Decoder;->state:I
 
-    .line 17
+    .line 64
     iput v1, p0, Landroid/backport/util/Base64$Decoder;->value:I
 
-    .line 23
+    .line 11
     return-void
 
-    .line 15
+    .line 68
     :cond_0
     sget-object v0, Landroid/backport/util/Base64$Decoder;->DECODE_WEBSAFE:[I
 
@@ -609,7 +609,7 @@
     .locals 10
 
     .prologue
-    .line 89
+    .line 85
     iget v0, p0, Landroid/backport/util/Base64$Decoder;->state:I
 
     const/4 v1, 0x6
@@ -621,35 +621,35 @@
     :goto_0
     return v0
 
-    .line 33
+    .line 80
     :cond_0
     add-int v4, p3, p2
 
-    .line 69
+    .line 3
     iget v3, p0, Landroid/backport/util/Base64$Decoder;->state:I
 
-    .line 27
+    .line 73
     iget v1, p0, Landroid/backport/util/Base64$Decoder;->value:I
 
-    .line 40
+    .line 36
     const/4 v0, 0x0
 
-    .line 56
+    .line 27
     iget-object v5, p0, Landroid/backport/util/Base64$Decoder;->output:[B
 
-    .line 55
+    .line 60
     iget-object v6, p0, Landroid/backport/util/Base64$Decoder;->alphabet:[I
 
     move v2, p2
 
-    .line 83
+    .line 35
     :goto_1
     if-ge v2, v4, :cond_c
 
-    .line 37
+    .line 53
     if-nez v3, :cond_2
 
-    .line 67
+    .line 15
     :goto_2
     add-int/lit8 v7, v2, 0x4
 
@@ -699,14 +699,14 @@
 
     if-ltz v1, :cond_1
 
-    .line 44
+    .line 52
     add-int/lit8 v7, v0, 0x2
 
     int-to-byte v8, v1
 
     aput-byte v8, v5, v7
 
-    .line 70
+    .line 26
     add-int/lit8 v7, v0, 0x1
 
     shr-int/lit8 v8, v1, 0x8
@@ -715,46 +715,46 @@
 
     aput-byte v8, v5, v7
 
-    .line 12
+    .line 10
     shr-int/lit8 v7, v1, 0x10
 
     int-to-byte v7, v7
 
     aput-byte v7, v5, v0
 
-    .line 2
+    .line 44
     add-int/lit8 v0, v0, 0x3
 
-    .line 35
+    .line 8
     add-int/lit8 v2, v2, 0x4
 
     goto :goto_2
 
-    .line 75
+    .line 81
     :cond_1
     if-lt v2, v4, :cond_2
 
     move v2, v1
 
-    .line 21
+    .line 79
     :goto_3
     if-nez p4, :cond_b
 
-    .line 10
+    .line 84
     iput v3, p0, Landroid/backport/util/Base64$Decoder;->state:I
 
-    .line 43
+    .line 45
     iput v2, p0, Landroid/backport/util/Base64$Decoder;->value:I
 
-    .line 49
+    .line 66
     iput v0, p0, Landroid/backport/util/Base64$Decoder;->op:I
 
-    .line 88
+    .line 32
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 64
+    .line 49
     :cond_2
     add-int/lit8 p2, v2, 0x1
 
@@ -764,7 +764,7 @@
 
     aget v2, v6, v2
 
-    .line 14
+    .line 9
     packed-switch v3, :pswitch_data_0
 
     :cond_3
@@ -775,14 +775,14 @@
 
     move v2, p2
 
-    .line 30
+    .line 1
     goto :goto_1
 
-    .line 9
+    .line 23
     :pswitch_0
     if-ltz v2, :cond_4
 
-    .line 84
+    .line 75
     add-int/lit8 v1, v3, 0x1
 
     move v9, v2
@@ -793,73 +793,73 @@
 
     goto :goto_4
 
-    .line 65
+    .line 63
     :cond_4
     const/4 v7, -0x1
 
     if-eq v2, v7, :cond_3
 
-    .line 47
+    .line 51
     const/4 v0, 0x6
 
     iput v0, p0, Landroid/backport/util/Base64$Decoder;->state:I
 
-    .line 42
+    .line 24
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 8
+    .line 91
     :pswitch_1
     if-ltz v2, :cond_5
 
-    .line 32
+    .line 38
     shl-int/lit8 v1, v1, 0x6
 
     or-int/2addr v1, v2
 
-    .line 11
+    .line 89
     add-int/lit8 v2, v3, 0x1
 
     goto :goto_4
 
-    .line 72
+    .line 62
     :cond_5
     const/4 v7, -0x1
 
     if-eq v2, v7, :cond_3
 
-    .line 6
+    .line 12
     const/4 v0, 0x6
 
     iput v0, p0, Landroid/backport/util/Base64$Decoder;->state:I
 
-    .line 52
+    .line 21
     const/4 v0, 0x0
 
     goto/16 :goto_0
 
-    .line 80
+    .line 43
     :pswitch_2
     if-ltz v2, :cond_6
 
-    .line 3
+    .line 54
     shl-int/lit8 v1, v1, 0x6
 
     or-int/2addr v1, v2
 
-    .line 66
+    .line 57
     add-int/lit8 v2, v3, 0x1
 
     goto :goto_4
 
-    .line 4
+    .line 40
     :cond_6
     const/4 v7, -0x2
 
     if-ne v2, v7, :cond_7
 
-    .line 1
+    .line 78
     add-int/lit8 v2, v0, 0x1
 
     shr-int/lit8 v3, v1, 0x4
@@ -868,7 +868,7 @@
 
     aput-byte v3, v5, v0
 
-    .line 76
+    .line 30
     const/4 v0, 0x4
 
     move v9, v2
@@ -879,39 +879,39 @@
 
     goto :goto_4
 
-    .line 73
+    .line 55
     :cond_7
     const/4 v7, -0x1
 
     if-eq v2, v7, :cond_3
 
-    .line 81
+    .line 46
     const/4 v0, 0x6
 
     iput v0, p0, Landroid/backport/util/Base64$Decoder;->state:I
 
-    .line 74
+    .line 34
     const/4 v0, 0x0
 
     goto/16 :goto_0
 
-    .line 20
+    .line 76
     :pswitch_3
     if-ltz v2, :cond_8
 
-    .line 31
+    .line 5
     shl-int/lit8 v1, v1, 0x6
 
     or-int/2addr v1, v2
 
-    .line 5
+    .line 41
     add-int/lit8 v2, v0, 0x2
 
     int-to-byte v3, v1
 
     aput-byte v3, v5, v2
 
-    .line 63
+    .line 2
     add-int/lit8 v2, v0, 0x1
 
     shr-int/lit8 v3, v1, 0x8
@@ -920,28 +920,28 @@
 
     aput-byte v3, v5, v2
 
-    .line 46
+    .line 74
     shr-int/lit8 v2, v1, 0x10
 
     int-to-byte v2, v2
 
     aput-byte v2, v5, v0
 
-    .line 51
+    .line 70
     add-int/lit8 v0, v0, 0x3
 
-    .line 25
+    .line 42
     const/4 v2, 0x0
 
     goto :goto_4
 
-    .line 19
+    .line 14
     :cond_8
     const/4 v7, -0x2
 
     if-ne v2, v7, :cond_9
 
-    .line 53
+    .line 37
     add-int/lit8 v2, v0, 0x1
 
     shr-int/lit8 v3, v1, 0x2
@@ -957,92 +957,48 @@
 
     aput-byte v2, v5, v0
 
-    .line 29
+    .line 18
     add-int/lit8 v0, v0, 0x2
 
-    .line 85
+    .line 6
     const/4 v2, 0x5
 
     goto :goto_4
 
-    .line 39
+    .line 82
     :cond_9
     const/4 v7, -0x1
 
     if-eq v2, v7, :cond_3
 
-    .line 78
+    .line 7
     const/4 v0, 0x6
 
     iput v0, p0, Landroid/backport/util/Base64$Decoder;->state:I
 
-    .line 68
+    .line 59
     const/4 v0, 0x0
 
     goto/16 :goto_0
 
-    .line 26
+    .line 29
     :pswitch_4
     const/4 v7, -0x2
 
     if-ne v2, v7, :cond_a
 
-    .line 34
+    .line 86
     add-int/lit8 v2, v3, 0x1
 
     goto :goto_4
 
-    .line 91
+    .line 48
     :cond_a
     const/4 v7, -0x1
 
     if-eq v2, v7, :cond_3
 
-    .line 90
-    const/4 v0, 0x6
-
-    iput v0, p0, Landroid/backport/util/Base64$Decoder;->state:I
-
-    .line 54
-    const/4 v0, 0x0
-
-    goto/16 :goto_0
-
-    .line 62
-    :pswitch_5
-    const/4 v7, -0x1
-
-    if-eq v2, v7, :cond_3
-
-    .line 13
-    const/4 v0, 0x6
-
-    iput v0, p0, Landroid/backport/util/Base64$Decoder;->state:I
-
-    .line 82
-    const/4 v0, 0x0
-
-    goto/16 :goto_0
-
-    .line 45
-    :cond_b
-    packed-switch v3, :pswitch_data_1
-
-    .line 16
-    :goto_5
-    :pswitch_6
-    iput v3, p0, Landroid/backport/util/Base64$Decoder;->state:I
-
     .line 28
-    iput v0, p0, Landroid/backport/util/Base64$Decoder;->op:I
-
-    .line 41
-    const/4 v0, 0x1
-
-    goto/16 :goto_0
-
-    .line 18
-    :pswitch_7
     const/4 v0, 0x6
 
     iput v0, p0, Landroid/backport/util/Base64$Decoder;->state:I
@@ -1052,7 +1008,51 @@
 
     goto/16 :goto_0
 
-    .line 79
+    .line 20
+    :pswitch_5
+    const/4 v7, -0x1
+
+    if-eq v2, v7, :cond_3
+
+    .line 88
+    const/4 v0, 0x6
+
+    iput v0, p0, Landroid/backport/util/Base64$Decoder;->state:I
+
+    .line 19
+    const/4 v0, 0x0
+
+    goto/16 :goto_0
+
+    .line 4
+    :cond_b
+    packed-switch v3, :pswitch_data_1
+
+    .line 71
+    :goto_5
+    :pswitch_6
+    iput v3, p0, Landroid/backport/util/Base64$Decoder;->state:I
+
+    .line 67
+    iput v0, p0, Landroid/backport/util/Base64$Decoder;->op:I
+
+    .line 56
+    const/4 v0, 0x1
+
+    goto/16 :goto_0
+
+    .line 17
+    :pswitch_7
+    const/4 v0, 0x6
+
+    iput v0, p0, Landroid/backport/util/Base64$Decoder;->state:I
+
+    .line 22
+    const/4 v0, 0x0
+
+    goto/16 :goto_0
+
+    .line 47
     :pswitch_8
     add-int/lit8 v1, v0, 0x1
 
@@ -1064,10 +1064,10 @@
 
     move v0, v1
 
-    .line 48
+    .line 72
     goto :goto_5
 
-    .line 22
+    .line 90
     :pswitch_9
     add-int/lit8 v1, v0, 0x1
 
@@ -1077,7 +1077,7 @@
 
     aput-byte v4, v5, v0
 
-    .line 60
+    .line 33
     add-int/lit8 v0, v1, 0x1
 
     shr-int/lit8 v2, v2, 0x2
@@ -1088,13 +1088,13 @@
 
     goto :goto_5
 
-    .line 36
+    .line 39
     :pswitch_a
     const/4 v0, 0x6
 
     iput v0, p0, Landroid/backport/util/Base64$Decoder;->state:I
 
-    .line 71
+    .line 77
     const/4 v0, 0x0
 
     goto/16 :goto_0
@@ -1104,7 +1104,7 @@
 
     goto/16 :goto_3
 
-    .line 14
+    .line 9
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -1115,7 +1115,7 @@
         :pswitch_5
     .end packed-switch
 
-    .line 45
+    .line 4
     :pswitch_data_1
     .packed-switch 0x0
         :pswitch_6

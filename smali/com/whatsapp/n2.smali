@@ -3,20 +3,20 @@
 .source "n2.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/aa3;
+.field final a:Lcom/whatsapp/VideoPreviewActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/aa3;)V
+.method constructor <init>(Lcom/whatsapp/VideoPreviewActivity;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/n2;->a:Lcom/whatsapp/aa3;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/n2;->a:Lcom/whatsapp/VideoPreviewActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,19 +25,22 @@
 
 
 # virtual methods
-.method public run()V
+.method public onClick(Landroid/view/View;)V
     .locals 2
 
     .prologue
-    .line 1
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/n2;->a:Lcom/whatsapp/VideoPreviewActivity;
 
-    iget-object v1, p0, Lcom/whatsapp/n2;->a:Lcom/whatsapp/aa3;
+    const/4 v1, 0x2
 
-    iget-object v1, v1, Lcom/whatsapp/aa3;->a:Lcom/whatsapp/adg;
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/d_;->a(Lcom/whatsapp/adg;)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/VideoPreviewActivity;->setResult(I)V
 
     .line 3
+    iget-object v0, p0, Lcom/whatsapp/n2;->a:Lcom/whatsapp/VideoPreviewActivity;
+
+    invoke-virtual {v0}, Lcom/whatsapp/VideoPreviewActivity;->finish()V
+
+    .line 1
     return-void
 .end method

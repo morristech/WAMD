@@ -20,7 +20,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 1
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$1;->initialValue()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -32,7 +32,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V

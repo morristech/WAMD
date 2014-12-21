@@ -1,47 +1,59 @@
 .class Lcom/whatsapp/ov;
-.super Lcom/whatsapp/util/at;
+.super Ljava/lang/Object;
 .source "ov.java"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # instance fields
-.field final b:Lcom/whatsapp/CallsFragment;
+.field final a:Lcom/whatsapp/SettingsChat;
+
+.field final b:Z
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/CallsFragment;)V
+.method constructor <init>(Lcom/whatsapp/SettingsChat;Z)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/ov;->b:Lcom/whatsapp/CallsFragment;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/ov;->a:Lcom/whatsapp/SettingsChat;
 
-    invoke-direct {p0}, Lcom/whatsapp/util/at;-><init>()V
+    iput-boolean p2, p0, Lcom/whatsapp/ov;->b:Z
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/view/View;)V
+.method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
     .prologue
-    .line 1
-    sget-object v0, Lcom/whatsapp/adr;->TELL_A_FRIEND:Lcom/whatsapp/adr;
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/ov;->a:Lcom/whatsapp/SettingsChat;
 
-    sget-object v1, Lcom/whatsapp/afl;->EMPTY_CALLS:Lcom/whatsapp/afl;
+    const/4 v1, 0x5
 
-    invoke-static {v0, v1}, Lcom/whatsapp/a1s;->a(Lcom/whatsapp/adr;Lcom/whatsapp/afl;)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/SettingsChat;->removeDialog(I)V
 
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/ov;->b:Lcom/whatsapp/CallsFragment;
+    iget-object v0, p0, Lcom/whatsapp/ov;->a:Lcom/whatsapp/SettingsChat;
 
-    invoke-virtual {v0}, Lcom/whatsapp/CallsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    const/4 v1, 0x6
 
-    move-result-object v0
+    invoke-virtual {v0, v1}, Lcom/whatsapp/SettingsChat;->showDialog(I)V
 
-    invoke-static {v0}, Lcom/whatsapp/App;->b(Landroid/app/Activity;)V
+    .line 3
+    new-instance v0, Lcom/whatsapp/a_c;
 
-    .line 4
+    invoke-direct {v0, p0}, Lcom/whatsapp/a_c;-><init>(Lcom/whatsapp/ov;)V
+
+    invoke-static {v0}, Lcom/whatsapp/util/bs;->a(Ljava/lang/Runnable;)V
+
+    .line 5
     return-void
 .end method

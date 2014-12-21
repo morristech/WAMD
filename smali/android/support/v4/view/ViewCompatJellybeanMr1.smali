@@ -8,7 +8,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
 
     move-result v0
@@ -23,6 +23,6 @@
     .line 3
     invoke-virtual {p0, p1}, Landroid/view/View;->setLayerPaint(Landroid/graphics/Paint;)V
 
-    .line 1
+    .line 2
     return-void
 .end method

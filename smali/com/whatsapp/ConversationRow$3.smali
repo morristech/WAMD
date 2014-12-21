@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ConversationRow;
+.field private final a:Landroid/graphics/Rect;
 
-.field private final b:Landroid/graphics/Rect;
+.field final b:Lcom/whatsapp/ConversationRow;
 
 
 # direct methods
@@ -14,17 +14,17 @@
     .locals 1
 
     .prologue
-    .line 9
-    iput-object p1, p0, Lcom/whatsapp/ConversationRow$3;->a:Lcom/whatsapp/ConversationRow;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/ConversationRow$3;->b:Lcom/whatsapp/ConversationRow;
 
     invoke-direct {p0, p2}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    .line 6
+    .line 2
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/ConversationRow$3;->b:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/whatsapp/ConversationRow$3;->a:Landroid/graphics/Rect;
 
     return-void
 .end method
@@ -35,10 +35,10 @@
     .locals 5
 
     .prologue
-    .line 7
+    .line 1
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 8
+    .line 6
     invoke-virtual {p0}, Lcom/whatsapp/ConversationRow$3;->isSelected()Z
 
     move-result v0
@@ -46,26 +46,26 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lcom/whatsapp/ConversationRow$3;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/whatsapp/ConversationRow$3;->a:Landroid/graphics/Rect;
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ConversationRow$3;->getDrawingRect(Landroid/graphics/Rect;)V
 
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/ConversationRow$3;->b:Landroid/graphics/Rect;
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/ConversationRow$3;->a:Landroid/graphics/Rect;
 
-    iget-object v1, p0, Lcom/whatsapp/ConversationRow$3;->a:Lcom/whatsapp/ConversationRow;
+    iget-object v1, p0, Lcom/whatsapp/ConversationRow$3;->b:Lcom/whatsapp/ConversationRow;
 
-    iget-object v1, v1, Lcom/whatsapp/ConversationRow;->j:Landroid/graphics/Rect;
+    iget-object v1, v1, Lcom/whatsapp/ConversationRow;->d:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->top:I
 
     const/high16 v2, 0x3fc00000
 
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
     move-result-object v3
 
-    iget v3, v3, Lcom/whatsapp/se;->B:F
+    iget v3, v3, Lcom/whatsapp/art;->u:F
 
     mul-float/2addr v2, v3
 
@@ -75,12 +75,12 @@
 
     iput v1, v0, Landroid/graphics/Rect;->top:I
 
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/ConversationRow$3;->b:Landroid/graphics/Rect;
+    .line 7
+    iget-object v0, p0, Lcom/whatsapp/ConversationRow$3;->a:Landroid/graphics/Rect;
 
-    iget-object v1, p0, Lcom/whatsapp/ConversationRow$3;->a:Lcom/whatsapp/ConversationRow;
+    iget-object v1, p0, Lcom/whatsapp/ConversationRow$3;->b:Lcom/whatsapp/ConversationRow;
 
-    iget-object v1, v1, Lcom/whatsapp/ConversationRow;->j:Landroid/graphics/Rect;
+    iget-object v1, v1, Lcom/whatsapp/ConversationRow;->d:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->bottom:I
 
@@ -88,11 +88,11 @@
 
     const/high16 v3, 0x3f000000
 
-    invoke-static {}, Lcom/whatsapp/se;->c()Lcom/whatsapp/se;
+    invoke-static {}, Lcom/whatsapp/art;->b()Lcom/whatsapp/art;
 
     move-result-object v4
 
-    iget v4, v4, Lcom/whatsapp/se;->B:F
+    iget v4, v4, Lcom/whatsapp/art;->u:F
 
     mul-float/2addr v3, v4
 
@@ -106,16 +106,16 @@
 
     iput v1, v0, Landroid/graphics/Rect;->bottom:I
 
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/ConversationRow$3;->b:Landroid/graphics/Rect;
+    .line 8
+    iget-object v0, p0, Lcom/whatsapp/ConversationRow$3;->a:Landroid/graphics/Rect;
 
-    invoke-static {}, Lcom/whatsapp/ConversationRow;->k()Landroid/graphics/Paint;
+    invoke-static {}, Lcom/whatsapp/ConversationRow;->o()Landroid/graphics/Paint;
 
     move-result-object v1
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 1
+    .line 9
     :cond_0
     return-void
 .end method

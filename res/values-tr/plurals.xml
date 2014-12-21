@@ -169,8 +169,8 @@ kaldı"</item>
         <item quantity="one">%d kaldı</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Hazırsınız. %,d mesajınızı onardık.</item>
-        <item quantity="one">Hazırsınız. %,d mesajınızı onardık.</item>
+        <item quantity="other">%,d mesaj geri yüklendi. Artık hazırsınız.</item>
+        <item quantity="one">%,d mesaj geri yüklendi. Artık hazırsınız.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">%1$d video %2$s kişisine gönderiliyor</item>

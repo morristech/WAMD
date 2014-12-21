@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 2
     invoke-direct {p0}, Landroid/support/v4/view/KeyEventCompat$BaseKeyEventVersionImpl;-><init>()V
 
     return-void
@@ -20,9 +20,9 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 1
     invoke-static {p1}, Landroid/support/v4/view/KeyEventCompatEclair;->startTracking(Landroid/view/KeyEvent;)V
 
-    .line 2
+    .line 3
     return-void
 .end method

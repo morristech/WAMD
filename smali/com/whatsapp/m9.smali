@@ -3,20 +3,20 @@
 .source "m9.java"
 
 # interfaces
-.implements Landroid/preference/Preference$OnPreferenceClickListener;
+.implements Landroid/content/DialogInterface$OnCancelListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/SettingsHelp;
+.field final a:Lcom/whatsapp/ContactPicker;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/SettingsHelp;)V
+.method constructor <init>(Lcom/whatsapp/ContactPicker;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/m9;->a:Lcom/whatsapp/SettingsHelp;
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/m9;->a:Lcom/whatsapp/ContactPicker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,31 +25,17 @@
 
 
 # virtual methods
-.method public onPreferenceClick(Landroid/preference/Preference;)Z
-    .locals 3
+.method public onCancel(Landroid/content/DialogInterface;)V
+    .locals 2
 
     .prologue
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/m9;->a:Lcom/whatsapp/ContactPicker;
+
+    const/4 v1, 0x2
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/ContactPicker;->removeDialog(I)V
+
     .line 1
-    sget-object v0, Lcom/whatsapp/adr;->ABOUT:Lcom/whatsapp/adr;
-
-    invoke-static {v0}, Lcom/whatsapp/a1s;->a(Lcom/whatsapp/adr;)V
-
-    .line 2
-    new-instance v0, Landroid/content/Intent;
-
-    iget-object v1, p0, Lcom/whatsapp/m9;->a:Lcom/whatsapp/SettingsHelp;
-
-    const-class v2, Lcom/whatsapp/About;
-
-    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    .line 5
-    iget-object v1, p0, Lcom/whatsapp/m9;->a:Lcom/whatsapp/SettingsHelp;
-
-    invoke-virtual {v1, v0}, Lcom/whatsapp/SettingsHelp;->startActivity(Landroid/content/Intent;)V
-
-    .line 4
-    const/4 v0, 0x1
-
-    return v0
+    return-void
 .end method

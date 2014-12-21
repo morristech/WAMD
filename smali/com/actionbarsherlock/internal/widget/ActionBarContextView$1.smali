@@ -17,7 +17,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 3
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/ActionBarContextView$1;->this$0:Lcom/actionbarsherlock/internal/widget/ActionBarContextView;
 
     iput-object p2, p0, Lcom/actionbarsherlock/internal/widget/ActionBarContextView$1;->val$mode:Lcom/actionbarsherlock/view/ActionMode;
@@ -33,7 +33,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/ActionBarContextView$1;->val$mode:Lcom/actionbarsherlock/view/ActionMode;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/view/ActionMode;->finish()V

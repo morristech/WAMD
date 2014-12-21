@@ -37,7 +37,7 @@
     .locals 2
 
     .prologue
-    .line 46
+    .line 36
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xb
@@ -61,26 +61,26 @@
     .locals 1
 
     .prologue
-    .line 9
+    .line 33
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 69
+    .line 49
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mSystemContext:Landroid/content/Context;
 
-    .line 48
+    .line 5
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mSystemInflater:Landroid/view/LayoutInflater;
 
-    .line 50
+    .line 15
     iput p2, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mMenuLayoutRes:I
 
-    .line 16
+    .line 59
     iput p3, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mItemLayoutRes:I
 
-    .line 42
+    .line 70
     return-void
 .end method
 
@@ -90,20 +90,20 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 54
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    .line 56
+    .line 50
     if-eqz v0, :cond_0
 
-    .line 61
+    .line 32
     invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    .line 70
+    .line 22
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mMenuView:Lcom/actionbarsherlock/internal/view/menu/MenuView;
 
@@ -111,7 +111,7 @@
 
     invoke-virtual {v0, p1, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
 
-    .line 64
+    .line 35
     return-void
 .end method
 
@@ -122,7 +122,7 @@
     .locals 1
 
     .prologue
-    .line 41
+    .line 31
     const/4 v0, 0x0
 
     return v0
@@ -132,7 +132,7 @@
     .locals 3
 
     .prologue
-    .line 37
+    .line 20
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mSystemInflater:Landroid/view/LayoutInflater;
 
     iget v1, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mItemLayoutRes:I
@@ -152,7 +152,7 @@
     .locals 1
 
     .prologue
-    .line 35
+    .line 24
     const/4 v0, 0x0
 
     return v0
@@ -162,10 +162,10 @@
     .locals 1
 
     .prologue
-    .line 15
+    .line 43
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->removeViewAt(I)V
 
-    .line 55
+    .line 58
     const/4 v0, 0x1
 
     return v0
@@ -175,7 +175,7 @@
     .locals 1
 
     .prologue
-    .line 31
+    .line 44
     const/4 v0, 0x0
 
     return v0
@@ -185,29 +185,29 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 2
     instance-of v0, p2, Lcom/actionbarsherlock/internal/view/menu/MenuView$ItemView;
 
     if-eqz v0, :cond_0
 
-    .line 54
+    .line 68
     check-cast p2, Lcom/actionbarsherlock/internal/view/menu/MenuView$ItemView;
 
-    sget v0, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:I
+    sget-boolean v0, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:Z
 
     if-eqz v0, :cond_1
 
-    .line 63
+    .line 29
     :cond_0
     invoke-virtual {p0, p3}, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->createItemView(Landroid/view/ViewGroup;)Lcom/actionbarsherlock/internal/view/menu/MenuView$ItemView;
 
     move-result-object v0
 
-    .line 10
+    .line 8
     :goto_0
     invoke-virtual {p0, p1, v0}, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->bindItemView(Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;Lcom/actionbarsherlock/internal/view/menu/MenuView$ItemView;)V
 
-    .line 68
+    .line 51
     check-cast v0, Landroid/view/View;
 
     return-object v0
@@ -222,12 +222,12 @@
     .locals 3
 
     .prologue
-    .line 36
+    .line 26
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mMenuView:Lcom/actionbarsherlock/internal/view/menu/MenuView;
 
     if-nez v0, :cond_0
 
-    .line 8
+    .line 19
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mSystemInflater:Landroid/view/LayoutInflater;
 
     iget v1, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mMenuLayoutRes:I
@@ -242,19 +242,19 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mMenuView:Lcom/actionbarsherlock/internal/view/menu/MenuView;
 
-    .line 21
+    .line 66
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mMenuView:Lcom/actionbarsherlock/internal/view/menu/MenuView;
 
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     invoke-interface {v0, v1}, Lcom/actionbarsherlock/internal/view/menu/MenuView;->initialize(Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;)V
 
-    .line 53
+    .line 7
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->updateMenuView(Z)V
 
-    .line 4
+    .line 56
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mMenuView:Lcom/actionbarsherlock/internal/view/menu/MenuView;
 
@@ -265,10 +265,10 @@
     .locals 1
 
     .prologue
-    .line 60
+    .line 47
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mContext:Landroid/content/Context;
 
-    .line 32
+    .line 6
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -277,10 +277,10 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mInflater:Landroid/view/LayoutInflater;
 
-    .line 28
+    .line 65
     iput-object p2, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
-    .line 2
+    .line 42
     return-void
 .end method
 
@@ -288,17 +288,17 @@
     .locals 1
 
     .prologue
-    .line 62
+    .line 52
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mCallback:Lcom/actionbarsherlock/internal/view/menu/MenuPresenter$Callback;
 
     if-eqz v0, :cond_0
 
-    .line 43
+    .line 69
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mCallback:Lcom/actionbarsherlock/internal/view/menu/MenuPresenter$Callback;
 
     invoke-interface {v0, p1, p2}, Lcom/actionbarsherlock/internal/view/menu/MenuPresenter$Callback;->onCloseMenu(Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;Z)V
 
-    .line 40
+    .line 16
     :cond_0
     return-void
 .end method
@@ -307,12 +307,12 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 11
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mCallback:Lcom/actionbarsherlock/internal/view/menu/MenuPresenter$Callback;
 
     if-eqz v0, :cond_0
 
-    .line 19
+    .line 39
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mCallback:Lcom/actionbarsherlock/internal/view/menu/MenuPresenter$Callback;
 
     invoke-interface {v0, p1}, Lcom/actionbarsherlock/internal/view/menu/MenuPresenter$Callback;->onOpenSubMenu(Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;)Z
@@ -322,7 +322,7 @@
     :goto_0
     return v0
 
-    .line 5
+    .line 34
     :cond_0
     const/4 v0, 0x0
 
@@ -333,10 +333,10 @@
     .locals 0
 
     .prologue
-    .line 14
+    .line 9
     iput-object p1, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mCallback:Lcom/actionbarsherlock/internal/view/menu/MenuPresenter$Callback;
 
-    .line 23
+    .line 1
     return-void
 .end method
 
@@ -344,10 +344,10 @@
     .locals 0
 
     .prologue
-    .line 24
+    .line 41
     iput p1, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mId:I
 
-    .line 49
+    .line 37
     return-void
 .end method
 
@@ -355,7 +355,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 40
     const/4 v0, 0x1
 
     return v0
@@ -367,40 +367,39 @@
     .prologue
     const/4 v5, 0x0
 
-    sget v7, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:I
+    sget-boolean v7, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->a:Z
 
-    .line 30
+    .line 62
     iget-object v0, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mMenuView:Lcom/actionbarsherlock/internal/view/menu/MenuView;
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    .line 17
+    .line 27
     if-nez v0, :cond_1
 
-    .line 59
     :cond_0
     :goto_0
     return-void
 
-    .line 39
+    .line 12
     :cond_1
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     if-eqz v1, :cond_b
 
-    .line 1
+    .line 10
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     invoke-virtual {v1}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->flagActionItems()V
 
-    .line 45
+    .line 3
     iget-object v1, p0, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->mMenu:Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;
 
     invoke-virtual {v1}, Lcom/actionbarsherlock/internal/view/menu/MenuBuilder;->getVisibleItems()Ljava/util/ArrayList;
 
     move-result-object v8
 
-    .line 58
+    .line 17
     invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
 
     move-result v9
@@ -409,30 +408,30 @@
 
     move v4, v5
 
-    .line 66
+    .line 60
     :goto_1
     if-ge v6, v9, :cond_5
 
-    .line 20
+    .line 45
     invoke-virtual {v8, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;
 
-    .line 22
+    .line 64
     invoke-virtual {p0, v4, v1}, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->shouldIncludeItem(ILcom/actionbarsherlock/internal/view/menu/MenuItemImpl;)Z
 
     move-result v2
 
     if-eqz v2, :cond_4
 
-    .line 13
+    .line 21
     sget-boolean v2, Lcom/actionbarsherlock/ActionBarSherlock;->isRtl:Z
 
     if-eqz v2, :cond_6
 
-    .line 34
+    .line 55
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v2
@@ -441,13 +440,13 @@
 
     add-int/lit8 v2, v2, -0x1
 
-    .line 29
+    .line 23
     :goto_2
     invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 12
+    .line 18
     instance-of v2, v3, Lcom/actionbarsherlock/internal/view/menu/MenuView$ItemView;
 
     if-eqz v2, :cond_7
@@ -456,35 +455,35 @@
 
     check-cast v2, Lcom/actionbarsherlock/internal/view/menu/MenuView$ItemView;
 
-    .line 67
+    .line 46
     invoke-interface {v2}, Lcom/actionbarsherlock/internal/view/menu/MenuView$ItemView;->getItemData()Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;
 
     move-result-object v2
 
-    .line 44
+    .line 38
     :goto_3
     invoke-virtual {p0, v1, v3, v0}, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->getItemView(Lcom/actionbarsherlock/internal/view/menu/MenuItemImpl;Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v10
 
-    .line 33
+    .line 67
     if-eq v1, v2, :cond_2
 
-    .line 27
+    .line 57
     invoke-virtual {v10, v5}, Landroid/view/View;->setPressed(Z)V
 
-    .line 47
+    .line 28
     sget-boolean v1, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->IS_HONEYCOMB:Z
 
     if-eqz v1, :cond_2
 
     invoke-virtual {v10}, Landroid/view/View;->jumpDrawablesToCurrentState()V
 
-    .line 18
+    .line 14
     :cond_2
     if-eq v10, v3, :cond_3
 
-    .line 11
+    .line 63
     sget-boolean v1, Lcom/actionbarsherlock/ActionBarSherlock;->isRtl:Z
 
     if-eqz v1, :cond_8
@@ -494,17 +493,17 @@
     :goto_4
     invoke-virtual {p0, v10, v1}, Lcom/actionbarsherlock/internal/view/menu/BaseMenuPresenter;->addItemView(Landroid/view/View;I)V
 
-    .line 26
+    .line 4
     :cond_3
     add-int/lit8 v4, v4, 0x1
 
-    .line 51
+    .line 30
     :cond_4
     add-int/lit8 v1, v6, 0x1
 
     if-eqz v7, :cond_a
 
-    .line 25
+    .line 13
     :cond_5
     :goto_5
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
@@ -513,7 +512,7 @@
 
     if-ge v4, v1, :cond_0
 
-    .line 65
+    .line 53
     sget-boolean v1, Lcom/actionbarsherlock/ActionBarSherlock;->isRtl:Z
 
     if-eqz v1, :cond_9
@@ -527,7 +526,7 @@
 
     if-nez v1, :cond_5
 
-    .line 52
+    .line 61
     add-int/lit8 v4, v4, 0x1
 
     if-eqz v7, :cond_5
@@ -537,10 +536,10 @@
     :cond_6
     move v2, v4
 
-    .line 34
+    .line 55
     goto :goto_2
 
-    .line 67
+    .line 46
     :cond_7
     const/4 v2, 0x0
 
@@ -549,13 +548,13 @@
     :cond_8
     move v1, v4
 
-    .line 11
+    .line 63
     goto :goto_4
 
     :cond_9
     move v1, v4
 
-    .line 65
+    .line 53
     goto :goto_6
 
     :cond_a

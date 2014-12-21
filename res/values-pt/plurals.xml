@@ -168,10 +168,6 @@ durante %d mês"</item>
         <item quantity="other">Faltam %d participantes</item>
         <item quantity="one">Falta %d participante</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">O restauro a partir da cópia de segurança repôs %,d mensagens.</item>
-        <item quantity="one">O restauro a partir da cópia de segurança repôs %,d mensagem.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">A enviar %1$d vídeos para %2$s</item>
         <item quantity="one">A enviar %1$d vídeo para %2$s</item>

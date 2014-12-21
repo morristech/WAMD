@@ -17,13 +17,13 @@
     .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
+    .line 2
     iput-object p1, p0, Lorg/spongycastle/crypto/KeyGenerationParameters;->random:Ljava/security/SecureRandom;
 
-    .line 5
+    .line 6
     iput p2, p0, Lorg/spongycastle/crypto/KeyGenerationParameters;->strength:I
 
-    .line 6
+    .line 5
     return-void
 .end method
 
@@ -33,7 +33,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 4
     iget-object v0, p0, Lorg/spongycastle/crypto/KeyGenerationParameters;->random:Ljava/security/SecureRandom;
 
     return-object v0
@@ -43,7 +43,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 1
     iget v0, p0, Lorg/spongycastle/crypto/KeyGenerationParameters;->strength:I
 
     return v0

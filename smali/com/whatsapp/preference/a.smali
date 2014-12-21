@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 2
     iput-object p1, p0, Lcom/whatsapp/preference/a;->a:Lcom/whatsapp/preference/WaMultiSelectListPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -29,7 +29,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 1
     iget-object v0, p0, Lcom/whatsapp/preference/a;->a:Lcom/whatsapp/preference/WaMultiSelectListPreference;
 
     invoke-static {v0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a(Lcom/whatsapp/preference/WaMultiSelectListPreference;)[Z
@@ -38,6 +38,6 @@
 
     aput-boolean p3, v0, p2
 
-    .line 2
+    .line 3
     return-void
 .end method

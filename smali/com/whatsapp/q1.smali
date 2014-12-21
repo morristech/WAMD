@@ -3,20 +3,20 @@
 .source "q1.java"
 
 # interfaces
-.implements Landroid/text/TextWatcher;
+.implements Landroid/widget/AdapterView$OnItemClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ap7;
+.field final a:Lcom/whatsapp/GroupChatInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ap7;)V
+.method constructor <init>(Lcom/whatsapp/GroupChatInfo;)V
     .locals 0
 
     .prologue
-    .line 5
-    iput-object p1, p0, Lcom/whatsapp/q1;->a:Lcom/whatsapp/ap7;
+    .line 6
+    iput-object p1, p0, Lcom/whatsapp/q1;->a:Lcom/whatsapp/GroupChatInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,33 +25,58 @@
 
 
 # virtual methods
-.method public afterTextChanged(Landroid/text/Editable;)V
-    .locals 0
+.method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+    .locals 3
 
     .prologue
-    .line 4
-    return-void
-.end method
+    .line 8
+    invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
-.method public beforeTextChanged(Ljava/lang/CharSequence;III)V
-    .locals 0
+    move-result-object v0
 
-    .prologue
-    .line 1
-    return-void
-.end method
+    check-cast v0, Lcom/whatsapp/tc;
 
-.method public onTextChanged(Ljava/lang/CharSequence;III)V
-    .locals 1
+    .line 7
+    if-eqz v0, :cond_0
 
-    .prologue
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/q1;->a:Lcom/whatsapp/ap7;
+    iget-object v1, p0, Lcom/whatsapp/q1;->a:Lcom/whatsapp/GroupChatInfo;
 
-    iget-object v0, v0, Lcom/whatsapp/ap7;->a:Landroid/widget/EditText;
+    invoke-static {v1}, Lcom/whatsapp/GroupChatInfo;->d(Lcom/whatsapp/GroupChatInfo;)Ljava/util/HashMap;
 
-    invoke-static {v0, p1}, Lcom/whatsapp/ad_;->a(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
+    move-result-object v1
+
+    iget-object v2, v0, Lcom/whatsapp/tc;->b:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
 
     .line 2
+    iget-object v1, p0, Lcom/whatsapp/q1;->a:Lcom/whatsapp/GroupChatInfo;
+
+    iget-object v2, v0, Lcom/whatsapp/tc;->b:Ljava/lang/String;
+
+    invoke-static {v1, v2}, Lcom/whatsapp/GroupChatInfo;->c(Lcom/whatsapp/GroupChatInfo;Ljava/lang/String;)V
+
+    sget v1, Lcom/whatsapp/App;->h:I
+
+    if-eqz v1, :cond_1
+
+    .line 5
+    :cond_0
+    if-eqz v0, :cond_1
+
+    .line 4
+    iget-object v1, p0, Lcom/whatsapp/q1;->a:Lcom/whatsapp/GroupChatInfo;
+
+    invoke-static {v1, v0}, Lcom/whatsapp/GroupChatInfo;->a(Lcom/whatsapp/GroupChatInfo;Lcom/whatsapp/tc;)Lcom/whatsapp/tc;
+
+    .line 3
+    invoke-virtual {p2}, Landroid/view/View;->showContextMenu()Z
+
+    .line 1
+    :cond_1
     return-void
 .end method

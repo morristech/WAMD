@@ -1,55 +1,327 @@
 .class Lcom/whatsapp/f8;
-.super Ljava/lang/Object;
+.super Landroid/widget/Filter;
 .source "f8.java"
-
-# interfaces
-.implements Lcom/google/android/gms/maps/GoogleMap$OnMapClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/GroupChatLiveLocationsActivity2;
+.field final a:Lcom/whatsapp/hz;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/GroupChatLiveLocationsActivity2;)V
+.method private constructor <init>(Lcom/whatsapp/hz;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity2;
+    .line 29
+    iput-object p1, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/hz;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/widget/Filter;-><init>()V
+
+    return-void
+.end method
+
+.method constructor <init>(Lcom/whatsapp/hz;Lcom/whatsapp/a9d;)V
+    .locals 0
+
+    .prologue
+    .line 27
+    invoke-direct {p0, p1}, Lcom/whatsapp/f8;-><init>(Lcom/whatsapp/hz;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onMapClick(Lcom/google/android/gms/maps/model/LatLng;)V
-    .locals 2
+.method protected performFiltering(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;
+    .locals 7
 
     .prologue
+    sget v2, Lcom/whatsapp/App;->h:I
+
+    .line 19
+    new-instance v3, Landroid/widget/Filter$FilterResults;
+
+    invoke-direct {v3}, Landroid/widget/Filter$FilterResults;-><init>()V
+
+    .line 2
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_6
+
+    .line 37
+    invoke-static {}, Lcom/whatsapp/n3;->b()Ljava/util/ArrayList;
+
+    move-result-object v1
+
     .line 5
-    iget-object v0, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity2;
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Lcom/whatsapp/GroupChatLiveLocationsActivity2;->a(Lcom/whatsapp/GroupChatLiveLocationsActivity2;Lcom/whatsapp/protocol/c;)Lcom/whatsapp/protocol/c;
-
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity2;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity2;->i(Lcom/whatsapp/GroupChatLiveLocationsActivity2;)Lcom/whatsapp/ui;
+    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/whatsapp/ui;->h()V
+    invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 30
+    invoke-virtual {v1}, Ljava/util/ArrayList;->listIterator()Ljava/util/ListIterator;
+
+    move-result-object v5
+
+    :cond_0
+    invoke-interface {v5}, Ljava/util/ListIterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    .line 1
+    invoke-interface {v5}, Ljava/util/ListIterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    invoke-static {v0}, Lcom/whatsapp/n3;->b(Ljava/lang/String;)Lcom/whatsapp/tc;
+
+    move-result-object v0
+
+    .line 22
+    iget-object v6, v0, Lcom/whatsapp/tc;->s:Lcom/whatsapp/p5;
+
+    if-nez v6, :cond_1
+
+    invoke-virtual {v0}, Lcom/whatsapp/tc;->i()Z
+
+    move-result v6
+
+    if-nez v6, :cond_1
+
+    invoke-virtual {v0}, Lcom/whatsapp/tc;->p()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_3
 
     .line 4
-    iget-object v0, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity2;
+    :cond_1
+    invoke-virtual {v0}, Lcom/whatsapp/tc;->i()Z
 
-    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity2;->b(Lcom/whatsapp/GroupChatLiveLocationsActivity2;)V
+    move-result v6
+
+    if-eqz v6, :cond_2
+
+    invoke-virtual {v0}, Lcom/whatsapp/tc;->b()Z
+
+    move-result v6
+
+    if-nez v6, :cond_3
+
+    .line 28
+    :cond_2
+    invoke-virtual {v0, v4}, Lcom/whatsapp/tc;->g(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    .line 35
+    :cond_3
+    invoke-interface {v5}, Ljava/util/ListIterator;->remove()V
+
+    .line 14
+    :cond_4
+    if-eqz v2, :cond_0
+
+    .line 23
+    :cond_5
+    if-eqz v2, :cond_7
+
+    .line 10
+    :cond_6
+    iget-object v0, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/hz;
+
+    iget-object v0, v0, Lcom/whatsapp/hz;->a:Lcom/whatsapp/ConversationsFragment;
+
+    invoke-virtual {v0}, Lcom/whatsapp/ConversationsFragment;->d()Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    .line 33
+    :goto_0
+    iput-object v0, v3, Landroid/widget/Filter$FilterResults;->values:Ljava/lang/Object;
+
+    .line 17
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    iput v0, v3, Landroid/widget/Filter$FilterResults;->count:I
+
+    .line 9
+    return-object v3
+
+    :cond_7
+    move-object v0, v1
+
+    goto :goto_0
+.end method
+
+.method protected publishResults(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V
+    .locals 6
+
+    .prologue
+    const v5, 0x7f0b0197
+
+    const/16 v4, 0x8
+
+    sget v0, Lcom/whatsapp/App;->h:I
+
+    .line 21
+    iget-object v1, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/hz;
+
+    iget-object v1, v1, Lcom/whatsapp/hz;->a:Lcom/whatsapp/ConversationsFragment;
+
+    invoke-virtual {v1}, Lcom/whatsapp/ConversationsFragment;->getView()Landroid/view/View;
+
+    move-result-object v1
+
+    .line 24
+    if-eqz v1, :cond_2
+
+    .line 7
+    iget v2, p2, Landroid/widget/Filter$FilterResults;->count:I
+
+    if-nez v2, :cond_1
 
     .line 3
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+
+    move-result v2
+
+    if-lez v2, :cond_0
+
+    .line 16
+    invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    .line 26
+    const/4 v3, 0x0
+
+    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+
+    .line 34
+    iget-object v3, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/hz;
+
+    iget-object v3, v3, Lcom/whatsapp/hz;->a:Lcom/whatsapp/ConversationsFragment;
+
+    invoke-static {v3}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/ConversationsFragment;)Landroid/widget/ListView;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v2}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
+
+    .line 32
+    const v2, 0x7f0b019b
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
+
+    .line 31
+    const v2, 0x7f0b019a
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
+
+    .line 8
+    if-eqz v0, :cond_2
+
+    .line 13
+    :cond_0
+    invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
+
+    .line 11
+    iget-object v2, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/hz;
+
+    iget-object v2, v2, Lcom/whatsapp/hz;->a:Lcom/whatsapp/ConversationsFragment;
+
+    invoke-static {v2}, Lcom/whatsapp/ConversationsFragment;->j(Lcom/whatsapp/ConversationsFragment;)V
+
+    if-eqz v0, :cond_2
+
+    .line 20
+    :cond_1
+    invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
+
+    .line 6
+    :cond_2
+    iget-object v0, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/hz;
+
+    iget-object v1, v0, Lcom/whatsapp/hz;->a:Lcom/whatsapp/ConversationsFragment;
+
+    iget-object v0, p2, Landroid/widget/Filter$FilterResults;->values:Ljava/lang/Object;
+
+    check-cast v0, Ljava/util/ArrayList;
+
+    invoke-static {v1, v0}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/ConversationsFragment;Ljava/util/ArrayList;)Ljava/util/ArrayList;
+
+    .line 15
+    iget-object v0, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/hz;
+
+    iget-object v0, v0, Lcom/whatsapp/hz;->a:Lcom/whatsapp/ConversationsFragment;
+
+    invoke-static {v0}, Lcom/whatsapp/ConversationsFragment;->b(Lcom/whatsapp/ConversationsFragment;)Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    if-nez v0, :cond_3
+
+    .line 12
+    iget-object v0, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/hz;
+
+    iget-object v0, v0, Lcom/whatsapp/hz;->a:Lcom/whatsapp/ConversationsFragment;
+
+    iget-object v1, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/hz;
+
+    iget-object v1, v1, Lcom/whatsapp/hz;->a:Lcom/whatsapp/ConversationsFragment;
+
+    invoke-virtual {v1}, Lcom/whatsapp/ConversationsFragment;->d()Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/whatsapp/ConversationsFragment;->a(Lcom/whatsapp/ConversationsFragment;Ljava/util/ArrayList;)Ljava/util/ArrayList;
+
+    .line 25
+    :cond_3
+    iget-object v0, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/hz;
+
+    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/whatsapp/hz;->a(Lcom/whatsapp/hz;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 36
+    iget-object v0, p0, Lcom/whatsapp/f8;->a:Lcom/whatsapp/hz;
+
+    invoke-virtual {v0}, Lcom/whatsapp/hz;->notifyDataSetChanged()V
+
+    .line 18
     return-void
 .end method

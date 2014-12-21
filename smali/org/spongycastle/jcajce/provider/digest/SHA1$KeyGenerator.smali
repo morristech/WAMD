@@ -9,30 +9,32 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 6
 
-    const-string v0, "RsB/oR\u007f2"
+    const/4 v1, 0x2
+
+    const-string v0, "JOdsgJC\u0014"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v0
 
-    array-length v1, v0
+    array-length v2, v0
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
+
+    move v4, v3
 
     move v3, v2
 
-    move v2, v1
-
-    move-object v1, v0
+    move-object v2, v0
 
     :goto_0
-    if-gt v2, v3, :cond_0
+    if-gt v3, v4, :cond_0
 
     new-instance v0, Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v0, v2}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -43,44 +45,44 @@
     return-void
 
     :cond_0
-    aget-char v4, v1, v3
+    aget-char v5, v2, v4
 
-    rem-int/lit8 v0, v3, 0x5
+    rem-int/lit8 v0, v4, 0x5
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x3c
+    const/16 v0, 0x34
 
     :goto_1
-    xor-int/2addr v0, v4
+    xor-int/2addr v0, v5
 
     int-to-char v0, v0
 
-    aput-char v0, v1, v3
+    aput-char v0, v2, v4
 
-    add-int/lit8 v0, v3, 0x1
+    add-int/lit8 v0, v4, 0x1
 
-    move v3, v0
+    move v4, v0
 
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x1a
+    move v0, v1
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x3e
+    move v0, v1
 
     goto :goto_1
 
     :pswitch_2
-    const/4 v0, 0x3
+    const/16 v0, 0x25
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x6c
+    const/16 v0, 0x30
 
     goto :goto_1
 
@@ -99,7 +101,7 @@
     .locals 3
 
     .prologue
-    .line 1
+    .line 2
     sget-object v0, Lorg/spongycastle/jcajce/provider/digest/SHA1$KeyGenerator;->z:Ljava/lang/String;
 
     const/16 v1, 0xa0
@@ -110,6 +112,6 @@
 
     invoke-direct {p0, v0, v1, v2}, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;-><init>(Ljava/lang/String;ILorg/spongycastle/crypto/CipherKeyGenerator;)V
 
-    .line 2
+    .line 1
     return-void
 .end method

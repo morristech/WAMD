@@ -52,6 +52,7 @@
     <string name="android_wear_see_you_soon">Uz tikšanos</string>
     <string name="android_wear_thanks">Paldies</string>
     <string name="android_wear_yes">Jā</string>
+    <string name="answer_the_call">Atbildēt</string>
     <string name="archive_all_chats">Arhivēt visas sarunas</string>
     <string name="archive_all_chats_ask">Vai tiešām vēlaties arhivēt VISAS sarunas?</string>
     <string name="archive_broadcast">Arhivēt apraižu sarakstu</string>
@@ -71,14 +72,6 @@
     <string name="audio_note_tip">Turiet lai ierakstītu, atlaidiet lai nosūtītu</string>
     <string name="audio_note_tip_2">Lūdzu, ierakstiet garāku ziņu</string>
     <string name="audio_note_top_mic_tip">Lūdzu, runājiet sava telefona augšējā mikrofonā</string>
-    <string name="auth_client_needs_enabling_title">Lai lietojumprogramma darbotos, ir jāiespējo Google Play pakalpojumi.</string>
-    <string name="auth_client_needs_installation_title">Lai lietojumprogramma darbotos, ir jāinstalē Google Play pakalpojumi.</string>
-    <string name="auth_client_needs_update_title">Lai lietojumprogramma darbotos, jāatjaunina Google Play pakalpojumi.</string>
-    <string name="auth_client_play_services_err_notification_msg">Google Play pakalpojumu kļūda</string>
-    <string name="auth_client_requested_by_msg">Pieprasījums no lietotnes %1$s</string>
-    <string name="auth_client_using_bad_version_title">Lietojumpr. mēģināja izmantot nederīgu Google Play pakalp. versiju.</string>
-    <string name="barcode_scanner_dialog_body">Šai lietojumprogrammai nepieciešams svītru kodu skeneris. Vai vēlaties to instalēt?</string>
-    <string name="barcode_scanner_dialog_title">Vai instalēt svītru kodu skeneri?</string>
     <string name="block">Bloķēt</string>
     <string name="block_ask">Vai tiešām vēlaties bloķēt šo kontaktu?</string>
     <string name="block_list_desc_1">"Pieskarieties labās puses augšējā stūra ikonai, lai izvēlētos kontaktu, ko bloķēt.
@@ -141,6 +134,7 @@ Ja Jums ir gan jauns tālrunis, gan jauns numurs, vispirms, nomainiet numuru no 
     <string name="clear_all_chats_ask">Vai tiešām vēlaties nodzēst ziņas VISĀS sarunās?</string>
     <string name="clear_call_log">Nodzēst sarakstu</string>
     <string name="clear_call_log_ask">Vai nodzēst visu zvanu sarakstu?</string>
+    <string name="clear_single_log">Dzēst no zvanu saraksta</string>
     <string name="clock_wrong">Jūsu tālruņa datums nav korekts! Pielāgojiet savu pulksteni un mēģiniet vēlreiz.</string>
     <string name="clock_wrong_report_current_date_time">"Jūsu tālruņa datums un laiks ir: 
 %1$s 
@@ -159,23 +153,32 @@ Ja Jums ir gan jauns tālrunis, gan jauns numurs, vispirms, nomainiet numuru no 
     <string name="color_red">Sarkans</string>
     <string name="color_white">Balts</string>
     <string name="color_yellow">Dzeltens</string>
+    <string name="common_android_wear_notification_needs_update_text">Lai nodrošinātu kādas lietojumprogrammas darbību, jāatjaunina lietotne Android Wear.</string>
+    <string name="common_android_wear_update_text">Šī lietotne nedarbosies, ja neatjaunināsiet lietotni Android Wear.</string>
+    <string name="common_android_wear_update_title">Android Wear atjaunināšana</string>
     <string name="common_google_play_services_enable_button">Iespējot Google Play pakalpojumus</string>
     <string name="common_google_play_services_enable_text">Lai šī lietotne darbotos, iespējojiet Google Play pakalpojumus.</string>
     <string name="common_google_play_services_enable_title">Google Play pakalpojumu iespējošana</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Pieprasījums no lietotnes %1$s</string>
     <string name="common_google_play_services_install_button">Iegūt Google Play pakalpojumus</string>
     <string name="common_google_play_services_install_text_phone">Lai šī lietotne darbotos, tālrunī ir jāinstalē Google Play pakalpojumi.</string>
     <string name="common_google_play_services_install_text_tablet">Lai šī lietotne darbotos, planšetdatorā ir jāinstalē Google Play pakalpojumi.</string>
     <string name="common_google_play_services_install_title">Google Play pakalpojumu iegūšana</string>
     <string name="common_google_play_services_invalid_account_text">Norādītais konts šajā ierīcē nepastāv. Lūdzu, izvēlieties citu kontu.</string>
     <string name="common_google_play_services_invalid_account_title">Nederīgs konts</string>
+    <string name="common_google_play_services_needs_enabling_title">Lai lietojumprogramma darbotos, jāiespējo Google Play pakalpojumi.</string>
     <string name="common_google_play_services_network_error_text">Lai izveidotu savienojumu ar Google Play pakalpojumiem, ir nepieciešams datu savienojums.</string>
     <string name="common_google_play_services_network_error_title">Tīkla kļūda</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Lai lietojumprogramma darbotos, jāinstalē Google Play pakalpojumi.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Lai lietojumprogramma darbotos, jāatjaunina Google Play pakalpojumi.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play pakalpojumu kļūda</string>
     <string name="common_google_play_services_unknown_issue">Nezināma problēma ar Google Play pakalpojumiem.</string>
     <string name="common_google_play_services_unsupported_text">Jūsu ierīce neatbalsta Google Play pakalpojumus, kuri nepieciešami dažu jūsu lietojumprogrammu darbībai. Lūdzu, sazinieties ar ražotāju, lai saņemtu palīdzību.</string>
     <string name="common_google_play_services_unsupported_title">Google Play pakalpojumi</string>
     <string name="common_google_play_services_update_button">Atjaunināt</string>
     <string name="common_google_play_services_update_text">Lai šī lietotne darbotos, atjauniniet Google Play pakalpojumus.</string>
     <string name="common_google_play_services_update_title">Google Play pakalpojumu atjaunināšana</string>
+    <string name="common_open_on_phone">Atvērt tālrunī</string>
     <string name="common_signin_button_text">Pierakst.</string>
     <string name="common_signin_button_text_long">Pierakstīties Google</string>
     <string name="confirm_forward_msg">Pārsūtīt uz %s?</string>
@@ -320,7 +323,9 @@ Ja Jums ir gan jauns tālrunis, gan jauns numurs, vispirms, nomainiet numuru no 
     <string name="error_adding_participant">Nevar pievienot %s. Mēģiniet vēlreiz.</string>
     <string name="error_adding_participant_401">Nevar pievienot %s</string>
     <string name="error_adding_participant_500">Nevarat pievienot %s grupai, jo tā ir pilna.</string>
+    <string name="error_audio_messages_disabled_during_call">Nav iespējams ierakstīt skaņu WhatsApp zvana laikā.</string>
     <string name="error_bad_media">Nav iespējams izmantot šo failu. Bojāts vai neatbalstīts multivides tips.</string>
+    <string name="error_call_disabled_during_call">Nav iespējams uzsākt jaunu zvanu savienojuma laikā.</string>
     <string name="error_db_diskio">Nav iespējams piekļūt datu bāzei.</string>
     <string name="error_file_is_not_a_image">Fails, kuru izvēlējāties, nav attēls.</string>
     <string name="error_load_image">Attēla ielāde neizdevās. Lūdzu, vēlāk mēģiniet vēlreiz.</string>
@@ -342,13 +347,14 @@ Pieejami %1$s"</string>
     <string name="error_unable_to_open_msgstoredb">Nav iespējams atvērt ziņu vēsturi.</string>
     <string name="error_unable_to_update_readonly_msgstoredb">Nav iespējams atjaunināt ziņu vēsturi.</string>
     <string name="error_unexpected">Radās neparedzēta kļūda</string>
+    <string name="error_video_messages_disabled_during_call">Nav iespējams ierakstīt video WhatsApp zvana laikā.</string>
+    <string name="error_voice_messages_disabled_during_call">Nav iespējams ierakstīt balss ziņojumu WhatsApp zvana laikā.</string>
     <string name="error_wallpaper_invalid_file">Lūdzu, izvēlaties citu attēla failu.</string>
     <string name="error_zero_audio_length">Nav iespējams atskaņot, audio garums ir nulle.</string>
     <string name="eula_agree">Piekrist un turpināt</string>
     <string name="eula_description">Starpplatformu mobilā ziņapmaiņa ar draugiem visā pasaulē</string>
     <string name="eula_tablets_not_supported">Piezīme: planšetdatori pašlaik netiek atbalstīti.</string>
     <string name="eula_terms_of_service">Lietošanas noteikumi</string>
-    <string name="eula_title">Sveicināti WhatsApp!</string>
     <string name="existing_contact">Esošs</string>
     <string name="exit">Iziet</string>
     <string name="exit_group">Pamest grupu</string>
@@ -523,7 +529,6 @@ Tagad Jūsu pakalpojuma termiņš beigsies %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Nav iespējams lejupielādēt, jo nav pietiekoši daudz brīvas vietas iekšējā koplietošanas krātuvē. Lūdzu, noņemiet failus no tās un mēģiniet vēlreiz.</string>
     <string name="invalid_media_message_download">Nav iespējams lejupielādēt no nederīgas ziņas. Lūdzu, mēģiniet ziņu sūtīt vēlreiz.</string>
     <string name="invalid_message_forward">Ziņa nevar tikt pārsūtīta kļūdainam adresātam.</string>
-    <string name="invalid_qr_code">Nepareizs QR kods</string>
     <string name="invalid_url_for_download">Nav iespējams lejupielādēt. Lūdzu, prasiet Jums to nosūtīt vēlreiz.</string>
     <string name="invite">Uzaicināt</string>
     <string name="invite_friends">Uzaicināt draugus</string>
@@ -569,7 +574,6 @@ WhatsApp var tikt instalēts tikai vienā ierīcē vienam tālruņa numuram."</s
     <string name="menuitem_add">Pievienot</string>
     <string name="menuitem_contacts">Kontakti</string>
     <string name="menuitem_debug">Atkļūdot</string>
-    <string name="menuitem_delete_qr">Dzēst QR kodu</string>
     <string name="menuitem_groupchat">Jauna grupa</string>
     <string name="menuitem_list">Jauna apraide</string>
     <string name="menuitem_mute">Klusums</string>
@@ -610,14 +614,10 @@ WhatsApp var tikt instalēts tikai vienā ierīcē vienam tālruņa numuram."</s
     <string name="msg_store_backup_failed">Nav iespējams veikt ziņu dublēšanu</string>
     <string name="msg_store_backup_failed_try_again_later">Nav iespējams veikt ziņu dublēšanu. Lūdzu, vēlāk mēģiniet vēlreiz.</string>
     <string name="msg_store_backup_found">Atrasta rezerves kopija</string>
-    <string name="msg_store_backup_found_registration">Atrasta ziņu rezerves kopija!</string>
     <string name="msg_store_backup_skipped">Dublēšana izlaista</string>
     <string name="msg_store_backup_skipped_no_media">Ziņas dublēšana izlaista: Nav atrasta multivides karte.</string>
     <string name="msg_store_backup_skipped_read_only_media">Ziņas dublēšana izlaista: Atrasta tikai lasāma multivides karte.</string>
     <string name="msg_store_confirm">Apstiprināt</string>
-    <string name="msg_store_creation_backup_message">Vēlaties atjaunot ziņu vēsturi no rezerves kopijām?</string>
-    <string name="msg_store_do_not_restore">Neatjaunot</string>
-    <string name="msg_store_do_not_restore_no_thanks">Nē, paldies</string>
     <string name="msg_store_error_found">Radās kļūme. Lūdzu, apturiet un atkārtoti palaidiet WhatsApp.</string>
     <string name="msg_store_error_not_restored">Atvainojiet, mums neizdevās atjaunot nevienu no ziņu dublējumkopijām.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Ziņas tiks zaudētas. Vai tiešām nevēlaties atjaunot ziņu vēsturi no rezerves kopijas?</string>
@@ -644,9 +644,6 @@ WhatsApp var tikt instalēts tikai vienā ierīcē vienam tālruņa numuram."</s
     <string name="need_sd_card_shared_storage">Lūdzu, atslēdziet USB krātuvi un mēģiniet vēlreiz.</string>
     <string name="network_required">Jums šobrīd nav pieejams neviens tīkla savienojums.</string>
     <string name="network_usage_ask_reset_message">Vai Jūs tiešām vēlaties atiestatīt statistiku?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Pēdējā atiestatīšana: %1$s</string>
     <string name="network_usage_media_bytes_received">Saņemtā multivide:</string>
     <string name="network_usage_media_bytes_sent">Nosūtītā multivide:</string>
@@ -687,6 +684,7 @@ WhatsApp var tikt instalēts tikai vienā ierīcē vienam tālruņa numuram."</s
     <string name="notes">Izmaiņas</string>
     <string name="notification_ticker_header">Ziņa no %s</string>
     <string name="ok">Labi</string>
+    <string name="ongoing_call">Zvana</string>
     <string name="outgoing_call">Izejošais zvans</string>
     <string name="overlay_reregister">Reverificēt</string>
     <string name="participant_adding">Pievieno...</string>
@@ -708,6 +706,7 @@ WhatsApp var tikt instalēts tikai vienā ierīcē vienam tālruņa numuram."</s
     <string name="pay_now_comment">1 gadam par tikai %s</string>
     <string name="payment_issues_button">Apmaksa internetā</string>
     <string name="payment_wifi_enabled">Operatora norēķini nedarbojas ar ieslēgtu Wi-Fi. Vai vēlaties izslēgt Wi-Fi?</string>
+    <string name="peer_in_another_call">Aizņemts</string>
     <string name="personal_info_visibility">Personiskās informācijas redzamība</string>
     <string name="photo_changed_by">%s nomainīja grupas ikonu</string>
     <string name="photo_changed_by_1">... nomainīja grupas ikonu</string>
@@ -813,6 +812,7 @@ Vai piekrītat, vai arī vēlaties rediģēt numuru?"</string>
     <string name="register_sms_radio_off">"Atvainojiet, WhatsApp nevarēja nosūtīt verifikācijas īsziņu, jo Jūsu tālrunis ir atslēgts vai nav uztverams.
 
 Lūdzu, mēģiniet vēlreiz kad tālrunis būs uztverams."</string>
+    <string name="register_stale">Jūsu ievadītais kods tika nosūtīts pārāk sen un vairs nav derīgs. Mēģiniet vēlreiz.</string>
     <string name="register_tapped_link_no_phone_number">Pirms pieskaraties verificēšanas saitei SMS, vispirms ierakstiet savu valsts kodu, tālruņa numuru un pieskarieties “%s”.</string>
     <string name="register_temporarily_unavailable">WhatsApp īslaicīgi nav pieejams. Lūdzu, vēlāk mēģiniet vēlreiz.</string>
     <string name="register_temporarily_unavailable_with_time">WhatsApp īslaicīgi nav pieejams. Lūdzu, mēģiniet vēlreiz pēc %s.</string>
@@ -836,6 +836,8 @@ Lūdzu, pārliecinieties, ka varat saņemt zvanus un īsziņas.
 Lūdzu uzgaidiet kamēr tiek nosūtīts jauns kods.
 
 Mēģiniet vēlreiz pēc %1$s."</string>
+    <string name="register_voice_input_error_message">Jūsu ievadītais kods nav pareizs. Pārbaudiet to un ievadiet atkārtoti. (atlikuši %d mēģinājumi)</string>
+    <string name="register_voice_input_error_message_with_time">Jūsu ievadītais kods nav pareizs. Pārbaudiet to un ievadiet atkārtoti pēc %1$s. (atlikuši %2$d mēģinājumi)</string>
     <string name="register_voice_input_message">Lūdzu, ievadiet %d ciparu kodu</string>
     <string name="register_voice_input_title">Ievade</string>
     <string name="register_voice_provider_timeout">Nav iespējams veikt zvanu. Lūdzu, uzgaidiet %s pirms mēģiniet vēlreiz.</string>
@@ -854,6 +856,7 @@ Mēģiniet vēlreiz pēc %1$s."</string>
     <string name="register_wait_message">Lūdzu, uzgaidiet brīdi</string>
     <string name="register_xmpp_title">Inicializē...</string>
     <string name="registration_cellular_network_required">Lai aktivizētu WhatsApp ir nepieciešams mobilo datu savienojums.</string>
+    <string name="reject_the_call">Noraidīt</string>
     <string name="remove">Noņemt</string>
     <string name="remove_contact_name_from_group">Noņemt %1$s no grupas</string>
     <string name="remove_contact_name_from_list">Noņemt %1$s no apraides saraksta</string>
@@ -964,6 +967,7 @@ lietošanas termiņš beigsies šodien!"</string>
     <string name="settings_privacy_message">Ja nedalaties ar savu pēdējās pieslēgšanās laiku, neredzēsiet citu lietotāju pēdējās pieslēgšanās laikus</string>
     <string name="settings_privacy_profile_photo">Profila attēls</string>
     <string name="settings_privacy_read_receipts">Lasīšanas atskaites</string>
+    <string name="settings_privacy_read_receipts_message">Ja izslēgsiet lasīšanas paziņojumus, neredzēsiet citu personu lasīšanas paziņojumus. Lasīšanas paziņojumi grupas sarakstei vienmēr tiek nosūtīti.</string>
     <string name="settings_privacy_status">Statuss</string>
     <string name="settings_profile_info">Profils</string>
     <string name="settings_push_name_summary">Šis nav Jūsu lietotājvārds vai PIN kods. Šis vārds būs redzams Jūsu WhatsApp kontaktiem.</string>
@@ -997,19 +1001,10 @@ Nosūtīts no WhatsApp"</string>
     <string name="software_expired_get_from_play">Šī WhatsApp versija ir pārāk veca un vairs nefunkcionē. Lūdzu, atveriet Google Play, lai lejupielādētu jaunāko versiju.</string>
     <string name="software_expired_get_from_play_with_date">Šī WhatsApp versija ir novecojusi &lt;b>%1$s&lt;/b>. Lūdzu, apmeklējiet Google Play, lai lejupielādētu jaunāko versiju.&lt;br>&lt;br>Jūsu ierīces datums ir &lt;b>%2$s&lt;/b>. Ja datums ir nepareizs, lūdzu, labojiet ierīces datuma iestatījumus un restartējiet WhatsApp.</string>
     <string name="software_expired_with_date">Šī WhatsApp versija ir novecojusi &lt;b>%1$s&lt;/b>. Pieskarieties “Lejupielādēt”, lai iegūtu jaunāko versiju.&lt;br>&lt;br> Jūsu ierīces datums ir &lt;b>%2$s&lt;/b>. Ja datums ir nepareizs, lūdzu, labojiet ierīces datuma iestatījumus un restartējiet WhatsApp.</string>
-    <string name="spam_generic">"Esat īslaicīgi bloķēts no WhatsApp, jo, iespējams, pārkāpāt pakalpojuma lietošanas noteikumus.
-Varēsiet atkal lietot WhatsApp pēc:"</string>
     <string name="spam_generic_data_connection_missing">Pārliecinieties, ka tālrunim ir aktīvs datu savienojums.</string>
     <string name="spam_generic_unknown_time_left">Esat īslaicīgi bloķēts no WhatsApp, jo, iespējams pārkāpāt mūsu pakalpojuma izmantošanas noteikumus. Drīz atkal varēsiet izmantot WhatsApp.</string>
     <string name="spam_learn_more">Uzzināt vairāk</string>
     <string name="spam_title">Īslaicīgi bloķēts</string>
-    <string name="spam_too_many_blocks">Esat īslaicīgi bloķēts no WhatsApp, jo pārāk daudz personu nobloķēja Jūs.</string>
-    <string name="spam_too_many_groups">"Esat īslaicīgi bloķēts no WhatsApp, jo izveidojāt pārāk daudz grupu ar personām, kurām neesat kontaktu sarakstā.
-Varēsiet atkal lietot WhatsApp pēc:"</string>
-    <string name="spam_too_many_messages">"Esat īslaicīgi bloķēts no WhatsApp, jo nosūtījāt pārāk daudz ziņu pārāk daudz personām, kurām neesat kontaktu sarakstā.
-Varēsiet atkal lietot WhatsApp pēc:"</string>
-    <string name="spam_too_many_people">"Esat īslaicīgi bloķēts no WhatsApp, jo nosūtījāt identisku ziņu pārāk daudz personām.
-Varēsiet atkal lietot WhatsApp pēc:"</string>
     <string name="status">Statuss</string>
     <string name="status_default_at_gym">Sporta zālē</string>
     <string name="status_default_at_movies">Kino</string>
@@ -1177,6 +1172,7 @@ Lūdzu, mēģiniet veikt balss zvana verifikāciju."</string>
     <string name="view_list_media">Apraides multivide</string>
     <string name="view_website">Skatīt vietni</string>
     <string name="voip_activity_label">Balss zvans</string>
+    <string name="voip_call_bluetooth_toggle_description">Pārslēgties Bluetooth</string>
     <string name="voip_call_end_button_description">Beigt zvanu</string>
     <string name="voip_call_goto_chat_description">Skatīt saraksti</string>
     <string name="voip_call_incoming">IENĀKOŠAIS</string>
@@ -1188,6 +1184,12 @@ Lūdzu, mēģiniet veikt balss zvana verifikāciju."</string>
     <string name="voip_call_recording_started">VoIP zvana ierakste sākta</string>
     <string name="voip_call_speakerphone_toggle_description">Pārslēgt uz skaļruni</string>
     <string name="voip_call_start_button_description">Sākt zvanu</string>
+    <string name="voip_debug_remove_all_recordings">Dzēst visus ierakstus</string>
+    <string name="voip_debug_removed_all_recordings">Visi ieraksti ir dzēsti.</string>
+    <string name="voip_debug_report_bad_quality">Ziņot par sliktas kvalitātes skaņu</string>
+    <string name="voip_debug_reported_bad_quality">Izveidots ieraksts žurnālā par sliktu audio kvalitāti.</string>
+    <string name="voip_debug_start_recording">Sākt ierakstīšanu</string>
+    <string name="voip_debug_stop_recording">Pārtraukt ierakstīšanu</string>
     <string name="voip_not_allowed_at_this_time">%s šobrīd nevar saņemt WhatsApp zvanus</string>
     <string name="voip_not_allowed_needs_update">%s nepieciešams aplikācijas atjauninājums, lai saņemtu WhatsApp zvanus</string>
     <string name="voip_not_allowed_never">%s nevar saņemt WhatsApp zvanus</string>

@@ -1,41 +1,26 @@
-.class Lcom/whatsapp/w8;
+.class public final Lcom/whatsapp/w8;
 .super Ljava/lang/Object;
 .source "w8.java"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lorg/whispersystems/libaxolotl/ab;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/Advanced;
+.field private final a:Lcom/whatsapp/qx;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/Advanced;)V
+.method constructor <init>(Lcom/whatsapp/qx;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/w8;->a:Lcom/whatsapp/Advanced;
-
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 2
-
-    .prologue
     .line 3
-    iget-object v0, p0, Lcom/whatsapp/w8;->a:Lcom/whatsapp/Advanced;
+    iput-object p1, p0, Lcom/whatsapp/w8;->a:Lcom/whatsapp/qx;
 
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/Advanced;->showDialog(I)V
-
-    .line 2
+    .line 1
     return-void
 .end method

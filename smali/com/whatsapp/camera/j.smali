@@ -1,36 +1,43 @@
 .class Lcom/whatsapp/camera/j;
-.super Lcom/whatsapp/util/at;
+.super Ljava/lang/Object;
 .source "j.java"
+
+# interfaces
+.implements Landroid/hardware/Camera$AutoFocusCallback;
 
 
 # instance fields
-.field final b:Lcom/whatsapp/camera/CameraActivity;
+.field final a:Lcom/whatsapp/camera/CameraView;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/camera/CameraActivity;)V
+.method constructor <init>(Lcom/whatsapp/camera/CameraView;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/camera/j;->b:Lcom/whatsapp/camera/CameraActivity;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/camera/j;->a:Lcom/whatsapp/camera/CameraView;
 
-    invoke-direct {p0}, Lcom/whatsapp/util/at;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/view/View;)V
+.method public onAutoFocus(ZLandroid/hardware/Camera;)V
     .locals 1
 
     .prologue
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/camera/j;->b:Lcom/whatsapp/camera/CameraActivity;
+    iget-object v0, p0, Lcom/whatsapp/camera/j;->a:Lcom/whatsapp/camera/CameraView;
 
-    invoke-static {v0}, Lcom/whatsapp/camera/CameraActivity;->i(Lcom/whatsapp/camera/CameraActivity;)V
+    invoke-static {v0}, Lcom/whatsapp/camera/CameraView;->h(Lcom/whatsapp/camera/CameraView;)Lcom/whatsapp/camera/o;
 
-    .line 3
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lcom/whatsapp/camera/o;->a(Z)V
+
+    .line 2
     return-void
 .end method

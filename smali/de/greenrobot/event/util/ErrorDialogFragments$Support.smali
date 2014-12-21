@@ -23,7 +23,7 @@
     .locals 2
 
     .prologue
-    .line 3
+    .line 1
     invoke-virtual {p0}, Lde/greenrobot/event/util/ErrorDialogFragments$Support;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -32,9 +32,9 @@
 
     move-result-object v1
 
-    invoke-static {p1, p2, v0, v1}, Lde/greenrobot/event/util/b;->a(Landroid/content/DialogInterface;ILandroid/app/Activity;Landroid/os/Bundle;)V
+    invoke-static {p1, p2, v0, v1}, Lde/greenrobot/event/util/l;->a(Landroid/content/DialogInterface;ILandroid/app/Activity;Landroid/os/Bundle;)V
 
-    .line 1
+    .line 3
     return-void
 .end method
 
@@ -51,7 +51,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0}, Lde/greenrobot/event/util/b;->a(Landroid/content/Context;Landroid/os/Bundle;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/Dialog;
+    invoke-static {v0, v1, p0}, Lde/greenrobot/event/util/l;->a(Landroid/content/Context;Landroid/os/Bundle;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/Dialog;
 
     move-result-object v0
 

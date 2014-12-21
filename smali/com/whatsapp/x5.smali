@@ -3,20 +3,20 @@
 .source "x5.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnCancelListener;
+.implements Landroid/preference/Preference$OnPreferenceChangeListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/BroadcastDetails;
+.field final a:Lcom/whatsapp/SettingsNotifications;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/BroadcastDetails;)V
+.method constructor <init>(Lcom/whatsapp/SettingsNotifications;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/x5;->a:Lcom/whatsapp/BroadcastDetails;
+    .line 7
+    iput-object p1, p0, Lcom/whatsapp/x5;->a:Lcom/whatsapp/SettingsNotifications;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,17 +25,39 @@
 
 
 # virtual methods
-.method public onCancel(Landroid/content/DialogInterface;)V
+.method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 2
 
     .prologue
+    .line 6
+    move-object v0, p1
+
+    check-cast v0, Landroid/preference/ListPreference;
+
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/x5;->a:Lcom/whatsapp/BroadcastDetails;
+    check-cast p2, Ljava/lang/String;
 
-    const/4 v1, 0x3
+    invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/BroadcastDetails;->removeDialog(I)V
+    move-result v1
 
     .line 2
-    return-void
+    invoke-virtual {v0}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    .line 4
+    aget-object v0, v0, v1
+
+    invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 3
+    invoke-virtual {p1, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+
+    .line 5
+    const/4 v0, 0x1
+
+    return v0
 .end method

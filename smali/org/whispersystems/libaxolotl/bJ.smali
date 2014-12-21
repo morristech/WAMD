@@ -1,16 +1,21 @@
 .class public Lorg/whispersystems/libaxolotl/bJ;
-.super Ljava/lang/Exception;
+.super Ljava/lang/Object;
 .source "bJ.java"
 
 
+# static fields
+.field public static a:I
+
+
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .prologue
     .line 1
-    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+    const v0, 0xffffff
 
-    .line 2
+    sput v0, Lorg/whispersystems/libaxolotl/bJ;->a:I
+
     return-void
 .end method

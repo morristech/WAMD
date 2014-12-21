@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Felvételhez tartsd lenyomva, küldéshez engedd el</string>
     <string name="audio_note_tip_2">Kérjük hosszabb üzenetet vegyél fel</string>
     <string name="audio_note_top_mic_tip">Kérjük, beszélj a telefonod tetején található mikrofonba</string>
-    <string name="auth_client_needs_enabling_title">Egy alkalmazás kéri a Google Play Szolgáltatások engedélyezését.</string>
-    <string name="auth_client_needs_installation_title">Egy alkalmazás kéri a Google Play Szolgáltatások telepítését.</string>
-    <string name="auth_client_needs_update_title">Egy alkalmazás kéri a Google Play Szolgáltatások frissítését.</string>
-    <string name="auth_client_play_services_err_notification_msg">Google Play szolgáltatási hiba</string>
-    <string name="auth_client_requested_by_msg">Igénylő: %1$s</string>
-    <string name="auth_client_using_bad_version_title">Egy alkalmazás a Play Szolgáltatások rossz verzióját akarta használni.</string>
-    <string name="barcode_scanner_dialog_body">Az applikációhoz szükséges egy vonalkódolvasó. Szeretnél most telepíteni egyet?</string>
-    <string name="barcode_scanner_dialog_title">Telepíted a vonalkódolvasót?</string>
     <string name="block">Letiltás</string>
     <string name="block_ask">Biztosan le akarod tiltani ezt a kapcsolatot?</string>
     <string name="block_list_desc_1">"Érintsd meg az jobb felső sarokban lévő ikont egy kapcsolat letiltásához.
@@ -113,6 +105,8 @@ Csak azon kapcsolataid kapják meg a körüzenetedet, akiknek a te telefonszámo
     <string name="camera_shortcut">WhatsApp Kamera</string>
     <string name="camera_title">WhatsApp fotó vagy videó küldése</string>
     <string name="camera_video_preview_title">WhatsApp videó küldése</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">WhatsApp hívás indításához először kapcsold ki a Repülőgép üzemmódot.</string>
+    <string name="can_not_start_voip_call_in_phone_call">WhatsApp hívás indítása nem lehetséhes, amennyiben már benne vagy egy telefonhívásban.</string>
     <string name="cancel">Mégsem</string>
     <string name="cannot_send_not_a_group_participant">Nem tudsz üzenetet küldeni ennek a csoportnak, mivel nem vagy többé résztvevő.</string>
     <string name="cannot_send_selected_file">Médiafájl küldése sikertelen. Rossz fájlt választottál, vagy a fájl formátuma nem támogatott.</string>
@@ -161,23 +155,32 @@ Csak azon kapcsolataid kapják meg a körüzenetedet, akiknek a te telefonszámo
     <string name="color_red">Piros</string>
     <string name="color_white">Fehér</string>
     <string name="color_yellow">Sárga</string>
-    <string name="common_google_play_services_enable_button">Play Szolgáltatások aktiválása</string>
-    <string name="common_google_play_services_enable_text">Az alkalmazás csak akkor fog működni, ha engedélyezi a Google Play Szolgáltatásokat.</string>
-    <string name="common_google_play_services_enable_title">Google Play Szolgáltatások aktiválása</string>
-    <string name="common_google_play_services_install_button">Play Szolgáltatások telepítése</string>
-    <string name="common_google_play_services_install_text_phone">Az alkalmazás működéséhez a Google Play Szolgáltatások szükségesek, ezek nincsenek telepítve a telefonon.</string>
-    <string name="common_google_play_services_install_text_tablet">Az alkalmazás működéséhez a Google Play Szolgáltatások szükségesek, ezek nincsenek telepítve a táblagépen.</string>
-    <string name="common_google_play_services_install_title">Play Szolgáltatások telepítése</string>
+    <string name="common_android_wear_notification_needs_update_text">Egy alkalmazás az Android Wear-alkalmazás frissítését igényli.</string>
+    <string name="common_android_wear_update_text">Ez az alkalmazás nem működik, amíg nem frissíti az Android Wear-alkalmazást.</string>
+    <string name="common_android_wear_update_title">Az Android Wear frissítése</string>
+    <string name="common_google_play_services_enable_button">Play-szolgáltatások aktiválása</string>
+    <string name="common_google_play_services_enable_text">Az alkalmazás csak akkor fog működni, ha engedélyezi a Google Play-szolgáltatásokat.</string>
+    <string name="common_google_play_services_enable_title">Google Play-szolgáltatások aktiválása</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">A(z) %1$s kérésére</string>
+    <string name="common_google_play_services_install_button">Play-szolgáltatások telepítése</string>
+    <string name="common_google_play_services_install_text_phone">Az alkalmazás működéséhez a Google Play-szolgáltatások szükségesek, ezek nincsenek telepítve a telefonon.</string>
+    <string name="common_google_play_services_install_text_tablet">Az alkalmazás működéséhez a Google Play-szolgáltatások szükségesek, ezek nincsenek telepítve a táblagépen.</string>
+    <string name="common_google_play_services_install_title">Play-szolgáltatások telepítése</string>
     <string name="common_google_play_services_invalid_account_text">A megadott fiók nem létezik ezen az eszközön. Kérjük, válasszon másik fiókot.</string>
     <string name="common_google_play_services_invalid_account_title">Érvénytelen fiók</string>
-    <string name="common_google_play_services_network_error_text">A Google Play Szolgáltatásokhoz történő kapcsolódáshoz adatkapcsolat szükséges.</string>
+    <string name="common_google_play_services_needs_enabling_title">Egy alkalmazás Google Play-szolgáltatások engedélyezését kéri.</string>
+    <string name="common_google_play_services_network_error_text">A Google Play-szolgáltatásokhoz történő kapcsolódáshoz adatkapcsolat szükséges.</string>
     <string name="common_google_play_services_network_error_title">Hálózati hiba</string>
-    <string name="common_google_play_services_unknown_issue">Ismeretlen hiba a Google Play Szolgáltatásokban.</string>
-    <string name="common_google_play_services_unsupported_text">A Google Play Szolgáltatásokat, amelyre egyes alkalmazások támaszkodnak, nem támogatja az eszköz. Segítségért forduljon az eszköz gyártójához.</string>
-    <string name="common_google_play_services_unsupported_title">Google Play Szolgáltatások</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Egy alkalmazás Google Play-szolgáltatások telepítését kéri.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Egy alkalmazás Google Play-szolgáltatások frissítését kéri.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play-szolgáltatások – hiba</string>
+    <string name="common_google_play_services_unknown_issue">Ismeretlen hiba a Google Play-szolgáltatásokban.</string>
+    <string name="common_google_play_services_unsupported_text">A Google Play-szolgáltatásokat, amelyre egyes alkalmazások támaszkodnak, nem támogatja az eszköz. Segítségért forduljon az eszköz gyártójához.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play-szolgáltatások</string>
     <string name="common_google_play_services_update_button">Frissítés</string>
-    <string name="common_google_play_services_update_text">Az alkalmazás csak akkor fog működni, ha frissíti a Google Play Szolgáltatásokat.</string>
-    <string name="common_google_play_services_update_title">Play Szolgáltatások frissítése</string>
+    <string name="common_google_play_services_update_text">Az alkalmazás csak akkor fog működni, ha frissíti a Google Play-szolgáltatásokat.</string>
+    <string name="common_google_play_services_update_title">Play-szolgáltatások frissítése</string>
+    <string name="common_open_on_phone">Megnyitás a telefonon</string>
     <string name="common_signin_button_text">Belépés</string>
     <string name="common_signin_button_text_long">Google-bejelentkezés</string>
     <string name="confirm_forward_msg">Továbbítás neki: %s?</string>
@@ -227,7 +230,7 @@ Csak azon kapcsolataid kapják meg a körüzenetedet, akiknek a te telefonszámo
     <string name="conversation_download_audio">Hang letöltése</string>
     <string name="conversation_is_composing">gépel...</string>
     <string name="conversation_is_recording">hangfelvétel folyamatban...</string>
-    <string name="conversation_last_seen">legutóbb online</string>
+    <string name="conversation_last_seen">utoljára láttuk</string>
     <string name="conversation_menu_forward">Továbbítás</string>
     <string name="conversation_name_is_composing">%s gépel...</string>
     <string name="conversation_name_is_recording">%s hangot rögzít...</string>
@@ -425,7 +428,7 @@ A szolgáltatás mostantól %s-ig érvényes."</string>
     <string name="gps_required_body">Helyadatok beállításának mutatása?</string>
     <string name="gps_required_title">A GPS nincs bekapcsolva</string>
     <string name="group_add_contact_failed">Kapcsolat hozzáadása sikertelen.</string>
-    <string name="group_admin">Csoport Admin</string>
+    <string name="group_admin">Csoport admin</string>
     <string name="group_confirm_forward_msg">Továbbítás neki: \"%s\"?</string>
     <string name="group_confirm_set_icon">Beállítod a “%s” csoportikonját?</string>
     <string name="group_confirm_sharing_title">Megosztás vele: %s?</string>
@@ -468,7 +471,7 @@ A szolgáltatás mostantól %s-ig érvényes."</string>
     <string name="group_error_remove_participants_no_such_group">Nem tudsz eltávolítani résztvevőket, mivel ez a csoport lezárult.</string>
     <string name="group_error_remove_participants_not_authorized">Nem tudsz eltávolítani részvevőket, mivel nem vagy admin.</string>
     <string name="group_error_remove_participants_not_in_group">Nem tudsz eltávolítani résztvevőket, mivel nem vagy résztvevő.</string>
-    <string name="group_error_subject">Nem tudod a témát megváltoztatni. Kérjük, próbáld újra.</string>
+    <string name="group_error_subject">A téma megváltoztatása nem sikerült. Kérjük, próbáld újra.</string>
     <string name="group_error_subject_no_such_group">Nem tudsz témát változtatni, mivel ez a csoport lezárult.</string>
     <string name="group_error_subject_not_authorized">Nem tudsz témát változtatni, mivel nem vagy admin.</string>
     <string name="group_error_subject_not_in_group">Nem tudsz témát változtatni, mivel nem vagy résztvevő.</string>
@@ -529,7 +532,6 @@ A szolgáltatás mostantól %s-ig érvényes."</string>
     <string name="insufficient_space_for_download_shared_storage">Letöltés sikertelen, mivel nincs elég hely a belső megosztott memóriában. Kérjük törölj néhány fájlt és próbáld újra.</string>
     <string name="invalid_media_message_download">Letöltés sikertelen, mivel az üzenet hibás. Kérjük próbáld meg újra elküldeni az üzenetet.</string>
     <string name="invalid_message_forward">Érvénytelen kapcsolathoz az üzenet nem továbbítható.</string>
-    <string name="invalid_qr_code">Érvénytelen QR kód</string>
     <string name="invalid_url_for_download">Letöltés sikertelen. Kérd meg az üzenet küldőjét, hogy küldje újra.</string>
     <string name="invite">Meghívás</string>
     <string name="invite_friends">Ismerősök meghívása</string>
@@ -575,7 +577,6 @@ A WhatsApp hívószámonként csak egy készülékre telepíthető."</string>
     <string name="menuitem_add">Hozzáad</string>
     <string name="menuitem_contacts">Kapcsolatok</string>
     <string name="menuitem_debug">Hibakeresés</string>
-    <string name="menuitem_delete_qr">QR kód törlése</string>
     <string name="menuitem_groupchat">Új csoport</string>
     <string name="menuitem_list">Új körüzenet</string>
     <string name="menuitem_mute">Némít</string>
@@ -616,14 +617,15 @@ A WhatsApp hívószámonként csak egy készülékre telepíthető."</string>
     <string name="msg_store_backup_failed">Az üzenetek biztonsági mentése sikertelen.</string>
     <string name="msg_store_backup_failed_try_again_later">Nem sikerült az üzenetek biztonsági mentése. Kérjük, próbálkozz később.</string>
     <string name="msg_store_backup_found">Korábbi biztonsági mentést találtunk</string>
-    <string name="msg_store_backup_found_registration">Üzenetek biztonsági mentése megtalálva!</string>
+    <string name="msg_store_backup_found_registration">Biztonsági mentés megtalálva</string>
+    <string name="msg_store_backup_found_title">Chat előzmények visszaállítása</string>
     <string name="msg_store_backup_skipped">Biztonsági mentés kihagyva</string>
     <string name="msg_store_backup_skipped_no_media">Üzenetek biztonsági mentése kihagyva: Média kártya nem található.</string>
     <string name="msg_store_backup_skipped_read_only_media">Üzenetek biztonsági mentése kihagyva: Médiakártya csak olvasható.</string>
     <string name="msg_store_confirm">Megerősít</string>
-    <string name="msg_store_creation_backup_message">Visszaállítod üzeneteidet a biztonsági mentésből?</string>
-    <string name="msg_store_do_not_restore">Ne állítsa vissza</string>
-    <string name="msg_store_do_not_restore_no_thanks">Nem, köszönöm</string>
+    <string name="msg_store_creation_backup_message">Állítsd vissza a csevegési előzményeidet a biztonsági mentésből. Amennyiben ezt nem teszed meg most, később nem lesz lehetőséged a visszaállításra.</string>
+    <string name="msg_store_do_not_restore">Visszaállítás kihagy.</string>
+    <string name="msg_store_do_not_restore_no_thanks">Visszaállítás kihagy.</string>
     <string name="msg_store_error_found">Hiba történt. Kérjük lépj ki és indítsd újra a WhatsApp-ot!</string>
     <string name="msg_store_error_not_restored">Sajnáljuk, nem tudjuk helyreállítani az üzeneteidet a biztonsági mentésből.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Üzeneteid el fognak veszni. Biztos vagy benne, hogy nem akarod visszaállítani az üzenetnaplót a biztonsági mentésből?</string>
@@ -650,9 +652,6 @@ A WhatsApp hívószámonként csak egy készülékre telepíthető."</string>
     <string name="need_sd_card_shared_storage">Kérjük kapcsold ki az USB meghajtót és próbáld újra.</string>
     <string name="network_required">Nincs semmilyen hálózati kapcsolatod.</string>
     <string name="network_usage_ask_reset_message">Biztosan törölni akarod az összes statisztikát?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f kB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Utoljára alaphelyzetbe állítva: %1$s</string>
     <string name="network_usage_media_bytes_received">Fogadott médiafájlok mérete:</string>
     <string name="network_usage_media_bytes_sent">Elküldött médiafájlok mérete:</string>
@@ -719,7 +718,7 @@ A WhatsApp hívószámonként csak egy készülékre telepíthető."</string>
     <string name="personal_info_visibility">Ki láthatja a személyes adataimat?</string>
     <string name="photo_changed_by">%s megváltoztatta a csoport ikonját</string>
     <string name="photo_changed_by_1">... megváltoztatta a csoport ikonját</string>
-    <string name="photo_changed_by_you">Mefváltoztattad a csoport ikonját.</string>
+    <string name="photo_changed_by_you">Megváltoztattad a csoport ikonját.</string>
     <string name="photo_changed_by_you_1">... megváltoztatta a csoport ikonját</string>
     <string name="photo_faled_save_to_gallery">Mentés sikertelen</string>
     <string name="photo_loading">Betöltés...</string>
@@ -899,6 +898,7 @@ Kérjük ellenőrizd a mobilszolgáltatódnál, hogy képes vagy e SMS és hív�
     <string name="send_location">Pozicó küldése</string>
     <string name="send_payment_button">Fizetési hivatkozás küldése</string>
     <string name="send_payment_url_via">Fizetési hivatkozás küldése...</string>
+    <string name="send_this_location">Helyzet küldése</string>
     <string name="send_your_current_location">Aktuális pozíció küldése</string>
     <string name="sending_video_to_contact">Videó küldése %s részére</string>
     <string name="sent_to_group">Küldés neki: “%s”</string>
@@ -1010,19 +1010,19 @@ WhatsApp-pal küldve"</string>
     <string name="software_expired_get_from_play">Ez a WhatsApp verzió túl régi, és többé már nem működik. Kérjük töltsd le a legfrissebb verziót a Google Play-ről.</string>
     <string name="software_expired_get_from_play_with_date">A WhatsApp ezen verziója elavulttá vált &lt;b>%1$s&lt;/b>-én. Kérjük látogass el a Google Play weboldalára és töltsd le a legfrissebb verziót.&lt;br>&lt;br> A készüléked dátuma: &lt;b>%2$s&lt;/b>. Ha ez nem helyes kérjük pontosítsd készüléked dátum beállításait majd indítsd újra a WhatsApp-ot.</string>
     <string name="software_expired_with_date">A WhatsApp ezen verziója elavulttá vált ekkor: &lt;b>%1$s&lt;/b>. Koppints a “Letöltés” gombra a legfrissebb verzió letöltéséhez.&lt;br>&lt;br>A te készüléked dátumbeéllítása &lt;b>%2$s&lt;/b>. Amennyiben a dátum helytelen, kérjük javítsd a készüléked dátum beállítását és indítsd újra a WhatsApp-ot.</string>
-    <string name="spam_generic">"Ideiglenesen ki lettél tiltva a WhatsApp-ból, mivel valószínüleg megszegted a felhasználási feltételeinket. 
- Újra használhatod majd a WhatsApp-ot ekkor:"</string>
+    <string name="spam_generic">"Ideiglenesen ki vagy tiltva a WhatsApp-ból, mivel valószínűleg megsértetted a használati feltételeket.
+
+Újra használhatod a Whatsapp-ot ekkor:"</string>
     <string name="spam_generic_data_connection_missing">Győződj meg róla, hogy a telefonod rendelkezik aktív adatkapcsolattal.</string>
     <string name="spam_generic_unknown_time_left">Ideiglenesen ki vagy tiltva a WhatsApp-ból, mivel valószínűleg megsértetted a használati feltételeinket. Hamarosan újra használhatod a WhatsApp-ot.</string>
     <string name="spam_learn_more">Tudj meg többet!</string>
     <string name="spam_title">Ideiglenesen kitiltott</string>
-    <string name="spam_too_many_blocks">Ideiglenesen ki vagy tiltva a WhatsApp-ból, mivel túl sok felhasználó letiltott (block) téged.</string>
-    <string name="spam_too_many_groups">"Ideiglenesen ki lettél tiltva a WhatsApp-ból, mivel túl sok csoportot hoztál létre olyan felhasználókkal, akiknek nem szerepelsz a névjegyzékében. 
- Újra használhatod majd a WhatsApp-ot ekkor:"</string>
-    <string name="spam_too_many_messages">"Ideiglenesen ki lettél tiltva a WhatsApp-ból, mivel túl sok üzenetet küldtél olyan felhasználóknak, akiknek nem szerepelsz a névjegyzékében.
+    <string name="spam_too_many_groups">"Ideiglenesen ki vagy tiltva a WhatsApp-ból, mivel túl sok csoportot hoztál létre olyan részvevőkkel, akiknek te nem szerepelsz a névjegyzékében.
+
 Újra használhatod majd a WhatsApp-ot ekkor:"</string>
-    <string name="spam_too_many_people">"Ideiglenesen ki vagy tiltva a WhatsApp-ból, mivel ugyanazt az üzenetet küldted túl sok felhasználónak.
-Újra használhatod a WhatsApp-ot ekkor:"</string>
+    <string name="spam_too_many_messages">"Ideiglenesen ki vagy tiltva a WhatsApp-ból, mivel túl sok üzenetet küldél olyan felhasználóknak, akiknek nem szerepelsz a névjegyzékében.
+
+Újra használhatod majd a WhatsApp-ot ekkor:"</string>
     <string name="status">Állapot</string>
     <string name="status_default_at_gym">Edzőteremben</string>
     <string name="status_default_at_movies">Moziban</string>
@@ -1190,7 +1190,9 @@ Kérjük próbálkozz a hang hitelesítéssel."</string>
     <string name="view_list_media">Körlista média</string>
     <string name="view_website">Weboldal megtekintése</string>
     <string name="voip_activity_label">Hanghívás</string>
+    <string name="voip_call_bluetooth_toggle_description">Bluetooth váltás</string>
     <string name="voip_call_end_button_description">Hívás befejezése</string>
+    <string name="voip_call_failed_no_network">A hívás nem sikerült. Bizonyosodj meg róla, hogy a telefonod rendelkezik Internet kapcsolattal, majd próbáld újra.</string>
     <string name="voip_call_goto_chat_description">Csevegés nézet</string>
     <string name="voip_call_incoming">BEJÖVŐ</string>
     <string name="voip_call_label">WhatsApp hívás</string>
@@ -1243,5 +1245,4 @@ Kérjük lépj ki a \"%1$s\" hálózatból, vagy indítsd újra a Wi-Fi-t a hál
     <string name="yesterday">Tegnap</string>
     <string name="yesterday_at">tegnap ekkor: %s</string>
     <string name="you">Te</string>
-    <string name="voip_call_bluetooth_toggle_description">Bluetooth váltás</string>
 </resources>

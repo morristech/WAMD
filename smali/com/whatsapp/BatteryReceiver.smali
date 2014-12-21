@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "\u001bgF\u001b\u007f\u0013m\u000c\u0000~\u000elL\u001d>\u001bjV\u0000\u007f\u0014\'`(D.Lp0O9Ac\'W?M"
+    const-string v0, "]1\u0005/\u0006U;O4\u0007H:\u000f)G]<\u00154\u0006Rq#\u001c=h\u001a3\u00046\u007f\u0017 \u0013.y\u001b"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x10
+    const/16 v0, 0x69
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,22 +65,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x7a
+    const/16 v0, 0x3c
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x9
+    const/16 v0, 0x5f
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x22
+    const/16 v0, 0x61
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x69
+    const/16 v0, 0x5d
 
     goto :goto_1
 
@@ -97,7 +97,7 @@
     .locals 0
 
     .prologue
-    .line 6
+    .line 4
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -109,7 +109,7 @@
     .locals 2
 
     .prologue
-    .line 1
+    .line 6
     new-instance v0, Landroid/content/IntentFilter;
 
     sget-object v1, Lcom/whatsapp/BatteryReceiver;->z:Ljava/lang/String;
@@ -127,17 +127,17 @@
 
     .prologue
     .line 3
-    new-instance v0, Lcom/whatsapp/aav;
+    new-instance v0, Lcom/whatsapp/at6;
 
-    invoke-direct {v0, p2}, Lcom/whatsapp/aav;-><init>(Landroid/content/Intent;)V
+    invoke-direct {v0, p2}, Lcom/whatsapp/at6;-><init>(Landroid/content/Intent;)V
 
-    .line 2
-    invoke-static {}, Lde/greenrobot/event/f;->b()Lde/greenrobot/event/f;
+    .line 1
+    invoke-static {}, Lde/greenrobot/event/h;->b()Lde/greenrobot/event/h;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lde/greenrobot/event/f;->a(Ljava/lang/Object;)V
+    invoke-virtual {v1, v0}, Lde/greenrobot/event/h;->c(Ljava/lang/Object;)V
 
-    .line 4
+    .line 2
     return-void
 .end method

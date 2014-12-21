@@ -169,8 +169,8 @@
         <item quantity="one">%d преостаната</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Може да продолжиш. Штотуку вративме %,d пораки.</item>
-        <item quantity="one">Може да продолжиш. Штотуку вративме %,d порака.</item>
+        <item quantity="other">%,d пораки вратени. Може да продолжиш.</item>
+        <item quantity="one">%,d порака вратена. Може да продолжиш.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Испраќа %1$d видеа на %2$s</item>

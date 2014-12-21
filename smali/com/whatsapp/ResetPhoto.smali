@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, ":\u00080$4 \u001e\u001b"
+    const-string v0, "7\u0010!\u001bs-\u0006\n"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x51
+    const/16 v0, 0x16
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,22 +65,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x53
+    const/16 v0, 0x5e
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x7b
+    const/16 v0, 0x63
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x6f
+    const/16 v0, 0x7e
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x56
+    const/16 v0, 0x69
 
     goto :goto_1
 
@@ -97,7 +97,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 4
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
     return-void
@@ -109,29 +109,29 @@
     .locals 3
 
     .prologue
-    .line 2
+    .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 7
+    .line 6
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 5
+    .line 3
     sget-object v1, Lcom/whatsapp/ResetPhoto;->z:Ljava/lang/String;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 6
+    .line 7
     const/4 v1, -0x1
 
     invoke-virtual {p0, v1, v0}, Lcom/whatsapp/ResetPhoto;->setResult(ILandroid/content/Intent;)V
 
-    .line 3
+    .line 5
     invoke-virtual {p0}, Lcom/whatsapp/ResetPhoto;->finish()V
 
-    .line 4
+    .line 2
     return-void
 .end method

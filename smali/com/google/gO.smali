@@ -1,60 +1,90 @@
-.class final Lcom/google/gO;
+.class synthetic Lcom/google/go;
 .super Ljava/lang/Object;
-.source "gO.java"
+.source "go.java"
 
 
-# instance fields
-.field private final a:I
-
-.field private final b:I
+# static fields
+.field static final a:[I
 
 
 # direct methods
-.method private constructor <init>(II)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .prologue
-    .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    iput p1, p0, Lcom/google/gO;->b:I
-
     .line 1
-    iput p2, p0, Lcom/google/gO;->a:I
+    invoke-static {}, Lcom/google/d2;->values()[Lcom/google/d2;
 
-    .line 3
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Lcom/google/go;->a:[I
+
+    :try_start_0
+    sget-object v0, Lcom/google/go;->a:[I
+
+    sget-object v1, Lcom/google/d2;->GROUP:Lcom/google/d2;
+
+    invoke-virtual {v1}, Lcom/google/d2;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_2
+
+    :goto_0
+    :try_start_1
+    sget-object v0, Lcom/google/go;->a:[I
+
+    sget-object v1, Lcom/google/d2;->MESSAGE:Lcom/google/d2;
+
+    invoke-virtual {v1}, Lcom/google/d2;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :goto_1
+    :try_start_2
+    sget-object v0, Lcom/google/go;->a:[I
+
+    sget-object v1, Lcom/google/d2;->ENUM:Lcom/google/d2;
+
+    invoke-virtual {v1}, Lcom/google/d2;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_0
+
+    :goto_2
     return-void
-.end method
 
-.method constructor <init>(IILcom/google/aI;)V
-    .locals 0
+    :catch_0
+    move-exception v0
 
-    .prologue
-    .line 2
-    invoke-direct {p0, p1, p2}, Lcom/google/gO;-><init>(II)V
+    goto :goto_2
 
-    return-void
-.end method
+    :catch_1
+    move-exception v0
 
+    goto :goto_1
 
-# virtual methods
-.method a()I
-    .locals 1
+    :catch_2
+    move-exception v0
 
-    .prologue
-    .line 6
-    iget v0, p0, Lcom/google/gO;->b:I
-
-    return v0
-.end method
-
-.method b()I
-    .locals 1
-
-    .prologue
-    .line 7
-    iget v0, p0, Lcom/google/gO;->a:I
-
-    return v0
+    goto :goto_0
 .end method

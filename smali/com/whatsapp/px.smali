@@ -3,20 +3,20 @@
 .source "px.java"
 
 # interfaces
-.implements Lcom/whatsapp/apt;
+.implements Landroid/media/AudioManager$OnAudioFocusChangeListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/c9;
+.field final a:Lcom/whatsapp/yk;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/c9;)V
+.method constructor <init>(Lcom/whatsapp/yk;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/px;->a:Lcom/whatsapp/c9;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/px;->a:Lcom/whatsapp/yk;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,15 +25,10 @@
 
 
 # virtual methods
-.method public a(Ljava/util/ArrayList;)V
-    .locals 1
+.method public onAudioFocusChange(I)V
+    .locals 0
 
     .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/px;->a:Lcom/whatsapp/c9;
-
-    invoke-static {v0, p1}, Lcom/whatsapp/c9;->a(Lcom/whatsapp/c9;Ljava/util/ArrayList;)V
-
-    .line 3
+    .line 2
     return-void
 .end method

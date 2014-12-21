@@ -1,68 +1,87 @@
-.class final Lcom/tonicartos/widget/stickygridheaders/o;
+.class Lcom/tonicartos/widget/stickygridheaders/o;
 .super Ljava/lang/Object;
 .source "o.java"
 
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
+
+# instance fields
+.field private a:I
+
+.field final b:Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;
 
 
 # direct methods
-.method constructor <init>()V
+.method private constructor <init>(Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;)V
     .locals 0
 
     .prologue
-    .line 1
+    .line 3
+    iput-object p1, p0, Lcom/tonicartos/widget/stickygridheaders/o;->b:Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method constructor <init>(Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;Lcom/tonicartos/widget/stickygridheaders/d;)V
+    .locals 0
+
+    .prologue
+    .line 6
+    invoke-direct {p0, p1}, Lcom/tonicartos/widget/stickygridheaders/o;-><init>(Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/os/Parcel;)Lcom/tonicartos/widget/stickygridheaders/q;
+.method public a()Z
     .locals 2
 
     .prologue
-    .line 5
-    new-instance v0, Lcom/tonicartos/widget/stickygridheaders/q;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p1, v1}, Lcom/tonicartos/widget/stickygridheaders/q;-><init>(Landroid/os/Parcel;Lcom/tonicartos/widget/stickygridheaders/s;)V
-
-    return-object v0
-.end method
-
-.method public a(I)[Lcom/tonicartos/widget/stickygridheaders/q;
-    .locals 1
-
-    .prologue
     .line 4
-    new-array v0, p1, [Lcom/tonicartos/widget/stickygridheaders/q;
+    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/o;->b:Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;
 
-    return-object v0
+    invoke-virtual {v0}, Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;->hasWindowFocus()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/o;->b:Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;
+
+    .line 5
+    invoke-static {v0}, Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;->a(Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;)I
+
+    move-result v0
+
+    iget v1, p0, Lcom/tonicartos/widget/stickygridheaders/o;->a:I
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+.method public b()V
     .locals 1
 
     .prologue
     .line 2
-    invoke-virtual {p0, p1}, Lcom/tonicartos/widget/stickygridheaders/o;->a(Landroid/os/Parcel;)Lcom/tonicartos/widget/stickygridheaders/q;
+    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/o;->b:Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;
 
-    move-result-object v0
+    invoke-static {v0}, Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;->c(Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;)I
 
-    return-object v0
-.end method
+    move-result v0
 
-.method public newArray(I)[Ljava/lang/Object;
-    .locals 1
+    iput v0, p0, Lcom/tonicartos/widget/stickygridheaders/o;->a:I
 
-    .prologue
-    .line 3
-    invoke-virtual {p0, p1}, Lcom/tonicartos/widget/stickygridheaders/o;->a(I)[Lcom/tonicartos/widget/stickygridheaders/q;
-
-    move-result-object v0
-
-    return-object v0
+    .line 1
+    return-void
 .end method

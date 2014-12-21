@@ -113,9 +113,6 @@
     <plurals name="notification_new_message_from_multiple_contacts_2">
         <item quantity="other">%2$d件のチャット会話に新着メッセージ%1$s件</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">これで完了です。%,d通のメッセージを復元しました。</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">%2$sに%1$d本の動画を送信中</item>
     </plurals>

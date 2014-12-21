@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
@@ -27,7 +27,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 3
     const/4 v0, 0x0
 
     return-object v0

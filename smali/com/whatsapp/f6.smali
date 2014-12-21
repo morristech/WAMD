@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/uo;
+.field final a:Lcom/whatsapp/Advanced;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/uo;)V
+.method constructor <init>(Lcom/whatsapp/Advanced;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/f6;->a:Lcom/whatsapp/uo;
+    .line 6
+    iput-object p1, p0, Lcom/whatsapp/f6;->a:Lcom/whatsapp/Advanced;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,18 +26,35 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 2
+    .locals 3
 
     .prologue
+    .line 5
+    iget-object v0, p0, Lcom/whatsapp/f6;->a:Lcom/whatsapp/Advanced;
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Lcom/whatsapp/App;->a(Landroid/content/Context;I)V
+
+    .line 2
+    new-instance v0, Landroid/content/Intent;
+
+    iget-object v1, p0, Lcom/whatsapp/f6;->a:Lcom/whatsapp/Advanced;
+
+    const-class v2, Lcom/whatsapp/EULA;
+
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/f6;->a:Lcom/whatsapp/uo;
+    iget-object v1, p0, Lcom/whatsapp/f6;->a:Lcom/whatsapp/Advanced;
 
-    iget-object v0, v0, Lcom/whatsapp/uo;->a:Lcom/whatsapp/Conversation;
-
-    const/4 v1, 0x1
-
-    invoke-static {v0, v1}, Lcom/whatsapp/Conversation;->a(Lcom/whatsapp/Conversation;Z)V
+    invoke-virtual {v1}, Lcom/whatsapp/Advanced;->finish()V
 
     .line 3
+    iget-object v1, p0, Lcom/whatsapp/f6;->a:Lcom/whatsapp/Advanced;
+
+    invoke-virtual {v1, v0}, Lcom/whatsapp/Advanced;->startActivity(Landroid/content/Intent;)V
+
+    .line 4
     return-void
 .end method

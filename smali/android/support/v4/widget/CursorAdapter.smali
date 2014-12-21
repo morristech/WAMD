@@ -43,7 +43,7 @@
 
     new-array v4, v0, [Ljava/lang/String;
 
-    const-string v3, "Q/CS\u0012V/EU^AgEN^\\gHE\u0012F&FLWAg]HWKg^HW\u0005$_RAJ5\nIA\u00051KL[A"
+    const-string v3, "qU\u001865|\u001d\u0019z<}L\u0008z2gH\u001e5#2N\u0002z!}I\u0004.8}TM"
 
     const/4 v0, -0x1
 
@@ -81,7 +81,7 @@
 
     aput-object v3, v5, v4
 
-    const-string v0, "F(_LVK`^\u0000_J1O\u0000QP5YO@\u00053E\u0000BJ4CT[J)\n"
+    const-string v0, "fR\u0004)qaR\u0002/=v\u001a\u00024=k\u001a\u000f?qq[\u000164v\u001a\u001a24|\u001a\u0019242Y\u0018(\"}HM3\"2L\u000c68v"
 
     move-object v3, v0
 
@@ -98,7 +98,7 @@
 
     const/4 v3, 0x2
 
-    const-string v0, "z.N"
+    const-string v0, "MS\t"
 
     move v4, v3
 
@@ -124,7 +124,7 @@
 
     packed-switch v3, :pswitch_data_1
 
-    const/16 v3, 0x32
+    const/16 v3, 0x51
 
     :goto_2
     xor-int/2addr v3, v10
@@ -140,22 +140,22 @@
     goto :goto_1
 
     :pswitch_2
-    const/16 v3, 0x25
+    const/16 v3, 0x12
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v3, 0x47
+    const/16 v3, 0x3a
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v3, 0x2a
+    const/16 v3, 0x6d
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v3, 0x20
+    const/16 v3, 0x5a
 
     goto :goto_2
 
@@ -183,15 +183,15 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 16
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/CursorAdapter;->swapCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
 
     move-result-object v0
 
-    .line 37
+    .line 12
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 24
     :try_start_0
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
     :try_end_0
@@ -201,7 +201,7 @@
     :cond_0
     return-void
 
-    .line 3
+    .line 24
     :catch_0
     move-exception v0
 
@@ -212,7 +212,7 @@
     .locals 1
 
     .prologue
-    .line 20
+    .line 35
     if-nez p1, :cond_0
 
     :try_start_0
@@ -240,7 +240,7 @@
     .locals 1
 
     .prologue
-    .line 15
+    .line 3
     :try_start_0
     iget-boolean v0, p0, Landroid/support/v4/widget/CursorAdapter;->mDataValid:Z
     :try_end_0
@@ -253,7 +253,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 51
+    .line 50
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
@@ -263,7 +263,7 @@
     :goto_0
     return v0
 
-    .line 15
+    .line 3
     :catch_0
     move-exception v0
 
@@ -271,13 +271,13 @@
     :try_end_1
     .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 51
+    .line 50
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 9
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
@@ -288,7 +288,7 @@
     .locals 1
 
     .prologue
-    .line 21
+    .line 39
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
 
     return-object v0
@@ -298,23 +298,23 @@
     .locals 2
 
     .prologue
-    .line 60
+    .line 56
     :try_start_0
     iget-boolean v0, p0, Landroid/support/v4/widget/CursorAdapter;->mDataValid:Z
 
     if-eqz v0, :cond_1
 
-    .line 23
+    .line 49
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 10
+    .line 53
     if-nez p2, :cond_0
 
-    .line 63
+    .line 34
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
@@ -327,7 +327,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 38
+    .line 40
     :cond_0
     :goto_0
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mContext:Landroid/content/Context;
@@ -336,17 +336,17 @@
 
     invoke-virtual {p0, p2, v0, v1}, Landroid/support/v4/widget/CursorAdapter;->bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
 
-    .line 46
+    .line 44
     :goto_1
     return-object p2
 
-    .line 10
+    .line 53
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 46
+    .line 44
     :cond_1
     const/4 p2, 0x0
 
@@ -362,13 +362,13 @@
     .locals 1
 
     .prologue
-    .line 40
+    .line 55
     :try_start_0
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mCursorFilter:Landroid/support/v4/widget/CursorFilter;
 
     if-nez v0, :cond_0
 
-    .line 29
+    .line 2
     new-instance v0, Landroid/support/v4/widget/CursorFilter;
 
     invoke-direct {v0, p0}, Landroid/support/v4/widget/CursorFilter;-><init>(Landroid/support/v4/widget/CursorFilter$CursorFilterClient;)V
@@ -377,13 +377,13 @@
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 57
+    .line 6
     :cond_0
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mCursorFilter:Landroid/support/v4/widget/CursorFilter;
 
     return-object v0
 
-    .line 29
+    .line 2
     :catch_0
     move-exception v0
 
@@ -394,7 +394,7 @@
     .locals 1
 
     .prologue
-    .line 52
+    .line 18
     :try_start_0
     iget-boolean v0, p0, Landroid/support/v4/widget/CursorAdapter;->mDataValid:Z
     :try_end_0
@@ -407,18 +407,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 28
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
-    .line 54
+    .line 60
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
 
     :goto_0
     return-object v0
 
-    .line 52
+    .line 18
     :catch_0
     move-exception v0
 
@@ -426,13 +426,13 @@
     :try_end_1
     .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 54
+    .line 60
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 30
+    .line 48
     :cond_0
     const/4 v0, 0x0
 
@@ -445,7 +445,7 @@
     .prologue
     const-wide/16 v0, 0x0
 
-    .line 13
+    .line 61
     :try_start_0
     iget-boolean v2, p0, Landroid/support/v4/widget/CursorAdapter;->mDataValid:Z
     :try_end_0
@@ -460,7 +460,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 31
+    .line 41
     :try_start_2
     iget-object v2, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
 
@@ -470,7 +470,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 44
+    .line 15
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
 
     iget v1, p0, Landroid/support/v4/widget/CursorAdapter;->mRowIDColumn:I
@@ -481,11 +481,11 @@
 
     move-result-wide v0
 
-    .line 56
+    .line 32
     :cond_0
     return-wide v0
 
-    .line 13
+    .line 61
     :catch_0
     move-exception v0
 
@@ -494,7 +494,7 @@
     :try_end_3
     .catch Ljava/lang/IllegalStateException; {:try_start_3 .. :try_end_3} :catch_1
 
-    .line 31
+    .line 41
     :catch_1
     move-exception v0
 
@@ -503,7 +503,7 @@
     :try_end_4
     .catch Ljava/lang/IllegalStateException; {:try_start_4 .. :try_end_4} :catch_2
 
-    .line 44
+    .line 15
     :catch_2
     move-exception v0
 
@@ -514,18 +514,18 @@
     .locals 4
 
     .prologue
-    .line 5
+    .line 59
     :try_start_0
     iget-boolean v0, p0, Landroid/support/v4/widget/CursorAdapter;->mDataValid:Z
 
     if-nez v0, :cond_0
 
-    .line 17
+    .line 47
     new-instance v0, Ljava/lang/IllegalStateException;
 
     sget-object v1, Landroid/support/v4/widget/CursorAdapter;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     aget-object v1, v1, v2
 
@@ -540,7 +540,7 @@
 
     throw v0
 
-    .line 25
+    .line 36
     :cond_0
     :try_start_1
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
@@ -551,7 +551,7 @@
 
     if-nez v0, :cond_1
 
-    .line 58
+    .line 10
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -560,7 +560,7 @@
 
     sget-object v2, Landroid/support/v4/widget/CursorAdapter;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x1
+    const/4 v3, 0x0
 
     aget-object v2, v2, v3
 
@@ -587,11 +587,11 @@
 
     throw v0
 
-    .line 11
+    .line 22
     :cond_1
     if-nez p2, :cond_2
 
-    .line 41
+    .line 13
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
@@ -604,7 +604,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 35
+    .line 58
     :cond_2
     :goto_0
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mContext:Landroid/content/Context;
@@ -613,7 +613,7 @@
 
     invoke-virtual {p0, p2, v0, v1}, Landroid/support/v4/widget/CursorAdapter;->bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
 
-    .line 42
+    .line 25
     return-object p2
 
     :cond_3
@@ -626,7 +626,7 @@
     .locals 1
 
     .prologue
-    .line 22
+    .line 31
     const/4 v0, 0x1
 
     return v0
@@ -636,7 +636,7 @@
     .locals 1
 
     .prologue
-    .line 34
+    .line 23
     invoke-virtual {p0, p1, p2, p3}, Landroid/support/v4/widget/CursorAdapter;->newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
@@ -651,7 +651,7 @@
     .locals 1
 
     .prologue
-    .line 47
+    .line 33
     :try_start_0
     iget-boolean v0, p0, Landroid/support/v4/widget/CursorAdapter;->mAutoRequery:Z
     :try_end_0
@@ -675,7 +675,7 @@
 
     if-nez v0, :cond_0
 
-    .line 53
+    .line 57
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->requery()Z
@@ -686,11 +686,11 @@
     :try_end_2
     .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 45
+    .line 54
     :cond_0
     return-void
 
-    .line 47
+    .line 33
     :catch_0
     move-exception v0
 
@@ -707,7 +707,7 @@
     :try_end_4
     .catch Ljava/lang/IllegalStateException; {:try_start_4 .. :try_end_4} :catch_2
 
-    .line 53
+    .line 57
     :catch_2
     move-exception v0
 
@@ -718,13 +718,13 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 27
     :try_start_0
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mFilterQueryProvider:Landroid/widget/FilterQueryProvider;
 
     if-eqz v0, :cond_0
 
-    .line 12
+    .line 29
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mFilterQueryProvider:Landroid/widget/FilterQueryProvider;
 
     invoke-interface {v0, p1}, Landroid/widget/FilterQueryProvider;->runQuery(Ljava/lang/CharSequence;)Landroid/database/Cursor;
@@ -733,15 +733,17 @@
 
     move-result-object v0
 
+    .line 45
     :goto_0
     return-object v0
 
+    .line 29
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 8
+    .line 45
     :cond_0
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
 
@@ -752,7 +754,7 @@
     .locals 3
 
     .prologue
-    .line 18
+    .line 14
     :try_start_0
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
     :try_end_0
@@ -760,28 +762,26 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 59
+    .line 52
     const/4 v0, 0x0
 
-    .line 62
     :cond_0
     :goto_0
     return-object v0
 
-    .line 59
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 48
+    .line 8
     :cond_1
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
 
-    .line 6
+    .line 37
     if-eqz v0, :cond_3
 
-    .line 33
+    .line 51
     :try_start_1
     iget-object v1, p0, Landroid/support/v4/widget/CursorAdapter;->mChangeObserver:Landroid/support/v4/widget/CursorAdapter$ChangeObserver;
 
@@ -793,7 +793,7 @@
     :try_end_1
     .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_2
 
-    .line 36
+    .line 20
     :cond_2
     :try_start_2
     iget-object v1, p0, Landroid/support/v4/widget/CursorAdapter;->mDataSetObserver:Landroid/database/DataSetObserver;
@@ -806,17 +806,17 @@
     :try_end_2
     .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_3
 
-    .line 4
+    .line 38
     :cond_3
     :try_start_3
     iput-object p1, p0, Landroid/support/v4/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
     :try_end_3
     .catch Ljava/lang/IllegalStateException; {:try_start_3 .. :try_end_3} :catch_4
 
-    .line 26
+    .line 21
     if-eqz p1, :cond_6
 
-    .line 49
+    .line 1
     :try_start_4
     iget-object v1, p0, Landroid/support/v4/widget/CursorAdapter;->mChangeObserver:Landroid/support/v4/widget/CursorAdapter$ChangeObserver;
 
@@ -828,7 +828,7 @@
     :try_end_4
     .catch Ljava/lang/IllegalStateException; {:try_start_4 .. :try_end_4} :catch_5
 
-    .line 24
+    .line 62
     :cond_4
     :try_start_5
     iget-object v1, p0, Landroid/support/v4/widget/CursorAdapter;->mDataSetObserver:Landroid/database/DataSetObserver;
@@ -841,7 +841,7 @@
     :try_end_5
     .catch Ljava/lang/IllegalStateException; {:try_start_5 .. :try_end_5} :catch_6
 
-    .line 32
+    .line 9
     :cond_5
     :try_start_6
     sget-object v1, Landroid/support/v4/widget/CursorAdapter;->z:[Ljava/lang/String;
@@ -856,30 +856,30 @@
 
     iput v1, p0, Landroid/support/v4/widget/CursorAdapter;->mRowIDColumn:I
 
-    .line 28
+    .line 63
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Landroid/support/v4/widget/CursorAdapter;->mDataValid:Z
 
-    .line 16
+    .line 46
     invoke-virtual {p0}, Landroid/support/v4/widget/CursorAdapter;->notifyDataSetChanged()V
 
     sget-boolean v1, Landroid/support/v4/widget/SlidingPaneLayout;->a:Z
 
     if-eqz v1, :cond_0
 
-    .line 39
+    .line 17
     :cond_6
     const/4 v1, -0x1
 
     iput v1, p0, Landroid/support/v4/widget/CursorAdapter;->mRowIDColumn:I
 
-    .line 14
+    .line 4
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Landroid/support/v4/widget/CursorAdapter;->mDataValid:Z
 
-    .line 61
+    .line 43
     invoke-virtual {p0}, Landroid/support/v4/widget/CursorAdapter;->notifyDataSetInvalidated()V
     :try_end_6
     .catch Ljava/lang/IllegalStateException; {:try_start_6 .. :try_end_6} :catch_1
@@ -891,19 +891,19 @@
 
     throw v0
 
-    .line 33
+    .line 51
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 36
+    .line 20
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 49
+    .line 1
     :catch_4
     move-exception v0
 
@@ -917,7 +917,7 @@
 
     throw v0
 
-    .line 24
+    .line 62
     :catch_6
     move-exception v0
 

@@ -1,22 +1,22 @@
-.class final Lcom/whatsapp/j8;
+.class Lcom/whatsapp/j8;
 .super Ljava/lang/Object;
 .source "j8.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/text/TextWatcher;
 
 
 # instance fields
-.field final a:Landroid/app/Activity;
+.field final a:Lcom/whatsapp/cc;
 
 
 # direct methods
-.method constructor <init>(Landroid/app/Activity;)V
+.method constructor <init>(Lcom/whatsapp/cc;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/j8;->a:Landroid/app/Activity;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/j8;->a:Lcom/whatsapp/cc;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,17 +25,33 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+.method public afterTextChanged(Landroid/text/Editable;)V
+    .locals 0
 
     .prologue
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/j8;->a:Landroid/app/Activity;
+    return-void
+.end method
 
-    const/16 v1, 0x73
+.method public beforeTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->removeDialog(I)V
-
+    .prologue
     .line 3
+    return-void
+.end method
+
+.method public onTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 1
+
+    .prologue
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/j8;->a:Lcom/whatsapp/cc;
+
+    iget-object v0, v0, Lcom/whatsapp/cc;->e:Landroid/widget/EditText;
+
+    invoke-static {v0, p1}, Lcom/whatsapp/t3;->a(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
+
+    .line 5
     return-void
 .end method

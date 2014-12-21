@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 2
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$ListSelectorHider;->this$0:Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -27,7 +27,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 1
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$ListSelectorHider;-><init>(Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;)V
 
     return-void
@@ -39,11 +39,11 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 3
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$ListSelectorHider;->this$0:Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;->clearListSelection()V
 
-    .line 2
+    .line 4
     return-void
 .end method

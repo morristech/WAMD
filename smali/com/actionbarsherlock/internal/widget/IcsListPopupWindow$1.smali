@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 6
+    .line 2
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$1;->this$0:Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -29,7 +29,7 @@
     .locals 2
 
     .prologue
-    .line 4
+    .line 6
     const/4 v0, -0x1
 
     if-eq p3, v0, :cond_0
@@ -41,15 +41,15 @@
 
     move-result-object v0
 
-    .line 3
+    .line 5
     if-eqz v0, :cond_0
 
-    .line 7
+    .line 4
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$DropDownListView;->access$502(Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow$DropDownListView;Z)Z
 
-    .line 5
+    .line 3
     :cond_0
     return-void
 .end method
@@ -58,6 +58,6 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 7
     return-void
 .end method

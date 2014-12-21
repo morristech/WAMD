@@ -3,24 +3,20 @@
 .source "m5.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/preference/Preference$OnPreferenceClickListener;
 
 
 # instance fields
-.field final a:I
-
-.field final b:Lcom/whatsapp/dc;
+.field final a:Lcom/whatsapp/SettingsChat;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/dc;I)V
+.method constructor <init>(Lcom/whatsapp/SettingsChat;)V
     .locals 0
 
     .prologue
     .line 3
-    iput-object p1, p0, Lcom/whatsapp/m5;->b:Lcom/whatsapp/dc;
-
-    iput p2, p0, Lcom/whatsapp/m5;->a:I
+    iput-object p1, p0, Lcom/whatsapp/m5;->a:Lcom/whatsapp/SettingsChat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,28 +25,25 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+.method public onPreferenceClick(Landroid/preference/Preference;)Z
+    .locals 4
 
     .prologue
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/m5;->b:Lcom/whatsapp/dc;
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/m5;->a:Lcom/whatsapp/SettingsChat;
 
-    invoke-static {v0}, Lcom/whatsapp/dc;->b(Lcom/whatsapp/dc;)Landroid/app/Activity;
+    new-instance v1, Landroid/content/Intent;
 
-    move-result-object v0
+    iget-object v2, p0, Lcom/whatsapp/m5;->a:Lcom/whatsapp/SettingsChat;
 
-    iget v1, p0, Lcom/whatsapp/m5;->a:I
+    const-class v3, Lcom/whatsapp/SettingsAutodownload;
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/SettingsChat;->startActivity(Landroid/content/Intent;)V
 
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/m5;->b:Lcom/whatsapp/dc;
+    const/4 v0, 0x0
 
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/dc;->a(Z)V
-
-    .line 1
-    return-void
+    return v0
 .end method

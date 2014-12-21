@@ -8,7 +8,7 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 2
     invoke-virtual {p0}, Landroid/view/View;->getFitsSystemWindows()Z
 
     move-result v0
@@ -20,7 +20,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 3
     invoke-virtual {p0}, Landroid/view/View;->getImportantForAccessibility()I
 
     move-result v0
@@ -44,10 +44,10 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 8
     invoke-virtual {p0}, Landroid/view/View;->postInvalidateOnAnimation()V
 
-    .line 9
+    .line 11
     return-void
 .end method
 
@@ -55,10 +55,10 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 6
     invoke-virtual {p0, p1, p2, p3, p4}, Landroid/view/View;->postInvalidate(IIII)V
 
-    .line 2
+    .line 7
     return-void
 .end method
 
@@ -66,10 +66,10 @@
     .locals 0
 
     .prologue
-    .line 6
+    .line 10
     invoke-virtual {p0, p1}, Landroid/view/View;->postOnAnimation(Ljava/lang/Runnable;)V
 
-    .line 11
+    .line 5
     return-void
 .end method
 
@@ -77,9 +77,9 @@
     .locals 0
 
     .prologue
-    .line 10
+    .line 1
     invoke-virtual {p0, p1}, Landroid/view/View;->setImportantForAccessibility(I)V
 
-    .line 1
+    .line 9
     return-void
 .end method

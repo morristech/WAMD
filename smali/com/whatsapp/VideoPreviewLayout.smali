@@ -8,10 +8,10 @@
     .locals 0
 
     .prologue
-    .line 14
+    .line 15
     invoke-direct {p0, p1}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;)V
 
-    .line 33
+    .line 40
     return-void
 .end method
 
@@ -19,10 +19,10 @@
     .locals 0
 
     .prologue
-    .line 40
+    .line 37
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 43
+    .line 49
     return-void
 .end method
 
@@ -30,10 +30,10 @@
     .locals 0
 
     .prologue
-    .line 31
+    .line 8
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 29
+    .line 33
     return-void
 .end method
 
@@ -43,27 +43,27 @@
     .locals 15
 
     .prologue
-    .line 48
+    .line 10
     sub-int v4, p4, p2
 
-    .line 39
+    .line 6
     sub-int v5, p5, p3
 
-    .line 10
-    const v3, 0x7f0b00e6
+    .line 20
+    const v3, 0x7f0b00e8
 
     invoke-virtual {p0, v3}, Lcom/whatsapp/VideoPreviewLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v6
 
     .line 12
-    const v3, 0x7f0b00e7
+    const v3, 0x7f0b00e9
 
     invoke-virtual {p0, v3}, Lcom/whatsapp/VideoPreviewLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 17
+    .line 43
     invoke-virtual {v3}, Landroid/view/View;->getVisibility()I
 
     move-result v7
@@ -72,47 +72,47 @@
 
     if-ne v7, v8, :cond_0
 
-    .line 19
-    const v3, 0x7f0b0128
+    .line 47
+    const v3, 0x7f0b012a
 
     invoke-virtual {p0, v3}, Lcom/whatsapp/VideoPreviewLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 25
+    .line 16
     :cond_0
-    const v7, 0x7f0b02b5
+    const v7, 0x7f0b02be
 
     invoke-virtual {p0, v7}, Lcom/whatsapp/VideoPreviewLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v7
 
-    .line 34
-    const v8, 0x7f0b02b8
+    .line 48
+    const v8, 0x7f0b02c1
 
     invoke-virtual {p0, v8}, Lcom/whatsapp/VideoPreviewLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v8
 
-    .line 44
+    .line 5
     if-le v5, v4, :cond_1
 
-    .line 7
+    .line 4
     invoke-virtual {v3}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v9
 
-    .line 16
+    .line 21
     invoke-virtual {v7}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v10
 
-    .line 36
+    .line 25
     invoke-virtual {v8}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v11
 
-    .line 46
+    .line 52
     add-int v12, p3, v9
 
     move/from16 v0, p2
@@ -123,7 +123,7 @@
 
     invoke-virtual {v6, v0, v1, v2, v12}, Landroid/view/View;->layout(IIII)V
 
-    .line 51
+    .line 36
     add-int v12, p3, v9
 
     add-int v13, p3, v9
@@ -136,7 +136,7 @@
 
     invoke-virtual {v7, v0, v12, v1, v13}, Landroid/view/View;->layout(IIII)V
 
-    .line 1
+    .line 2
     add-int v12, p3, v9
 
     add-int/2addr v12, v10
@@ -153,18 +153,18 @@
 
     invoke-virtual {v8, v0, v12, v1, v9}, Landroid/view/View;->layout(IIII)V
 
-    .line 47
-    sget-boolean v9, Lcom/whatsapp/App;->aL:Z
+    .line 50
+    sget v9, Lcom/whatsapp/App;->h:I
 
     if-eqz v9, :cond_2
 
-    .line 50
+    .line 44
     :cond_1
     invoke-virtual {v3}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v3
 
-    .line 32
+    .line 46
     invoke-virtual {v6}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v9
@@ -177,7 +177,7 @@
 
     add-int/2addr v3, v9
 
-    .line 49
+    .line 30
     div-int/lit8 v9, v4, 0x2
 
     add-int/2addr v9, v3
@@ -186,10 +186,10 @@
 
     div-int/lit8 v4, v4, 0x2
 
-    .line 20
+    .line 51
     add-int v4, v4, p2
 
-    .line 52
+    .line 17
     add-int v9, v4, v3
 
     move/from16 v0, p3
@@ -198,34 +198,34 @@
 
     invoke-virtual {v6, v4, v0, v9, v1}, Landroid/view/View;->layout(IIII)V
 
-    .line 6
+    .line 24
     invoke-virtual {v7}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v6
 
-    .line 45
+    .line 26
     invoke-virtual {v7}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v9
 
-    .line 21
+    .line 14
     invoke-virtual {v8}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v10
 
-    .line 22
+    .line 28
     invoke-virtual {v8}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v11
 
-    .line 9
+    .line 22
     sub-int/2addr v5, v6
 
     sub-int/2addr v5, v10
 
     div-int/lit8 v5, v5, 0x2
 
-    .line 27
+    .line 3
     add-int v12, v4, v3
 
     add-int v13, p3, v5
@@ -240,7 +240,7 @@
 
     invoke-virtual {v7, v12, v13, v9, v14}, Landroid/view/View;->layout(IIII)V
 
-    .line 24
+    .line 39
     add-int v7, v4, v3
 
     add-int v9, p3, v5
@@ -259,7 +259,7 @@
 
     invoke-virtual {v8, v7, v9, v3, v4}, Landroid/view/View;->layout(IIII)V
 
-    .line 38
+    .line 29
     :cond_2
     return-void
 .end method
@@ -272,58 +272,58 @@
 
     const/4 v6, 0x0
 
-    .line 28
+    .line 42
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onMeasure(II)V
 
-    .line 2
+    .line 41
     invoke-virtual {p0}, Lcom/whatsapp/VideoPreviewLayout;->getMeasuredWidth()I
 
     move-result v0
 
-    .line 13
+    .line 32
     invoke-virtual {p0}, Lcom/whatsapp/VideoPreviewLayout;->getMeasuredHeight()I
 
     move-result v1
 
-    .line 4
-    const v2, 0x7f0b00e6
+    .line 38
+    const v2, 0x7f0b00e8
 
     invoke-virtual {p0, v2}, Lcom/whatsapp/VideoPreviewLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    .line 41
-    const v3, 0x7f0b02b5
+    .line 34
+    const v3, 0x7f0b02be
 
     invoke-virtual {p0, v3}, Lcom/whatsapp/VideoPreviewLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 15
-    const v4, 0x7f0b02b8
+    .line 9
+    const v4, 0x7f0b02c1
 
     invoke-virtual {p0, v4}, Lcom/whatsapp/VideoPreviewLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v4
 
-    .line 11
+    .line 19
     if-le v1, v0, :cond_0
 
-    .line 37
+    .line 45
     invoke-static {v6, v6}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v5
 
     invoke-virtual {v3, p1, v5}, Landroid/view/View;->measure(II)V
 
-    .line 30
+    .line 13
     invoke-static {v6, v6}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v5
 
     invoke-virtual {v4, p1, v5}, Landroid/view/View;->measure(II)V
 
-    .line 26
+    .line 35
     invoke-virtual {v3}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v5
@@ -340,14 +340,14 @@
 
     move-result v1
 
-    .line 35
+    .line 11
     invoke-virtual {v2, p1, v1}, Landroid/view/View;->measure(II)V
 
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
+    sget v1, Lcom/whatsapp/App;->h:I
 
     if-eqz v1, :cond_1
 
-    .line 5
+    .line 31
     :cond_0
     div-int/lit8 v1, v0, 0x2
 
@@ -359,7 +359,7 @@
 
     invoke-virtual {v2, v1, p2}, Landroid/view/View;->measure(II)V
 
-    .line 42
+    .line 27
     div-int/lit8 v1, v0, 0x2
 
     invoke-static {v1, v7}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
@@ -372,7 +372,7 @@
 
     invoke-virtual {v3, v1, v2}, Landroid/view/View;->measure(II)V
 
-    .line 18
+    .line 23
     div-int/lit8 v0, v0, 0x2
 
     invoke-static {v0, v7}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
@@ -385,7 +385,7 @@
 
     invoke-virtual {v4, v0, v1}, Landroid/view/View;->measure(II)V
 
-    .line 3
+    .line 1
     :cond_1
     return-void
 .end method

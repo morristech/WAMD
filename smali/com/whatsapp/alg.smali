@@ -1,119 +1,93 @@
 .class Lcom/whatsapp/alg;
-.super Ljava/lang/Object;
+.super Landroid/os/Handler;
 .source "alg.java"
-
-# interfaces
-.implements Lcom/whatsapp/o7;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/Broadcasts;
+.field final a:Lcom/whatsapp/yk;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/Broadcasts;)V
+.method constructor <init>(Lcom/whatsapp/yk;)V
     .locals 0
 
     .prologue
-    .line 11
-    iput-object p1, p0, Lcom/whatsapp/alg;->a:Lcom/whatsapp/Broadcasts;
+    .line 7
+    iput-object p1, p0, Lcom/whatsapp/alg;->a:Lcom/whatsapp/yk;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
-    .locals 1
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 4
 
     .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/alg;->a:Lcom/whatsapp/Broadcasts;
-
-    invoke-static {v0}, Lcom/whatsapp/Broadcasts;->a(Lcom/whatsapp/Broadcasts;)Lcom/whatsapp/atf;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/atf;->notifyDataSetChanged()V
-
     .line 10
-    return-void
-.end method
+    iget-object v0, p0, Lcom/whatsapp/alg;->a:Lcom/whatsapp/yk;
 
-.method public a(Ljava/lang/String;)V
-    .locals 1
+    invoke-static {v0}, Lcom/whatsapp/yk;->e(Lcom/whatsapp/yk;)Lcom/whatsapp/util/bc;
 
-    .prologue
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
     .line 6
-    iget-object v0, p0, Lcom/whatsapp/alg;->a:Lcom/whatsapp/Broadcasts;
-
-    invoke-static {v0}, Lcom/whatsapp/Broadcasts;->a(Lcom/whatsapp/Broadcasts;)Lcom/whatsapp/atf;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/atf;->notifyDataSetChanged()V
-
-    .line 8
+    :cond_0
+    :goto_0
     return-void
-.end method
-
-.method public a(Ljava/util/Collection;)V
-    .locals 0
-
-    .prologue
-    .line 3
-    return-void
-.end method
-
-.method public b(Ljava/lang/String;)V
-    .locals 1
-
-    .prologue
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/alg;->a:Lcom/whatsapp/Broadcasts;
-
-    invoke-static {v0}, Lcom/whatsapp/Broadcasts;->a(Lcom/whatsapp/Broadcasts;)Lcom/whatsapp/atf;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/atf;->notifyDataSetChanged()V
 
     .line 9
-    return-void
-.end method
+    :cond_1
+    iget-object v0, p0, Lcom/whatsapp/alg;->a:Lcom/whatsapp/yk;
 
-.method public c(Ljava/lang/String;)V
-    .locals 1
+    invoke-static {v0}, Lcom/whatsapp/yk;->e(Lcom/whatsapp/yk;)Lcom/whatsapp/util/bc;
 
-    .prologue
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/whatsapp/util/bc;->g()Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    .line 8
+    iget-object v0, p0, Lcom/whatsapp/alg;->a:Lcom/whatsapp/yk;
+
+    invoke-static {v0}, Lcom/whatsapp/yk;->c(Lcom/whatsapp/yk;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 4
+    iget-object v0, p0, Lcom/whatsapp/alg;->a:Lcom/whatsapp/yk;
+
+    invoke-virtual {v0}, Lcom/whatsapp/yk;->a()V
+
+    goto :goto_0
+
+    .line 3
+    :cond_2
+    iget-object v0, p0, Lcom/whatsapp/alg;->a:Lcom/whatsapp/yk;
+
+    iget-object v1, p0, Lcom/whatsapp/alg;->a:Lcom/whatsapp/yk;
+
+    invoke-virtual {v1}, Lcom/whatsapp/yk;->r()I
+
+    move-result v1
+
+    invoke-static {v0, v1}, Lcom/whatsapp/yk;->a(Lcom/whatsapp/yk;I)V
+
     .line 5
-    iget-object v0, p0, Lcom/whatsapp/alg;->a:Lcom/whatsapp/Broadcasts;
+    const/4 v0, 0x0
 
-    invoke-static {v0}, Lcom/whatsapp/Broadcasts;->a(Lcom/whatsapp/Broadcasts;)Lcom/whatsapp/atf;
+    const-wide/16 v2, 0x32
 
-    move-result-object v0
+    invoke-virtual {p0, v0, v2, v3}, Lcom/whatsapp/alg;->sendEmptyMessageDelayed(IJ)Z
 
-    invoke-virtual {v0}, Lcom/whatsapp/atf;->notifyDataSetChanged()V
-
-    .line 7
-    return-void
-.end method
-
-.method public d(Ljava/lang/String;)V
-    .locals 1
-
-    .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/alg;->a:Lcom/whatsapp/Broadcasts;
-
-    invoke-static {v0}, Lcom/whatsapp/Broadcasts;->a(Lcom/whatsapp/Broadcasts;)Lcom/whatsapp/atf;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/atf;->notifyDataSetChanged()V
-
-    .line 12
-    return-void
+    goto :goto_0
 .end method

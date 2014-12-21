@@ -12,7 +12,7 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 1
     const/4 v0, 0x0
 
     return v0
@@ -25,7 +25,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 2
     const/4 v0, 0x0
 
     return v0
@@ -35,7 +35,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 8
     return-void
 .end method
 
@@ -43,10 +43,10 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 7
     iput-object p1, p0, Lcom/actionbarsherlock/view/ActionProvider;->mSubUiVisibilityListener:Lcom/actionbarsherlock/view/ActionProvider$SubUiVisibilityListener;
 
-    .line 8
+    .line 5
     return-void
 .end method
 
@@ -54,17 +54,17 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 4
     iget-object v0, p0, Lcom/actionbarsherlock/view/ActionProvider;->mSubUiVisibilityListener:Lcom/actionbarsherlock/view/ActionProvider$SubUiVisibilityListener;
 
     if-eqz v0, :cond_0
 
-    .line 5
+    .line 6
     iget-object v0, p0, Lcom/actionbarsherlock/view/ActionProvider;->mSubUiVisibilityListener:Lcom/actionbarsherlock/view/ActionProvider$SubUiVisibilityListener;
 
     invoke-interface {v0, p1}, Lcom/actionbarsherlock/view/ActionProvider$SubUiVisibilityListener;->onSubUiVisibilityChanged(Z)V
 
-    .line 7
+    .line 3
     :cond_0
     return-void
 .end method

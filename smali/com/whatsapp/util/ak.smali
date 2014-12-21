@@ -1,121 +1,194 @@
-.class public abstract Lcom/whatsapp/util/ak;
-.super Ljava/io/FileInputStream;
+.class public Lcom/whatsapp/util/ak;
+.super Lcom/whatsapp/util/a8;
 .source "ak.java"
 
 
-# instance fields
-.field private a:J
+# static fields
+.field private static final z:[Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Ljava/io/File;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 10
+
+    const/4 v1, 0x0
+
+    const/4 v0, 0x2
+
+    new-array v3, v0, [Ljava/lang/String;
+
+    const-string v2, "\u0010\u001d"
+
+    const/4 v0, -0x1
+
+    move-object v4, v3
+
+    move-object v5, v3
+
+    move v3, v1
+
+    :goto_0
+    invoke-virtual {v2}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v2
+
+    array-length v6, v2
+
+    move v7, v6
+
+    move v8, v1
+
+    move-object v6, v2
+
+    :goto_1
+    if-gt v7, v8, :cond_0
+
+    new-instance v2, Ljava/lang/String;
+
+    invoke-direct {v2, v6}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v2}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v2
+
+    packed-switch v0, :pswitch_data_0
+
+    aput-object v2, v4, v3
+
+    const/4 v2, 0x1
+
+    const-string v0, "\u0010W8`\u0014C\u001ca"
+
+    move v3, v2
+
+    move-object v4, v5
+
+    move-object v2, v0
+
+    move v0, v1
+
+    goto :goto_0
+
+    :pswitch_0
+    aput-object v2, v4, v3
+
+    sput-object v5, Lcom/whatsapp/util/ak;->z:[Ljava/lang/String;
+
+    return-void
+
+    :cond_0
+    aget-char v9, v6, v8
+
+    rem-int/lit8 v2, v8, 0x5
+
+    packed-switch v2, :pswitch_data_1
+
+    const/16 v2, 0x71
+
+    :goto_2
+    xor-int/2addr v2, v9
+
+    int-to-char v2, v2
+
+    aput-char v2, v6, v8
+
+    add-int/lit8 v2, v8, 0x1
+
+    move v8, v2
+
+    goto :goto_1
+
+    :pswitch_1
+    const/16 v2, 0x30
+
+    goto :goto_2
+
+    :pswitch_2
+    const/16 v2, 0x35
+
+    goto :goto_2
+
+    :pswitch_3
+    const/16 v2, 0x41
+
+    goto :goto_2
+
+    :pswitch_4
+    const/16 v2, 0x14
+
+    goto :goto_2
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+    .end packed-switch
+.end method
+
+.method public constructor <init>(JLjava/lang/String;Ljava/io/RandomAccessFile;)V
+    .locals 1
 
     .prologue
-    .line 6
-    invoke-direct {p0, p1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+    .line 3
+    invoke-direct {p0, p1, p2, p3}, Lcom/whatsapp/util/a8;-><init>(JLjava/lang/String;)V
 
-    .line 4
+    .line 2
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a()Z
-.end method
-
-.method public read([BII)I
-    .locals 8
+.method public toString()Ljava/lang/String;
+    .locals 4
 
     .prologue
-    sget v1, Lcom/whatsapp/util/Log;->c:I
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 11
-    :goto_0
-    :try_start_0
-    invoke-virtual {p0}, Lcom/whatsapp/util/ak;->getChannel()Ljava/nio/channels/FileChannel;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v1, p0, Lcom/whatsapp/util/ak;->a:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/nio/channels/FileChannel;->size()J
+    sget-object v1, Lcom/whatsapp/util/ak;->z:[Ljava/lang/String;
 
-    move-result-wide v2
+    const/4 v2, 0x0
 
-    iget-wide v4, p0, Lcom/whatsapp/util/ak;->a:J
+    aget-object v1, v1, v2
 
-    int-to-long v6, p3
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    add-long/2addr v4, v6
+    move-result-object v0
 
-    cmp-long v0, v2, v4
+    iget-wide v2, p0, Lcom/whatsapp/util/ak;->b:J
 
-    if-gez v0, :cond_0
+    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lcom/whatsapp/util/ak;->a()Z
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_1
+    move-result-object v0
 
-    move-result v0
+    sget-object v1, Lcom/whatsapp/util/ak;->z:[Ljava/lang/String;
 
-    if-nez v0, :cond_1
+    const/4 v2, 0x1
 
-    .line 3
-    :cond_0
-    invoke-super {p0, p1, p2, p3}, Ljava/io/FileInputStream;->read([BII)I
+    aget-object v1, v1, v2
 
-    move-result v0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2
-    if-eqz v1, :cond_3
+    move-result-object v0
 
-    .line 12
-    :cond_1
-    const-wide/16 v2, 0xc8
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    :try_start_1
-    invoke-static {v2, v3}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_1
-    .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
+    move-result-object v0
 
-    goto :goto_0
-
-    .line 1
-    :catch_0
-    move-exception v0
-
-    .line 10
-    const/4 v0, 0x0
-
-    :cond_2
-    :goto_1
-    return v0
-
-    .line 11
-    :catch_1
-    move-exception v0
-
-    throw v0
-
-    .line 9
-    :cond_3
-    if-ltz v0, :cond_2
-
-    .line 8
-    :try_start_2
-    iget-wide v2, p0, Lcom/whatsapp/util/ak;->a:J
-
-    int-to-long v4, v0
-
-    add-long/2addr v2, v4
-
-    iput-wide v2, p0, Lcom/whatsapp/util/ak;->a:J
-    :try_end_2
-    .catch Ljava/lang/InterruptedException; {:try_start_2 .. :try_end_2} :catch_2
-
-    goto :goto_1
-
-    :catch_2
-    move-exception v0
-
-    throw v0
+    return-object v0
 .end method

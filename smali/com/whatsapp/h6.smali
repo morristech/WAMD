@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/z8;
+.field final a:Lcom/whatsapp/amx;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/z8;)V
+.method constructor <init>(Lcom/whatsapp/amx;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/h6;->a:Lcom/whatsapp/z8;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/h6;->a:Lcom/whatsapp/amx;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,13 +26,19 @@
 
 # virtual methods
 .method public run()V
-    .locals 1
+    .locals 2
 
     .prologue
-    .line 1
-    sget-object v0, Lcom/whatsapp/App;->l:Lcom/whatsapp/a2v;
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/h6;->a:Lcom/whatsapp/amx;
 
-    invoke-virtual {v0}, Lcom/whatsapp/a2v;->D()V
+    iget-object v0, v0, Lcom/whatsapp/amx;->a:Lcom/whatsapp/h3;
+
+    iget-object v0, v0, Lcom/whatsapp/h3;->a:Lcom/whatsapp/SettingsChat;
+
+    const/4 v1, 0x6
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/SettingsChat;->removeDialog(I)V
 
     .line 2
     return-void

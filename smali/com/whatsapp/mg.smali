@@ -3,20 +3,20 @@
 .source "mg.java"
 
 # interfaces
-.implements Landroid/preference/Preference$OnPreferenceChangeListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/SettingsChat;
+.field final a:Lcom/whatsapp/a75;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/SettingsChat;)V
+.method constructor <init>(Lcom/whatsapp/a75;)V
     .locals 0
 
     .prologue
     .line 3
-    iput-object p1, p0, Lcom/whatsapp/mg;->a:Lcom/whatsapp/SettingsChat;
+    iput-object p1, p0, Lcom/whatsapp/mg;->a:Lcom/whatsapp/a75;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,53 +25,32 @@
 
 
 # virtual methods
-.method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
-    .locals 6
+.method public run()V
+    .locals 2
 
     .prologue
-    const/4 v5, 0x1
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/mg;->a:Lcom/whatsapp/a75;
+
+    iget-object v0, v0, Lcom/whatsapp/a75;->a:Lcom/whatsapp/SettingsChat;
+
+    invoke-static {v0}, Lcom/whatsapp/App;->a(Landroid/app/Activity;)V
 
     .line 1
-    move-object v0, p1
+    iget-object v0, p0, Lcom/whatsapp/mg;->a:Lcom/whatsapp/a75;
 
-    check-cast v0, Landroid/preference/ListPreference;
+    iget-object v0, v0, Lcom/whatsapp/a75;->a:Lcom/whatsapp/SettingsChat;
 
-    .line 5
-    check-cast p2, Ljava/lang/String;
-
-    invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
-
-    move-result v1
-
-    .line 6
-    invoke-virtual {v0}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
+    invoke-static {v0}, Lcom/whatsapp/SettingsChat;->a(Lcom/whatsapp/SettingsChat;)Landroid/os/Handler;
 
     move-result-object v0
 
-    .line 7
-    aget-object v0, v0, v1
+    new-instance v1, Lcom/whatsapp/sq;
 
-    invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+    invoke-direct {v1, p0}, Lcom/whatsapp/sq;-><init>(Lcom/whatsapp/mg;)V
 
-    move-result-object v0
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 4
-    iget-object v1, p0, Lcom/whatsapp/mg;->a:Lcom/whatsapp/SettingsChat;
-
-    const v2, 0x7f0e0393
-
-    new-array v3, v5, [Ljava/lang/Object;
-
-    const/4 v4, 0x0
-
-    aput-object v0, v3, v4
-
-    invoke-virtual {v1, v2, v3}, Lcom/whatsapp/SettingsChat;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Landroid/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
-
-    .line 2
-    return v5
+    return-void
 .end method

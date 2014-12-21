@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,7 +37,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 1
     check-cast p1, Landroid/support/v4/view/ViewPager$ItemInfo;
 
     check-cast p2, Landroid/support/v4/view/ViewPager$ItemInfo;

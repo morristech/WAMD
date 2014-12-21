@@ -3,20 +3,20 @@
 .source "y9.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/preference/Preference$OnPreferenceChangeListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/EULA;
+.field final a:Lcom/whatsapp/SettingsAutodownload;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/EULA;)V
+.method constructor <init>(Lcom/whatsapp/SettingsAutodownload;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/y9;->a:Lcom/whatsapp/EULA;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/y9;->a:Lcom/whatsapp/SettingsAutodownload;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,17 +25,23 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
+.method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 2
 
     .prologue
+    const/4 v1, 0x1
+
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/y9;->a:Lcom/whatsapp/EULA;
+    check-cast p2, [Ljava/lang/CharSequence;
 
-    const/16 v1, 0x9
+    check-cast p2, [Ljava/lang/CharSequence;
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/EULA;->removeDialog(I)V
+    invoke-static {p2}, Lcom/whatsapp/SettingsAutodownload;->b([Ljava/lang/CharSequence;)I
 
-    .line 1
-    return-void
+    move-result v0
+
+    invoke-static {v1, v0}, Lcom/whatsapp/App;->a(II)V
+
+    .line 3
+    return v1
 .end method

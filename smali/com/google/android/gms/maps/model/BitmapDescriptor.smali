@@ -3,32 +3,32 @@
 
 
 # instance fields
-.field private final fV:Lcom/google/android/gms/dynamic/b;
+.field private final akk:Lcom/google/android/gms/dynamic/d;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/dynamic/b;)V
+.method public constructor <init>(Lcom/google/android/gms/dynamic/d;)V
     .locals 1
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {p1}, Lcom/google/android/gms/internal/s;->d(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/google/android/gms/internal/jx;->i(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/android/gms/dynamic/b;
+    check-cast v0, Lcom/google/android/gms/dynamic/d;
 
-    iput-object v0, p0, Lcom/google/android/gms/maps/model/BitmapDescriptor;->fV:Lcom/google/android/gms/dynamic/b;
+    iput-object v0, p0, Lcom/google/android/gms/maps/model/BitmapDescriptor;->akk:Lcom/google/android/gms/dynamic/d;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public aW()Lcom/google/android/gms/dynamic/b;
+.method public nA()Lcom/google/android/gms/dynamic/d;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/maps/model/BitmapDescriptor;->fV:Lcom/google/android/gms/dynamic/b;
+    iget-object v0, p0, Lcom/google/android/gms/maps/model/BitmapDescriptor;->akk:Lcom/google/android/gms/dynamic/d;
 
     return-object v0
 .end method

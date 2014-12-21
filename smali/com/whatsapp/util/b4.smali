@@ -1,6 +1,9 @@
-.class Lcom/whatsapp/util/b4;
-.super Ljava/lang/Thread;
+.class final Lcom/whatsapp/util/b4;
+.super Ljava/lang/Object;
 .source "b4.java"
+
+# interfaces
+.implements Lorg/xmlpull/v1/XmlPullParser;
 
 
 # static fields
@@ -8,14 +11,20 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/util/ae;
+.field final a:Ljava/lang/String;
+
+.field final b:Landroid/view/LayoutInflater;
+
+.field final c:[Landroid/view/View;
+
+.field final d:Landroid/util/AttributeSet;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, " \u0007\u000e\u00023%\u0005\u000e\u0001y-\u0003\u001c\u0015:(\u0013O"
+    const-string v0, "ST\u0000>"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -53,7 +62,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x56
+    const/16 v0, 0x16
 
     :goto_1
     xor-int/2addr v0, v4
@@ -69,22 +78,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x49
+    const/16 v0, 0x36
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x6a
+    const/16 v0, 0x2c
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x6f
+    const/16 v0, 0x69
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x65
+    const/16 v0, 0x4a
 
     goto :goto_1
 
@@ -97,306 +106,422 @@
     .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/whatsapp/util/ae;)V
+.method constructor <init>([Landroid/view/View;Landroid/view/LayoutInflater;Ljava/lang/String;Landroid/util/AttributeSet;)V
     .locals 0
 
     .prologue
-    .line 13
-    iput-object p1, p0, Lcom/whatsapp/util/b4;->a:Lcom/whatsapp/util/ae;
+    .line 41
+    iput-object p1, p0, Lcom/whatsapp/util/b4;->c:[Landroid/view/View;
 
-    invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
+    iput-object p2, p0, Lcom/whatsapp/util/b4;->b:Landroid/view/LayoutInflater;
+
+    iput-object p3, p0, Lcom/whatsapp/util/b4;->a:Ljava/lang/String;
+
+    iput-object p4, p0, Lcom/whatsapp/util/b4;->d:Landroid/util/AttributeSet;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 7
+.method public defineEntityReplacementText(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .prologue
-    sget v2, Lcom/whatsapp/util/Log;->c:I
-
-    .line 21
-    :cond_0
-    :try_start_0
-    iget-object v0, p0, Lcom/whatsapp/util/b4;->a:Lcom/whatsapp/util/ae;
-
-    iget-object v0, v0, Lcom/whatsapp/util/ae;->g:Lcom/whatsapp/util/b7;
-
-    invoke-static {v0}, Lcom/whatsapp/util/b7;->a(Lcom/whatsapp/util/b7;)Ljava/util/Stack;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/util/Stack;->size()I
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/util/b4;->a:Lcom/whatsapp/util/ae;
-
-    iget-object v0, v0, Lcom/whatsapp/util/ae;->g:Lcom/whatsapp/util/b7;
-
-    invoke-static {v0}, Lcom/whatsapp/util/b7;->a(Lcom/whatsapp/util/b7;)Ljava/util/Stack;
-
-    move-result-object v1
-
-    monitor-enter v1
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 6
-    :try_start_1
-    iget-object v0, p0, Lcom/whatsapp/util/b4;->a:Lcom/whatsapp/util/ae;
-
-    iget-object v0, v0, Lcom/whatsapp/util/ae;->g:Lcom/whatsapp/util/b7;
-
-    invoke-static {v0}, Lcom/whatsapp/util/b7;->a(Lcom/whatsapp/util/b7;)Ljava/util/Stack;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->wait()V
-
-    .line 4
-    monitor-exit v1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 22
-    :cond_1
-    :try_start_2
-    iget-object v0, p0, Lcom/whatsapp/util/b4;->a:Lcom/whatsapp/util/ae;
-
-    iget-object v0, v0, Lcom/whatsapp/util/ae;->g:Lcom/whatsapp/util/b7;
-
-    invoke-static {v0}, Lcom/whatsapp/util/b7;->a(Lcom/whatsapp/util/b7;)Ljava/util/Stack;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/util/Stack;->size()I
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    .line 24
-    iget-object v0, p0, Lcom/whatsapp/util/b4;->a:Lcom/whatsapp/util/ae;
-
-    iget-object v0, v0, Lcom/whatsapp/util/ae;->g:Lcom/whatsapp/util/b7;
-
-    invoke-static {v0}, Lcom/whatsapp/util/b7;->a(Lcom/whatsapp/util/b7;)Ljava/util/Stack;
-
-    move-result-object v1
-
-    monitor-enter v1
-    :try_end_2
-    .catch Ljava/lang/InterruptedException; {:try_start_2 .. :try_end_2} :catch_0
-
-    .line 14
-    :try_start_3
-    iget-object v0, p0, Lcom/whatsapp/util/b4;->a:Lcom/whatsapp/util/ae;
-
-    iget-object v0, v0, Lcom/whatsapp/util/ae;->g:Lcom/whatsapp/util/b7;
-
-    invoke-static {v0}, Lcom/whatsapp/util/b7;->a(Lcom/whatsapp/util/b7;)Ljava/util/Stack;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/util/Stack;->pop()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/whatsapp/util/w;
-
-    .line 7
-    monitor-exit v1
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    .line 23
-    :try_start_4
-    iget-object v1, p0, Lcom/whatsapp/util/b4;->a:Lcom/whatsapp/util/ae;
-
-    invoke-static {v1, v0}, Lcom/whatsapp/util/ae;->a(Lcom/whatsapp/util/ae;Lcom/whatsapp/util/w;)Landroid/graphics/Bitmap;
-
-    move-result-object v3
-
-    .line 8
-    iget-object v1, v0, Lcom/whatsapp/util/w;->b:Lcom/whatsapp/util/q;
-
-    if-nez v1, :cond_2
-
-    .line 19
-    iget-object v1, p0, Lcom/whatsapp/util/b4;->a:Lcom/whatsapp/util/ae;
-
-    invoke-static {v1}, Lcom/whatsapp/util/ae;->b(Lcom/whatsapp/util/ae;)Ljava/util/HashMap;
-
-    move-result-object v1
-
-    monitor-enter v1
-    :try_end_4
-    .catch Ljava/lang/InterruptedException; {:try_start_4 .. :try_end_4} :catch_0
-
-    .line 25
-    :try_start_5
-    iget-object v4, p0, Lcom/whatsapp/util/b4;->a:Lcom/whatsapp/util/ae;
-
-    invoke-static {v4}, Lcom/whatsapp/util/ae;->b(Lcom/whatsapp/util/ae;)Ljava/util/HashMap;
-
-    move-result-object v4
-
-    iget-object v5, v0, Lcom/whatsapp/util/w;->c:Ljava/lang/String;
-
-    invoke-virtual {v4, v5, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 10
-    monitor-exit v1
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_2
+    return-void
+.end method
 
-    if-eqz v2, :cond_3
+.method public getAttributeCount()I
+    .locals 1
 
+    .prologue
+    .line 36
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getAttributeName(I)Ljava/lang/String;
+    .locals 1
+
+    .prologue
     .line 5
-    :cond_2
-    :try_start_6
-    iget-object v1, v0, Lcom/whatsapp/util/w;->b:Lcom/whatsapp/util/q;
+    const/4 v0, 0x0
 
-    invoke-interface {v1, v3}, Lcom/whatsapp/util/q;->a(Landroid/graphics/Bitmap;)V
-    :try_end_6
-    .catch Ljava/lang/InterruptedException; {:try_start_6 .. :try_end_6} :catch_1
+    return-object v0
+.end method
 
-    .line 9
-    :cond_3
-    :try_start_7
-    iget-object v1, v0, Lcom/whatsapp/util/w;->a:Landroid/widget/ImageView;
+.method public getAttributeNamespace(I)Ljava/lang/String;
+    .locals 1
 
-    invoke-virtual {v1}, Landroid/widget/ImageView;->getTag()Ljava/lang/Object;
+    .prologue
+    .line 14
+    const/4 v0, 0x0
 
-    move-result-object v1
+    return-object v0
+.end method
 
-    check-cast v1, Ljava/lang/String;
+.method public getAttributePrefix(I)Ljava/lang/String;
+    .locals 1
 
-    iget-object v4, v0, Lcom/whatsapp/util/w;->c:Ljava/lang/String;
+    .prologue
+    .line 18
+    const/4 v0, 0x0
 
-    invoke-virtual {v1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    return-object v0
+.end method
 
-    move-result v1
+.method public getAttributeType(I)Ljava/lang/String;
+    .locals 1
 
-    if-eqz v1, :cond_4
+    .prologue
+    .line 35
+    const/4 v0, 0x0
 
-    .line 20
-    new-instance v1, Lcom/whatsapp/util/bl;
+    return-object v0
+.end method
 
-    iget-object v4, p0, Lcom/whatsapp/util/b4;->a:Lcom/whatsapp/util/ae;
+.method public getAttributeValue(I)Ljava/lang/String;
+    .locals 1
 
-    iget-object v5, v0, Lcom/whatsapp/util/w;->a:Landroid/widget/ImageView;
+    .prologue
+    .line 30
+    const/4 v0, 0x0
 
-    iget-object v6, v0, Lcom/whatsapp/util/w;->c:Ljava/lang/String;
+    return-object v0
+.end method
 
-    invoke-direct {v1, v4, v3, v5, v6}, Lcom/whatsapp/util/bl;-><init>(Lcom/whatsapp/util/ae;Landroid/graphics/Bitmap;Landroid/widget/ImageView;Ljava/lang/String;)V
+.method public getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
 
-    .line 11
-    new-instance v3, Ljava/lang/StringBuilder;
+    .prologue
+    .line 26
+    const/4 v0, 0x0
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    return-object v0
+.end method
 
-    sget-object v4, Lcom/whatsapp/util/b4;->z:Ljava/lang/String;
+.method public getColumnNumber()I
+    .locals 1
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .prologue
+    .line 40
+    const/4 v0, 0x0
 
-    move-result-object v3
+    return v0
+.end method
 
-    iget-object v4, v0, Lcom/whatsapp/util/w;->e:Ljava/lang/String;
+.method public getDepth()I
+    .locals 1
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .prologue
+    .line 27
+    const/4 v0, 0x0
 
-    move-result-object v3
+    return v0
+.end method
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+.method public getEventType()I
+    .locals 1
 
-    move-result-object v3
+    .prologue
+    .line 43
+    const/4 v0, 0x0
 
-    invoke-static {v3}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
+    return v0
+.end method
 
-    .line 16
-    iget-object v0, v0, Lcom/whatsapp/util/w;->a:Landroid/widget/ImageView;
+.method public getFeature(Ljava/lang/String;)Z
+    .locals 1
 
-    invoke-virtual {v0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
+    .prologue
+    .line 17
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getInputEncoding()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 23
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getLineNumber()I
+    .locals 1
+
+    .prologue
+    .line 29
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getName()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 25
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getNamespace()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 13
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getNamespace(Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 2
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getNamespaceCount(I)I
+    .locals 1
+
+    .prologue
+    .line 42
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getNamespacePrefix(I)Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 34
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getNamespaceUri(I)Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 38
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getPositionDescription()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 8
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getPrefix()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 7
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getProperty(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 1
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getText()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 22
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getTextCharacters([I)[C
+    .locals 1
+
+    .prologue
+    .line 32
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public isAttributeDefault(I)Z
+    .locals 1
+
+    .prologue
+    .line 37
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public isEmptyElementTag()Z
+    .locals 1
+
+    .prologue
+    .line 3
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public isWhitespace()Z
+    .locals 1
+
+    .prologue
+    .line 24
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public next()I
+    .locals 6
+
+    .prologue
+    .line 31
+    :try_start_0
+    iget-object v1, p0, Lcom/whatsapp/util/b4;->c:[Landroid/view/View;
+
+    const/4 v2, 0x0
+
+    iget-object v0, p0, Lcom/whatsapp/util/b4;->b:Landroid/view/LayoutInflater;
+
+    iget-object v3, p0, Lcom/whatsapp/util/b4;->a:Ljava/lang/String;
+
+    const/4 v4, 0x0
+
+    iget-object v5, p0, Lcom/whatsapp/util/b4;->d:Landroid/util/AttributeSet;
+
+    invoke-virtual {v0, v3, v4, v5}, Landroid/view/LayoutInflater;->createView(Ljava/lang/String;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;
 
     move-result-object v0
 
-    check-cast v0, Landroid/app/Activity;
+    check-cast v0, Landroid/widget/TextView;
 
-    .line 17
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+    aput-object v0, v1, v2
+    :try_end_0
+    .catch Landroid/view/InflateException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 15
-    :cond_4
-    invoke-static {}, Ljava/lang/Thread;->interrupted()Z
-    :try_end_7
-    .catch Ljava/lang/InterruptedException; {:try_start_7 .. :try_end_7} :catch_0
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 18
+    .line 28
     :goto_0
-    return-void
+    new-instance v0, Lorg/xmlpull/v1/XmlPullParserException;
 
-    .line 4
-    :catchall_0
-    move-exception v0
+    sget-object v1, Lcom/whatsapp/util/b4;->z:Ljava/lang/String;
 
-    :try_start_8
-    monitor-exit v1
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_0
+    invoke-direct {v0, v1}, Lorg/xmlpull/v1/XmlPullParserException;-><init>(Ljava/lang/String;)V
 
-    :try_start_9
     throw v0
-    :try_end_9
-    .catch Ljava/lang/InterruptedException; {:try_start_9 .. :try_end_9} :catch_0
 
-    .line 12
+    .line 39
     :catch_0
     move-exception v0
 
     goto :goto_0
 
-    .line 7
-    :catchall_1
-    move-exception v0
-
-    :try_start_a
-    monitor-exit v1
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_1
-
-    :try_start_b
-    throw v0
-    :try_end_b
-    .catch Ljava/lang/InterruptedException; {:try_start_b .. :try_end_b} :catch_0
-
-    .line 10
-    :catchall_2
-    move-exception v0
-
-    :try_start_c
-    monitor-exit v1
-    :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_2
-
-    :try_start_d
-    throw v0
-
-    .line 5
+    .line 16
     :catch_1
     move-exception v0
 
-    throw v0
-    :try_end_d
-    .catch Ljava/lang/InterruptedException; {:try_start_d .. :try_end_d} :catch_0
+    goto :goto_0
+.end method
+
+.method public nextTag()I
+    .locals 1
+
+    .prologue
+    .line 33
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public nextText()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 9
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public nextToken()I
+    .locals 1
+
+    .prologue
+    .line 19
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public require(ILjava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 21
+    return-void
+.end method
+
+.method public setFeature(Ljava/lang/String;Z)V
+    .locals 0
+
+    .prologue
+    .line 4
+    return-void
+.end method
+
+.method public setInput(Ljava/io/InputStream;Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 15
+    return-void
+.end method
+
+.method public setInput(Ljava/io/Reader;)V
+    .locals 0
+
+    .prologue
+    .line 11
+    return-void
+.end method
+
+.method public setProperty(Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 0
+
+    .prologue
+    .line 20
+    return-void
 .end method

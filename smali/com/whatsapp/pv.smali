@@ -1,39 +1,23 @@
-.class Lcom/whatsapp/pv;
-.super Ljava/lang/Object;
+.class public Lcom/whatsapp/pv;
+.super Lcom/whatsapp/py;
 .source "pv.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/vj;
+.field public d:J
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/vj;)V
+.method public constructor <init>(Ljava/lang/String;J)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/pv;->a:Lcom/whatsapp/vj;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public run()V
-    .locals 1
-
-    .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/pv;->a:Lcom/whatsapp/vj;
-
-    invoke-virtual {v0}, Lcom/whatsapp/vj;->a()V
-
     .line 1
+    invoke-direct {p0, p1}, Lcom/whatsapp/py;-><init>(Ljava/lang/String;)V
+
+    .line 2
+    iput-wide p2, p0, Lcom/whatsapp/pv;->d:J
+
+    .line 3
     return-void
 .end method

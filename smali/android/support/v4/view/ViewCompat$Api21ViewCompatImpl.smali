@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 2
     invoke-direct {p0}, Landroid/support/v4/view/ViewCompat$KitKatViewCompatImpl;-><init>()V
 
     return-void
@@ -20,7 +20,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 1
     invoke-static {p1, p2}, Landroid/support/v4/view/ViewCompatApi21;->setElevation(Landroid/view/View;F)V
 
     .line 3

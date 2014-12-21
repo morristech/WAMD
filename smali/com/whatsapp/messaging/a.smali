@@ -4,28 +4,28 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/messaging/ah;
+.field final a:Lcom/whatsapp/messaging/l;
 
 
 # direct methods
-.method private constructor <init>(Lcom/whatsapp/messaging/ah;)V
+.method private constructor <init>(Lcom/whatsapp/messaging/l;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/messaging/a;->a:Lcom/whatsapp/messaging/ah;
+    .line 8
+    iput-object p1, p0, Lcom/whatsapp/messaging/a;->a:Lcom/whatsapp/messaging/l;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
-.method constructor <init>(Lcom/whatsapp/messaging/ah;Lcom/whatsapp/messaging/s;)V
+.method constructor <init>(Lcom/whatsapp/messaging/l;Lcom/whatsapp/messaging/a1;)V
     .locals 0
 
     .prologue
-    .line 5
-    invoke-direct {p0, p1}, Lcom/whatsapp/messaging/a;-><init>(Lcom/whatsapp/messaging/ah;)V
+    .line 6
+    invoke-direct {p0, p1}, Lcom/whatsapp/messaging/a;-><init>(Lcom/whatsapp/messaging/l;)V
 
     return-void
 .end method
@@ -36,12 +36,12 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 9
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/messaging/a;->removeMessages(I)V
 
-    .line 7
+    .line 3
     return-void
 .end method
 
@@ -49,12 +49,12 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 10
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/whatsapp/messaging/a;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 8
+    .line 4
     return-void
 .end method
 
@@ -62,7 +62,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 5
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/messaging/a;->hasMessages(I)Z
@@ -76,24 +76,24 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 7
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 3
+    .line 2
     :goto_0
     return-void
 
-    .line 9
+    .line 1
     :pswitch_0
-    iget-object v0, p0, Lcom/whatsapp/messaging/a;->a:Lcom/whatsapp/messaging/ah;
+    iget-object v0, p0, Lcom/whatsapp/messaging/a;->a:Lcom/whatsapp/messaging/l;
 
-    invoke-static {v0}, Lcom/whatsapp/messaging/ah;->c(Lcom/whatsapp/messaging/ah;)V
+    invoke-static {v0}, Lcom/whatsapp/messaging/l;->f(Lcom/whatsapp/messaging/l;)V
 
     goto :goto_0
 
-    .line 6
+    .line 7
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

@@ -15,7 +15,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "Y\r_\u0006jU\u000bS\u000f*VBQ\u000f*R\t\u001f\u00147^\u000cU"
+    const-string v0, "I`3i0Ef?`pF/=`pBds{mNa9"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -53,7 +53,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x45
+    const/16 v0, 0x1f
 
     :goto_1
     xor-int/2addr v0, v4
@@ -69,22 +69,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x31
+    const/16 v0, 0x21
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x62
+    const/16 v0, 0xf
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x32
+    const/16 v0, 0x5e
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x63
+    const/16 v0, 0xc
 
     goto :goto_1
 
@@ -104,7 +104,7 @@
     .line 6
     invoke-direct {p0}, Landroid/support/v4/app/DialogFragment;-><init>()V
 
-    .line 2
+    .line 3
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/whatsapp/DialogToastFragmentActivity$ClockWrongDialogFragment;->b:Z
@@ -118,15 +118,15 @@
     .locals 3
 
     .prologue
-    .line 9
+    .line 7
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/whatsapp/DialogToastFragmentActivity$ClockWrongDialogFragment;->b:Z
 
-    .line 11
+    .line 10
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastFragmentActivity$ClockWrongDialogFragment;->dismiss()V
 
-    .line 7
+    .line 9
     new-instance v0, Lcom/whatsapp/DialogToastFragmentActivity$ClockWrongDialogFragment;
 
     invoke-direct {v0}, Lcom/whatsapp/DialogToastFragmentActivity$ClockWrongDialogFragment;-><init>()V
@@ -149,7 +149,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/whatsapp/DialogToastFragmentActivity$ClockWrongDialogFragment;->show(Landroid/support/v4/app/FragmentManager;Ljava/lang/String;)V
 
-    .line 8
+    .line 4
     return-void
 .end method
 
@@ -157,17 +157,17 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 5
     sget-object v0, Lcom/whatsapp/DialogToastFragmentActivity$ClockWrongDialogFragment;->z:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
 
-    .line 4
+    .line 1
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastFragmentActivity$ClockWrongDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/whatsapp/zy;->e(Landroid/app/Activity;)Landroid/app/Dialog;
+    invoke-static {v0}, Lcom/whatsapp/u_;->a(Landroid/app/Activity;)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -178,7 +178,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 8
     iget-boolean v0, p0, Lcom/whatsapp/DialogToastFragmentActivity$ClockWrongDialogFragment;->b:Z
 
     if-eqz v0, :cond_0
@@ -189,14 +189,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 10
+    .line 11
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastFragmentActivity$ClockWrongDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentActivity;->finish()V
 
-    .line 1
+    .line 2
     :cond_0
     return-void
 .end method

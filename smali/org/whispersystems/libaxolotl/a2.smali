@@ -1,65 +1,43 @@
-.class public Lorg/whispersystems/libaxolotl/a2;
-.super Ljava/lang/Object;
+.class final Lorg/whispersystems/libaxolotl/a2;
+.super Lcom/google/d7;
 .source "a2.java"
 
 
-# instance fields
-.field private final a:Lorg/whispersystems/libaxolotl/a3;
-
-.field private final b:I
-
-.field private final c:Lorg/whispersystems/libaxolotl/ecc/a;
-
-
 # direct methods
-.method public constructor <init>(Lorg/whispersystems/libaxolotl/a3;ILorg/whispersystems/libaxolotl/ecc/a;)V
+.method constructor <init>()V
     .locals 0
 
     .prologue
-    .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    invoke-direct {p0}, Lcom/google/d7;-><init>()V
 
-    .line 4
-    iput-object p1, p0, Lorg/whispersystems/libaxolotl/a2;->a:Lorg/whispersystems/libaxolotl/a3;
-
-    .line 8
-    iput p2, p0, Lorg/whispersystems/libaxolotl/a2;->b:I
-
-    .line 7
-    iput-object p3, p0, Lorg/whispersystems/libaxolotl/a2;->c:Lorg/whispersystems/libaxolotl/ecc/a;
-
-    .line 5
     return-void
 .end method
 
 
 # virtual methods
-.method public a()I
-    .locals 1
+.method public a(Lcom/google/ft;Lcom/google/o;)Lorg/whispersystems/libaxolotl/S;
+    .locals 2
 
     .prologue
     .line 3
-    iget v0, p0, Lorg/whispersystems/libaxolotl/a2;->b:I
+    new-instance v0, Lorg/whispersystems/libaxolotl/S;
 
-    return v0
-.end method
+    const/4 v1, 0x0
 
-.method public b()Lorg/whispersystems/libaxolotl/a3;
-    .locals 1
-
-    .prologue
-    .line 2
-    iget-object v0, p0, Lorg/whispersystems/libaxolotl/a2;->a:Lorg/whispersystems/libaxolotl/a3;
+    invoke-direct {v0, p1, p2, v1}, Lorg/whispersystems/libaxolotl/S;-><init>(Lcom/google/ft;Lcom/google/o;Lorg/whispersystems/libaxolotl/e;)V
 
     return-object v0
 .end method
 
-.method public c()Lorg/whispersystems/libaxolotl/ecc/a;
+.method public b(Lcom/google/ft;Lcom/google/o;)Ljava/lang/Object;
     .locals 1
 
     .prologue
-    .line 1
-    iget-object v0, p0, Lorg/whispersystems/libaxolotl/a2;->c:Lorg/whispersystems/libaxolotl/ecc/a;
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lorg/whispersystems/libaxolotl/a2;->a(Lcom/google/ft;Lcom/google/o;)Lorg/whispersystems/libaxolotl/S;
+
+    move-result-object v0
 
     return-object v0
 .end method

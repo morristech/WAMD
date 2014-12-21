@@ -19,26 +19,26 @@
 
 
 # virtual methods
-.method public a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/bs;
+.method public a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/a5;
     .locals 2
 
     .prologue
     .line 5
-    new-instance v0, Lcom/whatsapp/messaging/bs;
+    new-instance v0, Lcom/whatsapp/messaging/a5;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Lcom/whatsapp/messaging/bs;-><init>(Landroid/os/Parcel;Lcom/whatsapp/messaging/am;)V
+    invoke-direct {v0, p1, v1}, Lcom/whatsapp/messaging/a5;-><init>(Landroid/os/Parcel;Lcom/whatsapp/messaging/b7;)V
 
     return-object v0
 .end method
 
-.method public a(I)[Lcom/whatsapp/messaging/bs;
+.method public a(I)[Lcom/whatsapp/messaging/a5;
     .locals 1
 
     .prologue
-    .line 4
-    new-array v0, p1, [Lcom/whatsapp/messaging/bs;
+    .line 1
+    new-array v0, p1, [Lcom/whatsapp/messaging/a5;
 
     return-object v0
 .end method
@@ -47,8 +47,8 @@
     .locals 1
 
     .prologue
-    .line 3
-    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/d;->a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/bs;
+    .line 4
+    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/d;->a(Landroid/os/Parcel;)Lcom/whatsapp/messaging/a5;
 
     move-result-object v0
 
@@ -59,8 +59,8 @@
     .locals 1
 
     .prologue
-    .line 1
-    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/d;->a(I)[Lcom/whatsapp/messaging/bs;
+    .line 3
+    invoke-virtual {p0, p1}, Lcom/whatsapp/messaging/d;->a(I)[Lcom/whatsapp/messaging/a5;
 
     move-result-object v0
 

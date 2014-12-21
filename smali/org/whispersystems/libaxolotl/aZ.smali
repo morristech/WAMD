@@ -2,5 +2,13 @@
 .super Ljava/lang/Object;
 .source "aZ.java"
 
-# interfaces
-.implements Lcom/google/d3;
+
+# virtual methods
+.method public abstract a(I)Lorg/whispersystems/libaxolotl/bV;
+.end method
+
+.method public abstract b(I)Z
+.end method
+
+.method public abstract c(I)V
+.end method

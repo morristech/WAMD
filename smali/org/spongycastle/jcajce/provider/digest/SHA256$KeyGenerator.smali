@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "OT \u0018[OXSn>"
+    const-string v0, "u~m11ur\u001eGT"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x8
+    const/16 v0, 0x62
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,26 +65,24 @@
     goto :goto_0
 
     :pswitch_0
-    const/4 v0, 0x7
+    const/16 v0, 0x3d
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x19
+    const/16 v0, 0x33
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x61
+    const/16 v0, 0x2c
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x5b
+    const/16 v0, 0x72
 
     goto :goto_1
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -99,7 +97,7 @@
     .locals 3
 
     .prologue
-    .line 2
+    .line 1
     sget-object v0, Lorg/spongycastle/jcajce/provider/digest/SHA256$KeyGenerator;->z:Ljava/lang/String;
 
     const/16 v1, 0x100
@@ -110,6 +108,6 @@
 
     invoke-direct {p0, v0, v1, v2}, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;-><init>(Ljava/lang/String;ILorg/spongycastle/crypto/CipherKeyGenerator;)V
 
-    .line 1
+    .line 2
     return-void
 .end method

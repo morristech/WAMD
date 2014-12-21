@@ -1,176 +1,194 @@
 .class Lcom/whatsapp/gallerypicker/b;
-.super Ljava/lang/Object;
+.super Landroid/database/ContentObserver;
 .source "b.java"
 
-# interfaces
-.implements Ljava/util/Comparator;
+
+# static fields
+.field private static final z:Ljava/lang/String;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/gallerypicker/GalleryPicker;
+.field final a:Lcom/whatsapp/gallerypicker/ImageGallery;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/gallerypicker/GalleryPicker;)V
+.method static constructor <clinit>()V
+    .locals 5
+
+    const-string v0, "\u0017\u000fJ\u0015>\u0019\u0003G\u001e>\u000c\u001b\u0004\u001d5\u001d\nJ\u001c<\u001bB"
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    move v2, v1
+
+    move-object v1, v0
+
+    :goto_0
+    if-gt v2, v3, :cond_0
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/whatsapp/gallerypicker/b;->z:Ljava/lang/String;
+
+    return-void
+
+    :cond_0
+    aget-char v4, v1, v3
+
+    rem-int/lit8 v0, v3, 0x5
+
+    packed-switch v0, :pswitch_data_0
+
+    const/16 v0, 0x5b
+
+    :goto_1
+    xor-int/2addr v0, v4
+
+    int-to-char v0, v0
+
+    aput-char v0, v1, v3
+
+    add-int/lit8 v0, v3, 0x1
+
+    move v3, v0
+
+    goto :goto_0
+
+    :pswitch_0
+    const/16 v0, 0x7e
+
+    goto :goto_1
+
+    :pswitch_1
+    const/16 v0, 0x62
+
+    goto :goto_1
+
+    :pswitch_2
+    const/16 v0, 0x2b
+
+    goto :goto_1
+
+    :pswitch_3
+    const/16 v0, 0x72
+
+    goto :goto_1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+    .end packed-switch
+.end method
+
+.method constructor <init>(Lcom/whatsapp/gallerypicker/ImageGallery;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
-    .line 5
-    iput-object p1, p0, Lcom/whatsapp/gallerypicker/b;->a:Lcom/whatsapp/gallerypicker/GalleryPicker;
+    .line 6
+    iput-object p1, p0, Lcom/whatsapp/gallerypicker/b;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/util/Map$Entry;Ljava/util/Map$Entry;)I
-    .locals 6
-
-    .prologue
-    const/4 v2, -0x1
-
-    const/4 v3, 0x1
-
-    sget v4, Lcom/whatsapp/gallerypicker/ImagePreview;->d:I
-
-    .line 12
-    invoke-static {}, Ljava/text/Collator;->getInstance()Ljava/text/Collator;
-
-    move-result-object v5
-
-    .line 7
-    const/4 v0, 0x0
-
-    invoke-virtual {v5, v0}, Ljava/text/Collator;->setStrength(I)V
-
-    .line 10
-    invoke-virtual {v5, v3}, Ljava/text/Collator;->setDecomposition(I)V
-
-    .line 14
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
-
-    invoke-virtual {v5, v0, v1}, Ljava/text/Collator;->compare(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-result v0
-
-    .line 3
-    if-eqz v0, :cond_5
-
-    .line 13
-    sget-object v1, Lcom/whatsapp/nt;->u:Ljava/lang/String;
-
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v5
-
-    invoke-virtual {v1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 6
-    if-eqz v4, :cond_2
-
-    move v0, v2
-
-    .line 11
-    :cond_0
-    sget-object v1, Lcom/whatsapp/nt;->u:Ljava/lang/String;
-
-    invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v5
-
-    invoke-virtual {v1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 15
-    if-eqz v4, :cond_4
-
-    move v0, v3
-
-    .line 8
-    :cond_1
-    sget-object v1, Lcom/whatsapp/nt;->q:Ljava/lang/String;
-
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v5
-
-    invoke-virtual {v1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    .line 4
-    if-eqz v4, :cond_2
-
-    .line 16
-    :goto_0
-    sget-object v0, Lcom/whatsapp/nt;->q:Ljava/lang/String;
-
-    invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    move v2, v3
-
-    .line 1
-    :cond_2
-    :goto_1
-    return v2
-
-    :cond_3
-    move v2, v0
-
-    goto :goto_0
-
-    :cond_4
-    move v2, v3
-
-    goto :goto_1
-
-    :cond_5
-    move v2, v0
-
-    goto :goto_1
-.end method
-
-.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public deliverSelfNotifications()Z
     .locals 1
 
     .prologue
-    .line 9
-    check-cast p1, Ljava/util/Map$Entry;
-
-    check-cast p2, Ljava/util/Map$Entry;
-
-    invoke-virtual {p0, p1, p2}, Lcom/whatsapp/gallerypicker/b;->a(Ljava/util/Map$Entry;Ljava/util/Map$Entry;)I
-
-    move-result v0
+    .line 4
+    const/4 v0, 0x1
 
     return v0
+.end method
+
+.method public onChange(Z)V
+    .locals 2
+
+    .prologue
+    .line 5
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v1, Lcom/whatsapp/gallerypicker/b;->z:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/b;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
+
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImageGallery;->i(Lcom/whatsapp/gallerypicker/ImageGallery;)Lcom/whatsapp/gallerypicker/ac;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/b;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
+
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImageGallery;->i(Lcom/whatsapp/gallerypicker/ImageGallery;)Lcom/whatsapp/gallerypicker/ac;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/whatsapp/gallerypicker/ac;->a()V
+
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/b;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
+
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/b;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
+
+    invoke-static {v1}, Lcom/whatsapp/gallerypicker/ImageGallery;->i(Lcom/whatsapp/gallerypicker/ImageGallery;)Lcom/whatsapp/gallerypicker/ac;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Lcom/whatsapp/gallerypicker/ac;->b()I
+
+    move-result v1
+
+    invoke-static {v0, v1}, Lcom/whatsapp/gallerypicker/ImageGallery;->a(Lcom/whatsapp/gallerypicker/ImageGallery;I)I
+
+    .line 7
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/b;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
+
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImageGallery;->a(Lcom/whatsapp/gallerypicker/ImageGallery;)Lcom/whatsapp/gallerypicker/ae;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/whatsapp/gallerypicker/ae;->notifyDataSetChanged()V
+
+    .line 8
+    return-void
 .end method

@@ -24,10 +24,10 @@
     .locals 2
 
     .prologue
-    .line 14
+    .line 59
     invoke-direct {p0}, Lcom/actionbarsherlock/app/ActionBar;-><init>()V
 
-    .line 32
+    .line 52
     new-instance v0, Ljava/util/HashSet;
 
     const/4 v1, 0x1
@@ -36,27 +36,27 @@
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mMenuVisibilityListeners:Ljava/util/Set;
 
-    .line 29
+    .line 50
     iput-object p1, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActivity:Landroid/app/Activity;
 
-    .line 2
+    .line 5
     invoke-virtual {p1}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
-    .line 43
+    .line 22
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     if-eqz v0, :cond_0
 
-    .line 7
+    .line 64
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p0}, Landroid/app/ActionBar;->addOnMenuVisibilityListener(Landroid/app/ActionBar$OnMenuVisibilityListener;)V
 
-    .line 8
+    .line 32
     :cond_0
     return-void
 .end method
@@ -65,7 +65,7 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 2
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActivity:Landroid/app/Activity;
 
     return-object v0
@@ -75,7 +75,7 @@
     .locals 1
 
     .prologue
-    .line 25
+    .line 65
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mFragmentTransaction:Landroid/support/v4/app/FragmentTransaction;
 
     return-object v0
@@ -85,7 +85,7 @@
     .locals 0
 
     .prologue
-    .line 31
+    .line 3
     iput-object p1, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mFragmentTransaction:Landroid/support/v4/app/FragmentTransaction;
 
     return-object p1
@@ -97,12 +97,12 @@
     .locals 1
 
     .prologue
-    .line 41
+    .line 48
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mMenuVisibilityListeners:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 64
+    .line 18
     return-void
 .end method
 
@@ -110,7 +110,7 @@
     .locals 2
 
     .prologue
-    .line 3
+    .line 36
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     check-cast p1, Lcom/actionbarsherlock/internal/app/ActionBarWrapper$TabWrapper;
@@ -119,7 +119,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->addTab(Landroid/app/ActionBar$Tab;)V
 
-    .line 49
+    .line 31
     return-void
 .end method
 
@@ -127,7 +127,7 @@
     .locals 1
 
     .prologue
-    .line 34
+    .line 56
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0}, Landroid/app/ActionBar;->getThemedContext()Landroid/content/Context;
@@ -141,12 +141,12 @@
     .locals 1
 
     .prologue
-    .line 56
+    .line 51
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0}, Landroid/app/ActionBar;->hide()V
 
-    .line 1
+    .line 21
     return-void
 .end method
 
@@ -154,7 +154,7 @@
     .locals 2
 
     .prologue
-    .line 60
+    .line 15
     new-instance v0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper$TabWrapper;
 
     iget-object v1, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
@@ -172,9 +172,9 @@
     .locals 3
 
     .prologue
-    sget v1, Lcom/actionbarsherlock/internal/app/ActionBarImpl;->a:I
+    sget-boolean v1, Lcom/actionbarsherlock/internal/app/ActionBarImpl;->a:Z
 
-    .line 6
+    .line 54
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mMenuVisibilityListeners:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
@@ -194,13 +194,13 @@
 
     check-cast v0, Lcom/actionbarsherlock/app/ActionBar$OnMenuVisibilityListener;
 
-    .line 59
+    .line 25
     invoke-interface {v0, p1}, Lcom/actionbarsherlock/app/ActionBar$OnMenuVisibilityListener;->onMenuVisibilityChanged(Z)V
 
-    .line 17
+    .line 20
     if-eqz v1, :cond_0
 
-    .line 28
+    .line 35
     :cond_1
     return-void
 .end method
@@ -209,7 +209,7 @@
     .locals 2
 
     .prologue
-    .line 52
+    .line 46
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mNavigationListener:Lcom/actionbarsherlock/app/ActionBar$OnNavigationListener;
 
     invoke-interface {v0, p1, p2, p3}, Lcom/actionbarsherlock/app/ActionBar$OnNavigationListener;->onNavigationItemSelected(IJ)Z
@@ -223,12 +223,12 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 34
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mMenuVisibilityListeners:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    .line 55
+    .line 17
     return-void
 .end method
 
@@ -236,12 +236,12 @@
     .locals 1
 
     .prologue
-    .line 48
+    .line 40
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 62
+    .line 45
     return-void
 .end method
 
@@ -249,7 +249,7 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 30
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setCustomView(Landroid/view/View;)V
@@ -262,66 +262,74 @@
     .locals 3
 
     .prologue
-    sget v0, Lcom/actionbarsherlock/internal/app/ActionBarImpl;->a:I
+    sget-boolean v0, Lcom/actionbarsherlock/internal/app/ActionBarImpl;->a:Z
 
-    .line 46
+    .line 23
     new-instance v1, Landroid/app/ActionBar$LayoutParams;
 
     invoke-direct {v1, p2}, Landroid/app/ActionBar$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 63
+    .line 41
     iget v2, p2, Lcom/actionbarsherlock/app/ActionBar$LayoutParams;->gravity:I
 
     iput v2, v1, Landroid/app/ActionBar$LayoutParams;->gravity:I
 
-    .line 9
+    .line 43
     iget v2, p2, Lcom/actionbarsherlock/app/ActionBar$LayoutParams;->bottomMargin:I
 
     iput v2, v1, Landroid/app/ActionBar$LayoutParams;->bottomMargin:I
 
-    .line 53
+    .line 26
     iget v2, p2, Lcom/actionbarsherlock/app/ActionBar$LayoutParams;->topMargin:I
 
     iput v2, v1, Landroid/app/ActionBar$LayoutParams;->topMargin:I
 
-    .line 5
+    .line 16
     iget v2, p2, Lcom/actionbarsherlock/app/ActionBar$LayoutParams;->leftMargin:I
 
     iput v2, v1, Landroid/app/ActionBar$LayoutParams;->leftMargin:I
 
-    .line 65
+    .line 11
     iget v2, p2, Lcom/actionbarsherlock/app/ActionBar$LayoutParams;->rightMargin:I
 
     iput v2, v1, Landroid/app/ActionBar$LayoutParams;->rightMargin:I
 
-    .line 58
+    .line 62
     iget-object v2, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v2, p1, v1}, Landroid/app/ActionBar;->setCustomView(Landroid/view/View;Landroid/app/ActionBar$LayoutParams;)V
 
-    .line 4
-    sget-boolean v1, Lcom/actionbarsherlock/app/SherlockActivity;->a:Z
+    .line 19
+    sget v1, Lcom/actionbarsherlock/app/SherlockActivity;->a:I
 
     if-eqz v1, :cond_0
 
-    add-int/lit8 v0, v0, 0x1
+    if-eqz v0, :cond_1
 
-    sput v0, Lcom/actionbarsherlock/internal/app/ActionBarImpl;->a:I
+    const/4 v0, 0x0
+
+    :goto_0
+    sput-boolean v0, Lcom/actionbarsherlock/internal/app/ActionBarImpl;->a:Z
 
     :cond_0
     return-void
+
+    :cond_1
+    const/4 v0, 0x1
+
+    goto :goto_0
 .end method
 
 .method public setDisplayHomeAsUpEnabled(Z)V
     .locals 1
 
     .prologue
-    .line 15
+    .line 49
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
-    .line 36
+    .line 27
     return-void
 .end method
 
@@ -334,7 +342,7 @@
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setDisplayOptions(I)V
 
-    .line 47
+    .line 61
     return-void
 .end method
 
@@ -347,7 +355,7 @@
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setDisplayShowCustomEnabled(Z)V
 
-    .line 40
+    .line 8
     return-void
 .end method
 
@@ -355,12 +363,12 @@
     .locals 1
 
     .prologue
-    .line 39
+    .line 57
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setDisplayShowHomeEnabled(Z)V
 
-    .line 21
+    .line 29
     return-void
 .end method
 
@@ -368,12 +376,12 @@
     .locals 1
 
     .prologue
-    .line 18
+    .line 28
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setDisplayShowTitleEnabled(Z)V
 
-    .line 54
+    .line 4
     return-void
 .end method
 
@@ -381,12 +389,12 @@
     .locals 1
 
     .prologue
-    .line 27
+    .line 9
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setIcon(I)V
 
-    .line 61
+    .line 6
     return-void
 .end method
 
@@ -394,12 +402,12 @@
     .locals 1
 
     .prologue
-    .line 33
+    .line 39
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
-    .line 23
+    .line 33
     return-void
 .end method
 
@@ -407,12 +415,12 @@
     .locals 1
 
     .prologue
-    .line 19
+    .line 55
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setNavigationMode(I)V
 
-    .line 45
+    .line 53
     return-void
 .end method
 
@@ -420,12 +428,12 @@
     .locals 1
 
     .prologue
-    .line 24
+    .line 47
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setSelectedNavigationItem(I)V
 
-    .line 16
+    .line 24
     return-void
 .end method
 
@@ -433,12 +441,12 @@
     .locals 1
 
     .prologue
-    .line 50
+    .line 1
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setSubtitle(I)V
 
-    .line 51
+    .line 58
     return-void
 .end method
 
@@ -446,12 +454,12 @@
     .locals 1
 
     .prologue
-    .line 35
+    .line 37
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setSubtitle(Ljava/lang/CharSequence;)V
 
-    .line 20
+    .line 63
     return-void
 .end method
 
@@ -459,12 +467,12 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 10
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setTitle(I)V
 
-    .line 26
+    .line 60
     return-void
 .end method
 
@@ -472,7 +480,7 @@
     .locals 1
 
     .prologue
-    .line 22
+    .line 7
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setTitle(Ljava/lang/CharSequence;)V
@@ -485,11 +493,11 @@
     .locals 1
 
     .prologue
-    .line 37
+    .line 38
     iget-object v0, p0, Lcom/actionbarsherlock/internal/app/ActionBarWrapper;->mActionBar:Landroid/app/ActionBar;
 
     invoke-virtual {v0}, Landroid/app/ActionBar;->show()V
 
-    .line 30
+    .line 14
     return-void
 .end method

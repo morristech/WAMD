@@ -1,29 +1,17 @@
-.class Lcom/whatsapp/dm;
+.class final Lcom/whatsapp/dm;
 .super Ljava/lang/Object;
 .source "dm.java"
 
 # interfaces
-.implements Landroid/text/TextWatcher;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/VideoPreviewActivity;
-
-.field final b:Landroid/widget/TextView;
-
-.field private c:I
+.implements Ljava/util/Comparator;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/VideoPreviewActivity;Landroid/widget/TextView;)V
+.method constructor <init>()V
     .locals 0
 
     .prologue
-    .line 22
-    iput-object p1, p0, Lcom/whatsapp/dm;->a:Lcom/whatsapp/VideoPreviewActivity;
-
-    iput-object p2, p0, Lcom/whatsapp/dm;->b:Landroid/widget/TextView;
-
+    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,188 +19,98 @@
 
 
 # virtual methods
-.method public afterTextChanged(Landroid/text/Editable;)V
-    .locals 6
+.method public a(Lcom/whatsapp/o4;Lcom/whatsapp/o4;)I
+    .locals 7
 
     .prologue
-    const/4 v5, 0x0
+    const/4 v1, 0x1
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    const/4 v0, -0x1
 
-    .line 11
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    .line 8
+    iget-object v2, p1, Lcom/whatsapp/o4;->b:Ljava/lang/String;
 
-    move-result-object v1
+    invoke-static {}, Lcom/whatsapp/rb;->f()Ljava/lang/String;
 
-    .line 5
-    iget-object v2, p0, Lcom/whatsapp/dm;->a:Lcom/whatsapp/VideoPreviewActivity;
+    move-result-object v3
 
-    invoke-static {v2}, Lcom/whatsapp/VideoPreviewActivity;->g(Lcom/whatsapp/VideoPreviewActivity;)Lcom/whatsapp/ConversationTextEntry;
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result-object v2
+    move-result v2
 
-    invoke-virtual {v2}, Lcom/whatsapp/ConversationTextEntry;->getContext()Landroid/content/Context;
-
-    move-result-object v2
-
-    invoke-static {p1, v2}, Lcom/whatsapp/util/ab;->a(Landroid/text/Editable;Landroid/content/Context;)V
+    if-eqz v2, :cond_1
 
     .line 12
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    invoke-virtual {v1, v5, v2}, Ljava/lang/String;->codePointCount(II)I
-
-    move-result v2
-
-    .line 16
-    rsub-int v3, v2, 0xa0
-
-    .line 4
-    const/16 v4, 0x1e
-
-    if-ge v3, v4, :cond_0
-
-    .line 13
-    iget-object v3, p0, Lcom/whatsapp/dm;->b:Landroid/widget/TextView;
-
-    invoke-virtual {v3, v5}, Landroid/widget/TextView;->setVisibility(I)V
+    :cond_0
+    :goto_0
+    return v0
 
     .line 10
-    iget-object v3, p0, Lcom/whatsapp/dm;->b:Landroid/widget/TextView;
-
-    rsub-int v4, v2, 0xa0
-
-    invoke-static {v4}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    if-eqz v0, :cond_1
-
-    .line 3
-    :cond_0
-    iget-object v3, p0, Lcom/whatsapp/dm;->b:Landroid/widget/TextView;
-
-    const/16 v4, 0x8
-
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 20
     :cond_1
-    const/16 v3, 0xa0
+    iget-object v2, p2, Lcom/whatsapp/o4;->b:Ljava/lang/String;
 
-    if-lt v2, v3, :cond_2
+    invoke-static {}, Lcom/whatsapp/rb;->f()Ljava/lang/String;
 
-    iget v2, p0, Lcom/whatsapp/dm;->c:I
+    move-result-object v3
 
-    if-nez v2, :cond_2
-
-    .line 15
-    iget-object v2, p0, Lcom/whatsapp/dm;->a:Lcom/whatsapp/VideoPreviewActivity;
-
-    invoke-static {v2}, Lcom/whatsapp/VideoPreviewActivity;->g(Lcom/whatsapp/VideoPreviewActivity;)Lcom/whatsapp/ConversationTextEntry;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/whatsapp/ConversationTextEntry;->getInputType()I
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    iput v2, p0, Lcom/whatsapp/dm;->c:I
+    if-eqz v2, :cond_2
 
-    .line 17
-    iget v2, p0, Lcom/whatsapp/dm;->c:I
-
-    if-eqz v2, :cond_3
-
-    .line 18
-    iget-object v2, p0, Lcom/whatsapp/dm;->a:Lcom/whatsapp/VideoPreviewActivity;
-
-    invoke-static {v2}, Lcom/whatsapp/VideoPreviewActivity;->g(Lcom/whatsapp/VideoPreviewActivity;)Lcom/whatsapp/ConversationTextEntry;
-
-    move-result-object v2
-
-    iget v3, p0, Lcom/whatsapp/dm;->c:I
-
-    const/high16 v4, 0x80000
-
-    or-int/2addr v3, v4
-
-    invoke-virtual {v2, v3}, Lcom/whatsapp/ConversationTextEntry;->setInputType(I)V
-
-    .line 6
-    iget-object v2, p0, Lcom/whatsapp/dm;->a:Lcom/whatsapp/VideoPreviewActivity;
-
-    invoke-static {v2}, Lcom/whatsapp/VideoPreviewActivity;->g(Lcom/whatsapp/VideoPreviewActivity;)Lcom/whatsapp/ConversationTextEntry;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v1}, Lcom/whatsapp/ConversationTextEntry;->setText(Ljava/lang/CharSequence;)V
-
-    .line 19
-    iget-object v2, p0, Lcom/whatsapp/dm;->a:Lcom/whatsapp/VideoPreviewActivity;
-
-    invoke-static {v2}, Lcom/whatsapp/VideoPreviewActivity;->g(Lcom/whatsapp/VideoPreviewActivity;)Lcom/whatsapp/ConversationTextEntry;
-
-    move-result-object v2
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    invoke-virtual {v2, v1}, Lcom/whatsapp/ConversationTextEntry;->setSelection(I)V
-
-    if-eqz v0, :cond_3
-
-    .line 1
-    :cond_2
-    iget v0, p0, Lcom/whatsapp/dm;->c:I
-
-    if-eqz v0, :cond_3
-
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/dm;->a:Lcom/whatsapp/VideoPreviewActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/VideoPreviewActivity;->g(Lcom/whatsapp/VideoPreviewActivity;)Lcom/whatsapp/ConversationTextEntry;
-
-    move-result-object v0
-
-    iget v1, p0, Lcom/whatsapp/dm;->c:I
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/ConversationTextEntry;->setInputType(I)V
+    move v0, v1
 
     .line 2
-    iput v5, p0, Lcom/whatsapp/dm;->c:I
+    goto :goto_0
 
-    .line 21
+    .line 5
+    :cond_2
+    iget-wide v2, p1, Lcom/whatsapp/o4;->a:J
+
+    .line 13
+    iget-wide v4, p2, Lcom/whatsapp/o4;->a:J
+
+    .line 11
+    cmp-long v6, v2, v4
+
+    if-nez v6, :cond_3
+
+    .line 3
+    iget-object v0, p1, Lcom/whatsapp/o4;->b:Ljava/lang/String;
+
+    iget-object v1, p2, Lcom/whatsapp/o4;->b:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
+
+    move-result v0
+
+    goto :goto_0
+
+    .line 6
     :cond_3
-    return-void
+    cmp-long v2, v2, v4
+
+    if-gez v2, :cond_0
+
+    move v0, v1
+
+    .line 12
+    goto :goto_0
 .end method
 
-.method public beforeTextChanged(Ljava/lang/CharSequence;III)V
-    .locals 0
-
-    .prologue
-    .line 8
-    return-void
-.end method
-
-.method public onTextChanged(Ljava/lang/CharSequence;III)V
+.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
 
     .prologue
-    .line 9
-    iget-object v0, p0, Lcom/whatsapp/dm;->a:Lcom/whatsapp/VideoPreviewActivity;
+    .line 7
+    check-cast p1, Lcom/whatsapp/o4;
 
-    invoke-static {v0}, Lcom/whatsapp/VideoPreviewActivity;->g(Lcom/whatsapp/VideoPreviewActivity;)Lcom/whatsapp/ConversationTextEntry;
+    check-cast p2, Lcom/whatsapp/o4;
 
-    move-result-object v0
+    invoke-virtual {p0, p1, p2}, Lcom/whatsapp/dm;->a(Lcom/whatsapp/o4;Lcom/whatsapp/o4;)I
 
-    invoke-static {v0, p1}, Lcom/whatsapp/ad_;->a(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
+    move-result v0
 
-    .line 14
-    return-void
+    return v0
 .end method

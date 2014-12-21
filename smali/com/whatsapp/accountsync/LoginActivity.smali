@@ -19,7 +19,7 @@
 
     new-array v4, v0, [Ljava/lang/String;
 
-    const-string v3, "-\u0011QOs \u001dBOk(\nO\t~3\u001bWRx"
+    const-string v3, "gi+_Cje8_[br5\u0019Nyc-BH"
 
     const/4 v0, -0x1
 
@@ -57,7 +57,7 @@
 
     aput-object v3, v5, v4
 
-    const-string v0, "\"\u0011[\u0008j)\u001fBU|1\u000e"
+    const-string v0, "hi!\u0018Zcg8EL{v"
 
     move-object v3, v0
 
@@ -74,7 +74,7 @@
 
     const/4 v3, 0x2
 
-    const-string v0, "2\u0016YQB3\u001bQOn5\u000cWRt.\u0010i@t3\rByy-\u0019"
+    const-string v0, "xn#Aryc+_^\u007ft-BDdh\u0013PDyu8iIga"
 
     move v4, v3
 
@@ -100,7 +100,7 @@
 
     packed-switch v3, :pswitch_data_1
 
-    const/16 v3, 0x1d
+    const/16 v3, 0x2d
 
     :goto_2
     xor-int/2addr v3, v10
@@ -116,24 +116,26 @@
     goto :goto_1
 
     :pswitch_2
-    const/16 v3, 0x41
+    const/16 v3, 0xb
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v3, 0x7e
+    const/4 v3, 0x6
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v3, 0x36
+    const/16 v3, 0x4c
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v3, 0x26
+    const/16 v3, 0x36
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -154,10 +156,10 @@
     .locals 0
 
     .prologue
-    .line 24
+    .line 8
     invoke-direct {p0}, Landroid/accounts/AccountAuthenticatorActivity;-><init>()V
 
-    .line 14
+    .line 17
     return-void
 .end method
 
@@ -173,32 +175,32 @@
 
     sget-boolean v4, Lcom/whatsapp/accountsync/PerformSyncManager;->a:Z
 
-    .line 5
+    .line 21
     invoke-super {p0, p1}, Landroid/accounts/AccountAuthenticatorActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 10
+    .line 9
     const v0, 0x7f03007b
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/accountsync/LoginActivity;->setContentView(I)V
 
-    .line 3
+    .line 7
     sget-object v0, Lcom/whatsapp/accountsync/LoginActivity;->z:[Ljava/lang/String;
 
     aget-object v0, v0, v3
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 6
+    .line 19
     invoke-static {p0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
     move-result-object v0
 
-    .line 2
+    .line 5
     invoke-virtual {v0}, Landroid/accounts/AccountManager;->getAccounts()[Landroid/accounts/Account;
 
     move-result-object v5
 
-    .line 7
+    .line 23
     array-length v6, v5
 
     move v2, v3
@@ -210,7 +212,7 @@
 
     aget-object v7, v5, v2
 
-    .line 21
+    .line 13
     sget-object v8, Lcom/whatsapp/accountsync/LoginActivity;->z:[Ljava/lang/String;
 
     aget-object v8, v8, v1
@@ -225,23 +227,23 @@
 
     move v0, v1
 
-    .line 1
+    .line 11
     :cond_1
     add-int/lit8 v2, v2, 0x1
 
     if-eqz v4, :cond_0
 
-    sget v2, Lcom/whatsapp/DialogToastActivity;->i:I
+    sget v2, Lcom/whatsapp/DialogToastActivity;->d:I
 
     add-int/lit8 v2, v2, 0x1
 
-    sput v2, Lcom/whatsapp/DialogToastActivity;->i:I
+    sput v2, Lcom/whatsapp/DialogToastActivity;->d:I
 
-    .line 9
+    .line 10
     :cond_2
     if-eqz v0, :cond_3
 
-    .line 17
+    .line 16
     invoke-virtual {p0}, Lcom/whatsapp/accountsync/LoginActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -256,30 +258,30 @@
 
     move-result-object v0
 
-    .line 20
+    .line 6
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 19
+    .line 12
     invoke-virtual {p0}, Lcom/whatsapp/accountsync/LoginActivity;->finish()V
 
     if-eqz v4, :cond_4
 
-    .line 18
+    .line 4
     :cond_3
-    invoke-static {}, Lcom/whatsapp/App;->y()Ljava/lang/String;
+    invoke-static {}, Lcom/whatsapp/App;->aw()Ljava/lang/String;
 
     move-result-object v0
 
     if-nez v0, :cond_5
 
-    .line 11
+    .line 22
     new-instance v0, Landroid/content/Intent;
 
     const-class v2, Lcom/whatsapp/Main;
 
     invoke-direct {v0, p0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 13
+    .line 2
     sget-object v2, Lcom/whatsapp/accountsync/LoginActivity;->z:[Ljava/lang/String;
 
     const/4 v3, 0x2
@@ -288,28 +290,28 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 4
+    .line 14
     invoke-virtual {p0, v0}, Lcom/whatsapp/accountsync/LoginActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 15
+    .line 3
     invoke-virtual {p0}, Lcom/whatsapp/accountsync/LoginActivity;->finish()V
 
-    .line 12
+    .line 15
     :cond_4
     :goto_0
     return-void
 
-    .line 16
+    .line 18
     :cond_5
-    new-instance v0, Lcom/whatsapp/accountsync/b;
+    new-instance v0, Lcom/whatsapp/accountsync/d;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, p0, v1}, Lcom/whatsapp/accountsync/b;-><init>(Lcom/whatsapp/accountsync/LoginActivity;Landroid/content/Context;Lcom/whatsapp/accountsync/c;)V
+    invoke-direct {v0, p0, p0, v1}, Lcom/whatsapp/accountsync/d;-><init>(Lcom/whatsapp/accountsync/LoginActivity;Landroid/content/Context;Lcom/whatsapp/accountsync/c;)V
 
     new-array v1, v3, [Ljava/lang/Void;
 
-    invoke-static {v0, v1}, Lcom/whatsapp/b6;->a(Landroid/os/AsyncTask;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-static {v0, v1}, Lcom/whatsapp/rf;->a(Landroid/os/AsyncTask;[Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 .end method

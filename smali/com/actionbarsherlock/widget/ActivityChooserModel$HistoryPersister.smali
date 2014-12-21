@@ -32,7 +32,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "\u0018V(\u0010F\u0002V8\u0005E]M>\u0007F\u0002["
+    const-string v6, "_\rhd\u0000:\u0008hb\u0006s\u0011}+\u001as\u000cnd\u0000s\u001c{gRh\u001ayy\u001d~_|b\u001e\u007fE:"
 
     const/4 v0, -0x1
 
@@ -70,7 +70,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "\u0018V(\u0010F\u0002V8\u0005E]M>\u0007F\u0002["
+    const-string v0, "O+\\&J"
 
     move-object v6, v0
 
@@ -85,7 +85,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "%k\u001dI\u0011"
+    const-string v0, "r\u0016i\u007f\u001dh\u0016yj\u001e7\r\u007fh\u001dh\u001b"
 
     move-object v6, v0
 
@@ -100,7 +100,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "5M)\u000b[PH)\r]\u0019Q<DA\u0019L/\u000b[\u0019\\:\u0008\t\u0002Z8\u0016F\u0014\u001f=\rE\u0015\u0005{"
+    const-string v0, "n\u0016wn"
 
     move-object v6, v0
 
@@ -115,7 +115,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "\u0018V(\u0010F\u0002V8\u0005E]M>\u0007F\u0002[("
+    const-string v0, "_\rhd\u0000:\u0008hb\u0006s\u0011}+\u001as\u000cnd\u0000s\u001c{gRh\u001ayy\u001d~_|b\u001e\u007fE:"
 
     move-object v6, v0
 
@@ -132,7 +132,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "5M)\u000b[PH)\r]\u0019Q<DA\u0019L/\u000b[\u0019\\:\u0008\t\u0002Z8\u0016F\u0014\u001f=\rE\u0015\u0005{"
+    const-string v0, "r\u0016i\u007f\u001dh\u0016yj\u001e7\r\u007fh\u001dh\u001bi"
 
     move v7, v6
 
@@ -149,7 +149,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "\u0018V(\u0010F\u0002V8\u0005E]M>\u0007F\u0002[("
+    const-string v6, "_\rhd\u0000:\u0008hb\u0006s\u0011}+\u001as\u000cnd\u0000s\u001c{gRh\u001ayy\u001d~_|b\u001e\u007fE:"
 
     const/4 v0, 0x5
 
@@ -162,7 +162,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "5M)\u000b[PH)\r]\u0019Q<DA\u0019L/\u000b[\u0019\\:\u0008\t\u0002Z8\u0016F\u0014\u001f=\rE\u0015\u0005{"
+    const-string v6, "_\rhd\u0000:\u0008hb\u0006s\u0011}+\u001as\u000cnd\u0000s\u001c{gRh\u001ayy\u001d~_|b\u001e\u007fE:"
 
     const/4 v0, 0x6
 
@@ -175,7 +175,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "\u0004V6\u0001"
+    const-string v6, "{\u001cnb\u0004s\u000bc"
 
     const/4 v0, 0x7
 
@@ -188,7 +188,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "\u0007Z2\u0003A\u0004"
+    const-string v6, "r\u0016i\u007f\u001dh\u0016yj\u001e7\r\u007fh\u001dh\u001bi"
 
     const/16 v0, 0x8
 
@@ -201,7 +201,7 @@
 
     const/16 v7, 0xa
 
-    const-string v6, "\u0011\\/\r_\u0019K\""
+    const-string v6, "m\u001asl\u001an"
 
     const/16 v0, 0x9
 
@@ -214,7 +214,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, "5M)\u000b[PH)\r]\u0019Q<DA\u0019L/\u000b[\u0019\\:\u0008\t\u0002Z8\u0016F\u0014\u001f=\rE\u0015\u0005{"
+    const-string v6, "r\u0016i\u007f\u001dh\u0016yj\u001e7\r\u007fh\u001dh\u001b"
 
     const/16 v0, 0xa
 
@@ -236,7 +236,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x29
+    const/16 v6, 0x72
 
     :goto_2
     xor-int/2addr v6, v13
@@ -252,22 +252,22 @@
     goto/16 :goto_1
 
     :pswitch_b
-    const/16 v6, 0x70
+    const/16 v6, 0x1a
 
     goto :goto_2
 
     :pswitch_c
-    const/16 v6, 0x3f
+    const/16 v6, 0x7f
 
     goto :goto_2
 
     :pswitch_d
-    const/16 v6, 0x5b
+    const/16 v6, 0x1a
 
     goto :goto_2
 
     :pswitch_e
-    const/16 v6, 0x64
+    const/16 v6, 0xb
 
     goto :goto_2
 
@@ -301,7 +301,7 @@
     .locals 0
 
     .prologue
-    .line 28
+    .line 41
     iput-object p1, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -313,7 +313,7 @@
     .locals 0
 
     .prologue
-    .line 54
+    .line 34
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;-><init>(Lcom/actionbarsherlock/widget/ActivityChooserModel;)V
 
     return-void
@@ -327,9 +327,9 @@
     .prologue
     const/4 v0, 0x0
 
-    sget-boolean v2, Lcom/actionbarsherlock/widget/SearchView;->a:Z
+    sget v2, Lcom/actionbarsherlock/widget/SearchView;->a:I
 
-    .line 17
+    .line 31
     iget-object v1, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserModel;
 
     invoke-static {v1}, Lcom/actionbarsherlock/widget/ActivityChooserModel;->access$500(Lcom/actionbarsherlock/widget/ActivityChooserModel;)Ljava/lang/Object;
@@ -338,7 +338,7 @@
 
     monitor-enter v1
 
-    .line 9
+    .line 50
     :try_start_0
     new-instance v3, Ljava/util/ArrayList;
 
@@ -350,12 +350,12 @@
 
     invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 47
+    .line 15
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7
+    .line 16
     :try_start_1
     iget-object v1, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserModel;
 
@@ -377,21 +377,21 @@
 
     move-result-object v4
 
-    .line 4
+    .line 28
     invoke-static {}, Landroid/util/Xml;->newSerializer()Lorg/xmlpull/v1/XmlSerializer;
 
     move-result-object v5
 
-    .line 38
+    .line 57
     const/4 v1, 0x0
 
     :try_start_2
     invoke-interface {v5, v4, v1}, Lorg/xmlpull/v1/XmlSerializer;->setOutput(Ljava/io/OutputStream;Ljava/lang/String;)V
 
-    .line 13
+    .line 56
     sget-object v1, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->z:[Ljava/lang/String;
 
-    const/4 v6, 0x2
+    const/4 v6, 0x1
 
     aget-object v1, v1, v6
 
@@ -403,12 +403,12 @@
 
     invoke-interface {v5, v1, v6}, Lorg/xmlpull/v1/XmlSerializer;->startDocument(Ljava/lang/String;Ljava/lang/Boolean;)V
 
-    .line 48
+    .line 32
     const/4 v1, 0x0
 
     sget-object v6, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->z:[Ljava/lang/String;
 
-    const/4 v7, 0x4
+    const/4 v7, 0x5
 
     aget-object v6, v6, v7
 
@@ -421,11 +421,11 @@
 
     move v1, v0
 
-    .line 46
+    .line 22
     :goto_0
     if-ge v1, v6, :cond_0
 
-    .line 42
+    .line 24
     const/4 v0, 0x0
 
     invoke-interface {v3, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
@@ -434,23 +434,23 @@
 
     check-cast v0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;
 
-    .line 56
+    .line 17
     const/4 v7, 0x0
 
     sget-object v8, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->z:[Ljava/lang/String;
 
-    const/4 v9, 0x0
+    const/4 v9, 0x2
 
     aget-object v8, v8, v9
 
     invoke-interface {v5, v7, v8}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 16
+    .line 48
     const/4 v7, 0x0
 
     sget-object v8, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->z:[Ljava/lang/String;
 
-    const/16 v9, 0xa
+    const/16 v9, 0x8
 
     aget-object v8, v8, v9
 
@@ -462,12 +462,12 @@
 
     invoke-interface {v5, v7, v8, v9}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 49
+    .line 13
     const/4 v7, 0x0
 
     sget-object v8, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x8
+    const/4 v9, 0x3
 
     aget-object v8, v8, v9
 
@@ -479,12 +479,12 @@
 
     invoke-interface {v5, v7, v8, v9}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 30
+    .line 53
     const/4 v7, 0x0
 
     sget-object v8, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->z:[Ljava/lang/String;
 
-    const/16 v9, 0x9
+    const/16 v9, 0xa
 
     aget-object v8, v8, v9
 
@@ -496,35 +496,35 @@
 
     invoke-interface {v5, v7, v8, v0}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 24
+    .line 4
     const/4 v0, 0x0
 
     sget-object v7, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->z:[Ljava/lang/String;
 
-    const/4 v8, 0x1
+    const/16 v8, 0xb
 
     aget-object v7, v7, v8
 
     invoke-interface {v5, v0, v7}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 43
+    .line 12
     add-int/lit8 v0, v1, 0x1
 
     if-eqz v2, :cond_3
 
-    .line 50
+    .line 14
     :cond_0
     const/4 v0, 0x0
 
     sget-object v1, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x6
+    const/16 v2, 0x9
 
     aget-object v1, v1, v2
 
     invoke-interface {v5, v0, v1}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 52
+    .line 29
     invoke-interface {v5}, Lorg/xmlpull/v1/XmlSerializer;->endDocument()V
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_1
@@ -532,21 +532,21 @@
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_5
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 58
+    .line 35
     if-eqz v4, :cond_1
 
-    .line 15
+    .line 30
     :try_start_3
     invoke-virtual {v4}, Ljava/io/FileOutputStream;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_8
 
-    .line 57
+    .line 52
     :cond_1
     :goto_1
     return-void
 
-    .line 47
+    .line 15
     :catchall_0
     move-exception v0
 
@@ -557,11 +557,11 @@
 
     throw v0
 
-    .line 6
+    .line 54
     :catch_0
     move-exception v0
 
-    .line 12
+    .line 36
     invoke-static {}, Lcom/actionbarsherlock/widget/ActivityChooserModel;->access$1100()Ljava/lang/String;
 
     move-result-object v1
@@ -572,7 +572,7 @@
 
     sget-object v3, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->z:[Ljava/lang/String;
 
-    const/16 v4, 0xb
+    const/4 v4, 0x4
 
     aget-object v3, v3, v4
 
@@ -598,12 +598,130 @@
 
     goto :goto_1
 
-    .line 33
+    .line 37
     :catch_1
     move-exception v0
 
-    .line 36
+    .line 25
     :try_start_5
+    invoke-static {}, Lcom/actionbarsherlock/widget/ActivityChooserModel;->access$1100()Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v3, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->z:[Ljava/lang/String;
+
+    const/4 v5, 0x0
+
+    aget-object v3, v3, v5
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserModel;
+
+    invoke-static {v3}, Lcom/actionbarsherlock/widget/ActivityChooserModel;->access$300(Lcom/actionbarsherlock/widget/ActivityChooserModel;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+
+    .line 11
+    if-eqz v4, :cond_1
+
+    .line 7
+    :try_start_6
+    invoke-virtual {v4}, Ljava/io/FileOutputStream;->close()V
+    :try_end_6
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_2
+
+    goto :goto_1
+
+    .line 1
+    :catch_2
+    move-exception v0
+
+    goto :goto_1
+
+    .line 23
+    :catch_3
+    move-exception v0
+
+    .line 46
+    :try_start_7
+    invoke-static {}, Lcom/actionbarsherlock/widget/ActivityChooserModel;->access$1100()Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v3, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->z:[Ljava/lang/String;
+
+    const/4 v5, 0x6
+
+    aget-object v3, v3, v5
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserModel;
+
+    invoke-static {v3}, Lcom/actionbarsherlock/widget/ActivityChooserModel;->access$300(Lcom/actionbarsherlock/widget/ActivityChooserModel;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_1
+
+    .line 44
+    if-eqz v4, :cond_1
+
+    .line 18
+    :try_start_8
+    invoke-virtual {v4}, Ljava/io/FileOutputStream;->close()V
+    :try_end_8
+    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_4
+
+    goto :goto_1
+
+    .line 45
+    :catch_4
+    move-exception v0
+
+    goto :goto_1
+
+    .line 59
+    :catch_5
+    move-exception v0
+
+    .line 58
+    :try_start_9
     invoke-static {}, Lcom/actionbarsherlock/widget/ActivityChooserModel;->access$1100()Ljava/lang/String;
 
     move-result-object v1
@@ -637,131 +755,13 @@
     move-result-object v2
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
-
-    .line 26
-    if-eqz v4, :cond_1
-
-    .line 45
-    :try_start_6
-    invoke-virtual {v4}, Ljava/io/FileOutputStream;->close()V
-    :try_end_6
-    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_2
-
-    goto :goto_1
-
-    .line 5
-    :catch_2
-    move-exception v0
-
-    goto :goto_1
-
-    .line 8
-    :catch_3
-    move-exception v0
-
-    .line 27
-    :try_start_7
-    invoke-static {}, Lcom/actionbarsherlock/widget/ActivityChooserModel;->access$1100()Ljava/lang/String;
-
-    move-result-object v1
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v3, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->z:[Ljava/lang/String;
-
-    const/4 v5, 0x5
-
-    aget-object v3, v3, v5
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserModel;
-
-    invoke-static {v3}, Lcom/actionbarsherlock/widget/ActivityChooserModel;->access$300(Lcom/actionbarsherlock/widget/ActivityChooserModel;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_1
-
-    .line 14
-    if-eqz v4, :cond_1
-
-    .line 44
-    :try_start_8
-    invoke-virtual {v4}, Ljava/io/FileOutputStream;->close()V
-    :try_end_8
-    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_4
-
-    goto :goto_1
-
-    .line 31
-    :catch_4
-    move-exception v0
-
-    goto/16 :goto_1
-
-    .line 23
-    :catch_5
-    move-exception v0
-
-    .line 11
-    :try_start_9
-    invoke-static {}, Lcom/actionbarsherlock/widget/ActivityChooserModel;->access$1100()Ljava/lang/String;
-
-    move-result-object v1
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v3, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->z:[Ljava/lang/String;
-
-    const/4 v5, 0x3
-
-    aget-object v3, v3, v5
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserModel;
-
-    invoke-static {v3}, Lcom/actionbarsherlock/widget/ActivityChooserModel;->access$300(Lcom/actionbarsherlock/widget/ActivityChooserModel;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_1
 
-    .line 39
+    .line 43
     if-eqz v4, :cond_1
 
-    .line 51
+    .line 38
     :try_start_a
     invoke-virtual {v4}, Ljava/io/FileOutputStream;->close()V
     :try_end_a
@@ -769,43 +769,43 @@
 
     goto/16 :goto_1
 
-    .line 3
+    .line 27
     :catch_6
     move-exception v0
 
     goto/16 :goto_1
 
-    .line 34
+    .line 51
     :catchall_1
     move-exception v0
 
     if-eqz v4, :cond_2
 
-    .line 35
+    .line 40
     :try_start_b
     invoke-virtual {v4}, Ljava/io/FileOutputStream;->close()V
     :try_end_b
     .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_9
     .catch Ljava/lang/IllegalArgumentException; {:try_start_b .. :try_end_b} :catch_7
 
-    .line 53
+    .line 33
     :cond_2
     :goto_2
     throw v0
 
-    .line 10
+    .line 5
     :catch_7
     move-exception v0
 
     throw v0
 
-    .line 55
+    .line 42
     :catch_8
     move-exception v0
 
     goto/16 :goto_1
 
-    .line 59
+    .line 3
     :catch_9
     move-exception v1
 

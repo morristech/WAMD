@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private i:Lcom/whatsapp/dc;
+.field private i:Lcom/whatsapp/a_y;
 
 
 # direct methods
@@ -12,15 +12,15 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 5
     invoke-direct {p0}, Lcom/whatsapp/DialogToastListActivity;-><init>()V
 
-    .line 3
-    new-instance v0, Lcom/whatsapp/dl;
+    .line 7
+    new-instance v0, Lcom/whatsapp/a_g;
 
-    invoke-direct {v0, p0, p0}, Lcom/whatsapp/dl;-><init>(Lcom/whatsapp/VerifyMessageStoreListActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/whatsapp/a_g;-><init>(Lcom/whatsapp/VerifyMessageStoreListActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/whatsapp/VerifyMessageStoreListActivity;->i:Lcom/whatsapp/dc;
+    iput-object v0, p0, Lcom/whatsapp/VerifyMessageStoreListActivity;->i:Lcom/whatsapp/a_y;
 
     return-void
 .end method
@@ -31,7 +31,7 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 3
     return-void
 .end method
 
@@ -39,7 +39,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 8
     return-void
 .end method
 
@@ -48,20 +48,20 @@
 
     .prologue
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/VerifyMessageStoreListActivity;->i:Lcom/whatsapp/dc;
+    iget-object v0, p0, Lcom/whatsapp/VerifyMessageStoreListActivity;->i:Lcom/whatsapp/a_y;
 
-    invoke-virtual {v0, p1}, Lcom/whatsapp/dc;->a(I)Landroid/app/Dialog;
+    invoke-virtual {v0, p1}, Lcom/whatsapp/a_y;->a(I)Landroid/app/Dialog;
 
     move-result-object v0
 
-    .line 7
+    .line 4
     if-eqz v0, :cond_0
 
     .line 6
     :goto_0
     return-object v0
 
-    .line 5
+    .line 2
     :cond_0
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastListActivity;->onCreateDialog(I)Landroid/app/Dialog;
 

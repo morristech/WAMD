@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 1
     iput-object p1, p0, Lcom/actionbarsherlock/internal/widget/IcsProgressBar$AccessibilityEventSender;->this$0:Lcom/actionbarsherlock/internal/widget/IcsProgressBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -27,7 +27,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 2
     invoke-direct {p0, p1}, Lcom/actionbarsherlock/internal/widget/IcsProgressBar$AccessibilityEventSender;-><init>(Lcom/actionbarsherlock/internal/widget/IcsProgressBar;)V
 
     return-void
@@ -46,6 +46,6 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/internal/widget/IcsProgressBar;->sendAccessibilityEvent(I)V
 
-    .line 1
+    .line 3
     return-void
 .end method

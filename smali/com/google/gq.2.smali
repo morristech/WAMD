@@ -2,5 +2,7 @@
 .super Ljava/lang/Object;
 .source "gq.java"
 
-# interfaces
-.implements Lcom/google/d3;
+
+# virtual methods
+.method public abstract a()V
+.end method

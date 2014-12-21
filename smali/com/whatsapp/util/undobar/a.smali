@@ -1,66 +1,14 @@
-.class Lcom/whatsapp/util/undobar/a;
+.class public interface abstract Lcom/whatsapp/util/undobar/a;
 .super Ljava/lang/Object;
 .source "a.java"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/util/undobar/UndoBarController;
-
-
-# direct methods
-.method constructor <init>(Lcom/whatsapp/util/undobar/UndoBarController;)V
-    .locals 0
-
-    .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/util/undobar/a;->a:Lcom/whatsapp/util/undobar/UndoBarController;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
+.implements Lcom/whatsapp/util/undobar/b;
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 2
+.method public abstract a()V
+.end method
 
-    .prologue
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/util/undobar/a;->a:Lcom/whatsapp/util/undobar/UndoBarController;
-
-    invoke-static {v0}, Lcom/whatsapp/util/undobar/UndoBarController;->b(Lcom/whatsapp/util/undobar/UndoBarController;)Lcom/whatsapp/util/undobar/f;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 5
-    iget-object v0, p0, Lcom/whatsapp/util/undobar/a;->a:Lcom/whatsapp/util/undobar/UndoBarController;
-
-    invoke-static {v0}, Lcom/whatsapp/util/undobar/UndoBarController;->b(Lcom/whatsapp/util/undobar/UndoBarController;)Lcom/whatsapp/util/undobar/f;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/whatsapp/util/undobar/a;->a:Lcom/whatsapp/util/undobar/UndoBarController;
-
-    invoke-static {v1}, Lcom/whatsapp/util/undobar/UndoBarController;->a(Lcom/whatsapp/util/undobar/UndoBarController;)Landroid/os/Parcelable;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Lcom/whatsapp/util/undobar/f;->b(Landroid/os/Parcelable;)V
-
-    .line 4
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/util/undobar/a;->a:Lcom/whatsapp/util/undobar/UndoBarController;
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Lcom/whatsapp/util/undobar/UndoBarController;->a(Lcom/whatsapp/util/undobar/UndoBarController;Z)V
-
-    .line 1
-    return-void
+.method public abstract a(Landroid/os/Parcelable;)V
 .end method

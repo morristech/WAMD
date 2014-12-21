@@ -14,13 +14,13 @@
     .locals 12
 
     .prologue
-    const/16 v2, 0x3c
+    const/16 v2, 0x56
 
-    const/16 v3, 0x35
+    const/16 v3, 0x45
 
-    const/16 v4, 0x25
+    const/16 v1, 0x30
 
-    const/16 v1, 0x1f
+    const/16 v4, 0x10
 
     const/4 v6, 0x0
 
@@ -28,7 +28,7 @@
 
     new-array v9, v0, [Ljava/lang/String;
 
-    const-string v0, ";}Y\u001du~NT\u0017V"
+    const-string v0, "q:\"\u007f\u0002Y\"-} Q$$}\u0015D37c^q\u0013\u0016"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -57,7 +57,7 @@
 
     const/4 v10, 0x1
 
-    const-string v0, "\\UE\u0012@m\u0012t?v"
+    const-string v0, "\u0014\u0013\u0006R"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -86,7 +86,7 @@
 
     const/4 v10, 0x2
 
-    const-string v0, "TYL=@qYG\u001bQpN\u001b;`L"
+    const-string v0, "\u0014\u0017)w Q$$}\u0003"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -115,7 +115,7 @@
 
     const/4 v10, 0x3
 
-    const-string v0, ";}Y\u001du~NT\u0017bzR"
+    const-string v0, "\u0014\u001d i7U8"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -144,7 +144,7 @@
 
     const/4 v10, 0x4
 
-    const-string v0, "^PR\u0015WvH]\u0017u~NT\u0017@kYG=@qYG\u001bQpN\u001b;`L"
+    const-string v0, "q:\"\u007f\u0002Y\"-} Q$$}\u0015D37W\u0015^37q\u0004_$kQ5c"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -173,7 +173,7 @@
 
     const/4 v10, 0x5
 
-    const-string v0, ";yv8"
+    const-string v0, "s?5x\u0015Bx\u0004U#"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -202,7 +202,7 @@
 
     const/4 v10, 0x6
 
-    const-string v0, ";wP\u0003bzR"
+    const-string v0, "\u0014\u0017)w Q$$}7U8"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -231,7 +231,7 @@
 
     const/4 v8, 0x7
 
-    const-string v0, "^PR\u0015WvH]\u0017u~NT\u0017@kYG\t\u000b^yf"
+    const-string v0, "{3<W\u0015^37q\u0004_$kQ5c"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -260,7 +260,7 @@
 
     sput-object v9, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
 
-    .line 2
+    .line 4
     const-class v0, Lorg/spongycastle/jcajce/provider/symmetric/AES;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -279,7 +279,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    move v0, v4
+    const/16 v0, 0x70
 
     :goto_8
     xor-int/2addr v0, v10
@@ -310,7 +310,7 @@
     goto :goto_8
 
     :pswitch_3
-    const/16 v0, 0x7a
+    move v0, v4
 
     goto :goto_8
 
@@ -321,7 +321,7 @@
 
     packed-switch v0, :pswitch_data_1
 
-    move v0, v4
+    const/16 v0, 0x70
 
     :goto_9
     xor-int/2addr v0, v11
@@ -352,7 +352,7 @@
     goto :goto_9
 
     :pswitch_7
-    const/16 v0, 0x7a
+    move v0, v4
 
     goto :goto_9
 
@@ -363,7 +363,7 @@
 
     packed-switch v0, :pswitch_data_2
 
-    move v0, v4
+    const/16 v0, 0x70
 
     :goto_a
     xor-int/2addr v0, v11
@@ -394,7 +394,7 @@
     goto :goto_a
 
     :pswitch_b
-    const/16 v0, 0x7a
+    move v0, v4
 
     goto :goto_a
 
@@ -405,7 +405,7 @@
 
     packed-switch v0, :pswitch_data_3
 
-    move v0, v4
+    const/16 v0, 0x70
 
     :goto_b
     xor-int/2addr v0, v11
@@ -436,7 +436,7 @@
     goto :goto_b
 
     :pswitch_f
-    const/16 v0, 0x7a
+    move v0, v4
 
     goto :goto_b
 
@@ -447,7 +447,7 @@
 
     packed-switch v0, :pswitch_data_4
 
-    move v0, v4
+    const/16 v0, 0x70
 
     :goto_c
     xor-int/2addr v0, v11
@@ -478,7 +478,7 @@
     goto :goto_c
 
     :pswitch_13
-    const/16 v0, 0x7a
+    move v0, v4
 
     goto :goto_c
 
@@ -489,7 +489,7 @@
 
     packed-switch v0, :pswitch_data_5
 
-    move v0, v4
+    const/16 v0, 0x70
 
     :goto_d
     xor-int/2addr v0, v11
@@ -520,7 +520,7 @@
     goto :goto_d
 
     :pswitch_17
-    const/16 v0, 0x7a
+    move v0, v4
 
     goto :goto_d
 
@@ -531,7 +531,7 @@
 
     packed-switch v0, :pswitch_data_6
 
-    move v0, v4
+    const/16 v0, 0x70
 
     :goto_e
     xor-int/2addr v0, v11
@@ -562,7 +562,7 @@
     goto :goto_e
 
     :pswitch_1b
-    const/16 v0, 0x7a
+    move v0, v4
 
     goto :goto_e
 
@@ -573,7 +573,7 @@
 
     packed-switch v0, :pswitch_data_7
 
-    move v0, v4
+    const/16 v0, 0x70
 
     :goto_f
     xor-int/2addr v0, v10
@@ -604,7 +604,7 @@
     goto :goto_f
 
     :pswitch_1f
-    const/16 v0, 0x7a
+    move v0, v4
 
     goto :goto_f
 
@@ -679,168 +679,162 @@
     .locals 0
 
     .prologue
-    .line 6
+    .line 7
     invoke-direct {p0}, Lorg/spongycastle/jcajce/provider/util/AlgorithmProvider;-><init>()V
 
-    .line 4
+    .line 5
     return-void
 .end method
 
 
 # virtual methods
 .method public configure(Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;)V
-    .locals 7
+    .locals 5
 
     .prologue
-    const/4 v1, 0x1
+    sget-boolean v0, Lorg/spongycastle/jcajce/provider/symmetric/AES;->a:Z
 
-    const/4 v0, 0x0
+    .line 3
+    sget-object v1, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
 
-    sget-boolean v2, Lorg/spongycastle/jcajce/provider/symmetric/AES;->a:Z
+    const/4 v2, 0x0
 
-    .line 1
-    sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
+    aget-object v1, v1, v2
 
-    const/4 v4, 0x7
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    aget-object v3, v3, v4
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->PREFIX:Ljava/lang/String;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v5, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->PREFIX:Ljava/lang/String;
+    move-result-object v2
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    sget-object v5, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
-
-    aget-object v5, v5, v0
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-interface {p1, v3, v4}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 5
-    sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
-
-    const/4 v4, 0x4
-
-    aget-object v3, v3, v4
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v5, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->PREFIX:Ljava/lang/String;
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    sget-object v5, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
-
-    const/4 v6, 0x3
-
-    aget-object v5, v5, v6
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-interface {p1, v3, v4}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 8
-    sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
-
-    aget-object v3, v3, v1
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v5, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->PREFIX:Ljava/lang/String;
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    sget-object v5, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
-
-    const/4 v6, 0x5
-
-    aget-object v5, v5, v6
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-interface {p1, v3, v4}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 7
     sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
 
     const/4 v4, 0x2
 
     aget-object v3, v3, v4
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v2
 
-    sget-object v5, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->PREFIX:Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v4
+    invoke-interface {p1, v1, v2}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v5, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
+    .line 1
+    sget-object v1, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
 
-    const/4 v6, 0x6
+    const/4 v2, 0x4
 
-    aget-object v5, v5, v6
+    aget-object v1, v1, v2
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->PREFIX:Ljava/lang/String;
 
-    move-result-object v4
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-interface {p1, v3, v4}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+    move-result-object v2
 
-    .line 3
-    if-eqz v2, :cond_0
+    sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
 
-    sget-boolean v2, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
+    const/4 v4, 0x6
 
-    if-eqz v2, :cond_1
+    aget-object v3, v3, v4
 
-    :goto_0
-    sput-boolean v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:Z
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-interface {p1, v1, v2}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 2
+    sget-object v1, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x5
+
+    aget-object v1, v1, v2
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->PREFIX:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
+
+    const/4 v4, 0x1
+
+    aget-object v3, v3, v4
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-interface {p1, v1, v2}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 6
+    sget-object v1, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x7
+
+    aget-object v1, v1, v2
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->PREFIX:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    sget-object v3, Lorg/spongycastle/jcajce/provider/symmetric/AES$Mappings;->z:[Ljava/lang/String;
+
+    const/4 v4, 0x3
+
+    aget-object v3, v3, v4
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-interface {p1, v1, v2}, Lorg/spongycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 8
+    if-eqz v0, :cond_0
+
+    sget v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    sput v0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->a:I
 
     :cond_0
     return-void
-
-    :cond_1
-    move v0, v1
-
-    goto :goto_0
 .end method

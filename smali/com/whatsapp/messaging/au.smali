@@ -1,116 +1,68 @@
-.class final Lcom/whatsapp/messaging/au;
-.super Ljava/util/LinkedHashMap;
+.class public interface abstract Lcom/whatsapp/messaging/au;
+.super Ljava/lang/Object;
 .source "au.java"
 
 
-# static fields
-.field private static final serialVersionUID:J = 0x1L
-
-
-# direct methods
-.method private constructor <init>()V
-    .locals 0
-
-    .prologue
-    .line 4
-    invoke-direct {p0}, Ljava/util/LinkedHashMap;-><init>()V
-
-    return-void
-.end method
-
-.method constructor <init>(Lcom/whatsapp/messaging/e;)V
-    .locals 0
-
-    .prologue
-    .line 3
-    invoke-direct {p0}, Lcom/whatsapp/messaging/au;-><init>()V
-
-    return-void
-.end method
-
-.method public static a(Ljava/lang/Long;)Z
-    .locals 4
-
-    .prologue
-    .line 1
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v0
-
-    const-wide/32 v2, 0x5265c00
-
-    add-long/2addr v0, v2
-
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v2
-
-    cmp-long v0, v0, v2
-
-    if-gez v0, :cond_1
-
-    :cond_0
-    const/4 v0, 0x1
-
-    :goto_0
-    return v0
-
-    :cond_1
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method public static a(Ljava/util/Map$Entry;)Z
-    .locals 4
-
-    .prologue
-    .line 2
-    invoke-interface {p0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Long;
-
-    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v0
-
-    const-wide/32 v2, 0x5265c00
-
-    add-long/2addr v0, v2
-
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v2
-
-    cmp-long v0, v0, v2
-
-    if-gez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-
 # virtual methods
-.method protected removeEldestEntry(Ljava/util/Map$Entry;)Z
-    .locals 1
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;J)V
+.end method
 
-    .prologue
-    .line 5
-    invoke-static {p1}, Lcom/whatsapp/messaging/au;->a(Ljava/util/Map$Entry;)Z
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;JI[Ljava/lang/String;[I[[B[I[[B[[B[B[BLcom/whatsapp/protocol/VoipOptions;)V
+.end method
 
-    move-result v0
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;JLjava/lang/String;)V
+.end method
 
-    return v0
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;JLjava/lang/String;I[[B[I[B[B[BI)V
+.end method
+
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;JZ)V
+.end method
+
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;J[BI)V
+.end method
+
+.method public abstract a(Lcom/whatsapp/protocol/c8;Ljava/lang/String;J[[B[I)V
+.end method
+
+.method public abstract a(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I[[B[[BLcom/whatsapp/protocol/VoipOptions;)V
+.end method
+
+.method public abstract b(Lcom/whatsapp/protocol/c8;Ljava/lang/String;JZ)V
+.end method
+
+.method public abstract b(Lcom/whatsapp/protocol/c8;Ljava/lang/String;J[[B[I)V
+.end method
+
+.method public abstract b(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract c(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract d(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract e(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract f(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract g(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract h(Ljava/lang/String;Ljava/lang/String;)V
 .end method

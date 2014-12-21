@@ -1,32 +1,17 @@
-.class public Lcom/tonicartos/widget/stickygridheaders/r;
+.class public interface abstract Lcom/tonicartos/widget/stickygridheaders/r;
 .super Ljava/lang/Object;
 .source "r.java"
 
-
-# instance fields
-.field protected a:I
-
-.field final b:Lcom/tonicartos/widget/stickygridheaders/b;
-
-.field protected c:I
+# interfaces
+.implements Landroid/widget/ListAdapter;
 
 
-# direct methods
-.method protected constructor <init>(Lcom/tonicartos/widget/stickygridheaders/b;II)V
-    .locals 0
+# virtual methods
+.method public abstract a()I
+.end method
 
-    .prologue
-    .line 1
-    iput-object p1, p0, Lcom/tonicartos/widget/stickygridheaders/r;->b:Lcom/tonicartos/widget/stickygridheaders/b;
+.method public abstract a(I)I
+.end method
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 3
-    iput p2, p0, Lcom/tonicartos/widget/stickygridheaders/r;->a:I
-
-    .line 4
-    iput p3, p0, Lcom/tonicartos/widget/stickygridheaders/r;->c:I
-
-    .line 2
-    return-void
+.method public abstract a(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 .end method

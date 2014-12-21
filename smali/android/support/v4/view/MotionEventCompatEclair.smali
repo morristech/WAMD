@@ -8,7 +8,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 4
     invoke-virtual {p0, p1}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v0
@@ -20,7 +20,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 2
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v0
@@ -32,7 +32,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 5
     invoke-virtual {p0, p1}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v0
@@ -56,7 +56,7 @@
     .locals 1
 
     .prologue
-    .line 5
+    .line 1
     invoke-virtual {p0, p1}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result v0

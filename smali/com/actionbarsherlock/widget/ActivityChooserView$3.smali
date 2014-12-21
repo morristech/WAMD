@@ -12,7 +12,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 2
     iput-object p1, p0, Lcom/actionbarsherlock/widget/ActivityChooserView$3;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserView;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
@@ -26,14 +26,14 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 1
     invoke-super {p0}, Landroid/database/DataSetObserver;->onChanged()V
 
-    .line 2
+    .line 4
     iget-object v0, p0, Lcom/actionbarsherlock/widget/ActivityChooserView$3;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserView;
 
     invoke-static {v0}, Lcom/actionbarsherlock/widget/ActivityChooserView;->access$400(Lcom/actionbarsherlock/widget/ActivityChooserView;)V
 
-    .line 1
+    .line 3
     return-void
 .end method

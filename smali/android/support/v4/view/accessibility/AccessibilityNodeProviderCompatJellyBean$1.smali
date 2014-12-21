@@ -12,7 +12,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 4
     iput-object p1, p0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompatJellyBean$1;->val$bridge:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompatJellyBean$AccessibilityNodeInfoBridge;
 
     invoke-direct {p0}, Landroid/view/accessibility/AccessibilityNodeProvider;-><init>()V
@@ -26,7 +26,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 3
     iget-object v0, p0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompatJellyBean$1;->val$bridge:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompatJellyBean$AccessibilityNodeInfoBridge;
 
     invoke-interface {v0, p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompatJellyBean$AccessibilityNodeInfoBridge;->createAccessibilityNodeInfo(I)Ljava/lang/Object;

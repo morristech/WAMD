@@ -67,6 +67,8 @@
     <dimen name="imageview_padding">10.0dip</dimen>
     <dimen name="info_screen_header">91.0dip</dimen>
     <dimen name="list_row_padding">12.0dip</dimen>
+    <dimen name="map_bullet">15.0dip</dimen>
+    <dimen name="map_bullet_shadow">1.5dip</dimen>
     <dimen name="max_share_locations_list_height">160.0dip</dimen>
     <dimen name="media_message_thumb">88.0sp</dimen>
     <dimen name="media_thumb_radius">2.0dip</dimen>

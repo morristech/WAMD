@@ -1,34 +1,33 @@
-.class Lcom/whatsapp/u2;
-.super Ljava/lang/Object;
+.class public Lcom/whatsapp/u2;
+.super Lcom/whatsapp/protocol/c9;
 .source "u2.java"
-
-# interfaces
-.implements Lcom/whatsapp/protocol/n;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/aam;
+.field public P:Lcom/whatsapp/protocol/c8;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/aam;)V
-    .locals 0
-
-    .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/u2;->a:Lcom/whatsapp/aam;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a(Ljava/lang/Exception;)V
-    .locals 0
+.method public constructor <init>(Lcom/whatsapp/protocol/c8;)V
+    .locals 4
 
     .prologue
     .line 2
+    new-instance v0, Lcom/whatsapp/protocol/bb;
+
+    iget-object v1, p1, Lcom/whatsapp/protocol/c8;->b:Ljava/lang/String;
+
+    const/4 v2, 0x1
+
+    iget-object v3, p1, Lcom/whatsapp/protocol/c8;->a:Ljava/lang/String;
+
+    invoke-direct {v0, v1, v2, v3}, Lcom/whatsapp/protocol/bb;-><init>(Ljava/lang/String;ZLjava/lang/String;)V
+
+    invoke-direct {p0, v0}, Lcom/whatsapp/protocol/c9;-><init>(Lcom/whatsapp/protocol/bb;)V
+
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/u2;->P:Lcom/whatsapp/protocol/c8;
+
+    .line 1
     return-void
 .end method

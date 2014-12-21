@@ -14,10 +14,10 @@
     .locals 2
 
     .prologue
-    .line 2
+    .line 3
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    .line 11
+    .line 2
     new-instance v0, Landroid/graphics/Paint;
 
     const/4 v1, 0x1
@@ -26,7 +26,7 @@
 
     iput-object v0, p0, Lcom/whatsapp/camera/ShutterOverlay;->b:Landroid/graphics/Paint;
 
-    .line 17
+    .line 4
     return-void
 .end method
 
@@ -34,10 +34,10 @@
     .locals 2
 
     .prologue
-    .line 10
+    .line 8
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 16
+    .line 10
     new-instance v0, Landroid/graphics/Paint;
 
     const/4 v1, 0x1
@@ -46,7 +46,7 @@
 
     iput-object v0, p0, Lcom/whatsapp/camera/ShutterOverlay;->b:Landroid/graphics/Paint;
 
-    .line 12
+    .line 7
     return-void
 .end method
 
@@ -54,7 +54,7 @@
     .locals 2
 
     .prologue
-    .line 18
+    .line 9
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 15
@@ -66,7 +66,7 @@
 
     iput-object v0, p0, Lcom/whatsapp/camera/ShutterOverlay;->b:Landroid/graphics/Paint;
 
-    .line 8
+    .line 14
     return-void
 .end method
 
@@ -74,7 +74,7 @@
     .locals 0
 
     .prologue
-    .line 14
+    .line 6
     iput-boolean p1, p0, Lcom/whatsapp/camera/ShutterOverlay;->a:Z
 
     return p1
@@ -88,12 +88,12 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 13
+    .line 18
     iget-boolean v0, p0, Lcom/whatsapp/camera/ShutterOverlay;->a:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 20
     iget-object v0, p0, Lcom/whatsapp/camera/ShutterOverlay;->b:Landroid/graphics/Paint;
 
     invoke-virtual {p0}, Lcom/whatsapp/camera/ShutterOverlay;->getContext()Landroid/content/Context;
@@ -116,21 +116,21 @@
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 6
+    .line 19
     iget-object v0, p0, Lcom/whatsapp/camera/ShutterOverlay;->b:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 9
+    .line 11
     iget-object v0, p0, Lcom/whatsapp/camera/ShutterOverlay;->b:Landroid/graphics/Paint;
 
     const/4 v2, -0x1
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 7
+    .line 17
     invoke-virtual {p0}, Lcom/whatsapp/camera/ShutterOverlay;->getWidth()I
 
     move-result v0
@@ -165,18 +165,18 @@
 
     iput-boolean v0, p0, Lcom/whatsapp/camera/ShutterOverlay;->a:Z
 
-    .line 19
+    .line 16
     invoke-virtual {p0}, Lcom/whatsapp/camera/ShutterOverlay;->invalidate()V
 
-    .line 20
-    new-instance v0, Lcom/whatsapp/camera/d;
+    .line 12
+    new-instance v0, Lcom/whatsapp/camera/al;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/camera/d;-><init>(Lcom/whatsapp/camera/ShutterOverlay;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/camera/al;-><init>(Lcom/whatsapp/camera/ShutterOverlay;)V
 
     const-wide/16 v2, 0x32
 
     invoke-virtual {p0, v0, v2, v3}, Lcom/whatsapp/camera/ShutterOverlay;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 4
+    .line 13
     return-void
 .end method

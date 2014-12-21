@@ -15,14 +15,14 @@
     .locals 2
 
     .prologue
-    .line 2
+    .line 6
     const/4 v0, 0x0
 
     array-length v1, p1
 
     invoke-direct {p0, p1, v0, v1}, Lorg/spongycastle/crypto/params/KeyParameter;-><init>([BII)V
 
-    .line 6
+    .line 2
     return-void
 .end method
 
@@ -30,15 +30,15 @@
     .locals 2
 
     .prologue
-    .line 3
+    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
+    .line 7
     new-array v0, p3, [B
 
     iput-object v0, p0, Lorg/spongycastle/crypto/params/KeyParameter;->key:[B
 
-    .line 7
+    .line 3
     iget-object v0, p0, Lorg/spongycastle/crypto/params/KeyParameter;->key:[B
 
     const/4 v1, 0x0

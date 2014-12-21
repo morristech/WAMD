@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/a;
+.field final a:Lcom/whatsapp/GroupChatInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/a;)V
+.method constructor <init>(Lcom/whatsapp/GroupChatInfo;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/q7;->a:Lcom/whatsapp/a;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/q7;->a:Lcom/whatsapp/GroupChatInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,11 +29,11 @@
     .locals 1
 
     .prologue
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/q7;->a:Lcom/whatsapp/GroupChatInfo;
+
+    invoke-virtual {v0}, Lcom/whatsapp/GroupChatInfo;->d()V
+
     .line 2
-    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    invoke-static {}, Lcom/whatsapp/App;->q()V
-
-    .line 3
     return-void
 .end method

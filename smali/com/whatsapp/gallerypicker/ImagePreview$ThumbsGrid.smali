@@ -19,27 +19,27 @@
     .end annotation
 
     .prologue
-    .line 4
+    .line 8
     iput-object p1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->b:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    .line 30
+    .line 20
     invoke-direct {p0, p2}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;)V
 
-    .line 25
+    .line 30
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xb
 
     if-lt v0, v1, :cond_0
 
-    .line 9
+    .line 26
     new-instance v0, Landroid/animation/LayoutTransition;
 
     invoke-direct {v0}, Landroid/animation/LayoutTransition;-><init>()V
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->setLayoutTransition(Landroid/animation/LayoutTransition;)V
 
-    .line 10
+    .line 12
     :cond_0
     return-void
 .end method
@@ -50,19 +50,19 @@
     .locals 10
 
     .prologue
-    sget v1, Lcom/whatsapp/gallerypicker/ImagePreview;->d:I
+    sget-boolean v1, Lcom/whatsapp/gallerypicker/ImagePreview;->x:Z
 
-    .line 14
+    .line 28
     invoke-virtual {p0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->getChildCount()I
 
     move-result v2
 
-    .line 19
+    .line 6
     iget v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->a:I
 
     if-eqz v0, :cond_1
 
-    .line 28
+    .line 19
     const/high16 v0, 0x40000000
 
     invoke-virtual {p0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->getResources()Landroid/content/res/Resources;
@@ -79,40 +79,40 @@
 
     float-to-int v3, v0
 
-    .line 7
+    .line 33
     sub-int v0, p4, p2
 
     iget v4, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->a:I
 
     div-int v4, v0, v4
 
-    .line 16
+    .line 14
     const/4 v0, 0x0
 
     :cond_0
     if-ge v0, v2, :cond_1
 
-    .line 2
+    .line 18
     invoke-virtual {p0, v0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->getChildAt(I)Landroid/view/View;
 
     move-result-object v5
 
-    .line 18
+    .line 16
     iget v6, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->a:I
 
     div-int v6, v0, v6
 
-    .line 22
+    .line 24
     iget v7, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->a:I
 
     rem-int v7, v0, v7
 
     mul-int/2addr v7, v4
 
-    .line 15
+    .line 11
     mul-int/2addr v6, v4
 
-    .line 3
+    .line 31
     add-int v8, p2, v7
 
     add-int/2addr v8, v3
@@ -135,12 +135,12 @@
 
     invoke-virtual {v5, v8, v9, v7, v6}, Landroid/view/View;->layout(IIII)V
 
-    .line 27
+    .line 3
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 29
+    .line 10
     :cond_1
     return-void
 .end method
@@ -151,10 +151,10 @@
     .prologue
     const/4 v0, 0x2
 
-    .line 13
+    .line 7
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onMeasure(II)V
 
-    .line 12
+    .line 29
     const/high16 v1, 0x42900000
 
     invoke-virtual {p0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->getResources()Landroid/content/res/Resources;
@@ -171,27 +171,27 @@
 
     float-to-int v1, v1
 
-    .line 20
+    .line 15
     invoke-virtual {p0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->getChildCount()I
 
     move-result v2
 
-    .line 17
+    .line 27
     invoke-virtual {p0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->getMeasuredWidth()I
 
     move-result v3
 
-    .line 33
+    .line 22
     if-lez v2, :cond_1
 
     if-lez v3, :cond_1
 
-    .line 26
+    .line 2
     div-int v1, v3, v1
 
     iput v1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->a:I
 
-    .line 24
+    .line 25
     iget v1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->a:I
 
     add-int/2addr v1, v2
@@ -202,7 +202,7 @@
 
     div-int/2addr v1, v4
 
-    .line 32
+    .line 21
     iget v4, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->a:I
 
     rem-int v4, v2, v4
@@ -211,14 +211,14 @@
 
     if-ne v4, v5, :cond_0
 
-    .line 23
+    .line 5
     iget v1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->a:I
 
     add-int/lit8 v1, v1, 0x1
 
     iput v1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->a:I
 
-    .line 1
+    .line 32
     iget v1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->a:I
 
     add-int/2addr v1, v2
@@ -229,11 +229,11 @@
 
     div-int/2addr v1, v4
 
-    .line 6
+    .line 13
     :cond_0
     if-le v1, v0, :cond_2
 
-    .line 11
+    .line 9
     add-int v1, v2, v0
 
     add-int/lit8 v1, v1, -0x1
@@ -242,13 +242,13 @@
 
     iput v1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->a:I
 
-    .line 8
+    .line 4
     :goto_0
     iget v1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->a:I
 
     div-int v1, v3, v1
 
-    .line 5
+    .line 17
     invoke-virtual {p0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->getMeasuredWidth()I
 
     move-result v2
@@ -257,7 +257,7 @@
 
     invoke-virtual {p0, v2, v0}, Lcom/whatsapp/gallerypicker/ImagePreview$ThumbsGrid;->setMeasuredDimension(II)V
 
-    .line 21
+    .line 1
     :cond_1
     return-void
 

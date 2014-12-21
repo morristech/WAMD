@@ -3,24 +3,24 @@
 .source "ub.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/whatsapp/pp;
 
 
 # instance fields
-.field final a:Ljava/util/ArrayList;
+.field final a:Lcom/whatsapp/Conversation;
 
-.field final b:Lcom/whatsapp/ww;
+.field final b:Ljava/util/HashMap;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ww;Ljava/util/ArrayList;)V
+.method constructor <init>(Lcom/whatsapp/Conversation;Ljava/util/HashMap;)V
     .locals 0
 
     .prologue
-    .line 4
-    iput-object p1, p0, Lcom/whatsapp/ub;->b:Lcom/whatsapp/ww;
+    .line 12
+    iput-object p1, p0, Lcom/whatsapp/ub;->a:Lcom/whatsapp/Conversation;
 
-    iput-object p2, p0, Lcom/whatsapp/ub;->a:Ljava/util/ArrayList;
+    iput-object p2, p0, Lcom/whatsapp/ub;->b:Ljava/util/HashMap;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,33 +29,117 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public a()V
+    .locals 8
 
     .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/ub;->b:Lcom/whatsapp/ww;
+    sget v2, Lcom/whatsapp/App;->h:I
 
-    iget-object v0, v0, Lcom/whatsapp/ww;->a:Lcom/whatsapp/t7;
+    .line 8
+    iget-object v0, p0, Lcom/whatsapp/ub;->a:Lcom/whatsapp/Conversation;
 
-    invoke-virtual {v0}, Lcom/whatsapp/t7;->isCancelled()Z
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->ae(Lcom/whatsapp/Conversation;)Z
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/whatsapp/ub;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->p(Lcom/whatsapp/Conversation;)I
+
+    move-result v0
+
+    if-lez v0, :cond_2
+
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/ub;->a:Lcom/whatsapp/Conversation;
+
+    iget-object v0, v0, Lcom/whatsapp/Conversation;->aB:Lcom/whatsapp/i5;
+
+    invoke-static {v0}, Lcom/whatsapp/i5;->a(Lcom/whatsapp/i5;)I
+
+    move-result v0
+
+    .line 11
+    iget-object v1, p0, Lcom/whatsapp/ub;->a:Lcom/whatsapp/Conversation;
+
+    iget-object v1, v1, Lcom/whatsapp/Conversation;->aB:Lcom/whatsapp/i5;
+
+    invoke-virtual {v1}, Lcom/whatsapp/i5;->getCount()I
+
+    move-result v1
+
+    add-int/lit8 v3, v0, 0x1
+
+    if-le v1, v3, :cond_2
+
+    .line 6
+    iget-object v1, p0, Lcom/whatsapp/ub;->a:Lcom/whatsapp/Conversation;
+
+    iget-object v1, v1, Lcom/whatsapp/Conversation;->aB:Lcom/whatsapp/i5;
+
+    add-int/lit8 v0, v0, 0x1
+
+    invoke-virtual {v1, v0}, Lcom/whatsapp/i5;->getItem(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/whatsapp/protocol/c9;
+
+    .line 10
+    iget-object v1, p0, Lcom/whatsapp/ub;->b:Ljava/util/HashMap;
+
+    invoke-virtual {v1}, Ljava/util/HashMap;->values()Ljava/util/Collection;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    :cond_0
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/whatsapp/protocol/c9;
 
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/ub;->b:Lcom/whatsapp/ww;
+    iget-wide v4, v1, Lcom/whatsapp/protocol/c9;->K:J
 
-    iget-object v0, v0, Lcom/whatsapp/ww;->a:Lcom/whatsapp/t7;
+    iget-wide v6, v0, Lcom/whatsapp/protocol/c9;->K:J
 
-    iget-object v0, v0, Lcom/whatsapp/t7;->a:Lcom/whatsapp/ListChatInfo;
+    cmp-long v1, v4, v6
 
-    iget-object v1, p0, Lcom/whatsapp/ub;->a:Ljava/util/ArrayList;
+    if-ltz v1, :cond_1
 
-    invoke-static {v0, v1}, Lcom/whatsapp/ListChatInfo;->a(Lcom/whatsapp/ListChatInfo;Ljava/util/ArrayList;)V
+    .line 4
+    iget-object v1, p0, Lcom/whatsapp/ub;->a:Lcom/whatsapp/Conversation;
+
+    const/4 v4, 0x0
+
+    invoke-static {v1, v4}, Lcom/whatsapp/Conversation;->c(Lcom/whatsapp/Conversation;I)I
 
     .line 3
-    :cond_0
+    if-eqz v2, :cond_2
+
+    .line 9
+    :cond_1
+    if-eqz v2, :cond_0
+
+    .line 5
+    :cond_2
+    iget-object v0, p0, Lcom/whatsapp/ub;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->T(Lcom/whatsapp/Conversation;)V
+
+    .line 7
     return-void
 .end method

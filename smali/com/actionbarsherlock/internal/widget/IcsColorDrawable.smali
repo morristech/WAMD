@@ -14,20 +14,20 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 11
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
-    .line 12
+    .line 1
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsColorDrawable;->paint:Landroid/graphics/Paint;
 
-    .line 2
+    .line 4
     iput p1, p0, Lcom/actionbarsherlock/internal/widget/IcsColorDrawable;->color:I
 
-    .line 14
+    .line 8
     return-void
 .end method
 
@@ -37,21 +37,21 @@
     .locals 2
 
     .prologue
-    .line 1
+    .line 3
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsColorDrawable;->color:I
 
     ushr-int/lit8 v0, v0, 0x18
 
     if-eqz v0, :cond_0
 
-    .line 7
+    .line 5
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/IcsColorDrawable;->paint:Landroid/graphics/Paint;
 
     iget v1, p0, Lcom/actionbarsherlock/internal/widget/IcsColorDrawable;->color:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 9
+    .line 14
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsColorDrawable;->getBounds()Landroid/graphics/Rect;
 
     move-result-object v0
@@ -60,7 +60,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 6
+    .line 2
     :cond_0
     return-void
 .end method
@@ -69,7 +69,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 13
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsColorDrawable;->color:I
 
     ushr-int/lit8 v0, v0, 0x18
@@ -81,14 +81,14 @@
     .locals 2
 
     .prologue
-    .line 5
+    .line 10
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsColorDrawable;->color:I
 
     ushr-int/lit8 v0, v0, 0x18
 
     if-eq p1, v0, :cond_0
 
-    .line 11
+    .line 7
     iget v0, p0, Lcom/actionbarsherlock/internal/widget/IcsColorDrawable;->color:I
 
     const v1, 0xffffff
@@ -101,10 +101,10 @@
 
     iput v0, p0, Lcom/actionbarsherlock/internal/widget/IcsColorDrawable;->color:I
 
-    .line 4
+    .line 6
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/IcsColorDrawable;->invalidateSelf()V
 
-    .line 10
+    .line 9
     :cond_0
     return-void
 .end method
@@ -113,6 +113,6 @@
     .locals 0
 
     .prologue
-    .line 13
+    .line 12
     return-void
 .end method

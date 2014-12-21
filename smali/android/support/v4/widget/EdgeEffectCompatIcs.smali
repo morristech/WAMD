@@ -8,7 +8,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 11
     check-cast p0, Landroid/widget/EdgeEffect;
 
     invoke-virtual {p0, p1}, Landroid/widget/EdgeEffect;->draw(Landroid/graphics/Canvas;)Z
@@ -22,12 +22,12 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 12
     check-cast p0, Landroid/widget/EdgeEffect;
 
     invoke-virtual {p0}, Landroid/widget/EdgeEffect;->finish()V
 
-    .line 11
+    .line 10
     return-void
 .end method
 
@@ -49,7 +49,7 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 8
     new-instance v0, Landroid/widget/EdgeEffect;
 
     invoke-direct {v0, p0}, Landroid/widget/EdgeEffect;-><init>(Landroid/content/Context;)V
@@ -61,12 +61,12 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 9
     check-cast p0, Landroid/widget/EdgeEffect;
 
     invoke-virtual {p0, p1}, Landroid/widget/EdgeEffect;->onPull(F)V
 
-    .line 8
+    .line 3
     const/4 v0, 0x1
 
     return v0
@@ -76,10 +76,10 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 1
     check-cast p0, Landroid/widget/EdgeEffect;
 
-    .line 7
+    .line 2
     invoke-virtual {p0}, Landroid/widget/EdgeEffect;->onRelease()V
 
     .line 5
@@ -94,7 +94,7 @@
     .locals 0
 
     .prologue
-    .line 9
+    .line 7
     check-cast p0, Landroid/widget/EdgeEffect;
 
     invoke-virtual {p0, p1, p2}, Landroid/widget/EdgeEffect;->setSize(II)V

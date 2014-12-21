@@ -3,7 +3,7 @@
 .source "DialogToastPreferenceActivity.java"
 
 # interfaces
-.implements Lcom/whatsapp/hy;
+.implements Lcom/whatsapp/ad4;
 
 
 # static fields
@@ -11,19 +11,19 @@
 
 
 # instance fields
-.field private a:Lcom/whatsapp/atj;
+.field private a:I
 
-.field private b:Lcom/whatsapp/xs;
+.field private b:Lcom/whatsapp/adt;
 
 .field private c:I
 
-.field private d:Ljava/lang/String;
+.field private d:Lcom/whatsapp/ape;
 
 .field private e:Z
 
 .field private f:I
 
-.field private g:I
+.field private g:Ljava/lang/String;
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "]gMsI_Dp}DCWwfWYMC"
+    const-string v6, "m~ \u0015 p|\'N;{h!\u000c,1l&\u000e\'y6\'\u0015(j~t"
 
     const/4 v0, -0x1
 
@@ -82,7 +82,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "]gMsI_Dp}DCWwfWYMC[A"
+    const-string v0, "sK&\u000e.l~\'\u0012\u001anr:\u000f,lO=\u0015%{R0"
 
     move-object v6, v0
 
@@ -97,7 +97,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "]sV}BBFWav@JJ|@BwMfIUj@"
+    const-string v0, "s_=\u0000%q|\u0000\u000e(mo\u0007\u0015;wu3(-"
 
     move-object v6, v0
 
@@ -112,7 +112,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "]sV}BBFWav@JJ|@BnAaVQDA[A"
+    const-string v0, "sK&\u000e.l~\'\u0012\u001anr:\u000f,lV1\u0012:\u007f|1(-"
 
     move-object v6, v0
 
@@ -127,7 +127,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "CFPfL^DW=WUPQ\u007f@\u001fTV}KW\u000eWfDDF\u0004"
+    const-string v0, "s_=\u0000%q|\u0000\u000e(mo\u0007\u0015;wu3"
 
     move-object v6, v0
 
@@ -144,7 +144,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "TJE~JWWKsVDWVwCUQA|FUBGfLFJPk\n_MFsF[SVwVCF@=DSWMdLDZ\u0004|J\u0010BGfLFF"
+    const-string v0, "sK&\u000e.l~\'\u0012\u001anr:\u000f,lV1\u0012:\u007f|1(-"
 
     move v7, v6
 
@@ -161,7 +161,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "]gMsI_Dp}DCWwfWYMC[A"
+    const-string v6, "s_=\u0000%q|\u0000\u000e(mo\u0007\u0015;wu3"
 
     const/4 v0, 0x5
 
@@ -174,7 +174,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "]gMsI_Dp}DCWwfWYMC"
+    const-string v6, "s_=\u0000%q|\u0000\u000e(mo\u0007\u0015;wu3(-"
 
     const/4 v0, 0x6
 
@@ -187,7 +187,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "]sV}BBFWav@JJ|@BnAaVQDA[A"
+    const-string v6, "sK&\u000e.l~\'\u0012\u001anr:\u000f,lO=\u0015%{R0"
 
     const/4 v0, 0x7
 
@@ -200,7 +200,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "]sV}BBFWav@JJ|@BwMfIUj@"
+    const-string v6, "zr5\r&yo;\u0000:jo&\u0004/{i1\u000f*{z7\u0015 hr \u0018fqu6\u0000*uk&\u0004:m~0N(}o=\u0017 jbt\u000f&>z7\u0015 h~"
 
     const/16 v0, 0x8
 
@@ -222,7 +222,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x25
+    const/16 v6, 0x49
 
     :goto_2
     xor-int/2addr v6, v13
@@ -238,22 +238,22 @@
     goto :goto_1
 
     :pswitch_9
-    const/16 v6, 0x30
+    const/16 v6, 0x1e
 
     goto :goto_2
 
     :pswitch_a
-    const/16 v6, 0x23
+    const/16 v6, 0x1b
 
     goto :goto_2
 
     :pswitch_b
-    const/16 v6, 0x24
+    const/16 v6, 0x54
 
     goto :goto_2
 
     :pswitch_c
-    const/16 v6, 0x12
+    const/16 v6, 0x61
 
     goto :goto_2
 
@@ -283,10 +283,10 @@
     .locals 1
 
     .prologue
-    .line 114
+    .line 27
     invoke-direct {p0}, Lcom/actionbarsherlock/app/SherlockPreferenceActivity;-><init>()V
 
-    .line 64
+    .line 88
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->e:Z
@@ -294,12 +294,12 @@
     return-void
 .end method
 
-.method static a(Lcom/whatsapp/DialogToastPreferenceActivity;)Lcom/whatsapp/atj;
+.method static a(Lcom/whatsapp/DialogToastPreferenceActivity;)Lcom/whatsapp/adt;
     .locals 1
 
     .prologue
-    .line 37
-    iget-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->a:Lcom/whatsapp/atj;
+    .line 47
+    iget-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->b:Lcom/whatsapp/adt;
 
     return-object v0
 .end method
@@ -310,38 +310,38 @@
     .locals 1
 
     .prologue
-    .line 107
+    .line 84
     const/4 v0, 0x0
 
     :try_start_0
-    iput-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->a:Lcom/whatsapp/atj;
+    iput-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->b:Lcom/whatsapp/adt;
 
-    .line 75
+    .line 66
     invoke-virtual {p0, p1}, Lcom/whatsapp/DialogToastPreferenceActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->g:Ljava/lang/String;
 
-    .line 118
+    .line 77
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastPreferenceActivity;->isFinishing()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
+    .line 20
     const/16 v0, 0x1f4
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/DialogToastPreferenceActivity;->showDialog(I)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 82
+    .line 95
     :cond_0
     return-void
 
-    .line 2
+    .line 20
     :catch_0
     move-exception v0
 
@@ -352,32 +352,32 @@
     .locals 1
 
     .prologue
-    .line 86
+    .line 50
     :try_start_0
-    iput p1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->g:I
+    iput p1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->a:I
 
-    .line 3
+    .line 46
     iput p2, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->c:I
 
-    .line 54
+    .line 58
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastPreferenceActivity;->isFinishing()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 83
+    .line 39
     const/16 v0, 0x1f5
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/DialogToastPreferenceActivity;->showDialog(I)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 73
+    .line 59
     :cond_0
     return-void
 
-    .line 83
+    .line 39
     :catch_0
     move-exception v0
 
@@ -388,7 +388,7 @@
     .locals 1
 
     .prologue
-    .line 30
+    .line 16
     const/4 v0, 0x0
 
     return v0
@@ -398,67 +398,67 @@
     .locals 1
 
     .prologue
-    .line 79
+    .line 70
     const/4 v0, 0x0
 
     return v0
 .end method
 
-.method public c()V
+.method public c()Z
     .locals 1
 
     .prologue
-    .line 5
+    .line 73
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public d()V
+    .locals 1
+
+    .prologue
+    .line 65
     const/16 v0, 0x1f5
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/DialogToastPreferenceActivity;->removeDialog(I)V
 
-    .line 97
+    .line 49
     return-void
-.end method
-
-.method public d()Z
-    .locals 1
-
-    .prologue
-    .line 58
-    const/4 v0, 0x0
-
-    return v0
 .end method
 
 .method public f(Ljava/lang/String;)V
     .locals 1
 
     .prologue
-    .line 26
+    .line 117
     const/4 v0, 0x0
 
     :try_start_0
-    iput-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->a:Lcom/whatsapp/atj;
+    iput-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->b:Lcom/whatsapp/adt;
 
-    .line 15
-    iput-object p1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->d:Ljava/lang/String;
+    .line 5
+    iput-object p1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->g:Ljava/lang/String;
 
-    .line 60
+    .line 41
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastPreferenceActivity;->isFinishing()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 99
+    .line 60
     const/16 v0, 0x1f4
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/DialogToastPreferenceActivity;->showDialog(I)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 100
+    .line 1
     :cond_0
     return-void
 
-    .line 99
+    .line 60
     :catch_0
     move-exception v0
 
@@ -469,7 +469,7 @@
     .locals 2
 
     .prologue
-    .line 7
+    .line 36
     :try_start_0
     iget-boolean v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->e:Z
     :try_end_0
@@ -486,20 +486,20 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 11
+    .line 24
     :cond_0
     :try_start_2
     invoke-super {p0}, Lcom/actionbarsherlock/app/SherlockPreferenceActivity;->onBackPressed()V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_2
 
-    .line 4
+    .line 81
     :cond_1
     sget-object v0, Lcom/whatsapp/DialogToastPreferenceActivity;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x5
+    const/16 v1, 0x9
 
     aget-object v0, v0, v1
 
@@ -507,11 +507,11 @@
     :try_end_2
     .catch Ljava/lang/NullPointerException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 113
+    .line 82
     :cond_2
     return-void
 
-    .line 7
+    .line 36
     :catch_0
     move-exception v0
 
@@ -520,7 +520,7 @@
     :try_end_3
     .catch Ljava/lang/NullPointerException; {:try_start_3 .. :try_end_3} :catch_1
 
-    .line 11
+    .line 24
     :catch_1
     move-exception v0
 
@@ -529,7 +529,7 @@
     :try_end_4
     .catch Ljava/lang/NullPointerException; {:try_start_4 .. :try_end_4} :catch_2
 
-    .line 4
+    .line 81
     :catch_2
     move-exception v0
 
@@ -542,17 +542,17 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 106
+    .line 105
     invoke-super {p0, p1}, Lcom/actionbarsherlock/app/SherlockPreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 35
-    new-instance v0, Lcom/whatsapp/xs;
+    .line 54
+    new-instance v0, Lcom/whatsapp/ape;
 
-    invoke-direct {v0}, Lcom/whatsapp/xs;-><init>()V
+    invoke-direct {v0}, Lcom/whatsapp/ape;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->b:Lcom/whatsapp/xs;
+    iput-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->d:Lcom/whatsapp/ape;
 
-    .line 88
+    .line 22
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastPreferenceActivity;->getSupportActionBar()Lcom/actionbarsherlock/app/ActionBar;
 
     move-result-object v0
@@ -561,61 +561,61 @@
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
-    .line 45
+    .line 108
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xb
 
     if-lt v0, v1, :cond_1
 
-    .line 68
+    .line 51
     const v0, 0x102000a
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/DialogToastPreferenceActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 110
+    .line 98
     if-eqz v3, :cond_1
 
-    .line 67
+    .line 107
     invoke-virtual {v3}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v2
 
-    .line 10
+    .line 25
     invoke-virtual {v3}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v1
 
-    .line 38
+    .line 89
     invoke-virtual {v3}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
-    .line 84
+    .line 21
     instance-of v4, v0, Landroid/view/View;
 
     if-eqz v4, :cond_0
 
-    .line 98
+    .line 112
     check-cast v0, Landroid/view/View;
 
-    .line 69
+    .line 43
     invoke-virtual {v0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v4
 
     add-int/2addr v2, v4
 
-    .line 102
+    .line 9
     invoke-virtual {v0}, Landroid/view/View;->getPaddingRight()I
 
     move-result v4
 
     add-int/2addr v1, v4
 
-    .line 71
+    .line 103
     invoke-virtual {v0, v5, v5, v5, v5}, Landroid/view/View;->setPadding(IIII)V
 
     :cond_0
@@ -623,15 +623,15 @@
 
     move v1, v2
 
-    .line 66
+    .line 115
     invoke-virtual {v3, v1, v5, v0, v5}, Landroid/view/View;->setPadding(IIII)V
 
-    .line 85
+    .line 76
     const/high16 v0, 0x2000000
 
     invoke-virtual {v3, v0}, Landroid/view/View;->setScrollBarStyle(I)V
 
-    .line 51
+    .line 106
     :cond_1
     return-void
 .end method
@@ -640,27 +640,27 @@
     .locals 2
 
     .prologue
-    .line 42
+    .line 12
     :try_start_0
-    sget v0, Lcom/whatsapp/App;->T:I
+    sget v0, Lcom/whatsapp/App;->a9:I
 
     const/4 v1, 0x3
 
     if-ne v0, v1, :cond_0
 
-    .line 22
-    invoke-static {p0}, Lcom/whatsapp/util/o;->a(Landroid/app/Activity;)V
+    .line 13
+    invoke-static {p0}, Lcom/whatsapp/util/az;->c(Landroid/app/Activity;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 96
+    .line 37
     :cond_0
     invoke-super {p0, p1, p2, p3}, Lcom/actionbarsherlock/app/SherlockPreferenceActivity;->onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
 
-    .line 46
+    .line 30
     return-void
 
-    .line 22
+    .line 13
     :catch_0
     move-exception v0
 
@@ -671,43 +671,43 @@
     .locals 3
 
     .prologue
-    .line 16
+    .line 71
     packed-switch p1, :pswitch_data_0
 
-    .line 65
+    .line 52
     invoke-super {p0, p1}, Lcom/actionbarsherlock/app/SherlockPreferenceActivity;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
 
-    .line 103
+    .line 100
     :goto_0
     return-object v0
 
-    .line 18
+    .line 78
     :pswitch_0
     :try_start_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    iget-object v1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0e02aa
+    const v1, 0x7f0e02b7
 
-    new-instance v2, Lcom/whatsapp/alh;
+    new-instance v2, Lcom/whatsapp/ah;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/alh;-><init>(Lcom/whatsapp/DialogToastPreferenceActivity;)V
+    invoke-direct {v2, p0}, Lcom/whatsapp/ah;-><init>(Lcom/whatsapp/DialogToastPreferenceActivity;)V
 
-    .line 23
+    .line 8
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 103
+    .line 31
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
@@ -721,26 +721,26 @@
 
     throw v0
 
-    .line 74
+    .line 91
     :pswitch_1
     new-instance v0, Landroid/app/ProgressDialog;
 
     invoke-direct {v0, p0}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    .line 8
+    .line 72
     :try_start_1
-    iget v1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->g:I
+    iget v1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->a:I
 
     if-eqz v1, :cond_0
 
-    .line 36
-    iget v1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->g:I
+    .line 4
+    iget v1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->a:I
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setTitle(I)V
     :try_end_1
     .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 6
+    .line 93
     :cond_0
     iget v1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->c:I
 
@@ -750,25 +750,25 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 117
+    .line 86
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
-    .line 32
+    .line 99
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     goto :goto_0
 
-    .line 36
+    .line 4
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 16
+    .line 71
     :pswitch_data_0
     .packed-switch 0x1f4
         :pswitch_0
@@ -780,20 +780,20 @@
     .locals 2
 
     .prologue
-    .line 29
+    .line 28
     :try_start_0
-    sget v0, Lcom/whatsapp/App;->T:I
+    sget v0, Lcom/whatsapp/App;->a9:I
 
     const/4 v1, 0x3
 
     if-ne v0, v1, :cond_0
 
-    .line 14
-    invoke-static {p0}, Lcom/whatsapp/util/o;->a(Landroid/app/Activity;)V
+    .line 17
+    invoke-static {p0}, Lcom/whatsapp/util/az;->c(Landroid/app/Activity;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 93
+    .line 116
     :cond_0
     invoke-super {p0, p1}, Lcom/actionbarsherlock/app/SherlockPreferenceActivity;->onCreateOptionsMenu(Lcom/actionbarsherlock/view/Menu;)Z
 
@@ -801,7 +801,7 @@
 
     return v0
 
-    .line 14
+    .line 17
     :catch_0
     move-exception v0
 
@@ -814,9 +814,9 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 53
+    .line 101
     :try_start_0
-    sget v1, Lcom/whatsapp/App;->T:I
+    sget v1, Lcom/whatsapp/App;->a9:I
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -824,51 +824,50 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 94
+    .line 75
     sparse-switch p1, :sswitch_data_0
 
-    .line 49
+    .line 114
     :cond_0
     invoke-super {p0, p1, p2}, Lcom/actionbarsherlock/app/SherlockPreferenceActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
-    .line 77
     :goto_0
     return v0
 
-    .line 94
+    .line 75
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 81
+    .line 53
     :sswitch_0
-    invoke-static {p0}, Lcom/whatsapp/util/o;->c(Landroid/app/Activity;)Landroid/app/AlertDialog$Builder;
+    invoke-static {p0}, Lcom/whatsapp/util/az;->b(Landroid/app/Activity;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    .line 28
+    .line 44
     invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     goto :goto_0
 
-    .line 33
+    .line 19
     :sswitch_1
     const/4 v1, 0x0
 
-    invoke-static {p0, v1}, Lcom/whatsapp/util/o;->a(Landroid/app/Activity;Z)V
+    invoke-static {p0, v1}, Lcom/whatsapp/util/az;->a(Landroid/app/Activity;Z)V
 
     goto :goto_0
 
-    .line 72
+    .line 104
     :sswitch_2
-    invoke-static {}, Lcom/whatsapp/util/o;->c()V
+    invoke-static {}, Lcom/whatsapp/util/az;->a()V
 
     goto :goto_0
 
-    .line 94
+    .line 75
     nop
 
     :sswitch_data_0
@@ -883,7 +882,7 @@
     .locals 1
 
     .prologue
-    .line 48
+    .line 35
     :try_start_0
     invoke-interface {p1}, Lcom/actionbarsherlock/view/MenuItem;->getItemId()I
 
@@ -891,20 +890,19 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 27
+    .line 34
     const/4 v0, 0x0
 
-    .line 89
     :goto_0
     return v0
 
-    .line 95
+    .line 68
     :pswitch_0
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastPreferenceActivity;->finish()V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 89
+    .line 32
     const/4 v0, 0x1
 
     goto :goto_0
@@ -914,7 +912,7 @@
 
     throw v0
 
-    .line 48
+    .line 35
     :pswitch_data_0
     .packed-switch 0x102002c
         :pswitch_0
@@ -927,44 +925,44 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 70
+    .line 67
     :try_start_0
-    invoke-static {p0}, Lcom/whatsapp/App;->a(Lcom/whatsapp/hy;)V
+    invoke-static {p0}, Lcom/whatsapp/App;->a(Lcom/whatsapp/ad4;)V
 
-    .line 1
+    .line 83
     invoke-super {p0}, Lcom/actionbarsherlock/app/SherlockPreferenceActivity;->onPause()V
 
-    .line 25
-    iget-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->b:Lcom/whatsapp/xs;
+    .line 97
+    iget-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->d:Lcom/whatsapp/ape;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/xs;->hasMessages(I)Z
+    invoke-virtual {v0, v1}, Lcom/whatsapp/ape;->hasMessages(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 92
-    iget-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->b:Lcom/whatsapp/xs;
+    .line 102
+    iget-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->d:Lcom/whatsapp/ape;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/xs;->removeMessages(I)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/ape;->removeMessages(I)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 31
+    .line 94
     :cond_0
-    invoke-static {}, Lcom/whatsapp/App;->aA()V
+    invoke-static {}, Lcom/whatsapp/App;->y()V
 
-    .line 20
+    .line 40
     iput-boolean v2, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->e:Z
 
-    .line 101
+    .line 85
     return-void
 
-    .line 92
+    .line 102
     :catch_0
     move-exception v0
 
@@ -975,34 +973,34 @@
     .locals 2
 
     .prologue
-    .line 91
+    .line 96
     packed-switch p1, :pswitch_data_0
 
-    .line 80
+    .line 3
     :goto_0
     :try_start_0
     invoke-super {p0, p1, p2}, Lcom/actionbarsherlock/app/SherlockPreferenceActivity;->onPrepareDialog(ILandroid/app/Dialog;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 40
+    .line 55
     :cond_0
     return-void
 
     :pswitch_0
     move-object v0, p2
 
-    .line 43
+    .line 45
     check-cast v0, Landroid/app/AlertDialog;
 
-    .line 62
+    .line 14
     :try_start_1
-    iget-object v1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 112
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    .line 113
+    sget v0, Lcom/whatsapp/App;->h:I
     :try_end_1
     .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -1010,13 +1008,13 @@
 
     goto :goto_0
 
-    .line 80
+    .line 3
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 91
+    .line 96
     :pswitch_data_0
     .packed-switch 0x1f4
         :pswitch_0
@@ -1029,18 +1027,18 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 108
+    .line 10
     :try_start_0
     invoke-super {p0, p1}, Lcom/actionbarsherlock/app/SherlockPreferenceActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 109
+    .line 23
     :goto_0
     :try_start_1
     sget-object v0, Lcom/whatsapp/DialogToastPreferenceActivity;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x7
+    const/4 v1, 0x4
 
     aget-object v0, v0, v1
 
@@ -1048,12 +1046,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->g:Ljava/lang/String;
 
-    .line 44
+    .line 15
     sget-object v0, Lcom/whatsapp/DialogToastPreferenceActivity;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x6
+    const/4 v1, 0x2
 
     aget-object v0, v0, v1
 
@@ -1065,27 +1063,27 @@
 
     iput v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->f:I
 
-    .line 19
+    .line 61
     iget v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->f:I
 
     if-eqz v0, :cond_0
 
-    .line 34
+    .line 42
     iget v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->f:I
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/DialogToastPreferenceActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->g:Ljava/lang/String;
     :try_end_1
     .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 63
+    .line 92
     :cond_0
     sget-object v0, Lcom/whatsapp/DialogToastPreferenceActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x9
+    const/4 v1, 0x1
 
     aget-object v0, v0, v1
 
@@ -1093,12 +1091,12 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->g:I
+    iput v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->a:I
 
-    .line 76
+    .line 57
     sget-object v0, Lcom/whatsapp/DialogToastPreferenceActivity;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x8
+    const/4 v1, 0x3
 
     aget-object v0, v0, v1
 
@@ -1108,19 +1106,19 @@
 
     iput v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->c:I
 
-    .line 13
+    .line 79
     return-void
 
-    .line 105
+    .line 63
     :catch_0
     move-exception v0
 
-    .line 17
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->c(Ljava/lang/Throwable;)V
+    .line 64
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->d(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 34
+    .line 42
     :catch_1
     move-exception v0
 
@@ -1128,31 +1126,31 @@
 .end method
 
 .method protected onResume()V
-    .locals 4
+    .locals 5
 
     .prologue
-    .line 59
-    invoke-static {p0}, Lcom/whatsapp/App;->b(Lcom/whatsapp/hy;)V
+    const/4 v4, 0x0
 
-    .line 87
+    .line 80
+    invoke-static {p0}, Lcom/whatsapp/App;->b(Lcom/whatsapp/ad4;)V
+
+    .line 18
     invoke-super {p0}, Lcom/actionbarsherlock/app/SherlockPreferenceActivity;->onResume()V
 
-    .line 24
-    iget-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->b:Lcom/whatsapp/xs;
-
-    const/4 v1, 0x0
+    .line 69
+    iget-object v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->d:Lcom/whatsapp/ape;
 
     const-wide/16 v2, 0xbb8
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/whatsapp/xs;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {v0, v4, v2, v3}, Lcom/whatsapp/ape;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 9
+    .line 56
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->e:Z
 
-    .line 61
-    invoke-static {p0}, Lcom/whatsapp/App;->a(Landroid/content/Context;)I
+    .line 48
+    invoke-static {p0}, Lcom/whatsapp/App;->f(Landroid/content/Context;)I
 
     move-result v0
 
@@ -1160,22 +1158,20 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 78
+    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v1, Lcom/whatsapp/DialogToastPreferenceActivity;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x4
-
-    aget-object v1, v1, v2
+    aget-object v1, v1, v4
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-static {p0}, Lcom/whatsapp/App;->a(Landroid/content/Context;)I
+    invoke-static {p0}, Lcom/whatsapp/App;->f(Landroid/content/Context;)I
 
     move-result v1
 
@@ -1189,20 +1185,20 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 55
+    .line 111
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/whatsapp/Main;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 21
+    .line 62
     invoke-virtual {p0, v0}, Lcom/whatsapp/DialogToastPreferenceActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 47
+    .line 26
     invoke-virtual {p0}, Lcom/whatsapp/DialogToastPreferenceActivity;->finish()V
 
-    .line 116
+    .line 118
     :cond_0
     return-void
 .end method
@@ -1211,24 +1207,24 @@
     .locals 2
 
     .prologue
-    .line 111
+    .line 74
     invoke-super {p0, p1}, Lcom/actionbarsherlock/app/SherlockPreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 115
+    .line 38
     sget-object v0, Lcom/whatsapp/DialogToastPreferenceActivity;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x6
 
     aget-object v0, v0, v1
 
-    iget-object v1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->g:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V
 
-    .line 52
+    .line 33
     sget-object v0, Lcom/whatsapp/DialogToastPreferenceActivity;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x7
 
     aget-object v0, v0, v1
 
@@ -1236,21 +1232,21 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 104
+    .line 6
     sget-object v0, Lcom/whatsapp/DialogToastPreferenceActivity;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x2
+    const/16 v1, 0x8
 
     aget-object v0, v0, v1
 
-    iget v1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->g:I
+    iget v1, p0, Lcom/whatsapp/DialogToastPreferenceActivity;->a:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 90
+    .line 11
     sget-object v0, Lcom/whatsapp/DialogToastPreferenceActivity;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x3
+    const/4 v1, 0x5
 
     aget-object v0, v0, v1
 
@@ -1258,6 +1254,6 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 39
+    .line 29
     return-void
 .end method

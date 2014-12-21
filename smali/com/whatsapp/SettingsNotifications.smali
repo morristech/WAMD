@@ -33,7 +33,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "ww\u0003D8ww"
+    const-string v6, "}94%\u001dj\t6%\u0019a74)$\u007f3.+\u000f{"
 
     const/4 v0, -0x1
 
@@ -71,7 +71,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "h}\u0014I0Pa\u0014H)iv$L/\u007fz\u000bc-`k\u001e"
+    const-string v0, "t$/9\u000bL8/8\u0012u/\u001f:\u0012q$!8\u001eL:%\"\u001cg>"
 
     move-object v6, v0
 
@@ -86,7 +86,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "h}\u0014I0Pa\u0014H)if\u0018]4f`\u0015"
+    const-string v0, "t$/9\u000bL8/8\u0012u?#-\u000fz9."
 
     move-object v6, v0
 
@@ -101,7 +101,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "a`\u000fU&vP\rU\"}n\u000fY\u001fcj\u0015[4g"
+    const-string v0, "t$/9\u000bL8/8\u0012u/\u001f \u0012t>4\u0013\u0018|:/>"
 
     move-object v6, v0
 
@@ -116,7 +116,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "a`\u000fU&vP\u000bS0z\u007f$Q/kj"
+    const-string v0, "t$/9\u000bL8/8\u0012u/\u001f<\u0014c#0\u0013\u0016|2%"
 
     move-object v6, v0
 
@@ -133,7 +133,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "a`\u000fU&fl\u001aH)`a"
+    const-string v0, "k.84\u0003k."
 
     move v7, v6
 
@@ -150,7 +150,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "h}\u0014I0Pa\u0014H)iv$P)hg\u000fc#`c\u0014N"
+    const-string v6, "}94%\u001dj\t,%\u001c{\"\u001f/\u0014\u007f92"
 
     const/4 v0, 0x5
 
@@ -163,7 +163,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "h}\u0014I0Pa\u0014H)iv$J)m}\u001aH%Pc\u001eR\'{g"
+    const-string v6, "}94%\u001dj\t0#\u000bf&\u001f!\u0014w3"
 
     const/4 v0, 0x6
 
@@ -176,7 +176,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "a`\u000fU&vP\u0017U\'g{$_/c`\t"
+    const-string v6, "}94%\u001dz5!8\u0012|8"
 
     const/4 v0, 0x7
 
@@ -198,7 +198,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x40
+    const/16 v6, 0x7b
 
     :goto_2
     xor-int/2addr v6, v13
@@ -214,22 +214,22 @@
     goto :goto_1
 
     :pswitch_8
-    const/16 v6, 0xf
+    const/16 v6, 0x13
 
     goto :goto_2
 
     :pswitch_9
-    const/16 v6, 0xf
+    const/16 v6, 0x56
 
     goto :goto_2
 
     :pswitch_a
-    const/16 v6, 0x7b
+    const/16 v6, 0x40
 
     goto :goto_2
 
     :pswitch_b
-    const/16 v6, 0x3c
+    const/16 v6, 0x4c
 
     goto :goto_2
 
@@ -258,29 +258,29 @@
     .locals 1
 
     .prologue
-    .line 31
+    .line 11
     invoke-direct {p0}, Lcom/whatsapp/DialogToastPreferenceActivity;-><init>()V
 
-    .line 17
-    new-instance v0, Lcom/whatsapp/e6;
+    .line 3
+    new-instance v0, Lcom/whatsapp/l2;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/e6;-><init>(Lcom/whatsapp/SettingsNotifications;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/l2;-><init>(Lcom/whatsapp/SettingsNotifications;)V
 
-    iput-object v0, p0, Lcom/whatsapp/SettingsNotifications;->i:Landroid/preference/Preference$OnPreferenceChangeListener;
+    iput-object v0, p0, Lcom/whatsapp/SettingsNotifications;->j:Landroid/preference/Preference$OnPreferenceChangeListener;
 
-    .line 26
-    new-instance v0, Lcom/whatsapp/apj;
+    .line 1
+    new-instance v0, Lcom/whatsapp/nk;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/apj;-><init>(Lcom/whatsapp/SettingsNotifications;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/nk;-><init>(Lcom/whatsapp/SettingsNotifications;)V
 
     iput-object v0, p0, Lcom/whatsapp/SettingsNotifications;->h:Landroid/preference/Preference$OnPreferenceChangeListener;
 
-    .line 38
-    new-instance v0, Lcom/whatsapp/k_;
+    .line 12
+    new-instance v0, Lcom/whatsapp/x5;
 
-    invoke-direct {v0, p0}, Lcom/whatsapp/k_;-><init>(Lcom/whatsapp/SettingsNotifications;)V
+    invoke-direct {v0, p0}, Lcom/whatsapp/x5;-><init>(Lcom/whatsapp/SettingsNotifications;)V
 
-    iput-object v0, p0, Lcom/whatsapp/SettingsNotifications;->j:Landroid/preference/Preference$OnPreferenceChangeListener;
+    iput-object v0, p0, Lcom/whatsapp/SettingsNotifications;->i:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     return-void
 .end method
@@ -291,26 +291,26 @@
     .locals 8
 
     .prologue
-    const v7, 0x7f0e03a9
+    const v7, 0x7f0e03b8
 
-    const v4, 0x7f0e03a3
+    const v4, 0x7f0e03b2
 
     const/4 v6, 0x1
 
     const/4 v5, 0x0
 
-    .line 37
+    .line 33
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastPreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 29
+    .line 5
     const v0, 0x7f05000b
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/SettingsNotifications;->addPreferencesFromResource(I)V
 
-    .line 44
+    .line 23
     sget-object v0, Lcom/whatsapp/SettingsNotifications;->z:[Ljava/lang/String;
 
-    const/16 v1, 0x8
+    const/4 v1, 0x6
 
     aget-object v0, v0, v1
 
@@ -320,10 +320,10 @@
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    .line 15
+    .line 6
     new-array v1, v6, [Ljava/lang/Object;
 
-    .line 9
+    .line 34
     invoke-virtual {v0}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
     move-result-object v2
@@ -337,14 +337,14 @@
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 24
-    iget-object v1, p0, Lcom/whatsapp/SettingsNotifications;->i:Landroid/preference/Preference$OnPreferenceChangeListener;
+    iget-object v1, p0, Lcom/whatsapp/SettingsNotifications;->j:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 42
+    .line 29
     sget-object v1, Lcom/whatsapp/SettingsNotifications;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x6
+    const/4 v2, 0x3
 
     aget-object v1, v1, v2
 
@@ -354,34 +354,32 @@
 
     check-cast v1, Landroid/preference/ListPreference;
 
-    .line 20
+    .line 44
     new-array v2, v6, [Ljava/lang/Object;
 
-    .line 34
+    .line 14
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
     move-result-object v3
 
     aput-object v3, v2, v5
 
-    .line 45
+    .line 26
     invoke-virtual {p0, v4, v2}, Lcom/whatsapp/SettingsNotifications;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Landroid/preference/ListPreference;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 14
-    iget-object v2, p0, Lcom/whatsapp/SettingsNotifications;->i:Landroid/preference/Preference$OnPreferenceChangeListener;
+    .line 40
+    iget-object v2, p0, Lcom/whatsapp/SettingsNotifications;->j:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     invoke-virtual {v1, v2}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 43
+    .line 7
     sget-object v2, Lcom/whatsapp/SettingsNotifications;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x3
-
-    aget-object v2, v2, v3
+    aget-object v2, v2, v5
 
     invoke-virtual {p0, v2}, Lcom/whatsapp/SettingsNotifications;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
@@ -389,10 +387,10 @@
 
     check-cast v2, Landroid/preference/ListPreference;
 
-    .line 13
+    .line 30
     new-array v3, v6, [Ljava/lang/Object;
 
-    .line 16
+    .line 17
     invoke-virtual {v2}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
     move-result-object v4
@@ -405,12 +403,44 @@
 
     invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 32
+    .line 38
     iget-object v3, p0, Lcom/whatsapp/SettingsNotifications;->h:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 12
+    .line 39
+    sget-object v2, Lcom/whatsapp/SettingsNotifications;->z:[Ljava/lang/String;
+
+    aget-object v2, v2, v6
+
+    invoke-virtual {p0, v2}, Lcom/whatsapp/SettingsNotifications;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/preference/ListPreference;
+
+    .line 2
+    new-array v3, v6, [Ljava/lang/Object;
+
+    .line 28
+    invoke-virtual {v2}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
+
+    move-result-object v4
+
+    aput-object v4, v3, v5
+
+    invoke-virtual {p0, v7, v3}, Lcom/whatsapp/SettingsNotifications;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setTitle(Ljava/lang/CharSequence;)V
+
+    .line 27
+    iget-object v3, p0, Lcom/whatsapp/SettingsNotifications;->h:Landroid/preference/Preference$OnPreferenceChangeListener;
+
+    invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+
+    .line 25
     sget-object v2, Lcom/whatsapp/SettingsNotifications;->z:[Ljava/lang/String;
 
     const/4 v3, 0x7
@@ -423,28 +453,19 @@
 
     check-cast v2, Landroid/preference/ListPreference;
 
-    .line 2
-    new-array v3, v6, [Ljava/lang/Object;
-
-    .line 36
+    .line 32
     invoke-virtual {v2}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
-
-    move-result-object v4
-
-    aput-object v4, v3, v5
-
-    invoke-virtual {p0, v7, v3}, Lcom/whatsapp/SettingsNotifications;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 35
-    iget-object v3, p0, Lcom/whatsapp/SettingsNotifications;->h:Landroid/preference/Preference$OnPreferenceChangeListener;
+    .line 45
+    iget-object v3, p0, Lcom/whatsapp/SettingsNotifications;->i:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 28
+    .line 9
     sget-object v2, Lcom/whatsapp/SettingsNotifications;->z:[Ljava/lang/String;
 
     const/4 v3, 0x4
@@ -457,42 +478,19 @@
 
     check-cast v2, Landroid/preference/ListPreference;
 
-    .line 5
+    .line 35
     invoke-virtual {v2}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 22
-    iget-object v3, p0, Lcom/whatsapp/SettingsNotifications;->j:Landroid/preference/Preference$OnPreferenceChangeListener;
+    .line 42
+    iget-object v3, p0, Lcom/whatsapp/SettingsNotifications;->i:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 8
-    sget-object v2, Lcom/whatsapp/SettingsNotifications;->z:[Ljava/lang/String;
-
-    aget-object v2, v2, v6
-
-    invoke-virtual {p0, v2}, Lcom/whatsapp/SettingsNotifications;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/preference/ListPreference;
-
-    .line 11
-    invoke-virtual {v2}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
-
-    .line 33
-    iget-object v3, p0, Lcom/whatsapp/SettingsNotifications;->j:Landroid/preference/Preference$OnPreferenceChangeListener;
-
-    invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
-
-    .line 6
+    .line 18
     sget-object v2, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
 
     const/16 v3, 0x20
@@ -503,10 +501,12 @@
 
     move-result-object v2
 
-    .line 1
+    .line 43
     sget-object v3, Lcom/whatsapp/SettingsNotifications;->z:[Ljava/lang/String;
 
-    aget-object v3, v3, v5
+    const/4 v4, 0x5
+
+    aget-object v3, v3, v4
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -514,18 +514,18 @@
 
     if-eqz v2, :cond_1
 
-    .line 19
+    .line 36
     invoke-virtual {p0}, Lcom/whatsapp/SettingsNotifications;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
-    .line 27
+    .line 41
     if-eqz v2, :cond_1
 
-    .line 4
+    .line 22
     sget-object v2, Lcom/whatsapp/SettingsNotifications;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x5
+    const/16 v3, 0x8
 
     aget-object v2, v2, v3
 
@@ -535,13 +535,13 @@
 
     check-cast v2, Landroid/preference/PreferenceCategory;
 
-    .line 25
+    .line 15
     if-eqz v2, :cond_0
 
-    .line 23
+    .line 31
     invoke-virtual {v2, v0}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 40
+    .line 37
     :cond_0
     sget-object v0, Lcom/whatsapp/SettingsNotifications;->z:[Ljava/lang/String;
 
@@ -555,13 +555,13 @@
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    .line 30
+    .line 20
     if-eqz v0, :cond_1
 
-    .line 21
+    .line 8
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    .line 39
+    .line 19
     :cond_1
     return-void
 .end method
@@ -570,24 +570,25 @@
     .locals 3
 
     .prologue
-    .line 18
+    .line 16
     packed-switch p1, :pswitch_data_0
 
-    .line 41
+    .line 4
     invoke-super {p0, p1}, Lcom/whatsapp/DialogToastPreferenceActivity;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
 
+    .line 10
     :goto_0
     return-object v0
 
-    .line 10
+    .line 21
     :pswitch_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0e020f
+    const v1, 0x7f0e0215
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/SettingsNotifications;->getString(I)Ljava/lang/String;
 
@@ -597,25 +598,25 @@
 
     move-result-object v0
 
-    const v1, 0x7f0e02aa
+    const v1, 0x7f0e02b7
 
-    new-instance v2, Lcom/whatsapp/a8d;
+    new-instance v2, Lcom/whatsapp/em;
 
-    invoke-direct {v2, p0}, Lcom/whatsapp/a8d;-><init>(Lcom/whatsapp/SettingsNotifications;)V
+    invoke-direct {v2, p0}, Lcom/whatsapp/em;-><init>(Lcom/whatsapp/SettingsNotifications;)V
 
-    .line 3
+    .line 13
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 7
+    .line 10
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 18
+    .line 16
     nop
 
     :pswitch_data_0

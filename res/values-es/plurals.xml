@@ -169,8 +169,8 @@ de servicio"</item>
         <item quantity="one">%d restante</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Listo para continuar. Hemos restaurado %,d mensajes.</item>
-        <item quantity="one">Listo para continuar. Hemos restaurado %,d mensaje.</item>
+        <item quantity="other">%,d mensajes restaurados. Puedes continuar.</item>
+        <item quantity="one">%,d mensaje restaurado. Puedes continuar.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Enviando %1$d vídeos a %2$s</item>

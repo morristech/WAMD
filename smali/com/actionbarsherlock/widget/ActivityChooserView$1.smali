@@ -12,7 +12,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 3
     iput-object p1, p0, Lcom/actionbarsherlock/widget/ActivityChooserView$1;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserView;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
@@ -26,10 +26,10 @@
     .locals 1
 
     .prologue
-    .line 7
+    .line 1
     invoke-super {p0}, Landroid/database/DataSetObserver;->onChanged()V
 
-    .line 3
+    .line 6
     iget-object v0, p0, Lcom/actionbarsherlock/widget/ActivityChooserView$1;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserView;
 
     invoke-static {v0}, Lcom/actionbarsherlock/widget/ActivityChooserView;->access$000(Lcom/actionbarsherlock/widget/ActivityChooserView;)Lcom/actionbarsherlock/widget/ActivityChooserView$ActivityChooserViewAdapter;
@@ -46,10 +46,10 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 2
     invoke-super {p0}, Landroid/database/DataSetObserver;->onInvalidated()V
 
-    .line 1
+    .line 4
     iget-object v0, p0, Lcom/actionbarsherlock/widget/ActivityChooserView$1;->this$0:Lcom/actionbarsherlock/widget/ActivityChooserView;
 
     invoke-static {v0}, Lcom/actionbarsherlock/widget/ActivityChooserView;->access$000(Lcom/actionbarsherlock/widget/ActivityChooserView;)Lcom/actionbarsherlock/widget/ActivityChooserView$ActivityChooserViewAdapter;
@@ -58,6 +58,6 @@
 
     invoke-virtual {v0}, Lcom/actionbarsherlock/widget/ActivityChooserView$ActivityChooserViewAdapter;->notifyDataSetInvalidated()V
 
-    .line 6
+    .line 7
     return-void
 .end method

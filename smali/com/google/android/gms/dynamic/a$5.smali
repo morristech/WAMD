@@ -1,4 +1,4 @@
-.class Lcom/google/android/gms/dynamic/a$5;
+.class final Lcom/google/android/gms/dynamic/a$5;
 .super Ljava/lang/Object;
 
 # interfaces
@@ -6,22 +6,18 @@
 
 
 # instance fields
-.field final cT:Lcom/google/android/gms/dynamic/a;
+.field final TF:I
 
-.field final da:Landroid/content/Context;
-
-.field final db:I
+.field final nf:Landroid/content/Context;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/dynamic/a;Landroid/content/Context;I)V
+.method constructor <init>(Landroid/content/Context;I)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/gms/dynamic/a$5;->cT:Lcom/google/android/gms/dynamic/a;
+    iput-object p1, p0, Lcom/google/android/gms/dynamic/a$5;->nf:Landroid/content/Context;
 
-    iput-object p2, p0, Lcom/google/android/gms/dynamic/a$5;->da:Landroid/content/Context;
-
-    iput p3, p0, Lcom/google/android/gms/dynamic/a$5;->db:I
+    iput p2, p0, Lcom/google/android/gms/dynamic/a$5;->TF:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,17 +27,13 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 4
+    .locals 2
 
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/a$5;->da:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/a$5;->nf:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/google/android/gms/dynamic/a$5;->da:Landroid/content/Context;
+    iget v1, p0, Lcom/google/android/gms/dynamic/a$5;->TF:I
 
-    iget v2, p0, Lcom/google/android/gms/dynamic/a$5;->db:I
-
-    const/4 v3, -0x1
-
-    invoke-static {v1, v2, v3}, Lcom/google/android/gms/common/GooglePlayServicesUtil;->a(Landroid/content/Context;II)Landroid/content/Intent;
+    invoke-static {v1}, Lcom/google/android/gms/common/GooglePlayServicesUtil;->aj(I)Landroid/content/Intent;
 
     move-result-object v1
 

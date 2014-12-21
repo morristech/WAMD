@@ -3,148 +3,32 @@
 .source "c.java"
 
 # interfaces
-.implements Landroid/widget/AdapterView$OnItemLongClickListener;
-
-
-# static fields
-.field private static final z:[Ljava/lang/String;
+.implements Lcom/whatsapp/gallerypicker/b1;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/gallerypicker/ImageGallery;
+.field final a:Lcom/whatsapp/gallerypicker/ay;
+
+.field final b:Lcom/whatsapp/gallerypicker/ae;
+
+.field final c:Landroid/widget/ImageView;
+
+.field final d:Lcom/whatsapp/gallerypicker/v;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 10
-
-    const/4 v1, 0x0
-
-    const/4 v0, 0x2
-
-    new-array v3, v0, [Ljava/lang/String;
-
-    const-string v2, "`8\u001dCe4a"
-
-    const/4 v0, -0x1
-
-    move-object v4, v3
-
-    move-object v5, v3
-
-    move v3, v1
-
-    :goto_0
-    invoke-virtual {v2}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v2
-
-    array-length v6, v2
-
-    move v7, v6
-
-    move v8, v1
-
-    move-object v6, v2
-
-    :goto_1
-    if-gt v7, v8, :cond_0
-
-    new-instance v2, Ljava/lang/String;
-
-    invoke-direct {v2, v6}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v2}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v2
-
-    packed-switch v0, :pswitch_data_0
-
-    aput-object v2, v4, v3
-
-    const/4 v2, 0x1
-
-    const-string v0, ")6\u0013Qn\':\u001eZn2\"]_\u007f%6\u001eYe\'8\u001e_h+tRFd32\u0006_d.a"
-
-    move v3, v2
-
-    move-object v4, v5
-
-    move-object v2, v0
-
-    move v0, v1
-
-    goto :goto_0
-
-    :pswitch_0
-    aput-object v2, v4, v3
-
-    sput-object v5, Lcom/whatsapp/gallerypicker/c;->z:[Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v9, v6, v8
-
-    rem-int/lit8 v2, v8, 0x5
-
-    packed-switch v2, :pswitch_data_1
-
-    const/16 v2, 0xb
-
-    :goto_2
-    xor-int/2addr v2, v9
-
-    int-to-char v2, v2
-
-    aput-char v2, v6, v8
-
-    add-int/lit8 v2, v8, 0x1
-
-    move v8, v2
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v2, 0x40
-
-    goto :goto_2
-
-    :pswitch_2
-    const/16 v2, 0x5b
-
-    goto :goto_2
-
-    :pswitch_3
-    const/16 v2, 0x72
-
-    goto :goto_2
-
-    :pswitch_4
-    const/16 v2, 0x36
-
-    goto :goto_2
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-
-    :pswitch_data_1
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-        :pswitch_4
-    .end packed-switch
-.end method
-
-.method constructor <init>(Lcom/whatsapp/gallerypicker/ImageGallery;)V
+.method constructor <init>(Lcom/whatsapp/gallerypicker/ae;Landroid/widget/ImageView;Lcom/whatsapp/gallerypicker/ay;Lcom/whatsapp/gallerypicker/v;)V
     .locals 0
 
     .prologue
-    .line 6
-    iput-object p1, p0, Lcom/whatsapp/gallerypicker/c;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
+    .line 16
+    iput-object p1, p0, Lcom/whatsapp/gallerypicker/c;->b:Lcom/whatsapp/gallerypicker/ae;
+
+    iput-object p2, p0, Lcom/whatsapp/gallerypicker/c;->c:Landroid/widget/ImageView;
+
+    iput-object p3, p0, Lcom/whatsapp/gallerypicker/c;->a:Lcom/whatsapp/gallerypicker/ay;
+
+    iput-object p4, p0, Lcom/whatsapp/gallerypicker/c;->d:Lcom/whatsapp/gallerypicker/v;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -153,131 +37,173 @@
 
 
 # virtual methods
-.method public onItemLongClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)Z
+.method public a()V
+    .locals 2
+
+    .prologue
+    .line 12
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/c;->c:Landroid/widget/ImageView;
+
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/c;->b:Lcom/whatsapp/gallerypicker/ae;
+
+    iget-object v1, v1, Lcom/whatsapp/gallerypicker/ae;->c:Lcom/whatsapp/gallerypicker/ImageGallery;
+
+    invoke-static {v1}, Lcom/whatsapp/gallerypicker/ImageGallery;->k(Lcom/whatsapp/gallerypicker/ImageGallery;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundColor(I)V
+
+    .line 14
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/c;->c:Landroid/widget/ImageView;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    .line 8
+    return-void
+.end method
+
+.method public a(Landroid/graphics/Bitmap;Z)V
     .locals 5
 
     .prologue
     const/4 v4, 0x1
 
-    sget v0, Lcom/whatsapp/gallerypicker/ImagePreview;->d:I
+    const/4 v3, 0x0
 
-    .line 7
-    iget-object v1, p0, Lcom/whatsapp/gallerypicker/c;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
+    sget-boolean v0, Lcom/whatsapp/gallerypicker/ImagePreview;->x:Z
 
-    invoke-static {v1}, Lcom/whatsapp/gallerypicker/ImageGallery;->g(Lcom/whatsapp/gallerypicker/ImageGallery;)Lcom/whatsapp/gallerypicker/bc;
+    .line 13
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/c;->c:Landroid/widget/ImageView;
 
-    move-result-object v1
-
-    invoke-interface {v1, p3}, Lcom/whatsapp/gallerypicker/bc;->a(I)Lcom/whatsapp/gallerypicker/bv;
+    invoke-virtual {v1}, Landroid/widget/ImageView;->getTag()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 4
-    if-eqz v1, :cond_1
+    iget-object v2, p0, Lcom/whatsapp/gallerypicker/c;->a:Lcom/whatsapp/gallerypicker/ay;
 
-    .line 3
-    iget-object v2, p0, Lcom/whatsapp/gallerypicker/c;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
+    if-ne v1, v2, :cond_2
 
-    invoke-static {v2}, Lcom/whatsapp/gallerypicker/ImageGallery;->b(Lcom/whatsapp/gallerypicker/ImageGallery;)Lcom/actionbarsherlock/view/ActionMode;
+    .line 18
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/c;->d:Lcom/whatsapp/gallerypicker/v;
+
+    iget-object v2, p0, Lcom/whatsapp/gallerypicker/c;->b:Lcom/whatsapp/gallerypicker/ae;
+
+    iget-object v2, v2, Lcom/whatsapp/gallerypicker/ae;->c:Lcom/whatsapp/gallerypicker/ImageGallery;
+
+    invoke-virtual {v2}, Lcom/whatsapp/gallerypicker/ImageGallery;->getBaseContext()Landroid/content/Context;
 
     move-result-object v2
 
-    if-eqz v2, :cond_0
+    invoke-static {v1, v2}, Lcom/whatsapp/gallerypicker/ImageGallery;->a(Lcom/whatsapp/gallerypicker/v;Landroid/content/Context;)Landroid/graphics/Bitmap;
 
-    .line 2
-    iget-object v2, p0, Lcom/whatsapp/gallerypicker/c;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
+    move-result-object v1
 
-    invoke-static {v2, v1}, Lcom/whatsapp/gallerypicker/ImageGallery;->a(Lcom/whatsapp/gallerypicker/ImageGallery;Lcom/whatsapp/gallerypicker/bv;)V
+    if-ne p1, v1, :cond_0
+
+    .line 11
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/c;->c:Landroid/widget/ImageView;
+
+    sget-object v2, Landroid/widget/ImageView$ScaleType;->CENTER:Landroid/widget/ImageView$ScaleType;
+
+    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
+
+    .line 9
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/c;->c:Landroid/widget/ImageView;
+
+    iget-object v2, p0, Lcom/whatsapp/gallerypicker/c;->b:Lcom/whatsapp/gallerypicker/ae;
+
+    iget-object v2, v2, Lcom/whatsapp/gallerypicker/ae;->c:Lcom/whatsapp/gallerypicker/ImageGallery;
+
+    invoke-static {v2}, Lcom/whatsapp/gallerypicker/ImageGallery;->k(Lcom/whatsapp/gallerypicker/ImageGallery;)I
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setBackgroundColor(I)V
+
+    .line 19
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/c;->c:Landroid/widget/ImageView;
+
+    invoke-virtual {v1, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     if-eqz v0, :cond_2
 
-    .line 10
+    .line 15
     :cond_0
-    iget-object v2, p0, Lcom/whatsapp/gallerypicker/c;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/c;->c:Landroid/widget/ImageView;
 
-    invoke-static {v2}, Lcom/whatsapp/gallerypicker/ImageGallery;->c(Lcom/whatsapp/gallerypicker/ImageGallery;)Ljava/util/HashSet;
+    sget-object v2, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
+
+    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
+
+    .line 20
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/c;->c:Landroid/widget/ImageView;
+
+    invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+
+    .line 1
+    if-nez p2, :cond_1
+
+    .line 6
+    const/4 v1, 0x2
+
+    new-array v1, v1, [Landroid/graphics/drawable/Drawable;
+
+    iget-object v2, p0, Lcom/whatsapp/gallerypicker/c;->b:Lcom/whatsapp/gallerypicker/ae;
+
+    iget-object v2, v2, Lcom/whatsapp/gallerypicker/ae;->c:Lcom/whatsapp/gallerypicker/ImageGallery;
+
+    invoke-static {v2}, Lcom/whatsapp/gallerypicker/ImageGallery;->c(Lcom/whatsapp/gallerypicker/ImageGallery;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
-    invoke-interface {v1}, Lcom/whatsapp/gallerypicker/bv;->a()Landroid/net/Uri;
+    aput-object v2, v1, v3
 
-    move-result-object v1
+    new-instance v2, Landroid/graphics/drawable/BitmapDrawable;
 
-    invoke-virtual {v2, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    iget-object v3, p0, Lcom/whatsapp/gallerypicker/c;->b:Lcom/whatsapp/gallerypicker/ae;
 
-    .line 5
-    iget-object v1, p0, Lcom/whatsapp/gallerypicker/c;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
+    iget-object v3, v3, Lcom/whatsapp/gallerypicker/ae;->c:Lcom/whatsapp/gallerypicker/ImageGallery;
 
-    iget-object v2, p0, Lcom/whatsapp/gallerypicker/c;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
-
-    iget-object v3, p0, Lcom/whatsapp/gallerypicker/c;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
-
-    invoke-static {v3}, Lcom/whatsapp/gallerypicker/ImageGallery;->l(Lcom/whatsapp/gallerypicker/ImageGallery;)Lcom/actionbarsherlock/view/ActionMode$Callback;
+    .line 3
+    invoke-virtual {v3}, Lcom/whatsapp/gallerypicker/ImageGallery;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Lcom/whatsapp/gallerypicker/ImageGallery;->startActionMode(Lcom/actionbarsherlock/view/ActionMode$Callback;)Lcom/actionbarsherlock/view/ActionMode;
+    invoke-direct {v2, v3, p1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    move-result-object v2
+    aput-object v2, v1, v4
 
-    invoke-static {v1, v2}, Lcom/whatsapp/gallerypicker/ImageGallery;->a(Lcom/whatsapp/gallerypicker/ImageGallery;Lcom/actionbarsherlock/view/ActionMode;)Lcom/actionbarsherlock/view/ActionMode;
+    .line 2
+    new-instance v2, Landroid/graphics/drawable/TransitionDrawable;
 
-    .line 1
-    iget-object v1, p0, Lcom/whatsapp/gallerypicker/c;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
+    invoke-direct {v2, v1}, Landroid/graphics/drawable/TransitionDrawable;-><init>([Landroid/graphics/drawable/Drawable;)V
 
-    invoke-static {v1}, Lcom/whatsapp/gallerypicker/ImageGallery;->k(Lcom/whatsapp/gallerypicker/ImageGallery;)Lcom/whatsapp/gallerypicker/aw;
+    .line 21
+    invoke-virtual {v2, v4}, Landroid/graphics/drawable/TransitionDrawable;->setCrossFadeEnabled(Z)V
 
-    move-result-object v1
+    .line 4
+    const/16 v1, 0x96
 
-    invoke-virtual {v1}, Lcom/whatsapp/gallerypicker/aw;->notifyDataSetChanged()V
+    invoke-virtual {v2, v1}, Landroid/graphics/drawable/TransitionDrawable;->startTransition(I)V
 
+    .line 17
+    iget-object v1, p0, Lcom/whatsapp/gallerypicker/c;->c:Landroid/widget/ImageView;
+
+    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    .line 10
     if-eqz v0, :cond_2
 
-    .line 8
+    .line 5
     :cond_1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lcom/whatsapp/gallerypicker/c;->c:Landroid/widget/ImageView;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    sget-object v1, Lcom/whatsapp/gallerypicker/c;->z:[Ljava/lang/String;
-
-    aget-object v1, v1, v4
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    sget-object v1, Lcom/whatsapp/gallerypicker/c;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x0
-
-    aget-object v1, v1, v2
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/whatsapp/gallerypicker/c;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
-
-    invoke-static {v1}, Lcom/whatsapp/gallerypicker/ImageGallery;->i(Lcom/whatsapp/gallerypicker/ImageGallery;)I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
-
-    .line 9
+    .line 7
     :cond_2
-    return v4
+    return-void
 .end method

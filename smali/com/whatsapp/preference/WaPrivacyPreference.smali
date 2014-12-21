@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private b:Z
+.field private b:Landroid/widget/ProgressBar;
 
-.field private c:Landroid/widget/ProgressBar;
+.field private c:Z
 
 
 # direct methods
@@ -14,10 +14,10 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 7
     invoke-direct {p0, p1}, Lcom/whatsapp/preference/WaListPreference;-><init>(Landroid/content/Context;)V
 
-    .line 9
+    .line 2
     return-void
 .end method
 
@@ -25,10 +25,10 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 11
     invoke-direct {p0, p1, p2}, Lcom/whatsapp/preference/WaListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 5
+    .line 8
     return-void
 .end method
 
@@ -38,18 +38,18 @@
     .locals 2
 
     .prologue
-    .line 12
-    iput-boolean p1, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->b:Z
+    .line 9
+    iput-boolean p1, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->c:Z
 
-    .line 11
-    iget-object v0, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->c:Landroid/widget/ProgressBar;
+    .line 12
+    iget-object v0, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->b:Landroid/widget/ProgressBar;
 
     if-eqz v0, :cond_0
 
     .line 6
-    iget-object v1, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->c:Landroid/widget/ProgressBar;
+    iget-object v1, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->b:Landroid/widget/ProgressBar;
 
-    iget-boolean v0, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->b:Z
+    iget-boolean v0, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->c:Z
 
     if-eqz v0, :cond_1
 
@@ -58,7 +58,7 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
-    .line 7
+    .line 10
     :cond_0
     return-void
 
@@ -73,11 +73,11 @@
     .locals 2
 
     .prologue
-    .line 10
+    .line 4
     invoke-super {p0, p1}, Lcom/whatsapp/preference/WaListPreference;->onBindView(Landroid/view/View;)V
 
-    .line 1
-    const v0, 0x7f0b026b
+    .line 3
+    const v0, 0x7f0b0274
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -85,12 +85,12 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->c:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->b:Landroid/widget/ProgressBar;
 
-    .line 8
-    iget-object v1, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->c:Landroid/widget/ProgressBar;
+    .line 5
+    iget-object v1, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->b:Landroid/widget/ProgressBar;
 
-    iget-boolean v0, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->b:Z
+    iget-boolean v0, p0, Lcom/whatsapp/preference/WaPrivacyPreference;->c:Z
 
     if-eqz v0, :cond_0
 
@@ -99,10 +99,10 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
-    .line 4
+    .line 1
     return-void
 
-    .line 8
+    .line 5
     :cond_0
     const/16 v0, 0x8
 

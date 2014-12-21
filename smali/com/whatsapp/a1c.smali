@@ -4,5 +4,20 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/whatsapp/RangeSeekBar;Ljava/lang/Object;Ljava/lang/Object;Z)V
+.method public abstract a()V
+.end method
+
+.method public abstract a(I)V
+.end method
+
+.method public abstract a(Z)V
+.end method
+
+.method public abstract b()V
+.end method
+
+.method public abstract c()V
+.end method
+
+.method public abstract d()V
 .end method

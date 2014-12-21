@@ -26,24 +26,24 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 1
     invoke-super {p0, p1}, Lcom/whatsapp/MediaGalleryImageView;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 4
+    .line 5
     iget-object v0, p0, Lcom/whatsapp/gallerypicker/ImagePreview$2;->z:Lcom/whatsapp/gallerypicker/ImagePreview;
 
-    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->l(Lcom/whatsapp/gallerypicker/ImagePreview;)Z
+    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->t(Lcom/whatsapp/gallerypicker/ImagePreview;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 7
+    .line 4
     const/high16 v0, 0x66ff0000
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->drawColor(I)V
 
-    .line 2
+    .line 8
     :cond_0
     return-void
 .end method
@@ -52,7 +52,7 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 7
     invoke-virtual {p0}, Lcom/whatsapp/gallerypicker/ImagePreview$2;->getSuggestedMinimumWidth()I
 
     move-result v0
@@ -61,9 +61,9 @@
 
     move-result v0
 
-    .line 5
+    .line 6
     invoke-virtual {p0, v0, v0}, Lcom/whatsapp/gallerypicker/ImagePreview$2;->setMeasuredDimension(II)V
 
-    .line 1
+    .line 2
     return-void
 .end method

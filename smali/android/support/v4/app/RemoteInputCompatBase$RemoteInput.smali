@@ -3,21 +3,8 @@
 .source "RemoteInputCompatBase.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroid/support/v4/app/RemoteInputCompatBase;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x409
-    name = "RemoteInput"
-.end annotation
-
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroid/support/v4/app/RemoteInputCompatBase$RemoteInput$Factory;
-    }
-.end annotation
+# static fields
+.field public static a:I
 
 
 # direct methods
@@ -25,10 +12,10 @@
     .locals 0
 
     .prologue
-    .line 23
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 30
+    .line 1
     return-void
 .end method
 

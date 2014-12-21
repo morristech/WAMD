@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Πατήστε για εγγραφή, αφήστε για αποστολή</string>
     <string name="audio_note_tip_2">Παρακαλώ ηχογραφήστε ένα μεγαλύτερο μήνυμα</string>
     <string name="audio_note_top_mic_tip">Παρακαλώ μιλήστε στο μικρόφωνο του τηλεφώνου σας</string>
-    <string name="auth_client_needs_enabling_title">Μια εφαρμογή απαιτεί τις Υπηρεσίες Google Play για ενεργοποίηση.</string>
-    <string name="auth_client_needs_installation_title">Μια εφαρμογή απαιτεί την εγκατάσταση των Υπηρεσιών Google Play.</string>
-    <string name="auth_client_needs_update_title">Μια εφαρμογή απαιτεί μια ενημέρωση για τις Υπηρεσίες Google Play.</string>
-    <string name="auth_client_play_services_err_notification_msg">Σφάλμα υπηρεσιών Google Play</string>
-    <string name="auth_client_requested_by_msg">Υποβλήθηκε αίτημα από την εφαρμογή %1$s</string>
-    <string name="auth_client_using_bad_version_title">Απόπειρα χρήσης ακατάλληλης έκδοσης Υπηρεσιών Google Play από εφαρμογή</string>
-    <string name="barcode_scanner_dialog_body">Αυτή η εφαρμογή απαιτεί σαρωτή barcode. Επιθυμείτε να εγκαταστήστε έναν;</string>
-    <string name="barcode_scanner_dialog_title">Να εγκατασταθεί το Barcode Scanner;</string>
     <string name="block">Αποκλεισμός</string>
     <string name="block_ask">Σίγουρα θέλετε να αποκλείσετε αυτή την επαφή;</string>
     <string name="block_list_desc_1">"Πατήστε το εικονίδιο στην πάνω δεξιά γωνία για να επιλέξτε επαφή για αποκλεισμό.
@@ -161,23 +153,32 @@
     <string name="color_red">Κόκκινο</string>
     <string name="color_white">Λευκό</string>
     <string name="color_yellow">Κίτρινο</string>
+    <string name="common_android_wear_notification_needs_update_text">Μια εφαρμογή απαιτεί την ενημέρωση της εφαρμογής Android Wear.</string>
+    <string name="common_android_wear_update_text">Αυτή η εφαρμογή δεν θα εκτελεστεί εάν δεν ενημερώσετε την εφαρμογή Android Wear.</string>
+    <string name="common_android_wear_update_title">Ενημέρωση Android Wear</string>
     <string name="common_google_play_services_enable_button">Ενεργοπ. υπηρεσιών Google Play</string>
     <string name="common_google_play_services_enable_text">Αυτή η εφαρμογή δεν θα λειτουργήσει εάν δεν έχετε ενεργοποιήσει τις υπηρεσίες Google Play.</string>
     <string name="common_google_play_services_enable_title">Ενεργοποίηση υπηρεσιών Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Υποβλήθηκε αίτημα από την εφαρμογή %1$s</string>
     <string name="common_google_play_services_install_button">Λήψη υπηρεσιών Google Play</string>
     <string name="common_google_play_services_install_text_phone">Αυτή η εφαρμογή δεν θα εκτελεστεί χωρίς τις υπηρεσίες Google Play, οι οποίες λείπουν από το τηλέφωνό σας.</string>
     <string name="common_google_play_services_install_text_tablet">Αυτή η εφαρμογή δεν θα εκτελεστεί χωρίς τις υπηρεσίες Google Play, οι οποίες λείπουν από το tablet σας.</string>
     <string name="common_google_play_services_install_title">Λήψη υπηρεσιών Google Play</string>
     <string name="common_google_play_services_invalid_account_text">Ο συγκεκριμένος λογαριασμός δεν υπάρχει σε αυτήν τη συσκευή. Επιλέξτε έναν διαφορετικό λογαριασμό.</string>
     <string name="common_google_play_services_invalid_account_title">Μη έγκυρος λογαριασμός</string>
+    <string name="common_google_play_services_needs_enabling_title">Μια εφαρμογή απαιτεί την ενεργοποίηση των Υπηρεσιών Google Play.</string>
     <string name="common_google_play_services_network_error_text">Απαιτείται σύνδεση δεδομένων για να συνδεθείτε με τις Υπηρεσίες Google Play.</string>
     <string name="common_google_play_services_network_error_title">Σφάλμα δικτύου</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Μια εφαρμογή απαιτεί την εγκατάσταση των Υπηρεσιών Google Play.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Μια εφαρμογή απαιτεί την ενημέρωση των Υπηρεσιών Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Σφάλμα Υπηρεσιών Google Play</string>
     <string name="common_google_play_services_unknown_issue">Άγνωστο πρόβλημα με τις υπηρεσίες Google Play.</string>
     <string name="common_google_play_services_unsupported_text">Οι υπηρεσίες Google Play, στις οποίες βασίζονται ορισμένες από τις εφαρμογές σας, δεν υποστηρίζονται στη συσκευή σας. Επικοινωνήστε με τον κατασκευαστή για υποστήριξη.</string>
     <string name="common_google_play_services_unsupported_title">Υπηρεσίες Google Play</string>
     <string name="common_google_play_services_update_button">Ενημέρωση</string>
     <string name="common_google_play_services_update_text">Αυτή η εφαρμογή θα εκτελεστεί αφού ενημερώσετε τις υπηρεσίες Google Play.</string>
     <string name="common_google_play_services_update_title">Ενημέρωση υπηρεσιών Google Play</string>
+    <string name="common_open_on_phone">Άνοιγμα στο τηλέφωνο</string>
     <string name="common_signin_button_text">Σύνδεση</string>
     <string name="common_signin_button_text_long">Συνδεθείτε στο Google</string>
     <string name="confirm_forward_msg">Προώθηση προς %s;</string>
@@ -354,7 +355,6 @@
     <string name="eula_description">Η εφαρμογή για να ανταλλάσσετε μηνύματα δωρεάν με τους φίλους σας από όλο τον κόσμο!</string>
     <string name="eula_tablets_not_supported">Σημείωση: τα tablets δεν υποστηρίζονται προς το παρόν.</string>
     <string name="eula_terms_of_service">Όροι χρήσης</string>
-    <string name="eula_title">Καλωσήρθατε στο WhatsApp!</string>
     <string name="existing_contact">Υπάρχουσα</string>
     <string name="exit">Έξοδος</string>
     <string name="exit_group">Έξοδος από ομάδα</string>
@@ -529,7 +529,6 @@
     <string name="insufficient_space_for_download_shared_storage">Λήψη αδύνατη, ανεπαρκής χώρος στην εσωτερική μνήμη. Παρακαλώ, διαγράψτε αρχεία από την εσωτερική μνήμη και ξαναπροσπαθήστε.</string>
     <string name="invalid_media_message_download">Αποτυχία λήψης λόγω μη έγκυρου μηνύματος. Παρακαλώ στείλτε εκ νέου το μήνυμα.</string>
     <string name="invalid_message_forward">Το μήνυμα δεν μπορεί να προωθηθεί σε μη έγκυρη επαφή.</string>
-    <string name="invalid_qr_code">Άκυρος κωδικός QR</string>
     <string name="invalid_url_for_download">Λήψη αδύνατη. Ζητήστε να σας ξανασταλεί.</string>
     <string name="invite">Πρόσκληση</string>
     <string name="invite_friends">Προσκαλέστε τους φίλους σας</string>
@@ -575,7 +574,6 @@
     <string name="menuitem_add">Προσθήκη</string>
     <string name="menuitem_contacts">Επαφές</string>
     <string name="menuitem_debug">Αποσφαλμάτωση</string>
-    <string name="menuitem_delete_qr">Διαγραφή κωδικού QR</string>
     <string name="menuitem_groupchat">Νέα ομάδα</string>
     <string name="menuitem_list">Νέα κοινοποίηση</string>
     <string name="menuitem_mute">Σίγαση</string>
@@ -616,14 +614,10 @@
     <string name="msg_store_backup_failed">Δεν είναι δυνατή η δημιουργία αντιγράφων ασφαλείας των μηνυμάτων</string>
     <string name="msg_store_backup_failed_try_again_later">Αδύνατη η δημιουργία αντιγράφου. Παρακαλώ δοκιμάστε ξανά αργότερα.</string>
     <string name="msg_store_backup_found">Βρέθηκε αντίγραφο ασφαλείας</string>
-    <string name="msg_store_backup_found_registration">Αντίγραφα μηνυμάτων βρέθηκαν!</string>
     <string name="msg_store_backup_skipped">Αντίγραφο ασφαλείας παρακάμφθηκε.</string>
     <string name="msg_store_backup_skipped_no_media">Δε δημιουργήθηκε αντίγραφο ασφαλείας. Δε βρέθηκε κάρτα μνήμης.</string>
     <string name="msg_store_backup_skipped_read_only_media">Δε δημιουργήθηκε αντίγραφο ασφαλείας. Κάρτα μνήμης μόνο για ανάγνωση.</string>
     <string name="msg_store_confirm">Επιβεβαίωση</string>
-    <string name="msg_store_creation_backup_message">Θέλετε να επαναφέρετε το ιστορικό των συνομιλιών σας από το αντίγραφο ασφαλείας;</string>
-    <string name="msg_store_do_not_restore">Μην επαναφέρεις</string>
-    <string name="msg_store_do_not_restore_no_thanks">Όχι</string>
     <string name="msg_store_error_found">Άγνωστο σφάλμα. Παρακαλώ επανεκκινήστε το WhatsApp.</string>
     <string name="msg_store_error_not_restored">Λυπούμαστε, δεν ήταν δυνατή η επαναφορά κανενός μηνύματος από το αντίγραφο ασφαλείας.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Τα μηνύματά σας θα χαθούν. Σίγουρα δε θέλετε να επαναφέρετε το αντίγραφο ασφαλείας;</string>
@@ -650,9 +644,6 @@
     <string name="need_sd_card_shared_storage">Παρακαλώ απενεργοποιήστε τη μνήμη USB και προσπαθήστε ξανά.</string>
     <string name="network_required">Δεν έχετε πρόσβαση στο διαδίκτυο αυτή τη στιγμή.</string>
     <string name="network_usage_ask_reset_message">Σίγουρα θέλετε να μηδενίσετε όλους τους μετρητές;</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Τελευταία επαναφορά: %1$s</string>
     <string name="network_usage_media_bytes_received">Ληφθέντα πολυμέσα:</string>
     <string name="network_usage_media_bytes_sent">Απεσταλμένα δεδομένα:</string>
@@ -1010,19 +1001,10 @@
     <string name="software_expired_get_from_play">Αυτή η έκδοση του WhatsApp είναι πολύ παλιά και δεν λειτουργεί πλέον. Παρακαλούμε κατεβάστε την τελευταία έκδοση από το Google Play.</string>
     <string name="software_expired_get_from_play_with_date">Αυτή η έκδοση του WhatsApp κατέστη απαρχαιωμένη στις &lt;b>%1$s&lt;/b>. Παρακαλώ μεταβείτε στο Google Play για να κατεβάσετε την τελευταία έκδοση.&lt;br>&lt;br> Η ημερομηνία της συσκευής σας είναι &lt;b>%2$s&lt;/b>.Αν αυτή είναι λανθασμένη παρακαλώ διορθώστε τις ρυθμίσεις ημερομηνίας της συσκευής σας και στη συνέχεια επανεκκινήστε το WhatsApp.</string>
     <string name="software_expired_with_date">Αυτή η έκδοση του WhatsApp κατέστη απαρχαιωμένη στις &lt;b>%1$s&lt;/b>. Πατήστε το “Λήψη” για να λάβετε την τελευταία έκδοση. &lt;br>&lt;br> Η ημερομηνία της συσκευής σας είναι &lt;b>%2$s&lt;/b>. Αν αυτή είναι λανθασμένη παρακαλώ διορθώστε τις ρυθμίσεις ημερομηνίας της συσκευής σας και επανεκκινήστε το WhatsApp.</string>
-    <string name="spam_generic">"Είστε προσωρινά αποκλεισμένος από το WhatsApp διότι ενδέχεται να έχετε παραβιάσει τους όρους υπηρεσίας μας.
-Θα μπορέσετε να χρησιμοποιήσετε το WhatsApp ξανά σε:"</string>
     <string name="spam_generic_data_connection_missing">Βεβαιωθείτε ότι το τηλέφωνό σας έχει ενεργή σύνδεση δεδομένων.</string>
     <string name="spam_generic_unknown_time_left">Έχετε προσωρινά αποκλειστεί από το WhatsApp διότι πιθανώς παραβιάσατε τους όρους χρήσης της υπηρεσίας. Θα μπορείτε να χρησιμοποιήσετε το WhatsApp σύντομα.</string>
     <string name="spam_learn_more">Περισσότερα</string>
     <string name="spam_title">Προσωρινά αποκλεισμένος</string>
-    <string name="spam_too_many_blocks">Έχετε αποκλειστεί προσωρινά από το WhatsApp επειδή σας απέκλεισε μεγάλος αριθμός ανθρώπων.</string>
-    <string name="spam_too_many_groups">"Είστε προσωρινά αποκλεισμένος από το WhatsApp διότι δημιουργήσατε πάρα πολλές ομάδες με άτομα που δεν σας έχουν στο βιβλίο διευθύνσεών τους.
-Θα μπορέσετε να χρησιμοποιήσετε το WhatsApp ξανά σε:"</string>
-    <string name="spam_too_many_messages">"Είστε προσωρινά αποκλεισμένος από το WhatsApp διότι στείλατε πάρα πολλά μηνύματα σε άτομα που δεν σας έχουν στο βιβλίο διευθύνσεών τους.
-Θα μπορέσετε να χρησιμοποιήσετε το WhatsApp ξανά σε:"</string>
-    <string name="spam_too_many_people">"Έχετε αποκλειστεί προσωρινά από το WhatsApp διότι στείλατε το ίδιο μήνυμα σε πάρα πολλά άτομα.
-Θα μπορέσετε να χρησιμοποιήσετε το WhatsApp ξανά σε:"</string>
     <string name="status">Κατάσταση</string>
     <string name="status_default_at_gym">Στο γυμναστήριο</string>
     <string name="status_default_at_movies">Στο σινεμά</string>
@@ -1190,6 +1172,7 @@
     <string name="view_list_media">Πολυμέσα ομαδικής λίστας</string>
     <string name="view_website">Προβολή ιστοσελίδας</string>
     <string name="voip_activity_label">Φωνητική κλήση</string>
+    <string name="voip_call_bluetooth_toggle_description">Απενεργοποίηση Bluetooth</string>
     <string name="voip_call_end_button_description">Τερματισμός Κλήσης</string>
     <string name="voip_call_goto_chat_description">Προβολή συνομιλίας</string>
     <string name="voip_call_incoming">ΕΙΣΕΡΧΟΜΕΝΗ</string>
@@ -1243,5 +1226,4 @@
     <string name="yesterday">Χθες</string>
     <string name="yesterday_at">χθες στις %s</string>
     <string name="you">Εσείς</string>
-    <string name="voip_call_bluetooth_toggle_description">Απενεργοποίηση Bluetooth</string>
 </resources>

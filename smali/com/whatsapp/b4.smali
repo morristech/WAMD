@@ -1,105 +1,56 @@
-.class Lcom/whatsapp/b4;
-.super Ljava/lang/Object;
+.class final Lcom/whatsapp/b4;
+.super Ljava/lang/Thread;
 .source "b4.java"
 
-# interfaces
-.implements Landroid/view/View$OnClickListener;
+
+# annotations
+.annotation build Landroid/annotation/SuppressLint;
+    value = {
+        "HandlerLeak"
+    }
+.end annotation
 
 
 # instance fields
-.field final a:Lcom/whatsapp/GroupChatLiveLocationsActivity;
+.field public a:Landroid/os/Handler;
+
+.field final b:Lcom/whatsapp/amo;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/GroupChatLiveLocationsActivity;)V
+.method public constructor <init>(Lcom/whatsapp/amo;Ljava/lang/String;)V
     .locals 0
 
     .prologue
-    .line 9
-    iput-object p1, p0, Lcom/whatsapp/b4;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity;
+    .line 1
+    iput-object p1, p0, Lcom/whatsapp/b4;->b:Lcom/whatsapp/amo;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 7
+    invoke-direct {p0, p2}, Ljava/lang/Thread;-><init>(Ljava/lang/String;)V
 
+    .line 3
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 4
+.method public run()V
+    .locals 1
 
     .prologue
-    const/4 v3, 0x0
-
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
-
     .line 6
-    iget-object v0, p0, Lcom/whatsapp/b4;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    const/4 v2, 0x0
-
-    invoke-static {v0, v2}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->a(Lcom/whatsapp/GroupChatLiveLocationsActivity;Lcom/whatsapp/protocol/c;)Lcom/whatsapp/protocol/c;
-
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/b4;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->b(Lcom/whatsapp/GroupChatLiveLocationsActivity;)Lcom/whatsapp/ui;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/ui;->h()V
-
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/b4;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->d(Lcom/whatsapp/GroupChatLiveLocationsActivity;)Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    :cond_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/view/View;
-
-    .line 1
-    check-cast v0, Landroid/view/ViewGroup;
-
-    invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v0
+    invoke-static {}, Landroid/os/Looper;->prepare()V
 
     .line 4
-    invoke-virtual {v0, v3}, Landroid/view/View;->setSelected(Z)V
+    new-instance v0, Lcom/whatsapp/qz;
+
+    invoke-direct {v0, p0}, Lcom/whatsapp/qz;-><init>(Lcom/whatsapp/b4;)V
+
+    iput-object v0, p0, Lcom/whatsapp/b4;->a:Landroid/os/Handler;
 
     .line 5
-    if-eqz v1, :cond_0
+    invoke-static {}, Landroid/os/Looper;->loop()V
 
-    .line 7
-    :cond_1
-    iget-object v0, p0, Lcom/whatsapp/b4;->a:Lcom/whatsapp/GroupChatLiveLocationsActivity;
-
-    invoke-static {v0}, Lcom/whatsapp/GroupChatLiveLocationsActivity;->f(Lcom/whatsapp/GroupChatLiveLocationsActivity;)Lcom/google/android/maps/MyLocationOverlay;
-
-    move-result-object v0
-
-    new-instance v1, Lcom/whatsapp/a1x;
-
-    invoke-direct {v1, p0}, Lcom/whatsapp/a1x;-><init>(Lcom/whatsapp/b4;)V
-
-    invoke-virtual {v0, v1}, Lcom/google/android/maps/MyLocationOverlay;->runOnFirstFix(Ljava/lang/Runnable;)Z
-
-    .line 8
+    .line 2
     return-void
 .end method

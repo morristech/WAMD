@@ -3,20 +3,20 @@
 .source "da.java"
 
 # interfaces
-.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+.implements Lcom/whatsapp/ih;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/PagerSlidingTabStrip;
+.field final a:Lcom/whatsapp/ari;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/PagerSlidingTabStrip;)V
+.method constructor <init>(Lcom/whatsapp/ari;)V
     .locals 0
 
     .prologue
-    .line 5
-    iput-object p1, p0, Lcom/whatsapp/da;->a:Lcom/whatsapp/PagerSlidingTabStrip;
+    .line 2
+    iput-object p1, p0, Lcom/whatsapp/da;->a:Lcom/whatsapp/ari;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,74 +25,15 @@
 
 
 # virtual methods
-.method public onGlobalLayout()V
-    .locals 3
-    .annotation build Landroid/annotation/SuppressLint;
-        value = {
-            "NewApi"
-        }
-    .end annotation
+.method public a(Ljava/util/ArrayList;)V
+    .locals 1
 
     .prologue
-    .line 2
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/da;->a:Lcom/whatsapp/ari;
 
-    const/16 v1, 0x10
-
-    if-ge v0, v1, :cond_0
-
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/da;->a:Lcom/whatsapp/PagerSlidingTabStrip;
-
-    invoke-virtual {v0}, Lcom/whatsapp/PagerSlidingTabStrip;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeGlobalOnLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
-
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
-
-    if-eqz v0, :cond_1
-
-    .line 7
-    :cond_0
-    iget-object v0, p0, Lcom/whatsapp/da;->a:Lcom/whatsapp/PagerSlidingTabStrip;
-
-    invoke-virtual {v0}, Lcom/whatsapp/PagerSlidingTabStrip;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+    invoke-static {v0, p1}, Lcom/whatsapp/ari;->a(Lcom/whatsapp/ari;Ljava/util/ArrayList;)V
 
     .line 1
-    :cond_1
-    iget-object v0, p0, Lcom/whatsapp/da;->a:Lcom/whatsapp/PagerSlidingTabStrip;
-
-    iget-object v1, p0, Lcom/whatsapp/da;->a:Lcom/whatsapp/PagerSlidingTabStrip;
-
-    invoke-static {v1}, Lcom/whatsapp/PagerSlidingTabStrip;->a(Lcom/whatsapp/PagerSlidingTabStrip;)Landroid/support/v4/view/ViewPager;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/support/v4/view/ViewPager;->getCurrentItem()I
-
-    move-result v1
-
-    invoke-static {v0, v1}, Lcom/whatsapp/PagerSlidingTabStrip;->a(Lcom/whatsapp/PagerSlidingTabStrip;I)I
-
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/da;->a:Lcom/whatsapp/PagerSlidingTabStrip;
-
-    iget-object v1, p0, Lcom/whatsapp/da;->a:Lcom/whatsapp/PagerSlidingTabStrip;
-
-    invoke-static {v1}, Lcom/whatsapp/PagerSlidingTabStrip;->b(Lcom/whatsapp/PagerSlidingTabStrip;)I
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    invoke-static {v0, v1, v2}, Lcom/whatsapp/PagerSlidingTabStrip;->a(Lcom/whatsapp/PagerSlidingTabStrip;II)V
-
-    .line 6
     return-void
 .end method

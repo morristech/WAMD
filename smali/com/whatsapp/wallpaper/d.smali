@@ -7,16 +7,20 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/wallpaper/WallpaperPicker;
+.field final a:Ljava/lang/String;
+
+.field final b:Lcom/whatsapp/wallpaper/WallpaperPicker;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/wallpaper/WallpaperPicker;)V
+.method constructor <init>(Lcom/whatsapp/wallpaper/WallpaperPicker;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 1
-    iput-object p1, p0, Lcom/whatsapp/wallpaper/d;->a:Lcom/whatsapp/wallpaper/WallpaperPicker;
+    iput-object p1, p0, Lcom/whatsapp/wallpaper/d;->b:Lcom/whatsapp/wallpaper/WallpaperPicker;
+
+    iput-object p2, p0, Lcom/whatsapp/wallpaper/d;->a:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,21 +30,20 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+    .locals 3
 
     .prologue
     .line 3
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/d;->a:Lcom/whatsapp/wallpaper/WallpaperPicker;
+    iget-object v0, p0, Lcom/whatsapp/wallpaper/d;->b:Lcom/whatsapp/wallpaper/WallpaperPicker;
 
-    const/4 v1, 0x1
+    new-instance v1, Landroid/content/Intent;
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/wallpaper/WallpaperPicker;->removeDialog(I)V
+    iget-object v2, p0, Lcom/whatsapp/wallpaper/d;->a:Ljava/lang/String;
+
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/wallpaper/WallpaperPicker;->startActivity(Landroid/content/Intent;)V
 
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/wallpaper/d;->a:Lcom/whatsapp/wallpaper/WallpaperPicker;
-
-    invoke-virtual {v0}, Lcom/whatsapp/wallpaper/WallpaperPicker;->finish()V
-
-    .line 4
     return-void
 .end method

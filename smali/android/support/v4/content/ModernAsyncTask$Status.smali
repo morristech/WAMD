@@ -30,7 +30,7 @@
 
     new-array v4, v12, [Ljava/lang/String;
 
-    const-string v3, "d\u0004\u001c$0x\u0016"
+    const-string v3, "f\u000b@(Dz\u0019"
 
     const/4 v0, -0x1
 
@@ -68,7 +68,7 @@
 
     aput-object v3, v6, v4
 
-    const-string v0, "f\u0014\u001c.0x\u0016"
+    const-string v0, "r\u0017@/^|\u001bJ"
 
     move-object v3, v0
 
@@ -83,7 +83,7 @@
     :pswitch_0
     aput-object v3, v6, v4
 
-    const-string v0, "p\u0018\u001c#*~\u0014\u0016"
+    const-string v0, "d\u001b@\"Dz\u0019"
 
     move-object v3, v0
 
@@ -100,12 +100,12 @@
 
     sput-object v7, Landroid/support/v4/content/ModernAsyncTask$Status;->z:[Ljava/lang/String;
 
-    .line 7
+    .line 3
     new-instance v0, Landroid/support/v4/content/ModernAsyncTask$Status;
 
     sget-object v3, Landroid/support/v4/content/ModernAsyncTask$Status;->z:[Ljava/lang/String;
 
-    aget-object v3, v3, v2
+    aget-object v3, v3, v5
 
     invoke-direct {v0, v3, v1}, Landroid/support/v4/content/ModernAsyncTask$Status;-><init>(Ljava/lang/String;I)V
 
@@ -122,18 +122,18 @@
 
     sput-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->RUNNING:Landroid/support/v4/content/ModernAsyncTask$Status;
 
-    .line 5
+    .line 7
     new-instance v0, Landroid/support/v4/content/ModernAsyncTask$Status;
 
     sget-object v3, Landroid/support/v4/content/ModernAsyncTask$Status;->z:[Ljava/lang/String;
 
-    aget-object v3, v3, v5
+    aget-object v3, v3, v2
 
     invoke-direct {v0, v3, v5}, Landroid/support/v4/content/ModernAsyncTask$Status;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->FINISHED:Landroid/support/v4/content/ModernAsyncTask$Status;
 
-    .line 2
+    .line 4
     new-array v0, v12, [Landroid/support/v4/content/ModernAsyncTask$Status;
 
     sget-object v3, Landroid/support/v4/content/ModernAsyncTask$Status;->PENDING:Landroid/support/v4/content/ModernAsyncTask$Status;
@@ -160,7 +160,7 @@
 
     packed-switch v3, :pswitch_data_1
 
-    const/16 v3, 0x79
+    const/16 v3, 0xd
 
     :goto_2
     xor-int/2addr v3, v11
@@ -176,22 +176,22 @@
     goto :goto_1
 
     :pswitch_2
-    const/16 v3, 0x36
+    const/16 v3, 0x34
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v3, 0x51
+    const/16 v3, 0x5e
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v3, 0x52
+    const/16 v3, 0xe
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v3, 0x6a
+    const/16 v3, 0x66
 
     goto :goto_2
 
@@ -216,7 +216,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 2
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -226,7 +226,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 1
     const-class v0, Landroid/support/v4/content/ModernAsyncTask$Status;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -242,7 +242,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 5
     sget-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->$VALUES:[Landroid/support/v4/content/ModernAsyncTask$Status;
 
     invoke-virtual {v0}, [Landroid/support/v4/content/ModernAsyncTask$Status;->clone()Ljava/lang/Object;

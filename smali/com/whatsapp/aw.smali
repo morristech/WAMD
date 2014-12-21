@@ -3,24 +3,20 @@
 .source "aw.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/widget/AdapterView$OnItemClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/_v;
-
-.field final b:Ljava/lang/String;
+.field final a:Lcom/whatsapp/ContactInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/_v;Ljava/lang/String;)V
+.method constructor <init>(Lcom/whatsapp/ContactInfo;)V
     .locals 0
 
     .prologue
-    .line 5
-    iput-object p1, p0, Lcom/whatsapp/aw;->a:Lcom/whatsapp/_v;
-
-    iput-object p2, p0, Lcom/whatsapp/aw;->b:Ljava/lang/String;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/aw;->a:Lcom/whatsapp/ContactInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,29 +25,49 @@
 
 
 # virtual methods
-.method public run()V
+.method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 2
 
     .prologue
     .line 3
-    sget-object v0, Lcom/whatsapp/App;->E:Lcom/whatsapp/d_;
+    add-int/lit8 v0, p3, -0x1
 
-    iget-object v1, p0, Lcom/whatsapp/aw;->b:Ljava/lang/String;
+    .line 2
+    if-ltz v0, :cond_0
 
-    .line 4
-    invoke-virtual {v0, v1}, Lcom/whatsapp/d_;->h(Ljava/lang/String;)Lcom/whatsapp/adg;
+    iget-object v1, p0, Lcom/whatsapp/aw;->a:Lcom/whatsapp/ContactInfo;
+
+    invoke-static {v1}, Lcom/whatsapp/ContactInfo;->f(Lcom/whatsapp/ContactInfo;)Lcom/whatsapp/a1k;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/whatsapp/a1k;->getCount()I
+
+    move-result v1
+
+    if-ge v0, v1, :cond_0
+
+    .line 5
+    iget-object v1, p0, Lcom/whatsapp/aw;->a:Lcom/whatsapp/ContactInfo;
+
+    invoke-static {v1}, Lcom/whatsapp/ContactInfo;->f(Lcom/whatsapp/ContactInfo;)Lcom/whatsapp/a1k;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Lcom/whatsapp/a1k;->a(I)Lcom/whatsapp/tc;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/aw;->a:Lcom/whatsapp/_v;
-
-    iget-object v1, v1, Lcom/whatsapp/_v;->j:Lcom/whatsapp/fb;
-
-    iget-object v1, v1, Lcom/whatsapp/fb;->a:Lcom/whatsapp/NewGroup;
-
     .line 1
-    invoke-static {v0, v1}, Lcom/whatsapp/kl;->a(Lcom/whatsapp/adg;Landroid/app/Activity;)Z
+    iget-object v1, p0, Lcom/whatsapp/aw;->a:Lcom/whatsapp/ContactInfo;
 
-    .line 2
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->a(Lcom/whatsapp/tc;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Lcom/whatsapp/ContactInfo;->startActivity(Landroid/content/Intent;)V
+
+    .line 6
+    :cond_0
     return-void
 .end method

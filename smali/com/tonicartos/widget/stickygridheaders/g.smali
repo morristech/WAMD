@@ -1,263 +1,290 @@
-.class public Lcom/tonicartos/widget/stickygridheaders/g;
-.super Landroid/widget/BaseAdapter;
+.class Lcom/tonicartos/widget/stickygridheaders/g;
+.super Landroid/view/View$BaseSavedState;
 .source "g.java"
 
-# interfaces
-.implements Lcom/tonicartos/widget/stickygridheaders/l;
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+
+.field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field private a:Ljava/util/List;
-
-.field private b:Lcom/tonicartos/widget/stickygridheaders/u;
+.field a:Z
 
 
 # direct methods
-.method public constructor <init>(Lcom/tonicartos/widget/stickygridheaders/u;)V
-    .locals 2
+.method static constructor <clinit>()V
+    .locals 10
 
     .prologue
-    .line 4
-    invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
-
-    .line 26
-    iput-object p1, p0, Lcom/tonicartos/widget/stickygridheaders/g;->b:Lcom/tonicartos/widget/stickygridheaders/u;
-
-    .line 9
-    new-instance v0, Lcom/tonicartos/widget/stickygridheaders/m;
-
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/tonicartos/widget/stickygridheaders/m;-><init>(Lcom/tonicartos/widget/stickygridheaders/g;Lcom/tonicartos/widget/stickygridheaders/t;)V
+    const/4 v0, 0x2
 
-    invoke-interface {p1, v0}, Lcom/tonicartos/widget/stickygridheaders/u;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
+    new-array v3, v0, [Ljava/lang/String;
 
-    .line 7
-    invoke-virtual {p0, p1}, Lcom/tonicartos/widget/stickygridheaders/g;->a(Lcom/tonicartos/widget/stickygridheaders/u;)Ljava/util/List;
+    const-string v2, "dsTB\u000bN@OH\u0004\u007fb\\E\u0005EtzS\tSQTD\u0017\u0019T\\W\u0005STI@\u0014R|"
 
-    move-result-object v0
+    const/4 v0, -0x1
 
-    iput-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/g;->a:Ljava/util/List;
+    move-object v4, v3
 
-    .line 21
-    return-void
-.end method
+    move-object v5, v3
 
-.method static a(Lcom/tonicartos/widget/stickygridheaders/g;)Lcom/tonicartos/widget/stickygridheaders/u;
-    .locals 1
-
-    .prologue
-    .line 22
-    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/g;->b:Lcom/tonicartos/widget/stickygridheaders/u;
-
-    return-object v0
-.end method
-
-.method static a(Lcom/tonicartos/widget/stickygridheaders/g;Ljava/util/List;)Ljava/util/List;
-    .locals 0
-
-    .prologue
-    .line 17
-    iput-object p1, p0, Lcom/tonicartos/widget/stickygridheaders/g;->a:Ljava/util/List;
-
-    return-object p1
-.end method
-
-
-# virtual methods
-.method public a()I
-    .locals 1
-
-    .prologue
-    .line 10
-    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/g;->a:Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public a(I)I
-    .locals 1
-
-    .prologue
-    .line 2
-    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/g;->a:Ljava/util/List;
-
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/tonicartos/widget/stickygridheaders/e;
-
-    invoke-virtual {v0}, Lcom/tonicartos/widget/stickygridheaders/e;->b()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public a(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 2
-
-    .prologue
-    .line 24
-    iget-object v1, p0, Lcom/tonicartos/widget/stickygridheaders/g;->b:Lcom/tonicartos/widget/stickygridheaders/u;
-
-    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/g;->a:Ljava/util/List;
-
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/tonicartos/widget/stickygridheaders/e;
-
-    invoke-virtual {v0}, Lcom/tonicartos/widget/stickygridheaders/e;->c()I
-
-    move-result v0
-
-    invoke-interface {v1, v0, p2, p3}, Lcom/tonicartos/widget/stickygridheaders/u;->a(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method protected a(Lcom/tonicartos/widget/stickygridheaders/u;)Ljava/util/List;
-    .locals 8
-
-    .prologue
-    sget-boolean v2, Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;->G:Z
-
-    .line 5
-    new-instance v3, Ljava/util/HashMap;
-
-    invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
-
-    .line 15
-    new-instance v4, Ljava/util/ArrayList;
-
-    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
-
-    .line 8
-    const/4 v0, 0x0
-
-    move v1, v0
+    move v3, v1
 
     :goto_0
-    invoke-interface {p1}, Lcom/tonicartos/widget/stickygridheaders/u;->getCount()I
+    invoke-virtual {v2}, Ljava/lang/String;->toCharArray()[C
 
-    move-result v0
+    move-result-object v2
 
-    if-ge v1, v0, :cond_1
+    array-length v6, v2
 
-    .line 18
-    invoke-interface {p1, v1}, Lcom/tonicartos/widget/stickygridheaders/u;->a(I)J
+    move v7, v6
 
-    move-result-wide v6
+    move v8, v1
 
-    .line 23
-    invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    move-object v6, v2
 
-    move-result-object v0
+    :goto_1
+    if-gt v7, v8, :cond_0
 
-    invoke-interface {v3, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance v2, Ljava/lang/String;
 
-    move-result-object v0
+    invoke-direct {v2, v6}, Ljava/lang/String;-><init>([C)V
 
-    check-cast v0, Lcom/tonicartos/widget/stickygridheaders/e;
+    invoke-virtual {v2}, Ljava/lang/String;->intern()Ljava/lang/String;
 
-    .line 6
-    if-nez v0, :cond_0
+    move-result-object v2
 
-    .line 19
-    new-instance v0, Lcom/tonicartos/widget/stickygridheaders/e;
+    packed-switch v0, :pswitch_data_0
 
-    invoke-direct {v0, p0, v1}, Lcom/tonicartos/widget/stickygridheaders/e;-><init>(Lcom/tonicartos/widget/stickygridheaders/g;I)V
+    aput-object v2, v4, v3
 
-    .line 16
-    invoke-interface {v4, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    const/4 v2, 0x1
 
-    .line 11
-    :cond_0
-    invoke-virtual {v0}, Lcom/tonicartos/widget/stickygridheaders/e;->a()V
+    const-string v0, "\u0017fOD(RfYD\u0012DTIH\u0003\\~\u0000"
 
-    .line 20
-    invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    move v3, v2
 
-    move-result-object v5
+    move-object v4, v5
 
-    invoke-interface {v3, v5, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object v2, v0
 
-    .line 13
-    add-int/lit8 v0, v1, 0x1
-
-    if-eqz v2, :cond_2
-
-    .line 14
-    :cond_1
-    return-object v4
-
-    :cond_2
-    move v1, v0
+    move v0, v1
 
     goto :goto_0
+
+    :pswitch_0
+    aput-object v2, v4, v3
+
+    sput-object v5, Lcom/tonicartos/widget/stickygridheaders/g;->z:[Ljava/lang/String;
+
+    .line 3
+    new-instance v0, Lcom/tonicartos/widget/stickygridheaders/c;
+
+    invoke-direct {v0}, Lcom/tonicartos/widget/stickygridheaders/c;-><init>()V
+
+    sput-object v0, Lcom/tonicartos/widget/stickygridheaders/g;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    return-void
+
+    .line 4294967295
+    :cond_0
+    aget-char v9, v6, v8
+
+    rem-int/lit8 v2, v8, 0x5
+
+    packed-switch v2, :pswitch_data_1
+
+    const/16 v2, 0x60
+
+    :goto_2
+    xor-int/2addr v2, v9
+
+    int-to-char v2, v2
+
+    aput-char v2, v6, v8
+
+    add-int/lit8 v2, v8, 0x1
+
+    move v8, v2
+
+    goto :goto_1
+
+    :pswitch_1
+    const/16 v2, 0x37
+
+    goto :goto_2
+
+    :pswitch_2
+    const/4 v2, 0x7
+
+    goto :goto_2
+
+    :pswitch_3
+    const/16 v2, 0x3d
+
+    goto :goto_2
+
+    :pswitch_4
+    const/16 v2, 0x21
+
+    goto :goto_2
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+    .end packed-switch
 .end method
 
-.method public getCount()I
-    .locals 1
-
-    .prologue
-    .line 25
-    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/g;->b:Lcom/tonicartos/widget/stickygridheaders/u;
-
-    invoke-interface {v0}, Lcom/tonicartos/widget/stickygridheaders/u;->getCount()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public getItem(I)Ljava/lang/Object;
+.method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
     .prologue
     .line 1
-    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/g;->b:Lcom/tonicartos/widget/stickygridheaders/u;
+    invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    invoke-interface {v0, p1}, Lcom/tonicartos/widget/stickygridheaders/u;->getItem(I)Ljava/lang/Object;
+    .line 7
+    invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
 
-    move-result-object v0
+    move-result v0
 
-    return-object v0
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    iput-boolean v0, p0, Lcom/tonicartos/widget/stickygridheaders/g;->a:Z
+
+    .line 2
+    return-void
+
+    .line 7
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
-.method public getItemId(I)J
-    .locals 2
+.method constructor <init>(Landroid/os/Parcel;Lcom/tonicartos/widget/stickygridheaders/d;)V
+    .locals 0
 
     .prologue
-    .line 3
-    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/g;->b:Lcom/tonicartos/widget/stickygridheaders/u;
+    .line 8
+    invoke-direct {p0, p1}, Lcom/tonicartos/widget/stickygridheaders/g;-><init>(Landroid/os/Parcel;)V
 
-    invoke-interface {v0, p1}, Lcom/tonicartos/widget/stickygridheaders/u;->getItemId(I)J
-
-    move-result-wide v0
-
-    return-wide v0
+    return-void
 .end method
 
-.method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 1
+.method public constructor <init>(Landroid/os/Parcelable;)V
+    .locals 0
+
+    .prologue
+    .line 11
+    invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
+
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public toString()Ljava/lang/String;
+    .locals 3
 
     .prologue
     .line 12
-    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/g;->b:Lcom/tonicartos/widget/stickygridheaders/u;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-interface {v0, p1, p2, p3}, Lcom/tonicartos/widget/stickygridheaders/u;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v1, Lcom/tonicartos/widget/stickygridheaders/g;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 9
+    invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/tonicartos/widget/stickygridheaders/g;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x1
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-boolean v1, p0, Lcom/tonicartos/widget/stickygridheaders/g;->a:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, "}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .locals 1
+
+    .prologue
+    .line 4
+    invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
+
+    .line 5
+    iget-boolean v0, p0, Lcom/tonicartos/widget/stickygridheaders/g;->a:Z
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    int-to-byte v0, v0
+
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeByte(B)V
+
+    .line 6
+    return-void
+
+    .line 5
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

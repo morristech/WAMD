@@ -1,48 +1,31 @@
-.class Lcom/tonicartos/widget/stickygridheaders/s;
-.super Landroid/database/DataSetObserver;
+.class public Lcom/tonicartos/widget/stickygridheaders/s;
+.super Ljava/lang/Object;
 .source "s.java"
 
 
 # instance fields
-.field final a:Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;
+.field protected a:I
+
+.field final b:Lcom/tonicartos/widget/stickygridheaders/k;
+
+.field protected c:I
 
 
 # direct methods
-.method constructor <init>(Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;)V
+.method protected constructor <init>(Lcom/tonicartos/widget/stickygridheaders/k;II)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/tonicartos/widget/stickygridheaders/s;->a:Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;
-
-    invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public onChanged()V
-    .locals 1
-
-    .prologue
-    .line 4
-    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/s;->a:Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;
-
-    invoke-static {v0}, Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;->a(Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;)V
-
-    .line 5
-    return-void
-.end method
-
-.method public onInvalidated()V
-    .locals 1
-
-    .prologue
     .line 1
-    iget-object v0, p0, Lcom/tonicartos/widget/stickygridheaders/s;->a:Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;
+    iput-object p1, p0, Lcom/tonicartos/widget/stickygridheaders/s;->b:Lcom/tonicartos/widget/stickygridheaders/k;
 
-    invoke-static {v0}, Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;->a(Lcom/tonicartos/widget/stickygridheaders/StickyGridHeadersGridView;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    iput p2, p0, Lcom/tonicartos/widget/stickygridheaders/s;->a:I
+
+    .line 3
+    iput p3, p0, Lcom/tonicartos/widget/stickygridheaders/s;->c:I
 
     .line 2
     return-void

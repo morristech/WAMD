@@ -10,16 +10,18 @@
 # instance fields
 .field private b:Ljava/lang/String;
 
-.field private c:[Z
+.field private c:Ljava/lang/String;
 
-.field private d:Ljava/lang/String;
+.field private d:[Z
 
 .field private e:Ljava/lang/String;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 12
+    .locals 13
+
+    const/4 v8, 0x3
 
     const/4 v5, 0x2
 
@@ -27,11 +29,9 @@
 
     const/4 v1, 0x0
 
-    const/4 v0, 0x3
+    new-array v4, v8, [Ljava/lang/String;
 
-    new-array v4, v0, [Ljava/lang/String;
-
-    const-string v3, ".7"
+    const-string v3, "<L?\u0003>+ig:b\u0001{v%q+\'KwU<"
 
     const/4 v0, -0x1
 
@@ -46,20 +46,20 @@
 
     move-result-object v3
 
-    array-length v8, v3
+    array-length v9, v3
 
-    move v9, v8
+    move v10, v9
 
-    move v10, v1
+    move v11, v1
 
-    move-object v8, v3
+    move-object v9, v3
 
     :goto_1
-    if-gt v9, v10, :cond_0
+    if-gt v10, v11, :cond_0
 
     new-instance v3, Ljava/lang/String;
 
-    invoke-direct {v3, v8}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v3, v9}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v3}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -69,7 +69,7 @@
 
     aput-object v3, v6, v4
 
-    const-string v0, "MAka,Zd3Xppv\"GcZ*\u001f\u0015GM"
+    const-string v0, ">on>j \u007fn/`\u0007Vk9w#hg,f\u0001\u007fl)fShg;v\u001ahg9#\u0012t\"/m\u0007hk/pS{p8b\n:c$gS{ljf\u001dnp3U\u0012vw/pS{p8b\n:u\"j\u0010r\"+q\u0016:`%w\u001b:v\"fSic\'fSvg$d\u0007r"
 
     move-object v3, v0
 
@@ -84,7 +84,7 @@
     :pswitch_0
     aput-object v3, v6, v4
 
-    const-string v0, "Ob:\\xQr:Mrv[?[eRe3Ntpr8Kt\"e3Ydke3[1cyvM\u007fve?Mb\"v$Zp{77Fu\"v8\u0008tlc$QGc{#Mb\"v$Zp{7!@xa\u007fvIcg74Gej7\"@t\"d7Et\"{3Fvv\u007f"
+    const-string v0, "_:"
 
     move-object v3, v0
 
@@ -104,48 +104,46 @@
     return-void
 
     :cond_0
-    aget-char v11, v8, v10
+    aget-char v12, v9, v11
 
-    rem-int/lit8 v3, v10, 0x5
+    rem-int/lit8 v3, v11, 0x5
 
     packed-switch v3, :pswitch_data_1
 
-    const/16 v3, 0x11
+    move v3, v8
 
     :goto_2
-    xor-int/2addr v3, v11
+    xor-int/2addr v3, v12
 
     int-to-char v3, v3
 
-    aput-char v3, v8, v10
+    aput-char v3, v9, v11
 
-    add-int/lit8 v3, v10, 0x1
+    add-int/lit8 v3, v11, 0x1
 
-    move v10, v3
+    move v11, v3
 
     goto :goto_1
 
     :pswitch_2
-    move v3, v5
+    const/16 v3, 0x73
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v3, 0x17
+    const/16 v3, 0x1a
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v3, 0x56
+    move v3, v5
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v3, 0x28
+    const/16 v3, 0x4a
 
     goto :goto_2
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -166,12 +164,12 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 40
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 39
+    .line 19
     return-void
 .end method
 
@@ -179,10 +177,10 @@
     .locals 2
 
     .prologue
-    .line 40
+    .line 2
     invoke-direct {p0, p1, p2}, Lcom/whatsapp/preference/WaListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 3
+    .line 26
     invoke-virtual {p0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->getEntries()[Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -191,56 +189,56 @@
 
     new-array v0, v0, [Z
 
-    iput-object v0, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->c:[Z
+    iput-object v0, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->d:[Z
 
-    .line 59
+    .line 63
     sget-object v0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     aget-object v0, v0, v1
 
     iput-object v0, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->b:Ljava/lang/String;
 
-    .line 33
+    .line 42
     return-void
 .end method
 
 .method private a(Ljava/util/List;)Ljava/lang/CharSequence;
-    .locals 9
+    .locals 8
 
     .prologue
-    const/4 v2, 0x0
+    const/4 v0, 0x0
 
-    sget-boolean v4, Lcom/whatsapp/preference/WaListPreference;->a:Z
+    sget v3, Lcom/whatsapp/preference/WaListPreference;->a:I
 
-    .line 63
+    .line 41
     :try_start_0
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
     :try_start_1
+    iget-object v1, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->e:Ljava/lang/String;
+
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 43
     iget-object v0, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->e:Ljava/lang/String;
 
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 32
-    iget-object v0, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->e:Ljava/lang/String;
-
-    .line 66
+    .line 56
     :goto_0
     return-object v0
 
-    .line 63
+    .line 41
     :catch_0
     move-exception v0
 
@@ -248,55 +246,55 @@
     :try_end_1
     .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 32
+    .line 43
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 50
+    .line 24
     :cond_0
-    new-instance v5, Ljava/util/ArrayList;
+    new-instance v4, Ljava/util/ArrayList;
 
-    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    .line 69
+    .line 9
     invoke-virtual {p0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->getEntries()[Ljava/lang/CharSequence;
+
+    move-result-object v5
+
+    .line 13
+    invoke-virtual {p0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
     move-result-object v6
 
-    .line 27
-    invoke-virtual {p0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->getEntryValues()[Ljava/lang/CharSequence;
-
-    move-result-object v7
-
-    .line 10
+    .line 5
     :try_start_2
     invoke-interface {p1}, Ljava/util/List;->size()I
 
-    move-result v0
+    move-result v1
 
-    array-length v1, v7
+    array-length v2, v6
     :try_end_2
     .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_2
 
-    if-ne v0, v1, :cond_1
+    if-ne v1, v2, :cond_1
 
     :try_start_3
-    iget-object v0, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->c:Ljava/lang/String;
 
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_1
+    if-nez v1, :cond_1
 
-    .line 66
-    iget-object v0, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->d:Ljava/lang/String;
+    .line 56
+    iget-object v0, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->c:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 10
+    .line 5
     :catch_2
     move-exception v0
 
@@ -304,26 +302,26 @@
     :try_end_3
     .catch Ljava/lang/IllegalStateException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 66
+    .line 56
     :catch_3
     move-exception v0
 
     throw v0
 
-    .line 2
+    .line 67
     :cond_1
-    array-length v8, v7
+    array-length v7, v6
 
-    move v1, v2
+    move v1, v0
 
-    move v3, v2
+    move v2, v0
 
     :goto_1
-    if-ge v1, v8, :cond_3
+    if-ge v1, v7, :cond_3
 
-    aget-object v0, v7, v1
+    aget-object v0, v6, v1
 
-    .line 38
+    .line 69
     :try_start_4
     invoke-interface {p1, v0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -331,37 +329,39 @@
 
     if-eqz v0, :cond_2
 
-    .line 35
-    aget-object v0, v6, v3
+    .line 57
+    aget-object v0, v5, v2
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-interface {v5, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v4, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_4
     .catch Ljava/lang/IllegalStateException; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 60
+    .line 62
     :cond_2
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v2, v2, 0x1
 
-    .line 75
+    .line 7
     add-int/lit8 v0, v1, 0x1
 
-    if-eqz v4, :cond_4
+    if-eqz v3, :cond_4
 
-    .line 29
+    .line 17
     :cond_3
     sget-object v0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->z:[Ljava/lang/String;
 
-    aget-object v0, v0, v2
+    const/4 v1, 0x2
 
-    invoke-static {v5, v0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a(Ljava/lang/Iterable;Ljava/lang/String;)Ljava/lang/String;
+    aget-object v0, v0, v1
+
+    invoke-static {v4, v0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a(Ljava/lang/Iterable;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 35
+    .line 57
     :catch_4
     move-exception v0
 
@@ -377,9 +377,9 @@
     .locals 5
 
     .prologue
-    sget-boolean v0, Lcom/whatsapp/preference/WaListPreference;->a:Z
+    sget v0, Lcom/whatsapp/preference/WaListPreference;->a:I
 
-    .line 1
+    .line 76
     if-eqz p0, :cond_0
 
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -393,23 +393,23 @@
 
     if-nez v2, :cond_1
 
-    .line 7
+    .line 14
     :cond_0
     const-string v0, ""
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 11
+    .line 59
     :goto_0
     return-object v0
 
-    .line 7
+    .line 14
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 62
+    .line 4
     :cond_1
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -423,7 +423,7 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 31
+    .line 36
     :cond_2
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -431,7 +431,7 @@
 
     if-eqz v3, :cond_3
 
-    .line 43
+    .line 61
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
@@ -444,7 +444,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 11
+    .line 59
     :cond_3
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -457,14 +457,14 @@
     .locals 6
 
     .prologue
-    sget-boolean v1, Lcom/whatsapp/preference/WaListPreference;->a:Z
+    sget v1, Lcom/whatsapp/preference/WaListPreference;->a:I
 
-    .line 16
+    .line 11
     invoke-virtual {p0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    .line 14
+    .line 1
     invoke-virtual {p0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v0
@@ -473,15 +473,15 @@
 
     move-result-object v0
 
-    .line 18
+    .line 49
     if-eqz v0, :cond_1
 
-    .line 80
+    .line 58
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v3
 
-    .line 52
+    .line 6
     const/4 v0, 0x0
 
     :cond_0
@@ -489,11 +489,11 @@
 
     if-ge v0, v4, :cond_1
 
-    .line 42
+    .line 64
     aget-object v4, v2, v0
 
     .line 34
-    iget-object v5, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->c:[Z
+    iget-object v5, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->d:[Z
 
     invoke-interface {v3, v4}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -501,53 +501,21 @@
 
     aput-boolean v4, v5, v0
 
-    .line 8
+    .line 32
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 48
+    .line 55
     :cond_1
     return-void
-.end method
-
-.method private a(Ljava/lang/String;)V
-    .locals 1
-
-    .prologue
-    .line 71
-    :try_start_0
-    invoke-direct {p0, p1}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a(Ljava/lang/CharSequence;)[Ljava/lang/CharSequence;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->callChangeListener(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 44
-    invoke-virtual {p0, p1}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->setValue(Ljava/lang/String;)V
-    :try_end_0
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 49
-    :cond_0
-    return-void
-
-    .line 44
-    :catch_0
-    move-exception v0
-
-    throw v0
 .end method
 
 .method private a(Ljava/lang/CharSequence;)[Ljava/lang/CharSequence;
     .locals 1
 
     .prologue
-    .line 25
+    .line 72
     if-eqz p1, :cond_0
 
     :try_start_0
@@ -559,7 +527,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 81
+    .line 21
     :cond_0
     const/4 v0, 0x0
 
@@ -567,15 +535,17 @@
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 28
     :goto_0
     return-object v0
 
+    .line 21
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 46
+    .line 28
     :cond_1
     check-cast p1, Ljava/lang/String;
 
@@ -592,35 +562,67 @@
     .locals 1
 
     .prologue
-    .line 77
-    iget-object v0, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->c:[Z
+    .line 31
+    iget-object v0, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->d:[Z
 
     return-object v0
 .end method
 
+.method private b(Ljava/lang/String;)V
+    .locals 1
+
+    .prologue
+    .line 48
+    :try_start_0
+    invoke-direct {p0, p1}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a(Ljava/lang/CharSequence;)[Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->callChangeListener(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 74
+    invoke-virtual {p0, p1}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->setValue(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 77
+    :cond_0
+    return-void
+
+    .line 74
+    :catch_0
+    move-exception v0
+
+    throw v0
+.end method
+
 
 # virtual methods
+.method public a(Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 38
+    iput-object p1, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->e:Ljava/lang/String;
+
+    .line 18
+    return-void
+.end method
+
 .method public a([Ljava/lang/CharSequence;)V
     .locals 1
 
     .prologue
-    .line 15
+    .line 8
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0, p1}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->onSetInitialValue(ZLjava/lang/Object;)V
 
-    .line 73
-    return-void
-.end method
-
-.method public b(Ljava/lang/String;)V
-    .locals 0
-
-    .prologue
-    .line 74
-    iput-object p1, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->e:Ljava/lang/String;
-
-    .line 13
+    .line 20
     return-void
 .end method
 
@@ -628,10 +630,10 @@
     .locals 0
 
     .prologue
-    .line 54
-    iput-object p1, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->d:Ljava/lang/String;
+    .line 46
+    iput-object p1, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->c:Ljava/lang/String;
 
-    .line 12
+    .line 29
     return-void
 .end method
 
@@ -639,24 +641,24 @@
     .locals 6
 
     .prologue
-    sget-boolean v2, Lcom/whatsapp/preference/WaListPreference;->a:Z
+    sget v2, Lcom/whatsapp/preference/WaListPreference;->a:I
 
-    .line 76
+    .line 51
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 22
+    .line 35
     invoke-virtual {p0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    .line 45
+    .line 37
     if-eqz p1, :cond_2
 
     if-eqz v4, :cond_2
 
-    .line 21
+    .line 45
     const/4 v0, 0x0
 
     move v1, v0
@@ -666,8 +668,8 @@
 
     if-ge v1, v0, :cond_1
 
-    .line 36
-    iget-object v0, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->c:[Z
+    .line 80
+    iget-object v0, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->d:[Z
 
     aget-boolean v0, v0, v1
 
@@ -675,12 +677,12 @@
 
     if-ne v0, v5, :cond_0
 
-    .line 19
+    .line 39
     aget-object v0, v4, v1
 
     check-cast v0, Ljava/lang/String;
 
-    .line 51
+    .line 15
     invoke-interface {v3, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 65
@@ -689,7 +691,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 78
+    .line 50
     :cond_1
     iget-object v0, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->b:Ljava/lang/String;
 
@@ -697,17 +699,17 @@
 
     move-result-object v0
 
-    .line 24
+    .line 53
     invoke-direct {p0, v3}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a(Ljava/util/List;)Ljava/lang/CharSequence;
 
     move-result-object v1
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 53
-    invoke-direct {p0, v0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a(Ljava/lang/String;)V
+    .line 27
+    invoke-direct {p0, v0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->b(Ljava/lang/String;)V
 
-    .line 9
+    .line 12
     :cond_2
     return-void
 
@@ -721,7 +723,7 @@
     .locals 1
 
     .prologue
-    .line 70
+    .line 78
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getTextArray(I)[Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -733,17 +735,17 @@
     .locals 3
 
     .prologue
-    .line 57
+    .line 10
     invoke-virtual {p0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->getEntries()[Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    .line 64
+    .line 47
     invoke-virtual {p0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    .line 30
+    .line 3
     if-eqz v0, :cond_0
 
     if-eqz v1, :cond_0
@@ -755,13 +757,13 @@
 
     if-eq v2, v1, :cond_1
 
-    .line 6
+    .line 70
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
     sget-object v1, Lcom/whatsapp/preference/WaMultiSelectListPreference;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x2
+    const/4 v2, 0x1
 
     aget-object v1, v1, v2
 
@@ -776,100 +778,97 @@
 
     throw v0
 
-    .line 17
+    .line 68
     :cond_1
     invoke-direct {p0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a()V
 
-    .line 79
+    .line 30
     new-instance v1, Lcom/whatsapp/preference/a;
 
     invoke-direct {v1, p0}, Lcom/whatsapp/preference/a;-><init>(Lcom/whatsapp/preference/WaMultiSelectListPreference;)V
 
-    .line 61
-    iget-object v2, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->c:[Z
+    .line 16
+    iget-object v2, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->d:[Z
 
     invoke-virtual {p1, v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setMultiChoiceItems([Ljava/lang/CharSequence;[ZLandroid/content/DialogInterface$OnMultiChoiceClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 56
+    .line 73
     return-void
 .end method
 
 .method protected onSetInitialValue(ZLjava/lang/Object;)V
-    .locals 4
+    .locals 3
 
     .prologue
-    const/4 v1, 0x0
+    sget v1, Lcom/whatsapp/preference/WaListPreference;->a:I
 
-    sget-boolean v2, Lcom/whatsapp/preference/WaListPreference;->a:Z
-
-    .line 23
+    .line 79
     if-nez p2, :cond_0
 
-    .line 47
-    new-array v0, v1, [Ljava/lang/CharSequence;
+    .line 54
+    const/4 v0, 0x0
 
-    if-eqz v2, :cond_4
+    new-array v0, v0, [Ljava/lang/CharSequence;
 
-    .line 37
+    if-eqz v1, :cond_3
+
+    .line 60
     :cond_0
     check-cast p2, [Ljava/lang/CharSequence;
 
     check-cast p2, [Ljava/lang/CharSequence;
 
-    .line 20
+    .line 25
     :goto_0
     invoke-static {p2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 41
-    iget-object v3, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->b:Ljava/lang/String;
+    .line 75
+    iget-object v2, p0, Lcom/whatsapp/preference/WaMultiSelectListPreference;->b:Ljava/lang/String;
 
-    invoke-static {v0, v3}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a(Ljava/lang/Iterable;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v2}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a(Ljava/lang/Iterable;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 55
+    .line 33
     if-eqz p1, :cond_1
 
-    .line 26
+    .line 22
     invoke-virtual {p0, v0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->getPersistedString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 67
+    .line 44
     :cond_1
     :try_start_0
     invoke-direct {p0, v0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a(Ljava/lang/CharSequence;)[Ljava/lang/CharSequence;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-direct {p0, v3}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a(Ljava/util/List;)Ljava/lang/CharSequence;
+    invoke-direct {p0, v2}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a(Ljava/util/List;)Ljava/lang/CharSequence;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-virtual {p0, v3}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v2}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 68
-    invoke-direct {p0, v0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->a(Ljava/lang/String;)V
+    .line 52
+    invoke-direct {p0, v0}, Lcom/whatsapp/preference/WaMultiSelectListPreference;->b(Ljava/lang/String;)V
 
-    .line 72
-    sget v0, Lcom/whatsapp/DialogToastActivity;->i:I
-    :try_end_0
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 66
+    sget v0, Lcom/whatsapp/DialogToastActivity;->d:I
 
     if-eqz v0, :cond_2
 
-    if-eqz v2, :cond_3
+    add-int/lit8 v0, v1, 0x1
 
-    move v0, v1
-
-    :goto_1
-    sput-boolean v0, Lcom/whatsapp/preference/WaListPreference;->a:Z
+    sput v0, Lcom/whatsapp/preference/WaListPreference;->a:I
+    :try_end_0
+    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_2
     return-void
@@ -877,22 +876,9 @@
     :catch_0
     move-exception v0
 
-    :try_start_1
-    throw v0
-    :try_end_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    move-exception v0
-
     throw v0
 
     :cond_3
-    const/4 v0, 0x1
-
-    goto :goto_1
-
-    :cond_4
     move-object p2, v0
 
     goto :goto_0

@@ -1,38 +1,29 @@
-.class public interface abstract Lm;
+.class public Lm;
 .super Ljava/lang/Object;
 .source "m.java"
 
 
-# virtual methods
-.method public abstract a()V
-.end method
+# instance fields
+.field public a:I
 
-.method public abstract a(Ljava/lang/String;)V
-.end method
+.field public b:Ll;
 
-.method public abstract a(Ljava/util/List;)V
-.end method
+.field public c:Z
 
-.method public abstract b()V
-.end method
+.field public d:Ljava/lang/String;
 
-.method public abstract b(Ljava/lang/String;)V
-.end method
+.field public e:Ljava/lang/Class;
 
-.method public abstract c()V
-.end method
+.field public f:Ljava/lang/String;
 
-.method public abstract c(Ljava/lang/String;)V
-.end method
 
-.method public abstract d()V
-.end method
+# direct methods
+.method public constructor <init>()V
+    .locals 0
 
-.method public abstract d(Ljava/lang/String;)V
-.end method
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.method public abstract e()V
-.end method
-
-.method public abstract e(Ljava/lang/String;)V
+    return-void
 .end method

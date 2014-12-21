@@ -12,7 +12,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 3
     iput-object p1, p0, Lcom/whatsapp/gallerypicker/ImagePreview$5;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
 
     invoke-direct {p0, p2}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
@@ -26,7 +26,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 5
     invoke-virtual {p0}, Lcom/whatsapp/gallerypicker/ImagePreview$5;->isSelected()Z
 
     move-result v0
@@ -39,7 +39,7 @@
 
     if-nez v0, :cond_0
 
-    .line 4
+    .line 7
     const v0, -0xeeeeef
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->drawColor(I)V
@@ -48,7 +48,7 @@
     :cond_0
     invoke-super {p0, p1}, Landroid/widget/ImageView;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 7
+    .line 2
     return-void
 .end method
 
@@ -56,7 +56,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 1
     invoke-virtual {p0}, Lcom/whatsapp/gallerypicker/ImagePreview$5;->getSuggestedMinimumHeight()I
 
     move-result v0
@@ -65,9 +65,9 @@
 
     move-result v0
 
-    .line 5
+    .line 8
     invoke-virtual {p0, v0, v0}, Lcom/whatsapp/gallerypicker/ImagePreview$5;->setMeasuredDimension(II)V
 
-    .line 8
+    .line 4
     return-void
 .end method

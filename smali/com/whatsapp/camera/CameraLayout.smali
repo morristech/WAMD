@@ -9,30 +9,32 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 6
 
-    const-string v0, ">Wd[1>"
+    const/16 v1, 0x72
+
+    const-string v0, "\u0005\u001b>\u0016X\u0005"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v0
 
-    array-length v1, v0
+    array-length v2, v0
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
+
+    move v4, v3
 
     move v3, v2
 
-    move v2, v1
-
-    move-object v1, v0
+    move-object v2, v0
 
     :goto_0
-    if-gt v2, v3, :cond_0
+    if-gt v3, v4, :cond_0
 
     new-instance v0, Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v0, v2}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -43,46 +45,48 @@
     return-void
 
     :cond_0
-    aget-char v4, v1, v3
+    aget-char v5, v2, v4
 
-    rem-int/lit8 v0, v3, 0x5
+    rem-int/lit8 v0, v4, 0x5
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x5e
+    const/16 v0, 0x37
 
     :goto_1
-    xor-int/2addr v0, v4
+    xor-int/2addr v0, v5
 
     int-to-char v0, v0
 
-    aput-char v0, v1, v3
+    aput-char v0, v2, v4
 
-    add-int/lit8 v0, v3, 0x1
+    add-int/lit8 v0, v4, 0x1
 
-    move v3, v0
+    move v4, v0
 
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x49
+    move v0, v1
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x3e
+    move v0, v1
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0xa
+    const/16 v0, 0x50
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x3f
+    move v0, v1
 
     goto :goto_1
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -97,10 +101,10 @@
     .locals 0
 
     .prologue
-    .line 36
+    .line 25
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    .line 32
+    .line 14
     return-void
 .end method
 
@@ -108,7 +112,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 30
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 23
@@ -119,10 +123,10 @@
     .locals 0
 
     .prologue
-    .line 9
+    .line 35
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 31
+    .line 21
     return-void
 .end method
 
@@ -132,13 +136,13 @@
     .locals 18
 
     .prologue
-    sget v2, Lcom/whatsapp/camera/CameraActivity;->s:I
+    sget-boolean v2, Lcom/whatsapp/camera/CameraActivity;->A:Z
 
-    .line 18
+    .line 10
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
-    .line 24
-    const v1, 0x7f0b00e1
+    .line 11
+    const v1, 0x7f0b00e3
 
     move-object/from16 v0, p0
 
@@ -146,8 +150,8 @@
 
     move-result-object v3
 
-    .line 1
-    const v1, 0x7f0b00e3
+    .line 24
+    const v1, 0x7f0b00e5
 
     move-object/from16 v0, p0
 
@@ -155,8 +159,8 @@
 
     move-result-object v4
 
-    .line 8
-    const v1, 0x7f0b00e2
+    .line 22
+    const v1, 0x7f0b00e4
 
     move-object/from16 v0, p0
 
@@ -164,44 +168,44 @@
 
     move-result-object v5
 
-    .line 3
+    .line 20
     invoke-virtual {v3}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v6
 
-    .line 21
+    .line 26
     invoke-virtual {v3}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v7
 
-    .line 27
+    .line 15
     invoke-virtual {v4}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v8
 
-    .line 5
+    .line 27
     invoke-virtual {v4}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v9
 
-    .line 17
+    .line 28
     invoke-virtual {v5}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v10
 
-    .line 34
+    .line 6
     invoke-virtual {v5}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v11
 
-    .line 16
+    .line 18
     sub-int v1, p5, p3
 
     sub-int v12, p4, p2
 
     if-le v1, v12, :cond_0
 
-    .line 28
+    .line 29
     add-int v1, p2, p4
 
     sub-int/2addr v1, v6
@@ -220,14 +224,14 @@
 
     invoke-virtual {v3, v1, v12, v13, v0}, Landroid/view/View;->layout(IIII)V
 
-    .line 29
+    .line 36
     sub-int v1, p4, p2
 
     sub-int/2addr v1, v6
 
     div-int/lit8 v1, v1, 0x4
 
-    .line 37
+    .line 13
     sub-int v12, p4, v1
 
     div-int/lit8 v13, v10, 0x2
@@ -258,7 +262,7 @@
 
     invoke-virtual {v5, v12, v13, v14, v15}, Landroid/view/View;->layout(IIII)V
 
-    .line 30
+    .line 2
     add-int v12, p2, v1
 
     div-int/lit8 v13, v8, 0x2
@@ -289,10 +293,10 @@
 
     invoke-virtual {v4, v12, v13, v1, v14}, Landroid/view/View;->layout(IIII)V
 
-    .line 12
+    .line 17
     if-eqz v2, :cond_3
 
-    .line 26
+    .line 8
     :cond_0
     invoke-virtual/range {p0 .. p0}, Lcom/whatsapp/camera/CameraLayout;->getContext()Landroid/content/Context;
 
@@ -306,7 +310,7 @@
 
     check-cast v1, Landroid/view/WindowManager;
 
-    .line 19
+    .line 9
     invoke-interface {v1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object v1
@@ -315,8 +319,8 @@
 
     move-result v1
 
-    .line 10
-    const v12, 0x7f0b00f1
+    .line 37
+    const v12, 0x7f0b00f3
 
     move-object/from16 v0, p0
 
@@ -324,21 +328,21 @@
 
     move-result-object v12
 
-    .line 33
+    .line 12
     invoke-virtual {v12}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v12
 
     add-int v12, v12, p3
 
-    .line 13
+    .line 5
     if-eqz v1, :cond_1
 
     const/4 v13, 0x1
 
     if-ne v1, v13, :cond_2
 
-    .line 11
+    .line 19
     :cond_1
     sub-int v1, p4, v6
 
@@ -358,14 +362,14 @@
 
     invoke-virtual {v3, v1, v13, v0, v14}, Landroid/view/View;->layout(IIII)V
 
-    .line 15
+    .line 33
     sub-int v1, p5, v12
 
     sub-int/2addr v1, v7
 
     div-int/lit8 v1, v1, 0x4
 
-    .line 25
+    .line 3
     div-int/lit8 v13, v6, 0x2
 
     sub-int v13, p4, v13
@@ -398,7 +402,7 @@
 
     invoke-virtual {v5, v13, v14, v15, v0}, Landroid/view/View;->layout(IIII)V
 
-    .line 4
+    .line 31
     div-int/lit8 v13, v6, 0x2
 
     sub-int v13, p4, v13
@@ -429,10 +433,10 @@
 
     invoke-virtual {v4, v13, v14, v15, v1}, Landroid/view/View;->layout(IIII)V
 
-    .line 6
+    .line 7
     if-eqz v2, :cond_3
 
-    .line 22
+    .line 32
     :cond_2
     add-int v1, v12, p5
 
@@ -452,14 +456,14 @@
 
     invoke-virtual {v3, v0, v1, v13, v14}, Landroid/view/View;->layout(IIII)V
 
-    .line 14
+    .line 16
     sub-int v1, p5, v12
 
     sub-int/2addr v1, v7
 
     div-int/lit8 v1, v1, 0x4
 
-    .line 20
+    .line 1
     div-int/lit8 v3, v6, 0x2
 
     add-int v3, v3, p2
@@ -490,7 +494,7 @@
 
     invoke-virtual {v5, v3, v7, v10, v11}, Landroid/view/View;->layout(IIII)V
 
-    .line 7
+    .line 34
     div-int/lit8 v3, v6, 0x2
 
     add-int v3, v3, p2
@@ -521,16 +525,24 @@
 
     invoke-virtual {v4, v3, v5, v6, v1}, Landroid/view/View;->layout(IIII)V
 
-    .line 35
+    .line 4
     :cond_3
-    sget v1, Lcom/whatsapp/DialogToastActivity;->i:I
+    sget v1, Lcom/whatsapp/DialogToastActivity;->d:I
 
     if-eqz v1, :cond_4
 
-    add-int/lit8 v1, v2, 0x1
+    if-eqz v2, :cond_5
 
-    sput v1, Lcom/whatsapp/camera/CameraActivity;->s:I
+    const/4 v1, 0x0
+
+    :goto_0
+    sput-boolean v1, Lcom/whatsapp/camera/CameraActivity;->A:Z
 
     :cond_4
     return-void
+
+    :cond_5
+    const/4 v1, 0x1
+
+    goto :goto_0
 .end method

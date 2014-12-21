@@ -15,13 +15,13 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
+    .line 8
     invoke-direct {p0, p1}, Lcom/whatsapp/util/OpusRecorder;->allocateNative(Ljava/lang/String;)V
 
-    .line 8
+    .line 4
     return-void
 .end method
 
@@ -40,7 +40,7 @@
     .line 1
     invoke-direct {p0}, Lcom/whatsapp/util/OpusRecorder;->freeNative()V
 
-    .line 5
+    .line 2
     return-void
 .end method
 
@@ -48,10 +48,10 @@
     .locals 4
 
     .prologue
-    .line 3
+    .line 7
     invoke-super {p0}, Ljava/lang/Object;->finalize()V
 
-    .line 7
+    .line 3
     iget-wide v0, p0, Lcom/whatsapp/util/OpusRecorder;->a:J
 
     const-wide/16 v2, 0x0
@@ -60,10 +60,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 9
     invoke-direct {p0}, Lcom/whatsapp/util/OpusRecorder;->freeNative()V
 
-    .line 9
+    .line 6
     :cond_0
     return-void
 .end method

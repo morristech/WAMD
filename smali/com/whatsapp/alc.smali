@@ -2,39 +2,31 @@
 .super Ljava/lang/Object;
 .source "alc.java"
 
-# interfaces
-.implements Lcom/whatsapp/aa0;
-
 
 # instance fields
-.field final a:Lcom/whatsapp/yf;
+.field public a:Lcom/whatsapp/protocol/c9;
+
+.field final b:Lcom/whatsapp/iv;
+
+.field public c:Lcom/whatsapp/PhotoView;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/yf;)V
+.method public constructor <init>(Lcom/whatsapp/iv;Lcom/whatsapp/protocol/c9;Lcom/whatsapp/PhotoView;)V
     .locals 0
 
     .prologue
     .line 1
-    iput-object p1, p0, Lcom/whatsapp/alc;->a:Lcom/whatsapp/yf;
+    iput-object p1, p0, Lcom/whatsapp/alc;->b:Lcom/whatsapp/iv;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
+    .line 4
+    iput-object p2, p0, Lcom/whatsapp/alc;->a:Lcom/whatsapp/protocol/c9;
 
-
-# virtual methods
-.method public a()Z
-    .locals 1
-
-    .prologue
     .line 2
-    iget-object v0, p0, Lcom/whatsapp/alc;->a:Lcom/whatsapp/yf;
+    iput-object p3, p0, Lcom/whatsapp/alc;->c:Lcom/whatsapp/PhotoView;
 
-    invoke-virtual {v0}, Lcom/whatsapp/yf;->isCancelled()Z
-
-    move-result v0
-
-    return v0
+    .line 3
+    return-void
 .end method

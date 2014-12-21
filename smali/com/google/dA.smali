@@ -1,57 +1,43 @@
 .class final Lcom/google/dA;
-.super Lcom/google/dk;
+.super Lcom/google/d7;
 .source "dA.java"
 
 
-# instance fields
-.field private final b:C
-
-
 # direct methods
-.method constructor <init>(IC)V
+.method constructor <init>()V
     .locals 0
 
     .prologue
-    .line 2
-    invoke-direct {p0, p1}, Lcom/google/dk;-><init>(I)V
+    .line 3
+    invoke-direct {p0}, Lcom/google/d7;-><init>()V
 
-    .line 5
-    iput-char p2, p0, Lcom/google/dA;->b:C
-
-    .line 4
     return-void
 .end method
 
 
 # virtual methods
-.method a()Z
+.method public a(Lcom/google/ft;Lcom/google/o;)Lcom/google/aZ;
     .locals 2
 
     .prologue
-    .line 3
-    iget-char v0, p0, Lcom/google/dA;->b:C
+    .line 1
+    new-instance v0, Lcom/google/aZ;
 
-    const/16 v1, 0x24
+    const/4 v1, 0x0
 
-    if-ne v0, v1, :cond_0
+    invoke-direct {v0, p1, p2, v1}, Lcom/google/aZ;-><init>(Lcom/google/ft;Lcom/google/o;Lcom/google/gA;)V
 
-    const/4 v0, 0x1
-
-    :goto_0
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
+    return-object v0
 .end method
 
-.method b()C
+.method public b(Lcom/google/ft;Lcom/google/o;)Ljava/lang/Object;
     .locals 1
 
     .prologue
-    .line 1
-    iget-char v0, p0, Lcom/google/dA;->b:C
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lcom/google/dA;->a(Lcom/google/ft;Lcom/google/o;)Lcom/google/aZ;
 
-    return v0
+    move-result-object v0
+
+    return-object v0
 .end method

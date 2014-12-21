@@ -3,25 +3,8 @@
 .source "FragmentManager.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroid/support/v4/app/FragmentManagerImpl;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
-    name = "FragmentTag"
-.end annotation
-
-
 # static fields
 .field public static final Fragment:[I
-
-.field public static final Fragment_id:I = 0x1
-
-.field public static final Fragment_name:I = 0x0
-
-.field public static final Fragment_tag:I = 0x2
 
 
 # direct methods
@@ -29,7 +12,7 @@
     .locals 1
 
     .prologue
-    .line 2206
+    .line 1
     const/4 v0, 0x3
 
     new-array v0, v0, [I
@@ -48,14 +31,4 @@
         0x10100d0
         0x10100d1
     .end array-data
-.end method
-
-.method constructor <init>()V
-    .locals 0
-
-    .prologue
-    .line 2205
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
 .end method

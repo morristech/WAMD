@@ -29,7 +29,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "AX\u0006\u007fDIRLdETS\u000cy\u0005AU\u0016dDN\u0018/Hoiw=@dux6Ho"
+    const-string v6, "eL)\tPk@$\u0002P~Xg\u001cPoD!\u0018PaD,\u0007TnS\'\u000fQo@;\u001a\u001aMb\u001c\'zB~\u0005+qE`\u0017=vMo\u0006+gSg\u0001 |_i\r*"
 
     const/4 v0, -0x1
 
@@ -67,7 +67,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "I[\u0003jNGW\u000eaNROM\u007fNCS\u000b{NMS\u0006dJBD\rlOCW\u0011y\u0004au6Ddni/Hoiw=Haeu6"
+    const-string v0, "eL)\tPk@$\u0002P~Xg\u001cPoD!\u0018PaD,\u0007TnS\'\u000fQo@;\u001a\u001aMb\u001c\'zB~\u0005+qE`\u0017#zYo\u001c+q"
 
     move-object v6, v0
 
@@ -82,7 +82,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "AX\u0006\u007fDIRLdETS\u000cy\u0005AU\u0016dDN\u0018/Hoiw=Xemy7C\u007fer"
+    const-string v0, "eL)\tPk@$\u0002P~Xg\u001cPoD!\u0018PaD,\u0007TnS\'\u000fQo@;\u001a\u001aMb\u001c\'zB~\u0005+qE`\u0017;{An\u001d aIe"
 
     move-object v6, v0
 
@@ -97,7 +97,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "AX\u0006\u007fDIRLdETS\u000cy\u0005AU\u0016dDN\u0018/Hoiw=Haeu6"
+    const-string v0, "mO,\u001cZeEf\u0007[xD&\u001a\u001bmB<\u0007Zb\u000f\u0005+qE`\u0017=vMo\u0006+gSr\u001c/gXd\u000c"
 
     move-object v6, v0
 
@@ -112,7 +112,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "AX\u0006\u007fDIRLdETS\u000cy\u0005AU\u0016dDN\u0018/Hoiw=^hax,Hy\u007fe6Lyts&"
+    const-string v0, "mO,\u001cZeEf\u0007[xD&\u001a\u001bmB<\u0007Zb\u000f\u0005+qE`\u0017#zYo\u001c+q"
 
     move-object v6, v0
 
@@ -129,7 +129,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "I[\u0003jNGW\u000eaNROM\u007fNCS\u000b{NMS\u0006dJBD\rlOCW\u0011y\u0004au6Ddni/Hoiw=^hax,Hy\u007fp+Cbs~\'I"
+    const-string v0, "mO,\u001cZeEf\u0007[xD&\u001a\u001bmB<\u0007Zb\u000f\u0005+qE`\u0017;{An\u001d aIe"
 
     move v7, v6
 
@@ -146,7 +146,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "I[\u0003jNGW\u000eaNROM\u007fNCS\u000b{NMS\u0006dJBD\rlOCW\u0011y\u0004au6Ddni/Hoiw=^hax,Hy\u007fe6Lyts&"
+    const-string v6, "eL)\tPk@$\u0002P~Xg\u001cPoD!\u0018PaD,\u0007TnS\'\u000fQo@;\u001a\u001aMb\u001c\'zB~\u0005+qE`\u0017=vMo\u0006+gSr\u001c/gXd\u000c"
 
     const/4 v0, 0x5
 
@@ -159,7 +159,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "AX\u0006\u007fDIRLdETS\u000cy\u0005AU\u0016dDN\u0018/Hoiw=^hax,Hy\u007fp+Cbs~\'I"
+    const-string v6, "mO,\u001cZeEf\u0007[xD&\u001a\u001bmB<\u0007Zb\u000f\u0005+qE`\u0017=vMo\u0006+gSg\u0001 |_i\r*"
 
     const/4 v0, 0x6
 
@@ -172,7 +172,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "I[\u0003jNGW\u000eaNROM\u007fNCS\u000b{NMS\u0006dJBD\rlOCW\u0011y\u0004au6Ddni/Hoiw=@dux6Ho"
+    const-string v6, "mO,\u001cZeEf\u0007[xD&\u001a\u001bmB<\u0007Zb\u000f\u0005+qE`\u0017+\u007fIb\u001c"
 
     const/4 v0, 0x7
 
@@ -185,7 +185,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "I[\u0003jNGW\u000eaNROM\u007fNCS\u000b{NMS\u0006dJBD\rlOCW\u0011y\u0004au6Ddni/Hoiw=Xemy7C\u007fer"
+    const-string v6, "eL)\tPk@$\u0002P~Xg\u001cPoD!\u0018PaD,\u0007TnS\'\u000fQo@;\u001a\u001aMb\u001c\'zB~\u0005+qE`\u0017+\u007fIb\u001c"
 
     const/16 v0, 0x8
 
@@ -207,7 +207,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x2b
+    const/16 v6, 0x35
 
     :goto_2
     xor-int/2addr v6, v13
@@ -223,22 +223,22 @@
     goto :goto_1
 
     :pswitch_9
-    const/16 v6, 0x20
+    const/16 v6, 0xc
 
     goto :goto_2
 
     :pswitch_a
-    const/16 v6, 0x36
+    const/16 v6, 0x21
 
     goto :goto_2
 
     :pswitch_b
-    const/16 v6, 0x62
+    const/16 v6, 0x48
 
     goto :goto_2
 
     :pswitch_c
-    const/16 v6, 0xd
+    const/16 v6, 0x6e
 
     goto :goto_2
 
@@ -268,7 +268,7 @@
     .locals 0
 
     .prologue
-    .line 13
+    .line 14
     iput-object p1, p0, Lcom/whatsapp/gallerypicker/ImageGallery$3;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -286,67 +286,14 @@
 
     const/4 v4, 0x0
 
-    sget v0, Lcom/whatsapp/gallerypicker/ImagePreview;->d:I
+    sget-boolean v0, Lcom/whatsapp/gallerypicker/ImagePreview;->x:Z
 
-    .line 14
+    .line 11
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 12
-    sget-object v2, Lcom/whatsapp/gallerypicker/ImageGallery$3;->z:[Ljava/lang/String;
-
-    aget-object v2, v2, v4
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 10
-    sget-object v2, Lcom/whatsapp/gallerypicker/ImageGallery$3;->z:[Ljava/lang/String;
-
-    const/16 v3, 0x8
-
-    aget-object v2, v2, v3
-
-    invoke-static {v2}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-
-    if-eqz v0, :cond_4
-
-    .line 17
-    :cond_0
-    sget-object v2, Lcom/whatsapp/gallerypicker/ImageGallery$3;->z:[Ljava/lang/String;
-
-    const/4 v3, 0x2
-
-    aget-object v2, v2, v3
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    .line 5
-    sget-object v2, Lcom/whatsapp/gallerypicker/ImageGallery$3;->z:[Ljava/lang/String;
-
-    const/16 v3, 0x9
-
-    aget-object v2, v2, v3
-
-    invoke-static {v2}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
-
     .line 1
-    iget-object v2, p0, Lcom/whatsapp/gallerypicker/ImageGallery$3;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
-
-    invoke-static {v2, v5, v4}, Lcom/whatsapp/gallerypicker/ImageGallery;->a(Lcom/whatsapp/gallerypicker/ImageGallery;ZZ)V
-
-    if-eqz v0, :cond_4
-
-    .line 9
-    :cond_1
     sget-object v2, Lcom/whatsapp/gallerypicker/ImageGallery$3;->z:[Ljava/lang/String;
 
     const/4 v3, 0x4
@@ -357,9 +304,62 @@
 
     move-result v2
 
+    if-eqz v2, :cond_0
+
+    .line 6
+    sget-object v2, Lcom/whatsapp/gallerypicker/ImageGallery$3;->z:[Ljava/lang/String;
+
+    aget-object v2, v2, v5
+
+    invoke-static {v2}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    if-eqz v0, :cond_4
+
+    .line 13
+    :cond_0
+    sget-object v2, Lcom/whatsapp/gallerypicker/ImageGallery$3;->z:[Ljava/lang/String;
+
+    const/4 v3, 0x5
+
+    aget-object v2, v2, v3
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 16
+    sget-object v2, Lcom/whatsapp/gallerypicker/ImageGallery$3;->z:[Ljava/lang/String;
+
+    const/4 v3, 0x2
+
+    aget-object v2, v2, v3
+
+    invoke-static {v2}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    .line 7
+    iget-object v2, p0, Lcom/whatsapp/gallerypicker/ImageGallery$3;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
+
+    invoke-static {v2, v5, v4}, Lcom/whatsapp/gallerypicker/ImageGallery;->a(Lcom/whatsapp/gallerypicker/ImageGallery;ZZ)V
+
+    if-eqz v0, :cond_4
+
+    .line 9
+    :cond_1
+    sget-object v2, Lcom/whatsapp/gallerypicker/ImageGallery$3;->z:[Ljava/lang/String;
+
+    const/4 v3, 0x3
+
+    aget-object v2, v2, v3
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
     if-eqz v2, :cond_2
 
-    .line 3
+    .line 10
     sget-object v2, Lcom/whatsapp/gallerypicker/ImageGallery$3;->z:[Ljava/lang/String;
 
     const/4 v3, 0x6
@@ -368,7 +368,7 @@
 
     invoke-static {v2}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 2
+    .line 5
     iget-object v2, p0, Lcom/whatsapp/gallerypicker/ImageGallery$3;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
 
     invoke-static {v2, v4, v5}, Lcom/whatsapp/gallerypicker/ImageGallery;->a(Lcom/whatsapp/gallerypicker/ImageGallery;ZZ)V
@@ -389,27 +389,25 @@
 
     if-eqz v2, :cond_3
 
-    .line 6
+    .line 8
     sget-object v2, Lcom/whatsapp/gallerypicker/ImageGallery$3;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x5
-
-    aget-object v2, v2, v3
+    aget-object v2, v2, v4
 
     invoke-static {v2}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 7
+    .line 12
     iget-object v2, p0, Lcom/whatsapp/gallerypicker/ImageGallery$3;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
 
     invoke-static {v2, v4, v4}, Lcom/whatsapp/gallerypicker/ImageGallery;->a(Lcom/whatsapp/gallerypicker/ImageGallery;ZZ)V
 
     if-eqz v0, :cond_4
 
-    .line 15
+    .line 3
     :cond_3
     sget-object v0, Lcom/whatsapp/gallerypicker/ImageGallery$3;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x3
+    const/16 v2, 0x8
 
     aget-object v0, v0, v2
 
@@ -419,19 +417,21 @@
 
     if-eqz v0, :cond_4
 
-    .line 16
+    .line 17
     sget-object v0, Lcom/whatsapp/gallerypicker/ImageGallery$3;->z:[Ljava/lang/String;
 
-    aget-object v0, v0, v5
+    const/16 v1, 0x9
+
+    aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 8
+    .line 2
     iget-object v0, p0, Lcom/whatsapp/gallerypicker/ImageGallery$3;->a:Lcom/whatsapp/gallerypicker/ImageGallery;
 
     invoke-static {v0, v5, v4}, Lcom/whatsapp/gallerypicker/ImageGallery;->a(Lcom/whatsapp/gallerypicker/ImageGallery;ZZ)V
 
-    .line 11
+    .line 15
     :cond_4
     return-void
 .end method

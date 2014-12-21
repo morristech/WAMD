@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Pressione e segure para gravar, solte para enviar</string>
     <string name="audio_note_tip_2">Por favor, grave uma mensagem mais longa.</string>
     <string name="audio_note_top_mic_tip">Por favor, fale ao microfone na parte de cima do seu aparelho</string>
-    <string name="auth_client_needs_enabling_title">Um aplicativo requer a ativação do Google Play Services.</string>
-    <string name="auth_client_needs_installation_title">Um aplicativo requer a instalação do Google Play Services.</string>
-    <string name="auth_client_needs_update_title">Um aplicativo requer a atualização do Google Play Services.</string>
-    <string name="auth_client_play_services_err_notification_msg">Ocorreu um erro no Google Play Services</string>
-    <string name="auth_client_requested_by_msg">Solicitado por %1$s</string>
-    <string name="auth_client_using_bad_version_title">Um aplicativo tentou usar uma versão errada do Google Play Services.</string>
-    <string name="barcode_scanner_dialog_body">Esse aplicativo requer um leitor de código de barras. Deseja instalar um?</string>
-    <string name="barcode_scanner_dialog_title">Instalar Leitor de Código de Barras?</string>
     <string name="block">Bloquear</string>
     <string name="block_ask">Tem certeza de que deseja bloquear este contato?</string>
     <string name="block_list_desc_1">"Toque no ícone no canto superior direito para selecionar um contato para bloquear.
@@ -161,23 +153,32 @@ Se você possui um novo número e um novo telefone, você deve, primeiro, altera
     <string name="color_red">Vermelha</string>
     <string name="color_white">Branca</string>
     <string name="color_yellow">Amarela</string>
+    <string name="common_android_wear_notification_needs_update_text">Um app exige uma atualização do app Android Wear.</string>
+    <string name="common_android_wear_update_text">Este app só funciona com uma versão atualizada do app Android Wear.</string>
+    <string name="common_android_wear_update_title">Atualizar o Android Wear</string>
     <string name="common_google_play_services_enable_button">Ativar o Google Play Services</string>
-    <string name="common_google_play_services_enable_text">Este aplicativo só funciona com o Google Play Services ativado.</string>
+    <string name="common_google_play_services_enable_text">Este app só funciona com o Google Play Services ativado.</string>
     <string name="common_google_play_services_enable_title">Ative o Google Play Services</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Solicitado por %1$s</string>
     <string name="common_google_play_services_install_button">Instalar o Google Play Services</string>
-    <string name="common_google_play_services_install_text_phone">Este aplicativo não funciona sem o Google Play Services, que não está instalado em seu telefone.</string>
-    <string name="common_google_play_services_install_text_tablet">Este aplicativo não funciona sem o Google Play Services, que não está instalado em seu tablet.</string>
+    <string name="common_google_play_services_install_text_phone">Este app não funciona sem o Google Play Services, que não está instalado em seu telefone.</string>
+    <string name="common_google_play_services_install_text_tablet">Este app não funciona sem o Google Play Services, que não está instalado em seu tablet.</string>
     <string name="common_google_play_services_install_title">Instale o Google Play Services</string>
     <string name="common_google_play_services_invalid_account_text">A conta especificada não existe no dispositivo. Escolha outra conta.</string>
     <string name="common_google_play_services_invalid_account_title">Conta inválida</string>
+    <string name="common_google_play_services_needs_enabling_title">Um app requer a ativação do Google Play Services.</string>
     <string name="common_google_play_services_network_error_text">É necessária uma conexão de dados para conectar ao Google Play Services.</string>
     <string name="common_google_play_services_network_error_title">Erro na rede</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Um app requer a instalação do Google Play Services.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Um app requer a atualização do Google Play Services.</string>
+    <string name="common_google_play_services_notification_ticker">Erro do Google Play Services</string>
     <string name="common_google_play_services_unknown_issue">Problema desconhecido com o Google Play Services.</string>
-    <string name="common_google_play_services_unsupported_text">O Google Play Services, necessário para alguns dos aplicativos, não é compatível com seu dispositivo. Entre em contato com o fabricante para obter assistência.</string>
+    <string name="common_google_play_services_unsupported_text">O Google Play Services, necessário para alguns dos apps, não é compatível com seu dispositivo. Entre em contato com o fabricante para obter assistência.</string>
     <string name="common_google_play_services_unsupported_title">Play Services</string>
     <string name="common_google_play_services_update_button">Atualizar</string>
-    <string name="common_google_play_services_update_text">Este aplicativo só funciona com uma versão atualizada do Google Play Services.</string>
+    <string name="common_google_play_services_update_text">Este app só funciona com uma versão atualizada do Google Play Services.</string>
     <string name="common_google_play_services_update_title">Atualize o Google Play Services</string>
+    <string name="common_open_on_phone">Abrir no smartphone</string>
     <string name="common_signin_button_text">Login</string>
     <string name="common_signin_button_text_long">Fazer login com o Google</string>
     <string name="confirm_forward_msg">Encaminhar para %s?</string>
@@ -354,7 +355,6 @@ Disponível: %1$s"</string>
     <string name="eula_description">Troque mensagens móveis em várias plataformas com amigos de todo o mundo</string>
     <string name="eula_tablets_not_supported">Obs: tablets ainda não são compatíveis.</string>
     <string name="eula_terms_of_service">Termos de Serviço</string>
-    <string name="eula_title">Boas vindas ao WhatsApp!</string>
     <string name="existing_contact">Existente</string>
     <string name="exit">Sair</string>
     <string name="exit_group">Sair do grupo</string>
@@ -529,7 +529,6 @@ Sua assinatura agora expira em %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Não é possível fazer o download porque não há espaço suficiente no armazenamento interno compartilhado. Remova alguns arquivos do armazenamento e tente novamente.</string>
     <string name="invalid_media_message_download">Não é possível fazer download de mídia de uma mensagem inválida. Tente enviar a mensagem novamente.</string>
     <string name="invalid_message_forward">A mensagem não pode ser encaminhada para um contato inválido.</string>
-    <string name="invalid_qr_code">Código QR inválido</string>
     <string name="invalid_url_for_download">Não pode baixar. Por favor, solicitamos que seja reenviado.</string>
     <string name="invite">Convidar</string>
     <string name="invite_friends">Convide seus amigos</string>
@@ -575,7 +574,6 @@ O WhatsApp só pode ser instalado em um aparelho para cada número de telefone."
     <string name="menuitem_add">Adicionar</string>
     <string name="menuitem_contacts">Contatos</string>
     <string name="menuitem_debug">Depurar</string>
-    <string name="menuitem_delete_qr">Apagar código QR</string>
     <string name="menuitem_groupchat">Novo grupo</string>
     <string name="menuitem_list">Nova transmissão</string>
     <string name="menuitem_mute">Silenciar</string>
@@ -616,14 +614,10 @@ O WhatsApp só pode ser instalado em um aparelho para cada número de telefone."
     <string name="msg_store_backup_failed">Não foi possível fazer backup das mensagens</string>
     <string name="msg_store_backup_failed_try_again_later">Não foi possível fazer o back up das mensagens. Por favor, tente novamente mais tarde.</string>
     <string name="msg_store_backup_found">Backup encontrado</string>
-    <string name="msg_store_backup_found_registration">Backup de mensagens localizado!</string>
     <string name="msg_store_backup_skipped">Backup Ignorado</string>
     <string name="msg_store_backup_skipped_no_media">Backup de mensagens ignorado: nenhum cartão de memória encontrado.</string>
     <string name="msg_store_backup_skipped_read_only_media">Backup de mensagens ignorado: cartão de memória apenas para leitura.</string>
     <string name="msg_store_confirm">Confirmar</string>
-    <string name="msg_store_creation_backup_message">Deseja restaurar o histórico de mensagens a partir do backup?</string>
-    <string name="msg_store_do_not_restore">Não restaurar</string>
-    <string name="msg_store_do_not_restore_no_thanks">Ignorar</string>
     <string name="msg_store_error_found">Ocorreu um erro. Por favor, pare e reinicie o WhatsApp</string>
     <string name="msg_store_error_not_restored">Desculpe, não foi possível recuperar seu histórico de mensagens.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Você perderá as mensagens. Tem certeza de que não deseja restaurar o histórico de mensagens a partir do backup?</string>
@@ -650,9 +644,6 @@ O WhatsApp só pode ser instalado em um aparelho para cada número de telefone."
     <string name="need_sd_card_shared_storage">Desligue o armazenamento USB e tente novamente.</string>
     <string name="network_required">Você não tem acesso à rede no momento.</string>
     <string name="network_usage_ask_reset_message">Tem certeza de que deseja reiniciar as estatísticas?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Última reinicialização: %1$s</string>
     <string name="network_usage_media_bytes_received">Mídia recebida (B):</string>
     <string name="network_usage_media_bytes_sent">Mídia enviada (B):</string>
@@ -1010,19 +1001,19 @@ Enviado através do WhatsApp"</string>
     <string name="software_expired_get_from_play">Esta versão do WhatsApp é muito antiga e não funciona mais. Por favor, acesse o Google Play e baixe a última versão.</string>
     <string name="software_expired_get_from_play_with_date">Essa versão do WhatsApp se tornou obsoleta em &lt;b>%1$s&lt;/b>. Por favor vá até o Google Play para fazer download da última versão.&lt;br>&lt;br> A data em seu aparelhp é &lt;b>%2$s&lt;/b>. Se isso está incorreto por favor corrija a configuração de data do seu dispositivo e então reinicie o WhatsApp.</string>
     <string name="software_expired_with_date">Esta versão do WhatsApp ficou obsoleta em &lt;b>%1$s&lt;/b>. Toque em “Download” para baixar a última versão.&lt;br>&lt;br>A data do seu aparelho é &lt;b>%2$s&lt;/b>. Se ela estiver incorreta, por favor, corrija as configurações de data do seu dispositivo e reinicie o WhatsApp.</string>
-    <string name="spam_generic">"Você está temporariamente banido do WhatsApp porque você pode ter violado nossos Termos de Serviço.
-Você poderá usar o WhatsApp novamente em:"</string>
+    <string name="spam_generic">"Você está temporariamente banido do WhatsApp pois pode ter violado os nossos Termos de Serviço. 
+
+ Você poderá usar o WhatsApp novamente em:"</string>
     <string name="spam_generic_data_connection_missing">Verifique se o seu telefone tem uma conexão de dados ativa.</string>
     <string name="spam_generic_unknown_time_left">Você está temporariamente banido do WhatsApp pois pode ter violado nossos termos de serviço. Em breve você poderá usar o WhatsApp novamente.</string>
     <string name="spam_learn_more">Saiba mais</string>
     <string name="spam_title">Temporariamente banido</string>
-    <string name="spam_too_many_blocks">Você está banido temporariamente do WhatsApp porque muitas pessoas o bloquearam.</string>
-    <string name="spam_too_many_groups">"Você está temporariamente banido do WhatsApp porque você criou muitos grupos com pessoas que não tem você em seus contatos.
+    <string name="spam_too_many_groups">"Você está temporariamente banido do WhatsApp porque você criou muitos grupos com pessoas que não possuem você na lista de contatos.
+
+Você poderá utilizar o WhatsApp novamente em:"</string>
+    <string name="spam_too_many_messages">"Você está temporariamente banido do WhatsApp porque você enviou muitas mensagens para pessoas que não possuem você em suas listas de contatos.
+
 Você poderá usar o WhatsApp novamente em:"</string>
-    <string name="spam_too_many_messages">"Você está temporariamente banido do WhatsApp porque você mandou muitas mensagens para pessoas que não tem você em seus contatos.
-Você poderá usar o WhatsApp novamente em:"</string>
-    <string name="spam_too_many_people">"Você está temporariamente banido do WhatsApp pois você enviou a mesma mensagem para muitas pessoas.
- Você poderá voltar a usar o WhatsApp de novo em:"</string>
     <string name="status">Status</string>
     <string name="status_default_at_gym">Na academia</string>
     <string name="status_default_at_movies">No cinema</string>
@@ -1190,6 +1181,7 @@ Sente-se e relaxe. Avisaremos quando terminarmos a verificação."</string>
     <string name="view_list_media">Mídia da lista de transmissão</string>
     <string name="view_website">Ver site</string>
     <string name="voip_activity_label">Chamada de voz</string>
+    <string name="voip_call_bluetooth_toggle_description">Ativar/Desativar Bluetooth</string>
     <string name="voip_call_end_button_description">Finalizar Chamada</string>
     <string name="voip_call_goto_chat_description">Abrir Conversa</string>
     <string name="voip_call_incoming">CHAMADA</string>
@@ -1243,5 +1235,4 @@ Pressione SMS para enviar um SMS normal para este contato, Convidar para enviar 
     <string name="yesterday">Ontem</string>
     <string name="yesterday_at">ontem às %s</string>
     <string name="you">Você</string>
-    <string name="voip_call_bluetooth_toggle_description">Ativar/Desativar Bluetooth</string>
 </resources>

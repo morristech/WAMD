@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static a:Z
+.field public static a:I
 
 
 # direct methods
@@ -12,10 +12,10 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 4
     invoke-direct {p0, p1}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;)V
 
-    .line 4
+    .line 2
     return-void
 .end method
 
@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 1
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 5
@@ -36,7 +36,7 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 3
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->onCreateView(Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0

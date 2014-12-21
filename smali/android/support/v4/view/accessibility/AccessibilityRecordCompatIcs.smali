@@ -8,7 +8,7 @@
     .locals 1
 
     .prologue
-    .line 9
+    .line 8
     invoke-static {}, Landroid/view/accessibility/AccessibilityRecord;->obtain()Landroid/view/accessibility/AccessibilityRecord;
 
     move-result-object v0
@@ -20,12 +20,12 @@
     .locals 0
 
     .prologue
-    .line 8
+    .line 9
     check-cast p0, Landroid/view/accessibility/AccessibilityRecord;
 
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityRecord;->setFromIndex(I)V
 
-    .line 7
+    .line 6
     return-void
 .end method
 
@@ -33,7 +33,7 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 5
     check-cast p0, Landroid/view/accessibility/AccessibilityRecord;
 
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityRecord;->setItemCount(I)V
@@ -51,7 +51,7 @@
 
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityRecord;->setScrollable(Z)V
 
-    .line 6
+    .line 3
     return-void
 .end method
 
@@ -59,11 +59,11 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 7
     check-cast p0, Landroid/view/accessibility/AccessibilityRecord;
 
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityRecord;->setToIndex(I)V
 
-    .line 5
+    .line 4
     return-void
 .end method

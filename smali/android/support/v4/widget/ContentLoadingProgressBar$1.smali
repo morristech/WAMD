@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 5
     iput-object p1, p0, Landroid/support/v4/widget/ContentLoadingProgressBar$1;->this$0:Landroid/support/v4/widget/ContentLoadingProgressBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,20 +36,20 @@
 
     invoke-static {v0, v1}, Landroid/support/v4/widget/ContentLoadingProgressBar;->access$002(Landroid/support/v4/widget/ContentLoadingProgressBar;Z)Z
 
-    .line 5
+    .line 1
     iget-object v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar$1;->this$0:Landroid/support/v4/widget/ContentLoadingProgressBar;
 
     const-wide/16 v2, -0x1
 
     invoke-static {v0, v2, v3}, Landroid/support/v4/widget/ContentLoadingProgressBar;->access$102(Landroid/support/v4/widget/ContentLoadingProgressBar;J)J
 
-    .line 1
+    .line 2
     iget-object v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar$1;->this$0:Landroid/support/v4/widget/ContentLoadingProgressBar;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/support/v4/widget/ContentLoadingProgressBar;->setVisibility(I)V
 
-    .line 2
+    .line 3
     return-void
 .end method

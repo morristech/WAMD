@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final a:Lcom/whatsapp/RegisterPhone;
+.field final a:Lcom/whatsapp/a_3;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/RegisterPhone;)V
+.method constructor <init>(Lcom/whatsapp/a_3;)V
     .locals 0
 
     .prologue
     .line 3
-    iput-object p1, p0, Lcom/whatsapp/ta;->a:Lcom/whatsapp/RegisterPhone;
+    iput-object p1, p0, Lcom/whatsapp/ta;->a:Lcom/whatsapp/a_3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,29 +29,18 @@
     .locals 2
 
     .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/ta;->a:Lcom/whatsapp/RegisterPhone;
-
-    iget-boolean v0, v0, Lcom/whatsapp/RegisterPhone;->n:Z
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/whatsapp/ta;->a:Lcom/whatsapp/RegisterPhone;
-
-    invoke-virtual {v0}, Lcom/whatsapp/RegisterPhone;->isFinishing()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
+    const/4 v1, 0x0
 
     .line 4
-    iget-object v0, p0, Lcom/whatsapp/ta;->a:Lcom/whatsapp/RegisterPhone;
+    iget-object v0, p0, Lcom/whatsapp/ta;->a:Lcom/whatsapp/a_3;
 
-    const/16 v1, 0x15
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/RegisterPhone;->showDialog(I)V
+    iput-object v1, v0, Lcom/whatsapp/a_3;->a:Landroid/graphics/drawable/Drawable;
 
     .line 1
-    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/ta;->a:Lcom/whatsapp/a_3;
+
+    iput-object v1, v0, Lcom/whatsapp/a_3;->e:Lcom/whatsapp/MediaData;
+
+    .line 2
     return-void
 .end method

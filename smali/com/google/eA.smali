@@ -1,162 +1,257 @@
-.class public abstract Lcom/google/eA;
-.super Lcom/google/e5;
+.class public final enum Lcom/google/eA;
+.super Ljava/lang/Enum;
 .source "eA.java"
 
 
 # static fields
-.field private static final z:Ljava/lang/String;
+.field public static final FORCE_NONE:Lcom/google/eA;
+
+.field public static final FORCE_RECTANGLE:Lcom/google/eA;
+
+.field public static final FORCE_SQUARE:Lcom/google/eA;
+
+.field private static final synthetic a:[Lcom/google/eA;
+
+.field public static b:Z
+
+.field private static final z:[Ljava/lang/String;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 13
 
-    const-string v0, "\u001d\u0007!\u0007` \u001ch\u000759\u001f\'\u0007%-O<\u001b`+\nh\u001b6,\u001d:\u001d$-\n&T\"0O;\u0001\"*\u0003)\u00073,\u001cf"
+    .prologue
+    const/4 v12, 0x3
 
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+    const/4 v5, 0x2
 
-    move-result-object v0
+    const/4 v2, 0x1
 
-    array-length v1, v0
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    new-array v4, v12, [Ljava/lang/String;
 
-    move v3, v2
+    const-string v3, "^ZFk{GFE}\u007fJP"
 
-    move v2, v1
+    const/4 v0, -0x1
 
-    move-object v1, v0
+    move-object v6, v4
+
+    move-object v7, v4
+
+    move v4, v1
 
     :goto_0
-    if-gt v2, v3, :cond_0
+    invoke-virtual {v3}, Ljava/lang/String;->toCharArray()[C
 
-    new-instance v0, Ljava/lang/String;
+    move-result-object v3
 
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
+    array-length v8, v3
 
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+    move v9, v8
 
-    move-result-object v0
+    move v10, v1
 
-    sput-object v0, Lcom/google/eA;->z:Ljava/lang/String;
+    move-object v8, v3
 
-    return-void
+    :goto_1
+    if-gt v9, v10, :cond_0
 
-    :cond_0
-    aget-char v4, v1, v3
+    new-instance v3, Ljava/lang/String;
 
-    rem-int/lit8 v0, v3, 0x5
+    invoke-direct {v3, v8}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v3}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v3
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x40
+    aput-object v3, v6, v4
 
-    :goto_1
-    xor-int/2addr v0, v4
+    const-string v0, "^ZFk{G[[f{"
 
-    int-to-char v0, v0
+    move-object v3, v0
 
-    aput-char v0, v1, v3
+    move v4, v2
 
-    add-int/lit8 v0, v3, 0x1
+    move-object v6, v7
 
-    move v3, v0
+    move v0, v1
 
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x49
+    aput-object v3, v6, v4
 
-    goto :goto_1
+    const-string v0, "^ZFk{GGQkjY[Sd{"
+
+    move-object v3, v0
+
+    move v4, v5
+
+    move-object v6, v7
+
+    move v0, v2
+
+    goto :goto_0
 
     :pswitch_1
-    const/16 v0, 0x6f
+    aput-object v3, v6, v4
+
+    sput-object v7, Lcom/google/eA;->z:[Ljava/lang/String;
+
+    .line 6
+    new-instance v0, Lcom/google/eA;
+
+    sget-object v3, Lcom/google/eA;->z:[Ljava/lang/String;
+
+    aget-object v3, v3, v2
+
+    invoke-direct {v0, v3, v1}, Lcom/google/eA;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/eA;->FORCE_NONE:Lcom/google/eA;
+
+    .line 2
+    new-instance v0, Lcom/google/eA;
+
+    sget-object v3, Lcom/google/eA;->z:[Ljava/lang/String;
+
+    aget-object v3, v3, v1
+
+    invoke-direct {v0, v3, v2}, Lcom/google/eA;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/eA;->FORCE_SQUARE:Lcom/google/eA;
+
+    .line 1
+    new-instance v0, Lcom/google/eA;
+
+    sget-object v3, Lcom/google/eA;->z:[Ljava/lang/String;
+
+    aget-object v3, v3, v5
+
+    invoke-direct {v0, v3, v5}, Lcom/google/eA;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/eA;->FORCE_RECTANGLE:Lcom/google/eA;
+
+    .line 4
+    new-array v0, v12, [Lcom/google/eA;
+
+    sget-object v3, Lcom/google/eA;->FORCE_NONE:Lcom/google/eA;
+
+    aput-object v3, v0, v1
+
+    sget-object v1, Lcom/google/eA;->FORCE_SQUARE:Lcom/google/eA;
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/google/eA;->FORCE_RECTANGLE:Lcom/google/eA;
+
+    aput-object v1, v0, v5
+
+    sput-object v0, Lcom/google/eA;->a:[Lcom/google/eA;
+
+    return-void
+
+    .line 4294967295
+    :cond_0
+    aget-char v11, v8, v10
+
+    rem-int/lit8 v3, v10, 0x5
+
+    packed-switch v3, :pswitch_data_1
+
+    const/16 v3, 0x3e
+
+    :goto_2
+    xor-int/2addr v3, v11
+
+    int-to-char v3, v3
+
+    aput-char v3, v8, v10
+
+    add-int/lit8 v3, v10, 0x1
+
+    move v10, v3
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x48
+    const/16 v3, 0x18
 
-    goto :goto_1
+    goto :goto_2
 
     :pswitch_3
-    const/16 v0, 0x74
+    const/16 v3, 0x15
 
-    goto :goto_1
+    goto :goto_2
+
+    :pswitch_4
+    const/16 v3, 0x14
+
+    goto :goto_2
+
+    :pswitch_5
+    const/16 v3, 0x28
+
+    goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
         :pswitch_1
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
         :pswitch_2
         :pswitch_3
+        :pswitch_4
+        :pswitch_5
     .end packed-switch
 .end method
 
-.method protected constructor <init>()V
+.method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
 
     .prologue
-    .line 1
-    invoke-direct {p0}, Lcom/google/e5;-><init>()V
+    .line 3
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
 .end method
 
+.method public static valueOf(Ljava/lang/String;)Lcom/google/eA;
+    .locals 1
 
-# virtual methods
-.method public abstract a()Lcom/google/a6;
+    .prologue
+    .line 7
+    const-class v0, Lcom/google/eA;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/eA;
+
+    return-object v0
 .end method
 
-.method public a()Lcom/google/e5;
+.method public static values()[Lcom/google/eA;
     .locals 1
 
     .prologue
     .line 5
-    invoke-virtual {p0}, Lcom/google/eA;->b()Lcom/google/eA;
+    sget-object v0, Lcom/google/eA;->a:[Lcom/google/eA;
+
+    invoke-virtual {v0}, [Lcom/google/eA;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    return-object v0
-.end method
-
-.method public abstract a(Lcom/google/a6;)Lcom/google/eA;
-.end method
-
-.method public b()Lcom/google/eA;
-    .locals 2
-
-    .prologue
-    .line 4
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    sget-object v1, Lcom/google/eA;->z:Ljava/lang/String;
-
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public c()Lcom/google/eE;
-    .locals 1
-
-    .prologue
-    .line 3
-    invoke-virtual {p0}, Lcom/google/eA;->a()Lcom/google/a6;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public clone()Ljava/lang/Object;
-    .locals 1
-
-    .prologue
-    .line 2
-    invoke-virtual {p0}, Lcom/google/eA;->b()Lcom/google/eA;
-
-    move-result-object v0
+    check-cast v0, [Lcom/google/eA;
 
     return-object v0
 .end method

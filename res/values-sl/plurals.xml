@@ -260,12 +260,6 @@ naročnine"</item>
         <item quantity="two">%d ostajata</item>
         <item quantity="few">%d ostajajo</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Pripravljeni ste za nadaljevanje. Ravno smo obnovili %,d sporočil.</item>
-        <item quantity="one">Pripravljeni ste za nadaljevanje. Ravno smo obnovili %,d sporočilo.</item>
-        <item quantity="two">Pripravljeni ste za nadaljevanje. Ravno smo obnovili %,d sporočili.</item>
-        <item quantity="few">Pripravljeni ste za nadaljevanje. Ravno smo obnovili %,d sporočila.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Pošiljam %1$d videov %2$s</item>
         <item quantity="one">Pošiljam %1$d video %2$s</item>

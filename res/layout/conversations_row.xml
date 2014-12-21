@@ -4,9 +4,6 @@
     <FrameLayout android:id="@id/contact_selector" android:paddingLeft="@dimen/list_row_padding" android:layout_width="wrap_content" android:layout_height="@dimen/conversations_row_height" android:layout_alignParentLeft="true">
         <com.whatsapp.ThumbnailButton android:layout_gravity="center|left" android:id="@id/contact_photo" android:layout_width="@dimen/small_avatar_size" android:layout_height="@dimen/small_avatar_size" android:scaleType="fitCenter" whatsapp:tbtnRadius="@dimen/small_avatar_radius" whatsapp:tbtnForegroundOnly="true" />
     </FrameLayout>
-    <LinearLayout android:paddingLeft="@dimen/list_row_padding" android:layout_width="wrap_content" android:layout_height="@dimen/conversations_row_height" android:layout_alignParentLeft="true">
-        <ImageView android:layout_gravity="center|left" android:layout_width="@dimen/small_avatar_size" android:layout_height="@dimen/small_avatar_size" android:scaleType="fitCenter" android:src="@drawable/wamd_avatar_mask_small_white"/>
-    </LinearLayout>
     <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/list_row_padding" android:paddingRight="@dimen/list_row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/contact_selector" android:layout_centerVertical="true">
         <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip">
             <FrameLayout android:id="@id/conversations_row_contact_name_holder" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">

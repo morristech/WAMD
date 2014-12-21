@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 10
     invoke-direct {p0}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordStubImpl;-><init>()V
 
     return-void
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 5
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setFromIndex(Ljava/lang/Object;I)V
 
-    .line 7
+    .line 9
     return-void
 .end method
 
@@ -43,10 +43,10 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 7
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setItemCount(Ljava/lang/Object;I)V
 
-    .line 5
+    .line 1
     return-void
 .end method
 
@@ -54,10 +54,10 @@
     .locals 0
 
     .prologue
-    .line 10
+    .line 8
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setScrollable(Ljava/lang/Object;Z)V
 
-    .line 8
+    .line 2
     return-void
 .end method
 
@@ -65,9 +65,9 @@
     .locals 0
 
     .prologue
-    .line 3
+    .line 4
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setToIndex(Ljava/lang/Object;I)V
 
-    .line 9
+    .line 3
     return-void
 .end method

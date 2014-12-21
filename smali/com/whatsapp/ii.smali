@@ -3,24 +3,20 @@
 .source "ii.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ix;
-
-.field final b:Lcom/whatsapp/contact/n;
+.field final a:Lcom/whatsapp/Conversation;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ix;Lcom/whatsapp/contact/n;)V
+.method constructor <init>(Lcom/whatsapp/Conversation;)V
     .locals 0
 
     .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/ix;
-
-    iput-object p2, p0, Lcom/whatsapp/ii;->b:Lcom/whatsapp/contact/n;
+    .line 4
+    iput-object p1, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/Conversation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,151 +25,89 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 6
+.method public onClick(Landroid/view/View;)V
+    .locals 3
 
     .prologue
-    const/4 v5, 0x0
-
-    const/4 v4, 0x1
-
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
-
-    .line 4
-    iget-object v1, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/ix;
-
-    iget-object v1, v1, Lcom/whatsapp/ix;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-virtual {v1, v5}, Lcom/whatsapp/ContactPicker;->setSupportProgressBarIndeterminateVisibility(Z)V
-
-    .line 18
-    iget-object v1, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/ix;
-
-    iget-object v1, v1, Lcom/whatsapp/ix;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v1}, Lcom/whatsapp/ContactPicker;->o(Lcom/whatsapp/ContactPicker;)V
-
-    .line 19
-    iget-object v1, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/ix;
-
-    iget-object v1, v1, Lcom/whatsapp/ix;->a:Lcom/whatsapp/ContactPicker;
-
-    invoke-static {v1}, Lcom/whatsapp/ContactPicker;->h(Lcom/whatsapp/ContactPicker;)V
-
-    .line 9
-    sget-object v1, Lcom/whatsapp/_j;->a:[I
-
-    iget-object v2, p0, Lcom/whatsapp/ii;->b:Lcom/whatsapp/contact/n;
-
-    invoke-virtual {v2}, Lcom/whatsapp/contact/n;->ordinal()I
-
-    move-result v2
-
-    aget v1, v1, v2
-
-    packed-switch v1, :pswitch_data_0
-
-    .line 2
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 12
-    :pswitch_0
-    sget-object v1, Lcom/whatsapp/App;->aD:Lcom/whatsapp/a8f;
-
-    invoke-virtual {v1, v4}, Lcom/whatsapp/a8f;->a(Z)V
-
-    .line 7
-    sget-object v1, Lcom/whatsapp/App;->ah:Lcom/whatsapp/App;
-
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v2
-
-    invoke-virtual {v1, v2, v3}, Lcom/whatsapp/App;->d(J)V
-
-    .line 17
-    iget-object v1, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/ix;
-
-    iget-object v1, v1, Lcom/whatsapp/ix;->a:Lcom/whatsapp/ContactPicker;
-
-    const v2, 0x7f0e00a0
-
-    invoke-static {v1, v2, v5}, Lcom/whatsapp/App;->a(Landroid/content/Context;II)V
-
-    .line 13
-    if-eqz v0, :cond_0
-
-    .line 6
-    :pswitch_1
-    iget-object v1, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/ix;
-
-    iget-object v1, v1, Lcom/whatsapp/ix;->a:Lcom/whatsapp/ContactPicker;
-
-    const v2, 0x7f0e009e
-
-    invoke-virtual {v1, v2}, Lcom/whatsapp/ContactPicker;->a(I)V
-
-    .line 1
-    if-eqz v0, :cond_0
-
-    .line 8
-    :pswitch_2
-    iget-object v1, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/ix;
-
-    iget-object v1, v1, Lcom/whatsapp/ix;->a:Lcom/whatsapp/ContactPicker;
-
-    const v2, 0x7f0e009d
-
-    invoke-virtual {v1, v2}, Lcom/whatsapp/ContactPicker;->a(I)V
-
-    .line 14
-    sget-object v1, Lcom/whatsapp/App;->aD:Lcom/whatsapp/a8f;
-
-    invoke-virtual {v1, v4}, Lcom/whatsapp/a8f;->c(Z)V
-
-    .line 15
-    if-eqz v0, :cond_0
+    const/16 v2, 0x8
 
     .line 5
-    :pswitch_3
-    iget-object v1, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/ix;
+    iget-object v0, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/Conversation;
 
-    iget-object v1, v1, Lcom/whatsapp/ix;->a:Lcom/whatsapp/ContactPicker;
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->G(Lcom/whatsapp/Conversation;)Landroid/view/ViewGroup;
 
-    const v2, 0x7f0e009f
+    move-result-object v0
 
-    invoke-virtual {v1, v2}, Lcom/whatsapp/ContactPicker;->a(I)V
+    invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 10
-    if-eqz v0, :cond_0
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/Conversation;
 
-    .line 11
-    :pswitch_4
-    iget-object v0, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/ix;
+    iget-object v0, v0, Lcom/whatsapp/Conversation;->M:Landroid/widget/ListView;
 
-    iget-object v0, v0, Lcom/whatsapp/ix;->a:Lcom/whatsapp/ContactPicker;
+    invoke-virtual {v0}, Landroid/widget/ListView;->getLastVisiblePosition()I
 
-    const/4 v1, 0x4
+    move-result v0
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/ContactPicker;->showDialog(I)V
+    iget-object v1, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/Conversation;
 
-    .line 16
-    sget-object v0, Lcom/whatsapp/App;->aD:Lcom/whatsapp/a8f;
+    iget-object v1, v1, Lcom/whatsapp/Conversation;->M:Landroid/widget/ListView;
 
-    invoke-virtual {v0, v4}, Lcom/whatsapp/a8f;->c(Z)V
+    invoke-virtual {v1}, Landroid/widget/ListView;->getCount()I
 
-    goto :goto_0
+    move-result v1
+
+    add-int/lit8 v1, v1, -0x1
+
+    if-lt v0, v1, :cond_0
+
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/Conversation;
+
+    iget-object v0, v0, Lcom/whatsapp/Conversation;->M:Landroid/widget/ListView;
+
+    const/4 v1, 0x2
+
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setTranscriptMode(I)V
+
+    .line 7
+    iget-object v0, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->x(Lcom/whatsapp/Conversation;)V
+
+    .line 8
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/Conversation;
+
+    iget-object v0, v0, Lcom/whatsapp/Conversation;->M:Landroid/widget/ListView;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setFastScrollEnabled(Z)V
+
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->I(Lcom/whatsapp/Conversation;)Lcom/whatsapp/art;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/whatsapp/art;->c()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/ii;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->G(Lcom/whatsapp/Conversation;)Landroid/view/ViewGroup;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     .line 9
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_2
-        :pswitch_3
-        :pswitch_4
-    .end packed-switch
+    :cond_1
+    return-void
 .end method

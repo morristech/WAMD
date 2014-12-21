@@ -169,8 +169,8 @@ de servei
         <item quantity="one">%d pendent</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Pots continuar Hem recuperat %,d missatges</item>
-        <item quantity="one">Pots continuar Hem recuperat %,d missatge</item>
+        <item quantity="other">%,d missatges recuperats. Ja hi pots anar.</item>
+        <item quantity="one">%,d missatge recuperat. Ja hi pots anar.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Enviant %1$d vídeos a %2$s</item>

@@ -1,67 +1,71 @@
-.class Lcom/google/fu;
-.super Ljava/util/AbstractList;
+.class public final Lcom/google/fu;
+.super Ljava/lang/Object;
 .source "fu.java"
-
-# interfaces
-.implements Ljava/util/List;
 
 
 # instance fields
-.field a:Lcom/google/cW;
+.field private a:I
+
+.field private b:Z
+
+.field private c:Ljava/lang/String;
+
+.field private d:[I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public a(I)Lcom/google/eG;
-    .locals 1
+.method public a(I)V
+    .locals 0
 
     .prologue
-    .line 1
-    iget-object v0, p0, Lcom/google/fu;->a:Lcom/google/cW;
-
-    invoke-virtual {v0, p1}, Lcom/google/cW;->d(I)Lcom/google/eG;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method a()V
-    .locals 1
-
-    .prologue
-    .line 4
-    iget v0, p0, Lcom/google/fu;->modCount:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    iput v0, p0, Lcom/google/fu;->modCount:I
+    .line 8
+    iput p1, p0, Lcom/google/fu;->a:I
 
     .line 3
     return-void
 .end method
 
-.method public get(I)Ljava/lang/Object;
-    .locals 1
+.method public a(Ljava/lang/String;)V
+    .locals 0
 
     .prologue
-    .line 2
-    invoke-virtual {p0, p1}, Lcom/google/fu;->a(I)Lcom/google/eG;
+    .line 4
+    iput-object p1, p0, Lcom/google/fu;->c:Ljava/lang/String;
 
-    move-result-object v0
-
-    return-object v0
+    .line 5
+    return-void
 .end method
 
-.method public size()I
-    .locals 1
+.method public a(Z)V
+    .locals 0
 
     .prologue
-    .line 5
-    iget-object v0, p0, Lcom/google/fu;->a:Lcom/google/cW;
+    .line 1
+    iput-boolean p1, p0, Lcom/google/fu;->b:Z
 
-    invoke-virtual {v0}, Lcom/google/cW;->a()I
+    .line 2
+    return-void
+.end method
 
-    move-result v0
+.method public a([I)V
+    .locals 0
 
-    return v0
+    .prologue
+    .line 6
+    iput-object p1, p0, Lcom/google/fu;->d:[I
+
+    .line 9
+    return-void
 .end method

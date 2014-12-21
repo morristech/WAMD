@@ -4,8 +4,8 @@
 
 
 # virtual methods
-.method public abstract a()V
+.method public abstract a()Landroid/graphics/Bitmap;
 .end method
 
-.method public abstract a(Landroid/graphics/Bitmap;Z)V
+.method public abstract b()Ljava/lang/String;
 .end method

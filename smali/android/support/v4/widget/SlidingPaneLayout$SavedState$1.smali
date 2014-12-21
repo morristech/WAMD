@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 1
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,7 +23,7 @@
     .locals 2
 
     .prologue
-    .line 5
+    .line 1
     new-instance v0, Landroid/support/v4/widget/SlidingPaneLayout$SavedState;
 
     const/4 v1, 0x0

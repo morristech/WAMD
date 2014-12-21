@@ -169,8 +169,8 @@ szolgáltatásból."</item>
         <item quantity="one">Hátralévő: %d</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Kész is vagyunk! Visszaállítottunk %,d üzenetet.</item>
-        <item quantity="one">Kész is vagyunk! Visszaállítottunk %,d üzenetet.</item>
+        <item quantity="other">%,d üzenet visszaállítva. Készen állsz a folytatásra.</item>
+        <item quantity="one">%,d üzenet visszaállítva. Készen állsz a folytatásra.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">%1$d videó küldése %2$s részére</item>

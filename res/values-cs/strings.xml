@@ -72,14 +72,6 @@
     <string name="audio_note_tip">Podržte pro záznam, uvolněte pro odeslání</string>
     <string name="audio_note_tip_2">Nahrajte delší zprávu</string>
     <string name="audio_note_top_mic_tip">Mluvte do mikrofonu v horní části telefonu</string>
-    <string name="auth_client_needs_enabling_title">Aplikace vyžaduje aktivované Služby Google Play.</string>
-    <string name="auth_client_needs_installation_title">Aplikace vyžaduje instalaci Služeb Google Play.</string>
-    <string name="auth_client_needs_update_title">Aplikace vyžaduje aktualizaci Služeb Google Play.</string>
-    <string name="auth_client_play_services_err_notification_msg">Chyba služeb Google Play</string>
-    <string name="auth_client_requested_by_msg">Požadováno aplikací %1$s</string>
-    <string name="auth_client_using_bad_version_title">Aplikace se pokusila použít nesprávnou verzi Služeb Google Play.</string>
-    <string name="barcode_scanner_dialog_body">Tato aplikace vyžaduje čtečku čárových kódu. Chcete ji nainstalovat?</string>
-    <string name="barcode_scanner_dialog_title">Nainstalovat Barcode Scanner?</string>
     <string name="block">Blokovat</string>
     <string name="block_ask">Opravdu chcete tento kontakt blokovat?</string>
     <string name="block_list_desc_1">"Pokud chcete zablokovat kontakt, klepněte na ikonu v pravém horním rohu.
@@ -113,6 +105,8 @@ Vaše zprávy vysílání obdrží pouze kontakty, které mají v adresáři č�
     <string name="camera_shortcut">Fotoaparát WhatsApp</string>
     <string name="camera_title">Odeslat fotografii nebo video WhatsApp</string>
     <string name="camera_video_preview_title">Poslat video WhatsApp</string>
+    <string name="can_not_start_voip_call_in_airplane_mode">Chcete-li zahájit volání WhatsApp, vypněte nejprve režim Letadlo.</string>
+    <string name="can_not_start_voip_call_in_phone_call">Pokud již probíhá telefonní hovor, nelze zahájit volání WhatsApp.</string>
     <string name="cancel">Storno</string>
     <string name="cannot_send_not_a_group_participant">Nemůžete odesílat zprávy do této skupiny, protože již nejste jejím účastníkem.</string>
     <string name="cannot_send_selected_file">Tento soubor médií nelze odeslat. Vybrali jste neplatný soubor nebo nepodporovaný formát souboru.</string>
@@ -161,23 +155,32 @@ Pokud provádíte výměnu telefonu i telefonního čísla, nejprve změňte č�
     <string name="color_red">Červená</string>
     <string name="color_white">Bílá</string>
     <string name="color_yellow">Žlutá</string>
+    <string name="common_android_wear_notification_needs_update_text">Některá aplikace vyžaduje aktualizaci aplikace Android Wear.</string>
+    <string name="common_android_wear_update_text">Aplikace bude fungovat po aktualizaci aplikace Android Wear.</string>
+    <string name="common_android_wear_update_title">Aktualizujte aplikaci Android Wear</string>
     <string name="common_google_play_services_enable_button">Aktivovat služby Google Play</string>
     <string name="common_google_play_services_enable_text">Ke spuštění této aplikace je třeba aktivovat služby Google Play.</string>
     <string name="common_google_play_services_enable_title">Aktivovat služby Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Požadováno aplikací %1$s</string>
     <string name="common_google_play_services_install_button">Instalovat služby Google Play</string>
     <string name="common_google_play_services_install_text_phone">Ke spuštění této aplikace jsou potřeba služby Google Play, které v telefonu nemáte.</string>
     <string name="common_google_play_services_install_text_tablet">Ke spuštění této aplikace jsou potřeba služby Google Play, které v tabletu nemáte.</string>
     <string name="common_google_play_services_install_title">Instalovat služby Google Play</string>
     <string name="common_google_play_services_invalid_account_text">Zadaný účet v tomto zařízení neexistuje. Zvolte prosím jiný účet.</string>
     <string name="common_google_play_services_invalid_account_title">Neplatný účet</string>
+    <string name="common_google_play_services_needs_enabling_title">Aplikace vyžaduje aktivaci služeb Google Play.</string>
     <string name="common_google_play_services_network_error_text">Připojení ke službám Google Play vyžaduje datové připojení.</string>
     <string name="common_google_play_services_network_error_title">Chyba sítě</string>
+    <string name="common_google_play_services_notification_needs_installation_title">Aplikace vyžaduje instalaci služeb Google Play.</string>
+    <string name="common_google_play_services_notification_needs_update_title">Aplikace vyžaduje aktualizaci služeb Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Chyba služeb Google Play</string>
     <string name="common_google_play_services_unknown_issue">Nastal neznámý problém se službami Google Play.</string>
     <string name="common_google_play_services_unsupported_text">Některé vaše aplikace vyžadují služby Google Play, které ve vašem zařízení nejsou podporovány. S žádostí o pomoc se prosím obraťte na výrobce.</string>
     <string name="common_google_play_services_unsupported_title">Služby Google Play</string>
     <string name="common_google_play_services_update_button">Aktualizovat</string>
     <string name="common_google_play_services_update_text">Ke spuštění této aplikace je třeba aktualizovat služby Google Play.</string>
     <string name="common_google_play_services_update_title">Aktualizace služeb Google Play</string>
+    <string name="common_open_on_phone">Otevřít v telefonu</string>
     <string name="common_signin_button_text">Přihlásit se</string>
     <string name="common_signin_button_text_long">Přihlásit se účtem Google</string>
     <string name="confirm_forward_msg">Přeposlat uživateli %s?</string>
@@ -354,7 +357,7 @@ K dispozici: %1$s"</string>
     <string name="eula_description">Mobilní zasílání zpráv s přáteli napříč platformami po celém světě</string>
     <string name="eula_tablets_not_supported">Upozornění: Tablety nejsou v tuto chvíli podporovány.</string>
     <string name="eula_terms_of_service">Podmínky služby</string>
-    <string name="eula_title">Vítejte v aplikaci WhatsApp.</string>
+    <string name="eula_title">Vítá vás aplikace WhatsApp</string>
     <string name="existing_contact">Existující</string>
     <string name="exit">Ukončit</string>
     <string name="exit_group">Ukončit skupinu</string>
@@ -529,7 +532,6 @@ Předplatné služby vyprší %s."</string>
     <string name="insufficient_space_for_download_shared_storage">Požadovaný cíl nelze stáhnout, protože na vnitřním sdíleném úložišti není dostatek místa. Odstraňte soubory z vnitřního sdíleného úložiště a opakujte akci.</string>
     <string name="invalid_media_message_download">Média z neplatné zprávy nelze stáhnout. Pokuste se zprávu odeslat znovu.</string>
     <string name="invalid_message_forward">Zprávu nelze přeposlat neplatnému kontaktu.</string>
-    <string name="invalid_qr_code">Neplatný QR kód</string>
     <string name="invalid_url_for_download">Stažení se nezdařilo. Požádejte si přeposlání.</string>
     <string name="invite">Pozvat</string>
     <string name="invite_friends">Pozvat přátele</string>
@@ -575,7 +577,6 @@ Ověřte své telefonní číslo."</string>
     <string name="menuitem_add">Přidat</string>
     <string name="menuitem_contacts">Kontakty</string>
     <string name="menuitem_debug">Ladění</string>
-    <string name="menuitem_delete_qr">Odstranit QR kód</string>
     <string name="menuitem_groupchat">Nová skupina</string>
     <string name="menuitem_list">Nové vysílání</string>
     <string name="menuitem_mute">Ztlumit</string>
@@ -616,14 +617,15 @@ Ověřte své telefonní číslo."</string>
     <string name="msg_store_backup_failed">Nebylo možné provést zálohu zpráv.</string>
     <string name="msg_store_backup_failed_try_again_later">Nelze zálohovat zprávy. Opakujte akci později.</string>
     <string name="msg_store_backup_found">Byl nalezen soubor zálohy.</string>
-    <string name="msg_store_backup_found_registration">Záloha zpráv byla nalezena.</string>
+    <string name="msg_store_backup_found_registration">Nalezena záloha chatu</string>
+    <string name="msg_store_backup_found_title">Obnovit historii chatu</string>
     <string name="msg_store_backup_skipped">Zálohování bylo přeskočeno.</string>
     <string name="msg_store_backup_skipped_no_media">Zpráva nebyla zálohována: Nebyla nalezena žádná karta médií.</string>
     <string name="msg_store_backup_skipped_read_only_media">Zpráva nebyla zálohována. Byla nalezena pouze karta médií pro čtení.</string>
     <string name="msg_store_confirm">Potvrdit</string>
-    <string name="msg_store_creation_backup_message">Chcete obnovit historii zpráv ze zálohy?</string>
-    <string name="msg_store_do_not_restore">Neobnovovat</string>
-    <string name="msg_store_do_not_restore_no_thanks">Ne, děkuji.</string>
+    <string name="msg_store_creation_backup_message">Obnovte historii chatu ze zálohy. Pokud obnovení neprovedete nyní, nebude možné ji obnovit později.</string>
+    <string name="msg_store_do_not_restore">Přeskočit obnovení</string>
+    <string name="msg_store_do_not_restore_no_thanks">Přeskočit obnovení</string>
     <string name="msg_store_error_found">Došlo k chybě. Ukončete a znovu spusťte aplikaci WhatsApp.</string>
     <string name="msg_store_error_not_restored">Litujeme, nepodařilo se obnovit žádnou ze záloh historie zpráv.</string>
     <string name="msg_store_last_confirmation_not_to_restore">Zprávy budou smazány. Skutečně nechcete obnovit historii zpráv ze zálohy?</string>
@@ -650,9 +652,6 @@ Ověřte své telefonní číslo."</string>
     <string name="need_sd_card_shared_storage">Vypněte zařízení USB a opakujte akci.</string>
     <string name="network_required">V tuto chvíli není k dispozici přístup k síti.</string>
     <string name="network_usage_ask_reset_message">Opravdu chcete vymazat statistiky?</string>
-    <string name="network_usage_byte_count_gb">%1$.1f GB</string>
-    <string name="network_usage_byte_count_kb">%1$.1f KB</string>
-    <string name="network_usage_byte_count_mb">%1$.1f MB</string>
     <string name="network_usage_last_reset_time">Naposledy vymazáno: %1$s</string>
     <string name="network_usage_media_bytes_received">Přijaté bajty médií:</string>
     <string name="network_usage_media_bytes_sent">Odeslané bajty médií:</string>
@@ -899,6 +898,7 @@ Opakujte akci za následující čas: %1$s."</string>
     <string name="send_location">Odeslat polohu</string>
     <string name="send_payment_button">Odeslat platební adresu URL</string>
     <string name="send_payment_url_via">Odeslat platební adresu URL pomocí...</string>
+    <string name="send_this_location">Odeslat tuto polohu</string>
     <string name="send_your_current_location">Odeslat aktuální polohu</string>
     <string name="sending_video_to_contact">Odesílá se video pro %s</string>
     <string name="sent_to_group">Odeslat do „%s“</string>
@@ -1011,17 +1011,17 @@ Odesláno aplikací WhatsApp"</string>
     <string name="software_expired_get_from_play_with_date">Platnost této verze aplikace WhatsApp byla dne &lt;b>%1$s&lt;/b> ukončena. Přejděte do obchodu Google Play a stáhněte si aktuální verzi.&lt;br>&lt;br>Datum ve vašem zařízení je &lt;b>%2$s&lt;/b>. Pokud je nastavení data v zařízení nesprávné, opravte ho a poté aplikaci WhatsApp restartujte.</string>
     <string name="software_expired_with_date">Platnost této verze aplikace WhatsApp skončila dne &lt;b>%1$s&lt;/b>. Aktuální verzi získáte klepnutím na tlačítko „Stáhnout“.&lt;br>&lt;br>Datum ve vašem zařízení je &lt;b>%2$s&lt;/b>. Pokud je toto datum nesprávné, opravte jeho nastavení v zařízení a poté aplikaci WhatsApp restartujte.</string>
     <string name="spam_generic">"Byli jste dočasně vyloučeni ze služby WhatsApp, protože mohlo z vaší strany dojít k porušení podmínek služby.
-Aplikaci WhatsApp budete moci znovu používat za:"</string>
+
+Službu WhatsApp budete moci znovu používat za:"</string>
     <string name="spam_generic_data_connection_missing">Ověřte, zda je v telefonu k dispzici aktivní datové připojení.</string>
     <string name="spam_generic_unknown_time_left">Byli jste dočasně vyloučeni ze služby WhatsApp, protože z vaší strany mohlo dojít k porušení podmínek služby. Aplikaci WhatsApp budete moci zanedlouho začít znovu používat.</string>
     <string name="spam_learn_more">Další informace</string>
     <string name="spam_title">Dočasné zamezení přístupu</string>
-    <string name="spam_too_many_blocks">Byli jste dočasně vyloučení ze služeb WhatsApp, protože vás zablokovalo příliš mnoho uživatelů.</string>
     <string name="spam_too_many_groups">"Byli jste dočasně vyloučeni ze služby WhatsApp, protože jste vytvořili příliš mnoho skupin s uživateli, kteří vás nemají v adresáři.
+
 Aplikaci WhatsApp budete moci znovu používat za:"</string>
-    <string name="spam_too_many_messages">"Byli jste dočasně vyloučeni ze služby WhatsApp, protože jste odeslali příliš mnoho zpráv uživatelům, kteří nemají v adresáři uloženo vaše číslo.
-Aplikaci WhatsApp budete moci znovu používat za:"</string>
-    <string name="spam_too_many_people">"Byli jste dočasně vyloučeni ze služby WhatsApp, protože jste odeslali stejnou zprávu příliš mnoha uživatelům.
+    <string name="spam_too_many_messages">"Byli jste dočasně vyloučeni ze služby WhatsApp, protože jste odeslali příliš mnoho zpráv uživatelům, kteří vás nemají v adresáři.
+
 Aplikaci WhatsApp budete moci znovu používat za:"</string>
     <string name="status">Stav</string>
     <string name="status_default_at_gym">V posilovně</string>
@@ -1190,7 +1190,9 @@ Zkuste hlasové ověření."</string>
     <string name="view_list_media">Média seznamu vysílání</string>
     <string name="view_website">Zobrazit web</string>
     <string name="voip_activity_label">Hlasový hovor</string>
+    <string name="voip_call_bluetooth_toggle_description">Přepnout Bluetooth</string>
     <string name="voip_call_end_button_description">Ukončit hlasový hovor</string>
+    <string name="voip_call_failed_no_network">Nelze zahájit volání. Ověřte, zda máte k dispozici připojení k Internetu a opakujte akci.</string>
     <string name="voip_call_goto_chat_description">Zobrazit chat</string>
     <string name="voip_call_incoming">PŘÍCHOZÍ</string>
     <string name="voip_call_label">HOVOR WHATSAPP</string>
@@ -1243,5 +1245,4 @@ Obnovte síťovou konektivitu vymazáním sítě „%1$s“ nebo vypnutím přip
     <string name="yesterday">Včera</string>
     <string name="yesterday_at">včera v %s</string>
     <string name="you">Vy</string>
-    <string name="voip_call_bluetooth_toggle_description">Přepnout Bluetooth</string>
 </resources>

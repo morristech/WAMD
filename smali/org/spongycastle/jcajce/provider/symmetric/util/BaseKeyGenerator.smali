@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static a:Z
+.field public static a:I
 
 .field private static final z:Ljava/lang/String;
 
@@ -23,30 +23,32 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 6
 
-    const-string v0, "/B\u0004U\n\u000c]\u001c\u0010.\u0004C\u0004\u0010\'"
+    const/16 v1, 0x13
+
+    const-string v0, "5|\u00013\u0007\u0016c\u0019v#\u001e}\u0001v*"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v0
 
-    array-length v1, v0
+    array-length v2, v0
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
+
+    move v4, v3
 
     move v3, v2
 
-    move v2, v1
-
-    move-object v1, v0
+    move-object v2, v0
 
     :goto_0
-    if-gt v2, v3, :cond_0
+    if-gt v3, v4, :cond_0
 
     new-instance v0, Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v0, v2}, Ljava/lang/String;-><init>([C)V
 
     invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -57,44 +59,44 @@
     return-void
 
     :cond_0
-    aget-char v4, v1, v3
+    aget-char v5, v2, v4
 
-    rem-int/lit8 v0, v3, 0x5
+    rem-int/lit8 v0, v4, 0x5
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x43
+    const/16 v0, 0x4e
 
     :goto_1
-    xor-int/2addr v0, v4
+    xor-int/2addr v0, v5
 
     int-to-char v0, v0
 
-    aput-char v0, v1, v3
+    aput-char v0, v2, v4
 
-    add-int/lit8 v0, v3, 0x1
+    add-int/lit8 v0, v4, 0x1
 
-    move v3, v0
+    move v4, v0
 
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x61
+    const/16 v0, 0x7b
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x2d
+    move v0, v1
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x70
+    const/16 v0, 0x75
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x75
+    move v0, v1
 
     goto :goto_1
 
@@ -111,26 +113,26 @@
     .locals 1
 
     .prologue
-    .line 2
+    .line 23
     invoke-direct {p0}, Ljavax/crypto/KeyGeneratorSpi;-><init>()V
 
-    .line 5
+    .line 21
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->uninitialised:Z
 
-    .line 23
+    .line 15
     iput-object p1, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->algName:Ljava/lang/String;
 
-    .line 9
+    .line 2
     iput p2, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->defaultKeySize:I
 
     iput p2, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->keySize:I
 
-    .line 19
+    .line 14
     iput-object p3, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->engine:Lorg/spongycastle/crypto/CipherKeyGenerator;
 
-    .line 22
+    .line 6
     return-void
 .end method
 
@@ -140,13 +142,13 @@
     .locals 4
 
     .prologue
-    .line 10
+    .line 9
     :try_start_0
     iget-boolean v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->uninitialised:Z
 
     if-eqz v0, :cond_0
 
-    .line 6
+    .line 12
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->engine:Lorg/spongycastle/crypto/CipherKeyGenerator;
 
     new-instance v1, Lorg/spongycastle/crypto/KeyGenerationParameters;
@@ -161,14 +163,14 @@
 
     invoke-virtual {v0, v1}, Lorg/spongycastle/crypto/CipherKeyGenerator;->init(Lorg/spongycastle/crypto/KeyGenerationParameters;)V
 
-    .line 20
+    .line 13
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->uninitialised:Z
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 15
+    .line 1
     :cond_0
     new-instance v0, Ljavax/crypto/spec/SecretKeySpec;
 
@@ -184,7 +186,7 @@
 
     return-object v0
 
-    .line 20
+    .line 13
     :catch_0
     move-exception v0
 
@@ -195,16 +197,16 @@
     .locals 2
 
     .prologue
-    .line 11
+    .line 20
     if-nez p2, :cond_0
 
-    .line 17
+    .line 10
     :try_start_0
     new-instance p2, Ljava/security/SecureRandom;
 
     invoke-direct {p2}, Ljava/security/SecureRandom;-><init>()V
 
-    .line 4
+    .line 8
     :cond_0
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->engine:Lorg/spongycastle/crypto/CipherKeyGenerator;
 
@@ -214,21 +216,21 @@
 
     invoke-virtual {v0, v1}, Lorg/spongycastle/crypto/CipherKeyGenerator;->init(Lorg/spongycastle/crypto/KeyGenerationParameters;)V
 
-    .line 7
+    .line 16
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->uninitialised:Z
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 12
+    .line 7
     return-void
 
-    .line 14
+    .line 19
     :catch_0
     move-exception v0
 
-    .line 13
+    .line 11
     new-instance v1, Ljava/security/InvalidParameterException;
 
     invoke-virtual {v0}, Ljava/lang/IllegalArgumentException;->getMessage()Ljava/lang/String;
@@ -244,10 +246,10 @@
     .locals 3
 
     .prologue
-    .line 21
+    .line 18
     if-eqz p1, :cond_0
 
-    .line 3
+    .line 4
     :try_start_0
     iget-object v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->engine:Lorg/spongycastle/crypto/CipherKeyGenerator;
 
@@ -259,18 +261,18 @@
 
     invoke-virtual {v0, v1}, Lorg/spongycastle/crypto/CipherKeyGenerator;->init(Lorg/spongycastle/crypto/KeyGenerationParameters;)V
 
-    .line 18
+    .line 22
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->uninitialised:Z
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 16
+    .line 17
     :cond_0
     return-void
 
-    .line 18
+    .line 22
     :catch_0
     move-exception v0
 
@@ -281,7 +283,7 @@
     .locals 2
 
     .prologue
-    .line 1
+    .line 3
     new-instance v0, Ljava/security/InvalidAlgorithmParameterException;
 
     sget-object v1, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseKeyGenerator;->z:Ljava/lang/String;

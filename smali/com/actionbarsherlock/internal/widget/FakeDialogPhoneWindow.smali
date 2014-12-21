@@ -14,48 +14,48 @@
     .locals 3
 
     .prologue
-    .line 24
+    .line 13
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 1
+    .line 12
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/widget/FakeDialogPhoneWindow;->mMinWidthMajor:Landroid/util/TypedValue;
 
-    .line 15
+    .line 17
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
     iput-object v0, p0, Lcom/actionbarsherlock/internal/widget/FakeDialogPhoneWindow;->mMinWidthMinor:Landroid/util/TypedValue;
 
-    .line 22
+    .line 1
     sget-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockTheme:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
-    .line 21
+    .line 24
     sget v1, Lcom/actionbarsherlock/R$styleable;->SherlockTheme_windowMinWidthMajor:I
 
     iget-object v2, p0, Lcom/actionbarsherlock/internal/widget/FakeDialogPhoneWindow;->mMinWidthMajor:Landroid/util/TypedValue;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getValue(ILandroid/util/TypedValue;)Z
 
-    .line 11
+    .line 10
     sget v1, Lcom/actionbarsherlock/R$styleable;->SherlockTheme_windowMinWidthMinor:I
 
     iget-object v2, p0, Lcom/actionbarsherlock/internal/widget/FakeDialogPhoneWindow;->mMinWidthMinor:Landroid/util/TypedValue;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getValue(ILandroid/util/TypedValue;)Z
 
-    .line 18
+    .line 22
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 12
+    .line 7
     return-void
 .end method
 
@@ -71,9 +71,9 @@
 
     const/4 v2, 0x0
 
-    sget-boolean v5, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:Z
+    sget v5, Lcom/actionbarsherlock/internal/widget/AbsActionBarView;->b:I
 
-    .line 13
+    .line 3
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/FakeDialogPhoneWindow;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -86,7 +86,7 @@
 
     move-result-object v6
 
-    .line 2
+    .line 21
     iget v0, v6, Landroid/util/DisplayMetrics;->widthPixels:I
 
     iget v3, v6, Landroid/util/DisplayMetrics;->heightPixels:I
@@ -95,21 +95,21 @@
 
     move v0, v1
 
-    .line 3
+    .line 15
     :goto_0
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
-    .line 20
+    .line 5
     invoke-virtual {p0}, Lcom/actionbarsherlock/internal/widget/FakeDialogPhoneWindow;->getMeasuredWidth()I
 
     move-result v7
 
-    .line 23
+    .line 8
     invoke-static {v7, v9}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v3
 
-    .line 8
+    .line 27
     if-eqz v0, :cond_5
 
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/FakeDialogPhoneWindow;->mMinWidthMinor:Landroid/util/TypedValue;
@@ -120,14 +120,14 @@
 
     if-eqz v4, :cond_6
 
-    .line 7
+    .line 19
     iget v4, v0, Landroid/util/TypedValue;->type:I
 
     const/4 v8, 0x5
 
     if-ne v4, v8, :cond_0
 
-    .line 5
+    .line 20
     invoke-virtual {v0, v6}, Landroid/util/TypedValue;->getDimension(Landroid/util/DisplayMetrics;)F
 
     move-result v4
@@ -136,7 +136,7 @@
 
     if-eqz v5, :cond_7
 
-    .line 17
+    .line 14
     :cond_0
     iget v4, v0, Landroid/util/TypedValue;->type:I
 
@@ -164,36 +164,36 @@
     :cond_1
     move v0, v2
 
-    .line 26
+    .line 11
     :cond_2
     :goto_2
     if-ge v7, v0, :cond_6
 
-    .line 19
+    .line 18
     invoke-static {v0, v9}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v0
 
     move v2, v1
 
-    .line 4
+    .line 2
     :goto_3
     if-eqz v2, :cond_3
 
-    .line 25
+    .line 23
     invoke-super {p0, v0, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
-    .line 10
+    .line 25
     :cond_3
     return-void
 
     :cond_4
     move v0, v2
 
-    .line 2
+    .line 21
     goto :goto_0
 
-    .line 8
+    .line 27
     :cond_5
     iget-object v0, p0, Lcom/actionbarsherlock/internal/widget/FakeDialogPhoneWindow;->mMinWidthMajor:Landroid/util/TypedValue;
 

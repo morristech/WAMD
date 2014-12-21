@@ -19,7 +19,7 @@
 
     new-array v4, v0, [Ljava/lang/String;
 
-    const-string v3, "$\u001e\u0015\u0014?,\u0014_\u000f>1\u0015\u001f\u0012~$\u0013\u0005\u000f?+^9#\u0011\u0001#42\u000f\u0015<$!"
+    const-string v3, "WU|\u0010\u0010__6\u000b\u0011B^v\u0016QWXl\u000b\u0010X\u0015P\'>rh]6 fwM%"
 
     const/4 v0, -0x1
 
@@ -57,7 +57,7 @@
 
     aput-object v3, v5, v4
 
-    const-string v0, "$\u0000\u0001I8 \u0011\u0015\u001551_"
+    const-string v0, "EOy\u0016\u001a"
 
     move-object v3, v0
 
@@ -74,7 +74,7 @@
 
     const/4 v3, 0x2
 
-    const-string v0, "6\u0004\u0010\u00125"
+    const-string v0, "WKhM\u0017SZ|\u0011\u001aB\u0014"
 
     move v4, v3
 
@@ -100,7 +100,7 @@
 
     packed-switch v3, :pswitch_data_1
 
-    const/16 v3, 0x50
+    const/16 v3, 0x7f
 
     :goto_2
     xor-int/2addr v3, v10
@@ -116,22 +116,22 @@
     goto :goto_1
 
     :pswitch_2
-    const/16 v3, 0x45
+    const/16 v3, 0x36
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v3, 0x70
+    const/16 v3, 0x3b
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v3, 0x71
+    const/16 v3, 0x18
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v3, 0x66
+    const/16 v3, 0x62
 
     goto :goto_2
 
@@ -166,7 +166,7 @@
     .locals 3
 
     .prologue
-    .line 6
+    .line 1
     new-instance v0, Landroid/content/IntentFilter;
 
     sget-object v1, Lcom/whatsapp/HeadsetPlugBroadcastReceiver;->z:[Ljava/lang/String;
@@ -179,7 +179,7 @@
 
     invoke-virtual {p1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 2
+    .line 6
     return-void
 .end method
 
@@ -187,48 +187,46 @@
     .locals 4
 
     .prologue
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    const/4 v1, 0x1
+    const/4 v0, 0x1
 
-    .line 1
+    .line 4
     sget-object v2, Lcom/whatsapp/HeadsetPlugBroadcastReceiver;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x2
+    aget-object v2, v2, v0
 
-    aget-object v2, v2, v3
-
-    invoke-virtual {p2, v2, v0}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {p2, v2, v1}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v2
 
-    .line 8
-    sget-boolean v3, Lcom/whatsapp/App;->e:Z
+    .line 2
+    sget-boolean v3, Lcom/whatsapp/App;->z:Z
 
     if-eqz v3, :cond_0
 
-    if-ge v2, v1, :cond_0
-
-    .line 3
-    invoke-static {}, Lcom/whatsapp/xy;->h()V
+    if-ge v2, v0, :cond_0
 
     .line 5
+    invoke-static {}, Lcom/whatsapp/yk;->q()V
+
+    .line 8
     :cond_0
-    if-lt v2, v1, :cond_1
+    if-lt v2, v0, :cond_1
 
-    move v0, v1
+    :goto_0
+    sput-boolean v0, Lcom/whatsapp/App;->z:Z
 
-    :cond_1
-    sput-boolean v0, Lcom/whatsapp/App;->e:Z
-
-    .line 4
+    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/whatsapp/HeadsetPlugBroadcastReceiver;->z:[Ljava/lang/String;
+    sget-object v1, Lcom/whatsapp/HeadsetPlugBroadcastReceiver;->z:[Ljava/lang/String;
 
-    aget-object v1, v3, v1
+    const/4 v3, 0x2
+
+    aget-object v1, v1, v3
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -246,4 +244,10 @@
 
     .line 7
     return-void
+
+    :cond_1
+    move v0, v1
+
+    .line 8
+    goto :goto_0
 .end method

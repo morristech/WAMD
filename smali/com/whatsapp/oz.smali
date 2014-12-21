@@ -1,243 +1,475 @@
-.class Lcom/whatsapp/oz;
-.super Lcom/whatsapp/util/at;
+.class public Lcom/whatsapp/oz;
+.super Ljava/lang/Object;
 .source "oz.java"
 
 
 # static fields
-.field private static final z:Ljava/lang/String;
+.field private static a:Ljava/lang/Thread;
 
+.field private static b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-# instance fields
-.field final b:Lcom/whatsapp/a1_;
+.field private static final c:Ljava/lang/Runnable;
 
-.field final c:Lcom/whatsapp/adg;
+.field private static final z:[Ljava/lang/String;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 12
 
-    const-string v0, "|Mu"
+    .prologue
+    const/4 v3, 0x2
 
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+    const/4 v2, 0x1
 
-    move-result-object v0
+    const/4 v1, 0x0
 
-    array-length v1, v0
+    const/4 v0, 0x4
 
-    const/4 v2, 0x0
+    new-array v5, v0, [Ljava/lang/String;
 
-    move v3, v2
+    const-string v4, "M/*k\u0005D\'9xD]\'1d\u0005H\",oDM7~xPG 7dB"
 
-    move v2, v1
+    const/4 v0, -0x1
 
-    move-object v1, v0
+    move-object v6, v5
+
+    move-object v7, v5
+
+    move v5, v1
 
     :goto_0
-    if-gt v2, v3, :cond_0
+    invoke-virtual {v4}, Ljava/lang/String;->toCharArray()[C
 
-    new-instance v0, Ljava/lang/String;
+    move-result-object v4
 
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
+    array-length v8, v4
 
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+    move v9, v8
 
-    move-result-object v0
+    move v10, v1
 
-    sput-object v0, Lcom/whatsapp/oz;->z:Ljava/lang/String;
+    move-object v8, v4
 
-    return-void
+    :goto_1
+    if-gt v9, v10, :cond_0
 
-    :cond_0
-    aget-char v4, v1, v3
+    new-instance v4, Ljava/lang/String;
 
-    rem-int/lit8 v0, v3, 0x5
+    invoke-direct {v4, v8}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v4}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v4
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x12
+    aput-object v4, v6, v5
 
-    :goto_1
-    xor-int/2addr v0, v4
+    const-string v0, "M/*k\u0005D\'9xD]\'1d\u0005H\",oDM7~yPJ-;yVO;2"
 
-    int-to-char v0, v0
+    move-object v4, v0
 
-    aput-char v0, v1, v3
+    move v5, v2
 
-    add-int/lit8 v0, v3, 0x1
+    move-object v6, v7
 
-    move v3, v0
+    move v0, v1
 
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x16
+    aput-object v4, v6, v5
 
-    goto :goto_1
+    const-string v0, "M/*kH@),kQ\u0006\'0cQM,"
+
+    move-object v4, v0
+
+    move v5, v3
+
+    move-object v6, v7
+
+    move v0, v2
+
+    goto :goto_0
 
     :pswitch_1
-    const/16 v0, 0x24
+    aput-object v4, v6, v5
 
-    goto :goto_1
+    const/4 v4, 0x3
+
+    const-string v0, "@ 7~aka;xWF<"
+
+    move v5, v4
+
+    move-object v6, v7
+
+    move-object v4, v0
+
+    move v0, v3
+
+    goto :goto_0
 
     :pswitch_2
-    const/16 v0, 0x11
+    aput-object v4, v6, v5
+
+    sput-object v7, Lcom/whatsapp/oz;->z:[Ljava/lang/String;
+
+    .line 33
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
+
+    sput-object v0, Lcom/whatsapp/oz;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 10
+    new-instance v0, Lcom/whatsapp/a_6;
+
+    invoke-direct {v0}, Lcom/whatsapp/a_6;-><init>()V
+
+    sput-object v0, Lcom/whatsapp/oz;->c:Ljava/lang/Runnable;
+
+    return-void
+
+    .line 4294967295
+    :cond_0
+    aget-char v11, v8, v10
+
+    rem-int/lit8 v4, v10, 0x5
+
+    packed-switch v4, :pswitch_data_1
+
+    const/16 v4, 0x25
+
+    :goto_2
+    xor-int/2addr v4, v11
+
+    int-to-char v4, v4
+
+    aput-char v4, v8, v10
+
+    add-int/lit8 v4, v10, 0x1
+
+    move v10, v4
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x1a
+    const/16 v4, 0x29
 
-    goto :goto_1
+    goto :goto_2
+
+    :pswitch_4
+    const/16 v4, 0x4e
+
+    goto :goto_2
+
+    :pswitch_5
+    const/16 v4, 0x5e
+
+    goto :goto_2
+
+    :pswitch_6
+    const/16 v4, 0xa
+
+    goto :goto_2
 
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
         :pswitch_1
         :pswitch_2
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
         :pswitch_3
+        :pswitch_4
+        :pswitch_5
+        :pswitch_6
     .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/whatsapp/a1_;Lcom/whatsapp/adg;)V
-    .locals 0
+.method public static a()Z
+    .locals 1
 
     .prologue
-    .line 6
-    iput-object p1, p0, Lcom/whatsapp/oz;->b:Lcom/whatsapp/a1_;
+    .line 14
+    sget-object v0, Lcom/whatsapp/oz;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    iput-object p2, p0, Lcom/whatsapp/oz;->c:Lcom/whatsapp/adg;
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
-    invoke-direct {p0}, Lcom/whatsapp/util/at;-><init>()V
+    move-result v0
 
+    return v0
+.end method
+
+.method public static b()V
+    .locals 2
+
+    .prologue
+    .line 34
+    sget-object v0, Lcom/whatsapp/oz;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    .line 31
     return-void
 .end method
 
-
-# virtual methods
-.method public a(Landroid/view/View;)V
-    .locals 8
+.method private static c()Z
+    .locals 4
 
     .prologue
-    const/4 v7, 0x1
+    const/4 v0, 0x1
 
-    const/4 v4, 0x0
+    .line 32
+    :try_start_0
+    sget-object v1, Lcom/whatsapp/oz;->z:[Ljava/lang/String;
 
-    const/high16 v6, 0x3f800000
+    const/4 v2, 0x2
 
-    const/high16 v5, 0x3f000000
+    aget-object v1, v1, v2
 
-    .line 14
-    new-instance v0, Landroid/content/Intent;
-
-    iget-object v1, p0, Lcom/whatsapp/oz;->b:Lcom/whatsapp/a1_;
-
-    iget-object v1, v1, Lcom/whatsapp/a1_;->b:Lcom/whatsapp/CallsFragment;
-
-    invoke-virtual {v1}, Lcom/whatsapp/CallsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v1
-
-    const-class v2, Lcom/whatsapp/QuickContactActivity;
-
-    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    .line 5
-    const/4 v1, 0x2
-
-    new-array v1, v1, [I
+    invoke-static {v1}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
     .line 4
-    invoke-virtual {p1, v1}, Landroid/view/View;->getLocationOnScreen([I)V
+    invoke-static {}, Lcom/whatsapp/contact/i;->c()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
 
     .line 3
-    new-instance v2, Landroid/graphics/Rect;
-
-    invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
-
-    .line 1
-    aget v3, v1, v4
-
-    int-to-float v3, v3
-
-    mul-float/2addr v3, v6
-
-    add-float/2addr v3, v5
-
-    float-to-int v3, v3
-
-    iput v3, v2, Landroid/graphics/Rect;->left:I
-
-    .line 8
-    aget v3, v1, v7
-
-    int-to-float v3, v3
-
-    mul-float/2addr v3, v6
-
-    add-float/2addr v3, v5
-
-    float-to-int v3, v3
-
-    iput v3, v2, Landroid/graphics/Rect;->top:I
-
-    .line 10
-    aget v3, v1, v4
-
-    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
-
-    move-result v4
-
-    add-int/2addr v3, v4
-
-    int-to-float v3, v3
-
-    mul-float/2addr v3, v6
-
-    add-float/2addr v3, v5
-
-    float-to-int v3, v3
-
-    iput v3, v2, Landroid/graphics/Rect;->right:I
-
-    .line 2
-    aget v1, v1, v7
-
-    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
-
-    move-result v3
-
-    add-int/2addr v1, v3
-
-    int-to-float v1, v1
-
-    mul-float/2addr v1, v6
-
-    add-float/2addr v1, v5
-
-    float-to-int v1, v1
-
-    iput v1, v2, Landroid/graphics/Rect;->bottom:I
-
-    .line 9
-    invoke-virtual {v0, v2}, Landroid/content/Intent;->setSourceBounds(Landroid/graphics/Rect;)V
+    :cond_0
+    invoke-static {}, Lcom/whatsapp/App;->am()V
 
     .line 13
-    sget-object v1, Lcom/whatsapp/oz;->z:Ljava/lang/String;
+    sget-object v1, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    iget-object v2, p0, Lcom/whatsapp/oz;->c:Lcom/whatsapp/adg;
+    invoke-virtual {v1}, Lcom/whatsapp/et;->d()V
 
-    iget-object v2, v2, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    .line 5
+    sget-object v1, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v1}, Lcom/whatsapp/et;->l()I
 
-    .line 7
-    iget-object v1, p0, Lcom/whatsapp/oz;->b:Lcom/whatsapp/a1_;
+    move-result v1
 
-    iget-object v1, v1, Lcom/whatsapp/a1_;->b:Lcom/whatsapp/CallsFragment;
+    .line 16
+    sget-object v2, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    invoke-virtual {v1, v0}, Lcom/whatsapp/CallsFragment;->startActivity(Landroid/content/Intent;)V
+    sget-object v3, Lcom/whatsapp/contact/c;->REGISTRATION_FULL:Lcom/whatsapp/contact/c;
+
+    invoke-static {v2, v3}, Lcom/whatsapp/contact/i;->b(Landroid/content/Context;Lcom/whatsapp/contact/c;)Lcom/whatsapp/contact/h;
 
     .line 11
+    sget-object v2, Lcom/whatsapp/App;->y:Landroid/os/Handler;
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v2, v3}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+
+    .line 26
+    invoke-static {}, Lcom/whatsapp/contact/i;->b()Z
+
+    move-result v2
+
+    if-nez v2, :cond_1
+
+    .line 21
+    :cond_1
+    sget-object v2, Lcom/whatsapp/App;->af:Lcom/whatsapp/b_;
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v2, v3}, Lcom/whatsapp/b_;->c(Z)V
+
+    .line 27
+    sget-object v2, Lcom/whatsapp/App;->af:Lcom/whatsapp/b_;
+
+    invoke-virtual {v2, v1}, Lcom/whatsapp/b_;->a(I)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 9
+    :goto_0
+    return v0
+
+    .line 24
+    :catch_0
+    move-exception v0
+
+    .line 28
+    sget-object v1, Lcom/whatsapp/oz;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x3
+
+    aget-object v1, v1, v2
+
+    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 9
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public static d()Z
+    .locals 1
+
+    .prologue
+    .line 22
+    invoke-static {}, Lcom/whatsapp/oz;->g()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 19
+    sget-object v0, Lcom/whatsapp/oz;->a:Ljava/lang/Thread;
+
+    invoke-virtual {v0}, Ljava/lang/Thread;->join()V
+
+    .line 25
+    :cond_0
+    sget-object v0, Lcom/whatsapp/oz;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method static e()Ljava/util/concurrent/atomic/AtomicBoolean;
+    .locals 1
+
+    .prologue
+    .line 6
+    sget-object v0, Lcom/whatsapp/oz;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    return-object v0
+.end method
+
+.method public static f()V
+    .locals 2
+
+    .prologue
+    .line 18
+    sget-object v0, Lcom/whatsapp/oz;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    .line 20
+    return-void
+.end method
+
+.method public static g()Z
+    .locals 1
+
+    .prologue
+    .line 17
+    sget-object v0, Lcom/whatsapp/oz;->a:Ljava/lang/Thread;
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lcom/whatsapp/oz;->a:Ljava/lang/Thread;
+
+    invoke-virtual {v0}, Ljava/lang/Thread;->isAlive()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method static h()Z
+    .locals 1
+
+    .prologue
+    .line 30
+    invoke-static {}, Lcom/whatsapp/oz;->c()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public static i()V
+    .locals 3
+
+    .prologue
+    sget-boolean v0, Lcom/whatsapp/tv;->e:Z
+
+    .line 8
+    invoke-static {}, Lcom/whatsapp/oz;->g()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 29
+    sget-object v1, Lcom/whatsapp/oz;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    aget-object v1, v1, v2
+
+    invoke-static {v1}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    if-eqz v0, :cond_2
+
+    .line 23
+    :cond_0
+    sget-object v1, Lcom/whatsapp/oz;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 15
+    sget-object v1, Lcom/whatsapp/oz;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x1
+
+    aget-object v1, v1, v2
+
+    invoke-static {v1}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+
+    if-eqz v0, :cond_2
+
+    .line 7
+    :cond_1
+    new-instance v0, Ljava/lang/Thread;
+
+    sget-object v1, Lcom/whatsapp/oz;->c:Ljava/lang/Runnable;
+
+    invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    sput-object v0, Lcom/whatsapp/oz;->a:Ljava/lang/Thread;
+
+    .line 12
+    sget-object v0, Lcom/whatsapp/oz;->a:Ljava/lang/Thread;
+
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+
+    .line 2
+    :cond_2
     return-void
 .end method

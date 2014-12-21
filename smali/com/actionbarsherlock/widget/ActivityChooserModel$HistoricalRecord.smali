@@ -27,7 +27,7 @@
 
     new-array v4, v0, [Ljava/lang/String;
 
-    const-string v3, "\u0019\u0013[\'CKES0N\u0018"
+    const-string v3, "4J:l0jP"
 
     const/4 v0, -0x1
 
@@ -65,7 +65,7 @@
 
     aput-object v3, v5, v4
 
-    const-string v0, "\u0019\u0013N-ZG\t"
+    const-string v0, "4J9`4h\u0002:?"
 
     move-object v3, v0
 
@@ -82,7 +82,7 @@
 
     const/4 v3, 0x2
 
-    const-string v0, "\u0019\u0013M!^E[N~"
+    const-string v0, "4J/f)f\u001c\'q$5"
 
     move v4, v3
 
@@ -108,7 +108,7 @@
 
     packed-switch v3, :pswitch_data_1
 
-    const/16 v3, 0x37
+    const/16 v3, 0x5d
 
     :goto_2
     xor-int/2addr v3, v10
@@ -124,24 +124,26 @@
     goto :goto_1
 
     :pswitch_2
-    const/16 v3, 0x22
+    const/16 v3, 0xf
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v3, 0x33
+    const/16 v3, 0x6a
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v3, 0x3a
+    const/16 v3, 0x4e
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v3, 0x44
+    const/4 v3, 0x5
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -162,19 +164,19 @@
     .locals 0
 
     .prologue
-    .line 8
+    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 35
+    .line 29
     iput-object p1, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->activity:Landroid/content/ComponentName;
 
-    .line 27
+    .line 20
     iput-wide p2, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->time:J
 
-    .line 21
+    .line 19
     iput p4, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->weight:F
 
-    .line 5
+    .line 32
     return-void
 .end method
 
@@ -188,24 +190,24 @@
 
     const/4 v1, 0x0
 
-    .line 10
+    .line 28
     if-ne p0, p1, :cond_1
 
-    .line 34
+    .line 23
     :cond_0
     :goto_0
     return v0
 
-    .line 22
+    .line 33
     :cond_1
     if-nez p1, :cond_2
 
     move v0, v1
 
-    .line 1
+    .line 2
     goto :goto_0
 
-    .line 28
+    .line 7
     :cond_2
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -219,29 +221,29 @@
 
     move v0, v1
 
-    .line 19
+    .line 10
     goto :goto_0
 
-    .line 33
+    .line 9
     :cond_3
     check-cast p1, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;
 
-    .line 13
+    .line 16
     iget-object v2, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->activity:Landroid/content/ComponentName;
 
     if-nez v2, :cond_4
 
-    .line 18
+    .line 8
     iget-object v2, p1, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->activity:Landroid/content/ComponentName;
 
     if-eqz v2, :cond_5
 
     move v0, v1
 
-    .line 4
+    .line 6
     goto :goto_0
 
-    .line 7
+    .line 34
     :cond_4
     iget-object v2, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->activity:Landroid/content/ComponentName;
 
@@ -255,10 +257,10 @@
 
     move v0, v1
 
-    .line 31
+    .line 18
     goto :goto_0
 
-    .line 6
+    .line 12
     :cond_5
     iget-wide v2, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->time:J
 
@@ -270,10 +272,10 @@
 
     move v0, v1
 
-    .line 26
+    .line 11
     goto :goto_0
 
-    .line 23
+    .line 25
     :cond_6
     iget v2, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->weight:F
 
@@ -291,7 +293,7 @@
 
     move v0, v1
 
-    .line 32
+    .line 23
     goto :goto_0
 .end method
 
@@ -299,8 +301,8 @@
     .locals 6
 
     .prologue
-    .line 15
-    .line 14
+    .line 1
+    .line 13
     iget-object v0, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->activity:Landroid/content/ComponentName;
 
     if-nez v0, :cond_0
@@ -310,7 +312,7 @@
     :goto_0
     add-int/lit8 v0, v0, 0x1f
 
-    .line 30
+    .line 15
     mul-int/lit8 v0, v0, 0x1f
 
     iget-wide v2, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->time:J
@@ -327,7 +329,7 @@
 
     add-int/2addr v0, v1
 
-    .line 16
+    .line 30
     mul-int/lit8 v0, v0, 0x1f
 
     iget v1, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->weight:F
@@ -338,10 +340,10 @@
 
     add-int/2addr v0, v1
 
-    .line 9
+    .line 17
     return v0
 
-    .line 14
+    .line 13
     :cond_0
     iget-object v0, p0, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->activity:Landroid/content/ComponentName;
 
@@ -356,20 +358,20 @@
     .locals 6
 
     .prologue
-    .line 17
+    .line 35
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 3
+    .line 22
     const-string v1, "["
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 25
+    .line 27
     sget-object v1, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x0
+    const/4 v2, 0x2
 
     aget-object v1, v1, v2
 
@@ -381,10 +383,10 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 20
+    .line 26
     sget-object v1, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     aget-object v1, v1, v2
 
@@ -396,10 +398,10 @@
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    .line 12
+    .line 31
     sget-object v1, Lcom/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x2
+    const/4 v2, 0x1
 
     aget-object v1, v1, v2
 
@@ -417,12 +419,12 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 29
+    .line 5
     const-string v1, "]"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 24
+    .line 3
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0

@@ -1,49 +1,90 @@
-.class Lcom/whatsapp/x_;
+.class synthetic Lcom/whatsapp/x_;
 .super Ljava/lang/Object;
 .source "x_.java"
 
-# interfaces
-.implements Landroid/preference/Preference$OnPreferenceClickListener;
 
-
-# instance fields
-.field final a:Lcom/whatsapp/SettingsAccount;
+# static fields
+.field static final a:[I
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/SettingsAccount;)V
-    .locals 0
-
-    .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/x_;->a:Lcom/whatsapp/SettingsAccount;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public onPreferenceClick(Landroid/preference/Preference;)Z
-    .locals 4
+.method static constructor <clinit>()V
+    .locals 3
 
     .prologue
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/x_;->a:Lcom/whatsapp/SettingsAccount;
+    invoke-static {}, Lcom/whatsapp/amf;->values()[Lcom/whatsapp/amf;
 
-    new-instance v1, Landroid/content/Intent;
+    move-result-object v0
 
-    iget-object v2, p0, Lcom/whatsapp/x_;->a:Lcom/whatsapp/SettingsAccount;
+    array-length v0, v0
 
-    const-class v3, Lcom/whatsapp/AccountInfoActivity;
+    new-array v0, v0, [I
 
-    invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    sput-object v0, Lcom/whatsapp/x_;->a:[I
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/SettingsAccount;->startActivity(Landroid/content/Intent;)V
+    :try_start_0
+    sget-object v0, Lcom/whatsapp/x_;->a:[I
 
-    .line 3
-    const/4 v0, 0x1
+    sget-object v1, Lcom/whatsapp/amf;->PAYMENT_COMPLETED:Lcom/whatsapp/amf;
 
-    return v0
+    invoke-virtual {v1}, Lcom/whatsapp/amf;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_2
+
+    :goto_0
+    :try_start_1
+    sget-object v0, Lcom/whatsapp/x_;->a:[I
+
+    sget-object v1, Lcom/whatsapp/amf;->WHATSAPP_INITIATED:Lcom/whatsapp/amf;
+
+    invoke-virtual {v1}, Lcom/whatsapp/amf;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :goto_1
+    :try_start_2
+    sget-object v0, Lcom/whatsapp/x_;->a:[I
+
+    sget-object v1, Lcom/whatsapp/amf;->EXTENSION_REQUESTED:Lcom/whatsapp/amf;
+
+    invoke-virtual {v1}, Lcom/whatsapp/amf;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_0
+
+    :goto_2
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_2
+
+    :catch_1
+    move-exception v0
+
+    goto :goto_1
+
+    :catch_2
+    move-exception v0
+
+    goto :goto_0
 .end method

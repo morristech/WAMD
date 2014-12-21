@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "V\u001fL-BF\u000bG9DB\u001fX>S@\nA:SQ@Z)UF\u0006^)"
+    const-string v0, "[\tOd#K\u001dDp%O\t[w2M\u001cBs2\\VY`4K\u0010]`"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -49,7 +49,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x36
+    const/16 v0, 0x57
 
     :goto_1
     xor-int/2addr v0, v4
@@ -65,24 +65,26 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x23
+    const/16 v0, 0x2e
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x6f
+    const/16 v0, 0x79
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x28
+    const/16 v0, 0x2b
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x4c
+    const/4 v0, 0x5
 
     goto :goto_1
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -97,7 +99,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 1
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -109,14 +111,14 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 3
     sget-object v0, Lcom/whatsapp/UpdatedOurAppReceiver;->z:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 4
+    .line 2
     invoke-static {}, Lcom/whatsapp/UpdatedAnyAppReceiver;->a()V
 
-    .line 3
+    .line 4
     return-void
 .end method

@@ -3,20 +3,20 @@
 .source "wk.java"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/ListChatInfo;
+.field final a:Lcom/whatsapp/VoiceService$VoiceServiceEventCallback;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/ListChatInfo;)V
+.method constructor <init>(Lcom/whatsapp/VoiceService$VoiceServiceEventCallback;)V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/wk;->a:Lcom/whatsapp/ListChatInfo;
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/wk;->a:Lcom/whatsapp/VoiceService$VoiceServiceEventCallback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,17 +25,17 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 2
+.method public run()V
+    .locals 1
 
     .prologue
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/wk;->a:Lcom/whatsapp/VoiceService$VoiceServiceEventCallback;
+
+    iget-object v0, v0, Lcom/whatsapp/VoiceService$VoiceServiceEventCallback;->bufferQueue:Lcom/whatsapp/ml;
+
+    invoke-virtual {v0}, Lcom/whatsapp/ml;->a()V
+
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/wk;->a:Lcom/whatsapp/ListChatInfo;
-
-    const/16 v1, 0x32
-
-    invoke-virtual {v0, v1}, Lcom/whatsapp/ListChatInfo;->showDialog(I)V
-
-    .line 3
     return-void
 .end method

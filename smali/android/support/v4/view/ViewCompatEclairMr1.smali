@@ -27,7 +27,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "_c/0Co-:=\u000fcc8=Do--:Ffi<7AN\u007f/%Fdj\u0001 Ko\u007f\u000b<Nha+6"
+    const-string v6, "&:C$\u0006\u001f>V21"
 
     const/4 v0, -0x1
 
@@ -65,7 +65,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "yh:\u0011Gca* JdI<3Xcc)\u001d]nh<\u0017Ako\"7K"
+    const-string v0, "%=G1)\u0015sR<e\u0016:H7e\u0013;O?!\u00026H\u00177\u0011$O=\"?!B675=G1)\u00157"
 
     move-object v6, v0
 
@@ -80,7 +80,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "_c/0Co-:=\u000fcc8=Do--:Ffi<7AN\u007f/%Fdj\u0001 Ko\u007f\u000b<Nha+6"
+    const-string v0, "%=G1)\u0015sR<e\u0019=P<.\u0015sE;,\u001c7T6+4!G$,\u001e4i!!\u0015!c=$\u0012?C7"
 
     move-object v6, v0
 
@@ -95,7 +95,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "_c/0Co-:=\u000fld 6\u000fie\'>Kxh \u0016]kz\'<HE\u007f*7]Oc/0Coi"
+    const-string v0, "\u00036R\u0010-\u0019?B! \u001e\u0017T22\u0019=A\u001c7\u00146T\u0016+\u00111J6!"
 
     move-object v6, v0
 
@@ -110,7 +110,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "\\d+%le`>3["
+    const-string v0, "&:C$\u0006\u001f>V21"
 
     move-object v6, v0
 
@@ -127,7 +127,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "_c/0Co-:=\u000fcc8=Do--:Ffi<7AN\u007f/%Fdj\u0001 Ko\u007f\u000b<Nha+6"
+    const-string v0, "%=G1)\u0015sR<e\u0019=P<.\u0015sE;,\u001c7T6+4!G$,\u001e4i!!\u0015!c=$\u0012?C7"
 
     move v7, v6
 
@@ -144,7 +144,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "\\d+%le`>3["
+    const-string v6, "%=G1)\u0015sR<e\u0019=P<.\u0015sE;,\u001c7T6+4!G$,\u001e4i!!\u0015!c=$\u0012?C7"
 
     const/4 v0, 0x5
 
@@ -157,7 +157,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "\\d+%le`>3["
+    const-string v6, "&:C$\u0006\u001f>V21"
 
     const/4 v0, 0x6
 
@@ -170,7 +170,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "\\d+%le`>3["
+    const-string v6, "&:C$\u0006\u001f>V21"
 
     const/4 v0, 0x7
 
@@ -192,7 +192,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x2f
+    const/16 v6, 0x45
 
     :goto_2
     xor-int/2addr v6, v13
@@ -208,22 +208,22 @@
     goto :goto_1
 
     :pswitch_8
-    const/16 v6, 0xa
+    const/16 v6, 0x70
 
     goto :goto_2
 
     :pswitch_9
-    const/16 v6, 0xd
+    const/16 v6, 0x53
 
     goto :goto_2
 
     :pswitch_a
-    const/16 v6, 0x4e
+    const/16 v6, 0x26
 
     goto :goto_2
 
     :pswitch_b
-    const/16 v6, 0x52
+    const/16 v6, 0x53
 
     goto :goto_2
 
@@ -252,7 +252,7 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 12
     invoke-virtual {p0}, Landroid/view/View;->isOpaque()Z
 
     move-result v0
@@ -268,7 +268,7 @@
 
     const/4 v5, 0x1
 
-    .line 8
+    .line 11
     :try_start_0
     sget-object v0, Landroid/support/v4/view/ViewCompatEclairMr1;->sChildrenDrawingOrderMethod:Ljava/lang/reflect/Method;
     :try_end_0
@@ -276,13 +276,13 @@
 
     if-nez v0, :cond_0
 
-    .line 14
+    .line 8
     :try_start_1
     const-class v0, Landroid/view/ViewGroup;
 
     sget-object v1, Landroid/support/v4/view/ViewCompatEclairMr1;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x3
 
     aget-object v1, v1, v2
 
@@ -305,13 +305,13 @@
     .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 11
+    .line 15
     :goto_0
     sget-object v0, Landroid/support/v4/view/ViewCompatEclairMr1;->sChildrenDrawingOrderMethod:Ljava/lang/reflect/Method;
 
     invoke-virtual {v0, v5}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    .line 1
+    .line 2
     :cond_0
     :try_start_2
     sget-object v0, Landroid/support/v4/view/ViewCompatEclairMr1;->sChildrenDrawingOrderMethod:Ljava/lang/reflect/Method;
@@ -334,11 +334,11 @@
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_3
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_2 .. :try_end_2} :catch_4
 
-    .line 17
+    .line 16
     :goto_1
     return-void
 
-    .line 7
+    .line 14
     :catch_0
     move-exception v0
 
@@ -348,28 +348,26 @@
     :catch_1
     move-exception v0
 
-    .line 10
+    .line 7
     sget-object v1, Landroid/support/v4/view/ViewCompatEclairMr1;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x8
+    const/4 v2, 0x7
 
     aget-object v1, v1, v2
 
     sget-object v2, Landroid/support/v4/view/ViewCompatEclairMr1;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x3
-
-    aget-object v2, v2, v3
+    aget-object v2, v2, v5
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_0
 
-    .line 5
+    .line 1
     :catch_2
     move-exception v0
 
-    .line 13
+    .line 4
     sget-object v1, Landroid/support/v4/view/ViewCompatEclairMr1;->z:[Ljava/lang/String;
 
     const/4 v2, 0x4
@@ -386,39 +384,39 @@
 
     goto :goto_1
 
-    .line 15
+    .line 13
     :catch_3
     move-exception v0
 
-    .line 18
+    .line 6
     sget-object v1, Landroid/support/v4/view/ViewCompatEclairMr1;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x6
-
-    aget-object v1, v1, v2
+    aget-object v1, v1, v6
 
     sget-object v2, Landroid/support/v4/view/ViewCompatEclairMr1;->z:[Ljava/lang/String;
 
-    aget-object v2, v2, v6
+    const/4 v3, 0x5
+
+    aget-object v2, v2, v3
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_1
 
-    .line 16
+    .line 5
     :catch_4
     move-exception v0
 
-    .line 12
+    .line 10
     sget-object v1, Landroid/support/v4/view/ViewCompatEclairMr1;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x7
+    const/16 v2, 0x8
 
     aget-object v1, v1, v2
 
     sget-object v2, Landroid/support/v4/view/ViewCompatEclairMr1;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x5
+    const/4 v3, 0x6
 
     aget-object v2, v2, v3
 

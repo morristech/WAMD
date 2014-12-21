@@ -17,7 +17,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "Q\u001a#V\u0015Y\u0010iM\u0014D\u0011)PTQ\u00173M\u0015^Z\u0006g.y;\t{)x!\u0013`5g:"
+    const-string v2, "eUI\"Vm_\u00039Wp^C$\u0017eXY9Vj\u0015l\u0013mMtc\u000fjLny\u0014vSu"
 
     const/4 v0, -0x1
 
@@ -57,7 +57,7 @@
 
     const/4 v2, 0x1
 
-    const-string v0, "Q\u00047\u000b\tX\u00013@\u0015G\u001ahA\u0002D\u00115J\u001b\\+*A\u001eY\u0015hW\u000eQ\u0000\"\u000b"
+    const-string v0, "eK]\u007fJlNY4VsU\u00025Ap^_>Xhd@5]mZ\u0002#MeOH\u007f"
 
     move v3, v2
 
@@ -83,7 +83,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0x7a
+    const/16 v2, 0x39
 
     :goto_2
     xor-int/2addr v2, v9
@@ -99,24 +99,26 @@
     goto :goto_1
 
     :pswitch_1
-    const/16 v2, 0x30
+    const/4 v2, 0x4
 
     goto :goto_2
 
     :pswitch_2
-    const/16 v2, 0x74
+    const/16 v2, 0x3b
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v2, 0x47
+    const/16 v2, 0x2d
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v2, 0x24
+    const/16 v2, 0x50
 
     goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -148,7 +150,7 @@
     .locals 3
 
     .prologue
-    .line 3
+    .line 6
     new-instance v0, Landroid/content/IntentFilter;
 
     sget-object v1, Lcom/whatsapp/ShutdownBroadcastReceiver;->z:[Ljava/lang/String;
@@ -161,7 +163,7 @@
 
     invoke-virtual {p1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 7
+    .line 5
     return-void
 .end method
 
@@ -171,7 +173,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 2
+    .line 4
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -200,12 +202,12 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 4
-    invoke-static {p1, v3}, Lcom/whatsapp/App;->b(Landroid/content/Context;I)V
+    .line 7
+    invoke-static {p1, v3}, Lcom/whatsapp/App;->c(Landroid/content/Context;I)V
 
-    .line 6
+    .line 2
     invoke-static {p1, v3}, Lcom/whatsapp/App;->a(Landroid/content/Context;Z)V
 
-    .line 5
+    .line 3
     return-void
 .end method

@@ -1,321 +1,216 @@
-.class Lcom/whatsapp/gallerypicker/a1;
-.super Ljava/lang/Object;
+.class final enum Lcom/whatsapp/gallerypicker/a1;
+.super Ljava/lang/Enum;
 .source "a1.java"
-
-# interfaces
-.implements Lcom/whatsapp/s;
 
 
 # static fields
-.field private static final z:Ljava/lang/String;
+.field public static final ALLOW:Lcom/whatsapp/gallerypicker/a1;
 
+.field public static final CANCEL:Lcom/whatsapp/gallerypicker/a1;
 
-# instance fields
-.field final a:Lcom/whatsapp/gallerypicker/ImagePreview;
+.field private static final a:[Lcom/whatsapp/gallerypicker/a1;
+
+.field private static final z:[Ljava/lang/String;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 12
 
-    const-string v0, "((\u0008H"
+    .prologue
+    const/4 v11, 0x2
 
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+    const/4 v4, 0x1
 
-    move-result-object v0
+    const/4 v1, 0x0
 
-    array-length v1, v0
+    new-array v3, v11, [Ljava/lang/String;
 
-    const/4 v2, 0x0
+    const-string v2, "89\u0006ft"
 
-    move v3, v2
+    const/4 v0, -0x1
 
-    move v2, v1
+    move-object v5, v3
 
-    move-object v1, v0
+    move-object v6, v3
+
+    move v3, v1
 
     :goto_0
-    if-gt v2, v3, :cond_0
+    invoke-virtual {v2}, Ljava/lang/String;->toCharArray()[C
 
-    new-instance v0, Ljava/lang/String;
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
+    array-length v7, v2
 
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
+    move v8, v7
 
-    move-result-object v0
+    move v9, v1
 
-    sput-object v0, Lcom/whatsapp/gallerypicker/a1;->z:Ljava/lang/String;
+    move-object v7, v2
 
-    return-void
+    :goto_1
+    if-gt v8, v9, :cond_0
 
-    :cond_0
-    aget-char v4, v1, v3
+    new-instance v2, Ljava/lang/String;
 
-    rem-int/lit8 v0, v3, 0x5
+    invoke-direct {v2, v7}, Ljava/lang/String;-><init>([C)V
+
+    invoke-virtual {v2}, Ljava/lang/String;->intern()Ljava/lang/String;
+
+    move-result-object v2
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x22
+    aput-object v2, v5, v3
 
-    :goto_1
-    xor-int/2addr v0, v4
+    const-string v0, ":4\u0004jf5"
 
-    int-to-char v0, v0
+    move-object v2, v0
 
-    aput-char v0, v1, v3
+    move v3, v4
 
-    add-int/lit8 v0, v3, 0x1
+    move-object v5, v6
 
-    move v3, v0
+    move v0, v1
 
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x4d
+    aput-object v2, v5, v3
+
+    sput-object v6, Lcom/whatsapp/gallerypicker/a1;->z:[Ljava/lang/String;
+
+    .line 4
+    new-instance v0, Lcom/whatsapp/gallerypicker/a1;
+
+    sget-object v2, Lcom/whatsapp/gallerypicker/a1;->z:[Ljava/lang/String;
+
+    aget-object v2, v2, v4
+
+    invoke-direct {v0, v2, v1}, Lcom/whatsapp/gallerypicker/a1;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/whatsapp/gallerypicker/a1;->CANCEL:Lcom/whatsapp/gallerypicker/a1;
+
+    new-instance v0, Lcom/whatsapp/gallerypicker/a1;
+
+    sget-object v2, Lcom/whatsapp/gallerypicker/a1;->z:[Ljava/lang/String;
+
+    aget-object v2, v2, v1
+
+    invoke-direct {v0, v2, v4}, Lcom/whatsapp/gallerypicker/a1;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/whatsapp/gallerypicker/a1;->ALLOW:Lcom/whatsapp/gallerypicker/a1;
+
+    new-array v0, v11, [Lcom/whatsapp/gallerypicker/a1;
+
+    sget-object v2, Lcom/whatsapp/gallerypicker/a1;->CANCEL:Lcom/whatsapp/gallerypicker/a1;
+
+    aput-object v2, v0, v1
+
+    sget-object v1, Lcom/whatsapp/gallerypicker/a1;->ALLOW:Lcom/whatsapp/gallerypicker/a1;
+
+    aput-object v1, v0, v4
+
+    sput-object v0, Lcom/whatsapp/gallerypicker/a1;->a:[Lcom/whatsapp/gallerypicker/a1;
+
+    return-void
+
+    .line 4294967295
+    :cond_0
+    aget-char v10, v7, v9
+
+    rem-int/lit8 v2, v9, 0x5
+
+    packed-switch v2, :pswitch_data_1
+
+    const/16 v2, 0x23
+
+    :goto_2
+    xor-int/2addr v2, v10
+
+    int-to-char v2, v2
+
+    aput-char v2, v7, v9
+
+    add-int/lit8 v2, v9, 0x1
+
+    move v9, v2
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x4c
+    const/16 v2, 0x79
 
-    goto :goto_1
+    goto :goto_2
 
     :pswitch_2
-    const/16 v0, 0x61
+    const/16 v2, 0x75
 
-    goto :goto_1
+    goto :goto_2
 
     :pswitch_3
-    const/16 v0, 0x3c
+    const/16 v2, 0x4a
 
-    goto :goto_1
+    goto :goto_2
+
+    :pswitch_4
+    const/16 v2, 0x29
+
+    goto :goto_2
 
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
         :pswitch_1
         :pswitch_2
         :pswitch_3
+        :pswitch_4
     .end packed-switch
 .end method
 
-.method constructor <init>(Lcom/whatsapp/gallerypicker/ImagePreview;)V
+.method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
 
     .prologue
-    .line 22
-    iput-object p1, p0, Lcom/whatsapp/gallerypicker/a1;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
 .end method
 
-.method private a()Landroid/widget/EditText;
-    .locals 3
+.method public static valueOf(Ljava/lang/String;)Lcom/whatsapp/gallerypicker/a1;
+    .locals 1
 
     .prologue
-    .line 9
-    iget-object v0, p0, Lcom/whatsapp/gallerypicker/a1;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
-
-    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->o(Lcom/whatsapp/gallerypicker/ImagePreview;)I
-
-    move-result v0
-
-    if-ltz v0, :cond_0
-
-    .line 13
-    iget-object v0, p0, Lcom/whatsapp/gallerypicker/a1;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
-
-    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->t(Lcom/whatsapp/gallerypicker/ImagePreview;)Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/whatsapp/gallerypicker/a1;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
-
-    invoke-static {v1}, Lcom/whatsapp/gallerypicker/ImagePreview;->o(Lcom/whatsapp/gallerypicker/ImagePreview;)I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/net/Uri;
-
-    .line 4
-    iget-object v1, p0, Lcom/whatsapp/gallerypicker/a1;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
-
-    invoke-static {v1}, Lcom/whatsapp/gallerypicker/ImagePreview;->s(Lcom/whatsapp/gallerypicker/ImagePreview;)Landroid/support/v4/view/ViewPager;
-
-    move-result-object v1
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    sget-object v2, Lcom/whatsapp/gallerypicker/a1;->z:Ljava/lang/String;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Landroid/support/v4/view/ViewPager;->findViewWithTag(Ljava/lang/Object;)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/EditText;
-
-    .line 21
-    :goto_0
-    return-object v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-
-# virtual methods
-.method public a()V
-    .locals 4
-
-    .prologue
-    .line 7
-    invoke-direct {p0}, Lcom/whatsapp/gallerypicker/a1;->a()Landroid/widget/EditText;
-
-    move-result-object v0
-
-    .line 23
-    if-eqz v0, :cond_0
-
-    .line 17
-    new-instance v1, Landroid/view/KeyEvent;
-
-    const/4 v2, 0x0
-
-    const/16 v3, 0x43
-
-    invoke-direct {v1, v2, v3}, Landroid/view/KeyEvent;-><init>(II)V
-
-    invoke-virtual {v0, v1}, Landroid/widget/EditText;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
-
-    .line 5
-    :cond_0
-    return-void
-.end method
-
-.method public a(I)V
-    .locals 6
-
-    .prologue
-    .line 14
-    invoke-direct {p0}, Lcom/whatsapp/gallerypicker/a1;->a()Landroid/widget/EditText;
-
-    move-result-object v2
-
-    .line 19
-    if-eqz v2, :cond_1
-
-    .line 15
-    invoke-virtual {v2}, Landroid/widget/EditText;->getSelectionStart()I
-
-    move-result v0
-
-    .line 16
-    invoke-virtual {v2}, Landroid/widget/EditText;->getSelectionEnd()I
-
-    move-result v1
-
     .line 3
-    if-le v0, v1, :cond_2
+    const-class v0, Lcom/whatsapp/gallerypicker/a1;
 
-    .line 18
-    :goto_0
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 8
-    invoke-static {p1}, Lcom/whatsapp/util/ab;->f(I)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v1, v0, v4}, Ljava/lang/StringBuilder;->replace(IILjava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    const/4 v0, 0x0
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->length()I
-
-    move-result v4
-
-    invoke-virtual {v3, v0, v4}, Ljava/lang/StringBuilder;->codePointCount(II)I
-
-    move-result v0
-
-    .line 24
-    const/16 v4, 0xa0
-
-    if-le v0, v4, :cond_0
-
-    .line 11
-    :goto_1
-    return-void
-
-    .line 6
-    :cond_0
-    invoke-virtual {v2, v3}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
-
-    .line 20
-    invoke-static {p1}, Lcom/whatsapp/util/ab;->a(I)I
-
-    move-result v0
-
-    add-int/2addr v0, v1
-
-    invoke-virtual {v2, v0}, Landroid/widget/EditText;->setSelection(I)V
-
-    .line 12
-    :cond_1
-    iget-object v0, p0, Lcom/whatsapp/gallerypicker/a1;->a:Lcom/whatsapp/gallerypicker/ImagePreview;
-
-    invoke-static {v0}, Lcom/whatsapp/gallerypicker/ImagePreview;->d(Lcom/whatsapp/gallerypicker/ImagePreview;)Lcom/whatsapp/a11;
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/whatsapp/a11;->dismiss()V
+    check-cast v0, Lcom/whatsapp/gallerypicker/a1;
 
-    goto :goto_1
+    return-object v0
+.end method
 
-    :cond_2
-    move v5, v1
+.method public static values()[Lcom/whatsapp/gallerypicker/a1;
+    .locals 1
 
-    move v1, v0
+    .prologue
+    .line 2
+    sget-object v0, Lcom/whatsapp/gallerypicker/a1;->a:[Lcom/whatsapp/gallerypicker/a1;
 
-    move v0, v5
+    invoke-virtual {v0}, [Lcom/whatsapp/gallerypicker/a1;->clone()Ljava/lang/Object;
 
-    goto :goto_0
+    move-result-object v0
+
+    check-cast v0, [Lcom/whatsapp/gallerypicker/a1;
+
+    return-object v0
 .end method

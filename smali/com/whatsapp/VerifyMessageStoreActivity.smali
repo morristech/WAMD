@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private j:Lcom/whatsapp/dc;
+.field private j:Lcom/whatsapp/a_y;
 
 
 # direct methods
@@ -12,15 +12,15 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 5
     invoke-direct {p0}, Lcom/whatsapp/UserFeedbackActivity;-><init>()V
 
-    .line 9
-    new-instance v0, Lcom/whatsapp/df;
+    .line 14
+    new-instance v0, Lcom/whatsapp/a_o;
 
-    invoke-direct {v0, p0, p0}, Lcom/whatsapp/df;-><init>(Lcom/whatsapp/VerifyMessageStoreActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/whatsapp/a_o;-><init>(Lcom/whatsapp/VerifyMessageStoreActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/whatsapp/VerifyMessageStoreActivity;->j:Lcom/whatsapp/dc;
+    iput-object v0, p0, Lcom/whatsapp/VerifyMessageStoreActivity;->j:Lcom/whatsapp/a_y;
 
     return-void
 .end method
@@ -31,25 +31,20 @@
     .locals 1
 
     .prologue
-    .line 6
-    iget-object v0, p0, Lcom/whatsapp/VerifyMessageStoreActivity;->j:Lcom/whatsapp/dc;
+    .line 11
+    iget-object v0, p0, Lcom/whatsapp/VerifyMessageStoreActivity;->j:Lcom/whatsapp/a_y;
 
-    invoke-virtual {v0, p1}, Lcom/whatsapp/dc;->b(Z)V
+    invoke-virtual {v0, p1}, Lcom/whatsapp/a_y;->a(Z)V
 
-    .line 13
+    .line 4
     return-void
 .end method
 
 .method protected b()V
-    .locals 1
+    .locals 0
 
     .prologue
-    .line 8
-    iget-object v0, p0, Lcom/whatsapp/VerifyMessageStoreActivity;->j:Lcom/whatsapp/dc;
-
-    invoke-virtual {v0}, Lcom/whatsapp/dc;->a()V
-
-    .line 14
+    .line 7
     return-void
 .end method
 
@@ -57,30 +52,35 @@
     .locals 2
 
     .prologue
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/VerifyMessageStoreActivity;->j:Lcom/whatsapp/dc;
+    .line 6
+    iget-object v0, p0, Lcom/whatsapp/VerifyMessageStoreActivity;->j:Lcom/whatsapp/a_y;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, p1, v1}, Lcom/whatsapp/dc;->a(ZZ)V
+    invoke-virtual {v0, p1, v1}, Lcom/whatsapp/a_y;->a(ZZ)V
 
+    .line 9
+    return-void
+.end method
+
+.method protected c()V
+    .locals 0
+
+    .prologue
     .line 3
     return-void
 .end method
 
-.method protected d()V
-    .locals 0
-
-    .prologue
-    .line 5
-    return-void
-.end method
-
 .method protected e()V
-    .locals 0
+    .locals 1
 
     .prologue
-    .line 11
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/VerifyMessageStoreActivity;->j:Lcom/whatsapp/a_y;
+
+    invoke-virtual {v0}, Lcom/whatsapp/a_y;->a()V
+
+    .line 2
     return-void
 .end method
 
@@ -88,17 +88,17 @@
     .locals 1
 
     .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/VerifyMessageStoreActivity;->j:Lcom/whatsapp/dc;
+    .line 12
+    iget-object v0, p0, Lcom/whatsapp/VerifyMessageStoreActivity;->j:Lcom/whatsapp/a_y;
 
-    invoke-virtual {v0, p1}, Lcom/whatsapp/dc;->a(I)Landroid/app/Dialog;
+    invoke-virtual {v0, p1}, Lcom/whatsapp/a_y;->a(I)Landroid/app/Dialog;
 
     move-result-object v0
 
-    .line 1
+    .line 8
     if-eqz v0, :cond_0
 
-    .line 12
+    .line 13
     :goto_0
     return-object v0
 

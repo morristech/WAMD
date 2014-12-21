@@ -1,115 +1,87 @@
 .class Lcom/whatsapp/b5;
-.super Landroid/database/Observable;
+.super Landroid/os/Handler;
 .source "b5.java"
 
 
+# instance fields
+.field final a:Lcom/whatsapp/Conversation;
+
+
 # direct methods
-.method private constructor <init>()V
+.method private constructor <init>(Lcom/whatsapp/Conversation;)V
     .locals 0
 
     .prologue
-    .line 5
-    invoke-direct {p0}, Landroid/database/Observable;-><init>()V
+    .line 3
+    iput-object p1, p0, Lcom/whatsapp/b5;->a:Lcom/whatsapp/Conversation;
+
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
-.method constructor <init>(Lcom/whatsapp/j8;)V
+.method constructor <init>(Lcom/whatsapp/Conversation;Lcom/whatsapp/afj;)V
     .locals 0
 
     .prologue
-    .line 4
-    invoke-direct {p0}, Lcom/whatsapp/b5;-><init>()V
+    .line 5
+    invoke-direct {p0, p1}, Lcom/whatsapp/b5;-><init>(Lcom/whatsapp/Conversation;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/whatsapp/avy;JJ)V
-    .locals 8
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 2
 
     .prologue
-    sget-boolean v6, Lcom/whatsapp/App;->aL:Z
+    const/4 v1, 0x0
 
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/b5;->mObservers:Ljava/util/ArrayList;
+    .line 4
+    sget-object v0, Lcom/whatsapp/App;->W:Lcom/whatsapp/App;
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    iget-object v0, v0, Lcom/whatsapp/App;->ax:Lcom/whatsapp/ScreenLockReceiver;
 
-    move-result-object v7
-
-    :cond_0
-    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {v0}, Lcom/whatsapp/ScreenLockReceiver;->a()Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
-
-    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/whatsapp/ls;
-
-    move-object v1, p1
-
-    move-wide v2, p2
-
-    move-wide v4, p4
-
-    .line 3
-    invoke-virtual/range {v0 .. v5}, Lcom/whatsapp/ls;->a(Lcom/whatsapp/avy;JJ)V
-
-    .line 7
-    if-eqz v6, :cond_0
-
-    .line 8
-    :cond_1
-    return-void
-.end method
-
-.method public a(Lcom/whatsapp/avy;JJLjava/util/ArrayList;)V
-    .locals 10
-
-    .prologue
-    sget-boolean v7, Lcom/whatsapp/App;->aL:Z
-
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/b5;->mObservers:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v8
-
-    :cond_0
-    invoke-interface {v8}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/whatsapp/ls;
-
-    move-object v1, p1
-
-    move-wide v2, p2
-
-    move-wide v4, p4
-
-    move-object/from16 v6, p6
-
-    .line 10
-    invoke-virtual/range {v0 .. v6}, Lcom/whatsapp/ls;->a(Lcom/whatsapp/avy;JJLjava/util/ArrayList;)V
+    if-nez v0, :cond_1
 
     .line 9
-    if-eqz v7, :cond_0
+    invoke-static {v1, v1}, Lcom/whatsapp/App;->a(ZZ)V
+
+    .line 1
+    iget-object v0, p0, Lcom/whatsapp/b5;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->A(Lcom/whatsapp/Conversation;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 7
+    invoke-static {}, Lcom/whatsapp/notification/u;->b()Lcom/whatsapp/notification/u;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/whatsapp/notification/u;->a()V
 
     .line 6
+    :cond_0
+    iget-object v0, p0, Lcom/whatsapp/b5;->a:Lcom/whatsapp/Conversation;
+
+    invoke-static {v0, v1}, Lcom/whatsapp/Conversation;->m(Lcom/whatsapp/Conversation;Z)Z
+
+    .line 8
+    iget-object v0, p0, Lcom/whatsapp/b5;->a:Lcom/whatsapp/Conversation;
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Lcom/whatsapp/Conversation;->h(Lcom/whatsapp/Conversation;Z)Z
+
+    .line 2
     :cond_1
     return-void
 .end method

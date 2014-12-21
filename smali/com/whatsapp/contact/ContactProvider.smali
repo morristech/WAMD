@@ -6,19 +6,19 @@
 # static fields
 .field public static final a:Landroid/net/Uri;
 
-.field private static final c:Landroid/content/UriMatcher;
+.field private static final b:Landroid/content/UriMatcher;
 
-.field public static d:Z
+.field public static c:I
 
-.field public static final e:[Ljava/lang/String;
+.field public static final d:Landroid/net/Uri;
 
-.field public static final f:Landroid/net/Uri;
+.field public static final f:[Ljava/lang/String;
 
 .field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field private b:Lcom/whatsapp/contact/p;
+.field private e:Lcom/whatsapp/contact/j;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     new-array v6, v0, [Ljava/lang/String;
 
-    const-string v0, "R\r\u000fKD-["
+    const-string v0, "2IM3g\u0010I\u0006\u0008Z.\u0007"
 
     move v7, v2
 
@@ -65,7 +65,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "R\r\u000fKD-[K*7IDC"
+    const-string v0, "\u0011IBsi\tCT2a\u0003\tE(z\u0014HTsl\u000eU\t+f\u0003\tE2eIPN<|\u0014FV-&\u0017UI+a\u0003BTsk\u0008IR<k\u0013"
 
     move-object v6, v0
 
@@ -80,7 +80,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "z\u00054\u0008\u0016c\u0010\n\u0008\r~"
+    const-string v0, "\u0011IBsi\tCT2a\u0003\tE(z\u0014HTsa\u0013BKr~\tC\u0008>g\n\tQ5i\u0013TG-xIWT2~\u000eCC/&\u0004HH)i\u0004S"
 
     move-object v6, v0
 
@@ -95,7 +95,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "X\n\u0000\u0005\u0016z\nK>+DD"
+    const-string v0, "\u0017FR5"
 
     move-object v6, v0
 
@@ -112,7 +112,7 @@
 
     const/4 v6, 0x4
 
-    const-string v0, "{\n\u000fE\u0018c\u0000\u0019\u0004\u0010iJ\u0008\u001e\u000b~\u000b\u0019E\u0010y\u0001\u0006D\u000fc\u0000E\u0008\u0016`J\u001c\u0003\u0018y\u0017\n\u001b\t#\u0014\u0019\u0004\u000fd\u0000\u000e\u0019Wn\u000b\u0005\u001f\u0018n\u0010"
+    const-string v0, "\u0017FR5"
 
     move v7, v6
 
@@ -129,7 +129,7 @@
 
     const/4 v7, 0x5
 
-    const-string v6, "X\n\u0000\u0005\u0016z\nK>+DD"
+    const-string v6, "8xO3{\u0002UR\u0002g\u0015xT8x\u000bFE8W8"
 
     const/4 v0, 0x4
 
@@ -142,7 +142,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "{\n\u000fE\u0018c\u0000\u0019\u0004\u0010iJ\u0008\u001e\u000b~\u000b\u0019E\u001dd\u0016D\u001d\u0017iJ\u0008\u0004\u0014#\u0013\u0003\n\r~\u0005\u001b\u001bW}\u0016\u0004\u001d\u0010i\u0001\u0019E\u001ab\n\u001f\n\u001ay"
+    const-string v6, "\u0010Fy>g\tSG>|\u0014"
 
     const/4 v0, 0x5
 
@@ -155,7 +155,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "n\u000b\u0005\u001f\u001cc\u0010"
+    const-string v6, "8xO3{\u0002UR\u0002g\u0015xT8x\u000bFE8W8"
 
     const/4 v0, 0x6
 
@@ -168,7 +168,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "n\u000b\u0006E\u000ee\u0005\u001f\u0018\u0018}\u0014E\u001b\u000bb\u0012\u0002\u000f\u001c\u007fJ\u0008\u0004\u0017y\u0005\u0008\u001f"
+    const-string v6, "2IM3g\u0010I\u0006\u0008Z.\u0007"
 
     const/4 v0, 0x7
 
@@ -181,7 +181,7 @@
 
     const/16 v7, 0x9
 
-    const-string v6, "X\n\u0000\u0005\u0016z\nK>+DD"
+    const-string v6, "\u0010Fy>g\tSG>|\u0014"
 
     const/16 v0, 0x8
 
@@ -194,7 +194,7 @@
 
     const/16 v7, 0xa
 
-    const-string v6, "}\u0005\u001f\u0003"
+    const-string v6, "\u0017FR5(\u000eT\u0006<(\u0015BW(a\u0015BB}~\u0006KS8"
 
     const/16 v0, 0x9
 
@@ -207,7 +207,7 @@
 
     const/16 v7, 0xb
 
-    const-string v6, "R;\u0002\u0005\nh\u0016\u001f4\u0016\u007f;\u0019\u000e\ta\u0005\u0008\u000e&R"
+    const-string v6, "8xO3{\u0002UR\u0002g\u0015xT8x\u000bFE8W8"
 
     const/16 v0, 0xa
 
@@ -220,7 +220,7 @@
 
     const/16 v7, 0xc
 
-    const-string v6, "}\u0005\u001f\u0003"
+    const-string v6, "8NB}5G\u0018\u0006\u001cF#\u0007\u000e"
 
     const/16 v0, 0xb
 
@@ -233,7 +233,7 @@
 
     const/16 v7, 0xd
 
-    const-string v6, "z\u00054\u0008\u0016c\u0010\n\u0008\r~"
+    const-string v6, "8NB}5G\u0018"
 
     const/16 v0, 0xc
 
@@ -246,7 +246,7 @@
 
     const/16 v7, 0xe
 
-    const-string v6, "R;\u0002\u0005\nh\u0016\u001f4\u0016\u007f;\u0019\u000e\ta\u0005\u0008\u000e&R"
+    const-string v6, "\u0010Fy>g\tSG>|\u0014"
 
     const/16 v0, 0xd
 
@@ -259,7 +259,7 @@
 
     const/16 v7, 0xf
 
-    const-string v6, "z\u00054\u0008\u0016c\u0010\n\u0008\r~"
+    const-string v6, "2IM3g\u0010I\u0006\u0008Z.\u0007"
 
     const/16 v0, 0xe
 
@@ -272,7 +272,7 @@
 
     const/16 v7, 0x10
 
-    const-string v6, "}\u0005\u001f\u0003Yd\u0017K\nY\u007f\u0001\u001a\u001e\u0010\u007f\u0001\u000fK\u000fl\u0008\u001e\u000e"
+    const-string v6, "\u0010Fy>g\tSG>|\u0014"
 
     const/16 v0, 0xf
 
@@ -285,7 +285,7 @@
 
     const/16 v7, 0x11
 
-    const-string v6, "R;\u0002\u0005\nh\u0016\u001f4\u0016\u007f;\u0019\u000e\ta\u0005\u0008\u000e&R"
+    const-string v6, "2IM3g\u0010I\u0006\u0008Z.\u0007"
 
     const/16 v0, 0x10
 
@@ -298,7 +298,7 @@
 
     const/16 v7, 0x12
 
-    const-string v6, "z\u00054\u0008\u0016c\u0010\n\u0008\r~"
+    const-string v6, "\u0010Fy>g\tSG>|\u0014"
 
     const/16 v0, 0x11
 
@@ -311,7 +311,7 @@
 
     const/16 v7, 0x13
 
-    const-string v6, "X\n\u0000\u0005\u0016z\nK>+DD"
+    const-string v6, "8NB}5G"
 
     const/16 v0, 0x12
 
@@ -324,7 +324,7 @@
 
     const/16 v7, 0x14
 
-    const-string v6, "z\u00054\u0008\u0016c\u0010\n\u0008\r~"
+    const-string v6, "2IM3g\u0010I\u0006\u0008Z.\u0007"
 
     const/16 v0, 0x13
 
@@ -337,7 +337,7 @@
 
     const/16 v7, 0x15
 
-    const-string v6, "R\r\u000fKD-"
+    const-string v6, "\u0004HH)m\tS"
 
     const/16 v0, 0x14
 
@@ -350,7 +350,7 @@
 
     const/16 v7, 0x16
 
-    const-string v6, "X\n\u0000\u0005\u0016z\nK>+DD"
+    const-string v6, "\u0004HKs\u007f\u000fFR.i\u0017W\u0008-z\u0008QO9m\u0015\tE2f\u0013FE)"
 
     const/16 v0, 0x15
 
@@ -363,8 +363,8 @@
 
     sput-object v9, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    .line 29
-    const-string v0, "n\u000b\u0005\u001f\u001cc\u0010QDVn\u000b\u0006E\u000ee\u0005\u001f\u0018\u0018}\u0014E\u001b\u000bb\u0012\u0002\u000f\u001c\u007fJ\u0008\u0004\u0017y\u0005\u0008\u001fVn\u000b\u0005\u001f\u0018n\u0010\u0018"
+    .line 37
+    const-string v0, "\u0004HH)m\tS\u001cr\'\u0004HKs\u007f\u000fFR.i\u0017W\u0008-z\u0008QO9m\u0015\tE2f\u0013FE)\'\u0004HH)i\u0004SU"
 
     move-object v6, v0
 
@@ -382,15 +382,15 @@
 
     packed-switch v0, :pswitch_data_1
 
-    .line 29
+    .line 37
     invoke-static {v6}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
-    sput-object v0, Lcom/whatsapp/contact/ContactProvider;->f:Landroid/net/Uri;
+    sput-object v0, Lcom/whatsapp/contact/ContactProvider;->d:Landroid/net/Uri;
 
-    .line 6
-    const-string v0, "n\u000b\u0005\u001f\u001cc\u0010QDVn\u000b\u0006E\u000ee\u0005\u001f\u0018\u0018}\u0014E\u001b\u000bb\u0012\u0002\u000f\u001c\u007fJ\u0008\u0004\u0017y\u0005\u0008\u001fVn\u000b\u0005\u001f\u0018n\u0010\u0018D\u001do\u0002\u0002\u0007\u001c"
+    .line 11
+    const-string v0, "\u0004HH)m\tS\u001cr\'\u0004HKs\u007f\u000fFR.i\u0017W\u0008-z\u0008QO9m\u0015\tE2f\u0013FE)\'\u0004HH)i\u0004SUrl\u0005AO1m"
 
     move-object v6, v0
 
@@ -398,23 +398,23 @@
 
     goto :goto_1
 
-    .line 37
+    .line 47
     :pswitch_16
     aput-object v6, v8, v7
 
-    sput-object v9, Lcom/whatsapp/contact/ContactProvider;->e:[Ljava/lang/String;
+    sput-object v9, Lcom/whatsapp/contact/ContactProvider;->f:[Ljava/lang/String;
 
-    .line 59
+    .line 36
     new-instance v0, Landroid/content/UriMatcher;
 
     invoke-direct {v0, v1}, Landroid/content/UriMatcher;-><init>(I)V
 
-    sput-object v0, Lcom/whatsapp/contact/ContactProvider;->c:Landroid/content/UriMatcher;
+    sput-object v0, Lcom/whatsapp/contact/ContactProvider;->b:Landroid/content/UriMatcher;
 
-    .line 24
-    sget-object v6, Lcom/whatsapp/contact/ContactProvider;->c:Landroid/content/UriMatcher;
+    .line 12
+    sget-object v6, Lcom/whatsapp/contact/ContactProvider;->b:Landroid/content/UriMatcher;
 
-    const-string v0, "n\u000b\u0006E\u000ee\u0005\u001f\u0018\u0018}\u0014E\u001b\u000bb\u0012\u0002\u000f\u001c\u007fJ\u0008\u0004\u0017y\u0005\u0008\u001f"
+    const-string v0, "\u0004HKs\u007f\u000fFR.i\u0017W\u0008-z\u0008QO9m\u0015\tE2f\u0013FE)"
 
     move-object v7, v6
 
@@ -434,8 +434,8 @@
 
     packed-switch v0, :pswitch_data_2
 
-    .line 24
-    const-string v0, "n\u000b\u0005\u001f\u0018n\u0010\u0018"
+    .line 12
+    const-string v0, "\u0004HH)i\u0004SU"
 
     move-object v6, v0
 
@@ -453,13 +453,13 @@
 
     packed-switch v0, :pswitch_data_3
 
-    .line 24
+    .line 12
     invoke-virtual {v7, v8, v6, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 45
-    sget-object v6, Lcom/whatsapp/contact/ContactProvider;->c:Landroid/content/UriMatcher;
+    .line 25
+    sget-object v6, Lcom/whatsapp/contact/ContactProvider;->b:Landroid/content/UriMatcher;
 
-    const-string v0, "n\u000b\u0006E\u000ee\u0005\u001f\u0018\u0018}\u0014E\u001b\u000bb\u0012\u0002\u000f\u001c\u007fJ\u0008\u0004\u0017y\u0005\u0008\u001f"
+    const-string v0, "\u0004HKs\u007f\u000fFR.i\u0017W\u0008-z\u0008QO9m\u0015\tE2f\u0013FE)"
 
     move-object v7, v6
 
@@ -469,7 +469,7 @@
 
     goto :goto_2
 
-    .line 6
+    .line 11
     :pswitch_17
     invoke-static {v6}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -477,10 +477,10 @@
 
     sput-object v0, Lcom/whatsapp/contact/ContactProvider;->a:Landroid/net/Uri;
 
-    .line 37
+    .line 47
     new-array v7, v3, [Ljava/lang/String;
 
-    const-string v6, "n\u000b\u001e\u0005\r%;\u0002\u000fP-%8K&n\u000b\u001e\u0005\r"
+    const-string v6, "\u0004HS3|OxO9!Gfu}W\u0004HS3|"
 
     const/16 v0, 0x16
 
@@ -492,9 +492,9 @@
 
     goto/16 :goto_0
 
-    .line 45
+    .line 25
     :pswitch_18
-    const-string v0, "n\u000b\u0005\u001f\u0018n\u0010\u0018DZ"
+    const-string v0, "\u0004HH)i\u0004SUr+"
 
     move-object v6, v0
 
@@ -505,10 +505,10 @@
     :pswitch_19
     invoke-virtual {v7, v8, v6, v4}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 54
-    sget-object v6, Lcom/whatsapp/contact/ContactProvider;->c:Landroid/content/UriMatcher;
+    .line 63
+    sget-object v6, Lcom/whatsapp/contact/ContactProvider;->b:Landroid/content/UriMatcher;
 
-    const-string v0, "n\u000b\u0006E\u000ee\u0005\u001f\u0018\u0018}\u0014E\u001b\u000bb\u0012\u0002\u000f\u001c\u007fJ\u0008\u0004\u0017y\u0005\u0008\u001f"
+    const-string v0, "\u0004HKs\u007f\u000fFR.i\u0017W\u0008-z\u0008QO9m\u0015\tE2f\u0013FE)"
 
     move-object v7, v6
 
@@ -519,7 +519,7 @@
     goto :goto_2
 
     :pswitch_1a
-    const-string v0, "n\u000b\u0005\u001f\u0018n\u0010\u0018D\u001do\u0002\u0002\u0007\u001c"
+    const-string v0, "\u0004HH)i\u0004SUrl\u0005AO1m"
 
     move-object v6, v0
 
@@ -530,7 +530,7 @@
     :pswitch_1b
     invoke-virtual {v7, v8, v6, v5}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 52
+    .line 15
     return-void
 
     .line 4294967295
@@ -583,7 +583,7 @@
     .locals 0
 
     .prologue
-    .line 68
+    .line 32
     invoke-direct {p0}, Landroid/content/ContentProvider;-><init>()V
 
     return-void
@@ -593,7 +593,7 @@
     .locals 3
 
     .prologue
-    .line 61
+    .line 27
     :try_start_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -601,26 +601,24 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
+    .line 58
     sget-object v0, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x0
+    const/16 v1, 0xd
 
     aget-object v0, v0, v1
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 58
     :goto_0
     return-object v0
 
-    .line 5
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 58
+    .line 17
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -628,7 +626,7 @@
 
     sget-object v1, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x1
+    const/16 v2, 0xc
 
     aget-object v1, v1, v2
 
@@ -657,7 +655,7 @@
     .locals 3
 
     .prologue
-    .line 42
+    .line 56
     if-eqz p0, :cond_0
 
     :try_start_0
@@ -667,7 +665,7 @@
 
     sget-object v1, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x7
+    const/16 v2, 0x15
 
     aget-object v1, v1, v2
 
@@ -686,7 +684,7 @@
 
     sget-object v1, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x8
+    const/16 v2, 0x16
 
     aget-object v1, v1, v2
 
@@ -727,10 +725,10 @@
 
     const/4 v2, 0x0
 
-    .line 33
+    .line 46
     if-nez p1, :cond_0
 
-    .line 26
+    .line 79
     const/4 v0, 0x1
 
     :try_start_0
@@ -746,17 +744,15 @@
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 55
     :goto_0
     return-object v0
 
-    .line 26
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 22
+    .line 71
     :cond_0
     array-length v0, p1
 
@@ -764,12 +760,12 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    .line 17
+    .line 16
     array-length v1, p1
 
     invoke-static {p1, v2, v0, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 39
+    .line 9
     invoke-static {p2, p3}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object v1
@@ -780,20 +776,18 @@
 .end method
 
 .method private static z([C)Ljava/lang/String;
-    .locals 5
-
-    const/16 v1, 0x6b
+    .locals 4
 
     array-length v0, p0
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    move v3, v2
+    move v2, v1
 
-    move v2, v0
+    move v1, v0
 
     :goto_0
-    if-gt v2, v3, :cond_0
+    if-gt v1, v2, :cond_0
 
     new-instance v0, Ljava/lang/String;
 
@@ -806,44 +800,44 @@
     return-object v0
 
     :cond_0
-    aget-char v4, p0, v3
+    aget-char v3, p0, v2
 
-    rem-int/lit8 v0, v3, 0x5
+    rem-int/lit8 v0, v2, 0x5
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x79
+    const/16 v0, 0x8
 
     :goto_1
-    xor-int/2addr v0, v4
+    xor-int/2addr v0, v3
 
     int-to-char v0, v0
 
-    aput-char v0, p0, v3
+    aput-char v0, p0, v2
 
-    add-int/lit8 v0, v3, 0x1
+    add-int/lit8 v0, v2, 0x1
 
-    move v3, v0
+    move v2, v0
 
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0xd
+    const/16 v0, 0x67
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x64
+    const/16 v0, 0x27
 
     goto :goto_1
 
     :pswitch_2
-    move v0, v1
+    const/16 v0, 0x26
 
     goto :goto_1
 
     :pswitch_3
-    move v0, v1
+    const/16 v0, 0x5d
 
     goto :goto_1
 
@@ -875,7 +869,7 @@
 
     aget-char v2, v0, v1
 
-    xor-int/lit8 v2, v2, 0x79
+    xor-int/lit8 v2, v2, 0x8
 
     int-to-char v2, v2
 
@@ -891,10 +885,10 @@
     .locals 0
 
     .prologue
-    .line 19
+    .line 52
     invoke-super {p0, p1, p2}, Landroid/content/ContentProvider;->attachInfo(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V
 
-    .line 47
+    .line 26
     return-void
 .end method
 
@@ -904,11 +898,11 @@
     .prologue
     const/4 v4, 0x0
 
-    sget-boolean v0, Lcom/whatsapp/contact/ContactProvider;->d:Z
+    sget v0, Lcom/whatsapp/contact/ContactProvider;->c:I
 
-    .line 60
+    .line 2
     :try_start_0
-    sget-object v1, Lcom/whatsapp/contact/ContactProvider;->c:Landroid/content/UriMatcher;
+    sget-object v1, Lcom/whatsapp/contact/ContactProvider;->b:Landroid/content/UriMatcher;
 
     invoke-virtual {v1, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
     :try_end_0
@@ -918,7 +912,7 @@
 
     packed-switch v1, :pswitch_data_0
 
-    .line 66
+    .line 55
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -927,7 +921,7 @@
 
     sget-object v2, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x13
+    const/16 v3, 0xf
 
     aget-object v2, v2, v3
 
@@ -947,35 +941,35 @@
 
     throw v0
 
-    .line 51
+    .line 62
     :pswitch_0
     if-eqz v0, :cond_1
 
-    .line 28
+    .line 67
     :pswitch_1
     invoke-static {p1}, Landroid/content/ContentUris;->parseId(Landroid/net/Uri;)J
 
     move-result-wide v2
 
-    .line 72
+    .line 22
     invoke-direct {p0, p2}, Lcom/whatsapp/contact/ContactProvider;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 8
+    .line 64
     invoke-direct {p0, p3, v2, v3}, Lcom/whatsapp/contact/ContactProvider;->a([Ljava/lang/String;J)[Ljava/lang/String;
 
     move-result-object p3
 
-    .line 65
+    .line 75
     if-eqz v0, :cond_1
 
-    .line 71
+    .line 68
     :pswitch_2
     :try_start_1
-    iget-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->b:Lcom/whatsapp/contact/p;
+    iget-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->e:Lcom/whatsapp/contact/j;
 
-    invoke-virtual {v0}, Lcom/whatsapp/contact/p;->c()Z
+    invoke-virtual {v0}, Lcom/whatsapp/contact/j;->a()Z
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -985,7 +979,7 @@
 
     const/4 v0, 0x1
 
-    .line 14
+    .line 23
     :goto_0
     invoke-virtual {p0}, Lcom/whatsapp/contact/ContactProvider;->getContext()Landroid/content/Context;
 
@@ -997,17 +991,17 @@
 
     invoke-virtual {v1, p1, v4}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
 
-    .line 78
+    .line 72
     :goto_1
     return v0
 
-    .line 51
+    .line 62
     :catch_0
     move-exception v0
 
     throw v0
 
-    .line 71
+    .line 68
     :catch_1
     move-exception v0
 
@@ -1018,17 +1012,17 @@
 
     goto :goto_0
 
-    .line 62
+    .line 41
     :cond_1
-    iget-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->b:Lcom/whatsapp/contact/p;
+    iget-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->e:Lcom/whatsapp/contact/j;
 
-    invoke-virtual {v0}, Lcom/whatsapp/contact/p;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/whatsapp/contact/j;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
     sget-object v1, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x12
+    const/16 v2, 0xe
 
     aget-object v1, v1, v2
 
@@ -1036,7 +1030,7 @@
 
     move-result v0
 
-    .line 38
+    .line 45
     invoke-virtual {p0}, Lcom/whatsapp/contact/ContactProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -1049,7 +1043,7 @@
 
     goto :goto_1
 
-    .line 60
+    .line 2
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -1062,9 +1056,9 @@
     .locals 4
 
     .prologue
-    .line 48
+    .line 40
     :try_start_0
-    sget-object v0, Lcom/whatsapp/contact/ContactProvider;->c:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/whatsapp/contact/ContactProvider;->b:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
     :try_end_0
@@ -1074,7 +1068,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 77
+    .line 13
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1083,7 +1077,7 @@
 
     sget-object v2, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x5
+    const/4 v3, 0x0
 
     aget-object v2, v2, v3
 
@@ -1103,20 +1097,22 @@
 
     throw v0
 
-    .line 76
+    .line 24
     :pswitch_0
     :try_start_1
     sget-object v0, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x6
+    const/4 v1, 0x1
 
     aget-object v0, v0, v1
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_0
 
+    .line 73
     :goto_0
     return-object v0
 
+    .line 24
     :catch_0
     move-exception v0
 
@@ -1126,13 +1122,13 @@
     :pswitch_1
     sget-object v0, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x4
+    const/4 v1, 0x2
 
     aget-object v0, v0, v1
 
     goto :goto_0
 
-    .line 48
+    .line 40
     nop
 
     :pswitch_data_0
@@ -1146,25 +1142,25 @@
     .locals 5
 
     .prologue
+    const/4 v3, 0x3
+
     const/4 v4, 0x0
 
-    .line 74
-    sget-object v0, Lcom/whatsapp/contact/ContactProvider;->c:Landroid/content/UriMatcher;
+    .line 5
+    sget-object v0, Lcom/whatsapp/contact/ContactProvider;->b:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
     move-result v1
 
-    .line 75
-    const/4 v0, 0x3
+    .line 3
+    if-ne v1, v3, :cond_1
 
-    if-ne v1, v0, :cond_1
-
-    .line 11
+    .line 53
     :try_start_0
     sget-object v0, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v1, 0xa
+    const/4 v1, 0x4
 
     aget-object v0, v0, v1
 
@@ -1174,12 +1170,12 @@
 
     if-nez v0, :cond_0
 
-    .line 40
+    .line 14
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     sget-object v1, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x10
+    const/16 v2, 0xa
 
     aget-object v1, v1, v2
 
@@ -1194,15 +1190,13 @@
 
     throw v0
 
-    .line 18
+    .line 69
     :cond_0
-    iget-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->b:Lcom/whatsapp/contact/p;
+    iget-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->e:Lcom/whatsapp/contact/j;
 
     new-instance v1, Ljava/io/File;
 
     sget-object v2, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
-
-    const/16 v3, 0xc
 
     aget-object v2, v2, v3
 
@@ -1212,18 +1206,18 @@
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lcom/whatsapp/contact/p;->a(Ljava/io/File;)V
+    invoke-virtual {v0, v1}, Lcom/whatsapp/contact/j;->a(Ljava/io/File;)V
 
-    .line 43
+    .line 51
     :goto_0
     return-object p1
 
-    .line 35
+    .line 78
     :cond_1
     :try_start_1
     sget-object v0, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xb
+    const/4 v2, 0x7
 
     aget-object v0, v0, v2
 
@@ -1235,7 +1229,7 @@
 
     sget-object v0, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xe
+    const/16 v2, 0xb
 
     aget-object v0, v0, v2
 
@@ -1249,12 +1243,12 @@
 
     move-result v0
 
-    .line 25
+    .line 21
     :goto_1
     :try_start_2
     sget-object v2, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x11
+    const/4 v3, 0x5
 
     aget-object v2, v2, v3
 
@@ -1262,10 +1256,10 @@
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 27
+    .line 38
     packed-switch v1, :pswitch_data_0
 
-    .line 63
+    .line 35
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1274,7 +1268,7 @@
 
     sget-object v2, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x9
+    const/16 v3, 0x8
 
     aget-object v2, v2, v3
 
@@ -1294,7 +1288,7 @@
 
     throw v0
 
-    .line 35
+    .line 78
     :catch_1
     move-exception v0
 
@@ -1305,20 +1299,20 @@
 
     goto :goto_1
 
-    .line 13
+    .line 19
     :pswitch_0
     if-eqz v0, :cond_3
 
-    .line 34
-    iget-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->b:Lcom/whatsapp/contact/p;
+    .line 77
+    iget-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->e:Lcom/whatsapp/contact/j;
 
-    invoke-virtual {v0}, Lcom/whatsapp/contact/p;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/whatsapp/contact/j;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
     sget-object v1, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xd
+    const/4 v2, 0x6
 
     aget-object v1, v1, v2
 
@@ -1326,21 +1320,21 @@
 
     move-result-wide v0
 
-    sget-boolean v2, Lcom/whatsapp/contact/ContactProvider;->d:Z
+    sget v2, Lcom/whatsapp/contact/ContactProvider;->c:I
 
     if-eqz v2, :cond_4
 
-    .line 44
+    .line 60
     :cond_3
-    iget-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->b:Lcom/whatsapp/contact/p;
+    iget-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->e:Lcom/whatsapp/contact/j;
 
-    invoke-virtual {v0}, Lcom/whatsapp/contact/p;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/whatsapp/contact/j;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
     sget-object v1, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v2, 0xf
+    const/16 v2, 0x9
 
     aget-object v1, v1, v2
 
@@ -1348,15 +1342,15 @@
 
     move-result-wide v0
 
-    .line 20
+    .line 28
     :cond_4
-    sget-object v2, Lcom/whatsapp/contact/ContactProvider;->f:Landroid/net/Uri;
+    sget-object v2, Lcom/whatsapp/contact/ContactProvider;->d:Landroid/net/Uri;
 
     invoke-static {v2, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object p1
 
-    .line 50
+    .line 7
     invoke-virtual {p0}, Lcom/whatsapp/contact/ContactProvider;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1369,13 +1363,13 @@
 
     goto :goto_0
 
-    .line 13
+    .line 19
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 27
+    .line 38
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -1386,18 +1380,18 @@
     .locals 2
 
     .prologue
-    .line 10
-    new-instance v0, Lcom/whatsapp/contact/p;
+    .line 20
+    new-instance v0, Lcom/whatsapp/contact/j;
 
     invoke-virtual {p0}, Lcom/whatsapp/contact/ContactProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/whatsapp/contact/p;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/whatsapp/contact/j;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->b:Lcom/whatsapp/contact/p;
+    iput-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->e:Lcom/whatsapp/contact/j;
 
-    .line 31
+    .line 18
     const/4 v0, 0x1
 
     return v0
@@ -1409,25 +1403,25 @@
     .prologue
     const/4 v5, 0x0
 
-    sget-boolean v8, Lcom/whatsapp/contact/ContactProvider;->d:Z
+    sget v8, Lcom/whatsapp/contact/ContactProvider;->c:I
 
-    .line 30
+    .line 31
     new-instance v0, Landroid/database/sqlite/SQLiteQueryBuilder;
 
     invoke-direct {v0}, Landroid/database/sqlite/SQLiteQueryBuilder;-><init>()V
 
-    .line 2
+    .line 42
     :try_start_0
     sget-object v1, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v2, 0x14
+    const/16 v2, 0x12
 
     aget-object v1, v1, v2
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
     .line 49
-    sget-object v1, Lcom/whatsapp/contact/ContactProvider;->c:Landroid/content/UriMatcher;
+    sget-object v1, Lcom/whatsapp/contact/ContactProvider;->b:Landroid/content/UriMatcher;
 
     invoke-virtual {v1, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
     :try_end_0
@@ -1437,7 +1431,7 @@
 
     packed-switch v1, :pswitch_data_0
 
-    .line 16
+    .line 44
     :cond_0
     :try_start_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -1448,7 +1442,7 @@
 
     sget-object v2, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x16
+    const/16 v3, 0x14
 
     aget-object v2, v2, v3
 
@@ -1475,11 +1469,11 @@
 
     throw v0
 
-    .line 46
+    .line 39
     :pswitch_0
     if-eqz v8, :cond_1
 
-    .line 3
+    .line 4
     :pswitch_1
     :try_start_2
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1488,7 +1482,7 @@
 
     sget-object v2, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/16 v3, 0x15
+    const/16 v3, 0x13
 
     aget-object v2, v2, v3
 
@@ -1512,14 +1506,14 @@
     :try_end_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_0
 
-    .line 15
+    .line 59
     if-nez v8, :cond_0
 
-    .line 56
+    .line 74
     :cond_1
-    iget-object v1, p0, Lcom/whatsapp/contact/ContactProvider;->b:Lcom/whatsapp/contact/p;
+    iget-object v1, p0, Lcom/whatsapp/contact/ContactProvider;->e:Lcom/whatsapp/contact/j;
 
-    invoke-virtual {v1}, Lcom/whatsapp/contact/p;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v1}, Lcom/whatsapp/contact/j;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
@@ -1533,41 +1527,38 @@
 
     move-object v7, p5
 
-    .line 1
+    .line 50
     invoke-virtual/range {v0 .. v7}, Landroid/database/sqlite/SQLiteQueryBuilder;->query(Landroid/database/sqlite/SQLiteDatabase;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
-    move-result-object v1
+    move-result-object v0
 
-    .line 41
+    .line 8
     :try_start_3
     invoke-virtual {p0}, Lcom/whatsapp/contact/ContactProvider;->getContext()Landroid/content/Context;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-interface {v1, v0, p1}, Landroid/database/Cursor;->setNotificationUri(Landroid/content/ContentResolver;Landroid/net/Uri;)V
+    invoke-interface {v0, v1, p1}, Landroid/database/Cursor;->setNotificationUri(Landroid/content/ContentResolver;Landroid/net/Uri;)V
 
-    .line 7
-    sget v0, Lcom/whatsapp/DialogToastActivity;->i:I
+    .line 76
+    sget v1, Lcom/whatsapp/DialogToastActivity;->d:I
+
+    if-eqz v1, :cond_2
+
+    add-int/lit8 v1, v8, 0x1
+
+    sput v1, Lcom/whatsapp/contact/ContactProvider;->c:I
     :try_end_3
     .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_3
 
-    if-eqz v0, :cond_2
-
-    if-eqz v8, :cond_3
-
-    const/4 v0, 0x0
-
-    :goto_0
-    sput-boolean v0, Lcom/whatsapp/contact/ContactProvider;->d:Z
-
     :cond_2
-    return-object v1
+    return-object v0
 
-    .line 46
+    .line 39
     :catch_1
     move-exception v0
 
@@ -1576,7 +1567,7 @@
     :try_end_4
     .catch Ljava/lang/IllegalArgumentException; {:try_start_4 .. :try_end_4} :catch_2
 
-    .line 15
+    .line 59
     :catch_2
     move-exception v0
 
@@ -1585,28 +1576,13 @@
     :try_end_5
     .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_0
 
-    .line 7
+    .line 76
     :catch_3
     move-exception v0
 
-    :try_start_6
     throw v0
-    :try_end_6
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_6 .. :try_end_6} :catch_4
-
-    :catch_4
-    move-exception v0
-
-    throw v0
-
-    :cond_3
-    const/4 v0, 0x1
-
-    goto :goto_0
 
     .line 49
-    nop
-
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -1621,10 +1597,10 @@
     .end annotation
 
     .prologue
-    .line 4
+    .line 70
     invoke-super {p0}, Landroid/content/ContentProvider;->shutdown()V
 
-    .line 9
+    .line 43
     return-void
 .end method
 
@@ -1632,11 +1608,11 @@
     .locals 4
 
     .prologue
-    sget-boolean v0, Lcom/whatsapp/contact/ContactProvider;->d:Z
+    sget v0, Lcom/whatsapp/contact/ContactProvider;->c:I
 
-    .line 69
+    .line 30
     :try_start_0
-    sget-object v1, Lcom/whatsapp/contact/ContactProvider;->c:Landroid/content/UriMatcher;
+    sget-object v1, Lcom/whatsapp/contact/ContactProvider;->b:Landroid/content/UriMatcher;
 
     invoke-virtual {v1, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
     :try_end_0
@@ -1646,7 +1622,7 @@
 
     packed-switch v1, :pswitch_data_0
 
-    .line 67
+    .line 54
     :cond_0
     :try_start_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -1657,7 +1633,7 @@
 
     sget-object v2, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x3
+    const/16 v3, 0x11
 
     aget-object v2, v2, v3
 
@@ -1684,40 +1660,40 @@
 
     throw v0
 
-    .line 32
+    .line 1
     :pswitch_0
     if-eqz v0, :cond_1
 
-    .line 21
+    .line 10
     :pswitch_1
     invoke-static {p1}, Landroid/content/ContentUris;->parseId(Landroid/net/Uri;)J
 
     move-result-wide v2
 
-    .line 79
+    .line 61
     invoke-direct {p0, p3}, Lcom/whatsapp/contact/ContactProvider;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p3
 
-    .line 36
+    .line 57
     invoke-direct {p0, p4, v2, v3}, Lcom/whatsapp/contact/ContactProvider;->a([Ljava/lang/String;J)[Ljava/lang/String;
 
     move-result-object p4
 
-    .line 53
+    .line 66
     if-nez v0, :cond_0
 
-    .line 70
+    .line 48
     :cond_1
-    iget-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->b:Lcom/whatsapp/contact/p;
+    iget-object v0, p0, Lcom/whatsapp/contact/ContactProvider;->e:Lcom/whatsapp/contact/j;
 
-    invoke-virtual {v0}, Lcom/whatsapp/contact/p;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/whatsapp/contact/j;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
     sget-object v1, Lcom/whatsapp/contact/ContactProvider;->z:[Ljava/lang/String;
 
-    const/4 v2, 0x2
+    const/16 v2, 0x10
 
     aget-object v1, v1, v2
 
@@ -1725,7 +1701,7 @@
 
     move-result v0
 
-    .line 64
+    .line 34
     invoke-virtual {p0}, Lcom/whatsapp/contact/ContactProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -1738,16 +1714,16 @@
 
     invoke-virtual {v1, p1, v2}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
 
-    .line 23
+    .line 29
     return v0
 
-    .line 32
+    .line 1
     :catch_1
     move-exception v0
 
     throw v0
 
-    .line 69
+    .line 30
     nop
 
     :pswitch_data_0

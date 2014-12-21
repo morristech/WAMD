@@ -4,6 +4,10 @@
 
 
 # instance fields
+.field private bytesReceived:J
+
+.field private bytesSent:J
+
 .field private callActiveTime:J
 
 .field private callId:Ljava/lang/String;
@@ -18,30 +22,36 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/whatsapp/Voip$CallState;Ljava/lang/String;Ljava/lang/String;ZZJ)V
+.method public constructor <init>(Lcom/whatsapp/Voip$CallState;Ljava/lang/String;Ljava/lang/String;ZZJJJ)V
     .locals 0
 
     .prologue
-    .line 9
+    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12
+    .line 14
     iput-object p1, p0, Lcom/whatsapp/Voip$CallInfo;->callState:Lcom/whatsapp/Voip$CallState;
 
-    .line 1
+    .line 16
     iput-object p2, p0, Lcom/whatsapp/Voip$CallInfo;->callId:Ljava/lang/String;
 
-    .line 7
+    .line 12
     iput-object p3, p0, Lcom/whatsapp/Voip$CallInfo;->peerId:Ljava/lang/String;
 
-    .line 5
+    .line 4
     iput-boolean p4, p0, Lcom/whatsapp/Voip$CallInfo;->isCaller:Z
 
-    .line 3
+    .line 8
     iput-boolean p5, p0, Lcom/whatsapp/Voip$CallInfo;->isEndedByMe:Z
 
     .line 11
     iput-wide p6, p0, Lcom/whatsapp/Voip$CallInfo;->callActiveTime:J
+
+    .line 9
+    iput-wide p8, p0, Lcom/whatsapp/Voip$CallInfo;->bytesSent:J
+
+    .line 1
+    iput-wide p10, p0, Lcom/whatsapp/Voip$CallInfo;->bytesReceived:J
 
     .line 6
     return-void
@@ -49,6 +59,26 @@
 
 
 # virtual methods
+.method public getBytesReceived()J
+    .locals 2
+
+    .prologue
+    .line 10
+    iget-wide v0, p0, Lcom/whatsapp/Voip$CallInfo;->bytesReceived:J
+
+    return-wide v0
+.end method
+
+.method public getBytesSent()J
+    .locals 2
+
+    .prologue
+    .line 13
+    iget-wide v0, p0, Lcom/whatsapp/Voip$CallInfo;->bytesSent:J
+
+    return-wide v0
+.end method
+
 .method public getCallActiveTime()J
     .locals 2
 
@@ -63,7 +93,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 17
     iget-object v0, p0, Lcom/whatsapp/Voip$CallInfo;->callId:Ljava/lang/String;
 
     return-object v0
@@ -73,7 +103,7 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 5
     iget-object v0, p0, Lcom/whatsapp/Voip$CallInfo;->callState:Lcom/whatsapp/Voip$CallState;
 
     return-object v0
@@ -83,7 +113,7 @@
     .locals 1
 
     .prologue
-    .line 13
+    .line 15
     iget-object v0, p0, Lcom/whatsapp/Voip$CallInfo;->peerId:Ljava/lang/String;
 
     return-object v0
@@ -93,7 +123,7 @@
     .locals 1
 
     .prologue
-    .line 4
+    .line 18
     iget-boolean v0, p0, Lcom/whatsapp/Voip$CallInfo;->isCaller:Z
 
     return v0
@@ -103,7 +133,7 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 3
     iget-boolean v0, p0, Lcom/whatsapp/Voip$CallInfo;->isEndedByMe:Z
 
     return v0

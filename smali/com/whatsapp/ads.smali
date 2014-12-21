@@ -1,39 +1,52 @@
-.class Lcom/whatsapp/ads;
-.super Ljava/lang/Object;
+.class public Lcom/whatsapp/ads;
+.super Lcom/whatsapp/ada;
 .source "ads.java"
-
-# interfaces
-.implements Lcom/whatsapp/j;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/al_;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/al_;)V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 2
-    iput-object p1, p0, Lcom/whatsapp/ads;->a:Lcom/whatsapp/al_;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 3
+    invoke-direct {p0}, Lcom/whatsapp/ada;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
-    .locals 1
+.method public a(I)I
+    .locals 2
 
     .prologue
-    .line 3
-    iget-object v0, p0, Lcom/whatsapp/ads;->a:Lcom/whatsapp/al_;
+    const/4 v0, 0x2
 
-    invoke-virtual {v0}, Lcom/whatsapp/al_;->b()V
+    .line 4
+    const/4 v1, 0x1
+
+    if-ne p1, v1, :cond_0
+
+    .line 6
+    :goto_0
+    return v0
 
     .line 1
-    return-void
+    :cond_0
+    if-lt p1, v0, :cond_1
+
+    const/4 v0, 0x4
+
+    if-gt p1, v0, :cond_1
+
+    .line 6
+    const/16 v0, 0x8
+
+    goto :goto_0
+
+    .line 5
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

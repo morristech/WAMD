@@ -1,51 +1,82 @@
-.class Lcom/whatsapp/h2;
-.super Ljava/lang/Object;
+.class public final Lcom/whatsapp/h2;
+.super Landroid/text/SpannableStringBuilder;
 .source "h2.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/_e;
-
-.field final b:Landroid/graphics/Bitmap;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/_e;Landroid/graphics/Bitmap;)V
+.method public constructor <init>(Ljava/lang/CharSequence;)V
     .locals 0
 
     .prologue
-    .line 1
-    iput-object p1, p0, Lcom/whatsapp/h2;->a:Lcom/whatsapp/_e;
+    .line 9
+    invoke-direct {p0, p1}, Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
 
-    iput-object p2, p0, Lcom/whatsapp/h2;->b:Landroid/graphics/Bitmap;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
+    .line 5
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
+.method public charAt(I)C
     .locals 2
 
     .prologue
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/h2;->a:Lcom/whatsapp/_e;
+    const/16 v0, 0x20
 
-    iget-object v0, v0, Lcom/whatsapp/_e;->a:Lcom/whatsapp/CallLogActivity;
+    .line 10
+    if-gez p1, :cond_1
 
-    invoke-static {v0}, Lcom/whatsapp/CallLogActivity;->b(Lcom/whatsapp/CallLogActivity;)Landroid/widget/ImageView;
+    .line 13
+    :cond_0
+    :goto_0
+    return v0
 
-    move-result-object v0
+    .line 6
+    :cond_1
+    invoke-virtual {p0}, Lcom/whatsapp/h2;->length()I
 
-    iget-object v1, p0, Lcom/whatsapp/h2;->b:Landroid/graphics/Bitmap;
+    move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    if-ge p1, v1, :cond_0
+
+    .line 7
+    invoke-super {p0, p1}, Landroid/text/SpannableStringBuilder;->charAt(I)C
+
+    move-result v0
+
+    goto :goto_0
+.end method
+
+.method public getChars(II[CI)V
+    .locals 1
+
+    .prologue
+    .line 11
+    if-ge p2, p1, :cond_1
+
+    .line 16
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 4
+    :cond_1
+    invoke-virtual {p0}, Lcom/whatsapp/h2;->length()I
+
+    move-result v0
+
+    .line 8
+    if-gt p1, v0, :cond_0
+
+    if-gt p2, v0, :cond_0
 
     .line 3
-    return-void
+    if-ltz p1, :cond_0
+
+    if-ltz p2, :cond_0
+
+    .line 1
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/text/SpannableStringBuilder;->getChars(II[CI)V
+
+    goto :goto_0
 .end method

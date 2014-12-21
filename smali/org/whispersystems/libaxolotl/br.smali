@@ -1,16 +1,6 @@
-.class public Lorg/whispersystems/libaxolotl/br;
-.super Ljava/lang/Exception;
-.source "br.java"
+.class public interface abstract Lorg/whispersystems/libaxolotl/bR;
+.super Ljava/lang/Object;
+.source "bR.java"
 
-
-# direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
-
-    .prologue
-    .line 1
-    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
-
-    .line 2
-    return-void
-.end method
+# interfaces
+.implements Lcom/google/gQ;

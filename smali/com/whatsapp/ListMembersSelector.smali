@@ -19,7 +19,7 @@
 
     new-array v4, v0, [Ljava/lang/String;
 
-    const-string v3, "[1U}}z6\u0008kekl\u0015oa"
+    const-string v3, "mo]\u001cudkL\rjruK\u0004}brA\u001a7btK\tld"
 
     const/4 v0, -0x1
 
@@ -57,7 +57,7 @@
 
     aput-object v3, v5, v4
 
-    const-string v0, "w+\u0008~x~/\u0019ogh1\u001efpx6\u0014x:x0\u001eka~"
+    const-string v0, "Au\u0000\u001fp`r]\thq(@\rl"
 
     move-object v3, v0
 
@@ -74,7 +74,7 @@
 
     const/4 v3, 0x2
 
-    const-string v0, "w+\u0008~x~/\u0019ogh1\u001efpx6\u0014x:\u007f\'\u0008~gt;"
+    const-string v0, "mo]\u001cudkL\rjruK\u0004}brA\u001a7ec]\u001cjn\u007f"
 
     move v4, v3
 
@@ -100,7 +100,7 @@
 
     packed-switch v3, :pswitch_data_1
 
-    const/16 v3, 0x15
+    const/16 v3, 0x18
 
     :goto_2
     xor-int/2addr v3, v10
@@ -116,22 +116,22 @@
     goto :goto_1
 
     :pswitch_2
-    const/16 v3, 0x1b
+    move v3, v2
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v3, 0x42
+    const/4 v3, 0x6
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v3, 0x7b
+    const/16 v3, 0x2e
 
     goto :goto_2
 
     :pswitch_5
-    const/16 v3, 0xa
+    const/16 v3, 0x68
 
     goto :goto_2
 
@@ -154,7 +154,7 @@
     .locals 0
 
     .prologue
-    .line 7
+    .line 39
     invoke-direct {p0}, Lcom/whatsapp/MultipleContactsSelector;-><init>()V
 
     return-void
@@ -162,183 +162,26 @@
 
 
 # virtual methods
-.method protected a()V
-    .locals 6
+.method protected a()I
+    .locals 1
 
     .prologue
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
+    .line 40
+    sget v0, Lcom/whatsapp/bw;->i:I
 
-    .line 15
-    invoke-static {}, Lcom/whatsapp/_q;->e()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 34
-    new-instance v3, Ljava/util/Vector;
-
-    iget-object v0, p0, Lcom/whatsapp/ListMembersSelector;->q:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    invoke-direct {v3, v0}, Ljava/util/Vector;-><init>(I)V
-
-    .line 47
-    iget-object v0, p0, Lcom/whatsapp/ListMembersSelector;->q:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v4
-
-    :cond_0
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/whatsapp/adg;
+    if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lcom/whatsapp/adg;->a:Ljava/lang/String;
+    const/4 v0, -0x1
 
-    invoke-virtual {v3, v0}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
+    .line 8
+    :goto_0
+    return v0
 
-    .line 41
-    if-eqz v1, :cond_0
+    :cond_0
+    sget v0, Lcom/whatsapp/bw;->i:I
 
-    .line 50
-    :cond_1
-    invoke-static {v2, v3}, Lcom/whatsapp/ba;->a(Ljava/lang/String;Ljava/util/Vector;)V
-
-    .line 13
-    new-instance v0, Lcom/whatsapp/protocol/ae;
-
-    const-string v4, ""
-
-    const/4 v5, 0x0
-
-    invoke-direct {v0, v2, v4, v5}, Lcom/whatsapp/protocol/ae;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
-
-    .line 10
-    invoke-static {}, Lcom/whatsapp/App;->aq()J
-
-    move-result-wide v4
-
-    iput-wide v4, v0, Lcom/whatsapp/protocol/ae;->n:J
-
-    .line 29
-    const/4 v4, 0x6
-
-    iput v4, v0, Lcom/whatsapp/protocol/ae;->E:I
-
-    .line 38
-    const-wide/16 v4, 0x9
-
-    iput-wide v4, v0, Lcom/whatsapp/protocol/ae;->M:J
-
-    .line 52
-    iput-object v3, v0, Lcom/whatsapp/protocol/ae;->p:Ljava/lang/Object;
-
-    .line 49
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {}, Lcom/whatsapp/App;->y()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    sget-object v4, Lcom/whatsapp/ListMembersSelector;->z:[Ljava/lang/String;
-
-    const/4 v5, 0x0
-
-    aget-object v4, v4, v5
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    iput-object v3, v0, Lcom/whatsapp/protocol/ae;->g:Ljava/lang/String;
-
-    .line 24
-    sget-object v3, Lcom/whatsapp/App;->l:Lcom/whatsapp/a2v;
-
-    invoke-virtual {v3, v0}, Lcom/whatsapp/a2v;->f(Lcom/whatsapp/protocol/ae;)V
-
-    .line 44
-    new-instance v3, Ljava/util/HashSet;
-
-    invoke-direct {v3}, Ljava/util/HashSet;-><init>()V
-
-    .line 40
-    iget-object v0, p0, Lcom/whatsapp/ListMembersSelector;->q:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v4
-
-    :cond_2
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/whatsapp/adg;
-
-    .line 1
-    iget-object v0, v0, Lcom/whatsapp/adg;->a:Ljava/lang/String;
-
-    invoke-virtual {v3, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    .line 17
-    if-eqz v1, :cond_2
-
-    .line 12
-    :cond_3
-    invoke-static {v2}, Lcom/whatsapp/App;->D(Ljava/lang/String;)V
-
-    .line 53
-    const-string v0, ""
-
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v4
-
-    invoke-static {v2, v0, v4, v5}, Lcom/whatsapp/_q;->a(Ljava/lang/String;Ljava/lang/String;J)Lcom/whatsapp/adg;
-
-    move-result-object v0
-
-    .line 37
-    invoke-static {v0}, Lcom/whatsapp/Conversation;->a(Lcom/whatsapp/adg;)Landroid/content/Intent;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lcom/whatsapp/ListMembersSelector;->startActivity(Landroid/content/Intent;)V
-
-    .line 11
-    invoke-virtual {p0}, Lcom/whatsapp/ListMembersSelector;->finish()V
-
-    .line 22
-    return-void
+    goto :goto_0
 .end method
 
 .method protected a(Landroid/widget/ListView;)V
@@ -349,23 +192,23 @@
 
     const/4 v5, 0x0
 
-    .line 36
+    .line 12
     new-instance v0, Landroid/widget/TextView;
 
     invoke-direct {v0, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 48
+    .line 13
     invoke-virtual {p0}, Lcom/whatsapp/ListMembersSelector;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/whatsapp/ConversationRow;->a(Landroid/content/res/Resources;)F
+    invoke-static {v1}, Lcom/whatsapp/ConversationRow;->b(Landroid/content/res/Resources;)F
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 42
+    .line 28
     invoke-virtual {p0}, Lcom/whatsapp/ListMembersSelector;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -374,7 +217,7 @@
 
     move-result v1
 
-    .line 25
+    .line 24
     invoke-virtual {p0}, Lcom/whatsapp/ListMembersSelector;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
@@ -383,10 +226,10 @@
 
     move-result v2
 
-    .line 39
+    .line 49
     invoke-virtual {v0, v5, v1, v5, v2}, Landroid/widget/TextView;->setPadding(IIII)V
 
-    .line 27
+    .line 37
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -397,15 +240,15 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/whatsapp/App;->P:Lcom/whatsapp/App$Me;
+    sget-object v2, Lcom/whatsapp/App;->C:Lcom/whatsapp/App$Me;
 
     iget-object v2, v2, Lcom/whatsapp/App$Me;->cc:Ljava/lang/String;
 
-    sget-object v3, Lcom/whatsapp/App;->P:Lcom/whatsapp/App$Me;
+    sget-object v3, Lcom/whatsapp/App;->C:Lcom/whatsapp/App$Me;
 
     iget-object v3, v3, Lcom/whatsapp/App$Me;->jabber_id:Ljava/lang/String;
 
-    sget-object v4, Lcom/whatsapp/App;->P:Lcom/whatsapp/App$Me;
+    sget-object v4, Lcom/whatsapp/App;->C:Lcom/whatsapp/App$Me;
 
     iget-object v4, v4, Lcom/whatsapp/App$Me;->cc:Ljava/lang/String;
 
@@ -418,7 +261,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/whatsapp/VerifyNumber;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3}, Lcom/whatsapp/VerifyNumber;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -436,8 +279,8 @@
 
     move-result-object v1
 
-    .line 45
-    const v2, 0x7f0e006c
+    .line 26
+    const v2, 0x7f0e0064
 
     const/4 v3, 0x1
 
@@ -451,49 +294,30 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 32
+    .line 14
     invoke-virtual {p1, v0}, Landroid/widget/ListView;->addFooterView(Landroid/view/View;)V
 
-    .line 4
+    .line 41
     return-void
 .end method
 
-.method protected b()I
-    .locals 1
+.method protected c()V
+    .locals 0
 
     .prologue
-    .line 14
-    const v0, 0x7f0e0100
+    .line 1
+    invoke-super {p0}, Lcom/whatsapp/MultipleContactsSelector;->c()V
 
-    return v0
+    .line 51
+    return-void
 .end method
 
-.method protected c()I
+.method protected d()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 21
-    const v0, 0x7f0e0069
-
-    return v0
-.end method
-
-.method protected e()I
-    .locals 1
-
-    .prologue
-    .line 19
-    const/4 v0, 0x2
-
-    return v0
-.end method
-
-.method protected f()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 46
-    const v0, 0x7f0e0217
+    .line 22
+    const v0, 0x7f0e021d
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ListMembersSelector;->getString(I)Ljava/lang/String;
 
@@ -506,12 +330,12 @@
     return-object v0
 .end method
 
-.method protected g()Ljava/lang/String;
+.method protected e()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 6
-    const v0, 0x7f0e0292
+    .line 45
+    const v0, 0x7f0e029f
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/ListMembersSelector;->getString(I)Ljava/lang/String;
 
@@ -520,74 +344,252 @@
     return-object v0
 .end method
 
-.method protected h()V
-    .locals 0
-
-    .prologue
-    .line 16
-    invoke-super {p0}, Lcom/whatsapp/MultipleContactsSelector;->h()V
-
-    .line 33
-    return-void
-.end method
-
-.method protected i()I
+.method protected f()I
     .locals 1
 
     .prologue
-    .line 5
-    sget v0, Lcom/whatsapp/t4;->l:I
+    .line 50
+    const v0, 0x7f0e0104
 
-    if-nez v0, :cond_0
-
-    .line 8
-    const/4 v0, -0x1
-
-    .line 23
-    :goto_0
     return v0
+.end method
+
+.method protected g()I
+    .locals 1
+
+    .prologue
+    .line 10
+    const v0, 0x7f0e0061
+
+    return v0
+.end method
+
+.method protected h()I
+    .locals 1
+
+    .prologue
+    .line 21
+    const/4 v0, 0x2
+
+    return v0
+.end method
+
+.method protected j()V
+    .locals 6
+
+    .prologue
+    sget v1, Lcom/whatsapp/App;->h:I
+
+    .line 7
+    invoke-static {}, Lcom/whatsapp/n3;->i()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 29
+    new-instance v3, Ljava/util/Vector;
+
+    iget-object v0, p0, Lcom/whatsapp/ListMembersSelector;->k:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    invoke-direct {v3, v0}, Ljava/util/Vector;-><init>(I)V
+
+    .line 18
+    iget-object v0, p0, Lcom/whatsapp/ListMembersSelector;->k:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v4
 
     :cond_0
-    sget v0, Lcom/whatsapp/t4;->l:I
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
 
-    goto :goto_0
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/whatsapp/tc;
+
+    .line 44
+    iget-object v0, v0, Lcom/whatsapp/tc;->b:Ljava/lang/String;
+
+    invoke-virtual {v3, v0}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
+
+    .line 27
+    if-eqz v1, :cond_0
+
+    .line 42
+    :cond_1
+    invoke-static {v2, v3}, Lcom/whatsapp/rb;->a(Ljava/lang/String;Ljava/util/Vector;)V
+
+    .line 47
+    new-instance v0, Lcom/whatsapp/protocol/c9;
+
+    const-string v4, ""
+
+    const/4 v5, 0x0
+
+    invoke-direct {v0, v2, v4, v5}, Lcom/whatsapp/protocol/c9;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 16
+    invoke-static {}, Lcom/whatsapp/App;->a8()J
+
+    move-result-wide v4
+
+    iput-wide v4, v0, Lcom/whatsapp/protocol/c9;->K:J
+
+    .line 35
+    const/4 v4, 0x6
+
+    iput v4, v0, Lcom/whatsapp/protocol/c9;->f:I
+
+    .line 20
+    const-wide/16 v4, 0x9
+
+    iput-wide v4, v0, Lcom/whatsapp/protocol/c9;->M:J
+
+    .line 53
+    iput-object v3, v0, Lcom/whatsapp/protocol/c9;->i:Ljava/lang/Object;
+
+    .line 31
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-static {}, Lcom/whatsapp/App;->aw()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    sget-object v4, Lcom/whatsapp/ListMembersSelector;->z:[Ljava/lang/String;
+
+    const/4 v5, 0x1
+
+    aget-object v4, v4, v5
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    iput-object v3, v0, Lcom/whatsapp/protocol/c9;->D:Ljava/lang/String;
+
+    .line 33
+    sget-object v3, Lcom/whatsapp/App;->au:Lcom/whatsapp/amo;
+
+    invoke-virtual {v3, v0}, Lcom/whatsapp/amo;->h(Lcom/whatsapp/protocol/c9;)V
+
+    .line 25
+    new-instance v3, Ljava/util/HashSet;
+
+    invoke-direct {v3}, Ljava/util/HashSet;-><init>()V
+
+    .line 11
+    iget-object v0, p0, Lcom/whatsapp/ListMembersSelector;->k:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v4
+
+    :cond_2
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/whatsapp/tc;
+
+    .line 34
+    iget-object v0, v0, Lcom/whatsapp/tc;->b:Ljava/lang/String;
+
+    invoke-virtual {v3, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 52
+    if-eqz v1, :cond_2
+
+    .line 46
+    :cond_3
+    invoke-static {v2}, Lcom/whatsapp/App;->o(Ljava/lang/String;)V
+
+    .line 32
+    const-string v0, ""
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v4
+
+    invoke-static {v2, v0, v4, v5}, Lcom/whatsapp/n3;->a(Ljava/lang/String;Ljava/lang/String;J)Lcom/whatsapp/tc;
+
+    move-result-object v0
+
+    .line 43
+    invoke-static {v0}, Lcom/whatsapp/Conversation;->a(Lcom/whatsapp/tc;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/whatsapp/ListMembersSelector;->startActivity(Landroid/content/Intent;)V
+
+    .line 3
+    invoke-virtual {p0}, Lcom/whatsapp/ListMembersSelector;->finish()V
+
+    .line 38
+    return-void
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
 
     .prologue
-    const/4 v1, 0x1
-
-    .line 20
+    .line 6
     sget-object v0, Lcom/whatsapp/ListMembersSelector;->z:[Ljava/lang/String;
+
+    const/4 v1, 0x0
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 35
+    .line 19
     invoke-super {p0, p1}, Lcom/whatsapp/MultipleContactsSelector;->onCreate(Landroid/os/Bundle;)V
 
-    .line 18
-    sget-object v0, Lcom/whatsapp/adr;->NEW_BROADCAST_LIST:Lcom/whatsapp/adr;
+    .line 17
+    sget-object v0, Lcom/whatsapp/fieldstats/bp;->NEW_BROADCAST_LIST:Lcom/whatsapp/fieldstats/bp;
 
-    invoke-static {v0}, Lcom/whatsapp/a1s;->a(Lcom/whatsapp/adr;)V
+    invoke-static {v0}, Lcom/whatsapp/f3;->a(Lcom/whatsapp/fieldstats/bp;)V
 
-    .line 26
+    .line 15
     invoke-virtual {p0}, Lcom/whatsapp/ListMembersSelector;->getSupportActionBar()Lcom/actionbarsherlock/app/ActionBar;
 
     move-result-object v0
 
-    .line 3
+    .line 36
+    const/4 v1, 0x1
+
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
-    .line 30
-    const v1, 0x7f0e0292
+    .line 23
+    const v1, 0x7f0e029f
 
     invoke-virtual {v0, v1}, Lcom/actionbarsherlock/app/ActionBar;->setTitle(I)V
 
-    .line 43
+    .line 5
     return-void
 .end method
 
@@ -595,7 +597,7 @@
     .locals 2
 
     .prologue
-    .line 31
+    .line 30
     sget-object v0, Lcom/whatsapp/ListMembersSelector;->z:[Ljava/lang/String;
 
     const/4 v1, 0x2
@@ -604,9 +606,9 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 28
+    .line 4
     invoke-super {p0}, Lcom/whatsapp/MultipleContactsSelector;->onDestroy()V
 
-    .line 51
+    .line 48
     return-void
 .end method

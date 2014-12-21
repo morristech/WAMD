@@ -6,17 +6,17 @@
 
 
 # virtual methods
-.method public abstract newCameraPosition(Lcom/google/android/gms/maps/model/CameraPosition;)Lcom/google/android/gms/dynamic/b;
+.method public abstract newCameraPosition(Lcom/google/android/gms/maps/model/CameraPosition;)Lcom/google/android/gms/dynamic/d;
 .end method
 
-.method public abstract newLatLng(Lcom/google/android/gms/maps/model/LatLng;)Lcom/google/android/gms/dynamic/b;
+.method public abstract newLatLng(Lcom/google/android/gms/maps/model/LatLng;)Lcom/google/android/gms/dynamic/d;
 .end method
 
-.method public abstract newLatLngBounds(Lcom/google/android/gms/maps/model/LatLngBounds;I)Lcom/google/android/gms/dynamic/b;
+.method public abstract newLatLngBounds(Lcom/google/android/gms/maps/model/LatLngBounds;I)Lcom/google/android/gms/dynamic/d;
 .end method
 
-.method public abstract zoomBy(F)Lcom/google/android/gms/dynamic/b;
+.method public abstract zoomBy(F)Lcom/google/android/gms/dynamic/d;
 .end method
 
-.method public abstract zoomTo(F)Lcom/google/android/gms/dynamic/b;
+.method public abstract zoomTo(F)Lcom/google/android/gms/dynamic/d;
 .end method

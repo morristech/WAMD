@@ -26,11 +26,11 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 1
     iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout$7;->this$0:Landroid/support/v4/widget/SwipeRefreshLayout;
 
     invoke-static {v0, p1}, Landroid/support/v4/widget/SwipeRefreshLayout;->access$1300(Landroid/support/v4/widget/SwipeRefreshLayout;F)V
 
-    .line 1
+    .line 3
     return-void
 .end method

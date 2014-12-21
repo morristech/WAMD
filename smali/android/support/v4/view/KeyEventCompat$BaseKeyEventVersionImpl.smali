@@ -14,7 +14,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "\u001b[\u0016\u000bH\u000b]\u0007FL\u0017N\u0001"
+    const-string v0, "\u0006\u0007\u0001G=\u0016\u0001\u0010\n9\n\u0012\u0016"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -52,7 +52,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x29
+    const/16 v0, 0x5c
 
     :goto_1
     xor-int/2addr v0, v4
@@ -68,22 +68,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x79
+    const/16 v0, 0x64
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x3a
+    const/16 v0, 0x66
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x72
+    const/16 v0, 0x65
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x2b
+    const/16 v0, 0x67
 
     goto :goto_1
 
@@ -100,7 +100,7 @@
     .locals 0
 
     .prologue
-    .line 7
+    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -114,30 +114,30 @@
 
     const/4 v2, 0x0
 
-    .line 9
+    .line 15
     and-int v0, p1, p2
 
     if-eqz v0, :cond_0
 
     move v0, v1
 
-    .line 14
+    .line 4
     :goto_0
     or-int v3, p3, p4
 
-    .line 22
+    .line 11
     and-int v4, p1, v3
 
     if-eqz v4, :cond_1
 
-    .line 16
+    .line 12
     :goto_1
     if-eqz v0, :cond_4
 
-    .line 19
+    .line 1
     if-eqz v1, :cond_2
 
-    .line 15
+    .line 19
     :try_start_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -157,30 +157,31 @@
     :cond_0
     move v0, v2
 
-    .line 9
+    .line 15
     goto :goto_0
 
     :cond_1
     move v1, v2
 
-    .line 22
+    .line 11
     goto :goto_1
 
-    .line 11
+    .line 18
     :cond_2
     xor-int/lit8 v0, v3, -0x1
 
     and-int/2addr p0, v0
 
+    .line 20
     :cond_3
     :goto_2
     return p0
 
-    .line 13
+    .line 2
     :cond_4
     if-eqz v1, :cond_3
 
-    .line 6
+    .line 10
     xor-int/lit8 v0, p2, -0x1
 
     and-int/2addr p0, v0
@@ -196,14 +197,14 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 20
+    .line 22
     invoke-virtual {p0, p1}, Landroid/support/v4/view/KeyEventCompat$BaseKeyEventVersionImpl;->normalizeMetaState(I)I
 
     move-result v1
 
     and-int/lit16 v1, v1, 0xf7
 
-    .line 5
+    .line 21
     const/16 v2, 0x40
 
     const/16 v3, 0x80
@@ -212,7 +213,7 @@
 
     move-result v1
 
-    .line 17
+    .line 5
     const/4 v2, 0x2
 
     const/16 v3, 0x10
@@ -223,7 +224,7 @@
 
     move-result v1
 
-    .line 10
+    .line 7
     if-ne v1, p2, :cond_0
 
     :goto_0
@@ -239,7 +240,7 @@
     .locals 1
 
     .prologue
-    .line 21
+    .line 8
     :try_start_0
     invoke-virtual {p0, p1}, Landroid/support/v4/view/KeyEventCompat$BaseKeyEventVersionImpl;->normalizeMetaState(I)I
     :try_end_0
@@ -271,24 +272,24 @@
     .locals 2
 
     .prologue
-    .line 3
+    .line 17
     and-int/lit16 v0, p1, 0xc0
 
     if-eqz v0, :cond_1
 
-    .line 12
+    .line 13
     or-int/lit8 v0, p1, 0x1
 
-    .line 8
+    .line 3
     :goto_0
     and-int/lit8 v1, v0, 0x30
 
     if-eqz v1, :cond_0
 
-    .line 2
+    .line 16
     or-int/lit8 v0, v0, 0x2
 
-    .line 18
+    .line 14
     :cond_0
     and-int/lit16 v0, v0, 0xf7
 
@@ -304,6 +305,6 @@
     .locals 0
 
     .prologue
-    .line 4
+    .line 6
     return-void
 .end method

@@ -6,10 +6,10 @@
 
 
 # virtual methods
-.method public abstract addMarker(Lcom/google/android/gms/maps/model/MarkerOptions;)Lcom/google/android/gms/maps/model/internal/d;
+.method public abstract addMarker(Lcom/google/android/gms/maps/model/MarkerOptions;)Lcom/google/android/gms/maps/model/internal/l;
 .end method
 
-.method public abstract animateCamera(Lcom/google/android/gms/dynamic/b;)V
+.method public abstract animateCamera(Lcom/google/android/gms/dynamic/d;)V
 .end method
 
 .method public abstract clear()V
@@ -30,7 +30,7 @@
 .method public abstract isTrafficEnabled()Z
 .end method
 
-.method public abstract moveCamera(Lcom/google/android/gms/dynamic/b;)V
+.method public abstract moveCamera(Lcom/google/android/gms/dynamic/d;)V
 .end method
 
 .method public abstract setIndoorEnabled(Z)Z
@@ -42,16 +42,16 @@
 .method public abstract setMyLocationEnabled(Z)V
 .end method
 
-.method public abstract setOnCameraChangeListener(Lcom/google/android/gms/maps/internal/e;)V
+.method public abstract setOnCameraChangeListener(Lcom/google/android/gms/maps/internal/f;)V
 .end method
 
-.method public abstract setOnInfoWindowClickListener(Lcom/google/android/gms/maps/internal/f;)V
+.method public abstract setOnInfoWindowClickListener(Lcom/google/android/gms/maps/internal/h;)V
 .end method
 
-.method public abstract setOnMapClickListener(Lcom/google/android/gms/maps/internal/h;)V
+.method public abstract setOnMapClickListener(Lcom/google/android/gms/maps/internal/j;)V
 .end method
 
-.method public abstract setOnMarkerClickListener(Lcom/google/android/gms/maps/internal/j;)V
+.method public abstract setOnMarkerClickListener(Lcom/google/android/gms/maps/internal/n;)V
 .end method
 
 .method public abstract setTrafficEnabled(Z)V

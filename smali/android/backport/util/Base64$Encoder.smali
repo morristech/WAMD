@@ -34,7 +34,7 @@
     .prologue
     const/16 v1, 0x40
 
-    .line 64
+    .line 45
     const-class v0, Landroid/backport/util/Base64;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -48,14 +48,14 @@
     :goto_0
     sput-boolean v0, Landroid/backport/util/Base64$Encoder;->$assertionsDisabled:Z
 
-    .line 51
+    .line 73
     new-array v0, v1, [B
 
     fill-array-data v0, :array_0
 
     sput-object v0, Landroid/backport/util/Base64$Encoder;->ENCODE:[B
 
-    .line 76
+    .line 32
     new-array v0, v1, [B
 
     fill-array-data v0, :array_1
@@ -64,13 +64,13 @@
 
     return-void
 
-    .line 64
+    .line 45
     :cond_0
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 51
+    .line 73
     :array_0
     .array-data 1
         0x41t
@@ -139,7 +139,7 @@
         0x2ft
     .end array-data
 
-    .line 76
+    .line 32
     :array_1
     .array-data 1
         0x41t
@@ -219,13 +219,13 @@
 
     sget-boolean v3, Landroid/backport/util/Base64;->a:Z
 
-    .line 15
+    .line 47
     invoke-direct {p0}, Landroid/backport/util/Base64$Coder;-><init>()V
 
-    .line 11
+    .line 76
     iput-object p2, p0, Landroid/backport/util/Base64$Encoder;->output:[B
 
-    .line 60
+    .line 49
     and-int/lit8 v0, p1, 0x1
 
     if-nez v0, :cond_1
@@ -235,7 +235,7 @@
     :goto_0
     iput-boolean v0, p0, Landroid/backport/util/Base64$Encoder;->do_padding:Z
 
-    .line 42
+    .line 17
     and-int/lit8 v0, p1, 0x2
 
     if-nez v0, :cond_2
@@ -245,7 +245,7 @@
     :goto_1
     iput-boolean v0, p0, Landroid/backport/util/Base64$Encoder;->do_newline:Z
 
-    .line 72
+    .line 52
     and-int/lit8 v0, p1, 0x4
 
     if-eqz v0, :cond_3
@@ -253,7 +253,7 @@
     :goto_2
     iput-boolean v1, p0, Landroid/backport/util/Base64$Encoder;->do_cr:Z
 
-    .line 70
+    .line 55
     and-int/lit8 v0, p1, 0x8
 
     if-nez v0, :cond_4
@@ -263,17 +263,17 @@
     :goto_3
     iput-object v0, p0, Landroid/backport/util/Base64$Encoder;->alphabet:[B
 
-    .line 49
+    .line 48
     const/4 v0, 0x2
 
     new-array v0, v0, [B
 
     iput-object v0, p0, Landroid/backport/util/Base64$Encoder;->tail:[B
 
-    .line 14
+    .line 13
     iput v2, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
 
-    .line 48
+    .line 54
     iget-boolean v0, p0, Landroid/backport/util/Base64$Encoder;->do_newline:Z
 
     if-eqz v0, :cond_5
@@ -283,14 +283,14 @@
     :goto_4
     iput v0, p0, Landroid/backport/util/Base64$Encoder;->count:I
 
-    .line 71
+    .line 60
     if-eqz v3, :cond_0
 
-    sget v0, Lcom/whatsapp/DialogToastActivity;->i:I
+    sget v0, Lcom/whatsapp/DialogToastActivity;->d:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lcom/whatsapp/DialogToastActivity;->i:I
+    sput v0, Lcom/whatsapp/DialogToastActivity;->d:I
 
     :cond_0
     return-void
@@ -298,28 +298,28 @@
     :cond_1
     move v0, v2
 
-    .line 60
+    .line 49
     goto :goto_0
 
     :cond_2
     move v0, v2
 
-    .line 42
+    .line 17
     goto :goto_1
 
     :cond_3
     move v1, v2
 
-    .line 72
+    .line 52
     goto :goto_2
 
-    .line 70
+    .line 55
     :cond_4
     sget-object v0, Landroid/backport/util/Base64$Encoder;->ENCODE_WEBSAFE:[B
 
     goto :goto_3
 
-    .line 48
+    .line 54
     :cond_5
     const/4 v0, -0x1
 
@@ -334,25 +334,25 @@
     .prologue
     sget-boolean v6, Landroid/backport/util/Base64;->a:Z
 
-    .line 29
+    .line 14
     iget-object v7, p0, Landroid/backport/util/Base64$Encoder;->alphabet:[B
 
-    .line 27
+    .line 9
     iget-object v8, p0, Landroid/backport/util/Base64$Encoder;->output:[B
 
-    .line 63
+    .line 72
     const/4 v4, 0x0
 
-    .line 55
+    .line 38
     iget v0, p0, Landroid/backport/util/Base64$Encoder;->count:I
 
-    .line 2
+    .line 21
     add-int v9, p3, p2
 
-    .line 52
+    .line 51
     const/4 v1, -0x1
 
-    .line 50
+    .line 2
     iget v2, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
 
     packed-switch v2, :pswitch_data_0
@@ -363,13 +363,13 @@
 
     move v3, p2
 
-    .line 45
+    .line 80
     :goto_1
     const/4 v1, -0x1
 
     if-eq v2, v1, :cond_1
 
-    .line 38
+    .line 46
     const/4 v1, 0x1
 
     shr-int/lit8 v5, v2, 0x12
@@ -380,7 +380,7 @@
 
     aput-byte v5, v8, v4
 
-    .line 39
+    .line 71
     const/4 v4, 0x2
 
     shr-int/lit8 v5, v2, 0xc
@@ -391,7 +391,7 @@
 
     aput-byte v5, v8, v1
 
-    .line 66
+    .line 75
     const/4 v5, 0x3
 
     shr-int/lit8 v1, v2, 0x6
@@ -402,7 +402,7 @@
 
     aput-byte v1, v8, v4
 
-    .line 30
+    .line 68
     const/4 v1, 0x4
 
     and-int/lit8 v2, v2, 0x3f
@@ -411,7 +411,7 @@
 
     aput-byte v2, v8, v5
 
-    .line 53
+    .line 67
     add-int/lit8 v0, v0, -0x1
 
     if-nez v0, :cond_19
@@ -427,7 +427,7 @@
 
     aput-byte v2, v8, v1
 
-    .line 24
+    .line 87
     :goto_2
     add-int/lit8 v4, v0, 0x1
 
@@ -435,17 +435,17 @@
 
     aput-byte v1, v8, v0
 
-    .line 47
+    .line 27
     const/16 v0, 0x13
 
-    .line 23
+    .line 78
     :cond_1
     :goto_3
     add-int/lit8 v1, v3, 0x3
 
     if-gt v1, v9, :cond_2
 
-    .line 59
+    .line 1
     aget-byte v1, p1, v3
 
     and-int/lit16 v1, v1, 0xff
@@ -470,7 +470,7 @@
 
     or-int/2addr v1, v2
 
-    .line 41
+    .line 64
     shr-int/lit8 v2, v1, 0x12
 
     and-int/lit8 v2, v2, 0x3f
@@ -479,7 +479,7 @@
 
     aput-byte v2, v8, v4
 
-    .line 37
+    .line 69
     add-int/lit8 v2, v4, 0x1
 
     shr-int/lit8 v5, v1, 0xc
@@ -490,7 +490,7 @@
 
     aput-byte v5, v8, v2
 
-    .line 28
+    .line 37
     add-int/lit8 v2, v4, 0x2
 
     shr-int/lit8 v5, v1, 0x6
@@ -501,7 +501,7 @@
 
     aput-byte v5, v8, v2
 
-    .line 87
+    .line 56
     add-int/lit8 v2, v4, 0x3
 
     and-int/lit8 v1, v1, 0x3f
@@ -510,18 +510,18 @@
 
     aput-byte v1, v8, v2
 
-    .line 12
+    .line 35
     add-int/lit8 v3, v3, 0x3
 
-    .line 46
+    .line 5
     add-int/lit8 v1, v4, 0x4
 
-    .line 19
+    .line 7
     add-int/lit8 v0, v0, -0x1
 
     if-nez v0, :cond_19
 
-    .line 86
+    .line 58
     iget-boolean v0, p0, Landroid/backport/util/Base64$Encoder;->do_cr:Z
 
     if-eqz v0, :cond_18
@@ -532,7 +532,7 @@
 
     aput-byte v2, v8, v1
 
-    .line 32
+    .line 42
     :goto_4
     add-int/lit8 v4, v0, 0x1
 
@@ -540,7 +540,7 @@
 
     aput-byte v1, v8, v0
 
-    .line 25
+    .line 18
     const/16 v0, 0x13
 
     if-eqz v6, :cond_1
@@ -548,10 +548,10 @@
     :cond_2
     move v5, v0
 
-    .line 84
+    .line 81
     if-eqz p4, :cond_e
 
-    .line 80
+    .line 4
     iget v0, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
 
     sub-int v0, v3, v0
@@ -560,10 +560,10 @@
 
     if-ne v0, v1, :cond_17
 
-    .line 74
+    .line 40
     const/4 v2, 0x0
 
-    .line 35
+    .line 62
     iget v0, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
 
     if-lez v0, :cond_a
@@ -581,14 +581,14 @@
 
     shl-int/lit8 v3, v0, 0x4
 
-    .line 54
+    .line 6
     iget v0, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
 
     sub-int/2addr v0, v1
 
     iput v0, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
 
-    .line 69
+    .line 41
     add-int/lit8 v1, v4, 0x1
 
     shr-int/lit8 v0, v3, 0x6
@@ -599,7 +599,7 @@
 
     aput-byte v0, v8, v4
 
-    .line 4
+    .line 29
     add-int/lit8 v0, v1, 0x1
 
     and-int/lit8 v3, v3, 0x3f
@@ -608,32 +608,32 @@
 
     aput-byte v3, v8, v1
 
-    .line 34
+    .line 39
     iget-boolean v1, p0, Landroid/backport/util/Base64$Encoder;->do_padding:Z
 
     if-eqz v1, :cond_3
 
-    .line 13
+    .line 77
     add-int/lit8 v1, v0, 0x1
 
     const/16 v3, 0x3d
 
     aput-byte v3, v8, v0
 
-    .line 57
+    .line 86
     add-int/lit8 v0, v1, 0x1
 
     const/16 v3, 0x3d
 
     aput-byte v3, v8, v1
 
-    .line 9
+    .line 34
     :cond_3
     iget-boolean v1, p0, Landroid/backport/util/Base64$Encoder;->do_newline:Z
 
     if-eqz v1, :cond_5
 
-    .line 20
+    .line 85
     iget-boolean v1, p0, Landroid/backport/util/Base64$Encoder;->do_cr:Z
 
     if-eqz v1, :cond_4
@@ -646,7 +646,7 @@
 
     move v0, v1
 
-    .line 26
+    .line 15
     :cond_4
     add-int/lit8 v1, v0, 0x1
 
@@ -656,7 +656,7 @@
 
     move v0, v1
 
-    .line 61
+    .line 20
     :cond_5
     if-eqz v6, :cond_16
 
@@ -669,10 +669,10 @@
 
     if-ne v1, v3, :cond_15
 
-    .line 73
+    .line 84
     const/4 v4, 0x0
 
-    .line 44
+    .line 43
     iget v1, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
 
     const/4 v3, 0x1
@@ -715,14 +715,14 @@
 
     or-int v4, v10, v1
 
-    .line 31
+    .line 63
     iget v1, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
 
     sub-int/2addr v1, v2
 
     iput v1, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
 
-    .line 16
+    .line 50
     add-int/lit8 v1, v0, 0x1
 
     shr-int/lit8 v2, v4, 0xc
@@ -733,7 +733,7 @@
 
     aput-byte v2, v8, v0
 
-    .line 68
+    .line 11
     add-int/lit8 v0, v1, 0x1
 
     shr-int/lit8 v2, v4, 0x6
@@ -744,7 +744,7 @@
 
     aput-byte v2, v8, v1
 
-    .line 81
+    .line 65
     add-int/lit8 v1, v0, 0x1
 
     and-int/lit8 v2, v4, 0x3f
@@ -753,25 +753,25 @@
 
     aput-byte v2, v8, v0
 
-    .line 65
+    .line 3
     iget-boolean v0, p0, Landroid/backport/util/Base64$Encoder;->do_padding:Z
 
     if-eqz v0, :cond_14
 
-    .line 21
+    .line 36
     add-int/lit8 v0, v1, 0x1
 
     const/16 v2, 0x3d
 
     aput-byte v2, v8, v1
 
-    .line 67
+    .line 24
     :goto_9
     iget-boolean v1, p0, Landroid/backport/util/Base64$Encoder;->do_newline:Z
 
     if-eqz v1, :cond_7
 
-    .line 18
+    .line 19
     iget-boolean v1, p0, Landroid/backport/util/Base64$Encoder;->do_cr:Z
 
     if-eqz v1, :cond_6
@@ -784,7 +784,7 @@
 
     move v0, v1
 
-    .line 58
+    .line 16
     :cond_6
     add-int/lit8 v1, v0, 0x1
 
@@ -794,7 +794,7 @@
 
     move v0, v1
 
-    .line 75
+    .line 23
     :cond_7
     if-eqz v6, :cond_9
 
@@ -809,7 +809,7 @@
 
     if-eq v5, v1, :cond_9
 
-    .line 83
+    .line 82
     iget-boolean v1, p0, Landroid/backport/util/Base64$Encoder;->do_cr:Z
 
     if-eqz v1, :cond_8
@@ -822,7 +822,7 @@
 
     move v0, v1
 
-    .line 79
+    .line 12
     :cond_8
     add-int/lit8 v1, v0, 0x1
 
@@ -832,7 +832,7 @@
 
     move v0, v1
 
-    .line 5
+    .line 66
     :cond_9
     :goto_b
     sget-boolean v1, Landroid/backport/util/Base64$Encoder;->$assertionsDisabled:Z
@@ -849,17 +849,17 @@
 
     throw v0
 
-    .line 8
+    .line 83
     :pswitch_0
     if-eqz v6, :cond_0
 
-    .line 7
+    .line 59
     :pswitch_1
     add-int/lit8 v2, p2, 0x2
 
     if-gt v2, v9, :cond_0
 
-    .line 3
+    .line 61
     iget-object v1, p0, Landroid/backport/util/Base64$Encoder;->tail:[B
 
     const/4 v2, 0x0
@@ -888,7 +888,7 @@
 
     or-int/2addr v1, v2
 
-    .line 1
+    .line 10
     const/4 v2, 0x0
 
     iput v2, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
@@ -898,12 +898,12 @@
     :pswitch_2
     move v3, p2
 
-    .line 40
+    .line 74
     add-int/lit8 v2, v3, 0x1
 
     if-gt v2, v9, :cond_1b
 
-    .line 77
+    .line 44
     iget-object v1, p0, Landroid/backport/util/Base64$Encoder;->tail:[B
 
     const/4 v2, 0x0
@@ -934,14 +934,14 @@
 
     or-int/2addr v1, v2
 
-    .line 33
+    .line 8
     const/4 v2, 0x0
 
     iput v2, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
 
     goto/16 :goto_0
 
-    .line 35
+    .line 62
     :cond_a
     add-int/lit8 v1, v3, 0x1
 
@@ -955,7 +955,7 @@
 
     goto/16 :goto_5
 
-    .line 44
+    .line 43
     :cond_b
     add-int/lit8 v3, v2, 0x1
 
@@ -974,7 +974,7 @@
 
     goto/16 :goto_8
 
-    .line 43
+    .line 33
     :cond_d
     sget-boolean v1, Landroid/backport/util/Base64$Encoder;->$assertionsDisabled:Z
 
@@ -988,13 +988,13 @@
 
     throw v0
 
-    .line 78
+    .line 57
     :cond_e
     add-int/lit8 v0, v9, -0x1
 
     if-ne v3, v0, :cond_f
 
-    .line 10
+    .line 28
     iget-object v0, p0, Landroid/backport/util/Base64$Encoder;->tail:[B
 
     iget v1, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
@@ -1009,13 +1009,13 @@
 
     if-eqz v6, :cond_10
 
-    .line 62
+    .line 53
     :cond_f
     add-int/lit8 v0, v9, -0x2
 
     if-ne v3, v0, :cond_10
 
-    .line 17
+    .line 79
     iget-object v0, p0, Landroid/backport/util/Base64$Encoder;->tail:[B
 
     iget v1, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
@@ -1028,7 +1028,7 @@
 
     aput-byte v2, v0, v1
 
-    .line 6
+    .line 31
     iget-object v0, p0, Landroid/backport/util/Base64$Encoder;->tail:[B
 
     iget v1, p0, Landroid/backport/util/Base64$Encoder;->tailLen:I
@@ -1043,18 +1043,18 @@
 
     aput-byte v2, v0, v1
 
-    .line 82
+    .line 25
     :cond_10
     :goto_c
     iput v4, p0, Landroid/backport/util/Base64$Encoder;->op:I
 
-    .line 85
+    .line 70
     iput v5, p0, Landroid/backport/util/Base64$Encoder;->count:I
 
-    .line 36
+    .line 30
     const/4 v1, 0x1
 
-    sget v0, Lcom/whatsapp/DialogToastActivity;->i:I
+    sget v0, Lcom/whatsapp/DialogToastActivity;->d:I
 
     if-eqz v0, :cond_11
 
@@ -1120,7 +1120,7 @@
 
     goto/16 :goto_1
 
-    .line 50
+    .line 2
     nop
 
     :pswitch_data_0

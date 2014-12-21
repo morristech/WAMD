@@ -123,7 +123,7 @@ tersisa %d bulan lagi"</item>
         <item quantity="other">%d tersisa</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Silakan mulai chatting. Kami telah memulihkan %,d pesan.</item>
+        <item quantity="other">%,d pesan telah dikembalikan. Silakan lanjutkan.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Mengirimkan %1$d video ke %2$s</item>

@@ -1,102 +1,130 @@
 .class Lcom/whatsapp/m2;
-.super Ljava/lang/Object;
+.super Landroid/os/AsyncTask;
 .source "m2.java"
-
-# interfaces
-.implements Lcom/whatsapp/o7;
 
 
 # instance fields
-.field final a:Lcom/whatsapp/CallsFragment;
+.field final a:I
+
+.field final b:Lcom/whatsapp/VoipActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/CallsFragment;)V
+.method constructor <init>(Lcom/whatsapp/VoipActivity;I)V
     .locals 0
 
     .prologue
     .line 9
-    iput-object p1, p0, Lcom/whatsapp/m2;->a:Lcom/whatsapp/CallsFragment;
+    iput-object p1, p0, Lcom/whatsapp/m2;->b:Lcom/whatsapp/VoipActivity;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Lcom/whatsapp/m2;->a:I
+
+    invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
+.method protected a([Ljava/lang/Void;)Landroid/graphics/Bitmap;
+    .locals 4
+
+    .prologue
+    .line 8
+    sget-object v0, Lcom/whatsapp/App;->ah:Lcom/whatsapp/et;
+
+    iget-object v1, p0, Lcom/whatsapp/m2;->b:Lcom/whatsapp/VoipActivity;
+
+    invoke-static {v1}, Lcom/whatsapp/VoipActivity;->f(Lcom/whatsapp/VoipActivity;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/whatsapp/et;->f(Ljava/lang/String;)Lcom/whatsapp/tc;
+
+    move-result-object v0
+
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 10
+    :goto_0
+    return-object v0
+
+    :cond_0
+    iget v1, p0, Lcom/whatsapp/m2;->a:I
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/whatsapp/tc;->a(IFZ)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    goto :goto_0
+.end method
+
+.method protected a(Landroid/graphics/Bitmap;)V
     .locals 2
 
     .prologue
     .line 4
-    iget-object v0, p0, Lcom/whatsapp/m2;->a:Lcom/whatsapp/CallsFragment;
+    iget-object v0, p0, Lcom/whatsapp/m2;->b:Lcom/whatsapp/VoipActivity;
 
-    invoke-static {v0}, Lcom/whatsapp/CallsFragment;->a(Lcom/whatsapp/CallsFragment;)Lcom/whatsapp/a1_;
+    const v1, 0x7f0b02dd
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/whatsapp/a1_;->getFilter()Landroid/widget/Filter;
+    invoke-virtual {v0, v1}, Lcom/whatsapp/VoipActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/m2;->a:Lcom/whatsapp/CallsFragment;
+    check-cast v0, Landroid/widget/ImageView;
 
-    invoke-static {v1}, Lcom/whatsapp/CallsFragment;->f(Lcom/whatsapp/CallsFragment;)Ljava/lang/CharSequence;
+    .line 7
+    if-eqz p1, :cond_0
 
-    move-result-object v1
+    .line 2
+    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/Filter;->filter(Ljava/lang/CharSequence;)V
+    sget v1, Lcom/whatsapp/App;->h:I
+
+    if-eqz v1, :cond_1
+
+    .line 5
+    :cond_0
+    const v1, 0x7f020554
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 6
+    :cond_1
     return-void
 .end method
 
-.method public a(Ljava/lang/String;)V
-    .locals 0
-
-    .prologue
-    .line 7
-    return-void
-.end method
-
-.method public a(Ljava/util/Collection;)V
-    .locals 0
-
-    .prologue
-    .line 1
-    return-void
-.end method
-
-.method public b(Ljava/lang/String;)V
-    .locals 0
-
-    .prologue
-    .line 5
-    return-void
-.end method
-
-.method public c(Ljava/lang/String;)V
+.method protected doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .prologue
-    .line 8
-    iget-object v0, p0, Lcom/whatsapp/m2;->a:Lcom/whatsapp/CallsFragment;
+    .line 11
+    check-cast p1, [Ljava/lang/Void;
 
-    invoke-static {v0}, Lcom/whatsapp/CallsFragment;->a(Lcom/whatsapp/CallsFragment;)Lcom/whatsapp/a1_;
+    invoke-virtual {p0, p1}, Lcom/whatsapp/m2;->a([Ljava/lang/Void;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/whatsapp/a1_;->notifyDataSetChanged()V
-
-    .line 3
-    return-void
+    return-object v0
 .end method
 
-.method public d(Ljava/lang/String;)V
+.method protected onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
     .prologue
-    .line 2
+    .line 12
+    check-cast p1, Landroid/graphics/Bitmap;
+
+    invoke-virtual {p0, p1}, Lcom/whatsapp/m2;->a(Landroid/graphics/Bitmap;)V
+
     return-void
 .end method

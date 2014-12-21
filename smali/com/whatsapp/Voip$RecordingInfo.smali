@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field private a:Ljava/io/File;
+.field private a:Ljava/io/OutputStream;
 
-.field private b:Ljava/io/OutputStream;
+.field private b:Ljava/io/File;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "\u001c%od6\r!{>&\u0011\'pt&\u001b"
+    const-string v6, "`?\'\u007f\r)2"
 
     const/4 v0, -0x1
 
@@ -69,7 +69,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "\u001c%od6\r!{>3\r+|u0\u000c!{"
+    const-string v0, ";&-gL9&fmF,=!)W/8f}Z>-|)"
 
     move-object v6, v0
 
@@ -84,7 +84,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "\u001c%od6\r!{>1\u001e3"
+    const-string v0, "-)6}V<-\"\'S<\'%lP=-\""
 
     move-object v6, v0
 
@@ -99,7 +99,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "Q3~fm\u0018>"
+    const-string v0, "-)6}V<-\"\'F +)mF*"
 
     move-object v6, v0
 
@@ -114,7 +114,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "\n*t~,\u0008*?t&\u001d1x07\u001e4?d:\u000f!%0"
+    const-string v0, "<-%lJ8-\""
 
     move-object v6, v0
 
@@ -131,7 +131,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "\r!|u*\t!{"
+    const-string v0, "-)6}V<-\"\'Q/?"
 
     move v7, v6
 
@@ -157,7 +157,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x43
+    const/16 v6, 0x23
 
     :goto_2
     xor-int/2addr v6, v13
@@ -173,22 +173,22 @@
     goto :goto_1
 
     :pswitch_5
-    const/16 v6, 0x7f
+    const/16 v6, 0x4e
 
     goto :goto_2
 
     :pswitch_6
-    const/16 v6, 0x44
+    const/16 v6, 0x48
 
     goto :goto_2
 
     :pswitch_7
-    const/16 v6, 0x1f
+    const/16 v6, 0x46
 
     goto :goto_2
 
     :pswitch_8
-    const/16 v6, 0x10
+    const/16 v6, 0x9
 
     goto :goto_2
 
@@ -214,15 +214,13 @@
     .locals 6
 
     .prologue
-    const/4 v3, 0x1
+    sget v1, Lcom/whatsapp/App;->h:I
 
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
-
-    .line 12
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
-    sget-object v0, Lcom/whatsapp/l;->a:[I
+    .line 18
+    sget-object v0, Lcom/whatsapp/jk;->a:[I
 
     invoke-virtual {p1}, Lcom/whatsapp/Voip$DebugTapType;->ordinal()I
 
@@ -232,7 +230,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 15
+    .line 8
     :cond_0
     :try_start_0
     new-instance v0, Ljava/lang/IllegalStateException;
@@ -243,7 +241,7 @@
 
     sget-object v2, Lcom/whatsapp/Voip$RecordingInfo;->z:[Ljava/lang/String;
 
-    const/4 v3, 0x4
+    const/4 v3, 0x1
 
     aget-object v2, v2, v3
 
@@ -270,39 +268,8 @@
 
     throw v0
 
-    .line 9
-    :pswitch_0
-    sget-object v0, Lcom/whatsapp/Voip$RecordingInfo;->z:[Ljava/lang/String;
-
-    aget-object v0, v0, v3
-
-    .line 11
-    if-eqz v1, :cond_1
-
-    .line 2
-    :pswitch_1
-    sget-object v0, Lcom/whatsapp/Voip$RecordingInfo;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x0
-
-    aget-object v0, v0, v2
-
     .line 13
-    if-eqz v1, :cond_1
-
-    .line 14
-    :pswitch_2
-    sget-object v0, Lcom/whatsapp/Voip$RecordingInfo;->z:[Ljava/lang/String;
-
-    const/4 v2, 0x5
-
-    aget-object v0, v0, v2
-
-    .line 10
-    if-eqz v1, :cond_1
-
-    .line 1
-    :pswitch_3
+    :pswitch_0
     sget-object v0, Lcom/whatsapp/Voip$RecordingInfo;->z:[Ljava/lang/String;
 
     const/4 v2, 0x2
@@ -310,11 +277,44 @@
     aget-object v0, v0, v2
 
     .line 7
-    if-nez v1, :cond_0
+    if-eqz v1, :cond_1
+
+    .line 4
+    :pswitch_1
+    sget-object v0, Lcom/whatsapp/Voip$RecordingInfo;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x3
+
+    aget-object v0, v0, v2
 
     .line 21
+    if-eqz v1, :cond_1
+
+    .line 5
+    :pswitch_2
+    sget-object v0, Lcom/whatsapp/Voip$RecordingInfo;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x4
+
+    aget-object v0, v0, v2
+
+    .line 15
+    if-eqz v1, :cond_1
+
+    .line 12
+    :pswitch_3
+    sget-object v0, Lcom/whatsapp/Voip$RecordingInfo;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x5
+
+    aget-object v0, v0, v2
+
+    .line 10
+    if-nez v1, :cond_0
+
+    .line 6
     :cond_1
-    invoke-static {}, Lcom/whatsapp/Voip;->b()Ljava/text/SimpleDateFormat;
+    invoke-static {}, Lcom/whatsapp/Voip;->d()Ljava/text/SimpleDateFormat;
 
     move-result-object v1
 
@@ -330,10 +330,10 @@
 
     move-result-object v1
 
-    .line 19
+    .line 9
     new-instance v2, Ljava/io/File;
 
-    invoke-static {}, Lcom/whatsapp/nt;->d()Ljava/io/File;
+    invoke-static {}, Lcom/whatsapp/mj;->c()Ljava/io/File;
 
     move-result-object v3
 
@@ -357,7 +357,7 @@
 
     sget-object v1, Lcom/whatsapp/Voip$RecordingInfo;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x3
+    const/4 v4, 0x0
 
     aget-object v1, v1, v4
 
@@ -371,15 +371,15 @@
 
     invoke-direct {v2, v3, v0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v2, p0, Lcom/whatsapp/Voip$RecordingInfo;->a:Ljava/io/File;
+    iput-object v2, p0, Lcom/whatsapp/Voip$RecordingInfo;->b:Ljava/io/File;
 
-    .line 4
+    .line 20
     :try_start_1
     new-instance v0, Ljava/util/zip/GZIPOutputStream;
 
     new-instance v1, Ljava/io/FileOutputStream;
 
-    iget-object v2, p0, Lcom/whatsapp/Voip$RecordingInfo;->a:Ljava/io/File;
+    iget-object v2, p0, Lcom/whatsapp/Voip$RecordingInfo;->b:Ljava/io/File;
 
     const/4 v3, 0x1
 
@@ -387,29 +387,29 @@
 
     invoke-direct {v0, v1}, Ljava/util/zip/GZIPOutputStream;-><init>(Ljava/io/OutputStream;)V
 
-    iput-object v0, p0, Lcom/whatsapp/Voip$RecordingInfo;->b:Ljava/io/OutputStream;
+    iput-object v0, p0, Lcom/whatsapp/Voip$RecordingInfo;->a:Ljava/io/OutputStream;
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 6
+    .line 19
     :goto_0
     return-void
 
-    .line 5
+    .line 3
     :catch_1
     move-exception v0
 
-    .line 8
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/Throwable;)V
+    .line 16
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->c(Ljava/lang/Throwable;)V
 
-    .line 20
+    .line 17
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/whatsapp/Voip$RecordingInfo;->b:Ljava/io/OutputStream;
+    iput-object v0, p0, Lcom/whatsapp/Voip$RecordingInfo;->a:Ljava/io/OutputStream;
 
     goto :goto_0
 
-    .line 3
+    .line 18
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -419,22 +419,24 @@
     .end packed-switch
 .end method
 
-.method static a(Lcom/whatsapp/Voip$RecordingInfo;)Ljava/io/OutputStream;
+
+# virtual methods
+.method public a()Ljava/io/OutputStream;
     .locals 1
 
     .prologue
-    .line 18
-    iget-object v0, p0, Lcom/whatsapp/Voip$RecordingInfo;->b:Ljava/io/OutputStream;
+    .line 2
+    iget-object v0, p0, Lcom/whatsapp/Voip$RecordingInfo;->a:Ljava/io/OutputStream;
 
     return-object v0
 .end method
 
-.method static b(Lcom/whatsapp/Voip$RecordingInfo;)Ljava/io/File;
+.method public b()Ljava/io/File;
     .locals 1
 
     .prologue
-    .line 16
-    iget-object v0, p0, Lcom/whatsapp/Voip$RecordingInfo;->a:Ljava/io/File;
+    .line 11
+    iget-object v0, p0, Lcom/whatsapp/Voip$RecordingInfo;->b:Ljava/io/File;
 
     return-object v0
 .end method

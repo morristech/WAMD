@@ -169,8 +169,8 @@ qalıb"</item>
         <item quantity="one">%d ədəd qalıb</item>
     </plurals>
     <plurals name="register_messages_restored">
-        <item quantity="other">Hazır. Biz %,d ədəd ismarıcı bərpa etdik.</item>
-        <item quantity="one">Hazır. Biz %,d ədəd ismarıcı bərpa etdik.</item>
+        <item quantity="other">%,d ədəd ismarıc geri qaytarıldı. İşləyə bilərsiniz.</item>
+        <item quantity="one">%,d ədəd ismarıc geri qaytarıldı. İşləyə bilərsiniz.</item>
     </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">%1$d video %2$s hesabına göndərilir</item>

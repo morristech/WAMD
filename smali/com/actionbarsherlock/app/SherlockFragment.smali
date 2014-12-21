@@ -20,7 +20,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "\u0001d7\"5\u0001k\'q U}#2)Dmb%.\u0001hb\u0002)D{.>\"JO00&Ll,%\u0000B}+\'(Upl"
+    const-string v0, "\u00031^\'\u0017\u0003>Nt\u0002W(J7\u000bF8\u000b \u000c\u0003=\u000b\u0007\u000bF.G;\u0000H\u001aY5\u0004N9E \"@(B\"\nW%\u0005"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -58,7 +58,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x41
+    const/16 v0, 0x63
 
     :goto_1
     xor-int/2addr v0, v4
@@ -74,22 +74,22 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x21
+    const/16 v0, 0x23
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x9
+    const/16 v0, 0x5c
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x42
+    const/16 v0, 0x2b
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x51
+    const/16 v0, 0x54
 
     goto :goto_1
 
@@ -106,7 +106,7 @@
     .locals 0
 
     .prologue
-    .line 10
+    .line 12
     invoke-direct {p0}, Landroid/support/v4/app/Fragment;-><init>()V
 
     return-void
@@ -118,13 +118,13 @@
     .locals 3
 
     .prologue
-    .line 9
+    .line 16
     :try_start_0
     instance-of v0, p1, Lcom/actionbarsherlock/app/SherlockFragmentActivity;
 
     if-nez v0, :cond_0
 
-    .line 2
+    .line 9
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -167,15 +167,15 @@
     :cond_0
     move-object v0, p1
 
-    .line 13
+    .line 17
     check-cast v0, Lcom/actionbarsherlock/app/SherlockFragmentActivity;
 
     iput-object v0, p0, Lcom/actionbarsherlock/app/SherlockFragment;->mActivity:Lcom/actionbarsherlock/app/SherlockFragmentActivity;
 
-    .line 16
+    .line 14
     invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
-    .line 6
+    .line 1
     return-void
 .end method
 
@@ -183,7 +183,7 @@
     .locals 2
 
     .prologue
-    .line 7
+    .line 2
     new-instance v0, Lcom/actionbarsherlock/internal/view/menu/MenuWrapper;
 
     invoke-direct {v0, p1}, Lcom/actionbarsherlock/internal/view/menu/MenuWrapper;-><init>(Landroid/view/Menu;)V
@@ -196,7 +196,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/actionbarsherlock/app/SherlockFragment;->onCreateOptionsMenu(Lcom/actionbarsherlock/view/Menu;Lcom/actionbarsherlock/view/MenuInflater;)V
 
-    .line 11
+    .line 7
     return-void
 .end method
 
@@ -204,7 +204,7 @@
     .locals 0
 
     .prologue
-    .line 5
+    .line 15
     return-void
 .end method
 
@@ -212,15 +212,15 @@
     .locals 1
 
     .prologue
-    .line 3
+    .line 13
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/actionbarsherlock/app/SherlockFragment;->mActivity:Lcom/actionbarsherlock/app/SherlockFragmentActivity;
 
-    .line 12
+    .line 10
     invoke-super {p0}, Landroid/support/v4/app/Fragment;->onDetach()V
 
-    .line 8
+    .line 11
     return-void
 .end method
 
@@ -228,7 +228,7 @@
     .locals 1
 
     .prologue
-    .line 1
+    .line 5
     new-instance v0, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;
 
     invoke-direct {v0, p1}, Lcom/actionbarsherlock/internal/view/menu/MenuItemWrapper;-><init>(Landroid/view/MenuItem;)V
@@ -244,7 +244,7 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 4
     const/4 v0, 0x0
 
     return v0
@@ -254,14 +254,14 @@
     .locals 1
 
     .prologue
-    .line 15
+    .line 8
     new-instance v0, Lcom/actionbarsherlock/internal/view/menu/MenuWrapper;
 
     invoke-direct {v0, p1}, Lcom/actionbarsherlock/internal/view/menu/MenuWrapper;-><init>(Landroid/view/Menu;)V
 
     invoke-virtual {p0, v0}, Lcom/actionbarsherlock/app/SherlockFragment;->onPrepareOptionsMenu(Lcom/actionbarsherlock/view/Menu;)V
 
-    .line 4
+    .line 3
     return-void
 .end method
 
@@ -269,6 +269,6 @@
     .locals 0
 
     .prologue
-    .line 14
+    .line 6
     return-void
 .end method

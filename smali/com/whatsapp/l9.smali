@@ -1,20 +1,24 @@
-.class final Lcom/whatsapp/l9;
+.class Lcom/whatsapp/l9;
 .super Ljava/lang/Object;
 .source "l9.java"
 
 # interfaces
-.implements Landroid/os/Handler$Callback;
+.implements Landroid/view/View$OnClickListener;
 
 
 # static fields
 .field private static final z:Ljava/lang/String;
 
 
+# instance fields
+.field final a:Lcom/whatsapp/MultipleContactPicker;
+
+
 # direct methods
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "A\u001f,y \u0012\u00048ysT\u00078~;\u0012\u000e?\u007f<@"
+    const-string v0, "\u001d\u0002\u007f_"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -52,7 +56,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x53
+    const/16 v0, 0x3b
 
     :goto_1
     xor-int/2addr v0, v4
@@ -68,7 +72,7 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x32
+    const/16 v0, 0x77
 
     goto :goto_1
 
@@ -78,12 +82,12 @@
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x4d
+    const/16 v0, 0x1b
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0xd
+    const/16 v0, 0x2c
 
     goto :goto_1
 
@@ -96,115 +100,165 @@
     .end packed-switch
 .end method
 
-.method constructor <init>()V
+.method constructor <init>(Lcom/whatsapp/MultipleContactPicker;)V
     .locals 0
 
     .prologue
-    .line 4
+    .line 12
+    iput-object p1, p0, Lcom/whatsapp/l9;->a:Lcom/whatsapp/MultipleContactPicker;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method private a(Landroid/content/Context;)V
-    .locals 2
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 8
 
     .prologue
-    .line 9
-    invoke-static {}, Lcom/whatsapp/h0;->a()Ljava/io/OutputStream;
+    const/4 v7, 0x0
+
+    const/4 v6, 0x1
+
+    sget v1, Lcom/whatsapp/App;->h:I
+
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/l9;->a:Lcom/whatsapp/MultipleContactPicker;
+
+    invoke-static {v0}, Lcom/whatsapp/MultipleContactPicker;->g(Lcom/whatsapp/MultipleContactPicker;)Ljava/util/Set;
 
     move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
+
+    move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 7
-    :try_start_0
-    invoke-static {}, Lcom/whatsapp/h0;->a()Ljava/io/OutputStream;
+    iget-object v0, p0, Lcom/whatsapp/l9;->a:Lcom/whatsapp/MultipleContactPicker;
+
+    invoke-static {v0}, Lcom/whatsapp/MultipleContactPicker;->h(Lcom/whatsapp/MultipleContactPicker;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    .line 6
+    :cond_0
+    new-instance v2, Landroid/content/Intent;
+
+    invoke-direct {v2}, Landroid/content/Intent;-><init>()V
+
+    .line 1
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 15
+    iget-object v0, p0, Lcom/whatsapp/l9;->a:Lcom/whatsapp/MultipleContactPicker;
+
+    invoke-static {v0}, Lcom/whatsapp/MultipleContactPicker;->g(Lcom/whatsapp/MultipleContactPicker;)Ljava/util/Set;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    .line 5
-    :goto_0
-    invoke-static {p1}, Lcom/whatsapp/h0;->p(Landroid/content/Context;)Z
+    move-result-object v4
 
-    .line 1
-    :cond_0
-    return-void
+    :cond_1
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 2
-    :catch_0
-    move-exception v0
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    .line 8
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->length()I
+
+    move-result v5
+
+    if-eqz v5, :cond_2
 
     .line 14
-    sget-object v1, Lcom/whatsapp/l9;->z:Ljava/lang/String;
+    const-string v5, ","
 
-    invoke-static {v1, v0}, Lcom/whatsapp/util/Log;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    goto :goto_0
-.end method
+    .line 16
+    :cond_2
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    if-eqz v1, :cond_1
 
-# virtual methods
-.method public handleMessage(Landroid/os/Message;)Z
-    .locals 2
+    .line 4
+    :cond_3
+    sget-object v0, Lcom/whatsapp/l9;->z:Ljava/lang/String;
 
-    .prologue
-    const/4 v1, 0x1
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 8
-    iget v0, p1, Landroid/os/Message;->what:I
+    move-result-object v3
 
-    packed-switch v0, :pswitch_data_0
-
-    .line 13
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-
-    .line 11
-    :pswitch_0
-    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
-
-    check-cast v0, Landroid/content/Context;
-
-    invoke-direct {p0, v0}, Lcom/whatsapp/l9;->a(Landroid/content/Context;)V
-
-    .line 12
-    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
-
-    check-cast v0, Landroid/content/Context;
-
-    invoke-static {v0}, Lcom/whatsapp/h0;->e(Landroid/content/Context;)V
-
-    move v0, v1
-
-    .line 3
-    goto :goto_0
-
-    .line 15
-    :pswitch_1
-    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
-
-    check-cast v0, Landroid/content/Context;
-
-    invoke-direct {p0, v0}, Lcom/whatsapp/l9;->a(Landroid/content/Context;)V
-
-    move v0, v1
+    invoke-virtual {v2, v0, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 10
-    goto :goto_0
+    iget-object v0, p0, Lcom/whatsapp/l9;->a:Lcom/whatsapp/MultipleContactPicker;
 
-    .line 8
-    nop
+    const/4 v3, -0x1
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-    .end packed-switch
+    invoke-virtual {v0, v3, v2}, Lcom/whatsapp/MultipleContactPicker;->setResult(ILandroid/content/Intent;)V
+
+    .line 11
+    iget-object v0, p0, Lcom/whatsapp/l9;->a:Lcom/whatsapp/MultipleContactPicker;
+
+    invoke-virtual {v0}, Lcom/whatsapp/MultipleContactPicker;->finish()V
+
+    .line 2
+    if-eqz v1, :cond_5
+
+    .line 18
+    :cond_4
+    iget-object v0, p0, Lcom/whatsapp/l9;->a:Lcom/whatsapp/MultipleContactPicker;
+
+    invoke-virtual {v0}, Lcom/whatsapp/MultipleContactPicker;->getBaseContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/whatsapp/App;->aR:Lcom/whatsapp/o2;
+
+    const v2, 0x7f0d001d
+
+    .line 13
+    invoke-virtual {v1, v2, v6}, Lcom/whatsapp/o2;->a(II)Ljava/lang/String;
+
+    move-result-object v1
+
+    new-array v2, v6, [Ljava/lang/Object;
+
+    .line 7
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    aput-object v3, v2, v7
+
+    .line 17
+    invoke-static {v1, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 5
+    invoke-static {v0, v1, v7}, Lcom/whatsapp/App;->a(Landroid/content/Context;Ljava/lang/String;I)V
+
+    .line 19
+    :cond_5
+    return-void
 .end method

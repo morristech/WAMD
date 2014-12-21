@@ -21,7 +21,7 @@
 
     new-array v3, v0, [Ljava/lang/String;
 
-    const-string v2, "[ N\u0017&S>YL?W5QM\"\u00155FH?H5Z\u0017%Q9N"
+    const-string v2, "X\u001a|{\u000eP\u0004k \u0017T\u000fc!\n\u0016\u000ft$\u0017K\u000fh{\rR\u0003|"
 
     const/4 v0, -0x1
 
@@ -61,7 +61,7 @@
 
     const/4 v2, 0x1
 
-    const-string v0, "[ N\u0017&S>YL?W5QM\"\u00155FH?H5Z"
+    const-string v0, "X\u001a|{\u000eP\u0004k \u0017T\u000fc!\n\u0016\u000ft$\u0017K\u000fh"
 
     move v3, v2
 
@@ -87,7 +87,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    const/16 v2, 0x56
+    const/16 v2, 0x7e
 
     :goto_2
     xor-int/2addr v2, v9
@@ -103,22 +103,22 @@
     goto :goto_1
 
     :pswitch_1
-    const/16 v2, 0x3a
+    const/16 v2, 0x39
 
     goto :goto_2
 
     :pswitch_2
-    const/16 v2, 0x50
+    const/16 v2, 0x6a
 
     goto :goto_2
 
     :pswitch_3
-    const/16 v2, 0x3e
+    const/16 v2, 0xc
 
     goto :goto_2
 
     :pswitch_4
-    const/16 v2, 0x38
+    const/16 v2, 0x54
 
     goto :goto_2
 
@@ -140,7 +140,7 @@
     .locals 0
 
     .prologue
-    .line 2
+    .line 5
     iput-object p1, p0, Lcom/whatsapp/App$24;->a:Lcom/whatsapp/App;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -154,7 +154,7 @@
     .locals 2
 
     .prologue
-    .line 5
+    .line 6
     sget-object v0, Lcom/whatsapp/App$24;->z:[Ljava/lang/String;
 
     const/4 v1, 0x1
@@ -163,14 +163,14 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 4
-    invoke-static {}, Lcom/whatsapp/App;->V()Lcom/whatsapp/messaging/MessageService;
+    .line 2
+    invoke-static {}, Lcom/whatsapp/App;->x()Lcom/whatsapp/messaging/MessageService;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 1
+    .line 3
     sget-object v0, Lcom/whatsapp/App$24;->z:[Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -179,19 +179,19 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 3
+    .line 1
     :cond_0
-    invoke-static {}, Lcom/whatsapp/App;->V()Lcom/whatsapp/messaging/MessageService;
+    invoke-static {}, Lcom/whatsapp/App;->x()Lcom/whatsapp/messaging/MessageService;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/whatsapp/messaging/MessageService;->d()V
+    invoke-virtual {v0}, Lcom/whatsapp/messaging/MessageService;->g()V
 
-    .line 6
+    .line 4
     :cond_1
     return-void
 .end method

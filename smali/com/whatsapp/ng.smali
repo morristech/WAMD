@@ -1,202 +1,153 @@
-.class Lcom/whatsapp/ng;
+.class synthetic Lcom/whatsapp/ng;
 .super Ljava/lang/Object;
 .source "ng.java"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
 
 # static fields
-.field private static final z:Ljava/lang/String;
-
-
-# instance fields
-.field private a:Ljava/lang/String;
-
-.field final b:Lcom/whatsapp/zj;
-
-.field private c:Ljava/lang/String;
+.field static final a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
-
-    const-string v0, "7Ru\u0006\u0014)Cu\u0018\u00165\u000fd\u001c\u001c\"Oe\u0001^"
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    move v3, v2
-
-    move v2, v1
-
-    move-object v1, v0
-
-    :goto_0
-    if-gt v2, v3, :cond_0
-
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
-
-    invoke-virtual {v0}, Ljava/lang/String;->intern()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/whatsapp/ng;->z:Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    aget-char v4, v1, v3
-
-    rem-int/lit8 v0, v3, 0x5
-
-    packed-switch v0, :pswitch_data_0
-
-    const/16 v0, 0x71
-
-    :goto_1
-    xor-int/2addr v0, v4
-
-    int-to-char v0, v0
-
-    aput-char v0, v1, v3
-
-    add-int/lit8 v0, v3, 0x1
-
-    move v3, v0
-
-    goto :goto_0
-
-    :pswitch_0
-    const/16 v0, 0x47
-
-    goto :goto_1
-
-    :pswitch_1
-    const/16 v0, 0x20
-
-    goto :goto_1
-
-    :pswitch_2
-    const/16 v0, 0x10
-
-    goto :goto_1
-
-    :pswitch_3
-    const/16 v0, 0x75
-
-    goto :goto_1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-    .end packed-switch
-.end method
-
-.method constructor <init>(Lcom/whatsapp/zj;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    .prologue
-    .line 4
-    iput-object p1, p0, Lcom/whatsapp/ng;->b:Lcom/whatsapp/zj;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 5
-    iput-object p2, p0, Lcom/whatsapp/ng;->a:Ljava/lang/String;
-
-    .line 7
-    iput-object p3, p0, Lcom/whatsapp/ng;->c:Ljava/lang/String;
-
-    .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public run()V
     .locals 3
 
     .prologue
     .line 1
-    iget-object v0, p0, Lcom/whatsapp/ng;->b:Lcom/whatsapp/zj;
-
-    invoke-static {v0}, Lcom/whatsapp/zj;->a(Lcom/whatsapp/zj;)Ljava/util/HashMap;
+    invoke-static {}, Lcom/whatsapp/contact/h;->values()[Lcom/whatsapp/contact/h;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/whatsapp/ng;->a:Ljava/lang/String;
+    array-length v0, v0
 
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    new-array v0, v0, [I
 
-    move-result-object v0
+    sput-object v0, Lcom/whatsapp/ng;->a:[I
 
-    check-cast v0, Lcom/whatsapp/ss;
+    :try_start_0
+    sget-object v0, Lcom/whatsapp/ng;->a:[I
 
-    .line 6
-    if-eqz v0, :cond_0
+    sget-object v1, Lcom/whatsapp/contact/h;->UP_TO_DATE:Lcom/whatsapp/contact/h;
 
-    .line 3
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Lcom/whatsapp/contact/h;->ordinal()I
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    move-result v1
 
-    sget-object v1, Lcom/whatsapp/ng;->z:Ljava/lang/String;
+    const/4 v2, 0x1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_5
 
-    move-result-object v0
+    :goto_0
+    :try_start_1
+    sget-object v0, Lcom/whatsapp/ng;->a:[I
 
-    iget-object v1, p0, Lcom/whatsapp/ng;->a:Ljava/lang/String;
+    sget-object v1, Lcom/whatsapp/contact/h;->IN_PROGRESS:Lcom/whatsapp/contact/h;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Lcom/whatsapp/contact/h;->ordinal()I
 
-    move-result-object v0
+    move-result v1
 
-    const-string v1, " "
+    const/4 v2, 0x2
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_4
 
-    move-result-object v0
+    :goto_1
+    :try_start_2
+    sget-object v0, Lcom/whatsapp/ng;->a:[I
 
-    iget-object v1, p0, Lcom/whatsapp/ng;->c:Ljava/lang/String;
+    sget-object v1, Lcom/whatsapp/contact/h;->FAILED:Lcom/whatsapp/contact/h;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Lcom/whatsapp/contact/h;->ordinal()I
 
-    move-result-object v0
+    move-result v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v2, 0x3
 
-    move-result-object v0
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_3
 
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
+    :goto_2
+    :try_start_3
+    sget-object v0, Lcom/whatsapp/ng;->a:[I
 
-    .line 9
-    iget-object v0, p0, Lcom/whatsapp/ng;->b:Lcom/whatsapp/zj;
+    sget-object v1, Lcom/whatsapp/contact/h;->DELAYED:Lcom/whatsapp/contact/h;
 
-    iget-object v1, p0, Lcom/whatsapp/ng;->a:Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/whatsapp/contact/h;->ordinal()I
 
-    iget-object v2, p0, Lcom/whatsapp/ng;->c:Ljava/lang/String;
+    move-result v1
 
-    invoke-virtual {v0, v1, v2}, Lcom/whatsapp/zj;->a(Ljava/lang/String;Ljava/lang/String;)V
+    const/4 v2, 0x4
 
-    .line 2
-    iget-object v0, p0, Lcom/whatsapp/ng;->a:Ljava/lang/String;
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_2
 
-    invoke-static {v0}, Lcom/whatsapp/App;->z(Ljava/lang/String;)V
+    :goto_3
+    :try_start_4
+    sget-object v0, Lcom/whatsapp/ng;->a:[I
 
-    .line 8
-    :cond_0
+    sget-object v1, Lcom/whatsapp/contact/h;->NETWORK_UNAVAILABLE:Lcom/whatsapp/contact/h;
+
+    invoke-virtual {v1}, Lcom/whatsapp/contact/h;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x5
+
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_1
+
+    :goto_4
+    :try_start_5
+    sget-object v0, Lcom/whatsapp/ng;->a:[I
+
+    sget-object v1, Lcom/whatsapp/contact/h;->USER_IS_EXPIRED:Lcom/whatsapp/contact/h;
+
+    invoke-virtual {v1}, Lcom/whatsapp/contact/h;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x6
+
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_0
+
+    :goto_5
     return-void
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_5
+
+    :catch_1
+    move-exception v0
+
+    goto :goto_4
+
+    :catch_2
+    move-exception v0
+
+    goto :goto_3
+
+    :catch_3
+    move-exception v0
+
+    goto :goto_2
+
+    :catch_4
+    move-exception v0
+
+    goto :goto_1
+
+    :catch_5
+    move-exception v0
+
+    goto :goto_0
 .end method

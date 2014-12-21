@@ -320,7 +320,7 @@
 
     const/4 v2, 0x0
 
-    .line 8
+    .line 7
     const/16 v0, 0x13
 
     new-array v0, v0, [I
@@ -329,7 +329,7 @@
 
     sput-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockActionBar:[I
 
-    .line 2
+    .line 3
     new-array v0, v3, [I
 
     const v1, 0x101013f
@@ -338,14 +338,14 @@
 
     sput-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockActionMenuItemView:[I
 
-    .line 9
+    .line 11
     new-array v0, v4, [I
 
     fill-array-data v0, :array_1
 
     sput-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockActionMode:[I
 
-    .line 5
+    .line 8
     const/4 v0, 0x3
 
     new-array v0, v0, [I
@@ -354,7 +354,7 @@
 
     sput-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockActivityChooserView:[I
 
-    .line 3
+    .line 1
     const/4 v0, 0x6
 
     new-array v0, v0, [I
@@ -363,7 +363,7 @@
 
     sput-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockMenuGroup:[I
 
-    .line 10
+    .line 6
     const/16 v0, 0x11
 
     new-array v0, v0, [I
@@ -372,28 +372,28 @@
 
     sput-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockMenuItem:[I
 
-    .line 6
+    .line 4
     new-array v0, v5, [I
 
     fill-array-data v0, :array_5
 
     sput-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockMenuView:[I
 
-    .line 4
+    .line 9
     new-array v0, v4, [I
 
     fill-array-data v0, :array_6
 
     sput-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockSearchView:[I
 
-    .line 1
+    .line 5
     new-array v0, v5, [I
 
     fill-array-data v0, :array_7
 
     sput-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockSpinner:[I
 
-    .line 7
+    .line 2
     const/16 v0, 0x43
 
     new-array v0, v0, [I
@@ -402,7 +402,7 @@
 
     sput-object v0, Lcom/actionbarsherlock/R$styleable;->SherlockTheme:[I
 
-    .line 11
+    .line 10
     new-array v0, v3, [I
 
     const v1, 0x10100da
@@ -413,7 +413,7 @@
 
     return-void
 
-    .line 8
+    .line 7
     nop
 
     :array_0
@@ -424,11 +424,6 @@
         0x7f010003
         0x7f010004
         0x7f010005
-        0x7f01001f
-        0x7f010020
-        0x7f010021
-        0x7f010022
-        0x7f010023
         0x7f010024
         0x7f010025
         0x7f010026
@@ -437,9 +432,14 @@
         0x7f010029
         0x7f01002a
         0x7f01002b
+        0x7f01002c
+        0x7f01002d
+        0x7f01002e
+        0x7f01002f
+        0x7f010030
     .end array-data
 
-    .line 9
+    .line 11
     :array_1
     .array-data 4
         0x7f010000
@@ -449,15 +449,15 @@
         0x7f010005
     .end array-data
 
-    .line 5
+    .line 8
     :array_2
     .array-data 4
         0x10100d4
-        0x7f01002c
-        0x7f01002d
+        0x7f010031
+        0x7f010032
     .end array-data
 
-    .line 3
+    .line 1
     :array_3
     .array-data 4
         0x101000e
@@ -468,7 +468,7 @@
         0x10101e0
     .end array-data
 
-    .line 10
+    .line 6
     :array_4
     .array-data 4
         0x1010002
@@ -490,30 +490,30 @@
         0x1010389
     .end array-data
 
-    .line 6
+    .line 4
     :array_5
     .array-data 4
-        0x7f01002e
-        0x7f01002f
-        0x7f010030
-        0x7f010031
-        0x7f010032
         0x7f010033
         0x7f010034
         0x7f010035
+        0x7f010036
+        0x7f010037
+        0x7f010038
+        0x7f010039
+        0x7f01003a
     .end array-data
 
-    .line 4
+    .line 9
     :array_6
     .array-data 4
         0x101011f
         0x1010220
         0x1010264
-        0x7f010036
-        0x7f010037
+        0x7f01003b
+        0x7f01003c
     .end array-data
 
-    .line 1
+    .line 5
     :array_7
     .array-data 4
         0x10100af
@@ -526,15 +526,10 @@
         0x1010534
     .end array-data
 
-    .line 7
+    .line 2
     :array_8
     .array-data 4
         0x1010057
-        0x7f010038
-        0x7f010039
-        0x7f01003a
-        0x7f01003b
-        0x7f01003c
         0x7f01003d
         0x7f01003e
         0x7f01003f
@@ -596,5 +591,10 @@
         0x7f010077
         0x7f010078
         0x7f010079
+        0x7f01007a
+        0x7f01007b
+        0x7f01007c
+        0x7f01007d
+        0x7f01007e
     .end array-data
 .end method

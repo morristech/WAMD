@@ -16,7 +16,7 @@
 
 .field public static final RTL:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
-.field public static a:Z
+.field public static a:I
 
 
 # direct methods
@@ -30,21 +30,21 @@
 
     const/4 v2, 0x0
 
-    .line 1
+    .line 14
     new-instance v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;
 
     invoke-direct {v0, v2, v3, v2}, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;-><init>(Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;ZLandroid/support/v4/text/TextDirectionHeuristicsCompat$1;)V
 
     sput-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->LTR:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
-    .line 7
+    .line 1
     new-instance v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;
 
     invoke-direct {v0, v2, v4, v2}, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;-><init>(Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;ZLandroid/support/v4/text/TextDirectionHeuristicsCompat$1;)V
 
     sput-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->RTL:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
-    .line 4
+    .line 3
     new-instance v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;
 
     sget-object v1, Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;->INSTANCE:Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;
@@ -53,7 +53,7 @@
 
     sput-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->FIRSTSTRONG_LTR:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
-    .line 14
+    .line 15
     new-instance v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;
 
     sget-object v1, Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;->INSTANCE:Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;
@@ -62,7 +62,7 @@
 
     sput-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->FIRSTSTRONG_RTL:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
-    .line 10
+    .line 2
     new-instance v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;
 
     sget-object v1, Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;->INSTANCE_RTL:Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;
@@ -71,7 +71,7 @@
 
     sput-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->ANYRTL_LTR:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
-    .line 9
+    .line 16
     sget-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicLocale;->INSTANCE:Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicLocale;
 
     sput-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->LOCALE:Landroid/support/v4/text/TextDirectionHeuristicCompat;
@@ -83,7 +83,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 7
     invoke-static {p0}, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->isRtlTextOrFormat(I)I
 
     move-result v0
@@ -95,7 +95,7 @@
     .locals 1
 
     .prologue
-    .line 16
+    .line 10
     invoke-static {p0}, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->isRtlText(I)I
 
     move-result v0
@@ -107,29 +107,28 @@
     .locals 1
 
     .prologue
-    .line 13
+    .line 11
     packed-switch p0, :pswitch_data_0
 
-    .line 5
+    .line 13
     const/4 v0, 0x2
 
-    .line 12
     :goto_0
     return v0
 
-    .line 3
+    .line 9
     :pswitch_0
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 12
+    .line 6
     :pswitch_1
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 13
+    .line 11
     nop
 
     :pswitch_data_0
@@ -144,29 +143,28 @@
     .locals 1
 
     .prologue
-    .line 6
+    .line 8
     sparse-switch p0, :sswitch_data_0
 
-    .line 2
+    .line 12
     const/4 v0, 0x2
 
-    .line 15
     :goto_0
     return v0
 
-    .line 11
+    .line 5
     :sswitch_0
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 15
+    .line 4
     :sswitch_1
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 6
+    .line 8
     nop
 
     :sswitch_data_0

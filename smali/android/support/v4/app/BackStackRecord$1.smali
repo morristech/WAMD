@@ -6,21 +6,10 @@
 .implements Landroid/support/v4/app/FragmentTransitionCompat21$ViewRetriever;
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroid/support/v4/app/BackStackRecord;->configureTransitions(ILandroid/support/v4/app/BackStackRecord$TransitionState;ZLandroid/util/SparseArray;Landroid/util/SparseArray;)Z
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
-.end annotation
-
-
 # instance fields
-.field final synthetic this$0:Landroid/support/v4/app/BackStackRecord;
+.field final this$0:Landroid/support/v4/app/BackStackRecord;
 
-.field final synthetic val$inFragment:Landroid/support/v4/app/Fragment;
+.field final val$inFragment:Landroid/support/v4/app/Fragment;
 
 
 # direct methods
@@ -28,7 +17,7 @@
     .locals 0
 
     .prologue
-    .line 1186
+    .line 2
     iput-object p1, p0, Landroid/support/v4/app/BackStackRecord$1;->this$0:Landroid/support/v4/app/BackStackRecord;
 
     iput-object p2, p0, Landroid/support/v4/app/BackStackRecord$1;->val$inFragment:Landroid/support/v4/app/Fragment;
@@ -44,7 +33,7 @@
     .locals 1
 
     .prologue
-    .line 1189
+    .line 1
     iget-object v0, p0, Landroid/support/v4/app/BackStackRecord$1;->val$inFragment:Landroid/support/v4/app/Fragment;
 
     invoke-virtual {v0}, Landroid/support/v4/app/Fragment;->getView()Landroid/view/View;

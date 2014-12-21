@@ -214,11 +214,6 @@ usluge"</item>
         <item quantity="one">%d preostala</item>
         <item quantity="few">%d preostale</item>
     </plurals>
-    <plurals name="register_messages_restored">
-        <item quantity="other">Spremni ste. Upravo smo vratili %,d poruka.</item>
-        <item quantity="one">Spremni ste. Upravo smo vratili %,d poruku.</item>
-        <item quantity="few">Spremni ste. Upravo smo vratili %,d poruke.</item>
-    </plurals>
     <plurals name="sending_videos_to_contact">
         <item quantity="other">Šaljem %1$d videa za %2$s</item>
         <item quantity="one">Šaljem %1$d video za %2$s</item>

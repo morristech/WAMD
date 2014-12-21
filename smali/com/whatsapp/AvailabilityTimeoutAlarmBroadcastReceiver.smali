@@ -21,11 +21,11 @@
 
     const/4 v1, 0x0
 
-    const/4 v0, 0x6
+    const/4 v0, 0x7
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "ld,\n\u0017ri;\u0019\u0013ai/\u0014\u001fr|$\u0015\u001fb}9"
+    const-string v6, "sUlm\u0010x[u0\u0006`J"
 
     const/4 v0, -0x1
 
@@ -63,7 +63,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "LD\u000c*7"
+    const-string v0, "sUlm\u0010x[u0\u0006`J/\"\u000bqHlm&F{H\u000f&RvD\u001c3YwD\u000c2D"
 
     move-object v6, v0
 
@@ -78,7 +78,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "LD\u000c*7"
+    const-string v0, "qV`1\n"
 
     move-object v6, v0
 
@@ -93,7 +93,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "ld,\n\u0017ri;\u0019\u0013ai/\u0014\u001fr|$\u0015\u001fb}9"
+    const-string v0, "sUlm\u0010x[u0\u0006`J/\"\u000bqHlm&F{H\u000f&RvD\u001c3YwD\u000c2D"
 
     move-object v6, v0
 
@@ -108,7 +108,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "ld,\n\u0017ri;\u0019\u0013ai/\u0014\u001fr|$\u0015\u001fb}9"
+    const-string v0, "sUlm\u0010x[u0\u0006`J/3\u0002bWh0\u0014yUom%Bu@\u0007$QiU"
 
     move-object v6, v0
 
@@ -125,7 +125,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "LX\u001dw*_M\u001e=4NM\u000c.;DD\u000c:6H\u0007\u001917HG\u0018,"
+    const-string v0, "qV`1\n"
 
     move v7, v6
 
@@ -140,6 +140,19 @@
     :pswitch_4
     aput-object v6, v8, v7
 
+    const/4 v7, 0x6
+
+    const-string v6, "qJql\u0017b_r&\ts_`5\u0006yV`!\u000bu\u0015u*\nuUt7"
+
+    const/4 v0, 0x5
+
+    move-object v8, v9
+
+    goto :goto_0
+
+    :pswitch_5
+    aput-object v6, v8, v7
+
     sput-object v9, Lcom/whatsapp/AvailabilityTimeoutAlarmBroadcastReceiver;->z:[Ljava/lang/String;
 
     return-void
@@ -151,7 +164,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x5a
+    const/16 v6, 0x67
 
     :goto_2
     xor-int/2addr v6, v13
@@ -166,25 +179,27 @@
 
     goto :goto_1
 
-    :pswitch_5
-    const/16 v6, 0x2d
-
-    goto :goto_2
-
     :pswitch_6
-    const/16 v6, 0x28
+    const/16 v6, 0x10
 
     goto :goto_2
 
     :pswitch_7
-    const/16 v6, 0x6d
+    const/16 v6, 0x3a
 
     goto :goto_2
 
     :pswitch_8
-    const/16 v6, 0x58
+    move v6, v2
 
     goto :goto_2
+
+    :pswitch_9
+    const/16 v6, 0x43
+
+    goto :goto_2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -193,14 +208,15 @@
         :pswitch_2
         :pswitch_3
         :pswitch_4
+        :pswitch_5
     .end packed-switch
 
     :pswitch_data_1
     .packed-switch 0x0
-        :pswitch_5
         :pswitch_6
         :pswitch_7
         :pswitch_8
+        :pswitch_9
     .end packed-switch
 .end method
 
@@ -208,10 +224,38 @@
     .locals 0
 
     .prologue
-    .line 15
+    .line 5
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
+.end method
+
+.method private a()Landroid/content/Intent;
+    .locals 3
+
+    .prologue
+    .line 8
+    new-instance v0, Landroid/content/Intent;
+
+    sget-object v1, Lcom/whatsapp/AvailabilityTimeoutAlarmBroadcastReceiver;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x1
+
+    aget-object v1, v1, v2
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    sget-object v1, Lcom/whatsapp/AvailabilityTimeoutAlarmBroadcastReceiver;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
 
@@ -220,8 +264,16 @@
     .locals 3
 
     .prologue
-    .line 8
+    .line 18
     new-instance v0, Landroid/content/IntentFilter;
+
+    sget-object v1, Lcom/whatsapp/AvailabilityTimeoutAlarmBroadcastReceiver;->z:[Ljava/lang/String;
+
+    const/4 v2, 0x3
+
+    aget-object v1, v1, v2
+
+    invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
     sget-object v1, Lcom/whatsapp/AvailabilityTimeoutAlarmBroadcastReceiver;->z:[Ljava/lang/String;
 
@@ -229,11 +281,11 @@
 
     aget-object v1, v1, v2
 
-    invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+    const/4 v2, 0x0
 
-    invoke-virtual {p1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p1, p0, v0, v1, v2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
-    .line 9
+    .line 6
     return-void
 .end method
 
@@ -243,7 +295,7 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 4
+    .line 2
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -252,23 +304,19 @@
 
     add-long/2addr v2, v0
 
-    .line 3
-    new-instance v0, Landroid/content/Intent;
+    .line 1
+    invoke-direct {p0}, Lcom/whatsapp/AvailabilityTimeoutAlarmBroadcastReceiver;->a()Landroid/content/Intent;
 
-    sget-object v1, Lcom/whatsapp/AvailabilityTimeoutAlarmBroadcastReceiver;->z:[Ljava/lang/String;
-
-    aget-object v1, v1, v6
-
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    move-result-object v0
 
     invoke-static {p1, v6, v0, v6}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object v1
 
-    .line 16
+    .line 11
     sget-object v0, Lcom/whatsapp/AvailabilityTimeoutAlarmBroadcastReceiver;->z:[Ljava/lang/String;
 
-    const/4 v4, 0x1
+    const/4 v4, 0x5
 
     aget-object v0, v0, v4
 
@@ -278,45 +326,39 @@
 
     check-cast v0, Landroid/app/AlarmManager;
 
-    .line 6
+    .line 12
     sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v5, 0x13
 
     if-lt v4, v5, :cond_0
 
-    .line 11
+    .line 15
     invoke-virtual {v0, v6, v2, v3, v1}, Landroid/app/AlarmManager;->setExact(IJLandroid/app/PendingIntent;)V
 
-    sget-boolean v4, Lcom/whatsapp/App;->aL:Z
+    sget v4, Lcom/whatsapp/App;->h:I
 
     if-eqz v4, :cond_1
 
-    .line 17
+    .line 21
     :cond_0
     invoke-virtual {v0, v6, v2, v3, v1}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
-    .line 1
+    .line 3
     :cond_1
     return-void
 .end method
 
 .method c(Landroid/content/Context;)V
-    .locals 4
+    .locals 3
 
     .prologue
-    .line 12
+    .line 10
     const/4 v0, 0x0
 
-    new-instance v1, Landroid/content/Intent;
+    invoke-direct {p0}, Lcom/whatsapp/AvailabilityTimeoutAlarmBroadcastReceiver;->a()Landroid/content/Intent;
 
-    sget-object v2, Lcom/whatsapp/AvailabilityTimeoutAlarmBroadcastReceiver;->z:[Ljava/lang/String;
-
-    const/4 v3, 0x3
-
-    aget-object v2, v2, v3
-
-    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    move-result-object v1
 
     const/high16 v2, 0x20000000
 
@@ -324,10 +366,10 @@
 
     move-result-object v1
 
-    .line 7
+    .line 20
     if-eqz v1, :cond_0
 
-    .line 19
+    .line 4
     sget-object v0, Lcom/whatsapp/AvailabilityTimeoutAlarmBroadcastReceiver;->z:[Ljava/lang/String;
 
     const/4 v2, 0x2
@@ -340,10 +382,10 @@
 
     check-cast v0, Landroid/app/AlarmManager;
 
-    .line 20
+    .line 9
     invoke-virtual {v0, v1}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
-    .line 2
+    .line 7
     :cond_0
     return-void
 .end method
@@ -352,31 +394,31 @@
     .locals 2
 
     .prologue
-    .line 14
+    .line 19
     sget-object v0, Lcom/whatsapp/AvailabilityTimeoutAlarmBroadcastReceiver;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x5
+    const/4 v1, 0x6
 
     aget-object v0, v0, v1
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->i(Ljava/lang/String;)V
 
-    .line 10
-    sget v0, Lcom/whatsapp/App;->aJ:I
+    .line 13
+    sget v0, Lcom/whatsapp/App;->M:I
 
     const/4 v1, 0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 5
+    .line 17
     const/4 v0, 0x3
 
-    sput v0, Lcom/whatsapp/App;->aJ:I
+    sput v0, Lcom/whatsapp/App;->M:I
 
-    .line 13
-    invoke-static {}, Lcom/whatsapp/App;->aZ()V
+    .line 14
+    invoke-static {}, Lcom/whatsapp/App;->aT()V
 
-    .line 18
+    .line 16
     :cond_0
     return-void
 .end method

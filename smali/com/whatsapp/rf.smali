@@ -1,50 +1,35 @@
-.class Lcom/whatsapp/rf;
+.class public Lcom/whatsapp/rf;
 .super Ljava/lang/Object;
 .source "rf.java"
 
-# interfaces
-.implements Landroid/view/View$OnClickListener;
-
-
-# instance fields
-.field final a:Lcom/whatsapp/Conversation;
-
 
 # direct methods
-.method constructor <init>(Lcom/whatsapp/Conversation;)V
-    .locals 0
-
-    .prologue
-    .line 3
-    iput-object p1, p0, Lcom/whatsapp/rf;->a:Lcom/whatsapp/Conversation;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public onClick(Landroid/view/View;)V
+.method public static a(Landroid/os/AsyncTask;[Ljava/lang/Object;)Landroid/os/AsyncTask;
     .locals 2
 
     .prologue
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/rf;->a:Lcom/whatsapp/Conversation;
+    .line 2
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    invoke-static {v0}, Lcom/whatsapp/Conversation;->l(Lcom/whatsapp/Conversation;)Landroid/view/ViewGroup;
+    const/16 v1, 0xb
+
+    if-lt v0, v1, :cond_0
+
+    .line 3
+    sget-object v0, Landroid/os/AsyncTask;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
+
+    invoke-virtual {p0, v0, p1}, Landroid/os/AsyncTask;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     move-result-object v0
 
-    const/16 v1, 0x8
+    :goto_0
+    return-object v0
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
+    .line 1
+    :cond_0
+    invoke-virtual {p0, p1}, Landroid/os/AsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 4
-    iget-object v0, p0, Lcom/whatsapp/rf;->a:Lcom/whatsapp/Conversation;
+    move-result-object v0
 
-    invoke-virtual {v0}, Lcom/whatsapp/Conversation;->onBackPressed()V
-
-    .line 2
-    return-void
+    goto :goto_0
 .end method

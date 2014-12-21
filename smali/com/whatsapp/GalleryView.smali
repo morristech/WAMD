@@ -9,21 +9,21 @@
 # static fields
 .field private static final G:[Ljava/lang/String;
 
-.field private static j:Landroid/view/animation/Interpolator;
+.field private static r:Landroid/view/animation/Interpolator;
 
 
 # instance fields
-.field private A:Landroid/graphics/Paint;
+.field private A:Landroid/graphics/RectF;
 
-.field private B:F
+.field private B:I
 
-.field private C:Landroid/graphics/Canvas;
+.field private C:I
 
-.field private D:Landroid/view/VelocityTracker;
+.field private D:Landroid/graphics/RectF;
 
-.field private E:F
+.field E:Z
 
-.field private F:F
+.field private F:Landroid/graphics/Paint;
 
 .field private a:Z
 
@@ -31,49 +31,49 @@
 
 .field private c:I
 
-.field public d:Landroid/widget/Scroller;
+.field private d:Landroid/graphics/Paint;
 
-.field private e:I
+.field private e:Landroid/graphics/Bitmap;
 
-.field private f:I
+.field private f:F
 
-.field private g:Lcom/whatsapp/atz;
+.field g:Landroid/graphics/Bitmap;
 
 .field private h:I
 
-.field private i:I
+.field private i:Z
+
+.field private j:I
 
 .field private k:I
 
-.field private l:Z
+.field public l:Landroid/widget/Scroller;
 
-.field private m:Landroid/graphics/Paint;
+.field private m:Landroid/view/GestureDetector;
 
-.field private n:Landroid/graphics/Bitmap;
+.field private n:Lcom/whatsapp/s5;
 
-.field private o:Landroid/graphics/RectF;
+.field private o:Landroid/graphics/Paint;
 
-.field private p:I
+.field private p:Landroid/view/VelocityTracker;
 
 .field private q:I
 
-.field private r:Landroid/graphics/Paint;
+.field private s:I
 
-.field s:Landroid/graphics/Bitmap;
+.field private t:Lcom/whatsapp/m_;
 
-.field private t:I
+.field private u:Z
 
-.field private u:Landroid/view/GestureDetector;
+.field private v:Landroid/graphics/Canvas;
 
-.field private v:Landroid/graphics/RectF;
+.field private w:I
 
-.field w:Z
+.field private x:I
 
-.field private x:Z
+.field private y:F
 
-.field private y:Lcom/whatsapp/gh;
-
-.field private z:I
+.field private z:F
 
 
 # direct methods
@@ -95,7 +95,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string v6, "H8e\u0005\t] $\u001f\u0005J.&\u0006\u0003Bc"
+    const-string v6, "\u0013(\u000c#=\u00060\u0016&=\u0003f\u000f!5\u0011(\u0013:*\u0011f@81\u0010=\u0008\u0002=\u0015:\u0015==\'9\u0005,b"
 
     const/4 v0, -0x1
 
@@ -133,7 +133,7 @@
 
     aput-object v6, v8, v7
 
-    const-string v0, "i\u001f8P]\u0016h0"
+    const-string v0, "\u0013(\u000c#=\u00060\u0016&=\u0003f\u000f!5\u0011(\u0013:*\u0011f@\'=\u001d.\u0008;\u0015\u0011(\u0013:*\u0011\u001a\u0010*;N"
 
     move-object v6, v0
 
@@ -148,7 +148,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string v0, "L8|\u000e\u0004[yhI\u000fN7j\u000c\u0000\u000f-f\u001c\u000fGyl\u001f\tA-"
+    const-string v0, "\u0015*\u0014&7\u001a\u0016\u0010 1\u001a=\u0005=\u0007\u0010&\u0017!"
 
     move-object v6, v0
 
@@ -163,7 +163,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string v0, "N:`\u001d\u0003Ayy\u0006\u001eF7}\u000c\u001e\u000f=f\u001e\u0002"
+    const-string v0, "=\'\u0014**\u0017,\u0010;=\u0010i\u0001o,\u001b<\u0003\'x\u0011?\u0005!,Td@\u001a\u0008"
 
     move-object v6, v0
 
@@ -178,7 +178,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string v0, "H8e\u0005\t] V\u001f\u0005J.&\u0007\u0003p:|\u001b\u001eJ7}6\u001aF<~F"
+    const-string v0, "\u0013(\u000c#=\u00060?91\u0011>O!7+*\u0015=*\u0011\'\u0014\u0010.\u001d,\u0017`"
 
     move-object v6, v0
 
@@ -195,7 +195,7 @@
 
     const/4 v6, 0x5
 
-    const-string v0, "H8e\u0005\t] \u007f\u0000\tXvf\u0007\u0001J8z\u001c\u001eJv)\u0001\tF>a\u001d!J8z\u001c\u001eJ\ny\u000c\u000f\u0015"
+    const-string v0, "\u0017(\u0015(0\u0000i\u0001o;\u0015\'\u0003*4T=\u000f:;\u001ci\u00059=\u001a="
 
     move v7, v6
 
@@ -212,7 +212,7 @@
 
     const/4 v7, 0x6
 
-    const-string v6, "H8e\u0005\t] \u007f\u0000\tXvf\u0007\u0001J8z\u001c\u001eJv)\u001e\u0005K-a$\tN*|\u001b\t|)l\nV"
+    const-string v6, "\u0015*\t;7\u001ai\u0010 *\u001d\'\u0014**T-\u000f86"
 
     const/4 v0, 0x5
 
@@ -225,7 +225,7 @@
 
     const/4 v7, 0x7
 
-    const-string v6, "f7}\u000c\u001eL<y\u001d\tKyhI\u0018@,j\u0001LJ/l\u0007\u0018\u000ft)<<"
+    const-string v6, "\u0013(\u000c#=\u00060M91\u0011>O 7\u0019s"
 
     const/4 v0, 0x6
 
@@ -238,7 +238,7 @@
 
     const/16 v7, 0x8
 
-    const-string v6, "N:}\u0000\u0003A\u0006y\u0006\u0005A-l\u001b3K6~\u0007"
+    const-string v6, "2\u000fQviMxY"
 
     const/4 v0, 0x7
 
@@ -251,12 +251,12 @@
 
     sput-object v9, Lcom/whatsapp/GalleryView;->G:[Ljava/lang/String;
 
-    .line 17
-    new-instance v0, Lcom/whatsapp/agq;
+    .line 12
+    new-instance v0, Lcom/whatsapp/j9;
 
-    invoke-direct {v0}, Lcom/whatsapp/agq;-><init>()V
+    invoke-direct {v0}, Lcom/whatsapp/j9;-><init>()V
 
-    sput-object v0, Lcom/whatsapp/GalleryView;->j:Landroid/view/animation/Interpolator;
+    sput-object v0, Lcom/whatsapp/GalleryView;->r:Landroid/view/animation/Interpolator;
 
     return-void
 
@@ -268,7 +268,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x6c
+    const/16 v6, 0x58
 
     :goto_2
     xor-int/2addr v6, v13
@@ -284,22 +284,22 @@
     goto :goto_1
 
     :pswitch_8
-    const/16 v6, 0x2f
+    const/16 v6, 0x74
 
     goto :goto_2
 
     :pswitch_9
-    const/16 v6, 0x59
+    const/16 v6, 0x49
 
     goto :goto_2
 
     :pswitch_a
-    const/16 v6, 0x9
+    const/16 v6, 0x60
 
     goto :goto_2
 
     :pswitch_b
-    const/16 v6, 0x69
+    const/16 v6, 0x4f
 
     goto :goto_2
 
@@ -330,12 +330,12 @@
     .locals 1
 
     .prologue
-    .line 208
+    .line 232
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, p2, v0}, Lcom/whatsapp/GalleryView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 184
+    .line 71
     return-void
 .end method
 
@@ -347,41 +347,41 @@
 
     const/4 v0, -0x1
 
-    .line 183
+    .line 181
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 14
+    .line 321
     iput v0, p0, Lcom/whatsapp/GalleryView;->h:I
 
-    .line 18
-    iput v0, p0, Lcom/whatsapp/GalleryView;->k:I
+    .line 295
+    iput v0, p0, Lcom/whatsapp/GalleryView;->x:I
 
-    .line 46
-    iput v1, p0, Lcom/whatsapp/GalleryView;->q:I
-
-    .line 178
+    .line 122
     iput v1, p0, Lcom/whatsapp/GalleryView;->c:I
 
-    .line 225
-    invoke-direct {p0}, Lcom/whatsapp/GalleryView;->c()V
+    .line 285
+    iput v1, p0, Lcom/whatsapp/GalleryView;->k:I
 
-    .line 71
+    .line 7
+    invoke-direct {p0}, Lcom/whatsapp/GalleryView;->d()V
+
+    .line 231
     new-instance v0, Landroid/view/GestureDetector;
 
-    new-instance v1, Lcom/whatsapp/wv;
+    new-instance v1, Lcom/whatsapp/_g;
 
-    invoke-direct {v1, p0}, Lcom/whatsapp/wv;-><init>(Lcom/whatsapp/GalleryView;)V
+    invoke-direct {v1, p0}, Lcom/whatsapp/_g;-><init>(Lcom/whatsapp/GalleryView;)V
 
     invoke-direct {v0, v1}, Landroid/view/GestureDetector;-><init>(Landroid/view/GestureDetector$OnGestureListener;)V
 
-    iput-object v0, p0, Lcom/whatsapp/GalleryView;->u:Landroid/view/GestureDetector;
+    iput-object v0, p0, Lcom/whatsapp/GalleryView;->m:Landroid/view/GestureDetector;
 
-    .line 280
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->u:Landroid/view/GestureDetector;
+    .line 118
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->m:Landroid/view/GestureDetector;
 
     invoke-virtual {v0, p0}, Landroid/view/GestureDetector;->setOnDoubleTapListener(Landroid/view/GestureDetector$OnDoubleTapListener;)V
 
-    .line 51
+    .line 186
     return-void
 .end method
 
@@ -389,8 +389,8 @@
     .locals 1
 
     .prologue
-    .line 84
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    .line 198
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
     return v0
 .end method
@@ -401,26 +401,26 @@
     .prologue
     const/high16 v6, 0x40000000
 
-    .line 204
+    .line 62
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v3
 
-    .line 136
+    .line 26
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v1
 
-    .line 265
+    .line 244
     if-lt v3, p1, :cond_0
 
     if-ge v1, p2, :cond_1
 
-    .line 113
+    .line 106
     :cond_0
     sget-object v0, Lcom/whatsapp/GalleryView;->G:[Ljava/lang/String;
 
-    const/4 v2, 0x1
+    const/16 v2, 0x8
 
     aget-object v0, v0, v2
 
@@ -434,7 +434,7 @@
 
     move-result v4
 
-    .line 21
+    .line 144
     if-ge v3, p1, :cond_2
 
     move v2, p1
@@ -451,15 +451,15 @@
 
     move-result-object v0
 
-    .line 250
+    .line 182
     new-instance v2, Landroid/graphics/Canvas;
 
     invoke-direct {v2, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 197
+    .line 315
     invoke-virtual {v2, v4}, Landroid/graphics/Canvas;->drawColor(I)V
 
-    .line 69
+    .line 1
     sub-int v3, p1, v3
 
     int-to-float v3, v3
@@ -478,14 +478,14 @@
 
     move-object p0, v0
 
-    .line 260
+    .line 6
     :cond_1
     return-object p0
 
     :cond_2
     move v2, v3
 
-    .line 21
+    .line 144
     goto :goto_0
 
     :cond_3
@@ -494,61 +494,34 @@
     goto :goto_1
 .end method
 
-.method private a()V
-    .locals 3
-
-    .prologue
-    .line 239
-    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getWidth()I
-
-    move-result v0
-
-    .line 79
-    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getScrollX()I
-
-    move-result v1
-
-    div-int/lit8 v2, v0, 0x2
-
-    add-int/2addr v1, v2
-
-    div-int v0, v1, v0
-
-    .line 72
-    invoke-virtual {p0, v0}, Lcom/whatsapp/GalleryView;->a(I)V
-
-    .line 135
-    return-void
-.end method
-
 .method private a(IZ)V
     .locals 6
 
     .prologue
     const/4 v2, 0x0
 
-    .line 180
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    .line 301
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
     if-eq p1, v0, :cond_2
 
     const/4 v0, 0x1
 
-    .line 99
+    .line 69
     :goto_0
-    iput p1, p0, Lcom/whatsapp/GalleryView;->k:I
+    iput p1, p0, Lcom/whatsapp/GalleryView;->x:I
 
-    .line 45
+    .line 176
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getFocusedChild()Landroid/view/View;
 
     move-result-object v1
 
-    .line 175
+    .line 300
     if-eqz v1, :cond_0
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
 
@@ -556,10 +529,10 @@
 
     if-ne v1, v0, :cond_0
 
-    .line 290
+    .line 119
     invoke-virtual {v1}, Landroid/view/View;->clearFocus()V
 
-    .line 272
+    .line 102
     :cond_0
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getWidth()I
 
@@ -567,15 +540,15 @@
 
     mul-int/2addr v0, p1
 
-    .line 288
+    .line 210
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getScrollX()I
 
     move-result v1
 
     sub-int v3, v0, v1
 
-    .line 313
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->d:Landroid/widget/Scroller;
+    .line 268
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->l:Landroid/widget/Scroller;
 
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getScrollX()I
 
@@ -590,30 +563,30 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/widget/Scroller;->startScroll(IIIII)V
 
-    .line 24
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 200
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
     if-eqz v0, :cond_1
 
-    .line 168
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 190
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
-    invoke-interface {v0, p1}, Lcom/whatsapp/gh;->a(I)V
+    invoke-interface {v0, p1}, Lcom/whatsapp/m_;->b(I)V
 
-    .line 271
+    .line 156
     :cond_1
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->invalidate()V
 
-    .line 163
+    .line 233
     return-void
 
     :cond_2
     move v0, v2
 
-    .line 180
+    .line 301
     goto :goto_0
 
-    .line 313
+    .line 268
     :cond_3
     invoke-static {v3}, Ljava/lang/Math;->abs(I)I
 
@@ -632,36 +605,36 @@
 
     const/4 v2, 0x0
 
-    .line 146
+    .line 325
     iget v0, p0, Lcom/whatsapp/GalleryView;->h:I
 
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v0
 
-    .line 88
+    .line 114
     const/4 v3, -0x1
 
     if-ne v0, v3, :cond_1
 
-    .line 254
+    .line 286
     :cond_0
     :goto_0
     return-void
 
-    .line 6
+    .line 120
     :cond_1
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v4
 
-    .line 33
+    .line 195
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result v0
 
-    .line 206
-    iget v3, p0, Lcom/whatsapp/GalleryView;->B:F
+    .line 180
+    iget v3, p0, Lcom/whatsapp/GalleryView;->z:F
 
     sub-float v3, v4, v3
 
@@ -671,8 +644,8 @@
 
     float-to-int v3, v3
 
-    .line 299
-    iget v5, p0, Lcom/whatsapp/GalleryView;->F:F
+    .line 94
+    iget v5, p0, Lcom/whatsapp/GalleryView;->f:F
 
     sub-float/2addr v0, v5
 
@@ -682,59 +655,59 @@
 
     float-to-int v5, v0
 
-    .line 283
-    iget v0, p0, Lcom/whatsapp/GalleryView;->b:I
+    .line 194
+    iget v0, p0, Lcom/whatsapp/GalleryView;->j:I
 
     if-le v3, v0, :cond_4
 
     move v0, v1
 
-    .line 193
+    .line 302
     :goto_1
-    iget v3, p0, Lcom/whatsapp/GalleryView;->b:I
+    iget v3, p0, Lcom/whatsapp/GalleryView;->j:I
 
     if-le v5, v3, :cond_5
 
     move v3, v1
 
-    .line 284
+    .line 123
     :goto_2
     if-nez v0, :cond_2
 
     if-eqz v3, :cond_0
 
-    .line 119
+    .line 171
     :cond_2
     if-eqz v0, :cond_3
 
     if-nez v3, :cond_3
 
-    .line 80
-    iput v1, p0, Lcom/whatsapp/GalleryView;->q:I
+    .line 67
+    iput v1, p0, Lcom/whatsapp/GalleryView;->c:I
 
-    .line 104
-    iput v4, p0, Lcom/whatsapp/GalleryView;->B:F
+    .line 60
+    iput v4, p0, Lcom/whatsapp/GalleryView;->z:F
 
-    .line 269
+    .line 177
     :cond_3
     iget-boolean v0, p0, Lcom/whatsapp/GalleryView;->a:Z
 
     if-eqz v0, :cond_0
 
-    .line 228
+    .line 197
     iput-boolean v2, p0, Lcom/whatsapp/GalleryView;->a:Z
 
-    .line 195
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    .line 101
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 202
+    .line 236
     if-eqz v0, :cond_0
 
-    .line 258
+    .line 90
     invoke-virtual {v0}, Landroid/view/View;->cancelLongPress()V
 
     goto :goto_0
@@ -742,13 +715,13 @@
     :cond_4
     move v0, v2
 
-    .line 283
+    .line 194
     goto :goto_1
 
     :cond_5
     move v3, v2
 
-    .line 193
+    .line 302
     goto :goto_2
 .end method
 
@@ -756,75 +729,335 @@
     .locals 1
 
     .prologue
-    .line 95
-    iget v0, p0, Lcom/whatsapp/GalleryView;->q:I
+    .line 86
+    iget v0, p0, Lcom/whatsapp/GalleryView;->c:I
 
     return v0
 .end method
 
+.method private b()V
+    .locals 3
+
+    .prologue
+    .line 30
+    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getWidth()I
+
+    move-result v0
+
+    .line 288
+    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getScrollX()I
+
+    move-result v1
+
+    div-int/lit8 v2, v0, 0x2
+
+    add-int/2addr v1, v2
+
+    div-int v0, v1, v0
+
+    .line 45
+    invoke-virtual {p0, v0}, Lcom/whatsapp/GalleryView;->a(I)V
+
+    .line 274
+    return-void
+.end method
+
 .method private b(Landroid/view/MotionEvent;)V
+    .locals 3
+
+    .prologue
+    .line 178
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
+
+    move-result v0
+
+    const v1, 0xff00
+
+    and-int/2addr v0, v1
+
+    shr-int/lit8 v0, v0, 0x8
+
+    .line 277
+    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
+
+    move-result v1
+
+    .line 309
+    iget v2, p0, Lcom/whatsapp/GalleryView;->h:I
+
+    if-ne v1, v2, :cond_0
+
+    .line 87
+    if-nez v0, :cond_1
+
+    const/4 v0, 0x1
+
+    .line 48
+    :goto_0
+    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getX(I)F
+
+    move-result v1
+
+    iput v1, p0, Lcom/whatsapp/GalleryView;->z:F
+
+    .line 100
+    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getY(I)F
+
+    move-result v1
+
+    iput v1, p0, Lcom/whatsapp/GalleryView;->f:F
+
+    .line 250
+    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/whatsapp/GalleryView;->h:I
+
+    .line 39
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
+
+    if-eqz v0, :cond_0
+
+    .line 189
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
+
+    invoke-virtual {v0}, Landroid/view/VelocityTracker;->clear()V
+
+    .line 84
+    :cond_0
+    return-void
+
+    .line 87
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method private c()V
+    .locals 7
+
+    .prologue
+    const/4 v6, 0x0
+
+    .line 29
+    iget-boolean v0, p0, Lcom/whatsapp/GalleryView;->i:Z
+
+    if-eqz v0, :cond_0
+
+    .line 18
+    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getMeasuredWidth()I
+
+    move-result v0
+
+    .line 96
+    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getMeasuredHeight()I
+
+    move-result v1
+
+    .line 21
+    new-instance v2, Landroid/graphics/RectF;
+
+    int-to-float v3, v0
+
+    mul-int/lit8 v4, v1, 0x2
+
+    div-int/lit8 v4, v4, 0x64
+
+    int-to-float v4, v4
+
+    invoke-direct {v2, v6, v6, v3, v4}, Landroid/graphics/RectF;-><init>(FFFF)V
+
+    iput-object v2, p0, Lcom/whatsapp/GalleryView;->D:Landroid/graphics/RectF;
+
+    .line 130
+    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getScrollX()I
+
+    move-result v2
+
+    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getChildCount()I
+
+    move-result v3
+
+    div-int/2addr v2, v3
+
+    .line 208
+    new-instance v3, Landroid/graphics/RectF;
+
+    int-to-float v4, v2
+
+    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getChildCount()I
+
+    move-result v5
+
+    div-int v5, v0, v5
+
+    add-int/2addr v2, v5
+
+    int-to-float v2, v2
+
+    mul-int/lit8 v5, v1, 0x2
+
+    div-int/lit8 v5, v5, 0x64
+
+    int-to-float v5, v5
+
+    invoke-direct {v3, v4, v6, v2, v5}, Landroid/graphics/RectF;-><init>(FFFF)V
+
+    iput-object v3, p0, Lcom/whatsapp/GalleryView;->A:Landroid/graphics/RectF;
+
+    .line 298
+    mul-int/lit8 v1, v1, 0x2
+
+    :try_start_0
+    div-int/lit8 v1, v1, 0x64
+
+    sget-object v2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+
+    invoke-static {v0, v1, v2}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/whatsapp/GalleryView;->g:Landroid/graphics/Bitmap;
+
+    .line 192
+    new-instance v0, Landroid/graphics/Canvas;
+
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->g:Landroid/graphics/Bitmap;
+
+    invoke-direct {v0, v1}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
+
+    iput-object v0, p0, Lcom/whatsapp/GalleryView;->v:Landroid/graphics/Canvas;
+
+    .line 262
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->v:Landroid/graphics/Canvas;
+
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->D:Landroid/graphics/RectF;
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    iget-object v4, p0, Lcom/whatsapp/GalleryView;->F:Landroid/graphics/Paint;
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
+
+    .line 219
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->v:Landroid/graphics/Canvas;
+
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->A:Landroid/graphics/RectF;
+
+    const/high16 v2, 0x40a00000
+
+    const/high16 v3, 0x40a00000
+
+    iget-object v4, p0, Lcom/whatsapp/GalleryView;->o:Landroid/graphics/Paint;
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
+    :try_end_0
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 121
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 275
+    :catch_0
+    move-exception v0
+
+    .line 138
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v2, Lcom/whatsapp/GalleryView;->G:[Ljava/lang/String;
+
+    const/4 v3, 0x7
+
+    aget-object v2, v2, v3
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
+
+    goto :goto_0
+.end method
+
+.method private c(Landroid/view/MotionEvent;)V
     .locals 5
 
     .prologue
     const/4 v4, 0x0
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
-    .line 326
+    .line 284
     iget v1, p0, Lcom/whatsapp/GalleryView;->h:I
 
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v1
 
-    .line 43
+    .line 95
     const/4 v2, -0x1
 
     if-ne v1, v2, :cond_1
 
-    .line 285
+    .line 222
     :cond_0
     :goto_0
     return-void
 
-    .line 70
+    .line 40
     :cond_1
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v1
 
-    .line 20
-    iget v2, p0, Lcom/whatsapp/GalleryView;->B:F
+    .line 269
+    iget v2, p0, Lcom/whatsapp/GalleryView;->z:F
 
     sub-float/2addr v2, v1
 
     float-to-int v2, v2
 
-    .line 230
-    iput v1, p0, Lcom/whatsapp/GalleryView;->B:F
+    .line 319
+    iput v1, p0, Lcom/whatsapp/GalleryView;->z:F
 
-    .line 74
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 204
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
     if-eqz v1, :cond_2
 
-    .line 12
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 4
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
-    invoke-interface {v1}, Lcom/whatsapp/gh;->b()V
+    invoke-interface {v1}, Lcom/whatsapp/m_;->b()V
 
-    .line 98
+    .line 72
     :cond_2
     if-gez v2, :cond_4
 
-    .line 220
+    .line 139
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getScrollX()I
 
     move-result v1
 
     if-lez v1, :cond_3
 
-    .line 251
+    .line 92
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getScrollX()I
 
     move-result v1
@@ -839,19 +1072,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 97
+    .line 282
     :cond_3
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
     if-eqz v0, :cond_0
 
     goto :goto_0
 
-    .line 293
+    .line 80
     :cond_4
     if-lez v2, :cond_7
 
-    .line 310
+    .line 287
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getChildCount()I
 
     move-result v1
@@ -878,10 +1111,10 @@
 
     sub-int/2addr v1, v3
 
-    .line 224
+    .line 57
     if-lez v1, :cond_5
 
-    .line 144
+    .line 226
     invoke-static {v1, v2}, Ljava/lang/Math;->min(II)I
 
     move-result v1
@@ -890,60 +1123,60 @@
 
     if-eqz v0, :cond_6
 
-    .line 108
+    .line 38
     :cond_5
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
     if-eqz v1, :cond_6
 
-    .line 289
+    .line 278
     :cond_6
     if-eqz v0, :cond_0
 
-    .line 122
+    .line 56
     :cond_7
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->awakenScrollBars()Z
 
     goto :goto_0
 .end method
 
-.method private c()V
+.method private d()V
     .locals 3
 
     .prologue
-    .line 16
+    .line 270
     new-instance v0, Landroid/widget/Scroller;
 
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    sget-object v2, Lcom/whatsapp/GalleryView;->j:Landroid/view/animation/Interpolator;
+    sget-object v2, Lcom/whatsapp/GalleryView;->r:Landroid/view/animation/Interpolator;
 
     invoke-direct {v0, v1, v2}, Landroid/widget/Scroller;-><init>(Landroid/content/Context;Landroid/view/animation/Interpolator;)V
 
-    iput-object v0, p0, Lcom/whatsapp/GalleryView;->d:Landroid/widget/Scroller;
+    iput-object v0, p0, Lcom/whatsapp/GalleryView;->l:Landroid/widget/Scroller;
 
-    .line 25
-    iget v0, p0, Lcom/whatsapp/GalleryView;->c:I
+    .line 108
+    iget v0, p0, Lcom/whatsapp/GalleryView;->k:I
 
-    iput v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    iput v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
-    .line 240
+    .line 5
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/GalleryView;->r:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/whatsapp/GalleryView;->d:Landroid/graphics/Paint;
 
-    .line 47
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->r:Landroid/graphics/Paint;
+    .line 137
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->d:Landroid/graphics/Paint;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setDither(Z)V
 
-    .line 311
+    .line 131
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -952,322 +1185,89 @@
 
     move-result-object v0
 
-    .line 245
+    .line 152
     invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
 
     move-result v1
 
-    iput v1, p0, Lcom/whatsapp/GalleryView;->b:I
+    iput v1, p0, Lcom/whatsapp/GalleryView;->j:I
 
-    .line 273
+    .line 79
     invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledMaximumFlingVelocity()I
 
     move-result v0
 
-    iput v0, p0, Lcom/whatsapp/GalleryView;->t:I
+    iput v0, p0, Lcom/whatsapp/GalleryView;->B:I
 
-    .line 75
+    .line 246
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/GalleryView;->A:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/whatsapp/GalleryView;->o:Landroid/graphics/Paint;
 
-    .line 216
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->A:Landroid/graphics/Paint;
+    .line 10
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->o:Landroid/graphics/Paint;
 
     const/high16 v1, -0x10000
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 300
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->A:Landroid/graphics/Paint;
+    .line 132
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->o:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL_AND_STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 134
+    .line 147
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/whatsapp/GalleryView;->m:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/whatsapp/GalleryView;->F:Landroid/graphics/Paint;
 
-    .line 11
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->m:Landroid/graphics/Paint;
+    .line 70
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->F:Landroid/graphics/Paint;
 
     const v1, -0x777778
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 138
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->m:Landroid/graphics/Paint;
+    .line 91
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->F:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 256
+    .line 259
     return-void
-.end method
-
-.method private c(Landroid/view/MotionEvent;)V
-    .locals 3
-
-    .prologue
-    .line 115
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
-
-    move-result v0
-
-    const v1, 0xff00
-
-    and-int/2addr v0, v1
-
-    shr-int/lit8 v0, v0, 0x8
-
-    .line 153
-    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
-
-    move-result v1
-
-    .line 32
-    iget v2, p0, Lcom/whatsapp/GalleryView;->h:I
-
-    if-ne v1, v2, :cond_0
-
-    .line 246
-    if-nez v0, :cond_1
-
-    const/4 v0, 0x1
-
-    .line 83
-    :goto_0
-    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getX(I)F
-
-    move-result v1
-
-    iput v1, p0, Lcom/whatsapp/GalleryView;->B:F
-
-    .line 257
-    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getY(I)F
-
-    move-result v1
-
-    iput v1, p0, Lcom/whatsapp/GalleryView;->F:F
-
-    .line 303
-    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
-
-    move-result v0
-
-    iput v0, p0, Lcom/whatsapp/GalleryView;->h:I
-
-    .line 164
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
-
-    if-eqz v0, :cond_0
-
-    .line 38
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
-
-    invoke-virtual {v0}, Landroid/view/VelocityTracker;->clear()V
-
-    .line 57
-    :cond_0
-    return-void
-
-    .line 246
-    :cond_1
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method private d()V
-    .locals 7
-
-    .prologue
-    const/4 v6, 0x0
-
-    .line 3
-    iget-boolean v0, p0, Lcom/whatsapp/GalleryView;->x:Z
-
-    if-eqz v0, :cond_0
-
-    .line 215
-    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getMeasuredWidth()I
-
-    move-result v0
-
-    .line 177
-    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getMeasuredHeight()I
-
-    move-result v1
-
-    .line 302
-    new-instance v2, Landroid/graphics/RectF;
-
-    int-to-float v3, v0
-
-    mul-int/lit8 v4, v1, 0x2
-
-    div-int/lit8 v4, v4, 0x64
-
-    int-to-float v4, v4
-
-    invoke-direct {v2, v6, v6, v3, v4}, Landroid/graphics/RectF;-><init>(FFFF)V
-
-    iput-object v2, p0, Lcom/whatsapp/GalleryView;->o:Landroid/graphics/RectF;
-
-    .line 275
-    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getScrollX()I
-
-    move-result v2
-
-    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getChildCount()I
-
-    move-result v3
-
-    div-int/2addr v2, v3
-
-    .line 209
-    new-instance v3, Landroid/graphics/RectF;
-
-    int-to-float v4, v2
-
-    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getChildCount()I
-
-    move-result v5
-
-    div-int v5, v0, v5
-
-    add-int/2addr v2, v5
-
-    int-to-float v2, v2
-
-    mul-int/lit8 v5, v1, 0x2
-
-    div-int/lit8 v5, v5, 0x64
-
-    int-to-float v5, v5
-
-    invoke-direct {v3, v4, v6, v2, v5}, Landroid/graphics/RectF;-><init>(FFFF)V
-
-    iput-object v3, p0, Lcom/whatsapp/GalleryView;->v:Landroid/graphics/RectF;
-
-    .line 165
-    mul-int/lit8 v1, v1, 0x2
-
-    :try_start_0
-    div-int/lit8 v1, v1, 0x64
-
-    sget-object v2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
-
-    invoke-static {v0, v1, v2}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/whatsapp/GalleryView;->s:Landroid/graphics/Bitmap;
-
-    .line 26
-    new-instance v0, Landroid/graphics/Canvas;
-
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->s:Landroid/graphics/Bitmap;
-
-    invoke-direct {v0, v1}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
-
-    iput-object v0, p0, Lcom/whatsapp/GalleryView;->C:Landroid/graphics/Canvas;
-
-    .line 199
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->C:Landroid/graphics/Canvas;
-
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->o:Landroid/graphics/RectF;
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    iget-object v4, p0, Lcom/whatsapp/GalleryView;->m:Landroid/graphics/Paint;
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
-
-    .line 55
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->C:Landroid/graphics/Canvas;
-
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->v:Landroid/graphics/RectF;
-
-    const/high16 v2, 0x40a00000
-
-    const/high16 v3, 0x40a00000
-
-    iget-object v4, p0, Lcom/whatsapp/GalleryView;->A:Landroid/graphics/Paint;
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
-    :try_end_0
-    .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 234
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 301
-    :catch_0
-    move-exception v0
-
-    .line 211
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v2, Lcom/whatsapp/GalleryView;->G:[Ljava/lang/String;
-
-    const/4 v3, 0x0
-
-    aget-object v2, v2, v3
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
-
-    goto :goto_0
 .end method
 
 
 # virtual methods
+.method public a()I
+    .locals 1
+
+    .prologue
+    .line 42
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
+
+    return v0
+.end method
+
 .method public a(I)V
     .locals 1
 
     .prologue
-    .line 235
+    .line 65
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/whatsapp/GalleryView;->a(IZ)V
 
-    .line 274
+    .line 149
     return-void
-.end method
-
-.method public b()I
-    .locals 1
-
-    .prologue
-    .line 159
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
-
-    return v0
 .end method
 
 .method public computeScroll()V
@@ -1276,8 +1276,8 @@
     .prologue
     const/4 v3, -0x1
 
-    .line 157
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->d:Landroid/widget/Scroller;
+    .line 31
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->l:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->computeScrollOffset()Z
 
@@ -1285,14 +1285,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 137
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->d:Landroid/widget/Scroller;
+    .line 103
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->l:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->getCurrX()I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->d:Landroid/widget/Scroller;
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->l:Landroid/widget/Scroller;
 
     invoke-virtual {v1}, Landroid/widget/Scroller;->getCurrY()I
 
@@ -1300,23 +1300,23 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/whatsapp/GalleryView;->scrollTo(II)V
 
-    .line 292
+    .line 141
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->postInvalidate()V
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
     if-eqz v0, :cond_1
 
-    .line 315
+    .line 125
     :cond_0
-    iget v0, p0, Lcom/whatsapp/GalleryView;->k:I
+    iget v0, p0, Lcom/whatsapp/GalleryView;->x:I
 
     if-eq v0, v3, :cond_1
 
-    .line 182
+    .line 88
     const/4 v0, 0x0
 
-    iget v1, p0, Lcom/whatsapp/GalleryView;->k:I
+    iget v1, p0, Lcom/whatsapp/GalleryView;->x:I
 
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getChildCount()I
 
@@ -1332,12 +1332,12 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    iput v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
-    .line 117
-    iput v3, p0, Lcom/whatsapp/GalleryView;->k:I
+    .line 174
+    iput v3, p0, Lcom/whatsapp/GalleryView;->x:I
 
-    .line 66
+    .line 24
     :cond_1
     return-void
 .end method
@@ -1350,26 +1350,26 @@
 
     const/4 v2, 0x1
 
-    sget-boolean v3, Lcom/whatsapp/App;->aL:Z
+    sget v3, Lcom/whatsapp/App;->h:I
 
-    .line 229
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->n:Landroid/graphics/Bitmap;
+    .line 55
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->e:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_1
 
-    .line 61
+    .line 116
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getScrollX()I
 
     move-result v0
 
     int-to-float v0, v0
 
-    iget v4, p0, Lcom/whatsapp/GalleryView;->E:F
+    iget v4, p0, Lcom/whatsapp/GalleryView;->y:F
 
     mul-float/2addr v0, v4
 
-    .line 252
-    iget v4, p0, Lcom/whatsapp/GalleryView;->e:I
+    .line 82
+    iget v4, p0, Lcom/whatsapp/GalleryView;->q:I
 
     int-to-float v4, v4
 
@@ -1391,7 +1391,7 @@
 
     if-gez v4, :cond_0
 
-    .line 162
+    .line 279
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getRight()I
 
     move-result v0
@@ -1402,15 +1402,15 @@
 
     sub-int/2addr v0, v4
 
-    iget v4, p0, Lcom/whatsapp/GalleryView;->e:I
+    iget v4, p0, Lcom/whatsapp/GalleryView;->q:I
 
     sub-int/2addr v0, v4
 
     int-to-float v0, v0
 
-    .line 77
+    .line 161
     :cond_0
-    iget-object v4, p0, Lcom/whatsapp/GalleryView;->n:Landroid/graphics/Bitmap;
+    iget-object v4, p0, Lcom/whatsapp/GalleryView;->e:Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getBottom()I
 
@@ -1422,7 +1422,7 @@
 
     sub-int/2addr v5, v6
 
-    iget v6, p0, Lcom/whatsapp/GalleryView;->i:I
+    iget v6, p0, Lcom/whatsapp/GalleryView;->b:I
 
     sub-int/2addr v5, v6
 
@@ -1430,17 +1430,17 @@
 
     int-to-float v5, v5
 
-    iget-object v6, p0, Lcom/whatsapp/GalleryView;->r:Landroid/graphics/Paint;
+    iget-object v6, p0, Lcom/whatsapp/GalleryView;->d:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v4, v0, v5, v6}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 261
+    .line 234
     :cond_1
-    iget v0, p0, Lcom/whatsapp/GalleryView;->q:I
+    iget v0, p0, Lcom/whatsapp/GalleryView;->c:I
 
     if-eq v0, v2, :cond_9
 
-    iget v0, p0, Lcom/whatsapp/GalleryView;->k:I
+    iget v0, p0, Lcom/whatsapp/GalleryView;->x:I
 
     const/4 v4, -0x1
 
@@ -1448,21 +1448,21 @@
 
     move v0, v2
 
-    .line 147
+    .line 313
     :goto_0
     if-eqz v0, :cond_4
 
-    .line 281
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    .line 280
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 60
+    .line 291
     if-eqz v0, :cond_2
 
-    .line 120
+    .line 164
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getDrawingTime()J
 
     move-result-wide v4
@@ -1471,7 +1471,7 @@
 
     if-eqz v3, :cond_3
 
-    .line 101
+    .line 58
     :cond_2
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1487,7 +1487,7 @@
 
     move-result-object v0
 
-    iget v4, p0, Lcom/whatsapp/GalleryView;->z:I
+    iget v4, p0, Lcom/whatsapp/GalleryView;->w:I
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1499,32 +1499,32 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 150
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 27
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
     if-eqz v0, :cond_3
 
-    .line 238
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 243
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
-    invoke-interface {v0}, Lcom/whatsapp/gh;->a()V
+    invoke-interface {v0}, Lcom/whatsapp/m_;->c()V
 
-    .line 140
+    .line 235
     :cond_3
     if-eqz v3, :cond_7
 
-    .line 262
+    .line 104
     :cond_4
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getDrawingTime()J
 
     move-result-wide v4
 
-    .line 221
-    iget v0, p0, Lcom/whatsapp/GalleryView;->k:I
+    .line 251
+    iget v0, p0, Lcom/whatsapp/GalleryView;->x:I
 
     if-ltz v0, :cond_5
 
-    iget v0, p0, Lcom/whatsapp/GalleryView;->k:I
+    iget v0, p0, Lcom/whatsapp/GalleryView;->x:I
 
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getChildCount()I
 
@@ -1532,9 +1532,9 @@
 
     if-ge v0, v6, :cond_5
 
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
-    iget v6, p0, Lcom/whatsapp/GalleryView;->k:I
+    iget v6, p0, Lcom/whatsapp/GalleryView;->x:I
 
     sub-int/2addr v0, v6
 
@@ -1544,8 +1544,8 @@
 
     if-ne v0, v2, :cond_5
 
-    .line 158
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    .line 15
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
 
@@ -1553,8 +1553,8 @@
 
     invoke-virtual {p0, p1, v0, v4, v5}, Lcom/whatsapp/GalleryView;->drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
 
-    .line 169
-    iget v0, p0, Lcom/whatsapp/GalleryView;->k:I
+    .line 258
+    iget v0, p0, Lcom/whatsapp/GalleryView;->x:I
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
 
@@ -1564,7 +1564,7 @@
 
     if-eqz v3, :cond_7
 
-    .line 87
+    .line 8
     :cond_5
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getChildCount()I
 
@@ -1572,33 +1572,33 @@
 
     move v0, v1
 
-    .line 56
+    .line 281
     :cond_6
     if-ge v0, v2, :cond_7
 
-    .line 124
+    .line 85
     invoke-virtual {p0, v0}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
     invoke-virtual {p0, p1, v1, v4, v5}, Lcom/whatsapp/GalleryView;->drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
 
-    .line 48
+    .line 22
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v3, :cond_6
 
-    .line 308
+    .line 143
     :cond_7
-    iget-boolean v0, p0, Lcom/whatsapp/GalleryView;->x:Z
+    iget-boolean v0, p0, Lcom/whatsapp/GalleryView;->i:Z
 
     if-eqz v0, :cond_8
 
-    .line 143
-    invoke-direct {p0}, Lcom/whatsapp/GalleryView;->d()V
+    .line 191
+    invoke-direct {p0}, Lcom/whatsapp/GalleryView;->c()V
 
-    .line 7
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->s:Landroid/graphics/Bitmap;
+    .line 59
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->g:Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getScrollX()I
 
@@ -1616,18 +1616,18 @@
 
     int-to-float v2, v2
 
-    iget-object v3, p0, Lcom/whatsapp/GalleryView;->r:Landroid/graphics/Paint;
+    iget-object v3, p0, Lcom/whatsapp/GalleryView;->d:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 314
+    .line 253
     :cond_8
     return-void
 
     :cond_9
     move v0, v1
 
-    .line 261
+    .line 234
     goto/16 :goto_0
 .end method
 
@@ -1637,20 +1637,20 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 171
+    .line 154
     const/16 v1, 0x11
 
     if-ne p2, v1, :cond_0
 
-    .line 121
-    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->b()I
+    .line 292
+    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->a()I
 
     move-result v1
 
     if-lez v1, :cond_1
 
-    .line 103
-    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->b()I
+    .line 271
+    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->a()I
 
     move-result v1
 
@@ -1658,18 +1658,18 @@
 
     invoke-virtual {p0, v1}, Lcom/whatsapp/GalleryView;->a(I)V
 
-    .line 279
+    .line 211
     :goto_0
     return v0
 
-    .line 242
+    .line 41
     :cond_0
     const/16 v1, 0x42
 
     if-ne p2, v1, :cond_1
 
-    .line 131
-    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->b()I
+    .line 205
+    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->a()I
 
     move-result v1
 
@@ -1681,8 +1681,8 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 276
-    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->b()I
+    .line 207
+    invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->a()I
 
     move-result v1
 
@@ -1692,7 +1692,7 @@
 
     goto :goto_0
 
-    .line 31
+    .line 211
     :cond_1
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->dispatchUnhandledMove(Landroid/view/View;I)Z
 
@@ -1705,17 +1705,17 @@
     .locals 1
 
     .prologue
-    .line 187
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 134
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
     if-eqz v0, :cond_0
 
-    .line 105
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 299
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
-    invoke-interface {v0}, Lcom/whatsapp/gh;->c()V
+    invoke-interface {v0}, Lcom/whatsapp/m_;->a()V
 
-    .line 294
+    .line 199
     :cond_0
     const/4 v0, 0x0
 
@@ -1726,68 +1726,68 @@
     .locals 1
 
     .prologue
-    .line 312
+    .line 25
     const/4 v0, 0x0
 
     return v0
 .end method
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
-    .locals 5
+    .locals 6
 
     .prologue
+    const/4 v5, 0x2
+
     const/4 v1, 0x0
 
     const/4 v2, 0x1
 
-    sget-boolean v3, Lcom/whatsapp/App;->aL:Z
+    sget v3, Lcom/whatsapp/App;->h:I
 
-    .line 50
-    iget-boolean v0, p0, Lcom/whatsapp/GalleryView;->w:Z
+    .line 227
+    iget-boolean v0, p0, Lcom/whatsapp/GalleryView;->E:Z
 
     if-eqz v0, :cond_1
 
-    .line 270
+    .line 306
     :cond_0
     :goto_0
     return v2
 
-    .line 123
+    .line 201
     :cond_1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v4
 
-    .line 13
-    const/4 v0, 0x2
+    .line 46
+    if-ne v4, v5, :cond_2
 
-    if-ne v4, v0, :cond_2
-
-    iget v0, p0, Lcom/whatsapp/GalleryView;->q:I
+    iget v0, p0, Lcom/whatsapp/GalleryView;->c:I
 
     if-nez v0, :cond_0
 
-    .line 200
+    .line 264
     :cond_2
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
 
     if-nez v0, :cond_3
 
-    .line 190
+    .line 214
     invoke-static {}, Landroid/view/VelocityTracker;->obtain()Landroid/view/VelocityTracker;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
+    iput-object v0, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
 
-    .line 217
+    .line 187
     :cond_3
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0, p1}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
-    .line 166
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    .line 173
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
 
@@ -1797,14 +1797,14 @@
 
     if-eqz v0, :cond_4
 
-    .line 102
+    .line 126
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v0
 
     if-le v0, v2, :cond_4
 
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
 
@@ -1812,25 +1812,25 @@
 
     check-cast v0, Lcom/whatsapp/TouchImageView;
 
-    iget-boolean v0, v0, Lcom/whatsapp/TouchImageView;->B:Z
+    iget-boolean v0, v0, Lcom/whatsapp/TouchImageView;->o:Z
 
     if-nez v0, :cond_4
 
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
-    .line 161
+    .line 215
     invoke-virtual {p0, v0}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Lcom/whatsapp/TouchImageView;
 
-    iget-boolean v0, v0, Lcom/whatsapp/TouchImageView;->n:Z
+    iget-boolean v0, v0, Lcom/whatsapp/TouchImageView;->z:Z
 
     if-nez v0, :cond_4
 
-    .line 219
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    .line 225
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
 
@@ -1838,23 +1838,23 @@
 
     check-cast v0, Lcom/whatsapp/TouchImageView;
 
-    iput-boolean v2, v0, Lcom/whatsapp/TouchImageView;->s:Z
+    iput-boolean v2, v0, Lcom/whatsapp/TouchImageView;->y:Z
 
-    .line 309
-    sput v2, Lcom/whatsapp/TouchImageView;->p:I
+    .line 324
+    sput v2, Lcom/whatsapp/TouchImageView;->s:I
 
-    .line 241
-    iput-boolean v2, p0, Lcom/whatsapp/GalleryView;->w:Z
+    .line 283
+    iput-boolean v2, p0, Lcom/whatsapp/GalleryView;->E:Z
 
-    .line 139
+    .line 93
     :cond_4
     packed-switch v4, :pswitch_data_0
 
-    .line 111
+    .line 306
     :cond_5
     :goto_1
     :pswitch_0
-    iget v0, p0, Lcom/whatsapp/GalleryView;->q:I
+    iget v0, p0, Lcom/whatsapp/GalleryView;->c:I
 
     if-nez v0, :cond_0
 
@@ -1862,60 +1862,60 @@
 
     goto :goto_0
 
-    .line 82
+    .line 165
     :pswitch_1
-    sget v0, Lcom/whatsapp/TouchImageView;->p:I
+    sget v0, Lcom/whatsapp/TouchImageView;->s:I
 
     if-ne v0, v2, :cond_6
 
-    .line 264
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 323
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
     if-eqz v0, :cond_5
 
-    .line 255
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 290
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
-    invoke-interface {v0, p1}, Lcom/whatsapp/gh;->a(Landroid/view/MotionEvent;)V
+    invoke-interface {v0, p1}, Lcom/whatsapp/m_;->a(Landroid/view/MotionEvent;)V
 
     if-eqz v3, :cond_5
 
-    .line 188
+    .line 44
     :cond_6
     invoke-direct {p0, p1}, Lcom/whatsapp/GalleryView;->a(Landroid/view/MotionEvent;)V
 
-    .line 172
+    .line 36
     if-eqz v3, :cond_5
 
-    .line 62
+    .line 212
     :pswitch_2
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
 
-    .line 29
+    .line 53
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v4
 
-    .line 298
-    iput v0, p0, Lcom/whatsapp/GalleryView;->B:F
+    .line 272
+    iput v0, p0, Lcom/whatsapp/GalleryView;->z:F
 
-    .line 130
-    iput v4, p0, Lcom/whatsapp/GalleryView;->F:F
+    .line 169
+    iput v4, p0, Lcom/whatsapp/GalleryView;->f:F
 
-    .line 322
+    .line 124
     iput-boolean v2, p0, Lcom/whatsapp/GalleryView;->a:Z
 
-    .line 253
+    .line 245
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/whatsapp/GalleryView;->h:I
 
-    .line 39
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->d:Landroid/widget/Scroller;
+    .line 111
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->l:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->isFinished()Z
 
@@ -1926,65 +1926,63 @@
     move v0, v1
 
     :goto_2
-    iput v0, p0, Lcom/whatsapp/GalleryView;->q:I
+    iput v0, p0, Lcom/whatsapp/GalleryView;->c:I
 
-    .line 64
+    .line 296
     if-eqz v3, :cond_5
 
-    .line 305
+    .line 73
     :pswitch_3
     sget-object v0, Lcom/whatsapp/GalleryView;->G:[Ljava/lang/String;
 
-    const/4 v4, 0x7
+    const/4 v4, 0x3
 
     aget-object v0, v0, v4
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
 
-    .line 44
+    .line 50
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/whatsapp/GalleryView;->h:I
 
-    .line 35
+    .line 188
     iput-boolean v1, p0, Lcom/whatsapp/GalleryView;->a:Z
 
-    .line 210
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
+    .line 183
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
 
     if-eqz v0, :cond_7
 
-    .line 1
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
+    .line 247
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0}, Landroid/view/VelocityTracker;->recycle()V
 
-    .line 196
+    .line 303
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
+    iput-object v0, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
 
-    .line 89
+    .line 20
     :cond_7
-    iput v1, p0, Lcom/whatsapp/GalleryView;->q:I
+    iput v1, p0, Lcom/whatsapp/GalleryView;->c:I
 
-    .line 325
+    .line 216
     if-eqz v3, :cond_5
 
-    .line 85
+    .line 160
     :pswitch_4
-    invoke-direct {p0, p1}, Lcom/whatsapp/GalleryView;->c(Landroid/view/MotionEvent;)V
+    invoke-direct {p0, p1}, Lcom/whatsapp/GalleryView;->b(Landroid/view/MotionEvent;)V
 
-    .line 296
+    .line 52
     if-eqz v3, :cond_5
 
-    .line 28
+    .line 257
     :pswitch_5
     sget-object v0, Lcom/whatsapp/GalleryView;->G:[Ljava/lang/String;
 
-    const/16 v3, 0x8
-
-    aget-object v0, v0, v3
+    aget-object v0, v0, v5
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
@@ -1993,10 +1991,10 @@
     :cond_8
     move v0, v2
 
-    .line 39
+    .line 111
     goto :goto_2
 
-    .line 139
+    .line 93
     nop
 
     :pswitch_data_0
@@ -2017,9 +2015,9 @@
     .prologue
     const/4 v2, 0x0
 
-    sget-boolean v3, Lcom/whatsapp/App;->aL:Z
+    sget v3, Lcom/whatsapp/App;->h:I
 
-    .line 287
+    .line 49
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getChildCount()I
 
     move-result v4
@@ -2028,16 +2026,16 @@
 
     move v0, v2
 
-    .line 173
+    .line 133
     :cond_0
     if-ge v1, v4, :cond_2
 
-    .line 212
+    .line 23
     invoke-virtual {p0, v1}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v5
 
-    .line 73
+    .line 98
     invoke-virtual {v5}, Landroid/view/View;->getVisibility()I
 
     move-result v6
@@ -2046,7 +2044,7 @@
 
     if-eq v6, v7, :cond_1
 
-    .line 323
+    .line 9
     invoke-virtual {v5}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v6
@@ -2060,27 +2058,27 @@
 
     invoke-virtual {v5, v0, v2, v7, v8}, Landroid/view/View;->layout(IIII)V
 
-    .line 306
+    .line 145
     add-int/2addr v0, v6
 
-    .line 170
+    .line 255
     :cond_1
     add-int/lit8 v1, v1, 0x1
 
     if-eqz v3, :cond_0
 
-    .line 151
+    .line 37
     :cond_2
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->g:Lcom/whatsapp/atz;
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->n:Lcom/whatsapp/s5;
 
     if-eqz v0, :cond_3
 
-    .line 145
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->g:Lcom/whatsapp/atz;
+    .line 317
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->n:Lcom/whatsapp/s5;
 
-    invoke-interface {v0}, Lcom/whatsapp/atz;->a()V
+    invoke-interface {v0}, Lcom/whatsapp/s5;->a()V
 
-    .line 133
+    .line 83
     :cond_3
     return-void
 .end method
@@ -2093,42 +2091,40 @@
 
     const/4 v2, 0x0
 
-    sget-boolean v3, Lcom/whatsapp/App;->aL:Z
+    sget v3, Lcom/whatsapp/App;->h:I
 
-    .line 23
+    .line 64
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onMeasure(II)V
 
-    .line 156
+    .line 213
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v4
 
-    .line 37
+    .line 63
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v5
 
-    .line 226
+    .line 228
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v0
 
-    .line 110
+    .line 148
     if-eq v0, v7, :cond_0
 
-    .line 15
+    .line 158
     if-eqz p1, :cond_0
 
-    .line 304
+    .line 159
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v1, Lcom/whatsapp/GalleryView;->G:[Ljava/lang/String;
 
-    const/4 v6, 0x6
-
-    aget-object v1, v1, v6
+    aget-object v1, v1, v2
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2144,26 +2140,26 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 96
+    .line 230
     :cond_0
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v6
 
-    .line 321
+    .line 316
     if-eq v6, v7, :cond_1
 
-    .line 112
+    .line 241
     if-eqz p2, :cond_1
 
-    .line 52
+    .line 61
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v1, Lcom/whatsapp/GalleryView;->G:[Ljava/lang/String;
 
-    const/4 v7, 0x5
+    const/4 v7, 0x1
 
     aget-object v1, v1, v7
 
@@ -2181,7 +2177,7 @@
 
     invoke-static {v0}, Lcom/whatsapp/util/Log;->e(Ljava/lang/String;)V
 
-    .line 222
+    .line 261
     :cond_1
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getChildCount()I
 
@@ -2189,18 +2185,18 @@
 
     move v1, v2
 
-    .line 214
+    .line 209
     :goto_0
     if-ge v1, v7, :cond_2
 
-    .line 141
-    iget-boolean v0, p0, Lcom/whatsapp/GalleryView;->x:Z
+    .line 77
+    iget-boolean v0, p0, Lcom/whatsapp/GalleryView;->i:Z
 
     if-eqz v0, :cond_5
 
     const/16 v0, 0x62
 
-    .line 53
+    .line 11
     :goto_1
     mul-int/2addr v0, v5
 
@@ -2210,29 +2206,29 @@
 
     move-result v0
 
-    .line 54
+    .line 179
     invoke-virtual {p0, v1}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v8
 
     invoke-virtual {v8, p1, v0}, Landroid/view/View;->measure(II)V
 
-    .line 129
+    .line 237
     add-int/lit8 v0, v1, 0x1
 
     if-eqz v3, :cond_7
 
-    .line 22
+    .line 220
     :cond_2
-    iget-boolean v0, p0, Lcom/whatsapp/GalleryView;->l:Z
+    iget-boolean v0, p0, Lcom/whatsapp/GalleryView;->u:Z
 
     if-eqz v0, :cond_3
 
-    .line 317
-    iput-boolean v2, p0, Lcom/whatsapp/GalleryView;->l:Z
+    .line 326
+    iput-boolean v2, p0, Lcom/whatsapp/GalleryView;->u:Z
 
-    .line 316
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->n:Landroid/graphics/Bitmap;
+    .line 3
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->e:Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getContext()Landroid/content/Context;
 
@@ -2242,35 +2238,35 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/whatsapp/GalleryView;->n:Landroid/graphics/Bitmap;
+    iput-object v0, p0, Lcom/whatsapp/GalleryView;->e:Landroid/graphics/Bitmap;
 
-    .line 40
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->n:Landroid/graphics/Bitmap;
+    .line 242
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->e:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v0
 
-    iput v0, p0, Lcom/whatsapp/GalleryView;->e:I
+    iput v0, p0, Lcom/whatsapp/GalleryView;->q:I
 
-    .line 42
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->n:Landroid/graphics/Bitmap;
+    .line 68
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->e:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v0
 
-    iput v0, p0, Lcom/whatsapp/GalleryView;->i:I
+    iput v0, p0, Lcom/whatsapp/GalleryView;->b:I
 
-    .line 176
+    .line 99
     :cond_3
-    iget v0, p0, Lcom/whatsapp/GalleryView;->e:I
+    iget v0, p0, Lcom/whatsapp/GalleryView;->q:I
 
     if-le v0, v4, :cond_6
 
     mul-int v0, v7, v4
 
-    iget v1, p0, Lcom/whatsapp/GalleryView;->e:I
+    iget v1, p0, Lcom/whatsapp/GalleryView;->q:I
 
     sub-int/2addr v0, v1
 
@@ -2287,43 +2283,43 @@
     div-float/2addr v0, v1
 
     :goto_2
-    iput v0, p0, Lcom/whatsapp/GalleryView;->E:F
+    iput v0, p0, Lcom/whatsapp/GalleryView;->y:F
 
-    .line 86
-    iget v0, p0, Lcom/whatsapp/GalleryView;->f:I
+    .line 304
+    iget v0, p0, Lcom/whatsapp/GalleryView;->C:I
 
     if-eq v0, v4, :cond_4
 
-    .line 213
-    iput v4, p0, Lcom/whatsapp/GalleryView;->f:I
+    .line 310
+    iput v4, p0, Lcom/whatsapp/GalleryView;->C:I
 
-    .line 4
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    .line 297
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
     mul-int/2addr v0, v4
 
     invoke-virtual {p0, v0, v2}, Lcom/whatsapp/GalleryView;->scrollTo(II)V
 
-    .line 231
+    .line 155
     invoke-virtual {p0, v4}, Lcom/whatsapp/GalleryView;->setScreenWidth(I)V
 
-    .line 125
+    .line 289
     :cond_4
-    invoke-direct {p0}, Lcom/whatsapp/GalleryView;->d()V
+    invoke-direct {p0}, Lcom/whatsapp/GalleryView;->c()V
 
-    .line 282
+    .line 193
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->invalidate()V
 
-    .line 58
+    .line 218
     return-void
 
-    .line 141
+    .line 77
     :cond_5
     const/16 v0, 0x64
 
     goto :goto_1
 
-    .line 176
+    .line 99
     :cond_6
     const/high16 v0, 0x3f800000
 
@@ -2341,103 +2337,101 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 263
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 229
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
     if-eqz v0, :cond_0
 
-    .line 243
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 76
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
-    invoke-interface {v0, v1}, Lcom/whatsapp/gh;->b(I)V
+    invoke-interface {v0, v1}, Lcom/whatsapp/m_;->a(I)V
 
-    .line 205
+    .line 107
     :cond_0
     return v1
 .end method
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
-    .locals 8
+    .locals 7
 
     .prologue
-    const/4 v7, 0x2
-
     const/4 v6, -0x1
 
     const/4 v5, 0x0
 
     const/4 v4, 0x1
 
-    sget-boolean v0, Lcom/whatsapp/App;->aL:Z
+    sget v0, Lcom/whatsapp/App;->h:I
 
-    .line 132
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->u:Landroid/view/GestureDetector;
+    .line 127
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->m:Landroid/view/GestureDetector;
 
     invoke-virtual {v1, p1}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
-    .line 232
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
+    .line 196
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
 
     if-nez v1, :cond_0
 
-    .line 236
+    .line 14
     invoke-static {}, Landroid/view/VelocityTracker;->obtain()Landroid/view/VelocityTracker;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
+    iput-object v1, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
 
-    .line 76
+    .line 238
     :cond_0
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
 
     invoke-virtual {v1, p1}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
-    .line 278
+    .line 276
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v1
 
-    .line 286
+    .line 318
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v2
 
-    .line 244
+    .line 113
     packed-switch v1, :pswitch_data_0
 
-    .line 318
+    .line 273
     :cond_1
     :goto_0
     :pswitch_0
     return v4
 
-    .line 247
+    .line 81
     :pswitch_1
-    iget-boolean v1, p0, Lcom/whatsapp/GalleryView;->w:Z
+    iget-boolean v1, p0, Lcom/whatsapp/GalleryView;->E:Z
 
     if-eqz v1, :cond_2
 
-    .line 78
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 117
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
     if-eqz v0, :cond_1
 
-    .line 27
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 16
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
-    invoke-interface {v0, p1}, Lcom/whatsapp/gh;->a(Landroid/view/MotionEvent;)V
+    invoke-interface {v0, p1}, Lcom/whatsapp/m_;->a(Landroid/view/MotionEvent;)V
 
     goto :goto_0
 
-    .line 30
+    .line 43
     :cond_2
-    iget v1, p0, Lcom/whatsapp/GalleryView;->q:I
+    iget v1, p0, Lcom/whatsapp/GalleryView;->c:I
 
     if-eqz v1, :cond_1
 
-    .line 128
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->d:Landroid/widget/Scroller;
+    .line 206
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->l:Landroid/widget/Scroller;
 
     invoke-virtual {v1}, Landroid/widget/Scroller;->isFinished()Z
 
@@ -2445,16 +2439,16 @@
 
     if-nez v1, :cond_3
 
-    .line 218
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->d:Landroid/widget/Scroller;
+    .line 51
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->l:Landroid/widget/Scroller;
 
     invoke-virtual {v1}, Landroid/widget/Scroller;->abortAnimation()V
 
-    .line 198
+    .line 140
     :cond_3
-    iput v2, p0, Lcom/whatsapp/GalleryView;->B:F
+    iput v2, p0, Lcom/whatsapp/GalleryView;->z:F
 
-    .line 320
+    .line 135
     invoke-virtual {p1, v5}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v1
@@ -2463,36 +2457,36 @@
 
     if-eqz v0, :cond_1
 
-    .line 237
+    .line 265
     :pswitch_2
-    iget-boolean v1, p0, Lcom/whatsapp/GalleryView;->w:Z
+    iget-boolean v1, p0, Lcom/whatsapp/GalleryView;->E:Z
 
     if-eqz v1, :cond_4
 
-    .line 155
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 172
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
     if-eqz v0, :cond_1
 
-    .line 191
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 136
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
-    invoke-interface {v0, p1}, Lcom/whatsapp/gh;->a(Landroid/view/MotionEvent;)V
+    invoke-interface {v0, p1}, Lcom/whatsapp/m_;->a(Landroid/view/MotionEvent;)V
 
     goto :goto_0
 
-    .line 297
+    .line 157
     :cond_4
-    iget v1, p0, Lcom/whatsapp/GalleryView;->q:I
+    iget v1, p0, Lcom/whatsapp/GalleryView;->c:I
 
     if-ne v1, v4, :cond_5
 
-    .line 67
-    invoke-direct {p0, p1}, Lcom/whatsapp/GalleryView;->b(Landroid/view/MotionEvent;)V
+    .line 202
+    invoke-direct {p0, p1}, Lcom/whatsapp/GalleryView;->c(Landroid/view/MotionEvent;)V
 
     if-eqz v0, :cond_1
 
-    .line 277
+    .line 146
     :cond_5
     invoke-virtual {p0, p1}, Lcom/whatsapp/GalleryView;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -2500,64 +2494,64 @@
 
     if-eqz v1, :cond_1
 
-    iget v1, p0, Lcom/whatsapp/GalleryView;->q:I
+    iget v1, p0, Lcom/whatsapp/GalleryView;->c:I
 
     if-ne v1, v4, :cond_1
 
-    .line 186
-    invoke-direct {p0, p1}, Lcom/whatsapp/GalleryView;->b(Landroid/view/MotionEvent;)V
+    .line 115
+    invoke-direct {p0, p1}, Lcom/whatsapp/GalleryView;->c(Landroid/view/MotionEvent;)V
 
     if-eqz v0, :cond_1
 
-    .line 267
+    .line 47
     :pswitch_3
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    .line 307
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 166
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
     if-eqz v1, :cond_6
 
-    .line 90
+    .line 109
     :cond_6
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
 
-    .line 126
+    .line 203
     const/16 v2, 0x3e8
 
-    iget v3, p0, Lcom/whatsapp/GalleryView;->t:I
+    iget v3, p0, Lcom/whatsapp/GalleryView;->B:I
 
     int-to-float v3, v3
 
     invoke-virtual {v1, v2, v3}, Landroid/view/VelocityTracker;->computeCurrentVelocity(IF)V
 
-    .line 160
+    .line 260
     invoke-virtual {v1}, Landroid/view/VelocityTracker;->getXVelocity()F
 
     move-result v1
 
     float-to-int v1, v1
 
-    .line 268
-    iget v2, p0, Lcom/whatsapp/GalleryView;->q:I
+    .line 66
+    iget v2, p0, Lcom/whatsapp/GalleryView;->c:I
 
     if-ne v2, v4, :cond_a
 
-    iget-boolean v2, p0, Lcom/whatsapp/GalleryView;->w:Z
+    iget-boolean v2, p0, Lcom/whatsapp/GalleryView;->E:Z
 
     if-nez v2, :cond_a
 
-    .line 41
+    .line 167
     const/16 v2, 0xfa
 
     if-le v1, v2, :cond_7
 
-    iget v2, p0, Lcom/whatsapp/GalleryView;->z:I
+    iget v2, p0, Lcom/whatsapp/GalleryView;->w:I
 
     if-lez v2, :cond_7
 
-    .line 49
-    iget v2, p0, Lcom/whatsapp/GalleryView;->z:I
+    .line 307
+    iget v2, p0, Lcom/whatsapp/GalleryView;->w:I
 
     add-int/lit8 v2, v2, -0x1
 
@@ -2565,13 +2559,13 @@
 
     if-eqz v0, :cond_9
 
-    .line 192
+    .line 175
     :cond_7
     const/16 v2, -0xfa
 
     if-ge v1, v2, :cond_8
 
-    iget v1, p0, Lcom/whatsapp/GalleryView;->z:I
+    iget v1, p0, Lcom/whatsapp/GalleryView;->w:I
 
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getChildCount()I
 
@@ -2581,8 +2575,8 @@
 
     if-ge v1, v2, :cond_8
 
-    .line 149
-    iget v1, p0, Lcom/whatsapp/GalleryView;->z:I
+    .line 254
+    iget v1, p0, Lcom/whatsapp/GalleryView;->w:I
 
     add-int/lit8 v1, v1, 0x1
 
@@ -2590,83 +2584,87 @@
 
     if-eqz v0, :cond_9
 
-    .line 291
+    .line 308
     :cond_8
-    invoke-direct {p0}, Lcom/whatsapp/GalleryView;->a()V
+    invoke-direct {p0}, Lcom/whatsapp/GalleryView;->b()V
 
-    .line 227
+    .line 184
     :cond_9
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
 
     if-eqz v1, :cond_a
 
-    .line 248
-    iget-object v1, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
+    .line 89
+    iget-object v1, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
 
     invoke-virtual {v1}, Landroid/view/VelocityTracker;->recycle()V
 
-    .line 259
+    .line 256
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/whatsapp/GalleryView;->D:Landroid/view/VelocityTracker;
+    iput-object v1, p0, Lcom/whatsapp/GalleryView;->p:Landroid/view/VelocityTracker;
 
-    .line 152
+    .line 294
     :cond_a
-    iput v5, p0, Lcom/whatsapp/GalleryView;->q:I
+    iput v5, p0, Lcom/whatsapp/GalleryView;->c:I
 
-    .line 174
+    .line 2
     iput v6, p0, Lcom/whatsapp/GalleryView;->h:I
 
-    .line 207
+    .line 110
     if-eqz v0, :cond_1
 
-    .line 94
+    .line 217
     :pswitch_4
-    iget-boolean v1, p0, Lcom/whatsapp/GalleryView;->w:Z
+    iget-boolean v1, p0, Lcom/whatsapp/GalleryView;->E:Z
 
     if-nez v1, :cond_1
 
-    .line 185
+    .line 240
     sget-object v1, Lcom/whatsapp/GalleryView;->G:[Ljava/lang/String;
 
-    aget-object v1, v1, v7
+    const/4 v2, 0x5
+
+    aget-object v1, v1, v2
 
     invoke-static {v1}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
 
-    .line 223
-    iput v5, p0, Lcom/whatsapp/GalleryView;->q:I
+    .line 248
+    iput v5, p0, Lcom/whatsapp/GalleryView;->c:I
 
-    .line 9
+    .line 35
     iput v6, p0, Lcom/whatsapp/GalleryView;->h:I
 
-    .line 189
+    .line 314
     if-eqz v0, :cond_1
 
-    .line 63
+    .line 223
     :pswitch_5
-    iget-boolean v1, p0, Lcom/whatsapp/GalleryView;->w:Z
+    iget-boolean v1, p0, Lcom/whatsapp/GalleryView;->E:Z
 
     if-nez v1, :cond_1
 
-    .line 2
-    sput v7, Lcom/whatsapp/TouchImageView;->p:I
+    .line 97
+    const/4 v1, 0x2
 
-    .line 106
+    sput v1, Lcom/whatsapp/TouchImageView;->s:I
+
+    .line 293
     const/high16 v1, -0x40800000
 
-    sput v1, Lcom/whatsapp/TouchImageView;->z:F
+    sput v1, Lcom/whatsapp/TouchImageView;->r:F
 
-    .line 59
-    invoke-direct {p0, p1}, Lcom/whatsapp/GalleryView;->c(Landroid/view/MotionEvent;)V
+    .line 249
+    invoke-direct {p0, p1}, Lcom/whatsapp/GalleryView;->b(Landroid/view/MotionEvent;)V
 
-    .line 91
+    .line 311
     if-eqz v0, :cond_1
 
-    .line 65
+    .line 263
     :pswitch_6
     sget-object v0, Lcom/whatsapp/GalleryView;->G:[Ljava/lang/String;
 
-    const/4 v1, 0x3
+    const/4 v1, 0x6
 
     aget-object v0, v0, v1
 
@@ -2674,7 +2672,9 @@
 
     goto/16 :goto_0
 
-    .line 244
+    .line 113
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -2691,12 +2691,12 @@
     .locals 1
 
     .prologue
-    .line 148
-    iget v0, p0, Lcom/whatsapp/GalleryView;->p:I
+    .line 105
+    iget v0, p0, Lcom/whatsapp/GalleryView;->s:I
 
     invoke-virtual {p0, p1, v0}, Lcom/whatsapp/GalleryView;->setCurrentScreen(II)V
 
-    .line 116
+    .line 252
     return-void
 .end method
 
@@ -2706,11 +2706,11 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 203
+    .line 54
     invoke-virtual {p0, p2}, Lcom/whatsapp/GalleryView;->setScreenWidth(I)V
 
-    .line 194
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->d:Landroid/widget/Scroller;
+    .line 129
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->l:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->isFinished()Z
 
@@ -2718,12 +2718,12 @@
 
     if-nez v0, :cond_0
 
-    .line 93
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->d:Landroid/widget/Scroller;
+    .line 19
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->l:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->abortAnimation()V
 
-    .line 34
+    .line 163
     :cond_0
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getChildCount()I
 
@@ -2737,41 +2737,41 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    iput v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
-    .line 19
-    iget v0, p0, Lcom/whatsapp/GalleryView;->z:I
+    .line 150
+    iget v0, p0, Lcom/whatsapp/GalleryView;->w:I
 
     mul-int/2addr v0, p2
 
     invoke-virtual {p0, v0, v1}, Lcom/whatsapp/GalleryView;->scrollTo(II)V
 
-    .line 100
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 305
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
     if-eqz v0, :cond_1
 
-    .line 319
-    iget-object v0, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 153
+    iget-object v0, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
-    invoke-interface {v0, p1}, Lcom/whatsapp/gh;->a(I)V
+    invoke-interface {v0, p1}, Lcom/whatsapp/m_;->b(I)V
 
-    .line 36
+    .line 13
     :cond_1
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->invalidate()V
 
-    .line 233
+    .line 162
     return-void
 .end method
 
-.method public setEventCallback(Lcom/whatsapp/gh;)V
+.method public setEventCallback(Lcom/whatsapp/m_;)V
     .locals 0
 
     .prologue
-    .line 324
-    iput-object p1, p0, Lcom/whatsapp/GalleryView;->y:Lcom/whatsapp/gh;
+    .line 322
+    iput-object p1, p0, Lcom/whatsapp/GalleryView;->t:Lcom/whatsapp/m_;
 
-    .line 114
+    .line 74
     return-void
 .end method
 
@@ -2779,32 +2779,32 @@
     .locals 4
 
     .prologue
-    sget-boolean v1, Lcom/whatsapp/App;->aL:Z
+    sget v1, Lcom/whatsapp/App;->h:I
 
-    .line 92
+    .line 224
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getChildCount()I
 
     move-result v2
 
-    .line 181
+    .line 185
     const/4 v0, 0x0
 
     :cond_0
     if-ge v0, v2, :cond_1
 
-    .line 167
+    .line 312
     invoke-virtual {p0, v0}, Lcom/whatsapp/GalleryView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
     invoke-virtual {v3, p1}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 81
+    .line 28
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 10
+    .line 221
     :cond_1
     return-void
 .end method
@@ -2813,7 +2813,7 @@
     .locals 0
 
     .prologue
-    .line 109
+    .line 151
     if-nez p1, :cond_0
 
     invoke-virtual {p0}, Lcom/whatsapp/GalleryView;->getWidth()I
@@ -2821,8 +2821,8 @@
     move-result p1
 
     :cond_0
-    iput p1, p0, Lcom/whatsapp/GalleryView;->p:I
+    iput p1, p0, Lcom/whatsapp/GalleryView;->s:I
 
-    .line 107
+    .line 128
     return-void
 .end method
