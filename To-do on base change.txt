@@ -1,0 +1,123 @@
+- Copy vextil_updater_activity.xml from layouts from previous release
+
+- Copy vextil_ripple_light_color.xml from drawables from previous release
+
+- Copy layout-v21 folder from previous release
+
+- Copy values-v21 folder from previous release
+
+- Copy drawable-v21 folder from previous release
+
+- Remove ic_muted.png hdpi-v11 and xhdpi-v11
+
+- Copy drawables from drawable-xxhdpi from previous release and resize for lower DPIs (Makes sure we are not replacing new drawables with old versions)
+
+- Copy vextil smali (smali/vextil)
+
+- Add UpdaterActivity to AndroidManifest.xml:
+	<activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:label="Updater" android:launchMode="singleTask" android:name="vextil.UpdaterActivity"/>
+
+- Add ids in values/ids.xml:
+    <item type="id" name="main_text"/>
+    <item type="id" name="vextil_version_code"/>
+    <item type="id" name="vextil_sub_version_code"/>
+    <item type="id" name="vextil_updater_activity"/>
+    <item type="id" name="vextil_menuitem_updater"/>
+
+- Add layout in values/public.xml:
+    <public type="layout" name="vextil_updater_activity" id="0x7f0300bd" />
+
+- Add id in values/public.xml
+    <public type="id" name="main_text" id="0x7f0b0fa" />
+
+- Add strings in values/public.xml:
+    <public type="string" name="vextil_version_code" id="0x7f0e04ae" />   
+    <public type="string" name="vextil_sub_version_code" id="0x7f0e04af" />
+    <public type="string" name="vextil_menuitem_updater" id="0x7f0e04b0" />
+
+- In vextil/UpdaterActivity.smali edit all resIDs with the new ones from previous steps
+
+- Add strings in values/strings.xml (remember to update version and sub version codes)
+    <string name="vextil_version_code">7</string>
+    <string name="vextil_sub_version_code">S</string>
+    <string name="vextil_menuitem_updater">Updater</string>
+
+- Remove updater message. Search for "onCreateDialog" in com/whatsapp/Main.smali and replace method contents with:
+    .locals 5
+    invoke-super {p0, p1}, Lcom/whatsapp/VerifyMessageStoreActivity;->onCreateDialog(I)Landroid/app/Dialog;
+    move-result-object v0
+    return-object v0
+
+- Add fab class to Conversations.smali and ArchivedConversationsActivity.smali
+    .method public fab(Landroid/view/View;)V
+        .locals 3
+        .prologue
+        const/4 v0, 0x0
+        const/4 v2, 0x1
+        new-instance v0, Landroid/content/Intent;
+        const-class v1, Lcom/whatsapp/ContactPicker;
+        invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+        invoke-virtual {p0, v0, v2}, Lcom/whatsapp/Conversations;->startActivityForResult(Landroid/content/Intent;I)V
+        return-void
+    .end method
+
+- Edit first resource ID after cond_5 near line 1969 to be vextil_menuitem_updater in Conversations.smali
+
+- Edit :pswitch_5 near line 2349 in Conversations.smali, change contents to:
+    new-instance v0, Landroid/content/Intent;
+    const/4 v4, 0x3
+    const-class v1, Lcom/whatsapp/Vextil/UpdaterActivity;
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-virtual {p0, v0, v2}, Lcom/whatsapp/Conversations;->startActivityForResult(Landroid/content/Intent;I)V
+
+- Add actionbBar height in Theme.App in styles.xml (values and values-v11):
+    <item name="actionBarSize">56dp</item>
+    <item name="android:actionBarSize">56dp</item> 
+
+- Replace conversations.xml with (If possible, if not add RelativeLayout and place ListView and FAB inside):
+	<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout android:orientation="vertical" android:id="@id/chats_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+	  xmlns:android="http://schemas.android.com/apk/res/android">
+	    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/conversations_search_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/search_no_matches" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="67.0dip" android:text="@string/search_no_chats" />
+	        <Button android:id="@id/search_in_contacts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_in_contacts" />
+	    </LinearLayout>
+	    <RelativeLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="match_parent">
+	        <ImageButton
+	            android:layout_width="56dp"
+	            android:layout_height="56dp"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="16dp"
+	            android:layout_marginBottom="16dp"
+	            android:tint="@android:color/white"
+	            android:id="@+id/fab"
+	            android:onClick="fab"
+	            android:elevation="5dp"
+	            android:src="@drawable/ic_action_create"
+	            android:background="@drawable/vextil_ripple_light_color"/>
+	        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textFilterEnabled="true" android:cacheColorHint="@android:color/transparent" android:dividerHeight="0dip" android:divider="@android:color/transparent"/>
+	    </RelativeLayout>
+	    <FrameLayout android:gravity="center" android:id="@id/conversations_empty" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="32.0dip" android:paddingRight="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	            <ImageView android:layout_gravity="center" android:paddingTop="32.0dip" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/icon_new_chat_big" android:layout_weight="1.0" />
+	            <TextView android:textSize="17.0sp" android:textColor="#ff565656" android:gravity="center" android:paddingTop="48.0dip" android:paddingBottom="48.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/welcome_chats_message" style="@style/Text" />
+	        </LinearLayout>
+	    </FrameLayout>
+	    <include android:id="@id/conversations_empty_no_contacts" layout="@layout/empty_tell_a_friend" />
+	</LinearLayout>
+
+- Copy conversations_row to layout-v21 folder
+
+- In conversations_row.xml layout, put FrameLayout (id:contactSelector) inside a Relative layout:
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+- Add inside that RelativeLayout, on top of the FrameLayout the avatar mask:
+    <ImageView android:paddingLeft="@dimen/list_row_padding" android:layout_width="wrap_content" android:layout_height="@dimen/conversations_row_height" android:layout_alignParentLeft="true" android:src="@drawable/vextil_avatar_mask_small_white"/>
+
+- Search for NotificationCompat, find the file inside com/whatsapp/notification with the most uses. Near line 2344 before "setCategory" add:
+    const v3, -0xa34395
+    invoke-virtual {v0, v3}, Landroid/support/v4/app/NotificationCompat$Builder;->setColor(I)Landroid/support/v4/app/NotificationCompat$Builder;
+    const/4 v3, 0x2

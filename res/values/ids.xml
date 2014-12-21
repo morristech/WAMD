@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <item type="id" name="main_text"/>
+    <item type="id" name="wamd_version_code"/>
+    <item type="id" name="wamd_sub_version_code"/>
+    <item type="id" name="wamd_updater_activity"/>
+    <item type="id" name="wamd_menuitem_updater"/>
     <item type="id" name="abs__action_menu_divider" />
     <item type="id" name="abs__action_menu_presenter" />
     <item type="id" name="abs__home" />

@@ -1968,6 +1968,7 @@
     <public type="layout" name="widget_small" id="0x7f0300ba" />
     <public type="layout" name="wifi_alert" id="0x7f0300bb" />
     <public type="layout" name="wifi_alert_buttons" id="0x7f0300bc" />
+    <public type="layout" name="vextil_updater_activity" id="0x7f0300bd" />
     <public type="anim" name="grow_from_top" id="0x7f040000" />
     <public type="anim" name="slide_in_left" id="0x7f040001" />
     <public type="anim" name="slide_in_right" id="0x7f040002" />
@@ -2948,6 +2949,7 @@
     <public type="id" name="map_type_satellite" id="0x7f0b02f7" />
     <public type="id" name="map_type_terrain" id="0x7f0b02f8" />
     <public type="id" name="map_traffic" id="0x7f0b02f9" />
+    <public type="id" name="main_text" id="0x7f0b0fa" />
     <public type="integer" name="abs__max_action_buttons" id="0x7f0c0000" />
     <public type="integer" name="google_play_services_version" id="0x7f0c0001" />
     <public type="plurals" name="account_info_gave_n_years_of_service" id="0x7f0d0000" />
@@ -4199,6 +4201,9 @@
     <public type="string" name="yesterday" id="0x7f0e04ab" />
     <public type="string" name="yesterday_at" id="0x7f0e04ac" />
     <public type="string" name="you" id="0x7f0e04ad" />
+    <public type="string" name="vextil_version_code" id="0x7f0e04ae" />   
+    <public type="string" name="vextil_sub_version_code" id="0x7f0e04af" />
+    <public type="string" name="vextil_menuitem_updater" id="0x7f0e04b0" />
     <public type="style" name="ActionBarButtonStyle" id="0x7f0f0000" />
     <public type="style" name="ActionBarCondensedButtonStyle" id="0x7f0f0001" />
     <public type="style" name="ActionBarCondensedOverflowButtonStyle" id="0x7f0f0002" />

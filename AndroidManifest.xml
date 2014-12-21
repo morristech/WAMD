@@ -54,6 +54,7 @@
         <uses-library android:name="com.sec.android.app.multiwindow" android:required="false"/>
         <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/maps_v2_key"/>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:label="Updater" android:launchMode="singleTask" android:name="vextil.UpdaterActivity"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="false" android:name="com.whatsapp.Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

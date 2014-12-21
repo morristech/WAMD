@@ -256,3 +256,15 @@
         :pswitch_0
     .end packed-switch
 .end method
+
+.method public fab(Landroid/view/View;)V
+    .locals 3
+    .prologue
+    const/4 v0, 0x0
+    const/4 v2, 0x1
+    new-instance v0, Landroid/content/Intent;
+    const-class v1, Lcom/whatsapp/ContactPicker;
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-virtual {p0, v0, v2}, Lcom/whatsapp/Conversations;->startActivityForResult(Landroid/content/Intent;I)V
+    return-void
+.end method

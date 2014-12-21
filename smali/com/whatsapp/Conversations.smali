@@ -1966,7 +1966,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0e023b
+    const v3, 0x7f0e04b0
 
     :try_start_3
     invoke-interface {p1, v0, v1, v2, v3}, Lcom/actionbarsherlock/view/Menu;->add(IIII)Lcom/actionbarsherlock/view/MenuItem;
@@ -2344,16 +2344,10 @@
     .line 140
     :pswitch_5
     new-instance v0, Landroid/content/Intent;
-
-    sget-object v1, Lcom/whatsapp/Conversations;->z:[Ljava/lang/String;
-
     const/4 v4, 0x3
-
-    aget-object v1, v1, v4
-
-    sget-object v4, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
-
-    invoke-direct {v0, v1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+    const-class v1, Lcom/whatsapp/Vextil/UpdaterActivity;
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-virtual {p0, v0, v2}, Lcom/whatsapp/Conversations;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 144
     :try_start_0
@@ -3266,5 +3260,17 @@
     invoke-static {v0}, Lcom/whatsapp/amu;->b(Lcom/whatsapp/a7u;)V
 
     .line 206
+    return-void
+.end method
+
+.method public fab(Landroid/view/View;)V
+    .locals 3
+    .prologue
+    const/4 v0, 0x0
+    const/4 v2, 0x1
+    new-instance v0, Landroid/content/Intent;
+    const-class v1, Lcom/whatsapp/ContactPicker;
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-virtual {p0, v0, v2}, Lcom/whatsapp/Conversations;->startActivityForResult(Landroid/content/Intent;I)V
     return-void
 .end method

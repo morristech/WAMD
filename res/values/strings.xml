@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="vextil_version_code">7</string>
+    <string name="vextil_sub_version_code">S</string>
+    <string name="vextil_menuitem_updater">Updater</string>
     <string name="abs__action_bar_home_description">Navigate home</string>
     <string name="abs__action_bar_up_description">Navigate up</string>
     <string name="abs__action_menu_overflow_description">More options</string>

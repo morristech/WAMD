@@ -88,6 +88,8 @@
         <item name="actionBarTabTextStyle">@style/ActionBarTabTextStyle</item>
         <item name="actionOverflowButtonStyle">@style/ActionBarCondensedOverflowButtonStyle</item>
         <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="actionBarSize">56dp</item>
+        <item name="android:actionBarSize">56dp</item> 
     </style>
     <style name="Theme.App.CondensedActionBar" parent="@style/Theme.App">
         <item name="android:actionButtonStyle">@style/ActionBarCondensedButtonStyle</item>
